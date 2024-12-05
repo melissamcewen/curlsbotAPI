@@ -4,10 +4,14 @@
   "description": "Library for analyzing haircare product ingredients",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "bin": {
+    "analyze-ingredients": "./dist/cli.js"
+  },
   "scripts": {
     "build": "tsc",
     "test": "jest --config jest.config.js",
-    "prepare": "npm run build"
+    "prepare": "npm run build",
+    "analyze": "node dist/cli.js"
   },
   "keywords": [
     "haircare",
@@ -24,5 +28,10 @@
     "jest": "^29.7.0",
     "ts-jest": "^29.1.1",
     "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "commander": "^11.0.0",
+    "fuse.js": "^6.6.2"
   }
 }

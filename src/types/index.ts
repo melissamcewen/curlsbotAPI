@@ -4,6 +4,7 @@ export interface Ingredient {
   category: string[];
   notes?: string;
   source?: string[];
+  synonyms?: string[];
 }
 
 export interface IngredientMatch {
@@ -12,6 +13,14 @@ export interface IngredientMatch {
   matched: boolean;
   details?: Ingredient;
   categories?: string[];
+  fuzzyMatch?: boolean;
+  confidence?: number;
+  matchedSynonym?: string;
 }
 
-export type IngredientAnalysisResult = IngredientMatch[];
+export interface AnalysisResult {
+  matches: IngredientMatch[];
+  categories: string[];
+}
+
+export type IngredientAnalysisResult = AnalysisResult;
