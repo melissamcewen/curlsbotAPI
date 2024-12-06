@@ -3,6 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.Analyzer = void 0;
 const parser_1 = require("./parser");
 const matcher_1 = require("./matcher");
+const categoryInfo_1 = require("./categoryInfo");
 const defaultConfig = {
     database: {
         ingredients: {},
@@ -31,6 +32,12 @@ class Analyzer {
         return Object.values(this.config.database.ingredients)
             .filter(ingredient => ingredient.category.includes(category))
             .map(ingredient => ingredient.name);
+    }
+    getCategoryInfo(categoryName) {
+        return (0, categoryInfo_1.getCategoryInfo)(categoryName);
+    }
+    getCategoryGroup(categoryName) {
+        return (0, categoryInfo_1.getCategoryGroup)(categoryName);
     }
 }
 exports.Analyzer = Analyzer;

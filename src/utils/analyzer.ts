@@ -1,6 +1,7 @@
 import { IngredientMatch, IngredientAnalysisResult, AnalyzerConfig } from '../types';
 import { parseIngredientList } from './parser';
 import { createMatcher } from './matcher';
+import { getCategoryInfo, getCategoryGroup } from './categoryInfo';
 
 const defaultConfig: AnalyzerConfig = {
   database: {
@@ -22,7 +23,7 @@ export class Analyzer {
   analyzeIngredients(ingredientString: string): IngredientAnalysisResult {
     const ingredientList = parseIngredientList(ingredientString);
     const matches = ingredientList.map(ingredient => this.matcher(ingredient));
-    
+
     // Extract all unique categories from matched ingredients
     const categories = Array.from(new Set(
       matches
@@ -40,5 +41,13 @@ export class Analyzer {
     return Object.values(this.config.database.ingredients)
       .filter(ingredient => ingredient.category.includes(category))
       .map(ingredient => ingredient.name);
+  }
+
+  public getCategoryInfo(categoryName: string) {
+    return getCategoryInfo(categoryName);
+  }
+
+  public getCategoryGroup(categoryName: string) {
+    return getCategoryGroup(categoryName);
   }
 }

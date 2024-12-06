@@ -49,7 +49,7 @@ describe('Analyzer', () => {
     test('finds ingredients by category', () => {
       const fattyAlcohols = analyzer.findIngredientsByCategory('fatty alcohol');
       expect(fattyAlcohols).toContain('Cetyl Alcohol');
-      
+
       const dryingAlcohols = analyzer.findIngredientsByCategory('drying alcohol');
       expect(dryingAlcohols).toContain('Isopropyl Alcohol');
     });
@@ -60,11 +60,12 @@ describe('Analyzer', () => {
     });
   });
 
+ 
   describe('complex ingredient lists', () => {
     test('analyzes shampoo ingredients correctly', () => {
       const list = "Water, Sodium Laureth Sulfate, Cocamidopropyl Betaine, Cetyl Alcohol";
       const results = analyzer.analyzeIngredients(list);
-      
+
       expect(results.matches).toHaveLength(4);
       expect(results.categories).toContain('sulfate');
       expect(results.categories).toContain('gentle cleanser');
@@ -74,7 +75,7 @@ describe('Analyzer', () => {
     test('handles ingredient synonyms', () => {
       const list = "SLES, CAPB, Hexadecan-1-ol";
       const results = analyzer.analyzeIngredients(list);
-      
+
       expect(results.matches[0].matchedSynonym).toBe('sles');
       expect(results.matches[1].matchedSynonym).toBe('capb');
       expect(results.matches[2].matchedSynonym).toBe('hexadecan-1-ol');
