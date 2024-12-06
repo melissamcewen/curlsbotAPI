@@ -19,4 +19,3 @@ __exportStar(require("./utils/analyzer"), exports);
 __exportStar(require("./utils/matcher"), exports);
 __exportStar(require("./utils/normalizer"), exports);
 __exportStar(require("./utils/parser"), exports);
-__exportStar(require("./data/ingredients"), exports);

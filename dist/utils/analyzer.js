@@ -1,16 +1,36 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.analyzeIngredients = analyzeIngredients;
-exports.findIngredientsByCategory = findIngredientsByCategory;
+exports.Analyzer = void 0;
 const parser_1 = require("./parser");
 const matcher_1 = require("./matcher");
-const ingredients_1 = require("../data/ingredients");
-function analyzeIngredients(ingredientString) {
-    const ingredientList = (0, parser_1.parseIngredientList)(ingredientString);
-    return ingredientList.map(ingredient => (0, matcher_1.matchIngredient)(ingredient));
+const defaultConfig = {
+    database: {
+        ingredients: {},
+        categories: {}
+    },
+    fuzzyMatchThreshold: 0.3
+};
+class Analyzer {
+    constructor(config = {}) {
+        this.config = { ...defaultConfig, ...config };
+        this.matcher = (0, matcher_1.createMatcher)(this.config);
+    }
+    analyzeIngredients(ingredientString) {
+        const ingredientList = (0, parser_1.parseIngredientList)(ingredientString);
+        const matches = ingredientList.map(ingredient => this.matcher(ingredient));
+        // Extract all unique categories from matched ingredients
+        const categories = Array.from(new Set(matches
+            .filter(match => match.matched && match.categories)
+            .flatMap(match => match.categories))).sort();
+        return {
+            matches,
+            categories
+        };
+    }
+    findIngredientsByCategory(category) {
+        return Object.values(this.config.database.ingredients)
+            .filter(ingredient => ingredient.category.includes(category))
+            .map(ingredient => ingredient.name);
+    }
 }
-function findIngredientsByCategory(category) {
-    return Object.values(ingredients_1.ingredients)
-        .filter(ingredient => ingredient.category.includes(category))
-        .map(ingredient => ingredient.name);
-}
+exports.Analyzer = Analyzer;

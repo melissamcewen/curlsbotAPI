@@ -1,3 +1,8 @@
-import { IngredientAnalysisResult } from '../types';
-export declare function analyzeIngredients(ingredientString: string): IngredientAnalysisResult;
-export declare function findIngredientsByCategory(category: string): string[];
+import { IngredientAnalysisResult, AnalyzerConfig } from '../types';
+export declare class Analyzer {
+    private config;
+    private matcher;
+    constructor(config?: Partial<AnalyzerConfig>);
+    analyzeIngredients(ingredientString: string): IngredientAnalysisResult;
+    findIngredientsByCategory(category: string): string[];
+}

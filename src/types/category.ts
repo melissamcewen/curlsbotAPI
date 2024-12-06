@@ -1,7 +1,7 @@
 export interface Category {
   name: string;
   description: string;
-  impact: 'good' | 'caution' | 'bad';
+  impact: 'good' | 'caution' | 'bad' | 'unknown' | 'neutral';
   notes?: string;
   source?: string[];
 }

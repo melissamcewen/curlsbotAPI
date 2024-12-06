@@ -1,3 +1,5 @@
+import { CategoryGroups } from './category';
+
 export interface Ingredient {
   name: string;
   description: string;
@@ -24,3 +26,15 @@ export interface AnalysisResult {
 }
 
 export type IngredientAnalysisResult = AnalysisResult;
+
+export interface IngredientDatabase {
+  ingredients: Record<string, Ingredient>;
+  categories: CategoryGroups;
+}
+
+export interface AnalyzerConfig {
+  database: IngredientDatabase;
+  fuzzyMatchThreshold?: number;
+}
+
+export * from './category';

@@ -3,7 +3,6 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.normalizeIngredientName = normalizeIngredientName;
 exports.parseIngredientList = parseIngredientList;
 exports.matchIngredient = matchIngredient;
-const ingredients_1 = require("../data/ingredients");
 function normalizeIngredientName(name) {
     return name
         .toLowerCase()
@@ -19,7 +18,7 @@ function parseIngredientList(ingredientString) {
 }
 function matchIngredient(ingredientName) {
     const normalized = normalizeIngredientName(ingredientName);
-    const match = Object.entries(ingredients_1.ingredients).find(([key]) => normalized.includes(normalizeIngredientName(key)));
+    const match = Object.entries(ingredients).find(([key]) => normalized.includes(normalizeIngredientName(key)));
     if (match) {
         return {
             matched: true,

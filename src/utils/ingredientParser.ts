@@ -1,4 +1,3 @@
-import { ingredients } from '../data/ingredients';
 import { IngredientMatch } from '../types';
 
 export function normalizeIngredientName(name: string): string {
@@ -18,8 +17,8 @@ export function parseIngredientList(ingredientString: string): string[] {
 
 export function matchIngredient(ingredientName: string): IngredientMatch {
   const normalized = normalizeIngredientName(ingredientName);
-  
-  const match = Object.entries(ingredients).find(([key]) => 
+
+  const match = Object.entries(ingredients).find(([key]) =>
     normalized.includes(normalizeIngredientName(key))
   );
 
