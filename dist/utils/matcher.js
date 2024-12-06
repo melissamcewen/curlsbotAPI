@@ -10,7 +10,11 @@ function createMatcher(config) {
     const { ingredients } = config.database;
     // Create a searchable array of ingredients with their synonyms
     const ingredientsList = Object.entries(ingredients).flatMap(([key, value]) => {
-        const mainEntry = { key, ...value };
+        const mainEntry = {
+            key,
+            ...value,
+            isSynonym: false
+        };
         const synonymEntries = (value.synonyms || []).map(synonym => ({
             key: synonym.toLowerCase(),
             ...value,
