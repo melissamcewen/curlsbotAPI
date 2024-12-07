@@ -35,7 +35,6 @@ describe('Analyzer', () => {
     test('handles ingredients with similar names correctly', () => {
       const results = analyzer.analyzeIngredients('Potassium Hydrate');
       // should match potassium hydrate
-      console.log(results);
       expect(results.matches[0].matched).toBe(true);
       expect(results.matches[0].name).toBe('Potassium Hydrate');
     });
@@ -45,6 +44,7 @@ describe('Analyzer', () => {
       const results = analyzer.analyzeIngredients('Unknown Ingredient');
       expect(results.matches[0].matched).toBe(false);
       expect(results.matches[0].name).toBe('Unknown Ingredient');
+      expect(results.matches[0].details).toBeUndefined();
       expect(results.categories).toHaveLength(0);
     });
 

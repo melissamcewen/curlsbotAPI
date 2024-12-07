@@ -41,5 +41,17 @@ export const testCategories: CategoryGroups = {
     name: "Others",
     description: "Other ingredients not categorized",
     categories: {}
+  },
+  silicones: {
+    name: "Silicones",
+    description: "Different types of silicones used in hair care",
+    categories: {
+      "water-soluble silicone": {
+        name: "Water-Soluble Silicone",
+        description: "Silicones that are water-soluble",
+        impact: "good",
+        notes: "Generally considered safe as it doesn't build up"
+      }
+    }
   }
 }

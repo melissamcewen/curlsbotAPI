@@ -42,5 +42,16 @@ export const testIngredients: Record<string, Ingredient> = {
     category: ["Others"],
     notes: "Commonly used in hair care products to remove moisture",
     synonyms: ["potassium salt"]
+  },
+  "cyclomethicone": {
+    name: "Cyclomethicone",
+    description: "A lightweight, volatile silicone that evaporates from hair.",
+    category: ["water-soluble silicone"],
+    notes: "Generally considered safe as it doesn't build up",
+    synonyms: [
+      "cyclopentasiloxane",
+      "cyclotetrasiloxane",
+      "cyclic silicone"
+    ]
   }
 }
