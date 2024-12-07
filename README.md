@@ -57,6 +57,73 @@ const results = analyzer.analyzeIngredients("Water, Cetyl Alcohol");
 console.log(results);
 ```
 
+## Analysis Results Structure
+
+The `analyzeIngredients` method returns an object with the following structure:
+
+```typescript
+interface AnalysisResult {
+  // Array of analyzed ingredients with matching details
+  matches: IngredientMatch[];
+  // List of all unique categories found in the ingredients
+  categories: string[];
+}
+
+interface IngredientMatch {
+  // Original ingredient name from the input
+  name: string;
+  // Normalized version of the name (lowercase, no special chars)
+  normalized: string;
+  // Whether the ingredient was found in the database
+  matched: boolean;
+  // Full ingredient details if matched
+  details?: {
+    name: string;
+    description: string;
+    category: string[];
+    notes?: string;
+    source?: string[];
+    synonyms?: string[];
+  };
+  // Categories this ingredient belongs to
+  categories?: string[];
+  // Whether this was a fuzzy match
+  fuzzyMatch?: boolean;
+  // Confidence score for fuzzy matches (0-1)
+  confidence?: number;
+  // If matched via synonym, contains the matched synonym
+  matchedSynonym?: string;
+}
+```
+
+### Example Result
+
+```typescript
+{
+  matches: [
+    {
+      name: "Water",
+      normalized: "water",
+      matched: false
+    },
+    {
+      name: "Cetyl Alcohol",
+      normalized: "cetyl alcohol",
+      matched: true,
+      details: {
+        name: "Cetyl Alcohol",
+        description: "A fatty alcohol that acts as an emollient",
+        category: ["fatty alcohol", "emollient"],
+        notes: "Common in conditioners",
+        synonyms: ["hexadecan-1-ol"]
+      },
+      categories: ["fatty alcohol", "emollient"]
+    }
+  ],
+  categories: ["emollient", "fatty alcohol"]
+}
+```
+
 ## Project Structure
 
 The project is organized into two main parts:
@@ -77,7 +144,6 @@ src/
 │   └── normalizer.ts # Name normalization
 └── __tests__/       # Core library tests
 ```
-
 
 ## API Reference
 
@@ -132,58 +198,6 @@ interface Category {
 }
 ```
 
-#### AnalysisResult
-
-```typescript
-interface AnalysisResult {
-  matches: IngredientMatch[];
-  categories: string[];
-}
-```
-
-#### IngredientMatch
-
-```typescript
-interface IngredientMatch {
-  name: string;
-  normalized: string;
-  matched: boolean;
-  details?: Ingredient;
-  categories?: string[];
-  fuzzyMatch?: boolean;
-  confidence?: number;
-  matchedSynonym?: string;
-}
-```
-
-## Features in Detail
-
-### Ingredient Matching
-
-The analyzer supports multiple matching strategies:
-
-1. **Exact Matching**: Direct matches of ingredient names
-2. **Synonym Matching**: Matches alternative names for ingredients
-3. **Fuzzy Matching**: Finds close matches using Fuse.js
-
-### Category Analysis
-
-Ingredients are categorized with:
-
-- Multiple categories per ingredient
-- Impact assessment (good/caution/bad)
-- Detailed notes and descriptions
-- Grouping by type (e.g., alcohols, silicones)
-
-### Customization
-
-You can customize:
-
-- Ingredient definitions
-- Category structures
-- Fuzzy matching threshold
-- Impact assessments
-
 ## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
@@ -199,7 +213,6 @@ npm test
 
 # Build the project
 npm run build
-
 ```
 
 ## License

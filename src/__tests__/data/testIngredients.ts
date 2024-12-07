@@ -28,5 +28,19 @@ export const testIngredients: Record<string, Ingredient> = {
     category: ["gentle cleanser", "surfactant"],
     notes: "Generally considered safe for curly hair routines",
     synonyms: ["CAPB", "coco betaine"]
+  },
+  "potassium sorbate": {
+    name: "Potassium Sorbate",
+    description: "A preservative commonly used in hair care products",
+    category: ["Others"],
+    notes: "Commonly used in hair care products to prevent mold and bacteria",
+    synonyms: ["sorbic acid potassium"]
+  },
+  "potassium hydrate": {
+    name: "Potassium Hydrate",
+    description: "A drying agent commonly used in hair care products",
+    category: ["Others"],
+    notes: "Commonly used in hair care products to remove moisture",
+    synonyms: ["potassium salt"]
   }
 }

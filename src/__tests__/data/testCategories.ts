@@ -36,5 +36,10 @@ export const testCategories: CategoryGroups = {
         notes: "Preferred for curly hair"
       }
     }
+  },
+  others: {
+    name: "Others",
+    description: "Other ingredients not categorized",
+    categories: {}
   }
 }

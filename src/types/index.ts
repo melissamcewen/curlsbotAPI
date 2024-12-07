@@ -7,6 +7,7 @@ export interface Ingredient {
   notes?: string;
   source?: string[];
   synonyms?: string[];
+  link?: string[];
 }
 
 export interface IngredientMatch {
@@ -18,6 +19,7 @@ export interface IngredientMatch {
   fuzzyMatch?: boolean;
   confidence?: number;
   matchedSynonym?: string;
+  link?: string;
 }
 
 export interface AnalysisResult {

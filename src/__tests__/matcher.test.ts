@@ -1,5 +1,6 @@
 import { createMatcher } from '../utils/matcher';
-import { testIngredients, testCategories } from './data/testData';
+import { testIngredients } from './data/testIngredients';
+import { testCategories } from './data/testCategories';
 import { AnalyzerConfig } from '../types';
 
 describe('Ingredient Matcher', () => {

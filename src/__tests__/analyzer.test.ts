@@ -1,5 +1,6 @@
 import { Analyzer } from '../utils/analyzer';
-import { testIngredients, testCategories } from './data/testData';
+import { testIngredients } from './data/testIngredients';
+import { testCategories } from './data/testCategories';
 
 describe('Analyzer', () => {
   const analyzer = new Analyzer({
@@ -23,6 +24,22 @@ describe('Analyzer', () => {
       expect(results.categories).toContain('fatty alcohol');
       expect(results.categories).toContain('drying alcohol');
     });
+
+    test('handles ingredients with similar names correctly', () => {
+      const results = analyzer.analyzeIngredients('Potassium Sorbate');
+      // should match potassium sorbate
+      expect(results.matches[0].matched).toBe(true);
+      expect(results.matches[0].name).toBe('Potassium Sorbate');
+    });
+
+    test('handles ingredients with similar names correctly', () => {
+      const results = analyzer.analyzeIngredients('Potassium Hydrate');
+      // should match potassium hydrate
+      console.log(results);
+      expect(results.matches[0].matched).toBe(true);
+      expect(results.matches[0].name).toBe('Potassium Hydrate');
+    });
+
 
     test('handles unknown ingredients', () => {
       const results = analyzer.analyzeIngredients('Unknown Ingredient');
@@ -60,7 +77,7 @@ describe('Analyzer', () => {
     });
   });
 
- 
+
   describe('complex ingredient lists', () => {
     test('analyzes shampoo ingredients correctly', () => {
       const list = "Water, Sodium Laureth Sulfate, Cocamidopropyl Betaine, Cetyl Alcohol";
