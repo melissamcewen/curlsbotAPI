@@ -1,48 +1,29 @@
 import { findExactMatch, findPartialMatches, regexMatch, fuzzyMatch } from './matchtypes';
-import type { IngredientDatabase, IngredientMatch, MatchDetails } from '../types';
+import type { IngredientDatabase, IngredientMatch, MatchDetails, MatchOptions } from '../types';
 
 /**
  * Matches an ingredient string against the ingredient database
  *
  * @remarks
- * The matching process follows this order:
+ * The matching process follows this order and returns the highest confidence match:
  * 1. Exact ingredient matches (confidence: 1.0, searchType: 'ingredient')
  * 2. Partial ingredient matches (confidence: 0.7, searchType: 'ingredient')
  * 3. Category exact matches (confidence: 0.8, searchType: 'category')
  * 4. Category partial matches (confidence: 0.6, searchType: 'category')
  * 5. Category group matches (confidence: 0.5, searchType: 'categoryGroup')
  *
- * Each match includes a searchType indicating what type of entity was matched:
- * - 'ingredient': Direct match with an ingredient or its synonyms
- * - 'category': Match with a specific category
- * - 'categoryGroup': Match with a category group
- *
  * @param input - The ingredient string to match
  * @param database - The ingredient database to match against
+ * @param options - Optional configuration
+ * @param options.debug - If true, includes all possible matches in debug info
  *
- * @returns An array of matches sorted by confidence (highest first)
- * If no matches are found, returns an array with basic ingredient info
- *
- * @example
- * ```ts
- * const matches = matchIngredient("alcohol denat", database);
- * // Returns matches like:
- * // [{
- * //   name: "alcohol denat",
- * //   normalized: "alcohol denat",
- * //   details: { ... },
- * //   categories: ["drying alcohol"],
- * //   matchDetails: {
- * //     matched: true,
- * //     matchTypes: ["exactMatch"],
- * //     searchType: "ingredient",
- * //     confidence: 1,
- * //     matchedOn: ["alcohol denat"]
- * //   }
- * // }]
- * ```
+ * @returns The highest confidence match
  */
-export function matchIngredient(input: string, database: IngredientDatabase): IngredientMatch[] {
+export function matchIngredient(
+  input: string,
+  database: IngredientDatabase,
+  options: MatchOptions = {}
+): IngredientMatch {
   const matches: IngredientMatch[] = [];
 
   // First try to match against known ingredients and their synonyms
@@ -154,9 +135,18 @@ export function matchIngredient(input: string, database: IngredientDatabase): In
     (b.matchDetails?.confidence || 0) - (a.matchDetails?.confidence || 0)
   );
 
-  // If no matches found, return basic info
-  return matches.length > 0 ? matches : [{
+  // Create base result
+  const result = matches[0] || {
     name: input,
     normalized: input
-  }];
+  };
+
+  // Add debug info if requested
+  if (options.debug) {
+    result.debug = {
+      allMatches: matches
+    };
+  }
+
+  return result;
 }

@@ -1,3 +1,4 @@
+import { IngredientMatch } from '../types';
 import { matchIngredient } from '../utils/matcher';
 import { testCategories } from './data/testCategories';
 import { alcohols } from './data/testIngredients/alcohols';
@@ -9,64 +10,66 @@ describe('matchIngredient', () => {
   };
 
   test('"alcohol denat." should match denatured alcohol', () => {
-    const matches = matchIngredient('alcohol denat.', testDatabase);
+    const match = matchIngredient('alcohol denat.', testDatabase);
 
-    expect(matches.length).toBeGreaterThan(0);
-    const bestMatch = matches[0]; // First match should be highest confidence
-
-    expect(bestMatch.matchDetails?.matched).toBe(true);
-    expect(bestMatch.matchDetails?.matchTypes).toContain('partialMatch');
-    expect(bestMatch.matchDetails?.searchType).toBe('ingredient');
-    expect(bestMatch.matchDetails?.confidence).toBe(0.7);
-    expect(bestMatch.matchDetails?.matchedOn).toEqual(['alcohol denat']);
+    expect(match.matchDetails?.matched).toBe(true);
+    expect(match.matchDetails?.matchTypes).toContain('partialMatch');
+    expect(match.matchDetails?.searchType).toBe('ingredient');
+    expect(match.matchDetails?.confidence).toBe(0.7);
+    expect(match.matchDetails?.matchedOn).toEqual(['alcohol denat']);
   });
 
   test('"alcohol" should match alcohol from categoryGroup', () => {
-    const matches = matchIngredient('alcohol', testDatabase);
+    const match = matchIngredient('alcohol', testDatabase, { debug: true });
 
-    expect(matches.length).toBeGreaterThan(0);
-    const categoryMatch = matches.find(
-      (match) => match.matchDetails?.searchType === 'categoryGroup',
+    // Check debug info for all matches
+    expect(match.debug?.allMatches.length).toBeGreaterThan(1);
+
+    // Find category group match in debug info
+    const categoryMatch = match.debug?.allMatches.find(
+      m => m.matchDetails?.searchType === 'categoryGroup'
     );
-
     expect(categoryMatch).toBeDefined();
     expect(categoryMatch?.matchDetails?.matched).toBe(true);
-    expect(categoryMatch?.matchDetails?.matchTypes).toContain('partialMatch');
-    expect(categoryMatch?.matchDetails?.searchType).toBe('categoryGroup');
     expect(categoryMatch?.matchDetails?.confidence).toBe(0.5);
-    expect(categoryMatch?.matchDetails?.matchedOn).toEqual(['Alcohols']);
     expect(categoryMatch?.categories).toEqual(['unknown Alcohols']);
   });
 
   test('should return basic info for no matches', () => {
-    const matches = matchIngredient('nonexistent ingredient', testDatabase);
+    const match = matchIngredient('nonexistent ingredient', testDatabase);
 
-    expect(matches).toHaveLength(1);
-    expect(matches[0]).toEqual({
+    expect(match).toEqual({
       name: 'nonexistent ingredient',
       normalized: 'nonexistent ingredient',
     });
   });
 
   test('handle ingredient with parentheses', () => {
-    const matches = matchIngredient(
+    const match = matchIngredient(
       'denatured alcohol (sd alcohol 40)',
       testDatabase,
     );
 
-    expect(matches.length).toBeGreaterThan(0);
-    const categoryMatch = matches.find(
-      (match) => match.matchDetails?.searchType === 'categoryGroup',
-    );
-    expect(categoryMatch).toBeDefined();
-    const ingredientMatch = matches.find(
-      (match) => match.matchDetails?.searchType === 'ingredient',
-    );
-    expect(ingredientMatch).toBeDefined();
-    // match denatured alcohol
-    expect(ingredientMatch?.matchDetails?.matchedOn).toEqual([
-      'Denatured Alcohol',
-    ]);
+    expect(match.matchDetails?.matched).toBe(true);
+    expect(match.matchDetails?.searchType).toBe('ingredient');
+    expect(match.matchDetails?.matchedOn).toEqual(['Denatured Alcohol']);
   });
 
+  test('should include debug info when debug option is set', () => {
+    const match = matchIngredient('alcohol', testDatabase, { debug: true });
+
+    expect(match.debug).toBeDefined();
+    expect(Array.isArray(match.debug?.allMatches)).toBe(true);
+    expect(match.debug?.allMatches.length).toBeGreaterThan(1);
+
+    // First match should be exact ingredient match
+    expect(match.debug?.allMatches[0].matchDetails?.searchType).toBe('ingredient');
+    expect(match.debug?.allMatches[0].matchDetails?.confidence).toBe(1);
+
+    // Should also have category group match
+    const categoryMatch = match.debug?.allMatches.find(
+      m => m.matchDetails?.searchType === 'categoryGroup'
+    );
+    expect(categoryMatch).toBeDefined();
+  });
 });

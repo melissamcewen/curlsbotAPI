@@ -28,11 +28,16 @@ export const alcohols: Record<string, Ingredient> = {
         'alcohol 40-b',
         'denatured ethanol'
       ],
-    },
+    }
   },
   benzyl_alcohol: {
     name: 'Benzyl Alcohol',
     description: 'A solvent and preservative used in cosmetics',
     category: ['solvent alcohol'],
+  },
+  alcohol: {
+    name: 'Alcohol',
+    description: 'A generic term for any type of alcohol',
+    category: ['drying alcohol'],
   },
 };

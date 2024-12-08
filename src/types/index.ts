@@ -36,6 +36,7 @@ export interface IngredientMatch {
   categories?: string[];
   link?: string;
   matchDetails?: MatchDetails;
+  debug?: DebugInfo;
 }
 
 export interface AnalysisResult {
@@ -70,4 +71,12 @@ export interface CategoryGroup {
 }
 
 export type CategoryGroups = Record<string, CategoryGroup>;
+
+export interface MatchOptions {
+  debug?: boolean;
+}
+
+export interface DebugInfo {
+  allMatches: IngredientMatch[];
+}
 
