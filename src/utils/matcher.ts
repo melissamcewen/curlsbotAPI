@@ -87,49 +87,50 @@ export function matchIngredient(input: string, database: IngredientDatabase): In
     }
   }
 
-  // Then try to match against categories
+  // Then try to match against categories that have matchConfig
   for (const [groupName, group] of Object.entries(database.categories)) {
+    // Only check categories that have matchConfig
     for (const [catName, category] of Object.entries(group.categories)) {
-      if (category.matchConfig) {
-        // Try exact category matches
-        if (input.toLowerCase() === catName.toLowerCase()) {
+      if (!category.matchConfig) continue; // Skip if no matchConfig
+
+      // Try exact category matches
+      if (input.toLowerCase() === catName.toLowerCase()) {
+        matches.push({
+          name: input,
+          normalized: input,
+          categories: [catName],
+          matchDetails: {
+            matched: true,
+            matchTypes: ['exactMatch'],
+            searchType: 'category',
+            confidence: 0.8,
+            matchedOn: [catName]
+          }
+        });
+      }
+
+      // Try partial category matches
+      if (category.matchConfig.partials) {
+        const partialMatch = findPartialMatches(input, catName, category.matchConfig.partials);
+        if (partialMatch.matched) {
           matches.push({
             name: input,
             normalized: input,
             categories: [catName],
             matchDetails: {
               matched: true,
-              matchTypes: ['exactMatch'],
+              matchTypes: ['partialMatch'],
               searchType: 'category',
-              confidence: 0.8,
-              matchedOn: [catName]
+              confidence: 0.6,
+              matchedOn: partialMatch.matchedOn ? [partialMatch.matchedOn] : undefined
             }
           });
-        }
-
-        // Try partial category matches
-        if (category.matchConfig.partials) {
-          const partialMatch = findPartialMatches(input, catName, category.matchConfig.partials);
-          if (partialMatch.matched) {
-            matches.push({
-              name: input,
-              normalized: input,
-              categories: [catName],
-              matchDetails: {
-                matched: true,
-                matchTypes: ['partialMatch'],
-                searchType: 'category',
-                confidence: 0.6,
-                matchedOn: partialMatch.matchedOn ? [partialMatch.matchedOn] : undefined
-              }
-            });
-          }
         }
       }
     }
 
-    // Try category group matches
-    if (group.matchConfig) {
+    // Only try category group matches if group has matchConfig
+    if (group.matchConfig?.partials) {
       const groupMatch = findPartialMatches(input, group.name, group.matchConfig.partials);
       if (groupMatch.matched) {
         matches.push({
