@@ -1,5 +1,3 @@
-
-
 export interface Ingredient {
   name: string;
   description?: string;
@@ -20,9 +18,12 @@ export interface MatchConfig {
 
 export type MatchType = 'fuzzyMatch' | 'partialMatch' | 'regexMatch' | 'exactMatch';
 
+export type MatchSearch = 'ingredient' | 'category' | 'categoryGroup';
+
 export interface MatchDetails {
   matched: boolean;
   matchTypes: MatchType[];
+  searchType: MatchSearch;
   confidence?: number;
   matchedOn?: string[];
   synonymMatch?: string;

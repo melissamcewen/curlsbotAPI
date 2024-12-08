@@ -1,34 +1,44 @@
-import { IngredientMatch, IngredientAnalysisResult, AnalyzerConfig } from '../types';
-import { parseIngredientList } from './parser';
-import { createMatcher } from './matcher';
-import { getCategoryInfo, getCategoryGroup } from './categoryInfo';
-
-const defaultConfig: AnalyzerConfig = {
-  database: {
-    ingredients: {},
-    categories: {}
-  },
-};
+import {
+  AnalyzerConfig,
+  AnalysisResult,
+  IngredientMatch,
+  IngredientDatabase
+} from '../types';
+import { normalizer } from './normalizer';
+import { matchIngredient } from './matcher';
 
 export class Analyzer {
-  private config: AnalyzerConfig;
-  private matcher: ReturnType<typeof createMatcher>;
+  private database: IngredientDatabase;
 
-  constructor(config: Partial<AnalyzerConfig> = {}) {
-    this.config = { ...defaultConfig, ...config };
-    this.matcher = createMatcher(this.config);
+  constructor(config: AnalyzerConfig) {
+    this.database = config.database;
   }
 
-  analyzeIngredients(ingredientString: string): IngredientAnalysisResult {
-    const ingredientList = parseIngredientList(ingredientString);
-    const matches = ingredientList.map(ingredient => this.matcher(ingredient));
+  /**
+   * Analyzes an ingredient list string and returns matches and their categories
+   */
+  public analyze(ingredientList: string): AnalysisResult {
+    // Normalize the ingredient list
+    const normalized = normalizer(ingredientList);
 
-    // Extract all unique categories from matched ingredients
-    const categories = Array.from(new Set(
+    if (!normalized.isValid) {
+      return {
+        matches: [],
+        categories: []
+      };
+    }
+
+    // Try to match each ingredient
+    const matches: IngredientMatch[] = normalized.ingredients.map(ingredient => {
+      // use the matcher to find matches
+    });
+
+    // Collect unique categories from all matches
+    const categories = [...new Set(
       matches
-        .filter(match => match.matched && match.categories)
-        .flatMap(match => match.categories!)
-    )).sort();
+        .filter(match => match.categories)
+        .flatMap(match => match.categories || [])
+    )];
 
     return {
       matches,
@@ -36,17 +46,18 @@ export class Analyzer {
     };
   }
 
-  findIngredientsByCategory(category: string): string[] {
-    return Object.values(this.config.database.ingredients)
-      .filter(ingredient => ingredient.category.includes(category))
-      .map(ingredient => ingredient.name);
+  /**
+   * Gets all known categories from the database
+   */
+  public getCategories(): string[] {
+    return Object.values(this.database.categories)
+      .flatMap(group => Object.keys(group.categories));
   }
 
-  public getCategoryInfo(categoryName: string) {
-    return getCategoryInfo(categoryName);
-  }
-
-  public getCategoryGroup(categoryName: string) {
-    return getCategoryGroup(categoryName);
+  /**
+   * Gets all known ingredients from the database
+   */
+  public getIngredients(): string[] {
+    return Object.keys(this.database.ingredients);
   }
 }

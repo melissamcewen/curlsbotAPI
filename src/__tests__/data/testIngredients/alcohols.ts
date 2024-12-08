@@ -19,9 +19,15 @@ export const alcohols: Record<string, Ingredient> = {
     description: 'A type of alcohol used in cosmetics as a solvent',
     category: ['drying alcohol'],
     notes: 'Commonly used in cosmetics as a solvent',
-    synonyms: ['denatured ethanol', 'alcohol denat', 'sd alcohol 40-b'],
+    synonyms: ['alcohol denat', 'sd alcohol 40-b'],
     matchConfig: {
-      partials: ['sd alcohol', 'alcohol denat', 'denatured alcohol', 'alcohol 40-b'],
+      partials: [
+        'sd alcohol',
+        'alcohol denat',
+        'denatured alcohol',
+        'alcohol 40-b',
+        'denatured ethanol'
+      ],
     },
   },
   benzyl_alcohol: {

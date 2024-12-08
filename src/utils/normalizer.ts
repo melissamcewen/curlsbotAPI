@@ -1,4 +1,12 @@
 /**
+ * Represents a normalized ingredient list that has been validated and cleaned
+ */
+export interface NormalizedIngredientList {
+  readonly ingredients: readonly string[];
+  readonly isValid: boolean;
+}
+
+/**
  * Checks if the input string is a valid ingredients list
  * Returns false if the string contains URLs or is too long
  */
@@ -12,13 +20,13 @@ function isValidIngredientList(value: string): boolean {
 }
 
 /**
- * Normalizes a cosmetic ingredients list string into an array of clean ingredient names
- * Returns an empty array if the input is invalid
+ * Normalizes a cosmetic ingredients list string into a validated structure
+ * Returns an object containing the normalized ingredients and validation status
  */
-export function normalizer(text: string): string[] {
+export function normalizer(text: string): NormalizedIngredientList {
   // First check if the input is valid
   if (!isValidIngredientList(text)) {
-    return [];
+    return { ingredients: [], isValid: false };
   }
 
   // Regular expressions for cleaning the text
@@ -30,15 +38,12 @@ export function normalizer(text: string): string[] {
   const excessSpaces = /\s\s+/g;          // Matches multiple spaces
 
   // Split the text into individual ingredients
-  const ingredientsList = text
+  const ingredients = text
     .replace(lineBreaks, ' ')
     .replace(excessSpaces, ' ')
     .replace(and, ',')
     .replace(sepChar, ',')
-    .split(',');
-
-  // Process each ingredient
-  return ingredientsList
+    .split(',')
     .map(x => x
       .trim()
       .toLowerCase()
@@ -48,4 +53,9 @@ export function normalizer(text: string): string[] {
       .trim()
     )
     .filter(x => x.length > 0);    // Remove empty strings
+
+  return {
+    ingredients: Object.freeze(ingredients),
+    isValid: true
+  };
 }
