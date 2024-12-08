@@ -1,35 +1,50 @@
-import { matchIngredient } from '../utils/matchtypes';
+import { matchIngredient } from '../utils/matcher';
 import { testCategories } from './data/testCategories';
 import { alcohols } from './data/testIngredients/alcohols';
 
 describe('matchIngredient', () => {
-  test('"alcohol denat." should match denatured alcohol', () => {
-    const result = matchIngredient(
-      'alcohol denat.',
-      'denatured_alcohol',
-      alcohols.denatured_alcohol,
-      null,
-      null,
-    );
+  const testDatabase = {
+    ingredients: alcohols,
+    categories: testCategories
+  };
 
-    expect(result.matched).toBe(true);
-    expect(result.matchTypes).toContain('partialMatch');
-    expect(result.confidence).toBe(0.7);
-    expect(result.matchedOn).toEqual(['alcohol denat']);
+  test('"alcohol denat." should match denatured alcohol', () => {
+    const matches = matchIngredient('alcohol denat.', testDatabase);
+
+    expect(matches.length).toBeGreaterThan(0);
+    const bestMatch = matches[0]; // First match should be highest confidence
+
+    expect(bestMatch.matchDetails?.matched).toBe(true);
+    expect(bestMatch.matchDetails?.matchTypes).toContain('partialMatch');
+    expect(bestMatch.matchDetails?.searchType).toBe('ingredient');
+    expect(bestMatch.matchDetails?.confidence).toBe(0.7);
+    expect(bestMatch.matchDetails?.matchedOn).toEqual(['alcohol denat']);
   });
 
   test('"alcohol" should match alcohol from categoryGroup', () => {
-    const result = matchIngredient(
-      'alcohol',
-      'alcohols',
-      alcohols.denatured_alcohol, // dummy ingredient
-      null,
-      testCategories.alcohols,
+    const matches = matchIngredient('alcohol', testDatabase);
+
+    expect(matches.length).toBeGreaterThan(0);
+    const categoryMatch = matches.find(
+      match => match.matchDetails?.searchType === 'categoryGroup'
     );
 
-    expect(result.matched).toBe(true);
-    expect(result.matchTypes).toContain('categoryGroupMatch');
-    expect(result.confidence).toBe(0.8);
-    expect(result.matchedOn).toEqual(['Alcohols']);
+    expect(categoryMatch).toBeDefined();
+    expect(categoryMatch?.matchDetails?.matched).toBe(true);
+    expect(categoryMatch?.matchDetails?.matchTypes).toContain('partialMatch');
+    expect(categoryMatch?.matchDetails?.searchType).toBe('categoryGroup');
+    expect(categoryMatch?.matchDetails?.confidence).toBe(0.5);
+    expect(categoryMatch?.matchDetails?.matchedOn).toEqual(['Alcohols']);
+  });
+
+ 
+  test('should return basic info for no matches', () => {
+    const matches = matchIngredient('nonexistent ingredient', testDatabase);
+
+    expect(matches).toHaveLength(1);
+    expect(matches[0]).toEqual({
+      name: 'nonexistent ingredient',
+      normalized: 'nonexistent ingredient'
+    });
   });
 });

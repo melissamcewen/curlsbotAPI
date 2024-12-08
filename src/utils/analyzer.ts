@@ -7,6 +7,9 @@ import {
 import { normalizer } from './normalizer';
 import { matchIngredient } from './matcher';
 
+/**
+ * Analyzes cosmetic ingredient lists and matches ingredients against a database
+ */
 export class Analyzer {
   private database: IngredientDatabase;
 
@@ -16,6 +19,15 @@ export class Analyzer {
 
   /**
    * Analyzes an ingredient list string and returns matches and their categories
+   *
+   * @param ingredientList - Raw ingredient list string to analyze
+   * @returns Analysis result containing matches and unique categories
+   *
+   * @example
+   * ```ts
+   * const analyzer = new Analyzer({ database });
+   * const result = analyzer.analyze("water, alcohol denat, glycerin");
+   * ```
    */
   public analyze(ingredientList: string): AnalysisResult {
     // Normalize the ingredient list
@@ -28,10 +40,10 @@ export class Analyzer {
       };
     }
 
-    // Try to match each ingredient
-    const matches: IngredientMatch[] = normalized.ingredients.map(ingredient => {
-      // use the matcher to find matches
-    });
+    // Get matches for each normalized ingredient
+    const matches: IngredientMatch[] = normalized.ingredients.flatMap(ingredient =>
+      matchIngredient(ingredient, this.database)
+    );
 
     // Collect unique categories from all matches
     const categories = [...new Set(
@@ -48,6 +60,7 @@ export class Analyzer {
 
   /**
    * Gets all known categories from the database
+   * @returns Array of category names
    */
   public getCategories(): string[] {
     return Object.values(this.database.categories)
@@ -56,6 +69,7 @@ export class Analyzer {
 
   /**
    * Gets all known ingredients from the database
+   * @returns Array of ingredient names
    */
   public getIngredients(): string[] {
     return Object.keys(this.database.ingredients);
