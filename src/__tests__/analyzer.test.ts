@@ -64,6 +64,7 @@ describe('Analyzer', () => {
     );
     expect(benzylAlcoholMatch).toBeDefined();
     expect(benzylAlcoholMatch?.categories).toContain('solvent alcohol');
+    
   });
 
   test('should handle empty ingredient list', () => {
