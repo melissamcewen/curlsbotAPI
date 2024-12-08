@@ -8,7 +8,6 @@ const defaultConfig: AnalyzerConfig = {
     ingredients: {},
     categories: {}
   },
-  fuzzyMatchThreshold: 0.3
 };
 
 export class Analyzer {

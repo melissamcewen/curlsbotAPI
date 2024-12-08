@@ -1,33 +1,46 @@
-import { CategoryGroups } from './category';
+
 
 export interface Ingredient {
   name: string;
-  description: string;
+  description?: string;
   category: string[];
   notes?: string;
   source?: string[];
   synonyms?: string[];
   link?: string[];
+  matchConfig?: MatchConfig;
+}
+
+export interface MatchConfig {
+  matchType?: MatchType[];
+  regexes?: string[];
+  partials?: string[];
+  confidence?: number;
+}
+
+export type MatchType = 'fuzzyMatch' | 'partialMatch' | 'regexMatch' | 'exactMatch';
+
+export interface MatchDetails {
+  matched: boolean;
+  matchTypes: MatchType[];
+  confidence?: number;
+  matchedOn?: string[];
+  synonymMatch?: string;
 }
 
 export interface IngredientMatch {
   name: string;
   normalized: string;
-  matched: boolean;
   details?: Ingredient;
   categories?: string[];
-  fuzzyMatch?: boolean;
-  confidence?: number;
-  matchedSynonym?: string;
   link?: string;
+  matchDetails?: MatchDetails;
 }
 
 export interface AnalysisResult {
   matches: IngredientMatch[];
   categories: string[];
 }
-
-export type IngredientAnalysisResult = AnalysisResult;
 
 export interface IngredientDatabase {
   ingredients: Record<string, Ingredient>;
@@ -36,7 +49,24 @@ export interface IngredientDatabase {
 
 export interface AnalyzerConfig {
   database: IngredientDatabase;
-  fuzzyMatchThreshold?: number;
 }
 
-export * from './category';
+export interface Category {
+  name: string;
+  description: string;
+  tags?: string[];
+  notes?: string;
+  source?: string[];
+  matchConfig?: MatchConfig;
+}
+
+
+export interface CategoryGroup {
+  name: string;
+  description: string;
+  categories: Record<string, Category>;
+  matchConfig?: MatchConfig;
+}
+
+export type CategoryGroups = Record<string, CategoryGroup>;
+

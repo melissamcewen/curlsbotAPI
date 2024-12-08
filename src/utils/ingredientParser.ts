@@ -18,15 +18,6 @@ export function removeIngredient(name: string): boolean {
   return false;
 }
 
-// Function to normalize ingredient names
-export function normalizeIngredientName(name: string): string {
-  return name
-    .toLowerCase()
-    .trim()
-    .replace(/[^a-z0-9 ]/g, '')
-    .replace(/\s+/g, ' ');
-}
-
 // Function to parse an ingredient list
 export function parseIngredientList(ingredientString: string): string[] {
   return ingredientString
