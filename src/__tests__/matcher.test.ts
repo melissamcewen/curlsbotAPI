@@ -35,6 +35,7 @@ describe('matchIngredient', () => {
     expect(categoryMatch?.matchDetails?.searchType).toBe('categoryGroup');
     expect(categoryMatch?.matchDetails?.confidence).toBe(0.5);
     expect(categoryMatch?.matchDetails?.matchedOn).toEqual(['Alcohols']);
+    expect(categoryMatch?.categories).toEqual(['unknown Alcohols']);
   });
 
   test('should return basic info for no matches', () => {
@@ -66,5 +67,10 @@ describe('matchIngredient', () => {
     expect(ingredientMatch?.matchDetails?.matchedOn).toEqual([
       'Denatured Alcohol',
     ]);
+  });
+
+  test('fake test', () => {
+    const matches = matchIngredient('hello alcohol', testDatabase);
+    console.log(matches);
   });
 });

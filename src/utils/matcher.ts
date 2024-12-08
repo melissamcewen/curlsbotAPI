@@ -136,7 +136,7 @@ export function matchIngredient(input: string, database: IngredientDatabase): In
         matches.push({
           name: input,
           normalized: input,
-          categories: Object.keys(group.categories),
+          categories: [`unknown ${group.name}`],
           matchDetails: {
             matched: true,
             matchTypes: ['partialMatch'],
