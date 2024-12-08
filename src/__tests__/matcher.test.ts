@@ -69,8 +69,4 @@ describe('matchIngredient', () => {
     ]);
   });
 
-  test('fake test', () => {
-    const matches = matchIngredient('hello alcohol', testDatabase);
-    console.log(matches);
-  });
 });

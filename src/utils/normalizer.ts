@@ -7,37 +7,42 @@ export interface NormalizedIngredientList {
 }
 
 /**
+ * Checks if an individual ingredient is valid
+ * Returns false if longer than 150 chars
+ */
+function isValidIngredient(value: string): boolean {
+  return value.trim().length > 0 && value.length <= 150;
+}
+
+/**
  * Checks if the input string is a valid ingredients list
- * Returns false if the string contains URLs or is too long
+ * Returns false if the string contains URLs
  */
 function isValidIngredientList(value: string): boolean {
   // Check for URLs
   if (/^(?:\w+:)?\/\/([^\s\.]+\.\S{2}|localhost[\:?\d]*)\S*$/.test(value)) {
     return false;
   }
-  // Check length
-  return value.length <= 150;
+  return value.trim().length > 0;
 }
 
 /**
  * Normalizes a cosmetic ingredients list string into a validated structure
- * Returns an object containing the normalized ingredients and validation status
  */
 export function normalizer(text: string): NormalizedIngredientList {
-  // First check if the input is valid
   if (!isValidIngredientList(text)) {
     return { ingredients: [], isValid: false };
   }
 
   // Regular expressions for cleaning the text
-  const parentheses = / *\([^)]*\) */g;  // Matches content within parentheses
-  const forbidden = /[^0-9A-Za-z\s+-]/g;  // Matches non-alphanumeric chars except spaces and hyphens
-  const and = /\band\b/ig;                // Matches the word "and"
-  const sepChar = /[|&]/ig;               // Matches separator characters
-  const lineBreaks = /\r?\n|\r/g;         // Matches all types of line breaks
-  const excessSpaces = /\s\s+/g;          // Matches multiple spaces
+  const parentheses = / *\([^)]*\) */g;
+  const forbidden = /[^0-9A-Za-z\s+-]/g;
+  const and = /\band\b/ig;
+  const sepChar = /[|&,]/ig;
+  const lineBreaks = /\r?\n|\r/g;
+  const excessSpaces = /\s\s+/g;
 
-  // Split the text into individual ingredients
+  // Split and clean ingredients
   const ingredients = text
     .replace(lineBreaks, ' ')
     .replace(excessSpaces, ' ')
@@ -47,15 +52,15 @@ export function normalizer(text: string): NormalizedIngredientList {
     .map(x => x
       .trim()
       .toLowerCase()
-      .replace(parentheses, ' ')    // Remove parenthetical content
-      .replace(forbidden, '')       // Remove forbidden characters
-      .replace(/\s+/g, ' ')        // Normalize spaces
+      .replace(parentheses, ' ')
+      .replace(forbidden, '')
+      .replace(/\s+/g, ' ')
       .trim()
     )
-    .filter(x => x.length > 0);    // Remove empty strings
+    .filter(isValidIngredient);    // Filter out invalid ingredients
 
   return {
     ingredients: Object.freeze(ingredients),
-    isValid: true
+    isValid: ingredients.length > 0
   };
 }

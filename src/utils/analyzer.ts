@@ -32,7 +32,7 @@ export class Analyzer {
   public analyze(ingredientList: string): AnalysisResult {
     // Normalize the ingredient list
     const normalized = normalizer(ingredientList);
-
+    
     if (!normalized.isValid) {
       return {
         matches: [],
