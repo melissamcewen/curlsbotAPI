@@ -29,42 +29,42 @@ import { Analyzer } from 'cosmetic-ingredient-analyzer';
 const analyzer = new Analyzer({
   database: {
     ingredients: {
-      "cetyl_alcohol": {
-        name: "Cetyl Alcohol",
-        description: "A fatty alcohol that acts as an emollient",
-        category: ["fatty alcohol"],
-        synonyms: ["cetearyl alcohol"],
-      }
+      cetyl_alcohol: {
+        name: 'Cetyl Alcohol',
+        description: 'A fatty alcohol that acts as an emollient',
+        category: ['fatty alcohol'],
+        synonyms: ['cetearyl alcohol'],
+      },
     },
     categories: {
       alcohols: {
-        name: "Alcohols",
-        description: "Different types of alcohols used in hair care",
+        name: 'Alcohols',
+        description: 'Different types of alcohols used in hair care',
         categories: {
-          "fatty alcohol": {
-            name: "Fatty Alcohol",
-            description: "Long-chain alcohols that condition",
-            tags: ["CG Friendly"],
-            notes: "Beneficial for hair"
-          }
+          'fatty alcohol': {
+            name: 'Fatty Alcohol',
+            description: 'Long-chain alcohols that condition',
+            tags: ['Curly Friendly'],
+            notes: 'Beneficial for hair',
+          },
         },
         matchConfig: {
-          partials: ["alcohol"]
-        }
-      }
-    }
-  }
+          partials: ['alcohol'],
+        },
+      },
+    },
+  },
 });
 
 // Analyze an ingredient list
-const result = analyzer.analyze("Water, Cetyl Alcohol, Fragrance");
-console.log(result.matches);  // Array of matched ingredients
-console.log(result.categories);  // Array of unique categories found
+const result = analyzer.analyze('Water, Cetyl Alcohol, Fragrance');
+console.log(result.matches); // Array of matched ingredients
+console.log(result.categories); // Array of unique categories found
 
 // Get individual ingredient match with debug info
 const match = matchIngredient('cetyl alcohol', database, { debug: true });
-console.log(match.matchDetails);  // Details about the match
-console.log(match.debug?.allMatches);  // All possible matches if debug enabled
+console.log(match.matchDetails); // Details about the match
+console.log(match.debug?.allMatches); // All possible matches if debug enabled
 ```
 
 ## Types
@@ -73,12 +73,12 @@ console.log(match.debug?.allMatches);  // All possible matches if debug enabled
 
 ```typescript
 interface IngredientMatch {
-  name: string;              // Original ingredient name
-  normalized: string;        // Normalized version
-  details?: Ingredient;      // Full ingredient details if matched
-  categories?: string[];     // Categories this ingredient belongs to
+  name: string; // Original ingredient name
+  normalized: string; // Normalized version
+  details?: Ingredient; // Full ingredient details if matched
+  categories?: string[]; // Categories this ingredient belongs to
   matchDetails?: MatchDetails; // Match information
-  debug?: DebugInfo;        // Debug information if requested
+  debug?: DebugInfo; // Debug information if requested
 }
 ```
 
@@ -87,10 +87,10 @@ interface IngredientMatch {
 ```typescript
 interface MatchDetails {
   matched: boolean;
-  matchTypes: MatchType[];   // Types of matches found
-  searchType: MatchSearch;   // Where the match was found
-  confidence: number;        // Confidence score (0-1)
-  matchedOn?: string[];     // What strings matched
+  matchTypes: MatchType[]; // Types of matches found
+  searchType: MatchSearch; // Where the match was found
+  confidence: number; // Confidence score (0-1)
+  matchedOn?: string[]; // What strings matched
 }
 ```
 
@@ -121,6 +121,7 @@ interface CategoryGroup {
 ## Match Types
 
 The library supports different types of matches:
+
 - `exactMatch`: Direct match with ingredient name or synonym (confidence: 1.0)
 - `partialMatch`: Partial text match with configured patterns (confidence: 0.7)
 - `categoryMatch`: Match with a specific category (confidence: 0.8)
