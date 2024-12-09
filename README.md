@@ -1,219 +1,134 @@
-# Haircare Ingredients Analyzer
+# Cosmetic Ingredient Analyzer
 
-A comprehensive library for analyzing haircare product ingredients, with a focus on curly hair care methods and ingredient safety.
+A TypeScript library for analyzing cosmetic ingredient lists. It normalizes ingredient names and matches them against a database of known ingredients and categories.
 
 ## Features
 
-- ✨ Ingredient parsing and normalization
-- 🔍 Exact and fuzzy matching of ingredients
-- 🏷️ Synonym matching support
-- 📚 Detailed ingredient information
-- 🗂️ Category-based ingredient searching
-- 💻 Customizable ingredient database
-- 📊 Confidence scoring for fuzzy matches
+- Normalizes ingredient lists (handles parentheses, line breaks, and special characters)
+- Matches ingredients using multiple strategies:
+  - Exact matches (confidence: 1.0)
+  - Partial matches (confidence: 0.7)
+  - Category matches (confidence: 0.8)
+  - Category group matches (confidence: 0.5)
+- Validates ingredient lists and individual ingredients
+- Debug mode for viewing all potential matches
+- TypeScript support with full type definitions
 
 ## Installation
 
 ```bash
-npm install haircare-ingredients-analyzer
+npm install cosmetic-ingredient-analyzer
 ```
 
-## Basic Usage
+## Usage
 
 ```typescript
-import { Analyzer } from 'haircare-ingredients-analyzer';
+import { Analyzer } from 'cosmetic-ingredient-analyzer';
 
-// Create an analyzer with your ingredient database
+// Initialize with your ingredient database
 const analyzer = new Analyzer({
   database: {
     ingredients: {
-      "cetyl alcohol": {
+      "cetyl_alcohol": {
         name: "Cetyl Alcohol",
         description: "A fatty alcohol that acts as an emollient",
-        category: ["fatty alcohol", "emollient"],
-        notes: "Common in conditioners",
-        synonyms: ["hexadecan-1-ol"]
+        category: ["fatty alcohol"],
+        synonyms: ["cetearyl alcohol"],
       }
     },
     categories: {
       alcohols: {
         name: "Alcohols",
-        description: "Types of alcohols in hair care",
+        description: "Different types of alcohols used in hair care",
         categories: {
           "fatty alcohol": {
             name: "Fatty Alcohol",
             description: "Long-chain alcohols that condition",
-            impact: "good",
+            tags: ["CG Friendly"],
             notes: "Beneficial for hair"
           }
+        },
+        matchConfig: {
+          partials: ["alcohol"]
         }
       }
     }
   }
 });
 
-// Analyze ingredients
-const results = analyzer.analyzeIngredients("Water, Cetyl Alcohol");
-console.log(results);
+// Analyze an ingredient list
+const result = analyzer.analyze("Water, Cetyl Alcohol, Fragrance");
+console.log(result.matches);  // Array of matched ingredients
+console.log(result.categories);  // Array of unique categories found
+
+// Get individual ingredient match with debug info
+const match = matchIngredient('cetyl alcohol', database, { debug: true });
+console.log(match.matchDetails);  // Details about the match
+console.log(match.debug?.allMatches);  // All possible matches if debug enabled
 ```
 
-## Analysis Results Structure
+## Types
 
-The `analyzeIngredients` method returns an object with the following structure:
+### IngredientMatch
 
 ```typescript
-interface AnalysisResult {
-  // Array of analyzed ingredients with matching details
-  matches: IngredientMatch[];
-  // List of all unique categories found in the ingredients
-  categories: string[];
-}
-
 interface IngredientMatch {
-  // Original ingredient name from the input
-  name: string;
-  // Normalized version of the name (lowercase, no special chars)
-  normalized: string;
-  // Whether the ingredient was found in the database
+  name: string;              // Original ingredient name
+  normalized: string;        // Normalized version
+  details?: Ingredient;      // Full ingredient details if matched
+  categories?: string[];     // Categories this ingredient belongs to
+  matchDetails?: MatchDetails; // Match information
+  debug?: DebugInfo;        // Debug information if requested
+}
+```
+
+### MatchDetails
+
+```typescript
+interface MatchDetails {
   matched: boolean;
-  // Full ingredient details if matched
-  details?: {
-    name: string;
-    description: string;
-    category: string[];
-    notes?: string;
-    source?: string[];
-    synonyms?: string[];
-  };
-  // Categories this ingredient belongs to
-  categories?: string[];
-  // Whether this was a fuzzy match
-  fuzzyMatch?: boolean;
-  // Confidence score for fuzzy matches (0-1)
-  confidence?: number;
-  // If matched via synonym, contains the matched synonym
-  matchedSynonym?: string;
+  matchTypes: MatchType[];   // Types of matches found
+  searchType: MatchSearch;   // Where the match was found
+  confidence: number;        // Confidence score (0-1)
+  matchedOn?: string[];     // What strings matched
 }
 ```
 
-### Example Result
+### Database Structure
 
 ```typescript
-{
-  matches: [
-    {
-      name: "Water",
-      normalized: "water",
-      matched: false
-    },
-    {
-      name: "Cetyl Alcohol",
-      normalized: "cetyl alcohol",
-      matched: true,
-      details: {
-        name: "Cetyl Alcohol",
-        description: "A fatty alcohol that acts as an emollient",
-        category: ["fatty alcohol", "emollient"],
-        notes: "Common in conditioners",
-        synonyms: ["hexadecan-1-ol"]
-      },
-      categories: ["fatty alcohol", "emollient"]
-    }
-  ],
-  categories: ["emollient", "fatty alcohol"]
+interface IngredientDatabase {
+  ingredients: Record<string, Ingredient>;
+  categories: CategoryGroups;
 }
-```
 
-## Project Structure
-
-The project is organized into two main parts:
-
-### Core Library (`src/`)
-
-Contains the core functionality:
-
-```
-src/
-├── types/           # TypeScript interfaces
-│   ├── index.ts     # Main type definitions
-│   └── category.ts  # Category-specific types
-├── utils/           # Core utilities
-│   ├── analyzer.ts  # Main analysis logic
-│   ├── matcher.ts   # Ingredient matching
-│   ├── parser.ts    # List parsing
-│   └── normalizer.ts # Name normalization
-└── __tests__/       # Core library tests
-```
-
-## API Reference
-
-### Analyzer Class
-
-The main class for analyzing ingredients.
-
-```typescript
-class Analyzer {
-  constructor(config?: Partial<AnalyzerConfig>);
-  analyzeIngredients(ingredientString: string): AnalysisResult;
-  findIngredientsByCategory(category: string): string[];
-}
-```
-
-### Types
-
-#### AnalyzerConfig
-
-```typescript
-interface AnalyzerConfig {
-  database: {
-    ingredients: Record<string, Ingredient>;
-    categories: CategoryGroups;
-  };
-  fuzzyMatchThreshold?: number;
-}
-```
-
-#### Ingredient
-
-```typescript
 interface Ingredient {
   name: string;
-  description: string;
+  description?: string;
   category: string[];
-  notes?: string;
-  source?: string[];
   synonyms?: string[];
+  matchConfig?: MatchConfig;
 }
-```
 
-#### Category
-
-```typescript
-interface Category {
+interface CategoryGroup {
   name: string;
   description: string;
-  impact: 'good' | 'caution' | 'bad';
-  notes?: string;
-  source?: string[];
+  categories: Record<string, Category>;
+  matchConfig?: MatchConfig;
 }
 ```
+
+## Match Types
+
+The library supports different types of matches:
+- `exactMatch`: Direct match with ingredient name or synonym (confidence: 1.0)
+- `partialMatch`: Partial text match with configured patterns (confidence: 0.7)
+- `categoryMatch`: Match with a specific category (confidence: 0.8)
+- `categoryGroupMatch`: Match with a category group (confidence: 0.5)
 
 ## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
-
-### Development
-
-```bash
-# Install dependencies
-npm install
-
-# Run tests
-npm test
-
-# Build the project
-npm run build
-```
 
 ## License
 
