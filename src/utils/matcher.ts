@@ -145,8 +145,9 @@ export function matchIngredient(
       if (!category.matchConfig) continue;
 
       // Try exact category matches
-      if (category.matchConfig?.matchType?.includes('exactMatch') &&
-          input === category.name.toLowerCase()) {
+      if (!category.matchConfig?.matchType?.includes('exactMatch')) continue;
+
+      if (input === category.name.toLowerCase()) {
         matches.push(
           createMatch({
             name: input,

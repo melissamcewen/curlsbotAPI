@@ -1,4 +1,4 @@
-import { IngredientMatch } from '../types';
+import { IngredientDatabase } from '../types';
 import { matchIngredient, createMatch } from '../utils/matcher';
 import { testCategories } from './data/testCategories';
 import { alcohols } from './data/testIngredients/alcohols';
@@ -27,7 +27,7 @@ describe('matchIngredient', () => {
 
     // Find category group match in debug info
     const categoryMatch = match.debug?.allMatches.find(
-      m => m.matchDetails?.searchType === 'categoryGroup'
+      (m) => m.matchDetails?.searchType === 'categoryGroup',
     );
     expect(categoryMatch).toBeDefined();
     expect(categoryMatch?.matchDetails?.matched).toBe(true);
@@ -64,27 +64,29 @@ describe('matchIngredient', () => {
     expect(match.debug?.allMatches.length).toBeGreaterThan(1);
 
     // First match should be exact ingredient match
-    expect(match.debug?.allMatches[0].matchDetails?.searchType).toBe('ingredient');
+    expect(match.debug?.allMatches[0].matchDetails?.searchType).toBe(
+      'ingredient',
+    );
     expect(match.debug?.allMatches[0].matchDetails?.confidence).toBe(1);
 
     // Should also have category group match
     const categoryMatch = match.debug?.allMatches.find(
-      m => m.matchDetails?.searchType === 'categoryGroup'
+      (m) => m.matchDetails?.searchType === 'categoryGroup',
     );
     expect(categoryMatch).toBeDefined();
   });
 
   test('should generate unique IDs for matches', () => {
-      const match1 = matchIngredient('alcohol', testDatabase);
-      const match2 = matchIngredient('alcohol', testDatabase);
-      const noMatch = matchIngredient('nonexistent ingredient', testDatabase);
+    const match1 = matchIngredient('alcohol', testDatabase);
+    const match2 = matchIngredient('alcohol', testDatabase);
+    const noMatch = matchIngredient('nonexistent ingredient', testDatabase);
 
-      // Verify IDs exist
-      expect(match1.id).toBeDefined();
-      expect(match2.id).toBeDefined();
-      expect(noMatch.id).toBeDefined();
+    // Verify IDs exist
+    expect(match1.id).toBeDefined();
+    expect(match2.id).toBeDefined();
+    expect(noMatch.id).toBeDefined();
 
-      // Verify IDs are unique
+    // Verify IDs are unique
     expect(match1.id).not.toEqual(match2.id);
   });
 
@@ -120,19 +122,64 @@ describe('matchIngredient', () => {
     expect(match.matchDetails?.searchType).toBe('category');
     expect(match.matchDetails?.confidence).toBe(0.8);
   });
+
+  test('should only match categories with exactMatch in matchType', () => {
+    const customTestDatabase = {
+      ingredients: [],
+      categories: [
+        {
+          name: 'Test Group',
+          description: '',
+          categories: [
+            {
+              name: 'With Exact Match',
+              description: '',
+              matchConfig: {
+                matchType: ['exactMatch'],
+                partials: [],
+              },
+            },
+            {
+              name: 'Without Exact Match',
+              description: '',
+              matchConfig: {
+                matchType: ['partialMatch'],
+                partials: [],
+              },
+            },
+          ],
+        },
+      ],
+    } as IngredientDatabase;
+
+    // Rest of test remains the same...
+
+    // Should match category with exactMatch
+    const matchResult = matchIngredient('with exact match', customTestDatabase);
+    expect(matchResult.matchDetails?.matched).toBe(true);
+    expect(matchResult.matchDetails?.searchType).toBe('category');
+    expect(matchResult.matchDetails?.matchTypes).toContain('exactMatch');
+
+    // Should not match category without exactMatch
+    const noMatchResult = matchIngredient(
+      'without exact match',
+      customTestDatabase,
+    );
+    expect(noMatchResult.matchDetails?.matched).toBeFalsy();
+  });
 });
 
 describe('createMatch', () => {
   test('should create basic match with required fields', () => {
     const match = createMatch({
       name: 'test ingredient',
-      normalized: 'test ingredient'
+      normalized: 'test ingredient',
     });
 
     expect(match).toEqual({
       id: expect.any(String),
       name: 'test ingredient',
-      normalized: 'test ingredient'
+      normalized: 'test ingredient',
     });
   });
 
@@ -145,8 +192,8 @@ describe('createMatch', () => {
         confidence: 0.8,
         matchTypes: ['exactMatch'],
         searchType: 'ingredient',
-        matchedOn: ['test ingredient']
-      }
+        matchedOn: ['test ingredient'],
+      },
     });
 
     expect(match.matchDetails).toEqual({
@@ -154,7 +201,7 @@ describe('createMatch', () => {
       confidence: 0.8,
       matchTypes: ['exactMatch'],
       searchType: 'ingredient',
-      matchedOn: ['test ingredient']
+      matchedOn: ['test ingredient'],
     });
   });
 
@@ -165,14 +212,14 @@ describe('createMatch', () => {
       details: {
         name: 'Test Ingredient',
         category: ['category1'],
-        description: 'test description'
-      }
+        description: 'test description',
+      },
     });
 
     expect(match.details).toEqual({
       name: 'Test Ingredient',
       category: ['category1'],
-      description: 'test description'
+      description: 'test description',
     });
   });
 });
