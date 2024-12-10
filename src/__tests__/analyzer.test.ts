@@ -94,6 +94,17 @@ describe('Analyzer', () => {
     const uniqueIngredients = new Set(ingredients);
     expect(ingredients.length).toBe(uniqueIngredients.size);
   });
+
+  test('should handle invalid ingredient list', () => {
+    // Using a list that the normalizer would mark as invalid
+    const invalidList = '@@@@';
+
+    const result = analyzer.analyze(invalidList);
+
+    // Should return empty arrays as per analyzer.ts implementation
+    expect(result.matches).toEqual([]);
+    expect(result.categories).toEqual([]);
+  });
 });
 
 
