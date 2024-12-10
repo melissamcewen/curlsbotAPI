@@ -20,7 +20,7 @@ function isValidIngredient(value: string): boolean {
  */
 function isValidIngredientList(value: string): boolean {
   // Check for URLs
-  if (/^(?:\w+:)?\/\/([^\s\.]+\.\S{2}|localhost[\:?\d]*)\S*$/.test(value)) {
+  if (/^(?:https?:\/\/|www\.|\/{2})/i.test(value)) {
     return false;
   }
   return value.trim().length > 0;
