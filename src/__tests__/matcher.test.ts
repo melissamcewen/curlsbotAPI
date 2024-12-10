@@ -96,4 +96,19 @@ describe('matchIngredient', () => {
     expect(match.matchDetails?.searchType).toBe('ingredient');
     expect(match.details?.name).toBe('Cetyl Alcohol');
   });
+
+  test('should find fuzzy matches for misspelled ingredients and synonyms', () => {
+    // Test fuzzy match on name
+    const nameMatch = matchIngredient('cetil alkohol', testDatabase);
+    expect(nameMatch.matchDetails?.matched).toBe(true);
+    expect(nameMatch.matchDetails?.matchTypes).toContain('fuzzyMatch');
+    expect(nameMatch.details?.name).toBe('Cetyl Alcohol');
+
+    // Test fuzzy match on synonym
+    const synonymMatch = matchIngredient('cetearil alkohol', testDatabase);
+    expect(synonymMatch.matchDetails?.matched).toBe(true);
+    expect(synonymMatch.matchDetails?.matchTypes).toContain('fuzzyMatch');
+    expect(synonymMatch.details?.name).toBe('Cetyl Alcohol');
+    expect(synonymMatch.matchDetails?.matchedOn).toContain('cetearyl alcohol');
+  });
 });

@@ -100,15 +100,22 @@ function fuzzyMatch(
   const fuse = new Fuse(fuzzyCorpus, {
     keys: ['name', 'synonyms'],
     threshold: 0.3,
-    includeScore: true
+    includeScore: true,
+    includeMatches: true
   });
 
   const results = fuse.search(input);
   return results
     .filter(result => result.score && result.score < 0.4)
-    .map(result => ({
-      ingredient: result.item,
-      matchedOn: result.item.name
-    }));
+    .map(result => {
+      // Find which field matched (name or synonym)
+      const matchedField = result.matches?.[0];
+      const matchedValue = matchedField?.value as string;
+
+      return {
+        ingredient: result.item,
+        matchedOn: matchedValue || result.item.name
+      };
+    });
 }
 export { findExactMatch, findPartialMatches, regexMatch, fuzzyMatch };
