@@ -1,4 +1,4 @@
-import type { Ingredient } from '../../../types';
+import type { Ingredient } from '@/types';
 
 export const cleansers: Ingredient[] = [
   {

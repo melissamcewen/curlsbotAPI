@@ -10,16 +10,18 @@ import type {
   MatchDetails,
   MatchOptions,
   Ingredient,
-} from '../types';
+} from '@/types';
 import { generateId } from './idGenerator';
 
 /**
  * Creates a standardized ingredient match object
  *
- * @param input - The original ingredient string that was matched
- * @param matchDetails - Details about how the match was found (confidence, type, etc.)
- * @param details - Full ingredient details if matched against database
- * @param categories - Categories this ingredient belongs to
+ * @param params - The original ingredient string that was matched
+ * @param params.name - The original ingredient string that was matched
+ * @param params.normalized - The normalized ingredient string that was matched
+ * @param params.matchDetails - Details about how the match was found (confidence, type, etc.)
+ * @param params.details - Full ingredient details if matched against database
+ * @param params.categories - Categories this ingredient belongs to
  *
  * @returns A complete IngredientMatch object with a unique ID
  *
@@ -34,19 +36,20 @@ import { generateId } from './idGenerator';
  * }, ingredientDetails, ['fatty alcohol']);
  * ```
  */
-function createMatch(
-  input: string,
-  matchDetails?: MatchDetails,
-  details?: Ingredient,
-  categories?: string[],
-): IngredientMatch {
+export function createMatch(params: {
+  name: string;
+  normalized: string;
+  matchDetails?: MatchDetails;
+  details?: Ingredient;
+  categories?: string[];
+}): IngredientMatch {
   return {
     id: generateId(),
-    name: input,
-    normalized: input,
-    details,
-    categories,
-    matchDetails,
+    name: params.name,
+    normalized: params.normalized,
+    details: params.details,
+    categories: params.categories,
+    matchDetails: params.matchDetails,
   };
 }
 
@@ -86,16 +89,19 @@ export function matchIngredient(
      if (exactMatch.matched) {
        matches.push(
          createMatch(
-           input,
            {
-             matched: true,
-             matchTypes: ['exactMatch'],
-             searchType: 'ingredient',
-             confidence: 1,
-             matchedOn: exactMatch.matchedOn,
+             name: input,
+             normalized: input,
+             matchDetails: {
+               matched: true,
+               matchTypes: ['exactMatch'],
+               searchType: 'ingredient',
+               confidence: 1,
+               matchedOn: exactMatch.matchedOn,
+             },
+             details: ingredient,
+             categories: ingredient.category,
            },
-           ingredient,
-           ingredient.category,
          ),
        );
        continue; // Skip other checks if we found an exact match
@@ -111,18 +117,21 @@ export function matchIngredient(
        if (partialMatch.matched) {
          matches.push(
            createMatch(
-             input,
              {
-               matched: true,
-               matchTypes: ['partialMatch'],
-               searchType: 'ingredient',
-               confidence: 0.7,
-               matchedOn: partialMatch.matchedOn
-                 ? [partialMatch.matchedOn]
-                 : undefined,
+               name: input,
+               normalized: input,
+               matchDetails: {
+                 matched: true,
+                 matchTypes: ['partialMatch'],
+                 searchType: 'ingredient',
+                 confidence: 0.7,
+                 matchedOn: partialMatch.matchedOn
+                   ? [partialMatch.matchedOn]
+                   : undefined,
+               },
+               details: ingredient,
+               categories: ingredient.category,
              },
-             ingredient,
-             ingredient.category,
            ),
          );
        }
@@ -136,19 +145,22 @@ export function matchIngredient(
       if (!category.matchConfig) continue;
 
       // Try exact category matches
-      if (input.toLowerCase() === catName.toLowerCase()) {
+      if (input === catName.toLowerCase()) {
         matches.push(
           createMatch(
-            input,
             {
-              matched: true,
-              matchTypes: ['exactMatch'],
-              searchType: 'category',
-              confidence: 0.8,
-              matchedOn: [catName],
+              name: input,
+              normalized: input,
+              matchDetails: {
+                matched: true,
+                matchTypes: ['exactMatch'],
+                searchType: 'category',
+                confidence: 0.8,
+                matchedOn: [catName],
+              },
+              details: undefined,
+              categories: [catName],
             },
-            undefined,
-            [catName],
           ),
         );
       }
@@ -163,18 +175,21 @@ export function matchIngredient(
         if (partialMatch.matched) {
           matches.push(
             createMatch(
-              input,
               {
-                matched: true,
-                matchTypes: ['partialMatch'],
-                searchType: 'category',
-                confidence: 0.6,
-                matchedOn: partialMatch.matchedOn
-                  ? [partialMatch.matchedOn]
-                  : undefined,
+                name: input,
+                normalized: input,
+                matchDetails: {
+                  matched: true,
+                  matchTypes: ['partialMatch'],
+                  searchType: 'category',
+                  confidence: 0.6,
+                  matchedOn: partialMatch.matchedOn
+                    ? [partialMatch.matchedOn]
+                    : undefined,
+                },
+                details: undefined,
+                categories: [catName],
               },
-              undefined,
-              [catName],
             ),
           );
         }
@@ -191,16 +206,19 @@ export function matchIngredient(
       if (groupMatch.matched) {
         matches.push(
           createMatch(
-            input,
             {
-              matched: true,
-              matchTypes: ['partialMatch'],
-              searchType: 'categoryGroup',
-              confidence: 0.5,
-              matchedOn: [group.name],
+              name: input,
+              normalized: input,
+              matchDetails: {
+                matched: true,
+                matchTypes: ['partialMatch'],
+                searchType: 'categoryGroup',
+                confidence: 0.5,
+                matchedOn: [group.name],
+              },
+              details: undefined,
+              categories: [`unknown ${group.name}`],
             },
-            undefined,
-            [`unknown ${group.name}`],
           ),
         );
       }
@@ -211,16 +229,19 @@ export function matchIngredient(
     matches.push(
       ...fuzzyMatches.map((fm) =>
         createMatch(
-          input,
           {
-            matched: true,
-            matchTypes: ['fuzzyMatch'],
-            searchType: 'ingredient',
-            confidence: 0.6,
-            matchedOn: [fm.matchedOn],
+            name: input,
+            normalized: input,
+            matchDetails: {
+              matched: true,
+              matchTypes: ['fuzzyMatch'],
+              searchType: 'ingredient',
+              confidence: 0.6,
+              matchedOn: [fm.matchedOn],
+            },
+            details: fm.ingredient,
+            categories: fm.ingredient.category,
           },
-          fm.ingredient,
-          fm.ingredient.category,
         ),
       ),
     );
@@ -233,7 +254,13 @@ export function matchIngredient(
   );
 
   // Create base result
-  const result = matches[0] || createMatch(input);
+  const result = matches[0] || createMatch({
+    name: input,
+    normalized: input,
+    matchDetails: undefined,
+    details: undefined,
+    categories: undefined,
+  });
 
   // Add debug info if requested
   if (options.debug) {

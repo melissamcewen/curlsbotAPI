@@ -1,5 +1,5 @@
 import { IngredientMatch } from '../types';
-import { matchIngredient } from '../utils/matcher';
+import { matchIngredient, createMatch } from '../utils/matcher';
 import { testCategories } from './data/testCategories';
 import { alcohols } from './data/testIngredients/alcohols';
 
@@ -110,5 +110,69 @@ describe('matchIngredient', () => {
     expect(synonymMatch.matchDetails?.matchTypes).toContain('fuzzyMatch');
     expect(synonymMatch.details?.name).toBe('Cetyl Alcohol');
     expect(synonymMatch.matchDetails?.matchedOn).toContain('cetearyl alcohol');
+  });
+
+  test('should find exact category matches', () => {
+    const match = matchIngredient('waxes', testDatabase);
+
+    expect(match.matchDetails?.matched).toBe(true);
+    expect(match.matchDetails?.matchTypes).toContain('exactMatch');
+    expect(match.matchDetails?.searchType).toBe('category');
+    expect(match.matchDetails?.confidence).toBe(0.8);
+  });
+});
+
+describe('createMatch', () => {
+  test('should create basic match with required fields', () => {
+    const match = createMatch({
+      name: 'test ingredient',
+      normalized: 'test ingredient'
+    });
+
+    expect(match).toEqual({
+      id: expect.any(String),
+      name: 'test ingredient',
+      normalized: 'test ingredient'
+    });
+  });
+
+  test('should include match details when provided', () => {
+    const match = createMatch({
+      name: 'test ingredient',
+      normalized: 'test ingredient',
+      matchDetails: {
+        matched: true,
+        confidence: 0.8,
+        matchTypes: ['exactMatch'],
+        searchType: 'ingredient',
+        matchedOn: ['test ingredient']
+      }
+    });
+
+    expect(match.matchDetails).toEqual({
+      matched: true,
+      confidence: 0.8,
+      matchTypes: ['exactMatch'],
+      searchType: 'ingredient',
+      matchedOn: ['test ingredient']
+    });
+  });
+
+  test('should include additional details when provided', () => {
+    const match = createMatch({
+      name: 'test ingredient',
+      normalized: 'test ingredient',
+      details: {
+        name: 'Test Ingredient',
+        category: ['category1'],
+        description: 'test description'
+      }
+    });
+
+    expect(match.details).toEqual({
+      name: 'Test Ingredient',
+      category: ['category1'],
+      description: 'test description'
+    });
   });
 });

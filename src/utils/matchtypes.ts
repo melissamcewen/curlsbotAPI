@@ -1,5 +1,5 @@
 import Fuse from 'fuse.js';
-import type { Ingredient } from '../types';
+import type { Ingredient } from '@/types';
 
 /**
  * Checks if two strings match exactly (case-insensitive)

@@ -1,8 +1,8 @@
-import type { NormalizedIngredientList } from '../utils/normalizer';
+import type { NormalizedIngredientList } from '@/utils/normalizer';
 
 export type { NormalizedIngredientList };
 
-export type { Analyzer } from '../utils/analyzer';
+export type { Analyzer } from '@/utils/analyzer';
 
 export interface Ingredient {
   name: string;

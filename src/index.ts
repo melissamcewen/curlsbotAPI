@@ -29,4 +29,4 @@ export type {
 
   // Normalizer types
   NormalizedIngredientList,
-} from './types';
+} from '@/types';

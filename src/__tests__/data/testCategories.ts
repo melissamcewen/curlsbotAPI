@@ -6,7 +6,7 @@ export const testCategories: CategoryGroups = {
     description: 'Different types of alcohols used in hair care',
     categories: {
       'fatty alcohol': {
-        name: 'Fatty Alcohol',
+        name: 'fatty alcohol',
         description: 'Long-chain alcohols that condition',
         tags: ['Curly Friendly'],
         notes: 'Beneficial for hair',
@@ -38,7 +38,7 @@ export const testCategories: CategoryGroups = {
         tags: ['Not Curly Friendly'],
         notes: 'Can be harsh and stripping',
         matchConfig: {
-          partials: ['sulfate'],
+          matchType: ['exactMatch', 'partialMatch']
         },
       },
       'gentle cleanser': {
@@ -69,6 +69,7 @@ export const testCategories: CategoryGroups = {
         notes:
           "Can build up and cause scalp issues if you don't use a clarifying shampoo",
         matchConfig: {
+          matchType: ['exactMatch', 'partialMatch'],
           partials: ['wax'],
         },
       },
