@@ -60,6 +60,23 @@ describe('Analyzer', () => {
     expect(result.matches).toEqual([]);
     expect(result.categories).toEqual([]);
   });
+
+  test('should return all categories from database', () => {
+    const categories = analyzer.getCategories();
+
+    // Verify we get an array of categories
+    expect(Array.isArray(categories)).toBe(true);
+    expect(categories.length).toBeGreaterThan(0);
+
+    // Verify specific categories exist
+    // Note: Update these expectations based on your testCategories data
+    expect(categories).toContain('fatty alcohol');
+    expect(categories).toContain('solvent alcohol');
+
+    // Verify no duplicates
+    const uniqueCategories = new Set(categories);
+    expect(categories.length).toBe(uniqueCategories.size);
+  });
 });
 
 
