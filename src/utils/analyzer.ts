@@ -62,6 +62,6 @@ export class Analyzer {
    * Gets all known ingredients from the database
    */
   public getIngredients(): string[] {
-    return Object.keys(this.database.ingredients);
+    return this.database.ingredients.map(ingredient => ingredient.name.toLowerCase());
   }
 }

@@ -52,7 +52,7 @@ export interface AnalysisResult {
 }
 
 export interface IngredientDatabase {
-  ingredients: Record<string, Ingredient>;
+  ingredients: Ingredient[];
   categories: CategoryGroups;
 }
 

@@ -90,10 +90,10 @@ const fuseOptions = {
  */
 function fuzzyMatch(
   input: string,
-  ingredients: Record<string, Ingredient>
-): Array<{ ingredient: Ingredient; matchedOn: string }> {
+  ingredients: Ingredient[]
+): { matchedOn: string; ingredient: Ingredient; }[] {
   // Filter to only ingredients with fuzzyMatch enabled
-  const fuzzyCorpus = Object.values(ingredients).filter(
+  const fuzzyCorpus = ingredients.filter(
     ing => ing.matchConfig?.matchType?.includes('fuzzyMatch')
   );
 

@@ -76,58 +76,58 @@ export function matchIngredient(
   const matches: IngredientMatch[] = [];
 
   // First try to match against known ingredients and their synonyms
-  for (const [name, ingredient] of Object.entries(database.ingredients)) {
+  for (const ingredient of database.ingredients) {
     // Try exact matches first
     const exactMatch = findExactMatch(
-      input,
-      ingredient.name,
-      ingredient.synonyms,
-    );
-    if (exactMatch.matched) {
-      matches.push(
-        createMatch(
-          input,
-          {
-            matched: true,
-            matchTypes: ['exactMatch'],
-            searchType: 'ingredient',
-            confidence: 1,
-            matchedOn: exactMatch.matchedOn,
-          },
-          ingredient,
-          ingredient.category,
-        ),
-      );
-      continue; // Skip other checks if we found an exact match
-    }
+       input,
+       ingredient.name,
+       ingredient.synonyms,
+     );
+     if (exactMatch.matched) {
+       matches.push(
+         createMatch(
+           input,
+           {
+             matched: true,
+             matchTypes: ['exactMatch'],
+             searchType: 'ingredient',
+             confidence: 1,
+             matchedOn: exactMatch.matchedOn,
+           },
+           ingredient,
+           ingredient.category,
+         ),
+       );
+       continue; // Skip other checks if we found an exact match
+     }
 
-    // Try partial matches if configured
-    if (ingredient.matchConfig?.partials) {
-      const partialMatch = findPartialMatches(
-        input,
-        ingredient.name,
-        ingredient.matchConfig.partials,
-      );
-      if (partialMatch.matched) {
-        matches.push(
-          createMatch(
-            input,
-            {
-              matched: true,
-              matchTypes: ['partialMatch'],
-              searchType: 'ingredient',
-              confidence: 0.7,
-              matchedOn: partialMatch.matchedOn
-                ? [partialMatch.matchedOn]
-                : undefined,
-            },
-            ingredient,
-            ingredient.category,
-          ),
-        );
-      }
-    }
-  }
+     // Try partial matches if configured
+     if (ingredient.matchConfig?.partials) {
+       const partialMatch = findPartialMatches(
+         input,
+         ingredient.name,
+         ingredient.matchConfig.partials,
+       );
+       if (partialMatch.matched) {
+         matches.push(
+           createMatch(
+             input,
+             {
+               matched: true,
+               matchTypes: ['partialMatch'],
+               searchType: 'ingredient',
+               confidence: 0.7,
+               matchedOn: partialMatch.matchedOn
+                 ? [partialMatch.matchedOn]
+                 : undefined,
+             },
+             ingredient,
+             ingredient.category,
+           ),
+         );
+       }
+     }
+   }
 
   // Then try to match against categories that have matchConfig
   for (const [groupName, group] of Object.entries(database.categories)) {

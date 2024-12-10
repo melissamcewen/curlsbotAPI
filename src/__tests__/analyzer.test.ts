@@ -77,6 +77,23 @@ describe('Analyzer', () => {
     const uniqueCategories = new Set(categories);
     expect(categories.length).toBe(uniqueCategories.size);
   });
+
+  test('should return all ingredients from database', () => {
+    const ingredients = analyzer.getIngredients();
+
+    // Verify we get an array of ingredients
+    expect(Array.isArray(ingredients)).toBe(true);
+    expect(ingredients.length).toBeGreaterThan(0);
+
+    // Verify specific ingredients exist
+    // Note: Update these based on your testIngredients data
+    expect(ingredients).toContain('cetyl alcohol');
+    expect(ingredients).toContain('benzyl alcohol');
+
+    // Verify no duplicates
+    const uniqueIngredients = new Set(ingredients);
+    expect(ingredients.length).toBe(uniqueIngredients.size);
+  });
 });
 
 
