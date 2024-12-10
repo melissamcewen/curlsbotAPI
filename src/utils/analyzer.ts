@@ -23,8 +23,13 @@ import { matchIngredient } from './matcher';
  * ```
  */
 export class Analyzer {
+  /** The ingredient database used for matching */
   private database: IngredientDatabase;
 
+  /**
+   * Creates a new Analyzer instance
+   * @param config - Configuration containing the ingredient database
+   */
   constructor(config: AnalyzerConfig) {
     this.database = config.database;
   }
@@ -33,7 +38,8 @@ export class Analyzer {
    * Analyzes an ingredient list string and returns matches and their categories
    *
    * @param ingredientList - Comma-separated list of ingredients
-   * @returns Analysis results including matches and categories
+   * @returns {AnalysisResult} Object containing matches and unique categories
+   * @throws Never throws
    *
    * @example
    * ```ts
@@ -78,6 +84,7 @@ export class Analyzer {
 
   /**
    * Gets all known categories from the database
+   * @returns Array of lowercase category names
    */
   public getCategories(): string[] {
     return this.database.categories.flatMap(group =>
@@ -87,6 +94,7 @@ export class Analyzer {
 
   /**
    * Gets all known ingredients from the database
+   * @returns Array of lowercase ingredient names
    */
   public getIngredients(): string[] {
     return this.database.ingredients.map((ingredient) =>

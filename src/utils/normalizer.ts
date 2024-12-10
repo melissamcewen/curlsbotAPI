@@ -1,14 +1,18 @@
 /**
  * Represents a normalized ingredient list that has been validated and cleaned
+ * @interface NormalizedIngredientList
  */
 export interface NormalizedIngredientList {
+  /** List of cleaned and validated ingredients */
   readonly ingredients: readonly string[];
+  /** Whether the ingredient list is valid */
   readonly isValid: boolean;
 }
 
 /**
  * Checks if an individual ingredient is valid
- * Returns false if longer than 150 chars
+ * @param value - The ingredient string to validate
+ * @returns `true` if ingredient is valid, `false` otherwise
  */
 function isValidIngredient(value: string): boolean {
   return value.trim().length > 0 && value.length <= 150;
@@ -16,7 +20,8 @@ function isValidIngredient(value: string): boolean {
 
 /**
  * Checks if the input string is a valid ingredients list
- * Returns false if the string contains URLs
+ * @param value - The ingredient list string to validate
+ * @returns `true` if list is valid, `false` if it contains URLs or is empty
  */
 function isValidIngredientList(value: string): boolean {
   // Check for URLs
@@ -28,6 +33,9 @@ function isValidIngredientList(value: string): boolean {
 
 /**
  * Normalizes a cosmetic ingredients list string into a validated structure
+ * @param text - Raw ingredient list text
+ * @returns Normalized and validated ingredient list structure
+ * @throws Never throws
  */
 export function normalizer(text: string): NormalizedIngredientList {
   if (!isValidIngredientList(text)) {
