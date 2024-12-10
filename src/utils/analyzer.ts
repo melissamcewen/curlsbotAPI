@@ -80,8 +80,8 @@ export class Analyzer {
    * Gets all known categories from the database
    */
   public getCategories(): string[] {
-    return Object.values(this.database.categories).flatMap((group) =>
-      Object.keys(group.categories),
+    return this.database.categories.flatMap(group =>
+      group.categories.map(category => category.name.toLowerCase())
     );
   }
 

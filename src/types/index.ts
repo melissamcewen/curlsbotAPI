@@ -73,11 +73,11 @@ export interface Category {
 export interface CategoryGroup {
   name: string;
   description: string;
-  categories: Record<string, Category>;
+  categories: Category[];
   matchConfig?: MatchConfig;
 }
 
-export type CategoryGroups = Record<string, CategoryGroup>;
+export type CategoryGroups = CategoryGroup[];
 
 export interface MatchOptions {
   debug?: boolean;

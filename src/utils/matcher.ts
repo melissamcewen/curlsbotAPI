@@ -145,23 +145,21 @@ export function matchIngredient(
       if (!category.matchConfig) continue;
 
       // Try exact category matches
-      if (input === catName.toLowerCase()) {
+      if (category.matchConfig?.matchType?.includes('exactMatch') &&
+          input === category.name.toLowerCase()) {
         matches.push(
-          createMatch(
-            {
-              name: input,
-              normalized: input,
-              matchDetails: {
-                matched: true,
-                matchTypes: ['exactMatch'],
-                searchType: 'category',
-                confidence: 0.8,
-                matchedOn: [catName],
-              },
-              details: undefined,
-              categories: [catName],
+          createMatch({
+            name: input,
+            normalized: input,
+            matchDetails: {
+              matched: true,
+              matchTypes: ['exactMatch'],
+              searchType: 'category',
+              confidence: 0.8,
+              matchedOn: [category.name],
             },
-          ),
+            categories: [category.name],
+          }),
         );
       }
 
