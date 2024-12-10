@@ -7,6 +7,9 @@ export const alcohols: Record<string, Ingredient> = {
     category: ['fatty alcohol'],
     notes: 'Common in conditioners and styling products',
     synonyms: ['cetearyl alcohol'],
+    matchConfig: {
+      matchType: ['exactMatch', 'fuzzyMatch'],
+    },
   },
   isopropyl_alcohol: {
     name: 'Isopropyl Alcohol',
@@ -26,9 +29,9 @@ export const alcohols: Record<string, Ingredient> = {
         'alcohol denat',
         'denatured alcohol',
         'alcohol 40-b',
-        'denatured ethanol'
+        'denatured ethanol',
       ],
-    }
+    },
   },
   benzyl_alcohol: {
     name: 'Benzyl Alcohol',

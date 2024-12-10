@@ -137,43 +137,93 @@ export function matchIngredient(
 
       // Try exact category matches
       if (input.toLowerCase() === catName.toLowerCase()) {
-        matches.push(createMatch(input, {
-          matched: true,
-          matchTypes: ['exactMatch'],
-          searchType: 'category',
-          confidence: 0.8,
-          matchedOn: [catName]
-        }, undefined, [catName]));
+        matches.push(
+          createMatch(
+            input,
+            {
+              matched: true,
+              matchTypes: ['exactMatch'],
+              searchType: 'category',
+              confidence: 0.8,
+              matchedOn: [catName],
+            },
+            undefined,
+            [catName],
+          ),
+        );
       }
 
       // Try partial category matches
       if (category.matchConfig.partials) {
-        const partialMatch = findPartialMatches(input, catName, category.matchConfig.partials);
+        const partialMatch = findPartialMatches(
+          input,
+          catName,
+          category.matchConfig.partials,
+        );
         if (partialMatch.matched) {
-          matches.push(createMatch(input, {
-            matched: true,
-            matchTypes: ['partialMatch'],
-            searchType: 'category',
-            confidence: 0.6,
-            matchedOn: partialMatch.matchedOn ? [partialMatch.matchedOn] : undefined
-          }, undefined, [catName]));
+          matches.push(
+            createMatch(
+              input,
+              {
+                matched: true,
+                matchTypes: ['partialMatch'],
+                searchType: 'category',
+                confidence: 0.6,
+                matchedOn: partialMatch.matchedOn
+                  ? [partialMatch.matchedOn]
+                  : undefined,
+              },
+              undefined,
+              [catName],
+            ),
+          );
         }
       }
     }
 
     // Only try category group matches if group has matchConfig
     if (group.matchConfig?.partials) {
-      const groupMatch = findPartialMatches(input, group.name, group.matchConfig.partials);
+      const groupMatch = findPartialMatches(
+        input,
+        group.name,
+        group.matchConfig.partials,
+      );
       if (groupMatch.matched) {
-        matches.push(createMatch(input, {
-          matched: true,
-          matchTypes: ['partialMatch'],
-          searchType: 'categoryGroup',
-          confidence: 0.5,
-          matchedOn: [group.name]
-        }, undefined, [`unknown ${group.name}`]));
+        matches.push(
+          createMatch(
+            input,
+            {
+              matched: true,
+              matchTypes: ['partialMatch'],
+              searchType: 'categoryGroup',
+              confidence: 0.5,
+              matchedOn: [group.name],
+            },
+            undefined,
+            [`unknown ${group.name}`],
+          ),
+        );
       }
     }
+  }
+  if (matches.length === 0) {
+    const fuzzyMatches = fuzzyMatch(input, database.ingredients);
+    matches.push(
+      ...fuzzyMatches.map((fm) =>
+        createMatch(
+          input,
+          {
+            matched: true,
+            matchTypes: ['fuzzyMatch'],
+            searchType: 'ingredient',
+            confidence: 0.6,
+            matchedOn: [fm.matchedOn],
+          },
+          fm.ingredient,
+          fm.ingredient.category,
+        ),
+      ),
+    );
   }
 
   // Sort matches by confidence

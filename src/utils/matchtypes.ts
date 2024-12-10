@@ -1,4 +1,5 @@
-import { Ingredient, MatchType, MatchDetails, CategoryGroups, CategoryGroup, Category } from '../types';
+import Fuse from 'fuse.js';
+import type { Ingredient } from '../types';
 
 /**
  * Checks if two strings match exactly (case-insensitive)
@@ -79,10 +80,35 @@ function regexMatch(input: string, patterns?: string[]): boolean {
 /**
  * Checks if input fuzzy matches target
  */
-function fuzzyMatch(input: string, target: string): boolean {
-  // TODO: Implement fuzzy matching logic (e.g., Levenshtein distance)
-  return false;
+const fuseOptions = {
+  threshold: 0.3,
+  keys: ['name'],
+};
+
+/**
+ * Checks if input fuzzy matches target
+ */
+function fuzzyMatch(
+  input: string,
+  ingredients: Record<string, Ingredient>
+): Array<{ ingredient: Ingredient; matchedOn: string }> {
+  // Filter to only ingredients with fuzzyMatch enabled
+  const fuzzyCorpus = Object.values(ingredients).filter(
+    ing => ing.matchConfig?.matchType?.includes('fuzzyMatch')
+  );
+
+  const fuse = new Fuse(fuzzyCorpus, {
+    keys: ['name', 'synonyms'],
+    threshold: 0.3,
+    includeScore: true
+  });
+
+  const results = fuse.search(input);
+  return results
+    .filter(result => result.score && result.score < 0.4)
+    .map(result => ({
+      ingredient: result.item,
+      matchedOn: result.item.name
+    }));
 }
-
-
-export { findExactMatch, findPartialMatches, regexMatch, fuzzyMatch,  };
+export { findExactMatch, findPartialMatches, regexMatch, fuzzyMatch };

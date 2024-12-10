@@ -73,7 +73,7 @@ describe('matchIngredient', () => {
     );
     expect(categoryMatch).toBeDefined();
   });
-  
+
   test('should generate unique IDs for matches', () => {
       const match1 = matchIngredient('alcohol', testDatabase);
       const match2 = matchIngredient('alcohol', testDatabase);
@@ -86,5 +86,14 @@ describe('matchIngredient', () => {
 
       // Verify IDs are unique
     expect(match1.id).not.toEqual(match2.id);
+  });
+
+  test('should find fuzzy matches for misspelled ingredients', () => {
+    const match = matchIngredient('cetil alkohol', testDatabase);
+
+    expect(match.matchDetails?.matched).toBe(true);
+    expect(match.matchDetails?.matchTypes).toContain('fuzzyMatch');
+    expect(match.matchDetails?.searchType).toBe('ingredient');
+    expect(match.details?.name).toBe('Cetyl Alcohol');
   });
 });
