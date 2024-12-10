@@ -39,6 +39,7 @@ describe('matchIngredient', () => {
     const match = matchIngredient('nonexistent ingredient', testDatabase);
 
     expect(match).toEqual({
+      id: expect.any(String),
       name: 'nonexistent ingredient',
       normalized: 'nonexistent ingredient',
     });
@@ -71,5 +72,19 @@ describe('matchIngredient', () => {
       m => m.matchDetails?.searchType === 'categoryGroup'
     );
     expect(categoryMatch).toBeDefined();
+  });
+  
+  test('should generate unique IDs for matches', () => {
+      const match1 = matchIngredient('alcohol', testDatabase);
+      const match2 = matchIngredient('alcohol', testDatabase);
+      const noMatch = matchIngredient('nonexistent ingredient', testDatabase);
+
+      // Verify IDs exist
+      expect(match1.id).toBeDefined();
+      expect(match2.id).toBeDefined();
+      expect(noMatch.id).toBeDefined();
+
+      // Verify IDs are unique
+    expect(match1.id).not.toEqual(match2.id);
   });
 });

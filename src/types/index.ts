@@ -36,6 +36,7 @@ export interface MatchDetails {
 }
 
 export interface IngredientMatch {
+  id: string;
   name: string;
   normalized: string;
   details?: Ingredient;

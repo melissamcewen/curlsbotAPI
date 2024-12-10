@@ -1,5 +1,6 @@
 import { findExactMatch, findPartialMatches, regexMatch, fuzzyMatch } from './matchtypes';
 import type { IngredientDatabase, IngredientMatch, MatchDetails, MatchOptions } from '../types';
+import { generateId } from './idGenerator';
 
 /**
  * Matches an ingredient string against the ingredient database
@@ -32,6 +33,7 @@ export function matchIngredient(
     const exactMatch = findExactMatch(input, ingredient.name, ingredient.synonyms);
     if (exactMatch.matched) {
       matches.push({
+        id: generateId(),
         name: input,
         normalized: input,
         details: ingredient,
@@ -52,6 +54,7 @@ export function matchIngredient(
       const partialMatch = findPartialMatches(input, ingredient.name, ingredient.matchConfig.partials);
       if (partialMatch.matched) {
         matches.push({
+          id: generateId(),
           name: input,
           normalized: input,
           details: ingredient,
@@ -61,8 +64,10 @@ export function matchIngredient(
             matchTypes: ['partialMatch'],
             searchType: 'ingredient',
             confidence: 0.7,
-            matchedOn: partialMatch.matchedOn ? [partialMatch.matchedOn] : undefined
-          }
+            matchedOn: partialMatch.matchedOn
+              ? [partialMatch.matchedOn]
+              : undefined,
+          },
         });
       }
     }
@@ -77,6 +82,7 @@ export function matchIngredient(
       // Try exact category matches
       if (input.toLowerCase() === catName.toLowerCase()) {
         matches.push({
+          id: generateId(),
           name: input,
           normalized: input,
           categories: [catName],
@@ -95,6 +101,7 @@ export function matchIngredient(
         const partialMatch = findPartialMatches(input, catName, category.matchConfig.partials);
         if (partialMatch.matched) {
           matches.push({
+            id: generateId(),
             name: input,
             normalized: input,
             categories: [catName],
@@ -115,6 +122,7 @@ export function matchIngredient(
       const groupMatch = findPartialMatches(input, group.name, group.matchConfig.partials);
       if (groupMatch.matched) {
         matches.push({
+          id: generateId(),
           name: input,
           normalized: input,
           categories: [`unknown ${group.name}`],
@@ -137,8 +145,9 @@ export function matchIngredient(
 
   // Create base result
   const result = matches[0] || {
+    id: generateId(),
     name: input,
-    normalized: input
+    normalized: input,
   };
 
   // Add debug info if requested
