@@ -1,4 +1,4 @@
-import type { CategoryGroups } from '../../types';
+import type { CategoryGroups } from '../../src/types';
 
 export const testCategories: CategoryGroups = [
   {

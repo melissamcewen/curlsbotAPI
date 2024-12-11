@@ -1,7 +1,6 @@
-import { Analyzer } from '../utils/analyzer';
+import { Analyzer } from '../src/utils/analyzer';
 import { testCategories } from './data/testCategories';
 import { testIngredients } from './data/testIngredients';
-import { IngredientMatch } from '../types';
 
 describe('Analyzer', () => {
   const analyzer = new Analyzer({

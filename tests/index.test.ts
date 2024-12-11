@@ -3,7 +3,7 @@ import {
   matchIngredient,
   normalizer,
   // You can also import a type to verify it exists, but it won't affect runtime
-} from '../index';
+} from '../src/index';
 
 describe('Index exports', () => {
   it('should export all expected items', () => {
@@ -11,4 +11,4 @@ describe('Index exports', () => {
     expect(matchIngredient).toBeDefined();
     expect(normalizer).toBeDefined();
   });
-}); 
+});

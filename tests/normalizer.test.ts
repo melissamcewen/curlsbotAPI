@@ -1,4 +1,4 @@
-import { normalizer } from '../utils/normalizer';
+import { normalizer } from '../src/utils/normalizer';
 
 describe('normalizer', () => {
   it('should reject URLs', () => {
