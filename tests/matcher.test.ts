@@ -1,13 +1,13 @@
 import { IngredientDatabase } from '../src/types';
-import { matchIngredient, createMatch } from '../src/utils/matcher';
+import { matchIngredient, createMatch, createIndexedDatabase } from '../src/utils/matcher';
 import { testCategories } from './data/testCategories';
 import { alcohols } from './data/testIngredients/alcohols';
 
 describe('matchIngredient', () => {
-  const testDatabase = {
+  const testDatabase = createIndexedDatabase({
     ingredients: alcohols,
     categories: testCategories,
-  };
+  });
 
   test('"alcohol denat." should match denatured alcohol', () => {
     const match = matchIngredient('alcohol denat.', testDatabase);
@@ -124,7 +124,7 @@ describe('matchIngredient', () => {
   });
 
   test('should only match categories with exactMatch in matchType', () => {
-    const customTestDatabase = {
+    const customTestDatabase = createIndexedDatabase({
       ingredients: [],
       categories: [
         {
@@ -150,7 +150,7 @@ describe('matchIngredient', () => {
           ],
         },
       ],
-    } as IngredientDatabase;
+    } as IngredientDatabase);
 
     // Rest of test remains the same...
 

@@ -5,7 +5,7 @@ import {
   IngredientDatabase
 } from '@/types';
 import { normalizer } from './normalizer';
-import { matchIngredient } from './matcher';
+import { matchIngredient, createIndexedDatabase, IndexedDatabase } from './matcher';
 import { Flagger } from './flagger';
 
 /**
@@ -25,7 +25,7 @@ import { Flagger } from './flagger';
  */
 export class Analyzer {
   /** The ingredient database used for matching */
-  private database: IngredientDatabase;
+  private database: IndexedDatabase;
   private flagger: Flagger;
 
   /**
@@ -33,7 +33,7 @@ export class Analyzer {
    * @param config - Configuration containing the ingredient database
    */
   constructor(config: AnalyzerConfig) {
-    this.database = config.database;
+    this.database = createIndexedDatabase(config.database);
     this.flagger = new Flagger(this.database, config.options);
   }
 

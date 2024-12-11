@@ -34,8 +34,7 @@ export function normalizer(text: string): NormalizedIngredientList {
   }
 
   // Regular expressions for cleaning the text
-  const parentheses = / *\([^)]*\) */g;
-  const forbidden = /[^0-9A-Za-z\s+-]/g;
+  const forbidden = /[^0-9A-Za-z\s+()-]/g;
   const and = /\band\b/ig;
   const sepChar = /[|&,]/ig;
   const lineBreaks = /\r?\n|\r/g;
@@ -51,7 +50,6 @@ export function normalizer(text: string): NormalizedIngredientList {
     .map(x => x
       .trim()
       .toLowerCase()
-      .replace(parentheses, ' ')
       .replace(forbidden, '')
       .replace(/\s+/g, ' ')
       .trim()

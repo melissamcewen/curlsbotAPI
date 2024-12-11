@@ -1,4 +1,8 @@
-import { IngredientMatch, AnalyzerOptions, IngredientDatabase } from '@/types';
+import type {
+  IngredientMatch,
+  AnalyzerOptions,
+  IngredientDatabase
+} from '../types';
 
 export class Flagger {
   private options: AnalyzerOptions;

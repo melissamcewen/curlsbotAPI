@@ -10,8 +10,53 @@ import type {
   MatchDetails,
   MatchOptions,
   Ingredient,
-} from '@/types';
+  CategoryGroup,
+  Category,
+} from '../types';
 import { generateId } from './idGenerator';
+
+// Add a simple cache at the top of the file
+const normalizedCache = new Map<string, string>();
+
+// Create a function to handle normalization with caching
+function getNormalizedString(input: string): string {
+  if (normalizedCache.has(input)) {
+    return normalizedCache.get(input)!;
+  }
+  const normalized = input.toLowerCase().trim();
+  normalizedCache.set(input, normalized);
+  return normalized;
+}
+
+// Add type and interface at the top
+export interface IndexedDatabase extends IngredientDatabase {
+  ingredientIndex: Map<string, Ingredient>;
+  synonymIndex: Map<string, Ingredient>;
+}
+
+export interface CategoryIndex {
+  exact: Map<string, string[]>;
+  partial: Map<string, Array<{pattern: RegExp; categories: string[]}>>;
+}
+
+// Create an indexing function
+export function createIndexedDatabase(database: IngredientDatabase): IndexedDatabase {
+  const ingredientIndex = new Map<string, Ingredient>();
+  const synonymIndex = new Map<string, Ingredient>();
+
+  database.ingredients.forEach(ingredient => {
+    ingredientIndex.set(ingredient.name.toLowerCase(), ingredient);
+    ingredient.synonyms?.forEach(synonym => {
+      synonymIndex.set(synonym.toLowerCase(), ingredient);
+    });
+  });
+
+  return {
+    ...database,
+    ingredientIndex,
+    synonymIndex
+  };
+}
 
 /**
  * Creates a standardized ingredient match object
@@ -73,177 +118,185 @@ export function createMatch(params: {
  */
 export function matchIngredient(
   input: string,
-  database: IngredientDatabase,
+  database: IndexedDatabase,
   options: MatchOptions = {},
 ): IngredientMatch {
+  const normalized = getNormalizedString(input);
   const matches: IngredientMatch[] = [];
 
-  // First try to match against known ingredients and their synonyms
+  // Check exact matches first using indices
+  const exactIngredient = database.ingredientIndex.get(normalized);
+  if (exactIngredient) {
+    const match = createMatch({
+      name: input,
+      normalized,
+      matchDetails: {
+        matched: true,
+        matchTypes: ['exactMatch'],
+        searchType: 'ingredient',
+        confidence: 1,
+        matchedOn: [exactIngredient.name],
+      },
+      details: exactIngredient,
+      categories: exactIngredient.category,
+    });
+    matches.push(match);
+
+    // If we have an exact match but debug is enabled, continue looking for other matches
+    if (!options.debug) {
+      return match;
+    }
+  }
+
+  // Check synonym matches
+  const synonymMatch = database.synonymIndex.get(normalized);
+  if (synonymMatch) {
+    const match = createMatch({
+      name: input,
+      normalized,
+      matchDetails: {
+        matched: true,
+        matchTypes: ['exactMatch'],
+        searchType: 'ingredient',
+        confidence: 1,
+        matchedOn: [synonymMatch.name],
+      },
+      details: synonymMatch,
+      categories: synonymMatch.category,
+    });
+    matches.push(match);
+
+    // If we have a synonym match but debug is enabled, continue looking for other matches
+    if (!options.debug) {
+      return match;
+    }
+  }
+
+  // Continue with partial matches only if no exact match found...
+
+  // Try fuzzy matches first
+  const fuzzyMatches = fuzzyMatch(normalized, database.ingredients);
+  if (fuzzyMatches.length > 0) {
+    matches.push(
+      ...fuzzyMatches.map((fm) =>
+        createMatch({
+          name: input,
+          normalized,
+          matchDetails: {
+            matched: true,
+            matchTypes: ['fuzzyMatch'],
+            searchType: 'ingredient',
+            confidence: 0.6,
+            matchedOn: [fm.matchedOn],
+          },
+          details: fm.ingredient,
+        }),
+      ),
+    );
+  }
+
+  // Then try partial matches
   for (const ingredient of database.ingredients) {
-    // Try exact matches first
-    const exactMatch = findExactMatch(
-       input,
-       ingredient.name,
-       ingredient.synonyms,
-     );
-     if (exactMatch.matched) {
-       matches.push(
-         createMatch(
-           {
-             name: input,
-             normalized: input,
-             matchDetails: {
-               matched: true,
-               matchTypes: ['exactMatch'],
-               searchType: 'ingredient',
-               confidence: 1,
-               matchedOn: exactMatch.matchedOn,
-             },
-             details: ingredient,
-             categories: ingredient.category,
-           },
-         ),
-       );
-       continue; // Skip other checks if we found an exact match
-     }
-
-     // Try partial matches if configured
-     if (ingredient.matchConfig?.partials) {
-       const partialMatch = findPartialMatches(
-         input,
-         ingredient.name,
-         ingredient.matchConfig.partials,
-       );
-       if (partialMatch.matched) {
-         matches.push(
-           createMatch(
-             {
-               name: input,
-               normalized: input,
-               matchDetails: {
-                 matched: true,
-                 matchTypes: ['partialMatch'],
-                 searchType: 'ingredient',
-                 confidence: 0.7,
-                 matchedOn: partialMatch.matchedOn
-                   ? [partialMatch.matchedOn]
-                   : undefined,
-               },
-               details: ingredient,
-               categories: ingredient.category,
-             },
-           ),
-         );
-       }
-     }
-   }
-
-  // Then try to match against categories that have matchConfig
-  for (const [groupName, group] of Object.entries(database.categories)) {
-    // Only check categories that have matchConfig
-    for (const [catName, category] of Object.entries(group.categories)) {
-      if (!category.matchConfig) continue;
-
-      // Try exact category matches
-      if (!category.matchConfig?.matchType?.includes('exactMatch')) continue;
-
-      if (input === category.name.toLowerCase()) {
+    if (ingredient.matchConfig?.partials) {
+      const partialMatch = findPartialMatches(
+        normalized,
+        ingredient.name,
+        ingredient.matchConfig.partials
+      );
+      if (partialMatch.matched) {
         matches.push(
           createMatch({
             name: input,
-            normalized: input,
+            normalized,
             matchDetails: {
               matched: true,
-              matchTypes: ['exactMatch'],
-              searchType: 'category',
-              confidence: 0.8,
-              matchedOn: [category.name],
+              matchTypes: ['partialMatch'],
+              searchType: 'ingredient',
+              confidence: 0.7,
+              matchedOn: [partialMatch.matchedOn || ingredient.name],
             },
-            categories: [category.name],
+            details: ingredient,
           }),
         );
       }
-
-      // Try partial category matches
-      if (category.matchConfig.partials) {
-        const partialMatch = findPartialMatches(
-          input,
-          catName,
-          category.matchConfig.partials,
-        );
-        if (partialMatch.matched) {
-          matches.push(
-            createMatch(
-              {
-                name: input,
-                normalized: input,
-                matchDetails: {
-                  matched: true,
-                  matchTypes: ['partialMatch'],
-                  searchType: 'category',
-                  confidence: 0.6,
-                  matchedOn: partialMatch.matchedOn
-                    ? [partialMatch.matchedOn]
-                    : undefined,
-                },
-                details: undefined,
-                categories: [catName],
-              },
-            ),
-          );
-        }
-      }
     }
+  }
 
-    // Only try category group matches if group has matchConfig
+  // Try category group matches first
+  for (const [groupName, group] of Object.entries(database.categories) as [string, CategoryGroup][]) {
     if (group.matchConfig?.partials) {
       const groupMatch = findPartialMatches(
-        input,
+        normalized,
         group.name,
         group.matchConfig.partials,
       );
       if (groupMatch.matched) {
         matches.push(
-          createMatch(
-            {
-              name: input,
-              normalized: input,
-              matchDetails: {
-                matched: true,
-                matchTypes: ['partialMatch'],
-                searchType: 'categoryGroup',
-                confidence: 0.5,
-                matchedOn: [group.name],
-              },
-              details: undefined,
-              categories: [`unknown ${group.name}`],
+          createMatch({
+            name: input,
+            normalized,
+            matchDetails: {
+              matched: true,
+              matchTypes: ['partialMatch'],
+              searchType: 'categoryGroup',
+              confidence: 0.5,
+              matchedOn: [group.name],
             },
-          ),
+            categories: [`unknown ${group.name}`],
+          }),
         );
       }
     }
-  }
-  if (matches.length === 0) {
-    const fuzzyMatches = fuzzyMatch(input, database.ingredients);
-    matches.push(
-      ...fuzzyMatches.map((fm) =>
-        createMatch(
-          {
-            name: input,
-            normalized: input,
-            matchDetails: {
-              matched: true,
-              matchTypes: ['fuzzyMatch'],
-              searchType: 'ingredient',
-              confidence: 0.6,
-              matchedOn: [fm.matchedOn],
-            },
-            details: fm.ingredient,
-            categories: fm.ingredient.category,
-          },
-        ),
-      ),
-    );
+
+    // Only check categories that have matchConfig
+    for (const [catName, category] of Object.entries(group.categories) as [string, Category][]) {
+      if (!category.matchConfig) continue;
+
+      // Try exact category matches
+      if (category.matchConfig?.matchType?.includes('exactMatch')) {
+        if (normalized === category.name.toLowerCase()) {
+          matches.push(
+            createMatch({
+              name: input,
+              normalized,
+              matchDetails: {
+                matched: true,
+                matchTypes: ['exactMatch'],
+                searchType: 'category',
+                confidence: 0.8,
+                matchedOn: [category.name],
+              },
+              categories: [category.name],
+            }),
+          );
+        }
+      }
+
+      // Try partial category matches
+      if (category.matchConfig.partials) {
+        const partialMatch = findPartialMatches(
+          normalized,
+          catName,
+          category.matchConfig.partials,
+        );
+        if (partialMatch.matched) {
+          matches.push(
+            createMatch({
+              name: input,
+              normalized,
+              matchDetails: {
+                matched: true,
+                matchTypes: ['partialMatch'],
+                searchType: 'category',
+                confidence: 0.6,
+                matchedOn: partialMatch.matchedOn ? [partialMatch.matchedOn] : undefined,
+              },
+              categories: [catName],
+            }),
+          );
+        }
+      }
+    }
   }
 
   // Sort matches by confidence
@@ -255,18 +308,72 @@ export function matchIngredient(
   // Create base result
   const result = matches[0] || createMatch({
     name: input,
-    normalized: input,
-    matchDetails: undefined,
-    details: undefined,
-    categories: undefined,
+    normalized,
   });
 
-  // Add debug info if requested
+  // Always add debug info if requested
   if (options.debug) {
     result.debug = {
-      allMatches: matches,
+      allMatches: matches.length > 0 ? matches : [result]
     };
   }
 
   return result;
+}
+
+let fuseInstance: any = null;
+
+function getFuzzyMatcher(ingredients: Ingredient[]) {
+  if (!fuseInstance) {
+    const Fuse = require('fuse.js');
+    fuseInstance = new Fuse(ingredients, {
+      keys: ['name', 'synonyms'],
+      threshold: 0.3,
+      distance: 100
+    });
+  }
+  return fuseInstance;
+}
+
+export function matchIngredients(
+  inputs: string[],
+  database: IndexedDatabase,
+  options: MatchOptions = {},
+): IngredientMatch[] {
+  // Process in chunks to avoid blocking
+  const chunkSize = 100;
+  const results: IngredientMatch[] = [];
+
+  for (let i = 0; i < inputs.length; i += chunkSize) {
+    const chunk = inputs.slice(i, i + chunkSize);
+    const chunkResults = chunk.map(input =>
+      matchIngredient(input, database, options)
+    );
+    results.push(...chunkResults);
+  }
+
+  return results;
+}
+
+export function createCategoryIndex(database: IngredientDatabase): CategoryIndex {
+  const exact = new Map<string, string[]>();
+  const partial = new Map<string, Array<{pattern: RegExp; categories: string[]}>>();
+
+  Object.entries(database.categories).forEach(([groupName, group]) => {
+    Object.entries(group.categories).forEach(([catName, category]) => {
+      if (category.matchConfig?.matchType?.includes('exactMatch')) {
+        exact.set(category.name.toLowerCase(), [catName]);
+      }
+      if (category.matchConfig?.partials) {
+        category.matchConfig.partials.forEach(pattern => {
+          const regex = new RegExp(pattern, 'i');
+          const existing = partial.get(groupName) || [];
+          existing.push({ pattern: regex, categories: [catName] });
+          partial.set(groupName, existing);
+        });
+      }
+    });
+  });
+
+  return { exact, partial };
 }
