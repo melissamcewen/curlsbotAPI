@@ -91,31 +91,32 @@ const fuseOptions = {
  */
 function fuzzyMatch(
   input: string,
-  ingredients: Ingredient[]
-): { matchedOn: string; ingredient: Ingredient; }[] {
+  ingredients: Ingredient[],
+): { matchedOn: string; ingredient: Ingredient }[] {
   // Filter to only ingredients with fuzzyMatch enabled
-  const fuzzyCorpus = ingredients.filter(
-    ing => ing.matchConfig?.matchType?.includes('fuzzyMatch')
+  const fuzzyCorpus = ingredients.filter((ing) =>
+    ing.matchConfig?.matchType?.includes('fuzzyMatch'),
   );
 
   const fuse = new Fuse(fuzzyCorpus, {
     keys: ['name', 'synonyms'],
     threshold: 0.3,
     includeScore: true,
-    includeMatches: true
+    includeMatches: true,
   });
 
-  const results = fuse.search(input);
-  return results
-    .filter(result => result.score && result.score < 0.4)
-    .map(result => {
-      // Find which field matched (name or synonym)
-      const matchedField = result.matches?.[0];
-      const matchedValue = matchedField?.value as string;
+  type FuseResult = Fuse.FuseResult<Ingredient> & {
+    matches: Array<{ value: string }>;
+  };
 
+  const results = fuse.search(input) as FuseResult[];
+  return results
+    .filter((result) => result.score && result.score < 0.4)
+    .map((result) => {
+      const matchedField = result.matches[0];
       return {
         ingredient: result.item,
-        matchedOn: matchedValue || result.item.name
+        matchedOn: matchedField.value as string,
       };
     });
 }

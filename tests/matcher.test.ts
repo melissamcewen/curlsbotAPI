@@ -10,6 +10,8 @@ describe('matchIngredient', () => {
     categories: testCategories,
   };
 
+
+
   test('"alcohol denat." should match denatured alcohol', () => {
     const match = matchIngredient('alcohol denat.', testDatabase);
 
@@ -152,8 +154,6 @@ describe('matchIngredient', () => {
         },
       ],
     } as IngredientDatabase;
-
-    // Rest of test remains the same...
 
     // Should match category with exactMatch
     const matchResult = matchIngredient('with exact match', customTestDatabase);

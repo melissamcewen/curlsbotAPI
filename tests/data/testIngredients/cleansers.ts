@@ -7,6 +7,9 @@ export const cleansers: Ingredient[] = [
     category: ['sulfate', 'harsh cleanser'],
     notes: 'Can be harsh and stripping on hair',
     synonyms: ['SLES', 'sodium lauryl ether sulfate'],
+    matchConfig: {
+      matchType: ['exactMatch', 'fuzzyMatch'],
+    }
   },
   {
     name: 'Sodium Lauryl Sulfate',
