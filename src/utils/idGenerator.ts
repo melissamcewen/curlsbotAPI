@@ -2,6 +2,8 @@
  * Generates a unique ID
  * @returns A unique string ID
  */
+import { v4 as uuidv4 } from 'uuid';
+
 export function generateId(): string {
-  return Math.random().toString(36).substring(2) + Date.now().toString(36);
+  return `ing_${uuidv4()}`;
 }
