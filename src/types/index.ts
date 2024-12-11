@@ -14,7 +14,7 @@ export type { Analyzer } from '@/utils/analyzer';
 export interface Ingredient {
   name: string;
   description?: string;
-  category: string[];
+  category?: string[];
   notes?: string;
   source?: string[];
   synonyms?: string[];
@@ -40,6 +40,7 @@ export interface MatchDetails {
   confidence?: number;
   matchedOn?: string[];
   synonymMatch?: string;
+  flagged?: boolean;
 }
 
 export interface IngredientMatch {
@@ -62,6 +63,11 @@ export interface AnalysisResult {
   matches: IngredientMatch[];
   /** Array of unique categories found */
   categories: string[];
+  flags?: {
+    ingredients: string[];
+    categories: string[];
+    categoryGroups: string[];
+  };
 }
 
 export interface IngredientDatabase {
@@ -76,6 +82,7 @@ export interface IngredientDatabase {
 export interface AnalyzerConfig {
   /** Database containing ingredients and categories */
   database: IngredientDatabase;
+  options?: AnalyzerOptions;
 }
 
 export interface Category {
@@ -104,4 +111,11 @@ export interface MatchOptions {
 export interface DebugInfo {
   allMatches: IngredientMatch[];
 }
+
+export interface AnalyzerOptions {
+  flaggedIngredients?: string[];
+  flaggedCategories?: string[];
+  flaggedCategoryGroups?: string[];
+}
+
 

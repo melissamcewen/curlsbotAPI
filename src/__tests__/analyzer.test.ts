@@ -129,4 +129,176 @@ describe('Analyzer', () => {
     expect(result.matches).toEqual([]);
     expect(result.categories).toEqual([]);
   });
+
+  test('should handle matches without categories', () => {
+    const analyzer = new Analyzer({
+      database: {
+        ingredients: testIngredients,
+        categories: testCategories,
+      }
+    });
+
+    // Mock a list where we know one ingredient won't have categories
+    const list = 'Water, Uncategorized Ingredient';
+    const result = analyzer.analyze(list);
+
+    // Verify that analysis completes without error
+    expect(result).toBeDefined();
+    expect(result.matches).toBeDefined();
+    expect(result.categories).toBeDefined();
+
+    // Verify that categories array is created correctly even with uncategorized ingredients
+    expect(Array.isArray(result.categories)).toBe(true);
+  });
+
+  describe('Flagging', () => {
+    test('should flag ingredients by name', () => {
+      const analyzer = new Analyzer({
+        database: {
+          ingredients: testIngredients,
+          categories: testCategories,
+        },
+        options: {
+          flaggedIngredients: ['sodium lauryl sulfate']
+        }
+      });
+
+      const list = 'Water, Sodium Lauryl Sulfate, Dimethicone';
+      const result = analyzer.analyze(list);
+
+      // Check flags object
+      expect(result.flags).toBeDefined();
+      expect(result.flags?.ingredients).toContain('sodium lauryl sulfate');
+
+      // Check match details
+      const match = result.matches.find(m => m.normalized === 'sodium lauryl sulfate');
+      expect(match?.matchDetails?.flagged).toBe(true);
+    });
+
+    test('should flag ingredients by category', () => {
+      const analyzer = new Analyzer({
+        database: {
+          ingredients: testIngredients,
+          categories: testCategories,
+        },
+        options: {
+          flaggedCategories: ['solvent alcohol']
+        }
+      });
+
+      const list = 'Water, Benzyl Alcohol';
+      const result = analyzer.analyze(list);
+
+      // Check flags object
+      expect(result.flags).toBeDefined();
+      expect(result.flags?.categories).toContain('solvent alcohol');
+
+      // Check match details
+      const match = result.matches.find(m => m.normalized === 'benzyl alcohol');
+      expect(match?.matchDetails?.flagged).toBe(true);
+    });
+
+    test('should flag ingredients by category group', () => {
+      const analyzer = new Analyzer({
+        database: {
+          ingredients: testIngredients,
+          categories: testCategories,
+        },
+        options: {
+          flaggedCategoryGroups: ['Alcohols']
+        }
+      });
+
+      const list = 'Water, Cetyl Alcohol, Benzyl Alcohol';
+      const result = analyzer.analyze(list);
+
+      // Check flags object
+      expect(result.flags).toBeDefined();
+      expect(result.flags?.categoryGroups).toContain('Alcohols');
+
+      // Check match details for both alcohols
+      const matches = result.matches.filter(m =>
+        m.normalized === 'cetyl alcohol' || m.normalized === 'benzyl alcohol'
+      );
+      matches.forEach(match => {
+        expect(match.matchDetails?.flagged).toBe(true);
+      });
+    });
+
+    test('should not flag non-matching ingredients', () => {
+      const analyzer = new Analyzer({
+        database: {
+          ingredients: testIngredients,
+          categories: testCategories,
+        },
+        options: {
+          flaggedIngredients: ['sodium lauryl sulfate'],
+          flaggedCategories: ['sulfate'],
+          flaggedCategoryGroups: ['Alcohols']
+        }
+      });
+
+      const list = 'Water, Dimethicone';
+      const result = analyzer.analyze(list);
+
+      // Check no flags
+      expect(result.flags?.ingredients).toHaveLength(0);
+      expect(result.flags?.categories).toHaveLength(0);
+      expect(result.flags?.categoryGroups).toHaveLength(0);
+
+      // Check match details
+      result.matches.forEach(match => {
+        expect(match.matchDetails?.flagged).toBe(false);
+      });
+    });
+
+    test('should handle empty flag options', () => {
+      const analyzer = new Analyzer({
+        database: {
+          ingredients: testIngredients,
+          categories: testCategories,
+        },
+        options: {}
+      });
+
+      const list = 'Water, Sodium Lauryl Sulfate, Benzyl Alcohol';
+      const result = analyzer.analyze(list);
+
+      // Check no flags
+      expect(result.flags?.ingredients).toHaveLength(0);
+      expect(result.flags?.categories).toHaveLength(0);
+      expect(result.flags?.categoryGroups).toHaveLength(0);
+
+      // Check match details
+      result.matches.forEach(match => {
+        expect(match.matchDetails?.flagged).toBe(false);
+      });
+    });
+
+    test('should handle case insensitive flagging', () => {
+      const analyzer = new Analyzer({
+        database: {
+          ingredients: testIngredients,
+          categories: testCategories,
+        },
+        options: {
+          flaggedIngredients: ['SODIUM LAURYL SULFATE'],
+          flaggedCategories: ['SOLVENT ALCOHOL']
+        }
+      });
+
+      const list = 'Water, Sodium Lauryl Sulfate, Benzyl Alcohol';
+      const result = analyzer.analyze(list);
+
+      // Check flags exist despite case differences
+      expect(result.flags?.ingredients).toContain('sodium lauryl sulfate');
+      expect(result.flags?.categories).toContain('solvent alcohol');
+
+      // Check match details
+      const slsMatch = result.matches.find(m => m.normalized === 'sodium lauryl sulfate');
+      const alcoholMatch = result.matches.find(m => m.normalized === 'benzyl alcohol');
+      expect(slsMatch?.matchDetails?.flagged).toBe(true);
+      expect(alcoholMatch?.matchDetails?.flagged).toBe(true);
+    });
+  });
 });

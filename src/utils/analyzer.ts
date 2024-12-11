@@ -6,6 +6,7 @@ import {
 } from '@/types';
 import { normalizer } from './normalizer';
 import { matchIngredient } from './matcher';
+import { Flagger } from './flagger';
 
 /**
  * Analyzes cosmetic ingredient lists and matches ingredients against a database
@@ -25,6 +26,7 @@ import { matchIngredient } from './matcher';
 export class Analyzer {
   /** The ingredient database used for matching */
   private database: IngredientDatabase;
+  private flagger: Flagger;
 
   /**
    * Creates a new Analyzer instance
@@ -32,6 +34,7 @@ export class Analyzer {
    */
   constructor(config: AnalyzerConfig) {
     this.database = config.database;
+    this.flagger = new Flagger(this.database, config.options);
   }
 
   /**
@@ -76,9 +79,28 @@ export class Analyzer {
       ),
     ];
 
+    // Get flags for all matches
+    const flags = {
+      ingredients: [] as string[],
+      categories: [] as string[],
+      categoryGroups: [] as string[],
+    };
+
+    matches.forEach(match => {
+      const matchFlags = this.flagger.getFlagsForMatch(match);
+      flags.ingredients.push(...matchFlags.ingredients);
+      flags.categories.push(...matchFlags.categories);
+      flags.categoryGroups.push(...matchFlags.categoryGroups);
+    });
+
     return {
       matches,
       categories,
+      flags: {
+        ingredients: [...new Set(flags.ingredients)],
+        categories: [...new Set(flags.categories)],
+        categoryGroups: [...new Set(flags.categoryGroups)],
+      },
     };
   }
 
