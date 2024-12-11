@@ -12,10 +12,9 @@
     "rootDir": "./src",
     "baseUrl": ".",
     "paths": {
-      "@/*": ["src/*"],
-      "@types/*": ["src/types/*"]
+      "@/*": ["src/*"]
     }
   },
-  "include": ["src"],
-  "exclude": ["node_modules", "dist", "**/*.test.ts", "demo"]
+  "include": ["src/**/*.ts", "tests/**/*.ts"],
+  "exclude": ["node_modules", "dist"]
 }
