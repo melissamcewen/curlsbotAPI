@@ -1,6 +1,13 @@
-import type { NormalizedIngredientList } from '@/utils/normalizer';
-
-export type { NormalizedIngredientList };
+/**
+ * Represents a normalized ingredient list that has been validated and cleaned
+ * @interface NormalizedIngredientList
+ */
+export interface NormalizedIngredientList {
+  /** List of cleaned and validated ingredients */
+  readonly ingredients: readonly string[];
+  /** Whether the ingredient list is valid */
+  readonly isValid: boolean;
+}
 
 export type { Analyzer } from '@/utils/analyzer';
 
@@ -46,8 +53,14 @@ export interface IngredientMatch {
   debug?: DebugInfo;
 }
 
+/**
+ * Result of analyzing an ingredient list
+ * @public
+ */
 export interface AnalysisResult {
+  /** Array of matched ingredients */
   matches: IngredientMatch[];
+  /** Array of unique categories found */
   categories: string[];
 }
 
@@ -56,7 +69,12 @@ export interface IngredientDatabase {
   categories: CategoryGroups;
 }
 
+/**
+ * Configuration for ingredient database
+ * @public
+ */
 export interface AnalyzerConfig {
+  /** Database containing ingredients and categories */
   database: IngredientDatabase;
 }
 
