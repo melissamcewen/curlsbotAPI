@@ -66,6 +66,7 @@ export class Analyzer {
     const matches: IngredientMatch[] = normalized.ingredients.map(
       (ingredient) => {
         const match = matchIngredient(ingredient, this.database);
+
         return match as IngredientMatch; // We know it's a single match since we're not using returnAllMatches
       },
     );
@@ -75,7 +76,7 @@ export class Analyzer {
       ...new Set(
         matches
           .filter((match) => match.categories)
-          .flatMap((match) => match.categories || []),
+          .flatMap((match) => match.categories as string[]),
       ),
     ];
 

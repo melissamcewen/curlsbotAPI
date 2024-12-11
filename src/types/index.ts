@@ -14,7 +14,7 @@ export type { Analyzer } from '@/utils/analyzer';
 export interface Ingredient {
   name: string;
   description?: string;
-  category?: string[];
+  category: string[];
   notes?: string;
   source?: string[];
   synonyms?: string[];

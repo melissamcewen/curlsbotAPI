@@ -1,6 +1,7 @@
 import { Analyzer } from '../utils/analyzer';
 import { testCategories } from './data/testCategories';
 import { testIngredients } from './data/testIngredients';
+import { IngredientMatch } from '../types';
 
 describe('Analyzer', () => {
   const analyzer = new Analyzer({
@@ -146,10 +147,10 @@ describe('Analyzer', () => {
     expect(result).toBeDefined();
     expect(result.matches).toBeDefined();
     expect(result.categories).toBeDefined();
-
     // Verify that categories array is created correctly even with uncategorized ingredients
     expect(Array.isArray(result.categories)).toBe(true);
   });
+
 
   describe('Flagging', () => {
     test('should flag ingredients by name', () => {
