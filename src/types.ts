@@ -76,6 +76,7 @@ export type CategoryGroups = CategoryGroup[];
  * Represents an ingredient and its associated metadata
  */
 export interface Ingredient {
+  id: string;
   /** Name of the ingredient */
   name: string;
   /** Optional description of the ingredient */
@@ -130,12 +131,6 @@ export interface IngredientDatabase {
  * Represents the configuration for how matches are determined
  */
 export interface MatchConfig {
-  /** List of match types to use */
-  matchType?: MatchType[];
-  /** List of regex patterns for matching */
-  regexes?: string[];
-  /** List of partial match patterns */
-  partials?: string[];
   /** Confidence threshold for matches */
   confidence?: number;
 }
@@ -146,10 +141,6 @@ export interface MatchConfig {
 export interface MatchDetails {
   /** Whether the match was successful */
   matched: boolean;
-  /** Types of matches used */
-  matchTypes: MatchType[];
-  /** Type of search used */
-  searchType: MatchSearch;
   /** Optional confidence level of the match */
   confidence?: number;
   /** Optional matched terms */
@@ -175,20 +166,6 @@ export interface MatchOptions {
   /** Whether to enable debugging */
   debug?: boolean;
 }
-
-/**
- * Defines the types of matches available
- */
-export type MatchType =
-  | 'fuzzyMatch'
-  | 'partialMatch'
-  | 'regexMatch'
-  | 'exactMatch';
-
-/**
- * Defines the types of searches for matching
- */
-export type MatchSearch = 'ingredient' | 'category' | 'categoryGroup';
 
 /**
  * Represents a normalized and validated list of ingredients

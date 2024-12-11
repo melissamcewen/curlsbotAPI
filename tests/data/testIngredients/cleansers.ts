@@ -7,9 +7,7 @@ export const cleansers: Ingredient[] = [
     category: ['sulfate', 'harsh cleanser'],
     notes: 'Can be harsh and stripping on hair',
     synonyms: ['SLES', 'sodium lauryl ether sulfate'],
-    matchConfig: {
-      matchType: ['exactMatch', 'fuzzyMatch'],
-    }
+    id: 'sodium-laureth-sulfate'
   },
   {
     name: 'Sodium Lauryl Sulfate',
@@ -17,6 +15,7 @@ export const cleansers: Ingredient[] = [
     category: ['sulfate', 'harsh cleanser'],
     notes: 'Can be harsh and stripping on hair',
     synonyms: ['SLS', 'sodium lauryl sulfate'],
+    id: 'sodium-lauryl-sulfate'
   },
   {
     name: 'Cocamidopropyl Betaine',
@@ -24,5 +23,6 @@ export const cleansers: Ingredient[] = [
     category: ['gentle cleanser', 'surfactant'],
     notes: 'Generally considered safe for curly hair routines',
     synonyms: ['CAPB', 'coco betaine'],
+    id: 'cocamidopropyl-betaine'
   },
 ];

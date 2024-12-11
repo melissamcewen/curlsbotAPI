@@ -81,8 +81,6 @@ export class Flagger {
     } else {
       match.matchDetails = {
         matched: true,
-        matchTypes: ['exactMatch'],
-        searchType: 'ingredient',
         flagged: isFlagged
       };
     }

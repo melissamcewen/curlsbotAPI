@@ -7,6 +7,7 @@ export const silicones: Ingredient[] = [
     category: ['water-soluble silicone'],
     notes: "Generally considered safe as it doesn't build up",
     synonyms: ['cyclopentasiloxane', 'cyclotetrasiloxane', 'cyclic silicone'],
+    id: 'cyclomethicone'
   },
   {
     name: 'Dimethicone',
@@ -14,5 +15,7 @@ export const silicones: Ingredient[] = [
     category: ['non-water-soluble silicone'],
     notes: 'Can build up on the hair and scalp',
     synonyms: ['dimethiconol'],
+    id: 'dimethicone'
   },
 ];
+
