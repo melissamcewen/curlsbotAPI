@@ -1,4 +1,4 @@
-import { regexMatch, findExactMatch, findPartialMatches, fuzzyMatch } from '../src/utils/matchtypes';
+import { regexMatch, findExactMatch, findPartialMatches, fuzzyMatch } from '../src/utils/matchmethods';
 import type { Ingredient } from '../src/types';
 
 describe('regexMatch', () => {

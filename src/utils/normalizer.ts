@@ -1,4 +1,4 @@
-import type { NormalizedIngredientList } from '@/types';
+import { NormalizedIngredientList } from '../types';
 
 /**
  * Checks if an individual ingredient is valid

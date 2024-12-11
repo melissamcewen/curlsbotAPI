@@ -12,9 +12,6 @@
     "forceConsistentCasingInFileNames": true,
     "rootDir": "./src",
     "baseUrl": ".",
-    "paths": {
-      "@/*": ["src/*"]
-    }
   },
   "include": ["src/**/*.ts"],
   "exclude": ["node_modules", "dist"]

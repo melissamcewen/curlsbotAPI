@@ -4,14 +4,9 @@ import type {
   MatchDetails,
   MatchOptions,
   Ingredient,
-} from '@/types';
+} from '../types';
 
-import {
-  findExactMatch,
-  findPartialMatches,
-  regexMatch,
-  fuzzyMatch,
-} from './matchtypes';
+import { findExactMatch, findPartialMatches, fuzzyMatch } from './matchmethods';
 import { generateId } from './idGenerator';
 
 /**

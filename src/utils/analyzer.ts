@@ -3,7 +3,7 @@ import {
   AnalysisResult,
   IngredientMatch,
   IngredientDatabase
-} from '@/types';
+} from '../types';
 
 import { normalizer } from './normalizer';
 import { matchIngredient } from './matcher';
