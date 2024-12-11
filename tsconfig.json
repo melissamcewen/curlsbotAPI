@@ -4,6 +4,7 @@
     "target": "es2018",
     "module": "commonjs",
     "declaration": true,
+    "declarationMap": true,
     "outDir": "./dist",
     "strict": true,
     "esModuleInterop": true,
@@ -15,6 +16,6 @@
       "@/*": ["src/*"]
     }
   },
-  "include": ["src/**/*.ts", "tests/**/*.ts"],
+  "include": ["src/**/*.ts"],
   "exclude": ["node_modules", "dist"]
 }
