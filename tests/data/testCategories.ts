@@ -24,9 +24,6 @@ export const testCategories: CategoryGroups = [
         notes: 'Commonly used in cosmetics as a solvent',
       },
     ],
-    matchConfig: {
-      partials: ['alcohol'],
-    },
   },
   {
     name: 'Cleansers',
@@ -37,9 +34,6 @@ export const testCategories: CategoryGroups = [
         description: 'Strong cleansing agents',
         tags: ['Not Curly Friendly'],
         notes: 'Can be harsh and stripping',
-        matchConfig: {
-          matchType: ['exactMatch', 'partialMatch']
-        },
       },
       {
         name: 'Gentle Cleanser',
@@ -52,9 +46,6 @@ export const testCategories: CategoryGroups = [
         description: 'Soap is a cleansing agent',
         tags: ['Not Curly Friendly'],
         notes: 'Can be harsh and stripping',
-        matchConfig: {
-          partials: ['soap', 'saponin'],
-        },
       },
     ],
   },
@@ -68,10 +59,6 @@ export const testCategories: CategoryGroups = [
         tags: ['Not Curly Friendly'],
         notes:
           "Can build up and cause scalp issues if you don't use a clarifying shampoo",
-        matchConfig: {
-          matchType: ['exactMatch', 'partialMatch'],
-          partials: ['wax'],
-        },
       },
     ],
   },

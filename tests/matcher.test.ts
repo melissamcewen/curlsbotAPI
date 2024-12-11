@@ -22,21 +22,6 @@ describe('matchIngredient', () => {
     expect(match.matchDetails?.matchedOn).toEqual(['alcohol denat']);
   });
 
-  test('"alcohol" should match alcohol from categoryGroup', () => {
-    const match = matchIngredient('alcohol', testDatabase, { debug: true });
-
-    // Check debug info for all matches
-    expect(match.debug?.allMatches.length).toBeGreaterThan(1);
-
-    // Find category group match in debug info
-    const categoryMatch = match.debug?.allMatches.find(
-      (m) => m.matchDetails?.searchType === 'categoryGroup',
-    );
-    expect(categoryMatch).toBeDefined();
-    expect(categoryMatch?.matchDetails?.matched).toBe(true);
-    expect(categoryMatch?.matchDetails?.confidence).toBe(0.5);
-    expect(categoryMatch?.categories).toEqual(['unknown Alcohols']);
-  });
 
   test('should return basic info for no matches', () => {
     const match = matchIngredient('nonexistent ingredient', testDatabase);
@@ -64,7 +49,7 @@ describe('matchIngredient', () => {
 
     expect(match.debug).toBeDefined();
     expect(Array.isArray(match.debug?.allMatches)).toBe(true);
-    expect(match.debug?.allMatches.length).toBeGreaterThan(1);
+    expect(match.debug?.allMatches.length).toBe(1);
 
     // First match should be exact ingredient match
     expect(match.debug?.allMatches[0].matchDetails?.searchType).toBe(
@@ -72,11 +57,7 @@ describe('matchIngredient', () => {
     );
     expect(match.debug?.allMatches[0].matchDetails?.confidence).toBe(1);
 
-    // Should also have category group match
-    const categoryMatch = match.debug?.allMatches.find(
-      (m) => m.matchDetails?.searchType === 'categoryGroup',
-    );
-    expect(categoryMatch).toBeDefined();
+
   });
 
   test('should generate unique IDs for matches', () => {
@@ -117,57 +98,8 @@ describe('matchIngredient', () => {
     expect(synonymMatch.matchDetails?.matchedOn).toContain('cetearyl alcohol');
   });
 
-  test('should find exact category matches', () => {
-    const match = matchIngredient('waxes', testDatabase);
 
-    expect(match.matchDetails?.matched).toBe(true);
-    expect(match.matchDetails?.matchTypes).toContain('exactMatch');
-    expect(match.matchDetails?.searchType).toBe('category');
-    expect(match.matchDetails?.confidence).toBe(0.8);
-  });
 
-  test('should only match categories with exactMatch in matchType', () => {
-    const customTestDatabase = {
-      ingredients: [],
-      categories: [
-        {
-          name: 'Test Group',
-          description: '',
-          categories: [
-            {
-              name: 'With Exact Match',
-              description: '',
-              matchConfig: {
-                matchType: ['exactMatch'],
-                partials: [],
-              },
-            },
-            {
-              name: 'Without Exact Match',
-              description: '',
-              matchConfig: {
-                matchType: ['partialMatch'],
-                partials: [],
-              },
-            },
-          ],
-        },
-      ],
-    } as IngredientDatabase;
-
-    // Should match category with exactMatch
-    const matchResult = matchIngredient('with exact match', customTestDatabase);
-    expect(matchResult.matchDetails?.matched).toBe(true);
-    expect(matchResult.matchDetails?.searchType).toBe('category');
-    expect(matchResult.matchDetails?.matchTypes).toContain('exactMatch');
-
-    // Should not match category without exactMatch
-    const noMatchResult = matchIngredient(
-      'without exact match',
-      customTestDatabase,
-    );
-    expect(noMatchResult.matchDetails?.matched).toBeFalsy();
-  });
 });
 
 describe('createMatch', () => {

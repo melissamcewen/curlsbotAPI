@@ -215,7 +215,6 @@ describe('Analyzer', () => {
 
       // Check flags object
       expect(result.flags).toBeDefined();
-      expect(result.flags?.categoryGroups).toContain('Alcohols');
 
       // Check match details for both alcohols
       const matches = result.matches.filter(m =>

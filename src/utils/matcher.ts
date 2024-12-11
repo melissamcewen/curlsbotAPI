@@ -73,46 +73,7 @@ export function matchIngredient(
     }
   }
 
-  // Try category matches
-  for (const [groupName, group] of Object.entries(database.categories)) {
-    for (const [catName, category] of Object.entries(group.categories)) {
-      if (!category.matchConfig?.matchType?.includes('exactMatch')) continue;
 
-      if (input === category.name.toLowerCase()) {
-        matches.push(createMatch({
-          name: input,
-          normalized: input,
-          matchDetails: createMatchDetails('exactMatch', 'category', 0.8, [category.name]),
-          categories: [category.name],
-        }));
-      }
-
-      if (category.matchConfig.partials) {
-        const partialMatch = findPartialMatches(input, catName, category.matchConfig.partials);
-        if (partialMatch.matched && partialMatch.matchedOn) {
-          matches.push(createMatch({
-            name: input,
-            normalized: input,
-            matchDetails: createMatchDetails('partialMatch', 'category', 0.6, [partialMatch.matchedOn]),
-            categories: [catName],
-          }));
-        }
-      }
-    }
-
-    // Try category group matches
-    if (group.matchConfig?.partials) {
-      const groupMatch = findPartialMatches(input, group.name, group.matchConfig.partials);
-      if (groupMatch.matched) {
-        matches.push(createMatch({
-          name: input,
-          normalized: input,
-          matchDetails: createMatchDetails('partialMatch', 'categoryGroup', 0.5, [group.name]),
-          categories: [`unknown ${group.name}`],
-        }));
-      }
-    }
-  }
 
   // Try fuzzy matches if no other matches found
   if (matches.length === 0) {
