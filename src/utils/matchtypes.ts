@@ -1,4 +1,5 @@
 import Fuse from 'fuse.js';
+
 import type { Ingredient } from '@/types';
 
 /**

@@ -1,9 +1,3 @@
-import {
-  findExactMatch,
-  findPartialMatches,
-  regexMatch,
-  fuzzyMatch,
-} from './matchtypes';
 import type {
   IngredientDatabase,
   IngredientMatch,
@@ -11,6 +5,13 @@ import type {
   MatchOptions,
   Ingredient,
 } from '@/types';
+
+import {
+  findExactMatch,
+  findPartialMatches,
+  regexMatch,
+  fuzzyMatch,
+} from './matchtypes';
 import { generateId } from './idGenerator';
 
 /**

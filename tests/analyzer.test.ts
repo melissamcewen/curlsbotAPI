@@ -1,4 +1,5 @@
 import { Analyzer } from '../src/utils/analyzer';
+
 import { testCategories } from './data/testCategories';
 import { testIngredients } from './data/testIngredients';
 

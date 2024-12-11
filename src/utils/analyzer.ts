@@ -4,6 +4,7 @@ import {
   IngredientMatch,
   IngredientDatabase
 } from '@/types';
+
 import { normalizer } from './normalizer';
 import { matchIngredient } from './matcher';
 import { Flagger } from './flagger';
