@@ -1,4 +1,4 @@
-import { normalizer } from '../utils/normalizer';
+import { normalizer } from '../src/utils/normalizer';
 
 describe('normalizer', () => {
   it('should reject URLs', () => {
@@ -6,10 +6,10 @@ describe('normalizer', () => {
       'http://example.com',
       'https://test.com/ingredients',
       'www.ingredients.com',
-      '//localhost:3000'
+      '//localhost:3000',
     ];
 
-    urlInputs.forEach(url => {
+    urlInputs.forEach((url) => {
       const result = normalizer(url);
       expect(result.isValid).toBe(false);
       expect(result.ingredients).toEqual([]);

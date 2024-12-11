@@ -11,6 +11,9 @@
     "forceConsistentCasingInFileNames": true,
     "rootDir": "./src",
     "baseUrl": ".",
+    // linter checks for common issues
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
     "paths": {
       "@/*": ["src/*"],
       "@types/*": ["src/types/*"]

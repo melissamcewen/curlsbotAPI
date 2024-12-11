@@ -1,5 +1,4 @@
-import type { Ingredient } from '@/types';
-
+import type { Ingredient } from '../../../src/types';
 export const cleansers: Ingredient[] = [
   {
     name: 'Sodium Laureth Sulfate',
@@ -14,7 +13,7 @@ export const cleansers: Ingredient[] = [
     category: ['sulfate', 'harsh cleanser'],
     notes: 'Can be harsh and stripping on hair',
     synonyms: ['SLS', 'sodium lauryl sulfate'],
-  },  
+  },
   {
     name: 'Cocamidopropyl Betaine',
     description: 'A gentle surfactant derived from coconut oil',

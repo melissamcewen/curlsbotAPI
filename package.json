@@ -9,9 +9,13 @@
     "test": "jest --verbose",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
-    "prepare": "npm run build",
+    "prepare": "husky",
     "type-check": "tsc --noEmit",
-    "tsdoc": "api-extractor run --local --verbose"
+    "trace": "tsc --traceResolution > temp/trace.log",
+    "api-extractor": "npm run build && api-extractor run --local --diagnostics --config api-extractor.json",
+    "lint": "eslint . --ext .ts",
+    "lint:fix": "eslint . --ext .ts --fix",
+    "format": "prettier --write 'src/**/*.{ts,tsx}'"
   },
   "keywords": [
     "haircare",
@@ -23,7 +27,14 @@
   "devDependencies": {
     "@types/jest": "^29.5.5",
     "@types/node": "^20.8.0",
+    "@typescript-eslint/eslint-plugin": "^7.18.0",
+    "@typescript-eslint/parser": "^7.18.0",
+    "eslint": "^8.57.1",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "husky": "^9.0.11",
     "jest": "^29.7.0",
+    "lint-staged": "^15.2.2",
     "ts-jest": "^29.1.1",
     "ts-node": "^10.9.1",
     "typescript": "^5.2.2"
@@ -36,5 +47,10 @@
   "files": [
     "dist",
     "README.md"
-  ]
+  ],
+  "lint-staged": {
+    "*.ts": [
+      "eslint --fix"
+    ]
+  }
 }

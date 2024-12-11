@@ -134,3 +134,53 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 ## License
 
 MIT
+
+## Flagging Ingredients
+
+The analyzer can flag ingredients based on specific criteria. This is useful for highlighting ingredients of interest or concern.
+
+### Configuration
+
+Configure flagging by passing options to the analyzer:
+
+```typescript
+const analyzer = new Analyzer({
+  database: ingredientDatabase,
+  options: {
+    // Flag specific ingredients (case insensitive)
+    flaggedIngredients: ['sodium lauryl sulfate', 'benzyl alcohol'],
+
+    // Flag any ingredients in these categories
+    flaggedCategories: ['sulfate', 'solvent alcohol'],
+
+    // Flag any ingredients in these category groups
+    flaggedCategoryGroups: ['Alcohols']
+  }
+});
+```
+
+### Analysis Results
+
+When using flagging, the analysis results include a flags object:
+
+```typescript
+const result = analyzer.analyze('Water, Sodium Lauryl Sulfate, Benzyl Alcohol');
+
+console.log(result.flags);
+// {
+//   ingredients: ['sodium lauryl sulfate', 'benzyl alcohol'],
+//   categories: ['sulfate', 'solvent alcohol'],
+//   categoryGroups: ['Alcohols']
+// }
+
+// Each matched ingredient also includes flagging information
+console.log(result.matches[0].matchDetails.flagged); // true/false
+```
+
+### Flag Types
+
+- `flaggedIngredients`: Flags specific ingredients by name (including synonyms)
+- `flaggedCategories`: Flags any ingredients that belong to specified categories
+- `flaggedCategoryGroups`: Flags any ingredients that belong to specified category groups
+
+All flagging is case-insensitive for easier matching.

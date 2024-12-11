@@ -1,5 +1,5 @@
-import { regexMatch, findExactMatch, findPartialMatches, fuzzyMatch } from '../utils/matchtypes';
-import type { Ingredient } from '../types';
+import { regexMatch, findExactMatch, findPartialMatches, fuzzyMatch } from '../src/utils/matchtypes';
+import type { Ingredient } from '../src/types';
 
 describe('regexMatch', () => {
   test('should match basic regex patterns', () => {
