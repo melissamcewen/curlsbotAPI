@@ -46,5 +46,23 @@ describe('Flagger', () => {
       const flags = flagger.getFlagsForMatch(match);
       expect(flags.categories).toContain('fatty alcohol');
     });
+
+    it('should initialize matchDetails when undefined', () => {
+      const flagger = new Flagger(database, {
+        flaggedIngredients: ['test ingredient'],
+      });
+
+      const match: IngredientMatch = {
+        normalized: 'test ingredient',
+        categories: [],
+        id: 'test-id',
+        name: 'Test Ingredient',
+      };
+
+      flagger.getFlagsForMatch(match);
+      expect(match.matchDetails).toBeDefined();
+      expect(match.matchDetails?.matched).toBe(true);
+      expect(match.matchDetails?.flagged).toBe(true);
+    });
   });
 });
