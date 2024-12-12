@@ -1,8 +1,8 @@
-import {
+import type {
   AnalyzerConfig,
   AnalysisResult,
   IngredientMatch,
-  IngredientDatabase
+  IngredientDatabase,
 } from '../types';
 
 import { normalizer } from './normalizer';

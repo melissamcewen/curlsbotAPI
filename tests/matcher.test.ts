@@ -9,8 +9,6 @@ describe('matchIngredient', () => {
     categories: testCategories,
   };
 
-
-
   test('"alcohol denat." should match denatured alcohol', () => {
     const match = matchIngredient('alcohol denat.', testDatabase);
 
@@ -18,7 +16,6 @@ describe('matchIngredient', () => {
     expect(match.matchDetails?.confidence).toBe(1);
     expect(match.matchDetails?.matchedOn).toContain('alcohol denat');
   });
-
 
   test('should return basic info for no matches', () => {
     const match = matchIngredient('nonexistent ingredient', testDatabase);
@@ -46,9 +43,6 @@ describe('matchIngredient', () => {
     expect(match.debug).toBeDefined();
     expect(Array.isArray(match.debug?.allMatches)).toBe(true);
     expect(match.debug?.allMatches.length).toBeGreaterThan(0);
-
-
-
   });
 
   test('should generate unique IDs for matches', () => {
@@ -82,9 +76,6 @@ describe('matchIngredient', () => {
     expect(synonymMatch.matchDetails?.matched).toBe(true);
     expect(synonymMatch.details?.name).toBe('Cetyl Alcohol');
   });
-
-
-
 });
 
 describe('createMatch', () => {

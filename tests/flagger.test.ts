@@ -1,3 +1,5 @@
+import { describe, it, expect } from 'vitest';
+
 import { Flagger } from '../src/utils/flagger';
 import type { IngredientMatch } from '../src/types';
 
