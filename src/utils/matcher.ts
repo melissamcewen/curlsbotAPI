@@ -107,20 +107,6 @@ export class IngredientMatcher {
     return match;
   }
 
-  private getSimilarityScore(input: string, target: string): number {
-    const inputWords = input.toLowerCase().split(' ');
-    const targetWords = target.toLowerCase().split(' ');
-
-    let matchCount = 0;
-    for (const inputWord of inputWords) {
-      for (const targetWord of targetWords) {
-        if (targetWord.includes(inputWord) || inputWord.includes(targetWord)) {
-          matchCount++;
-        }
-      }
-    }
-    return matchCount;
-  }
 }
 
 function createMatchDetails(
