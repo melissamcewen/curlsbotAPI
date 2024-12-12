@@ -43,7 +43,7 @@ export function normalizer(text: string): NormalizedIngredientList {
 
   // Split and clean ingredients
   const ingredients = text
-    .replace(lineBreaks, ' ')
+    .replace(lineBreaks, ',')
     .replace(excessSpaces, ' ')
     .replace(and, ',')
     .replace(sepChar, ',')

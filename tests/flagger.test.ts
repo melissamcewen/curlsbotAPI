@@ -3,7 +3,6 @@ import type { IngredientMatch } from '../src/types';
 
 import { testCategories } from './data/testCategories';
 import { alcohols } from './data/testIngredients/alcohols';
-import { testIngredients } from './data/testIngredients';
 
 describe('Flagger', () => {
   const database = {
@@ -206,8 +205,8 @@ describe('Flagger', () => {
       };
 
       flagger.getFlagsForMatch(match);
-      expect(match.matchDetails.flagged).toBe(true);
-      expect(match.matchDetails.matched).toBe(true);
+      expect(match.matchDetails?.flagged).toBe(true);
+      expect(match.matchDetails?.matched).toBe(true);
     });
   });
 });

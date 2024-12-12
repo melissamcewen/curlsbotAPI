@@ -65,7 +65,7 @@ describe('Analyzer', () => {
 
   test('should analyze badly formatted list correctly', () => {
     const list =
-      'Aqua (Water), Coco-Glucoside, Sodium Lauroyl Methyl Isethionate, Acrylates Copolymer, /n Parfum (Fragrance), Phenoxyethanol, Glycol Distearate, Laureth-4, Polyquaternium-10, Benzyl\nAlcohol, Hydroxypropyl Guar Hydroxypropyltrimonium Chloride';
+      'Aqua (Water), Coco-Glucoside, Sodium Lauroyl Methyl Isethionate, Acrylates Copolymer, /n Parfum (Fragrance), Phenoxyethanol, Glycol Distearate, Laureth-4, Polyquaternium-10, Benzyl Alcohol, Hydroxypropyl Guar Hydroxypropyltrimonium Chloride';
 
     const result = analyzer.analyze(list);
 
