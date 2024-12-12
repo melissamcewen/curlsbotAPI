@@ -1,4 +1,4 @@
-import type { Ingredient } from '../../../src/types';
+import { type Ingredient } from '../../../src/types';
 
 import { alcohols } from './alcohols';
 import { cleansers } from './cleansers';

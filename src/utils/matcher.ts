@@ -1,4 +1,4 @@
-import lunr from 'lunr';
+import FlexSearch from 'flexsearch';
 
 import type {
   IngredientDatabase,
@@ -10,45 +10,38 @@ import type {
 
 import { generateId } from './idGenerator';
 
-// Create a class to handle Lunr indexing and searching
+// Create a class to handle FlexSearch indexing and searching
 export class IngredientMatcher {
-  private idx: lunr.Index;
+  private idx: FlexSearch.Index; // FlexSearch index
   private ingredientMap: Map<string, Ingredient>;
 
   constructor(database: IngredientDatabase) {
     this.ingredientMap = new Map();
 
-    // Build the Lunr index
-    const ingredientMap = this.ingredientMap;
-    this.idx = lunr(function () {
-      this.field('searchableText', { boost: 10 });
-      this.field('name', { boost: 5 });
-      this.field('synonyms', { boost: 5 });
+    // Initialize FlexSearch with basic Index
+    this.idx = new FlexSearch.Index({
+      tokenize: 'full',
+      resolution: 9,
+      cache: true,
+      charset: "latin:extra"
+    });
 
-      // Add ref field which will be the ingredient ID
-      this.ref('id');
+    // Index each ingredient
+    database.ingredients.forEach((ingredient) => {
+      const searchText = [
+        ingredient.name,
+        ...(ingredient.synonyms || [])
+      ].join(' ').toLowerCase();
 
-      // Index each ingredient
-      database.ingredients.forEach((ingredient) => {
-        this.add({
-          id: ingredient.id,
-          name: ingredient.name,
-          searchableText: ingredient.name,
-          synonyms: ingredient.synonyms?.join(' ') || '',
-        });
-
-        // Store the full ingredient data in the map
-        ingredientMap.set(ingredient.id, ingredient);
-      });
+      this.idx.add(ingredient.id, searchText);
+      this.ingredientMap.set(ingredient.id, ingredient);
     });
   }
 
   search(input: string, options: MatchOptions = {}): IngredientMatch {
-    const terms = input.toLowerCase().split(' ');
-    const searchQuery = terms.map(term => `${term}~1`).join(' ');
-    const searchResults = this.idx.search(searchQuery);
+    const searchResults = this.idx.search(input.toLowerCase());
 
-    if (searchResults.length === 0) {
+    if (!searchResults.length) {
       return createMatch({
         name: input,
         normalized: input,
@@ -56,8 +49,8 @@ export class IngredientMatcher {
     }
 
     // Get the best match
-    const bestMatch = searchResults[0];
-    const ingredient = this.ingredientMap.get(bestMatch.ref);
+    const bestMatchId = searchResults[0];
+    const ingredient = this.ingredientMap.get(String(bestMatchId));
 
     if (!ingredient) {
       return createMatch({
@@ -71,15 +64,12 @@ export class IngredientMatcher {
       term => input.toLowerCase().includes(term.toLowerCase())
     ) || ingredient.name;
 
-    // Calculate confidence based on score
-    const confidence = Math.min(bestMatch.score, 1);
-
     const match = createMatch({
       name: input,
       normalized: input,
       matchDetails: {
-        matched: searchResults.length > 0,
-        confidence,
+        matched: true,
+        confidence: 1,
         matchedOn: [matchedTerm]
       },
       details: ingredient,
@@ -89,24 +79,21 @@ export class IngredientMatcher {
     // Add debug info if requested
     if (options.debug) {
       match.debug = {
-        allMatches: searchResults.map((result) => ({
-          ...createMatch({
+        allMatches: searchResults.map((id: string | number) => {
+          const matchIngredient = this.ingredientMap.get(String(id));
+          return createMatch({
             name: input,
             normalized: input,
-            matchDetails: createMatchDetails(
-              result.score,
-              [ingredient.name],
-            ),
-            details: this.ingredientMap.get(result.ref),
-            categories: this.ingredientMap.get(result.ref)?.category,
-          }),
-        })),
+            matchDetails: createMatchDetails(1, [matchIngredient?.name || '']),
+            details: matchIngredient,
+            categories: matchIngredient?.category,
+          });
+        }),
       };
     }
 
     return match;
   }
-
 }
 
 function createMatchDetails(
