@@ -19,4 +19,7 @@ export default defineConfig({
       '@types': '/src/types'
     },
   },
+  typeCheck: {
+    tsconfig: './tsconfig.test.json'
+  }
 });
