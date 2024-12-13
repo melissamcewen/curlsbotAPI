@@ -30,6 +30,17 @@ describe('Analyzer', () => {
     ).toBeDefined();
     // expect categories to contain  non-water-soluble silicone
     expect(result.categories).toContain('non-water-soluble silicone');
+    //expect match details to contain the name
+    const slsMatch = result.matches.find(match => match.normalized === 'sodium lauryl sulfate');
+    expect(slsMatch?.matchDetails?.matchedOn).toBeDefined();
+    expect(Array.isArray(slsMatch?.matchDetails?.matchedOn)).toBe(true);
+    expect(slsMatch?.matchDetails?.matchedOn).toContain('sodium lauryl sulfate');
+    // expect details to contain the name and ingredient description
+    expect(slsMatch?.details?.name).toBe('Sodium Lauryl Sulfate');
+    expect(slsMatch?.details?.description).toBeDefined();
+    expect(slsMatch?.details?.description).toContain(
+      'A strong cleansing agent commonly found in shampoos',
+    );
   });
 
   test('should analyze Keratin shampoo correctly', () => {

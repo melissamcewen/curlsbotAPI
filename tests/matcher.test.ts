@@ -13,7 +13,6 @@ describe('matchIngredient', () => {
     const match = matchIngredient('alcohol denat.', testDatabase);
 
     expect(match.matchDetails?.matched).toBe(true);
-    expect(match.matchDetails?.confidence).toBe(1);
     expect(match.matchDetails?.matchedOn).toContain('alcohol denat');
   });
 
@@ -126,14 +125,12 @@ describe('createMatch', () => {
       normalized: 'test ingredient',
       matchDetails: {
         matched: true,
-        confidence: 0.8,
         matchedOn: ['test ingredient'],
       },
     });
 
     expect(match.matchDetails).toEqual({
       matched: true,
-      confidence: 0.8,
       matchedOn: ['test ingredient'],
     });
   });

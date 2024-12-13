@@ -48,7 +48,51 @@ export class IngredientMatcher {
       });
     }
 
-    // Get the best match
+    const inputLower = input.toLowerCase();
+
+    // Try to find an exact match first
+    for (const id of searchResults) {
+      const ingredient = this.ingredientMap.get(String(id));
+      if (!ingredient) continue;
+
+      // Check for exact match in name or synonyms
+      const exactMatch = [ingredient.name.toLowerCase(), ...(ingredient.synonyms || []).map(s => s.toLowerCase())]
+        .find(term => term === inputLower);
+
+      if (exactMatch) {
+        const match = createMatch({
+          name: input,
+          normalized: input,
+          matchDetails: {
+            matched: true,
+            confidence: 1,
+            matchedOn: [exactMatch]
+          },
+          details: ingredient,
+          categories: ingredient.category,
+        });
+
+        // Add debug info if requested
+        if (options.debug) {
+          match.debug = {
+            allMatches: searchResults.map((id: string | number) => {
+              const matchIngredient = this.ingredientMap.get(String(id));
+              return createMatch({
+                name: input,
+                normalized: input,
+                matchDetails: createMatchDetails(1, [matchIngredient?.name || '']),
+                details: matchIngredient,
+                categories: matchIngredient?.category,
+              });
+            }),
+          };
+        }
+
+        return match;
+      }
+    }
+
+    // If no exact match, fall back to fuzzy match
     const bestMatchId = searchResults[0];
     const ingredient = this.ingredientMap.get(String(bestMatchId));
 
@@ -60,16 +104,15 @@ export class IngredientMatcher {
     }
 
     // Find which term was matched
-    const matchedTerm = [ingredient.name.toLowerCase(), ...(ingredient.synonyms || [])].find(
-      term => input.toLowerCase().includes(term.toLowerCase())
-    ) || ingredient.name;
+    const matchedTerm = [ingredient.name.toLowerCase(), ...(ingredient.synonyms || []).map(s => s.toLowerCase())]
+      .find(term => inputLower.includes(term) || term.includes(inputLower)) || ingredient.name;
 
     const match = createMatch({
       name: input,
       normalized: input,
       matchDetails: {
         matched: true,
-        confidence: 1,
+        confidence: 0.8, // Lower confidence for fuzzy matches
         matchedOn: [matchedTerm]
       },
       details: ingredient,
