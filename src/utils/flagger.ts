@@ -4,6 +4,18 @@ import type {
   IngredientDatabase,
 } from '../types';
 
+export interface FlagResult {
+  flags: {
+    ingredients: string[];
+    categories: string[];
+    categoryGroups: string[];
+  };
+  matchDetails: {
+    matched: boolean;
+    flagged: boolean;
+  };
+}
+
 export class Flagger {
   private options: AnalyzerOptions;
   private database: IngredientDatabase;
@@ -13,7 +25,7 @@ export class Flagger {
     this.database = database;
   }
 
-  public getFlagsForMatch(match: IngredientMatch) {
+  public getFlagsForMatch(match: IngredientMatch): FlagResult {
     const flags = {
       ingredients: [] as string[],
       categories: [] as string[],
@@ -68,16 +80,11 @@ export class Flagger {
       });
     }
 
-    // Update match details with flagged status
-    if (match.matchDetails) {
-      match.matchDetails.flagged = isFlagged;
-    } else {
-      match.matchDetails = {
-        matched: true,
-        flagged: isFlagged,
-      };
-    }
+    const matchDetails = {
+      matched: true,
+      flagged: isFlagged,
+    };
 
-    return flags;
+    return { flags, matchDetails };
   }
 }

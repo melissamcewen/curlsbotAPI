@@ -4,7 +4,6 @@ import type { IngredientMatch } from '../src/types';
 import { testCategories } from './data/testCategories';
 import { alcohols } from './data/testIngredients/alcohols';
 
-
 describe('Flagger', () => {
   const database = {
     ingredients: alcohols,
@@ -19,13 +18,13 @@ describe('Flagger', () => {
 
       const match: IngredientMatch = {
         normalized: 'test',
-        categories: undefined, // explicitly set categories to undefined
+        categories: undefined,
         uuid: 'test-id',
         name: 'test',
       };
 
-      const flags = flagger.getFlagsForMatch(match);
-      expect(flags.categories).toHaveLength(0);
+      const result = flagger.getFlagsForMatch(match);
+      expect(result.flags.categories).toHaveLength(0);
     });
 
     it('should process categories when they exist', () => {
@@ -40,31 +39,9 @@ describe('Flagger', () => {
         name: 'Cetyl Alcohol',
       };
 
-      const flags = flagger.getFlagsForMatch(match);
-      expect(flags.categories).toContain('fatty alcohol');
-    });
-
-    it('should initialize matchDetails when undefined', () => {
-      const flagger = new Flagger(database, {
-        flaggedIngredients: ['test_ingredient'],
-      });
-
-      const match: IngredientMatch = {
-        normalized: 'test ingredient',
-        categories: [],
-        uuid: '123',
-        name: 'Test Ingredient',
-        details: {
-          id: 'test_ingredient',
-          name: 'Test Ingredient',
-          category: [],
-        },
-      };
-
-      flagger.getFlagsForMatch(match);
-      expect(match.matchDetails).toBeDefined();
-      expect(match.matchDetails?.matched).toBe(true);
-      expect(match.matchDetails?.flagged).toBe(true);
+      const result = flagger.getFlagsForMatch(match);
+      expect(result.flags.categories).toContain('fatty alcohol');
+      expect(result.matchDetails.flagged).toBe(true);
     });
 
     it('should flag ingredients by id', () => {
@@ -84,9 +61,9 @@ describe('Flagger', () => {
         },
       };
 
-      const flags = flagger.getFlagsForMatch(match);
-      expect(flags.ingredients).toContain('sodium_lauryl_sulfate');
-      expect(match.matchDetails?.flagged).toBe(true);
+      const result = flagger.getFlagsForMatch(match);
+      expect(result.flags.ingredients).toContain('sodium_lauryl_sulfate');
+      expect(result.matchDetails.flagged).toBe(true);
     });
 
     it('should flag ingredients by category', () => {
@@ -106,9 +83,9 @@ describe('Flagger', () => {
         },
       };
 
-      const flags = flagger.getFlagsForMatch(match);
-      expect(flags.categories).toContain('solvent alcohol');
-      expect(match.matchDetails?.flagged).toBe(true);
+      const result = flagger.getFlagsForMatch(match);
+      expect(result.flags.categories).toContain('solvent alcohol');
+      expect(result.matchDetails.flagged).toBe(true);
     });
 
     it('should flag ingredients by category group', () => {
@@ -123,9 +100,9 @@ describe('Flagger', () => {
         name: 'Cetyl Alcohol',
       };
 
-      const flags = flagger.getFlagsForMatch(match);
-      expect(flags.categoryGroups).toContain('alcohols');
-      expect(match.matchDetails?.flagged).toBe(true);
+      const result = flagger.getFlagsForMatch(match);
+      expect(result.flags.categoryGroups).toContain('alcohols');
+      expect(result.matchDetails.flagged).toBe(true);
     });
 
     it('should not flag non-matching ingredients', () => {
@@ -142,11 +119,11 @@ describe('Flagger', () => {
         name: 'Water',
       };
 
-      const flags = flagger.getFlagsForMatch(match);
-      expect(flags.ingredients).toHaveLength(0);
-      expect(flags.categories).toHaveLength(0);
-      expect(flags.categoryGroups).toHaveLength(0);
-      expect(match.matchDetails?.flagged).toBe(false);
+      const result = flagger.getFlagsForMatch(match);
+      expect(result.flags.ingredients).toHaveLength(0);
+      expect(result.flags.categories).toHaveLength(0);
+      expect(result.flags.categoryGroups).toHaveLength(0);
+      expect(result.matchDetails.flagged).toBe(false);
     });
 
     it('should handle empty flag options', () => {
@@ -159,37 +136,28 @@ describe('Flagger', () => {
         name: 'Sodium Lauryl Sulfate',
       };
 
-      const flags = flagger.getFlagsForMatch(match);
-      expect(flags.ingredients).toHaveLength(0);
-      expect(flags.categories).toHaveLength(0);
-      expect(flags.categoryGroups).toHaveLength(0);
-      expect(match.matchDetails?.flagged).toBe(false);
+      const result = flagger.getFlagsForMatch(match);
+      expect(result.flags.ingredients).toHaveLength(0);
+      expect(result.flags.categories).toHaveLength(0);
+      expect(result.flags.categoryGroups).toHaveLength(0);
+      expect(result.matchDetails.flagged).toBe(false);
     });
 
-    it('should update existing matchDetails', () => {
+    it('should always return matchDetails with matched true', () => {
       const flagger = new Flagger(database, {
-        flaggedIngredients: ['test_ingredient'],
+        flaggedCategories: ['fatty alcohol'],
       });
 
       const match: IngredientMatch = {
-        normalized: 'test ingredient',
-        categories: [],
+        normalized: 'cetyl alcohol',
+        categories: ['fatty alcohol'],
         uuid: '123',
-        name: 'Test Ingredient',
-        details: {
-          id: 'test_ingredient',
-          name: 'Test Ingredient',
-          category: [],
-        },
-        matchDetails: {
-          matched: true,
-          flagged: false,
-        },
+        name: 'Cetyl Alcohol',
       };
 
-      flagger.getFlagsForMatch(match);
-      expect(match.matchDetails?.flagged).toBe(true);
-      expect(match.matchDetails?.matched).toBe(true);
+      const result = flagger.getFlagsForMatch(match);
+      expect(result.matchDetails.matched).toBe(true);
+      expect(result.matchDetails.flagged).toBe(true);
     });
   });
 });

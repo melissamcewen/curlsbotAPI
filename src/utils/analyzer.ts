@@ -3,11 +3,35 @@ import type {
   AnalysisResult,
   IngredientMatch,
   IngredientDatabase,
+  NormalizedResult,
 } from '../types';
 
 import { normalizer } from './normalizer';
 import { matchIngredient } from './matcher';
 import { Flagger } from './flagger';
+
+/**
+ * Custom error class for Analyzer-specific errors
+ */
+export class AnalyzerError extends Error {
+  constructor(message: string) {
+    super(message);
+    this.name = 'AnalyzerError';
+  }
+}
+
+/**
+ * Creates an empty analysis result
+ */
+export const createEmptyResult = (): AnalysisResult => ({
+  matches: [],
+  categories: [],
+  flags: {
+    ingredients: [],
+    categories: [],
+    categoryGroups: [],
+  },
+});
 
 /**
  * Analyzes cosmetic ingredient lists and matches ingredients against a database
@@ -26,14 +50,22 @@ import { Flagger } from './flagger';
  */
 export class Analyzer {
   /** The ingredient database used for matching */
-  private database: IngredientDatabase;
-  private flagger: Flagger;
+  private readonly database: IngredientDatabase;
+  private readonly flagger: Flagger;
 
   /**
    * Creates a new Analyzer instance
    * @param config - Configuration containing the ingredient database
    */
   constructor(config: AnalyzerConfig) {
+    if (!config?.database) {
+      throw new AnalyzerError('Database configuration is required');
+    }
+
+    if (!Array.isArray(config.database.ingredients)) {
+      throw new AnalyzerError('Invalid database format: ingredients must be an array');
+    }
+
     this.database = config.database;
     this.flagger = new Flagger(this.database, config.options);
   }
@@ -43,7 +75,7 @@ export class Analyzer {
    *
    * @param ingredientList - Comma-separated list of ingredients
    * @returns {AnalysisResult} Object containing matches and unique categories
-   * @throws Never throws
+   * @throws {AnalyzerError} If the input is invalid or processing fails
    *
    * @example
    * ```ts
@@ -53,35 +85,82 @@ export class Analyzer {
    * ```
    */
   public analyze(ingredientList: string): AnalysisResult {
-    // Normalize the ingredient list
-    const normalized = normalizer(ingredientList);
+    try {
+      if (!ingredientList || typeof ingredientList !== 'string') {
+        throw new AnalyzerError('Invalid input: ingredient list must be a non-empty string');
+      }
 
-    if (!normalized.isValid) {
+      const normalized = this.normalizeIngredients(ingredientList);
+      if (!normalized.isValid) {
+        return createEmptyResult();
+      }
+
+      const matches = this.matchIngredients(normalized);
+      const categories = this.extractCategories(matches);
+      const flags = this.processFlags(matches);
+
       return {
-        matches: [],
-        categories: [],
+        matches,
+        categories,
+        flags: {
+          ingredients: [...new Set(flags.ingredients)],
+          categories: [...new Set(flags.categories)],
+          categoryGroups: [...new Set(flags.categoryGroups)],
+        },
       };
+    } catch (error) {
+      if (error instanceof AnalyzerError) {
+        throw error;
+      }
+      throw new AnalyzerError(`Failed to analyze ingredients: ${error instanceof Error ? error.message : 'Unknown error'}`);
     }
+  }
 
-    // Get matches for each normalized ingredient
-    const matches: IngredientMatch[] = normalized.ingredients.map(
-      (ingredient) => {
-        const match = matchIngredient(ingredient, this.database);
+  /**
+   * Normalizes the ingredient list
+   * @throws {AnalyzerError} If normalization fails
+   */
+  private normalizeIngredients(ingredientList: string): NormalizedResult {
+    try {
+      return normalizer(ingredientList);
+    } catch (error) {
+      throw new AnalyzerError(`Failed to normalize ingredients: ${error instanceof Error ? error.message : 'Unknown error'}`);
+    }
+  }
 
-        return match as IngredientMatch; // We know it's a single match since we're not using returnAllMatches
-      },
-    );
+  /**
+   * Matches ingredients against the database
+   * @throws {AnalyzerError} If matching fails
+   */
+  private matchIngredients(normalized: NormalizedResult): readonly IngredientMatch[] {
+    try {
+      return normalized.ingredients.map((ingredient: string): IngredientMatch => {
+        if (!ingredient) {
+          throw new AnalyzerError('Empty ingredient found in normalized list');
+        }
+        return matchIngredient(ingredient, this.database);
+      });
+    } catch (error) {
+      throw new AnalyzerError(`Failed to match ingredients: ${error instanceof Error ? error.message : 'Unknown error'}`);
+    }
+  }
 
-    // Collect unique categories from all matches
-    const categories = [
-      ...new Set(
-        matches
-          .filter((match) => match.categories)
-          .flatMap((match) => match.categories as string[]),
-      ),
-    ];
+  /**
+   * Extracts unique categories from matches
+   */
+  private extractCategories(matches: readonly IngredientMatch[]): string[] {
+    return [...new Set(
+      matches
+        .filter((match): match is IngredientMatch & { categories: string[] } =>
+          Boolean(match.categories))
+        .flatMap(match => match.categories)
+    )];
+  }
 
-    // Get flags for all matches
+  /**
+   * Processes flags for all matches
+   */
+  private processFlags(matches: readonly IngredientMatch[]) {
     const flags = {
       ingredients: [] as string[],
       categories: [] as string[],
@@ -89,40 +168,49 @@ export class Analyzer {
     };
 
     matches.forEach(match => {
-      const matchFlags = this.flagger.getFlagsForMatch(match);
-      flags.ingredients.push(...matchFlags.ingredients);
-      flags.categories.push(...matchFlags.categories);
-      flags.categoryGroups.push(...matchFlags.categoryGroups);
+      try {
+        const result = this.flagger.getFlagsForMatch(match);
+        flags.ingredients.push(...result.flags.ingredients);
+        flags.categories.push(...result.flags.categories);
+        flags.categoryGroups.push(...result.flags.categoryGroups);
+        match.matchDetails = result.matchDetails;
+      } catch (error) {
+        console.warn(`Failed to process flags for match ${match.name}: ${error instanceof Error ? error.message : 'Unknown error'}`);
+      }
     });
 
-    return {
-      matches,
-      categories,
-      flags: {
-        ingredients: [...new Set(flags.ingredients)],
-        categories: [...new Set(flags.categories)],
-        categoryGroups: [...new Set(flags.categoryGroups)],
-      },
-    };
+    return flags;
   }
 
   /**
    * Gets all known categories from the database
-   * @returns Array of lowercase category names
+   * @throws {AnalyzerError} If database access fails
    */
   public getCategories(): string[] {
-    return this.database.categories.flatMap(group =>
-      group.categories.map(category => category.id)
-    );
+    try {
+      if (!this.database.categories) {
+        throw new AnalyzerError('Categories not found in database');
+      }
+      return this.database.categories.flatMap(group =>
+        group.categories.map(category => category.id)
+      );
+    } catch (error) {
+      throw new AnalyzerError(`Failed to get categories: ${error instanceof Error ? error.message : 'Unknown error'}`);
+    }
   }
 
   /**
    * Gets all known ingredients from the database
-   * @returns Array of lowercase ingredient names
+   * @throws {AnalyzerError} If database access fails
    */
   public getIngredients(): string[] {
-    return this.database.ingredients.map((ingredient) =>
-      ingredient.id,
-    );
+    try {
+      if (!this.database.ingredients) {
+        throw new AnalyzerError('Ingredients not found in database');
+      }
+      return this.database.ingredients.map(ingredient => ingredient.id);
+    } catch (error) {
+      throw new AnalyzerError(`Failed to get ingredients: ${error instanceof Error ? error.message : 'Unknown error'}`);
+    }
   }
 }

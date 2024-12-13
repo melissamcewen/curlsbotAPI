@@ -145,8 +145,6 @@ export interface MatchConfig {
 export interface MatchDetails {
   /** Whether the match was successful */
   matched: boolean;
-  /** Optional matched terms */
-  matchedOn?: string[];
   /** Optional synonym used in the match */
   synonymMatch?: string;
   /** Whether the match was flagged */

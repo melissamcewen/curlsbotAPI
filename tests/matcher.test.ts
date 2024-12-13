@@ -1,4 +1,4 @@
-import { matchIngredient, createMatch } from '../src/utils/matcher';
+import { matchIngredient } from '../src/utils/matcher';
 
 import { testCategories } from './data/testCategories';
 import { alcohols } from './data/testIngredients/alcohols';
@@ -107,57 +107,6 @@ describe('matchIngredient', () => {
       description: expect.any(String),
       id: expect.any(String),
       synonyms: expect.any(Array),
-    });
-  });
-});
-
-describe('createMatch', () => {
-  test('should create basic match with required fields', () => {
-    const match = createMatch({
-      name: 'test ingredient',
-      normalized: 'test ingredient',
-    });
-
-    expect(match).toEqual({
-      uuid: expect.any(String),
-      name: 'test ingredient',
-      normalized: 'test ingredient',
-    });
-  });
-
-  test('should include match details when provided', () => {
-    const match = createMatch({
-      name: 'test ingredient',
-      normalized: 'test ingredient',
-      matchDetails: {
-        matched: true,
-        matchedOn: ['test ingredient'],
-      },
-    });
-
-    expect(match.matchDetails).toEqual({
-      matched: true,
-      matchedOn: ['test ingredient'],
-    });
-  });
-
-  test('should include additional details when provided', () => {
-    const match = createMatch({
-      name: 'test ingredient',
-      normalized: 'test ingredient',
-      details: {
-        name: 'Test Ingredient',
-        id: 'test-ingredient',
-        category: ['category1'],
-        description: 'test description',
-      },
-    });
-
-    expect(match.details).toEqual({
-      name: 'Test Ingredient',
-      category: ['category1'],
-      description: 'test description',
-      id: 'test-ingredient',
     });
   });
 });
