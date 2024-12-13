@@ -1,4 +1,5 @@
-import { defineConfig } from 'vite'
+import { defineConfig } from 'vite';
+import path from 'path';
 
 export default defineConfig({
   build: {
@@ -6,7 +7,7 @@ export default defineConfig({
       entry: 'src/index.ts',
       name: 'haircare-ingredients-analyzer',
       fileName: (format) => `index.${format}.js`,
-      formats: ['es', 'umd']
+      formats: ['es', 'umd'],
     },
     sourcemap: true,
     rollupOptions: {
@@ -14,9 +15,14 @@ export default defineConfig({
       output: {
         globals: {
           uuid: 'uuid',
-          flexsearch: 'FlexSearch'
-        }
-      }
-    }
-  }
-})
+          flexsearch: 'FlexSearch',
+        },
+      },
+    },
+  },
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, './src'),
+    },
+  },
+});
