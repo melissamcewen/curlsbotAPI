@@ -76,6 +76,34 @@ describe('matchIngredient', () => {
     expect(synonymMatch.matchDetails?.matched).toBe(true);
     expect(synonymMatch.details?.name).toBe('Cetyl Alcohol');
   });
+
+  test('should populate details from matched ingredient', () => {
+    const match = matchIngredient('alcohol denat.', testDatabase);
+
+    expect(match.details).toBeDefined();
+    // Verify specific fields from the matched ingredient
+    expect(match.details?.name).toBe('Denatured Alcohol');
+    expect(match.details?.category).toEqual(['drying alcohol']);
+    expect(match.details?.description).toBeDefined();
+  });
+
+  test('should not include details when no match is found', () => {
+    const match = matchIngredient('nonexistent ingredient', testDatabase);
+
+    expect(match.details).toBeUndefined();
+  });
+
+  test('should include all ingredient fields in details when matched', () => {
+    const match = matchIngredient('cetyl alcohol', testDatabase);
+
+    expect(match.details).toMatchObject({
+      name: 'Cetyl Alcohol',
+      category: expect.any(Array),
+      description: expect.any(String),
+      id: expect.any(String),
+      synonyms: expect.any(Array),
+    });
+  });
 });
 
 describe('createMatch', () => {
