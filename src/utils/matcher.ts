@@ -23,15 +23,14 @@ export class IngredientMatcher {
       tokenize: 'full',
       resolution: 9,
       cache: true,
-      charset: "latin:extra"
+      charset: 'latin:extra',
     });
 
     // Index each ingredient
     database.ingredients.forEach((ingredient) => {
-      const searchText = [
-        ingredient.name,
-        ...(ingredient.synonyms || [])
-      ].join(' ').toLowerCase();
+      const searchText = [ingredient.name, ...(ingredient.synonyms || [])]
+        .join(' ')
+        .toLowerCase();
 
       this.idx.add(ingredient.id, searchText);
       this.ingredientMap.set(ingredient.id, ingredient);
@@ -56,8 +55,10 @@ export class IngredientMatcher {
       if (!ingredient) continue;
 
       // Check for exact match in name or synonyms
-      const exactMatch = [ingredient.name.toLowerCase(), ...(ingredient.synonyms || []).map(s => s.toLowerCase())]
-        .find(term => term === inputLower);
+      const exactMatch = [
+        ingredient.name.toLowerCase(),
+        ...(ingredient.synonyms || []).map((s) => s.toLowerCase()),
+      ].find((term) => term === inputLower);
 
       if (exactMatch) {
         const match = createMatch({
@@ -66,7 +67,7 @@ export class IngredientMatcher {
           matchDetails: {
             matched: true,
             confidence: 1,
-            matchedOn: [exactMatch]
+            matchedOn: [exactMatch],
           },
           details: ingredient,
           categories: ingredient.category,
@@ -80,7 +81,9 @@ export class IngredientMatcher {
               return createMatch({
                 name: input,
                 normalized: input,
-                matchDetails: createMatchDetails(1, [matchIngredient?.name || '']),
+                matchDetails: createMatchDetails(1, [
+                  matchIngredient?.name || '',
+                ]),
                 details: matchIngredient,
                 categories: matchIngredient?.category,
               });
@@ -104,8 +107,13 @@ export class IngredientMatcher {
     }
 
     // Find which term was matched
-    const matchedTerm = [ingredient.name.toLowerCase(), ...(ingredient.synonyms || []).map(s => s.toLowerCase())]
-      .find(term => inputLower.includes(term) || term.includes(inputLower)) || ingredient.name;
+    const matchedTerm =
+      [
+        ingredient.name.toLowerCase(),
+        ...(ingredient.synonyms || []).map((s) => s.toLowerCase()),
+      ].find(
+        (term) => inputLower.includes(term) || term.includes(inputLower),
+      ) || ingredient.name;
 
     const match = createMatch({
       name: input,
@@ -113,7 +121,7 @@ export class IngredientMatcher {
       matchDetails: {
         matched: true,
         confidence: 0.8, // Lower confidence for fuzzy matches
-        matchedOn: [matchedTerm]
+        matchedOn: [matchedTerm],
       },
       details: ingredient,
       categories: ingredient.category,

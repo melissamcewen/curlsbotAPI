@@ -147,6 +147,8 @@ export interface MatchDetails {
   synonymMatch?: string;
   /** Whether the match was flagged */
   flagged?: boolean;
+  /** Confidence of the match */
+  confidence?: number;
 }
 
 /**
