@@ -58,12 +58,11 @@ export class IngredientMatcher {
     name: string;
     normalized: string;
     confidence?: number;
-    matchedOn?: string[];
     flagged?: boolean;
     details?: Ingredient;
     categories?: string[];
   }): IngredientMatch {
-    const { confidence = 0, matchedOn, flagged = false } = params;
+    const { confidence = 0, flagged = false } = params;
 
     return {
       uuid: generateId(),
@@ -71,7 +70,6 @@ export class IngredientMatcher {
       normalized: params.normalized,
       matchDetails: {
         matched: confidence > 0,
-        matchedOn: matchedOn || undefined,
         flagged,
         confidence,
       },
@@ -143,7 +141,6 @@ export class IngredientMatcher {
       name: input,
       normalized: input,
       confidence: 1,
-      matchedOn: [ingredient.id],
       details: ingredient,
       categories: ingredient.category,
     });
@@ -175,7 +172,6 @@ export class IngredientMatcher {
       name: input,
       normalized: input,
       confidence: 0.8,
-      matchedOn: [matchedTerm],
       flagged: true,
       details: ingredient,
       categories: ingredient.category,
@@ -208,7 +204,6 @@ export class IngredientMatcher {
           name: input,
           normalized: input,
           confidence: 1,
-          matchedOn: [ingredient.name],
           flagged: true,
           details: ingredient,
           categories: ingredient.category,

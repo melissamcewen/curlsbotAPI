@@ -13,7 +13,7 @@ describe('matchIngredient', () => {
     const match = matchIngredient('alcohol denat.', testDatabase);
 
     expect(match.matchDetails?.matched).toBe(true);
-    expect(match.matchDetails?.matchedOn).toContain('alcohol denat');
+
   });
 
   test('should return basic info for no matches', () => {
@@ -26,7 +26,6 @@ describe('matchIngredient', () => {
       matchDetails: {
         confidence: 0,
         matched: false,
-        matchedOn: undefined,
         flagged: false,
       },
     });
@@ -39,7 +38,6 @@ describe('matchIngredient', () => {
     );
 
     expect(match.matchDetails?.matched).toBe(true);
-    expect(match.matchDetails?.matchedOn).toEqual(['denatured_alcohol']);
   });
 
   test('should include debug info when debug option is set', () => {
