@@ -14,9 +14,9 @@ export interface AnalyzerConfig {
 export interface AnalyzerOptions {
   /** List of flagged ingredient names */
   flaggedIngredients?: string[];
-  /** List of flagged ingredient categories */
+  /** List of flagged ingredient categories by id */
   flaggedCategories?: string[];
-  /** List of flagged ingredient category groups */
+  /** List of flagged ingredient category groups by id */
   flaggedCategoryGroups?: string[];
 }
 
@@ -53,6 +53,8 @@ export interface Category {
   notes?: string;
   /** Optional source references for the category */
   source?: string[];
+  /** Unique identifier for the category */
+  id: string;
 }
 
 /**
@@ -65,6 +67,8 @@ export interface CategoryGroup {
   description: string;
   /** Categories within the group */
   categories: Category[];
+  /** Unique identifier for the category group */
+  id: string;
 }
 
 /**
@@ -100,7 +104,7 @@ export interface Ingredient {
  */
 export interface IngredientMatch {
   /** Unique identifier for the match */
-  id: string;
+  uuid: string;
   /** Name of the matched ingredient */
   name: string;
   /** Normalized name of the matched ingredient */
@@ -176,3 +180,5 @@ export interface NormalizedIngredientList {
   /** Whether the ingredient list is valid */
   readonly isValid: boolean;
 }
+
+

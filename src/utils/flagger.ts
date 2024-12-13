@@ -24,34 +24,20 @@ export class Flagger {
 
     // Check ingredient name and aliases against flagged ingredients
     if (this.options.flaggedIngredients?.length) {
-      const normalizedFlaggedIngredients = this.options.flaggedIngredients.map(i =>
-        i.toLowerCase()
-      );
+      const flaggedIngredients = this.options.flaggedIngredients;
 
-      if (normalizedFlaggedIngredients.includes(match.normalized)) {
-        flags.ingredients.push(match.normalized);
+      if (match.details && flaggedIngredients.includes(match.details.id)) {
+        flags.ingredients.push(match.details.id);
         isFlagged = true;
-      }
-
-      // Check synonyms if they exist
-      if (match.details?.synonyms) {
-        match.details.synonyms.forEach(synonym => {
-          if (normalizedFlaggedIngredients.includes(synonym.toLowerCase())) {
-            flags.ingredients.push(synonym);
-            isFlagged = true;
-          }
-        });
       }
     }
 
     // Check categories
     if (this.options.flaggedCategories?.length && match.categories?.length) {
-      const normalizedFlaggedCategories = this.options.flaggedCategories.map(c =>
-        c.toLowerCase()
-      );
+      const flaggedCategories = this.options.flaggedCategories;
 
-      match.categories.forEach(category => {
-        if (normalizedFlaggedCategories.includes(category.toLowerCase())) {
+      match.categories.forEach((category) => {
+        if (flaggedCategories.includes(category)) {
           flags.categories.push(category);
           isFlagged = true;
         }
@@ -59,19 +45,22 @@ export class Flagger {
     }
 
     // Check category groups
-    if (this.options.flaggedCategoryGroups?.length && match.categories?.length) {
+    if (
+      this.options.flaggedCategoryGroups?.length &&
+      match.categories?.length
+    ) {
       const flaggedGroups = this.options.flaggedCategoryGroups;
 
       // Find which groups the match's categories belong to
-      this.database.categories.forEach(group => {
-        if (flaggedGroups.includes(group.name)) {
-          const groupCategories = group.categories.map(c =>
-            c.name.toLowerCase()
+      this.database.categories.forEach((group) => {
+        if (flaggedGroups.includes(group.id.toLowerCase())) {
+          const groupCategories = group.categories.map((c) =>
+            c.id.toLowerCase(),
           );
 
-          match.categories?.forEach(matchCategory => {
+          match.categories?.forEach((matchCategory) => {
             if (groupCategories.includes(matchCategory.toLowerCase())) {
-              flags.categoryGroups.push(group.name);
+              flags.categoryGroups.push(group.id.toLowerCase());
               isFlagged = true;
             }
           });
@@ -85,7 +74,7 @@ export class Flagger {
     } else {
       match.matchDetails = {
         matched: true,
-        flagged: isFlagged
+        flagged: isFlagged,
       };
     }
 

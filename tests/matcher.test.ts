@@ -20,9 +20,15 @@ describe('matchIngredient', () => {
     const match = matchIngredient('nonexistent ingredient', testDatabase);
 
     expect(match).toEqual({
-      id: expect.any(String),
+      uuid: expect.any(String),
       name: 'nonexistent ingredient',
       normalized: 'nonexistent ingredient',
+      matchDetails: {
+        confidence: 0,
+        matched: false,
+        matchedOn: undefined,
+        flagged: false,
+      },
     });
   });
 
@@ -33,7 +39,7 @@ describe('matchIngredient', () => {
     );
 
     expect(match.matchDetails?.matched).toBe(true);
-    expect(match.matchDetails?.matchedOn).toEqual(['denatured alcohol']);
+    expect(match.matchDetails?.matchedOn).toEqual(['denatured_alcohol']);
   });
 
   test('should include debug info when debug option is set', () => {
@@ -50,12 +56,12 @@ describe('matchIngredient', () => {
     const noMatch = matchIngredient('nonexistent ingredient', testDatabase);
 
     // Verify IDs exist
-    expect(match1.id).toBeDefined();
-    expect(match2.id).toBeDefined();
-    expect(noMatch.id).toBeDefined();
+    expect(match1.uuid).toBeDefined();
+    expect(match2.uuid).toBeDefined();
+    expect(noMatch.uuid).toBeDefined();
 
     // Verify IDs are unique
-    expect(match1.id).not.toEqual(match2.id);
+    expect(match1.uuid).not.toEqual(match2.uuid);
   });
 
   test('should find matches for misspelled ingredients', () => {
@@ -82,7 +88,7 @@ describe('matchIngredient', () => {
     expect(match.details).toBeDefined();
     // Verify specific fields from the matched ingredient
     expect(match.details?.name).toBe('Denatured Alcohol');
-    expect(match.details?.category).toEqual(['drying alcohol']);
+    expect(match.details?.category).toEqual(['drying_alcohol']);
     expect(match.details?.description).toBeDefined();
   });
 
@@ -113,7 +119,7 @@ describe('createMatch', () => {
     });
 
     expect(match).toEqual({
-      id: expect.any(String),
+      uuid: expect.any(String),
       name: 'test ingredient',
       normalized: 'test ingredient',
     });

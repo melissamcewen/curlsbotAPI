@@ -4,6 +4,7 @@ import type { IngredientMatch } from '../src/types';
 import { testCategories } from './data/testCategories';
 import { alcohols } from './data/testIngredients/alcohols';
 
+
 describe('Flagger', () => {
   const database = {
     ingredients: alcohols,
@@ -19,7 +20,7 @@ describe('Flagger', () => {
       const match: IngredientMatch = {
         normalized: 'test',
         categories: undefined, // explicitly set categories to undefined
-        id: 'test-id',
+        uuid: 'test-id',
         name: 'test',
       };
 
@@ -35,7 +36,7 @@ describe('Flagger', () => {
       const match: IngredientMatch = {
         normalized: 'cetyl alcohol',
         categories: ['fatty alcohol'],
-        id: 'cetyl-alcohol',
+        uuid: '123',
         name: 'Cetyl Alcohol',
       };
 
@@ -43,39 +44,21 @@ describe('Flagger', () => {
       expect(flags.categories).toContain('fatty alcohol');
     });
 
-    it('should flag ingredients by their synonyms', () => {
-      const flagger = new Flagger(database, {
-        flaggedIngredients: ['alternate name'],
-      });
-
-      const match: IngredientMatch = {
-        normalized: 'main name',
-        categories: [],
-        id: 'test-id',
-        name: 'Main Name',
-        details: {
-          id: 'test-id',
-          name: 'Main Name',
-          category: [],
-          synonyms: ['alternate name', 'another name']
-        }
-      };
-
-      const flags = flagger.getFlagsForMatch(match);
-      expect(flags.ingredients).toContain('alternate name');
-      expect(match.matchDetails?.flagged).toBe(true);
-    });
-
     it('should initialize matchDetails when undefined', () => {
       const flagger = new Flagger(database, {
-        flaggedIngredients: ['test ingredient'],
+        flaggedIngredients: ['test_ingredient'],
       });
 
       const match: IngredientMatch = {
         normalized: 'test ingredient',
         categories: [],
-        id: 'test-id',
+        uuid: '123',
         name: 'Test Ingredient',
+        details: {
+          id: 'test_ingredient',
+          name: 'Test Ingredient',
+          category: [],
+        },
       };
 
       flagger.getFlagsForMatch(match);
@@ -84,20 +67,25 @@ describe('Flagger', () => {
       expect(match.matchDetails?.flagged).toBe(true);
     });
 
-    it('should flag ingredients by name', () => {
+    it('should flag ingredients by id', () => {
       const flagger = new Flagger(database, {
-        flaggedIngredients: ['sodium lauryl sulfate'],
+        flaggedIngredients: ['sodium_lauryl_sulfate'],
       });
 
       const match: IngredientMatch = {
         normalized: 'sodium lauryl sulfate',
         categories: [],
-        id: 'sls',
+        uuid: '123',
         name: 'Sodium Lauryl Sulfate',
+        details: {
+          id: 'sodium_lauryl_sulfate',
+          name: 'Sodium Lauryl Sulfate',
+          category: [],
+        },
       };
 
       const flags = flagger.getFlagsForMatch(match);
-      expect(flags.ingredients).toContain('sodium lauryl sulfate');
+      expect(flags.ingredients).toContain('sodium_lauryl_sulfate');
       expect(match.matchDetails?.flagged).toBe(true);
     });
 
@@ -109,8 +97,13 @@ describe('Flagger', () => {
       const match: IngredientMatch = {
         normalized: 'benzyl alcohol',
         categories: ['solvent alcohol'],
-        id: 'benzyl-alcohol',
+        uuid: '123',
         name: 'Benzyl Alcohol',
+        details: {
+          id: 'benzyl-alcohol',
+          name: 'Benzyl Alcohol',
+          category: ['solvent alcohol'],
+        },
       };
 
       const flags = flagger.getFlagsForMatch(match);
@@ -120,18 +113,18 @@ describe('Flagger', () => {
 
     it('should flag ingredients by category group', () => {
       const flagger = new Flagger(database, {
-        flaggedCategoryGroups: ['Alcohols'],
+        flaggedCategoryGroups: ['alcohols'],
       });
 
       const match: IngredientMatch = {
         normalized: 'cetyl alcohol',
-        categories: ['fatty alcohol'],
-        id: 'cetyl-alcohol',
+        categories: ['fatty_alcohol'],
+        uuid: 'cetyl-alcohol',
         name: 'Cetyl Alcohol',
       };
 
       const flags = flagger.getFlagsForMatch(match);
-      expect(flags.categoryGroups).toContain('Alcohols');
+      expect(flags.categoryGroups).toContain('alcohols');
       expect(match.matchDetails?.flagged).toBe(true);
     });
 
@@ -145,7 +138,7 @@ describe('Flagger', () => {
       const match: IngredientMatch = {
         normalized: 'water',
         categories: ['water'],
-        id: 'water',
+        uuid: 'water',
         name: 'Water',
       };
 
@@ -162,7 +155,7 @@ describe('Flagger', () => {
       const match: IngredientMatch = {
         normalized: 'sodium lauryl sulfate',
         categories: ['sulfate'],
-        id: 'sls',
+        uuid: '123',
         name: 'Sodium Lauryl Sulfate',
       };
 
@@ -173,38 +166,25 @@ describe('Flagger', () => {
       expect(match.matchDetails?.flagged).toBe(false);
     });
 
-    it('should handle case insensitive flagging', () => {
-      const flagger = new Flagger(database, {
-        flaggedIngredients: ['SODIUM LAURYL SULFATE'],
-        flaggedCategories: ['SOLVENT ALCOHOL'],
-      });
-
-      const match: IngredientMatch = {
-        normalized: 'sodium lauryl sulfate',
-        categories: ['sulfate'],
-        id: 'sls',
-        name: 'Sodium Lauryl Sulfate',
-      };
-
-      const flags = flagger.getFlagsForMatch(match);
-      expect(flags.ingredients).toContain('sodium lauryl sulfate');
-      expect(match.matchDetails?.flagged).toBe(true);
-    });
-
     it('should update existing matchDetails', () => {
       const flagger = new Flagger(database, {
-        flaggedIngredients: ['test ingredient'],
+        flaggedIngredients: ['test_ingredient'],
       });
 
       const match: IngredientMatch = {
         normalized: 'test ingredient',
         categories: [],
-        id: 'test-id',
+        uuid: '123',
         name: 'Test Ingredient',
+        details: {
+          id: 'test_ingredient',
+          name: 'Test Ingredient',
+          category: [],
+        },
         matchDetails: {
           matched: true,
-          flagged: false
-        }
+          flagged: false,
+        },
       };
 
       flagger.getFlagsForMatch(match);

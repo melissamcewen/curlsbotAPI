@@ -4,25 +4,25 @@ export const cleansers: Ingredient[] = [
   {
     name: 'Sodium Laureth Sulfate',
     description: 'A strong cleansing agent commonly found in shampoos',
-    category: ['sulfate', 'harsh cleanser'],
+    category: ['sulfate'],
     notes: 'Can be harsh and stripping on hair',
     synonyms: ['SLES', 'sodium lauryl ether sulfate'],
-    id: 'sodium-laureth-sulfate'
+    id: 'sodium_laureth_sulfate'
   },
   {
     name: 'Sodium Lauryl Sulfate',
     description: 'A strong cleansing agent commonly found in shampoos',
-    category: ['sulfate', 'harsh cleanser'],
+    category: ['sulfate'],
     notes: 'Can be harsh and stripping on hair',
     synonyms: ['SLS', 'sodium lauryl sulfate'],
-    id: 'sodium-lauryl-sulfate'
+    id: 'sodium_lauryl_sulfate'
   },
   {
     name: 'Cocamidopropyl Betaine',
     description: 'A gentle surfactant derived from coconut oil',
-    category: ['gentle cleanser', 'surfactant'],
+    category: ['gentle_cleanser'],
     notes: 'Generally considered safe for curly hair routines',
     synonyms: ['CAPB', 'coco betaine'],
-    id: 'cocamidopropyl-betaine'
+    id: 'cocamidopropyl_betaine'
   },
 ];

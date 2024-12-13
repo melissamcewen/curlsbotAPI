@@ -4,7 +4,7 @@ export const silicones: Ingredient[] = [
   {
     name: 'Cyclomethicone',
     description: 'A lightweight, volatile silicone that evaporates from hair.',
-    category: ['water-soluble silicone'],
+    category: ['water-soluble_silicone'],
     notes: "Generally considered safe as it doesn't build up",
     synonyms: ['cyclopentasiloxane', 'cyclotetrasiloxane', 'cyclic silicone'],
     id: 'cyclomethicone'
@@ -12,7 +12,7 @@ export const silicones: Ingredient[] = [
   {
     name: 'Dimethicone',
     description: 'A silicone that forms a protective barrier on the hair.',
-    category: ['non-water-soluble silicone'],
+    category: ['non-water-soluble_silicone'],
     notes: 'Can build up on the hair and scalp',
     synonyms: ['dimethiconol'],
     id: 'dimethicone'

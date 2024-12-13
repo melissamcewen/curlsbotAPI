@@ -112,7 +112,7 @@ export class Analyzer {
    */
   public getCategories(): string[] {
     return this.database.categories.flatMap(group =>
-      group.categories.map(category => category.name.toLowerCase())
+      group.categories.map(category => category.id)
     );
   }
 
@@ -122,7 +122,7 @@ export class Analyzer {
    */
   public getIngredients(): string[] {
     return this.database.ingredients.map((ingredient) =>
-      ingredient.name.toLowerCase(),
+      ingredient.id,
     );
   }
 }

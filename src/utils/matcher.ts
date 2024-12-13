@@ -44,6 +44,7 @@ export class IngredientMatcher {
       return createMatch({
         name: input,
         normalized: input,
+        matchDetails: createMatchDetails(0, undefined, false),
       });
     }
 
@@ -56,7 +57,7 @@ export class IngredientMatcher {
 
       // Check for exact match in name or synonyms
       const exactMatch = [
-        ingredient.name.toLowerCase(),
+        ingredient.id,
         ...(ingredient.synonyms || []).map((s) => s.toLowerCase()),
       ].find((term) => term === inputLower);
 
@@ -64,11 +65,7 @@ export class IngredientMatcher {
         const match = createMatch({
           name: input,
           normalized: input,
-          matchDetails: {
-            matched: true,
-            confidence: 1,
-            matchedOn: [exactMatch],
-          },
+          matchDetails: createMatchDetails(1, [exactMatch], true),
           details: ingredient,
           categories: ingredient.category,
         });
@@ -81,9 +78,7 @@ export class IngredientMatcher {
               return createMatch({
                 name: input,
                 normalized: input,
-                matchDetails: createMatchDetails(1, [
-                  matchIngredient?.name || '',
-                ]),
+                matchDetails: createMatchDetails(1, [matchIngredient?.name || ''], true),
                 details: matchIngredient,
                 categories: matchIngredient?.category,
               });
@@ -103,26 +98,23 @@ export class IngredientMatcher {
       return createMatch({
         name: input,
         normalized: input,
+        matchDetails: createMatchDetails(0, undefined, false),
       });
     }
 
     // Find which term was matched
     const matchedTerm =
       [
-        ingredient.name.toLowerCase(),
-        ...(ingredient.synonyms || []).map((s) => s.toLowerCase()),
+        ingredient.id,
+        ...(ingredient.synonyms || []).map((s) => s),
       ].find(
         (term) => inputLower.includes(term) || term.includes(inputLower),
-      ) || ingredient.name;
+      ) || ingredient.id;
 
     const match = createMatch({
       name: input,
       normalized: input,
-      matchDetails: {
-        matched: true,
-        confidence: 0.8, // Lower confidence for fuzzy matches
-        matchedOn: [matchedTerm],
-      },
+      matchDetails: createMatchDetails(0.8, [matchedTerm], true),
       details: ingredient,
       categories: ingredient.category,
     });
@@ -135,7 +127,7 @@ export class IngredientMatcher {
           return createMatch({
             name: input,
             normalized: input,
-            matchDetails: createMatchDetails(1, [matchIngredient?.name || '']),
+            matchDetails: createMatchDetails(1, [matchIngredient?.name || ''], true),
             details: matchIngredient,
             categories: matchIngredient?.category,
           });
@@ -150,11 +142,13 @@ export class IngredientMatcher {
 function createMatchDetails(
   confidence: number,
   matchedOn?: string[],
+  matched: boolean = false,
 ): MatchDetails {
   return {
-    matched: true,
+    matched,
     confidence,
     matchedOn: matchedOn || undefined,
+    flagged: false,
   };
 }
 
@@ -166,7 +160,7 @@ export function createMatch(params: {
   categories?: string[];
 }): IngredientMatch {
   return {
-    id: generateId(),
+    uuid: generateId(),
     ...params,
   };
 }
