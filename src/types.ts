@@ -141,8 +141,6 @@ export interface MatchConfig {
 export interface MatchDetails {
   /** Whether the match was successful */
   matched: boolean;
-  /** Optional confidence level of the match */
-  confidence?: number;
   /** Optional matched terms */
   matchedOn?: string[];
   /** Optional synonym used in the match */
