@@ -54,6 +54,9 @@ describe('Flagger', () => {
         id: 'test-id',
         name: 'Main Name',
         details: {
+          id: 'test-id',
+          name: 'Main Name',
+          category: [],
           synonyms: ['alternate name', 'another name']
         }
       };
