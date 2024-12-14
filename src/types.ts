@@ -4,6 +4,8 @@
 export interface AnalyzerConfig {
   /** Ingredient database used for analysis */
   database: IngredientDatabase;
+  /** Optional fallback database used when ingredients aren't found in main database */
+  fallbackDatabase?: IngredientDatabase;
   /** Optional analyzer options */
   options?: AnalyzerOptions;
   /** Optional path to config directory */

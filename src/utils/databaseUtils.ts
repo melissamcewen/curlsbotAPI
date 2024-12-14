@@ -2,10 +2,17 @@ import type { IngredientDatabase, Ingredient } from '../types';
 
 /**
  * Finds an ingredient in the database by name or synonym
+ * If not found in the main database and a fallback database is provided, searches there
  */
-export function findIngredient(database: IngredientDatabase, normalizedName: string): Ingredient | undefined {
+export function findIngredient(
+  database: IngredientDatabase,
+  normalizedName: string,
+  fallbackDatabase?: IngredientDatabase
+): Ingredient | undefined {
   const searchName = normalizedName.toLowerCase();
-  return Object.values(database.ingredients).find(ingredient => {
+
+  // First try the main database
+  const mainResult = Object.values(database.ingredients).find(ingredient => {
     if (ingredient.name.toLowerCase() === searchName) {
       return true;
     }
@@ -14,6 +21,25 @@ export function findIngredient(database: IngredientDatabase, normalizedName: str
     }
     return false;
   });
+
+  if (mainResult) {
+    return mainResult;
+  }
+
+  // If not found and fallback database exists, try there
+  if (fallbackDatabase) {
+    return Object.values(fallbackDatabase.ingredients).find(ingredient => {
+      if (ingredient.name.toLowerCase() === searchName) {
+        return true;
+      }
+      if (ingredient.synonyms) {
+        return ingredient.synonyms.some(s => s.toLowerCase() === searchName);
+      }
+      return false;
+    });
+  }
+
+  return undefined;
 }
 
 /**

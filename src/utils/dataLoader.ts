@@ -31,13 +31,25 @@ const loadAndValidateJson = <T>(filePath: string, validate: ValidateFunction): T
 
 // Load all ingredient files from a directory and merge them
 const loadIngredientsFromDir = (dirPath: string, validate: ValidateFunction): {ingredients: Ingredient[]} => {
-  const files = readdirSync(dirPath).filter(file => file.endsWith('.ingredients.json'));
   const allIngredients: Ingredient[] = [];
 
-  for (const file of files) {
-    const filePath = join(dirPath, file);
-    const data = loadAndValidateJson<{ingredients: Ingredient[]}>(filePath, validate);
-    allIngredients.push(...data.ingredients);
+  // First try to load from ingredients subdirectory
+  try {
+    const ingredientsDir = join(dirPath, 'ingredients');
+    const files = readdirSync(ingredientsDir).filter(file => file.endsWith('.ingredients.json'));
+    for (const file of files) {
+      const filePath = join(ingredientsDir, file);
+      const data = loadAndValidateJson<{ingredients: Ingredient[]}>(filePath, validate);
+      allIngredients.push(...data.ingredients);
+    }
+  } catch (error) {
+    // If ingredients subdirectory doesn't exist, try loading from main directory
+    const files = readdirSync(dirPath).filter(file => file.endsWith('.ingredients.json'));
+    for (const file of files) {
+      const filePath = join(dirPath, file);
+      const data = loadAndValidateJson<{ingredients: Ingredient[]}>(filePath, validate);
+      allIngredients.push(...data.ingredients);
+    }
   }
 
   return { ingredients: allIngredients };
@@ -81,17 +93,37 @@ export const loadDatabase = ({ dataDir, schemaDir }: LoadDatabaseOptions): Ingre
   const groupsSchema = loadSchema(join(schemaDir, 'groups.schema.json'));
 
   // Load and validate data
-  const ingredientsData = loadIngredientsFromDir(join(dataDir, 'ingredients'), ingredientsSchema);
+  const ingredientsData = loadIngredientsFromDir(dataDir, ingredientsSchema);
 
-  const categoriesData = loadAndValidateJson<{categories: Category[]}>(
-    join(dataDir, 'categories.json'),
-    categoriesSchema
-  );
+  let categoriesData: {categories: Category[]};
+  let groupsData: {groups: { id: string; name: string }[]};
 
-  const groupsData = loadAndValidateJson<{groups: { id: string; name: string }[]}>(
-    join(dataDir, 'groups.json'),
-    groupsSchema
-  );
+  try {
+    categoriesData = loadAndValidateJson<{categories: Category[]}>(
+      join(dataDir, 'categories.json'),
+      categoriesSchema
+    );
+    groupsData = loadAndValidateJson<{groups: { id: string; name: string }[]}>(
+      join(dataDir, 'groups.json'),
+      groupsSchema
+    );
+  } catch (error) {
+    // If loading from root directory fails, try loading from ingredients subdirectory
+    try {
+      categoriesData = loadAndValidateJson<{categories: Category[]}>(
+        join(dataDir, 'ingredients', 'categories.json'),
+        categoriesSchema
+      );
+      groupsData = loadAndValidateJson<{groups: { id: string; name: string }[]}>(
+        join(dataDir, 'ingredients', 'groups.json'),
+        groupsSchema
+      );
+    } catch (innerError) {
+      // If both attempts fail, return empty data
+      categoriesData = { categories: [] };
+      groupsData = { groups: [] };
+    }
+  }
 
   return {
     ingredients: ingredientsToRecord(ingredientsData.ingredients),

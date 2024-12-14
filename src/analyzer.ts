@@ -7,6 +7,7 @@ import { loadSystems } from './utils/configLoader';
 
 export class Analyzer {
   private database: IngredientDatabase;
+  private fallbackDatabase?: IngredientDatabase;
   private options?: AnalyzerOptions;
   private systems: System[];
   private configDir?: string;
@@ -17,6 +18,7 @@ export class Analyzer {
    */
   constructor(config?: Partial<AnalyzerConfig>) {
     this.database = config?.database ?? getDefaultDatabase();
+    this.fallbackDatabase = config?.fallbackDatabase;
     this.options = config?.options;
     this.configDir = config?.configDir;
     this.systems = loadSystems({ configDir: this.configDir });
@@ -30,11 +32,26 @@ export class Analyzer {
   }
 
   /**
+   * Gets the current fallback database being used by the analyzer
+   */
+  getFallbackDatabase(): IngredientDatabase | undefined {
+    return this.fallbackDatabase;
+  }
+
+  /**
    * Updates the database being used by the analyzer
    * @param database The new database to use
    */
   setDatabase(database: IngredientDatabase): void {
     this.database = database;
+  }
+
+  /**
+   * Updates the fallback database being used by the analyzer
+   * @param database The new fallback database to use
+   */
+  setFallbackDatabase(database: IngredientDatabase): void {
+    this.fallbackDatabase = database;
   }
 
   /**
@@ -137,9 +154,15 @@ export class Analyzer {
     const allGroups = new Set<string>();
 
     result.matches = normalized.ingredients.map(normalizedName => {
-      const ingredient = findIngredient(this.database, normalizedName);
-      const categories = ingredient ? getIngredientCategories(this.database, ingredient.categories) : [];
-      const groups = getCategoryGroups(this.database, categories);
+      const ingredient = findIngredient(this.database, normalizedName, this.fallbackDatabase);
+
+      // Determine which database to use for categories and groups
+      const dbForCategories = ingredient && this.fallbackDatabase?.ingredients[ingredient.id]
+        ? this.fallbackDatabase
+        : this.database;
+
+      const categories = ingredient ? getIngredientCategories(dbForCategories, ingredient.categories) : [];
+      const groups = getCategoryGroups(dbForCategories, categories);
 
       // Add to overall categories and groups
       categories.forEach(c => allCategories.add(c));
