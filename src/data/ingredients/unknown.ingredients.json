@@ -16,13 +16,13 @@
         "siloxysilicate",
         "microsil"
       ],
-   "categories": ["non_water_soluble_silicones"]
+   "categories": ["non-water-soluble_silicones"]
     },
     {
       "name": "Unknown Water Soluble Silicones",
       "id": "unknown_water_soluble_silicones",
       "synonyms": ["peg", "ppg", "pg-"],
-   "categories": ["water_soluble_silicones"]
+   "categories": ["water-soluble_silicones"]
     },
     {
       "name": "Unknown Sulfates",
@@ -112,7 +112,7 @@
       "name": "Unknown Wax",
       "id": "unknown_wax",
       "synonyms": ["wax"],
-   "categories": ["waxes"]
+   "categories": ["non-water-soluble_waxes"]
     }
   ]
 }

@@ -115,7 +115,7 @@
       "name": "Sodium Laureth-40 Sulfate",
       "id": "sodium_laureth-40_sulfate",
       "synonyms": ["sodium laureth-40 sulfate", "sodium laureth-40 sulphate"],
-      "categories": ["sulfonate"]
+      "categories": ["sulfonates"]
     },
     {
       "name": "Sodium Xylenesulfonate",
@@ -126,7 +126,7 @@
         "sodium xylene-sulfonate",
         "sodium xylene sulfonate"
       ],
-      "categories": ["sulfonate"]
+      "categories": ["sulfonates"]
     },
     {
       "name": "Alkylbenzene sulfonate",
@@ -148,7 +148,7 @@
         "ammonium xylene-sulfonate",
         "ammonium xylene sulfonate"
       ],
-      "categories": ["sulfonate"]
+      "categories": ["sulfonates"]
     },
     {
       "name": "Ethyl Peg-15 Cocamine Sulfate",
@@ -217,13 +217,13 @@
       "name": "Sodium Cocoyl Sarcosinate",
       "id": "sodium_cocoyl_sarcosinate",
       "synonyms": ["sodium cocoyl sarcosinate", "sodium cocoyl sarcosinate"],
-      "categories": ["other"]
+      "categories": ["other_detergents"]
     },
     {
       "name": "Sodium Lauroyl Sarcosinate",
       "id": "sodium_lauroyl_sarcosinate",
       "synonyms": ["sodium lauroyl sarcosinate", "sodium lauroyl sarcosinate"],
-      "categories": ["other"]
+      "categories": ["other_detergents"]
     },
     {
       "name": "Sodium Lauryl Sarcosinate",
@@ -233,19 +233,19 @@
         "sodium lauryl sarcosinate",
         "sodium lauroyl sarcosine"
       ],
-      "categories": ["other"]
+      "categories": ["other_detergents"]
     },
     {
       "name": "Sodium Lauryl Sulfoacetate",
       "id": "sodium_lauryl_sulfoacetate",
       "synonyms": ["sodium lauryl sulfoacetate", "sodium lauryl sulfoacetate"],
-      "categories": ["other"]
+      "categories": ["other_detergents"]
     },
     {
       "name": "Sodium Cocoyl Glutamate",
       "id": "sodium_cocoyl_glutamate",
       "synonyms": ["sodium cocoyl glutamate", "sodium cocoyl glutamate"],
-      "categories": ["other"]
+      "categories": ["other_detergents"]
     },
     {
       "name": "Sodium Lauroyl Methyl Isethionate",
@@ -257,25 +257,25 @@
         "sodium lauroyl methyl lsethionate",
         "sodium lauroylmethyl isethionate"
       ],
-      "categories": ["other"]
+      "categories": ["other_detergents"]
     },
     {
       "name": "Dioctyl Sodium Sulfosuccinate",
       "id": "dioctyl_sodium_sulfosuccinate",
       "synonyms": ["dioctyl sodium sulfosuccinate"],
-      "categories": ["other"]
+      "categories": ["other_detergents"]
     },
     {
       "name": "Disodium Cocoyl Glutamate",
       "id": "disodium_cocoyl_glutamate",
       "synonyms": ["disodium cocoyl glutamate"],
-      "categories": ["other"]
+      "categories": ["other_detergents"]
     },
     {
       "name": "Sodium Myristoyl Sarcosinate",
       "id": "sodium_myristoyl_sarcosinate",
       "synonyms": ["sodium myristoyl sarcosinate"],
-      "categories": ["other"]
+      "categories": ["other_detergents"]
     },
     {
       "name": "Disodium Laureth Sulfosuccinate",

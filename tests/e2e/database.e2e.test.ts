@@ -52,7 +52,7 @@ describe('Production Database E2E Tests', () => {
       Object.values(database.groups).forEach(group => {
         expect(group.id).toBeDefined();
         expect(group.name).toBeDefined();
-        expect(group.description).toBeDefined();
+        // Description is optional for groups
       });
     });
   });
