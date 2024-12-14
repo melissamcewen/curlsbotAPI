@@ -1,6 +1,9 @@
+Do not modify the data in src/data, use a command line tool if you need to write or edit it
 
 Avoid using mocks in tests, unless there is no other option
 
 Be concise, make incremental changes and test before proceding.
 
 Don't try to fix everything at once.
+
+Avoid changing the schema unless instructured to do so
