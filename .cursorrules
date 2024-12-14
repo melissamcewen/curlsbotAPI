@@ -1,4 +1,4 @@
-Never directly modify *.ingredients.yaml or *.ingredients.json files , only use command line tools
+Never directly modify *.ingredients.yaml or *.ingredients.json files in src , only use command line tools
 
 Avoid using mocks in tests, unless there is no other option
 

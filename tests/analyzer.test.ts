@@ -17,6 +17,12 @@ const testDatabase = {
       name: 'SD Alcohol',
       categories: ['drying_alcohol'],
       references: ['https://example.com/sd-alcohol']
+    },
+    sodium_lauryl_sulfate: {
+      id: 'sodium_lauryl_sulfate',
+      name: 'Sodium Lauryl Sulfate',
+      categories: ['sulfates'],
+      references: ['https://example.com/sls']
     }
   },
   categories: {
@@ -31,6 +37,12 @@ const testDatabase = {
       name: 'Drying Alcohol',
       description: 'Alcohols that can be drying',
       group: 'alcohols'
+    },
+    sulfates: {
+      id: 'sulfates',
+      name: 'Sulfates',
+      description: 'Strong cleansing agents',
+      group: 'detergents'
     }
   },
   groups: {
@@ -38,9 +50,30 @@ const testDatabase = {
       id: 'alcohols',
       name: 'Alcohols',
       description: 'Different types of alcohols used in hair care'
+    },
+    detergents: {
+      id: 'detergents',
+      name: 'Detergents',
+      description: 'Cleansing agents used in hair care'
     }
   }
 };
+
+// Test systems
+const testSystems = [
+  {
+    name: "Curly Default",
+    id: "curly_default",
+    description: "The Curly Default system focuses on avoiding harsh chemicals and sulfates.",
+    settings: ["sulfate_free"]
+  },
+  {
+    name: "No Poo",
+    id: "no_poo",
+    description: "No Poo avoids all harsh chemicals and sulfates.",
+    settings: ["sulfate_free"]
+  }
+];
 
 describe('Analyzer', () => {
   it('should handle empty input', () => {
@@ -134,5 +167,82 @@ describe('Analyzer', () => {
 
     const uuids = new Set(result.matches.map(m => m.uuid));
     expect(uuids.size).toBe(2); // All UUIDs should be unique
+  });
+
+  describe('System Analysis', () => {
+    it('should set system ID in result', () => {
+      const analyzer = new Analyzer({
+        database: testDatabase,
+        systems: testSystems
+      });
+      const result = analyzer.analyze('Cetyl Alcohol', 'curly_default');
+
+      expect(result.system).toBe('curly_default');
+      expect(result.settings).toEqual(['sulfate_free']);
+    });
+
+    it('should flag sulfates in sulfate_free setting', () => {
+      const analyzer = new Analyzer({
+        database: testDatabase,
+        systems: testSystems
+      });
+      const result = analyzer.analyze('Sodium Lauryl Sulfate', 'curly_default');
+
+      expect(result.flags.categories).toContain('sulfates');
+    });
+
+    it('should handle unknown system IDs', () => {
+      const analyzer = new Analyzer({
+        database: testDatabase,
+        systems: testSystems
+      });
+      const result = analyzer.analyze('Cetyl Alcohol', 'unknown_system');
+
+      expect(result.system).toBe('unknown_system');
+      expect(result.settings).toEqual([]);
+    });
+
+    it('should combine system flags with analyzer options', () => {
+      const analyzer = new Analyzer({
+        database: testDatabase,
+        systems: testSystems,
+        options: {
+          flaggedIngredients: ['cetyl_alcohol']
+        }
+      });
+      const result = analyzer.analyze('Sodium Lauryl Sulfate, Cetyl Alcohol', 'curly_default');
+
+      expect(result.flags.categories).toContain('sulfates'); // From system
+      expect(result.flags.ingredients).toContain('cetyl_alcohol'); // From options
+    });
+
+    it('should set success status for valid analysis', () => {
+      const analyzer = new Analyzer({
+        database: testDatabase,
+        systems: testSystems
+      });
+      const result = analyzer.analyze('Cetyl Alcohol', 'curly_default');
+
+      expect(result.status).toBe('success');
+    });
+
+    it('should set error status for invalid input', () => {
+      const analyzer = new Analyzer({
+        database: testDatabase,
+        systems: testSystems
+      });
+      const result = analyzer.analyze('http://example.com', 'curly_default');
+
+      expect(result.status).toBe('error');
+    });
+
+    it('should allow getting and setting systems', () => {
+      const analyzer = new Analyzer({ database: testDatabase });
+
+      expect(analyzer.getSystems()).toEqual([]);
+
+      analyzer.setSystems(testSystems);
+      expect(analyzer.getSystems()).toEqual(testSystems);
+    });
   });
 });

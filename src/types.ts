@@ -6,6 +6,8 @@ export interface AnalyzerConfig {
   database: IngredientDatabase;
   /** Optional analyzer options */
   options?: AnalyzerOptions;
+  /** Optional systems for analysis */
+  systems?: System[];
 }
 
 /**
@@ -30,8 +32,8 @@ export interface AnalysisResult {
   input: string;
   /** Normalized input */
   normalized: readonly string[];
-  /** System used to analyze the input */
-  system: string;
+  /** System sused to analyze the input */
+  systems: string[] ;
   /** Status of the analysis */
   status: string;
   /** List of settings that were matched */

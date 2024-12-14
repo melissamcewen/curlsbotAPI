@@ -1,10 +1,11 @@
-import type { AnalyzerConfig, AnalyzerOptions, IngredientDatabase, AnalysisResult } from './types';
+import type { AnalyzerConfig, AnalyzerOptions, IngredientDatabase, AnalysisResult, System } from './types';
 import { getDefaultDatabase } from './data/defaultDatabase';
 import { normalizer } from './utils/normalizer';
 
 export class Analyzer {
   private database: IngredientDatabase;
   private options?: AnalyzerOptions;
+  private systems: System[];
 
   /**
    * Creates a new Analyzer instance
@@ -13,6 +14,8 @@ export class Analyzer {
   constructor(config?: Partial<AnalyzerConfig>) {
     this.database = config?.database ?? getDefaultDatabase();
     this.options = config?.options;
+    // Load systems from config or use empty array
+    this.systems = config?.systems ?? [];
   }
 
   /**
@@ -67,6 +70,20 @@ export class Analyzer {
   }
 
   /**
+   * Gets all available systems
+   */
+  getSystems(): System[] {
+    return this.systems;
+  }
+
+  /**
+   * Updates the available systems
+   */
+  setSystems(systems: System[]): void {
+    this.systems = systems;
+  }
+
+  /**
    * Finds an ingredient in the database by name or synonym
    */
   private findIngredient(normalizedName: string) {
@@ -111,7 +128,7 @@ export class Analyzer {
       input: "",
       normalized: [],
       system: "",
-      status: "",
+      status: "success",
       settings: [],
       matches: [],
       categories: [],
@@ -125,20 +142,47 @@ export class Analyzer {
   }
 
   /**
+   * Gets system-specific flags based on settings
+   */
+  private getSystemFlags(systemId: string): AnalyzerOptions {
+    const system = this.systems.find(s => s.id === systemId);
+    if (!system) return {};
+
+    const flags: AnalyzerOptions = {
+      flaggedIngredients: [],
+      flaggedCategories: [],
+      flaggedGroups: []
+    };
+
+    // Apply settings-based flags
+    system.settings.forEach(setting => {
+      // For now, we'll just handle sulfate_free as an example
+      // This should be expanded based on settings.json
+      if (setting === 'sulfate_free') {
+        flags.flaggedCategories?.push('sulfates');
+      }
+      // Add more settings handling here
+    });
+
+    return flags;
+  }
+
+  /**
    * Analyzes an ingredient list and returns the results
    */
-  analyze(ingredientList: string, system = ""): AnalysisResult {
+  analyze(ingredientList: string, systemId = ""): AnalysisResult {
     if (!ingredientList || typeof ingredientList !== 'string') {
       return this.createEmptyResult();
     }
 
     const result = this.createEmptyResult();
     result.input = ingredientList;
-    result.system = system;
+    result.system = systemId;
 
     // Use the existing normalizer
     const normalized = normalizer(ingredientList);
     if (!normalized.isValid) {
+      result.status = "error";
       return result;
     }
 
@@ -172,34 +216,53 @@ export class Analyzer {
     result.categories = Array.from(allCategories);
     result.groups = Array.from(allGroups);
 
-    // Apply flags if options are set
+    // Get system-specific flags
+    const systemFlags = systemId ? this.getSystemFlags(systemId) : {};
+
+    // Merge system flags with any configured options
+    const flags = {
+      ingredients: [] as string[],
+      categories: [] as string[],
+      groups: [] as string[]
+    };
+
+    // Apply system flags first
+    if (systemFlags.flaggedIngredients) {
+      flags.ingredients.push(...systemFlags.flaggedIngredients);
+    }
+    if (systemFlags.flaggedCategories) {
+      flags.categories.push(...systemFlags.flaggedCategories);
+    }
+    if (systemFlags.flaggedGroups) {
+      flags.groups.push(...systemFlags.flaggedGroups);
+    }
+
+    // Then apply any configured options
     if (this.options) {
-      const flags = {
-        ingredients: [] as string[],
-        categories: [] as string[],
-        groups: [] as string[]
-      };
-
-      // Check flagged ingredients
       if (this.options.flaggedIngredients) {
-        flags.ingredients = result.matches
-          .filter(m => m.ingredient && this.options?.flaggedIngredients?.includes(m.ingredient.id))
-          .map(m => m.ingredient!.id);
+        flags.ingredients.push(...this.options.flaggedIngredients);
       }
-
-      // Check flagged categories
       if (this.options.flaggedCategories) {
-        flags.categories = result.categories
-          .filter(c => this.options?.flaggedCategories?.includes(c));
+        flags.categories.push(...this.options.flaggedCategories);
       }
-
-      // Check flagged groups
       if (this.options.flaggedGroups) {
-        flags.groups = result.groups
-          .filter(g => this.options?.flaggedGroups?.includes(g));
+        flags.groups.push(...this.options.flaggedGroups);
       }
+    }
 
-      result.flags = flags;
+    // Remove duplicates
+    flags.ingredients = [...new Set(flags.ingredients)];
+    flags.categories = [...new Set(flags.categories)];
+    flags.groups = [...new Set(flags.groups)];
+
+    result.flags = flags;
+
+    // Set system settings if a system was used
+    if (systemId) {
+      const system = this.systems.find(s => s.id === systemId);
+      if (system) {
+        result.settings = system.settings;
+      }
     }
 
     return result;
