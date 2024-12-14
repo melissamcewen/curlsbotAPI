@@ -4,9 +4,7 @@
       "id": "sulfate_free",
       "name": "Sulfate Free",
       "description": "Sulfates are a type of detergent that can cause irritation and dryness.",
-      "ingredients": [
-
-      ],
+      "ingredients": [],
       "categories": [ "sulfates" ],
       "groups": [],
       "flags": [
@@ -53,8 +51,19 @@
       "name": "Silicone Free",
       "description": "Avoiding all silicones even water-soluble ones.",
       "ingredients": [],
-      "categories": [],
-      "groups": [ "silicones" ],
+      "categories": [ "silicones" ],
+      "groups": [],
+      "flags": [
+        "avoid"
+      ]
+    },
+    {
+      "id": "no_heavy_oils",
+      "name": "No Heavy Oils",
+      "description": "Avoiding heavy oils that can weigh down the hair and scalp.",
+      "ingredients": [],
+      "categories": [ "heavy_oils" ],
+      "groups": [],
       "flags": [
         "avoid"
       ]

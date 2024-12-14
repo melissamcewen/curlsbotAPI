@@ -1,0 +1,8 @@
+{
+  "systems": [{
+    "id": "test",
+    "name": "Test System",
+    "description": "Test system",
+    "settings": ["nonexistent_setting"]
+  }]
+}

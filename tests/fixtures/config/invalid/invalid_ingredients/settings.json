@@ -1,0 +1,10 @@
+{
+  "settings": [{
+    "id": "test_setting",
+    "name": "Test Setting",
+    "description": "Test setting",
+    "ingredients": ["nonexistent_ingredient"],
+    "categories": [],
+    "flags": []
+  }]
+}

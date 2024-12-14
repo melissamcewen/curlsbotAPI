@@ -8,6 +8,7 @@ import { Command } from 'commander';
 
 import { loadDatabase } from '../src/utils/dataLoader';
 import type { IngredientDatabase } from '../src/types';
+import { validateSettingsAndSystems } from '../src/utils/validation';
 
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
@@ -378,6 +379,31 @@ program
       }
     } catch (error) {
       console.error('❌ Case fixing failed:', error.message);
+      process.exit(1);
+    }
+  });
+
+program
+  .command('validate-config')
+  .description('Validate settings and systems configuration')
+  .option('-d, --data <path>', 'path to data directory', join(__dirname, '../src/data'))
+  .option('-s, --schema <path>', 'path to schema directory', join(__dirname, '../src/data/schema'))
+  .option('-c, --config <path>', 'path to config directory', join(__dirname, '../src/config'))
+  .action((options) => {
+    try {
+      console.log('Validating settings and systems configuration...');
+      const database = loadDatabase({ dataDir: options.data, schemaDir: options.schema });
+      const errors = validateSettingsAndSystems(database, options.config);
+
+      if (errors.length > 0) {
+        console.error('Found configuration errors:');
+        errors.forEach(error => console.error(error));
+        process.exit(1);
+      } else {
+        console.log('✅ Settings and systems configuration is valid!');
+      }
+    } catch (error) {
+      console.error('❌ Validation failed:', error.message);
       process.exit(1);
     }
   });

@@ -4,7 +4,7 @@
       "name": "Curly Default",
       "id": "curly_default",
       "description": "The Curly Default system is a hair care system that focuses on using products that are free of harsh chemicals and sulfates. It recommends using products that are free of drying alcohols, parabens, and other potentially harmful ingredients.",
-      "settings": ["sulfate_free", "drying_alcohol"]
+      "settings": ["sulfate_free", "drying_alcohol", "silicone_free"]
     },
     {
       "name": "No Poo",

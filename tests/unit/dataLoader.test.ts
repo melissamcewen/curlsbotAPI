@@ -1,5 +1,5 @@
 import { join } from 'path';
-import fs from 'fs';
+import * as fs from 'fs';
 
 import { loadIngredients, loadCategories, loadGroups } from '../../src/utils/dataLoader';
 

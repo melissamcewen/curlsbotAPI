@@ -1,10 +1,14 @@
 import { join } from 'path';
-
 import { describe, it, expect } from 'vitest';
 
 import { loadSystems, loadSettings, getSettingFlags } from '../../src/utils/configLoader';
+import { validateSettingsAndSystems } from '../../src/utils/validation';
+import { loadDatabase } from '../../src/utils/dataLoader';
 
 const TEST_CONFIG_DIR = join(__dirname, '../fixtures/config');
+const TEST_DATA_DIR = join(__dirname, '../fixtures/data');
+const TEST_SCHEMA_DIR = join(__dirname, '../../src/data/schema');
+const TEST_DIR = join(TEST_CONFIG_DIR, 'test');
 
 describe('configLoader', () => {
   describe('loadSystems', () => {
@@ -62,6 +66,16 @@ describe('configLoader', () => {
         categories: [],
         flags: []
       });
+    });
+  });
+
+  describe('validateSettingsAndSystems', () => {
+    it('should validate valid settings and systems', () => {
+      const database = loadDatabase({ dataDir: TEST_DATA_DIR, schemaDir: TEST_SCHEMA_DIR });
+      const errors = validateSettingsAndSystems(database, TEST_DIR);
+      expect(errors).toContain('❌ Invalid setting "nonexistent_setting" referenced by system "Test System"');
+      expect(errors).toContain('❌ Invalid ingredient "nonexistent_ingredient" referenced by setting "Test Setting"');
+      expect(errors).toContain('❌ Invalid category "nonexistent_category" referenced by setting "Test Setting"');
     });
   });
 });
