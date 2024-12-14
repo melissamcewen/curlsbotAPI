@@ -1,0 +1,79 @@
+name: 'Create release candidate'
+
+description: 'Create a release candidate for a new version of the library'
+
+inputs:
+  branch:
+    description: 'Current branch name'
+    required: true
+  commit_sha:
+    description: 'SHA of latest commit'
+    required: true
+  npm_token:
+    description: 'NPM Token'
+    required: true
+  pr_number:
+    description: 'Pull request number'
+    required: false
+
+outputs:
+  package_version:
+    description: "The new package version"
+    value: ${{ steps.package-version.outputs.current-version }}
+  npm_tag:
+    description: "Tag associated to the npm release candidate"
+    value: ${{ steps.npm.outputs.tag }}
+
+runs:
+  using: "composite"
+  steps:
+    - name: Setup Node ⚙️
+      uses: ./.github/actions/setup-node
+      with:
+        npm_token: ${{ inputs.npm_token }}
+    - name: Build typescript 📦
+      shell: bash
+      run: node --run build && find dist/index.js
+    - name: Normalize npm tag
+      id: npm
+      shell: bash
+      run: |
+        npm_tag=$(echo ${{ inputs.branch }} | sed 's/\//-/g')
+        echo "NPM Tag: $npm_tag"
+        echo "tag=$npm_tag" >> "$GITHUB_OUTPUT"
+    - name: Update library version
+      shell: bash
+      run: npm version --allow-same-version --no-git-tag-version prerelease --preid=rc.${{ inputs.commit_sha }}
+    - name: get-npm-version
+      id: package-version
+      uses: martinbeentjes/npm-get-version-action@v1.3.1
+    - uses: JS-DevTools/npm-publish@v3
+      with:
+        token: ${{ inputs.npm_token }}
+        tag: ${{ steps.npm.outputs.tag }}
+    - name: Get current date 🕒
+      id: date
+      shell: bash
+      run: |
+        utc=$(date -u +"%b %-d, %Y at %-I:%M%p (UTC)")
+        echo "utc=$utc" >> "$GITHUB_OUTPUT"
+    - name: Get short commit sha 🔑
+      shell: bash
+      run: |
+        short_sha=$(echo "${{ inputs.commit_sha }}" | cut -c 1-7)
+        echo "sha=$short_sha" >> "$GITHUB_OUTPUT"
+      id: short-sha
+    - uses: marocchino/sticky-pull-request-comment@v2
+      with:
+        header: <release-candidate>
+        number: ${{ inputs.pr_number }}
+        message: |
+          ## ☁️ Release Candidate Preview
+          📘 Name | 🔑 Latest Commit | 📦 NPM | 🕒 Updated
+          --- | --- | ---| ---
+          [typescript-library-template-example](https://github.com/AlbertHernandez/typescript-library-template/tree/${{ inputs.branch }}) | [${{ steps.short-sha.outputs.sha }}](https://github.com/AlbertHernandez/typescript-library-template/commit/${{ inputs.commit_sha }}) | [NPM](https://www.npmjs.com/package/typescript-library-template-example/v/${{ steps.npm.outputs.tag }}) | ${{ steps.date.outputs.utc }}
+          ### 💻 Client installation
+          To install the release candidate, you can run:
+          ```bash
+          npm install --save typescript-library-template-example@${{ steps.npm.outputs.tag }}
+          ```

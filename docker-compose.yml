@@ -1,0 +1,12 @@
+services:
+  my-library:
+    container_name: my-library
+    restart: unless-stopped
+    build:
+      target: dev
+      context: .
+    ports:
+      - "9229:9229"
+    volumes:
+      - ./src:/app/src
+      - ./playground:/app/playground

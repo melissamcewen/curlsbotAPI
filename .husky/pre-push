@@ -1,0 +1,3 @@
+node --run build
+find dist/index.js
+node --run test

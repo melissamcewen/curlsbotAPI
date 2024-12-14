@@ -1,0 +1,9 @@
+*
+!/package.json
+!/pnpm-lock.yaml
+!/tsconfig.prod.json
+!/tsconfig.json
+!/.swcrc
+!/nodemon.json
+!/src
+!/playground

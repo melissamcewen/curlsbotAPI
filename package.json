@@ -1,0 +1,99 @@
+{
+  "name": "typescript-library-template-example",
+  "version": "2.0.3",
+  "description": "Template for new typescript libraries",
+  "main": "dist/index.cjs",
+  "module": "lib/index.js",
+  "types": "dist/index.d.ts",
+  "author": "alberthernandezdev@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AlbertHernandez/typescript-library-skeleton/issues"
+  },
+  "homepage": "https://github.com/AlbertHernandez/typescript-library-skeleton#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlbertHernandez/typescript-library-skeleton.git"
+  },
+  "keywords": [
+    "typescript",
+    "library",
+    "template"
+  ],
+  "engines": {
+    "node": ">=20.0.0",
+    "npm": ">=9.0.0",
+    "pnpm": ">=9.x"
+  },
+  "packageManager": "pnpm@9.14.2",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon",
+    "prepublishOnly": "pnpm i && node --run build",
+    "build": "node --run validate-typescript && node --run build:clean && node --run generate-dist",
+    "test": "rimraf coverage && node --run test:unit",
+    "build:legacy": "pnpm validate-typescript && pnpm build:clean && pnpm generate-dist",
+    "test:legacy": "rimraf coverage && pnpm test:unit",
+    "test:unit": "vitest run --coverage",
+    "lint": "eslint --ignore-path .gitignore . --ext .js,.ts",
+    "lint:fix": "eslint --ignore-path .gitignore . --ext .js,.ts --fix",
+    "lint:file": "eslint --ignore-path .gitignore",
+    "lint:yaml": "chmod +x scripts/lint_yaml.sh && ./scripts/lint_yaml.sh",
+    "validate-typescript": "tsc -p tsconfig.prod.json --noEmit",
+    "generate-dist": "tsup src/index.ts --minify --tsconfig tsconfig.prod.json --dts --format cjs,esm --out-dir dist",
+    "build:clean": "rimraf dist; exit 0",
+    "prepare": "[ -f .husky/install.mjs ] && node .husky/install.mjs || true",
+    "typos": "chmod +x scripts/check_typos.sh && ./scripts/check_typos.sh"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.6.0",
+    "@commitlint/config-conventional": "^19.6.0",
+    "@commitlint/types": "^19.5.0",
+    "@swc/cli": "^0.5.2",
+    "@swc/core": "^1.10.1",
+    "@types/fs-extra": "^11.0.4",
+    "@types/node": "^22.10.2",
+    "@typescript-eslint/eslint-plugin": "^8.12.2",
+    "@typescript-eslint/parser": "^8.18.0",
+    "@vitest/coverage-istanbul": "^2.1.5",
+    "eslint": "^8.57.1",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "eslint-plugin-simple-import-sort": "^12.1.1",
+    "eslint-plugin-unicorn": "^56.0.0",
+    "eslint-plugin-vitest": "^0.4.1",
+    "fs-extra": "^11.2.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.2.11",
+    "nodemon": "^3.1.9",
+    "prettier": "^3.4.2",
+    "rimraf": "^6.0.1",
+    "tsconfig-paths": "^4.2.0",
+    "tsup": "^8.3.5",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2",
+    "unplugin-swc": "^1.5.1",
+    "vite": "^5.4.11",
+    "vitest": "^2.1.4"
+  },
+  "optionalDependencies": {
+    "@rollup/rollup-linux-x64-gnu": "^4.28.1",
+    "@swc/core-linux-x64-gnu": "^1.10.1"
+  },
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
+    }
+  }
+}
