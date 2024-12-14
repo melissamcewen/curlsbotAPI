@@ -75,9 +75,9 @@
       "name": "Cetearyl Alcohol",
       "id": "cetearyl_alcohol",
       "synonyms": [
-        "Cetyl Stearyl Alcohol",
-        "Cetostearyl Alcohol",
-        "C16-18 Alcohols",
+        "cetyl stearyl alcohol",
+        "cetostearyl alcohol",
+        "c16-18 alcohols",
         "ceteryl alcohol"
       ],
       "categories": [
@@ -91,12 +91,12 @@
       "name": "Cetyl Alcohol",
       "id": "cetyl_alcohol",
       "synonyms": [
-        "Cetanol",
+        "cetanol",
         "1-hexadecanol",
-        "Palmityl Alcohol",
-        "Hexadecyl Alcohol",
-        "Palmitoryl Alcohol",
-        "C16 Alcohol l"
+        "palmityl alcohol",
+        "hexadecyl alcohol",
+        "palmitoryl alcohol",
+        "c16 alcohol l"
       ],
       "categories": [
         "emollient_alcohols"
@@ -109,7 +109,7 @@
       "name": "Isocetyl Alcohol",
       "id": "isocetyl_alcohol",
       "synonyms": [
-        "Isohexadecanol"
+        "isohexadecanol"
       ],
       "categories": [
         "emollient_alcohols"
@@ -135,9 +135,9 @@
         "emollient_alcohols"
       ],
       "synonyms": [
-        "1-Dodecanol",
-        "Dodecanol",
-        "Dodecyl alcohol"
+        "1-dodecanol",
+        "dodecanol",
+        "dodecyl alcohol"
       ],
       "references": [
         "https://cosdna.com/eng/3a364c2.html"
@@ -147,8 +147,8 @@
       "name": "Myristyl Alcohol",
       "id": "myristyl_alcohol",
       "synonyms": [
-        "1-Tetradecanol",
-        "Tetradecan-1-ol"
+        "1-tetradecanol",
+        "tetradecan-1-ol"
       ],
       "categories": [
         "emollient_alcohols"
@@ -161,8 +161,8 @@
       "name": "Stearyl Alcohol",
       "id": "stearyl_alcohol",
       "synonyms": [
-        "1-Octadecanol",
-        "Octadecan-1-ol",
+        "1-octadecanol",
+        "octadecan-1-ol",
         "steoryl alcohol"
       ],
       "categories": [
@@ -251,7 +251,7 @@
       ]
     },
     {
-      "name": "Amino-2-methyl-1-propanol",
+      "name": "Amino-2-Methyl-1-Propanol",
       "id": "amino-2-methyl-1-propanol",
       "categories": [
         "emollient_alcohols"
