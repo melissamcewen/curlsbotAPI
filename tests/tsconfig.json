@@ -1,8 +1,0 @@
-{
-  "compilerOptions": {
-    "types": ["vitest/globals"],
-    "noEmit": true,
-    "strict": true
-  },
-  "include": ["./**/*.ts"],
-}
