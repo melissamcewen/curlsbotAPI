@@ -148,9 +148,17 @@ describe('Analyzer', () => {
 
     const result = analyzer.analyze('Cetyl Alcohol, SD Alcohol');
 
-    expect(result.flags.ingredients).toEqual(['sd_alcohol']);
-    expect(result.flags.categories).toEqual(['drying_alcohol']);
-    expect(result.flags.groups).toEqual(['alcohols']);
+    expect(result.flags).toEqual({
+      flaggedIngredients: ['sd_alcohol'],
+      flaggedCategories: ['drying_alcohol'],
+      flaggedGroups: ['alcohols']
+    });
+
+    // Check that matches have correct flags
+    const sdAlcoholMatch = result.matches.find(m => m.ingredient?.id === 'sd_alcohol');
+    expect(sdAlcoholMatch?.flags).toContain('sd_alcohol');
+    expect(sdAlcoholMatch?.flags).toContain('drying_alcohol');
+    expect(sdAlcoholMatch?.flags).toContain('alcohols');
   });
 
   it('should handle invalid URLs', () => {
@@ -188,7 +196,11 @@ describe('Analyzer', () => {
       });
       const result = analyzer.analyze('Sodium Lauryl Sulfate', 'curly_default');
 
-      expect(result.flags.categories).toContain('sulfates');
+      expect(result.flags.flaggedCategories).toContain('sulfates');
+
+      // Check that the match has the flag
+      const match = result.matches.find(m => m.ingredient?.id === 'sodium_lauryl_sulfate');
+      expect(match?.flags).toContain('sulfates');
     });
 
     it('should handle unknown system IDs', () => {
@@ -200,6 +212,11 @@ describe('Analyzer', () => {
 
       expect(result.system).toBe('unknown_system');
       expect(result.settings).toEqual([]);
+      expect(result.flags).toEqual({
+        flaggedIngredients: [],
+        flaggedCategories: [],
+        flaggedGroups: []
+      });
     });
 
     it('should combine system flags with analyzer options', () => {
@@ -212,8 +229,15 @@ describe('Analyzer', () => {
       });
       const result = analyzer.analyze('Sodium Lauryl Sulfate, Cetyl Alcohol', 'curly_default');
 
-      expect(result.flags.categories).toContain('sulfates'); // From system
-      expect(result.flags.ingredients).toContain('cetyl_alcohol'); // From options
+      expect(result.flags.flaggedCategories).toContain('sulfates'); // From system
+      expect(result.flags.flaggedIngredients).toContain('cetyl_alcohol'); // From options
+
+      // Check that matches have correct flags
+      const sulfateMatch = result.matches.find(m => m.ingredient?.id === 'sodium_lauryl_sulfate');
+      expect(sulfateMatch?.flags).toContain('sulfates');
+
+      const cetylMatch = result.matches.find(m => m.ingredient?.id === 'cetyl_alcohol');
+      expect(cetylMatch?.flags).toContain('cetyl_alcohol');
     });
 
     it('should set success status for valid analysis', () => {

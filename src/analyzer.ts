@@ -1,6 +1,8 @@
 import type { AnalyzerConfig, AnalyzerOptions, IngredientDatabase, AnalysisResult, System } from './types';
 import { getDefaultDatabase } from './data/defaultDatabase';
 import { normalizer } from './utils/normalizer';
+import { findIngredient, getIngredientCategories, getCategoryGroups } from './utils/databaseUtils';
+import { getSystemFlags, mergeFlags } from './utils/flags';
 
 export class Analyzer {
   private database: IngredientDatabase;
@@ -14,7 +16,6 @@ export class Analyzer {
   constructor(config?: Partial<AnalyzerConfig>) {
     this.database = config?.database ?? getDefaultDatabase();
     this.options = config?.options;
-    // Load systems from config or use empty array
     this.systems = config?.systems ?? [];
   }
 
@@ -84,42 +85,6 @@ export class Analyzer {
   }
 
   /**
-   * Finds an ingredient in the database by name or synonym
-   */
-  private findIngredient(normalizedName: string) {
-    return Object.values(this.database.ingredients).find(ingredient => {
-      if (ingredient.name.toLowerCase() === normalizedName) {
-        return true;
-      }
-      if (ingredient.synonyms) {
-        return ingredient.synonyms.some(s => s.toLowerCase() === normalizedName);
-      }
-      return false;
-    });
-  }
-
-  /**
-   * Gets categories for an ingredient
-   */
-  private getIngredientCategories(ingredient: string | string[]): string[] {
-    const categories = Array.isArray(ingredient) ? ingredient : [ingredient];
-    return categories.flatMap(catId => {
-      const category = this.database.categories[catId];
-      return category ? [category.id] : [];
-    });
-  }
-
-  /**
-   * Gets groups for categories
-   */
-  private getCategoryGroups(categories: string[]): string[] {
-    return categories.flatMap(catId => {
-      const category = this.database.categories[catId];
-      return category?.group ? [category.group] : [];
-    });
-  }
-
-  /**
    * Creates an empty analysis result with required fields
    */
   private createEmptyResult(): AnalysisResult {
@@ -139,32 +104,6 @@ export class Analyzer {
         groups: []
       }
     };
-  }
-
-  /**
-   * Gets system-specific flags based on settings
-   */
-  private getSystemFlags(systemId: string): AnalyzerOptions {
-    const system = this.systems.find(s => s.id === systemId);
-    if (!system) return {};
-
-    const flags: AnalyzerOptions = {
-      flaggedIngredients: [],
-      flaggedCategories: [],
-      flaggedGroups: []
-    };
-
-    // Apply settings-based flags
-    system.settings.forEach(setting => {
-      // For now, we'll just handle sulfate_free as an example
-      // This should be expanded based on settings.json
-      if (setting === 'sulfate_free') {
-        flags.flaggedCategories?.push('sulfates');
-      }
-      // Add more settings handling here
-    });
-
-    return flags;
   }
 
   /**
@@ -193,9 +132,9 @@ export class Analyzer {
     const allGroups = new Set<string>();
 
     result.matches = normalized.ingredients.map(normalizedName => {
-      const ingredient = this.findIngredient(normalizedName);
-      const categories = ingredient ? this.getIngredientCategories(ingredient.categories) : [];
-      const groups = this.getCategoryGroups(categories);
+      const ingredient = findIngredient(this.database, normalizedName);
+      const categories = ingredient ? getIngredientCategories(this.database, ingredient.categories) : [];
+      const groups = getCategoryGroups(this.database, categories);
 
       // Add to overall categories and groups
       categories.forEach(c => allCategories.add(c));
@@ -217,52 +156,27 @@ export class Analyzer {
     result.groups = Array.from(allGroups);
 
     // Get system-specific flags
-    const systemFlags = systemId ? this.getSystemFlags(systemId) : {};
+    const system = this.systems.find(s => s.id === systemId);
+    const systemFlags = getSystemFlags(system);
 
     // Merge system flags with any configured options
-    const flags = {
-      ingredients: [] as string[],
-      categories: [] as string[],
-      groups: [] as string[]
-    };
+    const mergedFlags = mergeFlags(systemFlags, this.options || {});
 
-    // Apply system flags first
-    if (systemFlags.flaggedIngredients) {
-      flags.ingredients.push(...systemFlags.flaggedIngredients);
-    }
-    if (systemFlags.flaggedCategories) {
-      flags.categories.push(...systemFlags.flaggedCategories);
-    }
-    if (systemFlags.flaggedGroups) {
-      flags.groups.push(...systemFlags.flaggedGroups);
-    }
+    // Apply flags to matches
+    result.matches = result.matches.map(match => ({
+      ...match,
+      flags: [
+        ...(match.ingredient && mergedFlags.flaggedIngredients?.includes(match.ingredient.id) ? [match.ingredient.id] : []),
+        ...(match.categories.filter(c => mergedFlags.flaggedCategories?.includes(c)) || []),
+        ...(match.groups.filter(g => mergedFlags.flaggedGroups?.includes(g)) || [])
+      ]
+    }));
 
-    // Then apply any configured options
-    if (this.options) {
-      if (this.options.flaggedIngredients) {
-        flags.ingredients.push(...this.options.flaggedIngredients);
-      }
-      if (this.options.flaggedCategories) {
-        flags.categories.push(...this.options.flaggedCategories);
-      }
-      if (this.options.flaggedGroups) {
-        flags.groups.push(...this.options.flaggedGroups);
-      }
-    }
-
-    // Remove duplicates
-    flags.ingredients = [...new Set(flags.ingredients)];
-    flags.categories = [...new Set(flags.categories)];
-    flags.groups = [...new Set(flags.groups)];
-
-    result.flags = flags;
+    result.flags = mergedFlags;
 
     // Set system settings if a system was used
-    if (systemId) {
-      const system = this.systems.find(s => s.id === systemId);
-      if (system) {
-        result.settings = system.settings;
-      }
+    if (system) {
+      result.settings = system.settings;
     }
 
     return result;
