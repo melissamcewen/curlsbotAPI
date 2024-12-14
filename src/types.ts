@@ -29,7 +29,7 @@ export interface AnalysisResult {
   /** Original input */
   input: string;
   /** Normalized input */
-  normalized: string[];
+  normalized: readonly string[];
   /** System used to analyze the input */
   system: string;
   /** Status of the analysis */

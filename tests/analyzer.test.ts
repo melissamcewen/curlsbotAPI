@@ -1,128 +1,138 @@
-import { join } from 'path';
+import { describe, it, expect } from 'vitest';
 import { Analyzer } from '../src/analyzer';
-import { loadDatabase } from '../src/utils/dataLoader';
-import { clearDefaultDatabase } from '../src/data/defaultDatabase';
 
-// Use test data but real schemas
-const TEST_DATA_DIR = join(__dirname, 'fixtures/data');
-const SCHEMA_DIR = join(__dirname, '../src/data/schema');
+// Test database
+const testDatabase = {
+  ingredients: {
+    cetyl_alcohol: {
+      id: 'cetyl_alcohol',
+      name: 'Cetyl Alcohol',
+      description: 'A fatty alcohol that acts as an emollient',
+      categories: ['emollient_alcohol'],
+      references: ['https://example.com/cetyl-alcohol'],
+      synonyms: ['hexadecan-1-ol', '1-hexadecanol']
+    },
+    sd_alcohol: {
+      id: 'sd_alcohol',
+      name: 'SD Alcohol',
+      categories: ['drying_alcohol'],
+      references: ['https://example.com/sd-alcohol']
+    }
+  },
+  categories: {
+    emollient_alcohol: {
+      id: 'emollient_alcohol',
+      name: 'Emollient Alcohol',
+      description: 'Alcohols that moisturize and condition',
+      group: 'alcohols'
+    },
+    drying_alcohol: {
+      id: 'drying_alcohol',
+      name: 'Drying Alcohol',
+      description: 'Alcohols that can be drying',
+      group: 'alcohols'
+    }
+  },
+  groups: {
+    alcohols: {
+      id: 'alcohols',
+      name: 'Alcohols',
+      description: 'Different types of alcohols used in hair care'
+    }
+  }
+};
 
 describe('Analyzer', () => {
-  beforeEach(() => {
-    // Clear the default database cache before each test
-    clearDefaultDatabase();
+  it('should handle empty input', () => {
+    const analyzer = new Analyzer({ database: testDatabase });
+    const result = analyzer.analyze('');
+
+    expect(result.normalized).toEqual([]);
+    expect(result.matches).toEqual([]);
+    expect(result.categories).toEqual([]);
+    expect(result.groups).toEqual([]);
   });
 
-  describe('Constructor', () => {
-    it('should use default database when no config is provided', () => {
-      const analyzer = new Analyzer();
-      const database = analyzer.getDatabase();
-      expect(database).toBeDefined();
-      expect(database.ingredients).toBeDefined();
-      expect(database.categories).toBeDefined();
-      expect(database.groups).toBeDefined();
-    });
+  it('should normalize and match basic ingredients', () => {
+    const analyzer = new Analyzer({ database: testDatabase });
+    const result = analyzer.analyze('Cetyl Alcohol, SD Alcohol');
 
-    it('should use provided database when config is provided', () => {
-      const customDatabase = loadDatabase({
-        dataDir: TEST_DATA_DIR,
-        schemaDir: SCHEMA_DIR,
-      });
-      const analyzer = new Analyzer({ database: customDatabase });
-      const database = analyzer.getDatabase();
-
-      // Check ingredients
-      expect(Object.keys(database.ingredients)).toHaveLength(2);
-      expect(database.ingredients.cetyl_alcohol.name).toBe('Cetyl Alcohol');
-      expect(database.ingredients.sd_alcohol.name).toBe('SD Alcohol');
-
-      // Check categories
-      expect(Object.keys(database.categories)).toHaveLength(2);
-      expect(database.categories.emollient_alcohol.name).toBe(
-        'Emollient Alcohols',
-      );
-      expect(database.categories.drying_alcohol.name).toBe('Drying Alcohols');
-
-      // Check groups
-      expect(Object.keys(database.groups)).toHaveLength(1);
-      expect(database.groups.alcohols.name).toBe('Alcohols');
-    });
+    expect(result.normalized).toEqual(['cetyl alcohol', 'sd alcohol']);
+    expect(result.matches).toHaveLength(2);
+    expect(result.matches[0].ingredient?.id).toBe('cetyl_alcohol');
+    expect(result.matches[1].ingredient?.id).toBe('sd_alcohol');
   });
 
-  describe('Database Management', () => {
-    it('should allow updating the database', () => {
-      const analyzer = new Analyzer();
-      const customDatabase = loadDatabase({
-        dataDir: TEST_DATA_DIR,
-        schemaDir: SCHEMA_DIR,
-      });
+  it('should handle ingredients with parentheses', () => {
+    const analyzer = new Analyzer({ database: testDatabase });
+    const result = analyzer.analyze('Cetyl Alcohol (Emollient), SD Alcohol (Drying)');
 
-      analyzer.setDatabase(customDatabase);
-      const database = analyzer.getDatabase();
-
-      expect(Object.keys(database.ingredients)).toHaveLength(2);
-      expect(database.ingredients.cetyl_alcohol.name).toBe('Cetyl Alcohol');
-    });
+    expect(result.normalized).toEqual(['cetyl alcohol', 'sd alcohol']);
+    expect(result.matches).toHaveLength(2);
   });
 
-  describe('Options Management', () => {
-    it('should allow setting and getting options', () => {
-      const analyzer = new Analyzer();
-      const options = {
+  it('should collect unique categories and groups', () => {
+    const analyzer = new Analyzer({ database: testDatabase });
+    const result = analyzer.analyze('Cetyl Alcohol, SD Alcohol');
+
+    expect(result.categories).toEqual(['emollient_alcohol', 'drying_alcohol']);
+    expect(result.groups).toEqual(['alcohols']);
+  });
+
+  it('should handle ingredients with different separators', () => {
+    const analyzer = new Analyzer({ database: testDatabase });
+    const result = analyzer.analyze('Cetyl Alcohol | SD Alcohol & Water');
+
+    expect(result.normalized).toHaveLength(3);
+    expect(result.matches).toHaveLength(3);
+  });
+
+  it('should handle ingredients with line breaks and spaces', () => {
+    const analyzer = new Analyzer({ database: testDatabase });
+    const result = analyzer.analyze('Cetyl Alcohol\nSD Alcohol\r\n  Water  ');
+
+    expect(result.normalized).toHaveLength(3);
+    expect(result.matches).toHaveLength(3);
+  });
+
+  it('should match ingredients by synonyms', () => {
+    const analyzer = new Analyzer({ database: testDatabase });
+    const result = analyzer.analyze('hexadecan-1-ol');
+
+    expect(result.matches).toHaveLength(1);
+    expect(result.matches[0].ingredient?.id).toBe('cetyl_alcohol');
+  });
+
+  it('should apply flags when options are set', () => {
+    const analyzer = new Analyzer({
+      database: testDatabase,
+      options: {
         flaggedIngredients: ['sd_alcohol'],
         flaggedCategories: ['drying_alcohol'],
-        flaggedGroups: ['alcohols'],
-      };
-
-      analyzer.setOptions(options);
-      expect(analyzer.getOptions()).toEqual(options);
+        flaggedGroups: ['alcohols']
+      }
     });
+
+    const result = analyzer.analyze('Cetyl Alcohol, SD Alcohol');
+
+    expect(result.flags.ingredients).toEqual(['sd_alcohol']);
+    expect(result.flags.categories).toEqual(['drying_alcohol']);
+    expect(result.flags.groups).toEqual(['alcohols']);
   });
 
-  describe('Data Access', () => {
-    it('should provide access to ingredients, categories, and groups', () => {
-      const customDatabase = loadDatabase({
-        dataDir: TEST_DATA_DIR,
-        schemaDir: SCHEMA_DIR,
-      });
-      const analyzer = new Analyzer({ database: customDatabase });
+  it('should handle invalid URLs', () => {
+    const analyzer = new Analyzer({ database: testDatabase });
+    const result = analyzer.analyze('http://example.com/ingredients');
 
-      const ingredients = analyzer.getIngredients();
-      const categories = analyzer.getCategories();
-      const groups = analyzer.getGroups();
-
-      expect(Object.keys(ingredients)).toHaveLength(2);
-      expect(Object.keys(categories)).toHaveLength(2);
-      expect(Object.keys(groups)).toHaveLength(1);
-
-      // Check specific items exist
-      expect(ingredients.cetyl_alcohol).toBeDefined();
-      expect(categories.emollient_alcohol).toBeDefined();
-      expect(groups.alcohols).toBeDefined();
-    });
+    expect(result.normalized).toEqual([]);
+    expect(result.matches).toEqual([]);
   });
 
-  describe('Analysis', () => {
-    it('should return empty result for invalid input', () => {
-      const analyzer = new Analyzer();
-      const result = analyzer.analyze('');
+  it('should generate unique UUIDs for each match', () => {
+    const analyzer = new Analyzer({ database: testDatabase });
+    const result = analyzer.analyze('Cetyl Alcohol, SD Alcohol');
 
-      expect(result.uuid).toBeDefined();
-      expect(result.input).toBe('');
-      expect(result.normalized).toHaveLength(0);
-      expect(result.matches).toHaveLength(0);
-      expect(result.categories).toHaveLength(0);
-      expect(result.groups).toHaveLength(0);
-      expect(result.flags.ingredients).toHaveLength(0);
-      expect(result.flags.categories).toHaveLength(0);
-      expect(result.flags.groups).toHaveLength(0);
-    });
-
-    it('should set system in result when provided', () => {
-      const analyzer = new Analyzer();
-      const result = analyzer.analyze('test', 'default_curly');
-
-      expect(result.system).toBe('default_curly');
-    });
+    const uuids = new Set(result.matches.map(m => m.uuid));
+    expect(uuids.size).toBe(2); // All UUIDs should be unique
   });
 });

@@ -1,8 +1,10 @@
 import { readFileSync } from 'fs';
 import { join } from 'path';
+
 import Ajv from 'ajv';
 import addFormats from 'ajv-formats';
-import { IngredientDatabase, Ingredient, Category, Categories, Groups, Ingredients } from '../types';
+
+import type { IngredientDatabase, Ingredient, Category, Categories, Groups, Ingredients } from '../types';
 
 // Initialize Ajv
 const ajv = new Ajv();

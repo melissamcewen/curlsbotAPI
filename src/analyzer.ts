@@ -1,5 +1,6 @@
 import type { AnalyzerConfig, AnalyzerOptions, IngredientDatabase, AnalysisResult } from './types';
 import { getDefaultDatabase } from './data/defaultDatabase';
+import { normalizer } from './utils/normalizer';
 
 export class Analyzer {
   private database: IngredientDatabase;
@@ -66,6 +67,42 @@ export class Analyzer {
   }
 
   /**
+   * Finds an ingredient in the database by name or synonym
+   */
+  private findIngredient(normalizedName: string) {
+    return Object.values(this.database.ingredients).find(ingredient => {
+      if (ingredient.name.toLowerCase() === normalizedName) {
+        return true;
+      }
+      if (ingredient.synonyms) {
+        return ingredient.synonyms.some(s => s.toLowerCase() === normalizedName);
+      }
+      return false;
+    });
+  }
+
+  /**
+   * Gets categories for an ingredient
+   */
+  private getIngredientCategories(ingredient: string | string[]): string[] {
+    const categories = Array.isArray(ingredient) ? ingredient : [ingredient];
+    return categories.flatMap(catId => {
+      const category = this.database.categories[catId];
+      return category ? [category.id] : [];
+    });
+  }
+
+  /**
+   * Gets groups for categories
+   */
+  private getCategoryGroups(categories: string[]): string[] {
+    return categories.flatMap(catId => {
+      const category = this.database.categories[catId];
+      return category?.group ? [category.group] : [];
+    });
+  }
+
+  /**
    * Creates an empty analysis result with required fields
    */
   private createEmptyResult(): AnalysisResult {
@@ -89,18 +126,81 @@ export class Analyzer {
 
   /**
    * Analyzes an ingredient list and returns the results
-   * @param ingredientList The ingredient list to analyze
-   * @param system Optional system to use for analysis
    */
   analyze(ingredientList: string, system = ""): AnalysisResult {
     if (!ingredientList || typeof ingredientList !== 'string') {
       return this.createEmptyResult();
     }
 
-    // TODO: Implement actual analysis logic
     const result = this.createEmptyResult();
     result.input = ingredientList;
     result.system = system;
+
+    // Use the existing normalizer
+    const normalized = normalizer(ingredientList);
+    if (!normalized.isValid) {
+      return result;
+    }
+
+    result.normalized = normalized.ingredients;
+
+    // Match ingredients and collect categories/groups
+    const allCategories = new Set<string>();
+    const allGroups = new Set<string>();
+
+    result.matches = normalized.ingredients.map(normalizedName => {
+      const ingredient = this.findIngredient(normalizedName);
+      const categories = ingredient ? this.getIngredientCategories(ingredient.categories) : [];
+      const groups = this.getCategoryGroups(categories);
+
+      // Add to overall categories and groups
+      categories.forEach(c => allCategories.add(c));
+      groups.forEach(g => allGroups.add(g));
+
+      return {
+        uuid: crypto.randomUUID(),
+        input: normalizedName,
+        normalized: normalizedName,
+        categories,
+        groups,
+        flags: [],
+        ingredient
+      };
+    });
+
+    // Set overall categories and groups
+    result.categories = Array.from(allCategories);
+    result.groups = Array.from(allGroups);
+
+    // Apply flags if options are set
+    if (this.options) {
+      const flags = {
+        ingredients: [] as string[],
+        categories: [] as string[],
+        groups: [] as string[]
+      };
+
+      // Check flagged ingredients
+      if (this.options.flaggedIngredients) {
+        flags.ingredients = result.matches
+          .filter(m => m.ingredient && this.options?.flaggedIngredients?.includes(m.ingredient.id))
+          .map(m => m.ingredient!.id);
+      }
+
+      // Check flagged categories
+      if (this.options.flaggedCategories) {
+        flags.categories = result.categories
+          .filter(c => this.options?.flaggedCategories?.includes(c));
+      }
+
+      // Check flagged groups
+      if (this.options.flaggedGroups) {
+        flags.groups = result.groups
+          .filter(g => this.options?.flaggedGroups?.includes(g));
+      }
+
+      result.flags = flags;
+    }
 
     return result;
   }
