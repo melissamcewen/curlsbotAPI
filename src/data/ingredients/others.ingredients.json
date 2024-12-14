@@ -7,7 +7,7 @@
       "category": "other"
     },
     {
-      "name": "aminomethyl propanol",
+      "name": "Aminomethyl Propanol",
       "id": "aminomethyl_propanol",
       "category": "other",
       "references": ["https://incidecoder.com/ingredients/aminomethyl-propanol"]
@@ -35,6 +35,16 @@
     {
       "name": "Sodium Lauroyl Oat Amino Acids",
       "id": "sodium_lauroyl_oat_amino_acids",
+      "category": "other"
+    },
+    {
+      "name": "Saccharomycessilicon ferment",
+      "id": "saccharomycessilicon_ferment",
+      "category": "other"
+    },
+    {
+      "name": "Silicon ferment",
+      "id": "silicon_ferment",
       "category": "other"
     }
   ]

@@ -1,0 +1,158 @@
+{
+  "ingredients": [
+    {
+      "name": "Dimethicone",
+      "id": "dimethicone",
+      "synonyms": ["polydimethylsiloxane", "PDMS", "dimethylpolysiloxane"],
+      "category": "non-water-soluble_silicones",
+      "references": ["https://incidecoder.com/ingredients/dimethicone"]
+    },
+    {
+      "name": "Cyclopentasiloxane",
+      "id": "cyclopentasiloxane",
+      "synonyms": ["D5", "decamethylcyclopentasiloxane", "cyclopentamethicone"],
+      "category": "non-water-soluble_silicones",
+      "references": ["https://incidecoder.com/ingredients/cyclopentasiloxane"]
+    },
+    {
+      "name": "Amodimethicone",
+      "id": "amodimethicone",
+      "synonyms": ["amine-functional dimethicone", "amino-modified silicone"],
+      "category": "non-water-soluble_silicones",
+      "references": ["https://incidecoder.com/ingredients/amodimethicone"]
+    },
+    {
+      "name": "Cyclohexasiloxane",
+      "id": "cyclohexasiloxane",
+      "synonyms": ["D6", "dodecamethylcyclohexasiloxane", "cyclohexamethicone"],
+      "category": "non-water-soluble_silicones",
+      "references": ["https://incidecoder.com/ingredients/cyclohexasiloxane"]
+    },
+    {
+      "name": "Phenyl Trimethicone",
+      "id": "phenyl_trimethicone",
+      "synonyms": ["trimethylsilylphenyl dimethicone", "phenylmethylsilicone"],
+      "category": "non-water-soluble_silicones",
+      "references": ["https://incidecoder.com/ingredients/phenyl-trimethicone"]
+    },
+    {
+      "name": "Dimethiconol",
+      "id": "dimethiconol",
+      "synonyms": [
+        "hydroxyl-terminated dimethicone",
+        "dimethylsiloxane polymer"
+      ],
+      "category": "non-water-soluble_silicones",
+      "references": ["https://incidecoder.com/ingredients/dimethiconol"]
+    },
+    {
+      "name": "Silicone Quaternium-8",
+      "id": "silicone_quaternium_8",
+      "synonyms": ["cationic silicone polymer", "quaternized dimethicone"],
+      "category": "non-water-soluble_silicones",
+      "references": [
+        "https://incidecoder.com/ingredients/silicone-quaternium-8"
+      ]
+    },
+    {
+      "name": "Trimethylsiloxyamodimethicone",
+      "id": "trimethylsiloxyamodimethicone",
+      "synonyms": ["amino silicone resin", "amino-functionalized silicone"],
+      "category": "non-water-soluble_silicones",
+      "references": [
+        "https://incidecoder.com/ingredients/trimethylsiloxyamodimethicone"
+      ]
+    },
+    {
+      "name": "Cetearyl Methicone",
+      "id": "cetearyl_methicone",
+      "synonyms": ["cetearyl dimethicone", "methicone ester"],
+      "category": "non-water-soluble_silicones",
+      "references": ["https://incidecoder.com/ingredients/cetearyl-methicone"]
+    },
+    {
+      "name": "Dimethicone Copolyol",
+      "id": "dimethicone_copolyol",
+      "synonyms": [
+        "dimethicone polyethylene glycol ether",
+        "dimethicone polyoxyethylene"
+      ],
+      "category": "water-soluble_silicones",
+      "references": ["https://incidecoder.com/ingredients/dimethicone-copolyol"]
+    },
+    {
+      "name": "PEG-7 Amodimethicone",
+      "id": "peg_7_amodimethicone",
+      "synonyms": [
+        "polyether modified amodimethicone",
+        "polyethylene glycol-7 amodimethicone"
+      ],
+      "category": "water-soluble_silicones",
+      "references": ["https://incidecoder.com/ingredients/peg-7-amodimethicone"]
+    },
+    {
+      "name": "PEG-8 Dimethicone",
+      "id": "peg_8_dimethicone",
+      "synonyms": [
+        "polyethylene glycol-8 dimethicone",
+        "PEG-modified dimethicone"
+      ],
+      "category": "water-soluble_silicones",
+      "references": ["https://incidecoder.com/ingredients/peg-8-dimethicone"]
+    },
+    {
+      "name": "PEG-12 Dimethicone",
+      "id": "peg_12_dimethicone",
+      "synonyms": [
+        "polyethylene glycol-12 dimethicone",
+        "dimethicone ethoxylate"
+      ],
+      "category": "water-soluble_silicones",
+      "references": ["https://incidecoder.com/ingredients/peg-12-dimethicone"]
+    },
+    {
+      "name": "PEG-14 Dimethicone",
+      "id": "peg_14_dimethicone",
+      "synonyms": [
+        "polyethylene glycol-14 dimethicone",
+        "dimethicone glycol ether"
+      ],
+      "category": "water-soluble_silicones",
+      "references": ["https://incidecoder.com/ingredients/peg-14-dimethicone"]
+    },
+    {
+      "name": "PEG-10 Dimethicone",
+      "id": "peg_10_dimethicone",
+      "synonyms": [
+        "polyethylene glycol-10 dimethicone",
+        "dimethicone polyether"
+      ],
+      "category": "water-soluble_silicones",
+      "references": ["https://incidecoder.com/ingredients/peg-10-dimethicone"]
+    },
+    {
+      "name": "Lauryl Methicone Copolyol",
+      "id": "lauryl_methicone_copolyol",
+      "synonyms": [
+        "lauryl polyethylene glycol dimethicone",
+        "polyoxyethylene lauryl dimethicone"
+      ],
+      "category": "water-soluble_silicones",
+      "references": [
+        "https://incidecoder.com/ingredients/lauryl-methicone-copolyol"
+      ]
+    },
+    {
+      "name": "Bis-PEG-18 Methyl Ether Dimethyl Silane",
+      "id": "bis_peg_18_methyl_ether_dimethyl_silane",
+      "synonyms": [
+        "polyethylene glycol-18 methyl ether dimethyl silane",
+        "dimethylsilane glycol ether"
+      ],
+      "category": "water-soluble_silicones",
+      "references": [
+        "https://incidecoder.com/ingredients/bis-peg-18-methyl-ether-dimethyl-silane"
+      ]
+    }
+  ]
+}
