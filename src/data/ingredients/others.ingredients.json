@@ -21,6 +21,21 @@
       "name": "Sodium Lauroyl Lactylate",
       "id": "sodium_lauroyl_lactylate",
       "category": "other"
+    },
+    {
+      "name": "Sodium Methyl 2-sulfolaurate",
+      "id": "sodium_methyl_2-sulfolaurate",
+      "category": "other"
+    },
+    {
+      "name": "Disodium 2-sulfolaurate",
+      "id": "disodium_2-sulfolaurate",
+      "category": "other"
+    },
+    {
+      "name": "Sodium Lauroyl Oat Amino Acids",
+      "id": "sodium_lauroyl_oat_amino_acids",
+      "category": "other"
     }
   ]
 }

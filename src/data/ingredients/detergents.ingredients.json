@@ -408,6 +408,12 @@
       "id": "sodium_laurylglucosides_hydroxypropylsulfonate",
       "synonyms": ["sodium laurylglucosides hydroxypropylsulfonate"],
       "category": "mild_detergents"
+    },
+    {
+      "name": "Disodium Lauryl Sulfosuccinate",
+      "id": "disodium_lauryl_sulfosuccinate",
+      "synonyms": ["disodium lauryl sulfosuccinate"],
+      "category": "mild_detergents"
     }
   ]
 }

@@ -87,7 +87,7 @@
     {
       "name": "Stearyl Alcohol",
       "id": "stearyl_alcohol",
-      "synonyms": "1-Octadecanol, Octadecan-1-ol",
+      "synonyms": "1-Octadecanol, Octadecan-1-ol, steoryl alcohol",
       "category": "emollient_alcohol",
       "references": ["https://cosdna.com/eng/5ef6ef467.html"]
     },
@@ -108,6 +108,114 @@
       "id": "benzyl_alcohol",
       "category": "emollient_alcohol",
       "references": ["https://incidecoder.com/ingredients/benzyl-alcohol"]
+    },
+    {
+      "name": "Oleyl Alcohol",
+      "id": "oleyl_alcohol",
+      "category": "emollient_alcohol"
+    },
+    {
+      "name": "Arachidyl Alcohol",
+      "id": "arachidyl_alcohol",
+      "category": "emollient_alcohol"
+    },
+    {
+      "name": "Phenethyl Alcohol",
+      "id": "phenethyl_alcohol",
+      "category": "emollient_alcohol"
+    },
+    {
+      "name": "Brassica Alcohol",
+      "id": "brassica_alcohol",
+      "category": "emollient_alcohol"
+    },
+    {
+      "name": "Undecyl Alcohol",
+      "id": "undecyl_alcohol",
+      "category": "emollient_alcohol"
+    },
+    {
+      "name": "Amylcinnamyl Alcohol",
+      "id": "amylcinnamyl_alcohol",
+      "category": "emollient_alcohol",
+      "synonyms": "amyl cinnamyl alcohol",
+      "references": ["https://cosdna.com/eng/3a86ec9991.html"]
+    },
+    {
+      "name": "Amino-2-methyl-1-propanol",
+      "id": "amino-2-methyl-1-propanol",
+      "category": "emollient_alcohol"
+    },
+    {
+      "name": "Amino Methyl Propanol",
+      "id": "amino_methyl_propanol",
+      "category": "emollient_alcohol"
+    },
+    {
+      "name": "C14-22 Alcohol",
+      "id": "c14-22_alcohol",
+      "category": "emollient_alcohol"
+    },
+    {
+      "name": "C20-C22 Alcohol",
+      "id": "c20-c22_alcohol",
+      "category": "emollient_alcohol"
+    },
+    {
+      "name": "Phenyl Propanol",
+      "id": "phenyl_propanol",
+      "synonyms": "phenylpropanol",
+      "category": "emollient_alcohol"
+    },
+    {
+      "name": "Acetyl Alcohol",
+      "id": "acetyl_alcohol",
+      "category": "emollient_alcohol"
+    },
+    {
+      "name": "Steareth Alcohol",
+      "id": "steareth_alcohol",
+      "category": "emollient_alcohol"
+    },
+    {
+      "name": "Phenethyl Alcohol",
+      "id": "phenethyl_alcohol",
+      "synonyms": "phenylethyl alcohol, phenyl ethyl alcohol",
+      "category": "emollient_alcohol",
+      "references": ["https://incidecoder.com/ingredients/phenethyl-alcohol"]
+    },
+    {
+      "name": "Cetylated Lanolin Alcohol",
+      "id": "cetylated_lanolin_alcohol",
+      "category": "emollient_alcohol"
+    },
+    {
+      "name": "Cinnamyl Alcohol",
+      "id": "cinnamyl_alcohol",
+      "synonyms": "cinnamic alcohol",
+      "category": "emollient_alcohol",
+      "references": ["https://incidecoder.com/ingredients/cinnamyl-alcohol"]
+    },
+    {
+      "name": "Phenethyl Alcohol",
+      "id": "phenethyl_alcohol",
+      "synonyms": "phenylethyl alcohol, phenyl ethyl alcohol",
+      "category": "preservative_alcohol"
+    },
+    {
+      "name": "Coconut Alcohol",
+      "id": "coconut_alcohol",
+      "category": "emollient_alcohol"
+    },
+    {
+      "name": "Butylene Alcohol",
+      "id": "butylene_alcohol",
+      "category": "emollient_alcohol"
+    },
+    {
+      "name": "Pantothenyl Alcohol",
+      "id": "pantothenyl_alcohol",
+      "category": "emollient_alcohol"
     }
   ]
 }
