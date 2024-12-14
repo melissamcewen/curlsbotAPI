@@ -1,9 +1,0 @@
-{
-  "ingredients": [
-    {
-      "name": "Unknown Alcohol",
-      "id": "unknown_alcohol",
-      "partials": ["alcohol"]
-    }
-  ]
-}

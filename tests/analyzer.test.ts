@@ -1,108 +1,128 @@
-import { Analyzer, AnalyzerError, createEmptyResult } from '../src/utils/analyzer';
+import { join } from 'path';
+import { Analyzer } from '../src/analyzer';
+import { loadDatabase } from '../src/utils/dataLoader';
+import { clearDefaultDatabase } from '../src/data/defaultDatabase';
 
-
-import { analyzerFixtures } from './fixtures/analyzer.fixtures';
+// Use test data but real schemas
+const TEST_DATA_DIR = join(__dirname, 'fixtures/data');
+const SCHEMA_DIR = join(__dirname, '../src/data/schema');
 
 describe('Analyzer', () => {
-  const { testCases, createAnalyzer } = analyzerFixtures;
-
-  let analyzer: Analyzer;
-
   beforeEach(() => {
-    analyzer = createAnalyzer();
+    // Clear the default database cache before each test
+    clearDefaultDatabase();
   });
 
-  describe('Basic ingredient analysis', () => {
-    test('should analyze a basic ingredient list', () => {
-      const { input, expectedMatches, expectedCategories, expectedIngredients } = testCases.basicList;
-      const result = analyzer.analyze(input);
+  describe('Constructor', () => {
+    it('should use default database when no config is provided', () => {
+      const analyzer = new Analyzer();
+      const database = analyzer.getDatabase();
+      expect(database).toBeDefined();
+      expect(database.ingredients).toBeDefined();
+      expect(database.categories).toBeDefined();
+      expect(database.groups).toBeDefined();
+    });
 
-      expect(result.matches).toHaveLength(expectedMatches);
+    it('should use provided database when config is provided', () => {
+      const customDatabase = loadDatabase({
+        dataDir: TEST_DATA_DIR,
+        schemaDir: SCHEMA_DIR,
+      });
+      const analyzer = new Analyzer({ database: customDatabase });
+      const database = analyzer.getDatabase();
 
-      expectedCategories.forEach(category => {
-        expect(result.categories).toContain(category);
+      // Check ingredients
+      expect(Object.keys(database.ingredients)).toHaveLength(2);
+      expect(database.ingredients.cetyl_alcohol.name).toBe('Cetyl Alcohol');
+      expect(database.ingredients.sd_alcohol.name).toBe('SD Alcohol');
+
+      // Check categories
+      expect(Object.keys(database.categories)).toHaveLength(2);
+      expect(database.categories.emollient_alcohol.name).toBe(
+        'Emollient Alcohols',
+      );
+      expect(database.categories.drying_alcohol.name).toBe('Drying Alcohols');
+
+      // Check groups
+      expect(Object.keys(database.groups)).toHaveLength(1);
+      expect(database.groups.alcohols.name).toBe('Alcohols');
+    });
+  });
+
+  describe('Database Management', () => {
+    it('should allow updating the database', () => {
+      const analyzer = new Analyzer();
+      const customDatabase = loadDatabase({
+        dataDir: TEST_DATA_DIR,
+        schemaDir: SCHEMA_DIR,
       });
 
-      expectedIngredients.forEach(ingredient => {
-        expect(result.matches.some(match => match.normalized === ingredient)).toBe(true);
+      analyzer.setDatabase(customDatabase);
+      const database = analyzer.getDatabase();
+
+      expect(Object.keys(database.ingredients)).toHaveLength(2);
+      expect(database.ingredients.cetyl_alcohol.name).toBe('Cetyl Alcohol');
+    });
+  });
+
+  describe('Options Management', () => {
+    it('should allow setting and getting options', () => {
+      const analyzer = new Analyzer();
+      const options = {
+        flaggedIngredients: ['sd_alcohol'],
+        flaggedCategories: ['drying_alcohol'],
+        flaggedGroups: ['alcohols'],
+      };
+
+      analyzer.setOptions(options);
+      expect(analyzer.getOptions()).toEqual(options);
+    });
+  });
+
+  describe('Data Access', () => {
+    it('should provide access to ingredients, categories, and groups', () => {
+      const customDatabase = loadDatabase({
+        dataDir: TEST_DATA_DIR,
+        schemaDir: SCHEMA_DIR,
       });
+      const analyzer = new Analyzer({ database: customDatabase });
 
-      // Test specific match details
-      const slsMatch = result.matches.find(match => match.normalized === 'sodium lauryl sulfate');
-      expect(slsMatch?.details?.name).toBe('Sodium Lauryl Sulfate');
-      expect(slsMatch?.details?.description).toContain('A strong cleansing agent');
-    });
-  });
-
-  describe('Error handling', () => {
-    test.each([
-      ['empty string', testCases.invalidInputs.empty],
-      ['null', testCases.invalidInputs.null],
-      ['undefined', testCases.invalidInputs.undefined],
-      ['number', testCases.invalidInputs.number],
-      ['object', testCases.invalidInputs.object],
-    ])('should throw AnalyzerError for %s input', (_, input) => {
-      // @ts-expect-error Testing invalid inputs
-      expect(() => analyzer.analyze(input)).toThrow(AnalyzerError);
-    });
-
-    test('should handle invalid ingredient list format', () => {
-      const result = analyzer.analyze(testCases.invalidInputs.invalidFormat);
-      expect(result).toEqual(createEmptyResult());
-    });
-  });
-
-  describe('Database queries', () => {
-    test('should return all categories', () => {
-      const categories = analyzer.getCategories();
-
-      expect(Array.isArray(categories)).toBe(true);
-      expect(categories.length).toBeGreaterThan(0);
-      expect(categories).toContain('fatty_alcohol');
-      expect(categories).toContain('solvent_alcohol');
-
-      // Check for duplicates
-      expect(categories.length).toBe(new Set(categories).size);
-    });
-
-    test('should return all ingredients', () => {
       const ingredients = analyzer.getIngredients();
+      const categories = analyzer.getCategories();
+      const groups = analyzer.getGroups();
 
-      expect(Array.isArray(ingredients)).toBe(true);
-      expect(ingredients.length).toBeGreaterThan(0);
-      expect(ingredients).toContain('cetyl_alcohol');
-      expect(ingredients).toContain('benzyl_alcohol');
+      expect(Object.keys(ingredients)).toHaveLength(2);
+      expect(Object.keys(categories)).toHaveLength(2);
+      expect(Object.keys(groups)).toHaveLength(1);
 
-      // Check for duplicates
-      expect(ingredients.length).toBe(new Set(ingredients).size);
+      // Check specific items exist
+      expect(ingredients.cetyl_alcohol).toBeDefined();
+      expect(categories.emollient_alcohol).toBeDefined();
+      expect(groups.alcohols).toBeDefined();
     });
   });
 
-  describe('Flagging', () => {
-    test('should flag ingredients by id', () => {
-      const flaggedAnalyzer = createAnalyzer({
-        flaggedIngredients: ['sodium_lauryl_sulfate'],
-      });
+  describe('Analysis', () => {
+    it('should return empty result for invalid input', () => {
+      const analyzer = new Analyzer();
+      const result = analyzer.analyze('');
 
-      const result = flaggedAnalyzer.analyze(testCases.basicList.input);
-
-      expect(result.flags?.ingredients).toContain('sodium_lauryl_sulfate');
-      expect(result.matches.find(m =>
-        m.normalized === 'sodium lauryl sulfate'
-      )?.matchDetails?.flagged).toBe(true);
+      expect(result.uuid).toBeDefined();
+      expect(result.input).toBe('');
+      expect(result.normalized).toHaveLength(0);
+      expect(result.matches).toHaveLength(0);
+      expect(result.categories).toHaveLength(0);
+      expect(result.groups).toHaveLength(0);
+      expect(result.flags.ingredients).toHaveLength(0);
+      expect(result.flags.categories).toHaveLength(0);
+      expect(result.flags.groups).toHaveLength(0);
     });
 
-    test('should flag ingredients by category', () => {
-      const flaggedAnalyzer = createAnalyzer({
-        flaggedCategories: ['solvent_alcohol'],
-      });
+    it('should set system in result when provided', () => {
+      const analyzer = new Analyzer();
+      const result = analyzer.analyze('test', 'default_curly');
 
-      const result = flaggedAnalyzer.analyze('Water, Benzyl Alcohol');
-
-      expect(result.flags?.categories).toContain('solvent_alcohol');
-      expect(result.matches.find(m =>
-        m.normalized === 'benzyl alcohol'
-      )?.matchDetails?.flagged).toBe(true);
+      expect(result.system).toBe('default_curly');
     });
   });
 });

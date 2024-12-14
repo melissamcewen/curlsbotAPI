@@ -1,3 +1,7 @@
 Never directly modify *.ingredients.yaml or *.ingredients.json files , only use command line tools
 
 Avoid using mocks in tests, unless there is no other option
+
+Be concise, make incremental changes and test before proceding.
+
+Don't try to fix everything at once.

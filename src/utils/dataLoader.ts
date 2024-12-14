@@ -42,11 +42,18 @@ const ingredientsToRecord = (ingredients: Ingredient[]): Ingredients => {
   }, {} as Ingredients);
 };
 
-export const loadDatabase = (dataDir: string): IngredientDatabase => {
+export interface LoadDatabaseOptions {
+  /** Directory containing the data files */
+  dataDir: string;
+  /** Directory containing the schema files */
+  schemaDir: string;
+}
+
+export const loadDatabase = ({ dataDir, schemaDir }: LoadDatabaseOptions): IngredientDatabase => {
   // Load schemas
-  const ingredientsSchema = loadSchema(join(dataDir, 'schema/ingredients.schema.json'));
-  const categoriesSchema = loadSchema(join(dataDir, 'schema/categories.schema.json'));
-  const groupsSchema = loadSchema(join(dataDir, 'schema/groups.schema.json'));
+  const ingredientsSchema = loadSchema(join(schemaDir, 'ingredients.schema.json'));
+  const categoriesSchema = loadSchema(join(schemaDir, 'categories.schema.json'));
+  const groupsSchema = loadSchema(join(schemaDir, 'groups.schema.json'));
 
   // Load and validate data
   const ingredientsData = loadAndValidateJson<{ingredients: Ingredient[]}>(
@@ -72,8 +79,8 @@ export const loadDatabase = (dataDir: string): IngredientDatabase => {
 };
 
 // Helper function to load individual data types
-export const loadIngredients = (dataDir: string): Ingredients => {
-  const schema = loadSchema(join(dataDir, 'schema/ingredients.schema.json'));
+export const loadIngredients = ({ dataDir, schemaDir }: LoadDatabaseOptions): Ingredients => {
+  const schema = loadSchema(join(schemaDir, 'ingredients.schema.json'));
   const data = loadAndValidateJson<{ingredients: Ingredient[]}>(
     join(dataDir, 'ingredients.json'),
     schema
@@ -81,8 +88,8 @@ export const loadIngredients = (dataDir: string): Ingredients => {
   return ingredientsToRecord(data.ingredients);
 };
 
-export const loadCategories = (dataDir: string): Categories => {
-  const schema = loadSchema(join(dataDir, 'schema/categories.schema.json'));
+export const loadCategories = ({ dataDir, schemaDir }: LoadDatabaseOptions): Categories => {
+  const schema = loadSchema(join(schemaDir, 'categories.schema.json'));
   const data = loadAndValidateJson<{categories: Category[]}>(
     join(dataDir, 'categories.json'),
     schema
@@ -90,8 +97,8 @@ export const loadCategories = (dataDir: string): Categories => {
   return categoriesToRecord(data.categories);
 };
 
-export const loadGroups = (dataDir: string): Groups => {
-  const schema = loadSchema(join(dataDir, 'schema/groups.schema.json'));
+export const loadGroups = ({ dataDir, schemaDir }: LoadDatabaseOptions): Groups => {
+  const schema = loadSchema(join(schemaDir, 'groups.schema.json'));
   const data = loadAndValidateJson<{groups: Groups}>(
     join(dataDir, 'groups.json'),
     schema

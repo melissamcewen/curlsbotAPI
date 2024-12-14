@@ -1,5 +1,0 @@
-request:
-  # input is the user input
-  input: "SD Alcohol, Water, Something"
-  # system is the system used to analyze the input
-  system: curly_girl_method

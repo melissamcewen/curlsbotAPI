@@ -40,6 +40,8 @@ export interface AnalysisResult {
   matches: IngredientMatch[];
   /** List of categories */
   categories: string[];
+  /** List of groups */
+  groups: string[];
   /** Optional flags for ingredients, categories, and category groups */
   flags?: {
     /** Ingredients that are flagged */
@@ -47,7 +49,7 @@ export interface AnalysisResult {
     /** Categories that are flagged */
     categories: string[];
     /** Category groups that are flagged */
-    Groups: string[];
+    groups: string[];
   };
 }
 
