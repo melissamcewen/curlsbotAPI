@@ -153,6 +153,15 @@
       "references": [
         "https://incidecoder.com/ingredients/bis-peg-18-methyl-ether-dimethyl-silane"
       ]
+    },
+    {
+      "name": "Stearoxytrimethylsilane",
+      "id": "stearoxytrimethylsilane",
+      "synonyms": ["octadecyltrimethylsilane", "stearic acid trimethylsilane"],
+      "category": "non-water-soluble_silicones",
+      "references": [
+        "https://incidecoder.com/ingredients/stearoxytrimethylsilane"
+      ]
     }
   ]
 }

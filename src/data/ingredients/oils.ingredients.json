@@ -1,0 +1,168 @@
+{
+  "ingredients": [
+    {
+      "name": "Grapeseed Oil",
+      "id": "grapeseed_oil",
+      "synonyms": ["vitis vinifera seed oil", "grape seed oil"],
+      "category": "light_oils",
+      "references": [
+        "https://incidecoder.com/ingredients/vitis-vinifera-seed-oil"
+      ]
+    },
+    {
+      "name": "Argan Oil",
+      "id": "argan_oil",
+      "synonyms": ["argania spinosa kernel oil", "argan tree oil"],
+      "category": "light_oils",
+      "references": [
+        "https://incidecoder.com/ingredients/argania-spinosa-kernel-oil"
+      ]
+    },
+    {
+      "name": "Jojoba Oil",
+      "id": "jojoba_oil",
+      "synonyms": ["simmondsia chinensis seed oil", "jojoba seed oil"],
+      "category": "light_oils",
+      "references": [
+        "https://incidecoder.com/ingredients/simmondsia-chinensis-seed-oil"
+      ]
+    },
+    {
+      "name": "Sweet Almond Oil",
+      "id": "sweet_almond_oil",
+      "synonyms": ["prunus amygdalus dulcis oil", "almond oil"],
+      "category": "light_oils",
+      "references": [
+        "https://incidecoder.com/ingredients/prunus-amygdalus-dulcis-oil"
+      ]
+    },
+    {
+      "name": "Camellia Oil",
+      "id": "camellia_oil",
+      "synonyms": ["camellia oleifera seed oil", "tea seed oil"],
+      "category": "light_oils",
+      "references": [
+        "https://incidecoder.com/ingredients/camellia-oleifera-seed-oil"
+      ]
+    },
+    {
+      "name": "Apricot Kernel Oil",
+      "id": "apricot_kernel_oil",
+      "synonyms": ["prunus armeniaca kernel oil", "apricot seed oil"],
+      "category": "light_oils",
+      "references": [
+        "https://incidecoder.com/ingredients/prunus-armeniaca-kernel-oil"
+      ]
+    },
+    {
+      "name": "Marula Oil",
+      "id": "marula_oil",
+      "synonyms": ["sclerocarya birrea seed oil", "marula seed oil"],
+      "category": "light_oils",
+      "references": [
+        "https://incidecoder.com/ingredients/sclerocarya-birrea-seed-oil"
+      ]
+    },
+    {
+      "name": "Castor Oil",
+      "id": "castor_oil",
+      "synonyms": ["ricinus communis seed oil", "castor seed oil"],
+      "category": "oils",
+      "references": [
+        "https://incidecoder.com/ingredients/ricinus-communis-seed-oil"
+      ]
+    },
+    {
+      "name": "Coconut Oil",
+      "id": "coconut_oil",
+      "synonyms": ["cocos nucifera oil", "coconut kernel oil"],
+      "category": "oils",
+      "references": ["https://incidecoder.com/ingredients/cocos-nucifera-oil"]
+    },
+    {
+      "name": "Olive Oil",
+      "id": "olive_oil",
+      "synonyms": ["olea europaea fruit oil", "olive fruit oil"],
+      "category": "oils",
+      "references": [
+        "https://incidecoder.com/ingredients/olea-europaea-fruit-oil"
+      ]
+    },
+    {
+      "name": "Shea Butter Oil",
+      "id": "shea_butter_oil",
+      "synonyms": ["butyrospermum parkii butter oil", "shea oil"],
+      "category": "oils",
+      "references": [
+        "https://incidecoder.com/ingredients/butyrospermum-parkii-butter-oil"
+      ]
+    },
+    {
+      "name": "Avocado Oil",
+      "id": "avocado_oil",
+      "synonyms": ["persea gratissima oil", "avocado fruit oil"],
+      "category": "oils",
+      "references": [
+        "https://incidecoder.com/ingredients/persea-gratissima-oil"
+      ]
+    },
+    {
+      "name": "Sunflower Oil",
+      "id": "sunflower_oil",
+      "synonyms": ["helianthus annuus seed oil", "sunflower seed oil"],
+      "category": "oils",
+      "references": [
+        "https://incidecoder.com/ingredients/helianthus-annuus-seed-oil"
+      ]
+    },
+    {
+      "name": "Baobab Oil",
+      "id": "baobab_oil",
+      "synonyms": ["adansonia digitata seed oil", "baobab seed oil"],
+      "category": "oils",
+      "references": [
+        "https://incidecoder.com/ingredients/adansonia-digitata-seed-oil"
+      ]
+    },
+    {
+      "name": "Mineral Oil",
+      "id": "mineral_oil",
+      "synonyms": ["paraffinum liquidum", "liquid paraffin", "petroleum oil"],
+      "category": "heavy_oils",
+      "references": ["https://incidecoder.com/ingredients/mineral-oil"]
+    },
+    {
+      "name": "Paraffin",
+      "id": "paraffin",
+      "synonyms": ["paraffin wax", "petroleum wax"],
+      "category": "heavy_oils",
+      "references": ["https://incidecoder.com/ingredients/paraffin"]
+    },
+    {
+      "name": "Lanolin",
+      "id": "lanolin",
+      "synonyms": ["wool wax", "wool grease"],
+      "category": "heavy_oils",
+      "references": ["https://incidecoder.com/ingredients/lanolin"]
+    },
+    {
+      "name": "Petrolatum",
+      "id": "petrolatum",
+      "synonyms": ["petroleum jelly", "vaseline"],
+      "category": "heavy_oils",
+      "references": ["https://incidecoder.com/ingredients/petrolatum"]
+    },
+    {
+      "name": "Isohexadecane",
+      "id": "isohexadecane",
+      "synonyms": [
+        "C16 hydrocarbon",
+        "volatile hydrocarbon",
+        "isohexanedecane",
+        "Isohexad"
+      ],
+      "category": "light_oils",
+      "references": ["https://incidecoder.com/ingredients/isohexadecane"]
+    }
+  ]
+}

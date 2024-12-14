@@ -15,6 +15,18 @@
     {
       "id": "silicones",
       "name": "Silicones"
+    },
+    {
+      "id": "others",
+      "name": "Others"
+    },
+    {
+      "id": "waxes",
+      "name": "Waxes"
+    },
+    {
+      "id": "oils",
+      "name": "Oils"
     }
   ]
 }

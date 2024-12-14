@@ -43,15 +43,15 @@
       "description": "TBD"
     },
     {
-      "id": "other",
-      "name": "Other",
+      "id": "preservatives",
+      "name": "Preservatives",
       "group": "other",
       "description": "TBD"
     },
     {
-      "id": "preservatives",
-      "name": "Preservatives",
-      "group": "other",
+      "id": "other_detergents",
+      "name": "Other Detergents",
+      "group": "detergents",
       "description": "TBD"
     },
     {
@@ -70,6 +70,30 @@
       "id": "soaps",
       "name": "Soaps",
       "group": "other",
+      "description": "TBD"
+    },
+    {
+      "id": "mild_detergents",
+      "name": "Mild Detergents",
+      "group": "detergents",
+      "description": "TBD"
+    },
+    {
+      "id": "heavy_oils",
+      "name": "Heavy Oils",
+      "group": "oils",
+      "description": "TBD"
+    },
+    {
+      "id": "light_oils",
+      "name": "Light Oils",
+      "group": "oils",
+      "description": "TBD"
+    },
+    {
+      "id": "oils",
+      "name": "Oils",
+      "group": "oils",
       "description": "TBD"
     }
   ]
