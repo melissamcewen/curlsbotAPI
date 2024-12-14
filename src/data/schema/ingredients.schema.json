@@ -1,0 +1,61 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "required": ["ingredients"],
+  "properties": {
+    "ingredients": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name", "id", "categories"],
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "The display name of the ingredient"
+          },
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z0-9_-]+$",
+            "description": "A unique identifier for the ingredient in snake_case"
+          },
+          "synonyms": {
+            "oneOf": [
+              {
+                "type": "string",
+                "description": "Comma-separated list of alternative names"
+              },
+              {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "description": "Array of alternative names"
+              }
+            ]
+          },
+          "description": {
+            "type": "string",
+            "description": "Optional description of the ingredient's effects"
+          },
+          "categories": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Categories to which the ingredient belongs"
+          },
+          "references": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "format": "uri"
+            },
+            "description": "URLs to reference sources"
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

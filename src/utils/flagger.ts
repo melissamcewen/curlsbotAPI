@@ -8,7 +8,7 @@ export interface FlagResult {
   flags: {
     ingredients: string[];
     categories: string[];
-    categoryGroups: string[];
+    Groups: string[];
   };
   matchDetails: {
     matched: boolean;
@@ -29,7 +29,7 @@ export class Flagger {
     const flags = {
       ingredients: [] as string[],
       categories: [] as string[],
-      categoryGroups: [] as string[],
+      Groups: [] as string[],
     };
 
     let isFlagged = false;
@@ -57,11 +57,8 @@ export class Flagger {
     }
 
     // Check category groups
-    if (
-      this.options.flaggedCategoryGroups?.length &&
-      match.categories?.length
-    ) {
-      const flaggedGroups = this.options.flaggedCategoryGroups;
+    if (this.options.flaggedGroups?.length && match.categories?.length) {
+      const flaggedGroups = this.options.flaggedGroups;
 
       // Find which groups the match's categories belong to
       this.database.categories.forEach((group) => {
@@ -72,7 +69,7 @@ export class Flagger {
 
           match.categories?.forEach((matchCategory) => {
             if (groupCategories.includes(matchCategory.toLowerCase())) {
-              flags.categoryGroups.push(group.id.toLowerCase());
+              flags.Groups.push(group.id.toLowerCase());
               isFlagged = true;
             }
           });

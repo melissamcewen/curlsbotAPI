@@ -1,0 +1,14 @@
+match:
+  match_type:
+    - exclusions
+    - preferred
+    - avoid
+    - inclusions
+    - caution
+  match_method:
+    - exact
+    - partial
+  match_on:
+    - group
+    - category
+    - ingredient

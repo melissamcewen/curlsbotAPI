@@ -1,0 +1,21 @@
+{
+  "groups": [
+    {
+      "id": "alcohols",
+      "name": "Alcohols"
+    },
+    {
+      "id": "preservatives",
+      "name": "Preservatives"
+    },
+    {
+      "id": "detergents",
+      "name": "Detergents"
+    },
+    {
+      "id": "silicones",
+      "name": "Silicones"
+    }
+  ]
+}
+

@@ -90,7 +90,7 @@ describe('Flagger', () => {
 
     it('should flag ingredients by category group', () => {
       const flagger = new Flagger(database, {
-        flaggedCategoryGroups: ['alcohols'],
+        flaggedGroups: ['alcohols'],
       });
 
       const match: IngredientMatch = {
@@ -101,7 +101,7 @@ describe('Flagger', () => {
       };
 
       const result = flagger.getFlagsForMatch(match);
-      expect(result.flags.categoryGroups).toContain('alcohols');
+      expect(result.flags.Groups).toContain('alcohols');
       expect(result.matchDetails.flagged).toBe(true);
     });
 
@@ -109,7 +109,7 @@ describe('Flagger', () => {
       const flagger = new Flagger(database, {
         flaggedIngredients: ['sodium lauryl sulfate'],
         flaggedCategories: ['sulfate'],
-        flaggedCategoryGroups: ['Alcohols'],
+        flaggedGroups: ['Alcohols'],
       });
 
       const match: IngredientMatch = {
@@ -122,7 +122,7 @@ describe('Flagger', () => {
       const result = flagger.getFlagsForMatch(match);
       expect(result.flags.ingredients).toHaveLength(0);
       expect(result.flags.categories).toHaveLength(0);
-      expect(result.flags.categoryGroups).toHaveLength(0);
+      expect(result.flags.Groups).toHaveLength(0);
       expect(result.matchDetails.flagged).toBe(false);
     });
 
@@ -139,7 +139,7 @@ describe('Flagger', () => {
       const result = flagger.getFlagsForMatch(match);
       expect(result.flags.ingredients).toHaveLength(0);
       expect(result.flags.categories).toHaveLength(0);
-      expect(result.flags.categoryGroups).toHaveLength(0);
+      expect(result.flags.Groups).toHaveLength(0);
       expect(result.matchDetails.flagged).toBe(false);
     });
 

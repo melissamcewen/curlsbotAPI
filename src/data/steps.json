@@ -1,0 +1,33 @@
+{"steps": [
+  {
+    "type": "inclusions",
+    "action": "filter",
+    "match_method": "partial",
+    "name": "narrow down to group, at this stage it's an unknown member of the group"
+  },
+  {
+    "type": "exclusions",
+    "action": "filter",
+    "match_method": "exact",
+    "name": "remove group exclusions, remove them from the group"
+  },
+  {
+    "type": "ingredients",
+    "action": "match",
+    "match_method": "exact",
+    "name": "try to find any exact matches, remove them from the group"
+  },
+   {
+    "type": "ingredients",
+    "action": "match",
+    "match_method": "superstring",
+    "name": "try to find any superstring matches"
+  },
+  {
+    "type": "ingredients",
+    "action": "match",
+    "match_method": "substring",
+    "name": "try to find any substring matches"
+  }
+]
+}

@@ -1,0 +1,65 @@
+{
+  "settings": [
+    {
+      "id": "sulfate_free",
+      "name": "Sulfate Free",
+      "description": "Sulfates are a type of detergent that can cause irritation and dryness.",
+      "ingredients": [
+        "sulfates"
+      ],
+      "categories": [],
+      "flags": [
+        "avoid"
+      ]
+    },
+    {
+      "id": "paraben_free",
+      "name": "Paraben Free",
+      "description": "Parabens are a type of preservative that can cause irritation and dryness.",
+      "ingredients": [
+        "parabens"
+      ],
+      "categories": [],
+      "flags": [
+        "avoid"
+      ]
+    },
+    {
+      "id": "cleansing",
+      "name": "Cleansing",
+      "description": "Cleansing ingredients help remove dirt and oil from the hair and scalp.",
+      "ingredients": [],
+      "categories": [
+        "sulfates"
+      ],
+      "groups": [],
+      "flags": [
+        "prefer"
+      ]
+    },
+    {
+      "id": "drying_alcohol",
+      "name": "No Drying Alcohol",
+      "description": "Drying alcohols are used to remove moisture from the hair and skin, and can cause irritation and dryness.",
+      "ingredients": [
+        "drying_alcohols"
+      ],
+      "categories": [],
+      "flags": [
+        "avoid"
+      ]
+    },
+    {
+      "id": "silicone_free  ",
+      "name": "Silicone Free",
+      "description": "Avoiding all silicones even water-soluble ones.",
+      "categories": [],
+      "groups": [
+        "silicones"
+      ],
+      "flags": [
+        "avoid"
+      ]
+    }
+  ]
+}

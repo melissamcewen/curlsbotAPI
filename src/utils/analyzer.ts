@@ -3,7 +3,6 @@ import type {
   AnalysisResult,
   IngredientMatch,
   IngredientDatabase,
-  NormalizedResult,
 } from '../types';
 
 import { normalizer } from './normalizer';
@@ -29,7 +28,7 @@ export const createEmptyResult = (): AnalysisResult => ({
   flags: {
     ingredients: [],
     categories: [],
-    categoryGroups: [],
+    Groups: [],
   },
 });
 
@@ -63,7 +62,9 @@ export class Analyzer {
     }
 
     if (!Array.isArray(config.database.ingredients)) {
-      throw new AnalyzerError('Invalid database format: ingredients must be an array');
+      throw new AnalyzerError(
+        'Invalid database format: ingredients must be an array',
+      );
     }
 
     this.database = config.database;
@@ -87,7 +88,9 @@ export class Analyzer {
   public analyze(ingredientList: string): AnalysisResult {
     try {
       if (!ingredientList || typeof ingredientList !== 'string') {
-        throw new AnalyzerError('Invalid input: ingredient list must be a non-empty string');
+        throw new AnalyzerError(
+          'Invalid input: ingredient list must be a non-empty string',
+        );
       }
 
       const normalized = this.normalizeIngredients(ingredientList);
@@ -105,14 +108,18 @@ export class Analyzer {
         flags: {
           ingredients: [...new Set(flags.ingredients)],
           categories: [...new Set(flags.categories)],
-          categoryGroups: [...new Set(flags.categoryGroups)],
+          Groups: [...new Set(flags.Groups)],
         },
       };
     } catch (error) {
       if (error instanceof AnalyzerError) {
         throw error;
       }
-      throw new AnalyzerError(`Failed to analyze ingredients: ${error instanceof Error ? error.message : 'Unknown error'}`);
+      throw new AnalyzerError(
+        `Failed to analyze ingredients: ${
+          error instanceof Error ? error.message : 'Unknown error'
+        }`,
+      );
     }
   }
 
@@ -124,7 +131,11 @@ export class Analyzer {
     try {
       return normalizer(ingredientList);
     } catch (error) {
-      throw new AnalyzerError(`Failed to normalize ingredients: ${error instanceof Error ? error.message : 'Unknown error'}`);
+      throw new AnalyzerError(
+        `Failed to normalize ingredients: ${
+          error instanceof Error ? error.message : 'Unknown error'
+        }`,
+      );
     }
   }
 
@@ -132,16 +143,26 @@ export class Analyzer {
    * Matches ingredients against the database
    * @throws {AnalyzerError} If matching fails
    */
-  private matchIngredients(normalized: NormalizedResult): readonly IngredientMatch[] {
+  private matchIngredients(
+    normalized: NormalizedResult,
+  ): readonly IngredientMatch[] {
     try {
-      return normalized.ingredients.map((ingredient: string): IngredientMatch => {
-        if (!ingredient) {
-          throw new AnalyzerError('Empty ingredient found in normalized list');
-        }
-        return matchIngredient(ingredient, this.database);
-      });
+      return normalized.ingredients.map(
+        (ingredient: string): IngredientMatch => {
+          if (!ingredient) {
+            throw new AnalyzerError(
+              'Empty ingredient found in normalized list',
+            );
+          }
+          return matchIngredient(ingredient, this.database);
+        },
+      );
     } catch (error) {
-      throw new AnalyzerError(`Failed to match ingredients: ${error instanceof Error ? error.message : 'Unknown error'}`);
+      throw new AnalyzerError(
+        `Failed to match ingredients: ${
+          error instanceof Error ? error.message : 'Unknown error'
+        }`,
+      );
     }
   }
 
@@ -149,12 +170,16 @@ export class Analyzer {
    * Extracts unique categories from matches
    */
   private extractCategories(matches: readonly IngredientMatch[]): string[] {
-    return [...new Set(
-      matches
-        .filter((match): match is IngredientMatch & { categories: string[] } =>
-          Boolean(match.categories))
-        .flatMap(match => match.categories)
-    )];
+    return [
+      ...new Set(
+        matches
+          .filter(
+            (match): match is IngredientMatch & { categories: string[] } =>
+              Boolean(match.categories),
+          )
+          .flatMap((match) => match.categories),
+      ),
+    ];
   }
 
   /**
@@ -164,18 +189,22 @@ export class Analyzer {
     const flags = {
       ingredients: [] as string[],
       categories: [] as string[],
-      categoryGroups: [] as string[],
+      Groups: [] as string[],
     };
 
-    matches.forEach(match => {
+    matches.forEach((match) => {
       try {
         const result = this.flagger.getFlagsForMatch(match);
         flags.ingredients.push(...result.flags.ingredients);
         flags.categories.push(...result.flags.categories);
-        flags.categoryGroups.push(...result.flags.categoryGroups);
+        flags.Groups.push(...result.flags.Groups);
         match.matchDetails = result.matchDetails;
       } catch (error) {
-        console.warn(`Failed to process flags for match ${match.name}: ${error instanceof Error ? error.message : 'Unknown error'}`);
+        console.warn(
+          `Failed to process flags for match ${match.name}: ${
+            error instanceof Error ? error.message : 'Unknown error'
+          }`,
+        );
       }
     });
 
@@ -191,11 +220,15 @@ export class Analyzer {
       if (!this.database.categories) {
         throw new AnalyzerError('Categories not found in database');
       }
-      return this.database.categories.flatMap(group =>
-        group.categories.map(category => category.id)
+      return this.database.categories.flatMap((group) =>
+        group.categories.map((category) => category.id),
       );
     } catch (error) {
-      throw new AnalyzerError(`Failed to get categories: ${error instanceof Error ? error.message : 'Unknown error'}`);
+      throw new AnalyzerError(
+        `Failed to get categories: ${
+          error instanceof Error ? error.message : 'Unknown error'
+        }`,
+      );
     }
   }
 
@@ -208,9 +241,13 @@ export class Analyzer {
       if (!this.database.ingredients) {
         throw new AnalyzerError('Ingredients not found in database');
       }
-      return this.database.ingredients.map(ingredient => ingredient.id);
+      return this.database.ingredients.map((ingredient) => ingredient.id);
     } catch (error) {
-      throw new AnalyzerError(`Failed to get ingredients: ${error instanceof Error ? error.message : 'Unknown error'}`);
+      throw new AnalyzerError(
+        `Failed to get ingredients: ${
+          error instanceof Error ? error.message : 'Unknown error'
+        }`,
+      );
     }
   }
 }

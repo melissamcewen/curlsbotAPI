@@ -1,0 +1,16 @@
+{
+  "ingredients": [
+    {
+      "name": "Triisopropanolamine",
+      "id": "triisopropanolamine",
+      "synonyms": ["triisopropanolamine", "triisopropanolamine", "triisopropanolamine"],
+      "category": "other"
+    },
+    {
+      "name": "aminomethyl propanol",
+      "id": "aminomethyl_propanol",
+      "category": "other",
+      "references": ["https://incidecoder.com/ingredients/aminomethyl-propanol"]
+    }
+  ]
+}

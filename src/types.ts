@@ -17,13 +17,25 @@ export interface AnalyzerOptions {
   /** List of flagged ingredient categories by id */
   flaggedCategories?: string[];
   /** List of flagged ingredient category groups by id */
-  flaggedCategoryGroups?: string[];
+  flaggedGroups?: string[];
 }
 
 /**
  * Represents the result of an analysis
  */
 export interface AnalysisResult {
+  /** Unique identifier for the result */
+  uuid: string;
+  /** Original input */
+  input: string;
+  /** Normalized input */
+  normalized: string[];
+  /** System used to analyze the input */
+  system: string;
+  /** Status of the analysis */
+  status: string;
+  /** List of settings that were matched */
+  settings: string[];
   /** List of matching ingredients */
   matches: IngredientMatch[];
   /** List of categories */
@@ -35,7 +47,7 @@ export interface AnalysisResult {
     /** Categories that are flagged */
     categories: string[];
     /** Category groups that are flagged */
-    categoryGroups: string[];
+    Groups: string[];
   };
 }
 
@@ -43,30 +55,24 @@ export interface AnalysisResult {
  * Represents a category for ingredients
  */
 export interface Category {
-  /** Name of the category */
+  /** Display name of the category */
   name: string;
-  /** Description of the category */
+  /** Description of the category and its effects */
   description: string;
-  /** Optional tags associated with the category */
-  tags?: string[];
-  /** Optional notes about the category */
-  notes?: string;
-  /** Optional source references for the category */
-  source?: string[];
-  /** Unique identifier for the category */
+  /** Unique identifier in snake_case */
   id: string;
+  /** The group this category belongs to */
+  group: "alcohols" | "preservatives" | "detergents" | "silicones";
 }
 
 /**
  * Represents a group of related categories
  */
-export interface CategoryGroup {
+export interface Group {
   /** Name of the category group */
   name: string;
   /** Description of the category group */
   description: string;
-  /** Categories within the group */
-  categories: Category[];
   /** Unique identifier for the category group */
   id: string;
 }
@@ -74,7 +80,7 @@ export interface CategoryGroup {
 /**
  * Represents a collection of category groups
  */
-export type CategoryGroups = CategoryGroup[];
+export type Groups = Record<string, Group>;
 
 /**
  * Represents an ingredient and its associated metadata
@@ -86,17 +92,11 @@ export interface Ingredient {
   /** Optional description of the ingredient */
   description?: string;
   /** Categories to which the ingredient belongs */
-  category: string[];
-  /** Optional notes about the ingredient */
-  notes?: string;
+  categories: string[];
   /** Optional source references for the ingredient */
-  source?: string[];
+  references?: string[];
   /** Optional synonyms for the ingredient */
   synonyms?: string[];
-  /** Optional related links for the ingredient */
-  link?: string[];
-  /** Optional match configuration for the ingredient */
-  matchConfig?: MatchConfig;
 }
 
 /**
@@ -105,20 +105,18 @@ export interface Ingredient {
 export interface IngredientMatch {
   /** Unique identifier for the match */
   uuid: string;
-  /** Name of the matched ingredient */
-  name: string;
+  /** original text */
+  input: string;
   /** Normalized name of the matched ingredient */
   normalized: string;
-  /** Optional details of the matched ingredient */
-  details?: Ingredient;
-  /** Optional categories related to the match */
-  categories?: string[];
-  /** Optional related link for the match */
-  link?: string;
-  /** Optional additional match details */
-  matchDetails?: MatchDetails;
-  /** Optional debug information */
-  debug?: DebugInfo;
+  /** group that the ingredient belongs to */
+  groups: string[];
+  /** categories that the ingredient belongs to */
+  categories: string[];
+  /** flags that the ingredient belongs to */
+  flags: string[];
+  /** the ingredient matched (if any) */
+  ingredient?: Ingredient;
 }
 
 /**
@@ -127,16 +125,10 @@ export interface IngredientMatch {
 export interface IngredientDatabase {
   /** List of all ingredients */
   ingredients: Ingredient[];
-  /** List of all category groups */
-  categories: CategoryGroups;
-}
-
-/**
- * Represents the configuration for how matches are determined
- */
-export interface MatchConfig {
-  /** Confidence threshold for matches */
-  confidence?: number;
+  /** List of all groups */
+  groups: Groups;
+  /** List of all categories */
+  categories: Categories;
 }
 
 /**
@@ -179,4 +171,48 @@ export interface NormalizedIngredientList {
   readonly isValid: boolean;
 }
 
+/**
+ * Represents a collection of categories
+ */
+export type Categories = Record<string, Category>;
 
+/**
+ * Represents a collection of flags
+ */
+export type Flags = Record<string, Flag>;
+
+/**
+ * Represents a flag
+ */
+export interface Flag {
+  id: string;
+  name: string;
+  description: string;
+}
+
+/**
+ * represents a system used to analyze the input
+ */
+export interface System {
+  id: string;
+  name: string;
+  description: string;
+  settings: string[];
+}
+
+/**
+ * Represents setting for a system
+ */
+export interface Setting {
+  id: string;
+  name: string;
+  description: string;
+  ingredients: string[];
+  categories: string[];
+  flags: string[];
+}
+
+/**
+ * Represents a collection of settings
+ */
+export type Settings = Record<string, Setting>;

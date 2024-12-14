@@ -33,7 +33,7 @@ const analyzer = new Analyzer({
         description: 'A fatty alcohol that acts as an emollient',
         category: ['fatty alcohol'],
         synonyms: ['cetearyl alcohol'],
-      }
+      },
     ],
     categories: [
       {
@@ -44,16 +44,16 @@ const analyzer = new Analyzer({
             name: 'Fatty Alcohol',
             description: 'Long-chain alcohols that condition',
             tags: ['Curly Friendly'],
-          }
-        ]
-      }
-    ]
+          },
+        ],
+      },
+    ],
   },
   options: {
     flaggedIngredients: ['sodium lauryl sulfate'],
     flaggedCategories: ['sulfate'],
-    flaggedCategoryGroups: ['Alcohols']
-  }
+    flaggedGroups: ['Alcohols'],
+  },
 });
 
 // Analyze an ingredient list
@@ -70,6 +70,7 @@ const categories = analyzer.getCategories();
 ## Key Types
 
 ### AnalysisResult
+
 ```typescript
 interface AnalysisResult {
   matches: IngredientMatch[];
@@ -77,12 +78,13 @@ interface AnalysisResult {
   flags?: {
     ingredients: string[];
     categories: string[];
-    categoryGroups: string[];
+    Groups: string[];
   };
 }
 ```
 
 ### IngredientMatch
+
 ```typescript
 interface IngredientMatch {
   id: string;
@@ -96,10 +98,11 @@ interface IngredientMatch {
 ```
 
 ### Database Structure
+
 ```typescript
 interface IngredientDatabase {
   ingredients: Ingredient[];
-  categories: CategoryGroups;
+  categories: Groups;
 }
 
 interface Ingredient {
