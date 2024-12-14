@@ -1,0 +1,16 @@
+{
+  "systems": [
+    {
+      "name": "Curly Default",
+      "id": "curly_default",
+      "description": "Test system",
+      "settings": ["sulfate_free"]
+    },
+    {
+      "name": "No Poo",
+      "id": "no_poo",
+      "description": "Test no poo system",
+      "settings": ["sulfate_free", "silicone_free"]
+    }
+  ]
+}

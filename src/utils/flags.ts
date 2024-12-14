@@ -1,9 +1,14 @@
 import type { AnalyzerOptions, System } from '../types';
+import { getSettingFlags } from './configLoader';
+
+interface FlagOptions {
+  configDir?: string;
+}
 
 /**
  * Gets system-specific flags based on settings
  */
-export function getSystemFlags(system: System | undefined): AnalyzerOptions {
+export function getSystemFlags(system: System | undefined, options: FlagOptions = {}): Required<AnalyzerOptions> {
   const flags: Required<AnalyzerOptions> = {
     flaggedIngredients: [],
     flaggedCategories: [],
@@ -13,14 +18,17 @@ export function getSystemFlags(system: System | undefined): AnalyzerOptions {
   if (!system) return flags;
 
   // Apply settings-based flags
-  system.settings.forEach(setting => {
-    // For now, we'll just handle sulfate_free as an example
-    // This should be expanded based on settings.json
-    if (setting === 'sulfate_free') {
-      flags.flaggedCategories.push('sulfates');
-    }
-    // Add more settings handling here
+  system.settings.forEach(settingId => {
+    const settingFlags = getSettingFlags(settingId, options);
+    flags.flaggedIngredients.push(...settingFlags.ingredients);
+    flags.flaggedCategories.push(...settingFlags.categories);
+    flags.flaggedGroups.push(...settingFlags.flags);
   });
+
+  // Remove duplicates
+  flags.flaggedIngredients = [...new Set(flags.flaggedIngredients)];
+  flags.flaggedCategories = [...new Set(flags.flaggedCategories)];
+  flags.flaggedGroups = [...new Set(flags.flaggedGroups)];
 
   return flags;
 }

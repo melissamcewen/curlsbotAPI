@@ -3,11 +3,13 @@ import { getDefaultDatabase } from './data/defaultDatabase';
 import { normalizer } from './utils/normalizer';
 import { findIngredient, getIngredientCategories, getCategoryGroups } from './utils/databaseUtils';
 import { getSystemFlags, mergeFlags } from './utils/flags';
+import { loadSystems } from './utils/configLoader';
 
 export class Analyzer {
   private database: IngredientDatabase;
   private options?: AnalyzerOptions;
   private systems: System[];
+  private configDir?: string;
 
   /**
    * Creates a new Analyzer instance
@@ -16,7 +18,8 @@ export class Analyzer {
   constructor(config?: Partial<AnalyzerConfig>) {
     this.database = config?.database ?? getDefaultDatabase();
     this.options = config?.options;
-    this.systems = config?.systems ?? [];
+    this.configDir = config?.configDir;
+    this.systems = loadSystems({ configDir: this.configDir });
   }
 
   /**
@@ -157,7 +160,7 @@ export class Analyzer {
 
     // Get system-specific flags
     const system = this.systems.find(s => s.id === systemId);
-    const systemFlags = getSystemFlags(system);
+    const systemFlags = getSystemFlags(system, { configDir: this.configDir });
 
     // Merge system flags with any configured options
     const mergedFlags = mergeFlags(systemFlags, this.options || {});

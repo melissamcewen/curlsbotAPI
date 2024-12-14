@@ -1,11 +1,14 @@
 import { describe, it, expect } from 'vitest';
+import { join } from 'path';
 import { getSystemFlags, mergeFlags } from '../../src/utils/flags';
 import type { System } from '../../src/types';
+
+const TEST_CONFIG_DIR = join(__dirname, '../fixtures/config');
 
 describe('flags utils', () => {
   describe('getSystemFlags', () => {
     it('should return empty flags for undefined system', () => {
-      const flags = getSystemFlags(undefined);
+      const flags = getSystemFlags(undefined, { configDir: TEST_CONFIG_DIR });
       expect(flags).toEqual({
         flaggedIngredients: [],
         flaggedCategories: [],
@@ -21,8 +24,10 @@ describe('flags utils', () => {
         settings: ['sulfate_free']
       };
 
-      const flags = getSystemFlags(system);
+      const flags = getSystemFlags(system, { configDir: TEST_CONFIG_DIR });
+      expect(flags.flaggedIngredients).toContain('sodium_lauryl_sulfate');
       expect(flags.flaggedCategories).toContain('sulfates');
+      expect(flags.flaggedGroups).toContain('avoid_sulfates');
     });
 
     it('should handle multiple settings', () => {
@@ -30,11 +35,14 @@ describe('flags utils', () => {
         id: 'test',
         name: 'Test System',
         description: 'Test system',
-        settings: ['sulfate_free', 'other_setting']
+        settings: ['sulfate_free', 'silicone_free']
       };
 
-      const flags = getSystemFlags(system);
+      const flags = getSystemFlags(system, { configDir: TEST_CONFIG_DIR });
       expect(flags.flaggedCategories).toContain('sulfates');
+      expect(flags.flaggedCategories).toContain('silicones');
+      expect(flags.flaggedGroups).toContain('avoid_sulfates');
+      expect(flags.flaggedGroups).toContain('avoid_silicones');
     });
   });
 

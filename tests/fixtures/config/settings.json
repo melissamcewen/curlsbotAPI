@@ -1,0 +1,25 @@
+{
+  "settings": [
+    {
+      "id": "sulfate_free",
+      "name": "Sulfate Free",
+      "description": "Avoid sulfates",
+      "ingredients": ["sls", "sodium_lauryl_sulfate"],
+      "categories": ["sulfates"],
+      "flags": ["avoid_sulfates"]
+    },
+    {
+      "id": "silicone_free",
+      "name": "Silicone Free",
+      "description": "Avoid silicones",
+      "ingredients": [],
+      "categories": ["silicones"],
+      "flags": ["avoid_silicones"]
+    },
+    {
+      "id": "minimal_setting",
+      "name": "Minimal Setting",
+      "description": "Setting with minimal config"
+    }
+  ]
+}

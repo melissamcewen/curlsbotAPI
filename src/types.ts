@@ -6,8 +6,8 @@ export interface AnalyzerConfig {
   database: IngredientDatabase;
   /** Optional analyzer options */
   options?: AnalyzerOptions;
-  /** Optional systems for analysis */
-  systems?: System[];
+  /** Optional path to config directory */
+  configDir?: string;
 }
 
 /**

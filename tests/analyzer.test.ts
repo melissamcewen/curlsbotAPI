@@ -1,5 +1,8 @@
 import { describe, it, expect } from 'vitest';
+import { join } from 'path';
 import { Analyzer } from '../src/analyzer';
+
+const TEST_CONFIG_DIR = join(__dirname, 'fixtures/config');
 
 // Test database
 const testDatabase = {
@@ -58,22 +61,6 @@ const testDatabase = {
     }
   }
 };
-
-// Test systems
-const testSystems = [
-  {
-    name: "Curly Default",
-    id: "curly_default",
-    description: "The Curly Default system focuses on avoiding harsh chemicals and sulfates.",
-    settings: ["sulfate_free"]
-  },
-  {
-    name: "No Poo",
-    id: "no_poo",
-    description: "No Poo avoids all harsh chemicals and sulfates.",
-    settings: ["sulfate_free"]
-  }
-];
 
 describe('Analyzer', () => {
   it('should handle empty input', () => {
@@ -181,7 +168,7 @@ describe('Analyzer', () => {
     it('should set system ID in result', () => {
       const analyzer = new Analyzer({
         database: testDatabase,
-        systems: testSystems
+        configDir: TEST_CONFIG_DIR
       });
       const result = analyzer.analyze('Cetyl Alcohol', 'curly_default');
 
@@ -192,7 +179,7 @@ describe('Analyzer', () => {
     it('should flag sulfates in sulfate_free setting', () => {
       const analyzer = new Analyzer({
         database: testDatabase,
-        systems: testSystems
+        configDir: TEST_CONFIG_DIR
       });
       const result = analyzer.analyze('Sodium Lauryl Sulfate', 'curly_default');
 
@@ -206,7 +193,7 @@ describe('Analyzer', () => {
     it('should handle unknown system IDs', () => {
       const analyzer = new Analyzer({
         database: testDatabase,
-        systems: testSystems
+        configDir: TEST_CONFIG_DIR
       });
       const result = analyzer.analyze('Cetyl Alcohol', 'unknown_system');
 
@@ -222,7 +209,7 @@ describe('Analyzer', () => {
     it('should combine system flags with analyzer options', () => {
       const analyzer = new Analyzer({
         database: testDatabase,
-        systems: testSystems,
+        configDir: TEST_CONFIG_DIR,
         options: {
           flaggedIngredients: ['cetyl_alcohol']
         }
@@ -243,7 +230,7 @@ describe('Analyzer', () => {
     it('should set success status for valid analysis', () => {
       const analyzer = new Analyzer({
         database: testDatabase,
-        systems: testSystems
+        configDir: TEST_CONFIG_DIR
       });
       const result = analyzer.analyze('Cetyl Alcohol', 'curly_default');
 
@@ -253,7 +240,7 @@ describe('Analyzer', () => {
     it('should set error status for invalid input', () => {
       const analyzer = new Analyzer({
         database: testDatabase,
-        systems: testSystems
+        configDir: TEST_CONFIG_DIR
       });
       const result = analyzer.analyze('http://example.com', 'curly_default');
 
@@ -261,12 +248,15 @@ describe('Analyzer', () => {
     });
 
     it('should allow getting and setting systems', () => {
-      const analyzer = new Analyzer({ database: testDatabase });
+      const analyzer = new Analyzer({
+        database: testDatabase,
+        configDir: TEST_CONFIG_DIR
+      });
 
-      expect(analyzer.getSystems()).toEqual([]);
-
-      analyzer.setSystems(testSystems);
-      expect(analyzer.getSystems()).toEqual(testSystems);
+      const systems = analyzer.getSystems();
+      expect(systems).toHaveLength(2);
+      expect(systems[0].id).toBe('curly_default');
+      expect(systems[1].id).toBe('no_poo');
     });
   });
 });
