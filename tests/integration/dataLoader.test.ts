@@ -19,9 +19,10 @@ describe('Data Loader Integration Tests', () => {
       expect(database.ingredients.sd_alcohol.name).toBe('SD Alcohol');
 
       // Check categories
-      expect(Object.keys(database.categories)).toHaveLength(2);
+      expect(Object.keys(database.categories)).toHaveLength(3);
       expect(database.categories.emollient_alcohol.name).toBe('Emollient Alcohols');
       expect(database.categories.drying_alcohol.name).toBe('Drying Alcohols');
+      expect(database.categories['non-water-soluble_silicones'].name).toBe('Non-water-soluble Silicones');
 
       // Check groups
       expect(Object.keys(database.groups)).toHaveLength(1);
@@ -55,7 +56,8 @@ describe('Data Loader Integration Tests', () => {
 
       // Some ingredients might not have descriptions or synonyms
       expect(database.ingredients.sd_alcohol.description).toBeUndefined();
-      expect(database.ingredients.sd_alcohol.synonyms).toBeUndefined();
+      expect(database.ingredients.sd_alcohol.synonyms).toBeDefined();
+      expect(database.ingredients.sd_alcohol.synonyms).toContain('alcohol denat');
     });
   });
 });

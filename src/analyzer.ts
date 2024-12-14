@@ -153,6 +153,13 @@ export class Analyzer {
     const allCategories = new Set<string>();
     const allGroups = new Set<string>();
 
+    // Get system-specific flags
+    const system = this.systems.find(s => s.id === systemId);
+    const systemFlags = getSystemFlags(system, { configDir: this.configDir });
+
+    // Merge system flags with any configured options
+    const mergedFlags = mergeFlags(systemFlags, this.options || {});
+
     result.matches = normalized.ingredients.map(normalizedName => {
       const ingredient = findIngredient(this.database, normalizedName, this.fallbackDatabase);
 
@@ -168,13 +175,35 @@ export class Analyzer {
       categories.forEach(c => allCategories.add(c));
       groups.forEach(g => allGroups.add(g));
 
+      // Get flags from categories and system settings
+      const flags = new Set<string>();
+
+      // Add ingredient flags
+      if (ingredient && mergedFlags.flaggedIngredients?.includes(ingredient.id)) {
+        flags.add(ingredient.id);
+      }
+
+      // Add category flags
+      categories.forEach(catId => {
+        if (mergedFlags.flaggedCategories?.includes(catId)) {
+          flags.add(catId);
+        }
+      });
+
+      // Add group flags
+      groups.forEach(groupId => {
+        if (mergedFlags.flaggedGroups?.includes(groupId)) {
+          flags.add(groupId);
+        }
+      });
+
       return {
         uuid: crypto.randomUUID(),
         input: normalizedName,
         normalized: normalizedName,
         categories,
         groups,
-        flags: [],
+        flags: Array.from(flags),
         ingredient
       };
     });
@@ -182,42 +211,6 @@ export class Analyzer {
     // Set overall categories and groups
     result.categories = Array.from(allCategories);
     result.groups = Array.from(allGroups);
-
-    // Get system-specific flags
-    const system = this.systems.find(s => s.id === systemId);
-    const systemFlags = getSystemFlags(system, { configDir: this.configDir });
-
-    // Merge system flags with any configured options
-    const mergedFlags = mergeFlags(systemFlags, this.options || {});
-
-    // Apply flags to matches
-    result.matches = result.matches.map(match => {
-      const flags = new Set<string>();
-
-      // Add ingredient flags
-      if (match.ingredient && mergedFlags.flaggedIngredients?.includes(match.ingredient.id)) {
-        flags.add(match.ingredient.id);
-      }
-
-      // Add category flags
-      match.categories.forEach(catId => {
-        if (mergedFlags.flaggedCategories?.includes(catId)) {
-          flags.add(catId);
-        }
-      });
-
-      // Add group flags
-      match.groups.forEach(groupId => {
-        if (mergedFlags.flaggedGroups?.includes(groupId)) {
-          flags.add(groupId);
-        }
-      });
-
-      return {
-        ...match,
-        flags: Array.from(flags)
-      };
-    });
 
     result.flags = mergedFlags;
 

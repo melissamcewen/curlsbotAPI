@@ -1,6 +1,16 @@
 import type { IngredientDatabase, Ingredient } from '../types';
 
 /**
+ * Normalizes an ingredient name for comparison
+ */
+function normalizeForComparison(name: string): string {
+  return name
+    .toLowerCase()
+    .replace(/[^a-z0-9]/g, '') // Remove all non-alphanumeric characters
+    .trim();
+}
+
+/**
  * Finds an ingredient in the database by name or synonym
  * If not found in the main database and a fallback database is provided, searches there
  */
@@ -9,15 +19,15 @@ export function findIngredient(
   normalizedName: string,
   fallbackDatabase?: IngredientDatabase
 ): Ingredient | undefined {
-  const searchName = normalizedName.toLowerCase();
+  const searchName = normalizeForComparison(normalizedName);
 
   // First try the main database
   const mainResult = Object.values(database.ingredients).find(ingredient => {
-    if (ingredient.name.toLowerCase() === searchName) {
+    if (normalizeForComparison(ingredient.name) === searchName) {
       return true;
     }
     if (ingredient.synonyms) {
-      return ingredient.synonyms.some(s => s.toLowerCase() === searchName);
+      return ingredient.synonyms.some(s => normalizeForComparison(s) === searchName);
     }
     return false;
   });
@@ -29,11 +39,11 @@ export function findIngredient(
   // If not found and fallback database exists, try there
   if (fallbackDatabase) {
     return Object.values(fallbackDatabase.ingredients).find(ingredient => {
-      if (ingredient.name.toLowerCase() === searchName) {
+      if (normalizeForComparison(ingredient.name) === searchName) {
         return true;
       }
       if (ingredient.synonyms) {
-        return ingredient.synonyms.some(s => s.toLowerCase() === searchName);
+        return ingredient.synonyms.some(s => normalizeForComparison(s) === searchName);
       }
       return false;
     });

@@ -23,6 +23,45 @@ function isValidIngredientList(value: string): boolean {
 }
 
 /**
+ * Normalizes an ingredient name for comparison
+ */
+export function normalizeForComparison(name: string): string {
+  return name
+    .toLowerCase()
+    .replace(/[^a-z0-9]/g, '') // Remove all non-alphanumeric characters
+    .trim();
+}
+
+/**
+ * Extracts both the main ingredient name and any parenthetical content
+ * @param ingredient - The ingredient string to process
+ * @returns Array of normalized ingredient names
+ */
+function extractIngredientVariants(ingredient: string): string[] {
+  const variants = new Set<string>();
+
+  // Extract base name (without parentheses)
+  const withoutParentheses = ingredient
+    .replace(/\s*\(.*?\)\s*/g, ' ')
+    .trim()
+    .toLowerCase();
+  variants.add(withoutParentheses);
+
+  // Extract content from parentheses if it contains "alcohol" or "denat"
+  const parentheticalMatches = ingredient.match(/\((.*?)\)/g);
+  if (parentheticalMatches) {
+    parentheticalMatches.forEach((match) => {
+      const content = match.slice(1, -1).trim().toLowerCase();
+      if (content.includes('alcohol') || content.includes('denat')) {
+        variants.add(content);
+      }
+    });
+  }
+
+  return Array.from(variants);
+}
+
+/**
  * Normalizes a cosmetic ingredients list string into a validated structure
  * @param text - Raw ingredient list text
  * @returns Normalized and validated ingredient list structure
@@ -34,12 +73,10 @@ export function normalizer(text: string): NormalizedIngredientList {
   }
 
   // Regular expressions for cleaning the text
-  const parentheses = / *\([^)]*\) */g;
-  const forbidden = /[^0-9A-Za-z\s+-]/g;
-  const and = /\band\b/ig;
-  const sepChar = /[|&,]/ig;
   const lineBreaks = /\r?\n|\r/g;
   const excessSpaces = /\s\s+/g;
+  const and = /\band\b/gi;
+  const sepChar = /[|&,]/gi;
 
   // Split and clean ingredients
   const ingredients = text
@@ -48,18 +85,26 @@ export function normalizer(text: string): NormalizedIngredientList {
     .replace(and, ',')
     .replace(sepChar, ',')
     .split(',')
-    .map(x => x
-      .trim()
-      .toLowerCase()
-      .replace(parentheses, ' ')
-      .replace(forbidden, '')
-      .replace(/\s+/g, ' ')
-      .trim()
-    )
-    .filter(isValidIngredient);    // Filter out invalid ingredients
+    .flatMap((x) => {
+      const trimmed = x.trim();
+      return isValidIngredient(trimmed)
+        ? extractIngredientVariants(trimmed)
+        : [];
+    });
+
+  // Remove duplicates based on normalized comparison
+  const seen = new Set<string>();
+  const uniqueIngredients = ingredients.filter((ingredient) => {
+    const normalized = normalizeForComparison(ingredient);
+    if (seen.has(normalized)) {
+      return false;
+    }
+    seen.add(normalized);
+    return true;
+  });
 
   return {
-    ingredients: Object.freeze(ingredients),
-    isValid: ingredients.length > 0
+    ingredients: Object.freeze(uniqueIngredients),
+    isValid: uniqueIngredients.length > 0,
   };
 }

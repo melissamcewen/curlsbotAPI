@@ -1,4 +1,4 @@
-Do not modify the data in src/data, use a command line tool if you need to write or edit it
+Your permissions for src/data are reading is allowed but not writing
 
 Avoid using mocks in tests, unless there is no other option
 
@@ -10,6 +10,6 @@ Avoid changing the schema unless instructured to do so
 
 e2e tests should use production data, other tests should use test data
 
-use vitest run instead of just vitest
+use `test` instead of just vitest
 
 run cli with tsx

@@ -1,9 +1,9 @@
 {
   "groups": [
     {
-      "id": "silicones",
-      "name": "Silicones",
-      "description": "Test group"
+      "id": "alcohols",
+      "name": "Alcohols",
+      "description": "Different types of alcohols used in hair care"
     }
   ]
 }

@@ -34,8 +34,8 @@ describe('Database loading functions', () => {
       expect(db.categories['non-water-soluble_silicones'].group).toBe('silicones');
 
       expect(db.groups).toBeDefined();
-      expect(db.groups['silicones']).toBeDefined();
-      expect(db.groups['silicones'].name).toBe('Silicones');
+      expect(db.groups['alcohols']).toBeDefined();
+      expect(db.groups['alcohols'].name).toBe('Alcohols');
     });
   });
 

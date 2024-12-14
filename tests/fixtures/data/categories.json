@@ -1,10 +1,22 @@
 {
   "categories": [
     {
+      "id": "emollient_alcohol",
+      "name": "Emollient Alcohols",
+      "group": "alcohols",
+      "description": "Alcohols that moisturize and condition"
+    },
+    {
+      "id": "drying_alcohol",
+      "name": "Drying Alcohols",
+      "group": "alcohols",
+      "description": "Alcohols that can be drying"
+    },
+    {
       "id": "non-water-soluble_silicones",
       "name": "Non-water-soluble Silicones",
       "group": "silicones",
-      "description": "Test category"
+      "description": "Silicones that are not water soluble"
     }
   ]
 }
