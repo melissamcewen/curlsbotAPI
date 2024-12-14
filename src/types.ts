@@ -76,7 +76,7 @@ export interface Group {
   /** Name of the category group */
   name: string;
   /** Description of the category group */
-  description: string;
+  description?: string;
   /** Unique identifier for the category group */
   id: string;
 }

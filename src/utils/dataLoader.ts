@@ -1,7 +1,8 @@
 import { readFileSync, readdirSync } from 'fs';
 import { join } from 'path';
 
-import Ajv, { ValidateFunction } from 'ajv';
+import Ajv from 'ajv';
+import type { ValidateFunction } from 'ajv';
 import addFormats from 'ajv-formats';
 
 import type { IngredientDatabase, Ingredient, Category, Categories, Groups, Ingredients } from '../types';
@@ -18,7 +19,7 @@ const loadSchema = (schemaPath: string) => {
 
 // Load and validate JSON data
 const loadAndValidateJson = <T>(filePath: string, validate: ValidateFunction): T => {
-  const data = JSON.parse(readFileSync(filePath, 'utf-8'));
+  const data = JSON.parse(readFileSync(filePath, 'utf-8')) as T;
   const isValid = validate(data);
 
   if (!isValid) {
