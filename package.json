@@ -17,7 +17,8 @@
     "api-extractor": "api-extractor run --local --verbose --config api-extractor.json",
     "lint": "eslint . --ext .ts",
     "lint:fix": "eslint . --ext .ts --fix",
-    "validate-db": "tsx cli/validate.ts validate"
+    "validate-db": "tsx cli/validate.ts validate",
+    "validate-relationships": "tsx cli/validate.ts validate-relationships"
   },
   "keywords": [
     "haircare",

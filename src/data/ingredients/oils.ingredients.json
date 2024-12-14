@@ -67,7 +67,7 @@
       "name": "Castor Oil",
       "id": "castor_oil",
       "synonyms": ["ricinus communis seed oil", "castor seed oil"],
-      "categories": ["oils"],
+      "categories": ["heavy_oils"],
       "references": [
         "https://incidecoder.com/ingredients/ricinus-communis-seed-oil"
       ]
@@ -76,14 +76,14 @@
       "name": "Coconut Oil",
       "id": "coconut_oil",
       "synonyms": ["cocos nucifera oil", "coconut kernel oil"],
-      "categories": ["oils"],
+      "categories": ["medium_oils"],
       "references": ["https://incidecoder.com/ingredients/cocos-nucifera-oil"]
     },
     {
       "name": "Olive Oil",
       "id": "olive_oil",
       "synonyms": ["olea europaea fruit oil", "olive fruit oil"],
-      "categories": ["oils"],
+      "categories": ["medium_oils"],
       "references": [
         "https://incidecoder.com/ingredients/olea-europaea-fruit-oil"
       ]
@@ -92,7 +92,7 @@
       "name": "Shea Butter Oil",
       "id": "shea_butter_oil",
       "synonyms": ["butyrospermum parkii butter oil", "shea oil"],
-      "categories": ["oils"],
+      "categories": ["medium_oils"],
       "references": [
         "https://incidecoder.com/ingredients/butyrospermum-parkii-butter-oil"
       ]
@@ -101,7 +101,7 @@
       "name": "Avocado Oil",
       "id": "avocado_oil",
       "synonyms": ["persea gratissima oil", "avocado fruit oil"],
-      "categories": ["oils"],
+      "categories": ["medium_oils"],
       "references": [
         "https://incidecoder.com/ingredients/persea-gratissima-oil"
       ]
@@ -110,7 +110,7 @@
       "name": "Sunflower Oil",
       "id": "sunflower_oil",
       "synonyms": ["helianthus annuus seed oil", "sunflower seed oil"],
-      "categories": ["oils"],
+      "categories": ["medium_oils"],
       "references": [
         "https://incidecoder.com/ingredients/helianthus-annuus-seed-oil"
       ]
@@ -119,7 +119,7 @@
       "name": "Baobab Oil",
       "id": "baobab_oil",
       "synonyms": ["adansonia digitata seed oil", "baobab seed oil"],
-      "categories": ["oils"],
+      "categories": ["medium_oils"],
       "references": [
         "https://incidecoder.com/ingredients/adansonia-digitata-seed-oil"
       ]

@@ -11,3 +11,5 @@ Avoid changing the schema unless instructured to do so
 e2e tests should use production data, other tests should use test data
 
 use vitest run instead of just vitest
+
+run cli with tsx

@@ -107,6 +107,12 @@
       "name": "Non-water-soluble Waxes",
       "group": "waxes",
       "description": "Waxes that require stronger cleansers to remove"
+    },
+    {
+      "id": "medium_oils",
+      "name": "Medium Oils",
+      "group": "oils",
+      "description": "Oils with medium weight and absorption rate"
     }
   ]
 }
