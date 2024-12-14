@@ -41,6 +41,36 @@
       "name": "Non-water-soluble Silicones",
       "group": "silicones",
       "description": "TBD"
+    },
+    {
+      "id": "other",
+      "name": "Other",
+      "group": "other",
+      "description": "TBD"
+    },
+    {
+      "id": "preservatives",
+      "name": "Preservatives",
+      "group": "other",
+      "description": "TBD"
+    },
+    {
+      "id": "preservative_alcohols",
+      "name": "Preservative Alcohols",
+      "group": "alcohols",
+      "description": "TBD"
+    },
+    {
+      "id": "astringents",
+      "name": "Astringents",
+      "group": "other",
+      "description": "TBD"
+    },
+    {
+      "id": "soaps",
+      "name": "Soaps",
+      "group": "other",
+      "description": "TBD"
     }
   ]
 }
