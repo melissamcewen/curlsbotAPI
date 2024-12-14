@@ -1,5 +1,6 @@
 import { join } from 'path';
 import { readFileSync } from 'fs';
+
 import type { System, Setting, Settings } from '../types';
 
 const DEFAULT_CONFIG_DIR = join(__dirname, '../config');

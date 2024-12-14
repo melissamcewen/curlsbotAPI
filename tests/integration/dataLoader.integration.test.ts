@@ -1,4 +1,5 @@
 import { join } from 'path';
+
 import { loadDatabase } from '../../src/utils/dataLoader';
 
 const TEST_DATA_DIR = join(__dirname, '../fixtures/data');

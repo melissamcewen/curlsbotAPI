@@ -1,5 +1,6 @@
-import { describe, it, expect } from 'vitest';
 import { join } from 'path';
+
+import { describe, it, expect } from 'vitest';
 
 import { Analyzer } from '../../src/analyzer';
 import { getDefaultDatabase } from '../../src/data/defaultDatabase';

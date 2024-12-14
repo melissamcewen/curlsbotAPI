@@ -1,4 +1,5 @@
 import type { AnalyzerOptions, System } from '../types';
+
 import { getSettingFlags } from './configLoader';
 
 interface FlagOptions {

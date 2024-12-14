@@ -1,11 +1,14 @@
 #!/usr/bin/env node
 
-import { Command } from 'commander';
-import { loadDatabase } from '../src/utils/dataLoader';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
-import type { IngredientDatabase, Ingredient } from '../src/types';
 import { readFileSync, writeFileSync, readdirSync } from 'fs';
+
+import { Command } from 'commander';
+
+import { loadDatabase } from '../src/utils/dataLoader';
+import type { IngredientDatabase } from '../src/types';
+
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
@@ -70,8 +73,10 @@ function validateDuplicates(database: IngredientDatabase): string[] {
       ingredient.synonyms.forEach(synonym => {
         const lowerSynonym = synonym.toLowerCase();
         if (synonyms.has(lowerSynonym)) {
-          const existing = synonyms.get(lowerSynonym)!;
-          errors.push(`❌ Duplicate synonym: "${synonym}" used by both "${ingredient.name}" and "${existing.name}"`);
+          const existing = synonyms.get(lowerSynonym);
+          if (existing) {
+            errors.push(`❌ Duplicate synonym: "${synonym}" used by both "${ingredient.name}" and "${existing.name}"`);
+          }
         } else {
           synonyms.set(lowerSynonym, {name: ingredient.name, synonym});
         }
@@ -91,7 +96,7 @@ function cleanRedundantSynonyms(ingredientsFile: string): boolean {
   const data = JSON.parse(readFileSync(ingredientsFile, 'utf-8'));
   let hasChanges = false;
 
-  data.ingredients = data.ingredients.map((ingredient: any) => {
+  data.ingredients = data.ingredients.map((ingredient: { name: string; synonyms?: string[] }) => {
     if (!ingredient.synonyms) return ingredient;
 
     const nameLower = ingredient.name.toLowerCase();
@@ -163,7 +168,7 @@ function fixIngredientCase(ingredientsFile: string): boolean {
   const data = JSON.parse(readFileSync(ingredientsFile, 'utf-8'));
   let hasChanges = false;
 
-  data.ingredients = data.ingredients.map((ingredient: any) => {
+  data.ingredients = data.ingredients.map((ingredient: { name: string; synonyms?: string[] }) => {
     // Fix ingredient name while preserving hyphens and acronyms
     const fixedName = ingredient.name
       .split(/(?<=[-\s])|(?=[-\s])/) // Split but keep delimiters

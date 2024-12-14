@@ -1,4 +1,5 @@
 import { describe, it, expect } from 'vitest';
+
 import { normalizer } from '../../src/utils/normalizer';
 
 describe('Normalizer Unit Tests', () => {

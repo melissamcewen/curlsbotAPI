@@ -1,4 +1,5 @@
 import { describe, it, expect } from 'vitest';
+
 import { Analyzer } from '../../src/analyzer';
 import { testDatabase } from '../fixtures/testDatabase';
 

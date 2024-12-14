@@ -1,5 +1,3 @@
-import { join } from 'path';
-import { loadDatabase } from '../../src/utils/dataLoader';
 import { getDefaultDatabase } from '../../src/data/defaultDatabase';
 
 describe('Production Database E2E Tests', () => {

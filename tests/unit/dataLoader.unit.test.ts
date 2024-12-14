@@ -1,6 +1,7 @@
 import { join } from 'path';
-import { loadIngredients, loadCategories, loadGroups } from '../../src/utils/dataLoader';
 import fs from 'fs';
+
+import { loadIngredients, loadCategories, loadGroups } from '../../src/utils/dataLoader';
 
 const TEST_DATA_DIR = join(__dirname, '../fixtures/data');
 const TEST_SCHEMA_DIR = join(__dirname, '../../src/data/schema');

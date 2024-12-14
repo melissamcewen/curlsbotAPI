@@ -1,5 +1,6 @@
 import { describe, it, expect } from 'vitest';
-import { findIngredient, getIngredientCategories, getCategoryGroups } from '../../src/utils/databaseUtils';
+
+import { getIngredientCategories, getCategoryGroups } from '../../src/utils/databaseUtils';
 import { testDatabase } from '../fixtures/testDatabase';
 
 describe('Database Utils Integration Tests', () => {

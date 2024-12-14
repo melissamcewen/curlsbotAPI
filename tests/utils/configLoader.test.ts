@@ -1,5 +1,7 @@
-import { describe, it, expect } from 'vitest';
 import { join } from 'path';
+
+import { describe, it, expect } from 'vitest';
+
 import { loadSystems, loadSettings, getSettingFlags } from '../../src/utils/configLoader';
 
 const TEST_CONFIG_DIR = join(__dirname, '../fixtures/config');

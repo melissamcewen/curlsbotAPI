@@ -1,4 +1,5 @@
 import { join } from 'path';
+
 import { IngredientDatabase } from '../types';
 import { loadDatabase } from '../utils/dataLoader';
 

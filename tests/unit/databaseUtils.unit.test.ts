@@ -1,4 +1,5 @@
 import { describe, it, expect } from 'vitest';
+
 import { findIngredient, getIngredientCategories, getCategoryGroups } from '../../src/utils/databaseUtils';
 import { testDatabase } from '../fixtures/testDatabase';
 

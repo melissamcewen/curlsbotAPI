@@ -1,7 +1,7 @@
 import { readFileSync, readdirSync } from 'fs';
 import { join } from 'path';
 
-import Ajv from 'ajv';
+import Ajv, { ValidateFunction } from 'ajv';
 import addFormats from 'ajv-formats';
 
 import type { IngredientDatabase, Ingredient, Category, Categories, Groups, Ingredients } from '../types';
@@ -17,7 +17,7 @@ const loadSchema = (schemaPath: string) => {
 };
 
 // Load and validate JSON data
-const loadAndValidateJson = <T>(filePath: string, validate: any): T => {
+const loadAndValidateJson = <T>(filePath: string, validate: ValidateFunction): T => {
   const data = JSON.parse(readFileSync(filePath, 'utf-8'));
   const isValid = validate(data);
 
@@ -29,7 +29,7 @@ const loadAndValidateJson = <T>(filePath: string, validate: any): T => {
 };
 
 // Load all ingredient files from a directory and merge them
-const loadIngredientsFromDir = (dirPath: string, validate: any): {ingredients: Ingredient[]} => {
+const loadIngredientsFromDir = (dirPath: string, validate: ValidateFunction): {ingredients: Ingredient[]} => {
   const files = readdirSync(dirPath).filter(file => file.endsWith('.ingredients.json'));
   const allIngredients: Ingredient[] = [];
 
