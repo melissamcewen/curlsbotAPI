@@ -3,86 +3,130 @@
     {
       "name": "Triisopropanolamine",
       "id": "triisopropanolamine",
-      "synonyms": [
-        "triisopropanolamine",
-        "triisopropanolamine",
-        "triisopropanolamine"
-      ],
-      "categories": ["other_detergents"]
+      "categories": [
+        "other_detergents"
+      ]
     },
     {
       "name": "Aminomethyl Propanol",
       "id": "aminomethyl_propanol",
-      "categories": ["other_detergents"],
-      "references": ["https://incidecoder.com/ingredients/aminomethyl-propanol"]
+      "categories": [
+        "other_detergents"
+      ],
+      "references": [
+        "https://incidecoder.com/ingredients/aminomethyl-propanol"
+      ]
     },
     {
       "name": "Sodium Lauroyl Hydrolyzed Silk",
       "id": "sodium_lauroyl_hydrolyzed_silk",
-      "categories": ["other_detergents"]
+      "categories": [
+        "other_detergents"
+      ]
     },
     {
       "name": "Sodium Lauroyl Lactylate",
       "id": "sodium_lauroyl_lactylate",
-      "categories": ["other_detergents"]
+      "categories": [
+        "other_detergents"
+      ]
     },
     {
       "name": "Sodium Methyl 2-sulfolaurate",
       "id": "sodium_methyl_2-sulfolaurate",
-      "categories": ["other_detergents"]
+      "categories": [
+        "other_detergents"
+      ]
     },
     {
       "name": "Disodium 2-sulfolaurate",
       "id": "disodium_2-sulfolaurate",
-      "categories": ["other_detergents"]
+      "categories": [
+        "other_detergents"
+      ]
     },
     {
       "name": "Sodium Lauroyl Oat Amino Acids",
       "id": "sodium_lauroyl_oat_amino_acids",
-      "categories": ["other_detergents"]
+      "categories": [
+        "other_detergents"
+      ]
     },
     {
       "name": "Saccharomycessilicon ferment",
       "id": "saccharomycessilicon_ferment",
-      "categories": ["other_detergents"]
+      "categories": [
+        "other_detergents"
+      ]
     },
     {
       "name": "Silicon ferment",
       "id": "silicon_ferment",
-      "categories": ["other_detergents"]
+      "categories": [
+        "other_detergents"
+      ]
     },
     {
       "name": "Witch Hazel",
       "id": "witch_hazel",
-      "synonyms": ["witch", "hamamelis", "hamamellis", "hazel"],
-      "categories": ["other_detergents"]
+      "synonyms": [
+        "witch",
+        "hamamelis",
+        "hamamellis",
+        "hazel"
+      ],
+      "categories": [
+        "other_detergents"
+      ]
     },
     {
       "name": "Soap",
       "id": "soaps",
-      "synonyms": [],
-      "categories": ["other_detergents"]
+      "categories": [
+        "other_detergents"
+      ]
     },
     {
       "name": "Sodium Stearate",
       "id": "sodium_stearate",
-      "synonyms": ["sodium salt of stearic acid", "stearic acid soap"],
-      "categories": ["soaps"],
-      "references": ["https://incidecoder.com/ingredients/sodium-stearate"]
+      "synonyms": [
+        "sodium salt of stearic acid",
+        "stearic acid soap"
+      ],
+      "categories": [
+        "soaps"
+      ],
+      "references": [
+        "https://incidecoder.com/ingredients/sodium-stearate"
+      ]
     },
     {
       "name": "Potassium Stearate",
       "id": "potassium_stearate",
-      "synonyms": ["potassium salt of stearic acid", "potassium soap"],
-      "categories": ["soaps"],
-      "references": ["https://incidecoder.com/ingredients/potassium-stearate"]
+      "synonyms": [
+        "potassium salt of stearic acid",
+        "potassium soap"
+      ],
+      "categories": [
+        "soaps"
+      ],
+      "references": [
+        "https://incidecoder.com/ingredients/potassium-stearate"
+      ]
     },
     {
       "name": "Sodium Tallowate",
       "id": "sodium_tallowate",
-      "synonyms": ["sodium salt of tallow fatty acids", "tallow soap"],
-      "categories": ["soaps"],
-      "references": ["https://incidecoder.com/ingredients/sodium-tallowate"]
+      "synonyms": [
+        "sodium salt of tallow fatty acids",
+        "tallow soap"
+      ],
+      "categories": [
+        "soaps"
+      ],
+      "references": [
+        "https://incidecoder.com/ingredients/sodium-tallowate"
+      ]
     },
     {
       "name": "Potassium Cocoate",
@@ -91,8 +135,12 @@
         "potassium salt of coconut oil fatty acids",
         "coconut oil soap"
       ],
-      "categories": ["soaps"],
-      "references": ["https://incidecoder.com/ingredients/potassium-cocoate"]
+      "categories": [
+        "soaps"
+      ],
+      "references": [
+        "https://incidecoder.com/ingredients/potassium-cocoate"
+      ]
     },
     {
       "name": "Sodium Cocoate",
@@ -101,43 +149,82 @@
         "sodium salt of coconut oil fatty acids",
         "coconut oil soap"
       ],
-      "categories": ["soaps"],
-      "references": ["https://incidecoder.com/ingredients/sodium-cocoate"]
+      "categories": [
+        "soaps"
+      ],
+      "references": [
+        "https://incidecoder.com/ingredients/sodium-cocoate"
+      ]
     },
     {
       "name": "Sodium Palmate",
       "id": "sodium_palmate",
-      "synonyms": ["sodium salt of palmitic acid", "palm oil soap"],
-      "categories": ["soaps"],
-      "references": ["https://incidecoder.com/ingredients/sodium-palmate"]
+      "synonyms": [
+        "sodium salt of palmitic acid",
+        "palm oil soap"
+      ],
+      "categories": [
+        "soaps"
+      ],
+      "references": [
+        "https://incidecoder.com/ingredients/sodium-palmate"
+      ]
     },
     {
       "name": "Potassium Palmate",
       "id": "potassium_palmate",
-      "synonyms": ["potassium salt of palmitic acid", "palm oil soap"],
-      "categories": ["soaps"],
-      "references": ["https://incidecoder.com/ingredients/potassium-palmate"]
+      "synonyms": [
+        "potassium salt of palmitic acid",
+        "palm oil soap"
+      ],
+      "categories": [
+        "soaps"
+      ],
+      "references": [
+        "https://incidecoder.com/ingredients/potassium-palmate"
+      ]
     },
     {
       "name": "Sodium Olivate",
       "id": "sodium_olivate",
-      "synonyms": ["sodium salt of olive oil fatty acids", "olive oil soap"],
-      "categories": ["soaps"],
-      "references": ["https://incidecoder.com/ingredients/sodium-olivate"]
+      "synonyms": [
+        "sodium salt of olive oil fatty acids",
+        "olive oil soap"
+      ],
+      "categories": [
+        "soaps"
+      ],
+      "references": [
+        "https://incidecoder.com/ingredients/sodium-olivate"
+      ]
     },
     {
       "name": "Potassium Olivate",
       "id": "potassium_olivate",
-      "synonyms": ["potassium salt of olive oil fatty acids", "olive oil soap"],
-      "categories": ["soaps"],
-      "references": ["https://incidecoder.com/ingredients/potassium-olivate"]
+      "synonyms": [
+        "potassium salt of olive oil fatty acids",
+        "olive oil soap"
+      ],
+      "categories": [
+        "soaps"
+      ],
+      "references": [
+        "https://incidecoder.com/ingredients/potassium-olivate"
+      ]
     },
     {
       "name": "Sodium Castorate",
       "id": "sodium_castorate",
-      "synonyms": ["sodium salt of castor oil fatty acids", "castor oil soap"],
-      "categories": ["soaps"],
-      "references": ["https://incidecoder.com/ingredients/sodium-castorate"]
+      "synonyms": [
+        "sodium salt of castor oil fatty acids",
+        "castor oil soap"
+      ],
+      "categories": [
+        "soaps"
+      ],
+      "references": [
+        "https://incidecoder.com/ingredients/sodium-castorate"
+      ]
     },
     {
       "name": "Potassium Castorate",
@@ -146,8 +233,12 @@
         "potassium salt of castor oil fatty acids",
         "castor oil soap"
       ],
-      "categories": ["soaps"],
-      "references": ["https://incidecoder.com/ingredients/potassium-castorate"]
+      "categories": [
+        "soaps"
+      ],
+      "references": [
+        "https://incidecoder.com/ingredients/potassium-castorate"
+      ]
     }
   ]
 }

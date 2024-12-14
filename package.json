@@ -18,7 +18,9 @@
     "lint": "eslint . --ext .ts",
     "lint:fix": "eslint . --ext .ts --fix",
     "validate-db": "tsx cli/validate.ts validate",
-    "validate-relationships": "tsx cli/validate.ts validate-relationships"
+    "validate-relationships": "tsx cli/validate.ts validate-relationships",
+    "validate-duplicates": "tsx cli/validate.ts validate-duplicates",
+    "clean-synonyms": "tsx cli/validate.ts clean-synonyms"
   },
   "keywords": [
     "haircare",

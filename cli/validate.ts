@@ -4,7 +4,8 @@ import { Command } from 'commander';
 import { loadDatabase } from '../src/utils/dataLoader';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
-import type { IngredientDatabase } from '../src/types';
+import type { IngredientDatabase, Ingredient } from '../src/types';
+import { readFileSync, writeFileSync, readdirSync } from 'fs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
@@ -45,6 +46,79 @@ function validateRelationships(database: IngredientDatabase): string[] {
   });
 
   return errors;
+}
+
+function validateDuplicates(database: IngredientDatabase): string[] {
+  const errors: string[] = [];
+  const ingredients = Object.values(database.ingredients);
+
+  // Track names and synonyms for case-insensitive comparison
+  const names = new Map<string, string>(); // lowercase name -> original name
+  const synonyms = new Map<string, {name: string, synonym: string}>(); // lowercase synonym -> {ingredient name, original synonym}
+
+  ingredients.forEach(ingredient => {
+    // Check for duplicate names
+    const lowerName = ingredient.name.toLowerCase();
+    if (names.has(lowerName)) {
+      errors.push(`❌ Duplicate ingredient name: "${ingredient.name}" matches "${names.get(lowerName)}"`);
+    } else {
+      names.set(lowerName, ingredient.name);
+    }
+
+    // Check for duplicate synonyms
+    if (ingredient.synonyms) {
+      ingredient.synonyms.forEach(synonym => {
+        const lowerSynonym = synonym.toLowerCase();
+        if (synonyms.has(lowerSynonym)) {
+          const existing = synonyms.get(lowerSynonym)!;
+          errors.push(`❌ Duplicate synonym: "${synonym}" used by both "${ingredient.name}" and "${existing.name}"`);
+        } else {
+          synonyms.set(lowerSynonym, {name: ingredient.name, synonym});
+        }
+
+        // Check if synonym matches any ingredient name
+        if (names.has(lowerSynonym)) {
+          errors.push(`❌ Synonym "${synonym}" of "${ingredient.name}" matches ingredient name "${names.get(lowerSynonym)}"`);
+        }
+      });
+    }
+  });
+
+  return errors;
+}
+
+function cleanRedundantSynonyms(ingredientsFile: string): boolean {
+  const data = JSON.parse(readFileSync(ingredientsFile, 'utf-8'));
+  let hasChanges = false;
+
+  data.ingredients = data.ingredients.map((ingredient: any) => {
+    if (!ingredient.synonyms) return ingredient;
+
+    const nameLower = ingredient.name.toLowerCase();
+    const originalLength = ingredient.synonyms.length;
+
+    ingredient.synonyms = ingredient.synonyms.filter(
+      (synonym: string) => synonym.toLowerCase() !== nameLower
+    );
+
+    if (ingredient.synonyms.length !== originalLength) {
+      console.log(`✨ Removed redundant synonym from "${ingredient.name}"`);
+      hasChanges = true;
+    }
+
+    // Remove the synonyms array if it's empty
+    if (ingredient.synonyms.length === 0) {
+      delete ingredient.synonyms;
+    }
+
+    return ingredient;
+  });
+
+  if (hasChanges) {
+    writeFileSync(ingredientsFile, JSON.stringify(data, null, 2) + '\n');
+  }
+
+  return hasChanges;
 }
 
 program
@@ -94,6 +168,69 @@ program
       }
     } catch (error) {
       console.error('❌ Validation failed:', error.message);
+      process.exit(1);
+    }
+  });
+
+program
+  .command('validate-duplicates')
+  .description('Check for duplicate ingredients, names, and synonyms')
+  .option('-d, --data <path>', 'path to data directory', join(__dirname, '../src/data'))
+  .option('-s, --schema <path>', 'path to schema directory', join(__dirname, '../src/data/schema'))
+  .action((options) => {
+    try {
+      const dataDir = options.data;
+      const schemaDir = options.schema;
+
+      console.log(`Checking for duplicates in ${dataDir}`);
+      const database = loadDatabase({ dataDir, schemaDir });
+
+      const errors = validateDuplicates(database);
+
+      if (errors.length > 0) {
+        console.error('Found duplicate entries:');
+        errors.forEach(error => console.error(error));
+        process.exit(1);
+      } else {
+        console.log('✅ No duplicates found!');
+      }
+    } catch (error) {
+      console.error('❌ Validation failed:', error.message);
+      process.exit(1);
+    }
+  });
+
+program
+  .command('clean-synonyms')
+  .description('Remove redundant synonyms that match ingredient names')
+  .option('-d, --data <path>', 'path to data directory', join(__dirname, '../src/data'))
+  .action((options) => {
+    try {
+      const dataDir = options.data;
+      const ingredientsDir = join(dataDir, 'ingredients');
+
+      console.log(`Cleaning redundant synonyms in ${ingredientsDir}`);
+
+      // Process each ingredients file
+      const files = readdirSync(ingredientsDir)
+        .filter(file => file.endsWith('.ingredients.json'));
+
+      let totalChanges = 0;
+
+      files.forEach(file => {
+        const filePath = join(ingredientsDir, file);
+        if (cleanRedundantSynonyms(filePath)) {
+          totalChanges++;
+        }
+      });
+
+      if (totalChanges > 0) {
+        console.log(`✅ Cleaned redundant synonyms in ${totalChanges} files`);
+      } else {
+        console.log('✅ No redundant synonyms found');
+      }
+    } catch (error) {
+      console.error('❌ Cleaning failed:', error.message);
       process.exit(1);
     }
   });

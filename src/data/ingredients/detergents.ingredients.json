@@ -3,417 +3,524 @@
     {
       "name": "Sodium Lauryl Sulfate",
       "id": "sodium_lauryl_sulfate",
-      "synonyms": ["sodium lauryl sulfate", "sodium lauryl sulphate"],
-      "categories": ["sulfates"]
+      "synonyms": [
+        "sodium lauryl sulphate"
+      ],
+      "categories": [
+        "sulfates"
+      ]
     },
     {
       "name": "Sodium Laureth Sulfate",
       "id": "sodium_laureth_sulfate",
-      "synonyms": ["sodium laureth sulfate", "sodium laureth sulphate"],
-      "categories": ["sulfates"]
+      "synonyms": [
+        "sodium laureth sulphate"
+      ],
+      "categories": [
+        "sulfates"
+      ]
     },
     {
       "name": "Ammonium Lauryl Sulfate",
       "id": "ammonium_lauryl_sulfate",
-      "synonyms": ["ammonium lauryl sulfate", "ammonium lauryl sulphate"],
-      "categories": ["sulfates"]
+      "synonyms": [
+        "ammonium lauryl sulphate"
+      ],
+      "categories": [
+        "sulfates"
+      ]
     },
     {
       "name": "Tea Lauryl Sulfate",
       "id": "tea_lauryl_sulfate",
-      "synonyms": ["tea lauryl sulfate", "tea lauryl sulphate"],
-      "categories": ["sulfates"]
+      "synonyms": [
+        "tea lauryl sulphate"
+      ],
+      "categories": [
+        "sulfates"
+      ]
     },
     {
       "name": "Triethanolamine Lauryl Sulfate",
       "id": "triethanolamine_lauryl_sulfate",
       "synonyms": [
-        "triethanolamine lauryl sulfate",
         "triethanolamine lauryl sulphate"
       ],
-      "categories": ["sulfates"]
+      "categories": [
+        "sulfates"
+      ]
     },
     {
       "name": "Tea Dodecylbenzenesulfonate",
       "id": "tea_dodecylbenzenesulfonate",
       "synonyms": [
-        "tea dodecylbenzenesulfonate",
         "tea-dodecylbenzenesulfonate"
       ],
-      "categories": ["sulfonates"]
+      "categories": [
+        "sulfonates"
+      ]
     },
     {
       "name": "Sodium Cetearyl Sulfate",
       "id": "sodium_cetearyl_sulfate",
-      "synonyms": ["sodium cetearyl sulfate", "sodium cetearyl sulphate"],
-      "categories": ["sulfates"]
+      "synonyms": [
+        "sodium cetearyl sulphate"
+      ],
+      "categories": [
+        "sulfates"
+      ]
     },
     {
       "name": "Sodium Coco Sulfate",
       "id": "sodium_coco_sulfate",
-      "synonyms": ["sodium coco sulfate", "sodium coco sulphate"],
-      "categories": ["sulfates"]
+      "synonyms": [
+        "sodium coco sulphate"
+      ],
+      "categories": [
+        "sulfates"
+      ]
     },
     {
       "name": "Sodium Cocosulfate",
       "id": "sodium_cocosulfate",
-      "synonyms": ["sodium cocosulfate", "sodium cocosulphate"],
-      "categories": ["sulfates"]
+      "synonyms": [
+        "sodium cocosulphate"
+      ],
+      "categories": [
+        "sulfates"
+      ]
     },
     {
       "name": "Sodium Coceth Sulfate",
       "id": "sodium_coceth_sulfate",
-      "synonyms": ["sodium coceth sulfate", "sodium coceth sulphate"],
-      "categories": ["sulfates"]
+      "synonyms": [
+        "sodium coceth sulphate"
+      ],
+      "categories": [
+        "sulfates"
+      ]
     },
     {
       "name": "Ammonium Laureth Sulfate",
       "id": "ammonium_laureth_sulfate",
-      "synonyms": ["ammonium laureth sulfate", "ammonium laureth sulphate"],
-      "categories": ["sulfates"]
+      "synonyms": [
+        "ammonium laureth sulphate"
+      ],
+      "categories": [
+        "sulfates"
+      ]
     },
     {
       "name": "Ammonium Lauryl Sulfate",
       "id": "ammonium_lauryl_sulfate",
-      "synonyms": ["ammonium lauryl sulfate", "ammonium lauryl sulphate"],
-      "categories": ["sulfates"]
+      "synonyms": [
+        "ammonium lauryl sulphate"
+      ],
+      "categories": [
+        "sulfates"
+      ]
     },
     {
       "name": "Sodium Myreth Sulfate",
       "id": "sodium_myreth_sulfate",
-      "synonyms": ["sodium myreth sulfate", "sodium myreth sulphate"],
-      "categories": ["sulfates"]
+      "synonyms": [
+        "sodium myreth sulphate"
+      ],
+      "categories": [
+        "sulfates"
+      ]
     },
     {
       "name": "Sodium Polystyrene Sulfate",
       "id": "sodium_polystyrene_sulfate",
-      "synonyms": ["sodium polystyrene sulfate", "sodium polystyrene sulphate"],
-      "categories": ["sulfates"]
+      "synonyms": [
+        "sodium polystyrene sulphate"
+      ],
+      "categories": [
+        "sulfates"
+      ]
     },
     {
       "name": "Ammonium Cocoyl Sulfate",
       "id": "ammonium_cocoyl_sulfate",
-      "synonyms": ["ammonium cocoyl sulfate", "ammonium cocoyl sulphate"],
-      "categories": ["sulfates"]
+      "synonyms": [
+        "ammonium cocoyl sulphate"
+      ],
+      "categories": [
+        "sulfates"
+      ]
     },
     {
       "name": "Sodium C12-18 Alkyl Sulfate",
       "id": "sodium_c12-18_alkyl_sulfate",
       "synonyms": [
-        "sodium c12-18 alkyl sulfate",
         "sodium c12-18 alkyl sulphate"
       ],
-      "categories": ["sulfates"]
+      "categories": [
+        "sulfates"
+      ]
     },
     {
       "name": "Sodium Alkyl Sulfate",
       "id": "sodium_alkyl_sulfate",
-      "synonyms": ["sodium alkyl sulfate", "sodium alkyl sulphate"],
-      "categories": ["sulfates"]
+      "synonyms": [
+        "sodium alkyl sulphate"
+      ],
+      "categories": [
+        "sulfates"
+      ]
     },
     {
       "name": "Sodium Laureth-40 Sulfate",
       "id": "sodium_laureth-40_sulfate",
-      "synonyms": ["sodium laureth-40 sulfate", "sodium laureth-40 sulphate"],
-      "categories": ["sulfonates"]
+      "synonyms": [
+        "sodium laureth-40 sulphate"
+      ],
+      "categories": [
+        "sulfonates"
+      ]
     },
     {
       "name": "Sodium Xylenesulfonate",
       "id": "sodium_xylenesulfonate",
       "synonyms": [
-        "sodium xylenesulfonate",
         "sodium xylenesulphate",
         "sodium xylene-sulfonate",
         "sodium xylene sulfonate"
       ],
-      "categories": ["sulfonates"]
+      "categories": [
+        "sulfonates"
+      ]
     },
     {
       "name": "Alkylbenzene sulfonate",
       "id": "alkylbenzene_sulfonate",
       "synonyms": [
-        "alkylbenzene sulfonate",
         "alkylbenzene sulphate",
         "alkyl benzene sulfonate",
         "alkyl benzene sulphate"
       ],
-      "categories": ["sulfonates"]
+      "categories": [
+        "sulfonates"
+      ]
     },
     {
       "name": "Ammonium Xylenesulfonate",
       "id": "ammonium_xylenesulfonate",
       "synonyms": [
-        "ammonium xylenesulfonate",
         "ammonium xylenesulphate",
         "ammonium xylene-sulfonate",
         "ammonium xylene sulfonate"
       ],
-      "categories": ["sulfonates"]
+      "categories": [
+        "sulfonates"
+      ]
     },
     {
       "name": "Ethyl Peg-15 Cocamine Sulfate",
       "id": "ethyl_peg-15_cocamine_sulfate",
       "synonyms": [
-        "ethyl peg-15 cocamine sulfate",
         "ethyl peg-15 cocamine sulphate"
       ],
-      "categories": ["sulfates"]
+      "categories": [
+        "sulfates"
+      ]
     },
     {
       "name": "Sodium C14-16 Olefin Sulfonate",
       "id": "sodium_c14-16_olefin_sulfonate",
       "synonyms": [
-        "sodium c14-16 olefin sulfonate",
         "sodium c14-16 olefin sulphate"
       ],
-      "categories": ["sulfonates"]
+      "categories": [
+        "sulfonates"
+      ]
     },
     {
       "name": "Sodium C14-15 Olefin Sulfonate",
       "id": "sodium_c14-15_olefin_sulfonate",
       "synonyms": [
-        "sodium c14-15 olefin sulfonate",
         "sodium c14-15 olefin sulphate"
       ],
-      "categories": ["sulfonates"]
+      "categories": [
+        "sulfonates"
+      ]
     },
     {
       "name": "Sodium C12-14 Olefin Sulfonate",
       "id": "sodium_c12-14_olefin_sulfonate",
       "synonyms": [
-        "sodium c12-14 olefin sulfonate",
         "sodium c12-14 olefin sulphate"
       ],
-      "categories": ["sulfonates"]
+      "categories": [
+        "sulfonates"
+      ]
     },
     {
       "name": "Sodium C14-26 Olefin Sulfonate",
       "id": "sodium_c14-26_olefin_sulfonate",
       "synonyms": [
-        "sodium c14-26 olefin sulfonate",
         "sodium c14-26 olefin sulphate"
       ],
-      "categories": ["sulfonates"]
+      "categories": [
+        "sulfonates"
+      ]
     },
     {
       "name": "Sodium C14-18 Olefin Sulfonate",
       "id": "sodium_c14-18_olefin_sulfonate",
       "synonyms": [
-        "sodium c14-18 olefin sulfonate",
         "sodium c14-18 olefin sulphate"
       ],
-      "categories": ["sulfonates"]
+      "categories": [
+        "sulfonates"
+      ]
     },
     {
       "name": "Sodium C16-18 Olefin Sulfonate",
       "id": "sodium_c16-18_olefin_sulfonate",
       "synonyms": [
-        "sodium c16-18 olefin sulfonate",
         "sodium c16-18 olefin sulphate"
       ],
-      "categories": ["sulfonates"]
+      "categories": [
+        "sulfonates"
+      ]
     },
     {
       "name": "Sodium Cocoyl Sarcosinate",
       "id": "sodium_cocoyl_sarcosinate",
-      "synonyms": ["sodium cocoyl sarcosinate", "sodium cocoyl sarcosinate"],
-      "categories": ["other_detergents"]
+      "categories": [
+        "other_detergents"
+      ]
     },
     {
       "name": "Sodium Lauroyl Sarcosinate",
       "id": "sodium_lauroyl_sarcosinate",
-      "synonyms": ["sodium lauroyl sarcosinate", "sodium lauroyl sarcosinate"],
-      "categories": ["other_detergents"]
+      "categories": [
+        "other_detergents"
+      ]
     },
     {
       "name": "Sodium Lauryl Sarcosinate",
       "id": "sodium_lauryl_sarcosinate",
       "synonyms": [
         "sodium lauroyl sarcosinate",
-        "sodium lauryl sarcosinate",
         "sodium lauroyl sarcosine"
       ],
-      "categories": ["other_detergents"]
+      "categories": [
+        "other_detergents"
+      ]
     },
     {
       "name": "Sodium Lauryl Sulfoacetate",
       "id": "sodium_lauryl_sulfoacetate",
-      "synonyms": ["sodium lauryl sulfoacetate", "sodium lauryl sulfoacetate"],
-      "categories": ["other_detergents"]
+      "categories": [
+        "other_detergents"
+      ]
     },
     {
       "name": "Sodium Cocoyl Glutamate",
       "id": "sodium_cocoyl_glutamate",
-      "synonyms": ["sodium cocoyl glutamate", "sodium cocoyl glutamate"],
-      "categories": ["other_detergents"]
+      "categories": [
+        "other_detergents"
+      ]
     },
     {
       "name": "Sodium Lauroyl Methyl Isethionate",
       "id": "sodium_lauroyl_methyl_isethionate",
       "synonyms": [
-        "sodium lauroyl methyl isethionate",
-        "sodium lauroyl methyl isethionate",
         "sodium lauryl methyl isothionate",
         "sodium lauroyl methyl lsethionate",
         "sodium lauroylmethyl isethionate"
       ],
-      "categories": ["other_detergents"]
+      "categories": [
+        "other_detergents"
+      ]
     },
     {
       "name": "Dioctyl Sodium Sulfosuccinate",
       "id": "dioctyl_sodium_sulfosuccinate",
-      "synonyms": ["dioctyl sodium sulfosuccinate"],
-      "categories": ["other_detergents"]
+      "categories": [
+        "other_detergents"
+      ]
     },
     {
       "name": "Disodium Cocoyl Glutamate",
       "id": "disodium_cocoyl_glutamate",
-      "synonyms": ["disodium cocoyl glutamate"],
-      "categories": ["other_detergents"]
+      "categories": [
+        "other_detergents"
+      ]
     },
     {
       "name": "Sodium Myristoyl Sarcosinate",
       "id": "sodium_myristoyl_sarcosinate",
-      "synonyms": ["sodium myristoyl sarcosinate"],
-      "categories": ["other_detergents"]
+      "categories": [
+        "other_detergents"
+      ]
     },
     {
       "name": "Disodium Laureth Sulfosuccinate",
       "id": "disodium_laureth_sulfosuccinate",
-      "synonyms": ["disodium laureth sulfosuccinate"],
-      "categories": ["mild_detergents"]
+      "categories": [
+        "mild_detergents"
+      ]
     },
     {
       "name": "Disodium Laureth Succinate",
       "id": "disodium_laureth_succinate",
-      "synonyms": ["disodium laureth succinate"],
-      "categories": ["mild_detergents"]
+      "categories": [
+        "mild_detergents"
+      ]
     },
     {
       "name": "Sodium Lauryl Glucose Carboxylate",
       "id": "sodium_lauryl_glucose_carboxylate",
-      "synonyms": ["sodium lauryl glucose carboxylate"],
-      "categories": ["mild_detergents"]
+      "categories": [
+        "mild_detergents"
+      ]
     },
     {
       "name": "Sodium Methyl Cocoyl Taurate",
       "id": "sodium_methyl_cocoyl_taurate",
-      "synonyms": ["sodium methyl cocoyl taurate"],
-      "categories": ["mild_detergents"]
+      "categories": [
+        "mild_detergents"
+      ]
     },
     {
       "name": "Sodium Lauroyl Glutamate",
       "id": "sodium_lauroyl_glutamate",
-      "synonyms": ["sodium lauroyl glutamate"],
-      "categories": ["mild_detergents"]
+      "categories": [
+        "mild_detergents"
+      ]
     },
     {
       "name": "Ammonium Cocoyl Isethionate",
       "id": "ammonium_cocoyl_isethionate",
-      "synonyms": ["ammonium cocoyl isethionate"],
-      "categories": ["mild_detergents"]
+      "categories": [
+        "mild_detergents"
+      ]
     },
     {
       "name": "Sodium Cocoyl Isethionate",
       "id": "sodium_cocoyl_isethionate",
-      "synonyms": ["sodium cocoyl isethionate"],
-      "categories": ["mild_detergents"]
+      "categories": [
+        "mild_detergents"
+      ]
     },
     {
       "name": "Coco Betaine",
       "id": "coco_betaine",
-      "synonyms": ["coco betaine"],
-      "categories": ["mild_detergents"]
+      "categories": [
+        "mild_detergents"
+      ]
     },
     {
       "name": "Cocamidopropyl Betaine",
       "id": "cocamidopropyl_betaine",
-      "synonyms": ["cocamidopropyl betaine"],
-      "categories": ["mild_detergents"]
+      "categories": [
+        "mild_detergents"
+      ]
     },
     {
       "name": "Disodium Cocoamphodiacetate",
       "id": "disodium_cocoamphodiacetate",
-      "synonyms": ["disodium cocoamphodiacetate"],
-      "categories": ["mild_detergents"]
+      "categories": [
+        "mild_detergents"
+      ]
     },
     {
       "name": "Cocamidopropyl Hydroxysultaine",
       "id": "cocamidopropyl_hydroxysultaine",
-      "synonyms": ["cocamidopropyl hydroxysultaine"],
-      "categories": ["mild_detergents"]
+      "categories": [
+        "mild_detergents"
+      ]
     },
     {
       "name": "Lauryl Hydroxysultaine",
       "id": "lauryl_hydroxysultaine",
-      "synonyms": ["lauryl hydroxysultaine"],
-      "categories": ["mild_detergents"]
+      "categories": [
+        "mild_detergents"
+      ]
     },
     {
       "name": "Sodium Cocoamphoacetate",
       "id": "sodium_cocoamphoacetate",
-      "synonyms": ["sodium cocoamphoacetate"],
-      "categories": ["mild_detergents"]
+      "categories": [
+        "mild_detergents"
+      ]
     },
     {
       "name": "Sodium Lauroamphoacetate",
       "id": "sodium_lauroamphoacetate",
-      "synonyms": ["sodium lauroamphoacetate"],
-      "categories": ["mild_detergents"]
+      "categories": [
+        "mild_detergents"
+      ]
     },
     {
       "name": "Coco Glucoside",
       "id": "coco_glucoside",
-      "synonyms": ["coco glucoside"],
-      "categories": ["mild_detergents"]
+      "categories": [
+        "mild_detergents"
+      ]
     },
     {
       "name": "Capryl Glucoside",
       "id": "capryl_glucoside",
-      "synonyms": ["capryl glucoside, caprylyl glucoside"],
-      "categories": ["mild_detergents"]
+      "synonyms": [
+        "capryl glucoside, caprylyl glucoside"
+      ],
+      "categories": [
+        "mild_detergents"
+      ]
     },
     {
       "name": "Decyl Glucoside",
       "id": "decyl_glucoside",
-      "synonyms": ["decyl glucoside"],
-      "categories": ["mild_detergents"]
+      "categories": [
+        "mild_detergents"
+      ]
     },
     {
       "name": "Lauryl Glucoside",
       "id": "lauryl_glucoside",
-      "synonyms": ["lauryl glucoside"],
-      "categories": ["mild_detergents"]
+      "categories": [
+        "mild_detergents"
+      ]
     },
     {
       "name": "Decyl Polyglucose",
       "id": "decyl_polyglucose",
-      "synonyms": ["decyl polyglucose"],
-      "categories": ["mild_detergents"]
+      "categories": [
+        "mild_detergents"
+      ]
     },
     {
       "name": "Disodium Cocoamphodipropionate",
       "id": "disodium_cocoamphodipropionate",
-      "synonyms": ["disodium cocoamphodipropionate"],
-      "categories": ["mild_detergents"]
+      "categories": [
+        "mild_detergents"
+      ]
     },
     {
       "name": "Babassuamidopropyl Betaine",
       "id": "babassuamidopropyl_betaine",
-      "synonyms": ["babassuamidopropyl betaine"],
-      "categories": ["mild_detergents"]
+      "categories": [
+        "mild_detergents"
+      ]
     },
     {
       "name": "Sodium Laurylglucosides Hydroxypropylsulfonate",
       "id": "sodium_laurylglucosides_hydroxypropylsulfonate",
-      "synonyms": ["sodium laurylglucosides hydroxypropylsulfonate"],
-      "categories": ["mild_detergents"]
+      "categories": [
+        "mild_detergents"
+      ]
     },
     {
       "name": "Disodium Lauryl Sulfosuccinate",
       "id": "disodium_lauryl_sulfosuccinate",
-      "synonyms": ["disodium lauryl sulfosuccinate"],
-      "categories": ["mild_detergents"]
+      "categories": [
+        "mild_detergents"
+      ]
     }
   ]
 }
