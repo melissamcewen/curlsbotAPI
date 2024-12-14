@@ -1,4 +1,4 @@
-import { readFileSync } from 'fs';
+import { readFileSync, readdirSync } from 'fs';
 import { join } from 'path';
 
 import Ajv from 'ajv';
@@ -26,6 +26,20 @@ const loadAndValidateJson = <T>(filePath: string, validate: any): T => {
   }
 
   return data;
+};
+
+// Load all ingredient files from a directory and merge them
+const loadIngredientsFromDir = (dirPath: string, validate: any): {ingredients: Ingredient[]} => {
+  const files = readdirSync(dirPath).filter(file => file.endsWith('.ingredients.json'));
+  const allIngredients: Ingredient[] = [];
+
+  for (const file of files) {
+    const filePath = join(dirPath, file);
+    const data = loadAndValidateJson<{ingredients: Ingredient[]}>(filePath, validate);
+    allIngredients.push(...data.ingredients);
+  }
+
+  return { ingredients: allIngredients };
 };
 
 // Transform array of categories to Record
@@ -66,10 +80,7 @@ export const loadDatabase = ({ dataDir, schemaDir }: LoadDatabaseOptions): Ingre
   const groupsSchema = loadSchema(join(schemaDir, 'groups.schema.json'));
 
   // Load and validate data
-  const ingredientsData = loadAndValidateJson<{ingredients: Ingredient[]}>(
-    join(dataDir, 'ingredients.json'),
-    ingredientsSchema
-  );
+  const ingredientsData = loadIngredientsFromDir(join(dataDir, 'ingredients'), ingredientsSchema);
 
   const categoriesData = loadAndValidateJson<{categories: Category[]}>(
     join(dataDir, 'categories.json'),
@@ -91,10 +102,7 @@ export const loadDatabase = ({ dataDir, schemaDir }: LoadDatabaseOptions): Ingre
 // Helper function to load individual data types
 export const loadIngredients = ({ dataDir, schemaDir }: LoadDatabaseOptions): Ingredients => {
   const schema = loadSchema(join(schemaDir, 'ingredients.schema.json'));
-  const data = loadAndValidateJson<{ingredients: Ingredient[]}>(
-    join(dataDir, 'ingredients.json'),
-    schema
-  );
+  const data = loadIngredientsFromDir(join(dataDir, 'ingredients'), schema);
   return ingredientsToRecord(data.ingredients);
 };
 

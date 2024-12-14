@@ -4,7 +4,7 @@
   "required": ["groups"],
   "properties": {
     "groups": {
-      "type": "object",
+      "type": "array",
       "patternProperties": {
         "^.*$": {
           "type": "object",
