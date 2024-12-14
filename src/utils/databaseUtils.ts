@@ -31,8 +31,10 @@ export function getIngredientCategories(database: IngredientDatabase, ingredient
  * Gets groups for categories
  */
 export function getCategoryGroups(database: IngredientDatabase, categories: string[]): string[] {
-  return categories.flatMap(catId => {
+  const groups = categories.flatMap(catId => {
     const category = database.categories[catId];
     return category?.group ? [category.group] : [];
   });
+  // Return unique groups
+  return [...new Set(groups)];
 }

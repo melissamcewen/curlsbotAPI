@@ -44,6 +44,14 @@ const ingredientsToRecord = (ingredients: Ingredient[]): Ingredients => {
   }, {} as Ingredients);
 };
 
+// Transform array of groups to Record
+const groupsToRecord = (groups: { id: string; name: string }[]): Groups => {
+  return groups.reduce((acc, group) => {
+    acc[group.id] = group;
+    return acc;
+  }, {} as Groups);
+};
+
 export interface LoadDatabaseOptions {
   /** Directory containing the data files */
   dataDir: string;
@@ -68,7 +76,7 @@ export const loadDatabase = ({ dataDir, schemaDir }: LoadDatabaseOptions): Ingre
     categoriesSchema
   );
 
-  const groupsData = loadAndValidateJson<{groups: Groups}>(
+  const groupsData = loadAndValidateJson<{groups: { id: string; name: string }[]}>(
     join(dataDir, 'groups.json'),
     groupsSchema
   );
@@ -76,7 +84,7 @@ export const loadDatabase = ({ dataDir, schemaDir }: LoadDatabaseOptions): Ingre
   return {
     ingredients: ingredientsToRecord(ingredientsData.ingredients),
     categories: categoriesToRecord(categoriesData.categories),
-    groups: groupsData.groups
+    groups: groupsToRecord(groupsData.groups)
   };
 };
 
@@ -101,9 +109,9 @@ export const loadCategories = ({ dataDir, schemaDir }: LoadDatabaseOptions): Cat
 
 export const loadGroups = ({ dataDir, schemaDir }: LoadDatabaseOptions): Groups => {
   const schema = loadSchema(join(schemaDir, 'groups.schema.json'));
-  const data = loadAndValidateJson<{groups: Groups}>(
+  const data = loadAndValidateJson<{groups: { id: string; name: string }[]}>(
     join(dataDir, 'groups.json'),
     schema
   );
-  return data.groups;
+  return groupsToRecord(data.groups);
 };

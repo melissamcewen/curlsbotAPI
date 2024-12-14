@@ -102,9 +102,9 @@ export class Analyzer {
       categories: [],
       groups: [],
       flags: {
-        ingredients: [],
-        categories: [],
-        groups: []
+        flaggedIngredients: [],
+        flaggedCategories: [],
+        flaggedGroups: []
       }
     };
   }
@@ -114,7 +114,9 @@ export class Analyzer {
    */
   analyze(ingredientList: string, systemId = ""): AnalysisResult {
     if (!ingredientList || typeof ingredientList !== 'string') {
-      return this.createEmptyResult();
+      const result = this.createEmptyResult();
+      result.status = "error";
+      return result;
     }
 
     const result = this.createEmptyResult();
@@ -166,14 +168,33 @@ export class Analyzer {
     const mergedFlags = mergeFlags(systemFlags, this.options || {});
 
     // Apply flags to matches
-    result.matches = result.matches.map(match => ({
-      ...match,
-      flags: [
-        ...(match.ingredient && mergedFlags.flaggedIngredients?.includes(match.ingredient.id) ? [match.ingredient.id] : []),
-        ...(match.categories.filter(c => mergedFlags.flaggedCategories?.includes(c)) || []),
-        ...(match.groups.filter(g => mergedFlags.flaggedGroups?.includes(g)) || [])
-      ]
-    }));
+    result.matches = result.matches.map(match => {
+      const flags = new Set<string>();
+
+      // Add ingredient flags
+      if (match.ingredient && mergedFlags.flaggedIngredients?.includes(match.ingredient.id)) {
+        flags.add(match.ingredient.id);
+      }
+
+      // Add category flags
+      match.categories.forEach(catId => {
+        if (mergedFlags.flaggedCategories?.includes(catId)) {
+          flags.add(catId);
+        }
+      });
+
+      // Add group flags
+      match.groups.forEach(groupId => {
+        if (mergedFlags.flaggedGroups?.includes(groupId)) {
+          flags.add(groupId);
+        }
+      });
+
+      return {
+        ...match,
+        flags: Array.from(flags)
+      };
+    });
 
     result.flags = mergedFlags;
 

@@ -11,6 +11,16 @@
       "id": "aminomethyl_propanol",
       "category": "other",
       "references": ["https://incidecoder.com/ingredients/aminomethyl-propanol"]
+    },
+    {
+      "name": "Sodium Lauroyl Hydrolyzed Silk",
+      "id": "sodium_lauroyl_hydrolyzed_silk",
+      "category": "other"
+    },
+    {
+      "name": "Sodium Lauroyl Lactylate",
+      "id": "sodium_lauroyl_lactylate",
+      "category": "other"
     }
   ]
 }

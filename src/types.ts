@@ -32,8 +32,8 @@ export interface AnalysisResult {
   input: string;
   /** Normalized input */
   normalized: readonly string[];
-  /** System sused to analyze the input */
-  systems: string[] ;
+  /** System used to analyze the input */
+  system: string;
   /** Status of the analysis */
   status: string;
   /** List of settings that were matched */
@@ -44,14 +44,14 @@ export interface AnalysisResult {
   categories: string[];
   /** List of groups */
   groups: string[];
-  /** Optional flags for ingredients, categories, and category groups */
-  flags?: {
+  /** Flags for ingredients, categories, and category groups */
+  flags: {
     /** Ingredients that are flagged */
-    ingredients: string[];
+    flaggedIngredients: string[];
     /** Categories that are flagged */
-    categories: string[];
+    flaggedCategories: string[];
     /** Category groups that are flagged */
-    groups: string[];
+    flaggedGroups: string[];
   };
 }
 
@@ -66,7 +66,7 @@ export interface Category {
   /** Unique identifier in snake_case */
   id: string;
   /** The group this category belongs to */
-  group: "alcohols" | "preservatives" | "detergents" | "silicones";
+  group: string;
 }
 
 /**
@@ -200,7 +200,7 @@ export interface Flag {
 export interface System {
   id: string;
   name: string;
-  description: string;
+  description?: string;
   settings: string[];
 }
 
