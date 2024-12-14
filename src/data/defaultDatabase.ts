@@ -1,6 +1,6 @@
 import { join } from 'path';
 
-import { IngredientDatabase } from '../types';
+import type { IngredientDatabase } from '../types';
 import { loadDatabase } from '../utils/dataLoader';
 
 // Get the paths relative to this file

@@ -1,135 +1,61 @@
 import { describe, it, expect } from 'vitest';
+
 import { Analyzer } from '../../src/analyzer';
-import { mockMainDatabase, mockFallbackDatabase } from '../fixtures/fallbackDatabase';
+import { testDatabase } from '../fixtures/testDatabase';
 
-describe('Analyzer with fallback database', () => {
-  it('initializes with fallback database', () => {
-    const analyzer = new Analyzer({
-      database: mockMainDatabase,
-      fallbackDatabase: mockFallbackDatabase
+describe('Analyzer Integration Tests', () => {
+  describe('Ingredient Matching', () => {
+    it('should normalize and match basic ingredients', () => {
+      const analyzer = new Analyzer({ database: testDatabase });
+      const result = analyzer.analyze('Cetyl Alcohol, SD Alcohol');
+
+      expect(result.normalized).toEqual(['cetyl alcohol', 'sd alcohol']);
+      expect(result.matches).toHaveLength(2);
+      expect(result.matches[0].ingredient?.id).toBe('cetyl_alcohol');
+      expect(result.matches[1].ingredient?.id).toBe('sd_alcohol');
     });
 
-    expect(analyzer.getDatabase()).toEqual(mockMainDatabase);
-    expect(analyzer.getFallbackDatabase()).toEqual(mockFallbackDatabase);
+    it('should match ingredients by synonyms', () => {
+      const analyzer = new Analyzer({ database: testDatabase });
+      const result = analyzer.analyze('hexadecan-1-ol');
+
+      expect(result.matches).toHaveLength(1);
+      expect(result.matches[0].ingredient?.id).toBe('cetyl_alcohol');
+    });
   });
 
-  it('analyzes ingredients using main database', () => {
-    const analyzer = new Analyzer({
-      database: mockMainDatabase,
-      fallbackDatabase: mockFallbackDatabase
+  describe('Category and Group Collection', () => {
+    it('should collect unique categories and groups', () => {
+      const analyzer = new Analyzer({ database: testDatabase });
+      const result = analyzer.analyze('Cetyl Alcohol, SD Alcohol');
+
+      expect(result.categories).toEqual(['emollient_alcohol', 'drying_alcohol']);
+      expect(result.groups).toEqual(['alcohols']);
     });
 
-    const result = analyzer.analyze('Jojoba Oil');
-    expect(result.matches[0].ingredient?.id).toBe('jojoba_oil');
-    expect(result.categories).toContain('light_oils');
-    expect(result.groups).toContain('oils');
-  });
+    it('should apply flags when options are set', () => {
+      const analyzer = new Analyzer({
+        database: testDatabase,
+        options: {
+          flaggedIngredients: ['sd_alcohol'],
+          flaggedCategories: ['drying_alcohol'],
+          flaggedGroups: ['alcohols']
+        }
+      });
 
-  it('analyzes ingredients using fallback database when not in main', () => {
-    const analyzer = new Analyzer({
-      database: mockMainDatabase,
-      fallbackDatabase: mockFallbackDatabase
+      const result = analyzer.analyze('Cetyl Alcohol, SD Alcohol');
+
+      expect(result.flags).toEqual({
+        flaggedIngredients: ['sd_alcohol'],
+        flaggedCategories: ['drying_alcohol'],
+        flaggedGroups: ['alcohols']
+      });
+
+      // Check that matches have correct flags
+      const sdAlcoholMatch = result.matches.find(m => m.ingredient?.id === 'sd_alcohol');
+      expect(sdAlcoholMatch?.flags).toContain('sd_alcohol');
+      expect(sdAlcoholMatch?.flags).toContain('drying_alcohol');
+      expect(sdAlcoholMatch?.flags).toContain('alcohols');
     });
-
-    const result = analyzer.analyze('cone');
-    expect(result.matches[0].ingredient?.id).toBe('unknown_non_water_soluble_silicones');
-    expect(result.categories).toContain('non-water-soluble_silicones');
-    expect(result.groups).toContain('silicones');
-  });
-
-  it('analyzes water soluble silicones using fallback', () => {
-    const analyzer = new Analyzer({
-      database: mockMainDatabase,
-      fallbackDatabase: mockFallbackDatabase
-    });
-
-    const result = analyzer.analyze('peg');
-    expect(result.matches[0].ingredient?.id).toBe('unknown_water_soluble_silicones');
-    expect(result.categories).toContain('water-soluble_silicones');
-    expect(result.groups).toContain('silicones');
-  });
-
-  it('analyzes sulfates using fallback', () => {
-    const analyzer = new Analyzer({
-      database: mockMainDatabase,
-      fallbackDatabase: mockFallbackDatabase
-    });
-
-    const result = analyzer.analyze('sulfate');
-    expect(result.matches[0].ingredient?.id).toBe('unknown_sulfates');
-    expect(result.categories).toContain('sulfates');
-    expect(result.groups).toContain('detergents');
-  });
-
-  it('handles mixed ingredients from both databases', () => {
-    const analyzer = new Analyzer({
-      database: mockMainDatabase,
-      fallbackDatabase: mockFallbackDatabase
-    });
-
-    const result = analyzer.analyze('Jojoba Oil, cone, peg, sulfate');
-    expect(result.matches).toHaveLength(4);
-
-    // Check ingredients
-    expect(result.matches[0].ingredient?.id).toBe('jojoba_oil');
-    expect(result.matches[1].ingredient?.id).toBe('unknown_non_water_soluble_silicones');
-    expect(result.matches[2].ingredient?.id).toBe('unknown_water_soluble_silicones');
-    expect(result.matches[3].ingredient?.id).toBe('unknown_sulfates');
-
-    // Check categories
-    expect(result.categories).toContain('light_oils');
-    expect(result.categories).toContain('non-water-soluble_silicones');
-    expect(result.categories).toContain('water-soluble_silicones');
-    expect(result.categories).toContain('sulfates');
-
-    // Check groups
-    expect(result.groups).toContain('oils');
-    expect(result.groups).toContain('silicones');
-    expect(result.groups).toContain('detergents');
-  });
-
-  it('handles ingredients not found in either database', () => {
-    const analyzer = new Analyzer({
-      database: mockMainDatabase,
-      fallbackDatabase: mockFallbackDatabase
-    });
-
-    const result = analyzer.analyze('nonexistent ingredient');
-    expect(result.matches[0].ingredient).toBeUndefined();
-    expect(result.categories).toHaveLength(0);
-    expect(result.groups).toHaveLength(0);
-  });
-
-  it('works correctly without fallback database', () => {
-    const analyzer = new Analyzer({
-      database: mockMainDatabase
-    });
-
-    const result = analyzer.analyze('cone, peg, sulfate');
-    expect(result.matches).toHaveLength(3);
-    result.matches.forEach(match => {
-      expect(match.ingredient).toBeUndefined();
-    });
-    expect(result.categories).toHaveLength(0);
-    expect(result.groups).toHaveLength(0);
-  });
-
-  it('allows updating fallback database after initialization', () => {
-    const analyzer = new Analyzer({
-      database: mockMainDatabase
-    });
-
-    // Initially no fallback
-    let result = analyzer.analyze('cone, peg, sulfate');
-    result.matches.forEach(match => {
-      expect(match.ingredient).toBeUndefined();
-    });
-
-    // Add fallback database
-    analyzer.setFallbackDatabase(mockFallbackDatabase);
-    result = analyzer.analyze('cone, peg, sulfate');
-    expect(result.matches[0].ingredient?.id).toBe('unknown_non_water_soluble_silicones');
-    expect(result.matches[1].ingredient?.id).toBe('unknown_water_soluble_silicones');
-    expect(result.matches[2].ingredient?.id).toBe('unknown_sulfates');
   });
 });
