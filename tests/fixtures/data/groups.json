@@ -1,0 +1,9 @@
+{
+  "groups": {
+    "alcohols": {
+      "id": "alcohols",
+      "name": "Alcohols",
+      "description": "Different types of alcohols used in hair care"
+    }
+  }
+}

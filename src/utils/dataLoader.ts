@@ -2,7 +2,7 @@ import { readFileSync } from 'fs';
 import { join } from 'path';
 import Ajv from 'ajv';
 import addFormats from 'ajv-formats';
-import { IngredientDatabase, Ingredient, Categories, Groups } from '../types';
+import { IngredientDatabase, Ingredient, Category, Categories, Groups, Ingredients } from '../types';
 
 // Initialize Ajv
 const ajv = new Ajv();
@@ -26,6 +26,22 @@ const loadAndValidateJson = <T>(filePath: string, validate: any): T => {
   return data;
 };
 
+// Transform array of categories to Record
+const categoriesToRecord = (categories: Category[]): Categories => {
+  return categories.reduce((acc, category) => {
+    acc[category.id] = category;
+    return acc;
+  }, {} as Categories);
+};
+
+// Transform array of ingredients to Record
+const ingredientsToRecord = (ingredients: Ingredient[]): Ingredients => {
+  return ingredients.reduce((acc, ingredient) => {
+    acc[ingredient.id] = ingredient;
+    return acc;
+  }, {} as Ingredients);
+};
+
 export const loadDatabase = (dataDir: string): IngredientDatabase => {
   // Load schemas
   const ingredientsSchema = loadSchema(join(dataDir, 'schema/ingredients.schema.json'));
@@ -38,7 +54,7 @@ export const loadDatabase = (dataDir: string): IngredientDatabase => {
     ingredientsSchema
   );
 
-  const categoriesData = loadAndValidateJson<{categories: Categories}>(
+  const categoriesData = loadAndValidateJson<{categories: Category[]}>(
     join(dataDir, 'categories.json'),
     categoriesSchema
   );
@@ -49,29 +65,29 @@ export const loadDatabase = (dataDir: string): IngredientDatabase => {
   );
 
   return {
-    ingredients: ingredientsData.ingredients,
-    categories: categoriesData.categories,
+    ingredients: ingredientsToRecord(ingredientsData.ingredients),
+    categories: categoriesToRecord(categoriesData.categories),
     groups: groupsData.groups
   };
 };
 
 // Helper function to load individual data types
-export const loadIngredients = (dataDir: string): Ingredient[] => {
+export const loadIngredients = (dataDir: string): Ingredients => {
   const schema = loadSchema(join(dataDir, 'schema/ingredients.schema.json'));
   const data = loadAndValidateJson<{ingredients: Ingredient[]}>(
     join(dataDir, 'ingredients.json'),
     schema
   );
-  return data.ingredients;
+  return ingredientsToRecord(data.ingredients);
 };
 
 export const loadCategories = (dataDir: string): Categories => {
   const schema = loadSchema(join(dataDir, 'schema/categories.schema.json'));
-  const data = loadAndValidateJson<{categories: Categories}>(
+  const data = loadAndValidateJson<{categories: Category[]}>(
     join(dataDir, 'categories.json'),
     schema
   );
-  return data.categories;
+  return categoriesToRecord(data.categories);
 };
 
 export const loadGroups = (dataDir: string): Groups => {

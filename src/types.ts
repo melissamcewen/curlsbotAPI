@@ -124,10 +124,10 @@ export interface IngredientMatch {
  */
 export interface IngredientDatabase {
   /** List of all ingredients */
-  ingredients: Ingredient[];
+  ingredients: Ingredients;
   /** List of all groups */
   groups: Groups;
-  /** List of all categories */
+  /** Map of all categories by ID */
   categories: Categories;
 }
 
@@ -216,3 +216,6 @@ export interface Setting {
  * Represents a collection of settings
  */
 export type Settings = Record<string, Setting>;
+
+/** represents a collection of ingredients   */
+export type Ingredients = Record<string, Ingredient>;

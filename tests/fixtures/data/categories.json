@@ -1,0 +1,16 @@
+{
+  "categories": [
+    {
+      "name": "Emollient Alcohols",
+      "id": "emollient_alcohol",
+      "description": "Alcohols that moisturize and condition",
+      "group": "alcohols"
+    },
+    {
+      "name": "Drying Alcohols",
+      "id": "drying_alcohol",
+      "description": "Alcohols that can be drying or irritating",
+      "group": "alcohols"
+    }
+  ]
+}
