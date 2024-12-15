@@ -8,10 +8,10 @@ Don't try to fix everything at once.
 
 Avoid changing the schema unless instructured to do so
 
-e2e tests should use production data, other tests should use test data
+e2e tests should use production data, other tests should use test data, ideally test fixtures
 
 use `test` instead of just vitest
 
 run cli with tsx
 
-use test fixtures if possible
+reading bundledData.ts is fine but don't write to it

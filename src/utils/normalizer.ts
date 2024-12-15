@@ -5,7 +5,7 @@ import type { NormalizedIngredientList } from '../types';
  * @param value - The ingredient string to validate
  * @returns `true` if ingredient is valid, `false` otherwise
  */
-function isValidIngredient(value: string): boolean {
+export function isValidIngredient(value: string): boolean {
   return value.trim().length > 0 && value.length <= 150;
 }
 
@@ -14,7 +14,7 @@ function isValidIngredient(value: string): boolean {
  * @param value - The ingredient list string to validate
  * @returns `true` if list is valid, `false` if it contains URLs or is empty
  */
-function isValidIngredientList(value: string): boolean {
+export function isValidIngredientList(value: string): boolean {
   // Check for URLs
   if (/^(?:https?:\/\/|www\.|\/{2})/i.test(value)) {
     return false;
@@ -22,89 +22,79 @@ function isValidIngredientList(value: string): boolean {
   return value.trim().length > 0;
 }
 
+
 /**
  * Normalizes an ingredient name for comparison
  */
-export function normalizeForComparison(name: string): string {
+export function normalizeIngredient(name: string): string {
   return name
     .toLowerCase()
-    .replace(/[^a-z0-9]/g, '') // Remove all non-alphanumeric characters
+    .replace(/[^a-z0-9\s\-]/g, '') // Remove all non-alphanumeric characters except spaces and hyphens
+    .replace(/\s+/g, ' ') // Replace multiple spaces with single space
     .trim();
 }
 
+
 /**
- * Extracts both the main ingredient name and any parenthetical content
- * @param ingredient - The ingredient string to process
- * @returns Array of normalized ingredient names
+ * Looks for comma seperated ingredient lists in parentheses and extracts them,
+ * returns a single string with the combined ingredient list from the parentheses so we can add it to the main list
+ * @param ingredient_list - The ingredient string to process
+ * @returns Original string with any comma seperated lists in parentheses removed and added to the end of the string
  */
-function extractIngredientVariants(ingredient: string): string[] {
-  const variants = new Set<string>();
+export function processCommaParentheses(ingredient_list: string): string {
+  const matches = ingredient_list.match(/\(([^)]*,.*?)\)/g);
 
-  // Extract base name (without parentheses)
-  const withoutParentheses = ingredient
-    .replace(/\s*\(.*?\)\s*/g, ' ')
-    .trim()
-    .toLowerCase();
-  variants.add(withoutParentheses);
-
-  // Extract content from parentheses if it contains "alcohol" or "denat"
-  const parentheticalMatches = ingredient.match(/\((.*?)\)/g);
-  if (parentheticalMatches) {
-    parentheticalMatches.forEach((match) => {
-      const content = match.slice(1, -1).trim().toLowerCase();
-      if (content.includes('alcohol') || content.includes('denat')) {
-        variants.add(content);
-      }
-    });
+  if (!matches) {
+    return ingredient_list;
   }
 
-  return Array.from(variants);
+  const cleanedString = matches
+    .reduce((str, match) => str.replace(match, ''), ingredient_list)
+    .replace(/\s+/g, ' ')
+    .replace(/\s*,\s*/g, ', ') // Normalize spaces around commas
+    .trim();
+
+  const extractedContent = matches
+    .map(match => match.slice(1, -1))
+    .join(', ');
+
+  return [cleanedString, extractedContent]
+    .filter(Boolean)
+    .join(', ');
 }
 
 /**
- * Normalizes a cosmetic ingredients list string into a validated structure
- * @param text - Raw ingredient list text
- * @returns Normalized and validated ingredient list structure
- * @throws Never throws
+ * Splits a string by commas, line breaks, pipes, ampersands, and the word "and", then cleans the resulting array
+ * @param text - The text to split
+ * @returns Array of cleaned strings
+ */
+export function splitBySeparators(text: string): string[] {
+  return text
+    .split(/(?:[,\n\r|&]|\s+and\s+)/) // Split by comma, newline, carriage return, pipe, ampersand, or " and "
+    .map(part => part.trim())
+    .filter(Boolean); // Remove empty strings
+}
+
+
+
+/**
+ * Normalizes a cosmetic ingredients list string
  */
 export function normalizer(text: string): NormalizedIngredientList {
   if (!isValidIngredientList(text)) {
     return { ingredients: [], isValid: false };
   }
+  // first process the text to remove any commas in parentheses
+  const processedText = processCommaParentheses(text);
+  // then split the text by commas
+  const ingredients = splitBySeparators(processedText);
 
-  // Regular expressions for cleaning the text
-  const lineBreaks = /\r?\n|\r/g;
-  const excessSpaces = /\s\s+/g;
-  const and = /\band\b/gi;
-  const sepChar = /[|&,]/gi;
+  //remove any invalid ingredients
+  const validIngredients = ingredients.filter(isValidIngredient);
 
-  // Split and clean ingredients
-  const ingredients = text
-    .replace(lineBreaks, ',')
-    .replace(excessSpaces, ' ')
-    .replace(and, ',')
-    .replace(sepChar, ',')
-    .split(',')
-    .flatMap((x) => {
-      const trimmed = x.trim();
-      return isValidIngredient(trimmed)
-        ? extractIngredientVariants(trimmed)
-        : [];
-    });
+  // then process each ingredient to remove any invalid characters and trim
+  const normalizedIngredients = validIngredients.map(ingredient => normalizeIngredient(ingredient));
 
-  // Remove duplicates based on normalized comparison
-  const seen = new Set<string>();
-  const uniqueIngredients = ingredients.filter((ingredient) => {
-    const normalized = normalizeForComparison(ingredient);
-    if (seen.has(normalized)) {
-      return false;
-    }
-    seen.add(normalized);
-    return true;
-  });
-
-  return {
-    ingredients: Object.freeze(uniqueIngredients),
-    isValid: uniqueIngredients.length > 0,
-  };
+  return { ingredients: normalizedIngredients, isValid: true };
 }
+
