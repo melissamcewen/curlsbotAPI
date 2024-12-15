@@ -225,3 +225,19 @@ export type Settings = Record<string, Setting>;
 
 /** represents a collection of ingredients   */
 export type Ingredients = Record<string, Ingredient>;
+
+/**
+ * Add these new types
+ */
+export type FlagRule = {
+  id: string;
+  name: string;
+  description?: string;
+  type: 'ingredient' | 'category' | 'group';
+  severity?: 'warning' | 'error';
+}
+
+export type UserPreferences = {
+  rules: FlagRule[];
+  systemId?: string;
+}

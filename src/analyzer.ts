@@ -1,4 +1,12 @@
-import type { AnalyzerConfig, AnalyzerOptions, IngredientDatabase, AnalysisResult, System } from './types';
+import type {
+  AnalyzerConfig,
+  AnalyzerOptions,
+  IngredientDatabase,
+  AnalysisResult,
+  System,
+  FlagRule,
+  UserPreferences
+} from './types';
 import { getDefaultDatabase } from './data/defaultDatabase';
 import { normalizer } from './utils/normalizer';
 import { findIngredient, getIngredientCategories, getCategoryGroups } from './utils/databaseUtils';
@@ -11,6 +19,7 @@ export class Analyzer {
   private options?: AnalyzerOptions;
   private systems: System[];
   private configDir?: string;
+  private userPreferences?: UserPreferences;
 
   /**
    * Creates a new Analyzer instance
@@ -220,5 +229,88 @@ export class Analyzer {
     }
 
     return result;
+  }
+
+  // Add method to get a serializable configuration
+  getConfiguration(): AnalyzerConfig {
+    return {
+      database: this.database,
+      fallbackDatabase: this.fallbackDatabase,
+      options: this.options,
+      configDir: this.configDir
+    };
+  }
+
+  // Add method to create analyzer from serialized config
+  static fromConfiguration(config: AnalyzerConfig): Analyzer {
+    return new Analyzer(config);
+  }
+
+  validateConfiguration(config: Partial<AnalyzerConfig>): boolean {
+    // Add validation logic here
+    return true;
+  }
+
+  /**
+   * Sets user preferences for flagging ingredients/categories/groups
+   */
+  setUserPreferences(preferences: UserPreferences): void {
+    this.userPreferences = preferences;
+
+    // Convert preferences to analyzer options
+    this.options = {
+      flaggedIngredients: preferences.rules
+        .filter(r => r.type === 'ingredient')
+        .map(r => r.id),
+      flaggedCategories: preferences.rules
+        .filter(r => r.type === 'category')
+        .map(r => r.id),
+      flaggedGroups: preferences.rules
+        .filter(r => r.type === 'group')
+        .map(r => r.id)
+    };
+  }
+
+  /**
+   * Gets current user preferences
+   */
+  getUserPreferences(): UserPreferences | undefined {
+    return this.userPreferences;
+  }
+
+  /**
+   * Gets available rules that can be flagged
+   */
+  getAvailableRules(): FlagRule[] {
+    const rules: FlagRule[] = [];
+
+    // Add ingredient rules
+    Object.values(this.database.ingredients).forEach(ing => {
+      rules.push({
+        id: ing.id,
+        name: ing.name,
+        type: 'ingredient'
+      });
+    });
+
+    // Add category rules
+    Object.values(this.database.categories).forEach(cat => {
+      rules.push({
+        id: cat.id,
+        name: cat.name,
+        type: 'category'
+      });
+    });
+
+    // Add group rules
+    Object.values(this.database.groups).forEach(group => {
+      rules.push({
+        id: group.id,
+        name: group.name,
+        type: 'group'
+      });
+    });
+
+    return rules;
   }
 }
