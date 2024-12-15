@@ -1,8 +1,8 @@
 import { describe, expect, it } from 'vitest'
+
 import { join } from 'path'
 
 import { Analyzer } from '../../src/analyzer'
-import type { AnalysisResult } from '../../src/types'
 
 describe('Alcohol ingredient analysis', () => {
   const analyzer = new Analyzer({

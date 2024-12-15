@@ -22,7 +22,8 @@
     "validate-duplicates": "tsx cli/validate.ts validate-duplicates",
     "clean-synonyms": "tsx cli/validate.ts clean-synonyms",
     "validate-case": "tsx cli/validate.ts validate-case",
-    "fix-case": "tsx cli/validate.ts fix-case"
+    "fix-case": "tsx cli/validate.ts fix-case",
+    "knip": "knip"
   },
   "keywords": [
     "haircare",
@@ -35,7 +36,7 @@
     "@microsoft/api-extractor": "^7.48.0",
     "@microsoft/tsdoc": "^0.15.1",
     "@types/flexsearch": "^0.7.6",
-    "@types/node": "^20.8.0",
+    "@types/node": "^20.17.10",
     "@typescript-eslint/eslint-plugin": "^5.0.0",
     "@typescript-eslint/parser": "^5.0.0",
     "@vitest/coverage-v8": "^2.1.8",
@@ -44,19 +45,17 @@
     "eslint": "^8.0.0",
     "eslint-import-resolver-typescript": "^3.0.0",
     "eslint-plugin-import": "^2.25.0",
-    "rimraf": "^6.0.1",
-    "ts-node": "^10.9.1",
+    "knip": "^5.40.0",
     "tsx": "^4.19.2",
-    "typescript": "^5.2.2",
+    "typescript": "^5.7.2",
     "vite": "^5.4.11",
     "vite-plugin-dts": "^4.3.0",
-    "vitest": "^2.1.8"
+    "vitest": "^2.1.8",
+    "ajv": "^8.17.1",
+    "ajv-formats": "^3.0.1"
   },
   "dependencies": {
-    "ajv": "^8.17.1",
-    "ajv-formats": "^3.0.1",
-    "flexsearch": "^0.7.43",
-    "uuid": "^11.0.3"
+    "flexsearch": "^0.7.43"
   },
   "files": [
     "dist",
