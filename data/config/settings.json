@@ -103,7 +103,7 @@
       "categories": ["mild_detergents"],
       "groups": [],
       "flags": [
-        "avoid_others"
+        "avoid_others_in_category"
       ]
     },
     {

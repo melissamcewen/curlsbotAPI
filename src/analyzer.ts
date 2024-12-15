@@ -315,8 +315,8 @@ export class Analyzer {
 }
 
 function checkSettingMatch(ingredient: Ingredient, setting: Setting): boolean {
-  // If setting has avoid_others flag, check if ingredient is NOT in the allowed categories
-  if (setting.flags.includes('avoid_others')) {
+  // If setting has avoid_others_in_category flag, check if ingredient is NOT in the allowed categories
+  if (setting.flags.includes('avoid_others_in_category')) {
     // Only apply this rule to ingredients that are detergents/cleansers
     if (ingredient.categories.some(cat => ['surfactants', 'cleansers', 'detergents'].includes(cat))) {
       // Return true (match) if the ingredient is NOT in any of the allowed categories

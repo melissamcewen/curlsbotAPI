@@ -148,4 +148,57 @@ describe('Analyzer', () => {
       expect(analyzer.getSystems()).toEqual(newSystems);
     });
   });
+
+  describe('avoid_others_in_category Setting', () => {
+    it('should flag detergents not in allowed categories but not mild ones', () => {
+      const analyzer = new Analyzer({
+        database: {
+          ingredients: {
+            harsh_detergent: {
+              id: 'harsh_detergent',
+              name: 'Harsh Detergent',
+              categories: ['detergents']
+            },
+            mild_detergent: {
+              id: 'mild_detergent',
+              name: 'Mild Detergent',
+              categories: ['detergents', 'mild_detergents']
+            },
+            non_detergent: {
+              id: 'non_detergent',
+              name: 'Non Detergent',
+              categories: ['emollients']
+            }
+          },
+          categories: {},
+          groups: {}
+        },
+        settings: [{
+          id: 'mild_only',
+          name: 'Mild Detergents Only',
+          categories: ['mild_detergents'],
+          flags: ['avoid_others_in_category']
+        }],
+        systems: [{
+          id: 'test_system',
+          name: 'Test System',
+          settings: ['mild_only']
+        }]
+      });
+
+      const result = analyzer.analyze('Harsh Detergent, Mild Detergent, Non Detergent', 'test_system');
+
+      // Should flag harsh detergent
+      const harshMatch = result.matches.find(m => m.normalized === 'harsh detergent');
+      expect(harshMatch?.flags).toHaveLength(1);
+
+      // Should not flag mild detergent
+      const mildMatch = result.matches.find(m => m.normalized === 'mild detergent');
+      expect(mildMatch?.flags).toHaveLength(0);
+
+      // Should not flag non-detergent
+      const nonDetergentMatch = result.matches.find(m => m.normalized === 'non detergent');
+      expect(nonDetergentMatch?.flags).toHaveLength(0);
+    });
+  });
 });
