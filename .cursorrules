@@ -14,4 +14,4 @@ use `test` instead of just vitest
 
 run cli with tsx
 
-prioritize fixing tests in the following order: unit, functional, e2e
+use test fixtures if possible
