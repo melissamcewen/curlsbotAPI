@@ -1627,6 +1627,13 @@ export const defaultDatabase: IngredientDatabase = {
         "https://incidecoder.com/ingredients/trimethylsiloxyamodimethicone"
       ]
     },
+    "trimethylsiloxysilicate": {
+      "name": "Trimethylsiloxysilicate",
+      "id": "trimethylsiloxysilicate",
+      "categories": [
+        "water-insoluble_silicones"
+      ]
+    },
     "beeswax": {
       "name": "Beeswax",
       "id": "beeswax",
@@ -1968,7 +1975,8 @@ export const defaultSystems: System[] = [
       "drying_alcohol",
       "no_water_insoluble_silicones",
       "no_waxes",
-      "no_heavy_oils"
+      "no_heavy_oils",
+      "caution_water_soluble_silicones"
     ]
   },
   {
@@ -2119,6 +2127,19 @@ export const defaultSettings: Record<string, Setting> = {
     "groups": [],
     "flags": [
       "avoid_others"
+    ]
+  },
+  "caution_water_soluble_silicones": {
+    "id": "caution_water_soluble_silicones",
+    "name": "Caution Water Soluble Silicones",
+    "description": "Only allows water soluble silicones, avoiding all other silicones.",
+    "ingredients": [],
+    "categories": [
+      "water_soluble_silicones"
+    ],
+    "groups": [],
+    "flags": [
+      "caution"
     ]
   }
 };

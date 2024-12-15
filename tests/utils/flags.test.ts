@@ -1,6 +1,7 @@
-import { describe, it, expect } from 'vitest';
+import { describe, it, expect, vi } from 'vitest';
 import { getSystemFlags, mergeFlags } from '../../src/utils/flags';
-import type { System, Settings } from '../../src/types';
+import type { System, Setting } from '../../src/types';
+import * as bundledData from '../../src/data/bundledData';
 
 describe('flags utils', () => {
   describe('getSystemFlags', () => {
@@ -14,7 +15,8 @@ describe('flags utils', () => {
     });
 
     it('should handle sulfate_free setting', () => {
-      const settings: Settings = {
+      // Mock the bundled settings
+      vi.spyOn(bundledData, 'getBundledSettings').mockReturnValue({
         sulfate_free: {
           id: 'sulfate_free',
           name: 'Sulfate Free',
@@ -23,7 +25,7 @@ describe('flags utils', () => {
           categories: ['sulfates'],
           flags: ['avoid_sulfates']
         }
-      };
+      });
 
       const system: System = {
         id: 'test',
@@ -32,14 +34,15 @@ describe('flags utils', () => {
         settings: ['sulfate_free']
       };
 
-      const flags = getSystemFlags(system, settings);
+      const flags = getSystemFlags(system);
       expect(flags.flaggedIngredients).toContain('sodium_lauryl_sulfate');
       expect(flags.flaggedCategories).toContain('sulfates');
       expect(flags.flaggedGroups).toContain('avoid_sulfates');
     });
 
     it('should handle multiple settings', () => {
-      const settings: Settings = {
+      // Mock the bundled settings
+      vi.spyOn(bundledData, 'getBundledSettings').mockReturnValue({
         sulfate_free: {
           id: 'sulfate_free',
           name: 'Sulfate Free',
@@ -56,7 +59,7 @@ describe('flags utils', () => {
           categories: ['silicones'],
           flags: ['avoid_silicones']
         }
-      };
+      });
 
       const system: System = {
         id: 'test',
@@ -65,7 +68,7 @@ describe('flags utils', () => {
         settings: ['sulfate_free', 'silicone_free']
       };
 
-      const flags = getSystemFlags(system, settings);
+      const flags = getSystemFlags(system);
       expect(flags.flaggedCategories).toContain('sulfates');
       expect(flags.flaggedCategories).toContain('silicones');
       expect(flags.flaggedGroups).toContain('avoid_sulfates');

@@ -254,6 +254,11 @@
       "references": [
         "https://incidecoder.com/ingredients/trimethylsiloxyamodimethicone"
       ]
+    },
+    {
+      "name": "Trimethylsiloxysilicate",
+      "id": "trimethylsiloxysilicate",
+      "categories": ["water-insoluble_silicones"]
     }
   ]
 }

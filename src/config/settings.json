@@ -105,6 +105,15 @@
       "flags": [
         "avoid_others"
       ]
+    },
+    {
+      "id": "caution_water_soluble_silicones",
+      "name": "Caution Water Soluble Silicones",
+      "description": "Only allows water soluble silicones, avoiding all other silicones.",
+      "ingredients": [],
+      "categories": ["water_soluble_silicones"],
+      "groups": [],
+      "flags": [ "caution" ]
     }
   ]
 }
