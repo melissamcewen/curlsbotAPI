@@ -26,8 +26,8 @@ describe('Alcohol ingredient analysis', () => {
       'propane',
       'sd alcohol 40-b alcohol denat',
       'aluminum starch octenylsuccinate',
-      'citrus grandis fruit extract grapefruit',
-      'citrus tangerina peel extract tangerine',
+      'citrus grandis grapefruit fruit extract',
+      'citrus tangerina tangerine peel extract',
       'butane',
       'isopropyl myristate',
       'silica',
@@ -40,7 +40,7 @@ describe('Alcohol ingredient analysis', () => {
       'hexyl cinnamal',
       'limonene',
       'linalool',
-      'denatured alcohol sd alcohol 40'
+      'denatured alcohol sd alcohol 40',
     ]);
 
     // Check for bad alcohols

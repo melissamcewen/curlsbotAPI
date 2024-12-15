@@ -211,7 +211,12 @@ export class Analyzer {
           const setting = this.settings[settingId];
           if (setting && setting.flags.includes('avoid_others_in_category')) {
             // Only apply this rule to ingredients that are detergents/cleansers
-            if (ingredient.categories.some(cat => ['surfactants', 'cleansers', 'detergents'].includes(cat))) {
+            const allCategories = Object.values(this.database.categories);
+            const detergentCategories = allCategories
+              .filter(cat => cat.group === 'detergents')
+              .map(cat => cat.id);
+            const isDetergent = ingredient.categories.some(cat => detergentCategories.includes(cat));
+            if (isDetergent) {
               // Flag if the ingredient is NOT in any of the allowed categories
               const shouldFlag = !setting.categories.some(category =>
                 ingredient.categories.includes(category)
@@ -333,11 +338,16 @@ export class Analyzer {
   }
 }
 
-function checkSettingMatch(ingredient: Ingredient, setting: Setting): boolean {
+function checkSettingMatch(ingredient: Ingredient, setting: Setting, database: IngredientDatabase): boolean {
   // If setting has avoid_others_in_category flag, check if ingredient is NOT in the allowed categories
   if (setting.flags.includes('avoid_others_in_category')) {
     // Only apply this rule to ingredients that are detergents/cleansers
-    if (ingredient.categories.some(cat => ['surfactants', 'cleansers', 'detergents'].includes(cat))) {
+    const allCategories = Object.values(database.categories);
+    const detergentCategories = allCategories
+      .filter(cat => cat.group === 'detergents')
+      .map(cat => cat.id);
+    const isDetergent = ingredient.categories.some(cat => detergentCategories.includes(cat));
+    if (isDetergent) {
       // Return true (match) if the ingredient is NOT in any of the allowed categories
       return !setting.categories.some(category =>
         ingredient.categories.includes(category)

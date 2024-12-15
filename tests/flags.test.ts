@@ -1,6 +1,7 @@
 import { describe, it, expect } from 'vitest';
 
 import { getSystemFlags, mergeFlags } from '../src/utils/flags';
+
 import type { System, Settings } from '../src/types';
 import { testDatabase } from './fixtures/testDatabase';
 
