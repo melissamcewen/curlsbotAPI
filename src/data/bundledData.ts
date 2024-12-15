@@ -1848,7 +1848,9 @@ export const defaultSystems: System[] = [
       "drying_alcohol",
       "silicone_free",
       "no_waxes",
-      "no_heavy_oils"
+      "no_heavy_oils",
+      "paraben_free",
+      "soap_free"
     ]
   },
   {
@@ -2025,6 +2027,19 @@ export const defaultSettings: Record<string, Setting> = {
     "groups": [],
     "flags": [
       "caution"
+    ]
+  },
+  "soap_free": {
+    "id": "soap_free",
+    "name": "Soap Free",
+    "description": "Avoiding all soaps.",
+    "ingredients": [],
+    "categories": [
+      "soaps"
+    ],
+    "groups": [],
+    "flags": [
+      "avoid"
     ]
   }
 };

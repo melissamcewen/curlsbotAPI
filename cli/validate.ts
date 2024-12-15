@@ -6,9 +6,9 @@ import { readFileSync, writeFileSync, readdirSync } from 'fs';
 
 import { Command } from 'commander';
 
-import { loadDatabase } from '../src/utils/dataLoader';
+import { loadDatabase } from './utils/dataLoader';
 import type { IngredientDatabase } from '../src/types';
-import { validateSettingsAndSystems } from '../src/utils/validation';
+import { validateSettingsAndSystems } from './utils/validation';
 
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
@@ -210,8 +210,8 @@ function fixIngredientCase(ingredientsFile: string): boolean {
 program
   .command('validate')
   .description('Validate the database files against their schemas')
-  .option('-d, --data <path>', 'path to data directory', join(__dirname, '../src/data'))
-  .option('-s, --schema <path>', 'path to schema directory', join(__dirname, '../src/data/schema'))
+  .option('-d, --data <path>', 'path to data directory', join(__dirname, '../data'))
+  .option('-s, --schema <path>', 'path to schema directory', join(__dirname, '../data/schema'))
   .action((options) => {
     try {
       const dataDir = options.data;
@@ -233,8 +233,8 @@ program
 program
   .command('validate-relationships')
   .description('Validate relationships between ingredients, categories, and groups')
-  .option('-d, --data <path>', 'path to data directory', join(__dirname, '../src/data'))
-  .option('-s, --schema <path>', 'path to schema directory', join(__dirname, '../src/data/schema'))
+  .option('-d, --data <path>', 'path to data directory', join(__dirname, '../data'))
+  .option('-s, --schema <path>', 'path to schema directory', join(__dirname, '../data/schema'))
   .action((options) => {
     try {
       const dataDir = options.data;
@@ -261,8 +261,8 @@ program
 program
   .command('validate-duplicates')
   .description('Check for duplicate ingredients, names, and synonyms')
-  .option('-d, --data <path>', 'path to data directory', join(__dirname, '../src/data'))
-  .option('-s, --schema <path>', 'path to schema directory', join(__dirname, '../src/data/schema'))
+  .option('-d, --data <path>', 'path to data directory', join(__dirname, '../data'))
+  .option('-s, --schema <path>', 'path to schema directory', join(__dirname, '../data/schema'))
   .action((options) => {
     try {
       const dataDir = options.data;
@@ -289,7 +289,7 @@ program
 program
   .command('clean-synonyms')
   .description('Remove redundant synonyms that match ingredient names')
-  .option('-d, --data <path>', 'path to data directory', join(__dirname, '../src/data'))
+  .option('-d, --data <path>', 'path to data directory', join(__dirname, '../data'))
   .action((options) => {
     try {
       const dataDir = options.data;
@@ -324,8 +324,8 @@ program
 program
   .command('validate-case')
   .description('Check ingredient names and synonyms for correct case formatting')
-  .option('-d, --data <path>', 'path to data directory', join(__dirname, '../src/data'))
-  .option('-s, --schema <path>', 'path to schema directory', join(__dirname, '../src/data/schema'))
+  .option('-d, --data <path>', 'path to data directory', join(__dirname, '../data'))
+  .option('-s, --schema <path>', 'path to schema directory', join(__dirname, '../data/schema'))
   .action((options) => {
     try {
       const dataDir = options.data;
@@ -352,7 +352,7 @@ program
 program
   .command('fix-case')
   .description('Fix case formatting of ingredient names and synonyms')
-  .option('-d, --data <path>', 'path to data directory', join(__dirname, '../src/data'))
+  .option('-d, --data <path>', 'path to data directory', join(__dirname, '../data'))
   .action((options) => {
     try {
       const dataDir = options.data;
@@ -386,9 +386,9 @@ program
 program
   .command('validate-config')
   .description('Validate settings and systems configuration')
-  .option('-d, --data <path>', 'path to data directory', join(__dirname, '../src/data'))
-  .option('-s, --schema <path>', 'path to schema directory', join(__dirname, '../src/data/schema'))
-  .option('-c, --config <path>', 'path to config directory', join(__dirname, '../src/config'))
+  .option('-d, --data <path>', 'path to data directory', join(__dirname, '../data'))
+  .option('-s, --schema <path>', 'path to schema directory', join(__dirname, '../data/schema'))
+  .option('-c, --config <path>', 'path to config directory', join(__dirname, '../data'))
   .action((options) => {
     try {
       console.log('Validating settings and systems configuration...');

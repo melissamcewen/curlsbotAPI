@@ -1,9 +1,14 @@
 import { describe, expect, it } from 'vitest'
 
 import { Analyzer } from '../src/analyzer'
+import { defaultDatabase, defaultSystems, defaultSettings } from '../src/data/bundledData'
 
 describe('Alcohol ingredient analysis', () => {
-  const analyzer = new Analyzer()
+  const analyzer = new Analyzer({
+    database: defaultDatabase,
+    systems: defaultSystems,
+    settings: defaultSettings
+  })
 
   it('should detect drying alcohols', () => {
     const list = "Isobutane, Propane, SD Alcohol 40-B (Alcohol Denat.), Aluminum Starch Octenylsuccinate, Citrus Grandis (Grapefruit) Fruit Extract*, Citrus Tangerina (Tangerine) Peel Extract*, Butane, Isopropyl Myristate, Silica, Fragrance, Amyl Cinnamal, Benzyl Alcohol, Butylphenyl Methylpropional, Citronellol, Geraniol, Hexyl Cinnamal, Limonene, Linalool., denatured alcohol (sd alcohol 40)"

@@ -5,86 +5,72 @@
       "name": "Sulfate Free",
       "description": "Sulfates are a type of detergent that can cause irritation and dryness.",
       "ingredients": [],
-      "categories": [ "sulfates" ],
+      "categories": ["sulfates"],
       "groups": [],
-      "flags": [
-        "avoid"
-      ]
+      "flags": ["avoid"]
     },
     {
       "id": "paraben_free",
       "name": "Paraben Free",
       "description": "Parabens are a type of preservative that can cause irritation and dryness.",
       "ingredients": [],
-      "categories": [ "parabens" ],
+      "categories": ["parabens"],
       "groups": [],
-      "flags": [
-        "avoid"
-      ]
+      "flags": ["avoid"]
     },
     {
       "id": "cleansing",
       "name": "Cleansing",
       "description": "Cleansing ingredients help remove dirt and oil from the hair and scalp.",
       "ingredients": [],
-      "categories": [
-        "sulfates"
-      ],
+      "categories": ["sulfates"],
       "groups": [],
-      "flags": [
-        "prefer"
-      ]
+      "flags": ["prefer"]
     },
     {
       "id": "drying_alcohol",
       "name": "No Drying Alcohol",
       "description": "Drying alcohols are used to remove moisture from the hair and skin, and can cause irritation and dryness.",
       "ingredients": [],
-      "categories": [ "drying_alcohols" ],
+      "categories": ["drying_alcohols"],
       "groups": [],
-      "flags": [
-        "avoid"
-      ]
+      "flags": ["avoid"]
     },
     {
       "id": "silicone_free",
       "name": "Silicone Free",
       "description": "Avoiding all silicones even water-soluble ones.",
       "ingredients": [],
-      "categories": [ "silicones" ],
+      "categories": ["silicones"],
       "groups": [],
-      "flags": [
-        "avoid"
-      ]
+      "flags": ["avoid"]
     },
     {
       "id": "no_heavy_oils",
       "name": "No Heavy Oils",
       "description": "Avoiding heavy oils that can weigh down the hair and scalp.",
       "ingredients": [],
-      "categories": [ "heavy_oils" ],
+      "categories": ["heavy_oils"],
       "groups": [],
-      "flags": [
-        "avoid"
-      ]
+      "flags": ["avoid"]
     },
     {
       "id": "no_waxes",
       "name": "No Waxes",
       "description": "Avoiding all non water soluble waxes.",
       "ingredients": [],
-      "categories": [ "non_water_soluble_waxes" ],
+      "categories": ["non_water_soluble_waxes"],
       "groups": [],
-      "flags": [ "avoid" ]
+      "flags": ["avoid"]
     },
     {
       "id": "no_water_insoluble_silicones",
       "name": "No Water Insoluble Silicones",
       "description": "Avoiding all water insoluble silicones.",
       "ingredients": [],
-      "categories": [ "water_insoluble_silicones"],
+      "categories": ["water_insoluble_silicones"],
       "groups": [],
-      "flags": [ "avoid" ]
+      "flags": ["avoid"]
     },
     {
       "id": "no_strong_surfactants",
@@ -93,7 +79,7 @@
       "ingredients": [],
       "categories": ["sulfonates", "sulfates"],
       "groups": [],
-      "flags": [ "avoid" ]
+      "flags": ["avoid"]
     },
     {
       "id": "mild_detergents_only",
@@ -102,9 +88,7 @@
       "ingredients": [],
       "categories": ["mild_detergents"],
       "groups": [],
-      "flags": [
-        "avoid_others_in_category"
-      ]
+      "flags": ["avoid_others_in_category"]
     },
     {
       "id": "caution_water_soluble_silicones",
@@ -113,7 +97,16 @@
       "ingredients": [],
       "categories": ["water_soluble_silicones"],
       "groups": [],
-      "flags": [ "caution" ]
+      "flags": ["caution"]
+    },
+    {
+      "id": "soap_free",
+      "name": "Soap Free",
+      "description": "Avoiding all soaps.",
+      "ingredients": [],
+      "categories": ["soaps"],
+      "groups": [],
+      "flags": ["avoid"]
     }
   ]
 }

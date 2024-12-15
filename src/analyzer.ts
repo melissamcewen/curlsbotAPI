@@ -205,6 +205,25 @@ export class Analyzer {
         }
       });
 
+      // Check for avoid_others_in_category settings
+      if (system && ingredient) {
+        system.settings.forEach(settingId => {
+          const setting = this.settings[settingId];
+          if (setting && setting.flags.includes('avoid_others_in_category')) {
+            // Only apply this rule to ingredients that are detergents/cleansers
+            if (ingredient.categories.some(cat => ['surfactants', 'cleansers', 'detergents'].includes(cat))) {
+              // Flag if the ingredient is NOT in any of the allowed categories
+              const shouldFlag = !setting.categories.some(category =>
+                ingredient.categories.includes(category)
+              );
+              if (shouldFlag) {
+                flags.add(settingId);
+              }
+            }
+          }
+        });
+      }
+
       return {
         uuid: crypto.randomUUID(),
         input: normalizedName,

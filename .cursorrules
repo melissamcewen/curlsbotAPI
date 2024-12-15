@@ -2,7 +2,7 @@ Your permissions for json files in data is reading is allowed but not writing
 
 Avoid using mocks in tests, unless there is no other option
 
-Be concise, make incremental changes and test before proceding.
+Remember we use the config from the src/data/bundledData.ts unless using the cli
 
 Don't try to fix everything at once.
 
