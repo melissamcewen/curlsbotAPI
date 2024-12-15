@@ -1,14 +1,9 @@
 import { describe, expect, it } from 'vitest'
 
-import { join } from 'path'
-
-import { Analyzer } from '../../src/analyzer'
+import { Analyzer } from '../src/analyzer'
 
 describe('Alcohol ingredient analysis', () => {
-  const analyzer = new Analyzer({
-    configDir: join(__dirname, '../../src/config'),
-    dataDir: join(__dirname, '../../src/data')
-  })
+  const analyzer = new Analyzer()
 
   it('should detect drying alcohols', () => {
     const list = "Isobutane, Propane, SD Alcohol 40-B (Alcohol Denat.), Aluminum Starch Octenylsuccinate, Citrus Grandis (Grapefruit) Fruit Extract*, Citrus Tangerina (Tangerine) Peel Extract*, Butane, Isopropyl Myristate, Silica, Fragrance, Amyl Cinnamal, Benzyl Alcohol, Butylphenyl Methylpropional, Citronellol, Geraniol, Hexyl Cinnamal, Limonene, Linalool., denatured alcohol (sd alcohol 40)"
@@ -19,7 +14,6 @@ describe('Alcohol ingredient analysis', () => {
     const dryingAlcohols = result.matches.filter(match =>
       match.flags.includes('drying_alcohols')
     )
-    console.log('Drying alcohols:', dryingAlcohols)
     expect(dryingAlcohols).toHaveLength(3) // alcohol denat, denatured alcohol (sd alcohol 40), sd alcohol 40-b (alcohol denat)
 
     // Check for good alcohols
@@ -66,7 +60,6 @@ describe('Alcohol ingredient analysis', () => {
     const dryingAlcohols = result.matches.filter(match =>
       match.flags.includes('drying_alcohols')
     )
-    console.log('Drying alcohols:', dryingAlcohols)
     expect(dryingAlcohols).toHaveLength(4) // alcohol denat, alcohol, denatured alcohol, sd alcohol 40
 
     // Check for good alcohols

@@ -1,10 +1,13 @@
 import { describe, it, expect } from 'vitest';
-import { Analyzer } from '../../src/analyzer';
+
+import { Analyzer } from '../src/analyzer';
 import {
   defaultDatabase,
   defaultSystems,
   defaultSettings,
-} from '../../src/data/bundledData';
+} from '../src/data/bundledData';
+
+/* THESE ARE PRODUCTION TESTS USE THE DATA IN src/data/bundledData.ts */
 
 describe('Silicone ingredient analysis', () => {
   it('should detect various silicone ingredients', () => {

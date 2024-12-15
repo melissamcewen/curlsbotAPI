@@ -3,10 +3,9 @@ import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
-const DATA_DIR = join(__dirname, '../src/data');
-const CONFIG_DIR = join(__dirname, '../src/config');
-const SCHEMA_DIR = join(DATA_DIR, 'schema');
-const OUTPUT_FILE = join(DATA_DIR, 'bundledData.ts');
+const DATA_DIR = join(__dirname, '../data');
+const CONFIG_DIR = join(__dirname, '../data/config');
+const OUTPUT_FILE = join(__dirname, '../src/data/bundledData.ts');
 
 function loadIngredientsFromDir(dirPath: string): any {
   const files = readdirSync(dirPath).filter(file => file.endsWith('.ingredients.json'));

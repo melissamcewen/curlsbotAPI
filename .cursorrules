@@ -1,4 +1,4 @@
-Your permissions for json files in src/data is reading is allowed but not writing
+Your permissions for json files in data is reading is allowed but not writing
 
 Avoid using mocks in tests, unless there is no other option
 

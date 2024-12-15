@@ -6,9 +6,9 @@ import { readFileSync, writeFileSync, readdirSync } from 'fs';
 
 import { Command } from 'commander';
 
-import { loadDatabase } from './utils/dataLoader';
+import { loadDatabase } from '../src/utils/dataLoader';
 import type { IngredientDatabase } from '../src/types';
-import { validateSettingsAndSystems } from './utils/validation';
+import { validateSettingsAndSystems } from '../src/utils/validation';
 
 
 const __dirname = dirname(fileURLToPath(import.meta.url));

@@ -1,7 +1,8 @@
 import { describe, it, expect, vi } from 'vitest';
-import { getSystemFlags, mergeFlags } from '../../src/utils/flags';
-import type { System, Setting } from '../../src/types';
-import * as bundledData from '../../src/data/bundledData';
+
+import { getSystemFlags, mergeFlags } from '../src/utils/flags';
+import type { System } from '../src/types';
+import * as bundledData from '../src/data/bundledData';
 
 describe('flags utils', () => {
   describe('getSystemFlags', () => {
