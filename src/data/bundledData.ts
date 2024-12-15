@@ -1952,9 +1952,21 @@ export const defaultSystems: System[] = [
     "id": "curly_default",
     "description": "The Curly Default system is a hair care system that focuses on using products that are free of harsh chemicals and sulfates. It recommends using products that are free of drying alcohols, parabens, and other potentially harmful ingredients.",
     "settings": [
-      "sulfate_free",
+      "mild_detergents_only",
       "drying_alcohol",
       "silicone_free",
+      "no_waxes",
+      "no_heavy_oils"
+    ]
+  },
+  {
+    "name": "Curly Moderate",
+    "id": "curly_moderate",
+    "description": "Just like the default system, but allows for some water soluble silicones and moderate surfactants.",
+    "settings": [
+      "sulfate_free",
+      "drying_alcohol",
+      "no_water_insoluble_silicones",
       "no_waxes",
       "no_heavy_oils"
     ]
@@ -2067,6 +2079,46 @@ export const defaultSettings: Record<string, Setting> = {
     "groups": [],
     "flags": [
       "avoid"
+    ]
+  },
+  "no_water_insoluble_silicones": {
+    "id": "no_water_insoluble_silicones",
+    "name": "No Water Insoluble Silicones",
+    "description": "Avoiding all water insoluble silicones.",
+    "ingredients": [],
+    "categories": [
+      "water_insoluble_silicones"
+    ],
+    "groups": [],
+    "flags": [
+      "avoid"
+    ]
+  },
+  "no_strong_surfactants": {
+    "id": "no_strong_surfactants",
+    "name": "No Strong Surfactants",
+    "description": "Avoiding all strong surfactants.",
+    "ingredients": [],
+    "categories": [
+      "sulfonates",
+      "sulfates"
+    ],
+    "groups": [],
+    "flags": [
+      "avoid"
+    ]
+  },
+  "mild_detergents_only": {
+    "id": "mild_detergents_only",
+    "name": "Mild Detergents Only",
+    "description": "Only allows mild detergents, avoiding all other surfactants and cleansers.",
+    "ingredients": [],
+    "categories": [
+      "mild_detergents"
+    ],
+    "groups": [],
+    "flags": [
+      "avoid_others"
     ]
   }
 };

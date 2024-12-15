@@ -76,6 +76,35 @@
       "categories": [ "non_water_soluble_waxes" ],
       "groups": [],
       "flags": [ "avoid" ]
+    },
+    {
+      "id": "no_water_insoluble_silicones",
+      "name": "No Water Insoluble Silicones",
+      "description": "Avoiding all water insoluble silicones.",
+      "ingredients": [],
+      "categories": [ "water_insoluble_silicones"],
+      "groups": [],
+      "flags": [ "avoid" ]
+    },
+    {
+      "id": "no_strong_surfactants",
+      "name": "No Strong Surfactants",
+      "description": "Avoiding all strong surfactants.",
+      "ingredients": [],
+      "categories": ["sulfonates", "sulfates"],
+      "groups": [],
+      "flags": [ "avoid" ]
+    },
+    {
+      "id": "mild_detergents_only",
+      "name": "Mild Detergents Only",
+      "description": "Only allows mild detergents, avoiding all other surfactants and cleansers.",
+      "ingredients": [],
+      "categories": ["mild_detergents"],
+      "groups": [],
+      "flags": [
+        "avoid_others"
+      ]
     }
   ]
 }

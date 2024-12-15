@@ -1,10 +1,9 @@
-import type { AnalyzerOptions, System } from '../types';
-import { getBundledSettings } from '../data/bundledData';
+import type { AnalyzerOptions, System, Settings } from '../types';
 
 /**
  * Gets system-specific flags based on settings
  */
-export function getSystemFlags(system: System | undefined): Required<AnalyzerOptions> {
+export function getSystemFlags(system: System | undefined, settings: Settings = {}): Required<AnalyzerOptions> {
   const flags: Required<AnalyzerOptions> = {
     flaggedIngredients: [],
     flaggedCategories: [],
@@ -12,8 +11,6 @@ export function getSystemFlags(system: System | undefined): Required<AnalyzerOpt
   };
 
   if (!system) return flags;
-
-  const settings = getBundledSettings();
 
   // Apply settings-based flags
   system.settings.forEach(settingId => {

@@ -10,6 +10,10 @@ export interface AnalyzerConfig {
   options?: AnalyzerOptions;
   /** Optional path to config directory */
   configDir?: string;
+  /** Optional systems used to analyze the input */
+  systems?: System[];
+  /** Optional settings for the systems */
+  settings?: Settings;
 }
 
 /**

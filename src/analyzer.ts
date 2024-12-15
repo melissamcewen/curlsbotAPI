@@ -4,11 +4,11 @@ import type {
   IngredientDatabase,
   AnalysisResult,
   System,
-  FlagRule,
-  UserPreferences
+  Settings
 } from './types';
 import { getBundledDatabase } from './data/bundledData';
 import { getBundledSystems } from './data/bundledData';
+import { getBundledSettings } from './data/bundledData';
 import { normalizer } from './utils/normalizer';
 import { findIngredient, getIngredientCategories, getCategoryGroups } from './utils/databaseUtils';
 import { getSystemFlags, mergeFlags } from './utils/flags';
@@ -18,7 +18,7 @@ export class Analyzer {
   private fallbackDatabase?: IngredientDatabase;
   private options?: AnalyzerOptions;
   private systems: System[];
-  private userPreferences?: UserPreferences;
+  private settings: Settings;
 
   /**
    * Creates a new Analyzer instance
@@ -29,6 +29,7 @@ export class Analyzer {
     this.fallbackDatabase = config?.fallbackDatabase;
     this.options = config?.options;
     this.systems = config?.systems ?? getBundledSystems();
+    this.settings = config?.settings ?? getBundledSettings();
   }
 
   /**
@@ -162,7 +163,7 @@ export class Analyzer {
 
     // Get system-specific flags
     const system = this.systems.find(s => s.id === systemId);
-    const systemFlags = getSystemFlags(system);
+    const systemFlags = getSystemFlags(system, this.settings);
 
     // Merge system flags with any configured options
     const mergedFlags = mergeFlags(systemFlags, this.options || {});
@@ -234,7 +235,8 @@ export class Analyzer {
     return {
       database: this.database,
       fallbackDatabase: this.fallbackDatabase,
-      options: this.options
+      options: this.options,
+      settings: this.settings
     };
   }
 
@@ -310,4 +312,20 @@ export class Analyzer {
 
     return rules;
   }
+}
+
+function checkSettingMatch(ingredient: Ingredient, setting: Setting): boolean {
+  // If setting has avoid_others flag, check if ingredient is NOT in the allowed categories
+  if (setting.flags.includes('avoid_others')) {
+    // Only apply this rule to ingredients that are detergents/cleansers
+    if (ingredient.categories.some(cat => ['surfactants', 'cleansers', 'detergents'].includes(cat))) {
+      // Return true (match) if the ingredient is NOT in any of the allowed categories
+      return !setting.categories.some(category =>
+        ingredient.categories.includes(category)
+      );
+    }
+    return false; // Don't flag non-detergent ingredients
+  }
+
+  // ... existing matching logic for other flags ...
 }
