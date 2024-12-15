@@ -23,7 +23,9 @@
     "clean-synonyms": "tsx cli/validate.ts clean-synonyms",
     "validate-case": "tsx cli/validate.ts validate-case",
     "fix-case": "tsx cli/validate.ts fix-case",
-    "knip": "knip"
+    "knip": "knip",
+    "bundle-data": "tsx scripts/bundleData.ts",
+    "prebuild": "npm run bundle-data"
   },
   "keywords": [
     "haircare",

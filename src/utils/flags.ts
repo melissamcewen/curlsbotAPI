@@ -1,15 +1,10 @@
 import type { AnalyzerOptions, System } from '../types';
-
-import { getSettingFlags } from './configLoader';
-
-interface FlagOptions {
-  configDir?: string;
-}
+import { getBundledSettings } from '../data/bundledData';
 
 /**
  * Gets system-specific flags based on settings
  */
-export function getSystemFlags(system: System | undefined, options: FlagOptions = {}): Required<AnalyzerOptions> {
+export function getSystemFlags(system: System | undefined): Required<AnalyzerOptions> {
   const flags: Required<AnalyzerOptions> = {
     flaggedIngredients: [],
     flaggedCategories: [],
@@ -18,12 +13,16 @@ export function getSystemFlags(system: System | undefined, options: FlagOptions 
 
   if (!system) return flags;
 
+  const settings = getBundledSettings();
+
   // Apply settings-based flags
   system.settings.forEach(settingId => {
-    const settingFlags = getSettingFlags(settingId, options);
-    flags.flaggedIngredients.push(...settingFlags.ingredients);
-    flags.flaggedCategories.push(...settingFlags.categories);
-    flags.flaggedGroups.push(...settingFlags.flags);
+    const setting = settings[settingId];
+    if (setting) {
+      if (setting.ingredients) flags.flaggedIngredients.push(...setting.ingredients);
+      if (setting.categories) flags.flaggedCategories.push(...setting.categories);
+      if (setting.flags) flags.flaggedGroups.push(...setting.flags);
+    }
   });
 
   // Remove duplicates

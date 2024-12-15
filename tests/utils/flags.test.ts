@@ -1,16 +1,12 @@
-import { join } from 'path';
-
-import { describe, it, expect } from 'vitest';
-
+import { describe, it, expect, vi } from 'vitest';
 import { getSystemFlags, mergeFlags } from '../../src/utils/flags';
-import type { System } from '../../src/types';
-
-const TEST_CONFIG_DIR = join(__dirname, '../fixtures/config');
+import type { System, Setting } from '../../src/types';
+import * as bundledData from '../../src/data/bundledData';
 
 describe('flags utils', () => {
   describe('getSystemFlags', () => {
     it('should return empty flags for undefined system', () => {
-      const flags = getSystemFlags(undefined, { configDir: TEST_CONFIG_DIR });
+      const flags = getSystemFlags(undefined);
       expect(flags).toEqual({
         flaggedIngredients: [],
         flaggedCategories: [],
@@ -19,6 +15,18 @@ describe('flags utils', () => {
     });
 
     it('should handle sulfate_free setting', () => {
+      // Mock the bundled settings
+      vi.spyOn(bundledData, 'getBundledSettings').mockReturnValue({
+        sulfate_free: {
+          id: 'sulfate_free',
+          name: 'Sulfate Free',
+          description: 'Avoid sulfates',
+          ingredients: ['sodium_lauryl_sulfate'],
+          categories: ['sulfates'],
+          flags: ['avoid_sulfates']
+        }
+      });
+
       const system: System = {
         id: 'test',
         name: 'Test System',
@@ -26,13 +34,33 @@ describe('flags utils', () => {
         settings: ['sulfate_free']
       };
 
-      const flags = getSystemFlags(system, { configDir: TEST_CONFIG_DIR });
+      const flags = getSystemFlags(system);
       expect(flags.flaggedIngredients).toContain('sodium_lauryl_sulfate');
       expect(flags.flaggedCategories).toContain('sulfates');
       expect(flags.flaggedGroups).toContain('avoid_sulfates');
     });
 
     it('should handle multiple settings', () => {
+      // Mock the bundled settings
+      vi.spyOn(bundledData, 'getBundledSettings').mockReturnValue({
+        sulfate_free: {
+          id: 'sulfate_free',
+          name: 'Sulfate Free',
+          description: 'Avoid sulfates',
+          ingredients: ['sodium_lauryl_sulfate'],
+          categories: ['sulfates'],
+          flags: ['avoid_sulfates']
+        },
+        silicone_free: {
+          id: 'silicone_free',
+          name: 'Silicone Free',
+          description: 'Avoid silicones',
+          ingredients: [],
+          categories: ['silicones'],
+          flags: ['avoid_silicones']
+        }
+      });
+
       const system: System = {
         id: 'test',
         name: 'Test System',
@@ -40,7 +68,7 @@ describe('flags utils', () => {
         settings: ['sulfate_free', 'silicone_free']
       };
 
-      const flags = getSystemFlags(system, { configDir: TEST_CONFIG_DIR });
+      const flags = getSystemFlags(system);
       expect(flags.flaggedCategories).toContain('sulfates');
       expect(flags.flaggedCategories).toContain('silicones');
       expect(flags.flaggedGroups).toContain('avoid_sulfates');

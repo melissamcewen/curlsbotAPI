@@ -1,18 +1,35 @@
-import { join } from 'path';
-
-import { describe, it, expect } from 'vitest';
-
+import { describe, it, expect, vi } from 'vitest';
 import { Analyzer } from '../../src/analyzer';
 import { getDefaultDatabase } from '../../src/data/defaultDatabase';
-
-const TEST_CONFIG_DIR = join(__dirname, '../fixtures/config');
+import * as bundledData from '../../src/data/bundledData';
 
 describe('Analyzer System Tests', () => {
   describe('System Configuration', () => {
     it('should set system ID in result', () => {
+      // Mock bundled settings
+      vi.spyOn(bundledData, 'getBundledSettings').mockReturnValue({
+        sulfate_free: {
+          id: 'sulfate_free',
+          name: 'Sulfate Free',
+          description: 'Avoid sulfates',
+          ingredients: ['sodium_lauryl_sulfate'],
+          categories: ['sulfates'],
+          flags: ['avoid_sulfates']
+        }
+      });
+
+      // Mock bundled systems
+      vi.spyOn(bundledData, 'getBundledSystems').mockReturnValue([
+        {
+          id: 'curly_default',
+          name: 'Curly Default',
+          description: 'Default system for curly hair',
+          settings: ['sulfate_free']
+        }
+      ]);
+
       const analyzer = new Analyzer({
-        database: getDefaultDatabase(),
-        configDir: TEST_CONFIG_DIR
+        database: getDefaultDatabase()
       });
 
       const result = analyzer.analyze('Cetyl Alcohol', 'curly_default');
@@ -23,8 +40,7 @@ describe('Analyzer System Tests', () => {
 
     it('should handle unknown system IDs', () => {
       const analyzer = new Analyzer({
-        database: getDefaultDatabase(),
-        configDir: TEST_CONFIG_DIR
+        database: getDefaultDatabase()
       });
 
       const result = analyzer.analyze('Cetyl Alcohol', 'unknown_system');
@@ -51,9 +67,30 @@ describe('Analyzer System Tests', () => {
 
   describe('System Analysis', () => {
     it('should flag sulfates in sulfate_free setting', () => {
+      // Mock bundled settings
+      vi.spyOn(bundledData, 'getBundledSettings').mockReturnValue({
+        sulfate_free: {
+          id: 'sulfate_free',
+          name: 'Sulfate Free',
+          description: 'Avoid sulfates',
+          ingredients: ['sls', 'sodium_lauryl_sulfate'],
+          categories: ['sulfates'],
+          flags: ['avoid_sulfates']
+        }
+      });
+
+      // Mock bundled systems
+      vi.spyOn(bundledData, 'getBundledSystems').mockReturnValue([
+        {
+          id: 'curly_default',
+          name: 'Curly Default',
+          description: 'Default system for curly hair',
+          settings: ['sulfate_free']
+        }
+      ]);
+
       const analyzer = new Analyzer({
-        database: getDefaultDatabase(),
-        configDir: TEST_CONFIG_DIR
+        database: getDefaultDatabase()
       });
 
       const result = analyzer.analyze('Sodium Lauryl Sulfate', 'curly_default');
@@ -68,9 +105,30 @@ describe('Analyzer System Tests', () => {
     });
 
     it('should combine system flags with analyzer options', () => {
+      // Mock bundled settings
+      vi.spyOn(bundledData, 'getBundledSettings').mockReturnValue({
+        sulfate_free: {
+          id: 'sulfate_free',
+          name: 'Sulfate Free',
+          description: 'Avoid sulfates',
+          ingredients: ['sls', 'sodium_lauryl_sulfate'],
+          categories: ['sulfates'],
+          flags: ['avoid_sulfates']
+        }
+      });
+
+      // Mock bundled systems
+      vi.spyOn(bundledData, 'getBundledSystems').mockReturnValue([
+        {
+          id: 'curly_default',
+          name: 'Curly Default',
+          description: 'Default system for curly hair',
+          settings: ['sulfate_free']
+        }
+      ]);
+
       const analyzer = new Analyzer({
         database: getDefaultDatabase(),
-        configDir: TEST_CONFIG_DIR,
         options: {
           flaggedIngredients: ['cetyl_alcohol']
         }

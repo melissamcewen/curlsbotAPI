@@ -7,30 +7,28 @@ import type {
   FlagRule,
   UserPreferences
 } from './types';
-import { getDefaultDatabase } from './data/defaultDatabase';
+import { getBundledDatabase } from './data/bundledData';
+import { getBundledSystems } from './data/bundledData';
 import { normalizer } from './utils/normalizer';
 import { findIngredient, getIngredientCategories, getCategoryGroups } from './utils/databaseUtils';
 import { getSystemFlags, mergeFlags } from './utils/flags';
-import { loadSystems } from './utils/configLoader';
 
 export class Analyzer {
   private database: IngredientDatabase;
   private fallbackDatabase?: IngredientDatabase;
   private options?: AnalyzerOptions;
   private systems: System[];
-  private configDir?: string;
   private userPreferences?: UserPreferences;
 
   /**
    * Creates a new Analyzer instance
-   * @param config Optional configuration. If not provided, uses default database
+   * @param config Optional configuration. If not provided, uses bundled database
    */
   constructor(config?: Partial<AnalyzerConfig>) {
-    this.database = config?.database ?? getDefaultDatabase();
+    this.database = config?.database ?? getBundledDatabase();
     this.fallbackDatabase = config?.fallbackDatabase;
     this.options = config?.options;
-    this.configDir = config?.configDir;
-    this.systems = loadSystems({ configDir: this.configDir });
+    this.systems = config?.systems ?? getBundledSystems();
   }
 
   /**
@@ -164,7 +162,7 @@ export class Analyzer {
 
     // Get system-specific flags
     const system = this.systems.find(s => s.id === systemId);
-    const systemFlags = getSystemFlags(system, { configDir: this.configDir });
+    const systemFlags = getSystemFlags(system);
 
     // Merge system flags with any configured options
     const mergedFlags = mergeFlags(systemFlags, this.options || {});
@@ -236,8 +234,7 @@ export class Analyzer {
     return {
       database: this.database,
       fallbackDatabase: this.fallbackDatabase,
-      options: this.options,
-      configDir: this.configDir
+      options: this.options
     };
   }
 
