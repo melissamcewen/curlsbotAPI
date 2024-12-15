@@ -169,7 +169,8 @@ export class Analyzer {
     const mergedFlags = mergeFlags(systemFlags, this.options || {});
 
     result.matches = normalized.ingredients.map(normalizedName => {
-      const ingredient = findIngredient(this.database, normalizedName, this.fallbackDatabase);
+      const match = findIngredient(this.database, normalizedName, this.fallbackDatabase);
+      const ingredient = match?.ingredient;
 
       // Determine which database to use for categories and groups
       const dbForCategories = ingredient && this.fallbackDatabase?.ingredients[ingredient.id]
@@ -236,7 +237,8 @@ export class Analyzer {
         categories,
         groups,
         flags: Array.from(flags),
-        ingredient
+        ingredient,
+        confidence: match?.confidence
       };
     });
 

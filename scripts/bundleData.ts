@@ -5,6 +5,7 @@ import { fileURLToPath } from 'url';
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const DATA_DIR = join(__dirname, '../data');
 const CONFIG_DIR = join(__dirname, '../data/config');
+const FALLBACK_DIR = join(__dirname, '../data/fallback');
 const OUTPUT_FILE = join(__dirname, '../src/data/bundledData.ts');
 
 function loadIngredientsFromDir(dirPath: string): any {
@@ -14,7 +15,12 @@ function loadIngredientsFromDir(dirPath: string): any {
   for (const file of files) {
     const filePath = join(dirPath, file);
     const data = JSON.parse(readFileSync(filePath, 'utf-8'));
-    allIngredients.push(...data.ingredients);
+    // Handle both array and object formats
+    if (Array.isArray(data.ingredients)) {
+      allIngredients.push(...data.ingredients);
+    } else {
+      allIngredients.push(...Object.values(data.ingredients));
+    }
   }
 
   return allIngredients.reduce((acc, ing) => {
@@ -34,6 +40,7 @@ function loadJsonFile(filePath: string): any {
 function generateBundledData() {
   // Load all data
   const ingredients = loadIngredientsFromDir(join(DATA_DIR, 'ingredients'));
+  const fallbackIngredients = loadIngredientsFromDir(FALLBACK_DIR);
   const categoriesData = loadJsonFile(join(DATA_DIR, 'categories.json'));
   const groupsData = loadJsonFile(join(DATA_DIR, 'groups.json'));
   const systemsData = loadJsonFile(join(CONFIG_DIR, 'systems.json'));
@@ -61,12 +68,18 @@ import type { IngredientDatabase, System, Setting } from '../types';
 
 export const defaultDatabase: IngredientDatabase = ${JSON.stringify({ ingredients, categories, groups }, null, 2)};
 
+export const defaultFallbackDatabase: IngredientDatabase = ${JSON.stringify({ ingredients: fallbackIngredients, categories, groups }, null, 2)};
+
 export const defaultSystems: System[] = ${JSON.stringify(systemsData?.systems || [], null, 2)};
 
 export const defaultSettings: Record<string, Setting> = ${JSON.stringify(settings, null, 2)};
 
 export function getBundledDatabase(): IngredientDatabase {
   return defaultDatabase;
+}
+
+export function getBundledFallbackDatabase(): IngredientDatabase {
+  return defaultFallbackDatabase;
 }
 
 export function getBundledSystems(): System[] {

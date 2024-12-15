@@ -127,6 +127,8 @@ export interface IngredientMatch {
   flags: string[];
   /** the ingredient matched (if any) */
   ingredient?: Ingredient;
+  /** confidence of the match */
+  confidence?: number;
 }
 
 /**

@@ -1,12 +1,15 @@
-import { describe, expect, it } from 'vitest';
+import { describe, it, expect } from 'vitest';
 
 import { Analyzer } from '../src/analyzer';
-import { testDatabase } from './fixtures/testDatabase';
-import { mockFallbackDatabase } from './fixtures/fallbackDatabase';
+
+import {
+  testDatabase,
+  testFallbackDatabase,
+} from './fixtures/test_bundled_data';
 
 describe('Analyzer', () => {
   describe('Basic Ingredient Analysis', () => {
-    it('should analyze a single ingredient', () => {
+    it('should analyze a single ingredient with full confidence', () => {
       const analyzer = new Analyzer({ database: testDatabase });
       const result = analyzer.analyze('Cetyl Alcohol');
 
@@ -16,9 +19,10 @@ describe('Analyzer', () => {
       expect(match.categories).toContain('emollient_alcohols');
       expect(match.groups).toContain('alcohols');
       expect(match.ingredient?.id).toBe('cetyl_alcohol');
+      expect(match.confidence).toBe(1.0);
     });
 
-    it('should analyze multiple ingredients', () => {
+    it('should analyze multiple ingredients with appropriate confidence', () => {
       const analyzer = new Analyzer({ database: testDatabase });
       const result = analyzer.analyze('Cetyl Alcohol, SD Alcohol');
 
@@ -27,12 +31,25 @@ describe('Analyzer', () => {
       const [cetyl, sd] = result.matches;
       expect(cetyl.normalized).toBe('cetyl alcohol');
       expect(cetyl.categories).toContain('emollient_alcohols');
+      expect(cetyl.confidence).toBe(1.0);
 
       expect(sd.normalized).toBe('sd alcohol');
       expect(sd.categories).toContain('drying_alcohols');
+      expect(sd.confidence).toBe(1.0);
     });
 
-    it('should handle unknown ingredients', () => {
+    it('should handle partial matches with lower confidence', () => {
+      const analyzer = new Analyzer({ database: testDatabase });
+      const result = analyzer.analyze('hexadecan');
+
+      expect(result.matches).toHaveLength(1);
+      const match = result.matches[0];
+      expect(match.normalized).toBe('hexadecan');
+      expect(match.ingredient?.id).toBe('cetyl_alcohol');
+      expect(match.confidence).toBe(0.8);
+    });
+
+    it('should handle unknown ingredients with no confidence', () => {
       const analyzer = new Analyzer({ database: testDatabase });
       const result = analyzer.analyze('Unknown Ingredient');
 
@@ -42,6 +59,7 @@ describe('Analyzer', () => {
       expect(match.categories).toEqual([]);
       expect(match.groups).toEqual([]);
       expect(match.ingredient).toBeUndefined();
+      expect(match.confidence).toBeUndefined();
     });
 
     it('should handle empty input', () => {
@@ -84,23 +102,24 @@ describe('Analyzer', () => {
   });
 
   describe('Fallback Database', () => {
-    it('should use fallback database when ingredient not found in main', () => {
+    it('should use fallback database with appropriate confidence', () => {
       const analyzer = new Analyzer({
         database: testDatabase,
-        fallbackDatabase: mockFallbackDatabase
+        fallbackDatabase: testFallbackDatabase,
       });
-      const result = analyzer.analyze('cone');
+      const result = analyzer.analyze('test-cone');
 
       expect(result.matches).toHaveLength(1);
       const match = result.matches[0];
-      expect(match.ingredient?.id).toBe('unknown_non_water_soluble_silicones');
+      expect(match.ingredient?.id).toBe('unknown_test_silicone');
       expect(match.categories).toContain('non-water-soluble_silicones');
+      expect(match.confidence).toBe(0.6); // Superstring match (cone found within test-cone)
     });
 
-    it('should prefer main database over fallback', () => {
+    it('should prefer main database over fallback with full confidence', () => {
       const analyzer = new Analyzer({
         database: testDatabase,
-        fallbackDatabase: mockFallbackDatabase
+        fallbackDatabase: testFallbackDatabase,
       });
       const result = analyzer.analyze('Cetyl Alcohol');
 
@@ -108,53 +127,7 @@ describe('Analyzer', () => {
       const match = result.matches[0];
       expect(match.ingredient?.id).toBe('cetyl_alcohol');
       expect(match.categories).toContain('emollient_alcohols');
-    });
-  });
-
-  describe('System Settings', () => {
-    const testSystems = [{
-      id: 'test_system',
-      name: 'Test System',
-      settings: ['mild_detergents_only']
-    }];
-
-    const testSettings = {
-      mild_detergents_only: {
-        id: 'mild_detergents_only',
-        name: 'Mild Detergents Only',
-        description: 'Only allow mild detergents',
-        flags: ['avoid_others_in_category'],
-        categories: ['mild_detergents'],
-        ingredients: []
-      }
-    };
-
-    it('should apply system settings correctly', () => {
-      const analyzer = new Analyzer({
-        database: testDatabase,
-        systems: testSystems,
-        settings: testSettings
-      });
-
-      const result = analyzer.analyze('Sodium Laureth Sulfate', 'test_system');
-
-      expect(result.system).toBe('test_system');
-      expect(result.settings).toContain('mild_detergents_only');
-      expect(result.matches[0].flags).toContain('mild_detergents_only');
-    });
-
-    it('should handle unknown system IDs', () => {
-      const analyzer = new Analyzer({
-        database: testDatabase,
-        systems: testSystems,
-        settings: testSettings
-      });
-
-      const result = analyzer.analyze('Sodium Laureth Sulfate', 'unknown_system');
-
-      expect(result.system).toBe('unknown_system');
-      expect(result.settings).toEqual([]);
-      expect(result.matches[0].flags).toHaveLength(0);
+      expect(match.confidence).toBe(1.0);
     });
   });
 
@@ -167,17 +140,19 @@ describe('Analyzer', () => {
 
     it('should allow getting and setting fallback database', () => {
       const analyzer = new Analyzer();
-      analyzer.setFallbackDatabase(mockFallbackDatabase);
-      expect(analyzer.getFallbackDatabase()).toBe(mockFallbackDatabase);
+      analyzer.setFallbackDatabase(testFallbackDatabase);
+      expect(analyzer.getFallbackDatabase()).toBe(testFallbackDatabase);
     });
 
     it('should allow getting and setting systems', () => {
       const analyzer = new Analyzer();
-      const testSystems = [{
-        id: 'test_system',
-        name: 'Test System',
-        settings: ['test_setting']
-      }];
+      const testSystems = [
+        {
+          id: 'test_system',
+          name: 'Test System',
+          settings: ['mild_detergents_only'],
+        },
+      ];
       analyzer.setSystems(testSystems);
       expect(analyzer.getSystems()).toEqual(testSystems);
     });

@@ -2,39 +2,11 @@ import { describe, it, expect } from 'vitest';
 
 import { getSystemFlags, mergeFlags } from '../src/utils/flags';
 
-import type { System, Settings } from '../src/types';
-import { testDatabase } from './fixtures/testDatabase';
+import type { System } from '../src/types';
+import { testDatabase, testSettings } from './fixtures/test_bundled_data';
 
 describe('flags utils', () => {
   describe('getSystemFlags', () => {
-    // Use settings that match our test database categories
-    const testSettings: Settings = {
-      sulfate_free: {
-        id: 'sulfate_free',
-        name: 'Sulfate Free',
-        description: 'Avoid sulfates',
-        ingredients: ['sodium_laureth_sulfate'],
-        categories: ['sulfates'],
-        flags: ['avoid_sulfates']
-      },
-      silicone_free: {
-        id: 'silicone_free',
-        name: 'Silicone Free',
-        description: 'Avoid silicones',
-        ingredients: ['dimethicone'],
-        categories: ['non_water_soluble_silicones'],
-        flags: ['avoid_silicones']
-      },
-      mild_detergents_only: {
-        id: 'mild_detergents_only',
-        name: 'Mild Detergents Only',
-        description: 'Only allow mild detergents',
-        ingredients: [],
-        categories: ['mild_detergents'],
-        flags: ['avoid_others_in_category']
-      }
-    };
-
     it('should return empty flags for undefined system', () => {
       const flags = getSystemFlags(undefined, testSettings);
       expect(flags).toEqual({
@@ -71,7 +43,7 @@ describe('flags utils', () => {
 
       // Check categories
       expect(flags.flaggedCategories).toContain('sulfates');
-      expect(flags.flaggedCategories).toContain('non_water_soluble_silicones');
+      expect(flags.flaggedCategories).toContain('non-water-soluble_silicones');
 
       // Check groups
       expect(flags.flaggedGroups).toContain('avoid_sulfates');
@@ -86,7 +58,7 @@ describe('flags utils', () => {
       };
 
       const flags = getSystemFlags(system, testSettings);
-      expect(flags.flaggedCategories).toContain('mild_detergents');
+      expect(flags.flaggedCategories).toContain('mild-detergents');
       expect(flags.flaggedGroups).toContain('avoid_others_in_category');
     });
 
@@ -114,7 +86,7 @@ describe('flags utils', () => {
 
       const flags2 = {
         flaggedIngredients: ['dimethicone'],
-        flaggedCategories: ['non_water_soluble_silicones'],
+        flaggedCategories: ['non-water-soluble_silicones'],
         flaggedGroups: ['avoid_silicones']
       };
 
@@ -122,7 +94,7 @@ describe('flags utils', () => {
       expect(merged.flaggedIngredients).toContain('sodium_laureth_sulfate');
       expect(merged.flaggedIngredients).toContain('dimethicone');
       expect(merged.flaggedCategories).toContain('sulfates');
-      expect(merged.flaggedCategories).toContain('non_water_soluble_silicones');
+      expect(merged.flaggedCategories).toContain('non-water-soluble_silicones');
       expect(merged.flaggedGroups).toContain('avoid_sulfates');
       expect(merged.flaggedGroups).toContain('avoid_silicones');
     });
