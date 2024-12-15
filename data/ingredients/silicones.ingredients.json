@@ -258,7 +258,7 @@
     {
       "name": "Trimethylsiloxysilicate",
       "id": "trimethylsiloxysilicate",
-      "categories": ["water-insoluble_silicones"]
+      "categories": ["non-water-soluble_silicones"]
     }
   ]
 }

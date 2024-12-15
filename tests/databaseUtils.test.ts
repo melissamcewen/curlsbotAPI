@@ -47,13 +47,13 @@ describe('Database Utils', () => {
 
   describe('getIngredientCategories', () => {
     it('gets categories for ingredient', () => {
-      const categories = getIngredientCategories(testDatabase, 'emollient_alcohol');
-      expect(categories).toEqual(['emollient_alcohol']);
+      const categories = getIngredientCategories(testDatabase, 'emollient_alcohols');
+      expect(categories).toEqual(['emollient_alcohols']);
     });
 
     it('handles multiple categories', () => {
-      const categories = getIngredientCategories(testDatabase, ['emollient_alcohol', 'drying_alcohol']);
-      expect(categories).toEqual(['emollient_alcohol', 'drying_alcohol']);
+      const categories = getIngredientCategories(testDatabase, ['emollient_alcohols', 'drying_alcohols']);
+      expect(categories).toEqual(['emollient_alcohols', 'drying_alcohols']);
     });
 
     it('handles unknown categories', () => {
@@ -69,12 +69,12 @@ describe('Database Utils', () => {
 
   describe('getCategoryGroups', () => {
     it('gets groups for categories', () => {
-      const groups = getCategoryGroups(testDatabase, ['emollient_alcohol']);
+      const groups = getCategoryGroups(testDatabase, ['emollient_alcohols']);
       expect(groups).toEqual(['alcohols']);
     });
 
     it('returns unique groups', () => {
-      const groups = getCategoryGroups(testDatabase, ['emollient_alcohol', 'drying_alcohol']);
+      const groups = getCategoryGroups(testDatabase, ['emollient_alcohols', 'drying_alcohols']);
       expect(groups).toEqual(['alcohols']);
     });
 

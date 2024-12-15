@@ -1631,7 +1631,7 @@ export const defaultDatabase: IngredientDatabase = {
       "name": "Trimethylsiloxysilicate",
       "id": "trimethylsiloxysilicate",
       "categories": [
-        "water-insoluble_silicones"
+        "non-water-soluble_silicones"
       ]
     },
     "beeswax": {
@@ -1805,7 +1805,116 @@ export const defaultDatabase: IngredientDatabase = {
       ]
     }
   },
-  "categories": {},
+  "categories": {
+    "drying_alcohols": {
+      "id": "drying_alcohols",
+      "name": "Drying Alcohols",
+      "group": "alcohols",
+      "description": "Drying alcohols are used to remove moisture from the hair and skin, and can cause irritation and dryness."
+    },
+    "parabens": {
+      "id": "parabens",
+      "name": "Parabens",
+      "group": "preservatives",
+      "description": "Parabens are a type of preservative that can cause irritation and dryness."
+    },
+    "sulfates": {
+      "id": "sulfates",
+      "name": "Sulfates",
+      "group": "detergents",
+      "description": "Sulfates are a type of detergent that can cause irritation and dryness."
+    },
+    "sulfonates": {
+      "id": "sulfonates",
+      "name": "Sulfonates",
+      "group": "detergents",
+      "description": "Sulfonates are a type of detergent that can cause irritation and dryness."
+    },
+    "emollient_alcohols": {
+      "id": "emollient_alcohols",
+      "name": "Emollient alcohols",
+      "group": "alcohols",
+      "description": "Emollient alcohols are good for the skin and hair."
+    },
+    "water-soluble_silicones": {
+      "id": "water-soluble_silicones",
+      "name": "Water-soluble Silicones",
+      "group": "silicones",
+      "description": "TBD"
+    },
+    "non-water-soluble_silicones": {
+      "id": "non-water-soluble_silicones",
+      "name": "Non-water-soluble Silicones",
+      "group": "silicones",
+      "description": "TBD"
+    },
+    "preservatives": {
+      "id": "preservatives",
+      "name": "Preservatives",
+      "group": "others",
+      "description": "TBD"
+    },
+    "other_detergents": {
+      "id": "other_detergents",
+      "name": "Other Detergents",
+      "group": "detergents",
+      "description": "TBD"
+    },
+    "preservative_alcohols": {
+      "id": "preservative_alcohols",
+      "name": "Preservative Alcohols",
+      "group": "alcohols",
+      "description": "TBD"
+    },
+    "astringents": {
+      "id": "astringents",
+      "name": "Astringents",
+      "group": "others",
+      "description": "TBD"
+    },
+    "soaps": {
+      "id": "soaps",
+      "name": "Soaps",
+      "group": "others",
+      "description": "TBD"
+    },
+    "mild_detergents": {
+      "id": "mild_detergents",
+      "name": "Mild Detergents",
+      "group": "detergents",
+      "description": "TBD"
+    },
+    "heavy_oils": {
+      "id": "heavy_oils",
+      "name": "Heavy Oils",
+      "group": "oils",
+      "description": "TBD"
+    },
+    "light_oils": {
+      "id": "light_oils",
+      "name": "Light Oils",
+      "group": "oils",
+      "description": "TBD"
+    },
+    "medium_oils": {
+      "id": "medium_oils",
+      "name": "Medium Oils",
+      "group": "oils",
+      "description": "TBD"
+    },
+    "non-water-soluble_waxes": {
+      "id": "non-water-soluble_waxes",
+      "name": "Non-water-soluble Waxes",
+      "group": "waxes",
+      "description": "TBD"
+    },
+    "water-soluble_waxes": {
+      "id": "water-soluble_waxes",
+      "name": "Water-soluble Waxes",
+      "group": "waxes",
+      "description": "TBD"
+    }
+  },
   "groups": {
     "alcohols": {
       "id": "alcohols",
