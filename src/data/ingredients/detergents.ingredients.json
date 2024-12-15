@@ -1,100 +1,29 @@
 {
   "ingredients": [
     {
-      "name": "Sodium Lauryl Sulfate",
-      "id": "sodium_lauryl_sulfate",
+      "name": "Alkylbenzene Sulfonate",
+      "id": "alkylbenzene_sulfonate",
       "synonyms": [
-        "sodium lauryl sulphate"
-      ],
-      "categories": [
-        "sulfates"
-      ]
-    },
-    {
-      "name": "Sodium Laureth Sulfate",
-      "id": "sodium_laureth_sulfate",
-      "synonyms": [
-        "sodium laureth sulphate"
-      ],
-      "categories": [
-        "sulfates"
-      ]
-    },
-    {
-      "name": "Ammonium Lauryl Sulfate",
-      "id": "ammonium_lauryl_sulfate",
-      "synonyms": [
-        "ammonium lauryl sulphate"
-      ],
-      "categories": [
-        "sulfates"
-      ]
-    },
-    {
-      "name": "Tea Lauryl Sulfate",
-      "id": "tea_lauryl_sulfate",
-      "synonyms": [
-        "tea lauryl sulphate"
-      ],
-      "categories": [
-        "sulfates"
-      ]
-    },
-    {
-      "name": "Triethanolamine Lauryl Sulfate",
-      "id": "triethanolamine_lauryl_sulfate",
-      "synonyms": [
-        "triethanolamine lauryl sulphate"
-      ],
-      "categories": [
-        "sulfates"
-      ]
-    },
-    {
-      "name": "Tea Dodecylbenzenesulfonate",
-      "id": "tea_dodecylbenzenesulfonate",
-      "synonyms": [
-        "tea-dodecylbenzenesulfonate"
+        "alkylbenzene sulphate",
+        "alkyl benzene sulfonate",
+        "alkyl benzene sulphate"
       ],
       "categories": [
         "sulfonates"
       ]
     },
     {
-      "name": "Sodium Cetearyl Sulfate",
-      "id": "sodium_cetearyl_sulfate",
-      "synonyms": [
-        "sodium cetearyl sulphate"
-      ],
+      "name": "Ammonium Cocoyl Isethionate",
+      "id": "ammonium_cocoyl_isethionate",
       "categories": [
-        "sulfates"
+        "mild_detergents"
       ]
     },
     {
-      "name": "Sodium Coco Sulfate",
-      "id": "sodium_coco_sulfate",
+      "name": "Ammonium Cocoyl Sulfate",
+      "id": "ammonium_cocoyl_sulfate",
       "synonyms": [
-        "sodium coco sulphate"
-      ],
-      "categories": [
-        "sulfates"
-      ]
-    },
-    {
-      "name": "Sodium Cocosulfate",
-      "id": "sodium_cocosulfate",
-      "synonyms": [
-        "sodium cocosulphate"
-      ],
-      "categories": [
-        "sulfates"
-      ]
-    },
-    {
-      "name": "Sodium Coceth Sulfate",
-      "id": "sodium_coceth_sulfate",
-      "synonyms": [
-        "sodium coceth sulphate"
+        "ammonium cocoyl sulphate"
       ],
       "categories": [
         "sulfates"
@@ -121,87 +50,13 @@
       ]
     },
     {
-      "name": "Sodium Myreth Sulfate",
-      "id": "sodium_myreth_sulfate",
+      "name": "Ammonium Lauryl Sulfate",
+      "id": "ammonium_lauryl_sulfate",
       "synonyms": [
-        "sodium myreth sulphate"
+        "ammonium lauryl sulphate"
       ],
       "categories": [
         "sulfates"
-      ]
-    },
-    {
-      "name": "Sodium Polystyrene Sulfate",
-      "id": "sodium_polystyrene_sulfate",
-      "synonyms": [
-        "sodium polystyrene sulphate"
-      ],
-      "categories": [
-        "sulfates"
-      ]
-    },
-    {
-      "name": "Ammonium Cocoyl Sulfate",
-      "id": "ammonium_cocoyl_sulfate",
-      "synonyms": [
-        "ammonium cocoyl sulphate"
-      ],
-      "categories": [
-        "sulfates"
-      ]
-    },
-    {
-      "name": "Sodium C12-18 Alkyl Sulfate",
-      "id": "sodium_c12-18_alkyl_sulfate",
-      "synonyms": [
-        "sodium c12-18 alkyl sulphate"
-      ],
-      "categories": [
-        "sulfates"
-      ]
-    },
-    {
-      "name": "Sodium Alkyl Sulfate",
-      "id": "sodium_alkyl_sulfate",
-      "synonyms": [
-        "sodium alkyl sulphate"
-      ],
-      "categories": [
-        "sulfates"
-      ]
-    },
-    {
-      "name": "Sodium Laureth-40 Sulfate",
-      "id": "sodium_laureth-40_sulfate",
-      "synonyms": [
-        "sodium laureth-40 sulphate"
-      ],
-      "categories": [
-        "sulfonates"
-      ]
-    },
-    {
-      "name": "Sodium Xylenesulfonate",
-      "id": "sodium_xylenesulfonate",
-      "synonyms": [
-        "sodium xylenesulphate",
-        "sodium xylene-sulfonate",
-        "sodium xylene sulfonate"
-      ],
-      "categories": [
-        "sulfonates"
-      ]
-    },
-    {
-      "name": "Alkylbenzene Sulfonate",
-      "id": "alkylbenzene_sulfonate",
-      "synonyms": [
-        "alkylbenzene sulphate",
-        "alkyl benzene sulfonate",
-        "alkyl benzene sulphate"
-      ],
-      "categories": [
-        "sulfonates"
       ]
     },
     {
@@ -217,6 +72,114 @@
       ]
     },
     {
+      "name": "Babassuamidopropyl Betaine",
+      "id": "babassuamidopropyl_betaine",
+      "categories": [
+        "mild_detergents"
+      ]
+    },
+    {
+      "name": "Capryl Glucoside",
+      "id": "capryl_glucoside",
+      "synonyms": [
+        "capryl glucoside, caprylyl glucoside"
+      ],
+      "categories": [
+        "mild_detergents"
+      ]
+    },
+    {
+      "name": "Cocamidopropyl Betaine",
+      "id": "cocamidopropyl_betaine",
+      "categories": [
+        "mild_detergents"
+      ]
+    },
+    {
+      "name": "Cocamidopropyl Hydroxysultaine",
+      "id": "cocamidopropyl_hydroxysultaine",
+      "categories": [
+        "mild_detergents"
+      ]
+    },
+    {
+      "name": "Coco Betaine",
+      "id": "coco_betaine",
+      "categories": [
+        "mild_detergents"
+      ]
+    },
+    {
+      "name": "Coco Glucoside",
+      "id": "coco_glucoside",
+      "categories": [
+        "mild_detergents"
+      ]
+    },
+    {
+      "name": "Decyl Glucoside",
+      "id": "decyl_glucoside",
+      "categories": [
+        "mild_detergents"
+      ]
+    },
+    {
+      "name": "Decyl Polyglucose",
+      "id": "decyl_polyglucose",
+      "categories": [
+        "mild_detergents"
+      ]
+    },
+    {
+      "name": "Dioctyl Sodium Sulfosuccinate",
+      "id": "dioctyl_sodium_sulfosuccinate",
+      "categories": [
+        "other_detergents"
+      ]
+    },
+    {
+      "name": "Disodium Cocoamphodiacetate",
+      "id": "disodium_cocoamphodiacetate",
+      "categories": [
+        "mild_detergents"
+      ]
+    },
+    {
+      "name": "Disodium Cocoamphodipropionate",
+      "id": "disodium_cocoamphodipropionate",
+      "categories": [
+        "mild_detergents"
+      ]
+    },
+    {
+      "name": "Disodium Cocoyl Glutamate",
+      "id": "disodium_cocoyl_glutamate",
+      "categories": [
+        "other_detergents"
+      ]
+    },
+    {
+      "name": "Disodium Laureth Succinate",
+      "id": "disodium_laureth_succinate",
+      "categories": [
+        "mild_detergents"
+      ]
+    },
+    {
+      "name": "Disodium Laureth Sulfosuccinate",
+      "id": "disodium_laureth_sulfosuccinate",
+      "categories": [
+        "mild_detergents"
+      ]
+    },
+    {
+      "name": "Disodium Lauryl Sulfosuccinate",
+      "id": "disodium_lauryl_sulfosuccinate",
+      "categories": [
+        "mild_detergents"
+      ]
+    },
+    {
       "name": "Ethyl PEG-15 Cocamine Sulfate",
       "id": "ethyl_peg-15_cocamine_sulfate",
       "synonyms": [
@@ -227,23 +190,27 @@
       ]
     },
     {
-      "name": "Sodium C14-16 Olefin Sulfonate",
-      "id": "sodium_c14-16_olefin_sulfonate",
-      "synonyms": [
-        "sodium c14-16 olefin sulphate"
-      ],
+      "name": "Lauryl Glucoside",
+      "id": "lauryl_glucoside",
       "categories": [
-        "sulfonates"
+        "mild_detergents"
       ]
     },
     {
-      "name": "Sodium C14-15 Olefin Sulfonate",
-      "id": "sodium_c14-15_olefin_sulfonate",
+      "name": "Lauryl Hydroxysultaine",
+      "id": "lauryl_hydroxysultaine",
+      "categories": [
+        "mild_detergents"
+      ]
+    },
+    {
+      "name": "Sodium Alkyl Sulfate",
+      "id": "sodium_alkyl_sulfate",
       "synonyms": [
-        "sodium c14-15 olefin sulphate"
+        "sodium alkyl sulphate"
       ],
       "categories": [
-        "sulfonates"
+        "sulfates"
       ]
     },
     {
@@ -257,10 +224,30 @@
       ]
     },
     {
-      "name": "Sodium C14-26 Olefin Sulfonate",
-      "id": "sodium_c14-26_olefin_sulfonate",
+      "name": "Sodium C12-18 Alkyl Sulfate",
+      "id": "sodium_c12-18_alkyl_sulfate",
       "synonyms": [
-        "sodium c14-26 olefin sulphate"
+        "sodium c12-18 alkyl sulphate"
+      ],
+      "categories": [
+        "sulfates"
+      ]
+    },
+    {
+      "name": "Sodium C14-15 Olefin Sulfonate",
+      "id": "sodium_c14-15_olefin_sulfonate",
+      "synonyms": [
+        "sodium c14-15 olefin sulphate"
+      ],
+      "categories": [
+        "sulfonates"
+      ]
+    },
+    {
+      "name": "Sodium C14-16 Olefin Sulfonate",
+      "id": "sodium_c14-16_olefin_sulfonate",
+      "synonyms": [
+        "sodium c14-16 olefin sulphate"
       ],
       "categories": [
         "sulfonates"
@@ -277,6 +264,16 @@
       ]
     },
     {
+      "name": "Sodium C14-26 Olefin Sulfonate",
+      "id": "sodium_c14-26_olefin_sulfonate",
+      "synonyms": [
+        "sodium c14-26 olefin sulphate"
+      ],
+      "categories": [
+        "sulfonates"
+      ]
+    },
+    {
       "name": "Sodium C16-18 Olefin Sulfonate",
       "id": "sodium_c16-18_olefin_sulfonate",
       "synonyms": [
@@ -287,35 +284,50 @@
       ]
     },
     {
-      "name": "Sodium Cocoyl Sarcosinate",
-      "id": "sodium_cocoyl_sarcosinate",
-      "categories": [
-        "other_detergents"
-      ]
-    },
-    {
-      "name": "Sodium Lauroyl Sarcosinate",
-      "id": "sodium_lauroyl_sarcosinate",
-      "categories": [
-        "other_detergents"
-      ]
-    },
-    {
-      "name": "Sodium Lauryl Sarcosinate",
-      "id": "sodium_lauryl_sarcosinate",
+      "name": "Sodium Cetearyl Sulfate",
+      "id": "sodium_cetearyl_sulfate",
       "synonyms": [
-        "sodium lauroyl sarcosinate",
-        "sodium lauroyl sarcosine"
+        "sodium cetearyl sulphate"
       ],
       "categories": [
-        "other_detergents"
+        "sulfates"
       ]
     },
     {
-      "name": "Sodium Lauryl Sulfoacetate",
-      "id": "sodium_lauryl_sulfoacetate",
+      "name": "Sodium Coceth Sulfate",
+      "id": "sodium_coceth_sulfate",
+      "synonyms": [
+        "sodium coceth sulphate"
+      ],
       "categories": [
-        "other_detergents"
+        "sulfates"
+      ]
+    },
+    {
+      "name": "Sodium Coco Sulfate",
+      "id": "sodium_coco_sulfate",
+      "synonyms": [
+        "sodium coco sulphate"
+      ],
+      "categories": [
+        "sulfates"
+      ]
+    },
+    {
+      "name": "Sodium Cocoamphoacetate",
+      "id": "sodium_cocoamphoacetate",
+      "categories": [
+        "mild_detergents"
+      ]
+    },
+    {
+      "name": "Sodium Cocosulfate",
+      "id": "sodium_cocosulfate",
+      "synonyms": [
+        "sodium cocosulphate"
+      ],
+      "categories": [
+        "sulfates"
       ]
     },
     {
@@ -323,6 +335,54 @@
       "id": "sodium_cocoyl_glutamate",
       "categories": [
         "other_detergents"
+      ]
+    },
+    {
+      "name": "Sodium Cocoyl Isethionate",
+      "id": "sodium_cocoyl_isethionate",
+      "categories": [
+        "mild_detergents"
+      ]
+    },
+    {
+      "name": "Sodium Cocoyl Sarcosinate",
+      "id": "sodium_cocoyl_sarcosinate",
+      "categories": [
+        "other_detergents"
+      ]
+    },
+    {
+      "name": "Sodium Laureth Sulfate",
+      "id": "sodium_laureth_sulfate",
+      "synonyms": [
+        "sodium laureth sulphate"
+      ],
+      "categories": [
+        "sulfates"
+      ]
+    },
+    {
+      "name": "Sodium Laureth-40 Sulfate",
+      "id": "sodium_laureth-40_sulfate",
+      "synonyms": [
+        "sodium laureth-40 sulphate"
+      ],
+      "categories": [
+        "sulfonates"
+      ]
+    },
+    {
+      "name": "Sodium Lauroamphoacetate",
+      "id": "sodium_lauroamphoacetate",
+      "categories": [
+        "mild_detergents"
+      ]
+    },
+    {
+      "name": "Sodium Lauroyl Glutamate",
+      "id": "sodium_lauroyl_glutamate",
+      "categories": [
+        "mild_detergents"
       ]
     },
     {
@@ -338,43 +398,50 @@
       ]
     },
     {
-      "name": "Dioctyl Sodium Sulfosuccinate",
-      "id": "dioctyl_sodium_sulfosuccinate",
+      "name": "Sodium Lauroyl Sarcosinate",
+      "id": "sodium_lauroyl_sarcosinate",
       "categories": [
         "other_detergents"
-      ]
-    },
-    {
-      "name": "Disodium Cocoyl Glutamate",
-      "id": "disodium_cocoyl_glutamate",
-      "categories": [
-        "other_detergents"
-      ]
-    },
-    {
-      "name": "Sodium Myristoyl Sarcosinate",
-      "id": "sodium_myristoyl_sarcosinate",
-      "categories": [
-        "other_detergents"
-      ]
-    },
-    {
-      "name": "Disodium Laureth Sulfosuccinate",
-      "id": "disodium_laureth_sulfosuccinate",
-      "categories": [
-        "mild_detergents"
-      ]
-    },
-    {
-      "name": "Disodium Laureth Succinate",
-      "id": "disodium_laureth_succinate",
-      "categories": [
-        "mild_detergents"
       ]
     },
     {
       "name": "Sodium Lauryl Glucose Carboxylate",
       "id": "sodium_lauryl_glucose_carboxylate",
+      "categories": [
+        "mild_detergents"
+      ]
+    },
+    {
+      "name": "Sodium Lauryl Sarcosinate",
+      "id": "sodium_lauryl_sarcosinate",
+      "synonyms": [
+        "sodium lauroyl sarcosinate",
+        "sodium lauroyl sarcosine"
+      ],
+      "categories": [
+        "other_detergents"
+      ]
+    },
+    {
+      "name": "Sodium Lauryl Sulfate",
+      "id": "sodium_lauryl_sulfate",
+      "synonyms": [
+        "sodium lauryl sulphate"
+      ],
+      "categories": [
+        "sulfates"
+      ]
+    },
+    {
+      "name": "Sodium Lauryl Sulfoacetate",
+      "id": "sodium_lauryl_sulfoacetate",
+      "categories": [
+        "other_detergents"
+      ]
+    },
+    {
+      "name": "Sodium Laurylglucosides Hydroxypropylsulfonate",
+      "id": "sodium_laurylglucosides_hydroxypropylsulfonate",
       "categories": [
         "mild_detergents"
       ]
@@ -387,139 +454,72 @@
       ]
     },
     {
-      "name": "Sodium Lauroyl Glutamate",
-      "id": "sodium_lauroyl_glutamate",
-      "categories": [
-        "mild_detergents"
-      ]
-    },
-    {
-      "name": "Ammonium Cocoyl Isethionate",
-      "id": "ammonium_cocoyl_isethionate",
-      "categories": [
-        "mild_detergents"
-      ]
-    },
-    {
-      "name": "Sodium Cocoyl Isethionate",
-      "id": "sodium_cocoyl_isethionate",
-      "categories": [
-        "mild_detergents"
-      ]
-    },
-    {
-      "name": "Coco Betaine",
-      "id": "coco_betaine",
-      "categories": [
-        "mild_detergents"
-      ]
-    },
-    {
-      "name": "Cocamidopropyl Betaine",
-      "id": "cocamidopropyl_betaine",
-      "categories": [
-        "mild_detergents"
-      ]
-    },
-    {
-      "name": "Disodium Cocoamphodiacetate",
-      "id": "disodium_cocoamphodiacetate",
-      "categories": [
-        "mild_detergents"
-      ]
-    },
-    {
-      "name": "Cocamidopropyl Hydroxysultaine",
-      "id": "cocamidopropyl_hydroxysultaine",
-      "categories": [
-        "mild_detergents"
-      ]
-    },
-    {
-      "name": "Lauryl Hydroxysultaine",
-      "id": "lauryl_hydroxysultaine",
-      "categories": [
-        "mild_detergents"
-      ]
-    },
-    {
-      "name": "Sodium Cocoamphoacetate",
-      "id": "sodium_cocoamphoacetate",
-      "categories": [
-        "mild_detergents"
-      ]
-    },
-    {
-      "name": "Sodium Lauroamphoacetate",
-      "id": "sodium_lauroamphoacetate",
-      "categories": [
-        "mild_detergents"
-      ]
-    },
-    {
-      "name": "Coco Glucoside",
-      "id": "coco_glucoside",
-      "categories": [
-        "mild_detergents"
-      ]
-    },
-    {
-      "name": "Capryl Glucoside",
-      "id": "capryl_glucoside",
+      "name": "Sodium Myreth Sulfate",
+      "id": "sodium_myreth_sulfate",
       "synonyms": [
-        "capryl glucoside, caprylyl glucoside"
+        "sodium myreth sulphate"
       ],
       "categories": [
-        "mild_detergents"
+        "sulfates"
       ]
     },
     {
-      "name": "Decyl Glucoside",
-      "id": "decyl_glucoside",
+      "name": "Sodium Myristoyl Sarcosinate",
+      "id": "sodium_myristoyl_sarcosinate",
       "categories": [
-        "mild_detergents"
+        "other_detergents"
       ]
     },
     {
-      "name": "Lauryl Glucoside",
-      "id": "lauryl_glucoside",
+      "name": "Sodium Polystyrene Sulfate",
+      "id": "sodium_polystyrene_sulfate",
+      "synonyms": [
+        "sodium polystyrene sulphate"
+      ],
       "categories": [
-        "mild_detergents"
+        "sulfates"
       ]
     },
     {
-      "name": "Decyl Polyglucose",
-      "id": "decyl_polyglucose",
+      "name": "Sodium Xylenesulfonate",
+      "id": "sodium_xylenesulfonate",
+      "synonyms": [
+        "sodium xylenesulphate",
+        "sodium xylene-sulfonate",
+        "sodium xylene sulfonate"
+      ],
       "categories": [
-        "mild_detergents"
+        "sulfonates"
       ]
     },
     {
-      "name": "Disodium Cocoamphodipropionate",
-      "id": "disodium_cocoamphodipropionate",
+      "name": "Tea Dodecylbenzenesulfonate",
+      "id": "tea_dodecylbenzenesulfonate",
+      "synonyms": [
+        "tea-dodecylbenzenesulfonate"
+      ],
       "categories": [
-        "mild_detergents"
+        "sulfonates"
       ]
     },
     {
-      "name": "Babassuamidopropyl Betaine",
-      "id": "babassuamidopropyl_betaine",
+      "name": "Tea Lauryl Sulfate",
+      "id": "tea_lauryl_sulfate",
+      "synonyms": [
+        "tea lauryl sulphate"
+      ],
       "categories": [
-        "mild_detergents"
+        "sulfates"
       ]
     },
     {
-      "name": "Sodium Laurylglucosides Hydroxypropylsulfonate",
-      "id": "sodium_laurylglucosides_hydroxypropylsulfonate",
+      "name": "Triethanolamine Lauryl Sulfate",
+      "id": "triethanolamine_lauryl_sulfate",
+      "synonyms": [
+        "triethanolamine lauryl sulphate"
+      ],
       "categories": [
-        "mild_detergents"
-      ]
-    },
-    {
-      "name": "Disodium Lauryl Sulfosuccinate",
-      "id": "disodium_lauryl_sulfosuccinate",
-      "categories": [
-        "mild_detergents"
+        "sulfates"
       ]
     }
   ]

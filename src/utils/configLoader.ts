@@ -1,8 +1,10 @@
-import { join } from 'path';
+import { join, dirname } from 'path';
+import { fileURLToPath } from 'url';
 import { readFileSync } from 'fs';
 
 import type { System, Setting, Settings } from '../types';
 
+const __dirname = dirname(fileURLToPath(import.meta.url));
 const DEFAULT_CONFIG_DIR = join(__dirname, '../config');
 
 interface ConfigLoaderOptions {

@@ -207,6 +207,22 @@ function fixIngredientCase(ingredientsFile: string): boolean {
   return hasChanges;
 }
 
+function sortIngredientsFile(filePath: string): boolean {
+  try {
+    const fileContent = readFileSync(filePath, 'utf-8');
+    const data = JSON.parse(fileContent);
+
+    data.ingredients.sort((a: any, b: any) => a.name.localeCompare(b.name));
+
+    writeFileSync(filePath, JSON.stringify(data, null, 2));
+    console.log(`✅ Successfully sorted ingredients in ${filePath}`);
+    return true;
+  } catch (error) {
+    console.error(`❌ Error sorting ingredients in ${filePath}:`, error);
+    return false;
+  }
+}
+
 program
   .command('validate')
   .description('Validate the database files against their schemas')
@@ -406,6 +422,14 @@ program
       console.error('❌ Validation failed:', error.message);
       process.exit(1);
     }
+  });
+
+program
+  .command('sort <file>')
+  .description('Sort ingredients in a JSON file alphabetically by name')
+  .action((file: string) => {
+    const filePath = join(process.cwd(), file);
+    sortIngredientsFile(filePath);
   });
 
 program.parse();
