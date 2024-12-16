@@ -105,20 +105,17 @@ describe('Analyzer', () => {
 
     it('should allow getting and setting systems', () => {
       const analyzer = new Analyzer();
-      const testSystems = [
-        {
-          id: 'test_system',
-          name: 'Test System',
-          settings: ['sulfate_free'],
-        },
-      ];
-      analyzer.setSystems(testSystems);
+      const testSystem = {
+        id: 'test_system',
+        name: 'Test System',
+        settings: ['sulfate_free'],
+      };
+      analyzer.setSystem(testSystem);
 
-      const systems = analyzer.getSystems();
-      expect(systems).toHaveLength(1);
-      expect(systems[0].id).toBe('test_system');
-      expect(systems[0].name).toBe('Test System');
-      expect(systems[0].settings).toContain('sulfate_free');
+      const system = analyzer.getSystem();
+      expect(system.id).toBe('test_system');
+      expect(system.name).toBe('Test System');
+      expect(system.settings).toContain('sulfate_free');
     });
   });
 
