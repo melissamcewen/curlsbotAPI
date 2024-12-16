@@ -1,4 +1,11 @@
-import type { IngredientDatabase, IngredientMatch, Ingredient, Categories, Groups, Group } from '../types';
+import type {
+  IngredientDatabase,
+  IngredientMatch,
+  Ingredient,
+  Categories,
+  Groups,
+  Group,
+} from '../types';
 
 /**
  * Remove numbers and dashes from a string for base comparison
@@ -19,9 +26,6 @@ function getIngredientTerms(ingredient: Ingredient): string[] {
     : [ingredient.name];
 }
 
-
-
-
 /**
  * Find an ingredient by name or synonym in the database
  * Returns both the ingredient and how it was matched
@@ -29,19 +33,31 @@ function getIngredientTerms(ingredient: Ingredient): string[] {
 export function findIngredient(
   database: IngredientDatabase,
   searchTerm: string,
-): IngredientMatch | undefined {
+): IngredientMatch & { partitionedDatabase: IngredientDatabase } {
   const normalizedSearchTerm = searchTerm.toLowerCase();
-  const { database: partitionedDatabase, defaultIngredient } = partitionSearchSpace(database, normalizedSearchTerm);
+  const { database: partitionedDatabase, defaultIngredient } =
+    partitionSearchSpace(database, normalizedSearchTerm);
+
+  console.log('Search term:', searchTerm);
+  console.log('Normalized search term:', normalizedSearchTerm);
+  console.log('Default ingredient:', defaultIngredient);
+  console.log('Partitioned database:', JSON.stringify(partitionedDatabase, null, 2));
 
   // Find the ingredient in the partitioned database
-  for (const ingredient of Object.values(partitionedDatabase.ingredients) as Ingredient[]) {
-    if (getIngredientTerms(ingredient).includes(normalizedSearchTerm)) {
+  for (const ingredient of Object.values(
+    partitionedDatabase.ingredients,
+  ) as Ingredient[]) {
+    const terms = getIngredientTerms(ingredient).map((term) =>
+      term.toLowerCase(),
+    );
+    if (terms.includes(normalizedSearchTerm)) {
       return {
         uuid: crypto.randomUUID(),
         input: searchTerm,
-        normalized: searchTerm.toLowerCase(),
+        normalized: normalizedSearchTerm,
         ingredient,
-       };
+        partitionedDatabase,
+      };
     }
   }
 
@@ -49,16 +65,18 @@ export function findIngredient(
     return {
       uuid: crypto.randomUUID(),
       input: searchTerm,
-      normalized: searchTerm.toLowerCase(),
+      normalized: normalizedSearchTerm,
       ingredient: getIngredientById(database, defaultIngredient),
+      partitionedDatabase,
     };
   }
 
   return {
     uuid: crypto.randomUUID(),
     input: searchTerm,
-    normalized: searchTerm.toLowerCase(),
+    normalized: normalizedSearchTerm,
     ingredient: undefined,
+    partitionedDatabase,
   };
 }
 
@@ -69,28 +87,28 @@ function partitionSearchSpace(
   database: IngredientDatabase,
   searchTerm: string,
 ): { database: IngredientDatabase; defaultIngredient: string | undefined } {
-   const normalizedSearchTerm = searchTerm.toLowerCase();
-   const matchingGroup = findGroupByInclusion(database.groups, normalizedSearchTerm);
-   const matchingCategory = findCategoryByInclusion(database.categories, normalizedSearchTerm);
+  const normalizedSearchTerm = searchTerm.toLowerCase();
+  const matchingGroup = findGroupByInclusion(database.groups, normalizedSearchTerm);
+  const matchingCategory = findCategoryByInclusion(database.categories, normalizedSearchTerm);
 
-   if (matchingCategory) {
-     return {
-       database: filterDatabaseByCategory(database, matchingCategory.categoryId),
-       defaultIngredient: matchingCategory.defaultIngredient
-     };
-   }
+  if (matchingCategory) {
+    return {
+      database: filterDatabaseByCategory(database, matchingCategory.categoryId),
+      defaultIngredient: matchingCategory.defaultIngredient
+    };
+  }
 
-   if (matchingGroup) {
-     return {
-       database: filterDatabaseByGroup(database, matchingGroup.groupId),
-       defaultIngredient: matchingGroup.defaultIngredient
-     };
-   }
+  if (matchingGroup) {
+    return {
+      database: filterDatabaseByGroup(database, matchingGroup.groupId),
+      defaultIngredient: matchingGroup.defaultIngredient
+    };
+  }
 
-   return {
-     database,
-     defaultIngredient: undefined
-   };
+  return {
+    database,
+    defaultIngredient: undefined
+  };
 }
 
 /**
@@ -150,39 +168,36 @@ function filterDatabaseByCategory(
       {},
     );
 
-
   return {
     categories: {
       [categoryId]: database.categories[categoryId],
     } as Categories,
     ingredients: relevantIngredients,
     groups: {},
-  }
+  };
 }
-
 
 /**
  * Find first category whose inclusions are contained within the search term
  */
 function findCategoryByInclusion(
   categories: Categories,
-  searchTerm: string
+  searchTerm: string,
 ): { categoryId: string; defaultIngredient: string | undefined } | undefined {
   const normalizedSearchTerm = searchTerm.toLowerCase();
 
-  const matchedCategory = Object.entries(categories)
-    .find(([_, category]) =>
-      category.inclusions?.some(inclusion =>
-        normalizedSearchTerm.includes(inclusion.toLowerCase())
-      )
-    );
+  const matchedCategory = Object.entries(categories).find(([_, category]) =>
+    category.inclusions?.some((inclusion) =>
+      normalizedSearchTerm.includes(inclusion.toLowerCase()),
+    ),
+  );
 
   if (!matchedCategory) return undefined;
 
   const [categoryId, category] = matchedCategory;
   return {
     categoryId,
-    defaultIngredient: category.defaultIngredient
+    defaultIngredient: category.defaultIngredient,
   };
 }
 /**
@@ -212,13 +227,12 @@ function findGroupByInclusion(
 /**
  * Find an ingredient by its ID in the database
  */
-function getIngredientById(
+export function getIngredientById(
   database: IngredientDatabase,
   ingredientId: string
 ): Ingredient | undefined {
   return database.ingredients[ingredientId];
 }
-
 
 /**
  * Get unique group IDs for a list of category IDs

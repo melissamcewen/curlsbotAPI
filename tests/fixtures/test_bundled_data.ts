@@ -26,7 +26,7 @@ export const testDatabase: IngredientDatabase = {
       categories: ['water-soluble_silicone']
     },
     unknown_non_water_soluble_silicone: {
-      id: 'unknown_non-water-soluble_silicone',
+      id: 'unknown_non_water_soluble_silicone',
       name: 'Unknown Non-water-soluble Silicone',
       categories: ['non-water-soluble_silicone']
     }
@@ -43,7 +43,8 @@ export const testDatabase: IngredientDatabase = {
       name: 'Water-soluble Silicone',
       description: 'Silicones that are water soluble',
       group: 'silicones',
-      inclusions: ['peg']
+      inclusions: ['peg'],
+      defaultIngredient: 'unknown_water_soluble_silicone'
     },
     'sulfates': {
       id: 'sulfates',
@@ -57,7 +58,7 @@ export const testDatabase: IngredientDatabase = {
       id: 'silicones',
       name: 'Silicones',
       inclusions: ['cone', 'silicone'],
-      defaultIngredient: 'unknown_non-water-soluble_silicone'
+      defaultIngredient: 'unknown_non_water_soluble_silicone'
     },
     detergents: {
       id: 'detergents',

@@ -1,17 +1,25 @@
 import { describe, expect, test } from 'vitest';
-import type { IngredientMatch } from '../src/types';
-import {
-  findIngredient,
-  getCategoryGroups,
-} from '../src/utils/databaseUtils';
+import { findIngredient, getCategoryGroups } from '../src/utils/databaseUtils';
 
 import { testDatabase } from './fixtures/test_bundled_data';
 
 describe('findIngredient', () => {
   test('finds exact ingredient match', () => {
-    const result = findIngredient(testDatabase, 'Dimethicone');
+    const result = findIngredient(testDatabase, 'dimethicone');
+
+    console.log('Search Result:', result);
 
     expect(result).toBeDefined();
+    expect(result?.ingredient).toBeDefined();
+    expect(result?.ingredient?.name).toBe('Dimethicone');
+    expect(result?.normalized).toBe('dimethicone');
+  });
+
+  test('finds exact ingredient match case-insensitive', () => {
+    const result = findIngredient(testDatabase, 'DiMeThIcOnE');
+
+    expect(result).toBeDefined();
+    expect(result?.ingredient).toBeDefined();
     expect(result?.ingredient?.name).toBe('Dimethicone');
     expect(result?.normalized).toBe('dimethicone');
   });
@@ -35,24 +43,92 @@ describe('findIngredient', () => {
     const result = findIngredient(testDatabase, 'peg-dimethicone');
 
     expect(result).toBeDefined();
-    expect(result?.ingredient?.categories).toContain('water-soluble_silicone');
+    expect(result?.ingredient).toBeDefined();
+    expect(result?.ingredient?.id).toBe('unknown_water_soluble_silicone');
   });
 
   test('finds default ingredient through group inclusion', () => {
-    const result = findIngredient(testDatabase, 'new silicone ingredient');
+    const result = findIngredient(testDatabase, 'silicone');
 
     expect(result).toBeDefined();
-    expect(result?.ingredient?.id).toBe('unknown_non-water-soluble_silicone');
+    expect(result?.ingredient).toBeDefined();
+    expect(result?.ingredient?.id).toBe('unknown_non_water_soluble_silicone');
+  });
+
+  test('finds default ingredient through alternate group inclusion', () => {
+    const result = findIngredient(testDatabase, 'something with cone in it');
+
+    expect(result).toBeDefined();
+    expect(result?.ingredient).toBeDefined();
+    expect(result?.ingredient?.id).toBe('unknown_non_water_soluble_silicone');
+  });
+
+  describe('database partitioning', () => {
+    test('correctly partitions by silicones group', () => {
+      const result = findIngredient(testDatabase, 'silicone');
+      const partitionedDb = result.partitionedDatabase;
+
+      // Should only include silicone categories
+      expect(Object.keys(partitionedDb.categories)).toEqual([
+        'non-water-soluble_silicone',
+        'water-soluble_silicone'
+      ]);
+
+      // Should only include silicone ingredients
+      expect(Object.keys(partitionedDb.ingredients)).toEqual([
+        'dimethicone',
+        'unknown_water_soluble_silicone',
+        'unknown_non_water_soluble_silicone'
+      ]);
+
+      // Should not include detergents
+      expect(partitionedDb.ingredients.sodium_laureth_sulfate).toBeUndefined();
+    });
+
+    test('correctly partitions by water-soluble silicone category', () => {
+      const result = findIngredient(testDatabase, 'peg-dimethicone');
+      const partitionedDb = result.partitionedDatabase;
+
+      // Should only include water-soluble silicone category
+      expect(Object.keys(partitionedDb.categories)).toEqual(['water-soluble_silicone']);
+
+      // Should only include water-soluble silicone ingredients
+      expect(Object.keys(partitionedDb.ingredients)).toEqual(['unknown_water_soluble_silicone']);
+
+      // Should not include non-water-soluble silicones
+      expect(partitionedDb.ingredients.dimethicone).toBeUndefined();
+    });
+
+    test('returns full database when no partitioning is possible', () => {
+      const result = findIngredient(testDatabase, 'nonexistent');
+      const partitionedDb = result.partitionedDatabase;
+
+      // Should include all categories and ingredients
+      expect(Object.keys(partitionedDb.categories)).toEqual([
+        'non-water-soluble_silicone',
+        'water-soluble_silicone',
+        'sulfates'
+      ]);
+      expect(Object.keys(partitionedDb.ingredients)).toEqual([
+        'dimethicone',
+        'sodium_laureth_sulfate',
+        'unknown_water_soluble_silicone',
+        'unknown_non_water_soluble_silicone'
+      ]);
+    });
   });
 });
 
 describe('getCategoryGroups', () => {
   test('returns unique group IDs for given category IDs', () => {
-    const categoryIds = ['non-water-soluble_silicone', 'water-soluble_silicone', 'sulfates'];
+    const categoryIds = [
+      'non-water-soluble_silicone',
+      'water-soluble_silicone',
+      'sulfates',
+    ];
     const groups = getCategoryGroups(testDatabase, categoryIds);
 
-    expect(groups).toEqual(['silicones', 'silicones', 'detergents']);
-    // Each group should only appear once after converting to Set
+    expect(groups).toEqual(['silicones', 'detergents']);
     expect(new Set(groups).size).toBe(2);
   });
 
@@ -66,4 +142,3 @@ describe('getCategoryGroups', () => {
     expect(groups).toEqual([]);
   });
 });
-
