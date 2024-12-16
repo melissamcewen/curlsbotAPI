@@ -1,10 +1,6 @@
-import type { IngredientDatabase, Ingredient } from '../types';
-import Fuse from 'fuse.js';
+import { randomUUID } from 'crypto';
 
-interface IngredientMatch {
-  ingredient: Ingredient;
-  confidence: number;
-}
+import type { IngredientDatabase, IngredientMatch } from '../types';
 
 /**
  * Remove numbers and dashes from a string for base comparison
@@ -30,98 +26,116 @@ export function findIngredient(
   // First try exact matches in main database
   for (const ingredient of Object.values(database.ingredients)) {
     if (ingredient.name.toLowerCase() === normalizedSearch) {
-      return { ingredient, confidence: 1.0 };
+      return {
+        uuid: randomUUID(),
+        input: searchTerm,
+        normalized: normalizedSearch,
+        ingredient,
+        confidence: 1.0
+      };
     }
     if (
       ingredient.synonyms?.some((syn) => syn.toLowerCase() === normalizedSearch)
     ) {
-      return { ingredient, confidence: 1.0 };
+      return {
+        uuid: randomUUID(),
+        input: searchTerm,
+        normalized: normalizedSearch,
+        ingredient,
+        confidence: 1.0
+      };
     }
     // Try base form matches with synonyms
     if (ingredient.synonyms?.some((syn) => getBaseForm(syn) === baseSearch)) {
-      return { ingredient, confidence: 0.9 };
+      return {
+        uuid: randomUUID(),
+        input: searchTerm,
+        normalized: normalizedSearch,
+        ingredient,
+        confidence: 0.9
+      };
     }
   }
 
-  // Special handling for PEG/PPG silicones
-  if (normalizedSearch.includes('peg') || normalizedSearch.includes('ppg')) {
-    const unknownPegSilicone = Object.values(database.ingredients).find(
-      (ingredient) => ingredient.id === 'unknown_peg_silicone',
-    );
-    if (unknownPegSilicone) {
-      return { ingredient: unknownPegSilicone, confidence: 0.9 };
+  // Try partial matches
+  for (const ingredient of Object.values(database.ingredients)) {
+    // Check if search term is contained in ingredient name
+    if (ingredient.name.toLowerCase().includes(normalizedSearch)) {
+      return {
+        uuid: randomUUID(),
+        input: searchTerm,
+        normalized: normalizedSearch,
+        ingredient,
+        confidence: 0.8
+      };
+    }
+    // Check if search term is contained in any synonym
+    if (ingredient.synonyms?.some((syn) => syn.toLowerCase().includes(normalizedSearch))) {
+      return {
+        uuid: randomUUID(),
+        input: searchTerm,
+        normalized: normalizedSearch,
+        ingredient,
+        confidence: 0.7
+      };
     }
   }
 
-  // Special handling for SD alcohol variations
-  if (
-    normalizedSearch.includes('sd alcohol') ||
-    normalizedSearch.includes('denatured alcohol')
-  ) {
-    const sdAlcohol = Object.values(database.ingredients).find(
-      (ingredient) => ingredient.id === 'sd_alcohol',
-    );
-    if (sdAlcohol) {
-      return { ingredient: sdAlcohol, confidence: 0.9 };
-    }
-  }
-
-  // Create searchable items from ingredients and their synonyms
-  const searchItems = Object.values(database.ingredients).flatMap(
-    (ingredient) => {
-      const items = [
-        {
-          text: ingredient.name,
+  /// if the search term is longer than 20 characters, try to see if any ingredients are contained in the search term
+  if (searchTerm.length > 20) {
+    for (const ingredient of Object.values(database.ingredients)) {
+      // Check if ingredient name is contained in search term
+      if (normalizedSearch.includes(ingredient.name.toLowerCase())) {
+        return {
+          uuid: randomUUID(),
+          input: searchTerm,
+          normalized: normalizedSearch,
           ingredient,
-          isName: true,
-        },
-      ];
-
-      if (ingredient.synonyms) {
-        items.push(
-          ...ingredient.synonyms.map((syn) => ({
-            text: syn,
-            ingredient,
-            isName: false,
-          })),
-        );
+          confidence: 0.6
+        };
       }
-      return items;
-    },
-  );
-
-  // Configure Fuse.js options
-  const options = {
-    includeScore: true,
-    keys: ['text'],
-    threshold: 0.4, // Less strict matching
-    location: 0, // Start of string
-    distance: 100, // How far to look for matches
-    minMatchCharLength: 3,
-    shouldSort: true,
-    findAllMatches: true,
-    ignoreLocation: false, // This is important - we want to prioritize matches at the start
-    tokenize: true, // Break the search into tokens
-    matchAllTokens: false, // Match any token
-    tokenSeparator: /[\s-/()]+/, // Split on spaces, hyphens, slashes, and parentheses
-  };
-
-  const fuse = new Fuse(searchItems, options);
-  const results = fuse.search(searchTerm);
-
-  if (results.length > 0) {
-    // Convert Fuse.js score (0-1 where 0 is perfect match) to our confidence score (0-1 where 1 is perfect match)
-    const confidence = 1 - (results[0].score || 0);
-
-    // If confidence is too low, don't return a match
-    if (confidence < 0.6) {
-      return undefined;
+      // Check if any synonyms are contained in the search term
+      if (ingredient.synonyms?.some(syn => normalizedSearch.includes(syn.toLowerCase()))) {
+        return {
+          uuid: randomUUID(),
+          input: searchTerm,
+          normalized: normalizedSearch,
+          ingredient,
+          confidence: 0.5
+        };
+      }
     }
+  }
+  // check if the first word of the search term is contained in any ingredient name
+  const firstWord = normalizedSearch.split(' ')[0] ?? '';
+  if (firstWord.length > 2) { // Only check if first word is longer than 2 characters
+    for (const ingredient of Object.values(database.ingredients)) {
+      if (ingredient.name.toLowerCase().includes(firstWord)) {
+        return {
+          uuid: randomUUID(),
+          input: searchTerm,
+          normalized: normalizedSearch,
+          ingredient,
+          confidence: 0.65
+        };
+      }
+      // Check if first word is in any synonym
+      if (ingredient.synonyms?.some(syn => syn.toLowerCase().includes(firstWord))) {
+        return {
+          uuid: randomUUID(),
+          input: searchTerm,
+          normalized: normalizedSearch,
+          ingredient,
+          confidence: 0.55
+        };
+      }
+    }
+  }
 
-    return {
-      ingredient: results[0].item.ingredient,
-      confidence: confidence,
-    };
+  // utilize the UnknownIngredientMatch function
+  const unknownMatch = unknownIngredientMatch(searchTerm, database);
+  if (unknownMatch) {
+    return unknownMatch;
   }
 
   return undefined;
@@ -155,4 +169,77 @@ export function getCategoryGroups(
   });
 
   return Array.from(groups);
+}
+
+
+// * Special handling for various ingredients returns an ingredient match object */
+export function unknownIngredientMatch(
+  searchTerm: string,
+  database: IngredientDatabase,
+): IngredientMatch | undefined {
+  const normalizedSearch = searchTerm.toLowerCase();
+
+  // if it contains 'peg' or 'ppg' return unknown_peg_silicone
+  if (normalizedSearch.includes('peg') || normalizedSearch.includes('ppg')) {
+    const unknownPegSilicone = Object.values(database.ingredients).find(
+      (ingredient) => ingredient.id === 'unknown_peg_silicone',
+    );
+    if (!unknownPegSilicone) return undefined;
+    return {
+      uuid: randomUUID(),
+      input: searchTerm,
+      normalized: normalizedSearch,
+      ingredient: unknownPegSilicone,
+      confidence: 0.9
+    };
+  }
+
+  // if it contains alcohol return unknown_alcohol
+  if (normalizedSearch.includes('alcohol')) {
+    const unknownAlcohol = Object.values(database.ingredients).find(
+      (ingredient) => ingredient.id === 'unknown_alcohol',
+    );
+    if (!unknownAlcohol) return undefined;
+    return {
+      uuid: randomUUID(),
+      input: searchTerm,
+      normalized: normalizedSearch,
+      ingredient: unknownAlcohol,
+      confidence: 0.9
+    };
+  }
+
+  // if it contains 'paraben' return unknown_paraben
+  if (normalizedSearch.includes('paraben')) {
+    const unknownParaben = Object.values(database.ingredients).find(
+      (ingredient) => ingredient.id === 'unknown_paraben',
+    );
+    if (!unknownParaben) return undefined;
+    return {
+      uuid: randomUUID(),
+      input: searchTerm,
+      normalized: normalizedSearch,
+      ingredient: unknownParaben,
+      confidence: 0.9
+    };
+  }
+
+  // Check for unknown non-water soluble silicones
+  const unknownNonWaterSolubleSilicones = Object.values(database.ingredients).find(
+    (ingredient) => ingredient.id === 'unknown_non_water_soluble_silicones',
+  );
+
+  if (unknownNonWaterSolubleSilicones?.synonyms?.some(synonym =>
+    normalizedSearch.includes(synonym.toLowerCase())
+  )) {
+    return {
+      uuid: randomUUID(),
+      input: searchTerm,
+      normalized: normalizedSearch,
+      ingredient: unknownNonWaterSolubleSilicones,
+      confidence: 0.9
+    };
+  }
+
+  return undefined;
 }

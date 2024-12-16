@@ -118,11 +118,11 @@ export interface IngredientMatch {
   /** Normalized name of the matched ingredient */
   normalized: string;
   /** group that the ingredient belongs to */
-  groups: string[];
+  groups?: string[];
   /** categories that the ingredient belongs to */
-  categories: string[];
+  categories?: string[];
   /** flags that the ingredient belongs to */
-  flags: string[];
+  flags?: string[];
   /** the ingredient matched (if any) */
   ingredient?: Ingredient;
   /** confidence of the match */

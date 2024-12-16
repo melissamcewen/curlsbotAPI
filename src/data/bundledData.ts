@@ -1678,6 +1678,79 @@ export const defaultDatabase: IngredientDatabase = {
         "water-soluble_silicones"
       ]
     },
+    "unknown_non_water_soluble_silicones": {
+      "name": "Unknown Non-Water Soluble Silicones",
+      "id": "unknown_non_water_soluble_silicones",
+      "synonyms": [
+        "cone",
+        "dimethicon",
+        "silane",
+        "siloxane",
+        "dimethcione",
+        "botanisil",
+        "silicon",
+        "silylate",
+        "silsesquioxane",
+        "siloxysilicate",
+        "microsil"
+      ],
+      "categories": [
+        "non-water-soluble_silicones"
+      ]
+    },
+    "unknown_water_soluble_silicones": {
+      "name": "Unknown Water Soluble Silicones",
+      "id": "unknown_water_soluble_silicones",
+      "synonyms": [
+        "peg",
+        "ppg",
+        "pg-"
+      ],
+      "categories": [
+        "water-soluble_silicones"
+      ]
+    },
+    "unknown_sulfates": {
+      "name": "Unknown Sulfates",
+      "id": "unknown_sulfates",
+      "synonyms": [
+        "sulfate",
+        "sulphate"
+      ],
+      "categories": [
+        "sulfates"
+      ]
+    },
+    "unknown_sarcosinate": {
+      "name": "Unknown Sarcosinate",
+      "id": "unknown_sarcosinate",
+      "synonyms": [
+        "sarcosinate"
+      ],
+      "categories": [
+        "other_detergents"
+      ]
+    },
+    "unknown_cocoyl_glutamate": {
+      "name": "Unknown Cocoyl Glutamate",
+      "id": "unknown_cocoyl_glutamate",
+      "synonyms": [
+        "cocoyl glutamate"
+      ],
+      "categories": [
+        "other_detergents"
+      ]
+    },
+    "unknown_wax": {
+      "name": "Unknown Wax",
+      "id": "unknown_wax",
+      "synonyms": [
+        "wax"
+      ],
+      "categories": [
+        "non-water-soluble_waxes"
+      ]
+    },
     "beeswax": {
       "name": "Beeswax",
       "id": "beeswax",
