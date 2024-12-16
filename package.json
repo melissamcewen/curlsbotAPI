@@ -14,6 +14,7 @@
     "test:coverage": "vitest run --coverage",
     "prepare": "npm run build",
     "type-check": "tsc --noEmit --project src/tsconfig.json",
+    "type-check-tests": "tsc --noEmit --project tests/tsconfig.json",
     "api-extractor": "api-extractor run --local --verbose --config api-extractor.json",
     "lint": "eslint . --ext .ts",
     "lint:fix": "eslint . --ext .ts --fix",

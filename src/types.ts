@@ -115,7 +115,7 @@ export interface IngredientMatch {
   /** categories that the ingredient belongs to */
   categories?: string[];
   /** flags that the ingredient belongs to */
-  flags?: string[];
+  flags?: Flag[];
   /** the ingredient matched (if any) */
   ingredient?: Ingredient;
   /** confidence of the match */
@@ -183,11 +183,9 @@ export type Categories = Record<string, Category>;
  * Represents a flag for an ingredient, category, or group
  */
 export interface Flag {
-  id: string;
-  name: string;
-  description?: string;
   type: 'ingredient' | 'category' | 'group';
   flag_type: 'avoid' | 'prefer' | 'avoid_others_in_category' | 'caution';
+  settingId?: string;
 }
 
 /**

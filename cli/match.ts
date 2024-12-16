@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
 import { Command } from 'commander';
+
 import { findIngredient } from '../src/utils/databaseUtils';
 import { defaultDatabase } from '../src/data/bundledData';
 

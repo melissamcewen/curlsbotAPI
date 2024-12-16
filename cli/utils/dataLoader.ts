@@ -1,5 +1,6 @@
 import { join } from 'path';
 import { readFileSync, readdirSync } from 'fs';
+
 import type { IngredientDatabase, Ingredients } from '../../src/types';
 
 interface LoadDatabaseOptions {

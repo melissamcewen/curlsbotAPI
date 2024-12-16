@@ -1,4 +1,5 @@
 import type { IngredientDatabase } from '../../src/types';
+
 import { loadSettings, loadSystems } from './configLoader';
 
 export function validateSettingsAndSystems(database: IngredientDatabase, configDir: string): string[] {

@@ -5,12 +5,11 @@ import { Analyzer } from '../src/analyzer';
 import {
   testDatabase,
 } from './fixtures/test_bundled_data';
-
 import { testSystem, testSettings } from './fixtures/flagTestData';
 
 describe('Analyzer', () => {
   describe('Basic Ingredient Analysis', () => {
-    it('should analyze a single ingredient with full confidence', () => {
+    it('should analyze a single ingredient in the databasewith full confidence', () => {
       const analyzer = new Analyzer({ database: testDatabase });
       const result = analyzer.analyze('Cetyl Alcohol');
 

@@ -167,12 +167,15 @@ export class Analyzer {
       groups.forEach(g => allGroups.add(g));
 
       // Get flags from categories and system settings
-      const flags = new Set<string>();
+      const flags: Flags = {};
 
       // Add ingredient flags
       if (ingredient && mergedFlags.flaggedIngredients?.includes(ingredient.id)) {
         console.log(`Adding ingredient flag ${ingredient.id} for ${normalizedName}`);
-        flags.add(ingredient.id);
+        flags[ingredient.id] = {
+          type: 'ingredient',
+          flag_type: 'caution'
+        };
       }
 
       // Add category flags
@@ -182,7 +185,10 @@ export class Analyzer {
         // First check if the category is flagged
         if (mergedFlags.flaggedCategories?.includes(catId)) {
           console.log(`Adding category flag ${catId} for ${normalizedName}`);
-          flags.add(catId);
+          flags[catId] = {
+            type: 'category',
+            flag_type: 'caution'
+          };
         }
         // Then check settings that apply to this category
         if (system) {
@@ -209,7 +215,11 @@ export class Analyzer {
 
                     if (hasGroupCategories && !hasAllowedCategory) {
                       console.log(`Adding avoid_others_in_category flag ${settingId} for ${normalizedName}`);
-                      flags.add(settingId);
+                      flags[settingId] = {
+                        type: 'setting',
+                        flag_type: 'avoid_others_in_category',
+                        settingId: settingId
+                      };
                     }
                   }
                 });
@@ -219,7 +229,11 @@ export class Analyzer {
                   console.log(`Adding setting flags ${setting.flags} for ${normalizedName} from setting ${settingId}`);
                   setting.flags.forEach(flag => {
                     console.log(`Adding individual flag ${flag} for ${normalizedName}`);
-                    flags.add(flag);
+                    flags[flag] = {
+                      type: 'setting',
+                      flag_type: flag,
+                      settingId: settingId
+                    };
                   });
                 }
               }
@@ -239,7 +253,11 @@ export class Analyzer {
               const settingCategory = this.database.categories[settingCatId];
               if (settingCategory && settingCategory.group === groupId && !categories.some(c => settingCategories.includes(c))) {
                 console.log(`Adding avoid_others_in_category flag ${settingId} for ${normalizedName} from group check`);
-                flags.add(settingId);
+                flags[settingId] = {
+                  type: 'setting',
+                  flag_type: 'avoid_others_in_category',
+                  settingId: settingId
+                };
               }
             });
           }
@@ -251,7 +269,10 @@ export class Analyzer {
         console.log(`Checking group ${groupId} for ${normalizedName}`);
         if (mergedFlags.flaggedGroups?.includes(groupId)) {
           console.log(`Adding group flag ${groupId} for ${normalizedName}`);
-          flags.add(groupId);
+          flags[groupId] = {
+            type: 'group',
+            flag_type: 'caution'
+          };
         }
       });
 
@@ -261,7 +282,7 @@ export class Analyzer {
         normalized: normalizedName,
         groups: groups,
         categories: categories,
-        flags: Array.from(flags),
+        flags: Object.values(flags),
         ingredient: ingredient,
         confidence: match?.confidence
       };
@@ -274,30 +295,17 @@ export class Analyzer {
     result.groups = Array.from(allGroups);
 
     // Collect all flags from matches
-    const flags: Flags = {};
+    const allFlags: Flags = {};
     result.matches.forEach(match => {
-      if (match.flags) {
-        match.flags.forEach(flagId => {
-          const setting = this.settings[flagId];
-          if (!setting) return;
-
-          // Create flag from setting if we haven't already
-          if (!flags[flagId]) {
-            flags[flagId] = {
-              id: flagId,
-              name: setting.name,
-              description: setting.description,
-              type: match.ingredient ? 'ingredient' :
-                    match.categories?.length ? 'category' : 'group',
-              flag_type: setting.flags[0] as 'avoid' | 'prefer' | 'avoid_others_in_category' | 'caution'
-            };
-          }
-        });
-      }
+      match.flags?.forEach(flag => {
+        if (flag.settingId) {
+          allFlags[flag.settingId] = flag;
+        }
+      });
     });
 
     // Set the flags in the result
-    result.flags = flags;
+    result.flags = allFlags;
 
     // Set system settings if a system was used
     if (system) {

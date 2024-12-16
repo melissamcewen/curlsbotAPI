@@ -1,5 +1,6 @@
 import { join } from 'path';
 import { readFileSync } from 'fs';
+
 import type { Settings, System } from '../../src/types';
 
 interface LoadConfigOptions {

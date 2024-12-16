@@ -6,8 +6,9 @@ import { readFileSync, writeFileSync, readdirSync } from 'fs';
 
 import { Command } from 'commander';
 
-import { loadDatabase } from './utils/dataLoader';
 import type { IngredientDatabase } from '../src/types';
+
+import { loadDatabase } from './utils/dataLoader';
 import { validateSettingsAndSystems } from './utils/validation';
 
 

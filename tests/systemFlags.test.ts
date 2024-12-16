@@ -1,5 +1,7 @@
 import { describe, test, expect } from 'vitest';
+
 import { getSystemFlags, mergeFlags } from '../src/utils/flags';
+
 import { testSystem, testSettings } from './fixtures/flagTestData';
 
 describe('system flags utils', () => {
