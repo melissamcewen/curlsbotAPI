@@ -8,7 +8,6 @@ import type {
   UserPreferences,
   FlagRule,
   IngredientMatch,
-  Flag,
   Flags
 } from './types';
 import { getBundledDatabase } from './data/bundledData';
@@ -17,6 +16,7 @@ import { getBundledSettings } from './data/bundledData';
 import { normalizer } from './utils/normalizer';
 import { findIngredient, getIngredientCategories, getCategoryGroups } from './utils/databaseUtils';
 import { getSystemFlags, mergeFlags } from './utils/flags';
+import { getFlags } from './utils/flagging';
 
 export class Analyzer {
   private database: IngredientDatabase;
@@ -166,139 +166,23 @@ export class Analyzer {
       categories.forEach(c => allCategories.add(c));
       groups.forEach(g => allGroups.add(g));
 
-      // Get flags from categories and system settings
-      const flags: Flags = {};
-
-      // Add ingredient flags
-      if (ingredient && mergedFlags.flaggedIngredients?.includes(ingredient.id)) {
-        console.log(`Adding ingredient flag ${ingredient.id} for ${normalizedName}`);
-        const setting = Object.values(this.settings).find(s => s.ingredients?.includes(ingredient.id));
-        if (setting) {
-          flags[setting.id] = {
-            id: setting.id,
-            name: setting.name,
-            description: setting.description,
-            type: 'ingredient',
-            flag_type: setting.flags?.[0] || 'caution'
-          };
-        }
-      }
-
-      // Add category flags
-      categories.forEach(catId => {
-        console.log(`Checking category ${catId} for ${normalizedName}`);
-        console.log(`Merged flags:`, mergedFlags);
-        // First check if the category is flagged
-        if (mergedFlags.flaggedCategories?.includes(catId)) {
-          console.log(`Adding category flag ${catId} for ${normalizedName}`);
-          const setting = Object.values(this.settings).find(s => s.categories?.includes(catId));
-          if (setting) {
-            flags[setting.id] = {
-              id: setting.id,
-              name: setting.name,
-              description: setting.description,
-              type: 'category',
-              flag_type: setting.flags?.[0] || 'caution'
-            };
-          }
-        }
-        // Then check settings that apply to this category
-        if (system) {
-          console.log(`System settings for ${normalizedName}:`, system.settings);
-          system.settings.forEach(settingId => {
-            const setting = this.settings[settingId];
-            console.log(`Checking setting ${settingId} for ${normalizedName}:`, setting);
-            if (setting) {
-              // Handle avoid_others_in_category flag
-              if (setting.flags?.includes('avoid_others_in_category')) {
-                const settingCategories = setting.categories || [];
-                settingCategories.forEach(settingCatId => {
-                  const settingCategory = this.database.categories[settingCatId];
-                  if (settingCategory) {
-                    const categoryGroup = settingCategory.group;
-                    // Get all categories in the same group
-                    const categoriesInGroup = Object.values(this.database.categories)
-                      .filter(cat => cat.group === categoryGroup)
-                      .map(cat => cat.id);
-
-                    // If ingredient has any categories in this group but none are in the allowed categories
-                    const hasGroupCategories = categories.some(c => categoriesInGroup.includes(c));
-                    const hasAllowedCategory = categories.some(c => settingCategories.includes(c));
-
-                    if (hasGroupCategories && !hasAllowedCategory) {
-                      console.log(`Adding avoid_others_in_category flag ${settingId} for ${normalizedName}`);
-                      flags[settingId] = {
-                        id: settingId,
-                        name: setting.name,
-                        description: setting.description,
-                        type: 'category',
-                        flag_type: 'avoid_others_in_category'
-                      };
-                    }
-                  }
-                });
-              } else if (categories.some(catId => setting.categories?.includes(catId))) {
-                console.log(`Setting ${settingId} matches category for ${normalizedName}`);
-                if (setting.flags) {
-                  console.log(`Adding setting flags ${setting.flags} for ${normalizedName} from setting ${settingId}`);
-                  setting.flags.forEach(flag => {
-                    console.log(`Adding individual flag ${flag} for ${normalizedName}`);
-                    flags[flag] = {
-                      type: 'setting',
-                      flag_type: flag,
-                      settingId: settingId
-                    };
-                  });
-                }
-              }
-            }
-          });
-        }
-      });
-
-      // Also check if any ingredient categories are in a group that has avoid_others_in_category
-      groups.forEach(groupId => {
-        console.log(`Checking group ${groupId} for ${normalizedName}`);
-        system?.settings.forEach(settingId => {
-          const setting = this.settings[settingId];
-          if (setting?.flags?.includes('avoid_others_in_category')) {
-            const settingCategories = setting.categories || [];
-            settingCategories.forEach(settingCatId => {
-              const settingCategory = this.database.categories[settingCatId];
-              if (settingCategory && settingCategory.group === groupId && !categories.some(c => settingCategories.includes(c))) {
-                console.log(`Adding avoid_others_in_category flag ${settingId} for ${normalizedName} from group check`);
-                flags[settingId] = {
-                  type: 'setting',
-                  flag_type: 'avoid_others_in_category',
-                  settingId: settingId
-                };
-              }
-            });
-          }
-        });
-      });
-
-      // Add group flags
-      groups.forEach(groupId => {
-        console.log(`Checking group ${groupId} for ${normalizedName}`);
-        if (mergedFlags.flaggedGroups?.includes(groupId)) {
-          console.log(`Adding group flag ${groupId} for ${normalizedName}`);
-          flags[groupId] = {
-            type: 'group',
-            flag_type: 'caution'
-          };
-        }
-      });
-
       const matchResult: IngredientMatch = {
         uuid: crypto.randomUUID(),
         input: normalizedName,
         normalized: normalizedName,
         groups: groups,
         categories: categories,
-        flags: Object.values(flags),
-        ingredient: ingredient,
-        confidence: match?.confidence
+        flags: Object.values(getFlags(
+          normalizedName,
+          ingredient,
+          categories,
+          groups,
+          system,
+          this.settings,
+          mergedFlags,
+          this.database
+        )),
+        ingredient: ingredient
       };
 
       return matchResult;

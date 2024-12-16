@@ -220,8 +220,7 @@ export interface Setting {
   ingredients: string[];
   categories: string[];
   groups: string[];
-  // list of flag IDs
-  flags: string[];
+  flag_type: string;
 }
 
 /**

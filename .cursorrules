@@ -1,17 +1,7 @@
-Your permissions for json files in data is reading is allowed but not writing
+tests go in the tests directory ./tests
 
-Avoid using mocks in tests, unless there is no other option
+tests should be named after the file they test, with the exception of e2e tests. For example analyzer.test.ts corresponds to analyzer.ts
 
-Remember we use the config from the src/data/bundledData.ts unless using the cli
+e2e tests go in tests/e2e and use the production db
 
-Don't try to fix everything at once.
-
-Avoid changing the schema unless instructured to do so
-
-e2e tests should use production data, other tests should use test data, ideally test fixtures. The test db is tests/fixtures/test_bundled_data.ts
-
-use `test` instead of just vitest
-
-run cli with tsx
-
-reading bundledData.ts is fine but don't write to it
+tests that are not in the e2e directory use the test db which is in fixtures

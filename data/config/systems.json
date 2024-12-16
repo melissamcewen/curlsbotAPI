@@ -11,16 +11,6 @@
       "id": "curly_moderate",
       "description": "Just like the default system, but allows for some water soluble silicones and moderate surfactants.",
       "settings": ["sulfate_free", "drying_alcohol", "no_water_insoluble_silicones", "no_waxes", "no_heavy_oils", "caution_water_soluble_silicones"]
-    },
-    {
-      "name": "No Poo",
-      "id": "no_poo",
-      "description": "No Poo is a hair care system that focuses on using products that are free of harsh chemicals and sulfates. It recommends using products that are free of drying alcohols, parabens, and other potentially harmful ingredients."
-    },
-    {
-      "name": "Wavy Hair",
-      "id": "wavy_hair",
-      "description": "Wavy hair needs a different approach to hair care. You may still need to use some sulfates and you should avoid heavy product and oils"
     }
   ]
 }

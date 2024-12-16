@@ -7,7 +7,7 @@
       "ingredients": [],
       "categories": ["sulfates"],
       "groups": [],
-      "flags": ["avoid"]
+      "flag_type": "avoid"
     },
     {
       "id": "paraben_free",
@@ -16,7 +16,7 @@
       "ingredients": [],
       "categories": ["parabens"],
       "groups": [],
-      "flags": ["avoid"]
+      "flag_type": "avoid"
     },
     {
       "id": "cleansing",
@@ -25,7 +25,7 @@
       "ingredients": [],
       "categories": ["sulfates"],
       "groups": [],
-      "flags": ["prefer"]
+      "flag_type": "prefer"
     },
     {
       "id": "drying_alcohol",
@@ -34,7 +34,7 @@
       "ingredients": [],
       "categories": ["drying_alcohols"],
       "groups": [],
-      "flags": ["avoid"]
+      "flag_type": "avoid"
     },
     {
       "id": "silicone_free",
@@ -43,7 +43,7 @@
       "ingredients": [],
       "categories": ["silicones"],
       "groups": [],
-      "flags": ["avoid"]
+      "flag_type": "avoid"
     },
     {
       "id": "no_heavy_oils",
@@ -52,7 +52,7 @@
       "ingredients": [],
       "categories": ["heavy_oils"],
       "groups": [],
-      "flags": ["avoid"]
+      "flag_type": "avoid"
     },
     {
       "id": "no_waxes",
@@ -61,7 +61,7 @@
       "ingredients": [],
       "categories": ["non-water-soluble_waxes"],
       "groups": [],
-      "flags": ["avoid"]
+      "flag_type": "avoid"
     },
     {
       "id": "no_water_insoluble_silicones",
@@ -70,7 +70,7 @@
       "ingredients": [],
       "categories": ["non-water-soluble_silicones"],
       "groups": [],
-      "flags": ["avoid"]
+      "flag_type": "avoid"
     },
     {
       "id": "no_strong_surfactants",
@@ -79,7 +79,7 @@
       "ingredients": [],
       "categories": ["sulfonates", "sulfates"],
       "groups": [],
-      "flags": ["avoid"]
+      "flag_type": "avoid"
     },
     {
       "id": "mild_detergents_only",
@@ -88,7 +88,7 @@
       "ingredients": [],
       "categories": ["mild_detergents"],
       "groups": [],
-      "flags": ["avoid_others_in_category"]
+      "flag_type": "avoid_others_in_category"
     },
     {
       "id": "caution_water_soluble_silicones",

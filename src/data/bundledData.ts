@@ -2136,16 +2136,6 @@ export const defaultSystems: System[] = [
       "no_heavy_oils",
       "caution_water_soluble_silicones"
     ]
-  },
-  {
-    "name": "No Poo",
-    "id": "no_poo",
-    "description": "No Poo is a hair care system that focuses on using products that are free of harsh chemicals and sulfates. It recommends using products that are free of drying alcohols, parabens, and other potentially harmful ingredients."
-  },
-  {
-    "name": "Wavy Hair",
-    "id": "wavy_hair",
-    "description": "Wavy hair needs a different approach to hair care. You may still need to use some sulfates and you should avoid heavy product and oils"
   }
 ];
 
@@ -2159,9 +2149,7 @@ export const defaultSettings: Record<string, Setting> = {
       "sulfates"
     ],
     "groups": [],
-    "flags": [
-      "avoid"
-    ]
+    "flag_type": "avoid"
   },
   "paraben_free": {
     "id": "paraben_free",
@@ -2172,9 +2160,7 @@ export const defaultSettings: Record<string, Setting> = {
       "parabens"
     ],
     "groups": [],
-    "flags": [
-      "avoid"
-    ]
+    "flag_type": "avoid"
   },
   "cleansing": {
     "id": "cleansing",
@@ -2185,9 +2171,7 @@ export const defaultSettings: Record<string, Setting> = {
       "sulfates"
     ],
     "groups": [],
-    "flags": [
-      "prefer"
-    ]
+    "flag_type": "prefer"
   },
   "drying_alcohol": {
     "id": "drying_alcohol",
@@ -2198,9 +2182,7 @@ export const defaultSettings: Record<string, Setting> = {
       "drying_alcohols"
     ],
     "groups": [],
-    "flags": [
-      "avoid"
-    ]
+    "flag_type": "avoid"
   },
   "silicone_free": {
     "id": "silicone_free",
@@ -2211,9 +2193,7 @@ export const defaultSettings: Record<string, Setting> = {
       "silicones"
     ],
     "groups": [],
-    "flags": [
-      "avoid"
-    ]
+    "flag_type": "avoid"
   },
   "no_heavy_oils": {
     "id": "no_heavy_oils",
@@ -2224,9 +2204,7 @@ export const defaultSettings: Record<string, Setting> = {
       "heavy_oils"
     ],
     "groups": [],
-    "flags": [
-      "avoid"
-    ]
+    "flag_type": "avoid"
   },
   "no_waxes": {
     "id": "no_waxes",
@@ -2237,9 +2215,7 @@ export const defaultSettings: Record<string, Setting> = {
       "non-water-soluble_waxes"
     ],
     "groups": [],
-    "flags": [
-      "avoid"
-    ]
+    "flag_type": "avoid"
   },
   "no_water_insoluble_silicones": {
     "id": "no_water_insoluble_silicones",
@@ -2250,9 +2226,7 @@ export const defaultSettings: Record<string, Setting> = {
       "non-water-soluble_silicones"
     ],
     "groups": [],
-    "flags": [
-      "avoid"
-    ]
+    "flag_type": "avoid"
   },
   "no_strong_surfactants": {
     "id": "no_strong_surfactants",
@@ -2264,9 +2238,7 @@ export const defaultSettings: Record<string, Setting> = {
       "sulfates"
     ],
     "groups": [],
-    "flags": [
-      "avoid"
-    ]
+    "flag_type": "avoid"
   },
   "mild_detergents_only": {
     "id": "mild_detergents_only",
@@ -2277,9 +2249,7 @@ export const defaultSettings: Record<string, Setting> = {
       "mild_detergents"
     ],
     "groups": [],
-    "flags": [
-      "avoid_others_in_category"
-    ]
+    "flag_type": "avoid_others_in_category"
   },
   "caution_water_soluble_silicones": {
     "id": "caution_water_soluble_silicones",
