@@ -17,10 +17,11 @@ program
 
     if (match) {
       console.log('\nMatch found!');
-      console.log('Ingredient:', match.ingredient.name);
-      console.log('ID:', match.ingredient.id);
+      console.log('Categories for match:', match.categories)
+      console.log('Ingredient:', match.ingredient?.name);
+      console.log('ID:', match.ingredient?.id);
       console.log('Confidence:', match.confidence);
-      console.log('Categories:', match.ingredient.categories);
+      console.log('Categories:', match.ingredient?.categories);
       if (match.ingredient.synonyms) {
         console.log('Synonyms:', match.ingredient.synonyms);
       }

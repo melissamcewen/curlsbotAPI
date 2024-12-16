@@ -169,6 +169,16 @@
       "references": [
         "https://incidecoder.com/ingredients/polysorbate-20"
       ]
+    },
+    {
+      "name": "Emulsifying Wax",
+      "id": "emulsifying_wax",
+      "categories": [
+        "water-soluble_waxes"
+      ],
+      "references": [
+        "https://incidecoder.com/ingredients/emulsifying-wax"
+      ]
     }
   ]
 }

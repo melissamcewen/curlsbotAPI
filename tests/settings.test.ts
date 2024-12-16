@@ -15,7 +15,7 @@ describe('Settings analysis', () => {
     const resultHarsh = analyzer.analyze('Sodium Laureth Sulfate', 'curly_default')
     const harshMatch = resultHarsh.matches[0]
     expect(harshMatch.categories).toContain('sulfates')
-    expect(harshMatch.flags).toContain('mild_detergents_only')
+    expect(harshMatch.flags).toContain('sulfates')
 
     // Test with a mild surfactant - should not be flagged
     const resultMild = analyzer.analyze('Cocamidopropyl Betaine', 'curly_default')

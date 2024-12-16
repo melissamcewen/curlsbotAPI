@@ -31,7 +31,8 @@ export function findIngredient(
         input: searchTerm,
         normalized: normalizedSearch,
         ingredient,
-        confidence: 1.0
+        categories: ingredient.categories,
+        confidence: 1.0,
       };
     }
     if (
@@ -42,7 +43,8 @@ export function findIngredient(
         input: searchTerm,
         normalized: normalizedSearch,
         ingredient,
-        confidence: 1.0
+        categories: ingredient.categories,
+        confidence: 1.0,
       };
     }
     // Try base form matches with synonyms
@@ -52,7 +54,8 @@ export function findIngredient(
         input: searchTerm,
         normalized: normalizedSearch,
         ingredient,
-        confidence: 0.9
+        categories: ingredient.categories,
+        confidence: 0.9,
       };
     }
   }
@@ -66,17 +69,23 @@ export function findIngredient(
         input: searchTerm,
         normalized: normalizedSearch,
         ingredient,
-        confidence: 0.8
+        categories: ingredient.categories,
+        confidence: 0.8,
       };
     }
     // Check if search term is contained in any synonym
-    if (ingredient.synonyms?.some((syn) => syn.toLowerCase().includes(normalizedSearch))) {
+    if (
+      ingredient.synonyms?.some((syn) =>
+        syn.toLowerCase().includes(normalizedSearch),
+      )
+    ) {
       return {
         uuid: randomUUID(),
         input: searchTerm,
         normalized: normalizedSearch,
         ingredient,
-        confidence: 0.7
+        categories: ingredient.categories,
+        confidence: 0.7,
       };
     }
   }
@@ -97,24 +106,36 @@ export function findIngredient(
           input: searchTerm,
           normalized: normalizedSearch,
           ingredient,
-          confidence: 0.6
+          categories: ingredient.categories,
+          confidence: 0.6,
         };
       }
       // Check if any synonyms are contained in the search term
-      if (ingredient.synonyms?.some(syn => normalizedSearch.includes(syn.toLowerCase()))) {
+      if (
+        ingredient.synonyms?.some((syn) =>
+          normalizedSearch.includes(syn.toLowerCase()),
+        )
+      ) {
         return {
           uuid: randomUUID(),
           input: searchTerm,
           normalized: normalizedSearch,
           ingredient,
-          confidence: 0.5
+          categories: ingredient.categories,
+          confidence: 0.5,
         };
       }
     }
   }
+  // do a simple fuzzy match to check for misspellings
+  const fuzzyMatchResult = doFuzzyMatch(searchTerm, database);
+  if (fuzzyMatchResult) {
+    return fuzzyMatchResult;
+  }
   // check if the first word of the search term is contained in any ingredient name
   const firstWord = normalizedSearch.split(' ')[0] ?? '';
-  if (firstWord.length > 2) { // Only check if first word is longer than 2 characters
+  if (firstWord.length > 2) {
+    // Only check if first word is longer than 2 characters
     for (const ingredient of Object.values(database.ingredients)) {
       if (ingredient.name.toLowerCase().includes(firstWord)) {
         return {
@@ -122,17 +143,23 @@ export function findIngredient(
           input: searchTerm,
           normalized: normalizedSearch,
           ingredient,
-          confidence: 0.65
+          categories: ingredient.categories,
+          confidence: 0.65,
         };
       }
       // Check if first word is in any synonym
-      if (ingredient.synonyms?.some(syn => syn.toLowerCase().includes(firstWord))) {
+      if (
+        ingredient.synonyms?.some((syn) =>
+          syn.toLowerCase().includes(firstWord),
+        )
+      ) {
         return {
           uuid: randomUUID(),
           input: searchTerm,
           normalized: normalizedSearch,
           ingredient,
-          confidence: 0.55
+          categories: ingredient.categories,
+          confidence: 0.55,
         };
       }
     }
@@ -145,6 +172,57 @@ export function findIngredient(
   }
 
   return undefined;
+}
+
+function doFuzzyMatch(
+  searchTerm: string,
+  database: IngredientDatabase,
+): IngredientMatch | undefined {
+  const normalizedSearch = searchTerm.toLowerCase();
+  let bestMatch = undefined;
+  let bestDistance = Infinity;
+
+  for (const ingredient of Object.values(database.ingredients)) {
+    const distance = levenshteinDistance(normalizedSearch, ingredient.name.toLowerCase());
+    if (distance < bestDistance && distance <= 2) { // Allow up to 2 character differences
+      bestDistance = distance;
+      bestMatch = ingredient;
+    }
+  }
+
+  if (bestMatch) {
+    return {
+      uuid: randomUUID(),
+      input: searchTerm,
+      normalized: normalizedSearch,
+      ingredient: bestMatch,
+      categories: bestMatch.categories,
+      confidence: 0.4 // Lower confidence for fuzzy matches
+    };
+  }
+  return undefined;
+}
+
+function levenshteinDistance(a: string, b: string): number {
+  if (a.length === 0) return b.length;
+  if (b.length === 0) return a.length;
+
+  const matrix = Array(a.length + 1).fill(null).map(() => Array(b.length + 1).fill(null));
+
+  for (let i = 0; i <= a.length; i++) matrix[i][0] = i;
+  for (let j = 0; j <= b.length; j++) matrix[0][j] = j;
+
+  for (let i = 1; i <= a.length; i++) {
+    for (let j = 1; j <= b.length; j++) {
+      matrix[i][j] = Math.min(
+        matrix[i-1][j] + 1,
+        matrix[i][j-1] + 1,
+        matrix[i-1][j-1] + (a[i-1] === b[j-1] ? 0 : 1)
+      );
+    }
+  }
+
+  return matrix[a.length][b.length];
 }
 
 /**
@@ -251,7 +329,22 @@ export function unknownIngredientMatch(
       confidence: 0.9
     };
   }
+  // Check for unknown sulfates
+  const unknownSulfate = Object.values(database.ingredients).find(
+    (ingredient) => ingredient.id === 'unknown_sulfate',
+  );
 
+  if (unknownSulfate?.synonyms?.some(synonym =>
+    normalizedSearch.includes(synonym.toLowerCase())
+  ) || normalizedSearch.includes('sulfate')) {
+    return {
+      uuid: randomUUID(),
+      input: searchTerm,
+      normalized: normalizedSearch,
+      ingredient: unknownSulfate,
+      confidence: 0.9
+    };
+  }
   return undefined;
 }
 

@@ -14,6 +14,8 @@ describe('Sulfates ingredient analysis', () => {
     it('should detect sodium laureth sulfate as a sulfate', () => {
       const result = analyzer.analyze('Sodium Laureth Sulfate', 'curly_default')
       const match = result.matches[0]
+      // expect the ingredient to be sodium laureth sulfate
+      expect(match.ingredient?.name).toBe('Sodium Laureth Sulfate')
       expect(match.categories).toContain('sulfates')
       expect(match.flags).toContain('sulfates')
     })
@@ -50,8 +52,7 @@ describe('Sulfates ingredient analysis', () => {
       const result = analyzer.analyze('Sodium Laureth Sulfuate', 'curly_default')
       const match = result.matches[0]
       expect(match.normalized).toBe('sodium laureth sulfuate')
-      expect(match.categories).toEqual([])
-      expect(match.flags).toEqual([])
+      expect(match.ingredient?.name).toBe('Sodium Laureth Sulfate')
     })
 
     it('should still detect mild detergents when sulfates are misspelled', () => {

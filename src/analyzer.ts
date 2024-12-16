@@ -191,18 +191,60 @@ export class Analyzer {
           system.settings.forEach(settingId => {
             const setting = this.settings[settingId];
             console.log(`Checking setting ${settingId} for ${normalizedName}:`, setting);
-            if (setting && setting.categories?.includes(catId)) {
-              console.log(`Setting ${settingId} matches category ${catId} for ${normalizedName}`);
-              if (setting.flags) {
-                console.log(`Adding setting flags ${setting.flags} for ${normalizedName} from setting ${settingId}`);
-                setting.flags.forEach(flag => {
-                  console.log(`Adding individual flag ${flag} for ${normalizedName}`);
-                  flags.add(flag);
+            if (setting) {
+              // Handle avoid_others_in_category flag
+              if (setting.flags?.includes('avoid_others_in_category')) {
+                const settingCategories = setting.categories || [];
+                settingCategories.forEach(settingCatId => {
+                  const settingCategory = this.database.categories[settingCatId];
+                  if (settingCategory) {
+                    const categoryGroup = settingCategory.group;
+                    // Get all categories in the same group
+                    const categoriesInGroup = Object.values(this.database.categories)
+                      .filter(cat => cat.group === categoryGroup)
+                      .map(cat => cat.id);
+
+                    // If ingredient has any categories in this group but none are in the allowed categories
+                    const hasGroupCategories = categories.some(c => categoriesInGroup.includes(c));
+                    const hasAllowedCategory = categories.some(c => settingCategories.includes(c));
+
+                    if (hasGroupCategories && !hasAllowedCategory) {
+                      console.log(`Adding avoid_others_in_category flag ${settingId} for ${normalizedName}`);
+                      flags.add(settingId);
+                    }
+                  }
                 });
+              } else if (setting.categories?.includes(catId)) {
+                console.log(`Setting ${settingId} matches category ${catId} for ${normalizedName}`);
+                if (setting.flags) {
+                  console.log(`Adding setting flags ${setting.flags} for ${normalizedName} from setting ${settingId}`);
+                  setting.flags.forEach(flag => {
+                    console.log(`Adding individual flag ${flag} for ${normalizedName}`);
+                    flags.add(flag);
+                  });
+                }
               }
             }
           });
         }
+      });
+
+      // Also check if any ingredient categories are in a group that has avoid_others_in_category
+      groups.forEach(groupId => {
+        console.log(`Checking group ${groupId} for ${normalizedName}`);
+        system?.settings.forEach(settingId => {
+          const setting = this.settings[settingId];
+          if (setting?.flags?.includes('avoid_others_in_category')) {
+            const settingCategories = setting.categories || [];
+            settingCategories.forEach(settingCatId => {
+              const settingCategory = this.database.categories[settingCatId];
+              if (settingCategory && settingCategory.group === groupId && !categories.some(c => settingCategories.includes(c))) {
+                console.log(`Adding avoid_others_in_category flag ${settingId} for ${normalizedName} from group check`);
+                flags.add(settingId);
+              }
+            });
+          }
+        });
       });
 
       // Add group flags

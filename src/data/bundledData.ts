@@ -1920,6 +1920,16 @@ export const defaultDatabase: IngredientDatabase = {
       "references": [
         "https://incidecoder.com/ingredients/polysorbate-20"
       ]
+    },
+    "emulsifying_wax": {
+      "name": "Emulsifying Wax",
+      "id": "emulsifying_wax",
+      "categories": [
+        "water-soluble_waxes"
+      ],
+      "references": [
+        "https://incidecoder.com/ingredients/emulsifying-wax"
+      ]
     }
   },
   "categories": {
@@ -2103,18 +2113,12 @@ export const defaultSystems: System[] = [
   {
     "name": "No Poo",
     "id": "no_poo",
-    "description": "No Poo is a hair care system that focuses on using products that are free of harsh chemicals and sulfates. It recommends using products that are free of drying alcohols, parabens, and other potentially harmful ingredients.",
-    "ingredients": [],
-    "categories": []
+    "description": "No Poo is a hair care system that focuses on using products that are free of harsh chemicals and sulfates. It recommends using products that are free of drying alcohols, parabens, and other potentially harmful ingredients."
   },
   {
     "name": "Wavy Hair",
     "id": "wavy_hair",
-    "description": "Wavy hair needs a different approach to hair care. You may still need to use some sulfates and you should avoid heavy product and oils",
-    "ingredients": [],
-    "categories": [
-      "oils"
-    ]
+    "description": "Wavy hair needs a different approach to hair care. You may still need to use some sulfates and you should avoid heavy product and oils"
   }
 ];
 

@@ -40,7 +40,7 @@
             "type": "array",
             "items": {
               "type": "string",
-              "enum": ["avoid", "prefer"]
+              "enum": ["avoid", "prefer", "avoid_others_in_category", "caution"]
             },
             "description": "List of flags to apply"
           }
