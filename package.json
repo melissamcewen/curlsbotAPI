@@ -58,7 +58,8 @@
     "vitest": "^2.1.8"
   },
   "dependencies": {
-    "flexsearch": "^0.7.43"
+    "flexsearch": "^0.7.43",
+    "fuse.js": "^7.0.0"
   },
   "files": [
     "dist",
