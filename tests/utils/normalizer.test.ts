@@ -6,7 +6,7 @@ import {
   isValidIngredientList,
   normalizeIngredient,
   processCommaParentheses,
-} from '../src/utils/normalizer';
+} from '../../src/utils/normalizer';
 
 describe('Normalizer', () => {
   describe('isValidIngredient', () => {
@@ -65,6 +65,31 @@ describe('Normalizer', () => {
 
 
   describe('normalizer (integration)', () => {
+    it('should return invalid result for URLs', () => {
+      const inputs = [
+        'http://example.com',
+        'https://test.com',
+        'www.example.com',
+        '//localhost:3000'
+      ];
+
+      inputs.forEach(input => {
+        const result = normalizer(input);
+        expect(result.isValid).toBe(false);
+        expect(result.ingredients).toEqual([]);
+      });
+    });
+
+    it('should return invalid result for empty or whitespace input', () => {
+      const inputs = ['', '   ', '\n\n', '\t'];
+
+      inputs.forEach(input => {
+        const result = normalizer(input);
+        expect(result.isValid).toBe(false);
+        expect(result.ingredients).toEqual([]);
+      });
+    });
+
     it('should normalize basic ingredient lists', () => {
       const input = 'Water, Glycerin, Sodium Lauryl Sulfate';
       const result = normalizer(input);
@@ -74,6 +99,19 @@ describe('Normalizer', () => {
         'water',
         'glycerin',
         'sodium lauryl sulfate',
+      ]);
+    });
+
+    it('should normalize ingredients after validation', () => {
+      const input = 'Water*, Glycerin@#$, Invalid@#$, SD Alcohol 40-B';
+      const result = normalizer(input);
+
+      expect(result.isValid).toBe(true);
+      expect(result.ingredients).toEqual([
+        'water',
+        'glycerin',
+        'invalid',
+        'sd alcohol 40-b'
       ]);
     });
 

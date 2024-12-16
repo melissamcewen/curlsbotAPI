@@ -5,3 +5,7 @@ tests should be named after the file they test, with the exception of e2e tests.
 e2e tests go in tests/e2e and use the production db
 
 tests that are not in the e2e directory use the test db which is in fixtures
+
+you can read from src/data files but don't edit them, ask me if you want to make a change because it's from a db
+
+when testing, avoid using mocks or deep equality (objectContaining)

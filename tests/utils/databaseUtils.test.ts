@@ -1,7 +1,7 @@
 import { describe, expect, test } from 'vitest';
-import { findIngredient, getCategoryGroups } from '../src/utils/databaseUtils';
+import { findIngredient, getCategoryGroups } from '../../src/utils/databaseUtils';
 
-import { testDatabase } from './fixtures/test_bundled_data';
+import { testDatabase } from '../fixtures/test_bundled_data';
 
 describe('findIngredient', () => {
   test('finds exact ingredient match', () => {

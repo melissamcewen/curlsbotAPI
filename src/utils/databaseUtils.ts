@@ -5,6 +5,7 @@ import type {
   Categories,
   Groups,
   Group,
+  System,
 } from '../types';
 
 
@@ -253,4 +254,11 @@ export function getIngredientCategories(
 ): string[] {
   if (!categoryIds) return [];
   return categoryIds;
+}
+
+/**
+ * Find a system by its ID
+ */
+export function findSystemById(systems: System[], systemId: string): System | undefined {
+  return systems.find(system => system.id === systemId);
 }

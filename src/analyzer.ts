@@ -5,8 +5,6 @@ import type {
   AnalysisResult,
   System,
   Settings,
-  UserPreferences,
-  FlagRule,
   IngredientMatch,
   Flags
 } from './types';
@@ -14,16 +12,14 @@ import { getBundledDatabase } from './data/bundledData';
 import { getBundledSystems } from './data/bundledData';
 import { getBundledSettings } from './data/bundledData';
 import { normalizer } from './utils/normalizer';
-import { findIngredient, getIngredientCategories, getCategoryGroups } from './utils/databaseUtils';
-import { getSystemFlags, mergeFlags } from './utils/flags';
-import { getFlags } from './utils/flagging';
+import { findIngredient, getIngredientCategories, getCategoryGroups, findSystemById } from './utils/databaseUtils';
+
 
 export class Analyzer {
   private database: IngredientDatabase;
   private options?: AnalyzerOptions;
-  private systems: System[];
+  private system: System;
   private settings: Settings;
-  private userPreferences?: UserPreferences;
 
   /**
    * Creates a new Analyzer instance
@@ -32,7 +28,12 @@ export class Analyzer {
   constructor(config?: Partial<AnalyzerConfig>) {
     this.database = config?.database ?? getBundledDatabase();
     this.options = config?.options;
-    this.systems = config?.systems ?? getBundledSystems();
+    const bundledSystems = getBundledSystems();
+    const defaultSystem = findSystemById(bundledSystems, 'curly_default');
+    if (!defaultSystem) {
+      throw new Error('Could not find curly_default system');
+    }
+    this.system = config?.system ?? defaultSystem;
     this.settings = config?.settings ?? getBundledSettings();
   }
 
@@ -89,17 +90,17 @@ export class Analyzer {
   }
 
   /**
-   * Gets all available systems
+   * Gets the current system
    */
-  getSystems(): System[] {
-    return this.systems;
+  getSystem(): System {
+    return this.system;
   }
 
   /**
-   * Updates the available systems
+   * Updates the current system
    */
-  setSystems(systems: System[]): void {
-    this.systems = systems;
+  setSystem(system: System): void {
+    this.system = system;
   }
 
   /**
@@ -116,12 +117,14 @@ export class Analyzer {
       matches: [],
       categories: [],
       groups: [],
-      flags: {}
+      flags: []
     };
   }
 
   /**
    * Analyzes an ingredient list and returns the results
+   * @param ingredientList The ingredient list to analyze
+   * @param systemId The ID of the system to use for analysis. If not provided or invalid, returns error
    */
   analyze(ingredientList: string, systemId = ""): AnalysisResult {
     if (!ingredientList || typeof ingredientList !== 'string') {
@@ -130,9 +133,17 @@ export class Analyzer {
       return result;
     }
 
+    // Check if the requested system ID matches our system
+    if (systemId && systemId !== this.system.id) {
+      const result = this.createEmptyResult();
+      result.status = "error";
+      result.system = systemId;
+      return result;
+    }
+
     const result = this.createEmptyResult();
     result.input = ingredientList;
-    result.system = systemId;
+    result.system = this.system.id;
 
     // Use the existing normalizer
     const normalized = normalizer(ingredientList);
@@ -146,13 +157,6 @@ export class Analyzer {
     // Match ingredients and collect categories/groups
     const allCategories = new Set<string>();
     const allGroups = new Set<string>();
-
-    // Get system-specific flags
-    const system = this.systems.find(s => s.id === systemId);
-    const systemFlags = getSystemFlags(system, this.settings);
-
-    // Merge system flags with any configured options
-    const mergedFlags = mergeFlags(systemFlags, this.options || {});
 
     result.matches = normalized.ingredients.map(normalizedName => {
       const match = findIngredient(this.database, normalizedName);
@@ -172,16 +176,7 @@ export class Analyzer {
         normalized: normalizedName,
         groups: groups,
         categories: categories,
-        flags: Object.values(getFlags(
-          normalizedName,
-          ingredient,
-          categories,
-          groups,
-          system,
-          this.settings,
-          mergedFlags,
-          this.database
-        )),
+        flags: [],
         ingredient: ingredient
       };
 
@@ -192,105 +187,6 @@ export class Analyzer {
     result.categories = Array.from(allCategories);
     result.groups = Array.from(allGroups);
 
-    // Collect all flags from matches
-    const allFlags: Flags = {};
-    result.matches.forEach(match => {
-      match.flags?.forEach(flag => {
-        if (flag.settingId) {
-          allFlags[flag.settingId] = flag;
-        }
-      });
-    });
-
-    // Set the flags in the result
-    result.flags = allFlags;
-
-    // Set system settings if a system was used
-    if (system) {
-      result.settings = system.settings;
-    }
-
     return result;
-  }
-
-  // Add method to get a serializable configuration
-  getConfiguration(): AnalyzerConfig {
-    return {
-      database: this.database,
-      options: this.options,
-      settings: this.settings
-    };
-  }
-
-  // Add method to create analyzer from serialized config
-  static fromConfiguration(config: AnalyzerConfig): Analyzer {
-    return new Analyzer(config);
-  }
-
-  validateConfiguration(): boolean {
-    return true;
-  }
-
-  /**
-   * Sets user preferences for flagging ingredients/categories/groups
-   */
-  setUserPreferences(preferences: UserPreferences): void {
-    this.userPreferences = preferences;
-
-    // Convert preferences to analyzer options
-    this.options = {
-      flaggedIngredients: preferences.rules
-        .filter(r => r.type === 'ingredient')
-        .map(r => r.id),
-      flaggedCategories: preferences.rules
-        .filter(r => r.type === 'category')
-        .map(r => r.id),
-      flaggedGroups: preferences.rules
-        .filter(r => r.type === 'group')
-        .map(r => r.id)
-    };
-  }
-
-  /**
-   * Gets current user preferences
-   */
-  getUserPreferences(): UserPreferences | undefined {
-    return this.userPreferences;
-  }
-
-  /**
-   * Gets available rules that can be flagged
-   */
-  getAvailableRules(): FlagRule[] {
-    const rules: FlagRule[] = [];
-
-    // Add ingredient rules
-    Object.values(this.database.ingredients).forEach(ing => {
-      rules.push({
-        id: ing.id,
-        name: ing.name,
-        type: 'ingredient'
-      });
-    });
-
-    // Add category rules
-    Object.values(this.database.categories).forEach(cat => {
-      rules.push({
-        id: cat.id,
-        name: cat.name,
-        type: 'category'
-      });
-    });
-
-    // Add group rules
-    Object.values(this.database.groups).forEach(group => {
-      rules.push({
-        id: group.id,
-        name: group.name,
-        type: 'group'
-      });
-    });
-
-    return rules;
   }
 }

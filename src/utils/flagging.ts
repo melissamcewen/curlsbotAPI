@@ -1,131 +1,126 @@
 import type {
   Settings,
+  Setting,
+  Flag,
+  AnalysisResult,
   System,
-  AnalyzerOptions,
   Flags,
-  IngredientDatabase
+  IngredientMatch,
 } from '../types';
+import { getBundledSettings } from '../data/bundledData';
 
-export function getFlags(
-  normalizedName: string,
-  ingredient: any,
-  categories: string[],
-  groups: string[],
-  system: System | undefined,
-  settings: Settings,
-  mergedFlags: AnalyzerOptions,
-  database?: IngredientDatabase
-): Flags {
-  const flags: Flags = {};
 
-  // Add ingredient flags
-  if (ingredient && mergedFlags.flaggedIngredients?.includes(ingredient.id)) {
-    const setting = Object.values(settings).find(s => s.ingredients?.includes(ingredient.id));
-    if (setting) {
-      flags[setting.id] = {
-        id: setting.id,
-        name: setting.name,
-        description: setting.description,
-        type: 'ingredient',
-        flag_type: setting.flags?.[0] || 'caution'
-      };
-    }
+/**
+ * Main flagging function that processes a system's settings and applies them to the analysis result
+ * Uses functional composition with reduce to process all settings sequentially
+ */
+export function flag(
+  analysisResult: AnalysisResult,
+  system: System,
+  settings: Record<string, Setting> = getBundledSettings(),
+): AnalysisResult {
+  const getSettingsFromIds = (ids: string[]): Setting[] => {
+    return ids
+      .map((id) => settings[id])
+      .filter((setting): setting is Setting => setting !== undefined);
+  };
+
+  return getSettingsFromIds(system.settings).reduce(
+    (result, setting) => processFlags(setting.flags, result),
+    analysisResult,
+  );
+}
+
+/**
+ * Processes an array of flags against an analysis result
+ * 1. Filters flags to only those that should be processed
+ * 2. Reduces the filtered flags into a final analysis result
+ */
+export function processFlags(
+  flags: Flag[],
+  analysisResult: AnalysisResult,
+): AnalysisResult {
+  return flags
+    .filter((flag) => shouldProcessFlag(flag, analysisResult))
+    .reduce((result, flag) => processFlag(flag, result), analysisResult);
+}
+
+/**
+ * Determines if a flag should be processed based on its type and the analysis result
+ * - For group flags: checks if the group exists in the result
+ * - For category flags: checks if the category exists in the result
+ * - For other flags: always processes them
+ */
+function shouldProcessFlag(
+  flag: Flag,
+  analysisResult: AnalysisResult,
+): boolean {
+  if (flag.type === 'group') {
+    return analysisResult.groups.includes(flag.id);
   }
+  if (flag.type === 'category') {
+    return analysisResult.categories.includes(flag.id);
+  }
+  return true;
+}
 
-  // Add category flags and handle avoid_others_in_category
-  categories.forEach(catId => {
-    // Check if category is directly flagged
-    if (mergedFlags.flaggedCategories?.includes(catId)) {
-      const setting = Object.values(settings).find(s => s.categories?.includes(catId));
-      if (setting) {
-        flags[setting.id] = {
-          id: setting.id,
-          name: setting.name,
-          description: setting.description,
-          type: 'category',
-          flag_type: setting.flags?.[0] || 'caution'
+/**
+ * Processes a single flag against an analysis result
+ * 1. Updates matches by adding the flag to any match that includes the flagged category/group
+ * 2. Adds the flag to the result's flags collection
+ * 3. Updates the status based on the flag type
+ */
+function processFlag(
+  flag: Flag,
+  analysisResult: AnalysisResult,
+): AnalysisResult {
+  let shouldFail = false;
+  const updatedMatches = analysisResult.matches.map((match) => {
+    // For regular category flags
+    if (flag.type === 'category') {
+      if (flag.flag_type === 'avoid' && match.categories?.includes(flag.id)) {
+        shouldFail = true;
+        return {
+          ...match,
+          flags: [...(match.flags || []), flag],
         };
+      }
+
+      if (flag.flag_type === 'avoid_others_in_group') {
+        // If this match is in the same group as our preferred category
+        // but doesn't have the preferred category, flag it
+        const preferredCategory = flag.id;
+        const categoryGroup = analysisResult.categories
+          .find(category => category === preferredCategory);
+
+        if (categoryGroup && match.groups?.includes('detergents')) {
+          if (!match.categories?.includes(preferredCategory)) {
+            shouldFail = true;
+            return {
+              ...match,
+              flags: [...(match.flags || []), flag],
+            };
+          }
+        }
       }
     }
 
-    // Check system settings
-    if (system && database) {
-      system.settings.forEach(settingId => {
-        const setting = settings[settingId];
-        if (setting) {
-          if (setting.flags?.includes('avoid_others_in_category')) {
-            const settingCategories = setting.categories || [];
-            settingCategories.forEach(settingCatId => {
-              const settingCategory = database.categories[settingCatId];
-              if (settingCategory) {
-                const categoryGroup = settingCategory.group;
-                const categoriesInGroup = Object.values(database.categories)
-                  .filter(cat => cat.group === categoryGroup)
-                  .map(cat => cat.id);
-
-                const hasGroupCategories = categories.some(c => categoriesInGroup.includes(c));
-                const hasAllowedCategory = categories.some(c => settingCategories.includes(c));
-
-                if (hasGroupCategories && !hasAllowedCategory) {
-                  flags[settingId] = {
-                    id: settingId,
-                    name: setting.name,
-                    description: setting.description,
-                    type: 'category',
-                    flag_type: 'avoid_others_in_category'
-                  };
-                }
-              }
-            });
-          } else if (categories.some(catId => setting.categories?.includes(catId))) {
-            if (setting.flags) {
-              setting.flags.forEach(flag => {
-                flags[flag] = {
-                  type: 'category',
-                  flag_type: setting.flags[0],
-                  settingId: settingId
-                };
-              });
-            }
-          }
-        }
-      });
-    }
-  });
-
-  // Check groups for avoid_others_in_category
-  if (database) {
-    groups.forEach(groupId => {
-      system?.settings.forEach(settingId => {
-        const setting = settings[settingId];
-        if (setting?.flags?.includes('avoid_others_in_category')) {
-          const settingCategories = setting.categories || [];
-          settingCategories.forEach(settingCatId => {
-            const settingCategory = database.categories[settingCatId];
-            if (settingCategory && settingCategory.group === groupId && !categories.some(c => settingCategories.includes(c))) {
-              flags[settingId] = {
-                id: settingId,
-                name: setting.name,
-                description: setting.description,
-                type: 'category',
-                flag_type: 'avoid_others_in_category'
-              };
-            }
-          });
-        }
-      });
-    });
-  }
-
-  // Add group flags
-  groups.forEach(groupId => {
-    if (mergedFlags.flaggedGroups?.includes(groupId)) {
-      flags[groupId] = {
-        type: 'group',
-        flag_type: 'caution'
+    // For group flags
+    if (flag.type === 'group' && match.groups?.includes(flag.id)) {
+      // For caution flags
+      return {
+        ...match,
+        flags: [...(match.flags || []), flag],
       };
     }
+
+    return match;
   });
 
-  return flags;
+  return {
+    ...analysisResult,
+    matches: updatedMatches,
+    flags: [...analysisResult.flags, flag],
+    status: shouldFail ? 'fail' : analysisResult.status,
+  };
 }

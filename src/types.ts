@@ -8,9 +8,9 @@ export interface AnalyzerConfig {
   options?: AnalyzerOptions;
   /** Optional path to config directory */
   configDir?: string;
-  /** Optional systems used to analyze the input */
-  systems?: System[];
-  /** Optional settings for the systems */
+  /** Optional system used to analyze the input */
+  system: System;
+  /** Optional settings for the system */
   settings?: Settings;
 }
 
@@ -18,12 +18,7 @@ export interface AnalyzerConfig {
  * Specifies options to customize the analyzer's behavior
  */
 export interface AnalyzerOptions {
-  /** List of flagged ingredient names */
-  flaggedIngredients?: string[];
-  /** List of flagged ingredient categories by id */
-  flaggedCategories?: string[];
-  /** List of flagged ingredient category groups by id */
-  flaggedGroups?: string[];
+  flags: Flags;
 }
 
 /**
@@ -48,7 +43,7 @@ export interface AnalysisResult {
   categories: string[];
   /** List of groups */
   groups: string[];
-  /** Flags for ingredients, categories, and category groups */
+  /** List of flags */
   flags: Flags;
 }
 
@@ -108,6 +103,9 @@ export interface Ingredient {
   synonyms?: string[];
 }
 
+/** represents a collection of ingredients   */
+export type Ingredients = Record<string, Ingredient>;
+
 /**
  * Represents a match for an ingredient during analysis
  */
@@ -152,7 +150,6 @@ export interface MatchDetails {
   synonymMatch?: string;
   /** Whether the match was flagged */
   flagged?: boolean;
-
 }
 
 /**
@@ -187,20 +184,6 @@ export interface NormalizedIngredientList {
 export type Categories = Record<string, Category>;
 
 /**
- * Represents a flag for an ingredient, category, or group
- */
-export interface Flag {
-  type: 'ingredient' | 'category' | 'group';
-  flag_type: 'avoid' | 'prefer' | 'avoid_others_in_category' | 'caution';
-  settingId?: string;
-}
-
-/**
- * Represents a collection of flags
- */
-export type Flags = Record<string, Flag>;
-
-/**
  * represents a system used to analyze the input
  */
 export interface System {
@@ -217,10 +200,7 @@ export interface Setting {
   id: string;
   name: string;
   description: string;
-  ingredients: string[];
-  categories: string[];
-  groups: string[];
-  flag_type: string;
+  flags: Flags;
 }
 
 /**
@@ -228,21 +208,26 @@ export interface Setting {
  */
 export type Settings = Record<string, Setting>;
 
-/** represents a collection of ingredients   */
-export type Ingredients = Record<string, Ingredient>;
+/**
+ * Represents a flag for an ingredient, category, or group
+ */
+export interface Flag {
+  type: 'ingredient' | 'category' | 'group';
+  flag_type: 'avoid' | 'prefer' | 'avoid_others_in_group' | 'caution';
+  id: string;
+  name?: string;
+  description?: string;
+}
 
 /**
- * Add these new types
+ * Represents a collection of flags
  */
-export type FlagRule = {
-  id: string;
-  name: string;
-  description?: string;
-  type: 'ingredient' | 'category' | 'group';
-  severity?: 'warning' | 'error';
-}
+export type Flags = Flag[];
 
-export type UserPreferences = {
-  rules: FlagRule[];
-  systemId?: string;
-}
+/** setting status */
+export type SettingStatus = {
+  /** setting id */
+  id: string;
+  /** setting status */
+  status: 'pass' | 'fail';
+};
