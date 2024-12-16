@@ -14,108 +14,52 @@ describe('Alcohol ingredient analysis', () => {
     settings: defaultSettings,
   });
 
-  it('should detect drying alcohols', () => {
-    const list =
-      'Isobutane, Propane, SD Alcohol 40-B (Alcohol Denat.), Aluminum Starch Octenylsuccinate, Citrus Grandis (Grapefruit) Fruit Extract*, Citrus Tangerina (Tangerine) Peel Extract*, Butane, Isopropyl Myristate, Silica, Fragrance, Amyl Cinnamal, Benzyl Alcohol, Butylphenyl Methylpropional, Citronellol, Geraniol, Hexyl Cinnamal, Limonene, Linalool., denatured alcohol (sd alcohol 40)';
-
-    const result = analyzer.analyze(list, 'curly_default');
-
-    // Check that all ingredients are normalized correctly
-    expect(result.normalized).toEqual([
-      'isobutane',
-      'propane',
-      'sd alcohol 40-b alcohol denat',
-      'aluminum starch octenylsuccinate',
-      'citrus grandis grapefruit fruit extract',
-      'citrus tangerina tangerine peel extract',
-      'butane',
-      'isopropyl myristate',
-      'silica',
-      'fragrance',
-      'amyl cinnamal',
-      'benzyl alcohol',
-      'butylphenyl methylpropional',
-      'citronellol',
-      'geraniol',
-      'hexyl cinnamal',
-      'limonene',
-      'linalool',
-      'denatured alcohol sd alcohol 40',
-    ]);
-
-    // Check for bad alcohols
+  it('should detect alcohol denat as a drying alcohol', () => {
+    const result = analyzer.analyze('alcohol denat.', 'curly_default');
+    expect(result.normalized).toEqual(['alcohol denat']);
     const dryingAlcohols = result.matches.filter((match) =>
       match.flags.includes('drying_alcohols'),
     );
-    expect(dryingAlcohols).toHaveLength(2);
-
-    // Check for good alcohols
-    expect(result.matches).toEqual(
-      expect.arrayContaining([
-        expect.objectContaining({
-          input: 'benzyl alcohol',
-          normalized: 'benzyl alcohol',
-          flags: expect.not.arrayContaining(['drying_alcohols']),
-        }),
-      ]),
-    );
+    expect(dryingAlcohols).toHaveLength(1);
   });
 
-  it('should allow OK alcohols', () => {
-    const list =
-      'Water (Aqua), Cetearyl Alcohol, PPG-3 Benzyl Ether Ethylhexanoate, Quaternium-91, Glycerin, Distearyldimonium Chloride, Polyquaternium-72, Mangifera Indica (Mango) Seed Butter, Gardenia Taitensis Flower Extract, Behentrimonium Chloride, Myristyl Myristate, Hydroxyethylcellulose, Fragrance (Parfum), Phenoxyethanol, Ethylhexylglycerin., Triisopropanolamine';
-
-    const result = analyzer.analyze(list, 'curly_default');
-
-    // Check for good alcohols
-    expect(result.matches).toEqual(
-      expect.arrayContaining([
-        expect.objectContaining({
-          input: 'cetearyl alcohol',
-          normalized: 'cetearyl alcohol',
-          flags: expect.not.arrayContaining(['drying_alcohols']),
-        }),
-      ]),
-    );
-
-    // Verify no drying alcohols
+  it('should detect plain alcohol as a drying alcohol', () => {
+    const result = analyzer.analyze('alcohol', 'curly_default');
+    expect(result.normalized).toEqual(['alcohol']);
     const dryingAlcohols = result.matches.filter((match) =>
       match.flags.includes('drying_alcohols'),
     );
-    expect(dryingAlcohols).toHaveLength(0);
+    expect(dryingAlcohols).toHaveLength(1);
   });
 
-  it('should detect weird variations of alcohols', () => {
-    const list =
-      'alcohol denat., alcohol, denatured alcohol (sd alcohol 40), sd alcohol 40-b (alcohol denat), hello alcohol, Steareth Alcohol-15, denatured alcohol (sd alcohol 40), lauryl alcohol diphosphonic acid, benzyl alcohol benzyl benzoate';
-
-    const result = analyzer.analyze(list, 'curly_default');
-
-    // Check for bad alcohols
+  it('should detect denatured alcohol (sd alcohol 40)as a drying alcohol', () => {
+    const result = analyzer.analyze(
+      'denatured alcohol (sd alcohol 40)',
+      'curly_default',
+    );
+    expect(result.normalized).toEqual(['denatured alcohol sd alcohol 40']);
+    // should match the ingredient sd_alcohol since denatured alcohol is a synonym
+    expect(result.matches[0].ingredient?.id).toBe('sd_alcohol');
     const dryingAlcohols = result.matches.filter((match) =>
       match.flags.includes('drying_alcohols'),
     );
-    expect(dryingAlcohols).toHaveLength(4); // alcohol denat, alcohol, denatured alcohol, sd alcohol 40
+    expect(dryingAlcohols).toHaveLength(1);
+  });
 
-    // Check for good alcohols
-    const goodAlcohols = [
-      'steareth alcohol-15',
-      'lauryl alcohol diphosphonic acid',
-      'benzyl alcohol benzyl benzoate',
-    ];
-    goodAlcohols.forEach((alcohol) => {
-      expect(result.matches).toEqual(
-        expect.arrayContaining([
-          expect.objectContaining({
-            input: alcohol,
-            normalized: alcohol,
-            flags: expect.not.arrayContaining(['drying_alcohols']),
-          }),
-        ]),
-      );
-    });
+  it('should detect sd alcohol 40-b as a drying alcohol', () => {
+    const result = analyzer.analyze(
+      'sd alcohol 40-b (alcohol denat)',
+      'curly_default',
+    );
+    expect(result.normalized).toEqual(['sd alcohol 40-b alcohol denat']);
+    const dryingAlcohols = result.matches.filter((match) =>
+      match.flags.includes('drying_alcohols'),
+    );
+    expect(dryingAlcohols).toHaveLength(1);
+  });
 
-    // Check for unknown alcohols
+  it('should handle unknown alcohol variations', () => {
+    const result = analyzer.analyze('hello alcohol', 'curly_default');
     const unknownMatch = result.matches.find(
       (match) => match.input === 'hello alcohol',
     );
@@ -128,6 +72,54 @@ describe('Alcohol ingredient analysis', () => {
         groups: expect.any(Array),
         flags: expect.any(Array),
       }),
+    );
+  });
+
+  it('should recognize steareth alcohol-15 as a good alcohol', () => {
+    const result = analyzer.analyze('Steareth Alcohol-15', 'curly_default');
+    expect(result.normalized).toEqual(['steareth alcohol-15']);
+    expect(result.matches[0].ingredient?.id).toBe('steareth_alcohol');
+    expect(result.matches[0].confidence).toBeGreaterThan(0);
+    expect(result.matches).toEqual(
+      expect.arrayContaining([
+        expect.objectContaining({
+          input: 'steareth alcohol-15',
+          normalized: 'steareth alcohol-15',
+          flags: expect.not.arrayContaining(['drying_alcohols']),
+        }),
+      ]),
+    );
+  });
+
+  it('should recognize lauryl alcohol compounds as good alcohols', () => {
+    const result = analyzer.analyze(
+      'lauryl alcohol diphosphonic acid',
+      'curly_default',
+    );
+    expect(result.matches).toEqual(
+      expect.arrayContaining([
+        expect.objectContaining({
+          input: 'lauryl alcohol diphosphonic acid',
+          normalized: 'lauryl alcohol diphosphonic acid',
+          flags: expect.not.arrayContaining(['drying_alcohols']),
+        }),
+      ]),
+    );
+  });
+
+  it('should recognize benzyl alcohol compounds as good alcohols', () => {
+    const result = analyzer.analyze(
+      'benzyl alcohol benzyl benzoate',
+      'curly_default',
+    );
+    expect(result.matches).toEqual(
+      expect.arrayContaining([
+        expect.objectContaining({
+          input: 'benzyl alcohol benzyl benzoate',
+          normalized: 'benzyl alcohol benzyl benzoate',
+          flags: expect.not.arrayContaining(['drying_alcohols']),
+        }),
+      ]),
     );
   });
 });

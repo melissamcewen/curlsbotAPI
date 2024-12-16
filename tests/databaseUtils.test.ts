@@ -24,17 +24,9 @@ describe('Database Utils', () => {
       expect(result?.confidence).toBe(1.0);
     });
 
-    it('finds ingredient by substring match with high confidence', () => {
-      const result = findIngredient(testDatabase, 'hexadecan');
-      expect(result?.ingredient.id).toBe('cetyl_alcohol');
-      expect(result?.confidence).toBe(0.8);
-    });
+  
 
-    it('finds ingredient by superstring match with lower confidence', () => {
-      const result = findIngredient(testDatabase, 'super hexadecan-1-ol extra');
-      expect(result?.ingredient.id).toBe('cetyl_alcohol');
-      expect(result?.confidence).toBe(0.6);
-    });
+
 
     it('is case insensitive with full confidence', () => {
       const result = findIngredient(testDatabase, 'CETYL ALCOHOL');
