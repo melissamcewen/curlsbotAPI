@@ -6,7 +6,8 @@ import type {
   System,
   Settings,
   UserPreferences,
-  FlagRule
+  FlagRule,
+  IngredientMatch
 } from './types';
 import { getBundledDatabase } from './data/bundledData';
 import { getBundledSystems } from './data/bundledData';
@@ -14,6 +15,7 @@ import { getBundledSettings } from './data/bundledData';
 import { normalizer } from './utils/normalizer';
 import { findIngredient, getIngredientCategories, getCategoryGroups } from './utils/databaseUtils';
 import { getSystemFlags, mergeFlags } from './utils/flags';
+import { getFlags, checkAvoidOthersInCategory } from './utils/flagging';
 
 export class Analyzer {
   private database: IngredientDatabase;
@@ -114,9 +116,6 @@ export class Analyzer {
       categories: [],
       groups: [],
       flags: {
-        flaggedIngredients: [],
-        flaggedCategories: [],
-        flaggedGroups: []
       }
     };
   }
@@ -135,7 +134,6 @@ export class Analyzer {
     result.input = ingredientList;
     result.system = systemId;
 
-    // Use the existing normalizer
     const normalized = normalizer(ingredientList);
     if (!normalized.isValid) {
       result.status = "error";
@@ -144,141 +142,70 @@ export class Analyzer {
 
     result.normalized = normalized.ingredients;
 
-    // Match ingredients and collect categories/groups
     const allCategories = new Set<string>();
     const allGroups = new Set<string>();
 
-    // Get system-specific flags
     const system = this.systems.find(s => s.id === systemId);
     const systemFlags = getSystemFlags(system, this.settings);
-
-    // Merge system flags with any configured options
     const mergedFlags = mergeFlags(systemFlags, this.options || {});
 
     result.matches = normalized.ingredients.map(normalizedName => {
       const match = findIngredient(this.database, normalizedName);
       const ingredient = match?.ingredient;
-      const dbForCategories = this.database;
+      const categories = ingredient ? getIngredientCategories(this.database, ingredient.categories) : [];
+      const groups = getCategoryGroups(this.database, categories);
 
-      const categories = ingredient ? getIngredientCategories(dbForCategories, ingredient.categories) : [];
-      const groups = getCategoryGroups(dbForCategories, categories);
-
-      // Add to overall categories and groups
       categories.forEach(c => allCategories.add(c));
       groups.forEach(g => allGroups.add(g));
 
-      // Get flags from categories and system settings
-      const flags = new Set<string>();
+      // Get flags using the new utility functions
+      const baseFlags = getFlags(
+        normalizedName,
+        ingredient,
+        categories,
+        groups,
+        system,
+        this.settings,
+        mergedFlags
+      );
 
-      // Add ingredient flags
-      if (ingredient && mergedFlags.flaggedIngredients?.includes(ingredient.id)) {
-        console.log(`Adding ingredient flag ${ingredient.id} for ${normalizedName}`);
-        flags.add(ingredient.id);
-      }
+      const avoidOthersFlags = checkAvoidOthersInCategory(
+        normalizedName,
+        categories,
+        groups,
+        system,
+        this.settings,
+        this.database.categories
+      );
 
-      // Add category flags
-      categories.forEach(catId => {
-        console.log(`Checking category ${catId} for ${normalizedName}`);
-        console.log(`Merged flags:`, mergedFlags);
-        // First check if the category is flagged
-        if (mergedFlags.flaggedCategories?.includes(catId)) {
-          console.log(`Adding category flag ${catId} for ${normalizedName}`);
-          flags.add(catId);
-        }
-        // Then check settings that apply to this category
-        if (system) {
-          console.log(`System settings for ${normalizedName}:`, system.settings);
-          system.settings.forEach(settingId => {
-            const setting = this.settings[settingId];
-            console.log(`Checking setting ${settingId} for ${normalizedName}:`, setting);
-            if (setting) {
-              // Handle avoid_others_in_category flag
-              if (setting.flags?.includes('avoid_others_in_category')) {
-                const settingCategories = setting.categories || [];
-                settingCategories.forEach(settingCatId => {
-                  const settingCategory = this.database.categories[settingCatId];
-                  if (settingCategory) {
-                    const categoryGroup = settingCategory.group;
-                    // Get all categories in the same group
-                    const categoriesInGroup = Object.values(this.database.categories)
-                      .filter(cat => cat.group === categoryGroup)
-                      .map(cat => cat.id);
-
-                    // If ingredient has any categories in this group but none are in the allowed categories
-                    const hasGroupCategories = categories.some(c => categoriesInGroup.includes(c));
-                    const hasAllowedCategory = categories.some(c => settingCategories.includes(c));
-
-                    if (hasGroupCategories && !hasAllowedCategory) {
-                      console.log(`Adding avoid_others_in_category flag ${settingId} for ${normalizedName}`);
-                      flags.add(settingId);
-                    }
-                  }
-                });
-              } else if (setting.categories?.includes(catId)) {
-                console.log(`Setting ${settingId} matches category ${catId} for ${normalizedName}`);
-                if (setting.flags) {
-                  console.log(`Adding setting flags ${setting.flags} for ${normalizedName} from setting ${settingId}`);
-                  setting.flags.forEach(flag => {
-                    console.log(`Adding individual flag ${flag} for ${normalizedName}`);
-                    flags.add(flag);
-                  });
-                }
-              }
-            }
-          });
-        }
-      });
-
-      // Also check if any ingredient categories are in a group that has avoid_others_in_category
-      groups.forEach(groupId => {
-        console.log(`Checking group ${groupId} for ${normalizedName}`);
-        system?.settings.forEach(settingId => {
-          const setting = this.settings[settingId];
-          if (setting?.flags?.includes('avoid_others_in_category')) {
-            const settingCategories = setting.categories || [];
-            settingCategories.forEach(settingCatId => {
-              const settingCategory = this.database.categories[settingCatId];
-              if (settingCategory && settingCategory.group === groupId && !categories.some(c => settingCategories.includes(c))) {
-                console.log(`Adding avoid_others_in_category flag ${settingId} for ${normalizedName} from group check`);
-                flags.add(settingId);
-              }
-            });
-          }
-        });
-      });
-
-      // Add group flags
-      groups.forEach(groupId => {
-        console.log(`Checking group ${groupId} for ${normalizedName}`);
-        if (mergedFlags.flaggedGroups?.includes(groupId)) {
-          console.log(`Adding group flag ${groupId} for ${normalizedName}`);
-          flags.add(groupId);
-        }
-      });
-
-      return {
+      const matchResult: IngredientMatch = {
         uuid: crypto.randomUUID(),
         input: normalizedName,
         normalized: normalizedName,
         categories,
         groups,
-        flags: Array.from(flags),
         ingredient,
         confidence: match?.confidence
       };
+
+      const allFlags = [...new Set([...baseFlags, ...avoidOthersFlags])];
+      if (allFlags.length > 0) {
+        matchResult.flags = allFlags;
+      }
+
+      return matchResult;
     });
 
-    // Set overall categories and groups
     result.categories = Array.from(allCategories);
     result.groups = Array.from(allGroups);
 
-    // Collect all flags from matches
     const allFlags = new Set<string>();
     result.matches.forEach(match => {
-      match.flags.forEach(flag => allFlags.add(flag));
+      if (match.flags) {
+        match.flags.forEach(flag => allFlags.add(flag));
+      }
     });
 
-    // Set overall flags
     result.flags = {
       ...mergedFlags,
       flaggedIngredients: Array.from(allFlags).filter(flag =>
@@ -292,7 +219,6 @@ export class Analyzer {
       )
     };
 
-    // Set system settings if a system was used
     if (system) {
       result.settings = system.settings;
     }

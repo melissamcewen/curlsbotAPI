@@ -49,14 +49,7 @@ export interface AnalysisResult {
   /** List of groups */
   groups: string[];
   /** Flags for ingredients, categories, and category groups */
-  flags: {
-    /** Ingredients that are flagged */
-    flaggedIngredients: string[];
-    /** Categories that are flagged */
-    flaggedCategories: string[];
-    /** Category groups that are flagged */
-    flaggedGroups: string[];
-  };
+  flags: Flags;
 }
 
 /**
@@ -192,15 +185,6 @@ export type Categories = Record<string, Category>;
 export type Flags = Record<string, Flag>;
 
 /**
- * Represents a flag
- */
-export interface Flag {
-  id: string;
-  name: string;
-  description: string;
-}
-
-/**
  * represents a system used to analyze the input
  */
 export interface System {
@@ -219,6 +203,7 @@ export interface Setting {
   description: string;
   ingredients: string[];
   categories: string[];
+  // list of flag IDs
   flags: string[];
 }
 
@@ -244,4 +229,12 @@ export type FlagRule = {
 export type UserPreferences = {
   rules: FlagRule[];
   systemId?: string;
+}
+
+export type Flag = {
+  id: string;
+  name: string;
+  description?: string;
+  type: 'ingredient' | 'category' | 'group';
+  flag_type: 'avoid' | 'prefer' | 'avoid_others_in_category' | 'caution';
 }

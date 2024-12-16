@@ -13,7 +13,7 @@
     "test:ui": "vitest --ui --coverage",
     "test:coverage": "vitest run --coverage",
     "prepare": "npm run build",
-    "type-check": "tsc --noEmit",
+    "type-check": "tsc --noEmit --project src/tsconfig.json",
     "api-extractor": "api-extractor run --local --verbose --config api-extractor.json",
     "lint": "eslint . --ext .ts",
     "lint:fix": "eslint . --ext .ts --fix",
@@ -57,8 +57,7 @@
     "vite-plugin-dts": "^4.3.0",
     "vitest": "^2.1.8"
   },
-  "dependencies": {
-  },
+  "dependencies": {},
   "files": [
     "dist",
     "README.md"
