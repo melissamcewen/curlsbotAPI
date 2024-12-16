@@ -172,10 +172,16 @@ export class Analyzer {
       // Add ingredient flags
       if (ingredient && mergedFlags.flaggedIngredients?.includes(ingredient.id)) {
         console.log(`Adding ingredient flag ${ingredient.id} for ${normalizedName}`);
-        flags[ingredient.id] = {
-          type: 'ingredient',
-          flag_type: 'caution'
-        };
+        const setting = Object.values(this.settings).find(s => s.ingredients?.includes(ingredient.id));
+        if (setting) {
+          flags[setting.id] = {
+            id: setting.id,
+            name: setting.name,
+            description: setting.description,
+            type: 'ingredient',
+            flag_type: setting.flags?.[0] || 'caution'
+          };
+        }
       }
 
       // Add category flags
@@ -185,10 +191,16 @@ export class Analyzer {
         // First check if the category is flagged
         if (mergedFlags.flaggedCategories?.includes(catId)) {
           console.log(`Adding category flag ${catId} for ${normalizedName}`);
-          flags[catId] = {
-            type: 'category',
-            flag_type: 'caution'
-          };
+          const setting = Object.values(this.settings).find(s => s.categories?.includes(catId));
+          if (setting) {
+            flags[setting.id] = {
+              id: setting.id,
+              name: setting.name,
+              description: setting.description,
+              type: 'category',
+              flag_type: setting.flags?.[0] || 'caution'
+            };
+          }
         }
         // Then check settings that apply to this category
         if (system) {
@@ -216,9 +228,11 @@ export class Analyzer {
                     if (hasGroupCategories && !hasAllowedCategory) {
                       console.log(`Adding avoid_others_in_category flag ${settingId} for ${normalizedName}`);
                       flags[settingId] = {
-                        type: 'setting',
-                        flag_type: 'avoid_others_in_category',
-                        settingId: settingId
+                        id: settingId,
+                        name: setting.name,
+                        description: setting.description,
+                        type: 'category',
+                        flag_type: 'avoid_others_in_category'
                       };
                     }
                   }

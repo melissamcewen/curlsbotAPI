@@ -8,11 +8,10 @@ describe('system flags utils', () => {
   describe('getSystemFlags', () => {
     test('should return empty flags for undefined system', () => {
       const flags = getSystemFlags(undefined, testSettings);
-      expect(flags).toEqual({
-        flaggedIngredients: [],
-        flaggedCategories: [],
-        flaggedGroups: []
-      });
+
+      expect(flags.flaggedIngredients).toHaveLength(0);
+      expect(flags.flaggedCategories).toHaveLength(0);
+      expect(flags.flaggedGroups).toHaveLength(0);
     });
 
     test('should handle sulfate_free setting', () => {
@@ -33,9 +32,9 @@ describe('system flags utils', () => {
       };
 
       const flags = getSystemFlags(systemWithUnknown, testSettings);
-      expect(flags.flaggedIngredients).toEqual([]);
-      expect(flags.flaggedCategories).toEqual([]);
-      expect(flags.flaggedGroups).toEqual([]);
+      expect(flags.flaggedIngredients).toHaveLength(0);
+      expect(flags.flaggedCategories).toHaveLength(0);
+      expect(flags.flaggedGroups).toHaveLength(0);
     });
   });
 
@@ -70,10 +69,10 @@ describe('system flags utils', () => {
       };
 
       const merged = mergeFlags(flags1, flags2);
-      expect(merged.flaggedIngredients).toEqual(['sodium_laureth_sulfate']);
-      expect(merged.flaggedCategories).toEqual(['sulfates']);
-      expect(merged.flaggedIngredients.length).toBe(1);
-      expect(merged.flaggedCategories.length).toBe(1);
+      expect(merged.flaggedIngredients).toContain('sodium_laureth_sulfate');
+      expect(merged.flaggedIngredients).toHaveLength(1);
+      expect(merged.flaggedCategories).toContain('sulfates');
+      expect(merged.flaggedCategories).toHaveLength(1);
     });
 
     test('should handle empty or undefined flags', () => {
@@ -86,9 +85,11 @@ describe('system flags utils', () => {
       };
 
       const merged = mergeFlags(flags1, flags2, {});
-      expect(merged.flaggedIngredients).toEqual(['sodium_laureth_sulfate']);
-      expect(merged.flaggedCategories).toEqual(['sulfates']);
-      expect(merged.flaggedGroups).toEqual([]);
+      expect(merged.flaggedIngredients).toContain('sodium_laureth_sulfate');
+      expect(merged.flaggedIngredients).toHaveLength(1);
+      expect(merged.flaggedCategories).toContain('sulfates');
+      expect(merged.flaggedCategories).toHaveLength(1);
+      expect(merged.flaggedGroups).toHaveLength(0);
     });
   });
 });

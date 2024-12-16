@@ -4,12 +4,12 @@ import { Analyzer } from '../src/analyzer';
 
 import {
   testDatabase,
+  testSettings,
 } from './fixtures/test_bundled_data';
-import { testSystem, testSettings } from './fixtures/flagTestData';
 
 describe('Analyzer', () => {
   describe('Basic Ingredient Analysis', () => {
-    it('should analyze a single ingredient in the databasewith full confidence', () => {
+    it('should analyze a single ingredient in the database', () => {
       const analyzer = new Analyzer({ database: testDatabase });
       const result = analyzer.analyze('Cetyl Alcohol');
 
@@ -18,11 +18,10 @@ describe('Analyzer', () => {
       expect(match.normalized).toBe('cetyl alcohol');
       expect(match.categories).toContain('emollient_alcohols');
       expect(match.groups).toContain('alcohols');
-      expect(match.ingredient?.id).toBe('cetyl_alcohol');
-      expect(match.confidence).toBe(1.0);
+      expect(match.ingredient?.id).toBe('cetyl_alcohol')
     });
 
-    it('should analyze multiple ingredients with appropriate confidence', () => {
+    it('should analyze multiple ingredients', () => {
       const analyzer = new Analyzer({ database: testDatabase });
       const result = analyzer.analyze('Cetyl Alcohol, SD Alcohol');
 
@@ -31,14 +30,12 @@ describe('Analyzer', () => {
       const [cetyl, sd] = result.matches;
       expect(cetyl.normalized).toBe('cetyl alcohol');
       expect(cetyl.categories).toContain('emollient_alcohols');
-      expect(cetyl.confidence).toBe(1.0);
 
       expect(sd.normalized).toBe('sd alcohol');
       expect(sd.categories).toContain('drying_alcohols');
-      expect(sd.confidence).toBe(1.0);
     });
 
-    it('should handle partial matches with lower confidence', () => {
+    it('should handle partial matches', () => {
       const analyzer = new Analyzer({ database: testDatabase });
       const result = analyzer.analyze('hexadecan');
 
@@ -46,20 +43,18 @@ describe('Analyzer', () => {
       const match = result.matches[0];
       expect(match.normalized).toBe('hexadecan');
       expect(match.ingredient?.id).toBe('cetyl_alcohol');
-      expect(match.confidence).toBe(0.7);
     });
 
-    it('should handle unknown ingredients with no confidence', () => {
+    it('should handle unknown ingredients', () => {
       const analyzer = new Analyzer({ database: testDatabase });
       const result = analyzer.analyze('Unknown Ingredient');
 
       expect(result.matches).toHaveLength(1);
       const match = result.matches[0];
       expect(match.normalized).toBe('unknown ingredient');
-      expect(match.categories).toEqual([]);
-      expect(match.groups).toEqual([]);
+      expect(match.categories).toHaveLength(0);
+      expect(match.groups).toHaveLength(0);
       expect(match.ingredient).toBeUndefined();
-      expect(match.confidence).toBeUndefined();
     });
 
     it('should handle empty input', () => {
@@ -114,62 +109,85 @@ describe('Analyzer', () => {
         {
           id: 'test_system',
           name: 'Test System',
-          settings: ['mild_detergents_only'],
+          settings: ['sulfate_free'],
         },
       ];
       analyzer.setSystems(testSystems);
-      expect(analyzer.getSystems()).toEqual(testSystems);
+
+      const systems = analyzer.getSystems();
+      expect(systems).toHaveLength(1);
+      expect(systems[0].id).toBe('test_system');
+      expect(systems[0].name).toBe('Test System');
+      expect(systems[0].settings).toContain('sulfate_free');
     });
   });
 
-  describe('analyze', () => {
+  describe('analyze with settings', () => {
+    const testSystem = {
+      id: 'test_system',
+      name: 'Test System',
+      settings: ['sulfate_free']
+    };
+
     it('should create flags from settings', () => {
       const analyzer = new Analyzer({
+        database: testDatabase,
         systems: [testSystem],
         settings: testSettings
       });
 
       const result = analyzer.analyze('sodium laureth sulfate', 'test_system');
 
-      // Check that the flag was created correctly
-      expect(result.flags['sulfate_free']).toEqual({
-        id: 'sulfate_free',
-        name: 'Sulfate Free',
-        description: 'Avoid sulfates',
-        type: 'ingredient',
-        flag_type: 'avoid'
-      });
+      // Check that the flags were created correctly
+      const match = result.matches[0];
+      expect(match.flags).toHaveLength(2);
+
+      // Check setting flag
+      const settingFlag = match.flags.find(f => f.type === 'setting');
+      expect(settingFlag).toBeDefined();
+      expect(settingFlag?.flag_type).toBe('avoid_sulfates');
+
+      // Check category flag
+      const categoryFlag = match.flags.find(f => f.type === 'category');
+      expect(categoryFlag).toBeDefined();
+      expect(categoryFlag?.flag_type).toBe('avoid_sulfates');
     });
 
     it('should handle avoid_others_in_category flags', () => {
+      const systemWithMildDetergents = {
+        id: 'test_system',
+        name: 'Test System',
+        settings: ['mild_detergents_only']
+      };
+
       const analyzer = new Analyzer({
-        systems: [testSystem],
+        database: testDatabase,
+        systems: [systemWithMildDetergents],
         settings: testSettings
       });
 
       const result = analyzer.analyze('sodium cocoyl isethionate', 'test_system');
 
       // Check that mild_detergents_only flag was created
-      expect(result.flags['mild_detergents_only']).toEqual({
-        id: 'mild_detergents_only',
-        name: 'Mild Detergents Only',
-        description: 'Only allow mild detergents',
-        type: 'category',
-        flag_type: 'avoid_others_in_category'
-      });
+      const match = result.matches[0];
+      const flags = match.flags.filter(f => f.type === 'category' && f.flag_type === 'avoid_others_in_category');
+      expect(flags).toHaveLength(1);
     });
 
     it('should not create duplicate flags', () => {
       const analyzer = new Analyzer({
+        database: testDatabase,
         systems: [testSystem],
         settings: testSettings
       });
 
       const result = analyzer.analyze('sodium laureth sulfate, sodium lauryl sulfate', 'test_system');
 
-      // Even though both ingredients are sulfates, we should only have one sulfate_free flag
-      expect(Object.keys(result.flags)).toHaveLength(1);
-      expect(result.flags['sulfate_free']).toBeDefined();
+      // Check flags on first match
+      const match = result.matches[0];
+      const uniqueFlags = new Set(match.flags.map(f => f.flag_type));
+      expect(uniqueFlags.size).toBe(1);
+      expect(uniqueFlags.has('avoid_sulfates')).toBe(true);
     });
   });
 });

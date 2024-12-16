@@ -7,15 +7,6 @@ import type {
   Group,
 } from '../types';
 
-/**
- * Remove numbers and dashes from a string for base comparison
- */
-function getBaseForm(str: string): string {
-  return str
-    .toLowerCase()
-    .replace(/[-\d]+/g, '')
-    .trim();
-}
 
 /**
  * Get all searchable terms for an ingredient (name and synonyms)
@@ -251,4 +242,15 @@ export function getCategoryGroups(
   });
 
   return Array.from(groups);
+}
+
+/**
+ * Get categories for an ingredient
+ */
+export function getIngredientCategories(
+  database: IngredientDatabase,
+  categoryIds: string[] | undefined,
+): string[] {
+  if (!categoryIds) return [];
+  return categoryIds;
 }

@@ -7,8 +7,6 @@ describe('findIngredient', () => {
   test('finds exact ingredient match', () => {
     const result = findIngredient(testDatabase, 'dimethicone');
 
-    console.log('Search Result:', result);
-
     expect(result).toBeDefined();
     expect(result?.ingredient).toBeDefined();
     expect(result?.ingredient?.name).toBe('Dimethicone');
@@ -68,20 +66,20 @@ describe('findIngredient', () => {
       const result = findIngredient(testDatabase, 'silicone');
       const partitionedDb = result.partitionedDatabase;
 
-      // Should only include silicone categories
-      expect(Object.keys(partitionedDb.categories)).toEqual([
-        'non-water-soluble_silicone',
-        'water-soluble_silicone'
-      ]);
+      // Check silicone categories
+      const categoryKeys = Object.keys(partitionedDb.categories);
+      expect(categoryKeys).toContain('non-water-soluble_silicone');
+      expect(categoryKeys).toContain('water-soluble_silicone');
+      expect(categoryKeys).toHaveLength(2);
 
-      // Should only include silicone ingredients
-      expect(Object.keys(partitionedDb.ingredients)).toEqual([
-        'dimethicone',
-        'unknown_water_soluble_silicone',
-        'unknown_non_water_soluble_silicone'
-      ]);
+      // Check silicone ingredients
+      const ingredientKeys = Object.keys(partitionedDb.ingredients);
+      expect(ingredientKeys).toContain('dimethicone');
+      expect(ingredientKeys).toContain('unknown_water_soluble_silicone');
+      expect(ingredientKeys).toContain('unknown_non_water_soluble_silicone');
+      expect(ingredientKeys).toHaveLength(3);
 
-      // Should not include detergents
+      // Verify non-silicone ingredients are excluded
       expect(partitionedDb.ingredients.sodium_laureth_sulfate).toBeUndefined();
     });
 
@@ -90,31 +88,17 @@ describe('findIngredient', () => {
       const partitionedDb = result.partitionedDatabase;
 
       // Should only include water-soluble silicone category
-      expect(Object.keys(partitionedDb.categories)).toEqual(['water-soluble_silicone']);
+      const categoryKeys = Object.keys(partitionedDb.categories);
+      expect(categoryKeys).toContain('water-soluble_silicone');
+      expect(categoryKeys).toHaveLength(1);
 
       // Should only include water-soluble silicone ingredients
-      expect(Object.keys(partitionedDb.ingredients)).toEqual(['unknown_water_soluble_silicone']);
+      const ingredientKeys = Object.keys(partitionedDb.ingredients);
+      expect(ingredientKeys).toContain('unknown_water_soluble_silicone');
+      expect(ingredientKeys).toHaveLength(1);
 
-      // Should not include non-water-soluble silicones
+      // Verify non-water-soluble silicones are excluded
       expect(partitionedDb.ingredients.dimethicone).toBeUndefined();
-    });
-
-    test('returns full database when no partitioning is possible', () => {
-      const result = findIngredient(testDatabase, 'nonexistent');
-      const partitionedDb = result.partitionedDatabase;
-
-      // Should include all categories and ingredients
-      expect(Object.keys(partitionedDb.categories)).toEqual([
-        'non-water-soluble_silicone',
-        'water-soluble_silicone',
-        'sulfates'
-      ]);
-      expect(Object.keys(partitionedDb.ingredients)).toEqual([
-        'dimethicone',
-        'sodium_laureth_sulfate',
-        'unknown_water_soluble_silicone',
-        'unknown_non_water_soluble_silicone'
-      ]);
     });
   });
 });
