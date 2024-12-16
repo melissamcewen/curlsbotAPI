@@ -4,21 +4,10 @@
 export interface AnalyzerConfig {
   /** Ingredient database used for analysis */
   database: IngredientDatabase;
-  /** Optional analyzer options */
-  options?: AnalyzerOptions;
-  /** Optional path to config directory */
-  configDir?: string;
   /** Optional system used to analyze the input */
   system: System;
   /** Optional settings for the system */
   settings?: Settings;
-}
-
-/**
- * Specifies options to customize the analyzer's behavior
- */
-export interface AnalyzerOptions {
-  flags: Flags;
 }
 
 /**

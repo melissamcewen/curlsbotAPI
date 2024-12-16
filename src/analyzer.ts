@@ -1,12 +1,10 @@
 import type {
   AnalyzerConfig,
-  AnalyzerOptions,
   IngredientDatabase,
   AnalysisResult,
   System,
   Settings,
   IngredientMatch,
-  Flags,
 } from './types';
 import { getBundledDatabase } from './data/bundledData';
 import { getBundledSystems } from './data/bundledData';
@@ -22,7 +20,6 @@ import { flag } from './utils/flagging';
 
 export class Analyzer {
   private database: IngredientDatabase;
-  private options?: AnalyzerOptions;
   private system: System;
   private settings: Settings;
 
@@ -32,7 +29,6 @@ export class Analyzer {
    */
   constructor(config?: Partial<AnalyzerConfig>) {
     this.database = config?.database ?? getBundledDatabase();
-    this.options = config?.options;
     const bundledSystems = getBundledSystems();
     const defaultSystem = findSystemById(bundledSystems, 'curly_default');
     if (!defaultSystem) {
@@ -55,21 +51,6 @@ export class Analyzer {
    */
   setDatabase(database: IngredientDatabase): void {
     this.database = database;
-  }
-
-  /**
-   * Gets the current analyzer options
-   */
-  getOptions(): AnalyzerOptions | undefined {
-    return this.options;
-  }
-
-  /**
-   * Updates the analyzer options
-   * @param options The new options to use
-   */
-  setOptions(options: AnalyzerOptions): void {
-    this.options = options;
   }
 
   /**
