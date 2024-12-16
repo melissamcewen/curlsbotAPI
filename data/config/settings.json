@@ -107,6 +107,15 @@
       "categories": ["soaps"],
       "groups": [],
       "flags": ["avoid"]
+    },
+    {
+      "id": "no_astringents",
+      "name": "No Astringents",
+      "description": "Avoiding all astringents.",
+      "ingredients": [],
+      "categories": ["astringents"],
+      "groups": [],
+      "flags": ["avoid"]
     }
   ]
 }

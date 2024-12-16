@@ -351,6 +351,17 @@ export const defaultDatabase: IngredientDatabase = {
         "emollient_alcohols"
       ]
     },
+    "unknown_alcohol": {
+      "name": "Unknown Alcohol",
+      "id": "unknown_alcohol",
+      "synonyms": [
+        "alcohol"
+      ],
+      "description": "Unknown alcohol, since we don't know what it is, we are going to classify it as drying alcohols just to be safe.",
+      "categories": [
+        "drying_alcohols"
+      ]
+    },
     "alkylbenzene_sulfonate": {
       "name": "Alkylbenzene Sulfonate",
       "id": "alkylbenzene_sulfonate",
@@ -1369,7 +1380,17 @@ export const defaultDatabase: IngredientDatabase = {
         "hazel"
       ],
       "categories": [
-        "other_detergents"
+        "astringents"
+      ]
+    },
+    "unknown_paraben": {
+      "name": "Unknown Paraben",
+      "id": "unknown_paraben",
+      "synonyms": [
+        "paraben"
+      ],
+      "categories": [
+        "parabens"
       ]
     },
     "amodimethicone": {
@@ -1960,7 +1981,8 @@ export const defaultSystems: System[] = [
       "no_waxes",
       "no_heavy_oils",
       "paraben_free",
-      "soap_free"
+      "soap_free",
+      "no_astringents"
     ]
   },
   {
@@ -2146,6 +2168,19 @@ export const defaultSettings: Record<string, Setting> = {
     "ingredients": [],
     "categories": [
       "soaps"
+    ],
+    "groups": [],
+    "flags": [
+      "avoid"
+    ]
+  },
+  "no_astringents": {
+    "id": "no_astringents",
+    "name": "No Astringents",
+    "description": "Avoiding all astringents.",
+    "ingredients": [],
+    "categories": [
+      "astringents"
     ],
     "groups": [],
     "flags": [

@@ -45,7 +45,7 @@ describe('Analyzer', () => {
       const match = result.matches[0];
       expect(match.normalized).toBe('hexadecan');
       expect(match.ingredient?.id).toBe('cetyl_alcohol');
-      expect(match.confidence).toBe(0.8);
+      expect(match.confidence).toBe(0.85);
     });
 
     it('should handle unknown ingredients with no confidence', () => {

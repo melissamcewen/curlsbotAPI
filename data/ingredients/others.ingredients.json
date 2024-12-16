@@ -237,7 +237,17 @@
         "hazel"
       ],
       "categories": [
-        "other_detergents"
+        "astringents"
+      ]
+    },
+    {
+      "name": "Unknown Paraben",
+      "id": "unknown_paraben",
+      "synonyms": [
+        "paraben"
+      ],
+      "categories": [
+        "parabens"
       ]
     }
   ]

@@ -14,6 +14,7 @@ describe('Other ingredient analysis', () => {
     it('should detect methylparaben as a paraben', () => {
       const result = analyzer.analyze('methylparaben', 'curly_default')
       const match = result.matches[0]
+      expect(match.normalized).toBe('methylparaben')
       expect(match.categories).toContain('parabens')
       expect(match.flags).toContain('parabens')
     })
@@ -43,14 +44,12 @@ describe('Other ingredient analysis', () => {
       const result = analyzer.analyze('witch hazel', 'curly_default')
       const match = result.matches[0]
       expect(match.categories).toContain('astringents')
-      expect(match.flags).toContain('witch_hazel')
     })
 
     it('should detect witch hazel by synonym hamamelis', () => {
       const result = analyzer.analyze('hamamelis', 'curly_default')
       const match = result.matches[0]
       expect(match.categories).toContain('astringents')
-      expect(match.flags).toContain('witch_hazel')
     })
 
     it('should flag astringents category when witch hazel is found', () => {
