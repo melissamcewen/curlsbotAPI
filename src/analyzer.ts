@@ -4,7 +4,9 @@ import type {
   IngredientDatabase,
   AnalysisResult,
   System,
-  Settings
+  Settings,
+  UserPreferences,
+  FlagRule
 } from './types';
 import { getBundledDatabase } from './data/bundledData';
 import { getBundledSystems } from './data/bundledData';
@@ -15,10 +17,10 @@ import { getSystemFlags, mergeFlags } from './utils/flags';
 
 export class Analyzer {
   private database: IngredientDatabase;
-  private fallbackDatabase?: IngredientDatabase;
   private options?: AnalyzerOptions;
   private systems: System[];
   private settings: Settings;
+  private userPreferences?: UserPreferences;
 
   /**
    * Creates a new Analyzer instance
@@ -26,7 +28,6 @@ export class Analyzer {
    */
   constructor(config?: Partial<AnalyzerConfig>) {
     this.database = config?.database ?? getBundledDatabase();
-    this.fallbackDatabase = config?.fallbackDatabase;
     this.options = config?.options;
     this.systems = config?.systems ?? getBundledSystems();
     this.settings = config?.settings ?? getBundledSettings();
@@ -40,13 +41,6 @@ export class Analyzer {
   }
 
   /**
-   * Gets the current fallback database being used by the analyzer
-   */
-  getFallbackDatabase(): IngredientDatabase | undefined {
-    return this.fallbackDatabase;
-  }
-
-  /**
    * Updates the database being used by the analyzer
    * @param database The new database to use
    */
@@ -54,13 +48,6 @@ export class Analyzer {
     this.database = database;
   }
 
-  /**
-   * Updates the fallback database being used by the analyzer
-   * @param database The new fallback database to use
-   */
-  setFallbackDatabase(database: IngredientDatabase): void {
-    this.fallbackDatabase = database;
-  }
 
   /**
    * Gets the current analyzer options
@@ -169,13 +156,9 @@ export class Analyzer {
     const mergedFlags = mergeFlags(systemFlags, this.options || {});
 
     result.matches = normalized.ingredients.map(normalizedName => {
-      const match = findIngredient(this.database, normalizedName, this.fallbackDatabase);
+      const match = findIngredient(this.database, normalizedName);
       const ingredient = match?.ingredient;
-
-      // Determine which database to use for categories and groups
-      const dbForCategories = ingredient && this.fallbackDatabase?.ingredients[ingredient.id]
-        ? this.fallbackDatabase
-        : this.database;
+      const dbForCategories = this.database;
 
       const categories = ingredient ? getIngredientCategories(dbForCategories, ingredient.categories) : [];
       const groups = getCategoryGroups(dbForCategories, categories);
@@ -207,28 +190,7 @@ export class Analyzer {
       });
 
       // Check for avoid_others_in_category settings
-      if (system && ingredient) {
-        system.settings.forEach(settingId => {
-          const setting = this.settings[settingId];
-          if (setting && setting.flags.includes('avoid_others_in_category')) {
-            // Only apply this rule to ingredients that are detergents/cleansers
-            const allCategories = Object.values(this.database.categories);
-            const detergentCategories = allCategories
-              .filter(cat => cat.group === 'detergents')
-              .map(cat => cat.id);
-            const isDetergent = ingredient.categories.some(cat => detergentCategories.includes(cat));
-            if (isDetergent) {
-              // Flag if the ingredient is NOT in any of the allowed categories
-              const shouldFlag = !setting.categories.some(category =>
-                ingredient.categories.includes(category)
-              );
-              if (shouldFlag) {
-                flags.add(settingId);
-              }
-            }
-          }
-        });
-      }
+
 
       return {
         uuid: crypto.randomUUID(),
@@ -260,7 +222,6 @@ export class Analyzer {
   getConfiguration(): AnalyzerConfig {
     return {
       database: this.database,
-      fallbackDatabase: this.fallbackDatabase,
       options: this.options,
       settings: this.settings
     };
@@ -271,8 +232,7 @@ export class Analyzer {
     return new Analyzer(config);
   }
 
-  validateConfiguration(config: Partial<AnalyzerConfig>): boolean {
-    // Add validation logic here
+  validateConfiguration(): boolean {
     return true;
   }
 
@@ -338,25 +298,4 @@ export class Analyzer {
 
     return rules;
   }
-}
-
-function checkSettingMatch(ingredient: Ingredient, setting: Setting, database: IngredientDatabase): boolean {
-  // If setting has avoid_others_in_category flag, check if ingredient is NOT in the allowed categories
-  if (setting.flags.includes('avoid_others_in_category')) {
-    // Only apply this rule to ingredients that are detergents/cleansers
-    const allCategories = Object.values(database.categories);
-    const detergentCategories = allCategories
-      .filter(cat => cat.group === 'detergents')
-      .map(cat => cat.id);
-    const isDetergent = ingredient.categories.some(cat => detergentCategories.includes(cat));
-    if (isDetergent) {
-      // Return true (match) if the ingredient is NOT in any of the allowed categories
-      return !setting.categories.some(category =>
-        ingredient.categories.includes(category)
-      );
-    }
-    return false; // Don't flag non-detergent ingredients
-  }
-
-  // ... existing matching logic for other flags ...
 }

@@ -4,7 +4,6 @@ import { Analyzer } from '../src/analyzer';
 
 import {
   testDatabase,
-  testFallbackDatabase,
 } from './fixtures/test_bundled_data';
 
 describe('Analyzer', () => {
@@ -101,47 +100,11 @@ describe('Analyzer', () => {
     });
   });
 
-  describe('Fallback Database', () => {
-    it('should use fallback database with appropriate confidence', () => {
-      const analyzer = new Analyzer({
-        database: testDatabase,
-        fallbackDatabase: testFallbackDatabase,
-      });
-      const result = analyzer.analyze('test-cone');
-
-      expect(result.matches).toHaveLength(1);
-      const match = result.matches[0];
-      expect(match.ingredient?.id).toBe('unknown_test_silicone');
-      expect(match.categories).toContain('non-water-soluble_silicones');
-      expect(match.confidence).toBe(0.6); // Superstring match (cone found within test-cone)
-    });
-
-    it('should prefer main database over fallback with full confidence', () => {
-      const analyzer = new Analyzer({
-        database: testDatabase,
-        fallbackDatabase: testFallbackDatabase,
-      });
-      const result = analyzer.analyze('Cetyl Alcohol');
-
-      expect(result.matches).toHaveLength(1);
-      const match = result.matches[0];
-      expect(match.ingredient?.id).toBe('cetyl_alcohol');
-      expect(match.categories).toContain('emollient_alcohols');
-      expect(match.confidence).toBe(1.0);
-    });
-  });
-
   describe('Configuration', () => {
     it('should allow getting and setting database', () => {
       const analyzer = new Analyzer();
       analyzer.setDatabase(testDatabase);
       expect(analyzer.getDatabase()).toBe(testDatabase);
-    });
-
-    it('should allow getting and setting fallback database', () => {
-      const analyzer = new Analyzer();
-      analyzer.setFallbackDatabase(testFallbackDatabase);
-      expect(analyzer.getFallbackDatabase()).toBe(testFallbackDatabase);
     });
 
     it('should allow getting and setting systems', () => {

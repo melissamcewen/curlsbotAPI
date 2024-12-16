@@ -25,7 +25,8 @@
     "fix-case": "tsx cli/validate.ts fix-case",
     "knip": "knip",
     "bundle-data": "tsx scripts/bundleData.ts",
-    "prebuild": "npm run bundle-data"
+    "prebuild": "npm run bundle-data",
+    "train": "tsx cli/train.ts train"
   },
   "keywords": [
     "haircare",
@@ -43,6 +44,8 @@
     "@typescript-eslint/parser": "^5.0.0",
     "@vitest/coverage-v8": "^2.1.8",
     "@vitest/ui": "^2.1.8",
+    "ajv": "^8.17.1",
+    "ajv-formats": "^3.0.1",
     "commander": "^12.1.0",
     "eslint": "^8.0.0",
     "eslint-import-resolver-typescript": "^3.0.0",
@@ -52,9 +55,7 @@
     "typescript": "^5.7.2",
     "vite": "^5.4.11",
     "vite-plugin-dts": "^4.3.0",
-    "vitest": "^2.1.8",
-    "ajv": "^8.17.1",
-    "ajv-formats": "^3.0.1"
+    "vitest": "^2.1.8"
   },
   "dependencies": {
     "flexsearch": "^0.7.43"

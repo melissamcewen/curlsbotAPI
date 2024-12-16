@@ -7,8 +7,7 @@ import {
 } from '../src/utils/databaseUtils';
 
 import {
-  testDatabase,
-  testFallbackDatabase,
+  testDatabase
 } from './fixtures/test_bundled_data';
 
 describe('Database Utils', () => {
@@ -48,56 +47,7 @@ describe('Database Utils', () => {
       expect(result).toBeUndefined();
     });
 
-    describe('with fallback', () => {
-      it('finds in main database first with full confidence', () => {
-        const result = findIngredient(
-          testDatabase,
-          'Cetyl Alcohol',
-          testFallbackDatabase,
-        );
-        expect(result?.ingredient.id).toBe('cetyl_alcohol');
-        expect(result?.confidence).toBe(1.0);
-      });
 
-      it('finds in fallback with substring match and high confidence', () => {
-        const result = findIngredient(
-          testDatabase,
-          'sil',
-          testFallbackDatabase,
-        );
-        expect(result?.ingredient.id).toBe('unknown_test_silicone');
-        expect(result?.confidence).toBe(0.8);
-      });
-
-      it('finds in fallback with superstring match and lower confidence', () => {
-        const result = findIngredient(
-          testDatabase,
-          'test-cone extra stuff',
-          testFallbackDatabase,
-        );
-        expect(result?.ingredient.id).toBe('unknown_test_silicone');
-        expect(result?.confidence).toBe(0.6);
-      });
-
-      it('finds in fallback with exact match and full confidence', () => {
-        const result = findIngredient(
-          testDatabase,
-          'botanisil',
-          testFallbackDatabase,
-        );
-        expect(result?.ingredient.id).toBe('unknown_test_silicone');
-        expect(result?.confidence).toBe(1.0);
-      });
-
-      it('returns undefined when not in either', () => {
-        const result = findIngredient(
-          testDatabase,
-          'nonexistent',
-          testFallbackDatabase,
-        );
-        expect(result).toBeUndefined();
-      });
-    });
   });
 
   describe('getIngredientCategories', () => {

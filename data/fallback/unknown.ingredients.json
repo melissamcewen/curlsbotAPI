@@ -30,83 +30,19 @@
       "synonyms": ["sulfate", "sulphate"],
       "categories": ["sulfates"]
     },
-    {
-      "name": "Unknown Cocoyl Sulfates",
-      "id": "unknown_cocoyl_sulfates",
-      "synonyms": ["cocosulfate", "coco-sulfate", "coco sulfate", "cocoyl sulfate", "cocosulphate", "coco-sulphate", "coco sulphate", "cocoyl sulphate", "coceth sulfate", "coceth sulphate"],
-      "categories": ["sulfates"]
-    },
-    {
-      "name": "Unknown Ammonium Lauryl Sulfates",
-      "id": "unknown_ammonium_lauryl_sulfates",
-      "synonyms": ["ammonium lauryl"],
-      "categories": ["sulfates"]
-    },
-    {
-      "name": "Unknown Lauryl Sulfates",
-      "id": "unknown_lauryl_sulfates",
-      "synonyms": ["lauryl sulfate", "lauryl sulphate"],
-      "categories": ["sulfates"]
-    },
-    {
-      "name": "Unknown Cetearyl Sulfates",
-      "id": "unknown_cetearyl_sulfates",
-      "synonyms": ["cetearyl sulfate", "cetearyl sulphate"],
-      "categories": ["sulfates"]
-    },
+
     {
       "name": "Unknown Sarcosinate",
       "id": "unknown_sarcosinate",
       "synonyms": ["sarcosinate"],
       "categories": ["other_detergents"]
     },
-    {
-      "name": "Unknown Sodium Lauryl Sulfates",
-      "id": "unknown_sodium_lauryl_sulfates",
-      "synonyms": ["sodium lauryl"],
-      "categories": ["sulfates"]
-    },
-    {
-      "name": "Unknown Sodium Myreth Sulfates",
-      "id": "unknown_sodium_myreth_sulfates",
-      "synonyms": ["sodium myreth", "myreth sulfate", "myreth sulphate"],
-      "categories": ["sulfates"]
-    },
-    {
-      "name": "Unknown Sodium Laureth Sulfates",
-      "id": "unknown_sodium_laureth_sulfates",
-      "synonyms": ["sodium laureth", "laureth sulfate", "laureth sulphate"],
-      "categories": ["sulfates"]
-    },
-    {
-      "name": "Unknown Sodium Lauroyl Methyl Isethionate",
-      "id": "unknown_sodium_lauroyl_methyl_isethionate",
-      "synonyms": ["sodium lauroyl"],
-      "categories": ["other_detergents"]
-    },
-    {
-      "name": "Unknown Ammounium Xylenesulfonate",
-      "id": "unknown_ammonium_xylenesulfonate",
-      "synonyms": ["ammonium xylenesulfonate", "ammonium xylene-sulfonate"],
-      "categories": ["other_detergents"]
-    },
+
     {
       "name": "Unknown Cocoyl Glutamate",
       "id": "unknown_cocoyl_glutamate",
       "synonyms": ["cocoyl glutamate"],
       "categories": ["other_detergents"]
-    },
-    {
-      "name": "Unknown Polystyrene Sulfates",
-      "id": "unknown_polystyrene_sulfates",
-      "synonyms": ["polystyrene sulfate", "polystyrene sulphate"],
-      "categories": ["sulfates"]
-    },
-    {
-      "name": "Unknown Alkyl Sulfates",
-      "id": "unknown_alkyl_sulfates",
-      "synonyms": ["alkyl sulfate", "alkyl sulphate"],
-      "categories": ["sulfates"]
     },
     {
       "name": "Unknown Wax",
