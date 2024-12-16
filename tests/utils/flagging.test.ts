@@ -1,6 +1,6 @@
-import type { AnalysisResult } from '../../src/types';
+import type { AnalysisResult, Flag } from '../../src/types';
 import { flag, processFlags } from '../../src/utils/flagging';
-import { testSystems, testSettings } from '../fixtures/test_bundled_data';
+import { testSystems, testSettings, testDatabase } from '../fixtures/test_bundled_data';
 
 describe('flagging', () => {
   describe('flag', () => {
@@ -26,7 +26,7 @@ describe('flagging', () => {
         flags: [],
       };
 
-      const result = flag(analysisResult, testSystems[0], testSettings);
+      const result = flag(analysisResult, testSystems[0], testSettings, testDatabase);
       expect(result.status).toBe('fail');
       expect(result.matches[0].flags).toHaveLength(1);
       expect(result.matches[0].flags![0]).toEqual({
@@ -64,7 +64,7 @@ describe('flagging', () => {
         flags: [],
       };
 
-      const result = flag(analysisResult, testSystems[0], testSettings);
+      const result = flag(analysisResult, testSystems[0], testSettings, testDatabase);
       expect(result.status).toBe('pass');
       expect(result.matches[0].flags).toHaveLength(0);
       expect(result.flags).toHaveLength(0);
@@ -101,7 +101,7 @@ describe('flagging', () => {
         flags: [],
       };
 
-      const result = flag(analysisResult, testSystems[2], testSettings);
+      const result = flag(analysisResult, testSystems[2], testSettings, testDatabase);
       expect(result.status).toBe('fail');
       // The non-mild detergent should be flagged
       expect(result.matches[0].flags).toHaveLength(1);
@@ -133,7 +133,7 @@ describe('flagging', () => {
         flags: [],
       };
 
-      const result = flag(analysisResult, testSystems[3], testSettings);
+      const result = flag(analysisResult, testSystems[3], testSettings, testDatabase);
       expect(result.status).toBe('pass'); // Caution doesn't fail
       expect(result.matches[0].flags).toHaveLength(1);
       expect(result.matches[0].flags![0].flag_type).toBe('caution');
@@ -168,9 +168,42 @@ describe('flagging', () => {
 
       // We can test this by checking if the flag gets added to the result
       // If shouldProcessFlag returns false, the flag wouldn't be added
-      const result = processFlags([ingredientFlag], analysisResult);
+      const result = processFlags([ingredientFlag], analysisResult, testDatabase);
       expect(result.flags).toHaveLength(1);
       expect(result.flags[0]).toEqual(ingredientFlag);
+    });
+
+    it('should handle avoid_others_in_group with non-preferred ingredient in same group', () => {
+      const analysisResult: AnalysisResult = {
+        uuid: '123',
+        input: 'test input',
+        normalized: ['test'],
+        system: 'mild_detergents_system',
+        status: 'pass',
+        settings: [],
+        matches: [
+          {
+            uuid: '456',
+            input: 'sodium laureth sulfate',
+            normalized: 'sodium_laureth_sulfate',
+            categories: ['surfactants'],
+            groups: ['detergents'],
+            flags: [],
+          }
+        ],
+        categories: ['surfactants'],
+        groups: ['detergents'],
+        flags: [],
+      };
+
+      const result = flag(analysisResult, testSystems[2], testSettings, testDatabase);
+      expect(result.status).toBe('fail');
+      expect(result.matches[0].flags).toHaveLength(1);
+      expect(result.matches[0].flags![0]).toEqual({
+        type: 'category',
+        flag_type: 'avoid_others_in_group',
+        id: 'mild_detergents'
+      });
     });
   });
 });

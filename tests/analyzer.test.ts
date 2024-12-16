@@ -1,10 +1,12 @@
 import { describe, it, expect } from 'vitest';
 
 import { Analyzer } from '../src/analyzer';
+import type { Flag, System } from '../src/types';
 
 import {
   testDatabase,
   testSettings,
+  testSystems,
 } from './fixtures/test_bundled_data';
 
 describe('Analyzer', () => {
@@ -105,9 +107,10 @@ describe('Analyzer', () => {
 
     it('should allow getting and setting systems', () => {
       const analyzer = new Analyzer();
-      const testSystem = {
+      const testSystem: System = {
         id: 'test_system',
         name: 'Test System',
+        description: 'Test system for unit tests',
         settings: ['sulfate_free'],
       };
       analyzer.setSystem(testSystem);
@@ -119,5 +122,66 @@ describe('Analyzer', () => {
     });
   });
 
+  describe('Flagging', () => {
+    it('should flag ingredients based on system settings', () => {
+      const analyzer = new Analyzer({
+        database: testDatabase,
+        settings: testSettings,
+        system: testSystems[0] // sulfate_free_system
+      });
+
+      const result = analyzer.analyze('Sodium Laureth Sulfate');
+
+      expect(result.status).toBe('fail');
+      expect(result.matches[0]?.flags).toHaveLength(1);
+      const expectedFlag: Flag = {
+        type: 'category',
+        flag_type: 'avoid',
+        id: 'sulfates'
+      };
+      expect(result.matches[0]?.flags?.[0]).toEqual(expectedFlag);
+    });
+
+    it('should handle avoid_others_in_group flag type', () => {
+      const analyzer = new Analyzer({
+        database: testDatabase,
+        settings: testSettings,
+        system: testSystems[2] // mild_detergents_system
+      });
+
+      const result = analyzer.analyze('Sodium Laureth Sulfate');
+
+      expect(result.status).toBe('fail');
+      expect(result.matches[0]?.flags).toHaveLength(1);
+      expect(result.matches[0]?.flags?.[0]?.flag_type).toBe('avoid_others_in_group');
+    });
+
+    it('should handle caution flag type', () => {
+      const analyzer = new Analyzer({
+        database: testDatabase,
+        settings: testSettings,
+        system: testSystems[3] // detergents_caution_system
+      });
+
+      const result = analyzer.analyze('Sodium Laureth Sulfate');
+
+      expect(result.status).toBe('pass'); // Caution doesn't fail
+      expect(result.matches[0]?.flags).toHaveLength(1);
+      expect(result.matches[0]?.flags?.[0]?.flag_type).toBe('caution');
+    });
+
+    it('should not flag ingredients that are not in avoided categories', () => {
+      const analyzer = new Analyzer({
+        database: testDatabase,
+        settings: testSettings,
+        system: testSystems[0] // sulfate_free_system
+      });
+
+      const result = analyzer.analyze('Cetyl Alcohol');
+
+      expect(result.status).toBe('pass');
+      expect(result.matches[0]?.flags).toHaveLength(0);
+    });
+  });
 
 });

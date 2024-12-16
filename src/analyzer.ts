@@ -6,14 +6,19 @@ import type {
   System,
   Settings,
   IngredientMatch,
-  Flags
+  Flags,
 } from './types';
 import { getBundledDatabase } from './data/bundledData';
 import { getBundledSystems } from './data/bundledData';
 import { getBundledSettings } from './data/bundledData';
 import { normalizer } from './utils/normalizer';
-import { findIngredient, getIngredientCategories, getCategoryGroups, findSystemById } from './utils/databaseUtils';
-
+import {
+  findIngredient,
+  getIngredientCategories,
+  getCategoryGroups,
+  findSystemById,
+} from './utils/databaseUtils';
+import { flag } from './utils/flagging';
 
 export class Analyzer {
   private database: IngredientDatabase;
@@ -51,7 +56,6 @@ export class Analyzer {
   setDatabase(database: IngredientDatabase): void {
     this.database = database;
   }
-
 
   /**
    * Gets the current analyzer options
@@ -109,15 +113,15 @@ export class Analyzer {
   private createEmptyResult(): AnalysisResult {
     return {
       uuid: crypto.randomUUID(),
-      input: "",
+      input: '',
       normalized: [],
-      system: "",
-      status: "success",
+      system: '',
+      status: 'pass',
       settings: [],
       matches: [],
       categories: [],
       groups: [],
-      flags: []
+      flags: [],
     };
   }
 
@@ -126,17 +130,17 @@ export class Analyzer {
    * @param ingredientList The ingredient list to analyze
    * @param systemId The ID of the system to use for analysis. If not provided or invalid, returns error
    */
-  analyze(ingredientList: string, systemId = ""): AnalysisResult {
+  analyze(ingredientList: string, systemId = ''): AnalysisResult {
     if (!ingredientList || typeof ingredientList !== 'string') {
       const result = this.createEmptyResult();
-      result.status = "error";
+      result.status = 'error';
       return result;
     }
 
     // Check if the requested system ID matches our system
     if (systemId && systemId !== this.system.id) {
       const result = this.createEmptyResult();
-      result.status = "error";
+      result.status = 'error';
       result.system = systemId;
       return result;
     }
@@ -148,7 +152,7 @@ export class Analyzer {
     // Use the existing normalizer
     const normalized = normalizer(ingredientList);
     if (!normalized.isValid) {
-      result.status = "error";
+      result.status = 'error';
       return result;
     }
 
@@ -158,17 +162,19 @@ export class Analyzer {
     const allCategories = new Set<string>();
     const allGroups = new Set<string>();
 
-    result.matches = normalized.ingredients.map(normalizedName => {
+    result.matches = normalized.ingredients.map((normalizedName) => {
       const match = findIngredient(this.database, normalizedName);
       const ingredient = match?.ingredient;
       const dbForCategories = this.database;
 
-      const categories = ingredient ? getIngredientCategories(dbForCategories, ingredient.categories) : [];
+      const categories = ingredient
+        ? getIngredientCategories(dbForCategories, ingredient.categories)
+        : [];
       const groups = getCategoryGroups(dbForCategories, categories);
 
       // Add to overall categories and groups
-      categories.forEach(c => allCategories.add(c));
-      groups.forEach(g => allGroups.add(g));
+      categories.forEach((c) => allCategories.add(c));
+      groups.forEach((g) => allGroups.add(g));
 
       const matchResult: IngredientMatch = {
         uuid: crypto.randomUUID(),
@@ -177,7 +183,7 @@ export class Analyzer {
         groups: groups,
         categories: categories,
         flags: [],
-        ingredient: ingredient
+        ingredient: ingredient,
       };
 
       return matchResult;
@@ -187,6 +193,7 @@ export class Analyzer {
     result.categories = Array.from(allCategories);
     result.groups = Array.from(allGroups);
 
-    return result;
+    // Apply flagging
+    return flag(result, this.system, this.settings, this.database);
   }
 }

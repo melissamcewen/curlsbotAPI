@@ -6,6 +6,7 @@ import type {
   System,
   Flags,
   IngredientMatch,
+  IngredientDatabase,
 } from '../types';
 import { getBundledSettings } from '../data/bundledData';
 
@@ -18,6 +19,7 @@ export function flag(
   analysisResult: AnalysisResult,
   system: System,
   settings: Record<string, Setting> = getBundledSettings(),
+  database: IngredientDatabase,
 ): AnalysisResult {
   const getSettingsFromIds = (ids: string[]): Setting[] => {
     return ids
@@ -26,7 +28,7 @@ export function flag(
   };
 
   return getSettingsFromIds(system.settings).reduce(
-    (result, setting) => processFlags(setting.flags, result),
+    (result, setting) => processFlags(setting.flags, result, database),
     analysisResult,
   );
 }
@@ -39,16 +41,17 @@ export function flag(
 export function processFlags(
   flags: Flag[],
   analysisResult: AnalysisResult,
+  database: IngredientDatabase,
 ): AnalysisResult {
   return flags
     .filter((flag) => shouldProcessFlag(flag, analysisResult))
-    .reduce((result, flag) => processFlag(flag, result), analysisResult);
+    .reduce((result, flag) => processFlag(flag, result, database), analysisResult);
 }
 
 /**
  * Determines if a flag should be processed based on its type and the analysis result
  * - For group flags: checks if the group exists in the result
- * - For category flags: checks if the category exists in the result
+ * - For category flags: checks if the category exists in the result (except for avoid_others_in_group)
  * - For other flags: always processes them
  */
 function shouldProcessFlag(
@@ -59,6 +62,9 @@ function shouldProcessFlag(
     return analysisResult.groups.includes(flag.id);
   }
   if (flag.type === 'category') {
+    if (flag.flag_type === 'avoid_others_in_group') {
+      return true;
+    }
     return analysisResult.categories.includes(flag.id);
   }
   return true;
@@ -73,6 +79,7 @@ function shouldProcessFlag(
 function processFlag(
   flag: Flag,
   analysisResult: AnalysisResult,
+  database: IngredientDatabase,
 ): AnalysisResult {
   let shouldFail = false;
   const updatedMatches = analysisResult.matches.map((match) => {
@@ -90,24 +97,23 @@ function processFlag(
         // If this match is in the same group as our preferred category
         // but doesn't have the preferred category, flag it
         const preferredCategory = flag.id;
-        const categoryGroup = analysisResult.categories
-          .find(category => category === preferredCategory);
+        const preferredCategoryGroup = database.categories[preferredCategory]?.group;
+        const matchGroups = match.groups || [];
+        const matchCategories = match.categories || [];
 
-        if (categoryGroup && match.groups?.includes('detergents')) {
-          if (!match.categories?.includes(preferredCategory)) {
-            shouldFail = true;
-            return {
-              ...match,
-              flags: [...(match.flags || []), flag],
-            };
-          }
+        // If the match has the same group as the preferred category but doesn't have the preferred category
+        if (preferredCategoryGroup && matchGroups.includes(preferredCategoryGroup) && !matchCategories.includes(preferredCategory)) {
+          shouldFail = true;
+          return {
+            ...match,
+            flags: [...(match.flags || []), flag],
+          };
         }
       }
     }
 
     // For group flags
     if (flag.type === 'group' && match.groups?.includes(flag.id)) {
-      // For caution flags
       return {
         ...match,
         flags: [...(match.flags || []), flag],
