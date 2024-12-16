@@ -81,6 +81,12 @@ export function findIngredient(
     }
   }
 
+  // Check for PEG/PPG silicones first
+  const pegMatch = pegSiliconeMatch(searchTerm, database);
+  if (pegMatch) {
+    return pegMatch;
+  }
+
   /// if the search term is longer than 20 characters, try to see if any ingredients are contained in the search term
   if (searchTerm.length > 20) {
     for (const ingredient of Object.values(database.ingredients)) {
@@ -171,15 +177,11 @@ export function getCategoryGroups(
   return Array.from(groups);
 }
 
-
-// * Special handling for various ingredients returns an ingredient match object */
-export function unknownIngredientMatch(
+export function pegSiliconeMatch(
   searchTerm: string,
   database: IngredientDatabase,
 ): IngredientMatch | undefined {
   const normalizedSearch = searchTerm.toLowerCase();
-
-  // if it contains 'peg' or 'ppg' return unknown_peg_silicone
   if (normalizedSearch.includes('peg') || normalizedSearch.includes('ppg')) {
     const unknownPegSilicone = Object.values(database.ingredients).find(
       (ingredient) => ingredient.id === 'unknown_peg_silicone',
@@ -193,6 +195,15 @@ export function unknownIngredientMatch(
       confidence: 0.9
     };
   }
+  return undefined;
+}
+
+// * Special handling for various ingredients returns an ingredient match object */
+export function unknownIngredientMatch(
+  searchTerm: string,
+  database: IngredientDatabase,
+): IngredientMatch | undefined {
+  const normalizedSearch = searchTerm.toLowerCase();
 
   // if it contains alcohol return unknown_alcohol
   if (normalizedSearch.includes('alcohol')) {
@@ -243,3 +254,5 @@ export function unknownIngredientMatch(
 
   return undefined;
 }
+
+
