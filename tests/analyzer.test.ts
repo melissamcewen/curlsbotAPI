@@ -6,6 +6,8 @@ import {
   testDatabase,
 } from './fixtures/test_bundled_data';
 
+import { testSystem, testSettings } from './fixtures/flagTestData';
+
 describe('Analyzer', () => {
   describe('Basic Ingredient Analysis', () => {
     it('should analyze a single ingredient with full confidence', () => {
@@ -118,6 +120,57 @@ describe('Analyzer', () => {
       ];
       analyzer.setSystems(testSystems);
       expect(analyzer.getSystems()).toEqual(testSystems);
+    });
+  });
+
+  describe('analyze', () => {
+    it('should create flags from settings', () => {
+      const analyzer = new Analyzer({
+        systems: [testSystem],
+        settings: testSettings
+      });
+
+      const result = analyzer.analyze('sodium laureth sulfate', 'test_system');
+
+      // Check that the flag was created correctly
+      expect(result.flags['sulfate_free']).toEqual({
+        id: 'sulfate_free',
+        name: 'Sulfate Free',
+        description: 'Avoid sulfates',
+        type: 'ingredient',
+        flag_type: 'avoid'
+      });
+    });
+
+    it('should handle avoid_others_in_category flags', () => {
+      const analyzer = new Analyzer({
+        systems: [testSystem],
+        settings: testSettings
+      });
+
+      const result = analyzer.analyze('sodium cocoyl isethionate', 'test_system');
+
+      // Check that mild_detergents_only flag was created
+      expect(result.flags['mild_detergents_only']).toEqual({
+        id: 'mild_detergents_only',
+        name: 'Mild Detergents Only',
+        description: 'Only allow mild detergents',
+        type: 'category',
+        flag_type: 'avoid_others_in_category'
+      });
+    });
+
+    it('should not create duplicate flags', () => {
+      const analyzer = new Analyzer({
+        systems: [testSystem],
+        settings: testSettings
+      });
+
+      const result = analyzer.analyze('sodium laureth sulfate, sodium lauryl sulfate', 'test_system');
+
+      // Even though both ingredients are sulfates, we should only have one sulfate_free flag
+      expect(Object.keys(result.flags)).toHaveLength(1);
+      expect(result.flags['sulfate_free']).toBeDefined();
     });
   });
 });

@@ -1,10 +1,10 @@
-import { describe, it, expect } from 'vitest';
+import { describe, test, expect } from 'vitest';
 import { getSystemFlags, mergeFlags } from '../src/utils/flags';
 import { testSystem, testSettings } from './fixtures/flagTestData';
 
 describe('system flags utils', () => {
   describe('getSystemFlags', () => {
-    it('should return empty flags for undefined system', () => {
+    test('should return empty flags for undefined system', () => {
       const flags = getSystemFlags(undefined, testSettings);
       expect(flags).toEqual({
         flaggedIngredients: [],
@@ -13,18 +13,18 @@ describe('system flags utils', () => {
       });
     });
 
-    it('should handle sulfate_free setting', () => {
+    test('should handle sulfate_free setting', () => {
       const flags = getSystemFlags(testSystem, testSettings);
       expect(flags.flaggedIngredients).toContain('sodium_laureth_sulfate');
       expect(flags.flaggedCategories).toContain('sulfates');
     });
 
-    it('should handle avoid_others_in_category flag', () => {
+    test('should handle avoid_others_in_category flag', () => {
       const flags = getSystemFlags(testSystem, testSettings);
       expect(flags.flaggedCategories).toContain('mild_detergents');
     });
 
-    it('should handle unknown settings gracefully', () => {
+    test('should handle unknown settings gracefully', () => {
       const systemWithUnknown = {
         ...testSystem,
         settings: ['unknown_setting']
@@ -38,7 +38,7 @@ describe('system flags utils', () => {
   });
 
   describe('mergeFlags', () => {
-    it('should merge multiple flag sources', () => {
+    test('should merge multiple flag sources', () => {
       const flags1 = {
         flaggedIngredients: ['sodium_laureth_sulfate'],
         flaggedCategories: ['sulfates']
@@ -56,7 +56,7 @@ describe('system flags utils', () => {
       expect(merged.flaggedCategories).toContain('silicones');
     });
 
-    it('should remove duplicates', () => {
+    test('should remove duplicates', () => {
       const flags1 = {
         flaggedIngredients: ['sodium_laureth_sulfate'],
         flaggedCategories: ['sulfates']
@@ -74,7 +74,7 @@ describe('system flags utils', () => {
       expect(merged.flaggedCategories.length).toBe(1);
     });
 
-    it('should handle empty or undefined flags', () => {
+    test('should handle empty or undefined flags', () => {
       const flags1 = {
         flaggedIngredients: ['sodium_laureth_sulfate']
       };

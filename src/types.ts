@@ -180,6 +180,17 @@ export interface NormalizedIngredientList {
 export type Categories = Record<string, Category>;
 
 /**
+ * Represents a flag for an ingredient, category, or group
+ */
+export interface Flag {
+  id: string;
+  name: string;
+  description?: string;
+  type: 'ingredient' | 'category' | 'group';
+  flag_type: 'avoid' | 'prefer' | 'avoid_others_in_category' | 'caution';
+}
+
+/**
  * Represents a collection of flags
  */
 export type Flags = Record<string, Flag>;
@@ -203,6 +214,7 @@ export interface Setting {
   description: string;
   ingredients: string[];
   categories: string[];
+  groups: string[];
   // list of flag IDs
   flags: string[];
 }
@@ -229,12 +241,4 @@ export type FlagRule = {
 export type UserPreferences = {
   rules: FlagRule[];
   systemId?: string;
-}
-
-export type Flag = {
-  id: string;
-  name: string;
-  description?: string;
-  type: 'ingredient' | 'category' | 'group';
-  flag_type: 'avoid' | 'prefer' | 'avoid_others_in_category' | 'caution';
 }

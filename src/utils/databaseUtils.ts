@@ -203,21 +203,24 @@ function doFuzzyMatch(
   return undefined;
 }
 
-function levenshteinDistance(a: string, b: string): number {
-  if (a.length === 0) return b.length;
-  if (b.length === 0) return a.length;
+export function levenshteinDistance(a: string, b: string): number {
+  // Create matrix with proper initialization
+  const matrix = new Array(a.length + 1);
+  for (let i = 0; i <= a.length; i++) {
+    matrix[i] = new Array(b.length + 1);
+    matrix[i][0] = i;
+  }
+  for (let j = 0; j <= b.length; j++) {
+    matrix[0][j] = j;
+  }
 
-  const matrix = Array(a.length + 1).fill(null).map(() => Array(b.length + 1).fill(null));
-
-  for (let i = 0; i <= a.length; i++) matrix[i][0] = i;
-  for (let j = 0; j <= b.length; j++) matrix[0][j] = j;
-
+  // Fill in the rest of the matrix
   for (let i = 1; i <= a.length; i++) {
     for (let j = 1; j <= b.length; j++) {
       matrix[i][j] = Math.min(
-        matrix[i-1][j] + 1,
-        matrix[i][j-1] + 1,
-        matrix[i-1][j-1] + (a[i-1] === b[j-1] ? 0 : 1)
+        matrix[i - 1][j] + 1,
+        matrix[i][j - 1] + 1,
+        matrix[i - 1][j - 1] + (a[i - 1] === b[j - 1] ? 0 : 1)
       );
     }
   }

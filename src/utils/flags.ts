@@ -1,9 +1,9 @@
-import type { AnalyzerOptions, System, Settings } from '../types';
+import type { System, Settings, AnalyzerOptions } from '../types';
 
 /**
  * Gets system-specific flags based on settings
  */
-export function getSystemFlags(system: System | undefined, settings: Settings = {}): Required<AnalyzerOptions> {
+export function getSystemFlags(system: System | undefined, settings: Settings): Required<AnalyzerOptions> {
   const flags: Required<AnalyzerOptions> = {
     flaggedIngredients: [],
     flaggedCategories: [],
@@ -12,20 +12,22 @@ export function getSystemFlags(system: System | undefined, settings: Settings = 
 
   if (!system) return flags;
 
-  // Apply settings-based flags
+  // Get flags from system settings
   system.settings.forEach(settingId => {
     const setting = settings[settingId];
-    if (setting) {
-      if (setting.ingredients) flags.flaggedIngredients.push(...setting.ingredients);
-      if (setting.categories) flags.flaggedCategories.push(...setting.categories);
-      if (setting.flags) flags.flaggedGroups.push(...setting.flags);
+    if (!setting) return;
+
+    // Use settings' properties
+    if (setting.ingredients) {
+      flags.flaggedIngredients.push(...setting.ingredients);
+    }
+    if (setting.categories) {
+      flags.flaggedCategories.push(...setting.categories);
+    }
+    if (setting.groups) {
+      flags.flaggedGroups.push(...setting.groups);
     }
   });
-
-  // Remove duplicates
-  flags.flaggedIngredients = [...new Set(flags.flaggedIngredients)];
-  flags.flaggedCategories = [...new Set(flags.flaggedCategories)];
-  flags.flaggedGroups = [...new Set(flags.flaggedGroups)];
 
   return flags;
 }
