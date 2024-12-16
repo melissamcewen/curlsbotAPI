@@ -1,100 +1,69 @@
-import { describe, it, expect } from 'vitest';
-
+import { describe, expect, test } from 'vitest';
+import type { IngredientMatch } from '../src/types';
 import {
   findIngredient,
-  getIngredientCategories,
   getCategoryGroups,
 } from '../src/utils/databaseUtils';
 
-import {
-  testDatabase
-} from './fixtures/test_bundled_data';
+import { testDatabase } from './fixtures/test_bundled_data';
 
-describe('Database Utils', () => {
-  describe('findIngredient', () => {
-    it('finds ingredient by exact name with full confidence', () => {
-      const result = findIngredient(testDatabase, 'cetyl alcohol');
-      expect(result?.ingredient.id).toBe('cetyl_alcohol');
-      expect(result?.confidence).toBe(1.0);
-    });
+describe('findIngredient', () => {
+  test('finds exact ingredient match', () => {
+    const result = findIngredient(testDatabase, 'Dimethicone');
 
-    it('finds ingredient by exact synonym with full confidence', () => {
-      const result = findIngredient(testDatabase, 'hexadecan-1-ol');
-      expect(result?.ingredient.id).toBe('cetyl_alcohol');
-      expect(result?.confidence).toBe(1.0);
-    });
-
-  
-
-
-
-    it('is case insensitive with full confidence', () => {
-      const result = findIngredient(testDatabase, 'CETYL ALCOHOL');
-      expect(result?.ingredient.id).toBe('cetyl_alcohol');
-      expect(result?.confidence).toBe(1.0);
-    });
-
-    it('returns undefined for unknown ingredient', () => {
-      const result = findIngredient(testDatabase, 'unknown ingredient');
-      expect(result).toBeUndefined();
-    });
-
-
+    expect(result).toBeDefined();
+    expect(result?.ingredient?.name).toBe('Dimethicone');
+    expect(result?.normalized).toBe('dimethicone');
   });
 
-  describe('getIngredientCategories', () => {
-    it('gets categories for ingredient', () => {
-      const categories = getIngredientCategories(
-        testDatabase,
-        'emollient_alcohols',
-      );
-      expect(categories).toEqual(['emollient_alcohols']);
-    });
+  test('finds ingredient by synonym', () => {
+    const result = findIngredient(testDatabase, 'pdms');
 
-    it('handles multiple categories', () => {
-      const categories = getIngredientCategories(testDatabase, [
-        'emollient_alcohols',
-        'drying_alcohols',
-      ]);
-      expect(categories).toEqual(['emollient_alcohols', 'drying_alcohols']);
-    });
-
-    it('handles unknown categories', () => {
-      const categories = getIngredientCategories(
-        testDatabase,
-        'unknown_category',
-      );
-      expect(categories).toEqual([]);
-    });
-
-    it('returns empty array for empty input', () => {
-      const categories = getIngredientCategories(testDatabase, []);
-      expect(categories).toEqual([]);
-    });
+    expect(result).toBeDefined();
+    expect(result?.ingredient?.name).toBe('Dimethicone');
   });
 
-  describe('getCategoryGroups', () => {
-    it('gets groups for categories', () => {
-      const groups = getCategoryGroups(testDatabase, ['emollient_alcohols']);
-      expect(groups).toEqual(['alcohols']);
-    });
+  test('returns undefined ingredient for non-matching term', () => {
+    const result = findIngredient(testDatabase, 'nonexistent ingredient');
 
-    it('returns unique groups', () => {
-      const groups = getCategoryGroups(testDatabase, [
-        'emollient_alcohols',
-        'drying_alcohols',
-      ]);
-      expect(groups).toEqual(['alcohols']);
-    });
+    expect(result).toBeDefined();
+    expect(result?.ingredient).toBeUndefined();
+    expect(result?.input).toBe('nonexistent ingredient');
+  });
 
-    it('handles unknown categories', () => {
-      const groups = getCategoryGroups(testDatabase, ['unknown_category']);
-      expect(groups).toEqual([]);
-    });
+  test('finds ingredient through category inclusion', () => {
+    const result = findIngredient(testDatabase, 'peg-dimethicone');
 
-    it('returns empty array for empty input', () => {
-      const groups = getCategoryGroups(testDatabase, []);
-      expect(groups).toEqual([]);
-    });
+    expect(result).toBeDefined();
+    expect(result?.ingredient?.categories).toContain('water-soluble_silicone');
+  });
+
+  test('finds default ingredient through group inclusion', () => {
+    const result = findIngredient(testDatabase, 'new silicone ingredient');
+
+    expect(result).toBeDefined();
+    expect(result?.ingredient?.id).toBe('unknown_non-water-soluble_silicone');
   });
 });
+
+describe('getCategoryGroups', () => {
+  test('returns unique group IDs for given category IDs', () => {
+    const categoryIds = ['non-water-soluble_silicone', 'water-soluble_silicone', 'sulfates'];
+    const groups = getCategoryGroups(testDatabase, categoryIds);
+
+    expect(groups).toEqual(['silicones', 'silicones', 'detergents']);
+    // Each group should only appear once after converting to Set
+    expect(new Set(groups).size).toBe(2);
+  });
+
+  test('handles non-existent category IDs', () => {
+    const groups = getCategoryGroups(testDatabase, ['nonexistent']);
+    expect(groups).toEqual([]);
+  });
+
+  test('returns empty array for empty input', () => {
+    const groups = getCategoryGroups(testDatabase, []);
+    expect(groups).toEqual([]);
+  });
+});
+

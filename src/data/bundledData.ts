@@ -1943,19 +1943,28 @@ export const defaultDatabase: IngredientDatabase = {
       "id": "parabens",
       "name": "Parabens",
       "group": "preservatives",
-      "description": "Parabens are a type of preservative that can cause irritation and dryness."
+      "description": "Parabens are a type of preservative that can cause irritation and dryness.",
+      "inclusions": [
+        "paraben"
+      ]
     },
     "sulfates": {
       "id": "sulfates",
       "name": "Sulfates",
       "group": "detergents",
-      "description": "Sulfates are a type of detergent that can cause irritation and dryness."
+      "description": "Sulfates are a type of detergent that can cause irritation and dryness.",
+      "inclusions": [
+        "sulfate"
+      ]
     },
     "sulfonates": {
       "id": "sulfonates",
       "name": "Sulfonates",
       "group": "detergents",
-      "description": "Sulfonates are a type of detergent that can cause irritation and dryness."
+      "description": "Sulfonates are a type of detergent that can cause irritation and dryness.",
+      "inclusions": [
+        "sulfonate"
+      ]
     },
     "emollient_alcohols": {
       "id": "emollient_alcohols",
@@ -1967,7 +1976,11 @@ export const defaultDatabase: IngredientDatabase = {
       "id": "water-soluble_silicones",
       "name": "Water-soluble Silicones",
       "group": "silicones",
-      "description": "TBD"
+      "description": "TBD",
+      "inclusions": [
+        "ppg",
+        "peg"
+      ]
     },
     "non-water-soluble_silicones": {
       "id": "non-water-soluble_silicones",
@@ -2051,19 +2064,33 @@ export const defaultDatabase: IngredientDatabase = {
   "groups": {
     "alcohols": {
       "id": "alcohols",
-      "name": "Alcohols"
+      "name": "Alcohols",
+      "inclusions": [
+        "alcohol"
+      ]
     },
     "preservatives": {
       "id": "preservatives",
-      "name": "Preservatives"
+      "name": "Preservatives",
+      "inclusions": [
+        "paraben"
+      ]
     },
     "detergents": {
       "id": "detergents",
-      "name": "Detergents"
+      "name": "Detergents",
+      "inclusions": [
+        "sulfate"
+      ]
     },
     "silicones": {
       "id": "silicones",
-      "name": "Silicones"
+      "name": "Silicones",
+      "inclusions": [
+        "silicone",
+        "cone"
+      ],
+      "defaultIngredient": "unknown_non-water-soluble_silicone"
     },
     "others": {
       "id": "others",

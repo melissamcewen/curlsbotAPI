@@ -2,19 +2,24 @@
   "groups": [
     {
       "id": "alcohols",
-      "name": "Alcohols"
+      "name": "Alcohols",
+      "inclusions": ["alcohol"]
     },
     {
       "id": "preservatives",
-      "name": "Preservatives"
+      "name": "Preservatives",
+      "inclusions": ["paraben"]
     },
     {
       "id": "detergents",
-      "name": "Detergents"
+      "name": "Detergents",
+      "inclusions": ["sulfate"]
     },
     {
       "id": "silicones",
-      "name": "Silicones"
+      "name": "Silicones",
+      "inclusions": ["silicone", "cone"],
+      "defaultIngredient": "unknown_non-water-soluble_silicone"
     },
     {
       "id": "others",

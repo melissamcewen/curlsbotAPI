@@ -64,6 +64,10 @@ export interface Category {
   id: string;
   /** The group this category belongs to */
   group: string;
+  /** inclusions that would partition the group */
+  inclusions?: string[];
+  /** default ingredient for the category */
+  defaultIngredient?: string;
 }
 
 /**
@@ -76,6 +80,10 @@ export interface Group {
   description?: string;
   /** Unique identifier for the category group */
   id: string;
+  /** inclusions that would partition the group */
+  inclusions?: string[];
+  /** default ingredient for the group */
+  defaultIngredient?: string;
 }
 
 /**
@@ -119,7 +127,7 @@ export interface IngredientMatch {
   /** the ingredient matched (if any) */
   ingredient?: Ingredient;
   /** confidence of the match */
-  confidence?: number;
+  match_type?: string;
 }
 
 /**
@@ -144,8 +152,7 @@ export interface MatchDetails {
   synonymMatch?: string;
   /** Whether the match was flagged */
   flagged?: boolean;
-  /** Confidence of the match */
-  confidence?: number;
+
 }
 
 /**
