@@ -1655,6 +1655,29 @@ export const defaultDatabase: IngredientDatabase = {
         "non-water-soluble_silicones"
       ]
     },
+    "cyclomethicone": {
+      "name": "Cyclomethicone",
+      "id": "cyclomethicone",
+      "synonyms": [
+        "cyclicdimethylpolysiloxane",
+        "polydimethylcyclosiloxane"
+      ],
+      "categories": [
+        "evaporative_silicones"
+      ]
+    },
+    "unknown_peg_silicone": {
+      "name": "Unknown PEG Silicone",
+      "id": "unknown_peg_silicone",
+      "synonyms": [
+        "PPG-",
+        "PEG-",
+        "PEG/PPG"
+      ],
+      "categories": [
+        "water-soluble_silicones"
+      ]
+    },
     "beeswax": {
       "name": "Beeswax",
       "id": "beeswax",
@@ -1934,6 +1957,12 @@ export const defaultDatabase: IngredientDatabase = {
       "name": "Water-soluble Waxes",
       "group": "waxes",
       "description": "TBD"
+    },
+    "evaporative_silicones": {
+      "id": "evaporative_silicones",
+      "name": "Evaporative Silicones",
+      "group": "silicones",
+      "description": "TBD"
     }
   },
   "groups": {
@@ -2101,7 +2130,7 @@ export const defaultSettings: Record<string, Setting> = {
     "description": "Avoiding all non water soluble waxes.",
     "ingredients": [],
     "categories": [
-      "non_water_soluble_waxes"
+      "non-water-soluble_waxes"
     ],
     "groups": [],
     "flags": [
@@ -2114,7 +2143,7 @@ export const defaultSettings: Record<string, Setting> = {
     "description": "Avoiding all water insoluble silicones.",
     "ingredients": [],
     "categories": [
-      "water_insoluble_silicones"
+      "non-water-soluble_silicones"
     ],
     "groups": [],
     "flags": [
@@ -2151,10 +2180,10 @@ export const defaultSettings: Record<string, Setting> = {
   "caution_water_soluble_silicones": {
     "id": "caution_water_soluble_silicones",
     "name": "Caution Water Soluble Silicones",
-    "description": "Only allows water soluble silicones, avoiding all other silicones.",
+    "description": "Flag the water soluble silicones as caution",
     "ingredients": [],
     "categories": [
-      "water_soluble_silicones"
+      "water-soluble_silicones"
     ],
     "groups": [],
     "flags": [

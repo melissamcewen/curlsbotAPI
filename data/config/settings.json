@@ -59,7 +59,7 @@
       "name": "No Waxes",
       "description": "Avoiding all non water soluble waxes.",
       "ingredients": [],
-      "categories": ["non_water_soluble_waxes"],
+      "categories": ["non-water-soluble_waxes"],
       "groups": [],
       "flags": ["avoid"]
     },
@@ -68,7 +68,7 @@
       "name": "No Water Insoluble Silicones",
       "description": "Avoiding all water insoluble silicones.",
       "ingredients": [],
-      "categories": ["water_insoluble_silicones"],
+      "categories": ["non-water-soluble_silicones"],
       "groups": [],
       "flags": ["avoid"]
     },
@@ -93,9 +93,9 @@
     {
       "id": "caution_water_soluble_silicones",
       "name": "Caution Water Soluble Silicones",
-      "description": "Only allows water soluble silicones, avoiding all other silicones.",
+      "description": "Flag the water soluble silicones as caution",
       "ingredients": [],
-      "categories": ["water_soluble_silicones"],
+      "categories": ["water-soluble_silicones"],
       "groups": [],
       "flags": ["caution"]
     },

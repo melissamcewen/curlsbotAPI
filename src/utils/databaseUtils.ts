@@ -23,59 +23,110 @@ function calculateSimilarity(searchTerm: string, target: string): number {
   const s2 = target.toLowerCase();
 
   // Exact match
-  if (s1 === s2) return 1.0;
+  if (s1 === s2) {
+    console.log(`Exact match for ${s1} and ${s2}: 1.0`);
+    return 1.0;
+  }
 
   // Compare base forms (ignoring numbers and dashes)
   const base1 = getBaseForm(s1);
   const base2 = getBaseForm(s2);
 
-  if (base1 === base2) return 0.9; // Match ignoring numbers
-
-  // Check for exact phrase matches first
-  if (s1.includes(s2) || s2.includes(s1)) {
-    return 0.85; // One string is a complete substring of the other
+  if (base1 === base2) {
+    console.log(`Base form match for ${s1} and ${s2}: 0.9`);
+    return 0.9; // Match ignoring numbers
   }
 
   // For multi-word strings, check if all words from one are in the other
-  if (s1.includes(' ') || s2.includes(' ')) {
-    const words1 = s1.split(/\s+/);
-    const words2 = s2.split(/\s+/);
+  // Split on spaces and hyphens to handle hyphenated words
+  const words1 = s1.split(/[\s-/]+/);
+  const words2 = s2.split(/[\s-/]+/);
 
-    // Check for consecutive word matches
-    let maxConsecutiveMatch = 0;
-    for (let i = 0; i < words1.length; i++) {
-      for (let j = 0; j < words2.length; j++) {
-        let consecutiveMatch = 0;
-        while (
-          i + consecutiveMatch < words1.length &&
-          j + consecutiveMatch < words2.length &&
-          words1[i + consecutiveMatch] === words2[j + consecutiveMatch]
-        ) {
-          consecutiveMatch++;
-        }
-        maxConsecutiveMatch = Math.max(maxConsecutiveMatch, consecutiveMatch);
-      }
-    }
-
-    if (maxConsecutiveMatch >= 2) {
-      return 0.8; // Two or more consecutive words match
-    }
-
-    // If no good consecutive matches, check for word presence
-    const words1InWords2 = words1.every((word) => words2.includes(word));
-    const words2InWords1 = words2.every((word) => words1.includes(word));
-
-    if (words1InWords2 && words2InWords1) {
-      return 0.7; // All words match but not in sequence
-    }
-    if (words2InWords1) {
-      return 0.6; // Search contains all target words
-    }
-    if (words1InWords2) {
-      return 0.5; // Target contains all search words
+  // Check for prefix matches at the start of the first word
+  // This is important for ingredients that start with modifiers like PEG/PPG
+  const firstWord1 = words1[0];
+  const firstWord2 = words2[0];
+  if (firstWord1 && firstWord2) {
+    if (firstWord1.startsWith(firstWord2) || firstWord2.startsWith(firstWord1)) {
+      console.log(`First word prefix match for ${s1} and ${s2}: 0.95`);
+      return 0.95; // Highest priority after exact match
     }
   }
 
+  // Check for consecutive word matches at the start
+  let startingConsecutiveMatch = 0;
+  while (
+    startingConsecutiveMatch < Math.min(words1.length, words2.length) &&
+    words1[startingConsecutiveMatch] === words2[startingConsecutiveMatch]
+  ) {
+    startingConsecutiveMatch++;
+  }
+
+  if (startingConsecutiveMatch >= 2) {
+    console.log(`Starting consecutive word match for ${s1} and ${s2}: 0.9`);
+    return 0.9; // Two or more consecutive words match at start
+  }
+
+  // Check for consecutive word matches anywhere
+  let maxConsecutiveMatch = 0;
+  for (let i = 0; i < words1.length; i++) {
+    for (let j = 0; j < words2.length; j++) {
+      let consecutiveMatch = 0;
+      while (
+        i + consecutiveMatch < words1.length &&
+        j + consecutiveMatch < words2.length &&
+        words1[i + consecutiveMatch] === words2[j + consecutiveMatch]
+      ) {
+        consecutiveMatch++;
+      }
+      maxConsecutiveMatch = Math.max(maxConsecutiveMatch, consecutiveMatch);
+    }
+  }
+
+  if (maxConsecutiveMatch >= 2) {
+    console.log(`Consecutive word match for ${s1} and ${s2}: 0.85`);
+    return 0.85; // Two or more consecutive words match but not at start
+  }
+
+  // If no good consecutive matches, check for word presence
+  const words1InWords2 = words1.every((word) => words2.includes(word));
+  const words2InWords1 = words2.every((word) => words1.includes(word));
+
+  if (words1InWords2 && words2InWords1) {
+    console.log(`All words match for ${s1} and ${s2}: 0.8`);
+    return 0.8; // All words match but not in sequence
+  }
+  if (words2InWords1) {
+    console.log(`Search contains all target words for ${s1} and ${s2}: 0.75`);
+    return 0.75; // Search contains all target words
+  }
+  if (words1InWords2) {
+    console.log(`Target contains all search words for ${s1} and ${s2}: 0.7`);
+    return 0.7; // Target contains all search words
+  }
+
+  // Check for prefix matches at word boundaries
+  const searchWords = s1.split(/\s+/);
+  const targetWords = s2.split(/\s+/);
+  for (const targetWord of targetWords) {
+    if (targetWord.endsWith('-')) {
+      const prefix = targetWord.slice(0, -1).toLowerCase();
+      for (const searchWord of searchWords) {
+        if (searchWord.toLowerCase().startsWith(prefix)) {
+          console.log(`Prefix match for ${s1} and ${s2}: 0.65`);
+          return 0.65; // Lower priority for prefix matches
+        }
+      }
+    }
+  }
+
+  // Check for substring matches - lowest priority
+  if (s1.includes(s2) || s2.includes(s1)) {
+    console.log(`Substring match for ${s1} and ${s2}: 0.6`);
+    return 0.6; // One string is a complete substring of the other
+  }
+
+  console.log(`No match for ${s1} and ${s2}: 0`);
   return 0; // No match
 }
 

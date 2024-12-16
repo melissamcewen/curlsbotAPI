@@ -107,6 +107,12 @@
       "name": "Water-soluble Waxes",
       "group": "waxes",
       "description": "TBD"
+    },
+    {
+      "id": "evaporative_silicones",
+      "name": "Evaporative Silicones",
+      "group": "silicones",
+      "description": "TBD"
     }
   ]
 }

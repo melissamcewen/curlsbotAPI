@@ -172,25 +172,47 @@ export class Analyzer {
 
       // Add ingredient flags
       if (ingredient && mergedFlags.flaggedIngredients?.includes(ingredient.id)) {
+        console.log(`Adding ingredient flag ${ingredient.id} for ${normalizedName}`);
         flags.add(ingredient.id);
       }
 
       // Add category flags
       categories.forEach(catId => {
+        console.log(`Checking category ${catId} for ${normalizedName}`);
+        console.log(`Merged flags:`, mergedFlags);
+        // First check if the category is flagged
         if (mergedFlags.flaggedCategories?.includes(catId)) {
+          console.log(`Adding category flag ${catId} for ${normalizedName}`);
           flags.add(catId);
+        }
+        // Then check settings that apply to this category
+        if (system) {
+          console.log(`System settings for ${normalizedName}:`, system.settings);
+          system.settings.forEach(settingId => {
+            const setting = this.settings[settingId];
+            console.log(`Checking setting ${settingId} for ${normalizedName}:`, setting);
+            if (setting && setting.categories?.includes(catId)) {
+              console.log(`Setting ${settingId} matches category ${catId} for ${normalizedName}`);
+              if (setting.flags) {
+                console.log(`Adding setting flags ${setting.flags} for ${normalizedName} from setting ${settingId}`);
+                setting.flags.forEach(flag => {
+                  console.log(`Adding individual flag ${flag} for ${normalizedName}`);
+                  flags.add(flag);
+                });
+              }
+            }
+          });
         }
       });
 
       // Add group flags
       groups.forEach(groupId => {
+        console.log(`Checking group ${groupId} for ${normalizedName}`);
         if (mergedFlags.flaggedGroups?.includes(groupId)) {
+          console.log(`Adding group flag ${groupId} for ${normalizedName}`);
           flags.add(groupId);
         }
       });
-
-      // Check for avoid_others_in_category settings
-
 
       return {
         uuid: crypto.randomUUID(),
@@ -208,7 +230,25 @@ export class Analyzer {
     result.categories = Array.from(allCategories);
     result.groups = Array.from(allGroups);
 
-    result.flags = mergedFlags;
+    // Collect all flags from matches
+    const allFlags = new Set<string>();
+    result.matches.forEach(match => {
+      match.flags.forEach(flag => allFlags.add(flag));
+    });
+
+    // Set overall flags
+    result.flags = {
+      ...mergedFlags,
+      flaggedIngredients: Array.from(allFlags).filter(flag =>
+        result.matches.some(match => match.ingredient?.id === flag)
+      ),
+      flaggedCategories: Array.from(allFlags).filter(flag =>
+        result.categories.includes(flag)
+      ),
+      flaggedGroups: Array.from(allFlags).filter(flag =>
+        result.groups.includes(flag)
+      )
+    };
 
     // Set system settings if a system was used
     if (system) {
