@@ -126,10 +126,10 @@ describe('Silicone Analysis e2e complex list with curly_moderate system', () => 
       },
       {
         normalized: 'saccharomycessilicon',
-        ingredientId: 'saccharomycessilicon_ferment',
-        category: 'other_detergents',
+        ingredientId: 'saccharomyces_silicon_ferment',
+        category: 'other',
         status: 'ok',
-        reason: 'other_detergents',
+        reason: undefined,
       },
     ];
 

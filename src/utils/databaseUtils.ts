@@ -171,29 +171,72 @@ export function filterDatabaseByCategory(
 
 /**
  * Find first category whose inclusions are contained within the search term
+ * @param categories - Object containing all categories, where keys are category IDs
+ * @param searchTerm - The term to search for within category inclusions
+ * @returns Object containing matched categoryId and its defaultIngredient, or undefined if no match
+ *
+ * Example:
+ * If categories = {
+ *   "cat1": {
+ *     inclusions: ["sulfate", "sls"],
+ *     exclusions: ["free"],
+ *     defaultIngredient: "sodium_lauryl_sulfate"
+ *   }
+ * }
+ * and searchTerm = "sulfate free shampoo"
+ * It will NOT match because while "sulfate" is in the search term, "free" is in exclusions
  */
 export function findCategoryByInclusion(
   categories: Categories,
   searchTerm: string,
 ): { categoryId: string; defaultIngredient: string | undefined } | undefined {
+  // Convert search term to lowercase for case-insensitive matching
   const normalizedSearchTerm = searchTerm.toLowerCase();
 
-  const matchedCategory = Object.entries(categories).find(([_, category]) =>
-    category.inclusions?.some((inclusion) =>
-      normalizedSearchTerm.includes(inclusion.toLowerCase()),
-    ),
-  );
+  // Look through all categories to find the first one where any of its inclusions
+  // are contained within the search term
+  const matchedCategory = Object.entries(categories).find(([_, category]) => {
+    // First check if any exclusions match - if so, this category should not match
+    const hasExclusion = category.exclusions?.some((exclusion) =>
+      normalizedSearchTerm.includes(exclusion.toLowerCase()),
+    );
+    if (hasExclusion) return false;
 
+    // Then check if any inclusions match
+    return category.inclusions?.some((inclusion) =>
+      normalizedSearchTerm.includes(inclusion.toLowerCase()),
+    );
+  });
+
+  // If no category was found, return undefined
   if (!matchedCategory) return undefined;
 
+  // Destructure the matched category into its ID and data
   const [categoryId, category] = matchedCategory;
+
+  // Return the category ID and its default ingredient (if any)
   return {
     categoryId,
     defaultIngredient: category.defaultIngredient,
   };
 }
+
 /**
  * Find first group whose inclusions are contained within the search term
+ * @param groups - Object containing all groups, where keys are group IDs
+ * @param searchTerm - The term to search for within group inclusions
+ * @returns Object containing matched groupId and its defaultIngredient, or undefined if no match
+ *
+ * Example:
+ * If groups = {
+ *   "group1": {
+ *     inclusions: ["silicone", "cone"],
+ *     exclusions: ["free"],
+ *     defaultIngredient: "dimethicone"
+ *   }
+ * }
+ * and searchTerm = "silicone free conditioner"
+ * It will NOT match because while "silicone" is in the search term, "free" is in exclusions
  */
 export function findGroupByInclusion(
   groups: Groups,
@@ -201,11 +244,18 @@ export function findGroupByInclusion(
 ): { groupId: string; defaultIngredient: string | undefined } | undefined {
   const normalizedSearchTerm = searchTerm.toLowerCase();
 
-  const matchedGroup = Object.entries(groups).find(([_, group]) =>
-    group.inclusions?.some((inclusion) =>
+  const matchedGroup = Object.entries(groups).find(([_, group]) => {
+    // First check if any exclusions match - if so, this group should not match
+    const hasExclusion = group.exclusions?.some((exclusion) =>
+      normalizedSearchTerm.includes(exclusion.toLowerCase()),
+    );
+    if (hasExclusion) return false;
+
+    // Then check if any inclusions match
+    return group.inclusions?.some((inclusion) =>
       normalizedSearchTerm.includes(inclusion.toLowerCase()),
-    ),
-  );
+    );
+  });
 
   if (!matchedGroup) return undefined;
 
@@ -215,6 +265,7 @@ export function findGroupByInclusion(
     defaultIngredient: group.defaultIngredient,
   };
 }
+
 /**
  * Find an ingredient by its ID in the database
  */

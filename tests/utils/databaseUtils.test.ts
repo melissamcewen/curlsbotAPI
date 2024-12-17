@@ -386,6 +386,13 @@ describe('findCategoryByInclusion', () => {
     const result = findCategoryByInclusion(categories, 'dimethicone silicone');
     expect(result).toBeDefined();
     expect(result?.categoryId).toBe('test_category');
+
+    // Should not match because "silicon ferment" is in exclusions
+    const result2 = findCategoryByInclusion(
+      categories,
+      'dimethicone silicon ferment',
+    );
+    expect(result2).toBeUndefined();
   });
 });
 

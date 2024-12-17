@@ -32,7 +32,7 @@
         "siloxysilicate",
         "microsil"
       ],
-      "exclusions": ["saccharomycessilicon ferment", "silicon ferment"],
+      "exclusions": ["saccharomycessilicon", "silicon ferment"],
       "defaultIngredient": "unknown_non_water_soluble_silicone"
     },
     {

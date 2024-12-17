@@ -110,6 +110,7 @@ export const testDatabase: IngredientDatabase = {
       id: 'silicones',
       name: 'Silicones',
       inclusions: ['cone', 'silicone'],
+      exclusions: ['saccharomycessilicon', 'silicon ferment'],
       defaultIngredient: 'unknown_non_water_soluble_silicone',
     },
     detergents: {

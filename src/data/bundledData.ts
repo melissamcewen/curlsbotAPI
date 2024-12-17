@@ -1375,7 +1375,8 @@ export const defaultDatabase: IngredientDatabase = {
       "name": "Saccharomyces Silicon Ferment",
       "id": "saccharomyces_silicon_ferment",
       "synonyms": [
-        "saccharomycessilicon"
+        "saccharomycessilicon",
+        "silicon ferment"
       ],
       "categories": [
         "other"
@@ -1383,15 +1384,6 @@ export const defaultDatabase: IngredientDatabase = {
       "references": [
         "https://incidecoder.com/ingredients/saccharomyces-silicon-ferment"
       ]
-    },
-    "silicon_ferment": {
-      "name": "Silicon Ferment",
-      "id": "silicon_ferment",
-      "categories": [
-        "other_detergents"
-      ],
-      "synonyms": [],
-      "references": []
     },
     "soaps": {
       "name": "Soap",
@@ -2284,7 +2276,7 @@ export const defaultDatabase: IngredientDatabase = {
         "microsil"
       ],
       "exclusions": [
-        "saccharomycessilicon ferment",
+        "saccharomycessilicon",
         "silicon ferment"
       ],
       "defaultIngredient": "unknown_non_water_soluble_silicone"
