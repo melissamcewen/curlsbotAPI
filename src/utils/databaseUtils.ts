@@ -12,7 +12,7 @@ import type {
 /**
  * Get all searchable terms for an ingredient (name and synonyms)
  */
-function getIngredientTerms(ingredient: Ingredient): string[] {
+export function getIngredientTerms(ingredient: Ingredient): string[] {
   return ingredient.synonyms
     ? [ingredient.name, ...ingredient.synonyms]
     : [ingredient.name];
@@ -72,7 +72,7 @@ export function findIngredient(
 /**
  * Partition the search space as much as possible and return the partitioned database
  */
-function partitionSearchSpace(
+export function partitionSearchSpace(
   database: IngredientDatabase,
   searchTerm: string,
 ): { database: IngredientDatabase; defaultIngredient: string | undefined } {
@@ -103,7 +103,7 @@ function partitionSearchSpace(
 /**
  * Create a new database containing only elements from the specified group
  */
-function filterDatabaseByGroup(
+export function filterDatabaseByGroup(
   database: IngredientDatabase,
   groupId: string,
 ): IngredientDatabase {
@@ -143,7 +143,7 @@ function filterDatabaseByGroup(
 /**
  * Create a new database containing only elements from the specified category
  */
-function filterDatabaseByCategory(
+export function filterDatabaseByCategory(
   database: IngredientDatabase,
   categoryId: string,
 ): IngredientDatabase {
@@ -169,7 +169,7 @@ function filterDatabaseByCategory(
 /**
  * Find first category whose inclusions are contained within the search term
  */
-function findCategoryByInclusion(
+export function findCategoryByInclusion(
   categories: Categories,
   searchTerm: string,
 ): { categoryId: string; defaultIngredient: string | undefined } | undefined {
@@ -192,7 +192,7 @@ function findCategoryByInclusion(
 /**
  * Find first group whose inclusions are contained within the search term
  */
-function findGroupByInclusion(
+export function findGroupByInclusion(
   groups: Groups,
   searchTerm: string
 ): { groupId: string; defaultIngredient: string | undefined } | undefined {
