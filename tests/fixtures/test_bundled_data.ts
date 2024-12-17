@@ -146,6 +146,13 @@ export const testSettings: Settings = {
     allowedCategories: ['water_soluble_silicone'],
     defaultStatus: 'warning',
     allowedStatus: 'caution'
+  },
+  specific_ingredients: {
+    id: 'specific_ingredients',
+    name: 'Specific Ingredients',
+    description: 'Warns about specific ingredients',
+    ingredients: ['dimethicone', 'sodium_laureth_sulfate'],
+    defaultStatus: 'warning'
   }
 };
 

@@ -1,57 +1,9 @@
 import { describe, it, expect } from 'vitest';
 import { Analyzer } from '../src/analyzer';
-import type { System, Setting } from '../src/types';
-import { testDatabase } from './fixtures/test_bundled_data';
+import type { System } from '../src/types';
+import { testDatabase, testSettings } from './fixtures/test_bundled_data';
 
 describe('Analyzer', () => {
-  // Test settings that match our new simpler model
-  const testSettings: Record<string, Setting> = {
-    sulfate_free: {
-      id: 'sulfate_free',
-      name: 'Sulfate Free',
-      description: 'Avoid sulfates',
-      rules: [{
-        type: 'category',
-        id: 'sulfates',
-        action: 'avoid',
-        reason: 'Contains sulfates'
-      }]
-    },
-    silicone_free: {
-      id: 'silicone_free',
-      name: 'Silicone Free',
-      description: 'Avoid silicones',
-      rules: [{
-        type: 'category',
-        id: 'non_water_soluble_silicone',
-        action: 'avoid',
-        reason: 'Contains non-water-soluble silicones'
-      }]
-    },
-    mild_detergents_only: {
-      id: 'mild_detergents_only',
-      name: 'Mild Detergents Only',
-      description: 'Only allow mild detergents',
-      rules: [{
-        type: 'group',
-        id: 'detergents',
-        action: 'avoid',
-        reason: 'Contains harsh detergents'
-      }]
-    },
-    detergents_caution: {
-      id: 'detergents_caution',
-      name: 'Detergents Caution',
-      description: 'Use caution with detergents',
-      rules: [{
-        type: 'group',
-        id: 'detergents',
-        action: 'caution',
-        reason: 'Contains detergents'
-      }]
-    }
-  };
-
   describe('Basic Ingredient Analysis', () => {
     it('should analyze a single ingredient in the database', () => {
       const analyzer = new Analyzer({ database: testDatabase });
@@ -61,7 +13,7 @@ describe('Analyzer', () => {
       const ingredient = result.ingredients[0];
       expect(ingredient.normalized).toBe('cetyl alcohol');
       expect(ingredient.ingredient?.id).toBe('cetyl_alcohol');
-      expect(result.status).toBe('pass');
+      expect(result.status).toBe('ok');
     });
 
     it('should analyze multiple ingredients', () => {
@@ -136,8 +88,8 @@ describe('Analyzer', () => {
     });
   });
 
-  describe('Rule Processing', () => {
-    it('should flag ingredients based on category rules', () => {
+  describe('Setting Processing', () => {
+    it('should handle category-based settings', () => {
       const analyzer = new Analyzer({
         database: testDatabase,
         settings: testSettings,
@@ -149,53 +101,77 @@ describe('Analyzer', () => {
       });
 
       const result = analyzer.analyze('Sodium Laureth Sulfate');
-      expect(result.status).toBe('fail');
-      expect(result.ingredients[0].status).toBe('fail');
+      expect(result.status).toBe('warning');
+      expect(result.ingredients[0].status).toBe('warning');
       expect(result.reasons[0]).toEqual({
         setting: 'sulfate_free',
-        reason: 'Contains sulfates'
+        reason: 'Avoid sulfates'
       });
     });
 
-    it('should flag ingredients based on group rules', () => {
+    it('should handle group-based settings with allowed categories', () => {
       const analyzer = new Analyzer({
         database: testDatabase,
         settings: testSettings,
         system: {
           id: 'test',
           name: 'Test',
-          settings: ['detergents_caution']
+          settings: ['mild_detergents_only']
         }
       });
 
-      const result = analyzer.analyze('Sodium Laureth Sulfate');
-      expect(result.status).toBe('caution');
-      expect(result.ingredients[0].status).toBe('caution');
-      expect(result.reasons[0]).toEqual({
-        setting: 'detergents_caution',
-        reason: 'Contains detergents'
-      });
+      // Test non-mild detergent
+      const resultBad = analyzer.analyze('Sodium Laureth Sulfate');
+      expect(resultBad.status).toBe('warning');
+      expect(resultBad.ingredients[0].status).toBe('warning');
+
+      // Test mild detergent
+      const resultGood = analyzer.analyze('Sodium Cocoyl Isethionate');
+      expect(resultGood.status).toBe('ok');
+      expect(resultGood.ingredients[0].status).toBe('ok');
     });
 
-    it('should handle multiple rules and settings', () => {
+    it('should handle water soluble silicones correctly', () => {
       const analyzer = new Analyzer({
         database: testDatabase,
         settings: testSettings,
         system: {
           id: 'test',
           name: 'Test',
-          settings: ['sulfate_free', 'detergents_caution']
+          settings: ['caution_water_soluble_silicones']
+        }
+      });
+
+      // Test water-soluble silicone
+      const resultWaterSoluble = analyzer.analyze('Unknown Water Soluble Silicone');
+      expect(resultWaterSoluble.status).toBe('caution');
+      expect(resultWaterSoluble.ingredients[0].status).toBe('caution');
+
+      // Test non-water-soluble silicone
+      const resultNonWaterSoluble = analyzer.analyze('Dimethicone');
+      expect(resultNonWaterSoluble.status).toBe('warning');
+      expect(resultNonWaterSoluble.ingredients[0].status).toBe('warning');
+    });
+
+    it('should handle multiple settings', () => {
+      const analyzer = new Analyzer({
+        database: testDatabase,
+        settings: testSettings,
+        system: {
+          id: 'test',
+          name: 'Test',
+          settings: ['sulfate_free', 'mild_detergents_only']
         }
       });
 
       const result = analyzer.analyze('Sodium Laureth Sulfate');
-      expect(result.status).toBe('fail'); // fail overrides caution
+      expect(result.status).toBe('warning'); // warning is the most severe status
       expect(result.reasons).toHaveLength(2); // both reasons should be present
       expect(result.reasons.some(r => r.setting === 'sulfate_free')).toBe(true);
-      expect(result.reasons.some(r => r.setting === 'detergents_caution')).toBe(true);
+      expect(result.reasons.some(r => r.setting === 'mild_detergents_only')).toBe(true);
     });
 
-    it('should pass ingredients that dont match any rules', () => {
+    it('should pass ingredients that dont match any settings', () => {
       const analyzer = new Analyzer({
         database: testDatabase,
         settings: testSettings,
@@ -207,9 +183,36 @@ describe('Analyzer', () => {
       });
 
       const result = analyzer.analyze('Cetyl Alcohol');
-      expect(result.status).toBe('pass');
-      expect(result.ingredients[0].status).toBe('pass');
+      expect(result.status).toBe('ok');
+      expect(result.ingredients[0].status).toBe('ok');
       expect(result.reasons).toHaveLength(0);
+    });
+
+    it('should handle specific ingredient settings', () => {
+      const analyzer = new Analyzer({
+        database: testDatabase,
+        settings: testSettings,
+        system: {
+          id: 'test',
+          name: 'Test',
+          settings: ['specific_ingredients']
+        }
+      });
+
+      // Test ingredient that's specifically listed
+      const resultListed = analyzer.analyze('Dimethicone');
+      expect(resultListed.status).toBe('warning');
+      expect(resultListed.ingredients[0].status).toBe('warning');
+      expect(resultListed.reasons[0]).toEqual({
+        setting: 'specific_ingredients',
+        reason: 'Warns about specific ingredients'
+      });
+
+      // Test ingredient that's not listed
+      const resultNotListed = analyzer.analyze('Cetyl Alcohol');
+      expect(resultNotListed.status).toBe('ok');
+      expect(resultNotListed.ingredients[0].status).toBe('ok');
+      expect(resultNotListed.reasons).toHaveLength(0);
     });
   });
 });

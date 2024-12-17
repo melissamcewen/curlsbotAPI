@@ -16,7 +16,7 @@ export function isValidIngredient(value: string): boolean {
  */
 export function isValidIngredientList(value: string): boolean {
   // Check for URLs
-  if (/^(?:https?:\/\/|www\.|\/{2})/i.test(value)) {
+  if (/(?:https?:\/\/|www\.|\/{2})/i.test(value)) {
     return false;
   }
   return value.trim().length > 0;
@@ -43,26 +43,45 @@ export function normalizeIngredient(name: string): string {
  * @returns Original string with any comma seperated lists in parentheses removed and added to the end of the string
  */
 export function processCommaParentheses(ingredient_list: string): string {
-  const matches = ingredient_list.match(/\(([^)]*,.*?)\)/g);
+  const regex = /\(([^()]*?)\)/g; // Match non-nested parentheses
+  let result = ingredient_list;
 
-  if (!matches) {
-    return ingredient_list;
+  let hasChanges = true;
+
+  // Process parentheses content iteratively to handle nested structures
+  while (hasChanges) {
+    hasChanges = false;
+    result = result.replace(regex, (_, content) => {
+      const trimmedContent = content.trim();
+
+      if (trimmedContent.includes(',')) {
+        hasChanges = true;
+        // Replace content with comma-separated items inside parentheses
+        return `, ${trimmedContent
+          .split(',')
+          .map((c: string) => c.trim())
+          .join(', ')}`;
+      }
+
+      if (trimmedContent === '') {
+        return '(  )'; // Preserve empty parentheses with spaces
+      }
+
+      return `(${content})`; // Return parentheses content unchanged
+    });
   }
 
-  const cleanedString = matches
-    .reduce((str, match) => str.replace(match, ''), ingredient_list)
-    .replace(/\s+/g, ' ')
-    .replace(/\s*,\s*/g, ', ') // Normalize spaces around commas
-    .trim();
+  // Final cleanup for inner spaces **only inside parentheses**
+  result = result.replace(/,\s*,/g, ','); // Remove unnecessary commas inside
+  result = result.replace(/,(\s*\))/g, '$1'); // Remove commas before closing parentheses
 
-  const extractedContent = matches
-    .map(match => match.slice(1, -1))
-    .join(', ');
-
-  return [cleanedString, extractedContent]
-    .filter(Boolean)
-    .join(', ');
+  return result;
 }
+
+
+
+
+
 
 /**
  * Splits a string by commas, line breaks, pipes, ampersands, and the word "and", then cleans the resulting array

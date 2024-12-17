@@ -243,17 +243,6 @@ export function getCategoryGroups(
 }
 
 /**
- * Get categories for an ingredient
- */
-export function getIngredientCategories(
-  database: IngredientDatabase,
-  categoryIds: string[] | undefined,
-): string[] {
-  if (!categoryIds) return [];
-  return categoryIds;
-}
-
-/**
  * Find a system by its ID
  */
 export function findSystemById(systems: System[], systemId: string): System | undefined {

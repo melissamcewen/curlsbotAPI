@@ -31,6 +31,23 @@ describe('Normalizer', () => {
       expect(isValidIngredientList('   ')).toBe(false);
       expect(isValidIngredientList('Water, Glycerin')).toBe(true);
     });
+
+    it('should handle URLs within text', () => {
+      expect(
+        isValidIngredientList('Check http://example.com for ingredients'),
+      ).toBe(false);
+      expect(
+        isValidIngredientList('From www.example.com: Water, Glycerin'),
+      ).toBe(false);
+      expect(isValidIngredientList('Source: //example.com')).toBe(false);
+    });
+
+    it('should handle edge cases', () => {
+      expect(isValidIngredientList('\n\nWater')).toBe(true);
+      expect(isValidIngredientList('   Water   ')).toBe(true);
+      expect(isValidIngredientList('httpx://not-a-url')).toBe(false);
+      expect(isValidIngredientList('wwwx.not-a-url')).toBe(true);
+    });
   });
 
   describe('normalizeIngredient', () => {
@@ -42,14 +59,13 @@ describe('Normalizer', () => {
     });
   });
 
-
   describe('processCommaParentheses', () => {
     it('should handle ingredients with commas in parentheses', () => {
       expect(processCommaParentheses('Water (h2o, aqua)')).toBe(
-        'Water, h2o, aqua',
+        'Water , h2o, aqua',
       );
       expect(processCommaParentheses('Complex (a, b) (c, d)')).toBe(
-        'Complex, a, b, c, d',
+        'Complex , a, b , c, d',
       );
       expect(processCommaParentheses('No commas (test)')).toBe(
         'No commas (test)',
@@ -57,12 +73,36 @@ describe('Normalizer', () => {
     });
 
     it('should handle multiple sets of parentheses with commas', () => {
-      expect(processCommaParentheses('Citrus Oils (Orange, Lemon), Vitamin E (Tocopherol, Tocopheryl Acetate)')).toEqual('Citrus Oils, Vitamin E, Orange, Lemon, Tocopherol, Tocopheryl Acetate');
+      expect(
+        processCommaParentheses(
+          'Citrus Oils (Orange, Lemon), Vitamin E (Tocopherol, Tocopheryl Acetate)',
+        ),
+      ).toBe(
+        'Citrus Oils , Orange, Lemon, Vitamin E , Tocopherol, Tocopheryl Acetate',
+      );
+    });
+
+    it('should handle empty parentheses and spaces correctly', () => {
+      // Empty parentheses should be left as is
+      expect(processCommaParentheses('Test (), Other (  )')).toBe(
+        'Test (  ), Other (  )',
+      );
+      // Only process parentheses with commas
+      expect(processCommaParentheses('Multiple   Spaces   (a,b)')).toBe(
+        'Multiple   Spaces   , a, b',
+      );
+      // Empty content with comma should be removed
+      expect(processCommaParentheses('Test (,)')).toBe('Test , ');
+    });
+
+    it('should handle nested and unmatched parentheses', () => {
+      // Nested parentheses should be unnested
+      expect(processCommaParentheses('Test (a, (b, c))')).toBe('Test , a, b, c');
+      // Unmatched parentheses should be left as is
+      expect(processCommaParentheses('Test (a, b')).toBe('Test (a, b');
+      expect(processCommaParentheses('Test ) (a, b)')).toBe('Test ) , a, b');
     });
   });
-
-
-
 
   describe('normalizer (integration)', () => {
     it('should return invalid result for URLs', () => {
@@ -70,10 +110,10 @@ describe('Normalizer', () => {
         'http://example.com',
         'https://test.com',
         'www.example.com',
-        '//localhost:3000'
+        '//localhost:3000',
       ];
 
-      inputs.forEach(input => {
+      inputs.forEach((input) => {
         const result = normalizer(input);
         expect(result.isValid).toBe(false);
         expect(result.ingredients).toEqual([]);
@@ -83,7 +123,7 @@ describe('Normalizer', () => {
     it('should return invalid result for empty or whitespace input', () => {
       const inputs = ['', '   ', '\n\n', '\t'];
 
-      inputs.forEach(input => {
+      inputs.forEach((input) => {
         const result = normalizer(input);
         expect(result.isValid).toBe(false);
         expect(result.ingredients).toEqual([]);
@@ -111,7 +151,7 @@ describe('Normalizer', () => {
         'water',
         'glycerin',
         'invalid',
-        'sd alcohol 40-b'
+        'sd alcohol 40-b',
       ]);
     });
 
@@ -189,6 +229,26 @@ describe('Normalizer', () => {
         'vitamin b5',
         'ph adjuster',
       ]);
+    });
+
+    it('should handle invalid input correctly', () => {
+      const inputs = [
+        'http://example.com/ingredients',
+        'www.example.com/list',
+        '//ingredients.com',
+        '',
+        '   ',
+        '\n\n',
+        '\t',
+      ];
+
+      inputs.forEach((input) => {
+        const result = normalizer(input);
+        expect(result).toEqual({
+          ingredients: [],
+          isValid: false,
+        });
+      });
     });
   });
 });
