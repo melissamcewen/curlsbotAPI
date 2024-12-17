@@ -36,6 +36,11 @@
       "id": "unknown_wax",
       "synonyms": ["wax"],
       "categories": ["non_water_soluble_waxes"]
+    },
+    {
+      "name": "Unknown Sulfonates",
+      "id": "unknown_sulfonate",
+      "categories": ["sulfonates"]
     }
   ]
 }

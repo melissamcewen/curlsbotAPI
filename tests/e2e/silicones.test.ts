@@ -42,6 +42,10 @@ describe('Silicone Analysis e2e complex list with curly_moderate system', () => 
     expect(cautionSiliconesReason?.reason).toBeDefined();
   });
 
+  it('overall analysis should have a warning status', () => {
+    expect(result.status).toBe('warning');
+  });
+
   it('Should normalize the list correctly', () => {
     expect(result.ingredients.map((i) => i.normalized)).toEqual([
       'peg-8 distearmonium chloride pg-dimethicone',

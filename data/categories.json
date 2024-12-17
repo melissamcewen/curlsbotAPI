@@ -19,7 +19,7 @@
       "name": "Sulfates",
       "group": "detergents",
       "description": "Sulfates are a type of detergent that can cause irritation and dryness.",
-      "inclusions": ["sulfate"],
+      "inclusions": ["sulfate", "sulphate"],
       "defaultIngredient": "unknown_sulfate"
     },
     {
@@ -27,7 +27,7 @@
       "name": "Sulfonates",
       "group": "detergents",
       "description": "Sulfonates are a type of detergent that can cause irritation and dryness.",
-      "inclusions": ["sulfonate"],
+      "inclusions": ["sulfonate", "sulfo"],
       "defaultIngredient": "unknown_sulfonate"
     },
     {

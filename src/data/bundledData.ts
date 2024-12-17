@@ -522,6 +522,20 @@ export const defaultDatabase: IngredientDatabase = {
       "synonyms": [],
       "references": []
     },
+    "cocamide_mea": {
+      "name": "Cocamide MEA",
+      "id": "cocamide_mea",
+      "synonyms": [
+        "coconut monoethanolamide"
+      ],
+      "categories": [
+        "mild_detergents"
+      ],
+      "references": [
+        "https://incidecoder.com/ingredients/cocamide-mea",
+        "https://pubchem.ncbi.nlm.nih.gov/compound/Cocamide-MEA"
+      ]
+    },
     "decyl_glucoside": {
       "name": "Decyl Glucoside",
       "id": "decyl_glucoside",
@@ -544,7 +558,7 @@ export const defaultDatabase: IngredientDatabase = {
       "name": "Dioctyl Sodium Sulfosuccinate",
       "id": "dioctyl_sodium_sulfosuccinate",
       "categories": [
-        "other_detergents"
+        "sulfonates"
       ],
       "synonyms": [],
       "references": []
@@ -1894,6 +1908,15 @@ export const defaultDatabase: IngredientDatabase = {
       ],
       "references": []
     },
+    "unknown_sulfonate": {
+      "name": "Unknown Sulfonates",
+      "id": "unknown_sulfonate",
+      "categories": [
+        "sulfonates"
+      ],
+      "synonyms": [],
+      "references": []
+    },
     "beeswax": {
       "name": "Beeswax",
       "id": "beeswax",
@@ -2099,7 +2122,8 @@ export const defaultDatabase: IngredientDatabase = {
       "group": "detergents",
       "description": "Sulfates are a type of detergent that can cause irritation and dryness.",
       "inclusions": [
-        "sulfate"
+        "sulfate",
+        "sulphate"
       ],
       "defaultIngredient": "unknown_sulfate"
     },
@@ -2109,7 +2133,8 @@ export const defaultDatabase: IngredientDatabase = {
       "group": "detergents",
       "description": "Sulfonates are a type of detergent that can cause irritation and dryness.",
       "inclusions": [
-        "sulfonate"
+        "sulfonate",
+        "sulfo"
       ],
       "defaultIngredient": "unknown_sulfonate"
     },
