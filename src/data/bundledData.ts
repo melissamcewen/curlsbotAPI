@@ -1546,7 +1546,7 @@ export const defaultDatabase: IngredientDatabase = {
         "amino-modified silicone"
       ],
       "categories": [
-        "non-water-soluble_silicones"
+        "non_water_soluble_silicones"
       ],
       "references": [
         "https://incidecoder.com/ingredients/amodimethicone"
@@ -1560,7 +1560,7 @@ export const defaultDatabase: IngredientDatabase = {
         "dimethylsilane glycol ether"
       ],
       "categories": [
-        "water-soluble_silicones"
+        "water_soluble_silicones"
       ],
       "references": [
         "https://incidecoder.com/ingredients/bis-peg-18-methyl-ether-dimethyl-silane"
@@ -1574,7 +1574,7 @@ export const defaultDatabase: IngredientDatabase = {
         "methicone ester"
       ],
       "categories": [
-        "non-water-soluble_silicones"
+        "non_water_soluble_silicones"
       ],
       "references": [
         "https://incidecoder.com/ingredients/cetearyl-methicone"
@@ -1589,7 +1589,7 @@ export const defaultDatabase: IngredientDatabase = {
         "cyclohexamethicone"
       ],
       "categories": [
-        "non-water-soluble_silicones"
+        "non_water_soluble_silicones"
       ],
       "references": [
         "https://incidecoder.com/ingredients/cyclohexasiloxane"
@@ -1604,7 +1604,7 @@ export const defaultDatabase: IngredientDatabase = {
         "cyclopentamethicone"
       ],
       "categories": [
-        "non-water-soluble_silicones"
+        "non_water_soluble_silicones"
       ],
       "references": [
         "https://incidecoder.com/ingredients/cyclopentasiloxane"
@@ -1619,7 +1619,7 @@ export const defaultDatabase: IngredientDatabase = {
         "dimethylpolysiloxane"
       ],
       "categories": [
-        "non-water-soluble_silicones"
+        "non_water_soluble_silicones"
       ],
       "references": [
         "https://incidecoder.com/ingredients/dimethicone"
@@ -1633,7 +1633,7 @@ export const defaultDatabase: IngredientDatabase = {
         "dimethicone polyoxyethylene"
       ],
       "categories": [
-        "water-soluble_silicones"
+        "water_soluble_silicones"
       ],
       "references": [
         "https://incidecoder.com/ingredients/dimethicone-copolyol"
@@ -1647,7 +1647,7 @@ export const defaultDatabase: IngredientDatabase = {
         "dimethylsiloxane polymer"
       ],
       "categories": [
-        "non-water-soluble_silicones"
+        "non_water_soluble_silicones"
       ],
       "references": [
         "https://incidecoder.com/ingredients/dimethiconol"
@@ -1661,7 +1661,7 @@ export const defaultDatabase: IngredientDatabase = {
         "polyoxyethylene lauryl dimethicone"
       ],
       "categories": [
-        "water-soluble_silicones"
+        "water_soluble_silicones"
       ],
       "references": [
         "https://incidecoder.com/ingredients/lauryl-methicone-copolyol"
@@ -1675,7 +1675,7 @@ export const defaultDatabase: IngredientDatabase = {
         "dimethicone polyether"
       ],
       "categories": [
-        "water-soluble_silicones"
+        "water_soluble_silicones"
       ],
       "references": [
         "https://incidecoder.com/ingredients/peg-10-dimethicone"
@@ -1689,7 +1689,7 @@ export const defaultDatabase: IngredientDatabase = {
         "dimethicone ethoxylate"
       ],
       "categories": [
-        "water-soluble_silicones"
+        "water_soluble_silicones"
       ],
       "references": [
         "https://incidecoder.com/ingredients/peg-12-dimethicone"
@@ -1703,7 +1703,7 @@ export const defaultDatabase: IngredientDatabase = {
         "dimethicone glycol ether"
       ],
       "categories": [
-        "water-soluble_silicones"
+        "water_soluble_silicones"
       ],
       "references": [
         "https://incidecoder.com/ingredients/peg-14-dimethicone"
@@ -1717,7 +1717,7 @@ export const defaultDatabase: IngredientDatabase = {
         "polyethylene glycol-7 amodimethicone"
       ],
       "categories": [
-        "water-soluble_silicones"
+        "water_soluble_silicones"
       ],
       "references": [
         "https://incidecoder.com/ingredients/peg-7-amodimethicone"
@@ -1731,7 +1731,7 @@ export const defaultDatabase: IngredientDatabase = {
         "peg-modified dimethicone"
       ],
       "categories": [
-        "water-soluble_silicones"
+        "water_soluble_silicones"
       ],
       "references": [
         "https://incidecoder.com/ingredients/peg-8-dimethicone"
@@ -1745,7 +1745,7 @@ export const defaultDatabase: IngredientDatabase = {
         "phenylmethylsilicone"
       ],
       "categories": [
-        "non-water-soluble_silicones"
+        "non_water_soluble_silicones"
       ],
       "references": [
         "https://incidecoder.com/ingredients/phenyl-trimethicone"
@@ -1759,7 +1759,7 @@ export const defaultDatabase: IngredientDatabase = {
         "quaternized dimethicone"
       ],
       "categories": [
-        "non-water-soluble_silicones"
+        "non_water_soluble_silicones"
       ],
       "references": [
         "https://incidecoder.com/ingredients/silicone-quaternium-8"
@@ -1773,7 +1773,7 @@ export const defaultDatabase: IngredientDatabase = {
         "stearic acid trimethylsilane"
       ],
       "categories": [
-        "non-water-soluble_silicones"
+        "non_water_soluble_silicones"
       ],
       "references": [
         "https://incidecoder.com/ingredients/stearoxytrimethylsilane"
@@ -1787,7 +1787,7 @@ export const defaultDatabase: IngredientDatabase = {
         "amino-functionalized silicone"
       ],
       "categories": [
-        "non-water-soluble_silicones"
+        "non_water_soluble_silicones"
       ],
       "references": [
         "https://incidecoder.com/ingredients/trimethylsiloxyamodimethicone"
@@ -1797,7 +1797,7 @@ export const defaultDatabase: IngredientDatabase = {
       "name": "Trimethylsiloxysilicate",
       "id": "trimethylsiloxysilicate",
       "categories": [
-        "non-water-soluble_silicones"
+        "non_water_soluble_silicones"
       ],
       "synonyms": [],
       "references": []
@@ -1823,7 +1823,7 @@ export const defaultDatabase: IngredientDatabase = {
         "PEG/PPG"
       ],
       "categories": [
-        "water-soluble_silicones"
+        "water_soluble_silicones"
       ],
       "references": []
     },
@@ -1831,7 +1831,7 @@ export const defaultDatabase: IngredientDatabase = {
       "name": "Unknown Non-Water Soluble Silicone",
       "id": "unknown_non-water-soluble_silicone",
       "categories": [
-        "non-water-soluble_silicones"
+        "non_water_soluble_silicones"
       ],
       "synonyms": [],
       "references": []
@@ -1845,7 +1845,7 @@ export const defaultDatabase: IngredientDatabase = {
         "pg-"
       ],
       "categories": [
-        "water-soluble_silicones"
+        "water_soluble_silicones"
       ],
       "references": []
     },
@@ -2119,8 +2119,8 @@ export const defaultDatabase: IngredientDatabase = {
       "group": "alcohols",
       "description": "Emollient alcohols are good for the skin and hair."
     },
-    "water-soluble_silicones": {
-      "id": "water-soluble_silicones",
+    "water_soluble_silicones": {
+      "id": "water_soluble_silicones",
       "name": "Water-soluble Silicones",
       "group": "silicones",
       "description": "TBD",
@@ -2130,8 +2130,8 @@ export const defaultDatabase: IngredientDatabase = {
       ],
       "defaultIngredient": "unknown_water_soluble_silicone"
     },
-    "non-water-soluble_silicones": {
-      "id": "non-water-soluble_silicones",
+    "non_water_soluble_silicones": {
+      "id": "non_water_soluble_silicones",
       "name": "Non-water-soluble Silicones",
       "group": "silicones",
       "description": "TBD"
@@ -2190,14 +2190,14 @@ export const defaultDatabase: IngredientDatabase = {
       "group": "oils",
       "description": "TBD"
     },
-    "non-water-soluble_waxes": {
-      "id": "non-water-soluble_waxes",
+    "non_water_soluble_waxes": {
+      "id": "non_water_soluble_waxes",
       "name": "Non-water-soluble Waxes",
       "group": "waxes",
       "description": "TBD"
     },
-    "water-soluble_waxes": {
-      "id": "water-soluble_waxes",
+    "water_soluble_waxes": {
+      "id": "water_soluble_waxes",
       "name": "Water-soluble Waxes",
       "group": "waxes",
       "description": "TBD"
@@ -2360,6 +2360,15 @@ export const defaultSettings: Record<string, Setting> = {
     "description": "Astringents can be drying and irritating.",
     "categories": [
       "astringents"
+    ],
+    "defaultStatus": "warning"
+  },
+  "no_water_insoluble_silicones": {
+    "id": "no_water_insoluble_silicones",
+    "name": "No Water Insoluble Silicones",
+    "description": "Avoiding all water insoluble silicones.",
+    "categories": [
+      "non_water_soluble_silicones"
     ],
     "defaultStatus": "warning"
   }

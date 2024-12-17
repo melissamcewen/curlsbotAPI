@@ -52,6 +52,13 @@
       "description": "Astringents can be drying and irritating.",
       "categories": ["astringents"],
       "defaultStatus": "warning"
+    },
+    {
+      "id": "no_water_insoluble_silicones",
+      "name": "No Water Insoluble Silicones",
+      "description": "Avoiding all water insoluble silicones.",
+      "categories": ["non_water_soluble_silicones"],
+      "defaultStatus": "warning"
     }
   ]
 }
