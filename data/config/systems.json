@@ -3,8 +3,8 @@
     {
       "name": "Curly Default",
       "id": "curly_default",
-      "description": "The Curly Default system is a hair care system that focuses on using products that are free of harsh chemicals and sulfates. It recommends using products that are free of drying alcohols, parabens, and other potentially harmful ingredients.",
-      "settings": ["mild_detergents_only", "drying_alcohol", "silicone_free", "no_waxes", "paraben_free", "soap_free", "no_astringents"]
+      "description": "This is the classic CurlsBot system.",
+      "settings": ["mild_detergents_only", "drying_alcohol", "silicone_free", "no_waxes", "paraben_free", "soap_free", "no_astringents", "no_heavy_oils"]
     },
     {
       "name": "Curly Moderate",
