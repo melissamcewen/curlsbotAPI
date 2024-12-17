@@ -173,12 +173,6 @@
       "id": "cyclomethicone",
       "synonyms": ["cyclicdimethylpolysiloxane", "polydimethylcyclosiloxane"],
       "categories": ["evaporative_silicones"]
-    },
-    {
-      "name": "Unknown PEG Silicone",
-      "id": "unknown_peg_silicone",
-      "synonyms": ["PPG-", "PEG-", "PEG/PPG"],
-      "categories": ["water_soluble_silicones"]
     }
   ]
 }

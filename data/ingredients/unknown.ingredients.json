@@ -8,33 +8,28 @@
     {
       "name": "Unknown Water Soluble Silicones",
       "id": "unknown_water_soluble_silicone",
-      "synonyms": ["peg", "ppg", "pg-"],
       "categories": ["water_soluble_silicones"]
     },
     {
       "name": "Unknown Sulfates",
       "id": "unknown_sulfates",
-      "synonyms": ["sulfate", "sulphate"],
       "categories": ["sulfates"]
     },
 
     {
       "name": "Unknown Sarcosinate",
       "id": "unknown_sarcosinate",
-      "synonyms": ["sarcosinate"],
       "categories": ["other_detergents"]
     },
 
     {
       "name": "Unknown Cocoyl Glutamate",
       "id": "unknown_cocoyl_glutamate",
-      "synonyms": ["cocoyl glutamate"],
       "categories": ["other_detergents"]
     },
     {
       "name": "Unknown Wax",
       "id": "unknown_wax",
-      "synonyms": ["wax"],
       "categories": ["non_water_soluble_waxes"]
     },
     {

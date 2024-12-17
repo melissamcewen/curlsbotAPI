@@ -32,7 +32,7 @@
         "siloxysilicate",
         "microsil"
       ],
-      "exclusions": ["saccharomycessilicon", "silicon ferment"],
+      "exclusions": ["saccharomycessilicon", "ferment"],
       "defaultIngredient": "unknown_non_water_soluble_silicone"
     },
     {
@@ -41,7 +41,9 @@
     },
     {
       "id": "waxes",
-      "name": "Waxes"
+      "name": "Waxes",
+      "inclusions": ["wax"],
+      "defaultIngredient": "unknown_wax"
     },
     {
       "id": "oils",

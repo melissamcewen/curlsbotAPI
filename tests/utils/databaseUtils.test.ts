@@ -69,178 +69,6 @@ describe('findIngredient', () => {
     expect(result?.ingredient).toBeDefined();
     expect(result?.ingredient?.id).toBe('unknown_non_water_soluble_silicone');
   });
-
-  describe('database partitioning', () => {
-    test('correctly partitions by silicones group', () => {
-      const result = findIngredient(testDatabase, 'silicone');
-      const partitionedDb = result.partitionedDatabase;
-
-      // Check silicone categories
-      const categoryKeys = Object.keys(partitionedDb.categories);
-      console.log('test');
-      console.log(categoryKeys);
-      expect(categoryKeys).toContain('non_water_soluble_silicone');
-      expect(categoryKeys).toContain('water_soluble_silicone');
-      expect(categoryKeys).toContain('evaporative_silicone');
-
-      expect(categoryKeys).toHaveLength(3);
-
-      // Check silicone ingredients
-      const ingredientKeys = Object.keys(partitionedDb.ingredients);
-      expect(ingredientKeys).toContain('dimethicone');
-      expect(ingredientKeys).toContain('cyclomethicone');
-      expect(ingredientKeys).toContain('unknown_water_soluble_silicone');
-      expect(ingredientKeys).toContain('unknown_non_water_soluble_silicone');
-      expect(ingredientKeys).toHaveLength(4);
-
-      // Verify non-silicone ingredients are excluded
-      expect(partitionedDb.ingredients.sodium_laureth_sulfate).toBeUndefined();
-    });
-
-    test('correctly partitions by water-soluble silicone category', () => {
-      const result = findIngredient(testDatabase, 'peg-dimethicone');
-      const partitionedDb = result.partitionedDatabase;
-
-      // Should only include water-soluble silicone category
-      const categoryKeys = Object.keys(partitionedDb.categories);
-      expect(categoryKeys).toContain('water_soluble_silicone');
-      expect(categoryKeys).toHaveLength(1);
-
-      // Should only include water-soluble silicone ingredients
-      const ingredientKeys = Object.keys(partitionedDb.ingredients);
-      expect(ingredientKeys).toContain('unknown_water_soluble_silicone');
-      expect(ingredientKeys).toHaveLength(1);
-
-      // Verify non-water-soluble silicones are excluded
-      expect(partitionedDb.ingredients.dimethicone).toBeUndefined();
-    });
-  });
-
-  describe('findIngredient', () => {
-    it('should find an ingredient by exact name', () => {
-      const result = findIngredient(testDatabase, 'dimethicone');
-      expect(result.ingredient?.id).toBe('dimethicone');
-    });
-
-    it('should find an ingredient case-insensitively', () => {
-      const result = findIngredient(testDatabase, 'DiMeThIcOnE');
-      expect(result.ingredient?.id).toBe('dimethicone');
-    });
-
-    it('should find an ingredient by synonym', () => {
-      const result = findIngredient(testDatabase, 'pdms');
-      expect(result.ingredient?.id).toBe('dimethicone');
-    });
-
-    it('should return undefined for unknown ingredients', () => {
-      const result = findIngredient(testDatabase, 'nonexistent ingredient');
-      expect(result.ingredient).toBeUndefined();
-    });
-
-    it('should use category defaultIngredient when matching by inclusion', () => {
-      const result = findIngredient(testDatabase, 'peg-dimethicone');
-      expect(result.ingredient?.id).toBe('unknown_water_soluble_silicone');
-    });
-
-    it('should use group defaultIngredient when matching by inclusion', () => {
-      const result = findIngredient(testDatabase, 'silicone');
-      expect(result.ingredient?.id).toBe('unknown_non_water_soluble_silicone');
-    });
-
-    it('should use category defaultIngredient over group defaultIngredient', () => {
-      const result = findIngredient(testDatabase, 'something with cone in it');
-      expect(result.ingredient?.id).toBe('unknown_non_water_soluble_silicone');
-    });
-
-    it('should partition database by category when matching by inclusion', () => {
-      const result = findIngredient(testDatabase, 'peg-dimethicone');
-      // Should only contain water soluble silicone category
-      expect(Object.keys(result.partitionedDatabase.categories)).toEqual([
-        'water_soluble_silicone',
-      ]);
-      // Should only contain ingredients from that category
-      const categoryIngredients = Object.values(
-        result.partitionedDatabase.ingredients,
-      ).filter((ingredient) =>
-        ingredient.categories?.includes('water_soluble_silicone'),
-      );
-      expect(Object.values(result.partitionedDatabase.ingredients)).toEqual(
-        categoryIngredients,
-      );
-    });
-
-    it('should partition database by group when matching by inclusion', () => {
-      const result = findIngredient(testDatabase, 'silicone');
-      // Should contain all silicone categories
-      const siliconeCategories = Object.entries(testDatabase.categories)
-        .filter(([_, category]) => category.group === 'silicones')
-        .map(([id]) => id);
-      expect(Object.keys(result.partitionedDatabase.categories).sort()).toEqual(
-        siliconeCategories.sort(),
-      );
-    });
-  });
-
-  describe('partitionSearchSpace', () => {
-    it('should partition by category when matching category inclusion', () => {
-      const result = findIngredient(testDatabase, 'peg');
-      expect(result.partitionedDatabase.categories).toHaveProperty(
-        'water_soluble_silicone',
-      );
-      expect(result.ingredient?.id).toBe('unknown_water_soluble_silicone');
-      expect(Object.keys(result.partitionedDatabase.categories)).toHaveLength(
-        1,
-      );
-    });
-
-    it('should use category defaultIngredient when available', () => {
-      const result = findIngredient(testDatabase, 'peg');
-      expect(result.ingredient?.id).toBe('unknown_water_soluble_silicone');
-    });
-
-    it('should return filtered database with only matching category and its ingredients', () => {
-      const result = findIngredient(testDatabase, 'peg');
-      const categoryId = 'water_soluble_silicone';
-
-      // Should only have the matching category
-      expect(Object.keys(result.partitionedDatabase.categories)).toEqual([
-        categoryId,
-      ]);
-
-      // All ingredients should belong to this category
-      Object.values(result.partitionedDatabase.ingredients).forEach(
-        (ingredient) => {
-          expect(ingredient.categories).toContain(categoryId);
-        },
-      );
-    });
-
-    it('should handle category with multiple ingredients', () => {
-      // First add another ingredient to the water soluble silicone category
-      const testDatabaseWithExtra = {
-        ...testDatabase,
-        ingredients: {
-          ...testDatabase.ingredients,
-          another_water_soluble: {
-            id: 'another_water_soluble',
-            name: 'Another Water Soluble',
-            categories: ['water_soluble_silicone'],
-          },
-        },
-      };
-
-      const result = findIngredient(testDatabaseWithExtra, 'peg');
-      expect(Object.keys(result.partitionedDatabase.ingredients)).toHaveLength(
-        2,
-      );
-      expect(result.partitionedDatabase.ingredients).toHaveProperty(
-        'unknown_water_soluble_silicone',
-      );
-      expect(result.partitionedDatabase.ingredients).toHaveProperty(
-        'another_water_soluble',
-      );
-    });
-  });
 });
 
 describe('getCategoryGroups', () => {
@@ -472,5 +300,82 @@ describe('findGroupByInclusion', () => {
     const result = findGroupByInclusion(groups, 'dimethicone silicone');
     expect(result).toBeDefined();
     expect(result?.groupId).toBe('test_group');
+  });
+});
+
+describe('partitionSearchSpace', () => {
+  it('should partition by category when matching category inclusion', () => {
+    const result = partitionSearchSpace(testDatabase, 'peg');
+    expect(result.database.categories).toHaveProperty('water_soluble_silicone');
+    expect(result.defaultIngredient).toBe('unknown_water_soluble_silicone');
+    expect(Object.keys(result.database.categories)).toHaveLength(1);
+  });
+
+  it('should correctly partition search space for waxes', () => {
+    const result = partitionSearchSpace(testDatabase, 'wax');
+
+    // Should only include wax category
+    expect(Object.keys(result.database.categories)).toEqual(['non_water_soluble_waxes', 'water_soluble_waxes']);
+
+    // Should only include wax ingredients
+    const ingredientIds = Object.keys(result.database.ingredients);
+    expect(ingredientIds).toContain('beeswax');
+    expect(ingredientIds).toContain('emulsifying_wax');
+    expect(ingredientIds).toContain('euphorbia_cerifera_wax');
+    expect(ingredientIds).toContain('lonincera_japonica_honeysuckle_flower_extract');
+    expect(ingredientIds).toHaveLength(4);
+
+    // Should not include any non-wax ingredients
+    expect(result.database.ingredients.dimethicone).toBeUndefined();
+    expect(result.database.ingredients.sodium_laureth_sulfate).toBeUndefined();
+  });
+
+  it('should correctly partition search space for silicones', () => {
+    const result = partitionSearchSpace(testDatabase, 'silicone');
+
+    // Should include all silicone categories
+    const categoryIds = Object.keys(result.database.categories);
+    expect(categoryIds).toContain('non_water_soluble_silicone');
+    expect(categoryIds).toContain('water_soluble_silicone');
+    expect(categoryIds).toContain('evaporative_silicone');
+    expect(categoryIds).toHaveLength(3);
+
+    // Should only include silicone ingredients
+    const ingredientIds = Object.keys(result.database.ingredients);
+    expect(ingredientIds).toContain('dimethicone');
+    expect(ingredientIds).toContain('cyclomethicone');
+    expect(ingredientIds).toContain('unknown_water_soluble_silicone');
+    expect(ingredientIds).toContain('unknown_non_water_soluble_silicone');
+    expect(ingredientIds).toHaveLength(4);
+
+    // Should not include any non-silicone ingredients
+    expect(result.database.ingredients.beeswax).toBeUndefined();
+    expect(result.database.ingredients.sodium_laureth_sulfate).toBeUndefined();
+  });
+
+  it('should return unfiltered database when no matches', () => {
+    const result = partitionSearchSpace(testDatabase, 'no matches here');
+    expect(result.database).toEqual(testDatabase);
+    expect(result.defaultIngredient).toBeUndefined();
+  });
+
+  it('should handle category with multiple ingredients', () => {
+    // First add another ingredient to the water soluble silicone category
+    const testDatabaseWithExtra = {
+      ...testDatabase,
+      ingredients: {
+        ...testDatabase.ingredients,
+        another_water_soluble: {
+          id: 'another_water_soluble',
+          name: 'Another Water Soluble',
+          categories: ['water_soluble_silicone'],
+        },
+      },
+    };
+
+    const result = partitionSearchSpace(testDatabaseWithExtra, 'peg');
+    expect(Object.keys(result.database.ingredients)).toHaveLength(2);
+    expect(result.database.ingredients).toHaveProperty('unknown_water_soluble_silicone');
+    expect(result.database.ingredients).toHaveProperty('another_water_soluble');
   });
 });

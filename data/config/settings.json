@@ -29,14 +29,6 @@
       "defaultStatus": "warning"
     },
     {
-      "id": "caution_water_soluble_silicones",
-      "name": "Caution Silicones",
-      "description": "Used to add caution to all silicones",
-      "groups": ["silicones"],
-      "defaultStatus": "warning",
-      "allowedStatus": "caution"
-    },
-    {
       "id": "mild_detergents_only",
       "name": "Mild Detergents Only",
       "description": "Only mild detergents are allowed, other detergents are marked as warning.",
@@ -65,6 +57,13 @@
       "description": "All silicones should be approached with caution.",
       "groups": ["silicones"],
       "defaultStatus": "caution"
+    },
+    {
+      "id": "no_waxes",
+      "name": "No Waxes",
+      "description": "Avoiding all waxes except water soluble ones.",
+      "categories": ["non_water_soluble_waxes"],
+      "defaultStatus": "warning"
     }
   ]
 }

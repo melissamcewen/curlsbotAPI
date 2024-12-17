@@ -1,6 +1,9 @@
 import { defaultDatabase } from '../../src/data/bundledData';
 import type { Ingredient, Category, Group } from '../../src/types';
 
+
+/* THESE ARE PRODUCTION TESTS USE THE DATA IN src/data/bundledData.ts */
+
 describe('Production Database E2E Tests', () => {
   describe('Data Loading', () => {
     it('should load and validate the production database', () => {

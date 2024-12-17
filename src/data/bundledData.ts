@@ -1824,19 +1824,6 @@ export const defaultDatabase: IngredientDatabase = {
       ],
       "references": []
     },
-    "unknown_peg_silicone": {
-      "name": "Unknown PEG Silicone",
-      "id": "unknown_peg_silicone",
-      "synonyms": [
-        "PPG-",
-        "PEG-",
-        "PEG/PPG"
-      ],
-      "categories": [
-        "water_soluble_silicones"
-      ],
-      "references": []
-    },
     "unknown_non_water_soluble_silicone": {
       "name": "Unknown Non-Water Soluble Silicone",
       "id": "unknown_non_water_soluble_silicone",
@@ -1849,59 +1836,46 @@ export const defaultDatabase: IngredientDatabase = {
     "unknown_water_soluble_silicone": {
       "name": "Unknown Water Soluble Silicones",
       "id": "unknown_water_soluble_silicone",
-      "synonyms": [
-        "peg",
-        "ppg",
-        "pg-"
-      ],
       "categories": [
         "water_soluble_silicones"
       ],
+      "synonyms": [],
       "references": []
     },
     "unknown_sulfates": {
       "name": "Unknown Sulfates",
       "id": "unknown_sulfates",
-      "synonyms": [
-        "sulfate",
-        "sulphate"
-      ],
       "categories": [
         "sulfates"
       ],
+      "synonyms": [],
       "references": []
     },
     "unknown_sarcosinate": {
       "name": "Unknown Sarcosinate",
       "id": "unknown_sarcosinate",
-      "synonyms": [
-        "sarcosinate"
-      ],
       "categories": [
         "other_detergents"
       ],
+      "synonyms": [],
       "references": []
     },
     "unknown_cocoyl_glutamate": {
       "name": "Unknown Cocoyl Glutamate",
       "id": "unknown_cocoyl_glutamate",
-      "synonyms": [
-        "cocoyl glutamate"
-      ],
       "categories": [
         "other_detergents"
       ],
+      "synonyms": [],
       "references": []
     },
     "unknown_wax": {
       "name": "Unknown Wax",
       "id": "unknown_wax",
-      "synonyms": [
-        "wax"
-      ],
       "categories": [
         "non_water_soluble_waxes"
       ],
+      "synonyms": [],
       "references": []
     },
     "unknown_sulfonate": {
@@ -1922,7 +1896,7 @@ export const defaultDatabase: IngredientDatabase = {
         "cire dabeille"
       ],
       "categories": [
-        "non-water-soluble_waxes"
+        "non_water_soluble_waxes"
       ],
       "references": [
         "https://incidecoder.com/ingredients/beeswax"
@@ -1936,7 +1910,7 @@ export const defaultDatabase: IngredientDatabase = {
         "vegetable wax from candelilla shrub"
       ],
       "categories": [
-        "non-water-soluble_waxes"
+        "non_water_soluble_waxes"
       ],
       "references": [
         "https://incidecoder.com/ingredients/candelilla-wax"
@@ -1950,7 +1924,7 @@ export const defaultDatabase: IngredientDatabase = {
         "palm wax"
       ],
       "categories": [
-        "non-water-soluble_waxes"
+        "non_water_soluble_waxes"
       ],
       "references": [
         "https://incidecoder.com/ingredients/carnauba-wax"
@@ -1964,7 +1938,7 @@ export const defaultDatabase: IngredientDatabase = {
         "ethoxylated cetearyl alcohol"
       ],
       "categories": [
-        "water-soluble_waxes"
+        "water_soluble_waxes"
       ],
       "references": [
         "https://incidecoder.com/ingredients/ceteareth-20"
@@ -1979,7 +1953,7 @@ export const defaultDatabase: IngredientDatabase = {
         "natural plant wax"
       ],
       "categories": [
-        "non-water-soluble_waxes"
+        "non_water_soluble_waxes"
       ],
       "references": [
         "https://incidecoder.com/ingredients/euphorbia-cerifera-wax"
@@ -1993,7 +1967,7 @@ export const defaultDatabase: IngredientDatabase = {
         "mineral wax"
       ],
       "categories": [
-        "non-water-soluble_waxes"
+        "non_water_soluble_waxes"
       ],
       "references": [
         "https://incidecoder.com/ingredients/microcrystalline-wax"
@@ -2007,7 +1981,7 @@ export const defaultDatabase: IngredientDatabase = {
         "earth wax"
       ],
       "categories": [
-        "non-water-soluble_waxes"
+        "non_water_soluble_waxes"
       ],
       "references": [
         "https://incidecoder.com/ingredients/ozokerite"
@@ -2021,7 +1995,7 @@ export const defaultDatabase: IngredientDatabase = {
         "petroleum-derived wax"
       ],
       "categories": [
-        "non-water-soluble_waxes"
+        "non_water_soluble_waxes"
       ],
       "references": [
         "https://incidecoder.com/ingredients/paraffin"
@@ -2035,7 +2009,7 @@ export const defaultDatabase: IngredientDatabase = {
         "ethoxylated carnauba wax"
       ],
       "categories": [
-        "water-soluble_waxes"
+        "water_soluble_waxes"
       ],
       "references": [
         "https://incidecoder.com/ingredients/peg-12-carnauba-wax"
@@ -2049,7 +2023,7 @@ export const defaultDatabase: IngredientDatabase = {
         "ethoxylated castor oil"
       ],
       "categories": [
-        "water-soluble_waxes"
+        "water_soluble_waxes"
       ],
       "references": [
         "https://incidecoder.com/ingredients/peg-40-hydrogenated-castor-oil"
@@ -2063,7 +2037,7 @@ export const defaultDatabase: IngredientDatabase = {
         "ethoxylated beeswax"
       ],
       "categories": [
-        "water-soluble_waxes"
+        "water_soluble_waxes"
       ],
       "references": [
         "https://incidecoder.com/ingredients/peg-8-beeswax"
@@ -2077,7 +2051,7 @@ export const defaultDatabase: IngredientDatabase = {
         "ethoxylated sorbitol laurate"
       ],
       "categories": [
-        "water-soluble_waxes"
+        "water_soluble_waxes"
       ],
       "references": [
         "https://incidecoder.com/ingredients/polysorbate-20"
@@ -2087,7 +2061,7 @@ export const defaultDatabase: IngredientDatabase = {
       "name": "Emulsifying Wax",
       "id": "emulsifying_wax",
       "categories": [
-        "water-soluble_waxes"
+        "water_soluble_waxes"
       ],
       "references": [
         "https://incidecoder.com/ingredients/emulsifying-wax"
@@ -2277,7 +2251,7 @@ export const defaultDatabase: IngredientDatabase = {
       ],
       "exclusions": [
         "saccharomycessilicon",
-        "silicon ferment"
+        "ferment"
       ],
       "defaultIngredient": "unknown_non_water_soluble_silicone"
     },
@@ -2289,7 +2263,10 @@ export const defaultDatabase: IngredientDatabase = {
     "waxes": {
       "id": "waxes",
       "name": "Waxes",
-      "inclusions": []
+      "inclusions": [
+        "wax"
+      ],
+      "defaultIngredient": "unknown_wax"
     },
     "oils": {
       "id": "oils",
@@ -2368,16 +2345,6 @@ export const defaultSettings: Record<string, Setting> = {
     ],
     "defaultStatus": "warning"
   },
-  "caution_water_soluble_silicones": {
-    "id": "caution_water_soluble_silicones",
-    "name": "Caution Silicones",
-    "description": "Used to add caution to all silicones",
-    "groups": [
-      "silicones"
-    ],
-    "defaultStatus": "warning",
-    "allowedStatus": "caution"
-  },
   "mild_detergents_only": {
     "id": "mild_detergents_only",
     "name": "Mild Detergents Only",
@@ -2417,6 +2384,15 @@ export const defaultSettings: Record<string, Setting> = {
       "silicones"
     ],
     "defaultStatus": "caution"
+  },
+  "no_waxes": {
+    "id": "no_waxes",
+    "name": "No Waxes",
+    "description": "Avoiding all waxes except water soluble ones.",
+    "categories": [
+      "non_water_soluble_waxes"
+    ],
+    "defaultStatus": "warning"
   }
 };
 

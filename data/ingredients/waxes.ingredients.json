@@ -3,17 +3,9 @@
     {
       "name": "Beeswax",
       "id": "beeswax",
-      "synonyms": [
-        "cera alba",
-        "natural wax from bees",
-        "cire dabeille"
-      ],
-      "categories": [
-        "non-water-soluble_waxes"
-      ],
-      "references": [
-        "https://incidecoder.com/ingredients/beeswax"
-      ]
+      "synonyms": ["cera alba", "natural wax from bees", "cire dabeille"],
+      "categories": ["non_water_soluble_waxes"],
+      "references": ["https://incidecoder.com/ingredients/beeswax"]
     },
     {
       "name": "Candelilla Wax",
@@ -22,26 +14,15 @@
         "euphorbia cerifera wax",
         "vegetable wax from candelilla shrub"
       ],
-      "categories": [
-        "non-water-soluble_waxes"
-      ],
-      "references": [
-        "https://incidecoder.com/ingredients/candelilla-wax"
-      ]
+      "categories": ["non_water_soluble_waxes"],
+      "references": ["https://incidecoder.com/ingredients/candelilla-wax"]
     },
     {
       "name": "Carnauba Wax",
       "id": "carnauba_wax",
-      "synonyms": [
-        "copernicia cerifera wax",
-        "palm wax"
-      ],
-      "categories": [
-        "non-water-soluble_waxes"
-      ],
-      "references": [
-        "https://incidecoder.com/ingredients/carnauba-wax"
-      ]
+      "synonyms": ["copernicia cerifera wax", "palm wax"],
+      "categories": ["non_water_soluble_waxes"],
+      "references": ["https://incidecoder.com/ingredients/carnauba-wax"]
     },
     {
       "name": "Ceteareth-20",
@@ -50,24 +31,14 @@
         "polyoxyethylene cetearyl ether",
         "ethoxylated cetearyl alcohol"
       ],
-      "categories": [
-        "water-soluble_waxes"
-      ],
-      "references": [
-        "https://incidecoder.com/ingredients/ceteareth-20"
-      ]
+      "categories": ["water_soluble_waxes"],
+      "references": ["https://incidecoder.com/ingredients/ceteareth-20"]
     },
     {
       "name": "Euphorbia Cerifera Wax",
       "id": "euphorbia_cerifera_wax",
-      "synonyms": [
-        "candelilla wax",
-        "vegetable wax",
-        "natural plant wax"
-      ],
-      "categories": [
-        "non-water-soluble_waxes"
-      ],
+      "synonyms": ["candelilla wax", "vegetable wax", "natural plant wax"],
+      "categories": ["non_water_soluble_waxes"],
       "references": [
         "https://incidecoder.com/ingredients/euphorbia-cerifera-wax"
       ]
@@ -75,44 +46,23 @@
     {
       "name": "Microcrystalline Wax",
       "id": "microcrystalline_wax",
-      "synonyms": [
-        "petroleum wax",
-        "mineral wax"
-      ],
-      "categories": [
-        "non-water-soluble_waxes"
-      ],
-      "references": [
-        "https://incidecoder.com/ingredients/microcrystalline-wax"
-      ]
+      "synonyms": ["petroleum wax", "mineral wax"],
+      "categories": ["non_water_soluble_waxes"],
+      "references": ["https://incidecoder.com/ingredients/microcrystalline-wax"]
     },
     {
       "name": "Ozokerite",
       "id": "ozokerite",
-      "synonyms": [
-        "mineral wax",
-        "earth wax"
-      ],
-      "categories": [
-        "non-water-soluble_waxes"
-      ],
-      "references": [
-        "https://incidecoder.com/ingredients/ozokerite"
-      ]
+      "synonyms": ["mineral wax", "earth wax"],
+      "categories": ["non_water_soluble_waxes"],
+      "references": ["https://incidecoder.com/ingredients/ozokerite"]
     },
     {
       "name": "Paraffin Wax",
       "id": "paraffin_wax",
-      "synonyms": [
-        "paraffin",
-        "petroleum-derived wax"
-      ],
-      "categories": [
-        "non-water-soluble_waxes"
-      ],
-      "references": [
-        "https://incidecoder.com/ingredients/paraffin"
-      ]
+      "synonyms": ["paraffin", "petroleum-derived wax"],
+      "categories": ["non_water_soluble_waxes"],
+      "references": ["https://incidecoder.com/ingredients/paraffin"]
     },
     {
       "name": "PEG-12 Carnauba Wax",
@@ -121,12 +71,8 @@
         "polyethylene glycol-12 carnauba wax",
         "ethoxylated carnauba wax"
       ],
-      "categories": [
-        "water-soluble_waxes"
-      ],
-      "references": [
-        "https://incidecoder.com/ingredients/peg-12-carnauba-wax"
-      ]
+      "categories": ["water_soluble_waxes"],
+      "references": ["https://incidecoder.com/ingredients/peg-12-carnauba-wax"]
     },
     {
       "name": "PEG-40 Hydrogenated Castor Oil",
@@ -135,9 +81,7 @@
         "polyethylene glycol-40 hydrogenated castor oil",
         "ethoxylated castor oil"
       ],
-      "categories": [
-        "water-soluble_waxes"
-      ],
+      "categories": ["water_soluble_waxes"],
       "references": [
         "https://incidecoder.com/ingredients/peg-40-hydrogenated-castor-oil"
       ]
@@ -145,16 +89,9 @@
     {
       "name": "PEG-8 Beeswax",
       "id": "peg_8_beeswax",
-      "synonyms": [
-        "polyethylene glycol-8 beeswax",
-        "ethoxylated beeswax"
-      ],
-      "categories": [
-        "water-soluble_waxes"
-      ],
-      "references": [
-        "https://incidecoder.com/ingredients/peg-8-beeswax"
-      ]
+      "synonyms": ["polyethylene glycol-8 beeswax", "ethoxylated beeswax"],
+      "categories": ["water_soluble_waxes"],
+      "references": ["https://incidecoder.com/ingredients/peg-8-beeswax"]
     },
     {
       "name": "Polysorbate 20",
@@ -163,22 +100,14 @@
         "sorbitan monolaurate ethoxylated",
         "ethoxylated sorbitol laurate"
       ],
-      "categories": [
-        "water-soluble_waxes"
-      ],
-      "references": [
-        "https://incidecoder.com/ingredients/polysorbate-20"
-      ]
+      "categories": ["water_soluble_waxes"],
+      "references": ["https://incidecoder.com/ingredients/polysorbate-20"]
     },
     {
       "name": "Emulsifying Wax",
       "id": "emulsifying_wax",
-      "categories": [
-        "water-soluble_waxes"
-      ],
-      "references": [
-        "https://incidecoder.com/ingredients/emulsifying-wax"
-      ]
+      "categories": ["water_soluble_waxes"],
+      "references": ["https://incidecoder.com/ingredients/emulsifying-wax"]
     }
   ]
 }

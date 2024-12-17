@@ -138,12 +138,12 @@ describe('Analyzer', () => {
         system: {
           id: 'test',
           name: 'Test',
-          settings: ['caution_water_soluble_silicones']
+          settings: ['caution_silicones', 'no_water_insoluble_silicones']
         }
       });
 
       // Test water-soluble silicone
-      const resultWaterSoluble = analyzer.analyze('Unknown Water Soluble Silicone');
+      const resultWaterSoluble = analyzer.analyze('ppg-unknown');
       expect(resultWaterSoluble.status).toBe('caution');
       expect(resultWaterSoluble.ingredients[0].status).toBe('caution');
 
@@ -227,7 +227,7 @@ describe('Analyzer', () => {
       });
 
       // Test water-soluble silicone - should be caution
-      const resultWaterSoluble = analyzer.analyze('Unknown Water Soluble Silicone');
+      const resultWaterSoluble = analyzer.analyze('ppg-unknown');
       expect(resultWaterSoluble.status).toBe('caution');
       expect(resultWaterSoluble.ingredients[0].status).toBe('caution');
       expect(resultWaterSoluble.ingredients[0].reasons.some(r => r.setting === 'caution_silicones')).toBe(true);
@@ -239,7 +239,7 @@ describe('Analyzer', () => {
       expect(resultNonWaterSoluble.ingredients[0].reasons.some(r => r.setting === 'no_water_insoluble_silicones')).toBe(true);
 
       // Test multiple silicones in one list
-      const resultMultiple = analyzer.analyze('Unknown Water Soluble Silicone, Dimethicone');
+      const resultMultiple = analyzer.analyze('ppg-unknown, Dimethicone');
       expect(resultMultiple.status).toBe('warning'); // warning takes precedence
       expect(resultMultiple.ingredients[0].status).toBe('caution');
       expect(resultMultiple.ingredients[1].status).toBe('warning');

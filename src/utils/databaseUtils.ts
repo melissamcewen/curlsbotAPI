@@ -24,36 +24,87 @@ export function getIngredientTerms(ingredient: Ingredient): string[] {
 export function findIngredient(
   database: IngredientDatabase,
   searchTerm: string,
-): IngredientMatch & { partitionedDatabase: IngredientDatabase } {
+): IngredientMatch {
   const normalizedSearchTerm = searchTerm.toLowerCase();
+  console.log('Searching for:', normalizedSearchTerm);
+
+  // First partition the database based on the search term
+  console.log('Partitioning database based on search term');
   const { database: partitionedDatabase, defaultIngredient } =
     partitionSearchSpace(database, normalizedSearchTerm);
 
-  // Find the ingredient in the partitioned database
+  // Try to find an exact match in the partitioned database
   for (const ingredient of Object.values(
     partitionedDatabase.ingredients,
   ) as Ingredient[]) {
     const terms = getIngredientTerms(ingredient).map((term) =>
       term.toLowerCase(),
     );
+
+    // Try exact matches first
     if (terms.includes(normalizedSearchTerm)) {
+      console.log('Found exact match:', ingredient.name);
       return {
         uuid: crypto.randomUUID(),
         input: searchTerm,
         normalized: normalizedSearchTerm,
         ingredient,
-        partitionedDatabase,
       };
     }
   }
 
+  // If no exact match, try partial matches in the partitioned database
+  for (const ingredient of Object.values(
+    partitionedDatabase.ingredients,
+  ) as Ingredient[]) {
+    const terms = getIngredientTerms(ingredient).map((term) =>
+      term.toLowerCase(),
+    );
+
+    for (const term of terms) {
+      if (term.includes('unknown')) continue;
+      // Check if the search term contains the full ingredient term
+      const words = term.split(' ');
+      console.log('term:', term, 'words:', words);
+      if (words.length > 1) {
+        // For multi-word terms, normalize spaces and check if search term contains the full term
+        const normalizedTerm = term.replace(/\s+/g, ' ').trim();
+        const normalizedSearchTermSpaces = normalizedSearchTerm
+          .replace(/\s+/g, ' ')
+          .trim();
+        // Check if the normalized search term includes the normalized ingredient term
+        if (normalizedSearchTermSpaces.includes(normalizedTerm)) {
+          console.log('Found multi-word match:', ingredient.id, 'term:', term);
+          return {
+            uuid: crypto.randomUUID(),
+            input: searchTerm,
+            normalized: normalizedSearchTerm,
+            ingredient,
+          };
+        }
+      } else {
+        // For single-word terms, check if the search term includes the term
+        if (normalizedSearchTerm.includes(term)) {
+          console.log('Found single-word match:', ingredient.id, 'term:', term);
+          return {
+            uuid: crypto.randomUUID(),
+            input: searchTerm,
+            normalized: normalizedSearchTerm,
+            ingredient,
+          };
+        }
+      }
+    }
+  }
+
+  // If no match found, use default ingredient if available
   if (defaultIngredient) {
+    console.log('Using default ingredient:', defaultIngredient);
     return {
       uuid: crypto.randomUUID(),
       input: searchTerm,
       normalized: normalizedSearchTerm,
       ingredient: getIngredientById(database, defaultIngredient),
-      partitionedDatabase,
     };
   }
 
@@ -62,7 +113,6 @@ export function findIngredient(
     input: searchTerm,
     normalized: normalizedSearchTerm,
     ingredient: undefined,
-    partitionedDatabase,
   };
 }
 
@@ -74,6 +124,7 @@ export function partitionSearchSpace(
   searchTerm: string,
 ): { database: IngredientDatabase; defaultIngredient: string | undefined } {
   const normalizedSearchTerm = searchTerm.toLowerCase();
+
   const matchingGroup = findGroupByInclusion(
     database.groups,
     normalizedSearchTerm,

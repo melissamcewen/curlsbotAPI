@@ -52,6 +52,26 @@ export const testDatabase: IngredientDatabase = {
       name: 'Sodium Cocoyl Isethionate',
       categories: ['mild_detergents'],
     },
+    emulsifying_wax: {
+      id: 'emulsifying_wax',
+      name: 'Emulsifying Wax',
+      categories: ['water_soluble_waxes'],
+    },
+    beeswax: {
+      id: 'beeswax',
+      name: 'Beeswax',
+      categories: ['non_water_soluble_waxes'],
+    },
+    euphorbia_cerifera_wax: {
+      id: 'euphorbia_cerifera_wax',
+      name: 'Euphorbia Cerifera Wax',
+      categories: ['non_water_soluble_waxes'],
+    },
+    lonincera_japonica_honeysuckle_flower_extract: {
+      id: 'lonincera_japonica_honeysuckle_flower_extract',
+      name: 'Lonincera Japonica Honeysuckle Flower Extract',
+      categories: ['non_water_soluble_waxes'],
+    },
   },
   categories: {
     non_water_soluble_silicone: {
@@ -65,7 +85,7 @@ export const testDatabase: IngredientDatabase = {
       name: 'Water-soluble Silicone',
       description: 'Silicones that are water soluble',
       group: 'silicones',
-      inclusions: ['peg'],
+      inclusions: ['peg', 'ppg'],
       defaultIngredient: 'unknown_water_soluble_silicone',
     },
     evaporative_silicone: {
@@ -104,6 +124,18 @@ export const testDatabase: IngredientDatabase = {
       description: 'Gentle cleansing agents',
       group: 'detergents',
     },
+    non_water_soluble_waxes: {
+      id: 'non_water_soluble_waxes',
+      name: 'Non-water-soluble Waxes',
+      description: 'Wax-based ingredients that are not water soluble',
+      group: 'waxes',
+    },
+    water_soluble_waxes: {
+      id: 'water_soluble_waxes',
+      name: 'Water-soluble Waxes',
+      description: 'Wax-based ingredients that are water soluble',
+      group: 'waxes',
+    },
   },
   groups: {
     silicones: {
@@ -120,6 +152,11 @@ export const testDatabase: IngredientDatabase = {
     alcohols: {
       id: 'alcohols',
       name: 'Alcohols',
+    },
+    waxes: {
+      id: 'waxes',
+      name: 'Waxes',
+      inclusions: ['wax'],
     },
   },
 };
@@ -150,16 +187,6 @@ export const testSettings: Settings = {
     allowedCategories: ['mild_detergents'],
     defaultStatus: 'warning',
     allowedStatus: 'ok',
-  },
-  caution_water_soluble_silicones: {
-    id: 'caution_water_soluble_silicones',
-    name: 'Caution Water Soluble Silicones',
-    description:
-      'Water soluble silicones are marked as caution, other silicones as warning',
-    groups: ['silicones'],
-    allowedCategories: ['water_soluble_silicone'],
-    defaultStatus: 'warning',
-    allowedStatus: 'caution',
   },
   specific_ingredients: {
     id: 'specific_ingredients',
