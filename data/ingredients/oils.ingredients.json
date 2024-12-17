@@ -176,7 +176,8 @@
       "synonyms": [
         "paraffinum liquidum",
         "liquid paraffin",
-        "petroleum oil"
+        "petroleum oil",
+        "petrolatum"
       ],
       "categories": [
         "heavy_oils"
@@ -197,34 +198,6 @@
       ],
       "references": [
         "https://incidecoder.com/ingredients/olea-europaea-fruit-oil"
-      ]
-    },
-    {
-      "name": "Paraffin",
-      "id": "paraffin",
-      "synonyms": [
-        "paraffin wax",
-        "petroleum wax"
-      ],
-      "categories": [
-        "heavy_oils"
-      ],
-      "references": [
-        "https://incidecoder.com/ingredients/paraffin"
-      ]
-    },
-    {
-      "name": "Petrolatum",
-      "id": "petrolatum",
-      "synonyms": [
-        "petroleum jelly",
-        "vaseline"
-      ],
-      "categories": [
-        "heavy_oils"
-      ],
-      "references": [
-        "https://incidecoder.com/ingredients/petrolatum"
       ]
     },
     {
