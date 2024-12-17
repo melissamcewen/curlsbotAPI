@@ -120,6 +120,27 @@ describe('Analyzer', () => {
       expect(system.name).toBe('Test System');
       expect(system.settings).toContain('sulfate_free');
     });
+
+    it('should copy system settings to analysis result', () => {
+      const testSystem: System = {
+        id: 'test_system',
+        name: 'Test System',
+        description: 'Test system for unit tests',
+        settings: ['setting_1', 'setting_2'],
+      };
+
+      const analyzer = new Analyzer({
+        database: testDatabase,
+        system: testSystem,
+        settings: testSettings,
+      });
+
+      const result = analyzer.analyze('Cetyl Alcohol');
+
+      expect(result.settings).toEqual(testSystem.settings);
+      expect(result.settings).toContain('setting_1');
+      expect(result.settings).toContain('setting_2');
+    });
   });
 
   describe('Flagging', () => {

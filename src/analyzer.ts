@@ -129,6 +129,7 @@ export class Analyzer {
     const result = this.createEmptyResult();
     result.input = ingredientList;
     result.system = this.system.id;
+    result.settings = this.system.settings || [];
 
     // Use the existing normalizer
     const normalized = normalizer(ingredientList);
