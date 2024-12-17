@@ -8,21 +8,27 @@ export const defaultDatabase: IngredientDatabase = {
       "id": "acetyl_alcohol",
       "categories": [
         "emollient_alcohols"
-      ]
+      ],
+      "synonyms": [],
+      "references": []
     },
     "amino_methyl_propanol": {
       "name": "Amino Methyl Propanol",
       "id": "amino_methyl_propanol",
       "categories": [
         "emollient_alcohols"
-      ]
+      ],
+      "synonyms": [],
+      "references": []
     },
     "amino-2-methyl-1-propanol": {
       "name": "Amino-2-Methyl-1-Propanol",
       "id": "amino-2-methyl-1-propanol",
       "categories": [
         "emollient_alcohols"
-      ]
+      ],
+      "synonyms": [],
+      "references": []
     },
     "amylcinnamyl_alcohol": {
       "name": "Amylcinnamyl Alcohol",
@@ -42,7 +48,9 @@ export const defaultDatabase: IngredientDatabase = {
       "id": "arachidyl_alcohol",
       "categories": [
         "emollient_alcohols"
-      ]
+      ],
+      "synonyms": [],
+      "references": []
     },
     "behenyl_alcohol": {
       "name": "Behenyl Alcohol",
@@ -66,35 +74,44 @@ export const defaultDatabase: IngredientDatabase = {
       ],
       "references": [
         "https://incidecoder.com/ingredients/benzyl-alcohol"
-      ]
+      ],
+      "synonyms": []
     },
     "brassica_alcohol": {
       "name": "Brassica Alcohol",
       "id": "brassica_alcohol",
       "categories": [
         "emollient_alcohols"
-      ]
+      ],
+      "synonyms": [],
+      "references": []
     },
     "butylene_alcohol": {
       "name": "Butylene Alcohol",
       "id": "butylene_alcohol",
       "categories": [
         "emollient_alcohols"
-      ]
+      ],
+      "synonyms": [],
+      "references": []
     },
     "c14-22_alcohol": {
       "name": "C14-22 Alcohol",
       "id": "c14-22_alcohol",
       "categories": [
         "emollient_alcohols"
-      ]
+      ],
+      "synonyms": [],
+      "references": []
     },
     "c20-c22_alcohol": {
       "name": "C20-C22 Alcohol",
       "id": "c20-c22_alcohol",
       "categories": [
         "emollient_alcohols"
-      ]
+      ],
+      "synonyms": [],
+      "references": []
     },
     "c30-50_alcohols": {
       "name": "C30-50 Alcohols",
@@ -104,7 +121,8 @@ export const defaultDatabase: IngredientDatabase = {
       ],
       "references": [
         "https://cosdna.com/eng/8fb0237001.html"
-      ]
+      ],
+      "synonyms": []
     },
     "cetearyl_alcohol": {
       "name": "Cetearyl Alcohol",
@@ -145,7 +163,9 @@ export const defaultDatabase: IngredientDatabase = {
       "id": "cetylated_lanolin_alcohol",
       "categories": [
         "emollient_alcohols"
-      ]
+      ],
+      "synonyms": [],
+      "references": []
     },
     "cinnamyl_alcohol": {
       "name": "Cinnamyl Alcohol",
@@ -165,7 +185,9 @@ export const defaultDatabase: IngredientDatabase = {
       "id": "coconut_alcohol",
       "categories": [
         "emollient_alcohols"
-      ]
+      ],
+      "synonyms": [],
+      "references": []
     },
     "ethyl_alcohol": {
       "name": "Ethyl Alcohol",
@@ -217,7 +239,8 @@ export const defaultDatabase: IngredientDatabase = {
       ],
       "references": [
         "https://cosdna.com/eng/78de01202.html"
-      ]
+      ],
+      "synonyms": []
     },
     "lanolin_alcohol": {
       "name": "Lanolin Alcohol",
@@ -227,7 +250,8 @@ export const defaultDatabase: IngredientDatabase = {
       ],
       "references": [
         "https://cosdna.com/eng/cd20031856.html"
-      ]
+      ],
+      "synonyms": []
     },
     "lauryl_alcohol": {
       "name": "Lauryl Alcohol",
@@ -263,14 +287,18 @@ export const defaultDatabase: IngredientDatabase = {
       "id": "oleyl_alcohol",
       "categories": [
         "emollient_alcohols"
-      ]
+      ],
+      "synonyms": [],
+      "references": []
     },
     "pantothenyl_alcohol": {
       "name": "Pantothenyl Alcohol",
       "id": "pantothenyl_alcohol",
       "categories": [
         "emollient_alcohols"
-      ]
+      ],
+      "synonyms": [],
+      "references": []
     },
     "phenethyl_alcohol": {
       "name": "Phenethyl Alcohol",
@@ -281,7 +309,8 @@ export const defaultDatabase: IngredientDatabase = {
       ],
       "categories": [
         "preservative_alcohols"
-      ]
+      ],
+      "references": []
     },
     "phenyl_propanol": {
       "name": "Phenyl Propanol",
@@ -291,7 +320,8 @@ export const defaultDatabase: IngredientDatabase = {
       ],
       "categories": [
         "emollient_alcohols"
-      ]
+      ],
+      "references": []
     },
     "propyl_alcohol": {
       "name": "Propyl Alcohol",
@@ -301,7 +331,8 @@ export const defaultDatabase: IngredientDatabase = {
       ],
       "references": [
         "https://cosdna.com/eng/366a832503.html"
-      ]
+      ],
+      "synonyms": []
     },
     "sd_alcohol": {
       "name": "SD Alcohol",
@@ -327,7 +358,9 @@ export const defaultDatabase: IngredientDatabase = {
       "id": "steareth_alcohol",
       "categories": [
         "emollient_alcohols"
-      ]
+      ],
+      "synonyms": [],
+      "references": []
     },
     "stearyl_alcohol": {
       "name": "Stearyl Alcohol",
@@ -349,7 +382,9 @@ export const defaultDatabase: IngredientDatabase = {
       "id": "undecyl_alcohol",
       "categories": [
         "emollient_alcohols"
-      ]
+      ],
+      "synonyms": [],
+      "references": []
     },
     "unknown_alcohol": {
       "name": "Unknown Alcohol",
@@ -360,7 +395,8 @@ export const defaultDatabase: IngredientDatabase = {
       "description": "Unknown alcohol, since we don't know what it is, we are going to classify it as drying alcohols just to be safe.",
       "categories": [
         "drying_alcohols"
-      ]
+      ],
+      "references": []
     },
     "alkylbenzene_sulfonate": {
       "name": "Alkylbenzene Sulfonate",
@@ -372,14 +408,17 @@ export const defaultDatabase: IngredientDatabase = {
       ],
       "categories": [
         "sulfonates"
-      ]
+      ],
+      "references": []
     },
     "ammonium_cocoyl_isethionate": {
       "name": "Ammonium Cocoyl Isethionate",
       "id": "ammonium_cocoyl_isethionate",
       "categories": [
         "mild_detergents"
-      ]
+      ],
+      "synonyms": [],
+      "references": []
     },
     "ammonium_cocoyl_sulfate": {
       "name": "Ammonium Cocoyl Sulfate",
@@ -389,7 +428,8 @@ export const defaultDatabase: IngredientDatabase = {
       ],
       "categories": [
         "sulfates"
-      ]
+      ],
+      "references": []
     },
     "ammonium_laureth_sulfate": {
       "name": "Ammonium Laureth Sulfate",
@@ -399,7 +439,8 @@ export const defaultDatabase: IngredientDatabase = {
       ],
       "categories": [
         "sulfates"
-      ]
+      ],
+      "references": []
     },
     "ammonium_lauryl_sulfate": {
       "name": "Ammonium Lauryl Sulfate",
@@ -409,7 +450,8 @@ export const defaultDatabase: IngredientDatabase = {
       ],
       "categories": [
         "sulfates"
-      ]
+      ],
+      "references": []
     },
     "ammonium_xylenesulfonate": {
       "name": "Ammonium Xylenesulfonate",
@@ -421,14 +463,17 @@ export const defaultDatabase: IngredientDatabase = {
       ],
       "categories": [
         "sulfonates"
-      ]
+      ],
+      "references": []
     },
     "babassuamidopropyl_betaine": {
       "name": "Babassuamidopropyl Betaine",
       "id": "babassuamidopropyl_betaine",
       "categories": [
         "mild_detergents"
-      ]
+      ],
+      "synonyms": [],
+      "references": []
     },
     "capryl_glucoside": {
       "name": "Capryl Glucoside",
@@ -438,98 +483,125 @@ export const defaultDatabase: IngredientDatabase = {
       ],
       "categories": [
         "mild_detergents"
-      ]
+      ],
+      "references": []
     },
     "cocamidopropyl_betaine": {
       "name": "Cocamidopropyl Betaine",
       "id": "cocamidopropyl_betaine",
       "categories": [
         "mild_detergents"
-      ]
+      ],
+      "synonyms": [],
+      "references": []
     },
     "cocamidopropyl_hydroxysultaine": {
       "name": "Cocamidopropyl Hydroxysultaine",
       "id": "cocamidopropyl_hydroxysultaine",
       "categories": [
         "mild_detergents"
-      ]
+      ],
+      "synonyms": [],
+      "references": []
     },
     "coco_betaine": {
       "name": "Coco Betaine",
       "id": "coco_betaine",
       "categories": [
         "mild_detergents"
-      ]
+      ],
+      "synonyms": [],
+      "references": []
     },
     "coco_glucoside": {
       "name": "Coco Glucoside",
       "id": "coco_glucoside",
       "categories": [
         "mild_detergents"
-      ]
+      ],
+      "synonyms": [],
+      "references": []
     },
     "decyl_glucoside": {
       "name": "Decyl Glucoside",
       "id": "decyl_glucoside",
       "categories": [
         "mild_detergents"
-      ]
+      ],
+      "synonyms": [],
+      "references": []
     },
     "decyl_polyglucose": {
       "name": "Decyl Polyglucose",
       "id": "decyl_polyglucose",
       "categories": [
         "mild_detergents"
-      ]
+      ],
+      "synonyms": [],
+      "references": []
     },
     "dioctyl_sodium_sulfosuccinate": {
       "name": "Dioctyl Sodium Sulfosuccinate",
       "id": "dioctyl_sodium_sulfosuccinate",
       "categories": [
         "other_detergents"
-      ]
+      ],
+      "synonyms": [],
+      "references": []
     },
     "disodium_cocoamphodiacetate": {
       "name": "Disodium Cocoamphodiacetate",
       "id": "disodium_cocoamphodiacetate",
       "categories": [
         "mild_detergents"
-      ]
+      ],
+      "synonyms": [],
+      "references": []
     },
     "disodium_cocoamphodipropionate": {
       "name": "Disodium Cocoamphodipropionate",
       "id": "disodium_cocoamphodipropionate",
       "categories": [
         "mild_detergents"
-      ]
+      ],
+      "synonyms": [],
+      "references": []
     },
     "disodium_cocoyl_glutamate": {
       "name": "Disodium Cocoyl Glutamate",
       "id": "disodium_cocoyl_glutamate",
       "categories": [
         "other_detergents"
-      ]
+      ],
+      "synonyms": [],
+      "references": []
     },
     "disodium_laureth_succinate": {
       "name": "Disodium Laureth Succinate",
       "id": "disodium_laureth_succinate",
       "categories": [
         "mild_detergents"
-      ]
+      ],
+      "synonyms": [],
+      "references": []
     },
     "disodium_laureth_sulfosuccinate": {
       "name": "Disodium Laureth Sulfosuccinate",
       "id": "disodium_laureth_sulfosuccinate",
       "categories": [
         "mild_detergents"
-      ]
+      ],
+      "synonyms": [],
+      "references": []
     },
     "disodium_lauryl_sulfosuccinate": {
       "name": "Disodium Lauryl Sulfosuccinate",
       "id": "disodium_lauryl_sulfosuccinate",
       "categories": [
         "mild_detergents"
-      ]
+      ],
+      "synonyms": [],
+      "references": []
     },
     "ethyl_peg-15_cocamine_sulfate": {
       "name": "Ethyl PEG-15 Cocamine Sulfate",
@@ -539,21 +611,26 @@ export const defaultDatabase: IngredientDatabase = {
       ],
       "categories": [
         "sulfates"
-      ]
+      ],
+      "references": []
     },
     "lauryl_glucoside": {
       "name": "Lauryl Glucoside",
       "id": "lauryl_glucoside",
       "categories": [
         "mild_detergents"
-      ]
+      ],
+      "synonyms": [],
+      "references": []
     },
     "lauryl_hydroxysultaine": {
       "name": "Lauryl Hydroxysultaine",
       "id": "lauryl_hydroxysultaine",
       "categories": [
         "mild_detergents"
-      ]
+      ],
+      "synonyms": [],
+      "references": []
     },
     "sodium_alkyl_sulfate": {
       "name": "Sodium Alkyl Sulfate",
@@ -563,7 +640,8 @@ export const defaultDatabase: IngredientDatabase = {
       ],
       "categories": [
         "sulfates"
-      ]
+      ],
+      "references": []
     },
     "sodium_c12-14_olefin_sulfonate": {
       "name": "Sodium C12-14 Olefin Sulfonate",
@@ -573,7 +651,8 @@ export const defaultDatabase: IngredientDatabase = {
       ],
       "categories": [
         "sulfonates"
-      ]
+      ],
+      "references": []
     },
     "sodium_c12-18_alkyl_sulfate": {
       "name": "Sodium C12-18 Alkyl Sulfate",
@@ -583,7 +662,8 @@ export const defaultDatabase: IngredientDatabase = {
       ],
       "categories": [
         "sulfates"
-      ]
+      ],
+      "references": []
     },
     "sodium_c14-15_olefin_sulfonate": {
       "name": "Sodium C14-15 Olefin Sulfonate",
@@ -593,7 +673,8 @@ export const defaultDatabase: IngredientDatabase = {
       ],
       "categories": [
         "sulfonates"
-      ]
+      ],
+      "references": []
     },
     "sodium_c14-16_olefin_sulfonate": {
       "name": "Sodium C14-16 Olefin Sulfonate",
@@ -603,7 +684,8 @@ export const defaultDatabase: IngredientDatabase = {
       ],
       "categories": [
         "sulfonates"
-      ]
+      ],
+      "references": []
     },
     "sodium_c14-18_olefin_sulfonate": {
       "name": "Sodium C14-18 Olefin Sulfonate",
@@ -613,7 +695,8 @@ export const defaultDatabase: IngredientDatabase = {
       ],
       "categories": [
         "sulfonates"
-      ]
+      ],
+      "references": []
     },
     "sodium_c14-26_olefin_sulfonate": {
       "name": "Sodium C14-26 Olefin Sulfonate",
@@ -623,7 +706,8 @@ export const defaultDatabase: IngredientDatabase = {
       ],
       "categories": [
         "sulfonates"
-      ]
+      ],
+      "references": []
     },
     "sodium_c16-18_olefin_sulfonate": {
       "name": "Sodium C16-18 Olefin Sulfonate",
@@ -633,7 +717,8 @@ export const defaultDatabase: IngredientDatabase = {
       ],
       "categories": [
         "sulfonates"
-      ]
+      ],
+      "references": []
     },
     "sodium_cetearyl_sulfate": {
       "name": "Sodium Cetearyl Sulfate",
@@ -643,7 +728,8 @@ export const defaultDatabase: IngredientDatabase = {
       ],
       "categories": [
         "sulfates"
-      ]
+      ],
+      "references": []
     },
     "sodium_coceth_sulfate": {
       "name": "Sodium Coceth Sulfate",
@@ -653,7 +739,8 @@ export const defaultDatabase: IngredientDatabase = {
       ],
       "categories": [
         "sulfates"
-      ]
+      ],
+      "references": []
     },
     "sodium_coco_sulfate": {
       "name": "Sodium Coco Sulfate",
@@ -663,14 +750,17 @@ export const defaultDatabase: IngredientDatabase = {
       ],
       "categories": [
         "sulfates"
-      ]
+      ],
+      "references": []
     },
     "sodium_cocoamphoacetate": {
       "name": "Sodium Cocoamphoacetate",
       "id": "sodium_cocoamphoacetate",
       "categories": [
         "mild_detergents"
-      ]
+      ],
+      "synonyms": [],
+      "references": []
     },
     "sodium_cocosulfate": {
       "name": "Sodium Cocosulfate",
@@ -680,28 +770,35 @@ export const defaultDatabase: IngredientDatabase = {
       ],
       "categories": [
         "sulfates"
-      ]
+      ],
+      "references": []
     },
     "sodium_cocoyl_glutamate": {
       "name": "Sodium Cocoyl Glutamate",
       "id": "sodium_cocoyl_glutamate",
       "categories": [
         "other_detergents"
-      ]
+      ],
+      "synonyms": [],
+      "references": []
     },
     "sodium_cocoyl_isethionate": {
       "name": "Sodium Cocoyl Isethionate",
       "id": "sodium_cocoyl_isethionate",
       "categories": [
         "mild_detergents"
-      ]
+      ],
+      "synonyms": [],
+      "references": []
     },
     "sodium_cocoyl_sarcosinate": {
       "name": "Sodium Cocoyl Sarcosinate",
       "id": "sodium_cocoyl_sarcosinate",
       "categories": [
         "other_detergents"
-      ]
+      ],
+      "synonyms": [],
+      "references": []
     },
     "sodium_laureth_sulfate": {
       "name": "Sodium Laureth Sulfate",
@@ -711,7 +808,8 @@ export const defaultDatabase: IngredientDatabase = {
       ],
       "categories": [
         "sulfates"
-      ]
+      ],
+      "references": []
     },
     "sodium_laureth-40_sulfate": {
       "name": "Sodium Laureth-40 Sulfate",
@@ -721,21 +819,26 @@ export const defaultDatabase: IngredientDatabase = {
       ],
       "categories": [
         "sulfonates"
-      ]
+      ],
+      "references": []
     },
     "sodium_lauroamphoacetate": {
       "name": "Sodium Lauroamphoacetate",
       "id": "sodium_lauroamphoacetate",
       "categories": [
         "mild_detergents"
-      ]
+      ],
+      "synonyms": [],
+      "references": []
     },
     "sodium_lauroyl_glutamate": {
       "name": "Sodium Lauroyl Glutamate",
       "id": "sodium_lauroyl_glutamate",
       "categories": [
         "mild_detergents"
-      ]
+      ],
+      "synonyms": [],
+      "references": []
     },
     "sodium_lauroyl_methyl_isethionate": {
       "name": "Sodium Lauroyl Methyl Isethionate",
@@ -747,21 +850,26 @@ export const defaultDatabase: IngredientDatabase = {
       ],
       "categories": [
         "other_detergents"
-      ]
+      ],
+      "references": []
     },
     "sodium_lauroyl_sarcosinate": {
       "name": "Sodium Lauroyl Sarcosinate",
       "id": "sodium_lauroyl_sarcosinate",
       "categories": [
         "other_detergents"
-      ]
+      ],
+      "synonyms": [],
+      "references": []
     },
     "sodium_lauryl_glucose_carboxylate": {
       "name": "Sodium Lauryl Glucose Carboxylate",
       "id": "sodium_lauryl_glucose_carboxylate",
       "categories": [
         "mild_detergents"
-      ]
+      ],
+      "synonyms": [],
+      "references": []
     },
     "sodium_lauryl_sarcosinate": {
       "name": "Sodium Lauryl Sarcosinate",
@@ -772,7 +880,8 @@ export const defaultDatabase: IngredientDatabase = {
       ],
       "categories": [
         "other_detergents"
-      ]
+      ],
+      "references": []
     },
     "sodium_lauryl_sulfate": {
       "name": "Sodium Lauryl Sulfate",
@@ -782,28 +891,35 @@ export const defaultDatabase: IngredientDatabase = {
       ],
       "categories": [
         "sulfates"
-      ]
+      ],
+      "references": []
     },
     "sodium_lauryl_sulfoacetate": {
       "name": "Sodium Lauryl Sulfoacetate",
       "id": "sodium_lauryl_sulfoacetate",
       "categories": [
         "other_detergents"
-      ]
+      ],
+      "synonyms": [],
+      "references": []
     },
     "sodium_laurylglucosides_hydroxypropylsulfonate": {
       "name": "Sodium Laurylglucosides Hydroxypropylsulfonate",
       "id": "sodium_laurylglucosides_hydroxypropylsulfonate",
       "categories": [
         "mild_detergents"
-      ]
+      ],
+      "synonyms": [],
+      "references": []
     },
     "sodium_methyl_cocoyl_taurate": {
       "name": "Sodium Methyl Cocoyl Taurate",
       "id": "sodium_methyl_cocoyl_taurate",
       "categories": [
         "mild_detergents"
-      ]
+      ],
+      "synonyms": [],
+      "references": []
     },
     "sodium_myreth_sulfate": {
       "name": "Sodium Myreth Sulfate",
@@ -813,14 +929,17 @@ export const defaultDatabase: IngredientDatabase = {
       ],
       "categories": [
         "sulfates"
-      ]
+      ],
+      "references": []
     },
     "sodium_myristoyl_sarcosinate": {
       "name": "Sodium Myristoyl Sarcosinate",
       "id": "sodium_myristoyl_sarcosinate",
       "categories": [
         "other_detergents"
-      ]
+      ],
+      "synonyms": [],
+      "references": []
     },
     "sodium_polystyrene_sulfate": {
       "name": "Sodium Polystyrene Sulfate",
@@ -830,7 +949,8 @@ export const defaultDatabase: IngredientDatabase = {
       ],
       "categories": [
         "sulfates"
-      ]
+      ],
+      "references": []
     },
     "sodium_xylenesulfonate": {
       "name": "Sodium Xylenesulfonate",
@@ -842,7 +962,8 @@ export const defaultDatabase: IngredientDatabase = {
       ],
       "categories": [
         "sulfonates"
-      ]
+      ],
+      "references": []
     },
     "tea_dodecylbenzenesulfonate": {
       "name": "Tea Dodecylbenzenesulfonate",
@@ -852,7 +973,8 @@ export const defaultDatabase: IngredientDatabase = {
       ],
       "categories": [
         "sulfonates"
-      ]
+      ],
+      "references": []
     },
     "tea_lauryl_sulfate": {
       "name": "Tea Lauryl Sulfate",
@@ -862,7 +984,8 @@ export const defaultDatabase: IngredientDatabase = {
       ],
       "categories": [
         "sulfates"
-      ]
+      ],
+      "references": []
     },
     "triethanolamine_lauryl_sulfate": {
       "name": "Triethanolamine Lauryl Sulfate",
@@ -872,7 +995,8 @@ export const defaultDatabase: IngredientDatabase = {
       ],
       "categories": [
         "sulfates"
-      ]
+      ],
+      "references": []
     },
     "apricot_kernel_oil": {
       "name": "Apricot Kernel Oil",
@@ -1151,14 +1275,17 @@ export const defaultDatabase: IngredientDatabase = {
       ],
       "references": [
         "https://incidecoder.com/ingredients/aminomethyl-propanol"
-      ]
+      ],
+      "synonyms": []
     },
     "disodium_2-sulfolaurate": {
       "name": "Disodium 2-Sulfolaurate",
       "id": "disodium_2-sulfolaurate",
       "categories": [
         "other_detergents"
-      ]
+      ],
+      "synonyms": [],
+      "references": []
     },
     "potassium_castorate": {
       "name": "Potassium Castorate",
@@ -1235,21 +1362,27 @@ export const defaultDatabase: IngredientDatabase = {
       "id": "saccharomycessilicon_ferment",
       "categories": [
         "other_detergents"
-      ]
+      ],
+      "synonyms": [],
+      "references": []
     },
     "silicon_ferment": {
       "name": "Silicon Ferment",
       "id": "silicon_ferment",
       "categories": [
         "other_detergents"
-      ]
+      ],
+      "synonyms": [],
+      "references": []
     },
     "soaps": {
       "name": "Soap",
       "id": "soaps",
       "categories": [
         "other_detergents"
-      ]
+      ],
+      "synonyms": [],
+      "references": []
     },
     "sodium_castorate": {
       "name": "Sodium Castorate",
@@ -1284,28 +1417,36 @@ export const defaultDatabase: IngredientDatabase = {
       "id": "sodium_lauroyl_hydrolyzed_silk",
       "categories": [
         "other_detergents"
-      ]
+      ],
+      "synonyms": [],
+      "references": []
     },
     "sodium_lauroyl_lactylate": {
       "name": "Sodium Lauroyl Lactylate",
       "id": "sodium_lauroyl_lactylate",
       "categories": [
         "other_detergents"
-      ]
+      ],
+      "synonyms": [],
+      "references": []
     },
     "sodium_lauroyl_oat_amino_acids": {
       "name": "Sodium Lauroyl Oat Amino Acids",
       "id": "sodium_lauroyl_oat_amino_acids",
       "categories": [
         "other_detergents"
-      ]
+      ],
+      "synonyms": [],
+      "references": []
     },
     "sodium_methyl_2-sulfolaurate": {
       "name": "Sodium Methyl 2-Sulfolaurate",
       "id": "sodium_methyl_2-sulfolaurate",
       "categories": [
         "other_detergents"
-      ]
+      ],
+      "synonyms": [],
+      "references": []
     },
     "sodium_olivate": {
       "name": "Sodium Olivate",
@@ -1368,7 +1509,9 @@ export const defaultDatabase: IngredientDatabase = {
       "id": "triisopropanolamine",
       "categories": [
         "other_detergents"
-      ]
+      ],
+      "synonyms": [],
+      "references": []
     },
     "witch_hazel": {
       "name": "Witch Hazel",
@@ -1381,7 +1524,8 @@ export const defaultDatabase: IngredientDatabase = {
       ],
       "categories": [
         "astringents"
-      ]
+      ],
+      "references": []
     },
     "unknown_paraben": {
       "name": "Unknown Paraben",
@@ -1391,7 +1535,8 @@ export const defaultDatabase: IngredientDatabase = {
       ],
       "categories": [
         "parabens"
-      ]
+      ],
+      "references": []
     },
     "amodimethicone": {
       "name": "Amodimethicone",
@@ -1653,7 +1798,9 @@ export const defaultDatabase: IngredientDatabase = {
       "id": "trimethylsiloxysilicate",
       "categories": [
         "non-water-soluble_silicones"
-      ]
+      ],
+      "synonyms": [],
+      "references": []
     },
     "cyclomethicone": {
       "name": "Cyclomethicone",
@@ -1664,7 +1811,8 @@ export const defaultDatabase: IngredientDatabase = {
       ],
       "categories": [
         "evaporative_silicones"
-      ]
+      ],
+      "references": []
     },
     "unknown_peg_silicone": {
       "name": "Unknown PEG Silicone",
@@ -1676,31 +1824,21 @@ export const defaultDatabase: IngredientDatabase = {
       ],
       "categories": [
         "water-soluble_silicones"
-      ]
-    },
-    "unknown_non_water_soluble_silicones": {
-      "name": "Unknown Non-Water Soluble Silicones",
-      "id": "unknown_non_water_soluble_silicones",
-      "synonyms": [
-        "cone",
-        "dimethicon",
-        "silane",
-        "siloxane",
-        "dimethcione",
-        "botanisil",
-        "silicon",
-        "silylate",
-        "silsesquioxane",
-        "siloxysilicate",
-        "microsil"
       ],
+      "references": []
+    },
+    "unknown_non-water-soluble_silicone": {
+      "name": "Unknown Non-Water Soluble Silicone",
+      "id": "unknown_non-water-soluble_silicone",
       "categories": [
         "non-water-soluble_silicones"
-      ]
+      ],
+      "synonyms": [],
+      "references": []
     },
-    "unknown_water_soluble_silicones": {
+    "unknown_water_soluble_silicone": {
       "name": "Unknown Water Soluble Silicones",
-      "id": "unknown_water_soluble_silicones",
+      "id": "unknown_water_soluble_silicone",
       "synonyms": [
         "peg",
         "ppg",
@@ -1708,7 +1846,8 @@ export const defaultDatabase: IngredientDatabase = {
       ],
       "categories": [
         "water-soluble_silicones"
-      ]
+      ],
+      "references": []
     },
     "unknown_sulfates": {
       "name": "Unknown Sulfates",
@@ -1719,7 +1858,8 @@ export const defaultDatabase: IngredientDatabase = {
       ],
       "categories": [
         "sulfates"
-      ]
+      ],
+      "references": []
     },
     "unknown_sarcosinate": {
       "name": "Unknown Sarcosinate",
@@ -1729,7 +1869,8 @@ export const defaultDatabase: IngredientDatabase = {
       ],
       "categories": [
         "other_detergents"
-      ]
+      ],
+      "references": []
     },
     "unknown_cocoyl_glutamate": {
       "name": "Unknown Cocoyl Glutamate",
@@ -1739,7 +1880,8 @@ export const defaultDatabase: IngredientDatabase = {
       ],
       "categories": [
         "other_detergents"
-      ]
+      ],
+      "references": []
     },
     "unknown_wax": {
       "name": "Unknown Wax",
@@ -1749,7 +1891,8 @@ export const defaultDatabase: IngredientDatabase = {
       ],
       "categories": [
         "non-water-soluble_waxes"
-      ]
+      ],
+      "references": []
     },
     "beeswax": {
       "name": "Beeswax",
@@ -1929,7 +2072,8 @@ export const defaultDatabase: IngredientDatabase = {
       ],
       "references": [
         "https://incidecoder.com/ingredients/emulsifying-wax"
-      ]
+      ],
+      "synonyms": []
     }
   },
   "categories": {
@@ -1946,7 +2090,8 @@ export const defaultDatabase: IngredientDatabase = {
       "description": "Parabens are a type of preservative that can cause irritation and dryness.",
       "inclusions": [
         "paraben"
-      ]
+      ],
+      "defaultIngredient": "unknown_paraben"
     },
     "sulfates": {
       "id": "sulfates",
@@ -1955,7 +2100,8 @@ export const defaultDatabase: IngredientDatabase = {
       "description": "Sulfates are a type of detergent that can cause irritation and dryness.",
       "inclusions": [
         "sulfate"
-      ]
+      ],
+      "defaultIngredient": "unknown_sulfate"
     },
     "sulfonates": {
       "id": "sulfonates",
@@ -1964,7 +2110,8 @@ export const defaultDatabase: IngredientDatabase = {
       "description": "Sulfonates are a type of detergent that can cause irritation and dryness.",
       "inclusions": [
         "sulfonate"
-      ]
+      ],
+      "defaultIngredient": "unknown_sulfonate"
     },
     "emollient_alcohols": {
       "id": "emollient_alcohols",
@@ -1980,7 +2127,8 @@ export const defaultDatabase: IngredientDatabase = {
       "inclusions": [
         "ppg",
         "peg"
-      ]
+      ],
+      "defaultIngredient": "unknown_water_soluble_silicone"
     },
     "non-water-soluble_silicones": {
       "id": "non-water-soluble_silicones",
@@ -2067,7 +2215,8 @@ export const defaultDatabase: IngredientDatabase = {
       "name": "Alcohols",
       "inclusions": [
         "alcohol"
-      ]
+      ],
+      "defaultIngredient": "unknown_alcohol"
     },
     "preservatives": {
       "id": "preservatives",
@@ -2090,19 +2239,22 @@ export const defaultDatabase: IngredientDatabase = {
         "silicone",
         "cone"
       ],
-      "defaultIngredient": "unknown_non-water-soluble_silicone"
+      "defaultIngredient": "unknown_non_water_soluble_silicone"
     },
     "others": {
       "id": "others",
-      "name": "Others"
+      "name": "Others",
+      "inclusions": []
     },
     "waxes": {
       "id": "waxes",
-      "name": "Waxes"
+      "name": "Waxes",
+      "inclusions": []
     },
     "oils": {
       "id": "oils",
-      "name": "Oils"
+      "name": "Oils",
+      "inclusions": []
     }
   }
 };
@@ -2139,7 +2291,79 @@ export const defaultSystems: System[] = [
   }
 ];
 
-export const defaultSettings: Record<string, Setting> = {};
+export const defaultSettings: Record<string, Setting> = {
+  "sulfate_free": {
+    "id": "sulfate_free",
+    "name": "Sulfate Free",
+    "description": "Sulfates are a type of detergent that can cause irritation and dryness.",
+    "categories": [
+      "sulfates"
+    ],
+    "defaultStatus": "warning"
+  },
+  "paraben_free": {
+    "id": "paraben_free",
+    "name": "Paraben Free",
+    "description": "Parabens are a type of preservative that can cause irritation and dryness.",
+    "categories": [
+      "parabens"
+    ],
+    "defaultStatus": "warning"
+  },
+  "drying_alcohol": {
+    "id": "drying_alcohol",
+    "name": "No Drying Alcohol",
+    "description": "Drying alcohols are used to remove moisture from the hair and skin, and can cause irritation and dryness.",
+    "categories": [
+      "drying_alcohols"
+    ],
+    "defaultStatus": "warning"
+  },
+  "silicone_free": {
+    "id": "silicone_free",
+    "name": "Silicone Free",
+    "description": "Avoiding all silicones even water-soluble ones.",
+    "groups": [
+      "silicones"
+    ],
+    "defaultStatus": "warning"
+  },
+  "caution_water_soluble_silicones": {
+    "id": "caution_water_soluble_silicones",
+    "name": "Caution Water Soluble Silicones",
+    "description": "Water soluble silicones are marked as caution, other silicones as warning.",
+    "groups": [
+      "silicones"
+    ],
+    "allowedCategories": [
+      "water_soluble_silicones"
+    ],
+    "defaultStatus": "warning",
+    "allowedStatus": "caution"
+  },
+  "mild_detergents_only": {
+    "id": "mild_detergents_only",
+    "name": "Mild Detergents Only",
+    "description": "Only mild detergents are allowed, other detergents are marked as warning.",
+    "groups": [
+      "detergents"
+    ],
+    "allowedCategories": [
+      "mild_detergents"
+    ],
+    "defaultStatus": "warning",
+    "allowedStatus": "ok"
+  },
+  "no_astringents": {
+    "id": "no_astringents",
+    "name": "No Astringents",
+    "description": "Astringents can be drying and irritating.",
+    "categories": [
+      "astringents"
+    ],
+    "defaultStatus": "warning"
+  }
+};
 
 export function getBundledDatabase(): IngredientDatabase {
   return defaultDatabase;

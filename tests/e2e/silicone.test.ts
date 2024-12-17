@@ -24,7 +24,7 @@ const list =
   'peg-8 distearmonium chloride pg-dimethicone, cetearyl methicone, silicone, cyclomethicone, aminopropyl triethoxysilane, PEG/PPG-18/18 Dimethicone, Dimethicone, PEG-12 Dimethicone, silicone, Lauryl PEG / PPG - 18 / 18 Methicone, , triethoxysilane, coney, mdimethicon, peg-40 hydrogenated castor oil, trimethylsiloxysilicate';
 const result = analyzer.analyze(list, 'curly_moderate');
 
-describe('Silicone Analysis Tests', () => {
+describe('Silicone Analysis e2e complex list with curly_moderate system', () => {
   it('should load the system correctly', () => {
     expect(result.system).toBe('curly_moderate');
     expect(result.status).not.toBe('error');
@@ -51,7 +51,23 @@ describe('Silicone Analysis Tests', () => {
       'trimethylsiloxysilicate',
     ]);
   });
+  describe('ingredient matching', () => {
+    it('peg-8 distearmonium chloride pg-dimethicone', () => {
+      // find the ingredient match for normalized string 'peg-8 distearmonium chloride pg-dimethicone'
+      const ingredientMatch = result.matches.find(
+        (m) => m.normalized === 'peg-8 distearmonium chloride pg-dimethicone',
+      );
+      console.log(ingredientMatch);
+      expect(ingredientMatch).toBeDefined();
+      expect(ingredientMatch?.ingredient?.id).toBe(
+        'unknown_water_soluble_silicone',
+      );
+      // should be flagged caution
+      expect(ingredientMatch?.flags).toContain('caution');
+    });
+  });
 });
+
 
 
 

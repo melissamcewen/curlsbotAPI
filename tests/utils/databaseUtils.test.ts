@@ -68,8 +68,8 @@ describe('findIngredient', () => {
 
       // Check silicone categories
       const categoryKeys = Object.keys(partitionedDb.categories);
-      expect(categoryKeys).toContain('non-water-soluble_silicone');
-      expect(categoryKeys).toContain('water-soluble_silicone');
+      expect(categoryKeys).toContain('non_water_soluble_silicone');
+      expect(categoryKeys).toContain('water_soluble_silicone');
       expect(categoryKeys).toHaveLength(2);
 
       // Check silicone ingredients
@@ -89,7 +89,7 @@ describe('findIngredient', () => {
 
       // Should only include water-soluble silicone category
       const categoryKeys = Object.keys(partitionedDb.categories);
-      expect(categoryKeys).toContain('water-soluble_silicone');
+      expect(categoryKeys).toContain('water_soluble_silicone');
       expect(categoryKeys).toHaveLength(1);
 
       // Should only include water-soluble silicone ingredients
@@ -106,8 +106,8 @@ describe('findIngredient', () => {
 describe('getCategoryGroups', () => {
   test('returns unique group IDs for given category IDs', () => {
     const categoryIds = [
-      'non-water-soluble_silicone',
-      'water-soluble_silicone',
+      'non_water_soluble_silicone',
+      'water_soluble_silicone',
       'sulfates',
     ];
     const groups = getCategoryGroups(testDatabase, categoryIds);

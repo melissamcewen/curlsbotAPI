@@ -1,26 +1,13 @@
 {
   "ingredients": [
     {
-      "name": "Unknown Non-Water Soluble Silicones",
-      "id": "unknown_non_water_soluble_silicones",
-      "synonyms": [
-        "cone",
-        "dimethicon",
-        "silane",
-        "siloxane",
-        "dimethcione",
-        "botanisil",
-        "silicon",
-        "silylate",
-        "silsesquioxane",
-        "siloxysilicate",
-        "microsil"
-      ],
+      "name": "Unknown Non-Water Soluble Silicone",
+      "id": "unknown_non-water-soluble_silicone",
       "categories": ["non-water-soluble_silicones"]
     },
     {
       "name": "Unknown Water Soluble Silicones",
-      "id": "unknown_water_soluble_silicones",
+      "id": "unknown_water_soluble_silicone",
       "synonyms": ["peg", "ppg", "pg-"],
       "categories": ["water-soluble_silicones"]
     },

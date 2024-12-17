@@ -3,7 +3,8 @@
     {
       "id": "alcohols",
       "name": "Alcohols",
-      "inclusions": ["alcohol"]
+      "inclusions": ["alcohol"],
+      "defaultIngredient": "unknown_alcohol"
     },
     {
       "id": "preservatives",
@@ -19,7 +20,7 @@
       "id": "silicones",
       "name": "Silicones",
       "inclusions": ["silicone", "cone"],
-      "defaultIngredient": "unknown_non-water-soluble_silicone"
+      "defaultIngredient": "unknown_non_water_soluble_silicone"
     },
     {
       "id": "others",

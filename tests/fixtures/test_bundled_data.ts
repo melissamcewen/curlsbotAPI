@@ -10,7 +10,7 @@ export const testDatabase: IngredientDatabase = {
     dimethicone: {
       id: 'dimethicone',
       name: 'Dimethicone',
-      categories: ['non-water-soluble_silicone'],
+      categories: ['non_water_soluble_silicone'],
       synonyms: ['pdms', 'polydimethylsiloxane'],
       references: ['https://example.com/dimethicone'],
     },
@@ -23,12 +23,12 @@ export const testDatabase: IngredientDatabase = {
     unknown_water_soluble_silicone: {
       id: 'unknown_water_soluble_silicone',
       name: 'Unknown Water Soluble Silicone',
-      categories: ['water-soluble_silicone'],
+      categories: ['water_soluble_silicone'],
     },
     unknown_non_water_soluble_silicone: {
       id: 'unknown_non_water_soluble_silicone',
       name: 'Unknown Non-water-soluble Silicone',
-      categories: ['non-water-soluble_silicone'],
+      categories: ['non_water_soluble_silicone'],
     },
     cetyl_alcohol: {
       id: 'cetyl_alcohol',
@@ -48,14 +48,14 @@ export const testDatabase: IngredientDatabase = {
     },
   },
   categories: {
-    'non-water-soluble_silicone': {
-      id: 'non-water-soluble_silicone',
+    'non_water_soluble_silicone': {
+      id: 'non_water_soluble_silicone',
       name: 'Non-water-soluble Silicone',
       description: 'Silicones that are not water soluble',
       group: 'silicones',
     },
-    'water-soluble_silicone': {
-      id: 'water-soluble_silicone',
+    'water_soluble_silicone': {
+      id: 'water_soluble_silicone',
       name: 'Water-soluble Silicone',
       description: 'Silicones that are water soluble',
       group: 'silicones',
@@ -114,55 +114,39 @@ export const testDatabase: IngredientDatabase = {
 /**
  * Test settings for unit tests.
  */
-export const testSettings: Record<string, Setting> = {
+export const testSettings: Settings = {
   sulfate_free: {
     id: 'sulfate_free',
     name: 'Sulfate Free',
     description: 'Avoid sulfates',
-    flags: [
-      {
-        type: 'category',
-        flag_type: 'avoid',
-        id: 'sulfates',
-      },
-    ],
+    categories: ['sulfates'],
+    defaultStatus: 'warning'
   },
   silicone_free: {
     id: 'silicone_free',
     name: 'Silicone Free',
-    description: 'Avoid silicones',
-    flags: [
-      {
-        type: 'category',
-        flag_type: 'avoid',
-        id: 'non-water-soluble_silicone',
-      },
-    ],
+    description: 'Avoid all silicones',
+    groups: ['silicones'],
+    defaultStatus: 'warning'
   },
   mild_detergents_only: {
     id: 'mild_detergents_only',
     name: 'Mild Detergents Only',
     description: 'Only allow mild detergents',
-    flags: [
-      {
-        type: 'category',
-        flag_type: 'avoid_others_in_group',
-        id: 'mild_detergents'
-      },
-    ],
+    groups: ['detergents'],
+    allowedCategories: ['mild_detergents'],
+    defaultStatus: 'warning',
+    allowedStatus: 'ok'
   },
-  detergents_caution: {
-    id: 'detergents_caution',
-    name: 'Detergents Caution',
-    description: 'Use caution with detergents',
-    flags: [
-      {
-        type: 'group',
-        flag_type: 'caution',
-        id: 'detergents',
-      },
-    ],
-  },
+  caution_water_soluble_silicones: {
+    id: 'caution_water_soluble_silicones',
+    name: 'Caution Water Soluble Silicones',
+    description: 'Water soluble silicones are marked as caution, other silicones as warning',
+    groups: ['silicones'],
+    allowedCategories: ['water_soluble_silicone'],
+    defaultStatus: 'warning',
+    allowedStatus: 'caution'
+  }
 };
 
 /**
@@ -170,27 +154,21 @@ export const testSettings: Record<string, Setting> = {
  */
 export const testSystems: System[] = [
   {
-    id: 'sulfate_free_system',
-    name: 'Sulfate Free System',
-    description: 'System that avoids sulfates',
-    settings: ['sulfate_free'],
+    name: 'Curly Default',
+    id: 'curly_default',
+    description: 'The Curly Default system is a hair care system that focuses on using products that are free of harsh chemicals and sulfates.',
+    settings: [
+      'mild_detergents_only',
+      'silicone_free'
+    ]
   },
   {
-    id: 'silicone_free_system',
-    name: 'Silicone Free System',
-    description: 'System that avoids silicones',
-    settings: ['silicone_free'],
-  },
-  {
-    id: 'mild_detergents_system',
-    name: 'Mild Detergents System',
-    description: 'System that only allows mild detergents',
-    settings: ['mild_detergents_only'],
-  },
-  {
-    id: 'detergents_caution_system',
-    name: 'Detergents Caution System',
-    description: 'System that flags detergents with caution',
-    settings: ['detergents_caution'],
-  },
+    name: 'Curly Moderate',
+    id: 'curly_moderate',
+    description: 'Just like the default system, but allows for some water soluble silicones and moderate surfactants.',
+    settings: [
+      'sulfate_free',
+      'caution_water_soluble_silicones'
+    ]
+  }
 ];

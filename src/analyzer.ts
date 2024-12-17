@@ -4,29 +4,21 @@ import type {
   AnalysisResult,
   System,
   Settings,
-  IngredientMatch,
+  IngredientResult,
+  StatusReason,
+  Setting
 } from './types';
 import { getBundledDatabase } from './data/bundledData';
 import { getBundledSystems } from './data/bundledData';
 import { getBundledSettings } from './data/bundledData';
 import { normalizer } from './utils/normalizer';
-import {
-  findIngredient,
-  getIngredientCategories,
-  getCategoryGroups,
-  findSystemById,
-} from './utils/databaseUtils';
-import { flag } from './utils/flagging';
+import { findIngredient, findSystemById } from './utils/databaseUtils';
 
 export class Analyzer {
   private database: IngredientDatabase;
   private system: System;
   private settings: Settings;
 
-  /**
-   * Creates a new Analyzer instance
-   * @param config Optional configuration. If not provided, uses bundled database
-   */
   constructor(config?: Partial<AnalyzerConfig>) {
     this.database = config?.database ?? getBundledDatabase();
     const bundledSystems = getBundledSystems();
@@ -47,31 +39,9 @@ export class Analyzer {
 
   /**
    * Updates the database being used by the analyzer
-   * @param database The new database to use
    */
   setDatabase(database: IngredientDatabase): void {
     this.database = database;
-  }
-
-  /**
-   * Gets all ingredients from the database
-   */
-  getIngredients() {
-    return this.database.ingredients;
-  }
-
-  /**
-   * Gets all categories from the database
-   */
-  getCategories() {
-    return this.database.categories;
-  }
-
-  /**
-   * Gets all groups from the database
-   */
-  getGroups() {
-    return this.database.groups;
   }
 
   /**
@@ -89,93 +59,143 @@ export class Analyzer {
   }
 
   /**
-   * Creates an empty analysis result with required fields
+   * Creates an empty analysis result
    */
-  private createEmptyResult(): AnalysisResult {
+  private createEmptyResult(input: string): AnalysisResult {
     return {
-      uuid: crypto.randomUUID(),
-      input: '',
-      normalized: [],
-      system: '',
-      status: 'pass',
-      settings: [],
-      matches: [],
-      categories: [],
-      groups: [],
-      flags: [],
+      input,
+      status: 'error',
+      reasons: [],
+      ingredients: []
     };
   }
 
   /**
-   * Analyzes an ingredient list and returns the results
-   * @param ingredientList The ingredient list to analyze
-   * @param systemId The ID of the system to use for analysis. If not provided or invalid, returns error
+   * Analyzes a single ingredient against the current system's settings
    */
-  analyze(ingredientList: string, systemId = ''): AnalysisResult {
+  private analyzeIngredient(name: string, normalized: string): IngredientResult {
+    const result: IngredientResult = {
+      name,
+      normalized,
+      status: 'ok',
+      reasons: []
+    };
+
+    // Try to find the ingredient in the database
+    const match = findIngredient(this.database, normalized);
+    if (match?.ingredient) {
+      result.ingredient = {
+        id: match.ingredient.id,
+        name: match.ingredient.name,
+        description: match.ingredient.description
+      };
+    } else {
+      // Unknown ingredient gets a caution status
+      result.status = 'caution';
+      result.reasons.push({
+        setting: 'unknown_ingredient',
+        reason: 'Ingredient not found in database'
+      });
+      return result;
+    }
+
+    // Check each active setting
+    for (const settingId of this.system.settings) {
+      const setting = this.settings[settingId];
+      if (!setting) continue;
+
+      let matches = false;
+      let allowedMatch = false;
+
+      // Check if ingredient matches any categories
+      if (setting.categories) {
+        matches = match.ingredient.categories.some(cat => setting.categories?.includes(cat));
+      }
+
+      // Check if ingredient matches any groups via its categories
+      if (setting.groups) {
+        matches = matches || match.ingredient.categories.some(catId => {
+          const category = this.database.categories[catId];
+          return category && setting.groups?.includes(category.group);
+        });
+
+        // If it matches a group, check if it's in allowed categories
+        if (matches && setting.allowedCategories) {
+          allowedMatch = match.ingredient.categories.some(cat =>
+            setting.allowedCategories?.includes(cat)
+          );
+        }
+      }
+
+      // Check direct ingredient matches
+      if (setting.ingredients) {
+        matches = matches || setting.ingredients.includes(match.ingredient.id);
+      }
+
+      if (matches) {
+        // Add the reason
+        const status = allowedMatch ? setting.allowedStatus : setting.defaultStatus;
+        result.reasons.push({
+          setting: setting.id,
+          reason: setting.description
+        });
+
+        // Update status (warning > caution > ok)
+        if (status === 'warning') {
+          result.status = 'warning';
+        } else if (status === 'caution' && result.status === 'ok') {
+          result.status = 'caution';
+        }
+      }
+    }
+
+    return result;
+  }
+
+  /**
+   * Analyzes an ingredient list and returns the results
+   */
+  analyze(ingredientList: string): AnalysisResult {
+    // Handle invalid input
     if (!ingredientList || typeof ingredientList !== 'string') {
-      const result = this.createEmptyResult();
-      result.status = 'error';
-      return result;
+      return this.createEmptyResult('');
     }
 
-    // Check if the requested system ID matches our system
-    if (systemId && systemId !== this.system.id) {
-      const result = this.createEmptyResult();
-      result.status = 'error';
-      result.system = systemId;
-      return result;
-    }
+    const result = this.createEmptyResult(ingredientList);
 
-    const result = this.createEmptyResult();
-    result.input = ingredientList;
-    result.system = this.system.id;
-    result.settings = this.system.settings || [];
-
-    // Use the existing normalizer
+    // Normalize the ingredient list
     const normalized = normalizer(ingredientList);
     if (!normalized.isValid) {
-      result.status = 'error';
       return result;
     }
 
-    result.normalized = normalized.ingredients;
-
-    // Match ingredients and collect categories/groups
-    const allCategories = new Set<string>();
-    const allGroups = new Set<string>();
-
-    result.matches = normalized.ingredients.map((normalizedName) => {
-      const match = findIngredient(this.database, normalizedName);
-      const ingredient = match?.ingredient;
-      const dbForCategories = this.database;
-
-      const categories = ingredient
-        ? getIngredientCategories(dbForCategories, ingredient.categories)
-        : [];
-      const groups = getCategoryGroups(dbForCategories, categories);
-
-      // Add to overall categories and groups
-      categories.forEach((c) => allCategories.add(c));
-      groups.forEach((g) => allGroups.add(g));
-
-      const matchResult: IngredientMatch = {
-        uuid: crypto.randomUUID(),
-        input: normalizedName,
-        normalized: normalizedName,
-        groups: groups,
-        categories: categories,
-        flags: [],
-        ingredient: ingredient,
-      };
-
-      return matchResult;
+    // Analyze each ingredient
+    result.ingredients = normalized.ingredients.map((normalizedName: string) => {
+      return this.analyzeIngredient(normalizedName, normalizedName);
     });
 
-    // Set overall categories and groups
-    result.categories = Array.from(allCategories);
-    result.groups = Array.from(allGroups);
+    // Determine overall status and reasons
+    result.status = 'ok';
+    const uniqueReasons = new Map<string, StatusReason>();
 
-    // Apply flagging
-    return flag(result, this.system, this.settings, this.database);
+    for (const ingredient of result.ingredients) {
+      // Update overall status (warning > caution > ok)
+      if (ingredient.status === 'warning') {
+        result.status = 'warning';
+      } else if (ingredient.status === 'caution' && result.status === 'ok') {
+        result.status = 'caution';
+      }
+
+      // Collect unique reasons
+      for (const reason of ingredient.reasons) {
+        const key = `${reason.setting}:${reason.reason}`;
+        if (!uniqueReasons.has(key)) {
+          uniqueReasons.set(key, reason);
+        }
+      }
+    }
+
+    result.reasons = Array.from(uniqueReasons.values());
+    return result;
   }
 }

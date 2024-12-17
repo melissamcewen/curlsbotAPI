@@ -11,21 +11,24 @@
       "name": "Parabens",
       "group": "preservatives",
       "description": "Parabens are a type of preservative that can cause irritation and dryness.",
-      "inclusions": ["paraben"]
+      "inclusions": ["paraben"],
+      "defaultIngredient": "unknown_paraben"
     },
     {
       "id": "sulfates",
       "name": "Sulfates",
       "group": "detergents",
       "description": "Sulfates are a type of detergent that can cause irritation and dryness.",
-      "inclusions": ["sulfate"]
+      "inclusions": ["sulfate"],
+      "defaultIngredient": "unknown_sulfate"
     },
     {
       "id": "sulfonates",
       "name": "Sulfonates",
       "group": "detergents",
       "description": "Sulfonates are a type of detergent that can cause irritation and dryness.",
-      "inclusions": ["sulfonate"]
+      "inclusions": ["sulfonate"],
+      "defaultIngredient": "unknown_sulfonate"
     },
     {
       "id": "emollient_alcohols",
@@ -38,7 +41,8 @@
       "name": "Water-soluble Silicones",
       "group": "silicones",
       "description": "TBD",
-      "inclusions": ["ppg", "peg"]
+      "inclusions": ["ppg", "peg"],
+      "defaultIngredient": "unknown_water_soluble_silicone"
     },
     {
       "id": "non-water-soluble_silicones",

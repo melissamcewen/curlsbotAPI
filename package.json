@@ -24,6 +24,7 @@
     "clean-synonyms": "tsx cli/validate.ts clean-synonyms",
     "validate-case": "tsx cli/validate.ts validate-case",
     "fix-case": "tsx cli/validate.ts fix-case",
+    "fix-ids": "tsx cli/validate.ts fix-ids",
     "knip": "knip",
     "bundle-data": "tsx scripts/bundleData.ts",
     "prebuild": "npm run bundle-data",

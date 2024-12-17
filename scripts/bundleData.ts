@@ -23,7 +23,18 @@ function loadIngredientsFromDir(dirPath: string): any {
   }
 
   return allIngredients.reduce((acc, ing) => {
-    acc[ing.id] = ing;
+    if (!ing.id) {
+      console.warn(`Warning: Ingredient missing required 'id' field:`, ing);
+      return acc;
+    }
+    acc[ing.id] = {
+      ...ing, // Keep all original fields
+      // Ensure required fields have defaults if missing
+      name: ing.name || ing.id,
+      categories: ing.categories || [],
+      synonyms: ing.synonyms || [],
+      references: ing.references || []
+    };
     return acc;
   }, {});
 }
@@ -46,17 +57,48 @@ function generateBundledData() {
 
   // Convert categories and groups to record format
   const categories = (categoriesData?.categories || []).reduce((acc: any, cat: any) => {
-    acc[cat.id] = cat;
+    if (!cat.id) {
+      console.warn(`Warning: Category missing required 'id' field:`, cat);
+      return acc;
+    }
+    acc[cat.id] = {
+      ...cat, // Keep all original fields
+      // Ensure required fields have defaults if missing
+      name: cat.name || cat.id,
+      description: cat.description || '',
+      group: cat.group || 'others'
+    };
     return acc;
   }, {});
 
   const groups = (groupsData?.groups || []).reduce((acc: any, group: any) => {
-    acc[group.id] = group;
+    if (!group.id) {
+      console.warn(`Warning: Group missing required 'id' field:`, group);
+      return acc;
+    }
+    acc[group.id] = {
+      ...group, // Keep all original fields
+      // Ensure required fields have defaults if missing
+      name: group.name || group.id,
+      inclusions: group.inclusions || [],
+      defaultIngredient: group.defaultIngredient || undefined
+    };
     return acc;
   }, {});
 
   const settings = (settingsData?.settings || []).reduce((acc: any, setting: any) => {
-    acc[setting.id] = setting;
+    // Ensure required fields exist
+    if (!setting.id) {
+      console.warn(`Warning: Setting missing required 'id' field:`, setting);
+      return acc;
+    }
+    // Preserve original structure but ensure required fields
+    acc[setting.id] = {
+      ...setting, // Keep all original fields
+      // Ensure required fields have defaults if missing
+      name: setting.name || setting.id,
+      description: setting.description || '',
+    };
     return acc;
   }, {});
 

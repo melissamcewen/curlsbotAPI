@@ -1,39 +1,57 @@
 /**
+ * Represents why an ingredient or analysis received a particular status
+ */
+export interface StatusReason {
+  /** The setting that caused this status (e.g. "sulfate_free") */
+  setting: string;
+  /** Human readable explanation (e.g. "Contains sulfates") */
+  reason: string;
+}
+
+/**
+ * Result for a single ingredient
+ */
+export interface IngredientResult {
+  /** Original ingredient name from input */
+  name: string;
+  /** Normalized name for matching */
+  normalized: string;
+  /** Whether this ingredient passes the system's requirements */
+  status: "ok" | "caution" | "warning";
+  /** Why this ingredient got its status */
+  reasons: StatusReason[];
+  /** The matched ingredient from the database, if any */
+  ingredient?: {
+    id: string;
+    name: string;
+    description?: string;
+  };
+}
+
+/**
+ * Result for analyzing an ingredient list
+ */
+export interface AnalysisResult {
+  /** Original input text */
+  input: string;
+  /** Overall status of the analysis */
+  status: "ok" | "caution" | "warning" | "error";
+  /** Why this analysis got its status */
+  reasons: StatusReason[];
+  /** Results for each ingredient */
+  ingredients: IngredientResult[];
+}
+
+/**
  * Represents configuration options for the analyzer
  */
 export interface AnalyzerConfig {
   /** Ingredient database used for analysis */
   database: IngredientDatabase;
   /** Optional system used to analyze the input */
-  system: System;
+  system?: System;
   /** Optional settings for the system */
   settings?: Settings;
-}
-
-/**
- * Represents the result of an analysis
- */
-export interface AnalysisResult {
-  /** Unique identifier for the result */
-  uuid: string;
-  /** Original input */
-  input: string;
-  /** Normalized input */
-  normalized: readonly string[];
-  /** System used to analyze the input */
-  system: string;
-  /** Status of the analysis */
-  status: string;
-  /** List of settings that were matched */
-  settings: string[];
-  /** List of matching ingredients */
-  matches: IngredientMatch[];
-  /** List of categories */
-  categories: string[];
-  /** List of groups */
-  groups: string[];
-  /** List of flags */
-  flags: Flags;
 }
 
 /**
@@ -96,28 +114,6 @@ export interface Ingredient {
 export type Ingredients = Record<string, Ingredient>;
 
 /**
- * Represents a match for an ingredient during analysis
- */
-export interface IngredientMatch {
-  /** Unique identifier for the match */
-  uuid: string;
-  /** original text */
-  input: string;
-  /** Normalized name of the matched ingredient */
-  normalized: string;
-  /** group that the ingredient belongs to */
-  groups?: string[];
-  /** categories that the ingredient belongs to */
-  categories?: string[];
-  /** flags that the ingredient belongs to */
-  flags?: Flag[];
-  /** the ingredient matched (if any) */
-  ingredient?: Ingredient;
-  /** confidence of the match */
-  match_type?: string;
-}
-
-/**
  * Represents the database of ingredients and categories
  */
 export interface IngredientDatabase {
@@ -127,44 +123,6 @@ export interface IngredientDatabase {
   groups: Groups;
   /** Map of all categories by ID */
   categories: Categories;
-}
-
-/**
- * Represents additional details about a match
- */
-export interface MatchDetails {
-  /** Whether the match was successful */
-  matched: boolean;
-  /** Optional synonym used in the match */
-  synonymMatch?: string;
-  /** Whether the match was flagged */
-  flagged?: boolean;
-}
-
-/**
- * Represents optional debug information for a match
- */
-export interface DebugInfo {
-  /** List of all matches considered */
-  allMatches: IngredientMatch[];
-}
-
-/**
- * Represents options for performing a match
- */
-export interface MatchOptions {
-  /** Whether to enable debugging */
-  debug?: boolean;
-}
-
-/**
- * Represents a normalized and validated list of ingredients
- */
-export interface NormalizedIngredientList {
-  /** List of cleaned and validated ingredients */
-  readonly ingredients: readonly string[];
-  /** Whether the ingredient list is valid */
-  readonly isValid: boolean;
 }
 
 /**
@@ -189,7 +147,18 @@ export interface Setting {
   id: string;
   name: string;
   description: string;
-  flags: Flags;
+  /** Categories to check (for simple category-based settings) */
+  categories?: string[];
+  /** Groups to check (for group-based settings with allowed categories) */
+  groups?: string[];
+  /** Categories that get allowedStatus within groups */
+  allowedCategories?: string[];
+  /** Specific ingredients to check */
+  ingredients?: string[];
+  /** Status for matching ingredients (or non-allowed categories in groups) */
+  defaultStatus: "ok" | "caution" | "warning";
+  /** Status for ingredients in allowedCategories (when using groups) */
+  allowedStatus?: "ok" | "caution" | "warning";
 }
 
 /**
@@ -198,25 +167,19 @@ export interface Setting {
 export type Settings = Record<string, Setting>;
 
 /**
- * Represents a flag for an ingredient, category, or group
+ * Result from ingredient matching
  */
-export interface Flag {
-  type: 'ingredient' | 'category' | 'group';
-  flag_type: 'avoid' | 'prefer' | 'avoid_others_in_group' | 'caution';
-  id: string;
-  name?: string;
-  description?: string;
+export interface IngredientMatch {
+  uuid: string;
+  input: string;
+  normalized: string;
+  ingredient?: Ingredient;
 }
 
 /**
- * Represents a collection of flags
+ * Result from normalizing an ingredient list
  */
-export type Flags = Flag[];
-
-/** setting status */
-export type SettingStatus = {
-  /** setting id */
-  id: string;
-  /** setting status */
-  status: 'pass' | 'fail';
-};
+export interface NormalizedIngredientList {
+  isValid: boolean;
+  ingredients: string[];
+}

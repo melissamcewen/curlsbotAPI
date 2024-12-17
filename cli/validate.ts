@@ -208,6 +208,83 @@ function fixIngredientCase(ingredientsFile: string): boolean {
   return hasChanges;
 }
 
+function validateIds(database: IngredientDatabase): string[] {
+  const errors: string[] = [];
+
+  // Check ingredient IDs
+  Object.keys(database.ingredients).forEach(id => {
+    if (id.includes('-')) {
+      errors.push(`❌ Invalid ingredient ID "${id}": IDs should use underscores instead of hyphens`);
+    }
+  });
+
+  // Check category IDs
+  Object.keys(database.categories).forEach(id => {
+    if (id.includes('-')) {
+      errors.push(`❌ Invalid category ID "${id}": IDs should use underscores instead of hyphens`);
+    }
+  });
+
+  // Check group IDs
+  Object.keys(database.groups).forEach(id => {
+    if (id.includes('-')) {
+      errors.push(`❌ Invalid group ID "${id}": IDs should use underscores instead of hyphens`);
+    }
+  });
+
+  return errors;
+}
+
+function fixIds(database: IngredientDatabase): IngredientDatabase {
+  const newDatabase = JSON.parse(JSON.stringify(database));
+
+  // Fix ingredient IDs and their category references
+  const ingredientIdMap = new Map<string, string>();
+  Object.entries(newDatabase.ingredients).forEach(([oldId, ingredient]) => {
+    const newId = oldId.replace(/-/g, '_');
+    ingredientIdMap.set(oldId, newId);
+    ingredient.id = newId;
+    ingredient.categories = ingredient.categories.map(cat => cat.replace(/-/g, '_'));
+  });
+
+  // Fix category IDs and their references
+  const categoryIdMap = new Map<string, string>();
+  Object.entries(newDatabase.categories).forEach(([oldId, category]) => {
+    const newId = oldId.replace(/-/g, '_');
+    categoryIdMap.set(oldId, newId);
+    category.id = newId;
+    if (category.defaultIngredient) {
+      category.defaultIngredient = category.defaultIngredient.replace(/-/g, '_');
+    }
+  });
+
+  // Fix group IDs and their references
+  Object.entries(newDatabase.groups).forEach(([oldId, group]) => {
+    const newId = oldId.replace(/-/g, '_');
+    group.id = newId;
+    if (group.defaultIngredient) {
+      group.defaultIngredient = group.defaultIngredient.replace(/-/g, '_');
+    }
+  });
+
+  // Rebuild objects with new IDs
+  newDatabase.ingredients = Object.fromEntries(
+    Object.entries(newDatabase.ingredients).map(([oldId, value]) => [
+      ingredientIdMap.get(oldId) || oldId,
+      value
+    ])
+  );
+
+  newDatabase.categories = Object.fromEntries(
+    Object.entries(newDatabase.categories).map(([oldId, value]) => [
+      categoryIdMap.get(oldId) || oldId,
+      value
+    ])
+  );
+
+  return newDatabase;
+}
+
 program
   .command('validate')
   .description('Validate the database files against their schemas')
@@ -244,14 +321,16 @@ program
       console.log(`Validating relationships in ${dataDir}`);
       const database = loadDatabase({ dataDir, schemaDir });
 
-      const errors = validateRelationships(database);
+      const relationshipErrors = validateRelationships(database);
+      const idErrors = validateIds(database);
+      const errors = [...relationshipErrors, ...idErrors];
 
       if (errors.length > 0) {
-        console.error('Found relationship errors:');
+        console.error('Found validation errors:');
         errors.forEach(error => console.error(error));
         process.exit(1);
       } else {
-        console.log('✅ All relationships are valid!');
+        console.log('✅ All validations passed!');
       }
     } catch (error) {
       console.error('❌ Validation failed:', error.message);
@@ -405,6 +484,32 @@ program
       }
     } catch (error) {
       console.error('❌ Validation failed:', error.message);
+      process.exit(1);
+    }
+  });
+
+program
+  .command('fix-ids')
+  .description('Replace hyphens with underscores in all IDs')
+  .option('-d, --data <path>', 'path to data directory', join(__dirname, '../data'))
+  .option('-s, --schema <path>', 'path to schema directory', join(__dirname, '../data/schema'))
+  .action((options) => {
+    try {
+      const dataDir = options.data;
+      const schemaDir = options.schema;
+
+      console.log(`Fixing IDs in ${dataDir}`);
+      const database = loadDatabase({ dataDir, schemaDir });
+
+      const updatedDatabase = fixIds(database);
+
+      // Write the updated database back to file
+      const outputPath = join(dataDir, 'fixed_database.json');
+      writeFileSync(outputPath, JSON.stringify(updatedDatabase, null, 2));
+
+      console.log(`✅ Fixed IDs and saved to ${outputPath}`);
+    } catch (error) {
+      console.error('❌ ID fixing failed:', error.message);
       process.exit(1);
     }
   });

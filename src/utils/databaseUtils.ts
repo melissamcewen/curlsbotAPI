@@ -30,10 +30,7 @@ export function findIngredient(
   const { database: partitionedDatabase, defaultIngredient } =
     partitionSearchSpace(database, normalizedSearchTerm);
 
-  console.log('Search term:', searchTerm);
-  console.log('Normalized search term:', normalizedSearchTerm);
-  console.log('Default ingredient:', defaultIngredient);
-  console.log('Partitioned database:', JSON.stringify(partitionedDatabase, null, 2));
+
 
   // Find the ingredient in the partitioned database
   for (const ingredient of Object.values(

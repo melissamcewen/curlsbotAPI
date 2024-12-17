@@ -1,69 +1,104 @@
 import { describe, it, expect } from 'vitest';
-
 import { Analyzer } from '../src/analyzer';
-import type { Flag, System } from '../src/types';
-
-import {
-  testDatabase,
-  testSettings,
-  testSystems,
-} from './fixtures/test_bundled_data';
+import type { System, Setting } from '../src/types';
+import { testDatabase } from './fixtures/test_bundled_data';
 
 describe('Analyzer', () => {
+  // Test settings that match our new simpler model
+  const testSettings: Record<string, Setting> = {
+    sulfate_free: {
+      id: 'sulfate_free',
+      name: 'Sulfate Free',
+      description: 'Avoid sulfates',
+      rules: [{
+        type: 'category',
+        id: 'sulfates',
+        action: 'avoid',
+        reason: 'Contains sulfates'
+      }]
+    },
+    silicone_free: {
+      id: 'silicone_free',
+      name: 'Silicone Free',
+      description: 'Avoid silicones',
+      rules: [{
+        type: 'category',
+        id: 'non_water_soluble_silicone',
+        action: 'avoid',
+        reason: 'Contains non-water-soluble silicones'
+      }]
+    },
+    mild_detergents_only: {
+      id: 'mild_detergents_only',
+      name: 'Mild Detergents Only',
+      description: 'Only allow mild detergents',
+      rules: [{
+        type: 'group',
+        id: 'detergents',
+        action: 'avoid',
+        reason: 'Contains harsh detergents'
+      }]
+    },
+    detergents_caution: {
+      id: 'detergents_caution',
+      name: 'Detergents Caution',
+      description: 'Use caution with detergents',
+      rules: [{
+        type: 'group',
+        id: 'detergents',
+        action: 'caution',
+        reason: 'Contains detergents'
+      }]
+    }
+  };
+
   describe('Basic Ingredient Analysis', () => {
     it('should analyze a single ingredient in the database', () => {
       const analyzer = new Analyzer({ database: testDatabase });
       const result = analyzer.analyze('Cetyl Alcohol');
 
-      expect(result.matches).toHaveLength(1);
-      const match = result.matches[0];
-      expect(match.normalized).toBe('cetyl alcohol');
-      expect(match.categories).toContain('emollient_alcohols');
-      expect(match.groups).toContain('alcohols');
-      expect(match.ingredient?.id).toBe('cetyl_alcohol')
+      expect(result.ingredients).toHaveLength(1);
+      const ingredient = result.ingredients[0];
+      expect(ingredient.normalized).toBe('cetyl alcohol');
+      expect(ingredient.ingredient?.id).toBe('cetyl_alcohol');
+      expect(result.status).toBe('pass');
     });
 
     it('should analyze multiple ingredients', () => {
       const analyzer = new Analyzer({ database: testDatabase });
       const result = analyzer.analyze('Cetyl Alcohol, SD Alcohol');
 
-      expect(result.matches).toHaveLength(2);
-
-      const [cetyl, sd] = result.matches;
-      expect(cetyl.normalized).toBe('cetyl alcohol');
-      expect(cetyl.categories).toContain('emollient_alcohols');
-
-      expect(sd.normalized).toBe('sd alcohol');
-      expect(sd.categories).toContain('drying_alcohols');
+      expect(result.ingredients).toHaveLength(2);
+      expect(result.ingredients[0].normalized).toBe('cetyl alcohol');
+      expect(result.ingredients[1].normalized).toBe('sd alcohol');
     });
 
     it('should handle partial matches', () => {
       const analyzer = new Analyzer({ database: testDatabase });
       const result = analyzer.analyze('hexadecan');
 
-      expect(result.matches).toHaveLength(1);
-      const match = result.matches[0];
-      expect(match.normalized).toBe('hexadecan');
-      expect(match.ingredient?.id).toBe('cetyl_alcohol');
+      expect(result.ingredients).toHaveLength(1);
+      const ingredient = result.ingredients[0];
+      expect(ingredient.normalized).toBe('hexadecan');
+      expect(ingredient.ingredient?.id).toBe('cetyl_alcohol');
     });
 
     it('should handle unknown ingredients', () => {
       const analyzer = new Analyzer({ database: testDatabase });
       const result = analyzer.analyze('Unknown Ingredient');
 
-      expect(result.matches).toHaveLength(1);
-      const match = result.matches[0];
-      expect(match.normalized).toBe('unknown ingredient');
-      expect(match.categories).toHaveLength(0);
-      expect(match.groups).toHaveLength(0);
-      expect(match.ingredient).toBeUndefined();
+      expect(result.ingredients).toHaveLength(1);
+      const ingredient = result.ingredients[0];
+      expect(ingredient.normalized).toBe('unknown ingredient');
+      expect(ingredient.status).toBe('caution');
+      expect(ingredient.reasons[0].reason).toBe('Ingredient not found in database');
     });
 
     it('should handle empty input', () => {
       const analyzer = new Analyzer({ database: testDatabase });
       const result = analyzer.analyze('');
 
-      expect(result.matches).toHaveLength(0);
+      expect(result.ingredients).toHaveLength(0);
       expect(result.status).toBe('error');
     });
 
@@ -73,28 +108,7 @@ describe('Analyzer', () => {
       const result = analyzer.analyze(null);
 
       expect(result.status).toBe('error');
-      expect(result.matches).toHaveLength(0);
-    });
-  });
-
-  describe('Categories and Groups', () => {
-    it('should collect unique categories and groups', () => {
-      const analyzer = new Analyzer({ database: testDatabase });
-      const result = analyzer.analyze('Cetyl Alcohol, SD Alcohol');
-
-      expect(result.categories).toContain('emollient_alcohols');
-      expect(result.categories).toContain('drying_alcohols');
-      expect(result.groups).toContain('alcohols');
-      expect(result.groups).toHaveLength(1); // Should only have one unique group
-    });
-
-    it('should handle ingredients with multiple categories', () => {
-      const analyzer = new Analyzer({ database: testDatabase });
-      const result = analyzer.analyze('Sodium Laureth Sulfate');
-
-      expect(result.categories).toContain('surfactants');
-      expect(result.categories).toContain('sulfates');
-      expect(result.groups).toContain('detergents');
+      expect(result.ingredients).toHaveLength(0);
     });
   });
 
@@ -120,89 +134,82 @@ describe('Analyzer', () => {
       expect(system.name).toBe('Test System');
       expect(system.settings).toContain('sulfate_free');
     });
-
-    it('should copy system settings to analysis result', () => {
-      const testSystem: System = {
-        id: 'test_system',
-        name: 'Test System',
-        description: 'Test system for unit tests',
-        settings: ['setting_1', 'setting_2'],
-      };
-
-      const analyzer = new Analyzer({
-        database: testDatabase,
-        system: testSystem,
-        settings: testSettings,
-      });
-
-      const result = analyzer.analyze('Cetyl Alcohol');
-
-      expect(result.settings).toEqual(testSystem.settings);
-      expect(result.settings).toContain('setting_1');
-      expect(result.settings).toContain('setting_2');
-    });
   });
 
-  describe('Flagging', () => {
-    it('should flag ingredients based on system settings', () => {
+  describe('Rule Processing', () => {
+    it('should flag ingredients based on category rules', () => {
       const analyzer = new Analyzer({
         database: testDatabase,
         settings: testSettings,
-        system: testSystems[0] // sulfate_free_system
+        system: {
+          id: 'test',
+          name: 'Test',
+          settings: ['sulfate_free']
+        }
       });
 
       const result = analyzer.analyze('Sodium Laureth Sulfate');
-
       expect(result.status).toBe('fail');
-      expect(result.matches[0]?.flags).toHaveLength(1);
-      const expectedFlag: Flag = {
-        type: 'category',
-        flag_type: 'avoid',
-        id: 'sulfates'
-      };
-      expect(result.matches[0]?.flags?.[0]).toEqual(expectedFlag);
+      expect(result.ingredients[0].status).toBe('fail');
+      expect(result.reasons[0]).toEqual({
+        setting: 'sulfate_free',
+        reason: 'Contains sulfates'
+      });
     });
 
-    it('should handle avoid_others_in_group flag type', () => {
+    it('should flag ingredients based on group rules', () => {
       const analyzer = new Analyzer({
         database: testDatabase,
         settings: testSettings,
-        system: testSystems[2] // mild_detergents_system
+        system: {
+          id: 'test',
+          name: 'Test',
+          settings: ['detergents_caution']
+        }
       });
 
       const result = analyzer.analyze('Sodium Laureth Sulfate');
-
-      expect(result.status).toBe('fail');
-      expect(result.matches[0]?.flags).toHaveLength(1);
-      expect(result.matches[0]?.flags?.[0]?.flag_type).toBe('avoid_others_in_group');
+      expect(result.status).toBe('caution');
+      expect(result.ingredients[0].status).toBe('caution');
+      expect(result.reasons[0]).toEqual({
+        setting: 'detergents_caution',
+        reason: 'Contains detergents'
+      });
     });
 
-    it('should handle caution flag type', () => {
+    it('should handle multiple rules and settings', () => {
       const analyzer = new Analyzer({
         database: testDatabase,
         settings: testSettings,
-        system: testSystems[3] // detergents_caution_system
+        system: {
+          id: 'test',
+          name: 'Test',
+          settings: ['sulfate_free', 'detergents_caution']
+        }
       });
 
       const result = analyzer.analyze('Sodium Laureth Sulfate');
-
-      expect(result.status).toBe('pass'); // Caution doesn't fail
-      expect(result.matches[0]?.flags).toHaveLength(1);
-      expect(result.matches[0]?.flags?.[0]?.flag_type).toBe('caution');
+      expect(result.status).toBe('fail'); // fail overrides caution
+      expect(result.reasons).toHaveLength(2); // both reasons should be present
+      expect(result.reasons.some(r => r.setting === 'sulfate_free')).toBe(true);
+      expect(result.reasons.some(r => r.setting === 'detergents_caution')).toBe(true);
     });
 
-    it('should not flag ingredients that are not in avoided categories', () => {
+    it('should pass ingredients that dont match any rules', () => {
       const analyzer = new Analyzer({
         database: testDatabase,
         settings: testSettings,
-        system: testSystems[0] // sulfate_free_system
+        system: {
+          id: 'test',
+          name: 'Test',
+          settings: ['sulfate_free', 'silicone_free']
+        }
       });
 
       const result = analyzer.analyze('Cetyl Alcohol');
-
       expect(result.status).toBe('pass');
-      expect(result.matches[0]?.flags).toHaveLength(0);
+      expect(result.ingredients[0].status).toBe('pass');
+      expect(result.reasons).toHaveLength(0);
     });
   });
-
 });
