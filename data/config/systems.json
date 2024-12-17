@@ -10,7 +10,7 @@
       "name": "Curly Moderate",
       "id": "curly_moderate",
       "description": "Just like the default system, but allows for some water soluble silicones and moderate surfactants.",
-      "settings": ["sulfate_free", "drying_alcohol", "no_water_insoluble_silicones", "no_waxes", "no_heavy_oils", "caution_water_soluble_silicones"]
+      "settings": ["sulfate_free", "drying_alcohol", "no_water_insoluble_silicones", "no_waxes", "no_heavy_oils", "caution_silicones"]
     }
   ]
 }

@@ -8,7 +8,6 @@ import type {
   System,
 } from '../types';
 
-
 /**
  * Get all searchable terms for an ingredient (name and synonyms)
  */
@@ -29,8 +28,6 @@ export function findIngredient(
   const normalizedSearchTerm = searchTerm.toLowerCase();
   const { database: partitionedDatabase, defaultIngredient } =
     partitionSearchSpace(database, normalizedSearchTerm);
-
-
 
   // Find the ingredient in the partitioned database
   for (const ingredient of Object.values(
@@ -77,26 +74,32 @@ export function partitionSearchSpace(
   searchTerm: string,
 ): { database: IngredientDatabase; defaultIngredient: string | undefined } {
   const normalizedSearchTerm = searchTerm.toLowerCase();
-  const matchingGroup = findGroupByInclusion(database.groups, normalizedSearchTerm);
-  const matchingCategory = findCategoryByInclusion(database.categories, normalizedSearchTerm);
+  const matchingGroup = findGroupByInclusion(
+    database.groups,
+    normalizedSearchTerm,
+  );
+  const matchingCategory = findCategoryByInclusion(
+    database.categories,
+    normalizedSearchTerm,
+  );
 
   if (matchingCategory) {
     return {
       database: filterDatabaseByCategory(database, matchingCategory.categoryId),
-      defaultIngredient: matchingCategory.defaultIngredient
+      defaultIngredient: matchingCategory.defaultIngredient,
     };
   }
 
   if (matchingGroup) {
     return {
       database: filterDatabaseByGroup(database, matchingGroup.groupId),
-      defaultIngredient: matchingGroup.defaultIngredient
+      defaultIngredient: matchingGroup.defaultIngredient,
     };
   }
 
   return {
     database,
-    defaultIngredient: undefined
+    defaultIngredient: undefined,
   };
 }
 
@@ -194,23 +197,22 @@ export function findCategoryByInclusion(
  */
 export function findGroupByInclusion(
   groups: Groups,
-  searchTerm: string
+  searchTerm: string,
 ): { groupId: string; defaultIngredient: string | undefined } | undefined {
   const normalizedSearchTerm = searchTerm.toLowerCase();
 
-  const matchedGroup = Object.entries(groups)
-    .find(([_, group]) =>
-      group.inclusions?.some(inclusion =>
-        normalizedSearchTerm.includes(inclusion.toLowerCase())
-      )
-    );
+  const matchedGroup = Object.entries(groups).find(([_, group]) =>
+    group.inclusions?.some((inclusion) =>
+      normalizedSearchTerm.includes(inclusion.toLowerCase()),
+    ),
+  );
 
   if (!matchedGroup) return undefined;
 
   const [groupId, group] = matchedGroup;
   return {
     groupId,
-    defaultIngredient: group.defaultIngredient
+    defaultIngredient: group.defaultIngredient,
   };
 }
 /**
@@ -218,7 +220,7 @@ export function findGroupByInclusion(
  */
 export function getIngredientById(
   database: IngredientDatabase,
-  ingredientId: string
+  ingredientId: string,
 ): Ingredient | undefined {
   return database.ingredients[ingredientId];
 }
@@ -245,6 +247,9 @@ export function getCategoryGroups(
 /**
  * Find a system by its ID
  */
-export function findSystemById(systems: System[], systemId: string): System | undefined {
-  return systems.find(system => system.id === systemId);
+export function findSystemById(
+  systems: System[],
+  systemId: string,
+): System | undefined {
+  return systems.find((system) => system.id === systemId);
 }

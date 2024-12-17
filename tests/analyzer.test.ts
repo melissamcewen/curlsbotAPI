@@ -214,5 +214,56 @@ describe('Analyzer', () => {
       expect(resultNotListed.ingredients[0].status).toBe('ok');
       expect(resultNotListed.reasons).toHaveLength(0);
     });
+
+    it('should handle multiple silicone settings in curly_moderate system', () => {
+      const analyzer = new Analyzer({
+        database: testDatabase,
+        settings: testSettings,
+        system: {
+          id: 'test',
+          name: 'Test',
+          settings: ['caution_silicones', 'no_water_insoluble_silicones']
+        }
+      });
+
+      // Test water-soluble silicone - should be caution
+      const resultWaterSoluble = analyzer.analyze('Unknown Water Soluble Silicone');
+      expect(resultWaterSoluble.status).toBe('caution');
+      expect(resultWaterSoluble.ingredients[0].status).toBe('caution');
+      expect(resultWaterSoluble.ingredients[0].reasons.some(r => r.setting === 'caution_silicones')).toBe(true);
+
+      // Test non-water-soluble silicone - should be warning
+      const resultNonWaterSoluble = analyzer.analyze('Dimethicone');
+      expect(resultNonWaterSoluble.status).toBe('warning');
+      expect(resultNonWaterSoluble.ingredients[0].status).toBe('warning');
+      expect(resultNonWaterSoluble.ingredients[0].reasons.some(r => r.setting === 'no_water_insoluble_silicones')).toBe(true);
+
+      // Test multiple silicones in one list
+      const resultMultiple = analyzer.analyze('Unknown Water Soluble Silicone, Dimethicone');
+      expect(resultMultiple.status).toBe('warning'); // warning takes precedence
+      expect(resultMultiple.ingredients[0].status).toBe('caution');
+      expect(resultMultiple.ingredients[1].status).toBe('warning');
+      expect(resultMultiple.reasons).toHaveLength(2); // both reasons should be present
+      expect(resultMultiple.reasons.some(r => r.setting === 'caution_silicones')).toBe(true);
+      expect(resultMultiple.reasons.some(r => r.setting === 'no_water_insoluble_silicones')).toBe(true);
+    });
+
+    it('should handle evaporative silicones as caution in curly_moderate system', () => {
+      const analyzer = new Analyzer({
+        database: testDatabase,
+        settings: testSettings,
+        system: {
+          id: 'test',
+          name: 'Test',
+          settings: ['caution_silicones', 'no_water_insoluble_silicones']
+        }
+      });
+
+      // Test cyclomethicone (an evaporative silicone) - should be caution
+      const result = analyzer.analyze('Cyclomethicone');
+      expect(result.status).toBe('caution');
+      expect(result.ingredients[0].status).toBe('caution');
+      expect(result.ingredients[0].reasons[0].setting).toBe('caution_silicones');
+    });
   });
 });

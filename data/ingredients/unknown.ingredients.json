@@ -2,7 +2,7 @@
   "ingredients": [
     {
       "name": "Unknown Non-Water Soluble Silicone",
-      "id": "unknown_non-water-soluble_silicone",
+      "id": "unknown_non_water_soluble_silicone",
       "categories": ["non_water_soluble_silicones"]
     },
     {
@@ -35,7 +35,7 @@
       "name": "Unknown Wax",
       "id": "unknown_wax",
       "synonyms": ["wax"],
-      "categories": ["non-water-soluble_waxes"]
+      "categories": ["non_water_soluble_waxes"]
     }
   ]
 }

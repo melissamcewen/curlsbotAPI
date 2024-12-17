@@ -14,6 +14,12 @@ export const testDatabase: IngredientDatabase = {
       synonyms: ['pdms', 'polydimethylsiloxane'],
       references: ['https://example.com/dimethicone'],
     },
+    cyclomethicone: {
+      id: 'cyclomethicone',
+      name: 'Cyclomethicone',
+      categories: ['evaporative_silicones'],
+      synonyms: ['cyclicdimethylpolysiloxane', 'polydimethylcyclosiloxane'],
+    },
     sodium_laureth_sulfate: {
       id: 'sodium_laureth_sulfate',
       name: 'Sodium Laureth Sulfate',
@@ -61,6 +67,12 @@ export const testDatabase: IngredientDatabase = {
       group: 'silicones',
       inclusions: ['peg'],
       defaultIngredient: 'unknown_water_soluble_silicone',
+    },
+    'evaporative_silicones': {
+      id: 'evaporative_silicones',
+      name: 'Evaporative Silicones',
+      description: 'Silicones that evaporate from the hair',
+      group: 'silicones',
     },
     sulfates: {
       id: 'sulfates',
@@ -153,6 +165,20 @@ export const testSettings: Settings = {
     description: 'Warns about specific ingredients',
     ingredients: ['dimethicone', 'sodium_laureth_sulfate'],
     defaultStatus: 'warning'
+  },
+  caution_silicones: {
+    id: 'caution_silicones',
+    name: 'Caution Silicones',
+    description: 'All silicones should be approached with caution.',
+    groups: ['silicones'],
+    defaultStatus: 'caution'
+  },
+  no_water_insoluble_silicones: {
+    id: 'no_water_insoluble_silicones',
+    name: 'No Water Insoluble Silicones',
+    description: 'Avoiding all water insoluble silicones.',
+    categories: ['non_water_soluble_silicone'],
+    defaultStatus: 'warning'
   }
 };
 
@@ -175,7 +201,8 @@ export const testSystems: System[] = [
     description: 'Just like the default system, but allows for some water soluble silicones and moderate surfactants.',
     settings: [
       'sulfate_free',
-      'caution_water_soluble_silicones'
+      'no_water_insoluble_silicones',
+      'caution_silicones'
     ]
   }
 ];

@@ -1827,9 +1827,9 @@ export const defaultDatabase: IngredientDatabase = {
       ],
       "references": []
     },
-    "unknown_non-water-soluble_silicone": {
+    "unknown_non_water_soluble_silicone": {
       "name": "Unknown Non-Water Soluble Silicone",
-      "id": "unknown_non-water-soluble_silicone",
+      "id": "unknown_non_water_soluble_silicone",
       "categories": [
         "non_water_soluble_silicones"
       ],
@@ -1890,7 +1890,7 @@ export const defaultDatabase: IngredientDatabase = {
         "wax"
       ],
       "categories": [
-        "non-water-soluble_waxes"
+        "non_water_soluble_waxes"
       ],
       "references": []
     },
@@ -2236,8 +2236,21 @@ export const defaultDatabase: IngredientDatabase = {
       "id": "silicones",
       "name": "Silicones",
       "inclusions": [
-        "silicone",
-        "cone"
+        "cone",
+        "dimethicon",
+        "silane",
+        "siloxane",
+        "dimethcione",
+        "botanisil",
+        "silicon",
+        "silylate",
+        "silsesquioxane",
+        "siloxysilicate",
+        "microsil"
+      ],
+      "exclusions": [
+        "saccharomycessilicon ferment",
+        "silicon ferment"
       ],
       "defaultIngredient": "unknown_non_water_soluble_silicone"
     },
@@ -2286,7 +2299,7 @@ export const defaultSystems: System[] = [
       "no_water_insoluble_silicones",
       "no_waxes",
       "no_heavy_oils",
-      "caution_water_soluble_silicones"
+      "caution_silicones"
     ]
   }
 ];
@@ -2330,13 +2343,10 @@ export const defaultSettings: Record<string, Setting> = {
   },
   "caution_water_soluble_silicones": {
     "id": "caution_water_soluble_silicones",
-    "name": "Caution Water Soluble Silicones",
-    "description": "Water soluble silicones are marked as caution, other silicones as warning.",
+    "name": "Caution Silicones",
+    "description": "Used to add caution to all silicones",
     "groups": [
       "silicones"
-    ],
-    "allowedCategories": [
-      "water_soluble_silicones"
     ],
     "defaultStatus": "warning",
     "allowedStatus": "caution"
@@ -2371,6 +2381,15 @@ export const defaultSettings: Record<string, Setting> = {
       "non_water_soluble_silicones"
     ],
     "defaultStatus": "warning"
+  },
+  "caution_silicones": {
+    "id": "caution_silicones",
+    "name": "Caution Silicones",
+    "description": "All silicones should be approached with caution.",
+    "groups": [
+      "silicones"
+    ],
+    "defaultStatus": "caution"
   }
 };
 

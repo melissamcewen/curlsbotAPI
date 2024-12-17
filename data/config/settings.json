@@ -30,10 +30,9 @@
     },
     {
       "id": "caution_water_soluble_silicones",
-      "name": "Caution Water Soluble Silicones",
-      "description": "Water soluble silicones are marked as caution, other silicones as warning.",
+      "name": "Caution Silicones",
+      "description": "Used to add caution to all silicones",
       "groups": ["silicones"],
-      "allowedCategories": ["water_soluble_silicones"],
       "defaultStatus": "warning",
       "allowedStatus": "caution"
     },
@@ -59,6 +58,13 @@
       "description": "Avoiding all water insoluble silicones.",
       "categories": ["non_water_soluble_silicones"],
       "defaultStatus": "warning"
+    },
+    {
+      "id": "caution_silicones",
+      "name": "Caution Silicones",
+      "description": "All silicones should be approached with caution.",
+      "groups": ["silicones"],
+      "defaultStatus": "caution"
     }
   ]
 }

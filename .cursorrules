@@ -1,11 +1,26 @@
-tests go in the tests directory ./tests
+## Testing Guidelines
 
-tests should be named after the file they test, with the exception of e2e tests. For example analyzer.test.ts corresponds to analyzer.ts
+### 1. Directory Structure
+- Place all tests in the `./tests` directory
+- End-to-end (e2e) tests go in the `./tests/e2e` directory
 
-e2e tests go in tests/e2e and use the production db
+### 2. Naming Conventions
+- Name test files after the file they test
+  - Example: `analyzer.test.ts` corresponds to `analyzer.ts`
+- **Exception:** End-to-end (e2e) tests do not follow this naming convention
 
-tests that are not in the e2e directory use the test db which is in fixtures if they are integration tests
+### 3. Data in tests
+- Tests in the `e2e` directory use the **production database** `src/data/bundleddata.ts`
+- Integration tests should use the test database `tests/fixtures/test_bundled_data.ts`
+- Unit tests should test data defined within the test file
 
-you can read from src/data files but don't edit them, ask me if you want to make a change because it's from a db
+### 4. Data Files
+- You may **read** from `src/data` files, but do not edit them
+- If a change is required, ask first since these files are sourced from a database
 
-when testing, avoid using mocks or deep equality (objectContaining)
+### 5. Testing Practices
+- Avoid using mocks
+- Avoid using objectContaining unless the object is very simple
+
+---
+Following these rules will ensure consistent and reliable testing across the project.

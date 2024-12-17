@@ -17,7 +17,7 @@ export interface IngredientResult {
   /** Normalized name for matching */
   normalized: string;
   /** Whether this ingredient passes the system's requirements */
-  status: "ok" | "caution" | "warning";
+  status: 'ok' | 'caution' | 'warning';
   /** Why this ingredient got its status */
   reasons: StatusReason[];
   /** The matched ingredient from the database, if any */
@@ -35,7 +35,7 @@ export interface AnalysisResult {
   /** Original input text */
   input: string;
   /** Overall status of the analysis */
-  status: "ok" | "caution" | "warning" | "error";
+  status: 'ok' | 'caution' | 'warning' | 'error';
   /** Why this analysis got its status */
   reasons: StatusReason[];
   /** Results for each ingredient */
@@ -156,9 +156,9 @@ export interface Setting {
   /** Specific ingredients to check */
   ingredients?: string[];
   /** Status for matching ingredients (or non-allowed categories in groups) */
-  defaultStatus: "ok" | "caution" | "warning";
+  defaultStatus: 'ok' | 'caution' | 'warning';
   /** Status for ingredients in allowedCategories (when using groups) */
-  allowedStatus?: "ok" | "caution" | "warning";
+  allowedStatus?: 'ok' | 'caution' | 'warning';
 }
 
 /**
@@ -167,7 +167,7 @@ export interface Setting {
 export type Settings = Record<string, Setting>;
 
 /**
- * Result from ingredient matching
+ * Result from ingredient matching, still used in the database utils
  */
 export interface IngredientMatch {
   uuid: string;

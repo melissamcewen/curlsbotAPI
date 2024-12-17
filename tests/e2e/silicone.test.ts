@@ -10,7 +10,7 @@ import {
 /* THESE ARE PRODUCTION TESTS USE THE DATA IN src/data/bundledData.ts */
 
 // Find the curly_moderate system from defaultSystems
-const moderateSystem = defaultSystems.find(s => s.id === 'curly_moderate');
+const moderateSystem = defaultSystems.find((s) => s.id === 'curly_moderate');
 if (!moderateSystem) {
   throw new Error('Could not find curly_moderate system');
 }
@@ -28,13 +28,22 @@ describe('Silicone Analysis e2e complex list with curly_moderate system', () => 
   it('should load the system correctly', () => {
     expect(result.status).toBe('warning');
     // Check for non-water-soluble silicones (like dimethicone)
-    const nonWaterSolubleReason = result.reasons.find(r => r.setting === 'no_water_insoluble_silicones');
+    const nonWaterSolubleReason = result.reasons.find(
+      (r) => r.setting === 'no_water_insoluble_silicones',
+    );
     expect(nonWaterSolubleReason).toBeDefined();
     expect(nonWaterSolubleReason?.reason).toBeDefined();
+
+    // Check for caution silicones reason
+    const cautionSiliconesReason = result.reasons.find(
+      (r) => r.setting === 'caution_silicones',
+    );
+    expect(cautionSiliconesReason).toBeDefined();
+    expect(cautionSiliconesReason?.reason).toBeDefined();
   });
 
   it('Should normalize the list correctly', () => {
-    expect(result.ingredients.map(i => i.normalized)).toEqual([
+    expect(result.ingredients.map((i) => i.normalized)).toEqual([
       'peg-8 distearmonium chloride pg-dimethicone',
       'cetearyl methicone',
       'silicone',
@@ -53,26 +62,79 @@ describe('Silicone Analysis e2e complex list with curly_moderate system', () => 
     ]);
   });
   describe('ingredient matching', () => {
-    it('peg-8 distearmonium chloride pg-dimethicone', () => {
-      // find the ingredient match for normalized string 'peg-8 distearmonium chloride pg-dimethicone'
-      const ingredientMatch = result.ingredients.find(
-        (i) => i.normalized === 'peg-8 distearmonium chloride pg-dimethicone',
-      );
-      expect(ingredientMatch).toBeDefined();
-      expect(ingredientMatch?.ingredient?.id).toBe(
-        'unknown_water_soluble_silicone',
-      );
-      // should be flagged caution
-      expect(ingredientMatch?.status).toBe('caution');
-      // should have a reason for being a water-soluble silicone
-      expect(ingredientMatch?.reasons).toContainEqual({
-        setting: 'caution_water_soluble_silicones',
-        reason: 'Water soluble silicones are marked as caution, other silicones as warning.'
+    const expectedResults = [
+      {
+        normalized: 'peg-8 distearmonium chloride pg-dimethicone',
+        ingredientId: 'unknown_water_soluble_silicone',
+        category: 'water_soluble_silicone',
+        status: 'caution',
+        reason: 'caution_silicones',
+      },
+      {
+        normalized: 'cetearyl methicone',
+        ingredientId: 'cetearyl_methicone',
+        category: 'non_water_soluble_silicone',
+        status: 'warning',
+        reason: 'no_water_insoluble_silicones',
+      },
+      {
+        normalized: 'silicone',
+        ingredientId: 'unknown_non_water_soluble_silicone',
+        category: 'non_water_soluble_silicone',
+        status: 'warning',
+        reason: 'no_water_insoluble_silicones',
+      },
+      {
+        normalized: 'cyclomethicone',
+        ingredientId: 'cyclomethicone',
+        category: 'non_water_soluble_silicone',
+        status: 'caution',
+        reason: 'caution_silicones',
+      },
+      {
+        normalized: 'pegppg-1818 dimethicone',
+        ingredientId: 'unknown_water_soluble_silicone',
+        category: 'water_soluble_silicone',
+        status: 'caution',
+        reason: 'caution_silicones',
+      },
+      {
+        normalized: 'peg-12 dimethicone',
+        ingredientId: 'peg_12_dimethicone',
+        category: 'water_soluble_silicone',
+        status: 'caution',
+        reason: 'caution_silicones',
+      },
+      {
+        normalized: 'lauryl peg ppg - 18 18 methicone',
+        ingredientId: 'unknown_water_soluble_silicone',
+        category: 'water_soluble_silicone',
+        status: 'caution',
+        reason: 'caution_silicones',
+      },
+      {
+        normalized: 'trimethylsiloxysilicate',
+        ingredientId: 'trimethylsiloxysilicate',
+        category: 'non_water_soluble_silicone',
+        status: 'warning',
+        reason: 'no_water_insoluble_silicones',
+      },
+    ];
+
+    expectedResults.forEach((expected) => {
+      it(`correctly identifies ${expected.normalized}`, () => {
+        const ingredientMatch = result.ingredients.find(
+          (i) => i.normalized === expected.normalized,
+        );
+
+        expect(ingredientMatch).toBeDefined();
+        expect(ingredientMatch?.ingredient?.id).toBe(expected.ingredientId);
+        expect(ingredientMatch?.status).toBe(expected.status);
+        expect(
+          ingredientMatch?.reasons.find((r) => r.setting === expected.reason)
+            ?.setting,
+        ).toBe(expected.reason);
       });
     });
   });
 });
-
-
-
-

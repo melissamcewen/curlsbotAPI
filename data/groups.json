@@ -19,7 +19,20 @@
     {
       "id": "silicones",
       "name": "Silicones",
-      "inclusions": ["silicone", "cone"],
+      "inclusions": [
+        "cone",
+        "dimethicon",
+        "silane",
+        "siloxane",
+        "dimethcione",
+        "botanisil",
+        "silicon",
+        "silylate",
+        "silsesquioxane",
+        "siloxysilicate",
+        "microsil"
+      ],
+      "exclusions": ["saccharomycessilicon ferment", "silicon ferment"],
       "defaultIngredient": "unknown_non_water_soluble_silicone"
     },
     {
