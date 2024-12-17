@@ -88,10 +88,16 @@
       ]
     },
     {
-      "name": "Saccharomycessilicon Ferment",
-      "id": "saccharomycessilicon_ferment",
+      "name": "Saccharomyces Silicon Ferment",
+      "id": "saccharomyces_silicon_ferment",
+      "synonyms": [
+        "saccharomycessilicon"
+      ],
       "categories": [
-        "other_detergents"
+        "other"
+      ],
+      "references": [
+        "https://incidecoder.com/ingredients/saccharomyces-silicon-ferment"
       ]
     },
     {

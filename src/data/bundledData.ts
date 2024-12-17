@@ -1371,14 +1371,18 @@ export const defaultDatabase: IngredientDatabase = {
         "https://incidecoder.com/ingredients/potassium-stearate"
       ]
     },
-    "saccharomycessilicon_ferment": {
-      "name": "Saccharomycessilicon Ferment",
-      "id": "saccharomycessilicon_ferment",
-      "categories": [
-        "other_detergents"
+    "saccharomyces_silicon_ferment": {
+      "name": "Saccharomyces Silicon Ferment",
+      "id": "saccharomyces_silicon_ferment",
+      "synonyms": [
+        "saccharomycessilicon"
       ],
-      "synonyms": [],
-      "references": []
+      "categories": [
+        "other"
+      ],
+      "references": [
+        "https://incidecoder.com/ingredients/saccharomyces-silicon-ferment"
+      ]
     },
     "silicon_ferment": {
       "name": "Silicon Ferment",
@@ -2232,6 +2236,12 @@ export const defaultDatabase: IngredientDatabase = {
       "name": "Evaporative Silicones",
       "group": "silicones",
       "description": "TBD"
+    },
+    "other": {
+      "id": "other",
+      "name": "Other",
+      "group": "others",
+      "description": "Others in the group others"
     }
   },
   "groups": {

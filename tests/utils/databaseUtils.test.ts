@@ -77,11 +77,11 @@ describe('findIngredient', () => {
 
       // Check silicone categories
       const categoryKeys = Object.keys(partitionedDb.categories);
-         console.log('test');
-         console.log(categoryKeys);
+      console.log('test');
+      console.log(categoryKeys);
       expect(categoryKeys).toContain('non_water_soluble_silicone');
       expect(categoryKeys).toContain('water_soluble_silicone');
-      expect(categoryKeys).toContain('evaporative_silicones');
+      expect(categoryKeys).toContain('evaporative_silicone');
 
       expect(categoryKeys).toHaveLength(3);
 
@@ -326,6 +326,7 @@ describe('findCategoryByInclusion', () => {
         id: 'test',
         name: 'Test',
         group: 'test_group',
+        description: 'Test category',
       },
     };
     const result = findCategoryByInclusion(categories, 'test');
@@ -339,6 +340,7 @@ describe('findCategoryByInclusion', () => {
         id: 'test_category',
         name: 'Test Category',
         group: 'test_group',
+        description: 'Test category',
         inclusions: ['peg'],
       },
     };
@@ -348,6 +350,42 @@ describe('findCategoryByInclusion', () => {
     expect(['water_soluble_silicone', 'test_category']).toContain(
       result?.categoryId,
     );
+  });
+
+  it('should not match when search term matches exclusion', () => {
+    const categories = {
+      test_category: {
+        id: 'test_category',
+        name: 'Test Category',
+        description: 'Test category',
+        group: 'test_group',
+        inclusions: ['silicone'],
+        exclusions: ['saccharomycessilicon'],
+        defaultIngredient: 'test_ingredient',
+      },
+    };
+    const result = findCategoryByInclusion(
+      categories,
+      'saccharomycessilicon ferment',
+    );
+    expect(result).toBeUndefined();
+  });
+
+  it('should match when search term matches inclusion but not exclusion', () => {
+    const categories = {
+      test_category: {
+        id: 'test_category',
+        name: 'Test Category',
+        description: 'Test category',
+        group: 'test_group',
+        inclusions: ['silicone'],
+        exclusions: ['saccharomycessilicon'],
+        defaultIngredient: 'test_ingredient',
+      },
+    };
+    const result = findCategoryByInclusion(categories, 'dimethicone silicone');
+    expect(result).toBeDefined();
+    expect(result?.categoryId).toBe('test_category');
   });
 });
 
@@ -396,5 +434,36 @@ describe('findGroupByInclusion', () => {
     // Should return whichever group is first in object iteration order
     expect(result).toBeDefined();
     expect(['silicones', 'test_group']).toContain(result?.groupId);
+  });
+
+  it('should not match when search term matches exclusion', () => {
+    const groups = {
+      test_group: {
+        id: 'test_group',
+        name: 'Test Group',
+        description: 'Test group',
+        inclusions: ['silicone'],
+        exclusions: ['saccharomycessilicon'],
+        defaultIngredient: 'test_ingredient',
+      },
+    };
+    const result = findGroupByInclusion(groups, 'saccharomycessilicon ferment');
+    expect(result).toBeUndefined();
+  });
+
+  it('should match when search term matches inclusion but not exclusion', () => {
+    const groups = {
+      test_group: {
+        id: 'test_group',
+        name: 'Test Group',
+        description: 'Test group',
+        inclusions: ['silicone'],
+        exclusions: ['saccharomycessilicon'],
+        defaultIngredient: 'test_ingredient',
+      },
+    };
+    const result = findGroupByInclusion(groups, 'dimethicone silicone');
+    expect(result).toBeDefined();
+    expect(result?.groupId).toBe('test_group');
   });
 });

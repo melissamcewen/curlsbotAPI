@@ -21,7 +21,7 @@ const analyzer = new Analyzer({
   settings: defaultSettings,
 });
 const list =
-  'peg-8 distearmonium chloride pg-dimethicone, cetearyl methicone, silicone, cyclomethicone, aminopropyl triethoxysilane, PEG/PPG-18/18 Dimethicone, Dimethicone, PEG-12 Dimethicone, silicone, Lauryl PEG / PPG - 18 / 18 Methicone, , triethoxysilane, coney, mdimethicon, peg-40 hydrogenated castor oil, trimethylsiloxysilicate';
+  'peg-8 distearmonium chloride pg-dimethicone, cetearyl methicone, silicone, cyclomethicone, aminopropyl triethoxysilane, PEG/PPG-18/18 Dimethicone, Dimethicone, PEG-12 Dimethicone, silicone, Lauryl PEG / PPG - 18 / 18 Methicone, , triethoxysilane, coney, mdimethicon, peg-40 hydrogenated castor oil, trimethylsiloxysilicate, saccharomycessilicon';
 const result = analyzer.analyze(list);
 
 describe('Silicone Analysis e2e complex list with curly_moderate system', () => {
@@ -63,6 +63,7 @@ describe('Silicone Analysis e2e complex list with curly_moderate system', () => 
       'mdimethicon',
       'peg-40 hydrogenated castor oil',
       'trimethylsiloxysilicate',
+      'saccharomycessilicon',
     ]);
   });
   describe('ingredient matching', () => {
@@ -122,6 +123,13 @@ describe('Silicone Analysis e2e complex list with curly_moderate system', () => 
         category: 'non_water_soluble_silicone',
         status: 'warning',
         reason: 'no_water_insoluble_silicones',
+      },
+      {
+        normalized: 'saccharomycessilicon',
+        ingredientId: 'saccharomycessilicon_ferment',
+        category: 'other_detergents',
+        status: 'ok',
+        reason: 'other_detergents',
       },
     ];
 

@@ -121,6 +121,12 @@
       "name": "Evaporative Silicones",
       "group": "silicones",
       "description": "TBD"
+    },
+    {
+      "id": "other",
+      "name": "Other",
+      "group": "others",
+      "description": "Others in the group others"
     }
   ]
 }

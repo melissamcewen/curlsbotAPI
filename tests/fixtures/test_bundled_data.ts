@@ -17,7 +17,7 @@ export const testDatabase: IngredientDatabase = {
     cyclomethicone: {
       id: 'cyclomethicone',
       name: 'Cyclomethicone',
-      categories: ['evaporative_silicones'],
+      categories: ['evaporative_silicone'],
       synonyms: ['cyclicdimethylpolysiloxane', 'polydimethylcyclosiloxane'],
     },
     sodium_laureth_sulfate: {
@@ -54,13 +54,13 @@ export const testDatabase: IngredientDatabase = {
     },
   },
   categories: {
-    'non_water_soluble_silicone': {
+    non_water_soluble_silicone: {
       id: 'non_water_soluble_silicone',
       name: 'Non-water-soluble Silicone',
       description: 'Silicones that are not water soluble',
       group: 'silicones',
     },
-    'water_soluble_silicone': {
+    water_soluble_silicone: {
       id: 'water_soluble_silicone',
       name: 'Water-soluble Silicone',
       description: 'Silicones that are water soluble',
@@ -68,8 +68,8 @@ export const testDatabase: IngredientDatabase = {
       inclusions: ['peg'],
       defaultIngredient: 'unknown_water_soluble_silicone',
     },
-    'evaporative_silicones': {
-      id: 'evaporative_silicones',
+    evaporative_silicone: {
+      id: 'evaporative_silicone',
       name: 'Evaporative Silicones',
       description: 'Silicones that evaporate from the hair',
       group: 'silicones',
@@ -132,14 +132,14 @@ export const testSettings: Settings = {
     name: 'Sulfate Free',
     description: 'Avoid sulfates',
     categories: ['sulfates'],
-    defaultStatus: 'warning'
+    defaultStatus: 'warning',
   },
   silicone_free: {
     id: 'silicone_free',
     name: 'Silicone Free',
     description: 'Avoid all silicones',
     groups: ['silicones'],
-    defaultStatus: 'warning'
+    defaultStatus: 'warning',
   },
   mild_detergents_only: {
     id: 'mild_detergents_only',
@@ -148,38 +148,39 @@ export const testSettings: Settings = {
     groups: ['detergents'],
     allowedCategories: ['mild_detergents'],
     defaultStatus: 'warning',
-    allowedStatus: 'ok'
+    allowedStatus: 'ok',
   },
   caution_water_soluble_silicones: {
     id: 'caution_water_soluble_silicones',
     name: 'Caution Water Soluble Silicones',
-    description: 'Water soluble silicones are marked as caution, other silicones as warning',
+    description:
+      'Water soluble silicones are marked as caution, other silicones as warning',
     groups: ['silicones'],
     allowedCategories: ['water_soluble_silicone'],
     defaultStatus: 'warning',
-    allowedStatus: 'caution'
+    allowedStatus: 'caution',
   },
   specific_ingredients: {
     id: 'specific_ingredients',
     name: 'Specific Ingredients',
     description: 'Warns about specific ingredients',
     ingredients: ['dimethicone', 'sodium_laureth_sulfate'],
-    defaultStatus: 'warning'
+    defaultStatus: 'warning',
   },
   caution_silicones: {
     id: 'caution_silicones',
     name: 'Caution Silicones',
     description: 'All silicones should be approached with caution.',
     groups: ['silicones'],
-    defaultStatus: 'caution'
+    defaultStatus: 'caution',
   },
   no_water_insoluble_silicones: {
     id: 'no_water_insoluble_silicones',
     name: 'No Water Insoluble Silicones',
     description: 'Avoiding all water insoluble silicones.',
     categories: ['non_water_soluble_silicone'],
-    defaultStatus: 'warning'
-  }
+    defaultStatus: 'warning',
+  },
 };
 
 /**
@@ -189,20 +190,19 @@ export const testSystems: System[] = [
   {
     name: 'Curly Default',
     id: 'curly_default',
-    description: 'The Curly Default system is a hair care system that focuses on using products that are free of harsh chemicals and sulfates.',
-    settings: [
-      'mild_detergents_only',
-      'silicone_free'
-    ]
+    description:
+      'The Curly Default system is a hair care system that focuses on using products that are free of harsh chemicals and sulfates.',
+    settings: ['mild_detergents_only', 'silicone_free'],
   },
   {
     name: 'Curly Moderate',
     id: 'curly_moderate',
-    description: 'Just like the default system, but allows for some water soluble silicones and moderate surfactants.',
+    description:
+      'Just like the default system, but allows for some water soluble silicones and moderate surfactants.',
     settings: [
       'sulfate_free',
       'no_water_insoluble_silicones',
-      'caution_silicones'
-    ]
-  }
+      'caution_silicones',
+    ],
+  },
 ];

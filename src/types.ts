@@ -68,6 +68,8 @@ export interface Category {
   group: string;
   /** inclusions that would partition the group */
   inclusions?: string[];
+  /** exclusion that would prevent the thing from being partitioned into this category */
+  exclusions?: string[];
   /** default ingredient for the category */
   defaultIngredient?: string;
 }
@@ -84,6 +86,8 @@ export interface Group {
   id: string;
   /** inclusions that would partition the group */
   inclusions?: string[];
+  /** exclusions that would prevent the group from being partitioned */
+  exclusions?: string[];
   /** default ingredient for the group */
   defaultIngredient?: string;
 }
