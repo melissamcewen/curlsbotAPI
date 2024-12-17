@@ -77,16 +77,21 @@ describe('findIngredient', () => {
 
       // Check silicone categories
       const categoryKeys = Object.keys(partitionedDb.categories);
+         console.log('test');
+         console.log(categoryKeys);
       expect(categoryKeys).toContain('non_water_soluble_silicone');
       expect(categoryKeys).toContain('water_soluble_silicone');
-      expect(categoryKeys).toHaveLength(2);
+      expect(categoryKeys).toContain('evaporative_silicones');
+
+      expect(categoryKeys).toHaveLength(3);
 
       // Check silicone ingredients
       const ingredientKeys = Object.keys(partitionedDb.ingredients);
       expect(ingredientKeys).toContain('dimethicone');
+      expect(ingredientKeys).toContain('cyclomethicone');
       expect(ingredientKeys).toContain('unknown_water_soluble_silicone');
       expect(ingredientKeys).toContain('unknown_non_water_soluble_silicone');
-      expect(ingredientKeys).toHaveLength(3);
+      expect(ingredientKeys).toHaveLength(4);
 
       // Verify non-silicone ingredients are excluded
       expect(partitionedDb.ingredients.sodium_laureth_sulfate).toBeUndefined();

@@ -1,5 +1,5 @@
-import { defaultDatabase } from '../src/data/bundledData';
-import type { Ingredient, Category, Group } from '../src/types';
+import { defaultDatabase } from '../../src/data/bundledData';
+import type { Ingredient, Category, Group } from '../../src/types';
 
 describe('Production Database E2E Tests', () => {
   describe('Data Loading', () => {
