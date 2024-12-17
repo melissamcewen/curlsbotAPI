@@ -47,6 +47,20 @@ describe('Handling of waxes under the default system', () => {
         status: 'warning',
         reason: 'no_waxes',
       },
+      {
+        normalized: 'euphorbia cerifera candelilla wax',
+        ingredientId: 'candelilla_wax',
+        category: 'non_water_soluble_waxes',
+        status: 'warning',
+        reason: 'no_waxes',
+      },
+      {
+        normalized: 'lonincera japonica honeysuckle flower extract',
+        ingredientId: undefined,
+        category: undefined,
+        status: 'caution',
+        reason: 'unknown_ingredient',
+      },
     ];
 
     expectedResults.forEach((expected) => {
