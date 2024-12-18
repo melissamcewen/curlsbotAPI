@@ -1,48 +1,118 @@
 'use client';
 
-import { useState, useEffect } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
-import { AnalysisResult } from '@/types/analysis';
-import AnalysisResults from './AnalysisResults';
+import { useState, useEffect, useCallback } from 'react';
+import { Analyzer } from '../../../../src/analyzer';
+import { getBundledSystems } from '../../../../src/data/bundledData';
 import SystemSelector from './SystemSelector';
+import AnalysisResults from './AnalysisResults';
 
 export default function IngredientForm() {
-  const router = useRouter();
-  const searchParams = useSearchParams();
-
   const [ingredients, setIngredients] = useState('');
   const [systemId, setSystemId] = useState('curly_default');
   const [customSettings, setCustomSettings] = useState<string[]>([]);
+  const [analysisResult, setAnalysisResult] = useState<any>(null);
   const [isAnalyzing, setIsAnalyzing] = useState(false);
-  const [results, setResults] = useState<AnalysisResult | null>(null);
   const [error, setError] = useState<string | null>(null);
+  const router = useRouter();
+  const searchParams = useSearchParams();
 
-  // Read from URL parameters on initial load
+  const handleAnalysis = useCallback((ingredientList: string, system: string, settings?: string[]) => {
+    setIsAnalyzing(true);
+    setError(null);
+
+    try {
+      // Create analyzer with default configuration
+      const analyzer = new Analyzer();
+
+      // Handle system selection
+      if (system === 'custom') {
+        if (!settings?.length) {
+          throw new Error('Custom system requires settings');
+        }
+
+        // Create a custom system with the selected settings
+        const customSystem = {
+          id: 'custom',
+          name: 'Custom System',
+          description: 'User-defined system',
+          settings: settings
+        };
+
+        analyzer.setSystem(customSystem);
+      } else if (system !== 'curly_default') {
+        const systems = getBundledSystems();
+        const selectedSystem = systems.find(s => s.id === system);
+        if (!selectedSystem) {
+          throw new Error('Invalid system selected');
+        }
+        analyzer.setSystem(selectedSystem);
+      }
+
+      // Analyze ingredients
+      const result = analyzer.analyze(ingredientList.trim());
+
+      // Convert the analysis result to our frontend format
+      const formattedResult = {
+        overallStatus: result.status === 'error' ? 'caution' : result.status,
+        ingredients: result.ingredients.map(ingredient => ({
+          name: ingredient.name,
+          matched: !!ingredient.ingredient,
+          status: ingredient.status,
+          info: ingredient.ingredient?.description,
+          reason: ingredient.reasons[0]?.reason,
+          ingredient: ingredient.ingredient ? {
+            id: ingredient.ingredient.id,
+            name: ingredient.ingredient.name,
+            description: ingredient.ingredient.description,
+            categories: ingredient.ingredient.categories,
+            synonyms: ingredient.ingredient.synonyms
+          } : undefined
+        }))
+      };
+
+      setAnalysisResult(formattedResult);
+    } catch (err) {
+      setError(err instanceof Error ? err.message : 'Analysis failed. Please try again.');
+    } finally {
+      setIsAnalyzing(false);
+    }
+  }, []);
+
   useEffect(() => {
+    // Get ingredients and system from URL parameters
     const urlIngredients = searchParams.get('ingredients');
     const urlSystem = searchParams.get('system');
 
-    if (urlIngredients) {
-      setIngredients(decodeURIComponent(urlIngredients));
-      // If we have ingredients in the URL, analyze them immediately
-      if (!results) {
-        handleAnalysis(decodeURIComponent(urlIngredients), urlSystem || 'curly_default');
+    // Only update if the values are different from current state
+    if (urlIngredients && urlIngredients !== ingredients) {
+      setIngredients(urlIngredients);
+      if (urlSystem && urlSystem !== systemId) {
+        setSystemId(urlSystem);
       }
-    }
-    if (urlSystem) {
+      handleAnalysis(urlIngredients, urlSystem || systemId);
+    } else if (urlSystem && urlSystem !== systemId) {
       setSystemId(urlSystem);
     }
-  }, [searchParams]);
+  }, [searchParams, systemId, ingredients, handleAnalysis]);
 
   const handleSystemChange = (newSystemId: string, settings?: string[]) => {
     setSystemId(newSystemId);
     if (settings) {
       setCustomSettings(settings);
-    }
+      // For custom system with settings, run analysis immediately
+      if (ingredients.trim() && newSystemId === 'custom') {
+        // Update URL
+        const params = new URLSearchParams();
+        params.set('ingredients', ingredients.trim());
+        params.set('system', newSystemId);
+        router.push(`/?${params.toString()}`);
 
-    // If we have ingredients and results, rerun the analysis with the new system
-    if (ingredients.trim() && results) {
-      // Update URL
+        // Rerun analysis with custom settings
+        handleAnalysis(ingredients, newSystemId, settings);
+      }
+    } else if (ingredients.trim() && newSystemId !== 'custom') {
+      // For non-custom systems, run analysis immediately
       const params = new URLSearchParams();
       params.set('ingredients', ingredients.trim());
       params.set('system', newSystemId);
@@ -53,75 +123,60 @@ export default function IngredientForm() {
     }
   };
 
-  const handleAnalysis = async (ingredientList: string, system: string) => {
-    setIsAnalyzing(true);
-    setError(null);
+  const handleCustomSettingsChange = (settings: string[]) => {
+    setCustomSettings(settings);
 
-    try {
-      const response = await fetch('/api/analyze', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          ingredients: ingredientList.trim(),
-          systemId: system,
-          customSettings: system === 'custom' ? customSettings : undefined
-        }),
-      });
+    // Rerun analysis if we have ingredients
+    if (ingredients.trim()) {
+      // Update URL
+      const params = new URLSearchParams();
+      params.set('ingredients', ingredients.trim());
+      params.set('system', 'custom');
+      router.push(`/?${params.toString()}`);
 
-      if (!response.ok) {
-        const errorData = await response.json();
-        throw new Error(errorData.error || 'Analysis failed. Please try again.');
-      }
-
-      const data = await response.json();
-      setResults(data);
-    } catch (err) {
-      console.error('Error during analysis:', err);
-      setError(err instanceof Error ? err.message : 'Something went wrong. Please try again.');
-    } finally {
-      setIsAnalyzing(false);
+      // Rerun analysis with new settings
+      handleAnalysis(ingredients, 'custom', settings);
     }
   };
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    if (!ingredients.trim()) return;
 
-    // Update URL with current ingredients and system
+    // Update URL
     const params = new URLSearchParams();
     params.set('ingredients', ingredients.trim());
     params.set('system', systemId);
     router.push(`/?${params.toString()}`);
 
-    // Perform analysis
-    handleAnalysis(ingredients, systemId);
+    // Run analysis
+    handleAnalysis(ingredients, systemId, systemId === 'custom' ? customSettings : undefined);
   };
 
   return (
     <div className="space-y-6">
-      <form onSubmit={handleSubmit} className="w-full space-y-4">
+      <form onSubmit={handleSubmit} className="space-y-4">
+        <div className="form-control w-full">
+          <label className="label">
+            <span className="label-text">Paste your ingredients list</span>
+          </label>
+          <textarea
+            className="textarea textarea-bordered bg-base-200 text-base-content h-32"
+            value={ingredients}
+            onChange={(e) => setIngredients(e.target.value)}
+            placeholder="Enter ingredients, one per line..."
+          />
+        </div>
+
         <SystemSelector
           value={systemId}
           onChange={handleSystemChange}
         />
 
-        <div className="form-control w-full">
-          <label className="label">
-            <span className="label-text">Paste Your Ingredients</span>
-          </label>
-          <textarea
-            className="textarea textarea-bordered bg-base-200 text-base-content h-32 w-full"
-            placeholder="Example: Water, Cetearyl Alcohol, Behentrimonium Methosulfate..."
-            value={ingredients}
-            onChange={(e) => setIngredients(e.target.value)}
-          />
-        </div>
-
         <button
           type="submit"
-          className={`btn btn-primary w-full ${isAnalyzing ? 'loading' : ''}`}
-          disabled={!ingredients.trim() || isAnalyzing || (systemId === 'custom' && customSettings.length === 0)}
+          className="btn btn-primary w-full"
+          disabled={isAnalyzing || !ingredients.trim()}
         >
           {isAnalyzing ? 'Analyzing...' : 'Analyze Ingredients'}
         </button>
@@ -129,14 +184,13 @@ export default function IngredientForm() {
 
       {error && (
         <div className="alert alert-error">
-          <svg xmlns="http://www.w3.org/2000/svg" className="stroke-current shrink-0 h-6 w-6" fill="none" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" />
-          </svg>
           <span>{error}</span>
         </div>
       )}
 
-      {results && <AnalysisResults result={results} />}
+      {analysisResult && (
+        <AnalysisResults result={analysisResult} />
+      )}
     </div>
   );
 }

@@ -26,13 +26,13 @@ export default function AnalysisResults({ result }: Props) {
   const getIngredientClasses = (status: string) => {
     switch (status) {
       case 'ok':
-        return 'alert-success';
+        return 'border-success';
       case 'warning':
-        return 'alert-warning';
+        return 'border-warning';
       case 'caution':
-        return 'alert-error';
+        return 'border-error';
       default:
-        return 'alert-info';
+        return 'border-base-300';
     }
   };
 
@@ -53,39 +53,39 @@ export default function AnalysisResults({ result }: Props) {
 
       {/* Ingredient Status */}
       {result.ingredients && result.ingredients.length > 0 && (
-        <div className="card bg-base-200 shadow-lg">
+        <div className="card bg-base-100 shadow-xl border border-base-300">
           <div className="card-body">
             <h2 className="card-title text-base-content mb-4">Ingredients</h2>
             <div className="space-y-4">
               {result.ingredients.map((ingredient, index) => (
                 <div
                   key={index}
-                  className={`alert shadow-lg ${getIngredientClasses(ingredient.status)}`}
+                  className={`bg-base-200 rounded-lg shadow-md border-l-4 ${getIngredientClasses(ingredient.status)}`}
                 >
-                  <div className="flex-1">
+                  <div className="p-4">
                     <div className="flex items-center gap-2">
-                      <span className="font-medium">{ingredient.name}</span>
+                      <span className="font-medium text-base-content">{ingredient.name}</span>
                       {ingredient.matched ? (
                         <>
-                          <span className="opacity-70">→</span>
+                          <span className="text-base-content">→</span>
                           <Link
                             href={`/ingredients/${encodeURIComponent(ingredient.ingredient?.id || '')}`}
-                            className="font-medium hover:underline"
+                            className="font-medium text-primary hover:text-primary-focus transition-colors"
                           >
                             {ingredient.ingredient?.name}
                           </Link>
                         </>
                       ) : (
-                        <span className="badge badge-sm">Not Found</span>
+                        <span className="badge badge-sm badge-warning">Not Found</span>
                       )}
                     </div>
                     {(ingredient.reason || ingredient.info) && (
                       <div className="mt-2 space-y-1">
                         {ingredient.reason && (
-                          <p className="text-sm opacity-90">{ingredient.reason}</p>
+                          <p className="text-sm text-base-content/70">{ingredient.reason}</p>
                         )}
                         {ingredient.info && (
-                          <p className="text-sm opacity-80">{ingredient.info}</p>
+                          <p className="text-sm text-info">{ingredient.info}</p>
                         )}
                       </div>
                     )}
