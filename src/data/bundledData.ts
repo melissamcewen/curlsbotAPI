@@ -40,7 +40,9 @@ export const defaultDatabase: IngredientDatabase = {
         "amyl cinnamyl alcohol"
       ],
       "references": [
-        "https://cosdna.com/eng/3a86ec9991.html"
+        {
+          "url": "https://cosdna.com/eng/3a86ec9991.html"
+        }
       ]
     },
     "arachidyl_alcohol": {
@@ -63,7 +65,9 @@ export const defaultDatabase: IngredientDatabase = {
         "emollient_alcohols"
       ],
       "references": [
-        "https://cosdna.com/eng/5fc5481.html"
+        {
+          "url": "https://cosdna.com/eng/5fc5481.html"
+        }
       ]
     },
     "benzyl_alcohol": {
@@ -73,7 +77,9 @@ export const defaultDatabase: IngredientDatabase = {
         "emollient_alcohols"
       ],
       "references": [
-        "https://incidecoder.com/ingredients/benzyl-alcohol"
+        {
+          "url": "https://incidecoder.com/ingredients/benzyl-alcohol"
+        }
       ],
       "synonyms": []
     },
@@ -120,7 +126,9 @@ export const defaultDatabase: IngredientDatabase = {
         "emollient_alcohols"
       ],
       "references": [
-        "https://cosdna.com/eng/8fb0237001.html"
+        {
+          "url": "https://cosdna.com/eng/8fb0237001.html"
+        }
       ],
       "synonyms": []
     },
@@ -137,7 +145,9 @@ export const defaultDatabase: IngredientDatabase = {
         "emollient_alcohols"
       ],
       "references": [
-        "https://cosdna.com/eng/f83898102.html"
+        {
+          "url": "https://cosdna.com/eng/f83898102.html"
+        }
       ]
     },
     "cetyl_alcohol": {
@@ -155,7 +165,9 @@ export const defaultDatabase: IngredientDatabase = {
         "emollient_alcohols"
       ],
       "references": [
-        "https://cosdna.com/eng/cac655104.html"
+        {
+          "url": "https://cosdna.com/eng/cac655104.html"
+        }
       ]
     },
     "cetylated_lanolin_alcohol": {
@@ -177,7 +189,9 @@ export const defaultDatabase: IngredientDatabase = {
         "emollient_alcohols"
       ],
       "references": [
-        "https://incidecoder.com/ingredients/cinnamyl-alcohol"
+        {
+          "url": "https://incidecoder.com/ingredients/cinnamyl-alcohol"
+        }
       ]
     },
     "coconut_alcohol": {
@@ -201,7 +215,9 @@ export const defaultDatabase: IngredientDatabase = {
         "drying_alcohols"
       ],
       "references": [
-        "https://cosdna.com/eng/554009929.html"
+        {
+          "url": "https://cosdna.com/eng/554009929.html"
+        }
       ]
     },
     "isocetyl_alcohol": {
@@ -214,7 +230,9 @@ export const defaultDatabase: IngredientDatabase = {
         "emollient_alcohols"
       ],
       "references": [
-        "https://cosdna.com/eng/ac44ce1816.html"
+        {
+          "url": "https://cosdna.com/eng/ac44ce1816.html"
+        }
       ]
     },
     "isopropanol": {
@@ -228,7 +246,9 @@ export const defaultDatabase: IngredientDatabase = {
         "drying_alcohols"
       ],
       "references": [
-        "https://cosdna.com/eng/e45cff199.html"
+        {
+          "url": "https://cosdna.com/eng/e45cff199.html"
+        }
       ]
     },
     "isostearyl_alcohol": {
@@ -238,7 +258,9 @@ export const defaultDatabase: IngredientDatabase = {
         "emollient_alcohols"
       ],
       "references": [
-        "https://cosdna.com/eng/78de01202.html"
+        {
+          "url": "https://cosdna.com/eng/78de01202.html"
+        }
       ],
       "synonyms": []
     },
@@ -249,7 +271,9 @@ export const defaultDatabase: IngredientDatabase = {
         "emollient_alcohols"
       ],
       "references": [
-        "https://cosdna.com/eng/cd20031856.html"
+        {
+          "url": "https://cosdna.com/eng/cd20031856.html"
+        }
       ],
       "synonyms": []
     },
@@ -265,7 +289,9 @@ export const defaultDatabase: IngredientDatabase = {
         "dodecyl alcohol"
       ],
       "references": [
-        "https://cosdna.com/eng/3a364c2.html"
+        {
+          "url": "https://cosdna.com/eng/3a364c2.html"
+        }
       ]
     },
     "myristyl_alcohol": {
@@ -279,7 +305,9 @@ export const defaultDatabase: IngredientDatabase = {
         "emollient_alcohols"
       ],
       "references": [
-        "https://cosdna.com/eng/76640d1970.html"
+        {
+          "url": "https://cosdna.com/eng/76640d1970.html"
+        }
       ]
     },
     "oleyl_alcohol": {
@@ -330,7 +358,9 @@ export const defaultDatabase: IngredientDatabase = {
         "drying_alcohols"
       ],
       "references": [
-        "https://cosdna.com/eng/366a832503.html"
+        {
+          "url": "https://cosdna.com/eng/366a832503.html"
+        }
       ],
       "synonyms": []
     },
@@ -350,7 +380,9 @@ export const defaultDatabase: IngredientDatabase = {
         "drying_alcohols"
       ],
       "references": [
-        "https://cosdna.com/eng/554009929.html"
+        {
+          "url": "https://cosdna.com/eng/554009929.html"
+        }
       ]
     },
     "steareth_alcohol": {
@@ -374,7 +406,9 @@ export const defaultDatabase: IngredientDatabase = {
         "emollient_alcohols"
       ],
       "references": [
-        "https://cosdna.com/eng/5ef6ef467.html"
+        {
+          "url": "https://cosdna.com/eng/5ef6ef467.html"
+        }
       ]
     },
     "undecyl_alcohol": {
@@ -532,8 +566,12 @@ export const defaultDatabase: IngredientDatabase = {
         "mild_detergents"
       ],
       "references": [
-        "https://incidecoder.com/ingredients/cocamide-mea",
-        "https://pubchem.ncbi.nlm.nih.gov/compound/Cocamide-MEA"
+        {
+          "url": "https://incidecoder.com/ingredients/cocamide-mea"
+        },
+        {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/compound/Cocamide-MEA"
+        }
       ]
     },
     "decyl_glucoside": {
@@ -1023,7 +1061,9 @@ export const defaultDatabase: IngredientDatabase = {
         "light_oils"
       ],
       "references": [
-        "https://incidecoder.com/ingredients/prunus-armeniaca-kernel-oil"
+        {
+          "url": "https://incidecoder.com/ingredients/prunus-armeniaca-kernel-oil"
+        }
       ]
     },
     "argan_oil": {
@@ -1037,7 +1077,9 @@ export const defaultDatabase: IngredientDatabase = {
         "light_oils"
       ],
       "references": [
-        "https://incidecoder.com/ingredients/argania-spinosa-kernel-oil"
+        {
+          "url": "https://incidecoder.com/ingredients/argania-spinosa-kernel-oil"
+        }
       ]
     },
     "avocado_oil": {
@@ -1051,7 +1093,9 @@ export const defaultDatabase: IngredientDatabase = {
         "medium_oils"
       ],
       "references": [
-        "https://incidecoder.com/ingredients/persea-gratissima-oil"
+        {
+          "url": "https://incidecoder.com/ingredients/persea-gratissima-oil"
+        }
       ]
     },
     "baobab_oil": {
@@ -1065,7 +1109,9 @@ export const defaultDatabase: IngredientDatabase = {
         "medium_oils"
       ],
       "references": [
-        "https://incidecoder.com/ingredients/adansonia-digitata-seed-oil"
+        {
+          "url": "https://incidecoder.com/ingredients/adansonia-digitata-seed-oil"
+        }
       ]
     },
     "camellia_oil": {
@@ -1079,7 +1125,9 @@ export const defaultDatabase: IngredientDatabase = {
         "light_oils"
       ],
       "references": [
-        "https://incidecoder.com/ingredients/camellia-oleifera-seed-oil"
+        {
+          "url": "https://incidecoder.com/ingredients/camellia-oleifera-seed-oil"
+        }
       ]
     },
     "castor_oil": {
@@ -1093,7 +1141,9 @@ export const defaultDatabase: IngredientDatabase = {
         "heavy_oils"
       ],
       "references": [
-        "https://incidecoder.com/ingredients/ricinus-communis-seed-oil"
+        {
+          "url": "https://incidecoder.com/ingredients/ricinus-communis-seed-oil"
+        }
       ]
     },
     "coconut_oil": {
@@ -1107,7 +1157,9 @@ export const defaultDatabase: IngredientDatabase = {
         "medium_oils"
       ],
       "references": [
-        "https://incidecoder.com/ingredients/cocos-nucifera-oil"
+        {
+          "url": "https://incidecoder.com/ingredients/cocos-nucifera-oil"
+        }
       ]
     },
     "grapeseed_oil": {
@@ -1121,7 +1173,9 @@ export const defaultDatabase: IngredientDatabase = {
         "light_oils"
       ],
       "references": [
-        "https://incidecoder.com/ingredients/vitis-vinifera-seed-oil"
+        {
+          "url": "https://incidecoder.com/ingredients/vitis-vinifera-seed-oil"
+        }
       ]
     },
     "isohexadecane": {
@@ -1137,7 +1191,9 @@ export const defaultDatabase: IngredientDatabase = {
         "light_oils"
       ],
       "references": [
-        "https://incidecoder.com/ingredients/isohexadecane"
+        {
+          "url": "https://incidecoder.com/ingredients/isohexadecane"
+        }
       ]
     },
     "jojoba_oil": {
@@ -1151,7 +1207,9 @@ export const defaultDatabase: IngredientDatabase = {
         "light_oils"
       ],
       "references": [
-        "https://incidecoder.com/ingredients/simmondsia-chinensis-seed-oil"
+        {
+          "url": "https://incidecoder.com/ingredients/simmondsia-chinensis-seed-oil"
+        }
       ]
     },
     "lanolin": {
@@ -1165,7 +1223,9 @@ export const defaultDatabase: IngredientDatabase = {
         "heavy_oils"
       ],
       "references": [
-        "https://incidecoder.com/ingredients/lanolin"
+        {
+          "url": "https://incidecoder.com/ingredients/lanolin"
+        }
       ]
     },
     "marula_oil": {
@@ -1179,7 +1239,9 @@ export const defaultDatabase: IngredientDatabase = {
         "light_oils"
       ],
       "references": [
-        "https://incidecoder.com/ingredients/sclerocarya-birrea-seed-oil"
+        {
+          "url": "https://incidecoder.com/ingredients/sclerocarya-birrea-seed-oil"
+        }
       ]
     },
     "mineral_oil": {
@@ -1195,7 +1257,9 @@ export const defaultDatabase: IngredientDatabase = {
         "heavy_oils"
       ],
       "references": [
-        "https://incidecoder.com/ingredients/mineral-oil"
+        {
+          "url": "https://incidecoder.com/ingredients/mineral-oil"
+        }
       ]
     },
     "olive_oil": {
@@ -1209,7 +1273,9 @@ export const defaultDatabase: IngredientDatabase = {
         "medium_oils"
       ],
       "references": [
-        "https://incidecoder.com/ingredients/olea-europaea-fruit-oil"
+        {
+          "url": "https://incidecoder.com/ingredients/olea-europaea-fruit-oil"
+        }
       ]
     },
     "shea_butter_oil": {
@@ -1223,7 +1289,9 @@ export const defaultDatabase: IngredientDatabase = {
         "medium_oils"
       ],
       "references": [
-        "https://incidecoder.com/ingredients/butyrospermum-parkii-butter-oil"
+        {
+          "url": "https://incidecoder.com/ingredients/butyrospermum-parkii-butter-oil"
+        }
       ]
     },
     "sunflower_oil": {
@@ -1237,7 +1305,9 @@ export const defaultDatabase: IngredientDatabase = {
         "medium_oils"
       ],
       "references": [
-        "https://incidecoder.com/ingredients/helianthus-annuus-seed-oil"
+        {
+          "url": "https://incidecoder.com/ingredients/helianthus-annuus-seed-oil"
+        }
       ]
     },
     "sweet_almond_oil": {
@@ -1251,7 +1321,9 @@ export const defaultDatabase: IngredientDatabase = {
         "light_oils"
       ],
       "references": [
-        "https://incidecoder.com/ingredients/prunus-amygdalus-dulcis-oil"
+        {
+          "url": "https://incidecoder.com/ingredients/prunus-amygdalus-dulcis-oil"
+        }
       ]
     },
     "aminomethyl_propanol": {
@@ -1261,7 +1333,9 @@ export const defaultDatabase: IngredientDatabase = {
         "other_detergents"
       ],
       "references": [
-        "https://incidecoder.com/ingredients/aminomethyl-propanol"
+        {
+          "url": "https://incidecoder.com/ingredients/aminomethyl-propanol"
+        }
       ],
       "synonyms": []
     },
@@ -1285,7 +1359,9 @@ export const defaultDatabase: IngredientDatabase = {
         "soaps"
       ],
       "references": [
-        "https://incidecoder.com/ingredients/potassium-castorate"
+        {
+          "url": "https://incidecoder.com/ingredients/potassium-castorate"
+        }
       ]
     },
     "potassium_cocoate": {
@@ -1299,7 +1375,9 @@ export const defaultDatabase: IngredientDatabase = {
         "soaps"
       ],
       "references": [
-        "https://incidecoder.com/ingredients/potassium-cocoate"
+        {
+          "url": "https://incidecoder.com/ingredients/potassium-cocoate"
+        }
       ]
     },
     "potassium_olivate": {
@@ -1313,7 +1391,9 @@ export const defaultDatabase: IngredientDatabase = {
         "soaps"
       ],
       "references": [
-        "https://incidecoder.com/ingredients/potassium-olivate"
+        {
+          "url": "https://incidecoder.com/ingredients/potassium-olivate"
+        }
       ]
     },
     "potassium_palmate": {
@@ -1327,7 +1407,9 @@ export const defaultDatabase: IngredientDatabase = {
         "soaps"
       ],
       "references": [
-        "https://incidecoder.com/ingredients/potassium-palmate"
+        {
+          "url": "https://incidecoder.com/ingredients/potassium-palmate"
+        }
       ]
     },
     "potassium_stearate": {
@@ -1341,7 +1423,9 @@ export const defaultDatabase: IngredientDatabase = {
         "soaps"
       ],
       "references": [
-        "https://incidecoder.com/ingredients/potassium-stearate"
+        {
+          "url": "https://incidecoder.com/ingredients/potassium-stearate"
+        }
       ]
     },
     "saccharomyces_silicon_ferment": {
@@ -1355,7 +1439,9 @@ export const defaultDatabase: IngredientDatabase = {
         "other"
       ],
       "references": [
-        "https://incidecoder.com/ingredients/saccharomyces-silicon-ferment"
+        {
+          "url": "https://incidecoder.com/ingredients/saccharomyces-silicon-ferment"
+        }
       ]
     },
     "soaps": {
@@ -1378,7 +1464,9 @@ export const defaultDatabase: IngredientDatabase = {
         "soaps"
       ],
       "references": [
-        "https://incidecoder.com/ingredients/sodium-castorate"
+        {
+          "url": "https://incidecoder.com/ingredients/sodium-castorate"
+        }
       ]
     },
     "sodium_cocoate": {
@@ -1392,7 +1480,9 @@ export const defaultDatabase: IngredientDatabase = {
         "soaps"
       ],
       "references": [
-        "https://incidecoder.com/ingredients/sodium-cocoate"
+        {
+          "url": "https://incidecoder.com/ingredients/sodium-cocoate"
+        }
       ]
     },
     "sodium_lauroyl_hydrolyzed_silk": {
@@ -1442,7 +1532,9 @@ export const defaultDatabase: IngredientDatabase = {
         "soaps"
       ],
       "references": [
-        "https://incidecoder.com/ingredients/sodium-olivate"
+        {
+          "url": "https://incidecoder.com/ingredients/sodium-olivate"
+        }
       ]
     },
     "sodium_palmate": {
@@ -1456,7 +1548,9 @@ export const defaultDatabase: IngredientDatabase = {
         "soaps"
       ],
       "references": [
-        "https://incidecoder.com/ingredients/sodium-palmate"
+        {
+          "url": "https://incidecoder.com/ingredients/sodium-palmate"
+        }
       ]
     },
     "sodium_stearate": {
@@ -1470,7 +1564,9 @@ export const defaultDatabase: IngredientDatabase = {
         "soaps"
       ],
       "references": [
-        "https://incidecoder.com/ingredients/sodium-stearate"
+        {
+          "url": "https://incidecoder.com/ingredients/sodium-stearate"
+        }
       ]
     },
     "sodium_tallowate": {
@@ -1484,7 +1580,9 @@ export const defaultDatabase: IngredientDatabase = {
         "soaps"
       ],
       "references": [
-        "https://incidecoder.com/ingredients/sodium-tallowate"
+        {
+          "url": "https://incidecoder.com/ingredients/sodium-tallowate"
+        }
       ]
     },
     "triisopropanolamine": {
@@ -1543,7 +1641,9 @@ export const defaultDatabase: IngredientDatabase = {
         "non_water_soluble_silicones"
       ],
       "references": [
-        "https://incidecoder.com/ingredients/amodimethicone"
+        {
+          "url": "https://incidecoder.com/ingredients/amodimethicone"
+        }
       ]
     },
     "bis_peg_18_methyl_ether_dimethyl_silane": {
@@ -1557,7 +1657,9 @@ export const defaultDatabase: IngredientDatabase = {
         "water_soluble_silicones"
       ],
       "references": [
-        "https://incidecoder.com/ingredients/bis-peg-18-methyl-ether-dimethyl-silane"
+        {
+          "url": "https://incidecoder.com/ingredients/bis-peg-18-methyl-ether-dimethyl-silane"
+        }
       ]
     },
     "cetearyl_methicone": {
@@ -1571,7 +1673,9 @@ export const defaultDatabase: IngredientDatabase = {
         "non_water_soluble_silicones"
       ],
       "references": [
-        "https://incidecoder.com/ingredients/cetearyl-methicone"
+        {
+          "url": "https://incidecoder.com/ingredients/cetearyl-methicone"
+        }
       ]
     },
     "cyclohexasiloxane": {
@@ -1586,7 +1690,9 @@ export const defaultDatabase: IngredientDatabase = {
         "non_water_soluble_silicones"
       ],
       "references": [
-        "https://incidecoder.com/ingredients/cyclohexasiloxane"
+        {
+          "url": "https://incidecoder.com/ingredients/cyclohexasiloxane"
+        }
       ]
     },
     "cyclopentasiloxane": {
@@ -1601,7 +1707,9 @@ export const defaultDatabase: IngredientDatabase = {
         "non_water_soluble_silicones"
       ],
       "references": [
-        "https://incidecoder.com/ingredients/cyclopentasiloxane"
+        {
+          "url": "https://incidecoder.com/ingredients/cyclopentasiloxane"
+        }
       ]
     },
     "dimethicone": {
@@ -1616,7 +1724,9 @@ export const defaultDatabase: IngredientDatabase = {
         "non_water_soluble_silicones"
       ],
       "references": [
-        "https://incidecoder.com/ingredients/dimethicone"
+        {
+          "url": "https://incidecoder.com/ingredients/dimethicone"
+        }
       ]
     },
     "dimethicone_copolyol": {
@@ -1630,7 +1740,9 @@ export const defaultDatabase: IngredientDatabase = {
         "water_soluble_silicones"
       ],
       "references": [
-        "https://incidecoder.com/ingredients/dimethicone-copolyol"
+        {
+          "url": "https://incidecoder.com/ingredients/dimethicone-copolyol"
+        }
       ]
     },
     "dimethiconol": {
@@ -1644,7 +1756,9 @@ export const defaultDatabase: IngredientDatabase = {
         "non_water_soluble_silicones"
       ],
       "references": [
-        "https://incidecoder.com/ingredients/dimethiconol"
+        {
+          "url": "https://incidecoder.com/ingredients/dimethiconol"
+        }
       ]
     },
     "lauryl_methicone_copolyol": {
@@ -1658,7 +1772,9 @@ export const defaultDatabase: IngredientDatabase = {
         "water_soluble_silicones"
       ],
       "references": [
-        "https://incidecoder.com/ingredients/lauryl-methicone-copolyol"
+        {
+          "url": "https://incidecoder.com/ingredients/lauryl-methicone-copolyol"
+        }
       ]
     },
     "peg_10_dimethicone": {
@@ -1672,7 +1788,9 @@ export const defaultDatabase: IngredientDatabase = {
         "water_soluble_silicones"
       ],
       "references": [
-        "https://incidecoder.com/ingredients/peg-10-dimethicone"
+        {
+          "url": "https://incidecoder.com/ingredients/peg-10-dimethicone"
+        }
       ]
     },
     "peg_12_dimethicone": {
@@ -1686,7 +1804,9 @@ export const defaultDatabase: IngredientDatabase = {
         "water_soluble_silicones"
       ],
       "references": [
-        "https://incidecoder.com/ingredients/peg-12-dimethicone"
+        {
+          "url": "https://incidecoder.com/ingredients/peg-12-dimethicone"
+        }
       ]
     },
     "peg_14_dimethicone": {
@@ -1700,7 +1820,9 @@ export const defaultDatabase: IngredientDatabase = {
         "water_soluble_silicones"
       ],
       "references": [
-        "https://incidecoder.com/ingredients/peg-14-dimethicone"
+        {
+          "url": "https://incidecoder.com/ingredients/peg-14-dimethicone"
+        }
       ]
     },
     "peg_7_amodimethicone": {
@@ -1714,7 +1836,9 @@ export const defaultDatabase: IngredientDatabase = {
         "water_soluble_silicones"
       ],
       "references": [
-        "https://incidecoder.com/ingredients/peg-7-amodimethicone"
+        {
+          "url": "https://incidecoder.com/ingredients/peg-7-amodimethicone"
+        }
       ]
     },
     "peg_8_dimethicone": {
@@ -1728,7 +1852,9 @@ export const defaultDatabase: IngredientDatabase = {
         "water_soluble_silicones"
       ],
       "references": [
-        "https://incidecoder.com/ingredients/peg-8-dimethicone"
+        {
+          "url": "https://incidecoder.com/ingredients/peg-8-dimethicone"
+        }
       ]
     },
     "phenyl_trimethicone": {
@@ -1742,7 +1868,9 @@ export const defaultDatabase: IngredientDatabase = {
         "non_water_soluble_silicones"
       ],
       "references": [
-        "https://incidecoder.com/ingredients/phenyl-trimethicone"
+        {
+          "url": "https://incidecoder.com/ingredients/phenyl-trimethicone"
+        }
       ]
     },
     "silicone_quaternium_8": {
@@ -1756,7 +1884,9 @@ export const defaultDatabase: IngredientDatabase = {
         "non_water_soluble_silicones"
       ],
       "references": [
-        "https://incidecoder.com/ingredients/silicone-quaternium-8"
+        {
+          "url": "https://incidecoder.com/ingredients/silicone-quaternium-8"
+        }
       ]
     },
     "stearoxytrimethylsilane": {
@@ -1770,7 +1900,9 @@ export const defaultDatabase: IngredientDatabase = {
         "non_water_soluble_silicones"
       ],
       "references": [
-        "https://incidecoder.com/ingredients/stearoxytrimethylsilane"
+        {
+          "url": "https://incidecoder.com/ingredients/stearoxytrimethylsilane"
+        }
       ]
     },
     "trimethylsiloxyamodimethicone": {
@@ -1784,7 +1916,9 @@ export const defaultDatabase: IngredientDatabase = {
         "non_water_soluble_silicones"
       ],
       "references": [
-        "https://incidecoder.com/ingredients/trimethylsiloxyamodimethicone"
+        {
+          "url": "https://incidecoder.com/ingredients/trimethylsiloxyamodimethicone"
+        }
       ]
     },
     "trimethylsiloxysilicate": {
@@ -1883,7 +2017,9 @@ export const defaultDatabase: IngredientDatabase = {
         "non_water_soluble_waxes"
       ],
       "references": [
-        "https://incidecoder.com/ingredients/beeswax"
+        {
+          "url": "https://incidecoder.com/ingredients/beeswax"
+        }
       ]
     },
     "candelilla_wax": {
@@ -1897,7 +2033,9 @@ export const defaultDatabase: IngredientDatabase = {
         "non_water_soluble_waxes"
       ],
       "references": [
-        "https://incidecoder.com/ingredients/candelilla-wax"
+        {
+          "url": "https://incidecoder.com/ingredients/candelilla-wax"
+        }
       ]
     },
     "carnauba_wax": {
@@ -1911,7 +2049,9 @@ export const defaultDatabase: IngredientDatabase = {
         "non_water_soluble_waxes"
       ],
       "references": [
-        "https://incidecoder.com/ingredients/carnauba-wax"
+        {
+          "url": "https://incidecoder.com/ingredients/carnauba-wax"
+        }
       ]
     },
     "ceteareth_20": {
@@ -1925,7 +2065,9 @@ export const defaultDatabase: IngredientDatabase = {
         "water_soluble_waxes"
       ],
       "references": [
-        "https://incidecoder.com/ingredients/ceteareth-20"
+        {
+          "url": "https://incidecoder.com/ingredients/ceteareth-20"
+        }
       ]
     },
     "euphorbia_cerifera_wax": {
@@ -1940,7 +2082,9 @@ export const defaultDatabase: IngredientDatabase = {
         "non_water_soluble_waxes"
       ],
       "references": [
-        "https://incidecoder.com/ingredients/euphorbia-cerifera-wax"
+        {
+          "url": "https://incidecoder.com/ingredients/euphorbia-cerifera-wax"
+        }
       ]
     },
     "microcrystalline_wax": {
@@ -1954,7 +2098,9 @@ export const defaultDatabase: IngredientDatabase = {
         "non_water_soluble_waxes"
       ],
       "references": [
-        "https://incidecoder.com/ingredients/microcrystalline-wax"
+        {
+          "url": "https://incidecoder.com/ingredients/microcrystalline-wax"
+        }
       ]
     },
     "ozokerite": {
@@ -1968,7 +2114,9 @@ export const defaultDatabase: IngredientDatabase = {
         "non_water_soluble_waxes"
       ],
       "references": [
-        "https://incidecoder.com/ingredients/ozokerite"
+        {
+          "url": "https://incidecoder.com/ingredients/ozokerite"
+        }
       ]
     },
     "paraffin_wax": {
@@ -1982,7 +2130,9 @@ export const defaultDatabase: IngredientDatabase = {
         "non_water_soluble_waxes"
       ],
       "references": [
-        "https://incidecoder.com/ingredients/paraffin"
+        {
+          "url": "https://incidecoder.com/ingredients/paraffin"
+        }
       ]
     },
     "peg_12_carnauba_wax": {
@@ -1996,7 +2146,9 @@ export const defaultDatabase: IngredientDatabase = {
         "water_soluble_waxes"
       ],
       "references": [
-        "https://incidecoder.com/ingredients/peg-12-carnauba-wax"
+        {
+          "url": "https://incidecoder.com/ingredients/peg-12-carnauba-wax"
+        }
       ]
     },
     "peg_40_hydrogenated_castor_oil": {
@@ -2010,7 +2162,9 @@ export const defaultDatabase: IngredientDatabase = {
         "water_soluble_waxes"
       ],
       "references": [
-        "https://incidecoder.com/ingredients/peg-40-hydrogenated-castor-oil"
+        {
+          "url": "https://incidecoder.com/ingredients/peg-40-hydrogenated-castor-oil"
+        }
       ]
     },
     "peg_8_beeswax": {
@@ -2024,7 +2178,9 @@ export const defaultDatabase: IngredientDatabase = {
         "water_soluble_waxes"
       ],
       "references": [
-        "https://incidecoder.com/ingredients/peg-8-beeswax"
+        {
+          "url": "https://incidecoder.com/ingredients/peg-8-beeswax"
+        }
       ]
     },
     "polysorbate_20": {
@@ -2038,7 +2194,9 @@ export const defaultDatabase: IngredientDatabase = {
         "water_soluble_waxes"
       ],
       "references": [
-        "https://incidecoder.com/ingredients/polysorbate-20"
+        {
+          "url": "https://incidecoder.com/ingredients/polysorbate-20"
+        }
       ]
     },
     "emulsifying_wax": {
@@ -2048,7 +2206,9 @@ export const defaultDatabase: IngredientDatabase = {
         "water_soluble_waxes"
       ],
       "references": [
-        "https://incidecoder.com/ingredients/emulsifying-wax"
+        {
+          "url": "https://incidecoder.com/ingredients/emulsifying-wax"
+        }
       ],
       "synonyms": []
     }
@@ -2058,7 +2218,8 @@ export const defaultDatabase: IngredientDatabase = {
       "id": "drying_alcohols",
       "name": "Drying Alcohols",
       "group": "alcohols",
-      "description": "Drying alcohols are used to remove moisture from the hair and skin, and can cause irritation and dryness."
+      "description": "Drying alcohols are used to remove moisture from the hair and skin, and can cause irritation and dryness.",
+      "references": []
     },
     "parabens": {
       "id": "parabens",
@@ -2070,7 +2231,9 @@ export const defaultDatabase: IngredientDatabase = {
       ],
       "defaultIngredient": "unknown_paraben",
       "references": [
-        "https://thebeautybrains.com/2006/05/the-perils-of-parabens/"
+        {
+          "url": "https://thebeautybrains.com/2006/05/the-perils-of-parabens/"
+        }
       ]
     },
     "sulfates": {
@@ -2082,7 +2245,8 @@ export const defaultDatabase: IngredientDatabase = {
         "sulfate",
         "sulphate"
       ],
-      "defaultIngredient": "unknown_sulfate"
+      "defaultIngredient": "unknown_sulfate",
+      "references": []
     },
     "sulfonates": {
       "id": "sulfonates",
@@ -2093,13 +2257,15 @@ export const defaultDatabase: IngredientDatabase = {
         "sulfonate",
         "sulfo"
       ],
-      "defaultIngredient": "unknown_sulfonate"
+      "defaultIngredient": "unknown_sulfonate",
+      "references": []
     },
     "emollient_alcohols": {
       "id": "emollient_alcohols",
       "name": "Emollient alcohols",
       "group": "alcohols",
-      "description": "Emollient alcohols are good for the skin and hair."
+      "description": "Emollient alcohols are good for the skin and hair.",
+      "references": []
     },
     "water_soluble_silicones": {
       "id": "water_soluble_silicones",
@@ -2110,91 +2276,106 @@ export const defaultDatabase: IngredientDatabase = {
         "ppg",
         "peg"
       ],
-      "defaultIngredient": "unknown_water_soluble_silicone"
+      "defaultIngredient": "unknown_water_soluble_silicone",
+      "references": []
     },
     "non_water_soluble_silicones": {
       "id": "non_water_soluble_silicones",
       "name": "Non-water-soluble Silicones",
       "group": "silicones",
-      "description": "TBD"
+      "description": "TBD",
+      "references": []
     },
     "preservatives": {
       "id": "preservatives",
       "name": "Preservatives",
       "group": "others",
-      "description": "TBD"
+      "description": "TBD",
+      "references": []
     },
     "other_detergents": {
       "id": "other_detergents",
       "name": "Other Detergents",
       "group": "detergents",
-      "description": "TBD"
+      "description": "TBD",
+      "references": []
     },
     "preservative_alcohols": {
       "id": "preservative_alcohols",
       "name": "Preservative Alcohols",
       "group": "alcohols",
-      "description": "TBD"
+      "description": "TBD",
+      "references": []
     },
     "astringents": {
       "id": "astringents",
       "name": "Astringents",
       "group": "others",
-      "description": "TBD"
+      "description": "TBD",
+      "references": []
     },
     "soaps": {
       "id": "soaps",
       "name": "Soaps",
       "group": "others",
-      "description": "TBD"
+      "description": "TBD",
+      "references": []
     },
     "mild_detergents": {
       "id": "mild_detergents",
       "name": "Mild Detergents",
       "group": "detergents",
-      "description": "TBD"
+      "description": "TBD",
+      "references": []
     },
     "heavy_oils": {
       "id": "heavy_oils",
       "name": "Heavy Oils",
       "group": "oils",
-      "description": "TBD"
+      "description": "TBD",
+      "references": []
     },
     "light_oils": {
       "id": "light_oils",
       "name": "Light Oils",
       "group": "oils",
-      "description": "TBD"
+      "description": "TBD",
+      "references": []
     },
     "medium_oils": {
       "id": "medium_oils",
       "name": "Medium Oils",
       "group": "oils",
-      "description": "TBD"
+      "description": "TBD",
+      "references": []
     },
     "non_water_soluble_waxes": {
       "id": "non_water_soluble_waxes",
       "name": "Non-water-soluble Waxes",
       "group": "waxes",
-      "description": "TBD"
+      "description": "TBD",
+      "references": []
     },
     "water_soluble_waxes": {
       "id": "water_soluble_waxes",
       "name": "Water-soluble Waxes",
       "group": "waxes",
-      "description": "TBD"
+      "description": "TBD",
+      "references": []
     },
     "evaporative_silicones": {
       "id": "evaporative_silicones",
       "name": "Evaporative Silicones",
       "group": "silicones",
-      "description": "TBD"
+      "description": "TBD",
+      "references": []
     },
     "other": {
       "id": "other",
       "name": "Other",
       "group": "others",
-      "description": "Others in the group others"
+      "description": "Others in the group others",
+      "references": []
     }
   },
   "groups": {

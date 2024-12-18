@@ -30,6 +30,7 @@ export function normalizeIngredient(name: string): string {
   return name
     .toLowerCase()
     .replace(/[()]/g, ' ') // Replace parentheses with spaces
+    .replace(/\//g, ' ') // Replace slashes with spaces
     .replace(/[^a-z0-9\s\-]/g, '') // Remove all non-alphanumeric characters except spaces and hyphens
     .replace(/\s+/g, ' ') // Replace multiple spaces with single space
     .trim();

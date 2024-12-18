@@ -7,7 +7,7 @@
         "other_detergents"
       ],
       "references": [
-        "https://incidecoder.com/ingredients/aminomethyl-propanol"
+        {"url":"https://incidecoder.com/ingredients/aminomethyl-propanol"}
       ]
     },
     {
@@ -28,7 +28,7 @@
         "soaps"
       ],
       "references": [
-        "https://incidecoder.com/ingredients/potassium-castorate"
+        {"url":"https://incidecoder.com/ingredients/potassium-castorate"}
       ]
     },
     {
@@ -42,7 +42,7 @@
         "soaps"
       ],
       "references": [
-        "https://incidecoder.com/ingredients/potassium-cocoate"
+        {"url":"https://incidecoder.com/ingredients/potassium-cocoate"}
       ]
     },
     {
@@ -56,7 +56,7 @@
         "soaps"
       ],
       "references": [
-        "https://incidecoder.com/ingredients/potassium-olivate"
+        {"url":"https://incidecoder.com/ingredients/potassium-olivate"}
       ]
     },
     {
@@ -70,7 +70,7 @@
         "soaps"
       ],
       "references": [
-        "https://incidecoder.com/ingredients/potassium-palmate"
+        {"url":"https://incidecoder.com/ingredients/potassium-palmate"}
       ]
     },
     {
@@ -84,7 +84,7 @@
         "soaps"
       ],
       "references": [
-        "https://incidecoder.com/ingredients/potassium-stearate"
+        {"url":"https://incidecoder.com/ingredients/potassium-stearate"}
       ]
     },
     {
@@ -98,7 +98,7 @@
         "other"
       ],
       "references": [
-        "https://incidecoder.com/ingredients/saccharomyces-silicon-ferment"
+        {"url":"https://incidecoder.com/ingredients/saccharomyces-silicon-ferment"}
       ]
     },
     {
@@ -119,7 +119,7 @@
         "soaps"
       ],
       "references": [
-        "https://incidecoder.com/ingredients/sodium-castorate"
+        {"url":"https://incidecoder.com/ingredients/sodium-castorate"}
       ]
     },
     {
@@ -133,7 +133,7 @@
         "soaps"
       ],
       "references": [
-        "https://incidecoder.com/ingredients/sodium-cocoate"
+        {"url":"https://incidecoder.com/ingredients/sodium-cocoate"}
       ]
     },
     {
@@ -175,7 +175,7 @@
         "soaps"
       ],
       "references": [
-        "https://incidecoder.com/ingredients/sodium-olivate"
+        {"url":"https://incidecoder.com/ingredients/sodium-olivate"}
       ]
     },
     {
@@ -189,7 +189,7 @@
         "soaps"
       ],
       "references": [
-        "https://incidecoder.com/ingredients/sodium-palmate"
+        {"url":"https://incidecoder.com/ingredients/sodium-palmate"}
       ]
     },
     {
@@ -203,7 +203,7 @@
         "soaps"
       ],
       "references": [
-        "https://incidecoder.com/ingredients/sodium-stearate"
+        {"url":"https://incidecoder.com/ingredients/sodium-stearate"}
       ]
     },
     {
@@ -217,7 +217,7 @@
         "soaps"
       ],
       "references": [
-        "https://incidecoder.com/ingredients/sodium-tallowate"
+        {"url":"https://incidecoder.com/ingredients/sodium-tallowate"}
       ]
     },
     {

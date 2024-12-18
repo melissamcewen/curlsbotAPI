@@ -16,7 +16,7 @@
       ],
       "categories": ["water_soluble_silicones"],
       "references": [
-        "https://incidecoder.com/ingredients/bis-peg-18-methyl-ether-dimethyl-silane"
+        {"url":"https://incidecoder.com/ingredients/bis-peg-18-methyl-ether-dimethyl-silane"}
       ]
     },
     {
@@ -76,7 +76,7 @@
       ],
       "categories": ["water_soluble_silicones"],
       "references": [
-        "https://incidecoder.com/ingredients/lauryl-methicone-copolyol"
+        {"url":"https://incidecoder.com/ingredients/lauryl-methicone-copolyol"}
       ]
     },
     {
@@ -142,7 +142,7 @@
       "synonyms": ["cationic silicone polymer", "quaternized dimethicone"],
       "categories": ["non_water_soluble_silicones"],
       "references": [
-        "https://incidecoder.com/ingredients/silicone-quaternium-8"
+        {"url":"https://incidecoder.com/ingredients/silicone-quaternium-8"}
       ]
     },
     {
@@ -151,7 +151,7 @@
       "synonyms": ["octadecyltrimethylsilane", "stearic acid trimethylsilane"],
       "categories": ["non_water_soluble_silicones"],
       "references": [
-        "https://incidecoder.com/ingredients/stearoxytrimethylsilane"
+        {"url":"https://incidecoder.com/ingredients/stearoxytrimethylsilane"}
       ]
     },
     {
@@ -160,7 +160,7 @@
       "synonyms": ["amino silicone resin", "amino-functionalized silicone"],
       "categories": ["non_water_soluble_silicones"],
       "references": [
-        "https://incidecoder.com/ingredients/trimethylsiloxyamodimethicone"
+        {"url":"https://incidecoder.com/ingredients/trimethylsiloxyamodimethicone"}
       ]
     },
     {

@@ -14,7 +14,7 @@
       "inclusions": ["paraben"],
       "defaultIngredient": "unknown_paraben",
       "references": [
-        "https://thebeautybrains.com/2006/05/the-perils-of-parabens/"
+        {"url":"https://thebeautybrains.com/2006/05/the-perils-of-parabens/"}
       ]
     },
     {

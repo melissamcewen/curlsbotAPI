@@ -56,6 +56,7 @@ describe('Normalizer', () => {
       expect(normalizeIngredient('Water*')).toBe('water');
       expect(normalizeIngredient('Water.')).toBe('water');
       expect(normalizeIngredient('Water  Extract')).toBe('water extract');
+      expect(normalizeIngredient('Aqua/water/eau')).toBe('aqua water eau');
     });
   });
 
@@ -217,6 +218,7 @@ describe('Normalizer', () => {
       expect(result.isValid).toBe(true);
       expect(result.ingredients).toEqual(['water', 'glycerin', 'aloe']);
     });
+
 
     it('should handle special characters and numbers', () => {
       const input = 'Water, C12-15 Alkyl Benzoate, Vitamin B5, pH Adjuster';

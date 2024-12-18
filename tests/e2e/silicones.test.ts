@@ -21,7 +21,7 @@ const analyzer = new Analyzer({
   settings: defaultSettings,
 });
 const list =
-  'peg-8 distearmonium chloride pg-dimethicone, cetearyl methicone, silicone, cyclomethicone, aminopropyl triethoxysilane, PEG/PPG-18/18 Dimethicone, Dimethicone, PEG-12 Dimethicone, silicone, Lauryl PEG / PPG - 18 / 18 Methicone, , triethoxysilane, coney, mdimethicon, peg-40 hydrogenated castor oil, trimethylsiloxysilicate, saccharomycessilicon';
+  'peg-8 distearmonium chloride pg-dimethicone, cetearyl methicone, silicone, cyclomethicone, aminopropyl triethoxysilane, PEG/PPG-18/18 Dimethicone, Dimethicone, PEG-12 Dimethicone, silicone, Lauryl PEG / PPG - 18 / 18 Methicone, , triethoxysilane, coney, mdimethicon, peg-40 hydrogenated castor oil, trimethylsiloxysilicate, saccharomycessilicon, Peg-40 castor oil,';
 const result = analyzer.analyze(list);
 
 describe('Silicone Analysis e2e complex list with curly_moderate system', () => {
@@ -64,6 +64,7 @@ describe('Silicone Analysis e2e complex list with curly_moderate system', () => 
       'peg-40 hydrogenated castor oil',
       'trimethylsiloxysilicate',
       'saccharomycessilicon',
+      'peg-40 castor oil',
     ]);
   });
   describe('ingredient matching', () => {
@@ -127,6 +128,13 @@ describe('Silicone Analysis e2e complex list with curly_moderate system', () => 
       {
         normalized: 'saccharomycessilicon',
         ingredientId: 'saccharomyces_silicon_ferment',
+        category: 'other',
+        status: 'ok',
+        reason: undefined,
+      },
+      {
+        normalized: 'peg-40 castor oil',
+        ingredientId: 'unknown_oil',
         category: 'other',
         status: 'ok',
         reason: undefined,

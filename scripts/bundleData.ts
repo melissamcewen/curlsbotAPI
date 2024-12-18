@@ -72,7 +72,8 @@ function loadProductsFromDir(dirPath: string): any {
       // Ensure required fields have defaults if missing
       name: product.name || product.id,
       product_categories: product.product_categories || [],
-      systems_excluded: product.systems_excluded || []
+      systems_excluded: product.systems_excluded || [],
+      tags: product.tags || []
     };
     return acc;
   }, {});

@@ -36,6 +36,11 @@
       "name": "Unknown Sulfonates",
       "id": "unknown_sulfonate",
       "categories": ["sulfonates"]
+    },
+    {
+      "name": "Unknown Oil",
+      "id": "unknown_oil",
+      "categories": ["other"]
     }
   ]
 }

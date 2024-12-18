@@ -11,7 +11,7 @@
         "light_oils"
       ],
       "references": [
-        "https://incidecoder.com/ingredients/prunus-armeniaca-kernel-oil"
+        {"url":"https://incidecoder.com/ingredients/prunus-armeniaca-kernel-oil"}
       ]
     },
     {
@@ -25,7 +25,7 @@
         "light_oils"
       ],
       "references": [
-        "https://incidecoder.com/ingredients/argania-spinosa-kernel-oil"
+        {"url":"https://incidecoder.com/ingredients/argania-spinosa-kernel-oil"}
       ]
     },
     {
@@ -39,7 +39,7 @@
         "medium_oils"
       ],
       "references": [
-        "https://incidecoder.com/ingredients/persea-gratissima-oil"
+        {"url":"https://incidecoder.com/ingredients/persea-gratissima-oil"}
       ]
     },
     {
@@ -53,7 +53,7 @@
         "medium_oils"
       ],
       "references": [
-        "https://incidecoder.com/ingredients/adansonia-digitata-seed-oil"
+        {"url":"https://incidecoder.com/ingredients/adansonia-digitata-seed-oil"}
       ]
     },
     {
@@ -67,7 +67,7 @@
         "light_oils"
       ],
       "references": [
-        "https://incidecoder.com/ingredients/camellia-oleifera-seed-oil"
+        {"url":"https://incidecoder.com/ingredients/camellia-oleifera-seed-oil"}
       ]
     },
     {
@@ -81,7 +81,7 @@
         "heavy_oils"
       ],
       "references": [
-        "https://incidecoder.com/ingredients/ricinus-communis-seed-oil"
+        {"url":"https://incidecoder.com/ingredients/ricinus-communis-seed-oil"}
       ]
     },
     {
@@ -95,7 +95,7 @@
         "medium_oils"
       ],
       "references": [
-        "https://incidecoder.com/ingredients/cocos-nucifera-oil"
+        {"url":"https://incidecoder.com/ingredients/cocos-nucifera-oil"}
       ]
     },
     {
@@ -109,7 +109,7 @@
         "light_oils"
       ],
       "references": [
-        "https://incidecoder.com/ingredients/vitis-vinifera-seed-oil"
+        {"url":"https://incidecoder.com/ingredients/vitis-vinifera-seed-oil"}
       ]
     },
     {
@@ -125,7 +125,7 @@
         "light_oils"
       ],
       "references": [
-        "https://incidecoder.com/ingredients/isohexadecane"
+        {"url":"https://incidecoder.com/ingredients/isohexadecane"}
       ]
     },
     {
@@ -139,7 +139,7 @@
         "light_oils"
       ],
       "references": [
-        "https://incidecoder.com/ingredients/simmondsia-chinensis-seed-oil"
+        {"url":"https://incidecoder.com/ingredients/simmondsia-chinensis-seed-oil"}
       ]
     },
     {
@@ -153,7 +153,7 @@
         "heavy_oils"
       ],
       "references": [
-        "https://incidecoder.com/ingredients/lanolin"
+        {"url":"https://incidecoder.com/ingredients/lanolin"}
       ]
     },
     {
@@ -167,7 +167,7 @@
         "light_oils"
       ],
       "references": [
-        "https://incidecoder.com/ingredients/sclerocarya-birrea-seed-oil"
+        {"url":"https://incidecoder.com/ingredients/sclerocarya-birrea-seed-oil"}
       ]
     },
     {
@@ -183,7 +183,7 @@
         "heavy_oils"
       ],
       "references": [
-        "https://incidecoder.com/ingredients/mineral-oil"
+        {"url":"https://incidecoder.com/ingredients/mineral-oil"}
       ]
     },
     {
@@ -197,7 +197,7 @@
         "medium_oils"
       ],
       "references": [
-        "https://incidecoder.com/ingredients/olea-europaea-fruit-oil"
+        {"url":"https://incidecoder.com/ingredients/olea-europaea-fruit-oil"}
       ]
     },
     {
@@ -211,7 +211,7 @@
         "medium_oils"
       ],
       "references": [
-        "https://incidecoder.com/ingredients/butyrospermum-parkii-butter-oil"
+        {"url":"https://incidecoder.com/ingredients/butyrospermum-parkii-butter-oil"}
       ]
     },
     {
@@ -225,7 +225,7 @@
         "medium_oils"
       ],
       "references": [
-        "https://incidecoder.com/ingredients/helianthus-annuus-seed-oil"
+        {"url":"https://incidecoder.com/ingredients/helianthus-annuus-seed-oil"}
       ]
     },
     {
@@ -239,7 +239,7 @@
         "light_oils"
       ],
       "references": [
-        "https://incidecoder.com/ingredients/prunus-amygdalus-dulcis-oil"
+        {"url":"https://incidecoder.com/ingredients/prunus-amygdalus-dulcis-oil"}
       ]
     }
   ]

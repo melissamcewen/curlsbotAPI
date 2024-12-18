@@ -58,7 +58,7 @@ describe('Handling of waxes under the default system', () => {
         normalized: 'lonincera japonica honeysuckle flower extract',
         ingredientId: undefined,
         category: undefined,
-        status: 'caution',
+        status: 'ok',
         reason: 'unknown_ingredient',
       },
     ];

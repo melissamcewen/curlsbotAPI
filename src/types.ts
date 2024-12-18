@@ -147,6 +147,10 @@ export interface Product {
   systems_excluded?: string[];
   /** Categories the product belongs to */
   product_categories: string[];
+  /** Tags the product belongs to */
+  tags?: string[];
+  /** Cost rating of the product */
+  cost_rating?: string;
 }
 
 /**

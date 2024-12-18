@@ -40,7 +40,7 @@
       "synonyms": ["candelilla wax", "vegetable wax", "natural plant wax"],
       "categories": ["non_water_soluble_waxes"],
       "references": [
-        "https://incidecoder.com/ingredients/euphorbia-cerifera-wax"
+        {"url":"https://incidecoder.com/ingredients/euphorbia-cerifera-wax"}
       ]
     },
     {
@@ -83,7 +83,7 @@
       ],
       "categories": ["water_soluble_waxes"],
       "references": [
-        "https://incidecoder.com/ingredients/peg-40-hydrogenated-castor-oil"
+        {"url":"https://incidecoder.com/ingredients/peg-40-hydrogenated-castor-oil"}
       ]
     },
     {

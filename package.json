@@ -30,7 +30,8 @@
     "prebuild": "npm run bundle-data",
     "export-ingredients": "tsx scripts/export-ingredients.ts",
     "import-ingredients": "tsx scripts/import-ingredients.ts",
-    "convert-references": "tsx scripts/convert-references.ts"
+    "convert-references": "tsx scripts/convert-references.ts",
+    "normalize": "tsx cli/normalize.ts"
   },
   "keywords": [
     "haircare",

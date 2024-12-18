@@ -86,8 +86,8 @@
       "synonyms": ["coconut monoethanolamide"],
       "categories": ["mild_detergents"],
       "references": [
-        "https://incidecoder.com/ingredients/cocamide-mea",
-        "https://pubchem.ncbi.nlm.nih.gov/compound/Cocamide-MEA"
+        {"url":"https://incidecoder.com/ingredients/cocamide-mea"},
+        {"url":"https://pubchem.ncbi.nlm.nih.gov/compound/Cocamide-MEA"}
       ]
     },
     {

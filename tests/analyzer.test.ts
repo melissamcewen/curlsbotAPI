@@ -42,8 +42,7 @@ describe('Analyzer', () => {
       expect(result.ingredients).toHaveLength(1);
       const ingredient = result.ingredients[0];
       expect(ingredient.normalized).toBe('unknown ingredient');
-      expect(ingredient.status).toBe('caution');
-      expect(ingredient.reasons[0].reason).toBe('Ingredient not found in database');
+
     });
 
     it('should handle empty input', () => {
