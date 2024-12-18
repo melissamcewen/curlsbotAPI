@@ -9,7 +9,6 @@ import {
   filterDatabaseByGroup,
   filterDatabaseByCategory,
 } from '../../src/utils/databaseUtils';
-
 import { testDatabase } from '../fixtures/test_bundled_data';
 
 describe('findIngredient', () => {
@@ -60,6 +59,8 @@ describe('findIngredient', () => {
     expect(result).toBeDefined();
     expect(result?.ingredient).toBeDefined();
     expect(result?.ingredient?.id).toBe('unknown_non_water_soluble_silicone');
+    expect(result?.ingredient?.categories).toBeDefined();
+    expect(result?.ingredient?.categories).toContain('non_water_soluble_silicone');
   });
 
   test('finds default ingredient through alternate group inclusion', () => {
@@ -199,6 +200,12 @@ describe('findCategoryByInclusion', () => {
     expect(result).toBeUndefined();
   });
 
+   it('integration should not match when search term matches exclusion ', () => {
+     const categories = testDatabase.categories;
+     const result = findCategoryByInclusion(categories, 'peg-40 castor oil');
+     expect(result?.categoryId).toBe('oils');
+   });
+
   it('should match when search term matches inclusion but not exclusion', () => {
     const categories = {
       test_category: {
@@ -245,6 +252,9 @@ describe('findGroupByInclusion', () => {
     expect(result).toBeUndefined();
   });
 
+
+
+
   it('should handle groups without inclusions', () => {
     const groups = {
       test: {
@@ -266,7 +276,7 @@ describe('findGroupByInclusion', () => {
       },
     };
     const result = findGroupByInclusion(groups, 'silicone based');
-    // Should return whichever group is first in object iteration order
+    // Should return whichever group is first in object iteration orderUndefined();
     expect(result).toBeDefined();
     expect(['silicones', 'test_group']).toContain(result?.groupId);
   });

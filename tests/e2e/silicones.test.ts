@@ -53,7 +53,7 @@ describe('Silicone Analysis e2e complex list with curly_moderate system', () => 
       'silicone',
       'cyclomethicone',
       'aminopropyl triethoxysilane',
-      'pegppg-1818 dimethicone',
+      'peg ppg-18 18 dimethicone',
       'dimethicone',
       'peg-12 dimethicone',
       'silicone',
@@ -72,56 +72,56 @@ describe('Silicone Analysis e2e complex list with curly_moderate system', () => 
       {
         normalized: 'peg-8 distearmonium chloride pg-dimethicone',
         ingredientId: 'unknown_water_soluble_silicone',
-        category: 'water_soluble_silicone',
+        category: 'water_soluble_silicones',
         status: 'caution',
         reason: 'caution_silicones',
       },
       {
         normalized: 'cetearyl methicone',
         ingredientId: 'cetearyl_methicone',
-        category: 'non_water_soluble_silicone',
+        category: 'non_water_soluble_silicones',
         status: 'warning',
         reason: 'no_water_insoluble_silicones',
       },
       {
         normalized: 'silicone',
         ingredientId: 'unknown_non_water_soluble_silicone',
-        category: 'non_water_soluble_silicone',
+        category: 'non_water_soluble_silicones',
         status: 'warning',
         reason: 'no_water_insoluble_silicones',
       },
       {
         normalized: 'cyclomethicone',
         ingredientId: 'cyclomethicone',
-        category: 'non_water_soluble_silicone',
+        category: 'evaporative_silicones',
         status: 'caution',
         reason: 'caution_silicones',
       },
       {
-        normalized: 'pegppg-1818 dimethicone',
+        normalized: 'peg ppg-18 18 dimethicone',
         ingredientId: 'unknown_water_soluble_silicone',
-        category: 'water_soluble_silicone',
+        category: 'water_soluble_silicones',
         status: 'caution',
         reason: 'caution_silicones',
       },
       {
         normalized: 'peg-12 dimethicone',
         ingredientId: 'peg_12_dimethicone',
-        category: 'water_soluble_silicone',
+        category: 'water_soluble_silicones',
         status: 'caution',
         reason: 'caution_silicones',
       },
       {
         normalized: 'lauryl peg ppg - 18 18 methicone',
         ingredientId: 'unknown_water_soluble_silicone',
-        category: 'water_soluble_silicone',
+        category: 'water_soluble_silicones',
         status: 'caution',
         reason: 'caution_silicones',
       },
       {
         normalized: 'trimethylsiloxysilicate',
         ingredientId: 'trimethylsiloxysilicate',
-        category: 'non_water_soluble_silicone',
+        category: 'non_water_soluble_silicones',
         status: 'warning',
         reason: 'no_water_insoluble_silicones',
       },
@@ -134,9 +134,9 @@ describe('Silicone Analysis e2e complex list with curly_moderate system', () => 
       },
       {
         normalized: 'peg-40 castor oil',
-        ingredientId: 'unknown_oil',
-        category: 'other',
-        status: 'ok',
+        ingredientId: 'castor_oil',
+        category: 'heavy_oils',
+        status: 'warning',
         reason: undefined,
       },
     ];
@@ -149,6 +149,9 @@ describe('Silicone Analysis e2e complex list with curly_moderate system', () => 
 
         expect(ingredientMatch).toBeDefined();
         expect(ingredientMatch?.ingredient?.id).toBe(expected.ingredientId);
+        expect(ingredientMatch?.ingredient?.categories).toEqual(
+          expect.arrayContaining([expected.category])
+        );
         expect(ingredientMatch?.status).toBe(expected.status);
         expect(
           ingredientMatch?.reasons.find((r) => r.setting === expected.reason)

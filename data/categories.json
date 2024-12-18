@@ -45,6 +45,7 @@
       "group": "silicones",
       "description": "TBD",
       "inclusions": ["ppg", "peg"],
+      "exclusions": ["castor"],
       "defaultIngredient": "unknown_water_soluble_silicone"
     },
     {

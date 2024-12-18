@@ -32,7 +32,7 @@
         "siloxysilicate",
         "microsil"
       ],
-      "exclusions": ["saccharomycessilicon", "ferment"],
+      "exclusions": ["saccharomycessilicon", "ferment", "castor"],
       "defaultIngredient": "unknown_non_water_soluble_silicone"
     },
     {
@@ -47,7 +47,9 @@
     },
     {
       "id": "oils",
-      "name": "Oils"
+      "name": "Oils",
+      "inclusions": ["oil"],
+      "defaultIngredient": "unknown_oil"
     }
   ]
 }

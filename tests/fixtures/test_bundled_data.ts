@@ -72,6 +72,11 @@ export const testDatabase: IngredientDatabase = {
       name: 'Lonincera Japonica Honeysuckle Flower Extract',
       categories: ['non_water_soluble_waxes'],
     },
+    unknown_oil: {
+      id: 'unknown_oil',
+      name: 'Unknown Oil',
+      categories: ['oils'],
+    },
   },
   categories: {
     non_water_soluble_silicone: {
@@ -86,6 +91,7 @@ export const testDatabase: IngredientDatabase = {
       description: 'Silicones that are water soluble',
       group: 'silicones',
       inclusions: ['peg', 'ppg'],
+      exclusions: ['castor'],
       defaultIngredient: 'unknown_water_soluble_silicone',
     },
     evaporative_silicone: {
@@ -136,6 +142,14 @@ export const testDatabase: IngredientDatabase = {
       description: 'Wax-based ingredients that are water soluble',
       group: 'waxes',
     },
+    oils: {
+      id: 'oils',
+      name: 'Oils',
+      description: 'Oil-based ingredients',
+      group: 'oils',
+      inclusions: ['oil'],
+      defaultIngredient: 'unknown_oil',
+    },
   },
   groups: {
     silicones: {
@@ -157,6 +171,13 @@ export const testDatabase: IngredientDatabase = {
       id: 'waxes',
       name: 'Waxes',
       inclusions: ['wax'],
+    },
+    oils: {
+      id: 'oils',
+      name: 'Oils',
+      inclusions: ['oil'],
+      defaultIngredient: 'unknown_oil',
+      exclusions: ['castor'],
     },
   },
 };

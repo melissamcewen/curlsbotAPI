@@ -2005,6 +2005,15 @@ export const defaultDatabase: IngredientDatabase = {
       "synonyms": [],
       "references": []
     },
+    "unknown_oil": {
+      "name": "Unknown Oil",
+      "id": "unknown_oil",
+      "categories": [
+        "other"
+      ],
+      "synonyms": [],
+      "references": []
+    },
     "beeswax": {
       "name": "Beeswax",
       "id": "beeswax",
@@ -2276,6 +2285,9 @@ export const defaultDatabase: IngredientDatabase = {
         "ppg",
         "peg"
       ],
+      "exclusions": [
+        "castor"
+      ],
       "defaultIngredient": "unknown_water_soluble_silicone",
       "references": []
     },
@@ -2419,7 +2431,8 @@ export const defaultDatabase: IngredientDatabase = {
       ],
       "exclusions": [
         "saccharomycessilicon",
-        "ferment"
+        "ferment",
+        "castor"
       ],
       "defaultIngredient": "unknown_non_water_soluble_silicone"
     },
@@ -2439,7 +2452,10 @@ export const defaultDatabase: IngredientDatabase = {
     "oils": {
       "id": "oils",
       "name": "Oils",
-      "inclusions": []
+      "inclusions": [
+        "oil"
+      ],
+      "defaultIngredient": "unknown_oil"
     }
   }
 };

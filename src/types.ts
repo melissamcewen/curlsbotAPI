@@ -25,6 +25,8 @@ export interface IngredientResult {
     id: string;
     name: string;
     description?: string;
+    categories: string[];
+    group?: string;
   };
 }
 
