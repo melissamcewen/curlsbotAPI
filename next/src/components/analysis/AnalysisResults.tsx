@@ -15,9 +15,9 @@ export default function AnalysisResults({ result }: Props) {
       case 'ok':
         return 'bg-success text-success-content';
       case 'warning':
-        return 'bg-warning text-warning-content';
-      case 'caution':
         return 'bg-error text-error-content';
+      case 'caution':
+        return 'bg-warning text-warning-content';
       default:
         return 'bg-base-200 text-base-content';
     }
@@ -28,9 +28,9 @@ export default function AnalysisResults({ result }: Props) {
       case 'ok':
         return 'border-success';
       case 'warning':
-        return 'border-warning';
-      case 'caution':
         return 'border-error';
+      case 'caution':
+        return 'border-warning';
       default:
         return 'border-base-300';
     }

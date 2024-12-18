@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { getBundledSettings, getBundledDatabase } from '../../../../src/data/bundledData';
+import type { Setting } from '../../../../src/types';
 
 interface CustomSystemFormProps {
   onSave: (settings: string[]) => void;
@@ -26,7 +27,6 @@ export default function CustomSystemForm({ onSave, initialSettings }: CustomSyst
 
   useEffect(() => {
     const settings = getBundledSettings();
-    const database = getBundledDatabase();
 
     // Create groups based on setting types
     const groups: Record<string, SettingGroup> = {
@@ -85,26 +85,29 @@ export default function CustomSystemForm({ onSave, initialSettings }: CustomSyst
     setSettingGroups(filteredGroups);
   }, []);
 
+  useEffect(() => {
+    setSelectedSettings(initialSettings);
+  }, [initialSettings]);
+
   const handleSettingToggle = (settingId: string) => {
-    setSelectedSettings(prev => {
-      if (prev.includes(settingId)) {
-        return prev.filter(id => id !== settingId);
-      } else {
-        return [...prev, settingId];
-      }
-    });
+    const newSettings = selectedSettings.includes(settingId)
+      ? selectedSettings.filter(id => id !== settingId)
+      : [...selectedSettings, settingId];
+
+    setSelectedSettings(newSettings);
+    onSave(newSettings);
   };
 
-  useEffect(() => {
-    onSave(selectedSettings);
-  }, [selectedSettings, onSave]);
-
   return (
-    <div className="space-y-6">
+    <div className="space-y-4">
+      <div className="text-base-content mb-4">
+        <h3 className="text-lg font-semibold mb-2">Customize Your Analysis System</h3>
+        <p className="text-sm text-base-content/70">Select the settings you want to include in your custom analysis system.</p>
+      </div>
       {settingGroups.map(group => (
-        <div key={group.name} className="collapse collapse-plus bg-base-200">
+        <div key={group.name} className="collapse collapse-plus bg-base-100 border border-base-300 rounded-xl shadow-sm">
           <input type="checkbox" defaultChecked={false} />
-          <div className="collapse-title text-xl font-medium flex justify-between items-center">
+          <div className="collapse-title text-xl font-medium flex justify-between items-center text-base-content">
             <div>
               {group.name}
               <div className="text-sm font-normal text-base-content/70">
@@ -116,9 +119,9 @@ export default function CustomSystemForm({ onSave, initialSettings }: CustomSyst
             {group.description && (
               <p className="text-sm text-base-content/70 mb-4">{group.description}</p>
             )}
-            <div className="space-y-4">
+            <div className="space-y-3">
               {group.settings.map(setting => (
-                <div key={setting.id} className="form-control bg-base-100 p-3 rounded-lg">
+                <div key={setting.id} className="bg-base-200 p-4 rounded-lg border border-base-300">
                   <label className="label cursor-pointer justify-start gap-4">
                     <input
                       type="checkbox"
@@ -126,8 +129,8 @@ export default function CustomSystemForm({ onSave, initialSettings }: CustomSyst
                       checked={selectedSettings.includes(setting.id)}
                       onChange={() => handleSettingToggle(setting.id)}
                     />
-                    <div>
-                      <span className="label-text font-medium">{setting.name}</span>
+                    <div className="flex-1">
+                      <span className="label-text font-medium text-base-content">{setting.name}</span>
                       {setting.description && (
                         <p className="text-sm text-base-content/70 mt-1">
                           {setting.description}

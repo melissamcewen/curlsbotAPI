@@ -102,11 +102,11 @@ export default function IngredientForm() {
       setCustomSettings(settings);
       // For custom system with settings, run analysis immediately
       if (ingredients.trim() && newSystemId === 'custom') {
-        // Update URL
+        // Update URL without scrolling
         const params = new URLSearchParams();
         params.set('ingredients', ingredients.trim());
         params.set('system', newSystemId);
-        router.push(`/?${params.toString()}`);
+        router.replace(`/?${params.toString()}`, { scroll: false });
 
         // Rerun analysis with custom settings
         handleAnalysis(ingredients, newSystemId, settings);
@@ -116,7 +116,7 @@ export default function IngredientForm() {
       const params = new URLSearchParams();
       params.set('ingredients', ingredients.trim());
       params.set('system', newSystemId);
-      router.push(`/?${params.toString()}`);
+      router.replace(`/?${params.toString()}`, { scroll: false });
 
       // Rerun analysis
       handleAnalysis(ingredients, newSystemId);
@@ -128,11 +128,11 @@ export default function IngredientForm() {
 
     // Rerun analysis if we have ingredients
     if (ingredients.trim()) {
-      // Update URL
+      // Update URL without scrolling
       const params = new URLSearchParams();
       params.set('ingredients', ingredients.trim());
       params.set('system', 'custom');
-      router.push(`/?${params.toString()}`);
+      router.replace(`/?${params.toString()}`, { scroll: false });
 
       // Rerun analysis with new settings
       handleAnalysis(ingredients, 'custom', settings);
@@ -143,11 +143,11 @@ export default function IngredientForm() {
     e.preventDefault();
     if (!ingredients.trim()) return;
 
-    // Update URL
+    // Update URL without scrolling
     const params = new URLSearchParams();
     params.set('ingredients', ingredients.trim());
     params.set('system', systemId);
-    router.push(`/?${params.toString()}`);
+    router.replace(`/?${params.toString()}`, { scroll: false });
 
     // Run analysis
     handleAnalysis(ingredients, systemId, systemId === 'custom' ? customSettings : undefined);
