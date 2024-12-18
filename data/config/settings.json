@@ -8,11 +8,11 @@
       "defaultStatus": "warning"
     },
     {
-      "id": "paraben_free",
-      "name": "Paraben Free",
+      "id": "paraben_caution",
+      "name": "Paraben Caution",
       "description": "Parabens are a type of preservative that can cause irritation and dryness.",
       "categories": ["parabens"],
-      "defaultStatus": "warning"
+      "defaultStatus": "caution"
     },
     {
       "id": "drying_alcohol",

@@ -1521,6 +1521,17 @@ export const defaultDatabase: IngredientDatabase = {
       ],
       "references": []
     },
+    "water": {
+      "name": "Water  ",
+      "id": "water",
+      "synonyms": [
+        "aqua"
+      ],
+      "categories": [
+        "other"
+      ],
+      "references": []
+    },
     "amodimethicone": {
       "name": "Amodimethicone",
       "id": "amodimethicone",

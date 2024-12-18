@@ -10,9 +10,12 @@
       "id": "parabens",
       "name": "Parabens",
       "group": "preservatives",
-      "description": "Parabens are a type of preservative that can cause irritation and dryness.",
+      "description": "Parabens are a type of preservative that some curly resources recommend avoiding. ",
       "inclusions": ["paraben"],
-      "defaultIngredient": "unknown_paraben"
+      "defaultIngredient": "unknown_paraben",
+      "references": [
+        "https://thebeautybrains.com/2006/05/the-perils-of-parabens/"
+      ]
     },
     {
       "id": "sulfates",

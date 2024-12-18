@@ -28,7 +28,8 @@
     "knip": "knip",
     "bundle-data": "tsx scripts/bundleData.ts",
     "prebuild": "npm run bundle-data",
-    "train": "tsx cli/train.ts train"
+    "export-ingredients": "tsx scripts/export-ingredients.ts",
+    "import-ingredients": "tsx scripts/import-ingredients.ts"
   },
   "keywords": [
     "haircare",
@@ -59,7 +60,10 @@
     "vite-plugin-dts": "^4.3.0",
     "vitest": "^2.1.8"
   },
-  "dependencies": {},
+  "dependencies": {
+    "csv-parse": "^5.6.0",
+    "json-2-csv": "^5.5.7"
+  },
   "files": [
     "dist",
     "README.md"

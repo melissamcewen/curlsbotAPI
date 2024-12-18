@@ -91,7 +91,7 @@ export class Analyzer {
       };
     } else {
       // Unknown ingredient gets a caution status
-      result.status = 'caution';
+      //result.status = 'caution';
       result.reasons.push({
         setting: 'unknown_ingredient',
         reason: 'Ingredient not found in database'

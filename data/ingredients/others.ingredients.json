@@ -249,6 +249,16 @@
       "categories": [
         "parabens"
       ]
+    },
+    {
+      "name": "Water  ",
+      "id": "water",
+      "synonyms": [
+        "aqua"
+      ],
+      "categories": [
+        "other"
+      ]
     }
   ]
 }
