@@ -21,9 +21,9 @@ export const defaultDatabase: IngredientDatabase = {
       "synonyms": [],
       "references": []
     },
-    "amino-2-methyl-1-propanol": {
+    "amino_2_methyl_1_propanol": {
       "name": "Amino-2-Methyl-1-Propanol",
-      "id": "amino-2-methyl-1-propanol",
+      "id": "amino_2_methyl_1_propanol",
       "categories": [
         "emollient_alcohols"
       ],
@@ -95,27 +95,27 @@ export const defaultDatabase: IngredientDatabase = {
       "synonyms": [],
       "references": []
     },
-    "c14-22_alcohol": {
+    "c14_22_alcohol": {
       "name": "C14-22 Alcohol",
-      "id": "c14-22_alcohol",
+      "id": "c14_22_alcohol",
       "categories": [
         "emollient_alcohols"
       ],
       "synonyms": [],
       "references": []
     },
-    "c20-c22_alcohol": {
+    "c20_c22_alcohol": {
       "name": "C20-C22 Alcohol",
-      "id": "c20-c22_alcohol",
+      "id": "c20_c22_alcohol",
       "categories": [
         "emollient_alcohols"
       ],
       "synonyms": [],
       "references": []
     },
-    "c30-50_alcohols": {
-      "name": "C30-50 Alcohols",
-      "id": "c30-50_alcohols",
+    "c30_50_alcohols": {
+      "name": "C30_50 Alcohols",
+      "id": "c30_50_alcohols",
       "categories": [
         "emollient_alcohols"
       ],
@@ -617,9 +617,9 @@ export const defaultDatabase: IngredientDatabase = {
       "synonyms": [],
       "references": []
     },
-    "ethyl_peg-15_cocamine_sulfate": {
+    "ethyl_peg_15_cocamine_sulfate": {
       "name": "Ethyl PEG-15 Cocamine Sulfate",
-      "id": "ethyl_peg-15_cocamine_sulfate",
+      "id": "ethyl_peg_15_cocamine_sulfate",
       "synonyms": [
         "ethyl peg-15 cocamine sulphate"
       ],
@@ -657,9 +657,9 @@ export const defaultDatabase: IngredientDatabase = {
       ],
       "references": []
     },
-    "sodium_c12-14_olefin_sulfonate": {
+    "sodium_c12_14_olefin_sulfonate": {
       "name": "Sodium C12-14 Olefin Sulfonate",
-      "id": "sodium_c12-14_olefin_sulfonate",
+      "id": "sodium_c12_14_olefin_sulfonate",
       "synonyms": [
         "sodium c12-14 olefin sulphate"
       ],
@@ -668,9 +668,9 @@ export const defaultDatabase: IngredientDatabase = {
       ],
       "references": []
     },
-    "sodium_c12-18_alkyl_sulfate": {
+    "sodium_c12_18_alkyl_sulfate": {
       "name": "Sodium C12-18 Alkyl Sulfate",
-      "id": "sodium_c12-18_alkyl_sulfate",
+      "id": "sodium_c12_18_alkyl_sulfate",
       "synonyms": [
         "sodium c12-18 alkyl sulphate"
       ],
@@ -679,9 +679,9 @@ export const defaultDatabase: IngredientDatabase = {
       ],
       "references": []
     },
-    "sodium_c14-15_olefin_sulfonate": {
+    "sodium_c14_15_olefin_sulfonate": {
       "name": "Sodium C14-15 Olefin Sulfonate",
-      "id": "sodium_c14-15_olefin_sulfonate",
+      "id": "sodium_c14_15_olefin_sulfonate",
       "synonyms": [
         "sodium c14-15 olefin sulphate"
       ],
@@ -690,9 +690,9 @@ export const defaultDatabase: IngredientDatabase = {
       ],
       "references": []
     },
-    "sodium_c14-16_olefin_sulfonate": {
+    "sodium_c14_16_olefin_sulfonate": {
       "name": "Sodium C14-16 Olefin Sulfonate",
-      "id": "sodium_c14-16_olefin_sulfonate",
+      "id": "sodium_c14_16_olefin_sulfonate",
       "synonyms": [
         "sodium c14-16 olefin sulphate"
       ],
@@ -701,9 +701,9 @@ export const defaultDatabase: IngredientDatabase = {
       ],
       "references": []
     },
-    "sodium_c14-18_olefin_sulfonate": {
+    "sodium_c14_18_olefin_sulfonate": {
       "name": "Sodium C14-18 Olefin Sulfonate",
-      "id": "sodium_c14-18_olefin_sulfonate",
+      "id": "sodium_c14_18_olefin_sulfonate",
       "synonyms": [
         "sodium c14-18 olefin sulphate"
       ],
@@ -712,9 +712,9 @@ export const defaultDatabase: IngredientDatabase = {
       ],
       "references": []
     },
-    "sodium_c14-26_olefin_sulfonate": {
+    "sodium_c14_26_olefin_sulfonate": {
       "name": "Sodium C14-26 Olefin Sulfonate",
-      "id": "sodium_c14-26_olefin_sulfonate",
+      "id": "sodium_c14_26_olefin_sulfonate",
       "synonyms": [
         "sodium c14-26 olefin sulphate"
       ],
@@ -723,9 +723,9 @@ export const defaultDatabase: IngredientDatabase = {
       ],
       "references": []
     },
-    "sodium_c16-18_olefin_sulfonate": {
+    "sodium_c16_18_olefin_sulfonate": {
       "name": "Sodium C16-18 Olefin Sulfonate",
-      "id": "sodium_c16-18_olefin_sulfonate",
+      "id": "sodium_c16_18_olefin_sulfonate",
       "synonyms": [
         "sodium c16-18 olefin sulphate"
       ],
@@ -825,9 +825,9 @@ export const defaultDatabase: IngredientDatabase = {
       ],
       "references": []
     },
-    "sodium_laureth-40_sulfate": {
+    "sodium_laureth_40_sulfate": {
       "name": "Sodium Laureth-40 Sulfate",
-      "id": "sodium_laureth-40_sulfate",
+      "id": "sodium_laureth_40_sulfate",
       "synonyms": [
         "sodium laureth-40 sulphate"
       ],
@@ -1265,9 +1265,9 @@ export const defaultDatabase: IngredientDatabase = {
       ],
       "synonyms": []
     },
-    "disodium_2-sulfolaurate": {
+    "disodium_2_sulfolaurate": {
       "name": "Disodium 2-Sulfolaurate",
-      "id": "disodium_2-sulfolaurate",
+      "id": "disodium_2_sulfolaurate",
       "categories": [
         "other_detergents"
       ],
@@ -1422,9 +1422,9 @@ export const defaultDatabase: IngredientDatabase = {
       "synonyms": [],
       "references": []
     },
-    "sodium_methyl_2-sulfolaurate": {
+    "sodium_methyl_2_sulfolaurate": {
       "name": "Sodium Methyl 2-Sulfolaurate",
-      "id": "sodium_methyl_2-sulfolaurate",
+      "id": "sodium_methyl_2_sulfolaurate",
       "categories": [
         "other_detergents"
       ],

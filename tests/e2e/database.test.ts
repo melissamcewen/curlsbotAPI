@@ -121,4 +121,54 @@ describe('Production Database E2E Tests', () => {
       expect(warnings).toHaveLength(0);
     });
   });
+
+  describe('ID Format Validation', () => {
+    it('should have correctly formatted IDs (lowercase, no hyphens)', () => {
+      const warnings: string[] = [];
+      const idFormatRegex = /^[a-z0-9_]+$/;  // Only lowercase letters, numbers, and underscores
+
+      // Check ingredient IDs
+      Object.entries(defaultDatabase.ingredients).forEach(([id, ingredient]) => {
+        if (!idFormatRegex.test(id) || id !== ingredient.id) {
+          warnings.push(`Invalid ingredient ID format: "${id}" (${ingredient.name})`);
+        }
+      });
+
+      // Check category IDs
+      Object.entries(defaultDatabase.categories).forEach(([id, category]) => {
+        if (!idFormatRegex.test(id) || id !== category.id) {
+          warnings.push(`Invalid category ID format: "${id}" (${category.name})`);
+        }
+      });
+
+      // Check group IDs
+      Object.entries(defaultDatabase.groups).forEach(([id, group]) => {
+        if (!idFormatRegex.test(id) || id !== group.id) {
+          warnings.push(`Invalid group ID format: "${id}" (${group.name})`);
+        }
+      });
+
+      // Check system IDs
+      defaultSystems.forEach(system => {
+        if (!idFormatRegex.test(system.id)) {
+          warnings.push(`Invalid system ID format: "${system.id}" (${system.name})`);
+        }
+      });
+
+      // Check setting IDs
+      Object.entries(defaultSettings).forEach(([id, setting]) => {
+        if (!idFormatRegex.test(id) || id !== setting.id) {
+          warnings.push(`Invalid setting ID format: "${id}" (${setting.name})`);
+        }
+      });
+
+      // Log warnings if any
+      if (warnings.length > 0) {
+        console.warn('ID format warnings:');
+        warnings.forEach(warning => console.warn(warning));
+      }
+
+      expect(warnings).toHaveLength(0);
+    });
+  });
 });

@@ -137,7 +137,7 @@
     },
     {
       "name": "Ethyl PEG-15 Cocamine Sulfate",
-      "id": "ethyl_peg-15_cocamine_sulfate",
+      "id": "ethyl_peg_15_cocamine_sulfate",
       "synonyms": ["ethyl peg-15 cocamine sulphate"],
       "categories": ["sulfates"]
     },
@@ -159,43 +159,43 @@
     },
     {
       "name": "Sodium C12-14 Olefin Sulfonate",
-      "id": "sodium_c12-14_olefin_sulfonate",
+      "id": "sodium_c12_14_olefin_sulfonate",
       "synonyms": ["sodium c12-14 olefin sulphate"],
       "categories": ["sulfonates"]
     },
     {
       "name": "Sodium C12-18 Alkyl Sulfate",
-      "id": "sodium_c12-18_alkyl_sulfate",
+      "id": "sodium_c12_18_alkyl_sulfate",
       "synonyms": ["sodium c12-18 alkyl sulphate"],
       "categories": ["sulfates"]
     },
     {
       "name": "Sodium C14-15 Olefin Sulfonate",
-      "id": "sodium_c14-15_olefin_sulfonate",
+      "id": "sodium_c14_15_olefin_sulfonate",
       "synonyms": ["sodium c14-15 olefin sulphate"],
       "categories": ["sulfonates"]
     },
     {
       "name": "Sodium C14-16 Olefin Sulfonate",
-      "id": "sodium_c14-16_olefin_sulfonate",
+      "id": "sodium_c14_16_olefin_sulfonate",
       "synonyms": ["sodium c14-16 olefin sulphate"],
       "categories": ["sulfonates"]
     },
     {
       "name": "Sodium C14-18 Olefin Sulfonate",
-      "id": "sodium_c14-18_olefin_sulfonate",
+      "id": "sodium_c14_18_olefin_sulfonate",
       "synonyms": ["sodium c14-18 olefin sulphate"],
       "categories": ["sulfonates"]
     },
     {
       "name": "Sodium C14-26 Olefin Sulfonate",
-      "id": "sodium_c14-26_olefin_sulfonate",
+      "id": "sodium_c14_26_olefin_sulfonate",
       "synonyms": ["sodium c14-26 olefin sulphate"],
       "categories": ["sulfonates"]
     },
     {
       "name": "Sodium C16-18 Olefin Sulfonate",
-      "id": "sodium_c16-18_olefin_sulfonate",
+      "id": "sodium_c16_18_olefin_sulfonate",
       "synonyms": ["sodium c16-18 olefin sulphate"],
       "categories": ["sulfonates"]
     },
@@ -251,7 +251,7 @@
     },
     {
       "name": "Sodium Laureth-40 Sulfate",
-      "id": "sodium_laureth-40_sulfate",
+      "id": "sodium_laureth_40_sulfate",
       "synonyms": ["sodium laureth-40 sulphate"],
       "categories": ["sulfonates"]
     },

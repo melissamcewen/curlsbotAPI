@@ -16,7 +16,7 @@
     },
     {
       "name": "Amino-2-Methyl-1-Propanol",
-      "id": "amino-2-methyl-1-propanol",
+      "id": "amino_2_methyl_1_propanol",
       "categories": [
         "emollient_alcohols"
       ]
@@ -81,21 +81,21 @@
     },
     {
       "name": "C14-22 Alcohol",
-      "id": "c14-22_alcohol",
+      "id": "c14_22_alcohol",
       "categories": [
         "emollient_alcohols"
       ]
     },
     {
       "name": "C20-C22 Alcohol",
-      "id": "c20-c22_alcohol",
+      "id": "c20_c22_alcohol",
       "categories": [
         "emollient_alcohols"
       ]
     },
     {
-      "name": "C30-50 Alcohols",
-      "id": "c30-50_alcohols",
+      "name": "C30_50 Alcohols",
+      "id": "c30_50_alcohols",
       "categories": [
         "emollient_alcohols"
       ],
