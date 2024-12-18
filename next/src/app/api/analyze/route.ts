@@ -1,10 +1,11 @@
 import { NextResponse } from 'next/server';
 import { Analyzer } from '../../../../../src/analyzer';
+import { getBundledSystems, getBundledSettings } from '../../../../../src/data/bundledData';
 import type { AnalysisResult } from '@/types/analysis';
 
 export async function POST(request: Request) {
   try {
-    const { ingredients } = await request.json();
+    const { ingredients, systemId = 'curly_default', customSettings } = await request.json();
 
     if (!ingredients || typeof ingredients !== 'string') {
       return NextResponse.json(
@@ -15,6 +16,36 @@ export async function POST(request: Request) {
 
     // Create analyzer with default configuration
     const analyzer = new Analyzer();
+
+    // Handle system selection
+    if (systemId === 'custom') {
+      if (!Array.isArray(customSettings) || customSettings.length === 0) {
+        return NextResponse.json(
+          { error: 'Custom system requires settings' },
+          { status: 400 }
+        );
+      }
+
+      // Create a custom system with the selected settings
+      const customSystem = {
+        id: 'custom',
+        name: 'Custom System',
+        description: 'User-defined system',
+        settings: customSettings
+      };
+
+      analyzer.setSystem(customSystem);
+    } else if (systemId !== 'curly_default') {
+      const systems = getBundledSystems();
+      const selectedSystem = systems.find(s => s.id === systemId);
+      if (!selectedSystem) {
+        return NextResponse.json(
+          { error: 'Invalid system selected' },
+          { status: 400 }
+        );
+      }
+      analyzer.setSystem(selectedSystem);
+    }
 
     // Analyze ingredients
     const analysisResult = analyzer.analyze(ingredients);

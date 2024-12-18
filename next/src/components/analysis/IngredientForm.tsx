@@ -3,12 +3,22 @@
 import { useState } from 'react';
 import { AnalysisResult } from '@/types/analysis';
 import AnalysisResults from './AnalysisResults';
+import SystemSelector from './SystemSelector';
 
 export default function IngredientForm() {
   const [ingredients, setIngredients] = useState('');
+  const [systemId, setSystemId] = useState('curly_default');
+  const [customSettings, setCustomSettings] = useState<string[]>([]);
   const [isAnalyzing, setIsAnalyzing] = useState(false);
   const [results, setResults] = useState<AnalysisResult | null>(null);
   const [error, setError] = useState<string | null>(null);
+
+  const handleSystemChange = (newSystemId: string, settings?: string[]) => {
+    setSystemId(newSystemId);
+    if (settings) {
+      setCustomSettings(settings);
+    }
+  };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -22,7 +32,11 @@ export default function IngredientForm() {
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ ingredients: ingredients.trim() }),
+        body: JSON.stringify({
+          ingredients: ingredients.trim(),
+          systemId,
+          customSettings: systemId === 'custom' ? customSettings : undefined
+        }),
       });
 
       if (!response.ok) {
@@ -40,7 +54,12 @@ export default function IngredientForm() {
 
   return (
     <div className="space-y-6">
-      <form onSubmit={handleSubmit} className="w-full">
+      <form onSubmit={handleSubmit} className="w-full space-y-4">
+        <SystemSelector
+          value={systemId}
+          onChange={handleSystemChange}
+        />
+
         <div className="form-control w-full">
           <label className="label">
             <span className="label-text">Paste Your Ingredients</span>
@@ -55,8 +74,8 @@ export default function IngredientForm() {
 
         <button
           type="submit"
-          className={`btn btn-primary w-full mt-4 ${isAnalyzing ? 'loading' : ''}`}
-          disabled={!ingredients.trim() || isAnalyzing}
+          className={`btn btn-primary w-full ${isAnalyzing ? 'loading' : ''}`}
+          disabled={!ingredients.trim() || isAnalyzing || (systemId === 'custom' && customSettings.length === 0)}
         >
           {isAnalyzing ? 'Analyzing...' : 'Analyze Ingredients'}
         </button>
