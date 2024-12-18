@@ -1,0 +1,12 @@
+{
+  "products": [
+    {
+      "name": "Sweet Spirit Leave-In Conditioner",
+      "brand": "Innersense",
+      "buy_url": "https://amzn.to/2yjHQ1r",
+      "product_categories": ["leave_ins"],
+      "tags": ["high_porosity", "normal_porosity"],
+      "cost_rating": "3"
+    }
+  ]
+}

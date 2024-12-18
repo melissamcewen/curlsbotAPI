@@ -1,0 +1,13 @@
+{
+  "products": [
+     {
+       "name": "Coconut Cowash Cleansing Conditioner",
+       "brand": "As I Am",
+       "buy_url": "https://amzn.to/3ZXbMQS",
+       "product_categories": ["cowashes"],
+       "tags": ["high_porosity"],
+       "cost_rating": "2",
+       "ingredients_raw": "aqua water eau, cetyl alcohol, cetrimonium chloride, cetearyl alcohol, cocos nucifera coconut oil, ricinus communis castor seed oil, cocos nucifera coconut fruit powder, citrus reticulata tangerine fruit extract, phytosterols, camillia sinensis leaf extract, peg-40 castor oil, stearlkonium chloride, serenoa serrulata fruit extract, quaternium-18, propylene glycol, c12-15 alkyl lactate, fragrance parfum, potassium sorbate, caprylyl glycol, phenoxyethanol, abies balsamea balsam canada resin, potassium chloride, limonene, glycerin, caprylic capric triglyceride"
+     }
+  ]
+}

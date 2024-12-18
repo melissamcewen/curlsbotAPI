@@ -6,7 +6,11 @@ import type { NormalizedIngredientList } from '../types';
  * @returns `true` if ingredient is valid, `false` otherwise
  */
 export function isValidIngredient(value: string): boolean {
-  return value.trim().length > 0 && value.length <= 150;
+  const normalized = value.trim();
+  // Check if after normalization we actually have alphanumeric content
+  return normalized.length > 0 &&
+         normalized.length <= 150 &&
+         /[a-zA-Z0-9]/.test(normalized); // Must contain at least one alphanumeric character
 }
 
 /**
@@ -65,7 +69,7 @@ export function processCommaParentheses(ingredient_list: string): string {
       }
 
       if (trimmedContent === '') {
-        return '(  )'; // Preserve empty parentheses with spaces
+        return ''; // Remove empty parentheses completely instead of preserving them
       }
 
       return `(${content})`; // Return parentheses content unchanged
@@ -93,7 +97,7 @@ export function splitBySeparators(text: string): string[] {
   return text
     .split(/(?:[,\n\r|&]|\s+and\s+)/) // Split by comma, newline, carriage return, pipe, ampersand, or " and "
     .map(part => part.trim())
-    .filter(Boolean); // Remove empty strings
+    .filter(part => part.length > 0); // Change Boolean to explicit length check
 }
 
 
@@ -105,13 +109,21 @@ export function normalizer(text: string): NormalizedIngredientList {
   if (!isValidIngredientList(text)) {
     return { ingredients: [], isValid: false };
   }
+  console.log('it is a valid ingredient list');
   // first process the text to remove any commas in parentheses
   const processedText = processCommaParentheses(text);
+  console.log('processed text', processedText);
   // then split the text by commas
   const ingredients = splitBySeparators(processedText);
-
+  console.log('ingredients', ingredients);
   //remove any invalid ingredients
   const validIngredients = ingredients.filter(isValidIngredient);
+  console.log('valid ingredients', validIngredients);
+
+  // Return invalid if no valid ingredients were found
+  if (validIngredients.length === 0) {
+    return { ingredients: [], isValid: false };
+  }
 
   // then process each ingredient to remove any invalid characters and trim
   const normalizedIngredients = validIngredients.map(ingredient => normalizeIngredient(ingredient));

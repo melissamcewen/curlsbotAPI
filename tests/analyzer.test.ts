@@ -61,6 +61,24 @@ describe('Analyzer', () => {
       expect(result.status).toBe('error');
       expect(result.ingredients).toHaveLength(0);
     });
+
+    it('should return an error for urls', () => {
+      const analyzer = new Analyzer({ database: testDatabase });
+      const result = analyzer.analyze('http://www.curlsbot.com');
+
+      expect(result.status).toBe('error');
+      expect(result.ingredients).toHaveLength(0);
+    });
+
+    it('should return an error for malformed input', () => {
+      const analyzer = new Analyzer({ database: testDatabase });
+      const result = analyzer.analyze(
+        'Aqua (Water)Alcohol Denat [1]GlycerinMaltodextrinBeta Vulgaris (Beet) Root Juice ExtractHectoritesorbitolchamomilla recutita flower extract [1]Lawsonia Inermis (Henna) Extractcoco glucosideXanthan GumAlginRosmarinus Officinalis (Rosemary) Leaf ExtractcitricacidParfum (Fragrance) [2]Linalool [2]Limonen [2]Eugenol [2]',
+      );
+
+      expect(result.status).toBe('error');
+      expect(result.ingredients).toHaveLength(0);
+    });
   });
 
   describe('Configuration', () => {

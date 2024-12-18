@@ -1,0 +1,12 @@
+{
+  "products": [
+    {
+      "name": "I Create Volume",
+      "brand": "Innersense",
+      "buy_url": "https://amzn.to/3ZXk3o3",
+      "product_categories": ["creams"],
+      "tags": ["low_porosity", "curl_enhancer"],
+      "cost_rating": "2"
+    }
+  ]
+}

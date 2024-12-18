@@ -259,6 +259,16 @@
       "categories": [
         "other"
       ]
+    },
+    {
+      "name": "Solvent",
+      "id": "isododecane",
+      "categories": [
+        "solvents"
+      ],
+      "references": [
+        {"url":"https://incidecoder.com/ingredients/isododecane"}
+      ]
     }
   ]
 }

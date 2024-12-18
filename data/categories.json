@@ -131,6 +131,12 @@
       "name": "Other",
       "group": "others",
       "description": "Others in the group others"
+    },
+    {
+      "id": "solvents",
+      "name": "Solvents",
+      "group": "others",
+      "description": "TBD"
     }
   ]
 }

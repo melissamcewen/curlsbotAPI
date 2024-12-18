@@ -6,7 +6,7 @@
       "buy_url": "https://amzn.to/49LHTpT",
       "systems_excluded": ["curly_default"],
       "product_categories": ["shampoos"],
-      "tags": ["normal-porosity"],
+      "tags": ["normal_porosity", "low_porosity"],
       "cost_rating": "2"
     },
     {
@@ -14,16 +14,8 @@
       "brand": "Innersense",
       "buy_url": "https://amzn.to/4glSRVBh",
       "product_categories": ["shampoos"],
-      "tags": ["high-porosity"],
+      "tags": ["high_porosity", "normal_porosity"],
       "cost_rating": "3"
-    },
-    {
-      "name": "Coconut Cowash Cleansing Conditioner",
-      "brand": "As I Am",
-      "buy_url": "https://amzn.to/3ZXbMQS",
-      "product_categories": ["cleansing-conditioners"],
-      "tags": ["high-porosity"],
-      "cost_rating": "2"
     }
   ]
 }

@@ -1,0 +1,20 @@
+{
+  "products": [
+    {
+      "name": "MopTop Anti-frizz Medium Hold Gel",
+      "brand": "MopTop",
+      "buy_url": "https://amzn.to/2kK7lb3",
+      "product_categories": ["gels"],
+      "tags": ["high_porosity", "normal_porosity"],
+      "cost_rating": "2"
+    },
+    {
+      "name": "I Create Hold",
+      "brand": "Innersense",
+      "buy_url": "https://amzn.to/2BYccc7",
+      "product_categories": ["gels"],
+      "tags": ["low_porosity", "hold"],
+      "cost_rating": "2"
+    }
+  ]
+}

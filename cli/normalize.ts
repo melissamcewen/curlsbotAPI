@@ -24,13 +24,13 @@ program
       process.exit(1);
     }
 
-    if (options.raw) {
-      // Output as JSON array
-      console.log(JSON.stringify(result.ingredients, null, 2));
-    } else {
+console.log(this)
+    //Output as JSON array
+     console.log(JSON.stringify(result.ingredients, null, 2));
+
       // Output as comma-separated list
-      console.log(result.ingredients.join(', '));
-    }
+     // console.log(result.ingredients.join(', '));
+
   });
 
 program.parse();

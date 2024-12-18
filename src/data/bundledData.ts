@@ -1630,6 +1630,19 @@ export const defaultDatabase: IngredientDatabase = {
       ],
       "references": []
     },
+    "isododecane": {
+      "name": "Solvent",
+      "id": "isododecane",
+      "categories": [
+        "solvents"
+      ],
+      "references": [
+        {
+          "url": "https://incidecoder.com/ingredients/isododecane"
+        }
+      ],
+      "synonyms": []
+    },
     "amodimethicone": {
       "name": "Amodimethicone",
       "id": "amodimethicone",
@@ -2387,6 +2400,13 @@ export const defaultDatabase: IngredientDatabase = {
       "name": "Other",
       "group": "others",
       "description": "Others in the group others",
+      "references": []
+    },
+    "solvents": {
+      "id": "solvents",
+      "name": "Solvents",
+      "group": "others",
+      "description": "TBD",
       "references": []
     }
   },

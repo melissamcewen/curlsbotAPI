@@ -48,6 +48,8 @@ describe('Normalizer', () => {
       expect(isValidIngredientList('httpx://not-a-url')).toBe(false);
       expect(isValidIngredientList('wwwx.not-a-url')).toBe(true);
     });
+
+
   });
 
   describe('normalizeIngredient', () => {
@@ -86,7 +88,7 @@ describe('Normalizer', () => {
     it('should handle empty parentheses and spaces correctly', () => {
       // Empty parentheses should be left as is
       expect(processCommaParentheses('Test (), Other (  )')).toBe(
-        'Test (  ), Other (  )',
+        'Test , Other ',
       );
       // Only process parentheses with commas
       expect(processCommaParentheses('Multiple   Spaces   (a,b)')).toBe(
@@ -98,7 +100,9 @@ describe('Normalizer', () => {
 
     it('should handle nested and unmatched parentheses', () => {
       // Nested parentheses should be unnested
-      expect(processCommaParentheses('Test (a, (b, c))')).toBe('Test , a, b, c');
+      expect(processCommaParentheses('Test (a, (b, c))')).toBe(
+        'Test , a, b, c',
+      );
       // Unmatched parentheses should be left as is
       expect(processCommaParentheses('Test (a, b')).toBe('Test (a, b');
       expect(processCommaParentheses('Test ) (a, b)')).toBe('Test ) , a, b');
@@ -172,6 +176,8 @@ describe('Normalizer', () => {
       ]);
     });
 
+
+
     it('should handle special characters and punctuation', () => {
       const input = 'Vitamin B5*, Aloe Vera., Citrus Extract*, Witch Hazel...';
       const result = normalizer(input);
@@ -219,7 +225,6 @@ describe('Normalizer', () => {
       expect(result.ingredients).toEqual(['water', 'glycerin', 'aloe']);
     });
 
-
     it('should handle special characters and numbers', () => {
       const input = 'Water, C12-15 Alkyl Benzoate, Vitamin B5, pH Adjuster';
       const result = normalizer(input);
@@ -242,6 +247,23 @@ describe('Normalizer', () => {
         '   ',
         '\n\n',
         '\t',
+      ];
+
+      inputs.forEach((input) => {
+        const result = normalizer(input);
+        expect(result).toEqual({
+          ingredients: [],
+          isValid: false,
+        });
+      });
+    });
+
+    it('should return invalid when no valid ingredients exist', () => {
+      const inputs = [
+        'a'.repeat(151),  // Too long
+        '    ',           // Only whitespace
+        '*, @, #',        // Only special characters
+        '(), (), ()',     // Only empty parentheses
       ];
 
       inputs.forEach((input) => {
