@@ -97,6 +97,16 @@ export default function CustomSystemForm({ onSave, initialSettings = [] }: Custo
     onSave(Array.from(newSelected));
   };
 
+  const DetailsList = ({ title, items }: { title: string; items?: string[] }) => {
+    if (!items?.length) return null;
+    return (
+      <div className="mt-2">
+        <span className="text-sm font-medium">{title}: </span>
+        <span className="text-sm opacity-70">{items.join(', ')}</span>
+      </div>
+    );
+  };
+
   const SettingCard = ({ setting }: { setting: Setting }) => (
     <div className="card bg-base-200">
       <div className="card-body p-4">
@@ -116,6 +126,21 @@ export default function CustomSystemForm({ onSave, initialSettings = [] }: Custo
             {setting.description}
           </p>
         )}
+        <div className="mt-2 space-y-1">
+          <DetailsList title="Groups" items={setting.groups} />
+          <DetailsList title="Categories" items={setting.categories} />
+          <DetailsList title="Allowed Categories" items={setting.allowedCategories} />
+          {setting.ingredients && setting.ingredients.length > 0 && (
+            <div className="mt-2">
+              <span className="text-sm font-medium">Ingredients: </span>
+              <div className="flex flex-wrap gap-1 mt-1">
+                {setting.ingredients.map((ingredient, index) => (
+                  <span key={index} className="badge badge-sm">{ingredient}</span>
+                ))}
+              </div>
+            </div>
+          )}
+        </div>
       </div>
     </div>
   );
