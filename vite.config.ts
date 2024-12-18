@@ -12,15 +12,6 @@ export default defineConfig({
       formats: ['es', 'umd'],
     },
     sourcemap: true,
-    rollupOptions: {
-      external: ['uuid', 'flexsearch'],
-      output: {
-        globals: {
-          uuid: 'uuid',
-          flexsearch: 'FlexSearch',
-        },
-      },
-    },
   },
   plugins: [
     dts({

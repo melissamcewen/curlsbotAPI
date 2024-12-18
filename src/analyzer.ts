@@ -89,7 +89,9 @@ export class Analyzer {
         name: match.ingredient.name,
         description: match.ingredient.description,
         categories: match.ingredient.categories,
-        group: match.ingredient.categories.length > 0 ? this.database.categories[match.ingredient.categories[0]]?.group : undefined
+        group: match.ingredient.categories.length > 0 && match.ingredient.categories[0] ?
+          this.database.categories[match.ingredient.categories[0]]?.group :
+          undefined
       };
     } else {
       // Unknown ingredient gets a caution status

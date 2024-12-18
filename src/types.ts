@@ -153,6 +153,10 @@ export interface Product {
   tags?: string[];
   /** Cost rating of the product */
   cost_rating?: string;
+  /** Raw ingredients list from the product */
+  ingredients_raw?: string;
+  /** Description of the product */
+  description?:  string;
 }
 
 /**

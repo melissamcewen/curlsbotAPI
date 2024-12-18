@@ -18,6 +18,10 @@ function convertToReferenceObjects(refs: (string | Reference)[]): Reference[] {
   });
 }
 
+function generateIdFromName(name: string): string {
+  return name.toLowerCase().replace(/\s+/g, '_');
+}
+
 function loadIngredientsFromDir(dirPath: string): any {
   const files = readdirSync(dirPath).filter(file => file.endsWith('.ingredients.json'));
   const allIngredients: any[] = [];
@@ -63,14 +67,18 @@ function loadProductsFromDir(dirPath: string): any {
   }
 
   return allProducts.reduce((acc, product) => {
-    if (!product.id) {
-      console.warn(`Warning: Product missing required 'id' field:`, product);
+    // Generate ID from name if name exists, otherwise use existing ID or warn
+    const productName = product.name || product.id;
+    if (!productName) {
+      console.warn(`Warning: Product missing both 'name' and 'id' fields:`, product);
       return acc;
     }
-    acc[product.id] = {
-      ...product, // Keep all original fields
-      // Ensure required fields have defaults if missing
-      name: product.name || product.id,
+
+    const productId = generateIdFromName(productName);
+    acc[productId] = {
+      ...product,
+      id: productId,
+      name: productName,
       product_categories: product.product_categories || [],
       systems_excluded: product.systems_excluded || [],
       tags: product.tags || []
