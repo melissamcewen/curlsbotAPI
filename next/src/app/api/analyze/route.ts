@@ -1,6 +1,5 @@
 import { NextResponse } from 'next/server';
-import { Analyzer } from '../../../../../src/analyzer';
-import { getBundledSystems, getBundledSettings } from '../../../../../src/data/bundledData';
+import { Analyzer, getBundledSystems } from "@analyzer";
 import type { AnalysisResult } from '@/types/analysis';
 
 export async function POST(request: Request) {

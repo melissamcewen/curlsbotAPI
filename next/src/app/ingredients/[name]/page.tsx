@@ -1,6 +1,6 @@
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
-import { getBundledDatabase } from '../../../../../src/data/bundledData';
+import { getBundledDatabase } from "@analyzer";
 
 interface PageProps {
   params: {
@@ -8,7 +8,7 @@ interface PageProps {
   };
 }
 
-export default function IngredientPage({ params }: PageProps) {
+export default async function IngredientPage({ params }: PageProps) {
   const decodedName = decodeURIComponent(params.name).toLowerCase();
   const database = getBundledDatabase();
 

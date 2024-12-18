@@ -8,13 +8,16 @@ export default defineConfig({
     lib: {
       entry: 'src/index.ts',
       name: 'haircare-ingredients-analyzer',
-      fileName: (format) => `index.${format}.js`,
-      formats: ['es', 'umd'],
+      fileName: 'index',
+      formats: ['es'],
     },
+    outDir: 'next/src/lib/analyzer',
     sourcemap: true,
     rollupOptions: {
       external: ['uuid', 'flexsearch'],
       output: {
+        exports: 'named',
+        preserveModules: true,
         globals: {
           uuid: 'uuid',
           flexsearch: 'FlexSearch',
@@ -25,8 +28,8 @@ export default defineConfig({
   plugins: [
     dts({
       tsconfigPath: './src/tsconfig.json',
-      // This will ensure types are built from src only
       include: ['src'],
+      outDir: 'next/src/lib/analyzer/types',
     }),
   ],
   resolve: {

@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { getBundledSystems } from '../../../../src/data/bundledData';
+import { getBundledSystems } from "@analyzer";
 import CustomSystemForm from './CustomSystemForm';
 
 interface System {

@@ -1,13 +1,21 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import ThemeToggle from "@/components/ThemeToggle";
 
-const inter = Inter({ subsets: ["latin"] });
+const geistSans = Geist({
+  variable: "--font-geist-sans",
+  subsets: ["latin"],
+});
+
+const geistMono = Geist_Mono({
+  variable: "--font-geist-mono",
+  subsets: ["latin"],
+});
 
 export const metadata: Metadata = {
   title: "CurlsBot",
-  description: "Analyze your hair product ingredients",
+  description: "Your intelligent assistant for analyzing hair care ingredients",
 };
 
 export default function RootLayout({
@@ -17,11 +25,28 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={inter.className} suppressHydrationWarning>
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function() {
+                try {
+                  var theme = localStorage.getItem('theme') || 'cupcake';
+                  document.documentElement.setAttribute('data-theme', theme);
+                } catch (e) {}
+              })();
+            `,
+          }}
+        />
+      </head>
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`} suppressHydrationWarning>
         <div className="min-h-screen bg-base-200">
           <header className="navbar bg-primary text-primary-content shadow-lg">
             <div className="navbar-start">
               <a href="/" className="btn btn-ghost normal-case text-xl">CurlsBot</a>
+            </div>
+            <div className="navbar-center">
+              <a href="/ingredients" className="btn btn-ghost normal-case">Ingredients</a>
             </div>
             <div className="navbar-end">
               <ThemeToggle />
