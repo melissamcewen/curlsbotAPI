@@ -1188,7 +1188,8 @@ export const defaultDatabase: IngredientDatabase = {
       "synonyms": [
         "paraffinum liquidum",
         "liquid paraffin",
-        "petroleum oil"
+        "petroleum oil",
+        "petrolatum"
       ],
       "categories": [
         "heavy_oils"
@@ -1209,34 +1210,6 @@ export const defaultDatabase: IngredientDatabase = {
       ],
       "references": [
         "https://incidecoder.com/ingredients/olea-europaea-fruit-oil"
-      ]
-    },
-    "paraffin": {
-      "name": "Paraffin",
-      "id": "paraffin",
-      "synonyms": [
-        "paraffin wax",
-        "petroleum wax"
-      ],
-      "categories": [
-        "heavy_oils"
-      ],
-      "references": [
-        "https://incidecoder.com/ingredients/paraffin"
-      ]
-    },
-    "petrolatum": {
-      "name": "Petrolatum",
-      "id": "petrolatum",
-      "synonyms": [
-        "petroleum jelly",
-        "vaseline"
-      ],
-      "categories": [
-        "heavy_oils"
-      ],
-      "references": [
-        "https://incidecoder.com/ingredients/petrolatum"
       ]
     },
     "shea_butter_oil": {
@@ -2287,7 +2260,6 @@ export const defaultSystems: System[] = [
       "drying_alcohol",
       "silicone_free",
       "no_waxes",
-      "no_heavy_oils",
       "paraben_free",
       "soap_free",
       "no_astringents"
@@ -2297,6 +2269,19 @@ export const defaultSystems: System[] = [
     "name": "Curly Moderate",
     "id": "curly_moderate",
     "description": "Just like the default system, but allows for some water soluble silicones and moderate surfactants.",
+    "settings": [
+      "sulfate_free",
+      "drying_alcohol",
+      "no_water_insoluble_silicones",
+      "no_waxes",
+      "no_heavy_oils",
+      "caution_silicones"
+    ]
+  },
+  {
+    "name": "Wavy",
+    "id": "wavy",
+    "description": "Allows stronger detergents and avoid heavy oils",
     "settings": [
       "sulfate_free",
       "drying_alcohol",
@@ -2391,6 +2376,24 @@ export const defaultSettings: Record<string, Setting> = {
     "description": "Avoiding all waxes except water soluble ones.",
     "categories": [
       "non_water_soluble_waxes"
+    ],
+    "defaultStatus": "warning"
+  },
+  "soap_free": {
+    "id": "soap_free",
+    "name": "Soap Free",
+    "description": "Avoiding all soaps.",
+    "categories": [
+      "soaps"
+    ],
+    "defaultStatus": "warning"
+  },
+  "no_heavy_oils": {
+    "id": "no_heavy_oils",
+    "name": "No Heavy Oils",
+    "description": "Avoiding all heavy oils.",
+    "categories": [
+      "heavy_oils"
     ],
     "defaultStatus": "warning"
   }

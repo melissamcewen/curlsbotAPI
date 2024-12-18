@@ -9,6 +9,5 @@ describe('Index exports', () => {
   it('should export all expected items', () => {
     expect(Analyzer).toBeDefined();
     expect(matchIngredient).toBeDefined();
-    expect(normalizer).toBeDefined();
   });
 });

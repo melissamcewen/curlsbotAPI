@@ -59,7 +59,7 @@ export function processCommaParentheses(ingredient_list: string): string {
         // Replace content with comma-separated items inside parentheses
         return `, ${trimmedContent
           .split(',')
-          .map((c) => c.trim())
+          .map((c: string) => c.trim())
           .join(', ')}`;
       }
 

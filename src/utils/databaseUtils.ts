@@ -26,10 +26,10 @@ export function findIngredient(
   searchTerm: string,
 ): IngredientMatch {
   const normalizedSearchTerm = searchTerm.toLowerCase();
-  console.log('Searching for:', normalizedSearchTerm);
+
 
   // First partition the database based on the search term
-  console.log('Partitioning database based on search term');
+
   const { database: partitionedDatabase, defaultIngredient } =
     partitionSearchSpace(database, normalizedSearchTerm);
 
@@ -43,7 +43,6 @@ export function findIngredient(
 
     // Try exact matches first
     if (terms.includes(normalizedSearchTerm)) {
-      console.log('Found exact match:', ingredient.name);
       return {
         uuid: crypto.randomUUID(),
         input: searchTerm,
@@ -65,7 +64,6 @@ export function findIngredient(
       if (term.includes('unknown')) continue;
       // Check if the search term contains the full ingredient term
       const words = term.split(' ');
-      console.log('term:', term, 'words:', words);
       if (words.length > 1) {
         // For multi-word terms, normalize spaces and check if search term contains the full term
         const normalizedTerm = term.replace(/\s+/g, ' ').trim();
@@ -74,7 +72,6 @@ export function findIngredient(
           .trim();
         // Check if the normalized search term includes the normalized ingredient term
         if (normalizedSearchTermSpaces.includes(normalizedTerm)) {
-          console.log('Found multi-word match:', ingredient.id, 'term:', term);
           return {
             uuid: crypto.randomUUID(),
             input: searchTerm,
@@ -85,7 +82,6 @@ export function findIngredient(
       } else {
         // For single-word terms, check if the search term includes the term
         if (normalizedSearchTerm.includes(term)) {
-          console.log('Found single-word match:', ingredient.id, 'term:', term);
           return {
             uuid: crypto.randomUUID(),
             input: searchTerm,
@@ -99,7 +95,6 @@ export function findIngredient(
 
   // If no match found, use default ingredient if available
   if (defaultIngredient) {
-    console.log('Using default ingredient:', defaultIngredient);
     return {
       uuid: crypto.randomUUID(),
       input: searchTerm,

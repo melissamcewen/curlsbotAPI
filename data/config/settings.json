@@ -64,6 +64,20 @@
       "description": "Avoiding all waxes except water soluble ones.",
       "categories": ["non_water_soluble_waxes"],
       "defaultStatus": "warning"
+    },
+    {
+      "id": "soap_free",
+      "name": "Soap Free",
+      "description": "Avoiding all soaps.",
+      "categories": ["soaps"],
+      "defaultStatus": "warning"
+    },
+    {
+      "id": "no_heavy_oils",
+      "name": "No Heavy Oils",
+      "description": "Avoiding all heavy oils.",
+      "categories": ["heavy_oils"],
+      "defaultStatus": "warning"
     }
   ]
 }

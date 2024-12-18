@@ -1,4 +1,4 @@
-import { defaultDatabase } from '../../src/data/bundledData';
+import { defaultDatabase, defaultSystems, defaultSettings } from '../../src/data/bundledData';
 import type { Ingredient, Category, Group } from '../../src/types';
 
 
@@ -72,6 +72,53 @@ describe('Production Database E2E Tests', () => {
         expect(group.name).toBeDefined();
         // Description is optional for groups
       });
+    });
+  });
+
+  describe('System and Settings Relationships', () => {
+    it('should have valid settings for all systems', () => {
+      const warnings: string[] = [];
+
+      // Check that all system settings exist
+      defaultSystems.forEach(system => {
+        system.settings.forEach(settingId => {
+          if (!defaultSettings[settingId]) {
+            warnings.push(`Warning: Setting "${settingId}" referenced by system "${system.name}" does not exist`);
+          }
+        });
+      });
+
+      // Check that settings reference valid categories and groups
+      Object.entries(defaultSettings).forEach(([id, setting]) => {
+        // Check categories
+        setting.categories?.forEach(categoryId => {
+          if (!defaultDatabase.categories[categoryId]) {
+            warnings.push(`Warning: Category "${categoryId}" referenced by setting "${setting.name}" does not exist`);
+          }
+        });
+
+        // Check groups
+        setting.groups?.forEach(groupId => {
+          if (!defaultDatabase.groups[groupId]) {
+            warnings.push(`Warning: Group "${groupId}" referenced by setting "${setting.name}" does not exist`);
+          }
+        });
+
+        // Check allowed categories
+        setting.allowedCategories?.forEach(categoryId => {
+          if (!defaultDatabase.categories[categoryId]) {
+            warnings.push(`Warning: Allowed category "${categoryId}" referenced by setting "${setting.name}" does not exist`);
+          }
+        });
+      });
+
+      // Log warnings if any
+      if (warnings.length > 0) {
+        console.warn('System and Settings relationship warnings:');
+        warnings.forEach(warning => console.warn(warning));
+      }
+
+      expect(warnings).toHaveLength(0);
     });
   });
 });
