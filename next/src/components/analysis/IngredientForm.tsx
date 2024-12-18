@@ -1,11 +1,15 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { useRouter, useSearchParams } from 'next/navigation';
 import { AnalysisResult } from '@/types/analysis';
 import AnalysisResults from './AnalysisResults';
 import SystemSelector from './SystemSelector';
 
 export default function IngredientForm() {
+  const router = useRouter();
+  const searchParams = useSearchParams();
+
   const [ingredients, setIngredients] = useState('');
   const [systemId, setSystemId] = useState('curly_default');
   const [customSettings, setCustomSettings] = useState<string[]>([]);
@@ -13,46 +17,65 @@ export default function IngredientForm() {
   const [results, setResults] = useState<AnalysisResult | null>(null);
   const [error, setError] = useState<string | null>(null);
 
+  // Read from URL parameters on initial load
+  useEffect(() => {
+    const urlIngredients = searchParams.get('ingredients');
+    const urlSystem = searchParams.get('system');
+
+    if (urlIngredients) {
+      setIngredients(decodeURIComponent(urlIngredients));
+      // If we have ingredients in the URL, analyze them immediately
+      if (!results) {
+        handleAnalysis(decodeURIComponent(urlIngredients), urlSystem || 'curly_default');
+      }
+    }
+    if (urlSystem) {
+      setSystemId(urlSystem);
+    }
+  }, [searchParams]);
+
   const handleSystemChange = (newSystemId: string, settings?: string[]) => {
     setSystemId(newSystemId);
     if (settings) {
       setCustomSettings(settings);
     }
+
+    // If we have ingredients and results, rerun the analysis with the new system
+    if (ingredients.trim() && results) {
+      // Update URL
+      const params = new URLSearchParams();
+      params.set('ingredients', ingredients.trim());
+      params.set('system', newSystemId);
+      router.push(`/?${params.toString()}`);
+
+      // Rerun analysis
+      handleAnalysis(ingredients, newSystemId);
+    }
   };
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
+  const handleAnalysis = async (ingredientList: string, system: string) => {
     setIsAnalyzing(true);
     setError(null);
-    setResults(null);
 
     try {
-      console.log('Sending request with:', {
-        ingredients: ingredients.trim(),
-        systemId,
-        customSettings: systemId === 'custom' ? customSettings : undefined
-      });
-
       const response = await fetch('/api/analyze', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          ingredients: ingredients.trim(),
-          systemId,
-          customSettings: systemId === 'custom' ? customSettings : undefined
+          ingredients: ingredientList.trim(),
+          systemId: system,
+          customSettings: system === 'custom' ? customSettings : undefined
         }),
       });
 
       if (!response.ok) {
         const errorData = await response.json();
-        console.error('API error:', errorData);
         throw new Error(errorData.error || 'Analysis failed. Please try again.');
       }
 
       const data = await response.json();
-      console.log('API response:', data);
       setResults(data);
     } catch (err) {
       console.error('Error during analysis:', err);
@@ -60,6 +83,19 @@ export default function IngredientForm() {
     } finally {
       setIsAnalyzing(false);
     }
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+
+    // Update URL with current ingredients and system
+    const params = new URLSearchParams();
+    params.set('ingredients', ingredients.trim());
+    params.set('system', systemId);
+    router.push(`/?${params.toString()}`);
+
+    // Perform analysis
+    handleAnalysis(ingredients, systemId);
   };
 
   return (
@@ -75,7 +111,7 @@ export default function IngredientForm() {
             <span className="label-text">Paste Your Ingredients</span>
           </label>
           <textarea
-            className="textarea textarea-bordered h-32 w-full"
+            className="textarea textarea-bordered bg-base-200 text-base-content h-32 w-full"
             placeholder="Example: Water, Cetearyl Alcohol, Behentrimonium Methosulfate..."
             value={ingredients}
             onChange={(e) => setIngredients(e.target.value)}
