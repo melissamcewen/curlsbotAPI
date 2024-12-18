@@ -58,7 +58,14 @@ export async function POST(request: Request) {
         matched: !!ingredient.ingredient,
         status: ingredient.status,
         info: ingredient.ingredient?.description,
-        reason: ingredient.reasons[0]?.reason
+        reason: ingredient.reasons[0]?.reason,
+        ingredient: ingredient.ingredient ? {
+          id: ingredient.ingredient.id,
+          name: ingredient.ingredient.name,
+          description: ingredient.ingredient.description,
+          categories: ingredient.ingredient.categories,
+          synonyms: ingredient.ingredient.synonyms
+        } : undefined
       }))
     };
 

@@ -27,6 +27,12 @@ export default function IngredientForm() {
     setResults(null);
 
     try {
+      console.log('Sending request with:', {
+        ingredients: ingredients.trim(),
+        systemId,
+        customSettings: systemId === 'custom' ? customSettings : undefined
+      });
+
       const response = await fetch('/api/analyze', {
         method: 'POST',
         headers: {
@@ -40,12 +46,16 @@ export default function IngredientForm() {
       });
 
       if (!response.ok) {
-        throw new Error('Analysis failed. Please try again.');
+        const errorData = await response.json();
+        console.error('API error:', errorData);
+        throw new Error(errorData.error || 'Analysis failed. Please try again.');
       }
 
       const data = await response.json();
+      console.log('API response:', data);
       setResults(data);
     } catch (err) {
+      console.error('Error during analysis:', err);
       setError(err instanceof Error ? err.message : 'Something went wrong. Please try again.');
     } finally {
       setIsAnalyzing(false);
