@@ -73,7 +73,7 @@ export interface Category {
   /** default ingredient for the category */
   defaultIngredient?: string;
   /** Optional source references for the category */
-  references?: string[];
+  references?: Reference[];
 }
 
 /**
@@ -100,6 +100,18 @@ export interface Group {
 export type Groups = Record<string, Group>;
 
 /**
+ * Represents a reference link with optional metadata
+ */
+export interface Reference {
+  /** The URL of the reference */
+  url: string;
+  /** Optional title of the reference */
+  title?: string;
+  /** Optional description of what this reference proves/shows */
+  description?: string;
+}
+
+/**
  * Represents an ingredient and its associated metadata
  */
 export interface Ingredient {
@@ -111,13 +123,36 @@ export interface Ingredient {
   /** Categories to which the ingredient belongs */
   categories: string[];
   /** Optional source references for the ingredient */
-  references?: string[];
+  references?: Reference[];
   /** Optional synonyms for the ingredient */
   synonyms?: string[];
 }
 
 /** represents a collection of ingredients   */
 export type Ingredients = Record<string, Ingredient>;
+
+/**
+ * Represents a product in the database
+ */
+export interface Product {
+  /** Name of the product */
+  name: string;
+  /** Unique identifier for the product */
+  id: string;
+  /** Brand name */
+  brand: string;
+  /** URL where the product can be purchased */
+  buy_url: string;
+  /** Systems this product is excluded from */
+  systems_excluded?: string[];
+  /** Categories the product belongs to */
+  product_categories: string[];
+}
+
+/**
+ * Represents a collection of products
+ */
+export type Products = Record<string, Product>;
 
 /**
  * Represents the database of ingredients and categories
@@ -129,6 +164,14 @@ export interface IngredientDatabase {
   groups: Groups;
   /** Map of all categories by ID */
   categories: Categories;
+}
+
+/**
+ * Represents the database of products
+ */
+export interface ProductDatabase {
+  /** Map of all products by ID */
+  products: Products;
 }
 
 /**

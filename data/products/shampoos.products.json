@@ -1,12 +1,12 @@
 {
   "products": [
     {
-      "name": "Shampoo",
+      "name": "Curl Shampoo",
       "id": "shampoo",
-      "brand": "Briogeo",
-      "buy_url": "https://www.briogeo.com/products/shampoo",
-      "ingredients": ["water", "sodium laureth sulfate", "parfum", "sodium chloride", "sodium benzoate", "sodium hydroxide", "citric acid", "benzoic acid", "benzyl alcohol", "benzyl benzoate", "benzyl salicylate", "limonene", "linalool", "citral", "hexyl cinnamal", "citronellol", "geraniol", "linalyl acetate", "benzyl alcohol", "benzyl benzoate", "benzyl salicylate", "limonene", "linalool", "citral", "hexyl cinnamal", "citronellol", "geraniol", "linalyl acetate", "benzyl alcohol", "benzyl benzoate", "benzyl salicylate", "limonene", "linalool", "citral", "hexyl cinnamal", "citronellol", "geraniol", "linalyl acetate"],
-      "categories": ["shampoos"]
+      "brand": "Kristin Ess",
+      "buy_url": "https://www.kristinesshair.com/products/moisture-rich-curl-shampoo",
+      "systems_excluded": ["curly_default"],
+      "product_categories": ["shampoos"]
     }
   ]
 }

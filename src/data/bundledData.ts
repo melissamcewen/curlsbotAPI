@@ -2064,11 +2064,14 @@ export const defaultDatabase: IngredientDatabase = {
       "id": "parabens",
       "name": "Parabens",
       "group": "preservatives",
-      "description": "Parabens are a type of preservative that can cause irritation and dryness.",
+      "description": "Parabens are a type of preservative that some curly resources recommend avoiding. ",
       "inclusions": [
         "paraben"
       ],
-      "defaultIngredient": "unknown_paraben"
+      "defaultIngredient": "unknown_paraben",
+      "references": [
+        "https://thebeautybrains.com/2006/05/the-perils-of-parabens/"
+      ]
     },
     "sulfates": {
       "id": "sulfates",
@@ -2260,7 +2263,6 @@ export const defaultDatabase: IngredientDatabase = {
   }
 };
 
-
 export const defaultSystems: System[] = [
   {
     "name": "Curly Default",
@@ -2271,7 +2273,7 @@ export const defaultSystems: System[] = [
       "drying_alcohol",
       "silicone_free",
       "no_waxes",
-      "paraben_free",
+      "paraben_caution",
       "soap_free",
       "no_astringents"
     ]
@@ -2314,14 +2316,14 @@ export const defaultSettings: Record<string, Setting> = {
     ],
     "defaultStatus": "warning"
   },
-  "paraben_free": {
-    "id": "paraben_free",
-    "name": "Paraben Free",
+  "paraben_caution": {
+    "id": "paraben_caution",
+    "name": "Paraben Caution",
     "description": "Parabens are a type of preservative that can cause irritation and dryness.",
     "categories": [
       "parabens"
     ],
-    "defaultStatus": "warning"
+    "defaultStatus": "caution"
   },
   "drying_alcohol": {
     "id": "drying_alcohol",
