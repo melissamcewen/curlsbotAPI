@@ -2488,11 +2488,12 @@ export const defaultSystems: System[] = [
     "settings": [
       "mild_detergents_only",
       "drying_alcohol",
-      "silicone_free",
+      "caution_silicones",
       "no_waxes",
       "paraben_caution",
       "soap_free",
-      "no_astringents"
+      "no_astringents",
+      "no_water_insoluble_silicones"
     ]
   },
   {
@@ -2571,6 +2572,22 @@ export const defaultSettings: Record<string, Setting> = {
       "mild_detergents"
     ],
     "defaultStatus": "warning",
+    "allowedStatus": "ok"
+  },
+  "mild_detergents_caution_others": {
+    "id": "mild_detergents_caution_others",
+    "name": "Mild Detergents Caution Others",
+    "description": "Mild detergents are allowed, other detergents are marked as warning.",
+    "categories": [
+      "detergents"
+    ],
+    "groups": [
+      "detergents"
+    ],
+    "allowedCategories": [
+      "mild_detergents"
+    ],
+    "defaultStatus": "caution",
     "allowedStatus": "ok"
   },
   "no_astringents": {

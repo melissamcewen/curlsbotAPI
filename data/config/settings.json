@@ -38,6 +38,16 @@
       "allowedStatus": "ok"
     },
     {
+      "id": "mild_detergents_caution_others",
+      "name": "Mild Detergents Caution Others",
+      "description": "Mild detergents are allowed, other detergents are marked as warning.",
+      "categories": ["detergents"],
+      "groups": ["detergents"],
+      "allowedCategories": ["mild_detergents"],
+      "defaultStatus": "caution",
+      "allowedStatus": "ok"
+    },
+    {
       "id": "no_astringents",
       "name": "No Astringents",
       "description": "Astringents can be drying and irritating.",
