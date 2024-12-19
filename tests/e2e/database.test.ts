@@ -122,6 +122,34 @@ describe('Production Database E2E Tests', () => {
     });
   });
 
+  describe('Default Ingredients Validation', () => {
+    it('should have all defaultIngredients defined in the ingredients database', () => {
+      const warnings: string[] = [];
+
+      // Check categories with defaultIngredient
+      Object.entries(defaultDatabase.categories).forEach(([id, category]) => {
+        if (category.defaultIngredient && !defaultDatabase.ingredients[category.defaultIngredient]) {
+          warnings.push(`Category "${category.name}" has defaultIngredient "${category.defaultIngredient}" that does not exist in ingredients database`);
+        }
+      });
+
+      // Check groups with defaultIngredient
+      Object.entries(defaultDatabase.groups).forEach(([id, group]) => {
+        if (group.defaultIngredient && !defaultDatabase.ingredients[group.defaultIngredient]) {
+          warnings.push(`Group "${group.name}" has defaultIngredient "${group.defaultIngredient}" that does not exist in ingredients database`);
+        }
+      });
+
+      // Log warnings if any
+      if (warnings.length > 0) {
+        console.warn('Default Ingredient warnings:');
+        warnings.forEach(warning => console.warn(warning));
+      }
+
+      expect(warnings).toHaveLength(0);
+    });
+  });
+
   describe('ID Format Validation', () => {
     it('should have correctly formatted IDs (lowercase, no hyphens)', () => {
       const warnings: string[] = [];

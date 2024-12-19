@@ -10,7 +10,7 @@ import {
 /* THESE ARE PRODUCTION TESTS USE THE DATA IN src/data/bundledData.ts */
 
 const list =
-  'Sodium Laureth Sulfate, Cocamidopropyl Betaine*, Cocamide MEA, Alkylbenzene Sulfonate, ammonium laureth sulphate, Dioctyl Sodium Sulfosuccinate, some sulfo';
+  'Sodium Laureth Sulfate, Cocamidopropyl Betaine*, Cocamide MEA, Alkylbenzene Sulfonate, ammonium laureth sulphate, Dioctyl Sodium Sulfosuccinate, some sulfo, sulfate';
 
 describe('Handling of detergents under the default system', () => {
   const analyzer = new Analyzer({
@@ -31,6 +31,7 @@ describe('Handling of detergents under the default system', () => {
       'ammonium laureth sulphate',
       'dioctyl sodium sulfosuccinate',
       'some sulfo',
+      'sulfate',
     ]);
   });
 
@@ -85,6 +86,13 @@ describe('Handling of detergents under the default system', () => {
         status: 'warning',
         reason: 'mild_detergents_only',
       },
+      {
+        normalized: 'sulfate',
+        ingredientId: 'unknown_sulfate',
+        category: 'detergents',
+        status: 'warning',
+        reason: 'mild_detergents_only',
+      },
     ];
 
     expectedResults.forEach((expected) => {
@@ -95,6 +103,7 @@ describe('Handling of detergents under the default system', () => {
 
         expect(ingredientMatch).toBeDefined();
         expect(ingredientMatch?.ingredient?.id).toBe(expected.ingredientId);
+        expect(ingredientMatch?.ingredient?.group).toBe(expected.category);
         expect(ingredientMatch?.status).toBe(expected.status);
         expect(
           ingredientMatch?.reasons.find((r) => r.setting === expected.reason)

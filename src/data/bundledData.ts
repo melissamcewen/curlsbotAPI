@@ -1973,9 +1973,9 @@ export const defaultDatabase: IngredientDatabase = {
       "synonyms": [],
       "references": []
     },
-    "unknown_sulfates": {
-      "name": "Unknown Sulfates",
-      "id": "unknown_sulfates",
+    "unknown_sulfate": {
+      "name": "Unknown Sulfate",
+      "id": "unknown_sulfate",
       "categories": [
         "sulfates"
       ],
