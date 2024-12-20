@@ -42,56 +42,56 @@ describe('Handling of detergents under the default system', () => {
         ingredientId: 'sodium_laureth_sulfate',
         category: 'detergents',
         status: 'warning',
-        reason: 'mild_detergents_only',
+        reason: 'sulfate_free'
       },
       {
         normalized: 'cocamidopropyl betaine',
         ingredientId: 'cocamidopropyl_betaine',
         category: 'detergents',
         status: 'ok',
-        reason: 'mild_detergents_only',
+        reason: 'mild_detergents_caution_others'
       },
       {
         normalized: 'cocamide mea',
         ingredientId: 'cocamide_mea',
         category: 'detergents',
         status: 'ok',
-        reason: 'mild_detergents_only',
+        reason: 'mild_detergents_caution_others'
       },
       {
         normalized: 'alkylbenzene sulfonate',
         ingredientId: 'alkylbenzene_sulfonate',
         category: 'detergents',
-        status: 'warning',
-        reason: 'mild_detergents_only',
+        status: 'caution',
+        reason: 'mild_detergents_caution_others'
       },
       {
         normalized: 'ammonium laureth sulphate',
         ingredientId: 'ammonium_laureth_sulfate',
         category: 'detergents',
         status: 'warning',
-        reason: 'mild_detergents_only',
+        reason: 'sulfate_free'
       },
       {
         normalized: 'dioctyl sodium sulfosuccinate',
         ingredientId: 'dioctyl_sodium_sulfosuccinate',
         category: 'detergents',
-        status: 'warning',
-        reason: 'mild_detergents_only',
+        status: 'caution',
+        reason: 'mild_detergents_caution_others'
       },
       {
         normalized: 'some sulfo',
         ingredientId: 'unknown_sulfonate',
         category: 'detergents',
-        status: 'warning',
-        reason: 'mild_detergents_only',
+        status: 'caution',
+        reason: 'mild_detergents_caution_others'
       },
       {
         normalized: 'sulfate',
         ingredientId: 'unknown_sulfate',
         category: 'detergents',
         status: 'warning',
-        reason: 'mild_detergents_only',
+        reason: 'sulfate_free'
       },
     ];
 

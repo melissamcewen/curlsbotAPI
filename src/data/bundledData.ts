@@ -2486,14 +2486,16 @@ export const defaultSystems: System[] = [
     "id": "curly_default",
     "description": "The Curly Default system is a hair care system that focuses on using products that are free of harsh chemicals and sulfates. It recommends using products that are free of drying alcohols, parabens, and other potentially harmful ingredients.",
     "settings": [
-      "mild_detergents_only",
+      "mild_detergents_caution_others",
       "drying_alcohol",
       "caution_silicones",
       "no_waxes",
       "paraben_caution",
       "soap_free",
       "no_astringents",
-      "no_water_insoluble_silicones"
+      "no_water_insoluble_silicones",
+      "sulfate_free",
+      "no_heavy_oils"
     ]
   },
   {
@@ -2578,9 +2580,6 @@ export const defaultSettings: Record<string, Setting> = {
     "id": "mild_detergents_caution_others",
     "name": "Mild Detergents Caution Others",
     "description": "Mild detergents are allowed, other detergents are marked as warning.",
-    "categories": [
-      "detergents"
-    ],
     "groups": [
       "detergents"
     ],
