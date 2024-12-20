@@ -4,13 +4,13 @@
       "id": "drying_alcohols",
       "name": "Drying Alcohols",
       "group": "alcohols",
-      "description": "Drying alcohols are used to remove moisture from the hair and skin, and can cause irritation and dryness."
+      "description": "These alcohols are considered drying because they evaporate quickly and can strip natural oils from the hair and scalp"
     },
     {
       "id": "parabens",
       "name": "Parabens",
       "group": "preservatives",
-      "description": "Parabens are a type of preservative that some curly resources recommend avoiding. ",
+      "description": "Parabens are preservatives commonly used in cosmetic products to prevent bacterial growth",
       "inclusions": ["paraben"],
       "defaultIngredient": "unknown_paraben",
       "references": [
@@ -21,7 +21,7 @@
       "id": "sulfates",
       "name": "Sulfates",
       "group": "detergents",
-      "description": "Sulfates are a type of detergent that can cause irritation and dryness.",
+      "description": "Sulfates are cleansing agents that create lather and remove oil and dirt",
       "inclusions": ["sulfate", "sulphate"],
       "defaultIngredient": "unknown_sulfate"
     },
@@ -29,7 +29,7 @@
       "id": "sulfonates",
       "name": "Sulfonates",
       "group": "detergents",
-      "description": "Sulfonates are a type of detergent that can cause irritation and dryness.",
+      "description": "Sulfonates are synthetic cleansing agents that create lather, similar to sulfates",
       "inclusions": ["sulfonate", "sulfo"],
       "defaultIngredient": "unknown_sulfonate"
     },
@@ -37,13 +37,13 @@
       "id": "emollient_alcohols",
       "name": "Emollient alcohols",
       "group": "alcohols",
-      "description": "Emollient alcohols are good for the skin and hair."
+      "description": "Emollient alcohols are fatty alcohols that help to soften and moisturize hair"
     },
     {
       "id": "water_soluble_silicones",
       "name": "Water-soluble Silicones",
       "group": "silicones",
-      "description": "TBD",
+      "description": "Water-soluble silicones in hair care products are a type of silicone that is easily washed out of the hair with regular shampoo",
       "inclusions": ["ppg", "peg"],
       "exclusions": ["castor"],
       "defaultIngredient": "unknown_water_soluble_silicone"
@@ -52,91 +52,91 @@
       "id": "non_water_soluble_silicones",
       "name": "Non-water-soluble Silicones",
       "group": "silicones",
-      "description": "TBD"
+      "description": "Non-water-soluble silicones in hair care products are a type of silicone that cannot be easily washed out with gentle shampoos or cowash"
     },
     {
       "id": "preservatives",
       "name": "Preservatives",
       "group": "others",
-      "description": "TBD"
+      "description": "Preservatives in hair care products can help prevent the growth of bacteria and mold"
     },
     {
       "id": "other_detergents",
       "name": "Other Detergents",
       "group": "detergents",
-      "description": "TBD"
+      "description": "These are other detergents that don't fit into the other categories"
     },
     {
       "id": "preservative_alcohols",
       "name": "Preservative Alcohols",
       "group": "alcohols",
-      "description": "TBD"
+      "description": "These alcohols are used as preservatives in hair care products and are not considered drying"
     },
     {
       "id": "astringents",
       "name": "Astringents",
       "group": "others",
-      "description": "TBD"
+      "description": "Astringents in hair care are substances that tighten pores and reduce oil production on the scalp"
     },
     {
       "id": "soaps",
       "name": "Soaps",
       "group": "others",
-      "description": "TBD"
+      "description": "Soaps are cleansers made from fatty acids and alkali metals"
     },
     {
       "id": "mild_detergents",
       "name": "Mild Detergents",
       "group": "detergents",
-      "description": "TBD"
+      "description": "These detergents are less harsh than other detergents and are often used in hair care products"
     },
     {
       "id": "heavy_oils",
       "name": "Heavy Oils",
       "group": "oils",
-      "description": "TBD"
+      "description": "Heavy oils are oils that are thick and heavy"
     },
     {
       "id": "light_oils",
       "name": "Light Oils",
       "group": "oils",
-      "description": "TBD"
+      "description": "Light oils are oils that are thin and light"
     },
     {
       "id": "medium_oils",
       "name": "Medium Oils",
       "group": "oils",
-      "description": "TBD"
+      "description": "Medium oils are standard oils that are not heavy or light"
     },
     {
       "id": "non_water_soluble_waxes",
       "name": "Non-water-soluble Waxes",
       "group": "waxes",
-      "description": "TBD"
+      "description": "Non-water-soluble waxes are waxes that are not easily washed out from hair"
     },
     {
       "id": "water_soluble_waxes",
       "name": "Water-soluble Waxes",
       "group": "waxes",
-      "description": "TBD"
+      "description": "Water-soluble waxes are waxes that are easily washed out from hair"
     },
     {
       "id": "evaporative_silicones",
       "name": "Evaporative Silicones",
       "group": "silicones",
-      "description": "TBD"
+      "description": "Evaporative silicones are lightweight silicones that evaporate quickly, leaving no residue"
     },
     {
       "id": "other",
       "name": "Other",
       "group": "others",
-      "description": "Others in the group others"
+      "description": "These are other ingredients that don't fit into the other categories"
     },
     {
       "id": "solvents",
       "name": "Solvents",
       "group": "others",
-      "description": "TBD"
+      "description": "Solvents are substances that dissolve other substances"
     }
   ]
 }

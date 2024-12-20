@@ -4,17 +4,20 @@
       "id": "alcohols",
       "name": "Alcohols",
       "inclusions": ["alcohol"],
-      "defaultIngredient": "unknown_alcohol"
+      "defaultIngredient": "unknown_alcohol",
+      "description": "Alcohols in haircare products are used to help products dry quickly, preserve formulations, and enhance ingredient absorption into hair"
     },
     {
       "id": "preservatives",
       "name": "Preservatives",
-      "inclusions": ["paraben"]
+      "inclusions": ["paraben"],
+      "description": "Preservatives in hair products can help prevent the growth of bacteria and mold"
     },
     {
       "id": "detergents",
       "name": "Detergents",
-      "inclusions": ["sulfate"]
+      "inclusions": ["sulfate"],
+      "description": "Detergents in hair products can help remove dirt and oil from the hair and scalp"
     },
     {
       "id": "silicones",
@@ -33,7 +36,8 @@
         "microsil"
       ],
       "exclusions": ["saccharomycessilicon", "ferment", "castor"],
-      "defaultIngredient": "unknown_non_water_soluble_silicone"
+      "defaultIngredient": "unknown_non_water_soluble_silicone",
+      "description": "Synthetic ingredients that create a protective barrier on the hair, reducing friction and adding shine"
     },
     {
       "id": "others",
@@ -43,13 +47,15 @@
       "id": "waxes",
       "name": "Waxes",
       "inclusions": ["wax"],
-      "defaultIngredient": "unknown_wax"
+      "defaultIngredient": "unknown_wax",
+      "description": "Waxes in styling products can add texture, hold, and shine to hair"
     },
     {
       "id": "oils",
       "name": "Oils",
       "inclusions": ["oil"],
-      "defaultIngredient": "unknown_oil"
+      "defaultIngredient": "unknown_oil",
+      "description": "Oils in hair products can moisturize and add shine to hair"
     }
   ]
 }
