@@ -122,7 +122,9 @@ describe('Analyzer', () => {
       expect(result.ingredients[0].status).toBe('warning');
       expect(result.reasons[0]).toEqual({
         setting: 'sulfate_free',
-        reason: 'Avoid sulfates'
+        name: 'Sulfate Free',
+        reason: 'Avoid sulfates',
+        type: 'warning'
       });
     });
 
@@ -183,9 +185,9 @@ describe('Analyzer', () => {
 
       const result = analyzer.analyze('Sodium Laureth Sulfate');
       expect(result.status).toBe('warning'); // warning is the most severe status
-      expect(result.reasons).toHaveLength(2); // both reasons should be present
+      expect(result.reasons).toHaveLength(1); // warning should override the other status and the other reason should not
       expect(result.reasons.some(r => r.setting === 'sulfate_free')).toBe(true);
-      expect(result.reasons.some(r => r.setting === 'mild_detergents_only')).toBe(true);
+      expect(result.reasons.some(r => r.setting === 'mild_detergents_only')).toBe(false);
     });
 
     it('should pass ingredients that dont match any settings', () => {
@@ -222,7 +224,9 @@ describe('Analyzer', () => {
       expect(resultListed.ingredients[0].status).toBe('warning');
       expect(resultListed.reasons[0]).toEqual({
         setting: 'specific_ingredients',
-        reason: 'Warns about specific ingredients'
+        name: 'Specific Ingredients',
+        reason: 'Warns about specific ingredients',
+        type: 'warning'
       });
 
       // Test ingredient that's not listed

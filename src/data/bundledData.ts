@@ -2240,14 +2240,14 @@ export const defaultDatabase: IngredientDatabase = {
       "id": "drying_alcohols",
       "name": "Drying Alcohols",
       "group": "alcohols",
-      "description": "Drying alcohols are used to remove moisture from the hair and skin, and can cause irritation and dryness.",
+      "description": "These alcohols are considered drying because they evaporate quickly and can strip natural oils from the hair and scalp",
       "references": []
     },
     "parabens": {
       "id": "parabens",
       "name": "Parabens",
       "group": "preservatives",
-      "description": "Parabens are a type of preservative that some curly resources recommend avoiding. ",
+      "description": "Parabens are preservatives commonly used in cosmetic products to prevent bacterial growth",
       "inclusions": [
         "paraben"
       ],
@@ -2262,7 +2262,7 @@ export const defaultDatabase: IngredientDatabase = {
       "id": "sulfates",
       "name": "Sulfates",
       "group": "detergents",
-      "description": "Sulfates are a type of detergent that can cause irritation and dryness.",
+      "description": "Sulfates are cleansing agents that create lather and remove oil and dirt",
       "inclusions": [
         "sulfate",
         "sulphate"
@@ -2274,7 +2274,7 @@ export const defaultDatabase: IngredientDatabase = {
       "id": "sulfonates",
       "name": "Sulfonates",
       "group": "detergents",
-      "description": "Sulfonates are a type of detergent that can cause irritation and dryness.",
+      "description": "Sulfonates are synthetic cleansing agents that create lather, similar to sulfates",
       "inclusions": [
         "sulfonate",
         "sulfo"
@@ -2286,14 +2286,14 @@ export const defaultDatabase: IngredientDatabase = {
       "id": "emollient_alcohols",
       "name": "Emollient alcohols",
       "group": "alcohols",
-      "description": "Emollient alcohols are good for the skin and hair.",
+      "description": "Emollient alcohols are fatty alcohols that help to soften and moisturize hair",
       "references": []
     },
     "water_soluble_silicones": {
       "id": "water_soluble_silicones",
       "name": "Water-soluble Silicones",
       "group": "silicones",
-      "description": "TBD",
+      "description": "Water-soluble silicones in hair care products are a type of silicone that is easily washed out of the hair with regular shampoo",
       "inclusions": [
         "ppg",
         "peg"
@@ -2308,105 +2308,105 @@ export const defaultDatabase: IngredientDatabase = {
       "id": "non_water_soluble_silicones",
       "name": "Non-water-soluble Silicones",
       "group": "silicones",
-      "description": "TBD",
+      "description": "Non-water-soluble silicones in hair care products are a type of silicone that cannot be easily washed out with gentle shampoos or cowash",
       "references": []
     },
     "preservatives": {
       "id": "preservatives",
       "name": "Preservatives",
       "group": "others",
-      "description": "TBD",
+      "description": "Preservatives in hair care products can help prevent the growth of bacteria and mold",
       "references": []
     },
     "other_detergents": {
       "id": "other_detergents",
       "name": "Other Detergents",
       "group": "detergents",
-      "description": "TBD",
+      "description": "These are other detergents that don't fit into the other categories",
       "references": []
     },
     "preservative_alcohols": {
       "id": "preservative_alcohols",
       "name": "Preservative Alcohols",
       "group": "alcohols",
-      "description": "TBD",
+      "description": "These alcohols are used as preservatives in hair care products and are not considered drying",
       "references": []
     },
     "astringents": {
       "id": "astringents",
       "name": "Astringents",
       "group": "others",
-      "description": "TBD",
+      "description": "Astringents in hair care are substances that tighten pores and reduce oil production on the scalp",
       "references": []
     },
     "soaps": {
       "id": "soaps",
       "name": "Soaps",
       "group": "others",
-      "description": "TBD",
+      "description": "Soaps are cleansers made from fatty acids and alkali metals",
       "references": []
     },
     "mild_detergents": {
       "id": "mild_detergents",
       "name": "Mild Detergents",
       "group": "detergents",
-      "description": "TBD",
+      "description": "These detergents are less harsh than other detergents and are often used in hair care products",
       "references": []
     },
     "heavy_oils": {
       "id": "heavy_oils",
       "name": "Heavy Oils",
       "group": "oils",
-      "description": "TBD",
+      "description": "Heavy oils are oils that are thick and heavy",
       "references": []
     },
     "light_oils": {
       "id": "light_oils",
       "name": "Light Oils",
       "group": "oils",
-      "description": "TBD",
+      "description": "Light oils are oils that are thin and light",
       "references": []
     },
     "medium_oils": {
       "id": "medium_oils",
       "name": "Medium Oils",
       "group": "oils",
-      "description": "TBD",
+      "description": "Medium oils are standard oils that are not heavy or light",
       "references": []
     },
     "non_water_soluble_waxes": {
       "id": "non_water_soluble_waxes",
       "name": "Non-water-soluble Waxes",
       "group": "waxes",
-      "description": "TBD",
+      "description": "Non-water-soluble waxes are waxes that are not easily washed out from hair",
       "references": []
     },
     "water_soluble_waxes": {
       "id": "water_soluble_waxes",
       "name": "Water-soluble Waxes",
       "group": "waxes",
-      "description": "TBD",
+      "description": "Water-soluble waxes are waxes that are easily washed out from hair",
       "references": []
     },
     "evaporative_silicones": {
       "id": "evaporative_silicones",
       "name": "Evaporative Silicones",
       "group": "silicones",
-      "description": "TBD",
+      "description": "Evaporative silicones are lightweight silicones that evaporate quickly, leaving no residue",
       "references": []
     },
     "other": {
       "id": "other",
       "name": "Other",
       "group": "others",
-      "description": "Others in the group others",
+      "description": "These are other ingredients that don't fit into the other categories",
       "references": []
     },
     "solvents": {
       "id": "solvents",
       "name": "Solvents",
       "group": "others",
-      "description": "TBD",
+      "description": "Solvents are substances that dissolve other substances",
       "references": []
     }
   },
@@ -2417,21 +2417,24 @@ export const defaultDatabase: IngredientDatabase = {
       "inclusions": [
         "alcohol"
       ],
-      "defaultIngredient": "unknown_alcohol"
+      "defaultIngredient": "unknown_alcohol",
+      "description": "Alcohols in haircare products are used to help products dry quickly, preserve formulations, and enhance ingredient absorption into hair"
     },
     "preservatives": {
       "id": "preservatives",
       "name": "Preservatives",
       "inclusions": [
         "paraben"
-      ]
+      ],
+      "description": "Preservatives in hair products can help prevent the growth of bacteria and mold"
     },
     "detergents": {
       "id": "detergents",
       "name": "Detergents",
       "inclusions": [
         "sulfate"
-      ]
+      ],
+      "description": "Detergents in hair products can help remove dirt and oil from the hair and scalp"
     },
     "silicones": {
       "id": "silicones",
@@ -2454,7 +2457,8 @@ export const defaultDatabase: IngredientDatabase = {
         "ferment",
         "castor"
       ],
-      "defaultIngredient": "unknown_non_water_soluble_silicone"
+      "defaultIngredient": "unknown_non_water_soluble_silicone",
+      "description": "Synthetic ingredients that create a protective barrier on the hair, reducing friction and adding shine"
     },
     "others": {
       "id": "others",
@@ -2467,7 +2471,8 @@ export const defaultDatabase: IngredientDatabase = {
       "inclusions": [
         "wax"
       ],
-      "defaultIngredient": "unknown_wax"
+      "defaultIngredient": "unknown_wax",
+      "description": "Waxes in styling products can add texture, hold, and shine to hair"
     },
     "oils": {
       "id": "oils",
@@ -2475,7 +2480,8 @@ export const defaultDatabase: IngredientDatabase = {
       "inclusions": [
         "oil"
       ],
-      "defaultIngredient": "unknown_oil"
+      "defaultIngredient": "unknown_oil",
+      "description": "Oils in hair products can moisturize and add shine to hair"
     }
   }
 };
@@ -2529,8 +2535,8 @@ export const defaultSystems: System[] = [
 export const defaultSettings: Record<string, Setting> = {
   "sulfate_free": {
     "id": "sulfate_free",
-    "name": "Sulfate Free",
-    "description": "Sulfates are a type of detergent that can cause irritation and dryness.",
+    "name": "Sulfates",
+    "description": "Sulfates are a common ingredient in hair care products that can strip the hair of its natural oils. This can lead to dryness, especially for those with color-treated or chemically processed hair. Some people prefer to use sulfate-free products to maintain healthier hair.",
     "categories": [
       "sulfates"
     ],
@@ -2538,8 +2544,8 @@ export const defaultSettings: Record<string, Setting> = {
   },
   "paraben_caution": {
     "id": "paraben_caution",
-    "name": "Paraben Caution",
-    "description": "Parabens are a type of preservative that can cause irritation and dryness.",
+    "name": "Parabens",
+    "description": "Parabens are preservatives used to extend the shelf life of hair care products, but some people avoid them due to potential health concerns.",
     "categories": [
       "parabens"
     ],
@@ -2547,8 +2553,8 @@ export const defaultSettings: Record<string, Setting> = {
   },
   "drying_alcohol": {
     "id": "drying_alcohol",
-    "name": "No Drying Alcohol",
-    "description": "Drying alcohols are used to remove moisture from the hair and skin, and can cause irritation and dryness.",
+    "name": "Drying alcohols",
+    "description": "Drying alcohols, such as ethanol and isopropyl alcohol, may strip the hair of its natural oils, leading to dryness, frizz, and damage.",
     "categories": [
       "drying_alcohols"
     ],
@@ -2556,8 +2562,8 @@ export const defaultSettings: Record<string, Setting> = {
   },
   "silicone_free": {
     "id": "silicone_free",
-    "name": "Silicone Free",
-    "description": "Avoiding all silicones even water-soluble ones.",
+    "name": "Silicones",
+    "description": "Silicones are synthetic ingredients that can provide hair benefits but may build up, leading to potential hair issues.",
     "groups": [
       "silicones"
     ],
@@ -2565,7 +2571,7 @@ export const defaultSettings: Record<string, Setting> = {
   },
   "mild_detergents_only": {
     "id": "mild_detergents_only",
-    "name": "Mild Detergents Only",
+    "name": "Non-mild detergents",
     "description": "Only mild detergents are allowed, other detergents are marked as warning.",
     "groups": [
       "detergents"
@@ -2578,8 +2584,8 @@ export const defaultSettings: Record<string, Setting> = {
   },
   "mild_detergents_caution_others": {
     "id": "mild_detergents_caution_others",
-    "name": "Mild Detergents Caution Others",
-    "description": "Mild detergents are allowed, other detergents are marked as warning.",
+    "name": "Non-mild detergents",
+    "description": "If you want to use only mild detergents, you should not use these detergents.",
     "groups": [
       "detergents"
     ],
@@ -2592,7 +2598,7 @@ export const defaultSettings: Record<string, Setting> = {
   "no_astringents": {
     "id": "no_astringents",
     "name": "No Astringents",
-    "description": "Astringents can be drying and irritating.",
+    "description": "Astringents are substances that tighten pores and reduce oil production, which can be beneficial for people with oily scalps, but can be too drying for those with dry or normal hair.",
     "categories": [
       "astringents"
     ],
@@ -2600,8 +2606,8 @@ export const defaultSettings: Record<string, Setting> = {
   },
   "no_water_insoluble_silicones": {
     "id": "no_water_insoluble_silicones",
-    "name": "No Water Insoluble Silicones",
-    "description": "Avoiding all water insoluble silicones.",
+    "name": "Water Insoluble Silicones",
+    "description": "These are silicones that are not water-soluble and can build up on the hair, leading to a heavy, greasy feel and potentially hindering moisture absorption.",
     "categories": [
       "non_water_soluble_silicones"
     ],
@@ -2609,8 +2615,8 @@ export const defaultSettings: Record<string, Setting> = {
   },
   "caution_silicones": {
     "id": "caution_silicones",
-    "name": "Caution Silicones",
-    "description": "All silicones should be approached with caution.",
+    "name": "Silicones",
+    "description": "Some find these water-soluble and evaporative silicones are fine but we mark all silicones as caution in case you want to avoid them.",
     "groups": [
       "silicones"
     ],
@@ -2618,8 +2624,8 @@ export const defaultSettings: Record<string, Setting> = {
   },
   "no_waxes": {
     "id": "no_waxes",
-    "name": "No Waxes",
-    "description": "Avoiding all waxes except water soluble ones.",
+    "name": "Non-water-soluble waxes",
+    "description": "These waxes can coat the hair shaft, providing temporary benefits like shine, smoothness, and heat protection. However, they can build up on the hair, leading to a heavy, greasy feel and potentially hindering moisture absorption.",
     "categories": [
       "non_water_soluble_waxes"
     ],
@@ -2627,8 +2633,8 @@ export const defaultSettings: Record<string, Setting> = {
   },
   "soap_free": {
     "id": "soap_free",
-    "name": "Soap Free",
-    "description": "Avoiding all soaps.",
+    "name": "Soap",
+    "description": "Soaps can be harsh on hair, stripping away natural oils and potentially leading to dryness, frizz, and damage, especially for those with color-treated or chemically processed hair. They can also build up on the hair when combined with hard water.",
     "categories": [
       "soaps"
     ],
@@ -2636,8 +2642,8 @@ export const defaultSettings: Record<string, Setting> = {
   },
   "no_heavy_oils": {
     "id": "no_heavy_oils",
-    "name": "No Heavy Oils",
-    "description": "Avoiding all heavy oils.",
+    "name": "Heavy Oils",
+    "description": "These oils are thick and heavy, and can be very nourishing, but can also build up on the hair, leading to a greasy feel.",
     "categories": [
       "heavy_oils"
     ],

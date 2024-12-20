@@ -40,7 +40,7 @@
     {
       "id": "mild_detergents_caution_others",
       "name": "Non-mild detergents",
-      "description": "Mild detergents are allowed, other detergents are marked as caution.",
+      "description": "If you want to use only mild detergents, you should not use these detergents.",
       "groups": ["detergents"],
       "allowedCategories": ["mild_detergents"],
       "defaultStatus": "caution",
@@ -55,15 +55,15 @@
     },
     {
       "id": "no_water_insoluble_silicones",
-      "name": "No Water Insoluble Silicones",
-      "description": "Avoiding all water insoluble silicones.",
+      "name": "Water Insoluble Silicones",
+      "description": "These are silicones that are not water-soluble and can build up on the hair, leading to a heavy, greasy feel and potentially hindering moisture absorption.",
       "categories": ["non_water_soluble_silicones"],
       "defaultStatus": "warning"
     },
     {
       "id": "caution_silicones",
-      "name": "Caution Silicones",
-      "description": "All silicones should be approached with caution.",
+      "name": "Silicones",
+      "description": "Some find these water-soluble and evaporative silicones are fine but we mark all silicones as caution in case you want to avoid them.",
       "groups": ["silicones"],
       "defaultStatus": "caution"
     },

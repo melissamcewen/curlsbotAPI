@@ -4,8 +4,12 @@
 export interface StatusReason {
   /** The setting that caused this status (e.g. "sulfate_free") */
   setting: string;
+  /** Name of the setting */
+  name: string;
   /** Human readable explanation (e.g. "Contains sulfates") */
   reason: string;
+  /** Type of reason caution, warning, or ok */
+  type: 'caution' | 'warning' | 'ok';
 }
 
 /**

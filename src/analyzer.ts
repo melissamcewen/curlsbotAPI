@@ -98,7 +98,9 @@ export class Analyzer {
       //result.status = 'caution';
       result.reasons.push({
         setting: 'unknown_ingredient',
-        reason: 'Ingredient not found in database'
+        name: 'Unknown Ingredient',
+        reason: 'Ingredient not found in database',
+        type: 'caution'
       });
       return result;
     }
@@ -139,16 +141,25 @@ export class Analyzer {
       if (matches) {
         // Add the reason
         const status = allowedMatch ? setting.allowedStatus : setting.defaultStatus;
-        result.reasons.push({
+        const newReason = {
           setting: setting.id,
-          reason: setting.description
-        });
+          name: setting.name,
+          reason: setting.description,
+          type: status
+        };
 
-        // Update status (warning > caution > ok)
+        // If this is a warning and we don't already have a warning reason, use this one
         if (status === 'warning') {
-          result.status = 'warning';
-        } else if (status === 'caution' && result.status === 'ok') {
-          result.status = 'caution';
+          if (result.status !== 'warning') {
+            result.reasons = [newReason];
+            result.status = 'warning';
+          }
+        } else {
+          result.reasons.push(newReason);
+          // Only update status to caution if we're currently ok
+          if (status === 'caution' && result.status === 'ok') {
+            result.status = 'caution';
+          }
         }
       }
     }
