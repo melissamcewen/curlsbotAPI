@@ -2,7 +2,7 @@
 
 [![codecov](https://codecov.io/gh/melissamcewen/CurlsBotAPI/branch/main/graph/badge.svg)](https://codecov.io/gh/melissamcewen/CurlsBotAPI)
 
-A sophisticated TypeScript library for analyzing haircare product ingredients, powering [CurlsBot](https://github.com/melissamcewen/curlsbotsite). This API serves as the backend engine for ingredient analysis, providing detailed insights into haircare product compositions.
+A TypeScript library for analyzing haircare product ingredients, powering [CurlsBot](https://github.com/melissamcewen/curlsbotsite). This API serves as the backend engine for ingredient analysis, providing detailed insights into haircare product compositions.
 
 ## 🚀 Technical Stack
 
