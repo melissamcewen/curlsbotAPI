@@ -29,3 +29,8 @@ coverage/
 etc/
 temp/
 archive/
+
+# npm
+
+*.tgz
+.npm

@@ -30,8 +30,8 @@
     },
     {
       "id": "mild_detergents_only",
-      "name": "Non-mild detergents",
-      "description": "Only mild detergents are allowed, other detergents are marked as warning.",
+      "name": "Stronger Detergents",
+      "description": "Avoid these if you prefer mild detergents.",
       "groups": ["detergents"],
       "allowedCategories": ["mild_detergents"],
       "defaultStatus": "warning",
