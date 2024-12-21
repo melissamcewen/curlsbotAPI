@@ -13,7 +13,8 @@
     {
       "name": "Unknown Sulfate",
       "id": "unknown_sulfate",
-      "categories": ["sulfates"]
+      "categories": ["sulfates"],
+      "description": "We're pretty sure this is a sulfate, but we're not sure which one."
     },
 
     {
@@ -35,12 +36,19 @@
     {
       "name": "Unknown Sulfonates",
       "id": "unknown_sulfonate",
-      "categories": ["sulfonates"]
+      "categories": ["sulfonates"],
+      "description": "We're pretty sure this is a sulfonate, but we're not sure which one. "
     },
     {
       "name": "Unknown Oil",
       "id": "unknown_oil",
       "categories": ["other"]
+    },
+    {
+      "name": "Unknown Polyquat",
+      "id": "unknown_polyquat",
+      "categories": ["polyquats"],
+      "description": "We're pretty sure this is a polyquat, but we're not sure which one."
     }
   ]
 }

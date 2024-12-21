@@ -137,6 +137,14 @@
       "name": "Solvents",
       "group": "others",
       "description": "Solvents are substances that dissolve other substances"
+    },
+    {
+      "id": "polyquats",
+      "name": "Polyquats",
+      "group": "others",
+      "description": "Polyquats have a moderate to high build up potential and might not be a good choice if you only use mild shampoos or cowash to cleanse your hair.",
+      "inclusions": ["polyquat"],
+      "defaultIngredient": "unknown_polyquat"
     }
   ]
 }

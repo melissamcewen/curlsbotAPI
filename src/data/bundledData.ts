@@ -1979,6 +1979,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "sulfates"
       ],
+      "description": "We're pretty sure this is a sulfate, but we're not sure which one.",
       "synonyms": [],
       "references": []
     },

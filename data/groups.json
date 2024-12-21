@@ -33,9 +33,10 @@
         "silylate",
         "silsesquioxane",
         "siloxysilicate",
-        "microsil"
+        "microsil",
+        "quaternium"
       ],
-      "exclusions": ["saccharomycessilicon", "ferment", "castor"],
+      "exclusions": ["saccharomycessilicon", "ferment", "castor", "polyquaternium"],
       "defaultIngredient": "unknown_non_water_soluble_silicone",
       "description": "Synthetic ingredients that create a protective barrier on the hair, reducing friction and adding shine"
     },
