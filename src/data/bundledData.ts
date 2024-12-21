@@ -1643,6 +1643,20 @@ export const defaultDatabase: IngredientDatabase = {
       ],
       "synonyms": []
     },
+    "behentrimonium_methosulfate": {
+      "name": "Behentrimonium Methosulfate",
+      "id": "behentrimonium_methosulfate",
+      "categories": [
+        "other"
+      ],
+      "description": "Despite the name, this is not a sulfate. It is often used as a conditioner.",
+      "references": [
+        {
+          "url": "https://incidecoder.com/ingredients/behentrimonium-methosulfate"
+        }
+      ],
+      "synonyms": []
+    },
     "amodimethicone": {
       "name": "Amodimethicone",
       "id": "amodimethicone",
@@ -1955,6 +1969,22 @@ export const defaultDatabase: IngredientDatabase = {
       ],
       "references": []
     },
+    "silicone_quaternium_26": {
+      "name": "Silicone Quaternium 26",
+      "id": "silicone_quaternium_26",
+      "synonyms": [
+        "quaternium-26",
+        "minkamidopropyl dimethyl 2-hydroxyethyl ammonium chloride"
+      ],
+      "categories": [
+        "water_soluble_silicones"
+      ],
+      "references": [
+        {
+          "url": "https://www.reddit.com/r/HaircareScience/comments/nd8x0e/quaternium26_is_water_soluble/"
+        }
+      ]
+    },
     "unknown_non_water_soluble_silicone": {
       "name": "Unknown Non-Water Soluble Silicone",
       "id": "unknown_non_water_soluble_silicone",
@@ -2016,6 +2046,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "sulfonates"
       ],
+      "description": "We're pretty sure this is a sulfonate, but we're not sure which one. ",
       "synonyms": [],
       "references": []
     },
@@ -2025,6 +2056,16 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "other"
       ],
+      "synonyms": [],
+      "references": []
+    },
+    "unknown_polyquat": {
+      "name": "Unknown Polyquat",
+      "id": "unknown_polyquat",
+      "categories": [
+        "polyquats"
+      ],
+      "description": "We're pretty sure this is a polyquat, but we're not sure which one.",
       "synonyms": [],
       "references": []
     },
@@ -2268,6 +2309,10 @@ export const defaultDatabase: IngredientDatabase = {
         "sulfate",
         "sulphate"
       ],
+      "exclusions": [
+        "behentrimonium",
+        "methosulfate"
+      ],
       "defaultIngredient": "unknown_sulfate",
       "references": []
     },
@@ -2409,6 +2454,17 @@ export const defaultDatabase: IngredientDatabase = {
       "group": "others",
       "description": "Solvents are substances that dissolve other substances",
       "references": []
+    },
+    "polyquats": {
+      "id": "polyquats",
+      "name": "Polyquats",
+      "group": "others",
+      "description": "Polyquats have a moderate to high build up potential and might not be a good choice if you only use mild shampoos or cowash to cleanse your hair.",
+      "inclusions": [
+        "polyquat"
+      ],
+      "defaultIngredient": "unknown_polyquat",
+      "references": []
     }
   },
   "groups": {
@@ -2435,6 +2491,10 @@ export const defaultDatabase: IngredientDatabase = {
       "inclusions": [
         "sulfate"
       ],
+      "exclusions": [
+        "behentrimonium",
+        "methosulfate"
+      ],
       "description": "Detergents in hair products can help remove dirt and oil from the hair and scalp"
     },
     "silicones": {
@@ -2451,12 +2511,14 @@ export const defaultDatabase: IngredientDatabase = {
         "silylate",
         "silsesquioxane",
         "siloxysilicate",
-        "microsil"
+        "microsil",
+        "quaternium"
       ],
       "exclusions": [
         "saccharomycessilicon",
         "ferment",
-        "castor"
+        "castor",
+        "polyquaternium"
       ],
       "defaultIngredient": "unknown_non_water_soluble_silicone",
       "description": "Synthetic ingredients that create a protective barrier on the hair, reducing friction and adding shine"

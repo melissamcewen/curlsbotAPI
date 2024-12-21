@@ -269,6 +269,17 @@
       "references": [
         {"url":"https://incidecoder.com/ingredients/isododecane"}
       ]
+    },
+    {
+      "name": "Behentrimonium Methosulfate",
+      "id": "behentrimonium_methosulfate",
+      "categories": [
+        "other"
+      ],
+      "description": "Despite the name, this is not a sulfate. It is often used as a conditioner.",
+      "references": [
+        {"url":"https://incidecoder.com/ingredients/behentrimonium-methosulfate"}
+      ]
     }
   ]
 }

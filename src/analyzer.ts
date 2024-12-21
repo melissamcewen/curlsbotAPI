@@ -145,7 +145,7 @@ export class Analyzer {
           setting: setting.id,
           name: setting.name,
           reason: setting.description,
-          type: status
+          type: status || 'caution'
         };
 
         // If this is a warning and we don't already have a warning reason, use this one
