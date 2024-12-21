@@ -1,128 +1,70 @@
-# Haircare Ingredients Analyzer
+# CurlsBot API
 
-A TypeScript library for analyzing haircare product ingredients. It normalizes ingredient names, matches them against a database of known ingredients, and identifies categories and potential flags.
+A sophisticated TypeScript library for analyzing haircare product ingredients, powering [CurlsBot](https://github.com/melissamcewen/curlsbotsite). This API serves as the backend engine for ingredient analysis, providing detailed insights into haircare product compositions.
 
-## Features
+## 🚀 Technical Stack
 
-- Normalizes ingredient lists (handles parentheses, line breaks, and special characters)
-- Fuzzy matching using FlexSearch for ingredient identification
-- Categorizes ingredients into groups (e.g., Alcohols, Silicones, Cleansers)
-- Flags ingredients based on configurable criteria
-- Debug mode for viewing all potential matches
-- TypeScript support with full type definitions
-- Zero runtime dependencies (except FlexSearch and UUID)
+- **Language:** TypeScript
+- **Build System:** Vite
+- **Testing Framework:** Vitest with coverage reporting
+- **Type Checking:** TSC (TypeScript Compiler)
+- **API Documentation:** Microsoft API Extractor & TSDoc
+- **Code Quality:**
+  - ESLint for code linting
+  - Strict TypeScript configuration
+  - Comprehensive test coverage
+  - Knip for dependency analysis
 
-## Installation
+## 🛠️ Architecture
+
+The project is structured as a modern TypeScript library with:
+- Module-based architecture (ES Modules)
+- UMD and ES bundle outputs
+- Type definitions generation
+- Automated data bundling and validation
+- CLI tools for data management
+
+## 🔍 Key Features
+
+- Ingredient analysis engine
+- Data validation and normalization tools
+- Automated database management
+- Export/import functionality for ingredients
+- Reference conversion utilities
+- Type-safe API design
+
+## 🧪 Testing Philosophy
+
+- Comprehensive test suite including:
+  - Unit tests
+  - End-to-end (e2e) tests
+  - Integration tests
+- Coverage reporting
+- Test UI for development
+- Automated validation pipelines
+
+## 🔧 Development Tools
+
+- **Data Management:**
+  - CSV parsing and generation
+  - JSON schema validation
+  - Automated data bundling
+- **Code Quality:**
+  - TypeScript for type safety
+  - ESLint for code style
+  - Automated validation scripts
+  - Dependency analysis
+
+## 📦 Installation
 
 ```bash
 npm install haircare-ingredients-analyzer
 ```
 
-## Usage
-
-```typescript
-import { Analyzer } from 'haircare-ingredients-analyzer';
-
-// Initialize with your ingredient database
-const analyzer = new Analyzer({
-  database: {
-    ingredients: [
-      {
-        id: 'cetyl-alcohol',
-        name: 'Cetyl Alcohol',
-        description: 'A fatty alcohol that acts as an emollient',
-        category: ['fatty alcohol'],
-        synonyms: ['cetearyl alcohol'],
-      },
-    ],
-    categories: [
-      {
-        name: 'Alcohols',
-        description: 'Different types of alcohols used in hair care',
-        categories: [
-          {
-            name: 'Fatty Alcohol',
-            description: 'Long-chain alcohols that condition',
-            tags: ['Curly Friendly'],
-          },
-        ],
-      },
-    ],
-  },
-  options: {
-    flaggedIngredients: ['sodium lauryl sulfate'],
-    flaggedCategories: ['sulfate'],
-    flaggedGroups: ['Alcohols'],
-  },
-});
-
-// Analyze an ingredient list
-const result = analyzer.analyze('Water, Cetyl Alcohol, Fragrance');
-console.log(result.matches); // Array of matched ingredients
-console.log(result.categories); // Array of unique categories
-console.log(result.flags); // Flagged ingredients/categories
-
-// Get all known ingredients and categories
-const ingredients = analyzer.getIngredients();
-const categories = analyzer.getCategories();
-```
-
-## Key Types
-
-### AnalysisResult
-
-```typescript
-interface AnalysisResult {
-  matches: IngredientMatch[];
-  categories: string[];
-  flags?: {
-    ingredients: string[];
-    categories: string[];
-    Groups: string[];
-  };
-}
-```
-
-### IngredientMatch
-
-```typescript
-interface IngredientMatch {
-  id: string;
-  name: string;
-  normalized: string;
-  details?: Ingredient;
-  categories?: string[];
-  matchDetails?: MatchDetails;
-  debug?: DebugInfo;
-}
-```
-
-### Database Structure
-
-```typescript
-interface IngredientDatabase {
-  ingredients: Ingredient[];
-  categories: Groups;
-}
-
-interface Ingredient {
-  id: string;
-  name: string;
-  description?: string;
-  category: string[];
-  synonyms?: string[];
-  matchConfig?: MatchConfig;
-}
-```
-
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-## License
+## 📄 License
 
 MIT
 
-## Testing
+---
 
-Test number as of 12/13/2024: 49
+This library serves as the engine for [CurlsBot](https://github.com/melissamcewen/curlsbotsite), a website that analyzes haircare products and provides recommendations.

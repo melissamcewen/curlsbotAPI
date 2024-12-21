@@ -60,12 +60,11 @@
     "typescript": "^5.7.2",
     "vite": "^5.4.11",
     "vite-plugin-dts": "^4.3.0",
-    "vitest": "^2.1.8"
-  },
-  "dependencies": {
+    "vitest": "^2.1.8",
     "csv-parse": "^5.6.0",
     "json-2-csv": "^5.5.7"
   },
+  "dependencies": {},
   "files": [
     "dist",
     "README.md"
