@@ -50,6 +50,7 @@
       "name": "Waxes",
       "inclusions": ["wax"],
       "defaultIngredient": "unknown_wax",
+      "exclusions": ["emulsifying"],
       "description": "Waxes in styling products can add texture, hold, and shine to hair"
     },
     {

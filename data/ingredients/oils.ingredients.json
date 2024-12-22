@@ -112,22 +112,7 @@
         {"url":"https://incidecoder.com/ingredients/vitis-vinifera-seed-oil"}
       ]
     },
-    {
-      "name": "Isohexadecane",
-      "id": "isohexadecane",
-      "synonyms": [
-        "c16 hydrocarbon",
-        "volatile hydrocarbon",
-        "isohexanedecane",
-        "isohexad"
-      ],
-      "categories": [
-        "light_oils"
-      ],
-      "references": [
-        {"url":"https://incidecoder.com/ingredients/isohexadecane"}
-      ]
-    },
+
     {
       "name": "Jojoba Oil",
       "id": "jojoba_oil",
@@ -176,14 +161,26 @@
       "synonyms": [
         "paraffinum liquidum",
         "liquid paraffin",
-        "petroleum oil",
-        "petrolatum"
+        "petroleum oil"
       ],
       "categories": [
         "heavy_oils"
       ],
       "references": [
         {"url":"https://incidecoder.com/ingredients/mineral-oil"}
+      ]
+    },
+    {
+      "name": "Petrolatum",
+      "id": "petrolatum",
+      "synonyms": [
+        "petroleum jelly",
+        "petrolatum",
+        "paraffin jelly",
+        "mineral jelly"
+      ],
+      "categories": [
+        "heavy_oils"
       ]
     },
     {

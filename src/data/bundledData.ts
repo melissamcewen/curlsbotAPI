@@ -432,6 +432,19 @@ export const defaultDatabase: IngredientDatabase = {
       ],
       "references": []
     },
+    "emulsifying_wax": {
+      "name": "Emulsifying Wax",
+      "id": "emulsifying_wax",
+      "categories": [
+        "emollient_alcohols"
+      ],
+      "references": [
+        {
+          "url": "https://incidecoder.com/ingredients/emulsifying-wax"
+        }
+      ],
+      "synonyms": []
+    },
     "alkylbenzene_sulfonate": {
       "name": "Alkylbenzene Sulfonate",
       "id": "alkylbenzene_sulfonate",
@@ -1178,24 +1191,6 @@ export const defaultDatabase: IngredientDatabase = {
         }
       ]
     },
-    "isohexadecane": {
-      "name": "Isohexadecane",
-      "id": "isohexadecane",
-      "synonyms": [
-        "c16 hydrocarbon",
-        "volatile hydrocarbon",
-        "isohexanedecane",
-        "isohexad"
-      ],
-      "categories": [
-        "light_oils"
-      ],
-      "references": [
-        {
-          "url": "https://incidecoder.com/ingredients/isohexadecane"
-        }
-      ]
-    },
     "jojoba_oil": {
       "name": "Jojoba Oil",
       "id": "jojoba_oil",
@@ -1250,8 +1245,7 @@ export const defaultDatabase: IngredientDatabase = {
       "synonyms": [
         "paraffinum liquidum",
         "liquid paraffin",
-        "petroleum oil",
-        "petrolatum"
+        "petroleum oil"
       ],
       "categories": [
         "heavy_oils"
@@ -1261,6 +1255,20 @@ export const defaultDatabase: IngredientDatabase = {
           "url": "https://incidecoder.com/ingredients/mineral-oil"
         }
       ]
+    },
+    "petrolatum": {
+      "name": "Petrolatum",
+      "id": "petrolatum",
+      "synonyms": [
+        "petroleum jelly",
+        "petrolatum",
+        "paraffin jelly",
+        "mineral jelly"
+      ],
+      "categories": [
+        "heavy_oils"
+      ],
+      "references": []
     },
     "olive_oil": {
       "name": "Olive Oil",
@@ -1606,6 +1614,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "astringents"
       ],
+      "description": "Most witch hazel contains alcohol—check with the manufacturer to confirm. Even alcohol-free versions can be drying, so use cautiously on high porosity hair.",
       "references": []
     },
     "unknown_paraben": {
@@ -1642,6 +1651,24 @@ export const defaultDatabase: IngredientDatabase = {
         }
       ],
       "synonyms": []
+    },
+    "isohexadecane": {
+      "name": "Isohexadecane",
+      "id": "isohexadecane",
+      "synonyms": [
+        "c16 hydrocarbon",
+        "volatile hydrocarbon",
+        "isohexanedecane",
+        "isohexad"
+      ],
+      "categories": [
+        "solvents"
+      ],
+      "references": [
+        {
+          "url": "https://incidecoder.com/ingredients/isohexadecane"
+        }
+      ]
     },
     "behentrimonium_methosulfate": {
       "name": "Behentrimonium Methosulfate",
@@ -2262,19 +2289,6 @@ export const defaultDatabase: IngredientDatabase = {
           "url": "https://incidecoder.com/ingredients/polysorbate-20"
         }
       ]
-    },
-    "emulsifying_wax": {
-      "name": "Emulsifying Wax",
-      "id": "emulsifying_wax",
-      "categories": [
-        "water_soluble_waxes"
-      ],
-      "references": [
-        {
-          "url": "https://incidecoder.com/ingredients/emulsifying-wax"
-        }
-      ],
-      "synonyms": []
     }
   },
   "categories": {
@@ -2535,6 +2549,9 @@ export const defaultDatabase: IngredientDatabase = {
         "wax"
       ],
       "defaultIngredient": "unknown_wax",
+      "exclusions": [
+        "emulsifying"
+      ],
       "description": "Waxes in styling products can add texture, hold, and shine to hair"
     },
     "oils": {

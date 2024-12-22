@@ -379,6 +379,12 @@
       "categories": [
         "drying_alcohols"
       ]
-    }
+    },
+      {
+        "name": "Emulsifying Wax",
+        "id": "emulsifying_wax",
+        "categories": ["emollient_alcohols"],
+        "references": ["https://incidecoder.com/ingredients/emulsifying-wax"]
+      }
   ]
 }
