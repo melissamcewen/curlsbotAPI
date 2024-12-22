@@ -2634,8 +2634,8 @@ export const defaultSettings: Record<string, Setting> = {
   },
   "mild_detergents_only": {
     "id": "mild_detergents_only",
-    "name": "Non-mild detergents",
-    "description": "Only mild detergents are allowed, other detergents are marked as warning.",
+    "name": "Stronger Detergents",
+    "description": "Avoid these if you prefer mild detergents.",
     "groups": [
       "detergents"
     ],
