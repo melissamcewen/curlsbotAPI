@@ -83,31 +83,31 @@ describe('Production Database E2E Tests', () => {
       defaultSystems.forEach(system => {
         system.settings.forEach(settingId => {
           if (!defaultSettings[settingId]) {
-            warnings.push(`Warning: Setting "${settingId}" referenced by system "${system.name}" does not exist`);
+            warnings.push(`System "${system.name}" references setting "${settingId}" which does not exist in defaultSettings`);
           }
         });
       });
 
       // Check that settings reference valid categories and groups
-      Object.entries(defaultSettings).forEach(([id, setting]) => {
+      Object.entries(defaultSettings).forEach(([settingId, setting]) => {
         // Check categories
         setting.categories?.forEach(categoryId => {
           if (!defaultDatabase.categories[categoryId]) {
-            warnings.push(`Warning: Category "${categoryId}" referenced by setting "${setting.name}" does not exist`);
+            warnings.push(`Setting "${setting.name}" (${settingId}) references category "${categoryId}" which does not exist in the database`);
           }
         });
 
         // Check groups
         setting.groups?.forEach(groupId => {
           if (!defaultDatabase.groups[groupId]) {
-            warnings.push(`Warning: Group "${groupId}" referenced by setting "${setting.name}" does not exist`);
+            warnings.push(`Setting "${setting.name}" (${settingId}) references group "${groupId}" which does not exist in the database`);
           }
         });
 
         // Check allowed categories
         setting.allowedCategories?.forEach(categoryId => {
           if (!defaultDatabase.categories[categoryId]) {
-            warnings.push(`Warning: Allowed category "${categoryId}" referenced by setting "${setting.name}" does not exist`);
+            warnings.push(`Setting "${setting.name}" (${settingId}) has allowed category "${categoryId}" which does not exist in the database`);
           }
         });
       });

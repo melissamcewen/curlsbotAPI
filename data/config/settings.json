@@ -40,7 +40,7 @@
     {
       "id": "mild_detergents_caution_others",
       "name": "Non-mild detergents",
-      "description": "If you want to use only mild detergents, you should not use these detergents.",
+      "description": "These detergents are not as harsh as sulfates but can still be drying for some hair types depending on the formulation. CurlsBot is revisiting many of these so you should do your own research.",
       "groups": ["detergents"],
       "allowedCategories": ["mild_detergents"],
       "defaultStatus": "caution",
@@ -82,10 +82,10 @@
       "defaultStatus": "warning"
     },
     {
-      "id": "no_heavy_oils",
-      "name": "Heavy Oils",
-      "description": "These oils are thick and heavy, and can be very nourishing, but can also build up on the hair, leading to a greasy feel.",
-      "categories": ["heavy_oils"],
+      "id": "no_petroleum",
+      "name": "Petroleum Oils",
+      "description": "These are petroleum based ingredients that are often avoided for their build up potential as well as their petro-based origin.",
+      "categories": ["petroleum_oils"],
       "defaultStatus": "warning"
     }
   ]

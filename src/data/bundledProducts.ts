@@ -3,21 +3,6 @@ import type { ProductDatabase } from '../types';
 
 export const defaultProductDatabase: ProductDatabase = {
   "products": {
-    "botanique_nourish_conditioner": {
-      "name": "Botanique Nourish Conditioner",
-      "brand": "Tresemme",
-      "buy_url": "https://amzn.to/4iGCEfg",
-      "product_categories": [
-        "conditioners"
-      ],
-      "tags": [
-        "high_porosity"
-      ],
-      "cost_rating": "1",
-      "ingredients_raw": "water eau, cetearyl alcohol, stearamidopropyl dimethylamine, aloe barbadensis leaf juice, cocos nucifera coconut fruit extract, cocos nucifera coconut oil, ceramide ng, arginine, lysine hcl, behentrimonium chloride, fragrance parfum, dipropylene glycol, lactic acid, sodium chloride, disodium edta, methylchloroisothiazolinone, methylisothiazolinone, coumarin, linalool",
-      "id": "botanique_nourish_conditioner",
-      "systems_excluded": []
-    },
     "light_conditioner": {
       "name": "Light Conditioner",
       "brand": "MopTop",
@@ -30,6 +15,21 @@ export const defaultProductDatabase: ProductDatabase = {
       ],
       "cost_rating": "2",
       "id": "light_conditioner",
+      "systems_excluded": []
+    },
+    "daily_conditioner": {
+      "name": "Daily Conditioner",
+      "brand": "MopTop",
+      "buy_url": "https://amzn.to/3ZS5qAW",
+      "product_categories": [
+        "conditioners"
+      ],
+      "tags": [
+        "normal_porosity",
+        "high_porosity"
+      ],
+      "ingredients_raw": "water, aloe barbadensis leaf extract, glycerin, cetyl alcohol, stearyl alcohol, cetrimonium chloride, behentrimonium chloride, olea europaea olive fruit oil, glycereth-26, butyrospermum parkii shea butter, hydroxypropyltrimonium honey, hypnea musciformis extract seaweed, gelidiella acerosa extract seaweed, sargassum filipendula extract seaweed, sorbitol, silk amino acids, rosmarinus officinalis rosemary leaf extract, chamomilla recutita matricaria flower extract, urtica dioica nettle extract, simmondsia chinensis jojoba seed oil, tocopheryl acetate vitamin e, panthenol vitamin b5, arnica montana flower extract, hydroxyethylcellulose, phenoxyethanol, sorbic acid, ethylhexylglycerin, citric acid, sodium phytate, fragrance",
+      "id": "daily_conditioner",
       "systems_excluded": []
     },
     "coconut_cowash_cleansing_conditioner": {
@@ -45,6 +45,18 @@ export const defaultProductDatabase: ProductDatabase = {
       "cost_rating": "2",
       "ingredients_raw": "aqua water eau, cetyl alcohol, cetrimonium chloride, cetearyl alcohol, cocos nucifera coconut oil, ricinus communis castor seed oil, cocos nucifera coconut fruit powder, citrus reticulata tangerine fruit extract, phytosterols, camillia sinensis leaf extract, peg-40 castor oil, stearlkonium chloride, serenoa serrulata fruit extract, quaternium-18, propylene glycol, c12-15 alkyl lactate, fragrance parfum, potassium sorbate, caprylyl glycol, phenoxyethanol, abies balsamea balsam canada resin, potassium chloride, limonene, glycerin, caprylic capric triglyceride",
       "id": "coconut_cowash_cleansing_conditioner",
+      "systems_excluded": []
+    },
+    "co-wash_conditioning_cleanser": {
+      "name": "Co-wash Conditioning Cleanser",
+      "brand": "MopTop",
+      "ingredients_raw": "water, glycerin, cetyl alcohol coconut derived, stearyl alcohol coconut derived, olea europaea olive fruit oil, cetrimonium chloride, behentrimonium chloride, aloe barbadensis leaf extract, glycereth-26, hypnea musciformis extract seaweed, gelidiella acerosa extract seaweed, sargassum filipendula extract seaweed, sorbitol, hydroxypropyltrimonium honey, silk amino acids, rosmarinus officinalis rosemary leaf extract, chamomilla recutita matricaria flower extract, urtica dioica nettle extract, butyrospermum parkii shea butter, simmondsia chinensis jojoba seed oil, tocopheryl acetate vitamin e, panthenol vitamin b5, citrus senensis oil, citrus limon oil, citrus aurantifolia oil, citrus paradisi oil, sodium phytate, hydroxyethylcellulose, phenoxyethanol, ethylhexylglycerin, citric acid",
+      "buy_url": "https://amzn.to/3P9FvzP",
+      "tags": [
+        "high_porosity"
+      ],
+      "id": "co-wash_conditioning_cleanser",
+      "product_categories": [],
       "systems_excluded": []
     },
     "i_create_volume": {
@@ -77,124 +89,13 @@ export const defaultProductDatabase: ProductDatabase = {
       "id": "deep_conditioning_treatment",
       "systems_excluded": []
     },
-    "color_depositing_conditioner": {
-      "name": "Color Depositing Conditioner",
-      "brand": "Overtone",
-      "product_categories": [
-        "dyes",
-        "direct_dyes"
-      ],
-      "tags": [
-        "not_approved"
-      ],
-      "cost_rating": "3",
-      "description": "Color Depositing Conditioner is a direct dye that can be used to add color to the hair",
-      "ingredients": [
-        "water aqua eau",
-        "cetearyl alcohol",
-        "cetyl alcohol",
-        "stearyl alcohol",
-        "behentrimonium chloride",
-        "glycerin",
-        "guar hydroxypropyltrimonium chloride",
-        "butyrospermum parkii shea butter",
-        "cocos nucifera coconut oil",
-        "simmondsia chinensis jojoba seed oil",
-        "oenothera biennis evening primrose oil",
-        "persea gratissima avocado oil",
-        "olea europaea olive fruit oil",
-        "linum usitatissimum linseed seed oil",
-        "sesamum indicum sesame seed oil",
-        "mentha cardiaca spearmint oil",
-        "rosmarinus officinalis rosemary leaf oil",
-        "benzyl alcohol",
-        "dehydroacetic acid",
-        "polysorbate 60",
-        "amodimethicone",
-        "phenoxyethanol",
-        "ethylhexylglycerin"
-      ],
-      "id": "color_depositing_conditioner",
-      "systems_excluded": []
-    },
-    "color_depositing_mask": {
-      "name": "Color Depositing Mask",
-      "brand": "Moroccanoil",
-      "product_categories": [
-        "dyes",
-        "direct_dyes"
-      ],
-      "tags": [
-        "not_approved"
-      ],
-      "cost_rating": "3",
-      "ingredients": [
-        "aqua water eau",
-        "cetearyl alcohol",
-        "cetyl alcohol",
-        "behentrimonium chloride",
-        "propoxytetramethyl piperdinyl dimethicone",
-        "peg-12 dimethicone",
-        "prunus armeniaca apricot kernel oil",
-        "parfum fragrance",
-        "bis-hydroxy methoxy amodimethicone",
-        "argania spinosa argan kernel oil",
-        "hydrolyzed soy protein",
-        "algin",
-        "arginine",
-        "aspartic acid",
-        "glycine",
-        "alanine",
-        "serine",
-        "valine",
-        "isoleucine",
-        "proline",
-        "threonine",
-        "histidine",
-        "phenylalanine",
-        "chitosan",
-        "citric acid",
-        "acetic acid",
-        "guar hydroxypropyltrimonium chloride",
-        "hydroxypropyl starch phosphate",
-        "panthenol",
-        "caprylic capric triglyceride",
-        "behentrimonium methosulfate",
-        "c11-15 pareth-7",
-        "c12-13 pareth-9",
-        "caprylyl glycol",
-        "polyquaternium-70",
-        "dipropylene glycol",
-        "isopropyl alcohol",
-        "disodium edta",
-        "quaternium-87",
-        "pca",
-        "sodium pca",
-        "hydroxyacetophenone",
-        "trideceth-6",
-        "silica dimethyl silylate",
-        "chlorphenesin",
-        "sodium acetate",
-        "sodium benzoate",
-        "sodium lactate",
-        "sodium hydroxide",
-        "phenoxyethanol",
-        "potassium sorbate",
-        "ci 56059 basic blue 99",
-        "ci 12719 basic yellow 57",
-        "ci 12245 basic red 76",
-        "alpha-isomethyl ionone",
-        "linalool mocdmco03"
-      ],
-      "id": "color_depositing_mask",
-      "systems_excluded": []
-    },
     "moptop_anti-frizz_medium_hold_gel": {
       "name": "MopTop Anti-frizz Medium Hold Gel",
       "brand": "MopTop",
       "buy_url": "https://amzn.to/2kK7lb3",
       "product_categories": [
-        "gels"
+        "gels",
+        "curlsbot_approved"
       ],
       "tags": [
         "high_porosity",
@@ -209,7 +110,8 @@ export const defaultProductDatabase: ProductDatabase = {
       "brand": "Innersense",
       "buy_url": "https://amzn.to/2BYccc7",
       "product_categories": [
-        "gels"
+        "gels",
+        "curlsbot_approved"
       ],
       "tags": [
         "low_porosity",
@@ -245,39 +147,6 @@ export const defaultProductDatabase: ProductDatabase = {
         "high_porosity"
       ],
       "cost_rating": "3",
-      "ingredients": [
-        "water aqua",
-        "cetearyl alcohol",
-        "salvia hispanica chia seed extract",
-        "creatine",
-        "polyquaternium-10",
-        "stearamidopropyl dimethylamine",
-        "lentinus edodes shiitake extract",
-        "opuntia tuna prickly pear fruit extract",
-        "cucurbita pepo pumpkin seed extract",
-        "psidium guajava guava fruit extract",
-        "prunus amygdalus dulcis sweet almond oil",
-        "ribes nigrum black currant fruit extract",
-        "brassica oleracea acephala kale leaf extract",
-        "leuconostoc radish root ferment filtrate",
-        "polyquaternium-37",
-        "hydroxypropylgluconamide",
-        "hydroxypropylammonium gluconate",
-        "disodium edta",
-        "potassium sorbate",
-        "tartaric acid",
-        "citric acid",
-        "ethylhexylglycerin",
-        "glycerin",
-        "behentrimonium chloride",
-        "phenoxyethanol",
-        "sodium benzoate",
-        "benzyl alcohol",
-        "geraniol",
-        "fragrance parfum",
-        "linalool",
-        "limonene"
-      ],
       "id": "bond_curl_rehab_salve,_bond_building_strength_treatment_for_weak,_damaged_hair",
       "systems_excluded": []
     },
@@ -311,6 +180,21 @@ export const defaultProductDatabase: ProductDatabase = {
       ],
       "cost_rating": "3",
       "id": "hydrating_hairbath",
+      "systems_excluded": []
+    },
+    "gentle_shampoo": {
+      "name": "Gentle Shampoo",
+      "brand": "MopTop",
+      "ingredients_raw": "water, sodium c14-16 olefin sulfonate, cocamidopropyl betaine, cocamide mea, glycol distearate, steareth-4, glycerin, hydroxypropyltrimonium honey, silk amino acids, hypnea musciformis extract seaweed, gelidiella acerosa extract seaweed, sargassum filipendula extract seaweed, sorbitol, rosmarinus officinalis rosemary leaf extract, salix alba willow bark extract, urtica dioica nettle extract, tocopheryl acetate vitamin e, panthenol vitamin b5, guar hydroxypropyltrimonium chloride, polyquaternium-10, fragrance phthalate free, sodium phytate, sorbic acid, sodium chloride, ethylhexylglycerin, phenoxyethanol, citric acid",
+      "buy_url": "https://amzn.to/4fuIPQW",
+      "product_categories": [
+        "shampoos"
+      ],
+      "tags": [
+        "high_porosity",
+        "normal_porosity"
+      ],
+      "id": "gentle_shampoo",
       "systems_excluded": []
     }
   }

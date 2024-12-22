@@ -1,5 +1,4 @@
 {
-  "$schema": "../schema/products.schema.json",
   "products": [
     {
       "name": "Curl Shampoo",
@@ -17,6 +16,14 @@
       "product_categories": ["shampoos"],
       "tags": ["high_porosity", "normal_porosity"],
       "cost_rating": "3"
+    },
+    {
+      "name": "Gentle Shampoo",
+      "brand": "MopTop",
+      "ingredients_raw": "water, sodium c14-16 olefin sulfonate, cocamidopropyl betaine, cocamide mea, glycol distearate, steareth-4, glycerin, hydroxypropyltrimonium honey, silk amino acids, hypnea musciformis extract seaweed, gelidiella acerosa extract seaweed, sargassum filipendula extract seaweed, sorbitol, rosmarinus officinalis rosemary leaf extract, salix alba willow bark extract, urtica dioica nettle extract, tocopheryl acetate vitamin e, panthenol vitamin b5, guar hydroxypropyltrimonium chloride, polyquaternium-10, fragrance phthalate free, sodium phytate, sorbic acid, sodium chloride, ethylhexylglycerin, phenoxyethanol, citric acid",
+      "buy_url": "https://amzn.to/4fuIPQW",
+      "product_categories": ["shampoos"],
+      "tags": ["high_porosity", "normal_porosity"]
     }
   ]
 }

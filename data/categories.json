@@ -27,14 +27,6 @@
       "defaultIngredient": "unknown_sulfate"
     },
     {
-      "id": "sulfonates",
-      "name": "Sulfonates",
-      "group": "detergents",
-      "description": "Sulfonates are synthetic cleansing agents that create lather, similar to sulfates",
-      "inclusions": ["sulfonate", "sulfo"],
-      "defaultIngredient": "unknown_sulfonate"
-    },
-    {
       "id": "emollient_alcohols",
       "name": "Emollient alcohols",
       "group": "alcohols",
@@ -93,9 +85,9 @@
     },
     {
       "id": "heavy_oils",
-      "name": "Heavy Oils",
+      "name": "Heavy Oils and Butters",
       "group": "oils",
-      "description": "Heavy oils are oils that are thick and heavy"
+      "description": "These oils and butters are thick and heavy and can weigh down hair"
     },
     {
       "id": "light_oils",
@@ -146,6 +138,23 @@
       "description": "Polyquats have a moderate to high build up potential and might not be a good choice if you only use mild shampoos or cowash to cleanse your hair.",
       "inclusions": ["polyquat"],
       "defaultIngredient": "unknown_polyquat"
-    }
+    },
+    {
+      "id": "petroleum_oils",
+      "name": "Petroleum Oils",
+      "group": "oils",
+      "description": "These are petroleum based ingredients that are often avoided for their build up potential as well as their petro-based origin."
+    },
+    {
+      "id": "humectants",
+      "name": "Humectants",
+      "group": "others",
+      "description": "Humectants are ingredients that attract moisture to the hair" },
+      {
+        "id": "proteins",
+        "name": "Proteins",
+        "group": "others",
+        "description": "Proteins in hair care products can help strengthen and repair hair, but some people find them drying"
+      }
   ]
 }

@@ -420,18 +420,6 @@ export const defaultDatabase: IngredientDatabase = {
       "synonyms": [],
       "references": []
     },
-    "unknown_alcohol": {
-      "name": "Unknown Alcohol",
-      "id": "unknown_alcohol",
-      "synonyms": [
-        "alcohol"
-      ],
-      "description": "Unknown alcohol, since we don't know what it is, we are going to classify it as drying alcohols just to be safe.",
-      "categories": [
-        "drying_alcohols"
-      ],
-      "references": []
-    },
     "emulsifying_wax": {
       "name": "Emulsifying Wax",
       "id": "emulsifying_wax",
@@ -454,7 +442,7 @@ export const defaultDatabase: IngredientDatabase = {
         "alkyl benzene sulphate"
       ],
       "categories": [
-        "sulfonates"
+        "other_detergents"
       ],
       "references": []
     },
@@ -509,7 +497,7 @@ export const defaultDatabase: IngredientDatabase = {
         "ammonium xylene sulfonate"
       ],
       "categories": [
-        "sulfonates"
+        "other_detergents"
       ],
       "references": []
     },
@@ -609,7 +597,7 @@ export const defaultDatabase: IngredientDatabase = {
       "name": "Dioctyl Sodium Sulfosuccinate",
       "id": "dioctyl_sodium_sulfosuccinate",
       "categories": [
-        "sulfonates"
+        "other_detergents"
       ],
       "synonyms": [],
       "references": []
@@ -715,7 +703,7 @@ export const defaultDatabase: IngredientDatabase = {
         "sodium c12-14 olefin sulphate"
       ],
       "categories": [
-        "sulfonates"
+        "other_detergents"
       ],
       "references": []
     },
@@ -737,7 +725,7 @@ export const defaultDatabase: IngredientDatabase = {
         "sodium c14-15 olefin sulphate"
       ],
       "categories": [
-        "sulfonates"
+        "other_detergents"
       ],
       "references": []
     },
@@ -748,8 +736,9 @@ export const defaultDatabase: IngredientDatabase = {
         "sodium c14-16 olefin sulphate"
       ],
       "categories": [
-        "sulfonates"
+        "other_detergents"
       ],
+      "description": "CurlsBot is in the process of reclassifying this ingredient. We believe it is a mild detergent but in the past we've listed it as stronger",
       "references": []
     },
     "sodium_c14_18_olefin_sulfonate": {
@@ -759,7 +748,7 @@ export const defaultDatabase: IngredientDatabase = {
         "sodium c14-18 olefin sulphate"
       ],
       "categories": [
-        "sulfonates"
+        "other_detergents"
       ],
       "references": []
     },
@@ -770,7 +759,7 @@ export const defaultDatabase: IngredientDatabase = {
         "sodium c14-26 olefin sulphate"
       ],
       "categories": [
-        "sulfonates"
+        "other_detergents"
       ],
       "references": []
     },
@@ -781,7 +770,7 @@ export const defaultDatabase: IngredientDatabase = {
         "sodium c16-18 olefin sulphate"
       ],
       "categories": [
-        "sulfonates"
+        "other_detergents"
       ],
       "references": []
     },
@@ -883,7 +872,7 @@ export const defaultDatabase: IngredientDatabase = {
         "sodium laureth-40 sulphate"
       ],
       "categories": [
-        "sulfonates"
+        "other_detergents"
       ],
       "references": []
     },
@@ -1026,7 +1015,7 @@ export const defaultDatabase: IngredientDatabase = {
         "sodium xylene sulfonate"
       ],
       "categories": [
-        "sulfonates"
+        "other_detergents"
       ],
       "references": []
     },
@@ -1037,7 +1026,7 @@ export const defaultDatabase: IngredientDatabase = {
         "tea-dodecylbenzenesulfonate"
       ],
       "categories": [
-        "sulfonates"
+        "other_detergents"
       ],
       "references": []
     },
@@ -1061,6 +1050,18 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "sulfates"
       ],
+      "references": []
+    },
+    "sulfonate": {
+      "name": "Sulfonate",
+      "id": "sulfonate",
+      "synonyms": [
+        " sulfonate"
+      ],
+      "categories": [
+        "other_detergents"
+      ],
+      "description": "We're pretty sure this is a sulfonate, but we're not sure which one. ",
       "references": []
     },
     "apricot_kernel_oil": {
@@ -1248,7 +1249,7 @@ export const defaultDatabase: IngredientDatabase = {
         "petroleum oil"
       ],
       "categories": [
-        "heavy_oils"
+        "petroleum_oils"
       ],
       "references": [
         {
@@ -1266,7 +1267,7 @@ export const defaultDatabase: IngredientDatabase = {
         "mineral jelly"
       ],
       "categories": [
-        "heavy_oils"
+        "petroleum_oils"
       ],
       "references": []
     },
@@ -1283,22 +1284,6 @@ export const defaultDatabase: IngredientDatabase = {
       "references": [
         {
           "url": "https://incidecoder.com/ingredients/olea-europaea-fruit-oil"
-        }
-      ]
-    },
-    "shea_butter_oil": {
-      "name": "Shea Butter Oil",
-      "id": "shea_butter_oil",
-      "synonyms": [
-        "butyrospermum parkii butter oil",
-        "shea oil"
-      ],
-      "categories": [
-        "medium_oils"
-      ],
-      "references": [
-        {
-          "url": "https://incidecoder.com/ingredients/butyrospermum-parkii-butter-oil"
         }
       ]
     },
@@ -1332,6 +1317,25 @@ export const defaultDatabase: IngredientDatabase = {
         {
           "url": "https://incidecoder.com/ingredients/prunus-amygdalus-dulcis-oil"
         }
+      ]
+    },
+    "butyrospermum_parkii_shea_butter": {
+      "name": "Butyrospermum Parkii Shea Butter",
+      "id": "butyrospermum_parkii_shea_butter",
+      "description": "A natural butter that deeply moisturizes and nourishes hair",
+      "categories": [
+        "heavy_oils"
+      ],
+      "references": [
+        {
+          "url": "https://incidecoder.com/ingredients/butyrospermum-parkii-shea-butter",
+          "title": "Shea Butter on INCIDecoder"
+        }
+      ],
+      "synonyms": [
+        "shea butter",
+        "butyrospermum parkii",
+        "shea oil"
       ]
     },
     "aminomethyl_propanol": {
@@ -1683,6 +1687,247 @@ export const defaultDatabase: IngredientDatabase = {
         }
       ],
       "synonyms": []
+    },
+    "flower_extract": {
+      "name": "Flower Extract",
+      "id": "flower_extract",
+      "categories": [
+        "other"
+      ],
+      "description": "This is a flower extract, but we're not sure which one. These are generally considered harmless or beneficial.",
+      "synonyms": [],
+      "references": []
+    },
+    "aloe_barbadensis_leaf_extract": {
+      "name": "Aloe Barbadensis Leaf Extract",
+      "id": "aloe_barbadensis_leaf_extract",
+      "description": "A moisturizing ingredient that soothes the scalp and conditions hair",
+      "categories": [
+        "other"
+      ],
+      "references": [
+        {
+          "url": "https://incidecoder.com/ingredients/aloe-barbadensis-leaf-extract"
+        }
+      ],
+      "synonyms": [
+        "Aloe Vera"
+      ]
+    },
+    "behentrimonium_chloride": {
+      "name": "Behentrimonium Chloride",
+      "id": "behentrimonium_chloride",
+      "description": "A conditioning agent that reduces static and detangles hair",
+      "categories": [
+        "other"
+      ],
+      "references": [
+        {
+          "url": "https://incidecoder.com/ingredients/behentrimonium-chloride"
+        }
+      ],
+      "synonyms": []
+    },
+    "cetrimonium_chloride": {
+      "name": "Cetrimonium Chloride",
+      "id": "cetrimonium_chloride",
+      "description": "A conditioning agent that detangles and adds shine",
+      "categories": [
+        "other"
+      ],
+      "references": [
+        {
+          "url": "https://incidecoder.com/ingredients/cetrimonium-chloride"
+        }
+      ],
+      "synonyms": []
+    },
+    "citric_acid": {
+      "name": "Citric Acid",
+      "id": "citric_acid",
+      "description": "Used to adjust pH levels and smooth hair cuticles",
+      "categories": [
+        "other"
+      ],
+      "references": [
+        {
+          "url": "https://incidecoder.com/ingredients/citric-acid"
+        }
+      ],
+      "synonyms": []
+    },
+    "ethylhexylglycerin": {
+      "name": "Ethylhexylglycerin",
+      "id": "ethylhexylglycerin",
+      "description": "A humectant and preservative enhancer",
+      "categories": [
+        "humectants"
+      ],
+      "references": [
+        {
+          "url": "https://incidecoder.com/ingredients/ethylhexylglycerin"
+        }
+      ],
+      "synonyms": []
+    },
+    "glycereth_26": {
+      "name": "Glycereth-26",
+      "id": "glycereth_26",
+      "description": "A lightweight humectant that provides hydration without greasiness",
+      "categories": [
+        "humectants"
+      ],
+      "references": [
+        {
+          "url": "https://incidecoder.com/ingredients/glycereth-26"
+        }
+      ],
+      "synonyms": []
+    },
+    "glycerin": {
+      "name": "Glycerin",
+      "id": "glycerin",
+      "description": "A powerful humectant that attracts moisture to the hair",
+      "categories": [
+        "humectants"
+      ],
+      "references": [
+        {
+          "url": "https://incidecoder.com/ingredients/glycerin"
+        }
+      ],
+      "synonyms": []
+    },
+    "hydroxyethylcellulose": {
+      "name": "Hydroxyethylcellulose",
+      "id": "hydroxyethylcellulose",
+      "description": "A thickening agent that improves product texture",
+      "categories": [
+        "other"
+      ],
+      "references": [
+        {
+          "url": "https://incidecoder.com/ingredients/hydroxyethylcellulose"
+        }
+      ],
+      "synonyms": []
+    },
+    "hydroxypropyltrimonium_honey": {
+      "name": "Hydroxypropyltrimonium Honey",
+      "id": "hydroxypropyltrimonium_honey",
+      "description": "A conditioning agent derived from honey that adds shine and softness",
+      "categories": [
+        "other"
+      ],
+      "references": [
+        {
+          "url": "https://incidecoder.com/ingredients/hydroxypropyltrimonium-honey"
+        }
+      ],
+      "synonyms": []
+    },
+    "panthenol": {
+      "name": "Panthenol",
+      "id": "panthenol",
+      "description": "A moisturizing and strengthening agent that enhances hair elasticity",
+      "categories": [
+        "other"
+      ],
+      "references": [
+        {
+          "url": "https://incidecoder.com/ingredients/panthenol"
+        }
+      ],
+      "synonyms": [
+        "Provitamin B5",
+        "Vitamin B5"
+      ]
+    },
+    "phenoxyethanol": {
+      "name": "Phenoxyethanol",
+      "id": "phenoxyethanol",
+      "description": "A preservative that prevents microbial growth in hair care products",
+      "categories": [
+        "preservatives"
+      ],
+      "references": [
+        {
+          "url": "https://incidecoder.com/ingredients/phenoxyethanol"
+        }
+      ],
+      "synonyms": []
+    },
+    "silk_amino_acids": {
+      "name": "Silk Amino Acids",
+      "id": "silk_amino_acids",
+      "description": "A protein derivative that strengthens and smooths hair",
+      "categories": [
+        "proteins"
+      ],
+      "references": [
+        {
+          "url": "https://incidecoder.com/ingredients/silk-amino-acids"
+        }
+      ],
+      "synonyms": []
+    },
+    "sodium_phytate": {
+      "name": "Sodium Phytate",
+      "id": "sodium_phytate",
+      "description": "A chelating agent that stabilizes product formulations",
+      "categories": [
+        "other"
+      ],
+      "references": [
+        {
+          "url": "https://incidecoder.com/ingredients/sodium-phytate"
+        }
+      ],
+      "synonyms": []
+    },
+    "sorbic_acid": {
+      "name": "Sorbic Acid",
+      "id": "sorbic_acid",
+      "description": "A preservative that inhibits the growth of mold and yeast",
+      "categories": [
+        "preservatives"
+      ],
+      "references": [
+        {
+          "url": "https://incidecoder.com/ingredients/sorbic-acid"
+        }
+      ],
+      "synonyms": []
+    },
+    "sorbitol": {
+      "name": "Sorbitol",
+      "id": "sorbitol",
+      "description": "A humectant that retains moisture and adds hydration",
+      "categories": [
+        "humectants"
+      ],
+      "references": [
+        {
+          "url": "https://incidecoder.com/ingredients/sorbitol"
+        }
+      ],
+      "synonyms": []
+    },
+    "tocopheryl_acetate": {
+      "name": "Tocopheryl Acetate",
+      "id": "tocopheryl_acetate",
+      "description": "An antioxidant that protects hair and scalp from free radical damage",
+      "categories": [
+        "other"
+      ],
+      "references": [
+        {
+          "url": "https://incidecoder.com/ingredients/tocopheryl-acetate"
+        }
+      ],
+      "synonyms": [
+        "Vitamin E"
+      ]
     },
     "amodimethicone": {
       "name": "Amodimethicone",
@@ -2067,16 +2312,6 @@ export const defaultDatabase: IngredientDatabase = {
       "synonyms": [],
       "references": []
     },
-    "unknown_sulfonate": {
-      "name": "Unknown Sulfonates",
-      "id": "unknown_sulfonate",
-      "categories": [
-        "sulfonates"
-      ],
-      "description": "We're pretty sure this is a sulfonate, but we're not sure which one. ",
-      "synonyms": [],
-      "references": []
-    },
     "unknown_oil": {
       "name": "Unknown Oil",
       "id": "unknown_oil",
@@ -2094,6 +2329,18 @@ export const defaultDatabase: IngredientDatabase = {
       ],
       "description": "We're pretty sure this is a polyquat, but we're not sure which one.",
       "synonyms": [],
+      "references": []
+    },
+    "unknown_alcohol": {
+      "name": "Unknown Alcohol",
+      "id": "unknown_alcohol",
+      "synonyms": [
+        "alcohol"
+      ],
+      "description": "Unknown alcohol, since we don't know what it is, we are going to classify it as drying alcohols just to be safe.",
+      "categories": [
+        "drying_alcohols"
+      ],
       "references": []
     },
     "beeswax": {
@@ -2182,8 +2429,8 @@ export const defaultDatabase: IngredientDatabase = {
       "name": "Microcrystalline Wax",
       "id": "microcrystalline_wax",
       "synonyms": [
-        "petroleum wax",
-        "mineral wax"
+        "cera microcristallina",
+        "cire microcristalline"
       ],
       "categories": [
         "non_water_soluble_waxes"
@@ -2330,18 +2577,6 @@ export const defaultDatabase: IngredientDatabase = {
       "defaultIngredient": "unknown_sulfate",
       "references": []
     },
-    "sulfonates": {
-      "id": "sulfonates",
-      "name": "Sulfonates",
-      "group": "detergents",
-      "description": "Sulfonates are synthetic cleansing agents that create lather, similar to sulfates",
-      "inclusions": [
-        "sulfonate",
-        "sulfo"
-      ],
-      "defaultIngredient": "unknown_sulfonate",
-      "references": []
-    },
     "emollient_alcohols": {
       "id": "emollient_alcohols",
       "name": "Emollient alcohols",
@@ -2415,9 +2650,9 @@ export const defaultDatabase: IngredientDatabase = {
     },
     "heavy_oils": {
       "id": "heavy_oils",
-      "name": "Heavy Oils",
+      "name": "Heavy Oils and Butters",
       "group": "oils",
-      "description": "Heavy oils are oils that are thick and heavy",
+      "description": "These oils and butters are thick and heavy and can weigh down hair",
       "references": []
     },
     "light_oils": {
@@ -2478,6 +2713,27 @@ export const defaultDatabase: IngredientDatabase = {
         "polyquat"
       ],
       "defaultIngredient": "unknown_polyquat",
+      "references": []
+    },
+    "petroleum_oils": {
+      "id": "petroleum_oils",
+      "name": "Petroleum Oils",
+      "group": "oils",
+      "description": "These are petroleum based ingredients that are often avoided for their build up potential as well as their petro-based origin.",
+      "references": []
+    },
+    "humectants": {
+      "id": "humectants",
+      "name": "Humectants",
+      "group": "others",
+      "description": "Humectants are ingredients that attract moisture to the hair",
+      "references": []
+    },
+    "proteins": {
+      "id": "proteins",
+      "name": "Proteins",
+      "group": "others",
+      "description": "Proteins in hair care products can help strengthen and repair hair, but some people find them drying",
       "references": []
     }
   },
@@ -2581,7 +2837,7 @@ export const defaultSystems: System[] = [
       "no_astringents",
       "no_water_insoluble_silicones",
       "sulfate_free",
-      "no_heavy_oils"
+      "no_petroleum"
     ]
   },
   {
@@ -2593,7 +2849,7 @@ export const defaultSystems: System[] = [
       "drying_alcohol",
       "no_water_insoluble_silicones",
       "no_waxes",
-      "no_heavy_oils",
+      "no_petroleum",
       "caution_silicones"
     ]
   },
@@ -2606,7 +2862,7 @@ export const defaultSystems: System[] = [
       "drying_alcohol",
       "no_water_insoluble_silicones",
       "no_waxes",
-      "no_heavy_oils",
+      "no_petroleum",
       "caution_silicones"
     ]
   }
@@ -2665,7 +2921,7 @@ export const defaultSettings: Record<string, Setting> = {
   "mild_detergents_caution_others": {
     "id": "mild_detergents_caution_others",
     "name": "Non-mild detergents",
-    "description": "If you want to use only mild detergents, you should not use these detergents.",
+    "description": "These detergents are not as harsh as sulfates but can still be drying for some hair types depending on the formulation. CurlsBot is revisiting many of these so you should do your own research.",
     "groups": [
       "detergents"
     ],
@@ -2720,12 +2976,12 @@ export const defaultSettings: Record<string, Setting> = {
     ],
     "defaultStatus": "warning"
   },
-  "no_heavy_oils": {
-    "id": "no_heavy_oils",
-    "name": "Heavy Oils",
-    "description": "These oils are thick and heavy, and can be very nourishing, but can also build up on the hair, leading to a greasy feel.",
+  "no_petroleum": {
+    "id": "no_petroleum",
+    "name": "Petroleum Oils",
+    "description": "These are petroleum based ingredients that are often avoided for their build up potential as well as their petro-based origin.",
     "categories": [
-      "heavy_oils"
+      "petroleum_oils"
     ],
     "defaultStatus": "warning"
   }

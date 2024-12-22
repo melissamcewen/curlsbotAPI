@@ -33,12 +33,7 @@
       "id": "unknown_wax",
       "categories": ["non_water_soluble_waxes"]
     },
-    {
-      "name": "Unknown Sulfonates",
-      "id": "unknown_sulfonate",
-      "categories": ["sulfonates"],
-      "description": "We're pretty sure this is a sulfonate, but we're not sure which one. "
-    },
+
     {
       "name": "Unknown Oil",
       "id": "unknown_oil",

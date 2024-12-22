@@ -136,7 +136,7 @@ describe('Silicone Analysis e2e complex list with curly_moderate system', () => 
         normalized: 'peg-40 castor oil',
         ingredientId: 'castor_oil',
         category: 'heavy_oils',
-        status: 'warning',
+        status: 'ok',
         reason: undefined,
       },
     ];

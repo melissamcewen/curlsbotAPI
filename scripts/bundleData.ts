@@ -28,24 +28,42 @@ function loadIngredientsFromDir(dirPath: string): any {
 
   for (const file of files) {
     const filePath = join(dirPath, file);
-    const data = JSON.parse(readFileSync(filePath, 'utf-8'));
-    // Handle both array and object formats
-    if (Array.isArray(data.ingredients)) {
-      allIngredients.push(...data.ingredients);
-    } else {
-      allIngredients.push(...Object.values(data.ingredients));
+    try {
+      const fileContent = readFileSync(filePath, 'utf-8');
+      const data = JSON.parse(fileContent);
+      // Handle both array and object formats
+      if (Array.isArray(data.ingredients)) {
+        allIngredients.push(...data.ingredients);
+      } else {
+        allIngredients.push(...Object.values(data.ingredients));
+      }
+    } catch (error) {
+      if (error instanceof SyntaxError) {
+        console.error(`JSON parsing error in file ${file}:`);
+        console.error(error.message);
+        // Show the line where the error occurred if available
+        if ('lineNumber' in error) {
+          console.error(`Line: ${(error as any).lineNumber}`);
+        }
+      } else {
+        console.error(`Error reading file ${file}:`, error);
+      }
+      process.exit(1);
     }
   }
 
   return allIngredients.reduce((acc, ing) => {
-    if (!ing.id) {
-      console.warn(`Warning: Ingredient missing required 'id' field:`, ing);
+    const ingredientName = ing.name || ing.id;
+    if (!ingredientName) {
+      console.warn(`Warning: Ingredient missing both 'name' and 'id' fields:`, ing);
       return acc;
     }
-    acc[ing.id] = {
-      ...ing, // Keep all original fields
-      // Ensure required fields have defaults if missing
-      name: ing.name || ing.id,
+
+    const ingredientId = ing.id || generateIdFromName(ingredientName);
+    acc[ingredientId] = {
+      ...ing,
+      id: ingredientId,
+      name: ingredientName,
       categories: ing.categories || [],
       synonyms: ing.synonyms || [],
       references: ing.references ? convertToReferenceObjects(ing.references) : []
@@ -60,9 +78,21 @@ function loadProductsFromDir(dirPath: string): any {
 
   for (const file of files) {
     const filePath = join(dirPath, file);
-    const data = JSON.parse(readFileSync(filePath, 'utf-8'));
-    if (Array.isArray(data.products)) {
-      allProducts.push(...data.products);
+    try {
+      const fileContent = readFileSync(filePath, 'utf-8');
+      const data = JSON.parse(fileContent);
+      if (Array.isArray(data.products)) {
+        allProducts.push(...data.products);
+      }
+    } catch (error) {
+      if (error instanceof SyntaxError) {
+        console.error(`JSON parsing error in file ${file}:`);
+        console.error(error.message);
+        console.error('File content:', readFileSync(filePath, 'utf-8'));
+      } else {
+        console.error(`Error reading file ${file}:`, error);
+      }
+      process.exit(1);
     }
   }
 

@@ -10,7 +10,7 @@ import {
 /* THESE ARE PRODUCTION TESTS USE THE DATA IN src/data/bundledData.ts */
 
 const list =
-  'Sodium Laureth Sulfate, Cocamidopropyl Betaine*, Cocamide MEA, Alkylbenzene Sulfonate, ammonium laureth sulphate, Dioctyl Sodium Sulfosuccinate, some sulfo, sulfate, behentrimonium methosulfate';
+  'Sodium Laureth Sulfate, Cocamidopropyl Betaine*, Cocamide MEA, Alkylbenzene Sulfonate, ammonium laureth sulphate, Dioctyl Sodium Sulfosuccinate, sulfate, behentrimonium methosulfate';
 
 describe('Handling of detergents under the default system', () => {
   const analyzer = new Analyzer({
@@ -30,7 +30,6 @@ describe('Handling of detergents under the default system', () => {
       'alkylbenzene sulfonate',
       'ammonium laureth sulphate',
       'dioctyl sodium sulfosuccinate',
-      'some sulfo',
       'sulfate',
       'behentrimonium methosulfate'
     ]);
@@ -76,13 +75,6 @@ describe('Handling of detergents under the default system', () => {
       {
         normalized: 'dioctyl sodium sulfosuccinate',
         ingredientId: 'dioctyl_sodium_sulfosuccinate',
-        category: 'detergents',
-        status: 'caution',
-        reason: 'mild_detergents_caution_others'
-      },
-      {
-        normalized: 'some sulfo',
-        ingredientId: 'unknown_sulfonate',
         category: 'detergents',
         status: 'caution',
         reason: 'mild_detergents_caution_others'

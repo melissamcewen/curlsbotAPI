@@ -8,7 +8,7 @@
         "alkyl benzene sulfonate",
         "alkyl benzene sulphate"
       ],
-      "categories": ["sulfonates"]
+      "categories": ["other_detergents"]
     },
     {
       "name": "Ammonium Cocoyl Isethionate",
@@ -47,7 +47,7 @@
         "ammonium xylene-sulfonate",
         "ammonium xylene sulfonate"
       ],
-      "categories": ["sulfonates"]
+      "categories": ["other_detergents"]
     },
     {
       "name": "Babassuamidopropyl Betaine",
@@ -86,8 +86,8 @@
       "synonyms": ["coconut monoethanolamide"],
       "categories": ["mild_detergents"],
       "references": [
-        {"url":"https://incidecoder.com/ingredients/cocamide-mea"},
-        {"url":"https://pubchem.ncbi.nlm.nih.gov/compound/Cocamide-MEA"}
+        { "url": "https://incidecoder.com/ingredients/cocamide-mea" },
+        { "url": "https://pubchem.ncbi.nlm.nih.gov/compound/Cocamide-MEA" }
       ]
     },
     {
@@ -103,7 +103,7 @@
     {
       "name": "Dioctyl Sodium Sulfosuccinate",
       "id": "dioctyl_sodium_sulfosuccinate",
-      "categories": ["sulfonates"]
+      "categories": ["other_detergents"]
     },
     {
       "name": "Disodium Cocoamphodiacetate",
@@ -161,7 +161,7 @@
       "name": "Sodium C12-14 Olefin Sulfonate",
       "id": "sodium_c12_14_olefin_sulfonate",
       "synonyms": ["sodium c12-14 olefin sulphate"],
-      "categories": ["sulfonates"]
+      "categories": ["other_detergents"]
     },
     {
       "name": "Sodium C12-18 Alkyl Sulfate",
@@ -173,31 +173,32 @@
       "name": "Sodium C14-15 Olefin Sulfonate",
       "id": "sodium_c14_15_olefin_sulfonate",
       "synonyms": ["sodium c14-15 olefin sulphate"],
-      "categories": ["sulfonates"]
+      "categories": ["other_detergents"]
     },
     {
       "name": "Sodium C14-16 Olefin Sulfonate",
       "id": "sodium_c14_16_olefin_sulfonate",
       "synonyms": ["sodium c14-16 olefin sulphate"],
-      "categories": ["sulfonates"]
+      "categories": ["other_detergents"],
+      "description": "CurlsBot is in the process of reclassifying this ingredient. We believe it is a mild detergent but in the past we've listed it as stronger"
     },
     {
       "name": "Sodium C14-18 Olefin Sulfonate",
       "id": "sodium_c14_18_olefin_sulfonate",
       "synonyms": ["sodium c14-18 olefin sulphate"],
-      "categories": ["sulfonates"]
+      "categories": ["other_detergents"]
     },
     {
       "name": "Sodium C14-26 Olefin Sulfonate",
       "id": "sodium_c14_26_olefin_sulfonate",
       "synonyms": ["sodium c14-26 olefin sulphate"],
-      "categories": ["sulfonates"]
+      "categories": ["other_detergents"]
     },
     {
       "name": "Sodium C16-18 Olefin Sulfonate",
       "id": "sodium_c16_18_olefin_sulfonate",
       "synonyms": ["sodium c16-18 olefin sulphate"],
-      "categories": ["sulfonates"]
+      "categories": ["other_detergents"]
     },
     {
       "name": "Sodium Cetearyl Sulfate",
@@ -253,7 +254,7 @@
       "name": "Sodium Laureth-40 Sulfate",
       "id": "sodium_laureth_40_sulfate",
       "synonyms": ["sodium laureth-40 sulphate"],
-      "categories": ["sulfonates"]
+      "categories": ["other_detergents"]
     },
     {
       "name": "Sodium Lauroamphoacetate",
@@ -337,13 +338,13 @@
         "sodium xylene-sulfonate",
         "sodium xylene sulfonate"
       ],
-      "categories": ["sulfonates"]
+      "categories": ["other_detergents"]
     },
     {
       "name": "Tea Dodecylbenzenesulfonate",
       "id": "tea_dodecylbenzenesulfonate",
       "synonyms": ["tea-dodecylbenzenesulfonate"],
-      "categories": ["sulfonates"]
+      "categories": ["other_detergents"]
     },
     {
       "name": "Tea Lauryl Sulfate",
@@ -356,6 +357,13 @@
       "id": "triethanolamine_lauryl_sulfate",
       "synonyms": ["triethanolamine lauryl sulphate"],
       "categories": ["sulfates"]
+    },
+    {
+      "name": "Sulfonate",
+      "id": "sulfonate",
+      "synonyms": [" sulfonate"],
+      "categories": ["other_detergents"],
+      "description": "We're pretty sure this is a sulfonate, but we're not sure which one. "
     }
   ]
 }

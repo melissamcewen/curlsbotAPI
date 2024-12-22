@@ -164,7 +164,7 @@
         "petroleum oil"
       ],
       "categories": [
-        "heavy_oils"
+        "petroleum_oils"
       ],
       "references": [
         {"url":"https://incidecoder.com/ingredients/mineral-oil"}
@@ -180,7 +180,7 @@
         "mineral jelly"
       ],
       "categories": [
-        "heavy_oils"
+        "petroleum_oils"
       ]
     },
     {
@@ -197,20 +197,7 @@
         {"url":"https://incidecoder.com/ingredients/olea-europaea-fruit-oil"}
       ]
     },
-    {
-      "name": "Shea Butter Oil",
-      "id": "shea_butter_oil",
-      "synonyms": [
-        "butyrospermum parkii butter oil",
-        "shea oil"
-      ],
-      "categories": [
-        "medium_oils"
-      ],
-      "references": [
-        {"url":"https://incidecoder.com/ingredients/butyrospermum-parkii-butter-oil"}
-      ]
-    },
+
     {
       "name": "Sunflower Oil",
       "id": "sunflower_oil",
@@ -237,6 +224,25 @@
       ],
       "references": [
         {"url":"https://incidecoder.com/ingredients/prunus-amygdalus-dulcis-oil"}
+      ]
+    },
+    {
+      "name": "Butyrospermum Parkii Shea Butter",
+      "id": "butyrospermum_parkii_shea_butter",
+      "description": "A natural butter that deeply moisturizes and nourishes hair",
+      "categories": [
+        "heavy_oils"
+      ],
+      "references": [
+        {
+          "url": "https://incidecoder.com/ingredients/butyrospermum-parkii-shea-butter",
+          "title": "Shea Butter on INCIDecoder"
+        }
+      ],
+      "synonyms": [
+        "shea butter",
+        "butyrospermum parkii",
+        "shea oil"
       ]
     }
   ]

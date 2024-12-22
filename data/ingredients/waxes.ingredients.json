@@ -46,7 +46,7 @@
     {
       "name": "Microcrystalline Wax",
       "id": "microcrystalline_wax",
-      "synonyms": ["petroleum wax", "mineral wax"],
+      "synonyms": ["cera microcristallina", "cire microcristalline"],
       "categories": ["non_water_soluble_waxes"],
       "references": ["https://incidecoder.com/ingredients/microcrystalline-wax"]
     },

@@ -109,16 +109,12 @@ export function normalizer(text: string): NormalizedIngredientList {
   if (!isValidIngredientList(text)) {
     return { ingredients: [], isValid: false };
   }
-  console.log('it is a valid ingredient list');
   // first process the text to remove any commas in parentheses
   const processedText = processCommaParentheses(text);
-  console.log('processed text', processedText);
   // then split the text by commas
   const ingredients = splitBySeparators(processedText);
-  console.log('ingredients', ingredients);
   //remove any invalid ingredients
   const validIngredients = ingredients.filter(isValidIngredient);
-  console.log('valid ingredients', validIngredients);
 
   // Return invalid if no valid ingredients were found
   if (validIngredients.length === 0) {

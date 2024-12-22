@@ -50,8 +50,7 @@
                 }
               },
               "additionalProperties": false
-            },
-            "description": "Optional source references for the ingredient"
+            }
           },
           "synonyms": {
             "type": "array",
