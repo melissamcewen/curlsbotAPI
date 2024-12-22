@@ -1,20 +1,31 @@
 {
   "products": [
     {
-      "name": "MopTop Anti-frizz Medium Hold Gel",
-      "brand": "MopTop",
-      "buy_url": "https://amzn.to/2kK7lb3",
-      "product_categories": ["gels", "curlsbot_approved"],
-      "tags": ["high_porosity", "normal_porosity"],
-      "cost_rating": "2"
-    },
-    {
       "name": "I Create Hold",
       "brand": "Innersense",
       "buy_url": "https://amzn.to/2BYccc7",
-      "product_categories": ["gels", "curlsbot_approved"],
-      "tags": ["low_porosity", "hold"],
-      "cost_rating": "2"
+      "product_categories": ["gels"],
+      "tags": ["normal_porosity", "hold", "high_porosity"],
+      "cost_rating": "2",
+      "ingredients_raw": "water, aqua-eau, aloe barbadensis gel, hydroxyethylcellulose, maltodextrin copolymer, potassium hydroxide, gluconolactone, sodium benzoate, calcium gluconate, alkyl acrylate crosspolymer, citrus aurantium dulcis peel oil, caprylic capric triglyceride, potassium sorbate, sodium phytate, glycerin, chamomilla recutita matricaria flower extract, eucalyptus globulus leaf extract, ginkgo biloba leaf extract, aspalathus linearis leaf extract, honey extract, limonene"
+    },
+
+    {
+      "name": "Curl Enhancer Gel",
+      "brand": "MopTop",
+      "ingredients_raw": "water, aloe barbadensis leaf extract, polyacrylate-2 crosspolymer, maltodextrin vp copolymer, hydroxyethylcellulose, hydroxypropyltrimonium honey, laminaria saccharina algae extract, fucus vesiculosus bladderwrack extract, arnica montana flower extract, urtica dioica nettle extract, chamomilla recutita matricaria flower extract, silk amino acids, glycerin, sodium hydroxide, polyquaternium-10, ethylhexylglycerin, polysorbate-20, panthenol, phytic acid, phenoxyethanol, fragrance",
+      "buy_url": "https://amzn.to/4iLNscf",
+      "product_categories": ["gels"],
+      "tags": ["high_porosity", "normal_porosity", "low_porosity", "curl_enhancer"]
+
+    },
+    {
+      "name": "I Create Volume",
+      "brand": "Innersense",
+      "ingredients_raw": "water, aqua-eau, aloe barbadensis aloe vera leaf gel, cyamop-sistetragonolobus guar gum, sclerotium gum, citrus aurantium amara bitter orange flower water, organic rooibos african camellia sinensis leaf extract, sodium benzoate, calcium gluconate, potassium sorbate, hydrolyzed rice protein, glycerin, chamomilla recutita matricaria flower extract, eucalyptus globulus leaf extract, ginkgo biloba leaf extract, aspalathus linearis leaf extract, eucalyptus globulus extract, citric acid, maltodextrin, honey extract, linalool, sorbitol, gluconolactone",
+      "buy_url": "https://amzn.to/3ZSFbue",
+      "product_categories": ["gels"],
+      "tags": ["normal_porosity", "low_porosity", "volume"]
     }
   ]
 }

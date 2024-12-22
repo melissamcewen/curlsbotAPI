@@ -733,10 +733,12 @@ export const defaultDatabase: IngredientDatabase = {
       "name": "Sodium C14-16 Olefin Sulfonate",
       "id": "sodium_c14_16_olefin_sulfonate",
       "synonyms": [
-        "sodium c14-16 olefin sulphate"
+        "sodium c14-16 olefin sulphate",
+        "sodium c14 16 olefin sulfonate",
+        "sodium c1416 olefin sulfonate"
       ],
       "categories": [
-        "other_detergents"
+        "mild_detergents"
       ],
       "description": "CurlsBot is in the process of reclassifying this ingredient. We believe it is a mild detergent but in the past we've listed it as stronger",
       "references": []
@@ -903,9 +905,14 @@ export const defaultDatabase: IngredientDatabase = {
         "sodium lauroylmethyl isethionate"
       ],
       "categories": [
-        "other_detergents"
+        "mild_detergents"
       ],
-      "references": []
+      "description": "CurlsBot is in the process of reclassifying this ingredient. We believe it is a mild detergent but in the past we've listed it as stronger",
+      "references": [
+        {
+          "url": "https://incidecoder.com/ingredients/sodium-lauroyl-methyl-isethionate"
+        }
+      ]
     },
     "sodium_lauroyl_sarcosinate": {
       "name": "Sodium Lauroyl Sarcosinate",
@@ -1971,6 +1978,22 @@ export const defaultDatabase: IngredientDatabase = {
       ],
       "synonyms": [
         "PEG 100 Stearate"
+      ]
+    },
+    "fragrance": {
+      "name": "Fragrance",
+      "id": "fragrance",
+      "categories": [
+        "other"
+      ],
+      "synonyms": [
+        "parfum"
+      ],
+      "description": "A blend of aromatic compounds that provides a pleasant scent to hair care products. Some people are sensitive to fragrances and companies are not required to list which specific ingredients are used in their fragrance blends.",
+      "references": [
+        {
+          "url": "https://incidecoder.com/ingredients/parfum"
+        }
       ]
     },
     "amodimethicone": {

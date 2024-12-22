@@ -7,6 +7,14 @@
       "product_categories": ["creams"],
       "tags": ["low_porosity", "curl_enhancer"],
       "cost_rating": "2"
+    },
+    {
+      "name": "Curly Hair Cream",
+      "brand": "MopTop",
+      "buy_url": "https://amzn.to/4fCbwLM",
+      "product_categories": ["creams"],
+      "tags": ["high_porosity", "curl_enhancer"],
+      "ingredients_raw": "water aqua, cetearyl alcohol, glyceryl stearate, propanediol, aloe barbadensis leaf juice, hydrogenated vegetable oil, peg-100 stearate, isopropyl palmitate, pvp, glycerin, caprylic capric triglyceride, glycereth-26, butyrospermum parkii shea butter, vp va copolymer, pectin, hydroxypropyltrimonium honey, coconut alkanes, polyquaternium-55, sodium polyitaconate, triethyl citrate, zea mays corn starch, sodium polyacrylate starch, hypnea musciformis extract, gelidiella acerosa extract, sargassum filipendula extract, sodium lactate, coco-caprylate caprate, ceteareth-20, acrylates beheneth-25 methacrylate copolymer, polyacrylate crosspolymer-6, cellulose, disodium edta, fragrance, phenoxyethanol, benzyl alcohol, aminomethyl propanol"
     }
   ]
 }

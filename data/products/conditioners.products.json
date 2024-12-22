@@ -16,6 +16,30 @@
       "product_categories": ["conditioners"],
       "tags": ["normal_porosity", "high_porosity"],
       "ingredients_raw": "water, aloe barbadensis leaf extract, glycerin, cetyl alcohol, stearyl alcohol, cetrimonium chloride, behentrimonium chloride, olea europaea olive fruit oil, glycereth-26, butyrospermum parkii shea butter, hydroxypropyltrimonium honey, hypnea musciformis extract seaweed, gelidiella acerosa extract seaweed, sargassum filipendula extract seaweed, sorbitol, silk amino acids, rosmarinus officinalis rosemary leaf extract, chamomilla recutita matricaria flower extract, urtica dioica nettle extract, simmondsia chinensis jojoba seed oil, tocopheryl acetate vitamin e, panthenol vitamin b5, arnica montana flower extract, hydroxyethylcellulose, phenoxyethanol, sorbic acid, ethylhexylglycerin, citric acid, sodium phytate, fragrance"
+    },
+    {
+      "name": "Pure Inspiration Daily Conditioner",
+      "brand": "Innersense",
+      "ingredients_raw": "water aqua eau, cetearyl alcohol, glycerin, aloe barbadensis leaf juice, caprylic capric triglyceride, behentrimonium methosulfate, gluconolactone, stearalkonium chloride, oryza sativa rice extract, sodium benzoate, potassium sorbate, cetyl hydroxyethylcellulose, cocos nucifera coconut oil, oryza sativa rice bran oil, persea gratissima avocado oil, butyrospermum parkii shea butter, hydrolyzed quinoa, hydrolyzed rice protein, citric acid, citrus aurantium dulcis orange peel oil, camellia sinensis leaf extract, cucumis sativus cucumber fruit extract, mangifera indica mango fruit extract, persea gratissima avocado fruit extract, stearyl alcohol, amine hcl, calcium gluconate, benzyl alcohol, benzyl salicylate, citronellol, hexyl cinnamal, limonene, linalool",
+      "product_categories": ["conditioners"],
+      "tags": ["low_porosity", "normal_porosity"],
+      "buy_url": "https://amzn.to/3ZQnjjL"
+    },
+    {
+      "name": "Hydrating Cream Conditioner",
+      "brand": "Innersense",
+      "ingredients_raw": "water aqua-eau, cetearyl alcohol, glycerin, behentrimonium methosulfate, aloe barbadensis aloe vera leaf gel, stearalkonium chloride, diheptyl succinate, capryloyl glycerin, cocos nucifera, cananga odorata flower oil, lavandula angustifolia lavender oil, citrus aurantium dulcis orange peel oil, salvia sclarea clary oil, vanillin, pogostemon cablin oil, glycine soja soybean oil, cocos nucifera coconut oil, sodium benzoate, oryza sativa rice extract, theobroma cacao cocoa seed butter, potassium sorbate, guar hydroxypropyltrimonium chloride, citric acid, cetyl hydroxyethylcellulose, linum usitatissimum linseed seed oil, calophyllum inophyllum tamanu oil, hydrolyzed rice protein, plumeria actufolia flower extract, persea gratissima avocado oil, butyrospermum parkii shea butter, simmondsia chinensis jojoba seed oil, hydrolyzed quinoa, benzyl alcohol, taraxacum officinale dandelion leaf extract, salvia officinalis sage leaf extract, melissa officinalis leaf extract, linalool, limonene",
+      "product_categories": ["conditioners"],
+      "tags": ["high_porosity", "normal_porosity"],
+      "buy_url": "https://amzn.to/4gmVZAG"
+    },
+    {
+      "name": "Clarity Conditioner",
+      "brand": "Innersense",
+      "ingredients_raw": "water aqua eau, aloe barbadensis leaf juice, cetearyl alcohol, glycerin, behentrimonium methosulfate, stearalkonium chloride, butyrospermum parkii shea butter, honey, citric acid, sodium levulinate, potassium sorbate, cocos nucifera coconut oil, prunus armeniaca apricot kernel oil, colloidal oatmeal, guar hydroxypropyltrimonium chloride, sodium gluconate, tocopherol, vaccinium macrocarpon cranberry seed oil, swertia japonica extract, stearyl alcohol, thiamine hcl, leuconostoc radish root ferment filtrate",
+      "product_categories": ["conditioners"],
+      "tags": ["low_porosity", "normal_porosity"],
+      "buy_url": "https://amzn.to/4iNhH2s"
     }
   ]
 }

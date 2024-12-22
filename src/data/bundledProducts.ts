@@ -32,6 +32,51 @@ export const defaultProductDatabase: ProductDatabase = {
       "id": "daily_conditioner",
       "systems_excluded": []
     },
+    "pure_inspiration_daily_conditioner": {
+      "name": "Pure Inspiration Daily Conditioner",
+      "brand": "Innersense",
+      "ingredients_raw": "water aqua eau, cetearyl alcohol, glycerin, aloe barbadensis leaf juice, caprylic capric triglyceride, behentrimonium methosulfate, gluconolactone, stearalkonium chloride, oryza sativa rice extract, sodium benzoate, potassium sorbate, cetyl hydroxyethylcellulose, cocos nucifera coconut oil, oryza sativa rice bran oil, persea gratissima avocado oil, butyrospermum parkii shea butter, hydrolyzed quinoa, hydrolyzed rice protein, citric acid, citrus aurantium dulcis orange peel oil, camellia sinensis leaf extract, cucumis sativus cucumber fruit extract, mangifera indica mango fruit extract, persea gratissima avocado fruit extract, stearyl alcohol, amine hcl, calcium gluconate, benzyl alcohol, benzyl salicylate, citronellol, hexyl cinnamal, limonene, linalool",
+      "product_categories": [
+        "conditioners"
+      ],
+      "tags": [
+        "low_porosity",
+        "normal_porosity"
+      ],
+      "buy_url": "https://amzn.to/3ZQnjjL",
+      "id": "pure_inspiration_daily_conditioner",
+      "systems_excluded": []
+    },
+    "hydrating_cream_conditioner": {
+      "name": "Hydrating Cream Conditioner",
+      "brand": "Innersense",
+      "ingredients_raw": "water aqua-eau, cetearyl alcohol, glycerin, behentrimonium methosulfate, aloe barbadensis aloe vera leaf gel, stearalkonium chloride, diheptyl succinate, capryloyl glycerin, cocos nucifera, cananga odorata flower oil, lavandula angustifolia lavender oil, citrus aurantium dulcis orange peel oil, salvia sclarea clary oil, vanillin, pogostemon cablin oil, glycine soja soybean oil, cocos nucifera coconut oil, sodium benzoate, oryza sativa rice extract, theobroma cacao cocoa seed butter, potassium sorbate, guar hydroxypropyltrimonium chloride, citric acid, cetyl hydroxyethylcellulose, linum usitatissimum linseed seed oil, calophyllum inophyllum tamanu oil, hydrolyzed rice protein, plumeria actufolia flower extract, persea gratissima avocado oil, butyrospermum parkii shea butter, simmondsia chinensis jojoba seed oil, hydrolyzed quinoa, benzyl alcohol, taraxacum officinale dandelion leaf extract, salvia officinalis sage leaf extract, melissa officinalis leaf extract, linalool, limonene",
+      "product_categories": [
+        "conditioners"
+      ],
+      "tags": [
+        "high_porosity",
+        "normal_porosity"
+      ],
+      "buy_url": "https://amzn.to/4gmVZAG",
+      "id": "hydrating_cream_conditioner",
+      "systems_excluded": []
+    },
+    "clarity_conditioner": {
+      "name": "Clarity Conditioner",
+      "brand": "Innersense",
+      "ingredients_raw": "water aqua eau, aloe barbadensis leaf juice, cetearyl alcohol, glycerin, behentrimonium methosulfate, stearalkonium chloride, butyrospermum parkii shea butter, honey, citric acid, sodium levulinate, potassium sorbate, cocos nucifera coconut oil, prunus armeniaca apricot kernel oil, colloidal oatmeal, guar hydroxypropyltrimonium chloride, sodium gluconate, tocopherol, vaccinium macrocarpon cranberry seed oil, swertia japonica extract, stearyl alcohol, thiamine hcl, leuconostoc radish root ferment filtrate",
+      "product_categories": [
+        "conditioners"
+      ],
+      "tags": [
+        "low_porosity",
+        "normal_porosity"
+      ],
+      "buy_url": "https://amzn.to/4iNhH2s",
+      "id": "clarity_conditioner",
+      "systems_excluded": []
+    },
     "coconut_cowash_cleansing_conditioner": {
       "name": "Coconut Cowash Cleansing Conditioner",
       "brand": "As I Am",
@@ -62,16 +107,49 @@ export const defaultProductDatabase: ProductDatabase = {
     "i_create_volume": {
       "name": "I Create Volume",
       "brand": "Innersense",
-      "buy_url": "https://amzn.to/3ZXk3o3",
+      "ingredients_raw": "water, aqua-eau, aloe barbadensis aloe vera leaf gel, cyamop-sistetragonolobus guar gum, sclerotium gum, citrus aurantium amara bitter orange flower water, organic rooibos african camellia sinensis leaf extract, sodium benzoate, calcium gluconate, potassium sorbate, hydrolyzed rice protein, glycerin, chamomilla recutita matricaria flower extract, eucalyptus globulus leaf extract, ginkgo biloba leaf extract, aspalathus linearis leaf extract, eucalyptus globulus extract, citric acid, maltodextrin, honey extract, linalool, sorbitol, gluconolactone",
+      "buy_url": "https://amzn.to/3ZSFbue",
+      "product_categories": [
+        "gels"
+      ],
+      "tags": [
+        "normal_porosity",
+        "low_porosity",
+        "volume"
+      ],
+      "id": "i_create_volume",
+      "systems_excluded": []
+    },
+    "curly_hair_cream": {
+      "name": "Curly Hair Cream",
+      "brand": "MopTop",
+      "buy_url": "https://amzn.to/4fCbwLM",
       "product_categories": [
         "creams"
       ],
       "tags": [
-        "low_porosity",
+        "high_porosity",
         "curl_enhancer"
       ],
-      "cost_rating": "2",
-      "id": "i_create_volume",
+      "ingredients_raw": "water aqua, cetearyl alcohol, glyceryl stearate, propanediol, aloe barbadensis leaf juice, hydrogenated vegetable oil, peg-100 stearate, isopropyl palmitate, pvp, glycerin, caprylic capric triglyceride, glycereth-26, butyrospermum parkii shea butter, vp va copolymer, pectin, hydroxypropyltrimonium honey, coconut alkanes, polyquaternium-55, sodium polyitaconate, triethyl citrate, zea mays corn starch, sodium polyacrylate starch, hypnea musciformis extract, gelidiella acerosa extract, sargassum filipendula extract, sodium lactate, coco-caprylate caprate, ceteareth-20, acrylates beheneth-25 methacrylate copolymer, polyacrylate crosspolymer-6, cellulose, disodium edta, fragrance, phenoxyethanol, benzyl alcohol, aminomethyl propanol",
+      "id": "curly_hair_cream",
+      "systems_excluded": []
+    },
+    "curl_enhancing_custard": {
+      "name": "Curl Enhancing Custard",
+      "brand": "MopTop",
+      "buy_url": "https://amzn.to/4gMHczc",
+      "product_categories": [
+        "custards"
+      ],
+      "tags": [
+        "low_porosity",
+        "curl_enhancer",
+        "normal_porosity",
+        "high_porosity"
+      ],
+      "ingredients_raw": "water, glycerin, carboxymethylcellulose, aloe barbadensis leaf extract, pectin, hydroxypropyltrimonium honey, silk amino acids, hypnea musciformis extract seaweed, gelidiella acerosa extract seaweed, sargassum filipendula seaweed extract, sorbitol, rosmarinus officinalis rosemary leaf extract, salix alba willow bark extract, urtica dioica nettle extract, ethylhexylglycerin, phenoxyethanol, citrus senensis oil, citrus limon oil, citrus aurantifolia oil, citrus paradisi oil",
+      "id": "curl_enhancing_custard",
       "systems_excluded": []
     },
     "deep_conditioning_treatment": {
@@ -89,36 +167,38 @@ export const defaultProductDatabase: ProductDatabase = {
       "id": "deep_conditioning_treatment",
       "systems_excluded": []
     },
-    "moptop_anti-frizz_medium_hold_gel": {
-      "name": "MopTop Anti-frizz Medium Hold Gel",
-      "brand": "MopTop",
-      "buy_url": "https://amzn.to/2kK7lb3",
-      "product_categories": [
-        "gels",
-        "curlsbot_approved"
-      ],
-      "tags": [
-        "high_porosity",
-        "normal_porosity"
-      ],
-      "cost_rating": "2",
-      "id": "moptop_anti-frizz_medium_hold_gel",
-      "systems_excluded": []
-    },
     "i_create_hold": {
       "name": "I Create Hold",
       "brand": "Innersense",
       "buy_url": "https://amzn.to/2BYccc7",
       "product_categories": [
-        "gels",
-        "curlsbot_approved"
+        "gels"
       ],
       "tags": [
-        "low_porosity",
-        "hold"
+        "normal_porosity",
+        "hold",
+        "high_porosity"
       ],
       "cost_rating": "2",
+      "ingredients_raw": "water, aqua-eau, aloe barbadensis gel, hydroxyethylcellulose, maltodextrin copolymer, potassium hydroxide, gluconolactone, sodium benzoate, calcium gluconate, alkyl acrylate crosspolymer, citrus aurantium dulcis peel oil, caprylic capric triglyceride, potassium sorbate, sodium phytate, glycerin, chamomilla recutita matricaria flower extract, eucalyptus globulus leaf extract, ginkgo biloba leaf extract, aspalathus linearis leaf extract, honey extract, limonene",
       "id": "i_create_hold",
+      "systems_excluded": []
+    },
+    "curl_enhancer_gel": {
+      "name": "Curl Enhancer Gel",
+      "brand": "MopTop",
+      "ingredients_raw": "water, aloe barbadensis leaf extract, polyacrylate-2 crosspolymer, maltodextrin vp copolymer, hydroxyethylcellulose, hydroxypropyltrimonium honey, laminaria saccharina algae extract, fucus vesiculosus bladderwrack extract, arnica montana flower extract, urtica dioica nettle extract, chamomilla recutita matricaria flower extract, silk amino acids, glycerin, sodium hydroxide, polyquaternium-10, ethylhexylglycerin, polysorbate-20, panthenol, phytic acid, phenoxyethanol, fragrance",
+      "buy_url": "https://amzn.to/4iLNscf",
+      "product_categories": [
+        "gels"
+      ],
+      "tags": [
+        "high_porosity",
+        "normal_porosity",
+        "low_porosity",
+        "curl_enhancer"
+      ],
+      "id": "curl_enhancer_gel",
       "systems_excluded": []
     },
     "sweet_spirit_leave-in_conditioner": {
@@ -179,6 +259,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "normal_porosity"
       ],
       "cost_rating": "3",
+      "ingredients_raw": "water aqua-eau, cocamidopropyl hydroxysultaine, sodium methyl cocoyl taurate, glycerin, caprylyl capryl glucoside, sodium cocoyl isethionate, glyceryl stearate se, sodium chloride, sodium lauroyl methyl isethionate, trisodium ethylenediamine disuccinate, guar hydroxypropyltrimonium chloride, plumeria actufolia flower extract, cananga odorata flower oil, lavandula angustifolia lavender oil, citrus aurantium dulcis orange peel oil, salvia sclarea clary oil, vanillin, pogostemon cablin oil, glycine soja soybean oil, sodium benzoate, pyrus malus apple fruit extract, potassium sorbate, simmondsia chinensis jojoba seed oil, oryza sativa rice extract, citric acid, hydrolyzed quinoa, hydrolyzed rice protein, calophyllum inophyllum tamanu oil, butyrospermum parkii shea butter, persia gratissima avocado oil, taraxacum officinale dandelion leaf extract, salvia officinalis sage leaf extract, melissa officinalis leaf extract, linalool, limonene",
       "id": "hydrating_hairbath",
       "systems_excluded": []
     },
@@ -195,6 +276,51 @@ export const defaultProductDatabase: ProductDatabase = {
         "normal_porosity"
       ],
       "id": "gentle_shampoo",
+      "systems_excluded": []
+    },
+    "pure_harmony_hairbath": {
+      "name": "Pure Harmony Hairbath",
+      "brand": "Innersense",
+      "ingredients_raw": "citrus medica limonum lemon peel oil, eucalyptus globulus eucalyptus, cucurbita pepo pumpkin seed oil, hydroxypropyltrimonium honey, hydrolyzed quinoa, trisodium ethylenediamine disuccinate, sodium benzoate, hydrolyzed rice protein, guar hydroxypropyltrimonium chloride, persea gratissima avocado oil, oryza sativa rice bran oil, camellia sinensis green tea leaf extract, cucumis sativus cucumber fruit extract, persea gratissima avocado fruit extract, mangifera indica mango fruit extract, water, aqua-eau, cocamidopropyl hydroxysultaine, sodium cocoyl isethionate, caprylyl capryl glucoside, glycerin, sodium chloride, sodium lauroyl methyl isethionate, butyrosepermum parkii shea butter, citrus aurantium dulcis orange peel oil",
+      "buy_url": "https://amzn.to/3ZSDywG",
+      "product_categories": [
+        "shampoos"
+      ],
+      "tags": [
+        "low_porosity",
+        "normal_porosity"
+      ],
+      "id": "pure_harmony_hairbath",
+      "systems_excluded": []
+    },
+    "color_awakening_hairbath": {
+      "name": "Color Awakening Hairbath",
+      "brand": "Innersense",
+      "ingredients_raw": "water, aqua- eau, cocamidopropyl hydroxysultaine, sodium cocoyl isethionate, caprylyl capryl glucoside, glycerin, sodium chloride, sodium lauroyl methyl isethionate, butyrospermum parkii shea butter, citrus aurantium dulcis orange peel oil, citrus medica limonum lemon peel oil, eucalyptus globulus eucalyptus, cucurbita pepo pumpkin seed oil, hydroxypropyltrimonium honey, hydrolyzed quinoa, trisodium ethylenediamine disuccinate, sodium benzoate, hydrolyzed rice protein, guar hydroxypropyltrimonium chloride, potassium sorbate, citric acid, citrus sinensis orange oil, persea gratissima avocado oil, oryza sativa rice bran oil, camellia sinensis green tea leaf extract, cucumis sativus cucumber fruit extract, persea gratissima fruit extract, mangifera indica mango fruit extract",
+      "buy_url": "https://amzn.to/41J8sKF",
+      "product_categories": [
+        "shampoos"
+      ],
+      "tags": [
+        "high_porosity",
+        "normal_porosity"
+      ],
+      "id": "color_awakening_hairbath",
+      "systems_excluded": []
+    },
+    "clarity_hairbath": {
+      "name": "Clarity Hairbath",
+      "brand": "Innersense",
+      "ingredients_raw": "water aqua eau, aloe barbadensis leaf juice, cocamidopropyl hydroxysultaine, sodium cocoyl isethionate, glycerin, caprylyl capryl glucoside, sodium levulinate, potassium sorbate, guar hydroxypropyltrimonium chloride, citric acid, butyrospermum parkii shea butter, sodium gluconate, tocopherol, swertia japonica extract, cyperus esculentus tuber extract, symphytum officinale leaf extract, xanthan gum, coconut acid, sodium isethionate",
+      "buy_url": "https://amzn.to/4gLhRFK",
+      "product_categories": [
+        "shampoos"
+      ],
+      "tags": [
+        "low_porosity",
+        "normal_porosity"
+      ],
+      "id": "clarity_hairbath",
       "systems_excluded": []
     }
   }

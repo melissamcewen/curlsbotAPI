@@ -178,8 +178,9 @@
     {
       "name": "Sodium C14-16 Olefin Sulfonate",
       "id": "sodium_c14_16_olefin_sulfonate",
-      "synonyms": ["sodium c14-16 olefin sulphate"],
-      "categories": ["other_detergents"],
+      "synonyms": ["sodium c14-16 olefin sulphate",
+    "sodium c14 16 olefin sulfonate", "sodium c1416 olefin sulfonate"],
+      "categories": ["mild_detergents"],
       "description": "CurlsBot is in the process of reclassifying this ingredient. We believe it is a mild detergent but in the past we've listed it as stronger"
     },
     {
@@ -274,7 +275,11 @@
         "sodium lauroyl methyl lsethionate",
         "sodium lauroylmethyl isethionate"
       ],
-      "categories": ["other_detergents"]
+      "categories": ["mild_detergents"],
+      "description": "CurlsBot is in the process of reclassifying this ingredient. We believe it is a mild detergent but in the past we've listed it as stronger",
+      "references": [
+        { "url": "https://incidecoder.com/ingredients/sodium-lauroyl-methyl-isethionate" }
+      ]
     },
     {
       "name": "Sodium Lauroyl Sarcosinate",

@@ -15,7 +15,8 @@
       "buy_url": "https://amzn.to/4glSRVBh",
       "product_categories": ["shampoos"],
       "tags": ["high_porosity", "normal_porosity"],
-      "cost_rating": "3"
+      "cost_rating": "3",
+      "ingredients_raw": "water aqua-eau, cocamidopropyl hydroxysultaine, sodium methyl cocoyl taurate, glycerin, caprylyl capryl glucoside, sodium cocoyl isethionate, glyceryl stearate se, sodium chloride, sodium lauroyl methyl isethionate, trisodium ethylenediamine disuccinate, guar hydroxypropyltrimonium chloride, plumeria actufolia flower extract, cananga odorata flower oil, lavandula angustifolia lavender oil, citrus aurantium dulcis orange peel oil, salvia sclarea clary oil, vanillin, pogostemon cablin oil, glycine soja soybean oil, sodium benzoate, pyrus malus apple fruit extract, potassium sorbate, simmondsia chinensis jojoba seed oil, oryza sativa rice extract, citric acid, hydrolyzed quinoa, hydrolyzed rice protein, calophyllum inophyllum tamanu oil, butyrospermum parkii shea butter, persia gratissima avocado oil, taraxacum officinale dandelion leaf extract, salvia officinalis sage leaf extract, melissa officinalis leaf extract, linalool, limonene"
     },
     {
       "name": "Gentle Shampoo",
@@ -24,6 +25,31 @@
       "buy_url": "https://amzn.to/4fuIPQW",
       "product_categories": ["shampoos"],
       "tags": ["high_porosity", "normal_porosity"]
+    },
+    {
+      "name": "Pure Harmony Hairbath",
+      "brand": "Innersense",
+      "ingredients_raw": "citrus medica limonum lemon peel oil, eucalyptus globulus eucalyptus, cucurbita pepo pumpkin seed oil, hydroxypropyltrimonium honey, hydrolyzed quinoa, trisodium ethylenediamine disuccinate, sodium benzoate, hydrolyzed rice protein, guar hydroxypropyltrimonium chloride, persea gratissima avocado oil, oryza sativa rice bran oil, camellia sinensis green tea leaf extract, cucumis sativus cucumber fruit extract, persea gratissima avocado fruit extract, mangifera indica mango fruit extract, water, aqua-eau, cocamidopropyl hydroxysultaine, sodium cocoyl isethionate, caprylyl capryl glucoside, glycerin, sodium chloride, sodium lauroyl methyl isethionate, butyrosepermum parkii shea butter, citrus aurantium dulcis orange peel oil",
+      "buy_url": "https://amzn.to/3ZSDywG",
+      "product_categories": ["shampoos"],
+      "tags": ["low_porosity", "normal_porosity"]
+    },
+    {
+      "name": "Color Awakening Hairbath",
+      "brand": "Innersense",
+      "ingredients_raw": "water, aqua- eau, cocamidopropyl hydroxysultaine, sodium cocoyl isethionate, caprylyl capryl glucoside, glycerin, sodium chloride, sodium lauroyl methyl isethionate, butyrospermum parkii shea butter, citrus aurantium dulcis orange peel oil, citrus medica limonum lemon peel oil, eucalyptus globulus eucalyptus, cucurbita pepo pumpkin seed oil, hydroxypropyltrimonium honey, hydrolyzed quinoa, trisodium ethylenediamine disuccinate, sodium benzoate, hydrolyzed rice protein, guar hydroxypropyltrimonium chloride, potassium sorbate, citric acid, citrus sinensis orange oil, persea gratissima avocado oil, oryza sativa rice bran oil, camellia sinensis green tea leaf extract, cucumis sativus cucumber fruit extract, persea gratissima fruit extract, mangifera indica mango fruit extract",
+      "buy_url": "https://amzn.to/41J8sKF",
+      "product_categories": ["shampoos"],
+      "tags": ["high_porosity", "normal_porosity"]
+    },
+
+    {
+      "name": "Clarity Hairbath",
+      "brand": "Innersense",
+      "ingredients_raw": "water aqua eau, aloe barbadensis leaf juice, cocamidopropyl hydroxysultaine, sodium cocoyl isethionate, glycerin, caprylyl capryl glucoside, sodium levulinate, potassium sorbate, guar hydroxypropyltrimonium chloride, citric acid, butyrospermum parkii shea butter, sodium gluconate, tocopherol, swertia japonica extract, cyperus esculentus tuber extract, symphytum officinale leaf extract, xanthan gum, coconut acid, sodium isethionate",
+      "buy_url": "https://amzn.to/4gLhRFK",
+      "product_categories": ["shampoos"],
+      "tags": ["low_porosity", "normal_porosity"]
     }
   ]
 }

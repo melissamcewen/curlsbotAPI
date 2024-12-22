@@ -1,0 +1,12 @@
+{
+  "products": [
+    {
+      "name": "Curl Enhancing Custard",
+      "brand": "MopTop",
+      "buy_url": "https://amzn.to/4gMHczc",
+      "product_categories": ["custards"],
+      "tags": ["low_porosity", "curl_enhancer", "normal_porosity", "high_porosity"],
+      "ingredients_raw": "water, glycerin, carboxymethylcellulose, aloe barbadensis leaf extract, pectin, hydroxypropyltrimonium honey, silk amino acids, hypnea musciformis extract seaweed, gelidiella acerosa extract seaweed, sargassum filipendula seaweed extract, sorbitol, rosmarinus officinalis rosemary leaf extract, salix alba willow bark extract, urtica dioica nettle extract, ethylhexylglycerin, phenoxyethanol, citrus senensis oil, citrus limon oil, citrus aurantifolia oil, citrus paradisi oil"
+    }
+  ]
+}
