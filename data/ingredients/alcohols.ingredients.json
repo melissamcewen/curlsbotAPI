@@ -369,17 +369,7 @@
         "emollient_alcohols"
       ]
     },
-    {
-      "name": "Unknown Alcohol",
-      "id": "unknown_alcohol",
-      "synonyms": [
-        "alcohol"
-      ],
-      "description": "Unknown alcohol, since we don't know what it is, we are going to classify it as drying alcohols just to be safe.",
-      "categories": [
-        "drying_alcohols"
-      ]
-    },
+    
       {
         "name": "Emulsifying Wax",
         "id": "emulsifying_wax",

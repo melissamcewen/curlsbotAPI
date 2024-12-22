@@ -1,0 +1,12 @@
+{
+  "json.schemas": [
+    {
+      "fileMatch": ["**/data/products/*.products.json"],
+      "url": "./data/schema/products.schema.json"
+    },
+    {
+      "fileMatch": ["**/data/ingredients/*.ingredients.json"],
+      "url": "./data/schema/ingredients.schema.json"
+    }
+  ]
+}

@@ -1,5 +1,5 @@
 import { defaultDatabase, defaultSystems, defaultSettings } from '../../src/data/bundledData';
-import type { Ingredient, Category, Group } from '../../src/types';
+import type { Ingredient, Category, Group, Reference } from '../../src/types';
 
 
 /* THESE ARE PRODUCTION TESTS USE THE DATA IN src/data/bundledData.ts */
@@ -193,6 +193,50 @@ describe('Production Database E2E Tests', () => {
       // Log warnings if any
       if (warnings.length > 0) {
         console.warn('ID format warnings:');
+        warnings.forEach(warning => console.warn(warning));
+      }
+
+      expect(warnings).toHaveLength(0);
+    });
+  });
+
+  describe('Reference Validation', () => {
+    it('should have properly typed references for all ingredients', () => {
+      const warnings: string[] = [];
+
+      Object.entries(defaultDatabase.ingredients).forEach(([id, ingredient]) => {
+        if (ingredient.references) {
+          ingredient.references.forEach((reference: Reference, index) => {
+            // Check required url field
+            if (!reference.url) {
+              warnings.push(`Ingredient "${ingredient.name}" (${id}) reference #${index + 1} is missing required 'url' field`);
+            }
+
+            // Check that only allowed fields are present
+            const allowedFields = ['url', 'title', 'description'];
+            Object.keys(reference).forEach(field => {
+              if (!allowedFields.includes(field)) {
+                warnings.push(`Ingredient "${ingredient.name}" (${id}) reference #${index + 1} has invalid field '${field}'`);
+              }
+            });
+
+            // Check field types
+            if (reference.url && typeof reference.url !== 'string') {
+              warnings.push(`Ingredient "${ingredient.name}" (${id}) reference #${index + 1} 'url' must be a string`);
+            }
+            if (reference.title && typeof reference.title !== 'string') {
+              warnings.push(`Ingredient "${ingredient.name}" (${id}) reference #${index + 1} 'title' must be a string`);
+            }
+            if (reference.description && typeof reference.description !== 'string') {
+              warnings.push(`Ingredient "${ingredient.name}" (${id}) reference #${index + 1} 'description' must be a string`);
+            }
+          });
+        }
+      });
+
+      // Log warnings if any
+      if (warnings.length > 0) {
+        console.warn('Reference validation warnings:');
         warnings.forEach(warning => console.warn(warning));
       }
 

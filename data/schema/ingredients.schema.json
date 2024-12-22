@@ -15,23 +15,8 @@
           },
           "id": {
             "type": "string",
-            "pattern": "^[a-z0-9_-]+$",
+            "pattern": "^[a-z0-9_]+$",
             "description": "A unique identifier for the ingredient in snake_case"
-          },
-          "synonyms": {
-            "oneOf": [
-              {
-                "type": "string",
-                "description": "Comma-separated list of alternative names"
-              },
-              {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                },
-                "description": "Array of alternative names"
-              }
-            ]
           },
           "description": {
             "type": "string",
@@ -47,10 +32,33 @@
           "references": {
             "type": "array",
             "items": {
-              "type": "string",
-              "format": "uri"
+              "type": "object",
+              "required": ["url"],
+              "properties": {
+                "url": {
+                  "type": "string",
+                  "format": "uri",
+                  "description": "The URL of the reference"
+                },
+                "title": {
+                  "type": "string",
+                  "description": "Optional title of the reference"
+                },
+                "description": {
+                  "type": "string",
+                  "description": "Optional description of what this reference proves/shows"
+                }
+              },
+              "additionalProperties": false
             },
-            "description": "URLs to reference sources"
+            "description": "Optional source references for the ingredient"
+          },
+          "synonyms": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Optional synonyms for the ingredient"
           }
         },
         "additionalProperties": false

@@ -1,21 +1,16 @@
 {
   "products": [
     {
-      "name": "Botanique Nourish Conditioner",
-      "brand": "Tresemme",
-      "buy_url": "https://amzn.to/4iGCEfg",
-      "product_categories": ["conditioners"],
-      "tags": ["high_porosity"],
-      "cost_rating": "1",
-      "ingredients_raw": "water eau, cetearyl alcohol, stearamidopropyl dimethylamine, aloe barbadensis leaf juice, cocos nucifera coconut fruit extract, cocos nucifera coconut oil, ceramide ng, arginine, lysine hcl, behentrimonium chloride, fragrance parfum, dipropylene glycol, lactic acid, sodium chloride, disodium edta, methylchloroisothiazolinone, methylisothiazolinone, coumarin, linalool"
-    },
-    {
       "name": "Light Conditioner",
       "brand": "MopTop",
       "buy_url": "https://amzn.to/2ApLXiq",
       "product_categories": ["conditioners"],
       "tags": ["low_porosity"],
       "cost_rating": "2"
+
+    },
+    {
+      "name": "Light Conditioner"
     }
   ]
 }

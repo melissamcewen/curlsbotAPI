@@ -29,7 +29,7 @@ console.log(this)
      console.log(JSON.stringify(result.ingredients, null, 2));
 
       // Output as comma-separated list
-     // console.log(result.ingredients.join(', '));
+      console.log(result.ingredients.join(', '));
 
   });
 

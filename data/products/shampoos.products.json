@@ -1,4 +1,5 @@
 {
+  "$schema": "../schema/products.schema.json",
   "products": [
     {
       "name": "Curl Shampoo",
