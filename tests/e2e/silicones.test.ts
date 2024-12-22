@@ -21,7 +21,7 @@ const analyzer = new Analyzer({
   settings: defaultSettings,
 });
 const list =
-  'peg-8 distearmonium chloride pg-dimethicone, cetearyl methicone, silicone, cyclomethicone, aminopropyl triethoxysilane, PEG/PPG-18/18 Dimethicone, Dimethicone, PEG-12 Dimethicone, silicone, Lauryl PEG / PPG - 18 / 18 Methicone, , triethoxysilane, coney, mdimethicon, peg-40 hydrogenated castor oil, trimethylsiloxysilicate, saccharomycessilicon, Peg-40 castor oil,';
+  'peg-8 distearmonium chloride pg-dimethicone, cetearyl methicone, silicone, cyclomethicone, aminopropyl triethoxysilane, PEG/PPG-18/18 Dimethicone, Dimethicone, PEG-12 Dimethicone, silicone, Lauryl PEG / PPG - 18 / 18 Methicone, , triethoxysilane, coney, mdimethicon, peg-40 hydrogenated castor oil, trimethylsiloxysilicate, saccharomycessilicon, Peg-40 castor oil, peg-100 stearate';
 const result = analyzer.analyze(list);
 
 describe('Silicone Analysis e2e complex list with curly_moderate system', () => {
@@ -65,6 +65,7 @@ describe('Silicone Analysis e2e complex list with curly_moderate system', () => 
       'trimethylsiloxysilicate',
       'saccharomycessilicon',
       'peg-40 castor oil',
+      'peg-100 stearate',
     ]);
   });
   describe('ingredient matching', () => {
@@ -139,6 +140,13 @@ describe('Silicone Analysis e2e complex list with curly_moderate system', () => 
         status: 'ok',
         reason: undefined,
       },
+      {
+        normalized: 'peg-100 stearate',
+        ingredientId: undefined,
+        category: undefined,
+        status: 'ok',
+        reason: undefined,
+      },
     ];
 
     expectedResults.forEach((expected) => {
@@ -149,9 +157,16 @@ describe('Silicone Analysis e2e complex list with curly_moderate system', () => 
 
         expect(ingredientMatch).toBeDefined();
         expect(ingredientMatch?.ingredient?.id).toBe(expected.ingredientId);
-        expect(ingredientMatch?.ingredient?.categories).toEqual(
-          expect.arrayContaining([expected.category])
-        );
+
+        if (expected.category) {
+          expect(ingredientMatch?.ingredient?.categories).toEqual(
+            expect.arrayContaining([expected.category])
+          );
+        } else {
+          // For ingredients with no categories, either categories should be undefined or an empty array
+          expect(ingredientMatch?.ingredient?.categories).toBeFalsy();
+        }
+
         expect(ingredientMatch?.status).toBe(expected.status);
         expect(
           ingredientMatch?.reasons.find((r) => r.setting === expected.reason)

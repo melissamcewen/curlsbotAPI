@@ -122,9 +122,10 @@ describe('getIngredientTerms', () => {
 });
 
 describe('findCategoryByInclusion', () => {
-  it('should find category when search term includes an inclusion term', () => {
+  it('should find category when search term includes both category and group inclusions', () => {
     const result = findCategoryByInclusion(
       testDatabase.categories,
+      testDatabase.groups,
       'peg-dimethicone',
     );
     expect(result).toBeDefined();
@@ -132,9 +133,19 @@ describe('findCategoryByInclusion', () => {
     expect(result?.defaultIngredient).toBe('unknown_water_soluble_silicone');
   });
 
+  it('should not match if group inclusion is missing', () => {
+    const result = findCategoryByInclusion(
+      testDatabase.categories,
+      testDatabase.groups,
+      'peg', // missing silicone/cone group inclusion
+    );
+    expect(result).toBeUndefined();
+  });
+
   it('should find category case-insensitively', () => {
     const result = findCategoryByInclusion(
       testDatabase.categories,
+      testDatabase.groups,
       'PEG-DIMETHICONE',
     );
     expect(result).toBeDefined();
@@ -144,6 +155,7 @@ describe('findCategoryByInclusion', () => {
   it('should return undefined when no inclusion matches', () => {
     const result = findCategoryByInclusion(
       testDatabase.categories,
+      testDatabase.groups,
       'no match here',
     );
     expect(result).toBeUndefined();
@@ -158,30 +170,18 @@ describe('findCategoryByInclusion', () => {
         description: 'Test category',
       },
     };
-    const result = findCategoryByInclusion(categories, 'test');
+    const groups = {
+      test_group: {
+        id: 'test_group',
+        name: 'Test Group',
+        inclusions: ['test'],
+      },
+    };
+    const result = findCategoryByInclusion(categories, groups, 'test');
     expect(result).toBeUndefined();
   });
 
-  it('should return first matching category when multiple match', () => {
-    const categories = {
-      ...testDatabase.categories,
-      test_category: {
-        id: 'test_category',
-        name: 'Test Category',
-        group: 'test_group',
-        description: 'Test category',
-        inclusions: ['peg'],
-      },
-    };
-    const result = findCategoryByInclusion(categories, 'peg-dimethicone');
-    // Should return whichever category is first in object iteration order
-    expect(result).toBeDefined();
-    expect(['water_soluble_silicone', 'test_category']).toContain(
-      result?.categoryId,
-    );
-  });
-
-  it('should not match when search term matches exclusion', () => {
+  it('should not match when search term matches category exclusion', () => {
     const categories = {
       test_category: {
         id: 'test_category',
@@ -193,20 +193,22 @@ describe('findCategoryByInclusion', () => {
         defaultIngredient: 'test_ingredient',
       },
     };
+    const groups = {
+      test_group: {
+        id: 'test_group',
+        name: 'Test Group',
+        inclusions: ['silicone'],
+      },
+    };
     const result = findCategoryByInclusion(
       categories,
+      groups,
       'saccharomycessilicon ferment',
     );
     expect(result).toBeUndefined();
   });
 
-   it('integration should not match when search term matches exclusion ', () => {
-     const categories = testDatabase.categories;
-     const result = findCategoryByInclusion(categories, 'peg-40 castor oil');
-     expect(result?.categoryId).toBe('oils');
-   });
-
-  it('should match when search term matches inclusion but not exclusion', () => {
+  it('should not match when search term matches group exclusion', () => {
     const categories = {
       test_category: {
         id: 'test_category',
@@ -214,20 +216,86 @@ describe('findCategoryByInclusion', () => {
         description: 'Test category',
         group: 'test_group',
         inclusions: ['silicone'],
-        exclusions: ['saccharomycessilicon'],
         defaultIngredient: 'test_ingredient',
       },
     };
-    const result = findCategoryByInclusion(categories, 'dimethicone silicone');
+    const groups = {
+      test_group: {
+        id: 'test_group',
+        name: 'Test Group',
+        inclusions: ['silicone'],
+        exclusions: ['saccharomycessilicon'],
+      },
+    };
+    const result = findCategoryByInclusion(
+      categories,
+      groups,
+      'saccharomycessilicon ferment',
+    );
+    expect(result).toBeUndefined();
+  });
+
+  it('integration should match oils correctly', () => {
+    const result = findCategoryByInclusion(
+      testDatabase.categories,
+      testDatabase.groups,
+      'peg-40 castor oil',
+    );
+    //it matches the category inclusion but not the group inclusion so it should return undefined
+    expect(result?.categoryId).toBe(undefined);
+  });
+
+  it('should match when search term matches both category and group inclusions', () => {
+    const categories = {
+      test_category: {
+        id: 'test_category',
+        name: 'Test Category',
+        description: 'Test category',
+        group: 'test_group',
+        inclusions: ['silicone'],
+        defaultIngredient: 'test_ingredient',
+      },
+    };
+    const groups = {
+      test_group: {
+        id: 'test_group',
+        name: 'Test Group',
+        inclusions: ['cone'],
+      },
+    };
+    const result = findCategoryByInclusion(
+      categories,
+      groups,
+      'dimethicone silicone',
+    );
     expect(result).toBeDefined();
     expect(result?.categoryId).toBe('test_category');
+  });
 
-    // Should not match because "silicon ferment" is in exclusions
-    const result2 = findCategoryByInclusion(
+  it('should not match category if its group inclusions do not match', () => {
+    const categories = {
+      test_category: {
+        id: 'test_category',
+        name: 'Test Category',
+        description: 'Test category',
+        group: 'test_group',
+        inclusions: ['peg'], // matches search term
+        defaultIngredient: 'test_ingredient',
+      },
+    };
+    const groups = {
+      test_group: {
+        id: 'test_group',
+        name: 'Test Group',
+        inclusions: ['silicone'], // doesn't match search term
+      },
+    };
+    const result = findCategoryByInclusion(
       categories,
-      'dimethicone silicon ferment',
+      groups,
+      'peg-40',  // matches category inclusion but not group inclusion
     );
-    expect(result2).toBeUndefined();
+    expect(result).toBeUndefined();
   });
 });
 
@@ -314,8 +382,8 @@ describe('findGroupByInclusion', () => {
 });
 
 describe('partitionSearchSpace', () => {
-  it('should partition by category when matching category inclusion', () => {
-    const result = partitionSearchSpace(testDatabase, 'peg');
+  it('should partition by category when matching category + group inclusion', () => {
+    const result = partitionSearchSpace(testDatabase, 'peg silicone');
     expect(result.database.categories).toHaveProperty('water_soluble_silicone');
     expect(result.defaultIngredient).toBe('unknown_water_soluble_silicone');
     expect(Object.keys(result.database.categories)).toHaveLength(1);
@@ -383,7 +451,7 @@ describe('partitionSearchSpace', () => {
       },
     };
 
-    const result = partitionSearchSpace(testDatabaseWithExtra, 'peg');
+    const result = partitionSearchSpace(testDatabaseWithExtra, 'peg silicone');
     expect(Object.keys(result.database.ingredients)).toHaveLength(2);
     expect(result.database.ingredients).toHaveProperty('unknown_water_soluble_silicone');
     expect(result.database.ingredients).toHaveProperty('another_water_soluble');

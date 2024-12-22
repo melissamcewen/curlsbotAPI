@@ -126,6 +126,7 @@ export function partitionSearchSpace(
   );
   const matchingCategory = findCategoryByInclusion(
     database.categories,
+    database.groups,
     normalizedSearchTerm,
   );
 
@@ -234,6 +235,7 @@ export function filterDatabaseByCategory(
  */
 export function findCategoryByInclusion(
   categories: Categories,
+  groups: Groups,
   searchTerm: string,
 ): { categoryId: string; defaultIngredient: string | undefined } | undefined {
   // Convert search term to lowercase for case-insensitive matching
@@ -249,9 +251,16 @@ export function findCategoryByInclusion(
     if (hasExclusion) return false;
 
     // Then check if any inclusions match
-    return category.inclusions?.some((inclusion) =>
+    const hasInclusion = category.inclusions?.some((inclusion) =>
       normalizedSearchTerm.includes(inclusion.toLowerCase()),
     );
+    // to quality as a match they must also match the group inclusion
+    const group = findGroupByInclusion(groups, normalizedSearchTerm);
+    console.log(group);
+
+    if (!group) return false;
+
+    return hasInclusion;
   });
 
   // If no category was found, return undefined
