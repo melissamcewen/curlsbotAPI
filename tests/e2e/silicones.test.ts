@@ -21,7 +21,7 @@ const analyzer = new Analyzer({
   settings: defaultSettings,
 });
 const list =
-  'peg-8 distearmonium chloride pg-dimethicone, cetearyl methicone, silicone, cyclomethicone, aminopropyl triethoxysilane, PEG/PPG-18/18 Dimethicone, Dimethicone, PEG-12 Dimethicone, silicone, Lauryl PEG / PPG - 18 / 18 Methicone, , triethoxysilane, coney, mdimethicon, peg-40 hydrogenated castor oil, trimethylsiloxysilicate, saccharomycessilicon, Peg-40 castor oil, peg-100 stearate';
+  'peg-8 distearmonium chloride pg-dimethicone, cetearyl methicone, silicone, cyclomethicone, aminopropyl triethoxysilane, PEG/PPG-18/18 Dimethicone, Dimethicone, PEG-12 Dimethicone, silicone, Lauryl PEG / PPG - 18 / 18 Methicone, , triethoxysilane, coney, mdimethicon, peg-40 hydrogenated castor oil, trimethylsiloxysilicate, saccharomycessilicon, Peg-40 castor oil, peg-100 Something';
 const result = analyzer.analyze(list);
 
 describe('Silicone Analysis e2e complex list with curly_moderate system', () => {
@@ -65,7 +65,7 @@ describe('Silicone Analysis e2e complex list with curly_moderate system', () => 
       'trimethylsiloxysilicate',
       'saccharomycessilicon',
       'peg-40 castor oil',
-      'peg-100 stearate',
+      'peg-100 something',
     ]);
   });
   describe('ingredient matching', () => {
@@ -141,7 +141,7 @@ describe('Silicone Analysis e2e complex list with curly_moderate system', () => 
         reason: undefined,
       },
       {
-        normalized: 'peg-100 stearate',
+        normalized: 'peg-100 something',
         ingredientId: undefined,
         category: undefined,
         status: 'ok',

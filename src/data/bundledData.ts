@@ -1342,7 +1342,7 @@ export const defaultDatabase: IngredientDatabase = {
       "name": "Aminomethyl Propanol",
       "id": "aminomethyl_propanol",
       "categories": [
-        "other_detergents"
+        "other"
       ],
       "references": [
         {
@@ -1927,6 +1927,50 @@ export const defaultDatabase: IngredientDatabase = {
       ],
       "synonyms": [
         "Vitamin E"
+      ]
+    },
+    "cellulose": {
+      "name": "Cellulose",
+      "id": "cellulose",
+      "description": "A natural polymer used as a thickener and stabilizer in hair care formulations",
+      "categories": [
+        "other"
+      ],
+      "references": [
+        {
+          "url": "https://incidecoder.com/ingredients/cellulose"
+        }
+      ],
+      "synonyms": []
+    },
+    "caprylic_capric_triglyceride": {
+      "name": "Caprylic Capric Triglyceride",
+      "id": "caprylic_capric_triglyceride",
+      "description": "A lightweight emollient derived from coconut oil, providing moisture without greasiness",
+      "categories": [
+        "other"
+      ],
+      "references": [
+        {
+          "url": "https://incidecoder.com/ingredients/caprylic-capric-triglyceride"
+        }
+      ],
+      "synonyms": []
+    },
+    "peg_100_stearate": {
+      "name": "PEG-100 Stearate",
+      "id": "peg_100_stearate",
+      "description": "An emulsifier that helps blend water and oil, improving the texture and stability of hair care products",
+      "categories": [
+        "other"
+      ],
+      "references": [
+        {
+          "url": "https://incidecoder.com/ingredients/peg-100-stearate"
+        }
+      ],
+      "synonyms": [
+        "PEG 100 Stearate"
       ]
     },
     "amodimethicone": {

@@ -25,7 +25,33 @@
           "categories": {
             "type": "array",
             "items": {
-              "type": "string"
+              "type": "string",
+              "enum": [
+                "drying_alcohols",
+                "parabens",
+                "sulfates",
+                "emollient_alcohols",
+                "water_soluble_silicones",
+                "non_water_soluble_silicones",
+                "preservatives",
+                "other_detergents",
+                "preservative_alcohols",
+                "astringents",
+                "soaps",
+                "mild_detergents",
+                "heavy_oils",
+                "light_oils",
+                "medium_oils",
+                "non_water_soluble_waxes",
+                "water_soluble_waxes",
+                "evaporative_silicones",
+                "other",
+                "solvents",
+                "polyquats",
+                "petroleum_oils",
+                "humectants",
+                "proteins"
+              ]
             },
             "description": "Categories to which the ingredient belongs"
           },
