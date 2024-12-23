@@ -8,6 +8,14 @@
        "tags": ["high_porosity"],
        "cost_rating": "2",
        "ingredients_raw": "aqua water, cetearyl alcohol, butyrospermum parkii shea butter, persea gratissima avocado oil, theobroma cacao cocoa seed butter, behentrimonium methosulfate, aloe barbadensis aloe vera leaf juice powder, equisetum arvense horsetail extract, mentha piperita peppermint leaf extract, rosmarinus officinalis rosemary flower leaf stem extract, laurus nobilis bay laurel leaf extract, ocimum basilicum basil leaf extract, urtica dioica nettle leaf extract, arctium lappa burdock root extract, althea officinalis marshmallow root extract, origanum vulgare oregano leaf extract, cymbopogon flexuosus lemongrass extract, thymus vulgaris thyme leaf extract, salvia officinalis sage leaf extract, lecithin, cinnamal, citral, eugenol, geraniol, citronellol, limonene, linalool, benzoic acid, dehydroacetic acid, phenoxyethanol"
+     },
+     {
+      "name": "Deep Conditioner & Repair",
+      "brand": "Love Ur Curls",
+      "ingredients_raw": "aqua water eau, butyrospermum parkii shea butter, persea gratissima avocado oil, cetyl alcohol, cetearyl alcohol, behentrimonium chloride, cetrimonium chloride, aloe barbadensis leaf juice, moringa oleifera seed oil, simmondsia chinensis jojoba seed oil, rosmarinus officinalis rosemary leaf oil, ceteareth-20, hydroxyethylcellulose, tocopheryl acetate vitamin e, d-panthenol provitmain b5, phenoxyethanol, ethylhexylglycerin, citric acid, fragrance parfum",
+      "buy_url": "https://amzn.to/408QOOY",
+      "product_categories": ["deep_conditioners"],
+      "tags": ["low_porosity", "normal_porosity", "high_porosity"]
      }
   ]
 }

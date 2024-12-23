@@ -351,7 +351,8 @@
         }
       ],
       "synonyms": [
-        "Aloe Vera"
+        "aloe vera",
+        "aloe barbadensis leaf juice"
       ]
     },
     {
@@ -613,6 +614,23 @@
         {
           "url": "https://incidecoder.com/ingredients/parfum"
         }
+      ]
+    },
+    {
+      "name": "Guar Hydroxypropyltrimonium Chloride",
+      "id": "guar_hydroxypropyltrimonium_chloride",
+      "description": "A conditioning agent derived from guar gum, improving detangling and reducing static in hair",
+      "categories": [
+        "other"
+      ],
+      "references": [
+        {
+          "url": "https://incidecoder.com/ingredients/guar-hydroxypropyltrimonium-chloride"
+        }
+      ],
+      "synonyms": [
+        "guar gum quaternary ammonium",
+        "cationic guar"
       ]
     }
   ]
