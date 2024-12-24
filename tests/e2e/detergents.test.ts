@@ -10,7 +10,7 @@ import {
 /* THESE ARE PRODUCTION TESTS USE THE DATA IN src/data/bundledData.ts */
 
 const list =
-  'Sodium Laureth Sulfate, Cocamidopropyl Betaine*, Cocamide MEA, Alkylbenzene Sulfonate, ammonium laureth sulphate, Dioctyl Sodium Sulfosuccinate, sulfate, behentrimonium methosulfate';
+  'Sodium Laureth Sulfate, Cocamidopropyl Betaine*, Cocamide MEA, Alkylbenzene Sulfonate, ammonium laureth sulphate, Dioctyl Sodium Sulfosuccinate, sulfate, behentrimonium methosulfate, magnesium sulfate';
 
 describe('Handling of detergents under the default system', () => {
   const analyzer = new Analyzer({
@@ -31,7 +31,8 @@ describe('Handling of detergents under the default system', () => {
       'ammonium laureth sulphate',
       'dioctyl sodium sulfosuccinate',
       'sulfate',
-      'behentrimonium methosulfate'
+      'behentrimonium methosulfate',
+      'magnesium sulfate',
     ]);
   });
 
@@ -89,6 +90,13 @@ describe('Handling of detergents under the default system', () => {
       {
         normalized: 'behentrimonium methosulfate',
         ingredientId: 'behentrimonium_methosulfate',
+        category: 'others',
+        status: 'ok',
+        reason: undefined
+      },
+      {
+        normalized: 'magnesium sulfate',
+        ingredientId: 'magnesium_sulfate',
         category: 'others',
         status: 'ok',
         reason: undefined

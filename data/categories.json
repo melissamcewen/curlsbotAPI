@@ -23,7 +23,7 @@
       "group": "detergents",
       "description": "Sulfates are cleansing agents that create lather and remove oil and dirt",
       "inclusions": ["sulfate", "sulphate"],
-      "exclusions": ["behentrimonium", "methosulfate"],
+      "exclusions": ["behentrimonium", "methosulfate", "magnesium"],
       "defaultIngredient": "unknown_sulfate"
     },
     {

@@ -27,7 +27,10 @@ export function findIngredient(
 ): IngredientMatch {
   const normalizedSearchTerm = searchTerm.toLowerCase();
 
-
+  console.log('\nSearching for:', {
+    original: searchTerm,
+    normalized: normalizedSearchTerm,
+  });
   // First partition the database based on the search term
 
   const { database: partitionedDatabase, defaultIngredient } =
@@ -40,7 +43,11 @@ export function findIngredient(
     const terms = getIngredientTerms(ingredient).map((term) =>
       term.toLowerCase(),
     );
-
+    console.log('Comparing against ingredient:', {
+      id: ingredient.id,
+      terms: terms,
+      exactMatch: terms.includes(normalizedSearchTerm),
+    });
     // Try exact matches first
     if (terms.includes(normalizedSearchTerm)) {
       return {

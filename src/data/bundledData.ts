@@ -2014,6 +2014,23 @@ export const defaultDatabase: IngredientDatabase = {
         "cationic guar"
       ]
     },
+    "magnesium_sulfate": {
+      "name": "Magnesium Sulfate",
+      "id": "magnesium_sulfate",
+      "description": "A mineral salt used as a texturizer and curl enhancer in hair care products. Some people find the texture unpleasant or drying.",
+      "categories": [
+        "other"
+      ],
+      "references": [
+        {
+          "url": "https://incidecoder.com/ingredients/magnesium-sulfate"
+        }
+      ],
+      "synonyms": [
+        "epsom salt",
+        "magnesium salt"
+      ]
+    },
     "amodimethicone": {
       "name": "Amodimethicone",
       "id": "amodimethicone",
@@ -2654,7 +2671,8 @@ export const defaultDatabase: IngredientDatabase = {
       ],
       "exclusions": [
         "behentrimonium",
-        "methosulfate"
+        "methosulfate",
+        "magnesium"
       ],
       "defaultIngredient": "unknown_sulfate",
       "references": []
@@ -2845,7 +2863,8 @@ export const defaultDatabase: IngredientDatabase = {
       ],
       "exclusions": [
         "behentrimonium",
-        "methosulfate"
+        "methosulfate",
+        "magnesium"
       ],
       "description": "Detergents in hair products can help remove dirt and oil from the hair and scalp"
     },

@@ -17,7 +17,7 @@
       "id": "detergents",
       "name": "Detergents",
       "inclusions": ["sulfate"],
-      "exclusions": ["behentrimonium", "methosulfate"],
+      "exclusions": ["behentrimonium", "methosulfate", "magnesium"],
       "description": "Detergents in hair products can help remove dirt and oil from the hair and scalp"
     },
     {

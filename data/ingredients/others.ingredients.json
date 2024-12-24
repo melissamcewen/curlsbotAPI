@@ -632,6 +632,23 @@
         "guar gum quaternary ammonium",
         "cationic guar"
       ]
+    },
+    {
+      "name": "Magnesium Sulfate",
+      "id": "magnesium_sulfate",
+      "description": "A mineral salt used as a texturizer and curl enhancer in hair care products. Some people find the texture unpleasant or drying.",
+      "categories": [
+        "other"
+      ],
+      "references": [
+        {
+          "url": "https://incidecoder.com/ingredients/magnesium-sulfate"
+        }
+      ],
+      "synonyms": [
+        "epsom salt",
+        "magnesium salt"
+      ]
     }
   ]
 }
