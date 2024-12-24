@@ -1718,7 +1718,8 @@ export const defaultDatabase: IngredientDatabase = {
         }
       ],
       "synonyms": [
-        "Aloe Vera"
+        "aloe vera",
+        "aloe barbadensis leaf juice"
       ]
     },
     "behentrimonium_chloride": {
@@ -1994,6 +1995,23 @@ export const defaultDatabase: IngredientDatabase = {
         {
           "url": "https://incidecoder.com/ingredients/parfum"
         }
+      ]
+    },
+    "guar_hydroxypropyltrimonium_chloride": {
+      "name": "Guar Hydroxypropyltrimonium Chloride",
+      "id": "guar_hydroxypropyltrimonium_chloride",
+      "description": "A conditioning agent derived from guar gum, improving detangling and reducing static in hair",
+      "categories": [
+        "other"
+      ],
+      "references": [
+        {
+          "url": "https://incidecoder.com/ingredients/guar-hydroxypropyltrimonium-chloride"
+        }
+      ],
+      "synonyms": [
+        "guar gum quaternary ammonium",
+        "cationic guar"
       ]
     },
     "amodimethicone": {
@@ -2311,10 +2329,6 @@ export const defaultDatabase: IngredientDatabase = {
     "silicone_quaternium_26": {
       "name": "Silicone Quaternium 26",
       "id": "silicone_quaternium_26",
-      "synonyms": [
-        "quaternium-26",
-        "minkamidopropyl dimethyl 2-hydroxyethyl ammonium chloride"
-      ],
       "categories": [
         "water_soluble_silicones"
       ],
@@ -2322,7 +2336,8 @@ export const defaultDatabase: IngredientDatabase = {
         {
           "url": "https://www.reddit.com/r/HaircareScience/comments/nd8x0e/quaternium26_is_water_soluble/"
         }
-      ]
+      ],
+      "synonyms": []
     },
     "unknown_non_water_soluble_silicone": {
       "name": "Unknown Non-Water Soluble Silicone",
@@ -2848,8 +2863,7 @@ export const defaultDatabase: IngredientDatabase = {
         "silylate",
         "silsesquioxane",
         "siloxysilicate",
-        "microsil",
-        "quaternium"
+        "microsil"
       ],
       "exclusions": [
         "saccharomycessilicon",

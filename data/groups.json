@@ -34,8 +34,7 @@
         "silylate",
         "silsesquioxane",
         "siloxysilicate",
-        "microsil",
-        "quaternium"
+        "microsil"
       ],
       "exclusions": ["saccharomycessilicon", "ferment", "castor", "polyquaternium"],
       "defaultIngredient": "unknown_non_water_soluble_silicone",

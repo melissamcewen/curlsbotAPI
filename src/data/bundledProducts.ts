@@ -167,6 +167,22 @@ export const defaultProductDatabase: ProductDatabase = {
       "id": "deep_conditioning_treatment",
       "systems_excluded": []
     },
+    "deep_conditioner_&_repair": {
+      "name": "Deep Conditioner & Repair",
+      "brand": "Love Ur Curls",
+      "ingredients_raw": "aqua water eau, butyrospermum parkii shea butter, persea gratissima avocado oil, cetyl alcohol, cetearyl alcohol, behentrimonium chloride, cetrimonium chloride, aloe barbadensis leaf juice, moringa oleifera seed oil, simmondsia chinensis jojoba seed oil, rosmarinus officinalis rosemary leaf oil, ceteareth-20, hydroxyethylcellulose, tocopheryl acetate vitamin e, d-panthenol provitmain b5, phenoxyethanol, ethylhexylglycerin, citric acid, fragrance parfum",
+      "buy_url": "https://amzn.to/408QOOY",
+      "product_categories": [
+        "deep_conditioners"
+      ],
+      "tags": [
+        "low_porosity",
+        "normal_porosity",
+        "high_porosity"
+      ],
+      "id": "deep_conditioner_&_repair",
+      "systems_excluded": []
+    },
     "i_create_hold": {
       "name": "I Create Hold",
       "brand": "Innersense",
@@ -199,6 +215,22 @@ export const defaultProductDatabase: ProductDatabase = {
         "curl_enhancer"
       ],
       "id": "curl_enhancer_gel",
+      "systems_excluded": []
+    },
+    "irish_sea_moss_styling_gel": {
+      "name": "Irish Sea Moss Styling Gel",
+      "brand": "Love Ur Curls",
+      "ingredients_raw": "aqua water eau, chondrus crispus irish sea moss extract, passiflora edulis passion fruit seed oil, euterpe oleracea acai fruit oil, oryza sativa rice bran oil, aloe barbadensis aloe vera leaf extract, polyquaternium-37, sorbitol, polyquaternium-69, behentrimonium chloride, guar hydroxypropyltrimonium chloride, hydroxyethylcellulose, citric acid, glycerin, phenoxyethanol, ethylhexylglycerin, fragrance parfum",
+      "product_categories": [
+        "gels"
+      ],
+      "tags": [
+        "low_porosity",
+        "normal_porosity",
+        "hold"
+      ],
+      "buy_url": "https://amzn.to/4fyvVl5",
+      "id": "irish_sea_moss_styling_gel",
       "systems_excluded": []
     },
     "sweet_spirit_leave-in_conditioner": {
