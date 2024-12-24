@@ -313,19 +313,12 @@ export const defaultDatabase: IngredientDatabase = {
     "oleyl_alcohol": {
       "name": "Oleyl Alcohol",
       "id": "oleyl_alcohol",
+      "synonyms": [
+        "oleic alcohol"
+      ],
       "categories": [
         "emollient_alcohols"
       ],
-      "synonyms": [],
-      "references": []
-    },
-    "pantothenyl_alcohol": {
-      "name": "Pantothenyl Alcohol",
-      "id": "pantothenyl_alcohol",
-      "categories": [
-        "emollient_alcohols"
-      ],
-      "synonyms": [],
       "references": []
     },
     "phenethyl_alcohol": {
@@ -337,17 +330,6 @@ export const defaultDatabase: IngredientDatabase = {
       ],
       "categories": [
         "preservative_alcohols"
-      ],
-      "references": []
-    },
-    "phenyl_propanol": {
-      "name": "Phenyl Propanol",
-      "id": "phenyl_propanol",
-      "synonyms": [
-        "phenylpropanol"
-      ],
-      "categories": [
-        "emollient_alcohols"
       ],
       "references": []
     },
@@ -385,22 +367,14 @@ export const defaultDatabase: IngredientDatabase = {
         }
       ]
     },
-    "steareth_alcohol": {
-      "name": "Steareth Alcohol",
-      "id": "steareth_alcohol",
-      "categories": [
-        "emollient_alcohols"
-      ],
-      "synonyms": [],
-      "references": []
-    },
     "stearyl_alcohol": {
       "name": "Stearyl Alcohol",
       "id": "stearyl_alcohol",
       "synonyms": [
         "1-octadecanol",
         "octadecan-1-ol",
-        "steoryl alcohol"
+        "steoryl alcohol",
+        "steareth alcohol"
       ],
       "categories": [
         "emollient_alcohols"
@@ -432,6 +406,78 @@ export const defaultDatabase: IngredientDatabase = {
         }
       ],
       "synonyms": []
+    },
+    "hydrogenated_dilinoleyl_alcohol": {
+      "name": "Hydrogenated Dilinoleyl Alcohol",
+      "id": "hydrogenated_dilinoleyl_alcohol",
+      "categories": [
+        "emollient_alcohols"
+      ],
+      "synonyms": [],
+      "references": []
+    },
+    "batyl_alcohol": {
+      "name": "Batyl Alcohol",
+      "id": "batyl_alcohol",
+      "categories": [
+        "emollient_alcohols"
+      ],
+      "synonyms": [],
+      "references": []
+    },
+    "c12_15_alcohol": {
+      "name": "C12-15 Alcohol",
+      "id": "c12_15_alcohol",
+      "categories": [
+        "emollient_alcohols"
+      ],
+      "synonyms": [],
+      "references": []
+    },
+    "c12_16_alcohol": {
+      "name": "C12-16 Alcohol",
+      "id": "c12_16_alcohol",
+      "categories": [
+        "emollient_alcohols"
+      ],
+      "synonyms": [],
+      "references": []
+    },
+    "decyl_alcohol": {
+      "name": "Decyl Alcohol",
+      "id": "decyl_alcohol",
+      "categories": [
+        "emollient_alcohols"
+      ],
+      "synonyms": [],
+      "references": []
+    },
+    "hydrogenated_rapeseed_alcohol": {
+      "name": "Hydrogenated Rapeseed Alcohol",
+      "id": "hydrogenated_rapeseed_alcohol",
+      "categories": [
+        "emollient_alcohols"
+      ],
+      "synonyms": [],
+      "references": []
+    },
+    "jojoba_alcohol": {
+      "name": "Jojoba Alcohol",
+      "id": "jojoba_alcohol",
+      "categories": [
+        "emollient_alcohols"
+      ],
+      "synonyms": [],
+      "references": []
+    },
+    "tridecyl_alcohol": {
+      "name": "Tridecyl Alcohol",
+      "id": "tridecyl_alcohol",
+      "categories": [
+        "emollient_alcohols"
+      ],
+      "synonyms": [],
+      "references": []
     },
     "alkylbenzene_sulfonate": {
       "name": "Alkylbenzene Sulfonate",
@@ -2031,6 +2077,17 @@ export const defaultDatabase: IngredientDatabase = {
         "magnesium salt"
       ]
     },
+    "phenyl_propanol": {
+      "name": "Phenyl Propanol",
+      "id": "phenyl_propanol",
+      "synonyms": [
+        "phenylpropanol"
+      ],
+      "categories": [
+        "other"
+      ],
+      "references": []
+    },
     "amodimethicone": {
       "name": "Amodimethicone",
       "id": "amodimethicone",
@@ -2989,12 +3046,12 @@ export const defaultSettings: Record<string, Setting> = {
   },
   "drying_alcohol": {
     "id": "drying_alcohol",
-    "name": "Drying alcohols",
-    "description": "Drying alcohols, such as ethanol and isopropyl alcohol, may strip the hair of its natural oils, leading to dryness, frizz, and damage.",
+    "name": "Alcohols",
+    "description": "These alcohols have a reputation for being drying, but may be fine in some formulations, especially in low amounts and in products that evaporate quickly.",
     "categories": [
       "drying_alcohols"
     ],
-    "defaultStatus": "warning"
+    "defaultStatus": "caution"
   },
   "silicone_free": {
     "id": "silicone_free",

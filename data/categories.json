@@ -11,10 +11,14 @@
       "name": "Parabens",
       "group": "preservatives",
       "description": "Parabens are preservatives commonly used in cosmetic products to prevent bacterial growth",
-      "inclusions": ["paraben"],
+      "inclusions": [
+        "paraben"
+      ],
       "defaultIngredient": "unknown_paraben",
       "references": [
-        {"url":"https://thebeautybrains.com/2006/05/the-perils-of-parabens/"}
+        {
+          "url": "https://thebeautybrains.com/2006/05/the-perils-of-parabens/"
+        }
       ]
     },
     {
@@ -22,8 +26,15 @@
       "name": "Sulfates",
       "group": "detergents",
       "description": "Sulfates are cleansing agents that create lather and remove oil and dirt",
-      "inclusions": ["sulfate", "sulphate"],
-      "exclusions": ["behentrimonium", "methosulfate", "magnesium"],
+      "inclusions": [
+        "sulfate",
+        "sulphate"
+      ],
+      "exclusions": [
+        "behentrimonium",
+        "methosulfate",
+        "magnesium"
+      ],
       "defaultIngredient": "unknown_sulfate"
     },
     {
@@ -37,8 +48,13 @@
       "name": "Water-soluble Silicones",
       "group": "silicones",
       "description": "Water-soluble silicones in hair care products are a type of silicone that is easily washed out of the hair with regular shampoo",
-      "inclusions": ["ppg", "peg"],
-      "exclusions": ["castor"],
+      "inclusions": [
+        "ppg",
+        "peg"
+      ],
+      "exclusions": [
+        "castor"
+      ],
       "defaultIngredient": "unknown_water_soluble_silicone"
     },
     {
@@ -136,7 +152,9 @@
       "name": "Polyquats",
       "group": "others",
       "description": "Polyquats have a moderate to high build up potential and might not be a good choice if you only use mild shampoos or cowash to cleanse your hair.",
-      "inclusions": ["polyquat"],
+      "inclusions": [
+        "polyquat"
+      ],
       "defaultIngredient": "unknown_polyquat"
     },
     {
@@ -149,12 +167,13 @@
       "id": "humectants",
       "name": "Humectants",
       "group": "others",
-      "description": "Humectants are ingredients that attract moisture to the hair" },
-      {
-        "id": "proteins",
-        "name": "Proteins",
-        "group": "others",
-        "description": "Proteins in hair care products can help strengthen and repair hair, but some people find them drying"
-      }
+      "description": "Humectants are ingredients that attract moisture to the hair"
+    },
+    {
+      "id": "proteins",
+      "name": "Proteins",
+      "group": "others",
+      "description": "Proteins in hair care products can help strengthen and repair hair, but some people find them drying"
+    }
   ]
 }

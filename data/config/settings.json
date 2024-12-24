@@ -16,10 +16,10 @@
     },
     {
       "id": "drying_alcohol",
-      "name": "Drying alcohols",
-      "description": "Drying alcohols, such as ethanol and isopropyl alcohol, may strip the hair of its natural oils, leading to dryness, frizz, and damage.",
+      "name": "Alcohols",
+      "description": "These alcohols have a reputation for being drying, but may be fine in some formulations, especially in low amounts and in products that evaporate quickly.",
       "categories": ["drying_alcohols"],
-      "defaultStatus": "warning"
+      "defaultStatus": "caution"
     },
     {
       "id": "silicone_free",
