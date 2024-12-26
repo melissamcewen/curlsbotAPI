@@ -15,6 +15,7 @@ When doing partial matches, the system:
 1. Collects all possible matches rather than returning the first match
 2. Calculates a "coverage" score for each match (how much of the search term the match covers)
 3. Sorts matches by coverage and term length to find the best match
+4. Falls back to default ingredient if no matches are found
 
 ```typescript
 // Example: Searching for "stearyl alcohol coconut derived"
@@ -29,13 +30,34 @@ const coverage = normalizedTerm.length / normalizedSearchTermSpaces.length;
 partialMatches.push({ ingredient, term: normalizedTerm, coverage });
 
 // Sort matches to find the best one
-const bestMatch = partialMatches.sort((a, b) => {
-  // First compare by coverage
-  const coverageDiff = b.coverage - a.coverage;
-  if (coverageDiff !== 0) return coverageDiff;
-  // If coverage is the same, prefer longer terms
-  return b.term.length - a.term.length;
-})[0];
+if (partialMatches.length > 0) {
+  const bestMatch = partialMatches.sort((a, b) => {
+    // First compare by coverage
+    const coverageDiff = b.coverage - a.coverage;
+    if (coverageDiff !== 0) return coverageDiff;
+    // If coverage is the same, prefer longer terms
+    return b.term.length - a.term.length;
+  })[0];
+
+  if (bestMatch) {
+    return {
+      uuid: crypto.randomUUID(),
+      input: searchTerm,
+      normalized: normalizedSearchTerm,
+      ingredient: bestMatch.ingredient,
+    };
+  }
+}
+
+// Fall back to default ingredient if available
+if (defaultIngredient) {
+  return {
+    uuid: crypto.randomUUID(),
+    input: searchTerm,
+    normalized: normalizedSearchTerm,
+    ingredient: getIngredientById(database, defaultIngredient),
+  };
+}
 ```
 
 ## Why This Approach?
@@ -47,6 +69,8 @@ This approach solves several problems:
 2. **Match Quality**: By calculating coverage (match length / search term length), we prefer matches that cover more of the search term. This helps find the most specific match.
 
 3. **Tie Breaking**: When matches have the same coverage, we prefer longer terms. This helps choose between similar matches like "stearyl alcohol" vs just "alcohol".
+
+4. **Fallback Behavior**: If no matches are found (or if sorting produces undefined), the system falls back to the default ingredient for the category/group.
 
 ## Example
 
@@ -69,4 +93,5 @@ Given the search term "stearyl alcohol coconut derived":
 3. Sort terms by length before attempting matches
 4. Calculate coverage for all possible matches
 5. Sort by coverage first, then by term length
-6. Return the best match found
+6. Check for undefined after sorting to handle edge cases
+7. Fall back to default ingredient if no matches are found

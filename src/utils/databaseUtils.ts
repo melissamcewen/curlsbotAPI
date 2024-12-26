@@ -27,10 +27,7 @@ export function findIngredient(
 ): IngredientMatch {
   const normalizedSearchTerm = searchTerm.toLowerCase();
 
-  console.log('\nSearching for:', {
-    original: searchTerm,
-    normalized: normalizedSearchTerm,
-  });
+
   // First partition the database based on the search term
 
   const { database: partitionedDatabase, defaultIngredient } =
@@ -43,11 +40,7 @@ export function findIngredient(
     const terms = getIngredientTerms(ingredient).map((term) =>
       term.toLowerCase(),
     );
-    console.log('Comparing against ingredient:', {
-      id: ingredient.id,
-      terms: terms,
-      exactMatch: terms.includes(normalizedSearchTerm),
-    });
+
     // Try exact matches first
     if (terms.includes(normalizedSearchTerm)) {
       return {
@@ -82,11 +75,6 @@ export function findIngredient(
         .replace(/\s+/g, ' ')
         .trim();
 
-      console.log('Partial match attempt:', {
-        normalizedTerm,
-        normalizedSearchTermSpaces,
-        wouldMatch: normalizedSearchTermSpaces.includes(normalizedTerm),
-      });
 
       // Check if the search term contains the ingredient term as a complete word/phrase
       if (normalizedSearchTermSpaces.includes(normalizedTerm)) {
@@ -108,12 +96,14 @@ export function findIngredient(
       return b.term.length - a.term.length;
     })[0];
 
-    return {
-      uuid: crypto.randomUUID(),
-      input: searchTerm,
-      normalized: normalizedSearchTerm,
-      ingredient: bestMatch.ingredient,
-    };
+    if (bestMatch) {
+      return {
+        uuid: crypto.randomUUID(),
+        input: searchTerm,
+        normalized: normalizedSearchTerm,
+        ingredient: bestMatch.ingredient,
+      };
+    }
   }
 
   // If no match found, use default ingredient if available
@@ -279,7 +269,7 @@ export function findCategoryByInclusion(
     );
     // to quality as a match they must also match the group inclusion
     const group = findGroupByInclusion(groups, normalizedSearchTerm);
-    console.log(group);
+
 
     if (!group) return false;
 
