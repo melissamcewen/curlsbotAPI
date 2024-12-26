@@ -160,7 +160,9 @@ export interface Product {
   /** Raw ingredients list from the product */
   ingredients_raw?: string;
   /** Description of the product */
-  description?:  string;
+  description?: string;
+  /** ASIN of the product */
+  asin?: string;
 }
 
 /**
