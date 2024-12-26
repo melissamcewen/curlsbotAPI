@@ -4,9 +4,10 @@
       "name": "Bond Curl Rehab Salve, Bond Building Strength Treatment for Weak, Damaged Hair",
       "brand": "Curlsmith",
       "buy_url": "https://amzn.to/402sONw",
-      "product_categories": ["pre_poo"],
+      "product_categories": ["pre_poo", "featured"],
       "tags": ["high_porosity"],
-      "cost_rating": "3"
+      "cost_rating": "3",
+      "asin": "B08WPNSHCD"
     }
   ]
 }

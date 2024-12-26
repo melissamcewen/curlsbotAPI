@@ -5,9 +5,10 @@
       "brand": "Innersense",
       "buy_url": "https://amzn.to/2BYccc7",
       "product_categories": ["gels"],
-      "tags": ["normal_porosity", "hold", "high_porosity"],
+      "tags": ["normal_porosity", "hold", "high_porosity", "featured"],
       "cost_rating": "2",
-      "ingredients_raw": "water, aqua-eau, aloe barbadensis gel, hydroxyethylcellulose, maltodextrin copolymer, potassium hydroxide, gluconolactone, sodium benzoate, calcium gluconate, alkyl acrylate crosspolymer, citrus aurantium dulcis peel oil, caprylic capric triglyceride, potassium sorbate, sodium phytate, glycerin, chamomilla recutita matricaria flower extract, eucalyptus globulus leaf extract, ginkgo biloba leaf extract, aspalathus linearis leaf extract, honey extract, limonene"
+      "ingredients_raw": "water, aqua-eau, aloe barbadensis gel, hydroxyethylcellulose, maltodextrin copolymer, potassium hydroxide, gluconolactone, sodium benzoate, calcium gluconate, alkyl acrylate crosspolymer, citrus aurantium dulcis peel oil, caprylic capric triglyceride, potassium sorbate, sodium phytate, glycerin, chamomilla recutita matricaria flower extract, eucalyptus globulus leaf extract, ginkgo biloba leaf extract, aspalathus linearis leaf extract, honey extract, limonene",
+      "asin": "B002EOUQR2"
     },
 
     {
@@ -16,7 +17,8 @@
       "ingredients_raw": "water, aloe barbadensis leaf extract, polyacrylate-2 crosspolymer, maltodextrin vp copolymer, hydroxyethylcellulose, hydroxypropyltrimonium honey, laminaria saccharina algae extract, fucus vesiculosus bladderwrack extract, arnica montana flower extract, urtica dioica nettle extract, chamomilla recutita matricaria flower extract, silk amino acids, glycerin, sodium hydroxide, polyquaternium-10, ethylhexylglycerin, polysorbate-20, panthenol, phytic acid, phenoxyethanol, fragrance",
       "buy_url": "https://amzn.to/4iLNscf",
       "product_categories": ["gels"],
-      "tags": ["high_porosity", "normal_porosity", "low_porosity", "curl_enhancer"]
+      "tags": ["high_porosity", "normal_porosity", "low_porosity", "curl_enhancer", "featured"],
+      "asin": "B093XG3RDK"
 
     },
     {
@@ -25,15 +27,17 @@
       "ingredients_raw": "water, aqua-eau, aloe barbadensis aloe vera leaf gel, cyamop-sistetragonolobus guar gum, sclerotium gum, citrus aurantium amara bitter orange flower water, organic rooibos african camellia sinensis leaf extract, sodium benzoate, calcium gluconate, potassium sorbate, hydrolyzed rice protein, glycerin, chamomilla recutita matricaria flower extract, eucalyptus globulus leaf extract, ginkgo biloba leaf extract, aspalathus linearis leaf extract, eucalyptus globulus extract, citric acid, maltodextrin, honey extract, linalool, sorbitol, gluconolactone",
       "buy_url": "https://amzn.to/3ZSFbue",
       "product_categories": ["gels"],
-      "tags": ["normal_porosity", "low_porosity", "volume"]
+      "tags": ["normal_porosity", "low_porosity", "volume", "featured"],
+      "asin": "B002EOSVUQ"
     },
     {
       "name": "Irish Sea Moss Styling Gel",
       "brand": "Love Ur Curls",
       "ingredients_raw": "aqua water eau, chondrus crispus irish sea moss extract, passiflora edulis passion fruit seed oil, euterpe oleracea acai fruit oil, oryza sativa rice bran oil, aloe barbadensis aloe vera leaf extract, polyquaternium-37, sorbitol, polyquaternium-69, behentrimonium chloride, guar hydroxypropyltrimonium chloride, hydroxyethylcellulose, citric acid, glycerin, phenoxyethanol, ethylhexylglycerin, fragrance parfum",
       "product_categories": ["gels"],
-      "tags": ["low_porosity", "normal_porosity", "hold"],
-      "buy_url": "https://amzn.to/4fyvVl5"
+      "tags": ["low_porosity", "normal_porosity", "hold", "featured"],
+      "buy_url": "https://amzn.to/4fyvVl5",
+      "asin": "B09YMYDNX8"
     }
   ]
 }

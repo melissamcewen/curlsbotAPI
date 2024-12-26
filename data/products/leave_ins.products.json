@@ -5,8 +5,9 @@
       "brand": "Innersense",
       "buy_url": "https://amzn.to/2yjHQ1r",
       "product_categories": ["leave_ins"],
-      "tags": ["high_porosity", "normal_porosity"],
-      "cost_rating": "3"
+      "tags": ["high_porosity", "normal_porosity", "featured"],
+      "cost_rating": "3",
+      "asin": "B004KM1OEK"
     }
   ]
 }
