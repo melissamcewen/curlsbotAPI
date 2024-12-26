@@ -163,6 +163,8 @@ export interface Product {
   description?: string;
   /** ASIN of the product */
   asin?: string;
+  /** Country */
+  country?: string;
 }
 
 /**
