@@ -165,6 +165,8 @@ export interface Product {
   asin?: string;
   /** Country */
   country?: string;
+  /** Analysis status for the product */
+  status?: 'ok' | 'caution' | 'warning' | 'error';
 }
 
 /**

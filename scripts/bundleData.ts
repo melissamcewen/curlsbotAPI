@@ -2,6 +2,7 @@ import { readFileSync, writeFileSync, readdirSync } from 'fs';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
 import type { Reference } from '../src/types';
+import { Analyzer } from '../src/analyzer';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const DATA_DIR = join(__dirname, '../data');
@@ -10,7 +11,7 @@ const INGREDIENTS_OUTPUT_FILE = join(__dirname, '../src/data/bundledData.ts');
 const PRODUCTS_OUTPUT_FILE = join(__dirname, '../src/data/bundledProducts.ts');
 
 function convertToReferenceObjects(refs: (string | Reference)[]): Reference[] {
-  return refs.map(ref => {
+  return refs.map((ref) => {
     if (typeof ref === 'string') {
       return { url: ref };
     }
@@ -23,7 +24,9 @@ function generateIdFromName(name: string): string {
 }
 
 function loadIngredientsFromDir(dirPath: string): any {
-  const files = readdirSync(dirPath).filter(file => file.endsWith('.ingredients.json'));
+  const files = readdirSync(dirPath).filter((file) =>
+    file.endsWith('.ingredients.json'),
+  );
   const allIngredients: any[] = [];
 
   for (const file of files) {
@@ -55,7 +58,10 @@ function loadIngredientsFromDir(dirPath: string): any {
   return allIngredients.reduce((acc, ing) => {
     const ingredientName = ing.name || ing.id;
     if (!ingredientName) {
-      console.warn(`Warning: Ingredient missing both 'name' and 'id' fields:`, ing);
+      console.warn(
+        `Warning: Ingredient missing both 'name' and 'id' fields:`,
+        ing,
+      );
       return acc;
     }
 
@@ -66,15 +72,20 @@ function loadIngredientsFromDir(dirPath: string): any {
       name: ingredientName,
       categories: ing.categories || [],
       synonyms: ing.synonyms || [],
-      references: ing.references ? convertToReferenceObjects(ing.references) : []
+      references: ing.references
+        ? convertToReferenceObjects(ing.references)
+        : [],
     };
     return acc;
   }, {});
 }
 
 function loadProductsFromDir(dirPath: string): any {
-  const files = readdirSync(dirPath).filter(file => file.endsWith('.products.json'));
+  const files = readdirSync(dirPath).filter((file) =>
+    file.endsWith('.products.json'),
+  );
   const allProducts: any[] = [];
+  const analyzer = new Analyzer();
 
   for (const file of files) {
     const filePath = join(dirPath, file);
@@ -100,18 +111,30 @@ function loadProductsFromDir(dirPath: string): any {
     // Generate ID from name if name exists, otherwise use existing ID or warn
     const productName = product.name || product.id;
     if (!productName) {
-      console.warn(`Warning: Product missing both 'name' and 'id' fields:`, product);
+      console.warn(
+        `Warning: Product missing both 'name' and 'id' fields:`,
+        product,
+      );
       return acc;
     }
 
     const productId = generateIdFromName(productName);
+
+    // Analyze ingredients if raw ingredients exist
+    let status = undefined;
+    if (product.ingredients_raw) {
+      const analysis = analyzer.analyze(product.ingredients_raw);
+      status = analysis.status;
+    }
+
     acc[productId] = {
       ...product,
       id: productId,
       name: productName,
       product_categories: product.product_categories || [],
       systems_excluded: product.systems_excluded || [],
-      tags: product.tags || []
+      tags: product.tags || [],
+      status,
     };
     return acc;
   }, {});
@@ -135,21 +158,26 @@ function generateBundledData() {
   const settingsData = loadJsonFile(join(CONFIG_DIR, 'settings.json'));
 
   // Convert categories and groups to record format
-  const categories = (categoriesData?.categories || []).reduce((acc: any, cat: any) => {
-    if (!cat.id) {
-      console.warn(`Warning: Category missing required 'id' field:`, cat);
+  const categories = (categoriesData?.categories || []).reduce(
+    (acc: any, cat: any) => {
+      if (!cat.id) {
+        console.warn(`Warning: Category missing required 'id' field:`, cat);
+        return acc;
+      }
+      acc[cat.id] = {
+        ...cat, // Keep all original fields
+        // Ensure required fields have defaults if missing
+        name: cat.name || cat.id,
+        description: cat.description || '',
+        group: cat.group || 'others',
+        references: cat.references
+          ? convertToReferenceObjects(cat.references)
+          : [],
+      };
       return acc;
-    }
-    acc[cat.id] = {
-      ...cat, // Keep all original fields
-      // Ensure required fields have defaults if missing
-      name: cat.name || cat.id,
-      description: cat.description || '',
-      group: cat.group || 'others',
-      references: cat.references ? convertToReferenceObjects(cat.references) : []
-    };
-    return acc;
-  }, {});
+    },
+    {},
+  );
 
   const groups = (groupsData?.groups || []).reduce((acc: any, group: any) => {
     if (!group.id) {
@@ -161,36 +189,51 @@ function generateBundledData() {
       // Ensure required fields have defaults if missing
       name: group.name || group.id,
       inclusions: group.inclusions || [],
-      defaultIngredient: group.defaultIngredient || undefined
+      defaultIngredient: group.defaultIngredient || undefined,
     };
     return acc;
   }, {});
 
-  const settings = (settingsData?.settings || []).reduce((acc: any, setting: any) => {
-    // Ensure required fields exist
-    if (!setting.id) {
-      console.warn(`Warning: Setting missing required 'id' field:`, setting);
+  const settings = (settingsData?.settings || []).reduce(
+    (acc: any, setting: any) => {
+      // Ensure required fields exist
+      if (!setting.id) {
+        console.warn(`Warning: Setting missing required 'id' field:`, setting);
+        return acc;
+      }
+      // Preserve original structure but ensure required fields
+      acc[setting.id] = {
+        ...setting, // Keep all original fields
+        // Ensure required fields have defaults if missing
+        name: setting.name || setting.id,
+        description: setting.description || '',
+      };
       return acc;
-    }
-    // Preserve original structure but ensure required fields
-    acc[setting.id] = {
-      ...setting, // Keep all original fields
-      // Ensure required fields have defaults if missing
-      name: setting.name || setting.id,
-      description: setting.description || '',
-    };
-    return acc;
-  }, {});
+    },
+    {},
+  );
 
   // Generate TypeScript code for ingredients
   const ingredientsCode = `// This file is auto-generated. Do not edit directly.
 import type { IngredientDatabase, System, Setting } from '../types';
 
-export const defaultDatabase: IngredientDatabase = ${JSON.stringify({ ingredients, categories, groups }, null, 2)};
+export const defaultDatabase: IngredientDatabase = ${JSON.stringify(
+    { ingredients, categories, groups },
+    null,
+    2,
+  )};
 
-export const defaultSystems: System[] = ${JSON.stringify(systemsData?.systems || [], null, 2)};
+export const defaultSystems: System[] = ${JSON.stringify(
+    systemsData?.systems || [],
+    null,
+    2,
+  )};
 
-export const defaultSettings: Record<string, Setting> = ${JSON.stringify(settings, null, 2)};
+export const defaultSettings: Record<string, Setting> = ${JSON.stringify(
+    settings,
+    null,
+    2,
+  )};
 
 export function getBundledDatabase(): IngredientDatabase {
   return defaultDatabase;
@@ -209,7 +252,11 @@ export function getBundledSettings(): Record<string, Setting> {
   const productsCode = `// This file is auto-generated. Do not edit directly.
 import type { ProductDatabase } from '../types';
 
-export const defaultProductDatabase: ProductDatabase = ${JSON.stringify({ products }, null, 2)};
+export const defaultProductDatabase: ProductDatabase = ${JSON.stringify(
+    { products },
+    null,
+    2,
+  )};
 
 export function getBundledProducts(): ProductDatabase {
   return defaultProductDatabase;
@@ -219,7 +266,9 @@ export function getBundledProducts(): ProductDatabase {
   // Write the files
   writeFileSync(INGREDIENTS_OUTPUT_FILE, ingredientsCode);
   writeFileSync(PRODUCTS_OUTPUT_FILE, productsCode);
-  console.log(`Generated bundled ingredients data at ${INGREDIENTS_OUTPUT_FILE}`);
+  console.log(
+    `Generated bundled ingredients data at ${INGREDIENTS_OUTPUT_FILE}`,
+  );
   console.log(`Generated bundled products data at ${PRODUCTS_OUTPUT_FILE}`);
 }
 

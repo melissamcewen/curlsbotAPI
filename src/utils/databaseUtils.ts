@@ -60,44 +60,60 @@ export function findIngredient(
   }
 
   // If no exact match, try partial matches in the partitioned database
+  const partialMatches: {
+    ingredient: Ingredient;
+    term: string;
+    coverage: number;
+  }[] = [];
+
   for (const ingredient of Object.values(
     partitionedDatabase.ingredients,
   ) as Ingredient[]) {
-    const terms = getIngredientTerms(ingredient).map((term) =>
-      term.toLowerCase(),
-    );
+    const terms = getIngredientTerms(ingredient)
+      .map((term) => term.toLowerCase())
+      .filter((term) => !term.includes('unknown'))
+      // Sort terms by length (longest first) to prefer longer matches
+      .sort((a, b) => b.length - a.length);
 
     for (const term of terms) {
-      if (term.includes('unknown')) continue;
-      // Check if the search term contains the full ingredient term
-      const words = term.split(' ');
-      if (words.length > 1) {
-        // For multi-word terms, normalize spaces and check if search term contains the full term
-        const normalizedTerm = term.replace(/\s+/g, ' ').trim();
-        const normalizedSearchTermSpaces = normalizedSearchTerm
-          .replace(/\s+/g, ' ')
-          .trim();
-        // Check if the normalized search term includes the normalized ingredient term
-        if (normalizedSearchTermSpaces.includes(normalizedTerm)) {
-          return {
-            uuid: crypto.randomUUID(),
-            input: searchTerm,
-            normalized: normalizedSearchTerm,
-            ingredient,
-          };
-        }
-      } else {
-        // For single-word terms, check if the search term includes the term
-        if (normalizedSearchTerm.includes(term)) {
-          return {
-            uuid: crypto.randomUUID(),
-            input: searchTerm,
-            normalized: normalizedSearchTerm,
-            ingredient,
-          };
-        }
+      // Normalize spaces in both terms
+      const normalizedTerm = term.replace(/\s+/g, ' ').trim();
+      const normalizedSearchTermSpaces = normalizedSearchTerm
+        .replace(/\s+/g, ' ')
+        .trim();
+
+      console.log('Partial match attempt:', {
+        normalizedTerm,
+        normalizedSearchTermSpaces,
+        wouldMatch: normalizedSearchTermSpaces.includes(normalizedTerm),
+      });
+
+      // Check if the search term contains the ingredient term as a complete word/phrase
+      if (normalizedSearchTermSpaces.includes(normalizedTerm)) {
+        // Calculate how much of the search term this match covers
+        const coverage =
+          normalizedTerm.length / normalizedSearchTermSpaces.length;
+        partialMatches.push({ ingredient, term: normalizedTerm, coverage });
       }
     }
+  }
+
+  // Sort partial matches by coverage (highest first) and then by term length
+  if (partialMatches.length > 0) {
+    const bestMatch = partialMatches.sort((a, b) => {
+      // First compare by coverage
+      const coverageDiff = b.coverage - a.coverage;
+      if (coverageDiff !== 0) return coverageDiff;
+      // If coverage is the same, prefer longer terms
+      return b.term.length - a.term.length;
+    })[0];
+
+    return {
+      uuid: crypto.randomUUID(),
+      input: searchTerm,
+      normalized: normalizedSearchTerm,
+      ingredient: bestMatch.ingredient,
+    };
   }
 
   // If no match found, use default ingredient if available
