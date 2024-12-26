@@ -27,7 +27,6 @@ export function findIngredient(
 ): IngredientMatch {
   const normalizedSearchTerm = searchTerm.toLowerCase();
 
-
   // First partition the database based on the search term
 
   const { database: partitionedDatabase, defaultIngredient } =
@@ -74,7 +73,6 @@ export function findIngredient(
       const normalizedSearchTermSpaces = normalizedSearchTerm
         .replace(/\s+/g, ' ')
         .trim();
-
 
       // Check if the search term contains the ingredient term as a complete word/phrase
       if (normalizedSearchTermSpaces.includes(normalizedTerm)) {
@@ -269,7 +267,6 @@ export function findCategoryByInclusion(
     );
     // to quality as a match they must also match the group inclusion
     const group = findGroupByInclusion(groups, normalizedSearchTerm);
-
 
     if (!group) return false;
 
