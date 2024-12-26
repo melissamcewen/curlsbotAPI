@@ -67,6 +67,26 @@
       "ingredients_raw": "aqua, lauryl glucoside, decyl glucoside, coco glucoside, cocamidopropyl betaine, glycerin, propanediol, camellia sinensis white tea leaf extract, chamomilla recutita matricaria flower leaf stem extract, citric acid, phenoxyethanol, guar hydroxypropyltrimonium chloride, hydrolysed soy protein, potassium sorbate, lemon scented tea tree oil, mandarin peel oil, rosemary oil, may chang, eucalyptus radiata, lavandin oil, salvia clary sclarea oil, pogostemon cablin patchouli oil",
       "country": "AU"
 
+    },
+    {
+      "name": "Essential Moisture Cleanser",
+      "brand": "Curlsmith",
+      "product_categories": ["shampoos"],
+      "tags": ["high_porosity", "normal_porosity", "featured"],
+      "ingredients_raw": "water aqua, cocamidopropyl betaine, sodium methyl cocoyl taurate, lauryl glucoside, sodium chloride, peg-120 methyl glucose trioleate, betaine, helianthus annuus sunflower seed oil, aloe barbadensis leaf juice, selaginella lepidophylla resurrection flower extract, ocimum basilicum basil leaf extract, piper nigrum black pepper seed extract, rosmarinus officinalis rosemary leaf extract, salvia officinalis sage leaf extract, carapa guaianensis andiroba seed oil, propanediol, glycerin, guar hydroxypropyltrimonium chloride, polyquaternium-10, citric acid, phenoxyethanol, sodium benzoate, potassium sorbate, fragrance parfum, limonene, linalool",
+      "buy_url": "https://amzn.to/4gzkwmm",
+      "asin": "B0BPTC343Q",
+      "country": "UK"
+    },
+    {
+      "name": "Full Body Weightless Cleanser",
+      "brand": "Curlsmith",
+      "product_categories": ["shampoos"],
+      "tags": ["low_porosity", "normal_porosity", "featured"],
+      "ingredients_raw": "water aqua eau, glycerin, coco-glucoside, decyl glucoside, sodium methyl cocoyl taurate, xanthan gum, saccharide isomerate, guar hydroxypropyltrimonium chloride, polyquaternium-10, tilia tomentosa bud extract, olea europaea olive leaf extract, arctium majus root extract, arnica montana flower extract, calendula officinalis flower extract, chamomilla recutita matricaria flower extract, citrus limon lemon peel extract, hedera helix ivy leaf extract, lamium album extract, nasturtium officinale extract, pinus sylvestris bud extract, rosmarinus officinalis rosemary leaf extract, salvia officinalis sage leaf extract, tropaeolum majus flower extract, pentylene glycol, panthenol, tocopherol, cyclodextrin, sodium chloride, cyamopsis tetragonoloba guar gum, fragrance parfum, citric acid, sodium hydroxide, sodium gluconate, sodium citrate, phytic acid, sodium benzoate, potassium sorbate, hydroxycitronellal, citronellol",
+      "buy_url": "https://amzn.to/3Pdq0qB",
+      "asin": "B0CZW7PPLQ",
+      "country": "UK"
     }
   ]
 }

@@ -97,7 +97,7 @@ export const defaultProductDatabase: ProductDatabase = {
       "systems_excluded": [],
       "status": "ok"
     },
-    "drench_&_quench_rich_conditioner": {
+    "drench_&_quench_rich_conditioner_au": {
       "name": "Drench & Quench Rich Conditioner",
       "brand": "Lohy",
       "product_categories": [
@@ -112,11 +112,11 @@ export const defaultProductDatabase: ProductDatabase = {
       "ingredients_raw": "aqua, aloe barbadensis aloe vera leaf juice, cetearyl alcohol, behentrimonium methosulfate, glycerin, propanediol, cocos nucifera coconut oil, cetrimonium chloride, phenoxyethanol, butyrospermum parkii shea butter, hydrolised soy protein, simmondsia chinensis jojoba seed oil, chamomila recutita matricaria flower leaf stem extract, camellia sinensis white tea leaf extract, guar hydroxypropyltrimonium chloride, polyquaternium-10, sodium benzoate, citrus aurantifolia lime oil, cymbopogan flexuosus lemongrass oil, sodium pca, sodium lactate, arginine, aspartic acid, pca, glycine, alanine, serine, valine, proline, threonine, isoleucine, histidine, phenylalanine",
       "buy_url": "https://lohy.com.au/products/drench-quench-curl-moisture-mask?aff=49",
       "country": "AU",
-      "id": "drench_&_quench_rich_conditioner",
+      "id": "drench_&_quench_rich_conditioner_au",
       "systems_excluded": [],
       "status": "ok"
     },
-    "nourish_&_flourish_conditioner": {
+    "nourish_&_flourish_conditioner_au": {
       "name": "Nourish & Flourish Conditioner",
       "brand": "Lohy",
       "product_categories": [
@@ -130,9 +130,29 @@ export const defaultProductDatabase: ProductDatabase = {
       "buy_url": "https://lohy.com.au/products/nourish-flourish-conditioner-curly-hair?aff=49",
       "ingredients_raw": "aqua, cetearyl alcohol, glycerin, propanediol, cocos nucifera coconut oil, cetrimonium chloride, hydrolysed soy protein, phenoxyethanol, simmondsia chinensis jojoba seed oil, chamomila recutita matricaria flower leaf stem extract, cucumis sativus cucumber fruit extract, benzyl alcohol, guar hydroxypropyltrimonium chloride, lemon scented tea tree oil, mandarin peel oil, rosemary oil, may chang, eucalyptus radiata, lavandin oil, salvia clary sclarea oil, pogostemon cablin patchouli oil, citric acid, dehydroacetic acid",
       "country": "AU",
-      "id": "nourish_&_flourish_conditioner",
+      "id": "nourish_&_flourish_conditioner_au",
       "systems_excluded": [],
       "status": "ok"
+    },
+    "essential_moisture_conditioner_uk": {
+      "name": "Essential Moisture Conditioner",
+      "brand": "Curlsmith",
+      "product_categories": [
+        "conditioners"
+      ],
+      "tags": [
+        "normal_porosity",
+        "low_porosity",
+        "high_porosity",
+        "featured"
+      ],
+      "ingredients_raw": "water aqua, cetearyl alcohol, hydroxypropyl starch phosphate, betaine, cetyl palmitate, behentrimonium chloride, butyrospermum parkii shea butter, cocos nucifera coconut oil, persea gratissima avocado oil, helianthus annuus sunflower seed oil, aloe barbadensis leaf juice, selaginella lepidophylla resurrection flower extract, ocimum basilicum basil leaf extract, piper nigrum black pepper seed extract, rosmarinus officinalis rosemary leaf extract, salvia officinalis sage leaf extract, carapa guaianensis andiroba seed oil, glycerin, guar hydroxypropyltrimonium chloride, panthenol, glyceryl undecylenate, fragrance parfum, citric acid, sodium hydroxide, sodium gluconate, glyceryl caprylate, potassium sorbate, sodium benzoate, limonene, linalool, isopropyl alcohol",
+      "buy_url": "https://amzn.to/3PdnFMl",
+      "country": "UK",
+      "asin": "B0BPTBMJY4",
+      "id": "essential_moisture_conditioner_uk",
+      "systems_excluded": [],
+      "status": "caution"
     },
     "coconut_cowash_cleansing_conditioner": {
       "name": "Coconut Cowash Cleansing Conditioner",
@@ -164,6 +184,24 @@ export const defaultProductDatabase: ProductDatabase = {
       "asin": "B005SIR5G6",
       "id": "co-wash_conditioning_cleanser",
       "product_categories": [],
+      "systems_excluded": [],
+      "status": "ok"
+    },
+    "curl_quenching_conditioning_wash_uk": {
+      "name": "Curl Quenching Conditioning Wash",
+      "brand": "Curlsmith",
+      "product_categories": [
+        "cowashes"
+      ],
+      "tags": [
+        "high_porosity",
+        "featured"
+      ],
+      "ingredients_raw": "water aqua, cetearyl alcohol, hydroxypropyl starch phosphate, cetyl palmitate, behentrimonium chloride, cocamidopropyl betaine, fragrance parfum, selaginella lepidophylla resurrection flower extract, carapa guaianensis andiroba seed oil, persea gratissima avocado oil, salvia officinalis sage leaf extract, ocimum basilicum basil leaf extract, piper nigrum black pepper seed extract, aloe barbadensis aloe vera leaf juice, rosmarinus officinalis rosemary leaf extract, helianthus annuus sunflower seed oil, butyrospermum parkii shea butter, cocos nucifera coconut oil, glycerin, guar hydroxypropyltrimonium chloride, panthenol, glyceryl caprylate, glyceryl undecylenate, potassium sorbate, sodium benzoate, sodium hydroxide, sodium chloride, citric acid, disodium edta, limonene, linalool",
+      "buy_url": "https://amzn.to/4gOMx94",
+      "asin": "B07D7CBBPC",
+      "country": "UK",
+      "id": "curl_quenching_conditioning_wash_uk",
       "systems_excluded": [],
       "status": "ok"
     },
@@ -205,7 +243,7 @@ export const defaultProductDatabase: ProductDatabase = {
       "systems_excluded": [],
       "status": "ok"
     },
-    "cruise_control_curl_cream": {
+    "cruise_control_curl_cream_au": {
       "name": "Cruise Control Curl Cream",
       "brand": "Lohy",
       "buy_url": "https://lohy.com.au/products/cruise-control-curl-cream-curly-hair-styling?aff=49",
@@ -220,7 +258,27 @@ export const defaultProductDatabase: ProductDatabase = {
       ],
       "ingredients_raw": "aqua, caprylic capric triglyceride, cetearyl alcohol, glycerin, propanediol, cetrimonium chloride, butyrospermum parkii shea butter, oryza sativa rice bran oil, glyceryl stearate, phenoxyethanol, citrus nobilis mandarin peel oil, hydrolised soy protein, cucumis sativus cucumber fruit extract, chamomila recutita matricaria flower leaf stem extract, camellia sinensis white tea leaf extract, polyquaternium-10, sodium benzoate",
       "country": "AU",
-      "id": "cruise_control_curl_cream",
+      "id": "cruise_control_curl_cream_au",
+      "systems_excluded": [],
+      "status": "ok"
+    },
+    "weightless_air_dry_cream_uk": {
+      "name": "Weightless Air Dry Cream",
+      "brand": "Curlsmith",
+      "product_categories": [
+        "creams"
+      ],
+      "tags": [
+        "high_porosity",
+        "normal_porosity",
+        "curl_enhancer",
+        "featured"
+      ],
+      "ingredients_raw": "water aqua, ricinus communis castor seed oil, dicaprylyl carbonate, cetearyl alcohol, orbignya speciosa babassu kernel oil, behentrimonium chloride, sodium hyaluronate, astrocaryum murumuru seed butter, simmondsia chinensis jojoba seed oil, butyrospermum parkii shea butter, hylocereus undatus dragon fruit fruit extract, paullinia cupana guarana seed extract, urtica dioica nettle leaf extract, zingiber officinale ginger root extract, polyquaternium-10, panthenol, guar hydroxypropyltrimonium chloride, tocopherol, disodium edta, ethylhexylglycerin, glycerin, citric acid, sodium hydroxide, potassium sorbate, sodium benzoate, phenoxyethanol, linalool, limonene, citronellol, fragrance parfum",
+      "buy_url": "https://amzn.to/3BMU6OQ",
+      "asin": "B08N5CCKJ8",
+      "country": "UK",
+      "id": "weightless_air_dry_cream_uk",
       "systems_excluded": [],
       "status": "ok"
     },
@@ -241,6 +299,26 @@ export const defaultProductDatabase: ProductDatabase = {
       "ingredients_raw": "water, glycerin, carboxymethylcellulose, aloe barbadensis leaf extract, pectin, hydroxypropyltrimonium honey, silk amino acids, hypnea musciformis extract seaweed, gelidiella acerosa extract seaweed, sargassum filipendula seaweed extract, sorbitol, rosmarinus officinalis rosemary leaf extract, salix alba willow bark extract, urtica dioica nettle extract, ethylhexylglycerin, phenoxyethanol, citrus senensis oil, citrus limon oil, citrus aurantifolia oil, citrus paradisi oil",
       "asin": "B005SIR12E",
       "id": "curl_enhancing_custard",
+      "systems_excluded": [],
+      "status": "ok"
+    },
+    "curl_defining_styling_souffle_uk": {
+      "name": "Curl Defining Styling Souffle",
+      "brand": "Curlsmith",
+      "ingredients_raw": "water aqua, glycerin, babassu oil polyglyceryl-4 esters, sorbitol, chondrus crispus irish moss powder, fragrance parfum, linum usitatissimum linseed seed extract, carapa guaianensis andiroba seed oil, rosmarinus officinalis rosemary leaf extract, salvia officinalis sage leaf extract, persea gratissima avocado oil, selaginella lepidophylla resurrection flower extract, aloe barbadensis aloe vera leaf juice, ocimum basilicum basil leaf extract, piper nigrum black pepper seed extract, butyrospermum parkii shea butter, helianthus annuus sunflower seed oil, glyceryl caprylate, glyceryl undecylenate, potassium sorbate, sodium benzoate, disodium edta, citric acid, limonene, linalool",
+      "product_categories": [
+        "custards"
+      ],
+      "tags": [
+        "low_porosity",
+        "normal_porosity",
+        "high_porosity",
+        "featured"
+      ],
+      "buy_url": "https://amzn.to/40auHbe",
+      "asin": "B07D7CKKL3",
+      "country": "UK",
+      "id": "curl_defining_styling_souffle_uk",
       "systems_excluded": [],
       "status": "ok"
     },
@@ -281,7 +359,27 @@ export const defaultProductDatabase: ProductDatabase = {
       "systems_excluded": [],
       "status": "ok"
     },
-    "chutzpah_volumising_foam": {
+    "double_cream_deep_quencher_uk": {
+      "name": "Double Cream Deep Quencher",
+      "brand": "Curlsmith",
+      "product_categories": [
+        "deep_conditioners"
+      ],
+      "tags": [
+        "high_porosity",
+        "normal_porosity",
+        "featured",
+        "low_porosity"
+      ],
+      "ingredients_raw": "water aqua, cetearyl alcohol, behentrimonium chloride, propanediol, hydroxypropyl starch phosphate, cetyl palmitate, fragrance parfum, guar hydroxypropyltrimonium chloride, selaginella lepidophylla resurrection flower extract, carapa guaianensis andiroba seed oil, aloe barbadensis aloe vera leaf juice, ocimum basilicum basil leaf extract, piper nigrum black pepper seed extract, rosmarinus officinalis rosemary leaf extract, salvia officinalis sage leaf extract, helianthus annuus sunflower seed oil, prunus armeniaca apricot kernel oil, persea gratissima avocado oil, butyrospermum parkii shea butter, panthenol, ethylhexylglycerin, citric acid, disodium edta, sodium hydroxide, potassium sorbate, sodium benzoate, glycerin, phenoxyethanol, linalool, limonene",
+      "buy_url": "https://amzn.to/4iVdf1y",
+      "asin": "B08639DTVD",
+      "country": "UK",
+      "id": "double_cream_deep_quencher_uk",
+      "systems_excluded": [],
+      "status": "ok"
+    },
+    "chutzpah_volumising_foam_au": {
       "name": "Chutzpah Volumising Foam",
       "brand": "Lohy",
       "buy_url": "https://lohy.com.au/products/chutzpah-volumising-curl-foam?aff=49",
@@ -296,7 +394,7 @@ export const defaultProductDatabase: ProductDatabase = {
       ],
       "ingredients_raw": "aqua, aloe barbadensis aloe vera leaf juice, pullulan, galactoarabinan, glycerin, propanediol, lauryl glucoside, decyl glucoside, cocamidopropyl betaine, camellia sinensis white tea leaf extract, chamomila recutita matricaria flower leaf stem extract, phenoxyethanol, hydrolised soy protein, potassium sorbate, citric acid, citrus limon lemon peel oil, pelargonium graveolens geranium flower oil",
       "country": "AU",
-      "id": "chutzpah_volumising_foam",
+      "id": "chutzpah_volumising_foam_au",
       "systems_excluded": [],
       "status": "ok"
     },
@@ -316,6 +414,26 @@ export const defaultProductDatabase: ProductDatabase = {
       "asin": "B079B3HKZK",
       "ingredients_raw": "water, pullulan, galactoarabinan, aloe barbadensis aloe vera leaf juice, glycerin, caprylyl capryl glucoside, gluconolactone, sodium benzoate, calcium gluconate, hydrolyzed rice protein, decyl glucoside, lauryl glucoside, sorbitol, potassium sorbate, cananga odorata flower oil, lavandula angustifolia lavender oil, citrus aurantium dulcis orange peel oil, salvia sclarea clary oil, vanillin, pogostemon cablin patchouli oil, glycine soja soybean oil, hydroxypropyltrimonium honey, sorbic acid, citric acid, diheptyl succinate, capryloyl glycerin sebacic acid copolymer, vaccinium macrocarpon cranberry seed oil, vitis vinifera grape seed oil, cucurbita pepo pumpkin seed oil, macadamia ternifolia seed oil, macelignan, tocopherol, linalool, limonene",
       "id": "i_create_lift_volumizing_foam",
+      "systems_excluded": [],
+      "status": "ok"
+    },
+    "bouncy_strength_volume_foam_uk": {
+      "name": "Bouncy Strength Volume Foam",
+      "brand": "Curlsmith",
+      "product_categories": [
+        "foams"
+      ],
+      "tags": [
+        "normal_porosity",
+        "volume",
+        "low_porosity",
+        "featured"
+      ],
+      "ingredients_raw": "water aqua, vp va copolymer, cocamidopropyl betaine, hydrolyzed rice protein, hydrolyzed hemp seed extract, ribes nigrum black currant fruit extract, lentinus edodes shiitake mushroom extract, psidium guajava guava fruit extract, brassica oleracea acephala kale leaf extract, cucurbita pepo pumpkin seed extract, opuntia tuna prickly pear fruit extract, glycerin, panthenol, potassium sorbate, ethylhexylglycerin, disodium edta, citric acid, sodium benzoate, peg-40 hydrogenated castor oil, phenoxyethanol, sodium hydroxide, linalool, limonene, geraniol, benzyl alcohol, fragrance parfum",
+      "buy_url": "https://amzn.to/4fCXd9P",
+      "asin": "B08WPSW84H",
+      "country": "UK",
+      "id": "bouncy_strength_volume_foam_uk",
       "systems_excluded": [],
       "status": "ok"
     },
@@ -378,7 +496,7 @@ export const defaultProductDatabase: ProductDatabase = {
       "systems_excluded": [],
       "status": "ok"
     },
-    "pow_strong_hold_gel": {
+    "pow_strong_hold_gel_au": {
       "name": "POW Strong Hold Gel",
       "brand": "Lohy",
       "buy_url": "https://lohy.com.au/products/pow-strong-hold-gel-curly-hair?aff=49",
@@ -393,11 +511,11 @@ export const defaultProductDatabase: ProductDatabase = {
         "featured"
       ],
       "country": "AU",
-      "id": "pow_strong_hold_gel",
+      "id": "pow_strong_hold_gel_au",
       "systems_excluded": [],
       "status": "ok"
     },
-    "oomph_hydrating_gel": {
+    "oomph_hydrating_gel_au": {
       "name": "Oomph Hydrating Gel",
       "brand": "Lohy",
       "buy_url": "https://lohy.com.au/products/oomph-volumising-lotion-curly-hair-styling?aff=49",
@@ -412,7 +530,28 @@ export const defaultProductDatabase: ProductDatabase = {
         "featured"
       ],
       "country": "AU",
-      "id": "oomph_hydrating_gel",
+      "id": "oomph_hydrating_gel_au",
+      "systems_excluded": [],
+      "status": "ok"
+    },
+    "hydro_style_flexi-jelly_uk": {
+      "name": "Hydro Style Flexi-Jelly",
+      "brand": "Curlsmith",
+      "product_categories": [
+        "gels"
+      ],
+      "tags": [
+        "normal_porosity",
+        "low_porosity",
+        "curl_enhancer",
+        "featured",
+        "high_porosity"
+      ],
+      "ingredients_raw": "water aqua, pvp, peg-40 hydrogenated castor oil, sodium hyaluronate, camellia sinensis green tea leaf extract, lavandula angustifolia lavender flower extract, thymus vulgaris thyme leaf extract, thuja occidentalis white cedar leaf extract, phyllanthus emblica amla fruit extract, panthenol, disodium edta, carbomer, caprylyl glycol, sodium benzoate, potassium sorbate, aminomethyl propanol, glycerin, phenoxyethanol, ethylhexylglycerin, linalool, limonene, citronellol, fragrance parfum",
+      "buy_url": "https://amzn.to/3BHjZj1",
+      "asin": "B08N5BX78W",
+      "country": "UK",
+      "id": "hydro_style_flexi-jelly_uk",
       "systems_excluded": [],
       "status": "ok"
     },
@@ -433,7 +572,26 @@ export const defaultProductDatabase: ProductDatabase = {
       "id": "sweet_spirit_leave-in_conditioner",
       "systems_excluded": []
     },
-    "hush_nourishing_oil": {
+    "hydrate_&_plump_leave-in_conditioner_uk": {
+      "name": "Hydrate & Plump Leave-In Conditioner",
+      "brand": "Curlsmith",
+      "product_categories": [
+        "leave_ins"
+      ],
+      "tags": [
+        "normal_porosity",
+        "high_porosity",
+        "featured"
+      ],
+      "ingredients_raw": "water aqua eau, dicaprylyl carbonate, cetearyl alcohol, coco-caprylate caprate, ricinus communis castor seed oil, behentrimonium chloride, glycerin, panthenol, butyrospermum parkii shea butter, simmondsia chinensis jojoba seed oil, guar hydroxypropyltrimonium chloride, polyquaternium-10, olea europaea olive leaf extract, tilia tomentosa bud extract, arctium majus root extract, arnica montana flower extract, calendula officinalis flower extract, chamomilla recutita matricaria flower extract, citrus limon lemon peel extract, hedera helix ivy leaf extract, lamium album extract, nasturtium officinale extract, pinus sylvestris bud extract, rosmarinus officinalis rosemary leaf extract, salvia officinalis sage leaf extract, tropaeolum majus flower extract, isopropyl alcohol, pentylene glycol, tocopherol, maltodextrin, cyclodextrin, pvp, cyamopsis tetragonoloba guar gum, xanthan gum, maltodextrin vp copolymer, ethylhexylglycerin, fragrance parfum, citric acid, sodium gluconate, phytic acid, phenoxyethanol, potassium sorbate, sodium benzoate, hydroxycitronellal, citronellol",
+      "buy_url": "https://amzn.to/41QjtK5",
+      "asin": "B0CZVVB2C9",
+      "country": "UK",
+      "id": "hydrate_&_plump_leave-in_conditioner_uk",
+      "systems_excluded": [],
+      "status": "caution"
+    },
+    "hush_nourishing_oil_au": {
       "name": "Hush Nourishing Oil",
       "brand": "Hush",
       "buy_url": "https://lohy.com.au/products/hush-finishing-oil-curly-hair?aff=49",
@@ -447,7 +605,26 @@ export const defaultProductDatabase: ProductDatabase = {
       ],
       "ingredients_raw": "helianthus annuus sunflower seed oil, oenothera biennis evening primrose oil, vitis vinifera grape seed oil, simmondsia chinensis jojoba seed oil, backhousia citriodora lemon myrtle leaf oil, tocopheryl acetate, rosa canina rosehip fruit oil, macadamia ternifolia seed oil",
       "country": "AU",
-      "id": "hush_nourishing_oil",
+      "id": "hush_nourishing_oil_au",
+      "systems_excluded": [],
+      "status": "ok"
+    },
+    "bonding_oil_uk": {
+      "name": "Bonding Oil",
+      "brand": "Curlsmith",
+      "product_categories": [
+        "oils"
+      ],
+      "tags": [
+        "normal_porosity",
+        "high_porosity",
+        "featured"
+      ],
+      "ingredients_raw": "hydrogenated ethylhexyl olivate, hydrogenated olive oil unsaponifiables, coco-caprylate caprate, shea butter ethyl esters, hydrogenated castor oil sebacic acid copolymer, prunus armeniaca apricot kernel oil, hippophae rhamnoides sea buckthorn fruit oil, lens esculenta lentil seed extract, hydrolyzed cicer chickpea seed extract, chenopodium quinoa seed extract, fragrance parfum, linalool, limonene, geraniol, benzyl alcohol, citronellol",
+      "buy_url": "https://amzn.to/3DwDN9b",
+      "asin": "B09GC96P46",
+      "country": "UK",
+      "id": "bonding_oil_uk",
       "systems_excluded": [],
       "status": "ok"
     },
@@ -456,16 +633,36 @@ export const defaultProductDatabase: ProductDatabase = {
       "brand": "Curlsmith",
       "buy_url": "https://amzn.to/402sONw",
       "product_categories": [
-        "pre_poo",
-        "featured"
+        "pre_poo"
       ],
       "tags": [
         "high_porosity"
       ],
       "cost_rating": "3",
       "asin": "B08WPNSHCD",
+      "ingredients_raw": "water aqua, cetearyl alcohol, salvia hispanica chia seed extract, creatine, polyquaternium-10, stearamidopropyl dimethylamine, lentinus edodes shiitake extract, opuntia tuna prickly pear fruit extract, cucurbita pepo pumpkin seed extract, psidium guajava guava fruit extract, prunus amygdalus dulcis sweet almond oil, ribes nigrum black currant fruit extract, brassica oleracea acephala kale leaf extract, leuconostoc radish root ferment filtrate, polyquaternium-37, hydroxypropylgluconamide, hydroxypropylammonium gluconate, disodium edta, potassium sorbate, tartaric acid, citric acid, ethylhexylglycerin, glycerin, behentrimonium chloride, phenoxyethanol, sodium benzoate, benzyl alcohol, geraniol, fragrance parfum, linalool, limonene",
       "id": "bond_curl_rehab_salve,_bond_building_strength_treatment_for_weak,_damaged_hair",
-      "systems_excluded": []
+      "systems_excluded": [],
+      "status": "ok"
+    },
+    "bond_curl_rehab_salve_uk": {
+      "name": "Bond Curl Rehab Salve",
+      "brand": "Curlsmith",
+      "product_categories": [
+        "pre_poo"
+      ],
+      "tags": [
+        "normal_porosity",
+        "high_porosity",
+        "featured"
+      ],
+      "ingredients_raw": "water aqua, cetearyl alcohol, salvia hispanica chia seed extract, creatine, polyquaternium-10, stearamidopropyl dimethylamine, lentinus edodes shiitake extract, opuntia tuna prickly pear fruit extract, cucurbita pepo pumpkin seed extract, psidium guajava guava fruit extract, prunus amygdalus dulcis sweet almond oil, ribes nigrum black currant fruit extract, brassica oleracea acephala kale leaf extract, leuconostoc radish root ferment filtrate, polyquaternium-37, hydroxypropylgluconamide, hydroxypropylammonium gluconate, disodium edta, potassium sorbate, tartaric acid, citric acid, ethylhexylglycerin, glycerin, behentrimonium chloride, phenoxyethanol, sodium benzoate, benzyl alcohol, geraniol, fragrance parfum, linalool, limonene",
+      "buy_url": "https://amzn.to/429CqI3",
+      "asin": "B08WPNSHCD",
+      "country": "UK",
+      "id": "bond_curl_rehab_salve_uk",
+      "systems_excluded": [],
+      "status": "ok"
     },
     "curl_shampoo": {
       "name": "Curl Shampoo",
@@ -579,7 +776,7 @@ export const defaultProductDatabase: ProductDatabase = {
       "systems_excluded": [],
       "status": "ok"
     },
-    "nourish_&_flourish_shampoo": {
+    "nourish_&_flourish_shampoo_au": {
       "name": "Nourish & Flourish Shampoo",
       "brand": "Lohy",
       "product_categories": [
@@ -594,7 +791,45 @@ export const defaultProductDatabase: ProductDatabase = {
       "buy_url": "https://lohy.com.au/products/nourish-flourish-curly-hair-shampoo?aff=49",
       "ingredients_raw": "aqua, lauryl glucoside, decyl glucoside, coco glucoside, cocamidopropyl betaine, glycerin, propanediol, camellia sinensis white tea leaf extract, chamomilla recutita matricaria flower leaf stem extract, citric acid, phenoxyethanol, guar hydroxypropyltrimonium chloride, hydrolysed soy protein, potassium sorbate, lemon scented tea tree oil, mandarin peel oil, rosemary oil, may chang, eucalyptus radiata, lavandin oil, salvia clary sclarea oil, pogostemon cablin patchouli oil",
       "country": "AU",
-      "id": "nourish_&_flourish_shampoo",
+      "id": "nourish_&_flourish_shampoo_au",
+      "systems_excluded": [],
+      "status": "ok"
+    },
+    "essential_moisture_cleanser_uk": {
+      "name": "Essential Moisture Cleanser",
+      "brand": "Curlsmith",
+      "product_categories": [
+        "shampoos"
+      ],
+      "tags": [
+        "high_porosity",
+        "normal_porosity",
+        "featured"
+      ],
+      "ingredients_raw": "water aqua, cocamidopropyl betaine, sodium methyl cocoyl taurate, lauryl glucoside, sodium chloride, peg-120 methyl glucose trioleate, betaine, helianthus annuus sunflower seed oil, aloe barbadensis leaf juice, selaginella lepidophylla resurrection flower extract, ocimum basilicum basil leaf extract, piper nigrum black pepper seed extract, rosmarinus officinalis rosemary leaf extract, salvia officinalis sage leaf extract, carapa guaianensis andiroba seed oil, propanediol, glycerin, guar hydroxypropyltrimonium chloride, polyquaternium-10, citric acid, phenoxyethanol, sodium benzoate, potassium sorbate, fragrance parfum, limonene, linalool",
+      "buy_url": "https://amzn.to/4gzkwmm",
+      "asin": "B0BPTC343Q",
+      "country": "UK",
+      "id": "essential_moisture_cleanser_uk",
+      "systems_excluded": [],
+      "status": "ok"
+    },
+    "full_body_weightless_cleanser_uk": {
+      "name": "Full Body Weightless Cleanser",
+      "brand": "Curlsmith",
+      "product_categories": [
+        "shampoos"
+      ],
+      "tags": [
+        "low_porosity",
+        "normal_porosity",
+        "featured"
+      ],
+      "ingredients_raw": "water aqua eau, glycerin, coco-glucoside, decyl glucoside, sodium methyl cocoyl taurate, xanthan gum, saccharide isomerate, guar hydroxypropyltrimonium chloride, polyquaternium-10, tilia tomentosa bud extract, olea europaea olive leaf extract, arctium majus root extract, arnica montana flower extract, calendula officinalis flower extract, chamomilla recutita matricaria flower extract, citrus limon lemon peel extract, hedera helix ivy leaf extract, lamium album extract, nasturtium officinale extract, pinus sylvestris bud extract, rosmarinus officinalis rosemary leaf extract, salvia officinalis sage leaf extract, tropaeolum majus flower extract, pentylene glycol, panthenol, tocopherol, cyclodextrin, sodium chloride, cyamopsis tetragonoloba guar gum, fragrance parfum, citric acid, sodium hydroxide, sodium gluconate, sodium citrate, phytic acid, sodium benzoate, potassium sorbate, hydroxycitronellal, citronellol",
+      "buy_url": "https://amzn.to/3Pdq0qB",
+      "asin": "B0CZW7PPLQ",
+      "country": "UK",
+      "id": "full_body_weightless_cleanser_uk",
       "systems_excluded": [],
       "status": "ok"
     }

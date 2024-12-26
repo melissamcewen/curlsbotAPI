@@ -19,8 +19,9 @@ function convertToReferenceObjects(refs: (string | Reference)[]): Reference[] {
   });
 }
 
-function generateIdFromName(name: string): string {
-  return name.toLowerCase().replace(/\s+/g, '_');
+function generateIdFromName(name: string, country?: string): string {
+  const baseId = name.toLowerCase().replace(/\s+/g, '_');
+  return country ? `${baseId}_${country.toLowerCase()}` : baseId;
 }
 
 function loadIngredientsFromDir(dirPath: string): any {
@@ -118,7 +119,7 @@ function loadProductsFromDir(dirPath: string): any {
       return acc;
     }
 
-    const productId = generateIdFromName(productName);
+    const productId = generateIdFromName(productName, product.country);
 
     // Analyze ingredients if raw ingredients exist
     let status = undefined;

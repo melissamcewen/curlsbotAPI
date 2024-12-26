@@ -58,6 +58,16 @@
       "tags": ["normal_porosity", "high_porosity", "volume", "featured"],
       "country": "AU"
 
+    },
+    {
+      "name": "Hydro Style Flexi-Jelly", 
+      "brand": "Curlsmith",
+      "product_categories": ["gels"],
+      "tags": ["normal_porosity", "low_porosity", "curl_enhancer", "featured", "high_porosity"],
+      "ingredients_raw": "water aqua, pvp, peg-40 hydrogenated castor oil, sodium hyaluronate, camellia sinensis green tea leaf extract, lavandula angustifolia lavender flower extract, thymus vulgaris thyme leaf extract, thuja occidentalis white cedar leaf extract, phyllanthus emblica amla fruit extract, panthenol, disodium edta, carbomer, caprylyl glycol, sodium benzoate, potassium sorbate, aminomethyl propanol, glycerin, phenoxyethanol, ethylhexylglycerin, linalool, limonene, citronellol, fragrance parfum",
+      "buy_url": "https://amzn.to/3BHjZj1",
+      "asin": "B08N5BX78W",
+      "country": "UK"
     }
   ]
 }

@@ -8,6 +8,16 @@
       "tags": ["high_porosity", "normal_porosity", "featured"],
       "ingredients_raw": "helianthus annuus sunflower seed oil, oenothera biennis evening primrose oil, vitis vinifera grape seed oil, simmondsia chinensis jojoba seed oil, backhousia citriodora lemon myrtle leaf oil, tocopheryl acetate, rosa canina rosehip fruit oil, macadamia ternifolia seed oil",
       "country": "AU"
+    },
+    {
+      "name": "Bonding Oil",
+      "brand": "Curlsmith",
+      "product_categories": ["oils"],
+      "tags": ["normal_porosity", "high_porosity", "featured"],
+      "ingredients_raw": "hydrogenated ethylhexyl olivate, hydrogenated olive oil unsaponifiables, coco-caprylate caprate, shea butter ethyl esters, hydrogenated castor oil sebacic acid copolymer, prunus armeniaca apricot kernel oil, hippophae rhamnoides sea buckthorn fruit oil, lens esculenta lentil seed extract, hydrolyzed cicer chickpea seed extract, chenopodium quinoa seed extract, fragrance parfum, linalool, limonene, geraniol, benzyl alcohol, citronellol",
+      "buy_url": "https://amzn.to/3DwDN9b",
+      "asin": "B09GC96P46",
+      "country": "UK"
     }
   ]
 }
