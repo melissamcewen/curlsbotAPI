@@ -50,6 +50,24 @@
       "buy_url": "https://amzn.to/4iNhH2s",
       "cost_rating": "3",
       "asin": "B0BHC6CTQ5"
+    },
+    {
+      "name": "Drench & Quench Rich Conditioner",
+      "brand": "Lohy",
+      "product_categories": ["conditioners", "deep_conditioners"],
+      "tags": ["high_porosity", "normal_porosity", "featured"],
+      "ingredients_raw": "aqua, aloe barbadensis aloe vera leaf juice, cetearyl alcohol, behentrimonium methosulfate, glycerin, propanediol, cocos nucifera coconut oil, cetrimonium chloride, phenoxyethanol, butyrospermum parkii shea butter, hydrolised soy protein, simmondsia chinensis jojoba seed oil, chamomila recutita matricaria flower leaf stem extract, camellia sinensis white tea leaf extract, guar hydroxypropyltrimonium chloride, polyquaternium-10, sodium benzoate, citrus aurantifolia lime oil, cymbopogan flexuosus lemongrass oil, sodium pca, sodium lactate, arginine, aspartic acid, pca, glycine, alanine, serine, valine, proline, threonine, isoleucine, histidine, phenylalanine",
+      "buy_url": "https://lohy.com.au/products/drench-quench-curl-moisture-mask?aff=49",
+      "country": "AU"
+    },
+    {
+      "name": "Nourish & Flourish Conditioner",
+      "brand": "Lohy",
+      "product_categories": ["conditioners"],
+      "tags": ["normal_porosity", "featured", "low_porosity"],
+      "buy_url": "https://lohy.com.au/products/nourish-flourish-conditioner-curly-hair?aff=49",
+      "ingredients_raw": "aqua, cetearyl alcohol, glycerin, propanediol, cocos nucifera coconut oil, cetrimonium chloride, hydrolysed soy protein, phenoxyethanol, simmondsia chinensis jojoba seed oil, chamomila recutita matricaria flower leaf stem extract, cucumis sativus cucumber fruit extract, benzyl alcohol, guar hydroxypropyltrimonium chloride, lemon scented tea tree oil, mandarin peel oil, rosemary oil, may chang, eucalyptus radiata, lavandin oil, salvia clary sclarea oil, pogostemon cablin patchouli oil, citric acid, dehydroacetic acid",
+      "country": "AU"
     }
   ]
 }

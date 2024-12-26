@@ -1,0 +1,13 @@
+{
+  "products": [
+    {
+      "name": "Hush Nourishing Oil",
+      "brand": "Hush",
+      "buy_url": "https://lohy.com.au/products/hush-finishing-oil-curly-hair?aff=49",
+      "product_categories": ["oils"],
+      "tags": ["high_porosity", "normal_porosity", "featured"],
+      "ingredients_raw": "helianthus annuus sunflower seed oil, oenothera biennis evening primrose oil, vitis vinifera grape seed oil, simmondsia chinensis jojoba seed oil, backhousia citriodora lemon myrtle leaf oil, tocopheryl acetate, rosa canina rosehip fruit oil, macadamia ternifolia seed oil",
+      "country": "AU"
+    }
+  ]
+}

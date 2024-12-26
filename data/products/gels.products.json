@@ -38,6 +38,26 @@
       "tags": ["low_porosity", "normal_porosity", "hold", "featured"],
       "buy_url": "https://amzn.to/4fyvVl5",
       "asin": "B09YMYDNX8"
+    },
+    {
+      "name": "POW Strong Hold Gel",
+      "brand": "Lohy",
+      "buy_url": "https://lohy.com.au/products/pow-strong-hold-gel-curly-hair?aff=49",
+      "ingredients_raw": "aqua, aloe barbadensis aloe vera leaf juice, polyquaternium-10, glycerin, propanediol, vp va copolymer, phenoxyethanol, hydrolysed soy protein, camellia sinensis white tea leaf extract, chamomilla recutita matricaria flower leaf stem extract, sodium benzoate, eucalyptus globulus leaf oil, mentha arvensis peppermint leaf oil",
+      "product_categories": ["gels"],
+      "tags": [ "normal_porosity", "low_porosity","hold", "featured"],
+      "country": "AU"
+
+    },
+    {
+      "name": "Oomph Hydrating Gel",
+      "brand": "Lohy",
+      "buy_url": "https://lohy.com.au/products/oomph-volumising-lotion-curly-hair-styling?aff=49",
+      "ingredients_raw": "aqua, aloe barbadensis aloe vera leaf juice, pullulan, glycerin, propanediol, camellia sinensis white tea leaf extract, chamomilla recutita matricaria flower leaf stem extract, cyamopsis tetragonoloba guar gum, phenoxyethanol, hydrolysed soy protein, potassium sorbate, citrus limon lemon peel oil, pelargonium graveolens geranium flower oil",
+      "product_categories": ["gels"],
+      "tags": ["normal_porosity", "high_porosity", "volume", "featured"],
+      "country": "AU"
+
     }
   ]
 }

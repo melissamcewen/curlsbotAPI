@@ -1,0 +1,13 @@
+{
+  "products": [
+    {
+      "name": "Chutzpah Volumising Foam",
+      "brand": "Lohy",
+      "buy_url": "https://lohy.com.au/products/chutzpah-volumising-curl-foam?aff=49",
+      "product_categories": ["foams"],
+      "tags": ["low_porosity", "curl_enhancer", "normal_porosity", "featured"],
+      "ingredients_raw": "aqua, aloe barbadensis aloe vera leaf juice, pullulan, galactoarabinan, glycerin, propanediol, lauryl glucoside, decyl glucoside, cocamidopropyl betaine, camellia sinensis white tea leaf extract, chamomila recutita matricaria flower leaf stem extract, phenoxyethanol, hydrolised soy protein, potassium sorbate, citric acid, citrus limon lemon peel oil, pelargonium graveolens geranium flower oil",
+      "country": "AU"
+    }
+  ]
+}

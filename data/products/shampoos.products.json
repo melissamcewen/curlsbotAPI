@@ -57,6 +57,16 @@
       "product_categories": ["shampoos", "featured"],
       "tags": ["low_porosity", "normal_porosity"],
       "asin": "B0BHD3JKTL"
+    },
+    {
+      "name": "Nourish & Flourish Shampoo",
+      "brand": "Lohy",
+      "product_categories": ["shampoos"],
+      "tags": ["high_porosity", "normal_porosity", "featured", "low_porosity"],
+      "buy_url": "https://lohy.com.au/products/nourish-flourish-curly-hair-shampoo?aff=49",
+      "ingredients_raw": "aqua, lauryl glucoside, decyl glucoside, coco glucoside, cocamidopropyl betaine, glycerin, propanediol, camellia sinensis white tea leaf extract, chamomilla recutita matricaria flower leaf stem extract, citric acid, phenoxyethanol, guar hydroxypropyltrimonium chloride, hydrolysed soy protein, potassium sorbate, lemon scented tea tree oil, mandarin peel oil, rosemary oil, may chang, eucalyptus radiata, lavandin oil, salvia clary sclarea oil, pogostemon cablin patchouli oil",
+      "country": "AU"
+
     }
   ]
 }
