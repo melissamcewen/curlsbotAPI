@@ -1,0 +1,69 @@
+{
+  "products": [
+    {
+      "name": "Clarifying Shampoo",
+      "brand": "Moroccanoil",
+      "product_categories": [
+        "clarifying_shampoos"
+      ],
+      "tags": [
+        "low_porosity",
+        "normal_porosity",
+        "featured"
+      ],
+      "buy_url": "https://amzn.to/4iSDfKT",
+      "description": "This shampoo has some stronger cleansers, but that's fine in a clarifying shampoo because you're only using it once in a while. It's sulfate-free, so it won't strip your hair too much. It's also got some nice oils in it to help keep your hair from getting too dry.",
+      "country": "AU",
+      "asin": "B0089NVH5W",
+      "ingredients_raw": "aqua water eau, cocamidopropyl hydroxysultaine, disodium laureth sulfosuccinate, sodium lauryl sulfoacetate, sodium lauroyl sarcosinate, sodium polystyrene sulfonate, sodium chloride, cocamidopropylamine oxide, argania spinosa argan kernel oil, persea gratissima avocado oil, rosmarinus officinalis rosemary leaf extract, chamomilla recutita matricaria flower extract, lavandula angustifolia lavender flower extract, simmondsia chinensis jojoba seed extract, keratin amino acids, hydrolyzed keratin, silk amino acids, panthenol, sodium pca, cinnamidopropyltrimonium chloride, butylene glycol, peg-40 hydrogenated castor oil, peg-150 pentaerythrityl tetrastearate, peg-6 caprylic capric glycerides, caprylyl glycol, tetrasodium edta, disodium edta, chlorphenesin, phenoxyethanol, parfum fragrance, ci 17200 red 33, ci 19140 yellow 5, sodium hydroxide, citric acid, alpha-isomethyl ionone, butylphenyl methylpropional, linalool, hydroxyisohexyl 3-cyclohexene carboxaldehydethylpropional"
+    },
+    {
+      "name": "Wash & Scrub Detox Pro-biotic",
+      "brand": "Curlsmith",
+      "product_categories": [
+        "clarifying_shampoos"
+      ],
+      "ingredients_raw": "water aqua, perlite, sodium methyl cocoyl taurate plant derived, cocamidopropyl betaine plant derived, decyl glucoside, lactobacillus ferment lysate, leuconostoc radish root ferment filtrate, hylocereus undatus dragon fruit fruit extract, paullinia cupana guarana seed extract, urtica dioica nettle leaf extract, zingiber officinale ginger root extract, malva sylvestris mallow flower extract, acetic acid vinegar, acrylates c10-30 alkyl acrylate crosspolymer, guar hydroxypropyltrimonium chloride, polyquaternium-10, glycerin, citric acid, potassium sorbate, sodium hydroxide, phenoxyethanol, sodium benzoate, linalool, limonene, fragrance parfum",
+      "tags": [
+        "low_porosity",
+        "normal_porosity",
+        "featured"
+      ],
+      "buy_url": "https://amzn.to/3DxwXjS",
+      "country": "UK",
+      "asin": "B08636L8JY"
+    },
+    {
+      "name": "Water Works Clarifying Shampoo",
+      "brand": "Ouidad",
+      "product_categories": [
+        "clarifying_shampoos"
+      ],
+      "tags": [
+        "low_porosity",
+        "normal_porosity",
+        "featured"
+      ],
+      "buy_url": "https://amzn.to/3Pfl2d4",
+      "asin": "B0001Y74XG",
+      "ingredients_raw": "water, ammonium laureth sulfate, sodium laureth sulfate, cocomidopropyl betaine, lauryl glucoside, butylene glycol, cocamide mea, polysorbate 20, sodium lauroamphoacetate, panthenol, saccharum officinarum sugar cane extract, citrus medica limonum lemon peel extract, citrus aurantium dulcis orange fruit extract, pyrus malus apple fruit extract, camellia oleifera leaf extract, cetrimonium chloride, polyquaternium-59, polyquaternium-10, citrus aurantium dulcis orange peel oil, citrus tangerina tangerine peel oil, disodium edta, methychloroisothiazolinone, methylisothiazolinone",
+      "description": "This clarifying shampoo contains sulfates, making it ideal for occasional use to remove product buildup, especially for those with low-porosity hair. While effective, it may be drying. To minimize this, focus application on the scalp and consider adding conditioner to the ends."
+    },
+    {
+      "name": "Gentle Clarifying Shampoo",
+      "brand": "Bounce Curl",
+      "product_categories": [
+        "clarifying_shampoos"
+      ],
+      "tags": [
+        "normal_porosity",
+        "high_porosity",
+        "featured"
+      ],
+      "ingredients_raw": "water, sodium lauroyl methyl isethionate, decyl glucoside, sodium cocoyl isethionate, disodium cocoamphodiacetate, propanediol, panthenol pro-vitamin b5, polyquaternium-10, hydroxypropyl methylcellulose, biotin, vanillin, hydrolyzed adansonia digitata baobab seed protein, nigella sativa virgin black cumin oil, stearamidopropyl dimethylamine, lactic acid, caprylhydroxamic acid, rosmarinus officinalis rosemary leaf extract, boswellia carterii oil, lactobacillus punica granatum fruit ferment extract, lactobacillus pumpkin ferment extract, argania spinosa kernel oil, cocos nucifera coconut oil, citrus aurantium bergamia bergamot fruit oil, anthemis nobilis flower oil, geranium maculatum oil, citrus paradisi grapefruit seed oil, lavandula angustifolia lavender oil, pogostemon cablin oil, citrus aurantium dulcis orange seed oil, citrus nobilis mandarin orange peel oil, caprylyl glycol",
+      "buy_url": "https://amzn.to/3ZRY0xK",
+      "asin": "B08BB41Q3R",
+      "description": "This is a great choice for a gentle clarifying shampoo for high and medium porosity hair."
+    }
+  ]
+}
