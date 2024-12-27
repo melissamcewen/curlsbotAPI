@@ -1,6 +1,9 @@
-import { defaultDatabase, defaultSystems, defaultSettings } from '../../src/data/bundledData';
+import {
+  defaultDatabase,
+  defaultSystems,
+  defaultSettings,
+} from '../../src/data/bundledData';
 import type { Ingredient, Category, Group, Reference } from '../../src/types';
-
 
 /* THESE ARE PRODUCTION TESTS USE THE DATA IN src/data/bundledData.ts */
 
@@ -23,48 +26,60 @@ describe('Production Database E2E Tests', () => {
       const warnings: string[] = [];
 
       // Check that all ingredient categories exist and are valid
-      Object.entries(defaultDatabase.ingredients).forEach(([id, ingredient]: [string, Ingredient]) => {
-        expect(id).toBe(ingredient.id); // ID should match the key
-        expect(Array.isArray(ingredient.categories)).toBe(true);
-        ingredient.categories.forEach((categoryId: string) => {
-          const category = defaultDatabase.categories[categoryId];
-          if (!category) {
-            warnings.push(`Warning: Category "${categoryId}" referenced by ingredient "${ingredient.name}" does not exist`);
-          }
-        });
-      });
+      Object.entries(defaultDatabase.ingredients).forEach(
+        ([id, ingredient]: [string, Ingredient]) => {
+          expect(id).toBe(ingredient.id); // ID should match the key
+          expect(Array.isArray(ingredient.categories)).toBe(true);
+          ingredient.categories.forEach((categoryId: string) => {
+            const category = defaultDatabase.categories[categoryId];
+            if (!category) {
+              warnings.push(
+                `Warning: Category "${categoryId}" referenced by ingredient "${ingredient.name}" does not exist`,
+              );
+            }
+          });
+        },
+      );
 
       // Check that all category groups exist and are valid
-      Object.entries(defaultDatabase.categories).forEach(([id, category]: [string, Category]) => {
-        expect(id).toBe(category.id); // ID should match the key
-        const group = defaultDatabase.groups[category.group];
-        if (!group) {
-          warnings.push(`Warning: Group "${category.group}" referenced by category "${category.name}" does not exist`);
-        }
-      });
+      Object.entries(defaultDatabase.categories).forEach(
+        ([id, category]: [string, Category]) => {
+          expect(id).toBe(category.id); // ID should match the key
+          const group = defaultDatabase.groups[category.group];
+          if (!group) {
+            warnings.push(
+              `Warning: Group "${category.group}" referenced by category "${category.name}" does not exist`,
+            );
+          }
+        },
+      );
 
       // Log warnings if any
       if (warnings.length > 0) {
         console.warn('Relationship warnings:');
-        warnings.forEach(warning => console.warn(warning));
+        warnings.forEach((warning) => console.warn(warning));
       }
     });
 
     it('should have required fields for all data', () => {
       // Check ingredients
-      Object.values(defaultDatabase.ingredients).forEach((ingredient: Ingredient) => {
-        expect(ingredient.id).toBeDefined();
-        expect(ingredient.name).toBeDefined();
-        expect(Array.isArray(ingredient.categories)).toBe(true);
-      });
+      Object.values(defaultDatabase.ingredients).forEach(
+        (ingredient: Ingredient) => {
+          expect(ingredient.id).toBeDefined();
+          expect(ingredient.name).toBeDefined();
+          expect(Array.isArray(ingredient.categories)).toBe(true);
+        },
+      );
 
       // Check categories
-      Object.values(defaultDatabase.categories).forEach((category: Category) => {
-        expect(category.id).toBeDefined();
-        expect(category.name).toBeDefined();
-        expect(category.description).toBeDefined();
-        expect(category.group).toBeDefined();
-      });
+      Object.values(defaultDatabase.categories).forEach(
+        (category: Category) => {
+          expect(category.id).toBeDefined();
+          expect(category.name).toBeDefined();
+          expect(category.description).toBeDefined();
+          expect(category.group).toBeDefined();
+        },
+      );
 
       // Check groups
       Object.values(defaultDatabase.groups).forEach((group: Group) => {
@@ -80,10 +95,12 @@ describe('Production Database E2E Tests', () => {
       const warnings: string[] = [];
 
       // Check that all system settings exist
-      defaultSystems.forEach(system => {
-        system.settings.forEach(settingId => {
+      defaultSystems.forEach((system) => {
+        system.settings.forEach((settingId) => {
           if (!defaultSettings[settingId]) {
-            warnings.push(`System "${system.name}" references setting "${settingId}" which does not exist in defaultSettings`);
+            warnings.push(
+              `System "${system.name}" references setting "${settingId}" which does not exist in defaultSettings`,
+            );
           }
         });
       });
@@ -91,23 +108,29 @@ describe('Production Database E2E Tests', () => {
       // Check that settings reference valid categories and groups
       Object.entries(defaultSettings).forEach(([settingId, setting]) => {
         // Check categories
-        setting.categories?.forEach(categoryId => {
+        setting.categories?.forEach((categoryId) => {
           if (!defaultDatabase.categories[categoryId]) {
-            warnings.push(`Setting "${setting.name}" (${settingId}) references category "${categoryId}" which does not exist in the database`);
+            warnings.push(
+              `Setting "${setting.name}" (${settingId}) references category "${categoryId}" which does not exist in the database`,
+            );
           }
         });
 
         // Check groups
-        setting.groups?.forEach(groupId => {
+        setting.groups?.forEach((groupId) => {
           if (!defaultDatabase.groups[groupId]) {
-            warnings.push(`Setting "${setting.name}" (${settingId}) references group "${groupId}" which does not exist in the database`);
+            warnings.push(
+              `Setting "${setting.name}" (${settingId}) references group "${groupId}" which does not exist in the database`,
+            );
           }
         });
 
         // Check allowed categories
-        setting.allowedCategories?.forEach(categoryId => {
+        setting.allowedCategories?.forEach((categoryId) => {
           if (!defaultDatabase.categories[categoryId]) {
-            warnings.push(`Setting "${setting.name}" (${settingId}) has allowed category "${categoryId}" which does not exist in the database`);
+            warnings.push(
+              `Setting "${setting.name}" (${settingId}) has allowed category "${categoryId}" which does not exist in the database`,
+            );
           }
         });
       });
@@ -115,7 +138,7 @@ describe('Production Database E2E Tests', () => {
       // Log warnings if any
       if (warnings.length > 0) {
         console.warn('System and Settings relationship warnings:');
-        warnings.forEach(warning => console.warn(warning));
+        warnings.forEach((warning) => console.warn(warning));
       }
 
       expect(warnings).toHaveLength(0);
@@ -128,22 +151,32 @@ describe('Production Database E2E Tests', () => {
 
       // Check categories with defaultIngredient
       Object.entries(defaultDatabase.categories).forEach(([id, category]) => {
-        if (category.defaultIngredient && !defaultDatabase.ingredients[category.defaultIngredient]) {
-          warnings.push(`Category "${category.name}" has defaultIngredient "${category.defaultIngredient}" that does not exist in ingredients database`);
+        if (
+          category.defaultIngredient &&
+          !defaultDatabase.ingredients[category.defaultIngredient]
+        ) {
+          warnings.push(
+            `Category "${category.name}" has defaultIngredient "${category.defaultIngredient}" that does not exist in ingredients database`,
+          );
         }
       });
 
       // Check groups with defaultIngredient
       Object.entries(defaultDatabase.groups).forEach(([id, group]) => {
-        if (group.defaultIngredient && !defaultDatabase.ingredients[group.defaultIngredient]) {
-          warnings.push(`Group "${group.name}" has defaultIngredient "${group.defaultIngredient}" that does not exist in ingredients database`);
+        if (
+          group.defaultIngredient &&
+          !defaultDatabase.ingredients[group.defaultIngredient]
+        ) {
+          warnings.push(
+            `Group "${group.name}" has defaultIngredient "${group.defaultIngredient}" that does not exist in ingredients database`,
+          );
         }
       });
 
       // Log warnings if any
       if (warnings.length > 0) {
         console.warn('Default Ingredient warnings:');
-        warnings.forEach(warning => console.warn(warning));
+        warnings.forEach((warning) => console.warn(warning));
       }
 
       expect(warnings).toHaveLength(0);
@@ -153,19 +186,25 @@ describe('Production Database E2E Tests', () => {
   describe('ID Format Validation', () => {
     it('should have correctly formatted IDs (lowercase, no hyphens)', () => {
       const warnings: string[] = [];
-      const idFormatRegex = /^[a-z0-9_]+$/;  // Only lowercase letters, numbers, and underscores
+      const idFormatRegex = /^[a-z0-9_]+$/; // Only lowercase letters, numbers, and underscores
 
       // Check ingredient IDs
-      Object.entries(defaultDatabase.ingredients).forEach(([id, ingredient]) => {
-        if (!idFormatRegex.test(id) || id !== ingredient.id) {
-          warnings.push(`Invalid ingredient ID format: "${id}" (${ingredient.name})`);
-        }
-      });
+      Object.entries(defaultDatabase.ingredients).forEach(
+        ([id, ingredient]) => {
+          if (!idFormatRegex.test(id) || id !== ingredient.id) {
+            warnings.push(
+              `Invalid ingredient ID format: "${id}" (${ingredient.name})`,
+            );
+          }
+        },
+      );
 
       // Check category IDs
       Object.entries(defaultDatabase.categories).forEach(([id, category]) => {
         if (!idFormatRegex.test(id) || id !== category.id) {
-          warnings.push(`Invalid category ID format: "${id}" (${category.name})`);
+          warnings.push(
+            `Invalid category ID format: "${id}" (${category.name})`,
+          );
         }
       });
 
@@ -177,9 +216,11 @@ describe('Production Database E2E Tests', () => {
       });
 
       // Check system IDs
-      defaultSystems.forEach(system => {
+      defaultSystems.forEach((system) => {
         if (!idFormatRegex.test(system.id)) {
-          warnings.push(`Invalid system ID format: "${system.id}" (${system.name})`);
+          warnings.push(
+            `Invalid system ID format: "${system.id}" (${system.name})`,
+          );
         }
       });
 
@@ -193,7 +234,7 @@ describe('Production Database E2E Tests', () => {
       // Log warnings if any
       if (warnings.length > 0) {
         console.warn('ID format warnings:');
-        warnings.forEach(warning => console.warn(warning));
+        warnings.forEach((warning) => console.warn(warning));
       }
 
       expect(warnings).toHaveLength(0);
@@ -204,40 +245,85 @@ describe('Production Database E2E Tests', () => {
     it('should have properly typed references for all ingredients', () => {
       const warnings: string[] = [];
 
-      Object.entries(defaultDatabase.ingredients).forEach(([id, ingredient]) => {
-        if (ingredient.references) {
-          ingredient.references.forEach((reference: Reference, index) => {
-            // Check required url field
-            if (!reference.url) {
-              warnings.push(`Ingredient "${ingredient.name}" (${id}) reference #${index + 1} is missing required 'url' field`);
-            }
+      Object.entries(defaultDatabase.ingredients).forEach(
+        ([id, ingredient]) => {
+          if (ingredient.references) {
+            ingredient.references.forEach((reference: Reference, index) => {
+              // Check required url field
+              if (!reference.url) {
+                warnings.push(
+                  `Ingredient "${ingredient.name}" (${id}) reference #${
+                    index + 1
+                  } is missing required 'url' field`,
+                );
+              }
 
-            // Check that only allowed fields are present
-            const allowedFields = ['url', 'title', 'description'];
-            Object.keys(reference).forEach(field => {
-              if (!allowedFields.includes(field)) {
-                warnings.push(`Ingredient "${ingredient.name}" (${id}) reference #${index + 1} has invalid field '${field}'`);
+              // Check that only allowed fields are present
+              const allowedFields = [
+                'url',
+                'title',
+                'description',
+                'type',
+                'status',
+              ];
+              Object.keys(reference).forEach((field) => {
+                if (!allowedFields.includes(field)) {
+                  warnings.push(
+                    `Ingredient "${ingredient.name}" (${id}) reference #${
+                      index + 1
+                    } has invalid field '${field}'`,
+                  );
+                }
+              });
+
+              // Check field types
+              if (reference.url && typeof reference.url !== 'string') {
+                warnings.push(
+                  `Ingredient "${ingredient.name}" (${id}) reference #${
+                    index + 1
+                  } 'url' must be a string`,
+                );
+              }
+              if (reference.title && typeof reference.title !== 'string') {
+                warnings.push(
+                  `Ingredient "${ingredient.name}" (${id}) reference #${
+                    index + 1
+                  } 'title' must be a string`,
+                );
+              }
+              if (
+                reference.description &&
+                typeof reference.description !== 'string'
+              ) {
+                warnings.push(
+                  `Ingredient "${ingredient.name}" (${id}) reference #${
+                    index + 1
+                  } 'description' must be a string`,
+                );
+              }
+              if (reference.type && typeof reference.type !== 'string') {
+                warnings.push(
+                  `Ingredient "${ingredient.name}" (${id}) reference #${
+                    index + 1
+                  } 'type' must be a string`,
+                );
+              }
+              if (reference.status && typeof reference.status !== 'string') {
+                warnings.push(
+                  `Ingredient "${ingredient.name}" (${id}) reference #${
+                    index + 1
+                  } 'status' must be a string`,
+                );
               }
             });
-
-            // Check field types
-            if (reference.url && typeof reference.url !== 'string') {
-              warnings.push(`Ingredient "${ingredient.name}" (${id}) reference #${index + 1} 'url' must be a string`);
-            }
-            if (reference.title && typeof reference.title !== 'string') {
-              warnings.push(`Ingredient "${ingredient.name}" (${id}) reference #${index + 1} 'title' must be a string`);
-            }
-            if (reference.description && typeof reference.description !== 'string') {
-              warnings.push(`Ingredient "${ingredient.name}" (${id}) reference #${index + 1} 'description' must be a string`);
-            }
-          });
-        }
-      });
+          }
+        },
+      );
 
       // Log warnings if any
       if (warnings.length > 0) {
         console.warn('Reference validation warnings:');
-        warnings.forEach(warning => console.warn(warning));
+        warnings.forEach((warning) => console.warn(warning));
       }
 
       expect(warnings).toHaveLength(0);

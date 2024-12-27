@@ -64,6 +64,24 @@
       "buy_url": "https://amzn.to/3ZRY0xK",
       "asin": "B08BB41Q3R",
       "description": "This is a great choice for a gentle clarifying shampoo for high and medium porosity hair."
+    },
+    {
+      "name": "Natural Detox Hair Mask",
+      "brand": "Innersense",
+      "product_categories": [
+        "clarifying_shampoos"
+      ],
+      "tags": [
+        "low_porosity",
+        "normal_porosity",
+        "high_porosity",
+        "featured"
+      ],
+      "ingredients_raw": "water aqua eau, cetearyl alcohol, kaolin, glycerin, vinegar, charcoal powder, oryza sativa rice bran oil, behentrimonium methosulfate, olea europaea olive fruit extract, butyrospermum parkii shea butter, stearalkonium chloride, hydrolyzed quinoa, epilobium angustifolium flower leaf stem extract, panthenol vitamin b-5, potassium sorbate, hydrolyzed adansonia digitata seed extract, sodium levulinate, stearyl alcohol, thiamine hcl, benzyl alcohol, sodium benzoate, glycine soja soybean oil, cananga odorata ylang ylang flower oil, citrus aurantium dulcis orange peel oil, lavandula angustifolia lavender oil, pogostemon cablin patchouli oil, salvia sclarea clary oil, linalool, limonene",
+      "buy_url": "https://amzn.to/4gTtFWm",
+      "cost": 30,
+      "asin": "B09YS5YRTR",
+      "description": "This mask is a great gentle option for removing stubborn buildup without stripping out your natural oils."
     }
   ]
 }

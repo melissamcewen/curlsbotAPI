@@ -906,12 +906,45 @@ export const defaultDatabase: IngredientDatabase = {
       "name": "Sodium Laureth Sulfate",
       "id": "sodium_laureth_sulfate",
       "synonyms": [
-        "sodium laureth sulphate"
+        "sodium laureth sulphate",
+        "sles"
       ],
       "categories": [
         "sulfates"
       ],
-      "references": []
+      "description": "Not to be confused with SLS (sodium lauryl sulfate), as it is known to be milder.",
+      "references": [
+        {
+          "url": "https://www.paulaschoice.com/ingredient-dictionary/ingredient-sodium-laureth-sulfate.html",
+          "status": "good",
+          "title": "Paula's Choice",
+          "type": "author"
+        },
+        {
+          "url": "https://amzn.to/41QrGxJ",
+          "status": "warning",
+          "title": "Curly Girl: The Handbook by Lorraine Massey",
+          "type": "hairpro"
+        },
+        {
+          "url": "https://www.ewg.org/skindeep/ingredients/706089-SODIUM_LAURETH_SULFATE/",
+          "status": "caution",
+          "title": "EWG Skin Deep",
+          "type": "science"
+        },
+        {
+          "url": "https://incidecoder.com/ingredients/sodium-laureth-sulfate",
+          "status": "ok",
+          "title": "INCIdecoder",
+          "type": "science"
+        },
+        {
+          "url": "http://www.tightlycurly.com/ingredients/",
+          "status": "ok",
+          "title": "Tightly Curly",
+          "type": "author"
+        }
+      ]
     },
     "sodium_laureth_40_sulfate": {
       "name": "Sodium Laureth-40 Sulfate",
@@ -994,12 +1027,63 @@ export const defaultDatabase: IngredientDatabase = {
       "name": "Sodium Lauryl Sulfate",
       "id": "sodium_lauryl_sulfate",
       "synonyms": [
-        "sodium lauryl sulphate"
+        "sodium lauryl sulphate",
+        "sls"
       ],
       "categories": [
         "sulfates"
       ],
-      "references": []
+      "description": "Probably one of the most infamous sulfates. It's a strong cleanser that can be drying to hair. It's also a common irritant for people with sensitive skin. However, as always, much depends on the formulation.",
+      "references": [
+        {
+          "url": "http://www.tightlycurly.com/Ingredients.aspx?ingredientName=Sodium%20lauryl%20sulfate",
+          "status": "warning",
+          "title": "Tightly Curly",
+          "type": "author"
+        },
+        {
+          "url": "https://incidecoder.com/ingredients/sodium-lauryl-sulfate",
+          "status": "warning",
+          "title": "INCIdecoder",
+          "type": "science"
+        },
+        {
+          "url": "https://www.ewg.org/skindeep/ingredients/706110-SODIUM_LAURYL_SULFATE/",
+          "status": "ok",
+          "title": "EWG Skin Deep",
+          "type": "science"
+        },
+        {
+          "url": "https://www.paulaschoice.com/ingredient-dictionary/ingredient-sodium-lauryl-sulfate.html",
+          "status": "warning",
+          "title": "Paula's Choice",
+          "type": "author"
+        },
+        {
+          "url": "https://amzn.to/41QrGxJ",
+          "status": "warning",
+          "title": "Curly Girl: The Handbook by Lorraine Massey",
+          "type": "hairpro"
+        },
+        {
+          "url": "https://www.epa.gov/saferchoice/safer-ingredients",
+          "status": "ok",
+          "title": "EPA Safer Choice",
+          "type": "science"
+        },
+        {
+          "url": "https://thebeautybrains.com/2007/06/sulfates-in-shampoos-what-are-they/",
+          "status": "ok",
+          "title": "The Beauty Brains",
+          "type": "science"
+        },
+        {
+          "url": "https://labmuffin.com/the-science-of-hair-products-shampoo-and-conditioner-with-video/",
+          "status": "ok",
+          "title": "Lab Muffin",
+          "type": "science"
+        }
+      ]
     },
     "sodium_lauryl_sulfoacetate": {
       "name": "Sodium Lauryl Sulfoacetate",

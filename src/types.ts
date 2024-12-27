@@ -116,7 +116,7 @@ export interface Reference {
   /** Optional description of what this reference proves/shows */
   description?: string;
   /** Type of reference */
-  type?: 'science' | 'book' | 'website' | 'other';
+  type?: 'science' | 'hairpro' | 'author' | 'other' | 'industry';
   /** status of the reference */
   status?: 'ok' | 'caution' | 'warning' | 'good';
 }

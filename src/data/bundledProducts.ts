@@ -80,6 +80,28 @@ export const defaultProductDatabase: ProductDatabase = {
       "systems_excluded": [],
       "status": "ok"
     },
+    "natural_detox_hair_mask": {
+      "name": "Natural Detox Hair Mask",
+      "brand": "Innersense",
+      "product_categories": [
+        "clarifying_shampoos"
+      ],
+      "tags": [
+        "low_porosity",
+        "normal_porosity",
+        "high_porosity",
+        "featured"
+      ],
+      "ingredients_raw": "water aqua eau, cetearyl alcohol, kaolin, glycerin, vinegar, charcoal powder, oryza sativa rice bran oil, behentrimonium methosulfate, olea europaea olive fruit extract, butyrospermum parkii shea butter, stearalkonium chloride, hydrolyzed quinoa, epilobium angustifolium flower leaf stem extract, panthenol vitamin b-5, potassium sorbate, hydrolyzed adansonia digitata seed extract, sodium levulinate, stearyl alcohol, thiamine hcl, benzyl alcohol, sodium benzoate, glycine soja soybean oil, cananga odorata ylang ylang flower oil, citrus aurantium dulcis orange peel oil, lavandula angustifolia lavender oil, pogostemon cablin patchouli oil, salvia sclarea clary oil, linalool, limonene",
+      "buy_url": "https://amzn.to/4gTtFWm",
+      "cost": 30,
+      "asin": "B09YS5YRTR",
+      "description": "This mask is a great gentle option for removing stubborn buildup without stripping out your natural oils.",
+      "id": "natural_detox_hair_mask",
+      "systems_excluded": [],
+      "status": "ok",
+      "cost_rating": "3"
+    },
     "light_conditioner": {
       "name": "Light Conditioner",
       "brand": "MopTop",
@@ -91,7 +113,6 @@ export const defaultProductDatabase: ProductDatabase = {
         "low_porosity",
         "featured"
       ],
-      "cost_rating": "2",
       "ingredients_raw": "water, glycerin, cetyl alcohol coconut derived, stearyl alcohol coconut derived, olea europaea olive fruit oil, cetrimonium chloride, behentrimonium chloride, aloe barbadensis leaf extract, glycereth-26, hypnea musciformis extract seaweed, gelidiella acerosa extract seaweed, sargassum filipendula extract seaweed, sorbitol, hydroxypropyltrimonium honey, silk amino acids, rosmarinus officinalis rosemary leaf extract, chamomilla recutita matricaria flower extract, urtica dioica nettle extract, butyrospermum parkii shea butter, simmondsia chinensis jojoba seed oil, tocopheryl acetate vitamin e, panthenol vitamin b5, citrus senensis oil, citrus limon oil, citrus arantifolia oil, citrus paradisi oil, sodium phytate, hydroxyethylcellulose, phenoxyethanol, ethylhexylglycerin, citric acid",
       "asin": "B005SIR28M",
       "id": "light_conditioner",
@@ -111,7 +132,6 @@ export const defaultProductDatabase: ProductDatabase = {
         "featured"
       ],
       "ingredients_raw": "water, aloe barbadensis leaf extract, glycerin, cetyl alcohol, stearyl alcohol, cetrimonium chloride, behentrimonium chloride, olea europaea olive fruit oil, glycereth-26, butyrospermum parkii shea butter, hydroxypropyltrimonium honey, hypnea musciformis extract seaweed, gelidiella acerosa extract seaweed, sargassum filipendula extract seaweed, sorbitol, silk amino acids, rosmarinus officinalis rosemary leaf extract, chamomilla recutita matricaria flower extract, urtica dioica nettle extract, simmondsia chinensis jojoba seed oil, tocopheryl acetate vitamin e, panthenol vitamin b5, arnica montana flower extract, hydroxyethylcellulose, phenoxyethanol, sorbic acid, ethylhexylglycerin, citric acid, sodium phytate, fragrance",
-      "cost_rating": "2",
       "asin": "B005SIR2K0",
       "id": "daily_conditioner",
       "systems_excluded": [],
@@ -130,7 +150,6 @@ export const defaultProductDatabase: ProductDatabase = {
         "featured"
       ],
       "buy_url": "https://amzn.to/3ZQnjjL",
-      "cost_rating": "3",
       "asin": "B074Q43PT4",
       "id": "pure_inspiration_daily_conditioner",
       "systems_excluded": [],
@@ -149,7 +168,6 @@ export const defaultProductDatabase: ProductDatabase = {
         "featured"
       ],
       "buy_url": "https://amzn.to/4gmVZAG",
-      "cost_rating": "3",
       "asin": "B074PWBRF9",
       "id": "hydrating_cream_conditioner",
       "systems_excluded": [],
@@ -168,7 +186,6 @@ export const defaultProductDatabase: ProductDatabase = {
         "featured"
       ],
       "buy_url": "https://amzn.to/4iNhH2s",
-      "cost_rating": "3",
       "asin": "B0BHC6CTQ5",
       "id": "clarity_conditioner",
       "systems_excluded": [],
@@ -243,7 +260,6 @@ export const defaultProductDatabase: ProductDatabase = {
         "high_porosity",
         "featured"
       ],
-      "cost_rating": "2",
       "ingredients_raw": "aqua water eau, cetyl alcohol, cetrimonium chloride, cetearyl alcohol, cocos nucifera coconut oil, ricinus communis castor seed oil, cocos nucifera coconut fruit powder, citrus reticulata tangerine fruit extract, phytosterols, camillia sinensis leaf extract, peg-40 castor oil, stearlkonium chloride, serenoa serrulata fruit extract, quaternium-18, propylene glycol, c12-15 alkyl lactate, fragrance parfum, potassium sorbate, caprylyl glycol, phenoxyethanol, abies balsamea balsam canada resin, potassium chloride, limonene, glycerin, caprylic capric triglyceride",
       "asin": "B00641UCY8",
       "id": "coconut_cowash_cleansing_conditioner",
@@ -411,7 +427,6 @@ export const defaultProductDatabase: ProductDatabase = {
         "high_porosity",
         "featured"
       ],
-      "cost_rating": "2",
       "ingredients_raw": "aqua water, cetearyl alcohol, butyrospermum parkii shea butter, persea gratissima avocado oil, theobroma cacao cocoa seed butter, behentrimonium methosulfate, aloe barbadensis aloe vera leaf juice powder, equisetum arvense horsetail extract, mentha piperita peppermint leaf extract, rosmarinus officinalis rosemary flower leaf stem extract, laurus nobilis bay laurel leaf extract, ocimum basilicum basil leaf extract, urtica dioica nettle leaf extract, arctium lappa burdock root extract, althea officinalis marshmallow root extract, origanum vulgare oregano leaf extract, cymbopogon flexuosus lemongrass extract, thymus vulgaris thyme leaf extract, salvia officinalis sage leaf extract, lecithin, cinnamal, citral, eugenol, geraniol, citronellol, limonene, linalool, benzoic acid, dehydroacetic acid, phenoxyethanol",
       "asin": "B00684AC82",
       "id": "deep_conditioning_treatment",
@@ -528,7 +543,6 @@ export const defaultProductDatabase: ProductDatabase = {
         "high_porosity",
         "featured"
       ],
-      "cost_rating": "2",
       "ingredients_raw": "water, aqua-eau, aloe barbadensis gel, hydroxyethylcellulose, maltodextrin copolymer, potassium hydroxide, gluconolactone, sodium benzoate, calcium gluconate, alkyl acrylate crosspolymer, citrus aurantium dulcis peel oil, caprylic capric triglyceride, potassium sorbate, sodium phytate, glycerin, chamomilla recutita matricaria flower extract, eucalyptus globulus leaf extract, ginkgo biloba leaf extract, aspalathus linearis leaf extract, honey extract, limonene",
       "asin": "B002EOUQR2",
       "id": "i_create_hold",
@@ -645,7 +659,6 @@ export const defaultProductDatabase: ProductDatabase = {
         "normal_porosity",
         "featured"
       ],
-      "cost_rating": "3",
       "asin": "B004KM1OEK",
       "ingredients_raw": "water aqua- eau, aloe barbadensis aloe vera leaf gel, cetearyl alcohol, glycerin, distearoylethyl dimonium chloride, caprylic capric triglyceride, hydrolyzed quinoa, gluconolactone, sodium benzoate, calcium gluconate, potassium sorbate, benzyl acetate, linalyl acetate, citronellol, abies balsamea needle oil, juniperus virginiana cedar oil, alpha-terpineol, amyl cinnamal, linalool, pogostemon cablin leaf oil, salvia sclarea clary sage oil, citrus reticulata tangerine peel oil, mentha citrata herb oil, eugenia caryophyllus clove oil, michelia alba leaf oil, lavandula angustifolia lavender oil, citrus limon lemon peel oil, citrus aurantifolia lime oil, lavandula hybrida lavandin oil, cinnamomum camphora camphor bark oil, alpha-lonone, evernia prunastri oakmoss extract, anisaldehyde, cistus ladaniferus resin, menthol, myristica fragrans nutmeg kernel oil, jasminum grandiflorum flower jasmine extract, nerol, benzaldehyde, chamomilla recutita matricaria flower extract, eucalyptus globulus leaf extract, ginkgo biloba leaf extract, aspalathus linearis leaf extract, honey extract, calophyllum inophyllum tamanu oil, rosmarinus officinalis rosemary oil, citric acid, eugenol, limonene",
       "id": "sweet_spirit_leave-in_conditioner",
@@ -719,7 +732,6 @@ export const defaultProductDatabase: ProductDatabase = {
       "tags": [
         "high_porosity"
       ],
-      "cost_rating": "3",
       "asin": "B08WPNSHCD",
       "ingredients_raw": "water aqua, cetearyl alcohol, salvia hispanica chia seed extract, creatine, polyquaternium-10, stearamidopropyl dimethylamine, lentinus edodes shiitake extract, opuntia tuna prickly pear fruit extract, cucurbita pepo pumpkin seed extract, psidium guajava guava fruit extract, prunus amygdalus dulcis sweet almond oil, ribes nigrum black currant fruit extract, brassica oleracea acephala kale leaf extract, leuconostoc radish root ferment filtrate, polyquaternium-37, hydroxypropylgluconamide, hydroxypropylammonium gluconate, disodium edta, potassium sorbate, tartaric acid, citric acid, ethylhexylglycerin, glycerin, behentrimonium chloride, phenoxyethanol, sodium benzoate, benzyl alcohol, geraniol, fragrance parfum, linalool, limonene",
       "id": "bond_curl_rehab_salve,_bond_building_strength_treatment_for_weak,_damaged_hair",
@@ -760,7 +772,6 @@ export const defaultProductDatabase: ProductDatabase = {
         "low_porosity",
         "featured"
       ],
-      "cost_rating": "2",
       "ingredients_raw": "water, sodium c14-16 olefin sulfonate, cocamidopropyl betaine, propanediol, glycol distearate, phenoxyethanol, butyrospermum parkii shea butter, alanine, arginine, aspartic acid, glycine, histidine, isoleucine, phenylalanine, proline, serine, sodium pca, pca, sodium lactate, threonine, valine, citric acid, disodium edta, glycine soja soybean oil, glycine soja soybean sterols, glycolipids, guar hydroxypropyltrimonium chloride, hydroxyethylcellulose, hydroxyacetophenone, lauryl lactyl lactate, peg-150 distearate, phospholipids, ricinus communis castor seed oil, fragrance",
       "asin": "B09GC9CVQ8",
       "id": "curl_shampoo",
@@ -778,7 +789,6 @@ export const defaultProductDatabase: ProductDatabase = {
         "normal_porosity",
         "featured"
       ],
-      "cost_rating": "3",
       "ingredients_raw": "water aqua-eau, cocamidopropyl hydroxysultaine, sodium methyl cocoyl taurate, glycerin, caprylyl capryl glucoside, sodium cocoyl isethionate, glyceryl stearate se, sodium chloride, sodium lauroyl methyl isethionate, trisodium ethylenediamine disuccinate, guar hydroxypropyltrimonium chloride, plumeria actufolia flower extract, cananga odorata flower oil, lavandula angustifolia lavender oil, citrus aurantium dulcis orange peel oil, salvia sclarea clary oil, vanillin, pogostemon cablin oil, glycine soja soybean oil, sodium benzoate, pyrus malus apple fruit extract, potassium sorbate, simmondsia chinensis jojoba seed oil, oryza sativa rice extract, citric acid, hydrolyzed quinoa, hydrolyzed rice protein, calophyllum inophyllum tamanu oil, butyrospermum parkii shea butter, persia gratissima avocado oil, taraxacum officinale dandelion leaf extract, salvia officinalis sage leaf extract, melissa officinalis leaf extract, linalool, limonene",
       "asin": "B074PY4QJC",
       "id": "hydrating_hairbath",

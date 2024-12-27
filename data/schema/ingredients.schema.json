@@ -76,7 +76,7 @@
                 },
                 "type": {
                   "type": "string",
-                  "enum": ["science", "book", "website", "other"],
+                  "enum": ["science", "hairpro", "industry", "author", "other"],
                   "description": "Type of reference"
                 },
                 "status": {
