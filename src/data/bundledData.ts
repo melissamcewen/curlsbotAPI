@@ -415,7 +415,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "other_surfactants"
       ],
-      "status": "caution"
+      "status": "ok"
     },
     "ammonium_cocoyl_isethionate": {
       "name": "Ammonium Cocoyl Isethionate",
@@ -469,7 +469,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "other_surfactants"
       ],
-      "status": "caution"
+      "status": "ok"
     },
     "babassuamidopropyl_betaine": {
       "name": "Babassuamidopropyl Betaine",
@@ -555,7 +555,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "other_surfactants"
       ],
-      "status": "caution"
+      "status": "ok"
     },
     "disodium_cocoamphodiacetate": {
       "name": "Disodium Cocoamphodiacetate",
@@ -579,7 +579,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "other_surfactants"
       ],
-      "status": "caution"
+      "status": "ok"
     },
     "disodium_laureth_succinate": {
       "name": "Disodium Laureth Succinate",
@@ -652,7 +652,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "other_surfactants"
       ],
-      "status": "caution"
+      "status": "ok"
     },
     "sodium_c12_18_alkyl_sulfate": {
       "name": "Sodium C12-18 Alkyl Sulfate",
@@ -674,7 +674,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "other_surfactants"
       ],
-      "status": "caution"
+      "status": "ok"
     },
     "sodium_c14_16_olefin_sulfonate": {
       "name": "Sodium C14-16 Olefin Sulfonate",
@@ -699,7 +699,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "other_surfactants"
       ],
-      "status": "caution"
+      "status": "ok"
     },
     "sodium_c14_26_olefin_sulfonate": {
       "name": "Sodium C14-26 Olefin Sulfonate",
@@ -710,7 +710,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "other_surfactants"
       ],
-      "status": "caution"
+      "status": "ok"
     },
     "sodium_c16_18_olefin_sulfonate": {
       "name": "Sodium C16-18 Olefin Sulfonate",
@@ -721,7 +721,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "other_surfactants"
       ],
-      "status": "caution"
+      "status": "ok"
     },
     "sodium_cetearyl_sulfate": {
       "name": "Sodium Cetearyl Sulfate",
@@ -781,7 +781,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "other_surfactants"
       ],
-      "status": "caution"
+      "status": "ok"
     },
     "sodium_cocoyl_isethionate": {
       "name": "Sodium Cocoyl Isethionate",
@@ -797,7 +797,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "other_surfactants"
       ],
-      "status": "caution"
+      "status": "ok"
     },
     "sodium_laureth_sulfate": {
       "name": "Sodium Laureth Sulfate",
@@ -847,7 +847,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "other_surfactants"
       ],
-      "status": "caution"
+      "status": "ok"
     },
     "sodium_lauroamphoacetate": {
       "name": "Sodium Lauroamphoacetate",
@@ -885,7 +885,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "other_surfactants"
       ],
-      "status": "caution"
+      "status": "ok"
     },
     "sodium_lauryl_glucose_carboxylate": {
       "name": "Sodium Lauryl Glucose Carboxylate",
@@ -905,7 +905,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "other_surfactants"
       ],
-      "status": "caution"
+      "status": "ok"
     },
     "sodium_lauryl_sulfate": {
       "name": "Sodium Lauryl Sulfate",
@@ -970,7 +970,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "other_surfactants"
       ],
-      "status": "caution"
+      "status": "ok"
     },
     "sodium_laurylglucosides_hydroxypropylsulfonate": {
       "name": "Sodium Laurylglucosides Hydroxypropylsulfonate",
@@ -1005,7 +1005,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "other_surfactants"
       ],
-      "status": "caution"
+      "status": "ok"
     },
     "sodium_polystyrene_sulfate": {
       "name": "Sodium Polystyrene Sulfate",
@@ -1029,7 +1029,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "other_surfactants"
       ],
-      "status": "caution"
+      "status": "ok"
     },
     "tea_dodecylbenzenesulfonate": {
       "name": "Tea Dodecylbenzenesulfonate",
@@ -1040,7 +1040,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "other_surfactants"
       ],
-      "status": "caution"
+      "status": "ok"
     },
     "tea_lauryl_sulfate": {
       "name": "Tea Lauryl Sulfate",
@@ -1074,7 +1074,7 @@ export const defaultDatabase: IngredientDatabase = {
         "other_surfactants"
       ],
       "description": "We're pretty sure this is a sulfonate, but we're not sure which one. ",
-      "status": "caution"
+      "status": "ok"
     },
     "apricot_kernel_oil": {
       "name": "Apricot Kernel Oil",
@@ -1299,7 +1299,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "other_surfactants"
       ],
-      "status": "caution"
+      "status": "ok"
     },
     "potassium_castorate": {
       "name": "Potassium Castorate",
@@ -1379,7 +1379,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "other_surfactants"
       ],
-      "status": "caution"
+      "status": "ok"
     },
     "sodium_castorate": {
       "name": "Sodium Castorate",
@@ -1411,7 +1411,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "other_surfactants"
       ],
-      "status": "caution"
+      "status": "ok"
     },
     "sodium_lauroyl_lactylate": {
       "name": "Sodium Lauroyl Lactylate",
@@ -1419,7 +1419,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "other_surfactants"
       ],
-      "status": "caution"
+      "status": "ok"
     },
     "sodium_lauroyl_oat_amino_acids": {
       "name": "Sodium Lauroyl Oat Amino Acids",
@@ -1427,7 +1427,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "other_surfactants"
       ],
-      "status": "caution"
+      "status": "ok"
     },
     "sodium_methyl_2_sulfolaurate": {
       "name": "Sodium Methyl 2-Sulfolaurate",
@@ -1435,7 +1435,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "other_surfactants"
       ],
-      "status": "caution"
+      "status": "ok"
     },
     "sodium_olivate": {
       "name": "Sodium Olivate",
@@ -1491,7 +1491,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "other_surfactants"
       ],
-      "status": "caution"
+      "status": "ok"
     },
     "witch_hazel": {
       "name": "Witch Hazel",
@@ -1841,7 +1841,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "water_soluble_silicones"
       ],
-      "status": "caution"
+      "status": "ok"
     },
     "cetearyl_methicone": {
       "name": "Cetearyl Methicone",
@@ -1947,7 +1947,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "water_soluble_silicones"
       ],
-      "status": "caution"
+      "status": "ok"
     },
     "dimethiconol": {
       "name": "Dimethiconol",
@@ -1971,7 +1971,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "water_soluble_silicones"
       ],
-      "status": "caution"
+      "status": "ok"
     },
     "peg_10_dimethicone": {
       "name": "PEG-10 Dimethicone",
@@ -1983,7 +1983,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "water_soluble_silicones"
       ],
-      "status": "caution"
+      "status": "ok"
     },
     "peg_12_dimethicone": {
       "name": "PEG-12 Dimethicone",
@@ -1995,7 +1995,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "water_soluble_silicones"
       ],
-      "status": "caution"
+      "status": "ok"
     },
     "peg_14_dimethicone": {
       "name": "PEG-14 Dimethicone",
@@ -2007,7 +2007,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "water_soluble_silicones"
       ],
-      "status": "caution"
+      "status": "ok"
     },
     "peg_7_amodimethicone": {
       "name": "PEG-7 Amodimethicone",
@@ -2019,7 +2019,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "water_soluble_silicones"
       ],
-      "status": "caution"
+      "status": "ok"
     },
     "peg_8_dimethicone": {
       "name": "PEG-8 Dimethicone",
@@ -2031,7 +2031,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "water_soluble_silicones"
       ],
-      "status": "caution"
+      "status": "ok"
     },
     "phenyl_trimethicone": {
       "name": "Phenyl Trimethicone",
@@ -2099,7 +2099,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "evaporative_silicones"
       ],
-      "status": "caution"
+      "status": "ok"
     },
     "silicone_quaternium_26": {
       "name": "Silicone Quaternium 26",
@@ -2107,7 +2107,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "water_soluble_silicones"
       ],
-      "status": "caution"
+      "status": "ok"
     },
     "unknown_non_water_soluble_silicone": {
       "name": "Unknown Non-Water Soluble Silicone",
@@ -2123,7 +2123,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "water_soluble_silicones"
       ],
-      "status": "caution"
+      "status": "ok"
     },
     "unknown_sulfate": {
       "name": "Unknown Sulfate",
@@ -2140,7 +2140,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "other_surfactants"
       ],
-      "status": "caution"
+      "status": "ok"
     },
     "unknown_cocoyl_glutamate": {
       "name": "Unknown Cocoyl Glutamate",
@@ -2148,7 +2148,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "other_surfactants"
       ],
-      "status": "caution"
+      "status": "ok"
     },
     "unknown_wax": {
       "name": "Unknown Wax",
@@ -2295,7 +2295,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "water_soluble_waxes"
       ],
-      "status": "caution"
+      "status": "ok"
     },
     "peg_40_hydrogenated_castor_oil": {
       "name": "PEG-40 Hydrogenated Castor Oil",
@@ -2319,7 +2319,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "water_soluble_waxes"
       ],
-      "status": "caution"
+      "status": "ok"
     },
     "polysorbate_20": {
       "name": "Polysorbate 20",
@@ -2340,7 +2340,41 @@ export const defaultDatabase: IngredientDatabase = {
       "name": "Drying Alcohols",
       "group": "alcohols",
       "description": "These alcohols are considered drying because they evaporate quickly and can strip natural oils from the hair and scalp",
-      "references": []
+      "references": [
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4387693/",
+          "type": "science",
+          "title": "Hair Cosmetics: An Overview"
+        },
+        {
+          "url": "https://thebeautybrains.com/2014/04/why-is-there-isopropyl-alcohol-in-my-conditioner/",
+          "type": "science",
+          "title": "The Beauty Brains: Why is there isopropyl alcohol in my conditioner?"
+        },
+        {
+          "url": "https://labmuffin.com/how-bad-is-alcohol-in-skincare-really/",
+          "type": "science",
+          "title": "Lab Muffin: How Bad is Alcohol in Skincare Really?"
+        },
+        {
+          "url": "https://science-yhairblog.blogspot.com/2013/05/alcohol-in-hair-sprays.html",
+          "type": "science",
+          "title": "Science-y Hair Blog: Alcohol in Hair Sprays",
+          "status": "caution"
+        },
+        {
+          "url": "http://www.tightlycurly.com/ingredients/",
+          "type": "author",
+          "title": "Tightly Curly",
+          "status": "warning"
+        },
+        {
+          "url": "https://amzn.to/41QrGxJ",
+          "status": "warning",
+          "title": "Curly Girl: The Handbook by Lorraine Massey",
+          "type": "hairpro"
+        }
+      ]
     },
     "parabens": {
       "id": "parabens",
@@ -2394,14 +2428,57 @@ export const defaultDatabase: IngredientDatabase = {
         "castor"
       ],
       "defaultIngredient": "unknown_water_soluble_silicone",
-      "references": []
+      "references": [
+        {
+          "title": "Silicone Polymers in Skin Care",
+          "url": "https://link.springer.com/article/10.1557/mrs2007.167",
+          "type": "science"
+        }
+      ]
     },
     "non_water_soluble_silicones": {
       "id": "non_water_soluble_silicones",
       "name": "Non-water-soluble Silicones",
       "group": "silicones",
       "description": "Non-water-soluble silicones in hair care products are a type of silicone that cannot be easily washed out with gentle shampoos or cowash",
-      "references": []
+      "references": [
+        {
+          "url": "https://labmuffin.com/silicone-mythbusting-with-video/",
+          "status": "good",
+          "title": "Lab Muffin",
+          "type": "science"
+        },
+        {
+          "url": "https://thebeautybrains.com/2007/01/are-silicones-bad-for-your-hair/",
+          "status": "ok",
+          "title": "The Beauty Brains",
+          "type": "science"
+        },
+        {
+          "url": "https://science-yhairblog.blogspot.com/2014/04/silicone-ingredient-solubility-list.html",
+          "status": "caution",
+          "title": "Science-y Hair Blog",
+          "description": "varies, discusses the different water solubilities of different silicones",
+          "type": "science"
+        },
+        {
+          "url": "https://amzn.to/41QrGxJ",
+          "status": "warning",
+          "title": "Curly Girl: The Handbook by Lorraine Massey",
+          "type": "hairpro",
+          "description": "recommends avoiding silicones"
+        },
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4387693/",
+          "type": "science",
+          "title": "Hair Cosmetics: An Overview"
+        },
+        {
+          "url": "https://link.springer.com/article/10.1134/S1560090423600201",
+          "type": "science",
+          "title": "Silicones in Cosmetics"
+        }
+      ]
     },
     "preservatives": {
       "id": "preservatives",
@@ -2645,6 +2722,16 @@ export const defaultDatabase: IngredientDatabase = {
           "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4387693/",
           "type": "science",
           "title": "Hair Cosmetics: An Overview"
+        },
+        {
+          "url": "https://link.springer.com/article/10.1134/S1560090423600201",
+          "type": "science",
+          "title": "Silicones in Cosmetics"
+        },
+        {
+          "url": "https://labmuffin.com/amodimethicone-my-new-favourite-hair-ingredient/",
+          "type": "science",
+          "title": "Lab Muffin: Amodimethicone - My New Favourite Hair Ingredient"
         }
       ]
     },

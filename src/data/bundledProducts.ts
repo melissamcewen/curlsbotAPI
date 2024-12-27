@@ -21,7 +21,7 @@ export const defaultProductDatabase: ProductDatabase = {
       "ingredients_raw": "aqua water eau, cocamidopropyl hydroxysultaine, disodium laureth sulfosuccinate, sodium lauryl sulfoacetate, sodium lauroyl sarcosinate, sodium polystyrene sulfonate, sodium chloride, cocamidopropylamine oxide, argania spinosa argan kernel oil, persea gratissima avocado oil, rosmarinus officinalis rosemary leaf extract, chamomilla recutita matricaria flower extract, lavandula angustifolia lavender flower extract, simmondsia chinensis jojoba seed extract, keratin amino acids, hydrolyzed keratin, silk amino acids, panthenol, sodium pca, cinnamidopropyltrimonium chloride, butylene glycol, peg-40 hydrogenated castor oil, peg-150 pentaerythrityl tetrastearate, peg-6 caprylic capric glycerides, caprylyl glycol, tetrasodium edta, disodium edta, chlorphenesin, phenoxyethanol, parfum fragrance, ci 17200 red 33, ci 19140 yellow 5, sodium hydroxide, citric acid, alpha-isomethyl ionone, butylphenyl methylpropional, linalool, hydroxyisohexyl 3-cyclohexene carboxaldehydethylpropional",
       "id": "clarifying_shampoo_au",
       "systems_excluded": [],
-      "status": "caution"
+      "status": "ok"
     },
     "wash_&_scrub_detox_pro-biotic_uk": {
       "name": "Wash & Scrub Detox Pro-biotic",

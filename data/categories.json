@@ -4,7 +4,42 @@
       "id": "drying_alcohols",
       "name": "Drying Alcohols",
       "group": "alcohols",
-      "description": "These alcohols are considered drying because they evaporate quickly and can strip natural oils from the hair and scalp"
+      "description": "These alcohols are considered drying because they evaporate quickly and can strip natural oils from the hair and scalp",
+      "references": [
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4387693/",
+          "type": "science",
+          "title": "Hair Cosmetics: An Overview"
+        },
+        {
+          "url": "https://thebeautybrains.com/2014/04/why-is-there-isopropyl-alcohol-in-my-conditioner/",
+          "type": "science",
+          "title": "The Beauty Brains: Why is there isopropyl alcohol in my conditioner?"
+        },
+        {
+          "url": "https://labmuffin.com/how-bad-is-alcohol-in-skincare-really/",
+          "type": "science",
+          "title": "Lab Muffin: How Bad is Alcohol in Skincare Really?"
+        },
+        {
+          "url": "https://science-yhairblog.blogspot.com/2013/05/alcohol-in-hair-sprays.html",
+          "type": "science",
+          "title": "Science-y Hair Blog: Alcohol in Hair Sprays",
+          "status": "caution"
+        },
+        {
+          "url": "http://www.tightlycurly.com/ingredients/",
+          "type": "author",
+          "title": "Tightly Curly",
+          "status": "warning"
+        },
+        {
+          "url": "https://amzn.to/41QrGxJ",
+          "status": "warning",
+          "title": "Curly Girl: The Handbook by Lorraine Massey",
+          "type": "hairpro"
+        }
+      ]
     },
     {
       "id": "parabens",
@@ -55,13 +90,58 @@
       "exclusions": [
         "castor"
       ],
-      "defaultIngredient": "unknown_water_soluble_silicone"
+      "defaultIngredient": "unknown_water_soluble_silicone",
+      "references": [
+        {
+          "title": "Silicone Polymers in Skin Care",
+          "url": "https://link.springer.com/article/10.1557/mrs2007.167",
+          "type": "science"
+        }
+      ]
     },
     {
       "id": "non_water_soluble_silicones",
       "name": "Non-water-soluble Silicones",
       "group": "silicones",
-      "description": "Non-water-soluble silicones in hair care products are a type of silicone that cannot be easily washed out with gentle shampoos or cowash"
+      "description": "Non-water-soluble silicones in hair care products are a type of silicone that cannot be easily washed out with gentle shampoos or cowash",
+      "references": [
+        {
+          "url": "https://labmuffin.com/silicone-mythbusting-with-video/",
+          "status": "good",
+          "title": "Lab Muffin",
+          "type": "science"
+        },
+        {
+          "url": "https://thebeautybrains.com/2007/01/are-silicones-bad-for-your-hair/",
+          "status": "ok",
+          "title": "The Beauty Brains",
+          "type": "science"
+        },
+        {
+          "url": "https://science-yhairblog.blogspot.com/2014/04/silicone-ingredient-solubility-list.html",
+          "status": "caution",
+          "title": "Science-y Hair Blog",
+          "description": "varies, discusses the different water solubilities of different silicones",
+          "type": "science"
+        },
+        {
+          "url": "https://amzn.to/41QrGxJ",
+          "status": "warning",
+          "title": "Curly Girl: The Handbook by Lorraine Massey",
+          "type": "hairpro",
+          "description": "recommends avoiding silicones"
+        },
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4387693/",
+          "type": "science",
+          "title": "Hair Cosmetics: An Overview"
+        },
+        {
+          "url": "https://link.springer.com/article/10.1134/S1560090423600201",
+          "type": "science",
+          "title": "Silicones in Cosmetics"
+        }
+      ]
     },
     {
       "id": "preservatives",
