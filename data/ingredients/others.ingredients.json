@@ -3,17 +3,16 @@
     {
       "name": "Aminomethyl Propanol",
       "id": "aminomethyl_propanol",
-      "categories": ["other"],
-      "references": [
-        {
-          "url": "https://incidecoder.com/ingredients/aminomethyl-propanol"
-        }
+      "categories": [
+        "other"
       ]
     },
     {
       "name": "Disodium 2-Sulfolaurate",
       "id": "disodium_2_sulfolaurate",
-      "categories": ["other_detergents"]
+      "categories": [
+        "other_surfactants"
+      ]
     },
     {
       "name": "Potassium Castorate",
@@ -22,11 +21,8 @@
         "potassium salt of castor oil fatty acids",
         "castor oil soap"
       ],
-      "categories": ["soaps"],
-      "references": [
-        {
-          "url": "https://incidecoder.com/ingredients/potassium-castorate"
-        }
+      "categories": [
+        "soaps"
       ]
     },
     {
@@ -36,71 +32,70 @@
         "potassium salt of coconut oil fatty acids",
         "coconut oil soap"
       ],
-      "categories": ["soaps"],
-      "references": [
-        {
-          "url": "https://incidecoder.com/ingredients/potassium-cocoate"
-        }
+      "categories": [
+        "soaps"
       ]
     },
     {
       "name": "Potassium Olivate",
       "id": "potassium_olivate",
-      "synonyms": ["potassium salt of olive oil fatty acids", "olive oil soap"],
-      "categories": ["soaps"],
-      "references": [
-        {
-          "url": "https://incidecoder.com/ingredients/potassium-olivate"
-        }
+      "synonyms": [
+        "potassium salt of olive oil fatty acids",
+        "olive oil soap"
+      ],
+      "categories": [
+        "soaps"
       ]
     },
     {
       "name": "Potassium Palmate",
       "id": "potassium_palmate",
-      "synonyms": ["potassium salt of palmitic acid", "palm oil soap"],
-      "categories": ["soaps"],
-      "references": [
-        {
-          "url": "https://incidecoder.com/ingredients/potassium-palmate"
-        }
+      "synonyms": [
+        "potassium salt of palmitic acid",
+        "palm oil soap"
+      ],
+      "categories": [
+        "soaps"
       ]
     },
     {
       "name": "Potassium Stearate",
       "id": "potassium_stearate",
-      "synonyms": ["potassium salt of stearic acid", "potassium soap"],
-      "categories": ["soaps"],
-      "references": [
-        {
-          "url": "https://incidecoder.com/ingredients/potassium-stearate"
-        }
+      "synonyms": [
+        "potassium salt of stearic acid",
+        "potassium soap"
+      ],
+      "categories": [
+        "soaps"
       ]
     },
     {
       "name": "Saccharomyces Silicon Ferment",
       "id": "saccharomyces_silicon_ferment",
-      "synonyms": ["saccharomycessilicon", "silicon ferment"],
-      "categories": ["other"],
-      "references": [
-        {
-          "url": "https://incidecoder.com/ingredients/saccharomyces-silicon-ferment"
-        }
+      "synonyms": [
+        "saccharomycessilicon",
+        "silicon ferment"
+      ],
+      "categories": [
+        "other"
       ]
     },
     {
       "name": "Soap",
       "id": "soaps",
-      "categories": ["other_detergents"]
+      "categories": [
+        "other_surfactants"
+      ]
     },
     {
       "name": "Sodium Castorate",
       "id": "sodium_castorate",
-      "synonyms": ["sodium salt of castor oil fatty acids", "castor oil soap"],
-      "categories": ["soaps"],
-      "references": [
-        {
-          "url": "https://incidecoder.com/ingredients/sodium-castorate"
-        }
+      "synonyms": [
+        "sodium salt of castor oil fatty acids",
+        "castor oil soap"
+      ],
+      "categories": [
+        "soaps"
       ]
     },
     {
@@ -110,109 +105,128 @@
         "sodium salt of coconut oil fatty acids",
         "coconut oil soap"
       ],
-      "categories": ["soaps"],
-      "references": [
-        {
-          "url": "https://incidecoder.com/ingredients/sodium-cocoate"
-        }
+      "categories": [
+        "soaps"
       ]
     },
     {
       "name": "Sodium Lauroyl Hydrolyzed Silk",
       "id": "sodium_lauroyl_hydrolyzed_silk",
-      "categories": ["other_detergents"]
+      "categories": [
+        "other_surfactants"
+      ]
     },
     {
       "name": "Sodium Lauroyl Lactylate",
       "id": "sodium_lauroyl_lactylate",
-      "categories": ["other_detergents"]
+      "categories": [
+        "other_surfactants"
+      ]
     },
     {
       "name": "Sodium Lauroyl Oat Amino Acids",
       "id": "sodium_lauroyl_oat_amino_acids",
-      "categories": ["other_detergents"]
+      "categories": [
+        "other_surfactants"
+      ]
     },
     {
       "name": "Sodium Methyl 2-Sulfolaurate",
       "id": "sodium_methyl_2_sulfolaurate",
-      "categories": ["other_detergents"]
+      "categories": [
+        "other_surfactants"
+      ]
     },
     {
       "name": "Sodium Olivate",
       "id": "sodium_olivate",
-      "synonyms": ["sodium salt of olive oil fatty acids", "olive oil soap"],
-      "categories": ["soaps"],
-      "references": [
-        {
-          "url": "https://incidecoder.com/ingredients/sodium-olivate"
-        }
+      "synonyms": [
+        "sodium salt of olive oil fatty acids",
+        "olive oil soap"
+      ],
+      "categories": [
+        "soaps"
       ]
     },
     {
       "name": "Sodium Palmate",
       "id": "sodium_palmate",
-      "synonyms": ["sodium salt of palmitic acid", "palm oil soap"],
-      "categories": ["soaps"],
-      "references": [
-        {
-          "url": "https://incidecoder.com/ingredients/sodium-palmate"
-        }
+      "synonyms": [
+        "sodium salt of palmitic acid",
+        "palm oil soap"
+      ],
+      "categories": [
+        "soaps"
       ]
     },
     {
       "name": "Sodium Stearate",
       "id": "sodium_stearate",
-      "synonyms": ["sodium salt of stearic acid", "stearic acid soap"],
-      "categories": ["soaps"],
-      "references": [
-        {
-          "url": "https://incidecoder.com/ingredients/sodium-stearate"
-        }
+      "synonyms": [
+        "sodium salt of stearic acid",
+        "stearic acid soap"
+      ],
+      "categories": [
+        "soaps"
       ]
     },
     {
       "name": "Sodium Tallowate",
       "id": "sodium_tallowate",
-      "synonyms": ["sodium salt of tallow fatty acids", "tallow soap"],
-      "categories": ["soaps"],
-      "references": [
-        {
-          "url": "https://incidecoder.com/ingredients/sodium-tallowate"
-        }
+      "synonyms": [
+        "sodium salt of tallow fatty acids",
+        "tallow soap"
+      ],
+      "categories": [
+        "soaps"
       ]
     },
     {
       "name": "Triisopropanolamine",
       "id": "triisopropanolamine",
-      "categories": ["other_detergents"]
+      "categories": [
+        "other_surfactants"
+      ]
     },
     {
       "name": "Witch Hazel",
       "id": "witch_hazel",
-      "synonyms": ["witch", "hamamelis", "hamamellis", "hazel"],
-      "categories": ["astringents"],
+      "synonyms": [
+        "witch",
+        "hamamelis",
+        "hamamellis",
+        "hazel"
+      ],
+      "categories": [
+        "astringents"
+      ],
       "description": "Most witch hazel contains alcohol—check with the manufacturer to confirm. Even alcohol-free versions can be drying, so use cautiously on high porosity hair."
     },
     {
       "name": "Unknown Paraben",
       "id": "unknown_paraben",
-      "synonyms": ["paraben"],
-      "categories": ["parabens"]
+      "synonyms": [
+        "paraben"
+      ],
+      "categories": [
+        "parabens"
+      ]
     },
     {
       "name": "Water  ",
       "id": "water",
-      "synonyms": ["aqua"],
-      "categories": ["other"]
+      "synonyms": [
+        "aqua"
+      ],
+      "categories": [
+        "other"
+      ]
     },
     {
       "name": "Solvent",
       "id": "isododecane",
-      "categories": ["solvents"],
-      "references": [
-        {
-          "url": "https://incidecoder.com/ingredients/isododecane"
-        }
+      "categories": [
+        "solvents"
       ]
     },
     {
@@ -224,47 +238,45 @@
         "isohexanedecane",
         "isohexad"
       ],
-      "categories": ["solvents"],
-      "references": [
-        {
-          "url": "https://incidecoder.com/ingredients/isohexadecane"
-        }
+      "categories": [
+        "solvents"
       ]
     },
     {
       "name": "Behentrimonium Methosulfate",
       "id": "behentrimonium_methosulfate",
-      "categories": ["other"],
-      "description": "Despite the name, this is not a sulfate. It is often used as a conditioner.",
-      "references": [
-        {
-          "url": "https://incidecoder.com/ingredients/behentrimonium-methosulfate"
-        }
-      ]
+      "categories": [
+        "other"
+      ],
+      "description": "Despite the name, this is not a sulfate. It is often used as a conditioner."
     },
     {
       "name": "Flower Extract",
       "id": "flower_extract",
-      "categories": ["other"],
+      "categories": [
+        "other"
+      ],
       "description": "This is a flower extract, but we're not sure which one. These are generally considered harmless or beneficial."
     },
     {
       "name": "Aloe Barbadensis Leaf Extract",
       "id": "aloe_barbadensis_leaf_extract",
       "description": "A moisturizing ingredient that soothes the scalp and conditions hair",
-      "categories": ["other"],
-      "references": [
-        {
-          "url": "https://incidecoder.com/ingredients/aloe-barbadensis-leaf-extract"
-        }
+      "categories": [
+        "other"
       ],
-      "synonyms": ["aloe vera", "aloe barbadensis leaf juice"]
+      "synonyms": [
+        "aloe vera",
+        "aloe barbadensis leaf juice"
+      ]
     },
     {
       "name": "Behentrimonium Chloride",
       "id": "behentrimonium_chloride",
       "description": "A conditioning agent that reduces static and detangles hair",
-      "categories": ["other"],
+      "categories": [
+        "other"
+      ],
       "references": [
         {
           "url": "https://incidecoder.com/ingredients/behentrimonium-chloride"
@@ -275,7 +287,9 @@
       "name": "Cetrimonium Chloride",
       "id": "cetrimonium_chloride",
       "description": "A conditioning agent that detangles and adds shine",
-      "categories": ["other"],
+      "categories": [
+        "other"
+      ],
       "references": [
         {
           "url": "https://incidecoder.com/ingredients/cetrimonium-chloride"
@@ -286,7 +300,9 @@
       "name": "Citric Acid",
       "id": "citric_acid",
       "description": "Used to adjust pH levels and smooth hair cuticles",
-      "categories": ["other"],
+      "categories": [
+        "other"
+      ],
       "references": [
         {
           "url": "https://incidecoder.com/ingredients/citric-acid"
@@ -297,211 +313,176 @@
       "name": "Ethylhexylglycerin",
       "id": "ethylhexylglycerin",
       "description": "A humectant and preservative enhancer",
-      "categories": ["humectants"],
-      "references": [
-        {
-          "url": "https://incidecoder.com/ingredients/ethylhexylglycerin"
-        }
+      "categories": [
+        "humectants"
       ]
     },
     {
       "name": "Glycereth-26",
       "id": "glycereth_26",
       "description": "A lightweight humectant that provides hydration without greasiness",
-      "categories": ["humectants"],
-      "references": [
-        {
-          "url": "https://incidecoder.com/ingredients/glycereth-26"
-        }
+      "categories": [
+        "humectants"
       ]
     },
     {
       "name": "Glycerin",
       "id": "glycerin",
       "description": "A powerful humectant that attracts moisture to the hair",
-      "categories": ["humectants"],
-      "references": [
-        {
-          "url": "https://incidecoder.com/ingredients/glycerin"
-        }
+      "categories": [
+        "humectants"
       ]
     },
     {
       "name": "Hydroxyethylcellulose",
       "id": "hydroxyethylcellulose",
       "description": "A thickening agent that improves product texture",
-      "categories": ["other"],
-      "references": [
-        {
-          "url": "https://incidecoder.com/ingredients/hydroxyethylcellulose"
-        }
+      "categories": [
+        "other"
       ]
     },
     {
       "name": "Hydroxypropyltrimonium Honey",
       "id": "hydroxypropyltrimonium_honey",
       "description": "A conditioning agent derived from honey that adds shine and softness",
-      "categories": ["other"],
-      "references": [
-        {
-          "url": "https://incidecoder.com/ingredients/hydroxypropyltrimonium-honey"
-        }
+      "categories": [
+        "other"
       ]
     },
     {
       "name": "Panthenol",
       "id": "panthenol",
       "description": "A moisturizing and strengthening agent that enhances hair elasticity",
-      "categories": ["other"],
-      "references": [
-        {
-          "url": "https://incidecoder.com/ingredients/panthenol"
-        }
+      "categories": [
+        "other"
       ],
-      "synonyms": ["Provitamin B5", "Vitamin B5"]
+      "synonyms": [
+        "Provitamin B5",
+        "Vitamin B5"
+      ]
     },
     {
       "name": "Phenoxyethanol",
       "id": "phenoxyethanol",
       "description": "A preservative that prevents microbial growth in hair care products",
-      "categories": ["preservatives"],
-      "references": [
-        {
-          "url": "https://incidecoder.com/ingredients/phenoxyethanol"
-        }
+      "categories": [
+        "preservatives"
       ]
     },
     {
       "name": "Silk Amino Acids",
       "id": "silk_amino_acids",
       "description": "A protein derivative that strengthens and smooths hair",
-      "categories": ["proteins"],
-      "references": [
-        {
-          "url": "https://incidecoder.com/ingredients/silk-amino-acids"
-        }
+      "categories": [
+        "proteins"
       ]
     },
     {
       "name": "Sodium Phytate",
       "id": "sodium_phytate",
       "description": "A chelating agent that stabilizes product formulations",
-      "categories": ["other"],
-      "references": [
-        {
-          "url": "https://incidecoder.com/ingredients/sodium-phytate"
-        }
+      "categories": [
+        "other"
       ]
     },
     {
       "name": "Sorbic Acid",
       "id": "sorbic_acid",
       "description": "A preservative that inhibits the growth of mold and yeast",
-      "categories": ["preservatives"],
-      "references": [
-        {
-          "url": "https://incidecoder.com/ingredients/sorbic-acid"
-        }
+      "categories": [
+        "preservatives"
       ]
     },
     {
       "name": "Sorbitol",
       "id": "sorbitol",
       "description": "A humectant that retains moisture and adds hydration",
-      "categories": ["humectants"],
-      "references": [
-        {
-          "url": "https://incidecoder.com/ingredients/sorbitol"
-        }
+      "categories": [
+        "humectants"
       ]
     },
     {
       "name": "Tocopheryl Acetate",
       "id": "tocopheryl_acetate",
       "description": "An antioxidant that protects hair and scalp from free radical damage",
-      "categories": ["other"],
-      "references": [
-        {
-          "url": "https://incidecoder.com/ingredients/tocopheryl-acetate"
-        }
+      "categories": [
+        "other"
       ],
-      "synonyms": ["Vitamin E"]
+      "synonyms": [
+        "Vitamin E"
+      ]
     },
     {
       "name": "Cellulose",
       "id": "cellulose",
       "description": "A natural polymer used as a thickener and stabilizer in hair care formulations",
-      "categories": ["other"],
-      "references": [
-        {
-          "url": "https://incidecoder.com/ingredients/cellulose"
-        }
+      "categories": [
+        "other"
       ]
     },
     {
       "name": "Caprylic Capric Triglyceride",
       "id": "caprylic_capric_triglyceride",
       "description": "A lightweight emollient derived from coconut oil, providing moisture without greasiness",
-      "categories": ["other"],
-      "references": [
-        {
-          "url": "https://incidecoder.com/ingredients/caprylic-capric-triglyceride"
-        }
+      "categories": [
+        "other"
       ]
     },
     {
       "name": "PEG-100 Stearate",
       "id": "peg_100_stearate",
       "description": "An emulsifier that helps blend water and oil, improving the texture and stability of hair care products",
-      "categories": ["other"],
-      "references": [
-        {
-          "url": "https://incidecoder.com/ingredients/peg-100-stearate"
-        }
+      "categories": [
+        "other"
       ],
-      "synonyms": ["PEG 100 Stearate"]
+      "synonyms": [
+        "PEG 100 Stearate"
+      ]
     },
     {
       "name": "Fragrance",
       "id": "fragrance",
-      "categories": ["other"],
-      "synonyms": ["parfum"],
-      "description": "A blend of aromatic compounds that provides a pleasant scent to hair care products. Some people are sensitive to fragrances and companies are not required to list which specific ingredients are used in their fragrance blends.",
-      "references": [
-        {
-          "url": "https://incidecoder.com/ingredients/parfum"
-        }
-      ]
+      "categories": [
+        "other"
+      ],
+      "synonyms": [
+        "parfum"
+      ],
+      "description": "A blend of aromatic compounds that provides a pleasant scent to hair care products. Some people are sensitive to fragrances and companies are not required to list which specific ingredients are used in their fragrance blends."
     },
     {
       "name": "Guar Hydroxypropyltrimonium Chloride",
       "id": "guar_hydroxypropyltrimonium_chloride",
       "description": "A conditioning agent derived from guar gum, improving detangling and reducing static in hair",
-      "categories": ["other"],
-      "references": [
-        {
-          "url": "https://incidecoder.com/ingredients/guar-hydroxypropyltrimonium-chloride"
-        }
+      "categories": [
+        "other"
       ],
-      "synonyms": ["guar gum quaternary ammonium", "cationic guar"]
+      "synonyms": [
+        "guar gum quaternary ammonium",
+        "cationic guar"
+      ]
     },
     {
       "name": "Magnesium Sulfate",
       "id": "magnesium_sulfate",
       "description": "A mineral salt used as a texturizer and curl enhancer in hair care products. Some people find the texture unpleasant or drying.",
-      "categories": ["other"],
-      "references": [
-        {
-          "url": "https://incidecoder.com/ingredients/magnesium-sulfate"
-        }
+      "categories": [
+        "other"
       ],
-      "synonyms": ["epsom salt", "magnesium salt"]
+      "synonyms": [
+        "epsom salt",
+        "magnesium salt"
+      ]
     },
     {
       "name": "Phenyl Propanol",
       "id": "phenyl_propanol",
-      "synonyms": ["phenylpropanol"],
-      "categories": ["other"]
+      "synonyms": [
+        "phenylpropanol"
+      ],
+      "categories": [
+        "other"
+      ]
     }
   ]
 }

@@ -50,7 +50,7 @@ export const testDatabase: IngredientDatabase = {
     sodium_cocoyl_isethionate: {
       id: 'sodium_cocoyl_isethionate',
       name: 'Sodium Cocoyl Isethionate',
-      categories: ['mild_detergents'],
+      categories: ['mild_surfactants'],
     },
     emulsifying_wax: {
       id: 'emulsifying_wax',
@@ -104,13 +104,13 @@ export const testDatabase: IngredientDatabase = {
       id: 'sulfates',
       name: 'Sulfates',
       description: 'Sulfate-based cleansers',
-      group: 'detergents',
+      group: 'surfactants',
     },
     surfactants: {
       id: 'surfactants',
       name: 'Surfactants',
       description: 'Surface active agents',
-      group: 'detergents',
+      group: 'surfactants',
     },
     emollient_alcohols: {
       id: 'emollient_alcohols',
@@ -124,11 +124,11 @@ export const testDatabase: IngredientDatabase = {
       description: 'Drying alcohols',
       group: 'alcohols',
     },
-    mild_detergents: {
-      id: 'mild_detergents',
-      name: 'Mild Detergents',
+    mild_surfactants: {
+      id: 'mild_surfactants',
+      name: 'Mild surfactants',
       description: 'Gentle cleansing agents',
-      group: 'detergents',
+      group: 'surfactants',
     },
     non_water_soluble_waxes: {
       id: 'non_water_soluble_waxes',
@@ -159,9 +159,9 @@ export const testDatabase: IngredientDatabase = {
       exclusions: ['saccharomycessilicon', 'silicon ferment'],
       defaultIngredient: 'unknown_non_water_soluble_silicone',
     },
-    detergents: {
-      id: 'detergents',
-      name: 'Detergents',
+    surfactants: {
+      id: 'surfactants',
+      name: 'surfactants',
     },
     alcohols: {
       id: 'alcohols',
@@ -200,12 +200,12 @@ export const testSettings: Settings = {
     groups: ['silicones'],
     defaultStatus: 'warning',
   },
-  mild_detergents_only: {
-    id: 'mild_detergents_only',
-    name: 'Mild Detergents Only',
-    description: 'Only allow mild detergents',
-    groups: ['detergents'],
-    allowedCategories: ['mild_detergents'],
+  mild_surfactants_only: {
+    id: 'mild_surfactants_only',
+    name: 'Mild surfactants Only',
+    description: 'Only allow mild surfactants',
+    groups: ['surfactants'],
+    allowedCategories: ['mild_surfactants'],
     defaultStatus: 'warning',
     allowedStatus: 'ok',
   },
@@ -241,7 +241,7 @@ export const testSystems: System[] = [
     id: 'curly_default',
     description:
       'The Curly Default system is a hair care system that focuses on using products that are free of harsh chemicals and sulfates.',
-    settings: ['mild_detergents_only', 'silicone_free'],
+    settings: ['mild_surfactants_only', 'silicone_free'],
   },
   {
     name: 'Curly Moderate',

@@ -9,14 +9,14 @@
         "alkyl benzene sulphate"
       ],
       "categories": [
-        "other_detergents"
+        "other_surfactants"
       ]
     },
     {
       "name": "Ammonium Cocoyl Isethionate",
       "id": "ammonium_cocoyl_isethionate",
       "categories": [
-        "mild_detergents"
+        "mild_surfactants"
       ]
     },
     {
@@ -68,14 +68,14 @@
         "ammonium xylene sulfonate"
       ],
       "categories": [
-        "other_detergents"
+        "other_surfactants"
       ]
     },
     {
       "name": "Babassuamidopropyl Betaine",
       "id": "babassuamidopropyl_betaine",
       "categories": [
-        "mild_detergents"
+        "mild_surfactants"
       ]
     },
     {
@@ -85,35 +85,35 @@
         "capryl glucoside, caprylyl glucoside"
       ],
       "categories": [
-        "mild_detergents"
+        "mild_surfactants"
       ]
     },
     {
       "name": "Cocamidopropyl Betaine",
       "id": "cocamidopropyl_betaine",
       "categories": [
-        "mild_detergents"
+        "mild_surfactants"
       ]
     },
     {
       "name": "Cocamidopropyl Hydroxysultaine",
       "id": "cocamidopropyl_hydroxysultaine",
       "categories": [
-        "mild_detergents"
+        "mild_surfactants"
       ]
     },
     {
       "name": "Coco Betaine",
       "id": "coco_betaine",
       "categories": [
-        "mild_detergents"
+        "mild_surfactants"
       ]
     },
     {
       "name": "Coco Glucoside",
       "id": "coco_glucoside",
       "categories": [
-        "mild_detergents"
+        "mild_surfactants"
       ]
     },
     {
@@ -123,78 +123,70 @@
         "coconut monoethanolamide"
       ],
       "categories": [
-        "mild_detergents"
-      ],
-      "references": [
-        {
-          "url": "https://incidecoder.com/ingredients/cocamide-mea"
-        },
-        {
-          "url": "https://pubchem.ncbi.nlm.nih.gov/compound/Cocamide-MEA"
-        }
+        "mild_surfactants"
       ]
     },
     {
       "name": "Decyl Glucoside",
       "id": "decyl_glucoside",
       "categories": [
-        "mild_detergents"
+        "mild_surfactants"
       ]
     },
     {
       "name": "Decyl Polyglucose",
       "id": "decyl_polyglucose",
       "categories": [
-        "mild_detergents"
+        "mild_surfactants"
       ]
     },
     {
       "name": "Dioctyl Sodium Sulfosuccinate",
       "id": "dioctyl_sodium_sulfosuccinate",
       "categories": [
-        "other_detergents"
+        "other_surfactants"
       ]
     },
     {
       "name": "Disodium Cocoamphodiacetate",
       "id": "disodium_cocoamphodiacetate",
       "categories": [
-        "mild_detergents"
+        "mild_surfactants"
       ]
     },
     {
       "name": "Disodium Cocoamphodipropionate",
       "id": "disodium_cocoamphodipropionate",
       "categories": [
-        "mild_detergents"
+        "mild_surfactants"
       ]
     },
     {
       "name": "Disodium Cocoyl Glutamate",
       "id": "disodium_cocoyl_glutamate",
       "categories": [
-        "other_detergents"
+        "other_surfactants"
       ]
     },
     {
       "name": "Disodium Laureth Succinate",
       "id": "disodium_laureth_succinate",
       "categories": [
-        "mild_detergents"
+        "mild_surfactants"
       ]
     },
     {
       "name": "Disodium Laureth Sulfosuccinate",
       "id": "disodium_laureth_sulfosuccinate",
       "categories": [
-        "mild_detergents"
+        "mild_surfactants"
       ]
     },
     {
       "name": "Disodium Lauryl Sulfosuccinate",
       "id": "disodium_lauryl_sulfosuccinate",
       "categories": [
-        "mild_detergents"
+        "mild_surfactants"
       ]
     },
     {
@@ -211,14 +203,14 @@
       "name": "Lauryl Glucoside",
       "id": "lauryl_glucoside",
       "categories": [
-        "mild_detergents"
+        "mild_surfactants"
       ]
     },
     {
       "name": "Lauryl Hydroxysultaine",
       "id": "lauryl_hydroxysultaine",
       "categories": [
-        "mild_detergents"
+        "mild_surfactants"
       ]
     },
     {
@@ -238,7 +230,7 @@
         "sodium c12-14 olefin sulphate"
       ],
       "categories": [
-        "other_detergents"
+        "other_surfactants"
       ]
     },
     {
@@ -258,7 +250,7 @@
         "sodium c14-15 olefin sulphate"
       ],
       "categories": [
-        "other_detergents"
+        "other_surfactants"
       ]
     },
     {
@@ -270,9 +262,9 @@
         "sodium c1416 olefin sulfonate"
       ],
       "categories": [
-        "mild_detergents"
+        "mild_surfactants"
       ],
-      "description": "CurlsBot is in the process of reclassifying this ingredient. We believe it is a mild detergent but in the past we've listed it as stronger"
+      "description": "CurlsBot is in the process of reclassifying this ingredient. We believe it is a mild surfactant but in the past we've listed it as stronger"
     },
     {
       "name": "Sodium C14-18 Olefin Sulfonate",
@@ -281,7 +273,7 @@
         "sodium c14-18 olefin sulphate"
       ],
       "categories": [
-        "other_detergents"
+        "other_surfactants"
       ]
     },
     {
@@ -291,7 +283,7 @@
         "sodium c14-26 olefin sulphate"
       ],
       "categories": [
-        "other_detergents"
+        "other_surfactants"
       ]
     },
     {
@@ -301,7 +293,7 @@
         "sodium c16-18 olefin sulphate"
       ],
       "categories": [
-        "other_detergents"
+        "other_surfactants"
       ]
     },
     {
@@ -338,7 +330,7 @@
       "name": "Sodium Cocoamphoacetate",
       "id": "sodium_cocoamphoacetate",
       "categories": [
-        "mild_detergents"
+        "mild_surfactants"
       ]
     },
     {
@@ -355,21 +347,21 @@
       "name": "Sodium Cocoyl Glutamate",
       "id": "sodium_cocoyl_glutamate",
       "categories": [
-        "other_detergents"
+        "other_surfactants"
       ]
     },
     {
       "name": "Sodium Cocoyl Isethionate",
       "id": "sodium_cocoyl_isethionate",
       "categories": [
-        "mild_detergents"
+        "mild_surfactants"
       ]
     },
     {
       "name": "Sodium Cocoyl Sarcosinate",
       "id": "sodium_cocoyl_sarcosinate",
       "categories": [
-        "other_detergents"
+        "other_surfactants"
       ]
     },
     {
@@ -397,12 +389,6 @@
           "type": "hairpro"
         },
         {
-          "url": "https://www.ewg.org/skindeep/ingredients/706089-SODIUM_LAURETH_SULFATE/",
-          "status": "caution",
-          "title": "EWG Skin Deep",
-          "type": "science"
-        },
-        {
           "url": "https://incidecoder.com/ingredients/sodium-laureth-sulfate",
           "status": "ok",
           "title": "INCIdecoder",
@@ -423,21 +409,21 @@
         "sodium laureth-40 sulphate"
       ],
       "categories": [
-        "other_detergents"
+        "other_surfactants"
       ]
     },
     {
       "name": "Sodium Lauroamphoacetate",
       "id": "sodium_lauroamphoacetate",
       "categories": [
-        "mild_detergents"
+        "mild_surfactants"
       ]
     },
     {
       "name": "Sodium Lauroyl Glutamate",
       "id": "sodium_lauroyl_glutamate",
       "categories": [
-        "mild_detergents"
+        "mild_surfactants"
       ]
     },
     {
@@ -449,27 +435,22 @@
         "sodium lauroylmethyl isethionate"
       ],
       "categories": [
-        "mild_detergents"
+        "mild_surfactants"
       ],
-      "description": "CurlsBot is in the process of reclassifying this ingredient. We believe it is a mild detergent but in the past we've listed it as stronger",
-      "references": [
-        {
-          "url": "https://incidecoder.com/ingredients/sodium-lauroyl-methyl-isethionate"
-        }
-      ]
+      "description": "CurlsBot is in the process of reclassifying this ingredient. We believe it is a mild surfactant but in the past we've listed it as stronger"
     },
     {
       "name": "Sodium Lauroyl Sarcosinate",
       "id": "sodium_lauroyl_sarcosinate",
       "categories": [
-        "other_detergents"
+        "other_surfactants"
       ]
     },
     {
       "name": "Sodium Lauryl Glucose Carboxylate",
       "id": "sodium_lauryl_glucose_carboxylate",
       "categories": [
-        "mild_detergents"
+        "mild_surfactants"
       ]
     },
     {
@@ -480,7 +461,7 @@
         "sodium lauroyl sarcosine"
       ],
       "categories": [
-        "other_detergents"
+        "other_surfactants"
       ]
     },
     {
@@ -505,12 +486,6 @@
           "url": "https://incidecoder.com/ingredients/sodium-lauryl-sulfate",
           "status": "warning",
           "title": "INCIdecoder",
-          "type": "science"
-        },
-        {
-          "url": "https://www.ewg.org/skindeep/ingredients/706110-SODIUM_LAURYL_SULFATE/",
-          "status": "ok",
-          "title": "EWG Skin Deep",
           "type": "science"
         },
         {
@@ -549,21 +524,21 @@
       "name": "Sodium Lauryl Sulfoacetate",
       "id": "sodium_lauryl_sulfoacetate",
       "categories": [
-        "other_detergents"
+        "other_surfactants"
       ]
     },
     {
       "name": "Sodium Laurylglucosides Hydroxypropylsulfonate",
       "id": "sodium_laurylglucosides_hydroxypropylsulfonate",
       "categories": [
-        "mild_detergents"
+        "mild_surfactants"
       ]
     },
     {
       "name": "Sodium Methyl Cocoyl Taurate",
       "id": "sodium_methyl_cocoyl_taurate",
       "categories": [
-        "mild_detergents"
+        "mild_surfactants"
       ]
     },
     {
@@ -580,7 +555,7 @@
       "name": "Sodium Myristoyl Sarcosinate",
       "id": "sodium_myristoyl_sarcosinate",
       "categories": [
-        "other_detergents"
+        "other_surfactants"
       ]
     },
     {
@@ -602,7 +577,7 @@
         "sodium xylene sulfonate"
       ],
       "categories": [
-        "other_detergents"
+        "other_surfactants"
       ]
     },
     {
@@ -612,7 +587,7 @@
         "tea-dodecylbenzenesulfonate"
       ],
       "categories": [
-        "other_detergents"
+        "other_surfactants"
       ]
     },
     {
@@ -642,7 +617,7 @@
         " sulfonate"
       ],
       "categories": [
-        "other_detergents"
+        "other_surfactants"
       ],
       "description": "We're pretty sure this is a sulfonate, but we're not sure which one. "
     }

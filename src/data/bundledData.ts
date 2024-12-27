@@ -9,8 +9,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "emollient_alcohols"
       ],
-      "synonyms": [],
-      "references": []
+      "status": "ok"
     },
     "amino_methyl_propanol": {
       "name": "Amino Methyl Propanol",
@@ -18,8 +17,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "emollient_alcohols"
       ],
-      "synonyms": [],
-      "references": []
+      "status": "ok"
     },
     "amino_2_methyl_1_propanol": {
       "name": "Amino-2-Methyl-1-Propanol",
@@ -27,8 +25,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "emollient_alcohols"
       ],
-      "synonyms": [],
-      "references": []
+      "status": "ok"
     },
     "amylcinnamyl_alcohol": {
       "name": "Amylcinnamyl Alcohol",
@@ -39,11 +36,7 @@ export const defaultDatabase: IngredientDatabase = {
       "synonyms": [
         "amyl cinnamyl alcohol"
       ],
-      "references": [
-        {
-          "url": "https://cosdna.com/eng/3a86ec9991.html"
-        }
-      ]
+      "status": "ok"
     },
     "arachidyl_alcohol": {
       "name": "Arachidyl Alcohol",
@@ -51,8 +44,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "emollient_alcohols"
       ],
-      "synonyms": [],
-      "references": []
+      "status": "ok"
     },
     "behenyl_alcohol": {
       "name": "Behenyl Alcohol",
@@ -64,11 +56,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "emollient_alcohols"
       ],
-      "references": [
-        {
-          "url": "https://cosdna.com/eng/5fc5481.html"
-        }
-      ]
+      "status": "ok"
     },
     "benzyl_alcohol": {
       "name": "Benzyl Alcohol",
@@ -78,10 +66,12 @@ export const defaultDatabase: IngredientDatabase = {
       ],
       "references": [
         {
-          "url": "https://incidecoder.com/ingredients/benzyl-alcohol"
+          "url": "https://incidecoder.com/ingredients/benzyl-alcohol",
+          "title": "INCIDecor",
+          "status": "ok"
         }
       ],
-      "synonyms": []
+      "status": "ok"
     },
     "brassica_alcohol": {
       "name": "Brassica Alcohol",
@@ -89,8 +79,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "emollient_alcohols"
       ],
-      "synonyms": [],
-      "references": []
+      "status": "ok"
     },
     "butylene_alcohol": {
       "name": "Butylene Alcohol",
@@ -98,8 +87,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "emollient_alcohols"
       ],
-      "synonyms": [],
-      "references": []
+      "status": "ok"
     },
     "c14_22_alcohol": {
       "name": "C14-22 Alcohol",
@@ -107,8 +95,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "emollient_alcohols"
       ],
-      "synonyms": [],
-      "references": []
+      "status": "ok"
     },
     "c20_c22_alcohol": {
       "name": "C20-C22 Alcohol",
@@ -116,8 +103,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "emollient_alcohols"
       ],
-      "synonyms": [],
-      "references": []
+      "status": "ok"
     },
     "c30_50_alcohols": {
       "name": "C30_50 Alcohols",
@@ -125,12 +111,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "emollient_alcohols"
       ],
-      "references": [
-        {
-          "url": "https://cosdna.com/eng/8fb0237001.html"
-        }
-      ],
-      "synonyms": []
+      "status": "caution"
     },
     "cetearyl_alcohol": {
       "name": "Cetearyl Alcohol",
@@ -144,11 +125,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "emollient_alcohols"
       ],
-      "references": [
-        {
-          "url": "https://cosdna.com/eng/f83898102.html"
-        }
-      ]
+      "status": "ok"
     },
     "cetyl_alcohol": {
       "name": "Cetyl Alcohol",
@@ -164,11 +141,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "emollient_alcohols"
       ],
-      "references": [
-        {
-          "url": "https://cosdna.com/eng/cac655104.html"
-        }
-      ]
+      "status": "ok"
     },
     "cetylated_lanolin_alcohol": {
       "name": "Cetylated Lanolin Alcohol",
@@ -176,8 +149,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "emollient_alcohols"
       ],
-      "synonyms": [],
-      "references": []
+      "status": "ok"
     },
     "cinnamyl_alcohol": {
       "name": "Cinnamyl Alcohol",
@@ -190,9 +162,12 @@ export const defaultDatabase: IngredientDatabase = {
       ],
       "references": [
         {
-          "url": "https://incidecoder.com/ingredients/cinnamyl-alcohol"
+          "url": "https://incidecoder.com/ingredients/cinnamyl-alcohol",
+          "title": "INCIDecoder",
+          "status": "ok"
         }
-      ]
+      ],
+      "status": "ok"
     },
     "coconut_alcohol": {
       "name": "Coconut Alcohol",
@@ -200,8 +175,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "emollient_alcohols"
       ],
-      "synonyms": [],
-      "references": []
+      "status": "ok"
     },
     "ethyl_alcohol": {
       "name": "Ethyl Alcohol",
@@ -214,11 +188,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "drying_alcohols"
       ],
-      "references": [
-        {
-          "url": "https://cosdna.com/eng/554009929.html"
-        }
-      ]
+      "status": "caution"
     },
     "isocetyl_alcohol": {
       "name": "Isocetyl Alcohol",
@@ -229,11 +199,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "emollient_alcohols"
       ],
-      "references": [
-        {
-          "url": "https://cosdna.com/eng/ac44ce1816.html"
-        }
-      ]
+      "status": "ok"
     },
     "isopropanol": {
       "name": "Isopropanol",
@@ -245,11 +211,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "drying_alcohols"
       ],
-      "references": [
-        {
-          "url": "https://cosdna.com/eng/e45cff199.html"
-        }
-      ]
+      "status": "caution"
     },
     "isostearyl_alcohol": {
       "name": "Isostearyl Alcohol",
@@ -257,12 +219,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "emollient_alcohols"
       ],
-      "references": [
-        {
-          "url": "https://cosdna.com/eng/78de01202.html"
-        }
-      ],
-      "synonyms": []
+      "status": "ok"
     },
     "lanolin_alcohol": {
       "name": "Lanolin Alcohol",
@@ -270,12 +227,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "emollient_alcohols"
       ],
-      "references": [
-        {
-          "url": "https://cosdna.com/eng/cd20031856.html"
-        }
-      ],
-      "synonyms": []
+      "status": "ok"
     },
     "lauryl_alcohol": {
       "name": "Lauryl Alcohol",
@@ -288,11 +240,7 @@ export const defaultDatabase: IngredientDatabase = {
         "dodecanol",
         "dodecyl alcohol"
       ],
-      "references": [
-        {
-          "url": "https://cosdna.com/eng/3a364c2.html"
-        }
-      ]
+      "status": "ok"
     },
     "myristyl_alcohol": {
       "name": "Myristyl Alcohol",
@@ -304,11 +252,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "emollient_alcohols"
       ],
-      "references": [
-        {
-          "url": "https://cosdna.com/eng/76640d1970.html"
-        }
-      ]
+      "status": "ok"
     },
     "oleyl_alcohol": {
       "name": "Oleyl Alcohol",
@@ -319,7 +263,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "emollient_alcohols"
       ],
-      "references": []
+      "status": "ok"
     },
     "phenethyl_alcohol": {
       "name": "Phenethyl Alcohol",
@@ -331,7 +275,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "preservative_alcohols"
       ],
-      "references": []
+      "status": "ok"
     },
     "propyl_alcohol": {
       "name": "Propyl Alcohol",
@@ -339,12 +283,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "drying_alcohols"
       ],
-      "references": [
-        {
-          "url": "https://cosdna.com/eng/366a832503.html"
-        }
-      ],
-      "synonyms": []
+      "status": "caution"
     },
     "sd_alcohol": {
       "name": "SD Alcohol",
@@ -361,11 +300,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "drying_alcohols"
       ],
-      "references": [
-        {
-          "url": "https://cosdna.com/eng/554009929.html"
-        }
-      ]
+      "status": "caution"
     },
     "stearyl_alcohol": {
       "name": "Stearyl Alcohol",
@@ -379,11 +314,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "emollient_alcohols"
       ],
-      "references": [
-        {
-          "url": "https://cosdna.com/eng/5ef6ef467.html"
-        }
-      ]
+      "status": "ok"
     },
     "undecyl_alcohol": {
       "name": "Undecyl Alcohol",
@@ -391,8 +322,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "emollient_alcohols"
       ],
-      "synonyms": [],
-      "references": []
+      "status": "ok"
     },
     "emulsifying_wax": {
       "name": "Emulsifying Wax",
@@ -402,10 +332,13 @@ export const defaultDatabase: IngredientDatabase = {
       ],
       "references": [
         {
-          "url": "https://incidecoder.com/ingredients/emulsifying-wax"
+          "url": "https://incidecoder.com/ingredients/emulsifying-wax",
+          "title": "INCIDecoder",
+          "status": "ok",
+          "description": "This isn't an INCI ingredient, they think it's a mix of Cetearyl Alcohol (and) Polysorbate 60"
         }
       ],
-      "synonyms": []
+      "status": "ok"
     },
     "hydrogenated_dilinoleyl_alcohol": {
       "name": "Hydrogenated Dilinoleyl Alcohol",
@@ -413,8 +346,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "emollient_alcohols"
       ],
-      "synonyms": [],
-      "references": []
+      "status": "ok"
     },
     "batyl_alcohol": {
       "name": "Batyl Alcohol",
@@ -422,8 +354,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "emollient_alcohols"
       ],
-      "synonyms": [],
-      "references": []
+      "status": "ok"
     },
     "c12_15_alcohol": {
       "name": "C12-15 Alcohol",
@@ -431,8 +362,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "emollient_alcohols"
       ],
-      "synonyms": [],
-      "references": []
+      "status": "ok"
     },
     "c12_16_alcohol": {
       "name": "C12-16 Alcohol",
@@ -440,8 +370,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "emollient_alcohols"
       ],
-      "synonyms": [],
-      "references": []
+      "status": "ok"
     },
     "decyl_alcohol": {
       "name": "Decyl Alcohol",
@@ -449,8 +378,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "emollient_alcohols"
       ],
-      "synonyms": [],
-      "references": []
+      "status": "ok"
     },
     "hydrogenated_rapeseed_alcohol": {
       "name": "Hydrogenated Rapeseed Alcohol",
@@ -458,8 +386,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "emollient_alcohols"
       ],
-      "synonyms": [],
-      "references": []
+      "status": "ok"
     },
     "jojoba_alcohol": {
       "name": "Jojoba Alcohol",
@@ -467,8 +394,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "emollient_alcohols"
       ],
-      "synonyms": [],
-      "references": []
+      "status": "ok"
     },
     "tridecyl_alcohol": {
       "name": "Tridecyl Alcohol",
@@ -476,8 +402,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "emollient_alcohols"
       ],
-      "synonyms": [],
-      "references": []
+      "status": "ok"
     },
     "alkylbenzene_sulfonate": {
       "name": "Alkylbenzene Sulfonate",
@@ -488,18 +413,17 @@ export const defaultDatabase: IngredientDatabase = {
         "alkyl benzene sulphate"
       ],
       "categories": [
-        "other_detergents"
+        "other_surfactants"
       ],
-      "references": []
+      "status": "caution"
     },
     "ammonium_cocoyl_isethionate": {
       "name": "Ammonium Cocoyl Isethionate",
       "id": "ammonium_cocoyl_isethionate",
       "categories": [
-        "mild_detergents"
+        "mild_surfactants"
       ],
-      "synonyms": [],
-      "references": []
+      "status": "ok"
     },
     "ammonium_cocoyl_sulfate": {
       "name": "Ammonium Cocoyl Sulfate",
@@ -510,7 +434,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "sulfates"
       ],
-      "references": []
+      "status": "warning"
     },
     "ammonium_laureth_sulfate": {
       "name": "Ammonium Laureth Sulfate",
@@ -521,7 +445,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "sulfates"
       ],
-      "references": []
+      "status": "warning"
     },
     "ammonium_lauryl_sulfate": {
       "name": "Ammonium Lauryl Sulfate",
@@ -532,7 +456,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "sulfates"
       ],
-      "references": []
+      "status": "warning"
     },
     "ammonium_xylenesulfonate": {
       "name": "Ammonium Xylenesulfonate",
@@ -543,18 +467,17 @@ export const defaultDatabase: IngredientDatabase = {
         "ammonium xylene sulfonate"
       ],
       "categories": [
-        "other_detergents"
+        "other_surfactants"
       ],
-      "references": []
+      "status": "caution"
     },
     "babassuamidopropyl_betaine": {
       "name": "Babassuamidopropyl Betaine",
       "id": "babassuamidopropyl_betaine",
       "categories": [
-        "mild_detergents"
+        "mild_surfactants"
       ],
-      "synonyms": [],
-      "references": []
+      "status": "ok"
     },
     "capryl_glucoside": {
       "name": "Capryl Glucoside",
@@ -563,45 +486,41 @@ export const defaultDatabase: IngredientDatabase = {
         "capryl glucoside, caprylyl glucoside"
       ],
       "categories": [
-        "mild_detergents"
+        "mild_surfactants"
       ],
-      "references": []
+      "status": "ok"
     },
     "cocamidopropyl_betaine": {
       "name": "Cocamidopropyl Betaine",
       "id": "cocamidopropyl_betaine",
       "categories": [
-        "mild_detergents"
+        "mild_surfactants"
       ],
-      "synonyms": [],
-      "references": []
+      "status": "ok"
     },
     "cocamidopropyl_hydroxysultaine": {
       "name": "Cocamidopropyl Hydroxysultaine",
       "id": "cocamidopropyl_hydroxysultaine",
       "categories": [
-        "mild_detergents"
+        "mild_surfactants"
       ],
-      "synonyms": [],
-      "references": []
+      "status": "ok"
     },
     "coco_betaine": {
       "name": "Coco Betaine",
       "id": "coco_betaine",
       "categories": [
-        "mild_detergents"
+        "mild_surfactants"
       ],
-      "synonyms": [],
-      "references": []
+      "status": "ok"
     },
     "coco_glucoside": {
       "name": "Coco Glucoside",
       "id": "coco_glucoside",
       "categories": [
-        "mild_detergents"
+        "mild_surfactants"
       ],
-      "synonyms": [],
-      "references": []
+      "status": "ok"
     },
     "cocamide_mea": {
       "name": "Cocamide MEA",
@@ -610,97 +529,81 @@ export const defaultDatabase: IngredientDatabase = {
         "coconut monoethanolamide"
       ],
       "categories": [
-        "mild_detergents"
+        "mild_surfactants"
       ],
-      "references": [
-        {
-          "url": "https://incidecoder.com/ingredients/cocamide-mea"
-        },
-        {
-          "url": "https://pubchem.ncbi.nlm.nih.gov/compound/Cocamide-MEA"
-        }
-      ]
+      "status": "ok"
     },
     "decyl_glucoside": {
       "name": "Decyl Glucoside",
       "id": "decyl_glucoside",
       "categories": [
-        "mild_detergents"
+        "mild_surfactants"
       ],
-      "synonyms": [],
-      "references": []
+      "status": "ok"
     },
     "decyl_polyglucose": {
       "name": "Decyl Polyglucose",
       "id": "decyl_polyglucose",
       "categories": [
-        "mild_detergents"
+        "mild_surfactants"
       ],
-      "synonyms": [],
-      "references": []
+      "status": "ok"
     },
     "dioctyl_sodium_sulfosuccinate": {
       "name": "Dioctyl Sodium Sulfosuccinate",
       "id": "dioctyl_sodium_sulfosuccinate",
       "categories": [
-        "other_detergents"
+        "other_surfactants"
       ],
-      "synonyms": [],
-      "references": []
+      "status": "caution"
     },
     "disodium_cocoamphodiacetate": {
       "name": "Disodium Cocoamphodiacetate",
       "id": "disodium_cocoamphodiacetate",
       "categories": [
-        "mild_detergents"
+        "mild_surfactants"
       ],
-      "synonyms": [],
-      "references": []
+      "status": "ok"
     },
     "disodium_cocoamphodipropionate": {
       "name": "Disodium Cocoamphodipropionate",
       "id": "disodium_cocoamphodipropionate",
       "categories": [
-        "mild_detergents"
+        "mild_surfactants"
       ],
-      "synonyms": [],
-      "references": []
+      "status": "ok"
     },
     "disodium_cocoyl_glutamate": {
       "name": "Disodium Cocoyl Glutamate",
       "id": "disodium_cocoyl_glutamate",
       "categories": [
-        "other_detergents"
+        "other_surfactants"
       ],
-      "synonyms": [],
-      "references": []
+      "status": "caution"
     },
     "disodium_laureth_succinate": {
       "name": "Disodium Laureth Succinate",
       "id": "disodium_laureth_succinate",
       "categories": [
-        "mild_detergents"
+        "mild_surfactants"
       ],
-      "synonyms": [],
-      "references": []
+      "status": "ok"
     },
     "disodium_laureth_sulfosuccinate": {
       "name": "Disodium Laureth Sulfosuccinate",
       "id": "disodium_laureth_sulfosuccinate",
       "categories": [
-        "mild_detergents"
+        "mild_surfactants"
       ],
-      "synonyms": [],
-      "references": []
+      "status": "ok"
     },
     "disodium_lauryl_sulfosuccinate": {
       "name": "Disodium Lauryl Sulfosuccinate",
       "id": "disodium_lauryl_sulfosuccinate",
       "categories": [
-        "mild_detergents"
+        "mild_surfactants"
       ],
-      "synonyms": [],
-      "references": []
+      "status": "ok"
     },
     "ethyl_peg_15_cocamine_sulfate": {
       "name": "Ethyl PEG-15 Cocamine Sulfate",
@@ -711,25 +614,23 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "sulfates"
       ],
-      "references": []
+      "status": "warning"
     },
     "lauryl_glucoside": {
       "name": "Lauryl Glucoside",
       "id": "lauryl_glucoside",
       "categories": [
-        "mild_detergents"
+        "mild_surfactants"
       ],
-      "synonyms": [],
-      "references": []
+      "status": "ok"
     },
     "lauryl_hydroxysultaine": {
       "name": "Lauryl Hydroxysultaine",
       "id": "lauryl_hydroxysultaine",
       "categories": [
-        "mild_detergents"
+        "mild_surfactants"
       ],
-      "synonyms": [],
-      "references": []
+      "status": "ok"
     },
     "sodium_alkyl_sulfate": {
       "name": "Sodium Alkyl Sulfate",
@@ -740,7 +641,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "sulfates"
       ],
-      "references": []
+      "status": "warning"
     },
     "sodium_c12_14_olefin_sulfonate": {
       "name": "Sodium C12-14 Olefin Sulfonate",
@@ -749,9 +650,9 @@ export const defaultDatabase: IngredientDatabase = {
         "sodium c12-14 olefin sulphate"
       ],
       "categories": [
-        "other_detergents"
+        "other_surfactants"
       ],
-      "references": []
+      "status": "caution"
     },
     "sodium_c12_18_alkyl_sulfate": {
       "name": "Sodium C12-18 Alkyl Sulfate",
@@ -762,7 +663,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "sulfates"
       ],
-      "references": []
+      "status": "warning"
     },
     "sodium_c14_15_olefin_sulfonate": {
       "name": "Sodium C14-15 Olefin Sulfonate",
@@ -771,9 +672,9 @@ export const defaultDatabase: IngredientDatabase = {
         "sodium c14-15 olefin sulphate"
       ],
       "categories": [
-        "other_detergents"
+        "other_surfactants"
       ],
-      "references": []
+      "status": "caution"
     },
     "sodium_c14_16_olefin_sulfonate": {
       "name": "Sodium C14-16 Olefin Sulfonate",
@@ -784,10 +685,10 @@ export const defaultDatabase: IngredientDatabase = {
         "sodium c1416 olefin sulfonate"
       ],
       "categories": [
-        "mild_detergents"
+        "mild_surfactants"
       ],
-      "description": "CurlsBot is in the process of reclassifying this ingredient. We believe it is a mild detergent but in the past we've listed it as stronger",
-      "references": []
+      "description": "CurlsBot is in the process of reclassifying this ingredient. We believe it is a mild surfactant but in the past we've listed it as stronger",
+      "status": "ok"
     },
     "sodium_c14_18_olefin_sulfonate": {
       "name": "Sodium C14-18 Olefin Sulfonate",
@@ -796,9 +697,9 @@ export const defaultDatabase: IngredientDatabase = {
         "sodium c14-18 olefin sulphate"
       ],
       "categories": [
-        "other_detergents"
+        "other_surfactants"
       ],
-      "references": []
+      "status": "caution"
     },
     "sodium_c14_26_olefin_sulfonate": {
       "name": "Sodium C14-26 Olefin Sulfonate",
@@ -807,9 +708,9 @@ export const defaultDatabase: IngredientDatabase = {
         "sodium c14-26 olefin sulphate"
       ],
       "categories": [
-        "other_detergents"
+        "other_surfactants"
       ],
-      "references": []
+      "status": "caution"
     },
     "sodium_c16_18_olefin_sulfonate": {
       "name": "Sodium C16-18 Olefin Sulfonate",
@@ -818,9 +719,9 @@ export const defaultDatabase: IngredientDatabase = {
         "sodium c16-18 olefin sulphate"
       ],
       "categories": [
-        "other_detergents"
+        "other_surfactants"
       ],
-      "references": []
+      "status": "caution"
     },
     "sodium_cetearyl_sulfate": {
       "name": "Sodium Cetearyl Sulfate",
@@ -831,7 +732,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "sulfates"
       ],
-      "references": []
+      "status": "warning"
     },
     "sodium_coceth_sulfate": {
       "name": "Sodium Coceth Sulfate",
@@ -842,7 +743,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "sulfates"
       ],
-      "references": []
+      "status": "warning"
     },
     "sodium_coco_sulfate": {
       "name": "Sodium Coco Sulfate",
@@ -853,16 +754,15 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "sulfates"
       ],
-      "references": []
+      "status": "warning"
     },
     "sodium_cocoamphoacetate": {
       "name": "Sodium Cocoamphoacetate",
       "id": "sodium_cocoamphoacetate",
       "categories": [
-        "mild_detergents"
+        "mild_surfactants"
       ],
-      "synonyms": [],
-      "references": []
+      "status": "ok"
     },
     "sodium_cocosulfate": {
       "name": "Sodium Cocosulfate",
@@ -873,34 +773,31 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "sulfates"
       ],
-      "references": []
+      "status": "warning"
     },
     "sodium_cocoyl_glutamate": {
       "name": "Sodium Cocoyl Glutamate",
       "id": "sodium_cocoyl_glutamate",
       "categories": [
-        "other_detergents"
+        "other_surfactants"
       ],
-      "synonyms": [],
-      "references": []
+      "status": "caution"
     },
     "sodium_cocoyl_isethionate": {
       "name": "Sodium Cocoyl Isethionate",
       "id": "sodium_cocoyl_isethionate",
       "categories": [
-        "mild_detergents"
+        "mild_surfactants"
       ],
-      "synonyms": [],
-      "references": []
+      "status": "ok"
     },
     "sodium_cocoyl_sarcosinate": {
       "name": "Sodium Cocoyl Sarcosinate",
       "id": "sodium_cocoyl_sarcosinate",
       "categories": [
-        "other_detergents"
+        "other_surfactants"
       ],
-      "synonyms": [],
-      "references": []
+      "status": "caution"
     },
     "sodium_laureth_sulfate": {
       "name": "Sodium Laureth Sulfate",
@@ -927,12 +824,6 @@ export const defaultDatabase: IngredientDatabase = {
           "type": "hairpro"
         },
         {
-          "url": "https://www.ewg.org/skindeep/ingredients/706089-SODIUM_LAURETH_SULFATE/",
-          "status": "caution",
-          "title": "EWG Skin Deep",
-          "type": "science"
-        },
-        {
           "url": "https://incidecoder.com/ingredients/sodium-laureth-sulfate",
           "status": "ok",
           "title": "INCIdecoder",
@@ -944,7 +835,8 @@ export const defaultDatabase: IngredientDatabase = {
           "title": "Tightly Curly",
           "type": "author"
         }
-      ]
+      ],
+      "status": "warning"
     },
     "sodium_laureth_40_sulfate": {
       "name": "Sodium Laureth-40 Sulfate",
@@ -953,27 +845,25 @@ export const defaultDatabase: IngredientDatabase = {
         "sodium laureth-40 sulphate"
       ],
       "categories": [
-        "other_detergents"
+        "other_surfactants"
       ],
-      "references": []
+      "status": "caution"
     },
     "sodium_lauroamphoacetate": {
       "name": "Sodium Lauroamphoacetate",
       "id": "sodium_lauroamphoacetate",
       "categories": [
-        "mild_detergents"
+        "mild_surfactants"
       ],
-      "synonyms": [],
-      "references": []
+      "status": "ok"
     },
     "sodium_lauroyl_glutamate": {
       "name": "Sodium Lauroyl Glutamate",
       "id": "sodium_lauroyl_glutamate",
       "categories": [
-        "mild_detergents"
+        "mild_surfactants"
       ],
-      "synonyms": [],
-      "references": []
+      "status": "ok"
     },
     "sodium_lauroyl_methyl_isethionate": {
       "name": "Sodium Lauroyl Methyl Isethionate",
@@ -984,32 +874,26 @@ export const defaultDatabase: IngredientDatabase = {
         "sodium lauroylmethyl isethionate"
       ],
       "categories": [
-        "mild_detergents"
+        "mild_surfactants"
       ],
-      "description": "CurlsBot is in the process of reclassifying this ingredient. We believe it is a mild detergent but in the past we've listed it as stronger",
-      "references": [
-        {
-          "url": "https://incidecoder.com/ingredients/sodium-lauroyl-methyl-isethionate"
-        }
-      ]
+      "description": "CurlsBot is in the process of reclassifying this ingredient. We believe it is a mild surfactant but in the past we've listed it as stronger",
+      "status": "ok"
     },
     "sodium_lauroyl_sarcosinate": {
       "name": "Sodium Lauroyl Sarcosinate",
       "id": "sodium_lauroyl_sarcosinate",
       "categories": [
-        "other_detergents"
+        "other_surfactants"
       ],
-      "synonyms": [],
-      "references": []
+      "status": "caution"
     },
     "sodium_lauryl_glucose_carboxylate": {
       "name": "Sodium Lauryl Glucose Carboxylate",
       "id": "sodium_lauryl_glucose_carboxylate",
       "categories": [
-        "mild_detergents"
+        "mild_surfactants"
       ],
-      "synonyms": [],
-      "references": []
+      "status": "ok"
     },
     "sodium_lauryl_sarcosinate": {
       "name": "Sodium Lauryl Sarcosinate",
@@ -1019,9 +903,9 @@ export const defaultDatabase: IngredientDatabase = {
         "sodium lauroyl sarcosine"
       ],
       "categories": [
-        "other_detergents"
+        "other_surfactants"
       ],
-      "references": []
+      "status": "caution"
     },
     "sodium_lauryl_sulfate": {
       "name": "Sodium Lauryl Sulfate",
@@ -1045,12 +929,6 @@ export const defaultDatabase: IngredientDatabase = {
           "url": "https://incidecoder.com/ingredients/sodium-lauryl-sulfate",
           "status": "warning",
           "title": "INCIdecoder",
-          "type": "science"
-        },
-        {
-          "url": "https://www.ewg.org/skindeep/ingredients/706110-SODIUM_LAURYL_SULFATE/",
-          "status": "ok",
-          "title": "EWG Skin Deep",
           "type": "science"
         },
         {
@@ -1083,34 +961,32 @@ export const defaultDatabase: IngredientDatabase = {
           "title": "Lab Muffin",
           "type": "science"
         }
-      ]
+      ],
+      "status": "warning"
     },
     "sodium_lauryl_sulfoacetate": {
       "name": "Sodium Lauryl Sulfoacetate",
       "id": "sodium_lauryl_sulfoacetate",
       "categories": [
-        "other_detergents"
+        "other_surfactants"
       ],
-      "synonyms": [],
-      "references": []
+      "status": "caution"
     },
     "sodium_laurylglucosides_hydroxypropylsulfonate": {
       "name": "Sodium Laurylglucosides Hydroxypropylsulfonate",
       "id": "sodium_laurylglucosides_hydroxypropylsulfonate",
       "categories": [
-        "mild_detergents"
+        "mild_surfactants"
       ],
-      "synonyms": [],
-      "references": []
+      "status": "ok"
     },
     "sodium_methyl_cocoyl_taurate": {
       "name": "Sodium Methyl Cocoyl Taurate",
       "id": "sodium_methyl_cocoyl_taurate",
       "categories": [
-        "mild_detergents"
+        "mild_surfactants"
       ],
-      "synonyms": [],
-      "references": []
+      "status": "ok"
     },
     "sodium_myreth_sulfate": {
       "name": "Sodium Myreth Sulfate",
@@ -1121,16 +997,15 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "sulfates"
       ],
-      "references": []
+      "status": "warning"
     },
     "sodium_myristoyl_sarcosinate": {
       "name": "Sodium Myristoyl Sarcosinate",
       "id": "sodium_myristoyl_sarcosinate",
       "categories": [
-        "other_detergents"
+        "other_surfactants"
       ],
-      "synonyms": [],
-      "references": []
+      "status": "caution"
     },
     "sodium_polystyrene_sulfate": {
       "name": "Sodium Polystyrene Sulfate",
@@ -1141,7 +1016,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "sulfates"
       ],
-      "references": []
+      "status": "warning"
     },
     "sodium_xylenesulfonate": {
       "name": "Sodium Xylenesulfonate",
@@ -1152,9 +1027,9 @@ export const defaultDatabase: IngredientDatabase = {
         "sodium xylene sulfonate"
       ],
       "categories": [
-        "other_detergents"
+        "other_surfactants"
       ],
-      "references": []
+      "status": "caution"
     },
     "tea_dodecylbenzenesulfonate": {
       "name": "Tea Dodecylbenzenesulfonate",
@@ -1163,9 +1038,9 @@ export const defaultDatabase: IngredientDatabase = {
         "tea-dodecylbenzenesulfonate"
       ],
       "categories": [
-        "other_detergents"
+        "other_surfactants"
       ],
-      "references": []
+      "status": "caution"
     },
     "tea_lauryl_sulfate": {
       "name": "Tea Lauryl Sulfate",
@@ -1176,7 +1051,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "sulfates"
       ],
-      "references": []
+      "status": "warning"
     },
     "triethanolamine_lauryl_sulfate": {
       "name": "Triethanolamine Lauryl Sulfate",
@@ -1187,7 +1062,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "sulfates"
       ],
-      "references": []
+      "status": "warning"
     },
     "sulfonate": {
       "name": "Sulfonate",
@@ -1196,10 +1071,10 @@ export const defaultDatabase: IngredientDatabase = {
         " sulfonate"
       ],
       "categories": [
-        "other_detergents"
+        "other_surfactants"
       ],
       "description": "We're pretty sure this is a sulfonate, but we're not sure which one. ",
-      "references": []
+      "status": "caution"
     },
     "apricot_kernel_oil": {
       "name": "Apricot Kernel Oil",
@@ -1211,11 +1086,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "light_oils"
       ],
-      "references": [
-        {
-          "url": "https://incidecoder.com/ingredients/prunus-armeniaca-kernel-oil"
-        }
-      ]
+      "status": "ok"
     },
     "argan_oil": {
       "name": "Argan Oil",
@@ -1227,11 +1098,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "light_oils"
       ],
-      "references": [
-        {
-          "url": "https://incidecoder.com/ingredients/argania-spinosa-kernel-oil"
-        }
-      ]
+      "status": "ok"
     },
     "avocado_oil": {
       "name": "Avocado Oil",
@@ -1243,11 +1110,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "medium_oils"
       ],
-      "references": [
-        {
-          "url": "https://incidecoder.com/ingredients/persea-gratissima-oil"
-        }
-      ]
+      "status": "ok"
     },
     "baobab_oil": {
       "name": "Baobab Oil",
@@ -1259,11 +1122,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "medium_oils"
       ],
-      "references": [
-        {
-          "url": "https://incidecoder.com/ingredients/adansonia-digitata-seed-oil"
-        }
-      ]
+      "status": "ok"
     },
     "camellia_oil": {
       "name": "Camellia Oil",
@@ -1275,11 +1134,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "light_oils"
       ],
-      "references": [
-        {
-          "url": "https://incidecoder.com/ingredients/camellia-oleifera-seed-oil"
-        }
-      ]
+      "status": "ok"
     },
     "castor_oil": {
       "name": "Castor Oil",
@@ -1291,11 +1146,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "heavy_oils"
       ],
-      "references": [
-        {
-          "url": "https://incidecoder.com/ingredients/ricinus-communis-seed-oil"
-        }
-      ]
+      "status": "ok"
     },
     "coconut_oil": {
       "name": "Coconut Oil",
@@ -1307,11 +1158,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "medium_oils"
       ],
-      "references": [
-        {
-          "url": "https://incidecoder.com/ingredients/cocos-nucifera-oil"
-        }
-      ]
+      "status": "ok"
     },
     "grapeseed_oil": {
       "name": "Grapeseed Oil",
@@ -1323,11 +1170,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "light_oils"
       ],
-      "references": [
-        {
-          "url": "https://incidecoder.com/ingredients/vitis-vinifera-seed-oil"
-        }
-      ]
+      "status": "ok"
     },
     "jojoba_oil": {
       "name": "Jojoba Oil",
@@ -1339,11 +1182,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "light_oils"
       ],
-      "references": [
-        {
-          "url": "https://incidecoder.com/ingredients/simmondsia-chinensis-seed-oil"
-        }
-      ]
+      "status": "ok"
     },
     "lanolin": {
       "name": "Lanolin",
@@ -1355,11 +1194,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "heavy_oils"
       ],
-      "references": [
-        {
-          "url": "https://incidecoder.com/ingredients/lanolin"
-        }
-      ]
+      "status": "ok"
     },
     "marula_oil": {
       "name": "Marula Oil",
@@ -1371,11 +1206,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "light_oils"
       ],
-      "references": [
-        {
-          "url": "https://incidecoder.com/ingredients/sclerocarya-birrea-seed-oil"
-        }
-      ]
+      "status": "ok"
     },
     "mineral_oil": {
       "name": "Mineral Oil",
@@ -1388,11 +1219,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "petroleum_oils"
       ],
-      "references": [
-        {
-          "url": "https://incidecoder.com/ingredients/mineral-oil"
-        }
-      ]
+      "status": "warning"
     },
     "petrolatum": {
       "name": "Petrolatum",
@@ -1406,7 +1233,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "petroleum_oils"
       ],
-      "references": []
+      "status": "warning"
     },
     "olive_oil": {
       "name": "Olive Oil",
@@ -1418,11 +1245,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "medium_oils"
       ],
-      "references": [
-        {
-          "url": "https://incidecoder.com/ingredients/olea-europaea-fruit-oil"
-        }
-      ]
+      "status": "ok"
     },
     "sunflower_oil": {
       "name": "Sunflower Oil",
@@ -1434,11 +1257,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "medium_oils"
       ],
-      "references": [
-        {
-          "url": "https://incidecoder.com/ingredients/helianthus-annuus-seed-oil"
-        }
-      ]
+      "status": "ok"
     },
     "sweet_almond_oil": {
       "name": "Sweet Almond Oil",
@@ -1450,11 +1269,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "light_oils"
       ],
-      "references": [
-        {
-          "url": "https://incidecoder.com/ingredients/prunus-amygdalus-dulcis-oil"
-        }
-      ]
+      "status": "ok"
     },
     "butyrospermum_parkii_shea_butter": {
       "name": "Butyrospermum Parkii Shea Butter",
@@ -1463,17 +1278,12 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "heavy_oils"
       ],
-      "references": [
-        {
-          "url": "https://incidecoder.com/ingredients/butyrospermum-parkii-shea-butter",
-          "title": "Shea Butter on INCIDecoder"
-        }
-      ],
       "synonyms": [
         "shea butter",
         "butyrospermum parkii",
         "shea oil"
-      ]
+      ],
+      "status": "ok"
     },
     "aminomethyl_propanol": {
       "name": "Aminomethyl Propanol",
@@ -1481,21 +1291,15 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "other"
       ],
-      "references": [
-        {
-          "url": "https://incidecoder.com/ingredients/aminomethyl-propanol"
-        }
-      ],
-      "synonyms": []
+      "status": "ok"
     },
     "disodium_2_sulfolaurate": {
       "name": "Disodium 2-Sulfolaurate",
       "id": "disodium_2_sulfolaurate",
       "categories": [
-        "other_detergents"
+        "other_surfactants"
       ],
-      "synonyms": [],
-      "references": []
+      "status": "caution"
     },
     "potassium_castorate": {
       "name": "Potassium Castorate",
@@ -1507,11 +1311,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "soaps"
       ],
-      "references": [
-        {
-          "url": "https://incidecoder.com/ingredients/potassium-castorate"
-        }
-      ]
+      "status": "warning"
     },
     "potassium_cocoate": {
       "name": "Potassium Cocoate",
@@ -1523,11 +1323,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "soaps"
       ],
-      "references": [
-        {
-          "url": "https://incidecoder.com/ingredients/potassium-cocoate"
-        }
-      ]
+      "status": "warning"
     },
     "potassium_olivate": {
       "name": "Potassium Olivate",
@@ -1539,11 +1335,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "soaps"
       ],
-      "references": [
-        {
-          "url": "https://incidecoder.com/ingredients/potassium-olivate"
-        }
-      ]
+      "status": "warning"
     },
     "potassium_palmate": {
       "name": "Potassium Palmate",
@@ -1555,11 +1347,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "soaps"
       ],
-      "references": [
-        {
-          "url": "https://incidecoder.com/ingredients/potassium-palmate"
-        }
-      ]
+      "status": "warning"
     },
     "potassium_stearate": {
       "name": "Potassium Stearate",
@@ -1571,11 +1359,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "soaps"
       ],
-      "references": [
-        {
-          "url": "https://incidecoder.com/ingredients/potassium-stearate"
-        }
-      ]
+      "status": "warning"
     },
     "saccharomyces_silicon_ferment": {
       "name": "Saccharomyces Silicon Ferment",
@@ -1587,20 +1371,15 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "other"
       ],
-      "references": [
-        {
-          "url": "https://incidecoder.com/ingredients/saccharomyces-silicon-ferment"
-        }
-      ]
+      "status": "ok"
     },
     "soaps": {
       "name": "Soap",
       "id": "soaps",
       "categories": [
-        "other_detergents"
+        "other_surfactants"
       ],
-      "synonyms": [],
-      "references": []
+      "status": "caution"
     },
     "sodium_castorate": {
       "name": "Sodium Castorate",
@@ -1612,11 +1391,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "soaps"
       ],
-      "references": [
-        {
-          "url": "https://incidecoder.com/ingredients/sodium-castorate"
-        }
-      ]
+      "status": "warning"
     },
     "sodium_cocoate": {
       "name": "Sodium Cocoate",
@@ -1628,47 +1403,39 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "soaps"
       ],
-      "references": [
-        {
-          "url": "https://incidecoder.com/ingredients/sodium-cocoate"
-        }
-      ]
+      "status": "warning"
     },
     "sodium_lauroyl_hydrolyzed_silk": {
       "name": "Sodium Lauroyl Hydrolyzed Silk",
       "id": "sodium_lauroyl_hydrolyzed_silk",
       "categories": [
-        "other_detergents"
+        "other_surfactants"
       ],
-      "synonyms": [],
-      "references": []
+      "status": "caution"
     },
     "sodium_lauroyl_lactylate": {
       "name": "Sodium Lauroyl Lactylate",
       "id": "sodium_lauroyl_lactylate",
       "categories": [
-        "other_detergents"
+        "other_surfactants"
       ],
-      "synonyms": [],
-      "references": []
+      "status": "caution"
     },
     "sodium_lauroyl_oat_amino_acids": {
       "name": "Sodium Lauroyl Oat Amino Acids",
       "id": "sodium_lauroyl_oat_amino_acids",
       "categories": [
-        "other_detergents"
+        "other_surfactants"
       ],
-      "synonyms": [],
-      "references": []
+      "status": "caution"
     },
     "sodium_methyl_2_sulfolaurate": {
       "name": "Sodium Methyl 2-Sulfolaurate",
       "id": "sodium_methyl_2_sulfolaurate",
       "categories": [
-        "other_detergents"
+        "other_surfactants"
       ],
-      "synonyms": [],
-      "references": []
+      "status": "caution"
     },
     "sodium_olivate": {
       "name": "Sodium Olivate",
@@ -1680,11 +1447,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "soaps"
       ],
-      "references": [
-        {
-          "url": "https://incidecoder.com/ingredients/sodium-olivate"
-        }
-      ]
+      "status": "warning"
     },
     "sodium_palmate": {
       "name": "Sodium Palmate",
@@ -1696,11 +1459,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "soaps"
       ],
-      "references": [
-        {
-          "url": "https://incidecoder.com/ingredients/sodium-palmate"
-        }
-      ]
+      "status": "warning"
     },
     "sodium_stearate": {
       "name": "Sodium Stearate",
@@ -1712,11 +1471,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "soaps"
       ],
-      "references": [
-        {
-          "url": "https://incidecoder.com/ingredients/sodium-stearate"
-        }
-      ]
+      "status": "warning"
     },
     "sodium_tallowate": {
       "name": "Sodium Tallowate",
@@ -1728,20 +1483,15 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "soaps"
       ],
-      "references": [
-        {
-          "url": "https://incidecoder.com/ingredients/sodium-tallowate"
-        }
-      ]
+      "status": "warning"
     },
     "triisopropanolamine": {
       "name": "Triisopropanolamine",
       "id": "triisopropanolamine",
       "categories": [
-        "other_detergents"
+        "other_surfactants"
       ],
-      "synonyms": [],
-      "references": []
+      "status": "caution"
     },
     "witch_hazel": {
       "name": "Witch Hazel",
@@ -1756,7 +1506,7 @@ export const defaultDatabase: IngredientDatabase = {
         "astringents"
       ],
       "description": "Most witch hazel contains alcohol—check with the manufacturer to confirm. Even alcohol-free versions can be drying, so use cautiously on high porosity hair.",
-      "references": []
+      "status": "warning"
     },
     "unknown_paraben": {
       "name": "Unknown Paraben",
@@ -1767,7 +1517,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "parabens"
       ],
-      "references": []
+      "status": "caution"
     },
     "water": {
       "name": "Water  ",
@@ -1778,7 +1528,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "other"
       ],
-      "references": []
+      "status": "ok"
     },
     "isododecane": {
       "name": "Solvent",
@@ -1786,12 +1536,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "solvents"
       ],
-      "references": [
-        {
-          "url": "https://incidecoder.com/ingredients/isododecane"
-        }
-      ],
-      "synonyms": []
+      "status": "ok"
     },
     "isohexadecane": {
       "name": "Isohexadecane",
@@ -1805,11 +1550,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "solvents"
       ],
-      "references": [
-        {
-          "url": "https://incidecoder.com/ingredients/isohexadecane"
-        }
-      ]
+      "status": "ok"
     },
     "behentrimonium_methosulfate": {
       "name": "Behentrimonium Methosulfate",
@@ -1818,12 +1559,7 @@ export const defaultDatabase: IngredientDatabase = {
         "other"
       ],
       "description": "Despite the name, this is not a sulfate. It is often used as a conditioner.",
-      "references": [
-        {
-          "url": "https://incidecoder.com/ingredients/behentrimonium-methosulfate"
-        }
-      ],
-      "synonyms": []
+      "status": "ok"
     },
     "flower_extract": {
       "name": "Flower Extract",
@@ -1832,8 +1568,7 @@ export const defaultDatabase: IngredientDatabase = {
         "other"
       ],
       "description": "This is a flower extract, but we're not sure which one. These are generally considered harmless or beneficial.",
-      "synonyms": [],
-      "references": []
+      "status": "ok"
     },
     "aloe_barbadensis_leaf_extract": {
       "name": "Aloe Barbadensis Leaf Extract",
@@ -1842,15 +1577,11 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "other"
       ],
-      "references": [
-        {
-          "url": "https://incidecoder.com/ingredients/aloe-barbadensis-leaf-extract"
-        }
-      ],
       "synonyms": [
         "aloe vera",
         "aloe barbadensis leaf juice"
-      ]
+      ],
+      "status": "ok"
     },
     "behentrimonium_chloride": {
       "name": "Behentrimonium Chloride",
@@ -1864,7 +1595,7 @@ export const defaultDatabase: IngredientDatabase = {
           "url": "https://incidecoder.com/ingredients/behentrimonium-chloride"
         }
       ],
-      "synonyms": []
+      "status": "ok"
     },
     "cetrimonium_chloride": {
       "name": "Cetrimonium Chloride",
@@ -1878,7 +1609,7 @@ export const defaultDatabase: IngredientDatabase = {
           "url": "https://incidecoder.com/ingredients/cetrimonium-chloride"
         }
       ],
-      "synonyms": []
+      "status": "ok"
     },
     "citric_acid": {
       "name": "Citric Acid",
@@ -1892,7 +1623,7 @@ export const defaultDatabase: IngredientDatabase = {
           "url": "https://incidecoder.com/ingredients/citric-acid"
         }
       ],
-      "synonyms": []
+      "status": "ok"
     },
     "ethylhexylglycerin": {
       "name": "Ethylhexylglycerin",
@@ -1901,12 +1632,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "humectants"
       ],
-      "references": [
-        {
-          "url": "https://incidecoder.com/ingredients/ethylhexylglycerin"
-        }
-      ],
-      "synonyms": []
+      "status": "ok"
     },
     "glycereth_26": {
       "name": "Glycereth-26",
@@ -1915,12 +1641,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "humectants"
       ],
-      "references": [
-        {
-          "url": "https://incidecoder.com/ingredients/glycereth-26"
-        }
-      ],
-      "synonyms": []
+      "status": "ok"
     },
     "glycerin": {
       "name": "Glycerin",
@@ -1929,12 +1650,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "humectants"
       ],
-      "references": [
-        {
-          "url": "https://incidecoder.com/ingredients/glycerin"
-        }
-      ],
-      "synonyms": []
+      "status": "ok"
     },
     "hydroxyethylcellulose": {
       "name": "Hydroxyethylcellulose",
@@ -1943,12 +1659,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "other"
       ],
-      "references": [
-        {
-          "url": "https://incidecoder.com/ingredients/hydroxyethylcellulose"
-        }
-      ],
-      "synonyms": []
+      "status": "ok"
     },
     "hydroxypropyltrimonium_honey": {
       "name": "Hydroxypropyltrimonium Honey",
@@ -1957,12 +1668,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "other"
       ],
-      "references": [
-        {
-          "url": "https://incidecoder.com/ingredients/hydroxypropyltrimonium-honey"
-        }
-      ],
-      "synonyms": []
+      "status": "ok"
     },
     "panthenol": {
       "name": "Panthenol",
@@ -1971,15 +1677,11 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "other"
       ],
-      "references": [
-        {
-          "url": "https://incidecoder.com/ingredients/panthenol"
-        }
-      ],
       "synonyms": [
         "Provitamin B5",
         "Vitamin B5"
-      ]
+      ],
+      "status": "ok"
     },
     "phenoxyethanol": {
       "name": "Phenoxyethanol",
@@ -1988,12 +1690,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "preservatives"
       ],
-      "references": [
-        {
-          "url": "https://incidecoder.com/ingredients/phenoxyethanol"
-        }
-      ],
-      "synonyms": []
+      "status": "ok"
     },
     "silk_amino_acids": {
       "name": "Silk Amino Acids",
@@ -2002,12 +1699,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "proteins"
       ],
-      "references": [
-        {
-          "url": "https://incidecoder.com/ingredients/silk-amino-acids"
-        }
-      ],
-      "synonyms": []
+      "status": "ok"
     },
     "sodium_phytate": {
       "name": "Sodium Phytate",
@@ -2016,12 +1708,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "other"
       ],
-      "references": [
-        {
-          "url": "https://incidecoder.com/ingredients/sodium-phytate"
-        }
-      ],
-      "synonyms": []
+      "status": "ok"
     },
     "sorbic_acid": {
       "name": "Sorbic Acid",
@@ -2030,12 +1717,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "preservatives"
       ],
-      "references": [
-        {
-          "url": "https://incidecoder.com/ingredients/sorbic-acid"
-        }
-      ],
-      "synonyms": []
+      "status": "ok"
     },
     "sorbitol": {
       "name": "Sorbitol",
@@ -2044,12 +1726,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "humectants"
       ],
-      "references": [
-        {
-          "url": "https://incidecoder.com/ingredients/sorbitol"
-        }
-      ],
-      "synonyms": []
+      "status": "ok"
     },
     "tocopheryl_acetate": {
       "name": "Tocopheryl Acetate",
@@ -2058,14 +1735,10 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "other"
       ],
-      "references": [
-        {
-          "url": "https://incidecoder.com/ingredients/tocopheryl-acetate"
-        }
-      ],
       "synonyms": [
         "Vitamin E"
-      ]
+      ],
+      "status": "ok"
     },
     "cellulose": {
       "name": "Cellulose",
@@ -2074,12 +1747,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "other"
       ],
-      "references": [
-        {
-          "url": "https://incidecoder.com/ingredients/cellulose"
-        }
-      ],
-      "synonyms": []
+      "status": "ok"
     },
     "caprylic_capric_triglyceride": {
       "name": "Caprylic Capric Triglyceride",
@@ -2088,12 +1756,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "other"
       ],
-      "references": [
-        {
-          "url": "https://incidecoder.com/ingredients/caprylic-capric-triglyceride"
-        }
-      ],
-      "synonyms": []
+      "status": "ok"
     },
     "peg_100_stearate": {
       "name": "PEG-100 Stearate",
@@ -2102,14 +1765,10 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "other"
       ],
-      "references": [
-        {
-          "url": "https://incidecoder.com/ingredients/peg-100-stearate"
-        }
-      ],
       "synonyms": [
         "PEG 100 Stearate"
-      ]
+      ],
+      "status": "ok"
     },
     "fragrance": {
       "name": "Fragrance",
@@ -2121,11 +1780,7 @@ export const defaultDatabase: IngredientDatabase = {
         "parfum"
       ],
       "description": "A blend of aromatic compounds that provides a pleasant scent to hair care products. Some people are sensitive to fragrances and companies are not required to list which specific ingredients are used in their fragrance blends.",
-      "references": [
-        {
-          "url": "https://incidecoder.com/ingredients/parfum"
-        }
-      ]
+      "status": "ok"
     },
     "guar_hydroxypropyltrimonium_chloride": {
       "name": "Guar Hydroxypropyltrimonium Chloride",
@@ -2134,15 +1789,11 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "other"
       ],
-      "references": [
-        {
-          "url": "https://incidecoder.com/ingredients/guar-hydroxypropyltrimonium-chloride"
-        }
-      ],
       "synonyms": [
         "guar gum quaternary ammonium",
         "cationic guar"
-      ]
+      ],
+      "status": "ok"
     },
     "magnesium_sulfate": {
       "name": "Magnesium Sulfate",
@@ -2151,15 +1802,11 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "other"
       ],
-      "references": [
-        {
-          "url": "https://incidecoder.com/ingredients/magnesium-sulfate"
-        }
-      ],
       "synonyms": [
         "epsom salt",
         "magnesium salt"
-      ]
+      ],
+      "status": "ok"
     },
     "phenyl_propanol": {
       "name": "Phenyl Propanol",
@@ -2170,7 +1817,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "other"
       ],
-      "references": []
+      "status": "ok"
     },
     "amodimethicone": {
       "name": "Amodimethicone",
@@ -2182,11 +1829,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "non_water_soluble_silicones"
       ],
-      "references": [
-        {
-          "url": "https://incidecoder.com/ingredients/amodimethicone"
-        }
-      ]
+      "status": "warning"
     },
     "bis_peg_18_methyl_ether_dimethyl_silane": {
       "name": "Bis-PEG-18 Methyl Ether Dimethyl Silane",
@@ -2198,11 +1841,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "water_soluble_silicones"
       ],
-      "references": [
-        {
-          "url": "https://incidecoder.com/ingredients/bis-peg-18-methyl-ether-dimethyl-silane"
-        }
-      ]
+      "status": "caution"
     },
     "cetearyl_methicone": {
       "name": "Cetearyl Methicone",
@@ -2214,11 +1853,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "non_water_soluble_silicones"
       ],
-      "references": [
-        {
-          "url": "https://incidecoder.com/ingredients/cetearyl-methicone"
-        }
-      ]
+      "status": "warning"
     },
     "cyclohexasiloxane": {
       "name": "Cyclohexasiloxane",
@@ -2231,11 +1866,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "non_water_soluble_silicones"
       ],
-      "references": [
-        {
-          "url": "https://incidecoder.com/ingredients/cyclohexasiloxane"
-        }
-      ]
+      "status": "warning"
     },
     "cyclopentasiloxane": {
       "name": "Cyclopentasiloxane",
@@ -2248,11 +1879,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "non_water_soluble_silicones"
       ],
-      "references": [
-        {
-          "url": "https://incidecoder.com/ingredients/cyclopentasiloxane"
-        }
-      ]
+      "status": "warning"
     },
     "dimethicone": {
       "name": "Dimethicone",
@@ -2265,11 +1892,50 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "non_water_soluble_silicones"
       ],
+      "description": "One of the most common silicones, this is a conditioning powerhouse, smoothing and protecting hair with ease. The major downside is it's not easy to wash out, so it can cause buildup.",
       "references": [
         {
-          "url": "https://incidecoder.com/ingredients/dimethicone"
+          "title": "INCIDecoder",
+          "url": "https://incidecoder.com/ingredients/dimethicone",
+          "status": "caution",
+          "description": "notes it may be difficult to wash out",
+          "type": "science"
+        },
+        {
+          "title": "Tightly Curly",
+          "url": "http://www.tightlycurly.com/ingredients/",
+          "status": "good",
+          "type": "author",
+          "description": "says it can be heavy but is a great conditioner"
+        },
+        {
+          "url": "https://amzn.to/41QrGxJ",
+          "status": "warning",
+          "title": "Curly Girl: The Handbook by Lorraine Massey",
+          "type": "hairpro"
+        },
+        {
+          "url": "https://science-yhairblog.blogspot.com/2014/04/silicone-ingredient-solubility-list.html",
+          "status": "caution",
+          "title": "Science-y Hair Blog",
+          "description": "classifies as water insoluble, only should be used if you are using a cleanser capable of removing",
+          "type": "science"
+        },
+        {
+          "url": "https://thebeautybrains.com/2007/01/are-silicones-bad-for-your-hair/",
+          "status": "caution",
+          "title": "The Beauty Brains",
+          "type": "science",
+          "description": "says its great for lowering porosity but can be hard to wash out"
+        },
+        {
+          "url": "https://labmuffin.com/silicone-mythbusting-with-video/",
+          "status": "good",
+          "title": "Lab Muffin",
+          "type": "science"
         }
-      ]
+      ],
+      "status": "warning"
     },
     "dimethicone_copolyol": {
       "name": "Dimethicone Copolyol",
@@ -2281,11 +1947,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "water_soluble_silicones"
       ],
-      "references": [
-        {
-          "url": "https://incidecoder.com/ingredients/dimethicone-copolyol"
-        }
-      ]
+      "status": "caution"
     },
     "dimethiconol": {
       "name": "Dimethiconol",
@@ -2297,11 +1959,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "non_water_soluble_silicones"
       ],
-      "references": [
-        {
-          "url": "https://incidecoder.com/ingredients/dimethiconol"
-        }
-      ]
+      "status": "warning"
     },
     "lauryl_methicone_copolyol": {
       "name": "Lauryl Methicone Copolyol",
@@ -2313,11 +1971,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "water_soluble_silicones"
       ],
-      "references": [
-        {
-          "url": "https://incidecoder.com/ingredients/lauryl-methicone-copolyol"
-        }
-      ]
+      "status": "caution"
     },
     "peg_10_dimethicone": {
       "name": "PEG-10 Dimethicone",
@@ -2329,11 +1983,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "water_soluble_silicones"
       ],
-      "references": [
-        {
-          "url": "https://incidecoder.com/ingredients/peg-10-dimethicone"
-        }
-      ]
+      "status": "caution"
     },
     "peg_12_dimethicone": {
       "name": "PEG-12 Dimethicone",
@@ -2345,11 +1995,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "water_soluble_silicones"
       ],
-      "references": [
-        {
-          "url": "https://incidecoder.com/ingredients/peg-12-dimethicone"
-        }
-      ]
+      "status": "caution"
     },
     "peg_14_dimethicone": {
       "name": "PEG-14 Dimethicone",
@@ -2361,11 +2007,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "water_soluble_silicones"
       ],
-      "references": [
-        {
-          "url": "https://incidecoder.com/ingredients/peg-14-dimethicone"
-        }
-      ]
+      "status": "caution"
     },
     "peg_7_amodimethicone": {
       "name": "PEG-7 Amodimethicone",
@@ -2377,11 +2019,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "water_soluble_silicones"
       ],
-      "references": [
-        {
-          "url": "https://incidecoder.com/ingredients/peg-7-amodimethicone"
-        }
-      ]
+      "status": "caution"
     },
     "peg_8_dimethicone": {
       "name": "PEG-8 Dimethicone",
@@ -2393,11 +2031,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "water_soluble_silicones"
       ],
-      "references": [
-        {
-          "url": "https://incidecoder.com/ingredients/peg-8-dimethicone"
-        }
-      ]
+      "status": "caution"
     },
     "phenyl_trimethicone": {
       "name": "Phenyl Trimethicone",
@@ -2409,11 +2043,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "non_water_soluble_silicones"
       ],
-      "references": [
-        {
-          "url": "https://incidecoder.com/ingredients/phenyl-trimethicone"
-        }
-      ]
+      "status": "warning"
     },
     "silicone_quaternium_8": {
       "name": "Silicone Quaternium-8",
@@ -2425,11 +2055,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "non_water_soluble_silicones"
       ],
-      "references": [
-        {
-          "url": "https://incidecoder.com/ingredients/silicone-quaternium-8"
-        }
-      ]
+      "status": "warning"
     },
     "stearoxytrimethylsilane": {
       "name": "Stearoxytrimethylsilane",
@@ -2441,11 +2067,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "non_water_soluble_silicones"
       ],
-      "references": [
-        {
-          "url": "https://incidecoder.com/ingredients/stearoxytrimethylsilane"
-        }
-      ]
+      "status": "warning"
     },
     "trimethylsiloxyamodimethicone": {
       "name": "Trimethylsiloxyamodimethicone",
@@ -2457,11 +2079,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "non_water_soluble_silicones"
       ],
-      "references": [
-        {
-          "url": "https://incidecoder.com/ingredients/trimethylsiloxyamodimethicone"
-        }
-      ]
+      "status": "warning"
     },
     "trimethylsiloxysilicate": {
       "name": "Trimethylsiloxysilicate",
@@ -2469,8 +2087,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "non_water_soluble_silicones"
       ],
-      "synonyms": [],
-      "references": []
+      "status": "warning"
     },
     "cyclomethicone": {
       "name": "Cyclomethicone",
@@ -2482,7 +2099,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "evaporative_silicones"
       ],
-      "references": []
+      "status": "caution"
     },
     "silicone_quaternium_26": {
       "name": "Silicone Quaternium 26",
@@ -2490,12 +2107,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "water_soluble_silicones"
       ],
-      "references": [
-        {
-          "url": "https://www.reddit.com/r/HaircareScience/comments/nd8x0e/quaternium26_is_water_soluble/"
-        }
-      ],
-      "synonyms": []
+      "status": "caution"
     },
     "unknown_non_water_soluble_silicone": {
       "name": "Unknown Non-Water Soluble Silicone",
@@ -2503,8 +2115,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "non_water_soluble_silicones"
       ],
-      "synonyms": [],
-      "references": []
+      "status": "warning"
     },
     "unknown_water_soluble_silicone": {
       "name": "Unknown Water Soluble Silicones",
@@ -2512,8 +2123,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "water_soluble_silicones"
       ],
-      "synonyms": [],
-      "references": []
+      "status": "caution"
     },
     "unknown_sulfate": {
       "name": "Unknown Sulfate",
@@ -2522,26 +2132,23 @@ export const defaultDatabase: IngredientDatabase = {
         "sulfates"
       ],
       "description": "We're pretty sure this is a sulfate, but we're not sure which one.",
-      "synonyms": [],
-      "references": []
+      "status": "warning"
     },
     "unknown_sarcosinate": {
       "name": "Unknown Sarcosinate",
       "id": "unknown_sarcosinate",
       "categories": [
-        "other_detergents"
+        "other_surfactants"
       ],
-      "synonyms": [],
-      "references": []
+      "status": "caution"
     },
     "unknown_cocoyl_glutamate": {
       "name": "Unknown Cocoyl Glutamate",
       "id": "unknown_cocoyl_glutamate",
       "categories": [
-        "other_detergents"
+        "other_surfactants"
       ],
-      "synonyms": [],
-      "references": []
+      "status": "caution"
     },
     "unknown_wax": {
       "name": "Unknown Wax",
@@ -2549,8 +2156,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "non_water_soluble_waxes"
       ],
-      "synonyms": [],
-      "references": []
+      "status": "warning"
     },
     "unknown_oil": {
       "name": "Unknown Oil",
@@ -2558,8 +2164,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "other"
       ],
-      "synonyms": [],
-      "references": []
+      "status": "ok"
     },
     "unknown_polyquat": {
       "name": "Unknown Polyquat",
@@ -2568,8 +2173,7 @@ export const defaultDatabase: IngredientDatabase = {
         "polyquats"
       ],
       "description": "We're pretty sure this is a polyquat, but we're not sure which one.",
-      "synonyms": [],
-      "references": []
+      "status": "ok"
     },
     "unknown_alcohol": {
       "name": "Unknown Alcohol",
@@ -2581,7 +2185,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "drying_alcohols"
       ],
-      "references": []
+      "status": "caution"
     },
     "beeswax": {
       "name": "Beeswax",
@@ -2594,11 +2198,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "non_water_soluble_waxes"
       ],
-      "references": [
-        {
-          "url": "https://incidecoder.com/ingredients/beeswax"
-        }
-      ]
+      "status": "warning"
     },
     "candelilla_wax": {
       "name": "Candelilla Wax",
@@ -2610,11 +2210,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "non_water_soluble_waxes"
       ],
-      "references": [
-        {
-          "url": "https://incidecoder.com/ingredients/candelilla-wax"
-        }
-      ]
+      "status": "warning"
     },
     "carnauba_wax": {
       "name": "Carnauba Wax",
@@ -2626,11 +2222,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "non_water_soluble_waxes"
       ],
-      "references": [
-        {
-          "url": "https://incidecoder.com/ingredients/carnauba-wax"
-        }
-      ]
+      "status": "warning"
     },
     "ceteareth_20": {
       "name": "Ceteareth-20",
@@ -2642,11 +2234,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "water_soluble_waxes"
       ],
-      "references": [
-        {
-          "url": "https://incidecoder.com/ingredients/ceteareth-20"
-        }
-      ]
+      "status": "ok"
     },
     "euphorbia_cerifera_wax": {
       "name": "Euphorbia Cerifera Wax",
@@ -2659,11 +2247,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "non_water_soluble_waxes"
       ],
-      "references": [
-        {
-          "url": "https://incidecoder.com/ingredients/euphorbia-cerifera-wax"
-        }
-      ]
+      "status": "warning"
     },
     "microcrystalline_wax": {
       "name": "Microcrystalline Wax",
@@ -2675,11 +2259,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "non_water_soluble_waxes"
       ],
-      "references": [
-        {
-          "url": "https://incidecoder.com/ingredients/microcrystalline-wax"
-        }
-      ]
+      "status": "warning"
     },
     "ozokerite": {
       "name": "Ozokerite",
@@ -2691,11 +2271,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "non_water_soluble_waxes"
       ],
-      "references": [
-        {
-          "url": "https://incidecoder.com/ingredients/ozokerite"
-        }
-      ]
+      "status": "warning"
     },
     "paraffin_wax": {
       "name": "Paraffin Wax",
@@ -2707,11 +2283,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "non_water_soluble_waxes"
       ],
-      "references": [
-        {
-          "url": "https://incidecoder.com/ingredients/paraffin"
-        }
-      ]
+      "status": "warning"
     },
     "peg_12_carnauba_wax": {
       "name": "PEG-12 Carnauba Wax",
@@ -2723,11 +2295,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "water_soluble_waxes"
       ],
-      "references": [
-        {
-          "url": "https://incidecoder.com/ingredients/peg-12-carnauba-wax"
-        }
-      ]
+      "status": "caution"
     },
     "peg_40_hydrogenated_castor_oil": {
       "name": "PEG-40 Hydrogenated Castor Oil",
@@ -2739,11 +2307,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "water_soluble_waxes"
       ],
-      "references": [
-        {
-          "url": "https://incidecoder.com/ingredients/peg-40-hydrogenated-castor-oil"
-        }
-      ]
+      "status": "ok"
     },
     "peg_8_beeswax": {
       "name": "PEG-8 Beeswax",
@@ -2755,11 +2319,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "water_soluble_waxes"
       ],
-      "references": [
-        {
-          "url": "https://incidecoder.com/ingredients/peg-8-beeswax"
-        }
-      ]
+      "status": "caution"
     },
     "polysorbate_20": {
       "name": "Polysorbate 20",
@@ -2771,11 +2331,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "water_soluble_waxes"
       ],
-      "references": [
-        {
-          "url": "https://incidecoder.com/ingredients/polysorbate-20"
-        }
-      ]
+      "status": "ok"
     }
   },
   "categories": {
@@ -2804,7 +2360,7 @@ export const defaultDatabase: IngredientDatabase = {
     "sulfates": {
       "id": "sulfates",
       "name": "Sulfates",
-      "group": "detergents",
+      "group": "surfactants",
       "description": "Sulfates are cleansing agents that create lather and remove oil and dirt",
       "inclusions": [
         "sulfate",
@@ -2854,11 +2410,11 @@ export const defaultDatabase: IngredientDatabase = {
       "description": "Preservatives in hair care products can help prevent the growth of bacteria and mold",
       "references": []
     },
-    "other_detergents": {
-      "id": "other_detergents",
-      "name": "Other Detergents",
-      "group": "detergents",
-      "description": "These are other detergents that don't fit into the other categories",
+    "other_surfactants": {
+      "id": "other_surfactants",
+      "name": "Other surfactants",
+      "group": "surfactants",
+      "description": "These are other surfactants that don't fit into the other categories",
       "references": []
     },
     "preservative_alcohols": {
@@ -2882,11 +2438,11 @@ export const defaultDatabase: IngredientDatabase = {
       "description": "Soaps are cleansers made from fatty acids and alkali metals",
       "references": []
     },
-    "mild_detergents": {
-      "id": "mild_detergents",
-      "name": "Mild Detergents",
-      "group": "detergents",
-      "description": "These detergents are less harsh than other detergents and are often used in hair care products",
+    "mild_surfactants": {
+      "id": "mild_surfactants",
+      "name": "Mild surfactants",
+      "group": "surfactants",
+      "description": "These surfactants are less harsh than other surfactants and are often used in hair care products",
       "references": []
     },
     "heavy_oils": {
@@ -2986,7 +2542,24 @@ export const defaultDatabase: IngredientDatabase = {
         "alcohol"
       ],
       "defaultIngredient": "unknown_alcohol",
-      "description": "Alcohols in haircare products are used to help products dry quickly, preserve formulations, and enhance ingredient absorption into hair"
+      "description": "Alcohols in haircare products are used to help products dry quickly, preserve formulations, and enhance ingredient absorption into hair",
+      "references": [
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4387693/",
+          "type": "science",
+          "title": "Hair Cosmetics: An Overview"
+        },
+        {
+          "url": "https://thebeautybrains.com/2014/04/why-is-there-isopropyl-alcohol-in-my-conditioner/",
+          "type": "science",
+          "title": "The Beauty Brains: Why is there isopropyl alcohol in my conditioner?"
+        },
+        {
+          "url": "https://labmuffin.com/how-bad-is-alcohol-in-skincare-really/",
+          "type": "science",
+          "title": "Lab Muffin: How Bad is Alcohol in Skincare Really?"
+        }
+      ]
     },
     "preservatives": {
       "id": "preservatives",
@@ -2996,18 +2569,26 @@ export const defaultDatabase: IngredientDatabase = {
       ],
       "description": "Preservatives in hair products can help prevent the growth of bacteria and mold"
     },
-    "detergents": {
-      "id": "detergents",
-      "name": "Detergents",
+    "surfactants": {
+      "id": "surfactants",
+      "name": "surfactants",
+      "description": "surfactants in hair products can help remove dirt and oil from the hair and scalp",
       "inclusions": [
-        "sulfate"
+        "sulfate",
+        "sulphate"
       ],
       "exclusions": [
         "behentrimonium",
         "methosulfate",
         "magnesium"
       ],
-      "description": "Detergents in hair products can help remove dirt and oil from the hair and scalp"
+      "references": [
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4387693/",
+          "type": "science",
+          "title": "Hair Cosmetics: An Overview"
+        }
+      ]
     },
     "silicones": {
       "id": "silicones",
@@ -3032,7 +2613,40 @@ export const defaultDatabase: IngredientDatabase = {
         "polyquaternium"
       ],
       "defaultIngredient": "unknown_non_water_soluble_silicone",
-      "description": "Synthetic ingredients that create a protective barrier on the hair, reducing friction and adding shine"
+      "description": "Synthetic ingredients that create a protective barrier on the hair, reducing friction and adding shine",
+      "references": [
+        {
+          "url": "https://labmuffin.com/silicone-mythbusting-with-video/",
+          "status": "good",
+          "title": "Lab Muffin",
+          "type": "science"
+        },
+        {
+          "url": "https://thebeautybrains.com/2007/01/are-silicones-bad-for-your-hair/",
+          "status": "ok",
+          "title": "The Beauty Brains",
+          "type": "science"
+        },
+        {
+          "url": "https://science-yhairblog.blogspot.com/2014/04/silicone-ingredient-solubility-list.html",
+          "status": "caution",
+          "title": "Science-y Hair Blog",
+          "description": "varies, discusses the different water solubilities of different silicones",
+          "type": "science"
+        },
+        {
+          "url": "https://amzn.to/41QrGxJ",
+          "status": "warning",
+          "title": "Curly Girl: The Handbook by Lorraine Massey",
+          "type": "hairpro",
+          "description": "recommends avoiding silicones"
+        },
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4387693/",
+          "type": "science",
+          "title": "Hair Cosmetics: An Overview"
+        }
+      ]
     },
     "others": {
       "id": "others",
@@ -3049,7 +2663,15 @@ export const defaultDatabase: IngredientDatabase = {
       "exclusions": [
         "emulsifying"
       ],
-      "description": "Waxes in styling products can add texture, hold, and shine to hair"
+      "description": "Waxes in styling products can add texture, hold, and shine to hair",
+      "references": [
+        {
+          "url": "https://www.researchgate.net/publication/383884298_The_Effectiveness_of_Aloe_Vera_in_Multiple_Moist_Spray_Products_as_a_Hair_Tonic_to_Reduce_Students_Scalp_Irritation",
+          "type": "science",
+          "title": "The Effectiveness of Aloe Vera in Multiple Moist Spray Products as a Hair Tonic to Reduce Students Scalp Irritation",
+          "description": "cites a study that hasn't be translated into into English that linked pomade to fungal growth"
+        }
+      ]
     },
     "oils": {
       "id": "oils",
@@ -3069,7 +2691,7 @@ export const defaultSystems: System[] = [
     "id": "curly_default",
     "description": "The Curly Default system is a hair care system that focuses on using products that are free of harsh chemicals and sulfates. It recommends using products that are free of drying alcohols, parabens, and other potentially harmful ingredients.",
     "settings": [
-      "mild_detergents_caution_others",
+      "mild_surfactants_caution_others",
       "drying_alcohol",
       "caution_silicones",
       "no_waxes",
@@ -3097,7 +2719,7 @@ export const defaultSystems: System[] = [
   {
     "name": "Wavy",
     "id": "wavy",
-    "description": "Allows stronger detergents and avoid heavy oils",
+    "description": "Allows stronger surfactants and avoid heavy oils",
     "settings": [
       "sulfate_free",
       "drying_alcohol",
@@ -3146,28 +2768,28 @@ export const defaultSettings: Record<string, Setting> = {
     ],
     "defaultStatus": "warning"
   },
-  "mild_detergents_only": {
-    "id": "mild_detergents_only",
-    "name": "Stronger Detergents",
-    "description": "Avoid these if you prefer mild detergents.",
+  "mild_surfactants_only": {
+    "id": "mild_surfactants_only",
+    "name": "Stronger surfactants",
+    "description": "Avoid these if you prefer mild surfactants.",
     "groups": [
-      "detergents"
+      "surfactants"
     ],
     "allowedCategories": [
-      "mild_detergents"
+      "mild_surfactants"
     ],
     "defaultStatus": "warning",
     "allowedStatus": "ok"
   },
-  "mild_detergents_caution_others": {
-    "id": "mild_detergents_caution_others",
-    "name": "Non-mild detergents",
-    "description": "These detergents are not as harsh as sulfates but can still be drying for some hair types depending on the formulation. CurlsBot is revisiting many of these so you should do your own research.",
+  "mild_surfactants_caution_others": {
+    "id": "mild_surfactants_caution_others",
+    "name": "Non-mild surfactants",
+    "description": "These surfactants are not as harsh as sulfates but can still be drying for some hair types depending on the formulation. CurlsBot is revisiting many of these so you should do your own research.",
     "groups": [
-      "detergents"
+      "surfactants"
     ],
     "allowedCategories": [
-      "mild_detergents"
+      "mild_surfactants"
     ],
     "defaultStatus": "caution",
     "allowedStatus": "ok"

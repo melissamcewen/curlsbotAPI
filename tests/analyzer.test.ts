@@ -135,16 +135,16 @@ describe('Analyzer', () => {
         system: {
           id: 'test',
           name: 'Test',
-          settings: ['mild_detergents_only']
+          settings: ['mild_surfactants_only']
         }
       });
 
-      // Test non-mild detergent
+      // Test non-mild surfactant
       const resultBad = analyzer.analyze('Sodium Laureth Sulfate');
       expect(resultBad.status).toBe('warning');
       expect(resultBad.ingredients[0].status).toBe('warning');
 
-      // Test mild detergent
+      // Test mild surfactant
       const resultGood = analyzer.analyze('Sodium Cocoyl Isethionate');
       expect(resultGood.status).toBe('ok');
       expect(resultGood.ingredients[0].status).toBe('ok');
@@ -179,7 +179,7 @@ describe('Analyzer', () => {
         system: {
           id: 'test',
           name: 'Test',
-          settings: ['sulfate_free', 'mild_detergents_only']
+          settings: ['sulfate_free', 'mild_surfactants_only']
         }
       });
 
@@ -187,7 +187,7 @@ describe('Analyzer', () => {
       expect(result.status).toBe('warning'); // warning is the most severe status
       expect(result.reasons).toHaveLength(1); // warning should override the other status and the other reason should not
       expect(result.reasons.some(r => r.setting === 'sulfate_free')).toBe(true);
-      expect(result.reasons.some(r => r.setting === 'mild_detergents_only')).toBe(false);
+      expect(result.reasons.some(r => r.setting === 'mild_surfactants_only')).toBe(false);
     });
 
     it('should pass ingredients that dont match any settings', () => {

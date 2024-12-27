@@ -29,26 +29,21 @@ function loadIngredientsFromDir(dirPath: string): any {
     file.endsWith('.ingredients.json'),
   );
   const allIngredients: any[] = [];
+  const analyzer = new Analyzer();
 
   for (const file of files) {
     const filePath = join(dirPath, file);
     try {
       const fileContent = readFileSync(filePath, 'utf-8');
       const data = JSON.parse(fileContent);
-      // Handle both array and object formats
       if (Array.isArray(data.ingredients)) {
         allIngredients.push(...data.ingredients);
-      } else {
-        allIngredients.push(...Object.values(data.ingredients));
       }
     } catch (error) {
       if (error instanceof SyntaxError) {
         console.error(`JSON parsing error in file ${file}:`);
         console.error(error.message);
-        // Show the line where the error occurred if available
-        if ('lineNumber' in error) {
-          console.error(`Line: ${(error as any).lineNumber}`);
-        }
+        console.error('File content:', readFileSync(filePath, 'utf-8'));
       } else {
         console.error(`Error reading file ${file}:`, error);
       }
@@ -56,26 +51,14 @@ function loadIngredientsFromDir(dirPath: string): any {
     }
   }
 
-  return allIngredients.reduce((acc, ing) => {
-    const ingredientName = ing.name || ing.id;
-    if (!ingredientName) {
-      console.warn(
-        `Warning: Ingredient missing both 'name' and 'id' fields:`,
-        ing,
-      );
-      return acc;
-    }
+  return allIngredients.reduce((acc, ingredient) => {
+    // Analyze ingredient name to get status
+    const analysis = analyzer.analyze(ingredient.name);
+    const status = analysis.status === 'error' ? 'warning' : analysis.status;
 
-    const ingredientId = ing.id || generateIdFromName(ingredientName);
-    acc[ingredientId] = {
-      ...ing,
-      id: ingredientId,
-      name: ingredientName,
-      categories: ing.categories || [],
-      synonyms: ing.synonyms || [],
-      references: ing.references
-        ? convertToReferenceObjects(ing.references)
-        : [],
+    acc[ingredient.id] = {
+      ...ingredient,
+      status,
     };
     return acc;
   }, {});

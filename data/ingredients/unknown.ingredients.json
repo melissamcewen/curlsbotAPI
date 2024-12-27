@@ -3,54 +3,71 @@
     {
       "name": "Unknown Non-Water Soluble Silicone",
       "id": "unknown_non_water_soluble_silicone",
-      "categories": ["non_water_soluble_silicones"]
+      "categories": [
+        "non_water_soluble_silicones"
+      ]
     },
     {
       "name": "Unknown Water Soluble Silicones",
       "id": "unknown_water_soluble_silicone",
-      "categories": ["water_soluble_silicones"]
+      "categories": [
+        "water_soluble_silicones"
+      ]
     },
     {
       "name": "Unknown Sulfate",
       "id": "unknown_sulfate",
-      "categories": ["sulfates"],
+      "categories": [
+        "sulfates"
+      ],
       "description": "We're pretty sure this is a sulfate, but we're not sure which one."
     },
-
     {
       "name": "Unknown Sarcosinate",
       "id": "unknown_sarcosinate",
-      "categories": ["other_detergents"]
+      "categories": [
+        "other_surfactants"
+      ]
     },
-
     {
       "name": "Unknown Cocoyl Glutamate",
       "id": "unknown_cocoyl_glutamate",
-      "categories": ["other_detergents"]
+      "categories": [
+        "other_surfactants"
+      ]
     },
     {
       "name": "Unknown Wax",
       "id": "unknown_wax",
-      "categories": ["non_water_soluble_waxes"]
+      "categories": [
+        "non_water_soluble_waxes"
+      ]
     },
-
     {
       "name": "Unknown Oil",
       "id": "unknown_oil",
-      "categories": ["other"]
+      "categories": [
+        "other"
+      ]
     },
     {
       "name": "Unknown Polyquat",
       "id": "unknown_polyquat",
-      "categories": ["polyquats"],
+      "categories": [
+        "polyquats"
+      ],
       "description": "We're pretty sure this is a polyquat, but we're not sure which one."
     },
     {
       "name": "Unknown Alcohol",
       "id": "unknown_alcohol",
-      "synonyms": ["alcohol"],
+      "synonyms": [
+        "alcohol"
+      ],
       "description": "Unknown alcohol, since we don't know what it is, we are going to classify it as drying alcohols just to be safe.",
-      "categories": ["drying_alcohols"]
+      "categories": [
+        "drying_alcohols"
+      ]
     }
   ]
 }

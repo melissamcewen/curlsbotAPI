@@ -3,22 +3,57 @@
     {
       "id": "alcohols",
       "name": "Alcohols",
-      "inclusions": ["alcohol"],
+      "inclusions": [
+        "alcohol"
+      ],
       "defaultIngredient": "unknown_alcohol",
-      "description": "Alcohols in haircare products are used to help products dry quickly, preserve formulations, and enhance ingredient absorption into hair"
+      "description": "Alcohols in haircare products are used to help products dry quickly, preserve formulations, and enhance ingredient absorption into hair",
+      "references": [
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4387693/",
+          "type": "science",
+          "title": "Hair Cosmetics: An Overview"
+        },
+        {
+          "url": "https://thebeautybrains.com/2014/04/why-is-there-isopropyl-alcohol-in-my-conditioner/",
+          "type": "science",
+          "title": "The Beauty Brains: Why is there isopropyl alcohol in my conditioner?"
+        },
+        {
+          "url": "https://labmuffin.com/how-bad-is-alcohol-in-skincare-really/",
+          "type": "science",
+          "title": "Lab Muffin: How Bad is Alcohol in Skincare Really?"
+        }
+      ]
     },
     {
       "id": "preservatives",
       "name": "Preservatives",
-      "inclusions": ["paraben"],
+      "inclusions": [
+        "paraben"
+      ],
       "description": "Preservatives in hair products can help prevent the growth of bacteria and mold"
     },
     {
-      "id": "detergents",
-      "name": "Detergents",
-      "inclusions": ["sulfate"],
-      "exclusions": ["behentrimonium", "methosulfate", "magnesium"],
-      "description": "Detergents in hair products can help remove dirt and oil from the hair and scalp"
+      "id": "surfactants",
+      "name": "surfactants",
+      "description": "surfactants in hair products can help remove dirt and oil from the hair and scalp",
+      "inclusions": [
+        "sulfate",
+        "sulphate"
+      ],
+      "exclusions": [
+        "behentrimonium",
+        "methosulfate",
+        "magnesium"
+      ],
+      "references": [
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4387693/",
+          "type": "science",
+          "title": "Hair Cosmetics: An Overview"
+        }
+      ]
     },
     {
       "id": "silicones",
@@ -36,9 +71,47 @@
         "siloxysilicate",
         "microsil"
       ],
-      "exclusions": ["saccharomycessilicon", "ferment", "castor", "polyquaternium"],
+      "exclusions": [
+        "saccharomycessilicon",
+        "ferment",
+        "castor",
+        "polyquaternium"
+      ],
       "defaultIngredient": "unknown_non_water_soluble_silicone",
-      "description": "Synthetic ingredients that create a protective barrier on the hair, reducing friction and adding shine"
+      "description": "Synthetic ingredients that create a protective barrier on the hair, reducing friction and adding shine",
+      "references": [
+        {
+          "url": "https://labmuffin.com/silicone-mythbusting-with-video/",
+          "status": "good",
+          "title": "Lab Muffin",
+          "type": "science"
+        },
+        {
+          "url": "https://thebeautybrains.com/2007/01/are-silicones-bad-for-your-hair/",
+          "status": "ok",
+          "title": "The Beauty Brains",
+          "type": "science"
+        },
+        {
+          "url": "https://science-yhairblog.blogspot.com/2014/04/silicone-ingredient-solubility-list.html",
+          "status": "caution",
+          "title": "Science-y Hair Blog",
+          "description": "varies, discusses the different water solubilities of different silicones",
+          "type": "science"
+        },
+        {
+          "url": "https://amzn.to/41QrGxJ",
+          "status": "warning",
+          "title": "Curly Girl: The Handbook by Lorraine Massey",
+          "type": "hairpro",
+          "description": "recommends avoiding silicones"
+        },
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4387693/",
+          "type": "science",
+          "title": "Hair Cosmetics: An Overview"
+        }
+      ]
     },
     {
       "id": "others",
@@ -47,18 +120,31 @@
     {
       "id": "waxes",
       "name": "Waxes",
-      "inclusions": ["wax"],
+      "inclusions": [
+        "wax"
+      ],
       "defaultIngredient": "unknown_wax",
-      "exclusions": ["emulsifying"],
-      "description": "Waxes in styling products can add texture, hold, and shine to hair"
+      "exclusions": [
+        "emulsifying"
+      ],
+      "description": "Waxes in styling products can add texture, hold, and shine to hair",
+      "references": [
+        {
+          "url": "https://www.researchgate.net/publication/383884298_The_Effectiveness_of_Aloe_Vera_in_Multiple_Moist_Spray_Products_as_a_Hair_Tonic_to_Reduce_Students_Scalp_Irritation",
+          "type": "science",
+          "title": "The Effectiveness of Aloe Vera in Multiple Moist Spray Products as a Hair Tonic to Reduce Students Scalp Irritation",
+          "description": "cites a study that hasn't be translated into into English that linked pomade to fungal growth"
+        }
+      ]
     },
     {
       "id": "oils",
       "name": "Oils",
-      "inclusions": ["oil"],
+      "inclusions": [
+        "oil"
+      ],
       "defaultIngredient": "unknown_oil",
       "description": "Oils in hair products can moisturize and add shine to hair"
     }
   ]
 }
-

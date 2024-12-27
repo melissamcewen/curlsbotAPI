@@ -4,45 +4,61 @@
       "id": "sulfate_free",
       "name": "Sulfates",
       "description": "Sulfates are a common ingredient in hair care products that can strip the hair of its natural oils. This can lead to dryness, especially for those with color-treated or chemically processed hair. Some people prefer to use sulfate-free products to maintain healthier hair.",
-      "categories": ["sulfates"],
+      "categories": [
+        "sulfates"
+      ],
       "defaultStatus": "warning"
     },
     {
       "id": "paraben_caution",
       "name": "Parabens",
       "description": "Parabens are preservatives used to extend the shelf life of hair care products, but some people avoid them due to potential health concerns.",
-      "categories": ["parabens"],
+      "categories": [
+        "parabens"
+      ],
       "defaultStatus": "caution"
     },
     {
       "id": "drying_alcohol",
       "name": "Alcohols",
       "description": "These alcohols have a reputation for being drying, but may be fine in some formulations, especially in low amounts and in products that evaporate quickly.",
-      "categories": ["drying_alcohols"],
+      "categories": [
+        "drying_alcohols"
+      ],
       "defaultStatus": "caution"
     },
     {
       "id": "silicone_free",
       "name": "Silicones",
       "description": "Silicones are synthetic ingredients that can provide hair benefits but may build up, leading to potential hair issues.",
-      "groups": ["silicones"],
+      "groups": [
+        "silicones"
+      ],
       "defaultStatus": "warning"
     },
     {
-      "id": "mild_detergents_only",
-      "name": "Stronger Detergents",
-      "description": "Avoid these if you prefer mild detergents.",
-      "groups": ["detergents"],
-      "allowedCategories": ["mild_detergents"],
+      "id": "mild_surfactants_only",
+      "name": "Stronger surfactants",
+      "description": "Avoid these if you prefer mild surfactants.",
+      "groups": [
+        "surfactants"
+      ],
+      "allowedCategories": [
+        "mild_surfactants"
+      ],
       "defaultStatus": "warning",
       "allowedStatus": "ok"
     },
     {
-      "id": "mild_detergents_caution_others",
-      "name": "Non-mild detergents",
-      "description": "These detergents are not as harsh as sulfates but can still be drying for some hair types depending on the formulation. CurlsBot is revisiting many of these so you should do your own research.",
-      "groups": ["detergents"],
-      "allowedCategories": ["mild_detergents"],
+      "id": "mild_surfactants_caution_others",
+      "name": "Non-mild surfactants",
+      "description": "These surfactants are not as harsh as sulfates but can still be drying for some hair types depending on the formulation. CurlsBot is revisiting many of these so you should do your own research.",
+      "groups": [
+        "surfactants"
+      ],
+      "allowedCategories": [
+        "mild_surfactants"
+      ],
       "defaultStatus": "caution",
       "allowedStatus": "ok"
     },
@@ -50,42 +66,54 @@
       "id": "no_astringents",
       "name": "No Astringents",
       "description": "Astringents are substances that tighten pores and reduce oil production, which can be beneficial for people with oily scalps, but can be too drying for those with dry or normal hair.",
-      "categories": ["astringents"],
+      "categories": [
+        "astringents"
+      ],
       "defaultStatus": "warning"
     },
     {
       "id": "no_water_insoluble_silicones",
       "name": "Water Insoluble Silicones",
       "description": "These are silicones that are not water-soluble and can build up on the hair, leading to a heavy, greasy feel and potentially hindering moisture absorption.",
-      "categories": ["non_water_soluble_silicones"],
+      "categories": [
+        "non_water_soluble_silicones"
+      ],
       "defaultStatus": "warning"
     },
     {
       "id": "caution_silicones",
       "name": "Silicones",
       "description": "Some find these water-soluble and evaporative silicones are fine but we mark all silicones as caution in case you want to avoid them.",
-      "groups": ["silicones"],
+      "groups": [
+        "silicones"
+      ],
       "defaultStatus": "caution"
     },
     {
       "id": "no_waxes",
       "name": "Non-water-soluble waxes",
       "description": "These waxes can coat the hair shaft, providing temporary benefits like shine, smoothness, and heat protection. However, they can build up on the hair, leading to a heavy, greasy feel and potentially hindering moisture absorption.",
-      "categories": ["non_water_soluble_waxes"],
+      "categories": [
+        "non_water_soluble_waxes"
+      ],
       "defaultStatus": "warning"
     },
     {
       "id": "soap_free",
       "name": "Soap",
       "description": "Soaps can be harsh on hair, stripping away natural oils and potentially leading to dryness, frizz, and damage, especially for those with color-treated or chemically processed hair. They can also build up on the hair when combined with hard water.",
-      "categories": ["soaps"],
+      "categories": [
+        "soaps"
+      ],
       "defaultStatus": "warning"
     },
     {
       "id": "no_petroleum",
       "name": "Petroleum Oils",
       "description": "These are petroleum based ingredients that are often avoided for their build up potential as well as their petro-based origin.",
-      "categories": ["petroleum_oils"],
+      "categories": [
+        "petroleum_oils"
+      ],
       "defaultStatus": "warning"
     }
   ]

@@ -81,7 +81,7 @@ describe('getCategoryGroups', () => {
     ];
     const groups = getCategoryGroups(testDatabase, categoryIds);
 
-    expect(groups).toEqual(['silicones', 'detergents']);
+    expect(groups).toEqual(['silicones', 'surfactants']);
     expect(new Set(groups).size).toBe(2);
   });
 

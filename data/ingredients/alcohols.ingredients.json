@@ -3,83 +3,99 @@
     {
       "name": "Acetyl Alcohol",
       "id": "acetyl_alcohol",
-      "categories": ["emollient_alcohols"]
+      "categories": [
+        "emollient_alcohols"
+      ]
     },
     {
       "name": "Amino Methyl Propanol",
       "id": "amino_methyl_propanol",
-      "categories": ["emollient_alcohols"]
+      "categories": [
+        "emollient_alcohols"
+      ]
     },
     {
       "name": "Amino-2-Methyl-1-Propanol",
       "id": "amino_2_methyl_1_propanol",
-      "categories": ["emollient_alcohols"]
+      "categories": [
+        "emollient_alcohols"
+      ]
     },
     {
       "name": "Amylcinnamyl Alcohol",
       "id": "amylcinnamyl_alcohol",
-      "categories": ["emollient_alcohols"],
-      "synonyms": ["amyl cinnamyl alcohol"],
-      "references": [
-        {
-          "url": "https://cosdna.com/eng/3a86ec9991.html"
-        }
+      "categories": [
+        "emollient_alcohols"
+      ],
+      "synonyms": [
+        "amyl cinnamyl alcohol"
       ]
     },
     {
       "name": "Arachidyl Alcohol",
       "id": "arachidyl_alcohol",
-      "categories": ["emollient_alcohols"]
+      "categories": [
+        "emollient_alcohols"
+      ]
     },
     {
       "name": "Behenyl Alcohol",
       "id": "behenyl_alcohol",
-      "synonyms": ["docosanol", "behenic alcohol"],
-      "categories": ["emollient_alcohols"],
-      "references": [
-        {
-          "url": "https://cosdna.com/eng/5fc5481.html"
-        }
+      "synonyms": [
+        "docosanol",
+        "behenic alcohol"
+      ],
+      "categories": [
+        "emollient_alcohols"
       ]
     },
     {
       "name": "Benzyl Alcohol",
       "id": "benzyl_alcohol",
-      "categories": ["emollient_alcohols"],
+      "categories": [
+        "emollient_alcohols"
+      ],
       "references": [
         {
-          "url": "https://incidecoder.com/ingredients/benzyl-alcohol"
+          "url": "https://incidecoder.com/ingredients/benzyl-alcohol",
+          "title": "INCIDecor",
+          "status": "ok"
         }
       ]
     },
     {
       "name": "Brassica Alcohol",
       "id": "brassica_alcohol",
-      "categories": ["emollient_alcohols"]
+      "categories": [
+        "emollient_alcohols"
+      ]
     },
     {
       "name": "Butylene Alcohol",
       "id": "butylene_alcohol",
-      "categories": ["emollient_alcohols"]
+      "categories": [
+        "emollient_alcohols"
+      ]
     },
     {
       "name": "C14-22 Alcohol",
       "id": "c14_22_alcohol",
-      "categories": ["emollient_alcohols"]
+      "categories": [
+        "emollient_alcohols"
+      ]
     },
     {
       "name": "C20-C22 Alcohol",
       "id": "c20_c22_alcohol",
-      "categories": ["emollient_alcohols"]
+      "categories": [
+        "emollient_alcohols"
+      ]
     },
     {
       "name": "C30_50 Alcohols",
       "id": "c30_50_alcohols",
-      "categories": ["emollient_alcohols"],
-      "references": [
-        {
-          "url": "https://cosdna.com/eng/8fb0237001.html"
-        }
+      "categories": [
+        "emollient_alcohols"
       ]
     },
     {
@@ -91,11 +107,8 @@
         "c16-18 alcohols",
         "ceteryl alcohol"
       ],
-      "categories": ["emollient_alcohols"],
-      "references": [
-        {
-          "url": "https://cosdna.com/eng/f83898102.html"
-        }
+      "categories": [
+        "emollient_alcohols"
       ]
     },
     {
@@ -109,33 +122,40 @@
         "palmitoryl alcohol",
         "c16 alcohol l"
       ],
-      "categories": ["emollient_alcohols"],
-      "references": [
-        {
-          "url": "https://cosdna.com/eng/cac655104.html"
-        }
+      "categories": [
+        "emollient_alcohols"
       ]
     },
     {
       "name": "Cetylated Lanolin Alcohol",
       "id": "cetylated_lanolin_alcohol",
-      "categories": ["emollient_alcohols"]
+      "categories": [
+        "emollient_alcohols"
+      ]
     },
     {
       "name": "Cinnamyl Alcohol",
       "id": "cinnamyl_alcohol",
-      "synonyms": ["cinnamic alcohol"],
-      "categories": ["emollient_alcohols"],
+      "synonyms": [
+        "cinnamic alcohol"
+      ],
+      "categories": [
+        "emollient_alcohols"
+      ],
       "references": [
         {
-          "url": "https://incidecoder.com/ingredients/cinnamyl-alcohol"
+          "url": "https://incidecoder.com/ingredients/cinnamyl-alcohol",
+          "title": "INCIDecoder",
+          "status": "ok"
         }
       ]
     },
     {
       "name": "Coconut Alcohol",
       "id": "coconut_alcohol",
-      "categories": ["emollient_alcohols"]
+      "categories": [
+        "emollient_alcohols"
+      ]
     },
     {
       "name": "Ethyl Alcohol",
@@ -145,108 +165,112 @@
         "sugarcane-derived alcohol",
         "sugarcane alcohol"
       ],
-      "categories": ["drying_alcohols"],
-      "references": [
-        {
-          "url": "https://cosdna.com/eng/554009929.html"
-        }
+      "categories": [
+        "drying_alcohols"
       ]
     },
     {
       "name": "Isocetyl Alcohol",
       "id": "isocetyl_alcohol",
-      "synonyms": ["isohexadecanol"],
-      "categories": ["emollient_alcohols"],
-      "references": [
-        {
-          "url": "https://cosdna.com/eng/ac44ce1816.html"
-        }
+      "synonyms": [
+        "isohexadecanol"
+      ],
+      "categories": [
+        "emollient_alcohols"
       ]
     },
     {
       "name": "Isopropanol",
       "id": "isopropanol",
-      "synonyms": ["isopropyl alcohol", "2-propanol"],
-      "categories": ["drying_alcohols"],
-      "references": [
-        {
-          "url": "https://cosdna.com/eng/e45cff199.html"
-        }
+      "synonyms": [
+        "isopropyl alcohol",
+        "2-propanol"
+      ],
+      "categories": [
+        "drying_alcohols"
       ]
     },
     {
       "name": "Isostearyl Alcohol",
       "id": "isostearyl_alcohol",
-      "categories": ["emollient_alcohols"],
-      "references": [
-        {
-          "url": "https://cosdna.com/eng/78de01202.html"
-        }
+      "categories": [
+        "emollient_alcohols"
       ]
     },
     {
       "name": "Lanolin Alcohol",
       "id": "lanolin_alcohol",
-      "categories": ["emollient_alcohols"],
-      "references": [
-        {
-          "url": "https://cosdna.com/eng/cd20031856.html"
-        }
+      "categories": [
+        "emollient_alcohols"
       ]
     },
     {
       "name": "Lauryl Alcohol",
       "id": "lauryl_alcohol",
-      "categories": ["emollient_alcohols"],
-      "synonyms": ["1-dodecanol", "dodecanol", "dodecyl alcohol"],
-      "references": [
-        {
-          "url": "https://cosdna.com/eng/3a364c2.html"
-        }
+      "categories": [
+        "emollient_alcohols"
+      ],
+      "synonyms": [
+        "1-dodecanol",
+        "dodecanol",
+        "dodecyl alcohol"
       ]
     },
     {
       "name": "Myristyl Alcohol",
       "id": "myristyl_alcohol",
-      "synonyms": ["1-tetradecanol", "tetradecan-1-ol"],
-      "categories": ["emollient_alcohols"],
-      "references": [
-        {
-          "url": "https://cosdna.com/eng/76640d1970.html"
-        }
+      "synonyms": [
+        "1-tetradecanol",
+        "tetradecan-1-ol"
+      ],
+      "categories": [
+        "emollient_alcohols"
       ]
     },
     {
       "name": "Oleyl Alcohol",
       "id": "oleyl_alcohol",
-      "synonyms": ["oleic alcohol"],
-      "categories": ["emollient_alcohols"]
+      "synonyms": [
+        "oleic alcohol"
+      ],
+      "categories": [
+        "emollient_alcohols"
+      ]
     },
     {
       "name": "Phenethyl Alcohol",
       "id": "phenethyl_alcohol",
-      "synonyms": ["phenylethyl alcohol", "phenyl ethyl alcohol"],
-      "categories": ["preservative_alcohols"],
+      "synonyms": [
+        "phenylethyl alcohol",
+        "phenyl ethyl alcohol"
+      ],
+      "categories": [
+        "preservative_alcohols"
+      ],
       "references": [
         {
-          "url": "https://incidecoder.com/ingredients/phenethyl-alcohol"
+          "url": "https://incidecoder.com/ingredients/phenethyl-alcohol",
+          "title": "INCIDecoder",
+          "status": "ok"
         }
       ]
     },
     {
       "name": "Phenethyl Alcohol",
       "id": "phenethyl_alcohol",
-      "synonyms": ["phenylethyl alcohol", "phenyl ethyl alcohol"],
-      "categories": ["preservative_alcohols"]
+      "synonyms": [
+        "phenylethyl alcohol",
+        "phenyl ethyl alcohol"
+      ],
+      "categories": [
+        "preservative_alcohols"
+      ]
     },
     {
       "name": "Propyl Alcohol",
       "id": "propyl_alcohol",
-      "categories": ["drying_alcohols"],
-      "references": [
-        {
-          "url": "https://cosdna.com/eng/366a832503.html"
-        }
+      "categories": [
+        "drying_alcohols"
       ]
     },
     {
@@ -261,11 +285,8 @@
         "alcohol"
       ],
       "description": "Dries out your hair and skin, and can cause irritation and dryness.",
-      "categories": ["drying_alcohols"],
-      "references": [
-        {
-          "url": "https://cosdna.com/eng/554009929.html"
-        }
+      "categories": [
+        "drying_alcohols"
       ]
     },
     {
@@ -277,73 +298,101 @@
         "steoryl alcohol",
         "steareth alcohol"
       ],
-      "categories": ["emollient_alcohols"],
-      "references": [
-        {
-          "url": "https://cosdna.com/eng/5ef6ef467.html"
-        }
+      "categories": [
+        "emollient_alcohols"
       ]
     },
     {
       "name": "Undecyl Alcohol",
       "id": "undecyl_alcohol",
-      "categories": ["emollient_alcohols"]
+      "categories": [
+        "emollient_alcohols"
+      ]
     },
     {
       "name": "Emulsifying Wax",
       "id": "emulsifying_wax",
-      "categories": ["emollient_alcohols"],
-      "references": ["https://incidecoder.com/ingredients/emulsifying-wax"]
+      "categories": [
+        "emollient_alcohols"
+      ],
+      "references": [
+        {
+          "url": "https://incidecoder.com/ingredients/emulsifying-wax",
+          "title": "INCIDecoder",
+          "status": "ok",
+          "description": "This isn't an INCI ingredient, they think it's a mix of Cetearyl Alcohol (and) Polysorbate 60"
+        }
+      ]
     },
     {
       "name": "Hydrogenated Dilinoleyl Alcohol",
       "id": "hydrogenated_dilinoleyl_alcohol",
-      "categories": ["emollient_alcohols"]
+      "categories": [
+        "emollient_alcohols"
+      ]
     },
     {
       "name": "Arachidyl Alcohol",
       "id": "arachidyl_alcohol",
-      "categories": ["emollient_alcohols"]
+      "categories": [
+        "emollient_alcohols"
+      ]
     },
     {
       "name": "Batyl Alcohol",
       "id": "batyl_alcohol",
-      "categories": ["emollient_alcohols"]
+      "categories": [
+        "emollient_alcohols"
+      ]
     },
     {
       "name": "Brassica Alcohol",
       "id": "brassica_alcohol",
-      "categories": ["emollient_alcohols"]
+      "categories": [
+        "emollient_alcohols"
+      ]
     },
     {
       "name": "C12-15 Alcohol",
       "id": "c12_15_alcohol",
-      "categories": ["emollient_alcohols"]
+      "categories": [
+        "emollient_alcohols"
+      ]
     },
     {
       "name": "C12-16 Alcohol",
       "id": "c12_16_alcohol",
-      "categories": ["emollient_alcohols"]
+      "categories": [
+        "emollient_alcohols"
+      ]
     },
     {
       "name": "Decyl Alcohol",
       "id": "decyl_alcohol",
-      "categories": ["emollient_alcohols"]
+      "categories": [
+        "emollient_alcohols"
+      ]
     },
     {
       "name": "Hydrogenated Rapeseed Alcohol",
       "id": "hydrogenated_rapeseed_alcohol",
-      "categories": ["emollient_alcohols"]
+      "categories": [
+        "emollient_alcohols"
+      ]
     },
     {
       "name": "Jojoba Alcohol",
       "id": "jojoba_alcohol",
-      "categories": ["emollient_alcohols"]
+      "categories": [
+        "emollient_alcohols"
+      ]
     },
     {
       "name": "Tridecyl Alcohol",
       "id": "tridecyl_alcohol",
-      "categories": ["emollient_alcohols"]
+      "categories": [
+        "emollient_alcohols"
+      ]
     }
   ]
 }

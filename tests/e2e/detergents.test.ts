@@ -12,7 +12,7 @@ import {
 const list =
   'Sodium Laureth Sulfate, Cocamidopropyl Betaine*, Cocamide MEA, Alkylbenzene Sulfonate, ammonium laureth sulphate, Dioctyl Sodium Sulfosuccinate, sulfate, behentrimonium methosulfate, magnesium sulfate';
 
-describe('Handling of detergents under the default system', () => {
+describe('Handling of surfactants under the default system', () => {
   const analyzer = new Analyzer({
     database: defaultDatabase,
     settings: defaultSettings,
@@ -41,49 +41,49 @@ describe('Handling of detergents under the default system', () => {
       {
         normalized: 'sodium laureth sulfate',
         ingredientId: 'sodium_laureth_sulfate',
-        category: 'detergents',
+        category: 'surfactants',
         status: 'warning',
         reason: 'sulfate_free'
       },
       {
         normalized: 'cocamidopropyl betaine',
         ingredientId: 'cocamidopropyl_betaine',
-        category: 'detergents',
+        category: 'surfactants',
         status: 'ok',
-        reason: 'mild_detergents_caution_others'
+        reason: 'mild_surfactants_caution_others'
       },
       {
         normalized: 'cocamide mea',
         ingredientId: 'cocamide_mea',
-        category: 'detergents',
+        category: 'surfactants',
         status: 'ok',
-        reason: 'mild_detergents_caution_others'
+        reason: 'mild_surfactants_caution_others'
       },
       {
         normalized: 'alkylbenzene sulfonate',
         ingredientId: 'alkylbenzene_sulfonate',
-        category: 'detergents',
+        category: 'surfactants',
         status: 'caution',
-        reason: 'mild_detergents_caution_others'
+        reason: 'mild_surfactants_caution_others'
       },
       {
         normalized: 'ammonium laureth sulphate',
         ingredientId: 'ammonium_laureth_sulfate',
-        category: 'detergents',
+        category: 'surfactants',
         status: 'warning',
         reason: 'sulfate_free'
       },
       {
         normalized: 'dioctyl sodium sulfosuccinate',
         ingredientId: 'dioctyl_sodium_sulfosuccinate',
-        category: 'detergents',
+        category: 'surfactants',
         status: 'caution',
-        reason: 'mild_detergents_caution_others'
+        reason: 'mild_surfactants_caution_others'
       },
       {
         normalized: 'sulfate',
         ingredientId: 'unknown_sulfate',
-        category: 'detergents',
+        category: 'surfactants',
         status: 'warning',
         reason: 'sulfate_free'
       },

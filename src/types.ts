@@ -98,6 +98,8 @@ export interface Group {
   exclusions?: string[];
   /** default ingredient for the group */
   defaultIngredient?: string;
+  /** Optional source references for the category */
+  references?: Reference[];
 }
 
 /**
@@ -136,6 +138,8 @@ export interface Ingredient {
   references?: Reference[];
   /** Optional synonyms for the ingredient */
   synonyms?: string[];
+  /** CB status */
+  status: 'ok' | 'caution' | 'warning';
 }
 
 /** represents a collection of ingredients   */

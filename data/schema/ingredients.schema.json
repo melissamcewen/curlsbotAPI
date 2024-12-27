@@ -1,13 +1,19 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "type": "object",
-  "required": ["ingredients"],
+  "required": [
+    "ingredients"
+  ],
   "properties": {
     "ingredients": {
       "type": "array",
       "items": {
         "type": "object",
-        "required": ["name", "id", "categories"],
+        "required": [
+          "name",
+          "id",
+          "categories"
+        ],
         "properties": {
           "name": {
             "type": "string",
@@ -34,11 +40,11 @@
                 "water_soluble_silicones",
                 "non_water_soluble_silicones",
                 "preservatives",
-                "other_detergents",
+                "other_surfactants",
                 "preservative_alcohols",
                 "astringents",
                 "soaps",
-                "mild_detergents",
+                "mild_surfactants",
                 "heavy_oils",
                 "light_oils",
                 "medium_oils",
@@ -59,7 +65,9 @@
             "type": "array",
             "items": {
               "type": "object",
-              "required": ["url"],
+              "required": [
+                "url"
+              ],
               "properties": {
                 "url": {
                   "type": "string",
@@ -76,12 +84,23 @@
                 },
                 "type": {
                   "type": "string",
-                  "enum": ["science", "hairpro", "industry", "author", "other"],
+                  "enum": [
+                    "science",
+                    "hairpro",
+                    "industry",
+                    "author",
+                    "other"
+                  ],
                   "description": "Type of reference"
                 },
                 "status": {
                   "type": "string",
-                  "enum": ["ok", "caution", "warning", "good"],
+                  "enum": [
+                    "ok",
+                    "caution",
+                    "warning",
+                    "good"
+                  ],
                   "description": "Status of the reference"
                 }
               },

@@ -4,8 +4,7 @@
       "name": "Amodimethicone",
       "id": "amodimethicone",
       "synonyms": ["amine-functional dimethicone", "amino-modified silicone"],
-      "categories": ["non_water_soluble_silicones"],
-      "references": ["https://incidecoder.com/ingredients/amodimethicone"]
+      "categories": ["non_water_soluble_silicones"]
     },
     {
       "name": "Bis-PEG-18 Methyl Ether Dimethyl Silane",
@@ -14,38 +13,74 @@
         "polyethylene glycol-18 methyl ether dimethyl silane",
         "dimethylsilane glycol ether"
       ],
-      "categories": ["water_soluble_silicones"],
-      "references": [
-        {"url":"https://incidecoder.com/ingredients/bis-peg-18-methyl-ether-dimethyl-silane"}
-      ]
+      "categories": ["water_soluble_silicones"]
     },
     {
       "name": "Cetearyl Methicone",
       "id": "cetearyl_methicone",
       "synonyms": ["cetearyl dimethicone", "methicone ester"],
-      "categories": ["non_water_soluble_silicones"],
-      "references": ["https://incidecoder.com/ingredients/cetearyl-methicone"]
+      "categories": ["non_water_soluble_silicones"]
     },
     {
       "name": "Cyclohexasiloxane",
       "id": "cyclohexasiloxane",
       "synonyms": ["d6", "dodecamethylcyclohexasiloxane", "cyclohexamethicone"],
-      "categories": ["non_water_soluble_silicones"],
-      "references": ["https://incidecoder.com/ingredients/cyclohexasiloxane"]
+      "categories": ["non_water_soluble_silicones"]
     },
     {
       "name": "Cyclopentasiloxane",
       "id": "cyclopentasiloxane",
       "synonyms": ["d5", "decamethylcyclopentasiloxane", "cyclopentamethicone"],
-      "categories": ["non_water_soluble_silicones"],
-      "references": ["https://incidecoder.com/ingredients/cyclopentasiloxane"]
+      "categories": ["non_water_soluble_silicones"]
     },
     {
       "name": "Dimethicone",
       "id": "dimethicone",
       "synonyms": ["polydimethylsiloxane", "pdms", "dimethylpolysiloxane"],
       "categories": ["non_water_soluble_silicones"],
-      "references": ["https://incidecoder.com/ingredients/dimethicone"]
+      "description": "One of the most common silicones, this is a conditioning powerhouse, smoothing and protecting hair with ease. The major downside is it's not easy to wash out, so it can cause buildup.",
+      "references": [
+        {
+          "title": "INCIDecoder",
+          "url": "https://incidecoder.com/ingredients/dimethicone",
+          "status": "caution",
+          "description": "notes it may be difficult to wash out",
+          "type": "science"
+        },
+        {
+          "title": "Tightly Curly",
+          "url": "http://www.tightlycurly.com/ingredients/",
+          "status": "good",
+          "type": "author",
+          "description": "says it can be heavy but is a great conditioner"
+        },
+        {
+          "url": "https://amzn.to/41QrGxJ",
+          "status": "warning",
+          "title": "Curly Girl: The Handbook by Lorraine Massey",
+          "type": "hairpro"
+        },
+        {
+          "url": "https://science-yhairblog.blogspot.com/2014/04/silicone-ingredient-solubility-list.html",
+          "status": "caution",
+          "title": "Science-y Hair Blog",
+          "description": "classifies as water insoluble, only should be used if you are using a cleanser capable of removing",
+          "type": "science"
+        },
+        {
+          "url": "https://thebeautybrains.com/2007/01/are-silicones-bad-for-your-hair/",
+          "status": "caution",
+          "title": "The Beauty Brains",
+          "type": "science",
+          "description": "says its great for lowering porosity but can be hard to wash out"
+        },
+        {
+          "url": "https://labmuffin.com/silicone-mythbusting-with-video/",
+          "status": "good",
+          "title": "Lab Muffin",
+          "type": "science"
+        }
+      ]
     },
     {
       "name": "Dimethicone Copolyol",
@@ -54,8 +89,7 @@
         "dimethicone polyethylene glycol ether",
         "dimethicone polyoxyethylene"
       ],
-      "categories": ["water_soluble_silicones"],
-      "references": ["https://incidecoder.com/ingredients/dimethicone-copolyol"]
+      "categories": ["water_soluble_silicones"]
     },
     {
       "name": "Dimethiconol",
@@ -64,8 +98,7 @@
         "hydroxyl-terminated dimethicone",
         "dimethylsiloxane polymer"
       ],
-      "categories": ["non_water_soluble_silicones"],
-      "references": ["https://incidecoder.com/ingredients/dimethiconol"]
+      "categories": ["non_water_soluble_silicones"]
     },
     {
       "name": "Lauryl Methicone Copolyol",
@@ -74,10 +107,7 @@
         "lauryl polyethylene glycol dimethicone",
         "polyoxyethylene lauryl dimethicone"
       ],
-      "categories": ["water_soluble_silicones"],
-      "references": [
-        {"url":"https://incidecoder.com/ingredients/lauryl-methicone-copolyol"}
-      ]
+      "categories": ["water_soluble_silicones"]
     },
     {
       "name": "PEG-10 Dimethicone",
@@ -86,8 +116,7 @@
         "polyethylene glycol-10 dimethicone",
         "dimethicone polyether"
       ],
-      "categories": ["water_soluble_silicones"],
-      "references": ["https://incidecoder.com/ingredients/peg-10-dimethicone"]
+      "categories": ["water_soluble_silicones"]
     },
     {
       "name": "PEG-12 Dimethicone",
@@ -96,8 +125,7 @@
         "polyethylene glycol-12 dimethicone",
         "dimethicone ethoxylate"
       ],
-      "categories": ["water_soluble_silicones"],
-      "references": ["https://incidecoder.com/ingredients/peg-12-dimethicone"]
+      "categories": ["water_soluble_silicones"]
     },
     {
       "name": "PEG-14 Dimethicone",
@@ -106,8 +134,7 @@
         "polyethylene glycol-14 dimethicone",
         "dimethicone glycol ether"
       ],
-      "categories": ["water_soluble_silicones"],
-      "references": ["https://incidecoder.com/ingredients/peg-14-dimethicone"]
+      "categories": ["water_soluble_silicones"]
     },
     {
       "name": "PEG-7 Amodimethicone",
@@ -116,8 +143,7 @@
         "polyether modified amodimethicone",
         "polyethylene glycol-7 amodimethicone"
       ],
-      "categories": ["water_soluble_silicones"],
-      "references": ["https://incidecoder.com/ingredients/peg-7-amodimethicone"]
+      "categories": ["water_soluble_silicones"]
     },
     {
       "name": "PEG-8 Dimethicone",
@@ -126,42 +152,31 @@
         "polyethylene glycol-8 dimethicone",
         "peg-modified dimethicone"
       ],
-      "categories": ["water_soluble_silicones"],
-      "references": ["https://incidecoder.com/ingredients/peg-8-dimethicone"]
+      "categories": ["water_soluble_silicones"]
     },
     {
       "name": "Phenyl Trimethicone",
       "id": "phenyl_trimethicone",
       "synonyms": ["trimethylsilylphenyl dimethicone", "phenylmethylsilicone"],
-      "categories": ["non_water_soluble_silicones"],
-      "references": ["https://incidecoder.com/ingredients/phenyl-trimethicone"]
+      "categories": ["non_water_soluble_silicones"]
     },
     {
       "name": "Silicone Quaternium-8",
       "id": "silicone_quaternium_8",
       "synonyms": ["cationic silicone polymer", "quaternized dimethicone"],
-      "categories": ["non_water_soluble_silicones"],
-      "references": [
-        {"url":"https://incidecoder.com/ingredients/silicone-quaternium-8"}
-      ]
+      "categories": ["non_water_soluble_silicones"]
     },
     {
       "name": "Stearoxytrimethylsilane",
       "id": "stearoxytrimethylsilane",
       "synonyms": ["octadecyltrimethylsilane", "stearic acid trimethylsilane"],
-      "categories": ["non_water_soluble_silicones"],
-      "references": [
-        {"url":"https://incidecoder.com/ingredients/stearoxytrimethylsilane"}
-      ]
+      "categories": ["non_water_soluble_silicones"]
     },
     {
       "name": "Trimethylsiloxyamodimethicone",
       "id": "trimethylsiloxyamodimethicone",
       "synonyms": ["amino silicone resin", "amino-functionalized silicone"],
-      "categories": ["non_water_soluble_silicones"],
-      "references": [
-        {"url":"https://incidecoder.com/ingredients/trimethylsiloxyamodimethicone"}
-      ]
+      "categories": ["non_water_soluble_silicones"]
     },
     {
       "name": "Trimethylsiloxysilicate",
@@ -176,10 +191,7 @@
     }, {
       "name": "Silicone Quaternium 26",
       "id": "silicone_quaternium_26",
-      "categories": ["water_soluble_silicones"],
-      "references": [
-        {"url":"https://www.reddit.com/r/HaircareScience/comments/nd8x0e/quaternium26_is_water_soluble/"}
-      ]
+      "categories": ["water_soluble_silicones"]
     }
   ]
 }

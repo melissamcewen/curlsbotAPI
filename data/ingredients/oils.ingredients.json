@@ -9,9 +9,6 @@
       ],
       "categories": [
         "light_oils"
-      ],
-      "references": [
-        {"url":"https://incidecoder.com/ingredients/prunus-armeniaca-kernel-oil"}
       ]
     },
     {
@@ -23,9 +20,6 @@
       ],
       "categories": [
         "light_oils"
-      ],
-      "references": [
-        {"url":"https://incidecoder.com/ingredients/argania-spinosa-kernel-oil"}
       ]
     },
     {
@@ -37,9 +31,6 @@
       ],
       "categories": [
         "medium_oils"
-      ],
-      "references": [
-        {"url":"https://incidecoder.com/ingredients/persea-gratissima-oil"}
       ]
     },
     {
@@ -51,9 +42,6 @@
       ],
       "categories": [
         "medium_oils"
-      ],
-      "references": [
-        {"url":"https://incidecoder.com/ingredients/adansonia-digitata-seed-oil"}
       ]
     },
     {
@@ -65,9 +53,6 @@
       ],
       "categories": [
         "light_oils"
-      ],
-      "references": [
-        {"url":"https://incidecoder.com/ingredients/camellia-oleifera-seed-oil"}
       ]
     },
     {
@@ -79,9 +64,6 @@
       ],
       "categories": [
         "heavy_oils"
-      ],
-      "references": [
-        {"url":"https://incidecoder.com/ingredients/ricinus-communis-seed-oil"}
       ]
     },
     {
@@ -93,9 +75,6 @@
       ],
       "categories": [
         "medium_oils"
-      ],
-      "references": [
-        {"url":"https://incidecoder.com/ingredients/cocos-nucifera-oil"}
       ]
     },
     {
@@ -107,9 +86,6 @@
       ],
       "categories": [
         "light_oils"
-      ],
-      "references": [
-        {"url":"https://incidecoder.com/ingredients/vitis-vinifera-seed-oil"}
       ]
     },
 
@@ -122,9 +98,6 @@
       ],
       "categories": [
         "light_oils"
-      ],
-      "references": [
-        {"url":"https://incidecoder.com/ingredients/simmondsia-chinensis-seed-oil"}
       ]
     },
     {
@@ -136,9 +109,6 @@
       ],
       "categories": [
         "heavy_oils"
-      ],
-      "references": [
-        {"url":"https://incidecoder.com/ingredients/lanolin"}
       ]
     },
     {
@@ -150,9 +120,6 @@
       ],
       "categories": [
         "light_oils"
-      ],
-      "references": [
-        {"url":"https://incidecoder.com/ingredients/sclerocarya-birrea-seed-oil"}
       ]
     },
     {
@@ -165,9 +132,6 @@
       ],
       "categories": [
         "petroleum_oils"
-      ],
-      "references": [
-        {"url":"https://incidecoder.com/ingredients/mineral-oil"}
       ]
     },
     {
@@ -192,9 +156,6 @@
       ],
       "categories": [
         "medium_oils"
-      ],
-      "references": [
-        {"url":"https://incidecoder.com/ingredients/olea-europaea-fruit-oil"}
       ]
     },
 
@@ -207,9 +168,6 @@
       ],
       "categories": [
         "medium_oils"
-      ],
-      "references": [
-        {"url":"https://incidecoder.com/ingredients/helianthus-annuus-seed-oil"}
       ]
     },
     {
@@ -221,9 +179,6 @@
       ],
       "categories": [
         "light_oils"
-      ],
-      "references": [
-        {"url":"https://incidecoder.com/ingredients/prunus-amygdalus-dulcis-oil"}
       ]
     },
     {
@@ -232,12 +187,6 @@
       "description": "A natural butter that deeply moisturizes and nourishes hair",
       "categories": [
         "heavy_oils"
-      ],
-      "references": [
-        {
-          "url": "https://incidecoder.com/ingredients/butyrospermum-parkii-shea-butter",
-          "title": "Shea Butter on INCIDecoder"
-        }
       ],
       "synonyms": [
         "shea butter",

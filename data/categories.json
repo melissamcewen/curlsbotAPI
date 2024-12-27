@@ -24,7 +24,7 @@
     {
       "id": "sulfates",
       "name": "Sulfates",
-      "group": "detergents",
+      "group": "surfactants",
       "description": "Sulfates are cleansing agents that create lather and remove oil and dirt",
       "inclusions": [
         "sulfate",
@@ -70,10 +70,10 @@
       "description": "Preservatives in hair care products can help prevent the growth of bacteria and mold"
     },
     {
-      "id": "other_detergents",
-      "name": "Other Detergents",
-      "group": "detergents",
-      "description": "These are other detergents that don't fit into the other categories"
+      "id": "other_surfactants",
+      "name": "Other surfactants",
+      "group": "surfactants",
+      "description": "These are other surfactants that don't fit into the other categories"
     },
     {
       "id": "preservative_alcohols",
@@ -94,10 +94,10 @@
       "description": "Soaps are cleansers made from fatty acids and alkali metals"
     },
     {
-      "id": "mild_detergents",
-      "name": "Mild Detergents",
-      "group": "detergents",
-      "description": "These detergents are less harsh than other detergents and are often used in hair care products"
+      "id": "mild_surfactants",
+      "name": "Mild surfactants",
+      "group": "surfactants",
+      "description": "These surfactants are less harsh than other surfactants and are often used in hair care products"
     },
     {
       "id": "heavy_oils",
