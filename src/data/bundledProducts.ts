@@ -3,6 +3,83 @@ import type { ProductDatabase } from '../types';
 
 export const defaultProductDatabase: ProductDatabase = {
   "products": {
+    "clarifying_shampoo_au": {
+      "name": "Clarifying Shampoo",
+      "brand": "Moroccanoil",
+      "product_categories": [
+        "clarifying_shampoos"
+      ],
+      "tags": [
+        "low_porosity",
+        "normal_porosity",
+        "featured"
+      ],
+      "buy_url": "https://amzn.to/4iSDfKT",
+      "description": "This shampoo has some stronger cleansers, but that's fine in a clarifying shampoo because you're only using it once in a while. It's sulfate-free, so it won't strip your hair too much. It's also got some nice oils in it to help keep your hair from getting too dry.",
+      "country": "AU",
+      "asin": "B0089NVH5W",
+      "ingredients_raw": "aqua water eau, cocamidopropyl hydroxysultaine, disodium laureth sulfosuccinate, sodium lauryl sulfoacetate, sodium lauroyl sarcosinate, sodium polystyrene sulfonate, sodium chloride, cocamidopropylamine oxide, argania spinosa argan kernel oil, persea gratissima avocado oil, rosmarinus officinalis rosemary leaf extract, chamomilla recutita matricaria flower extract, lavandula angustifolia lavender flower extract, simmondsia chinensis jojoba seed extract, keratin amino acids, hydrolyzed keratin, silk amino acids, panthenol, sodium pca, cinnamidopropyltrimonium chloride, butylene glycol, peg-40 hydrogenated castor oil, peg-150 pentaerythrityl tetrastearate, peg-6 caprylic capric glycerides, caprylyl glycol, tetrasodium edta, disodium edta, chlorphenesin, phenoxyethanol, parfum fragrance, ci 17200 red 33, ci 19140 yellow 5, sodium hydroxide, citric acid, alpha-isomethyl ionone, butylphenyl methylpropional, linalool, hydroxyisohexyl 3-cyclohexene carboxaldehydethylpropional",
+      "id": "clarifying_shampoo_au",
+      "systems_excluded": [],
+      "status": "caution"
+    },
+    "wash_&_scrub_detox_pro-biotic_uk": {
+      "name": "Wash & Scrub Detox Pro-biotic",
+      "brand": "Curlsmith",
+      "product_categories": [
+        "clarifying_shampoos"
+      ],
+      "ingredients_raw": "water aqua, perlite, sodium methyl cocoyl taurate plant derived, cocamidopropyl betaine plant derived, decyl glucoside, lactobacillus ferment lysate, leuconostoc radish root ferment filtrate, hylocereus undatus dragon fruit fruit extract, paullinia cupana guarana seed extract, urtica dioica nettle leaf extract, zingiber officinale ginger root extract, malva sylvestris mallow flower extract, acetic acid vinegar, acrylates c10-30 alkyl acrylate crosspolymer, guar hydroxypropyltrimonium chloride, polyquaternium-10, glycerin, citric acid, potassium sorbate, sodium hydroxide, phenoxyethanol, sodium benzoate, linalool, limonene, fragrance parfum",
+      "tags": [
+        "low_porosity",
+        "normal_porosity",
+        "featured"
+      ],
+      "buy_url": "https://amzn.to/3DxwXjS",
+      "country": "UK",
+      "asin": "B08636L8JY",
+      "id": "wash_&_scrub_detox_pro-biotic_uk",
+      "systems_excluded": [],
+      "status": "ok"
+    },
+    "water_works_clarifying_shampoo": {
+      "name": "Water Works Clarifying Shampoo",
+      "brand": "Ouidad",
+      "product_categories": [
+        "clarifying_shampoos"
+      ],
+      "tags": [
+        "low_porosity",
+        "normal_porosity",
+        "featured"
+      ],
+      "buy_url": "https://amzn.to/3Pfl2d4",
+      "asin": "B0001Y74XG",
+      "ingredients_raw": "water, ammonium laureth sulfate, sodium laureth sulfate, cocomidopropyl betaine, lauryl glucoside, butylene glycol, cocamide mea, polysorbate 20, sodium lauroamphoacetate, panthenol, saccharum officinarum sugar cane extract, citrus medica limonum lemon peel extract, citrus aurantium dulcis orange fruit extract, pyrus malus apple fruit extract, camellia oleifera leaf extract, cetrimonium chloride, polyquaternium-59, polyquaternium-10, citrus aurantium dulcis orange peel oil, citrus tangerina tangerine peel oil, disodium edta, methychloroisothiazolinone, methylisothiazolinone",
+      "description": "This clarifying shampoo contains sulfates, making it ideal for occasional use to remove product buildup, especially for those with low-porosity hair. While effective, it may be drying. To minimize this, focus application on the scalp and consider adding conditioner to the ends.",
+      "id": "water_works_clarifying_shampoo",
+      "systems_excluded": [],
+      "status": "warning"
+    },
+    "gentle_clarifying_shampoo": {
+      "name": "Gentle Clarifying Shampoo",
+      "brand": "Bounce Curl",
+      "product_categories": [
+        "clarifying_shampoos"
+      ],
+      "tags": [
+        "normal_porosity",
+        "high_porosity",
+        "featured"
+      ],
+      "ingredients_raw": "water, sodium lauroyl methyl isethionate, decyl glucoside, sodium cocoyl isethionate, disodium cocoamphodiacetate, propanediol, panthenol pro-vitamin b5, polyquaternium-10, hydroxypropyl methylcellulose, biotin, vanillin, hydrolyzed adansonia digitata baobab seed protein, nigella sativa virgin black cumin oil, stearamidopropyl dimethylamine, lactic acid, caprylhydroxamic acid, rosmarinus officinalis rosemary leaf extract, boswellia carterii oil, lactobacillus punica granatum fruit ferment extract, lactobacillus pumpkin ferment extract, argania spinosa kernel oil, cocos nucifera coconut oil, citrus aurantium bergamia bergamot fruit oil, anthemis nobilis flower oil, geranium maculatum oil, citrus paradisi grapefruit seed oil, lavandula angustifolia lavender oil, pogostemon cablin oil, citrus aurantium dulcis orange seed oil, citrus nobilis mandarin orange peel oil, caprylyl glycol",
+      "buy_url": "https://amzn.to/3ZRY0xK",
+      "asin": "B08BB41Q3R",
+      "description": "This is a great choice for a gentle clarifying shampoo for high and medium porosity hair.",
+      "id": "gentle_clarifying_shampoo",
+      "systems_excluded": [],
+      "status": "ok"
+    },
     "light_conditioner": {
       "name": "Light Conditioner",
       "brand": "MopTop",
@@ -150,6 +227,7 @@ export const defaultProductDatabase: ProductDatabase = {
       "buy_url": "https://amzn.to/3PdnFMl",
       "country": "UK",
       "asin": "B0BPTBMJY4",
+      "description": "This has a small amount of isopropyl alcohol, which we mark as caution, but as it's last on the ingredients list and this is a product meant to be washed out, it's unlikely to be harmful for hair.",
       "id": "essential_moisture_conditioner_uk",
       "systems_excluded": [],
       "status": "caution"
@@ -569,8 +647,10 @@ export const defaultProductDatabase: ProductDatabase = {
       ],
       "cost_rating": "3",
       "asin": "B004KM1OEK",
+      "ingredients_raw": "water aqua- eau, aloe barbadensis aloe vera leaf gel, cetearyl alcohol, glycerin, distearoylethyl dimonium chloride, caprylic capric triglyceride, hydrolyzed quinoa, gluconolactone, sodium benzoate, calcium gluconate, potassium sorbate, benzyl acetate, linalyl acetate, citronellol, abies balsamea needle oil, juniperus virginiana cedar oil, alpha-terpineol, amyl cinnamal, linalool, pogostemon cablin leaf oil, salvia sclarea clary sage oil, citrus reticulata tangerine peel oil, mentha citrata herb oil, eugenia caryophyllus clove oil, michelia alba leaf oil, lavandula angustifolia lavender oil, citrus limon lemon peel oil, citrus aurantifolia lime oil, lavandula hybrida lavandin oil, cinnamomum camphora camphor bark oil, alpha-lonone, evernia prunastri oakmoss extract, anisaldehyde, cistus ladaniferus resin, menthol, myristica fragrans nutmeg kernel oil, jasminum grandiflorum flower jasmine extract, nerol, benzaldehyde, chamomilla recutita matricaria flower extract, eucalyptus globulus leaf extract, ginkgo biloba leaf extract, aspalathus linearis leaf extract, honey extract, calophyllum inophyllum tamanu oil, rosmarinus officinalis rosemary oil, citric acid, eugenol, limonene",
       "id": "sweet_spirit_leave-in_conditioner",
-      "systems_excluded": []
+      "systems_excluded": [],
+      "status": "ok"
     },
     "hydrate_&_plump_leave-in_conditioner_uk": {
       "name": "Hydrate & Plump Leave-In Conditioner",
@@ -587,6 +667,7 @@ export const defaultProductDatabase: ProductDatabase = {
       "buy_url": "https://amzn.to/41QjtK5",
       "asin": "B0CZVVB2C9",
       "country": "UK",
+      "description": "This has a small amount of isopropyl alcohol, which we mark as caution, but as it's towards the end of the ingredients list so it's unlikely to be harmful for hair.",
       "id": "hydrate_&_plump_leave-in_conditioner_uk",
       "systems_excluded": [],
       "status": "caution"

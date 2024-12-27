@@ -122,10 +122,20 @@ function loadProductsFromDir(dirPath: string): any {
     const productId = generateIdFromName(productName, product.country);
 
     // Analyze ingredients if raw ingredients exist
-    let status = undefined;
+    let status: 'ok' | 'caution' | 'warning' | 'error' | undefined = undefined;
     if (product.ingredients_raw) {
       const analysis = analyzer.analyze(product.ingredients_raw);
       status = analysis.status;
+    }
+
+    // Convert cost to cost_rating
+    let cost_rating: string | undefined = undefined;
+    if (product.cost) {
+      if (product.cost <= 15) cost_rating = '1';
+      else if (product.cost <= 25) cost_rating = '2';
+      else if (product.cost <= 40) cost_rating = '3';
+      else if (product.cost <= 60) cost_rating = '4';
+      else cost_rating = '5';
     }
 
     acc[productId] = {
@@ -136,6 +146,8 @@ function loadProductsFromDir(dirPath: string): any {
       systems_excluded: product.systems_excluded || [],
       tags: product.tags || [],
       status,
+      cost: product.cost,
+      cost_rating,
     };
     return acc;
   }, {});

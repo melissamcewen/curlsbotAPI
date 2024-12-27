@@ -115,6 +115,10 @@ export interface Reference {
   title?: string;
   /** Optional description of what this reference proves/shows */
   description?: string;
+  /** Type of reference */
+  type?: 'science' | 'book' | 'website' | 'other';
+  /** status of the reference */
+  status?: 'ok' | 'caution' | 'warning' | 'good';
 }
 
 /**
@@ -155,7 +159,9 @@ export interface Product {
   product_categories: string[];
   /** Tags the product belongs to */
   tags?: string[];
-  /** Cost rating of the product */
+  /** Cost of the product in USD */
+  cost?: number;
+  /** Cost rating from 1-5 based on cost */
   cost_rating?: string;
   /** Raw ingredients list from the product */
   ingredients_raw?: string;

@@ -48,10 +48,10 @@
             },
             "description": "Tags the product belongs to"
           },
-          "cost_rating": {
-            "type": "string",
-            "pattern": "^[1-5]$",
-            "description": "Cost rating of the product (1-5)"
+          "cost": {
+            "type": "number",
+            "minimum": 0,
+            "description": "Cost of the product in USD"
           },
           "ingredients_raw": {
             "type": "string",
@@ -64,7 +64,6 @@
           "asin": {
             "type": "string",
             "description": "Amazon Standard Identification Number"
-
           },
           "country": {
             "type": "string",
