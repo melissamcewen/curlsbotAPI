@@ -90,7 +90,7 @@ describe('Handling of surfactants under the default system', () => {
       {
         normalized: 'behentrimonium methosulfate',
         ingredientId: 'behentrimonium_methosulfate',
-        category: 'others',
+        category: 'surfactants',
         status: 'ok',
         reason: undefined
       },

@@ -11,7 +11,7 @@
       "name": "Disodium 2-Sulfolaurate",
       "id": "disodium_2_sulfolaurate",
       "categories": [
-        "other_surfactants"
+        "other_anionic_surfactants"
       ]
     },
     {
@@ -81,13 +81,6 @@
       ]
     },
     {
-      "name": "Soap",
-      "id": "soaps",
-      "categories": [
-        "other_surfactants"
-      ]
-    },
-    {
       "name": "Sodium Castorate",
       "id": "sodium_castorate",
       "synonyms": [
@@ -113,28 +106,28 @@
       "name": "Sodium Lauroyl Hydrolyzed Silk",
       "id": "sodium_lauroyl_hydrolyzed_silk",
       "categories": [
-        "other_surfactants"
+        "other_anionic_surfactants"
       ]
     },
     {
       "name": "Sodium Lauroyl Lactylate",
       "id": "sodium_lauroyl_lactylate",
       "categories": [
-        "other_surfactants"
+        "other_anionic_surfactants"
       ]
     },
     {
       "name": "Sodium Lauroyl Oat Amino Acids",
       "id": "sodium_lauroyl_oat_amino_acids",
       "categories": [
-        "other_surfactants"
+        "other_anionic_surfactants"
       ]
     },
     {
       "name": "Sodium Methyl 2-Sulfolaurate",
       "id": "sodium_methyl_2_sulfolaurate",
       "categories": [
-        "other_surfactants"
+        "other_anionic_surfactants"
       ]
     },
     {
@@ -185,7 +178,7 @@
       "name": "Triisopropanolamine",
       "id": "triisopropanolamine",
       "categories": [
-        "other_surfactants"
+        "other_anionic_surfactants"
       ]
     },
     {
@@ -243,14 +236,6 @@
       ]
     },
     {
-      "name": "Behentrimonium Methosulfate",
-      "id": "behentrimonium_methosulfate",
-      "categories": [
-        "other"
-      ],
-      "description": "Despite the name, this is not a sulfate. It is often used as a conditioner."
-    },
-    {
       "name": "Flower Extract",
       "id": "flower_extract",
       "categories": [
@@ -268,32 +253,6 @@
       "synonyms": [
         "aloe vera",
         "aloe barbadensis leaf juice"
-      ]
-    },
-    {
-      "name": "Behentrimonium Chloride",
-      "id": "behentrimonium_chloride",
-      "description": "A conditioning agent that reduces static and detangles hair",
-      "categories": [
-        "other"
-      ],
-      "references": [
-        {
-          "url": "https://incidecoder.com/ingredients/behentrimonium-chloride"
-        }
-      ]
-    },
-    {
-      "name": "Cetrimonium Chloride",
-      "id": "cetrimonium_chloride",
-      "description": "A conditioning agent that detangles and adds shine",
-      "categories": [
-        "other"
-      ],
-      "references": [
-        {
-          "url": "https://incidecoder.com/ingredients/cetrimonium-chloride"
-        }
       ]
     },
     {
@@ -420,14 +379,7 @@
         "other"
       ]
     },
-    {
-      "name": "Caprylic Capric Triglyceride",
-      "id": "caprylic_capric_triglyceride",
-      "description": "A lightweight emollient derived from coconut oil, providing moisture without greasiness",
-      "categories": [
-        "other"
-      ]
-    },
+
     {
       "name": "PEG-100 Stearate",
       "id": "peg_100_stearate",
@@ -465,13 +417,38 @@
     {
       "name": "Magnesium Sulfate",
       "id": "magnesium_sulfate",
-      "description": "A mineral salt used as a texturizer and curl enhancer in hair care products. Some people find the texture unpleasant or drying.",
+      "description": "A mineral salt used as a texturizer and curl enhancer in hair care products. Some people find the texture unpleasant or drying. If you have issues with hard water, you might want to avoid it, because it's an extra source of the same minerals that can build up on your hair.",
       "categories": [
         "other"
       ],
       "synonyms": [
         "epsom salt",
-        "magnesium salt"
+        "magnesium salt",
+        "magnesium sulphate"
+      ],
+
+      "references": [
+        {
+          "title": "Magnesium Sulfate",
+          "url": "http://www.tightlycurly.com/ingredients/magnesium_sulfate",
+          "type": "author",
+          "status": "warning",
+          "description": "Mentions that this ingredient roughs up the hair cuticle, which can be drying. It's also alkaline, which can swell the hair shaft, causing further damage."
+        },
+
+        {
+          "url": "https://www.curlynikki.com/magnesium-sulfate-curly-friend-or-foe.html",
+          "type": "author",
+          "title": "Curly Nikki: Magnesium Sulfate- Curly Friend or Foe?",
+          "status": "caution",
+          "description": "Says it's a powerful curl enhancer but can be drying to some so advises using with a leave in conditioner."
+        },
+        {
+          "url": "https://ijdvl.com/scanning-electron-microscopy-study-of-hair-shaft-changes-related-to-hardness-of-water/",
+          "type": "science",
+          "title": "Scanning electron microscopy study of hair shaft changes related to hardness of water",
+          "description": "Notes that Magnesium sulfate can be a component of hard water, which deposits on the hair. But did not find any evidence of damage."
+        }
       ]
     },
     {
@@ -482,6 +459,21 @@
       ],
       "categories": [
         "other"
+      ]
+    },
+    {
+      "name": "Lanolin",
+      "id": "lanolin",
+      "categories": [
+        "other"
+      ],
+      "description": "This is an ingredient derived from wool with a complicated chemical structure and many uses. One issue with it is that it is comedogenic, meaning it can clog pores. This may be an issue for people with sensitive or dandruff prone scalps. It is also not vegan friendly.",
+      "references": [
+        {
+          "title": "Comedogenicity of current therapeutic products, cosmetics, and ingredients in the rabbit ear",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/6229554/",
+          "type": "science"
+        }
       ]
     }
   ]

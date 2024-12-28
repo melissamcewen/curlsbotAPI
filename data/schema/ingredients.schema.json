@@ -40,7 +40,7 @@
                 "water_soluble_silicones",
                 "non_water_soluble_silicones",
                 "preservatives",
-                "other_surfactants",
+                "other_anionic_surfactants",
                 "preservative_alcohols",
                 "astringents",
                 "soaps",
@@ -56,7 +56,9 @@
                 "polyquats",
                 "petroleum_oils",
                 "humectants",
-                "proteins"
+                "proteins",
+                "petroleum_jellies",
+                "other_oils"
               ]
             },
             "description": "Categories to which the ingredient belongs"

@@ -9,7 +9,8 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "emollient_alcohols"
       ],
-      "status": "ok"
+      "status": "caution",
+      "group": "alcohols"
     },
     "amino_methyl_propanol": {
       "name": "Amino Methyl Propanol",
@@ -17,7 +18,8 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "emollient_alcohols"
       ],
-      "status": "ok"
+      "status": "ok",
+      "group": "alcohols"
     },
     "amino_2_methyl_1_propanol": {
       "name": "Amino-2-Methyl-1-Propanol",
@@ -25,7 +27,8 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "emollient_alcohols"
       ],
-      "status": "ok"
+      "status": "ok",
+      "group": "alcohols"
     },
     "amylcinnamyl_alcohol": {
       "name": "Amylcinnamyl Alcohol",
@@ -36,7 +39,8 @@ export const defaultDatabase: IngredientDatabase = {
       "synonyms": [
         "amyl cinnamyl alcohol"
       ],
-      "status": "ok"
+      "status": "caution",
+      "group": "alcohols"
     },
     "arachidyl_alcohol": {
       "name": "Arachidyl Alcohol",
@@ -44,7 +48,8 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "emollient_alcohols"
       ],
-      "status": "ok"
+      "status": "caution",
+      "group": "alcohols"
     },
     "behenyl_alcohol": {
       "name": "Behenyl Alcohol",
@@ -56,7 +61,8 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "emollient_alcohols"
       ],
-      "status": "ok"
+      "status": "caution",
+      "group": "alcohols"
     },
     "benzyl_alcohol": {
       "name": "Benzyl Alcohol",
@@ -71,7 +77,8 @@ export const defaultDatabase: IngredientDatabase = {
           "status": "ok"
         }
       ],
-      "status": "ok"
+      "status": "caution",
+      "group": "alcohols"
     },
     "brassica_alcohol": {
       "name": "Brassica Alcohol",
@@ -79,7 +86,8 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "emollient_alcohols"
       ],
-      "status": "ok"
+      "status": "caution",
+      "group": "alcohols"
     },
     "butylene_alcohol": {
       "name": "Butylene Alcohol",
@@ -87,7 +95,8 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "emollient_alcohols"
       ],
-      "status": "ok"
+      "status": "caution",
+      "group": "alcohols"
     },
     "c14_22_alcohol": {
       "name": "C14-22 Alcohol",
@@ -95,7 +104,8 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "emollient_alcohols"
       ],
-      "status": "ok"
+      "status": "caution",
+      "group": "alcohols"
     },
     "c20_c22_alcohol": {
       "name": "C20-C22 Alcohol",
@@ -103,15 +113,17 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "emollient_alcohols"
       ],
-      "status": "ok"
+      "status": "caution",
+      "group": "alcohols"
     },
     "c30_50_alcohols": {
-      "name": "C30_50 Alcohols",
+      "name": "C30-50 Alcohols",
       "id": "c30_50_alcohols",
       "categories": [
         "emollient_alcohols"
       ],
-      "status": "caution"
+      "status": "caution",
+      "group": "alcohols"
     },
     "cetearyl_alcohol": {
       "name": "Cetearyl Alcohol",
@@ -125,7 +137,8 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "emollient_alcohols"
       ],
-      "status": "ok"
+      "status": "caution",
+      "group": "alcohols"
     },
     "cetyl_alcohol": {
       "name": "Cetyl Alcohol",
@@ -141,7 +154,8 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "emollient_alcohols"
       ],
-      "status": "ok"
+      "status": "caution",
+      "group": "alcohols"
     },
     "cetylated_lanolin_alcohol": {
       "name": "Cetylated Lanolin Alcohol",
@@ -149,7 +163,8 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "emollient_alcohols"
       ],
-      "status": "ok"
+      "status": "caution",
+      "group": "alcohols"
     },
     "cinnamyl_alcohol": {
       "name": "Cinnamyl Alcohol",
@@ -167,7 +182,8 @@ export const defaultDatabase: IngredientDatabase = {
           "status": "ok"
         }
       ],
-      "status": "ok"
+      "status": "caution",
+      "group": "alcohols"
     },
     "coconut_alcohol": {
       "name": "Coconut Alcohol",
@@ -175,7 +191,8 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "emollient_alcohols"
       ],
-      "status": "ok"
+      "status": "caution",
+      "group": "alcohols"
     },
     "ethyl_alcohol": {
       "name": "Ethyl Alcohol",
@@ -188,7 +205,8 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "drying_alcohols"
       ],
-      "status": "caution"
+      "status": "caution",
+      "group": "alcohols"
     },
     "isocetyl_alcohol": {
       "name": "Isocetyl Alcohol",
@@ -199,7 +217,8 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "emollient_alcohols"
       ],
-      "status": "ok"
+      "status": "caution",
+      "group": "alcohols"
     },
     "isopropanol": {
       "name": "Isopropanol",
@@ -211,7 +230,8 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "drying_alcohols"
       ],
-      "status": "caution"
+      "status": "caution",
+      "group": "alcohols"
     },
     "isostearyl_alcohol": {
       "name": "Isostearyl Alcohol",
@@ -219,7 +239,8 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "emollient_alcohols"
       ],
-      "status": "ok"
+      "status": "caution",
+      "group": "alcohols"
     },
     "lanolin_alcohol": {
       "name": "Lanolin Alcohol",
@@ -227,7 +248,8 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "emollient_alcohols"
       ],
-      "status": "ok"
+      "status": "caution",
+      "group": "alcohols"
     },
     "lauryl_alcohol": {
       "name": "Lauryl Alcohol",
@@ -240,7 +262,8 @@ export const defaultDatabase: IngredientDatabase = {
         "dodecanol",
         "dodecyl alcohol"
       ],
-      "status": "ok"
+      "status": "caution",
+      "group": "alcohols"
     },
     "myristyl_alcohol": {
       "name": "Myristyl Alcohol",
@@ -252,7 +275,8 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "emollient_alcohols"
       ],
-      "status": "ok"
+      "status": "caution",
+      "group": "alcohols"
     },
     "oleyl_alcohol": {
       "name": "Oleyl Alcohol",
@@ -263,7 +287,8 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "emollient_alcohols"
       ],
-      "status": "ok"
+      "status": "caution",
+      "group": "alcohols"
     },
     "phenethyl_alcohol": {
       "name": "Phenethyl Alcohol",
@@ -273,9 +298,18 @@ export const defaultDatabase: IngredientDatabase = {
         "phenyl ethyl alcohol"
       ],
       "categories": [
-        "preservative_alcohols"
+        "drying_alcohols"
       ],
-      "status": "ok"
+      "references": [
+        {
+          "url": "https://incidecoder.com/ingredients/phenethyl-alcohol",
+          "title": "INCIDecoder",
+          "status": "ok"
+        }
+      ],
+      "description": "Phenethyl alcohol usually used as a preservative in small amounts. In this context it's unlikely to be drying or irritating.",
+      "status": "caution",
+      "group": "alcohols"
     },
     "propyl_alcohol": {
       "name": "Propyl Alcohol",
@@ -283,7 +317,8 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "drying_alcohols"
       ],
-      "status": "caution"
+      "status": "caution",
+      "group": "alcohols"
     },
     "sd_alcohol": {
       "name": "SD Alcohol",
@@ -300,7 +335,8 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "drying_alcohols"
       ],
-      "status": "caution"
+      "status": "caution",
+      "group": "alcohols"
     },
     "stearyl_alcohol": {
       "name": "Stearyl Alcohol",
@@ -314,7 +350,8 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "emollient_alcohols"
       ],
-      "status": "ok"
+      "status": "caution",
+      "group": "alcohols"
     },
     "undecyl_alcohol": {
       "name": "Undecyl Alcohol",
@@ -322,7 +359,8 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "emollient_alcohols"
       ],
-      "status": "ok"
+      "status": "caution",
+      "group": "alcohols"
     },
     "emulsifying_wax": {
       "name": "Emulsifying Wax",
@@ -338,7 +376,8 @@ export const defaultDatabase: IngredientDatabase = {
           "description": "This isn't an INCI ingredient, they think it's a mix of Cetearyl Alcohol (and) Polysorbate 60"
         }
       ],
-      "status": "ok"
+      "status": "ok",
+      "group": "alcohols"
     },
     "hydrogenated_dilinoleyl_alcohol": {
       "name": "Hydrogenated Dilinoleyl Alcohol",
@@ -346,7 +385,8 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "emollient_alcohols"
       ],
-      "status": "ok"
+      "status": "caution",
+      "group": "alcohols"
     },
     "batyl_alcohol": {
       "name": "Batyl Alcohol",
@@ -354,7 +394,8 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "emollient_alcohols"
       ],
-      "status": "ok"
+      "status": "caution",
+      "group": "alcohols"
     },
     "c12_15_alcohol": {
       "name": "C12-15 Alcohol",
@@ -362,7 +403,8 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "emollient_alcohols"
       ],
-      "status": "ok"
+      "status": "caution",
+      "group": "alcohols"
     },
     "c12_16_alcohol": {
       "name": "C12-16 Alcohol",
@@ -370,7 +412,8 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "emollient_alcohols"
       ],
-      "status": "ok"
+      "status": "caution",
+      "group": "alcohols"
     },
     "decyl_alcohol": {
       "name": "Decyl Alcohol",
@@ -378,7 +421,8 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "emollient_alcohols"
       ],
-      "status": "ok"
+      "status": "caution",
+      "group": "alcohols"
     },
     "hydrogenated_rapeseed_alcohol": {
       "name": "Hydrogenated Rapeseed Alcohol",
@@ -386,7 +430,8 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "emollient_alcohols"
       ],
-      "status": "ok"
+      "status": "caution",
+      "group": "alcohols"
     },
     "jojoba_alcohol": {
       "name": "Jojoba Alcohol",
@@ -394,7 +439,8 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "emollient_alcohols"
       ],
-      "status": "ok"
+      "status": "caution",
+      "group": "alcohols"
     },
     "tridecyl_alcohol": {
       "name": "Tridecyl Alcohol",
@@ -402,7 +448,8 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "emollient_alcohols"
       ],
-      "status": "ok"
+      "status": "caution",
+      "group": "alcohols"
     },
     "alkylbenzene_sulfonate": {
       "name": "Alkylbenzene Sulfonate",
@@ -413,9 +460,10 @@ export const defaultDatabase: IngredientDatabase = {
         "alkyl benzene sulphate"
       ],
       "categories": [
-        "other_surfactants"
+        "other_anionic_surfactants"
       ],
-      "status": "ok"
+      "status": "ok",
+      "group": "surfactants"
     },
     "ammonium_cocoyl_isethionate": {
       "name": "Ammonium Cocoyl Isethionate",
@@ -423,7 +471,8 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "mild_surfactants"
       ],
-      "status": "ok"
+      "status": "ok",
+      "group": "surfactants"
     },
     "ammonium_cocoyl_sulfate": {
       "name": "Ammonium Cocoyl Sulfate",
@@ -434,7 +483,8 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "sulfates"
       ],
-      "status": "warning"
+      "status": "ok",
+      "group": "surfactants"
     },
     "ammonium_laureth_sulfate": {
       "name": "Ammonium Laureth Sulfate",
@@ -445,7 +495,8 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "sulfates"
       ],
-      "status": "warning"
+      "status": "ok",
+      "group": "surfactants"
     },
     "ammonium_lauryl_sulfate": {
       "name": "Ammonium Lauryl Sulfate",
@@ -456,7 +507,8 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "sulfates"
       ],
-      "status": "warning"
+      "status": "ok",
+      "group": "surfactants"
     },
     "ammonium_xylenesulfonate": {
       "name": "Ammonium Xylenesulfonate",
@@ -467,9 +519,10 @@ export const defaultDatabase: IngredientDatabase = {
         "ammonium xylene sulfonate"
       ],
       "categories": [
-        "other_surfactants"
+        "other_anionic_surfactants"
       ],
-      "status": "ok"
+      "status": "ok",
+      "group": "surfactants"
     },
     "babassuamidopropyl_betaine": {
       "name": "Babassuamidopropyl Betaine",
@@ -477,7 +530,8 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "mild_surfactants"
       ],
-      "status": "ok"
+      "status": "ok",
+      "group": "surfactants"
     },
     "capryl_glucoside": {
       "name": "Capryl Glucoside",
@@ -488,7 +542,8 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "mild_surfactants"
       ],
-      "status": "ok"
+      "status": "ok",
+      "group": "surfactants"
     },
     "cocamidopropyl_betaine": {
       "name": "Cocamidopropyl Betaine",
@@ -496,7 +551,8 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "mild_surfactants"
       ],
-      "status": "ok"
+      "status": "ok",
+      "group": "surfactants"
     },
     "cocamidopropyl_hydroxysultaine": {
       "name": "Cocamidopropyl Hydroxysultaine",
@@ -504,7 +560,8 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "mild_surfactants"
       ],
-      "status": "ok"
+      "status": "ok",
+      "group": "surfactants"
     },
     "coco_betaine": {
       "name": "Coco Betaine",
@@ -512,7 +569,8 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "mild_surfactants"
       ],
-      "status": "ok"
+      "status": "ok",
+      "group": "surfactants"
     },
     "coco_glucoside": {
       "name": "Coco Glucoside",
@@ -520,7 +578,8 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "mild_surfactants"
       ],
-      "status": "ok"
+      "status": "ok",
+      "group": "surfactants"
     },
     "cocamide_mea": {
       "name": "Cocamide MEA",
@@ -531,7 +590,8 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "mild_surfactants"
       ],
-      "status": "ok"
+      "status": "ok",
+      "group": "surfactants"
     },
     "decyl_glucoside": {
       "name": "Decyl Glucoside",
@@ -539,7 +599,8 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "mild_surfactants"
       ],
-      "status": "ok"
+      "status": "ok",
+      "group": "surfactants"
     },
     "decyl_polyglucose": {
       "name": "Decyl Polyglucose",
@@ -547,15 +608,17 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "mild_surfactants"
       ],
-      "status": "ok"
+      "status": "ok",
+      "group": "surfactants"
     },
     "dioctyl_sodium_sulfosuccinate": {
       "name": "Dioctyl Sodium Sulfosuccinate",
       "id": "dioctyl_sodium_sulfosuccinate",
       "categories": [
-        "other_surfactants"
+        "other_anionic_surfactants"
       ],
-      "status": "ok"
+      "status": "ok",
+      "group": "surfactants"
     },
     "disodium_cocoamphodiacetate": {
       "name": "Disodium Cocoamphodiacetate",
@@ -563,7 +626,8 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "mild_surfactants"
       ],
-      "status": "ok"
+      "status": "ok",
+      "group": "surfactants"
     },
     "disodium_cocoamphodipropionate": {
       "name": "Disodium Cocoamphodipropionate",
@@ -571,15 +635,17 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "mild_surfactants"
       ],
-      "status": "ok"
+      "status": "ok",
+      "group": "surfactants"
     },
     "disodium_cocoyl_glutamate": {
       "name": "Disodium Cocoyl Glutamate",
       "id": "disodium_cocoyl_glutamate",
       "categories": [
-        "other_surfactants"
+        "other_anionic_surfactants"
       ],
-      "status": "ok"
+      "status": "ok",
+      "group": "surfactants"
     },
     "disodium_laureth_succinate": {
       "name": "Disodium Laureth Succinate",
@@ -587,7 +653,8 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "mild_surfactants"
       ],
-      "status": "ok"
+      "status": "ok",
+      "group": "surfactants"
     },
     "disodium_laureth_sulfosuccinate": {
       "name": "Disodium Laureth Sulfosuccinate",
@@ -595,7 +662,8 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "mild_surfactants"
       ],
-      "status": "ok"
+      "status": "ok",
+      "group": "surfactants"
     },
     "disodium_lauryl_sulfosuccinate": {
       "name": "Disodium Lauryl Sulfosuccinate",
@@ -603,7 +671,8 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "mild_surfactants"
       ],
-      "status": "ok"
+      "status": "ok",
+      "group": "surfactants"
     },
     "ethyl_peg_15_cocamine_sulfate": {
       "name": "Ethyl PEG-15 Cocamine Sulfate",
@@ -614,7 +683,8 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "sulfates"
       ],
-      "status": "warning"
+      "status": "ok",
+      "group": "surfactants"
     },
     "lauryl_glucoside": {
       "name": "Lauryl Glucoside",
@@ -622,7 +692,8 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "mild_surfactants"
       ],
-      "status": "ok"
+      "status": "ok",
+      "group": "surfactants"
     },
     "lauryl_hydroxysultaine": {
       "name": "Lauryl Hydroxysultaine",
@@ -630,7 +701,8 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "mild_surfactants"
       ],
-      "status": "ok"
+      "status": "ok",
+      "group": "surfactants"
     },
     "sodium_alkyl_sulfate": {
       "name": "Sodium Alkyl Sulfate",
@@ -641,7 +713,8 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "sulfates"
       ],
-      "status": "warning"
+      "status": "ok",
+      "group": "surfactants"
     },
     "sodium_c12_14_olefin_sulfonate": {
       "name": "Sodium C12-14 Olefin Sulfonate",
@@ -650,9 +723,10 @@ export const defaultDatabase: IngredientDatabase = {
         "sodium c12-14 olefin sulphate"
       ],
       "categories": [
-        "other_surfactants"
+        "other_anionic_surfactants"
       ],
-      "status": "ok"
+      "status": "ok",
+      "group": "surfactants"
     },
     "sodium_c12_18_alkyl_sulfate": {
       "name": "Sodium C12-18 Alkyl Sulfate",
@@ -663,7 +737,8 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "sulfates"
       ],
-      "status": "warning"
+      "status": "ok",
+      "group": "surfactants"
     },
     "sodium_c14_15_olefin_sulfonate": {
       "name": "Sodium C14-15 Olefin Sulfonate",
@@ -672,9 +747,10 @@ export const defaultDatabase: IngredientDatabase = {
         "sodium c14-15 olefin sulphate"
       ],
       "categories": [
-        "other_surfactants"
+        "other_anionic_surfactants"
       ],
-      "status": "ok"
+      "status": "ok",
+      "group": "surfactants"
     },
     "sodium_c14_16_olefin_sulfonate": {
       "name": "Sodium C14-16 Olefin Sulfonate",
@@ -688,7 +764,8 @@ export const defaultDatabase: IngredientDatabase = {
         "mild_surfactants"
       ],
       "description": "CurlsBot is in the process of reclassifying this ingredient. We believe it is a mild surfactant but in the past we've listed it as stronger",
-      "status": "ok"
+      "status": "ok",
+      "group": "surfactants"
     },
     "sodium_c14_18_olefin_sulfonate": {
       "name": "Sodium C14-18 Olefin Sulfonate",
@@ -697,9 +774,10 @@ export const defaultDatabase: IngredientDatabase = {
         "sodium c14-18 olefin sulphate"
       ],
       "categories": [
-        "other_surfactants"
+        "other_anionic_surfactants"
       ],
-      "status": "ok"
+      "status": "ok",
+      "group": "surfactants"
     },
     "sodium_c14_26_olefin_sulfonate": {
       "name": "Sodium C14-26 Olefin Sulfonate",
@@ -708,9 +786,10 @@ export const defaultDatabase: IngredientDatabase = {
         "sodium c14-26 olefin sulphate"
       ],
       "categories": [
-        "other_surfactants"
+        "other_anionic_surfactants"
       ],
-      "status": "ok"
+      "status": "ok",
+      "group": "surfactants"
     },
     "sodium_c16_18_olefin_sulfonate": {
       "name": "Sodium C16-18 Olefin Sulfonate",
@@ -719,9 +798,10 @@ export const defaultDatabase: IngredientDatabase = {
         "sodium c16-18 olefin sulphate"
       ],
       "categories": [
-        "other_surfactants"
+        "other_anionic_surfactants"
       ],
-      "status": "ok"
+      "status": "ok",
+      "group": "surfactants"
     },
     "sodium_cetearyl_sulfate": {
       "name": "Sodium Cetearyl Sulfate",
@@ -732,7 +812,8 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "sulfates"
       ],
-      "status": "warning"
+      "status": "ok",
+      "group": "surfactants"
     },
     "sodium_coceth_sulfate": {
       "name": "Sodium Coceth Sulfate",
@@ -743,7 +824,8 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "sulfates"
       ],
-      "status": "warning"
+      "status": "ok",
+      "group": "surfactants"
     },
     "sodium_coco_sulfate": {
       "name": "Sodium Coco Sulfate",
@@ -754,7 +836,8 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "sulfates"
       ],
-      "status": "warning"
+      "status": "ok",
+      "group": "surfactants"
     },
     "sodium_cocoamphoacetate": {
       "name": "Sodium Cocoamphoacetate",
@@ -762,7 +845,8 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "mild_surfactants"
       ],
-      "status": "ok"
+      "status": "ok",
+      "group": "surfactants"
     },
     "sodium_cocosulfate": {
       "name": "Sodium Cocosulfate",
@@ -773,15 +857,17 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "sulfates"
       ],
-      "status": "warning"
+      "status": "ok",
+      "group": "surfactants"
     },
     "sodium_cocoyl_glutamate": {
       "name": "Sodium Cocoyl Glutamate",
       "id": "sodium_cocoyl_glutamate",
       "categories": [
-        "other_surfactants"
+        "other_anionic_surfactants"
       ],
-      "status": "ok"
+      "status": "ok",
+      "group": "surfactants"
     },
     "sodium_cocoyl_isethionate": {
       "name": "Sodium Cocoyl Isethionate",
@@ -789,15 +875,17 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "mild_surfactants"
       ],
-      "status": "ok"
+      "status": "ok",
+      "group": "surfactants"
     },
     "sodium_cocoyl_sarcosinate": {
       "name": "Sodium Cocoyl Sarcosinate",
       "id": "sodium_cocoyl_sarcosinate",
       "categories": [
-        "other_surfactants"
+        "other_anionic_surfactants"
       ],
-      "status": "ok"
+      "status": "ok",
+      "group": "surfactants"
     },
     "sodium_laureth_sulfate": {
       "name": "Sodium Laureth Sulfate",
@@ -836,7 +924,8 @@ export const defaultDatabase: IngredientDatabase = {
           "type": "author"
         }
       ],
-      "status": "warning"
+      "status": "ok",
+      "group": "surfactants"
     },
     "sodium_laureth_40_sulfate": {
       "name": "Sodium Laureth-40 Sulfate",
@@ -845,9 +934,10 @@ export const defaultDatabase: IngredientDatabase = {
         "sodium laureth-40 sulphate"
       ],
       "categories": [
-        "other_surfactants"
+        "other_anionic_surfactants"
       ],
-      "status": "ok"
+      "status": "ok",
+      "group": "surfactants"
     },
     "sodium_lauroamphoacetate": {
       "name": "Sodium Lauroamphoacetate",
@@ -855,7 +945,8 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "mild_surfactants"
       ],
-      "status": "ok"
+      "status": "ok",
+      "group": "surfactants"
     },
     "sodium_lauroyl_glutamate": {
       "name": "Sodium Lauroyl Glutamate",
@@ -863,7 +954,8 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "mild_surfactants"
       ],
-      "status": "ok"
+      "status": "ok",
+      "group": "surfactants"
     },
     "sodium_lauroyl_methyl_isethionate": {
       "name": "Sodium Lauroyl Methyl Isethionate",
@@ -877,15 +969,17 @@ export const defaultDatabase: IngredientDatabase = {
         "mild_surfactants"
       ],
       "description": "CurlsBot is in the process of reclassifying this ingredient. We believe it is a mild surfactant but in the past we've listed it as stronger",
-      "status": "ok"
+      "status": "ok",
+      "group": "surfactants"
     },
     "sodium_lauroyl_sarcosinate": {
       "name": "Sodium Lauroyl Sarcosinate",
       "id": "sodium_lauroyl_sarcosinate",
       "categories": [
-        "other_surfactants"
+        "other_anionic_surfactants"
       ],
-      "status": "ok"
+      "status": "ok",
+      "group": "surfactants"
     },
     "sodium_lauryl_glucose_carboxylate": {
       "name": "Sodium Lauryl Glucose Carboxylate",
@@ -893,7 +987,8 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "mild_surfactants"
       ],
-      "status": "ok"
+      "status": "ok",
+      "group": "surfactants"
     },
     "sodium_lauryl_sarcosinate": {
       "name": "Sodium Lauryl Sarcosinate",
@@ -903,9 +998,10 @@ export const defaultDatabase: IngredientDatabase = {
         "sodium lauroyl sarcosine"
       ],
       "categories": [
-        "other_surfactants"
+        "other_anionic_surfactants"
       ],
-      "status": "ok"
+      "status": "ok",
+      "group": "surfactants"
     },
     "sodium_lauryl_sulfate": {
       "name": "Sodium Lauryl Sulfate",
@@ -962,15 +1058,17 @@ export const defaultDatabase: IngredientDatabase = {
           "type": "science"
         }
       ],
-      "status": "warning"
+      "status": "ok",
+      "group": "surfactants"
     },
     "sodium_lauryl_sulfoacetate": {
       "name": "Sodium Lauryl Sulfoacetate",
       "id": "sodium_lauryl_sulfoacetate",
       "categories": [
-        "other_surfactants"
+        "other_anionic_surfactants"
       ],
-      "status": "ok"
+      "status": "ok",
+      "group": "surfactants"
     },
     "sodium_laurylglucosides_hydroxypropylsulfonate": {
       "name": "Sodium Laurylglucosides Hydroxypropylsulfonate",
@@ -978,7 +1076,8 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "mild_surfactants"
       ],
-      "status": "ok"
+      "status": "ok",
+      "group": "surfactants"
     },
     "sodium_methyl_cocoyl_taurate": {
       "name": "Sodium Methyl Cocoyl Taurate",
@@ -986,7 +1085,8 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "mild_surfactants"
       ],
-      "status": "ok"
+      "status": "ok",
+      "group": "surfactants"
     },
     "sodium_myreth_sulfate": {
       "name": "Sodium Myreth Sulfate",
@@ -997,15 +1097,17 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "sulfates"
       ],
-      "status": "warning"
+      "status": "ok",
+      "group": "surfactants"
     },
     "sodium_myristoyl_sarcosinate": {
       "name": "Sodium Myristoyl Sarcosinate",
       "id": "sodium_myristoyl_sarcosinate",
       "categories": [
-        "other_surfactants"
+        "other_anionic_surfactants"
       ],
-      "status": "ok"
+      "status": "ok",
+      "group": "surfactants"
     },
     "sodium_polystyrene_sulfate": {
       "name": "Sodium Polystyrene Sulfate",
@@ -1016,7 +1118,8 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "sulfates"
       ],
-      "status": "warning"
+      "status": "ok",
+      "group": "surfactants"
     },
     "sodium_xylenesulfonate": {
       "name": "Sodium Xylenesulfonate",
@@ -1027,9 +1130,10 @@ export const defaultDatabase: IngredientDatabase = {
         "sodium xylene sulfonate"
       ],
       "categories": [
-        "other_surfactants"
+        "other_anionic_surfactants"
       ],
-      "status": "ok"
+      "status": "ok",
+      "group": "surfactants"
     },
     "tea_dodecylbenzenesulfonate": {
       "name": "Tea Dodecylbenzenesulfonate",
@@ -1038,9 +1142,10 @@ export const defaultDatabase: IngredientDatabase = {
         "tea-dodecylbenzenesulfonate"
       ],
       "categories": [
-        "other_surfactants"
+        "other_anionic_surfactants"
       ],
-      "status": "ok"
+      "status": "ok",
+      "group": "surfactants"
     },
     "tea_lauryl_sulfate": {
       "name": "Tea Lauryl Sulfate",
@@ -1051,7 +1156,8 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "sulfates"
       ],
-      "status": "warning"
+      "status": "ok",
+      "group": "surfactants"
     },
     "triethanolamine_lauryl_sulfate": {
       "name": "Triethanolamine Lauryl Sulfate",
@@ -1062,7 +1168,8 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "sulfates"
       ],
-      "status": "warning"
+      "status": "ok",
+      "group": "surfactants"
     },
     "sulfonate": {
       "name": "Sulfonate",
@@ -1071,10 +1178,51 @@ export const defaultDatabase: IngredientDatabase = {
         " sulfonate"
       ],
       "categories": [
-        "other_surfactants"
+        "other_anionic_surfactants"
       ],
       "description": "We're pretty sure this is a sulfonate, but we're not sure which one. ",
-      "status": "ok"
+      "status": "ok",
+      "group": "surfactants"
+    },
+    "behentrimonium_chloride": {
+      "name": "Behentrimonium Chloride",
+      "id": "behentrimonium_chloride",
+      "description": "A cationic surfactant that gently cleanses and conditions hair",
+      "categories": [
+        "mild_surfactants"
+      ],
+      "references": [
+        {
+          "url": "https://incidecoder.com/ingredients/behentrimonium-chloride"
+        }
+      ],
+      "status": "ok",
+      "group": "surfactants"
+    },
+    "cetrimonium_chloride": {
+      "name": "Cetrimonium Chloride",
+      "id": "cetrimonium_chloride",
+      "description": "A cationic surfactant that gently cleanses and conditions hair",
+      "categories": [
+        "mild_surfactants"
+      ],
+      "references": [
+        {
+          "url": "https://incidecoder.com/ingredients/cetrimonium-chloride"
+        }
+      ],
+      "status": "ok",
+      "group": "surfactants"
+    },
+    "behentrimonium_methosulfate": {
+      "name": "Behentrimonium Methosulfate",
+      "id": "behentrimonium_methosulfate",
+      "categories": [
+        "mild_surfactants"
+      ],
+      "description": "Despite the name, this is not a sulfate. It a cationic surfactant that gently cleanses and conditions hair.",
+      "status": "ok",
+      "group": "surfactants"
     },
     "apricot_kernel_oil": {
       "name": "Apricot Kernel Oil",
@@ -1084,9 +1232,35 @@ export const defaultDatabase: IngredientDatabase = {
         "apricot seed oil"
       ],
       "categories": [
+        "medium_oils"
+      ],
+      "references": [
+        {
+          "url": "https://science-yhairblog.blogspot.com/2013/06/oils-which-ones-soak-in-vs-coat-hair.html",
+          "type": "science",
+          "title": "Oils – Which Ones Soak In vs. Coat the Hair?",
+          "description": "Apricot kernel oil's ability to penetrate (soak into) hair hasn't been well-researched but is it is likely to have moderate penetration (similar to olive oil, and much less than coconut oil)"
+        }
+      ],
+      "status": "ok",
+      "group": "oils"
+    },
+    "safflower_oil": {
+      "name": "Safflower Oil",
+      "id": "safflower_oil",
+      "categories": [
         "light_oils"
       ],
-      "status": "ok"
+      "references": [
+        {
+          "url": "https://science-yhairblog.blogspot.com/2013/06/oils-which-ones-soak-in-vs-coat-hair.html",
+          "type": "science",
+          "title": "Oils – Which Ones Soak In vs. Coat the Hair?",
+          "description": "Safflower oil's ability to penetrate (soak into) hair hasn't been well-researched but is it is likely to have low moderate penetration (lower than olive oil, and much less than coconut oil)"
+        }
+      ],
+      "status": "ok",
+      "group": "oils"
     },
     "argan_oil": {
       "name": "Argan Oil",
@@ -1096,9 +1270,60 @@ export const defaultDatabase: IngredientDatabase = {
         "argan tree oil"
       ],
       "categories": [
+        "medium_oils"
+      ],
+      "references": [
+        {
+          "url": "https://science-yhairblog.blogspot.com/2013/06/oils-which-ones-soak-in-vs-coat-hair.html",
+          "type": "science",
+          "title": "Oils – Which Ones Soak In vs. Coat the Hair?",
+          "description": "Argan Oil's ability to penetrate (soak into) hair hasn't been well-researched but is it is likely to have moderate penetration (similar to olive oil, and much less than coconut oil)"
+        }
+      ],
+      "status": "ok",
+      "group": "oils"
+    },
+    "cocoa_butter": {
+      "name": "Cocoa Butter",
+      "id": "cocoa_butter",
+      "synonyms": [
+        "theobroma cacao seed butter",
+        "cacao seed butter"
+      ],
+      "categories": [
         "light_oils"
       ],
-      "status": "ok"
+      "references": [
+        {
+          "url": "https://science-yhairblog.blogspot.com/2013/06/oils-which-ones-soak-in-vs-coat-hair.html",
+          "type": "science",
+          "title": "Oils – Which Ones Soak In vs. Coat the Hair?",
+          "description": "Cocoa butter's ability to penetrate (soak into) hair hasn't been well-researched but is it is likely to have low moderate penetration (lower than olive oil, and much less than coconut oil)"
+        }
+      ],
+      "status": "ok",
+      "group": "oils"
+    },
+    "sesame_seed_oil": {
+      "name": "Sesame Seed Oil",
+      "id": "sesame_seed_oil",
+      "synonyms": [
+        "sesamum indicum seed oil",
+        "sesame oil"
+      ],
+      "categories": [
+        "medium_oils"
+      ],
+      "references": [
+        {
+          "url": "https://science-yhairblog.blogspot.com/2013/06/oils-which-ones-soak-in-vs-coat-hair.html",
+          "type": "science",
+          "title": "Oils – Which Ones Soak In vs. Coat the Hair?",
+          "description": "Sesame seed oil's ability to penetrate (soak into) hair hasn't been well-researched but is it is likely to have moderate penetration (similar to olive oil, and much less than coconut oil)"
+        }
+      ],
+      "status": "ok",
+      "group": "oils"
     },
     "avocado_oil": {
       "name": "Avocado Oil",
@@ -1110,7 +1335,50 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "medium_oils"
       ],
-      "status": "ok"
+      "references": [
+        {
+          "url": "https://science-yhairblog.blogspot.com/2013/06/oils-which-ones-soak-in-vs-coat-hair.html",
+          "type": "science",
+          "title": "Oils – Which Ones Soak In vs. Coat the Hair?",
+          "description": "Avocado oil's ability to penetrate (soak into) hair hasn't been well-researched but is it is likely to have moderate penetration (similar to olive oil, and much less than coconut oil)"
+        }
+      ],
+      "status": "ok",
+      "group": "oils"
+    },
+    "corn_oil": {
+      "name": "Corn Oil",
+      "id": "corn_oil",
+      "categories": [
+        "medium_oils"
+      ],
+      "references": [
+        {
+          "url": "https://science-yhairblog.blogspot.com/2013/06/oils-which-ones-soak-in-vs-coat-hair.html",
+          "type": "science",
+          "title": "Oils – Which Ones Soak In vs. Coat the Hair?",
+          "description": "Corn oil's ability to penetrate (soak into) hair hasn't been well-researched but is it is likely to have moderate penetration (similar to olive oil, and much less than coconut oil)"
+        }
+      ],
+      "status": "ok",
+      "group": "oils"
+    },
+    "mustard_seed_oil": {
+      "name": "Mustard Seed Oil",
+      "id": "mustard_seed_oil",
+      "categories": [
+        "medium_oils"
+      ],
+      "references": [
+        {
+          "url": "https://science-yhairblog.blogspot.com/2013/06/oils-which-ones-soak-in-vs-coat-hair.html",
+          "type": "science",
+          "title": "Oils – Which Ones Soak In vs. Coat the Hair?",
+          "description": "Mustard seed oil's ability to penetrate (soak into) hair hasn't been well-researched but is it is likely to have moderate penetration (similar to olive oil, and much less than coconut oil)"
+        }
+      ],
+      "status": "ok",
+      "group": "oils"
     },
     "baobab_oil": {
       "name": "Baobab Oil",
@@ -1120,9 +1388,10 @@ export const defaultDatabase: IngredientDatabase = {
         "baobab seed oil"
       ],
       "categories": [
-        "medium_oils"
+        "other_oils"
       ],
-      "status": "ok"
+      "status": "ok",
+      "group": "oils"
     },
     "camellia_oil": {
       "name": "Camellia Oil",
@@ -1132,9 +1401,31 @@ export const defaultDatabase: IngredientDatabase = {
         "tea seed oil"
       ],
       "categories": [
+        "other_oils"
+      ],
+      "status": "ok",
+      "group": "oils"
+    },
+    "rice_bran_oil": {
+      "name": "Rice bran oil",
+      "id": "rice_bran_oil",
+      "categories": [
         "light_oils"
       ],
-      "status": "ok"
+      "synonyms": [
+        "oryza sativa bran oil",
+        "rice bran extract"
+      ],
+      "references": [
+        {
+          "url": "https://science-yhairblog.blogspot.com/2013/06/oils-which-ones-soak-in-vs-coat-hair.html",
+          "type": "science",
+          "title": "Oils – Which Ones Soak In vs. Coat the Hair?",
+          "description": "Rice bran oil's ability to penetrate (soak into) hair has been well-researched and found to be low. It's likely to coat the hair rather than soak in."
+        }
+      ],
+      "status": "ok",
+      "group": "oils"
     },
     "castor_oil": {
       "name": "Castor Oil",
@@ -1144,9 +1435,39 @@ export const defaultDatabase: IngredientDatabase = {
         "castor seed oil"
       ],
       "categories": [
-        "heavy_oils"
+        "medium_oils"
       ],
-      "status": "ok"
+      "references": [
+        {
+          "url": "https://science-yhairblog.blogspot.com/2013/06/oils-which-ones-soak-in-vs-coat-hair.html",
+          "type": "science",
+          "title": "Oils – Which Ones Soak In vs. Coat the Hair?",
+          "description": "There isn't a lot of research into Castor Oil's ability to penetrate (soak into) hair, but it's likely given the oil's chemistry"
+        }
+      ],
+      "status": "ok",
+      "group": "oils"
+    },
+    "hemp_seed_oil": {
+      "name": "Hemp seed oil",
+      "id": "hemp_seed_oil",
+      "categories": [
+        "light_oils"
+      ],
+      "synonyms": [
+        "cannabis sativa seed oil",
+        "hemp oil"
+      ],
+      "references": [
+        {
+          "url": "https://science-yhairblog.blogspot.com/2013/06/oils-which-ones-soak-in-vs-coat-hair.html",
+          "type": "science",
+          "title": "Oils – Which Ones Soak In vs. Coat the Hair?",
+          "description": "Hemp seed oil's ability to penetrate (soak into) hair hasn't been well-researched but is it is likely to have low moderate penetration (lower than olive oil, and much less than coconut oil)"
+        }
+      ],
+      "status": "ok",
+      "group": "oils"
     },
     "coconut_oil": {
       "name": "Coconut Oil",
@@ -1156,9 +1477,35 @@ export const defaultDatabase: IngredientDatabase = {
         "coconut kernel oil"
       ],
       "categories": [
-        "medium_oils"
+        "heavy_oils"
       ],
-      "status": "ok"
+      "references": [
+        {
+          "url": "https://science-yhairblog.blogspot.com/2013/06/oils-which-ones-soak-in-vs-coat-hair.html",
+          "type": "science",
+          "title": "Oils – Which Ones Soak In vs. Coat the Hair?",
+          "description": "Coconut oil is well documented to penetrate (soak into) hair"
+        }
+      ],
+      "status": "ok",
+      "group": "oils"
+    },
+    "ucuuba_butter": {
+      "name": "Ucuuba butter",
+      "id": "ucuuba_butter",
+      "categories": [
+        "heavy_oils"
+      ],
+      "references": [
+        {
+          "url": "https://science-yhairblog.blogspot.com/2013/06/oils-which-ones-soak-in-vs-coat-hair.html",
+          "type": "science",
+          "title": "Oils – Which Ones Soak In vs. Coat the Hair?",
+          "description": "Ucuuba butter is well documented to penetrate (soak into) hair"
+        }
+      ],
+      "status": "ok",
+      "group": "oils"
     },
     "grapeseed_oil": {
       "name": "Grapeseed Oil",
@@ -1170,7 +1517,16 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "light_oils"
       ],
-      "status": "ok"
+      "references": [
+        {
+          "url": "https://science-yhairblog.blogspot.com/2013/06/oils-which-ones-soak-in-vs-coat-hair.html",
+          "type": "science",
+          "title": "Oils – Which Ones Soak In vs. Coat the Hair?",
+          "description": "Grapeseed oil's ability to penetrate (soak into) hair hasn't been well-researched but is it is likely to have low moderate penetration (lower than olive oil, and much less than coconut oil)"
+        }
+      ],
+      "status": "ok",
+      "group": "oils"
     },
     "jojoba_oil": {
       "name": "Jojoba Oil",
@@ -1182,19 +1538,39 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "light_oils"
       ],
-      "status": "ok"
+      "references": [
+        {
+          "url": "https://science-yhairblog.blogspot.com/2013/06/oils-which-ones-soak-in-vs-coat-hair.html",
+          "type": "science",
+          "title": "Oils – Which Ones Soak In vs. Coat the Hair?",
+          "description": "Jojoba oil is likely to coat the hair rather than soak in, based on its chemistry, so we consider it a light oil"
+        }
+      ],
+      "status": "ok",
+      "group": "oils"
     },
-    "lanolin": {
-      "name": "Lanolin",
-      "id": "lanolin",
-      "synonyms": [
-        "wool wax",
-        "wool grease"
-      ],
+    "lanolin_oil": {
+      "name": "Lanolin oil",
+      "id": "lanolin_oil",
       "categories": [
-        "heavy_oils"
+        "light_oils"
       ],
-      "status": "ok"
+      "description": "Lanolin oil is derived from sheep's wool, so it is not vegan. It is a light oil that is likely to coat the hair rather than soak in, based on its chemistry. However, it is likely comedogenic (meaning it can clog pores), so it might not be good for people with oily scalps.",
+      "references": [
+        {
+          "url": "https://www.cir-safety.org/sites/default/files/TAR_Lanolin_032024.pdf",
+          "type": "science",
+          "title": "CIR: Amended Safety Assessment of Lanolin-Derived Ingredients as Used in Cosmetics",
+          "description": "Based on this analysis, lanolin seems to have a low percentage of fats that could penetrate the hair shaft"
+        },
+        {
+          "title": "Comedogenicity of current therapeutic products, cosmetics, and ingredients in the rabbit ear",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/6229554/",
+          "type": "science"
+        }
+      ],
+      "status": "ok",
+      "group": "oils"
     },
     "marula_oil": {
       "name": "Marula Oil",
@@ -1204,9 +1580,10 @@ export const defaultDatabase: IngredientDatabase = {
         "marula seed oil"
       ],
       "categories": [
-        "light_oils"
+        "other_oils"
       ],
-      "status": "ok"
+      "status": "ok",
+      "group": "oils"
     },
     "mineral_oil": {
       "name": "Mineral Oil",
@@ -1219,7 +1596,16 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "petroleum_oils"
       ],
-      "status": "warning"
+      "references": [
+        {
+          "url": "https://science-yhairblog.blogspot.com/2013/06/oils-which-ones-soak-in-vs-coat-hair.html",
+          "type": "science",
+          "title": "Oils – Which Ones Soak In vs. Coat the Hair?",
+          "description": "Mineral oil is likely to coat the hair rather than soak in, based on its chemistry"
+        }
+      ],
+      "status": "ok",
+      "group": "oils"
     },
     "petrolatum": {
       "name": "Petrolatum",
@@ -1231,9 +1617,10 @@ export const defaultDatabase: IngredientDatabase = {
         "mineral jelly"
       ],
       "categories": [
-        "petroleum_oils"
+        "petroleum_jellies"
       ],
-      "status": "warning"
+      "status": "warning",
+      "group": "others"
     },
     "olive_oil": {
       "name": "Olive Oil",
@@ -1245,7 +1632,37 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "medium_oils"
       ],
-      "status": "ok"
+      "references": [
+        {
+          "url": "https://science-yhairblog.blogspot.com/2013/06/oils-which-ones-soak-in-vs-coat-hair.html",
+          "type": "science",
+          "title": "Oils – Which Ones Soak In vs. Coat the Hair?",
+          "description": "Olive Oil's ability to penetrate (soak into) hair is well documented. It penetrates quite well, but not as well as heavy oils like coconut oil"
+        }
+      ],
+      "status": "ok",
+      "group": "oils"
+    },
+    "flaxseed_oil": {
+      "name": "Flaxseed Oil",
+      "id": "flaxseed_oil",
+      "synonyms": [
+        "linum usitatissimum seed oil",
+        "flax seed oil"
+      ],
+      "categories": [
+        "light_oils"
+      ],
+      "references": [
+        {
+          "url": "https://science-yhairblog.blogspot.com/2013/06/oils-which-ones-soak-in-vs-coat-hair.html",
+          "type": "science",
+          "title": "Oils – Which Ones Soak In vs. Coat the Hair?",
+          "description": "Flaxseed oil's ability to penetrate (soak into) hair hasn't been well-researched but is it is likely to have low moderate penetration (lower than olive oil, and much less than coconut oil)"
+        }
+      ],
+      "status": "ok",
+      "group": "oils"
     },
     "sunflower_oil": {
       "name": "Sunflower Oil",
@@ -1255,9 +1672,76 @@ export const defaultDatabase: IngredientDatabase = {
         "sunflower seed oil"
       ],
       "categories": [
-        "medium_oils"
+        "heavy_oils"
       ],
-      "status": "ok"
+      "references": [
+        {
+          "url": "https://science-yhairblog.blogspot.com/2013/06/oils-which-ones-soak-in-vs-coat-hair.html",
+          "type": "science",
+          "title": "Oils – Which Ones Soak In vs. Coat the Hair?",
+          "description": "Sunflower oil is somewhat documented to penetrate (soak into) hair"
+        }
+      ],
+      "status": "ok",
+      "group": "oils"
+    },
+    "palm_kernel_oil": {
+      "name": "Palm kernel oil",
+      "id": "palm_kernel_oil",
+      "categories": [
+        "heavy_oils"
+      ],
+      "synonyms": [
+        "red palm oil"
+      ],
+      "references": [
+        {
+          "url": "https://science-yhairblog.blogspot.com/2013/06/oils-which-ones-soak-in-vs-coat-hair.html",
+          "type": "science",
+          "title": "Oils – Which Ones Soak In vs. Coat the Hair?",
+          "description": "Palm kernel oil's ability to penetrate (soak into) hair is not well researched, but is likely given the oil's chemistry"
+        }
+      ],
+      "status": "ok",
+      "group": "oils"
+    },
+    "caprylic_capric_triglyceride": {
+      "name": "Caprylic Capric Triglyceride",
+      "id": "caprylic_capric_triglyceride",
+      "categories": [
+        "heavy_oils"
+      ],
+      "synonyms": [
+        "caprylic triglyceride",
+        "capric triglyceride"
+      ],
+      "references": [
+        {
+          "url": "https://science-yhairblog.blogspot.com/2013/06/oils-which-ones-soak-in-vs-coat-hair.html",
+          "type": "science",
+          "title": "Oils – Which Ones Soak In vs. Coat the Hair?",
+          "description": "Capric / Caprylic triglycerides' ability to penetrate (soak into) hair hasn't been researched, but is likely given the oil's chemistry"
+        }
+      ],
+      "status": "ok",
+      "group": "oils"
+    },
+    "babbasu_oil": {
+      "name": "Babbasu Oil",
+      "id": "babbasu_oil",
+      "categories": [
+        "heavy_oils"
+      ],
+      "references": [
+        {
+          "url": "https://science-yhairblog.blogspot.com/2013/06/oils-which-ones-soak-in-vs-coat-hair.html",
+          "type": "science",
+          "title": "Oils – Which Ones Soak In vs. Coat the Hair?",
+          "description": "Babbasu oil's ability to penetrate (soak into) hair hasn't been researched, but is likely given the oil's chemistry"
+        }
+      ],
+      "status": "ok",
+      "group": "oils"
     },
     "sweet_almond_oil": {
       "name": "Sweet Almond Oil",
@@ -1267,23 +1751,104 @@ export const defaultDatabase: IngredientDatabase = {
         "almond oil"
       ],
       "categories": [
+        "medium_oils"
+      ],
+      "references": [
+        {
+          "url": "https://science-yhairblog.blogspot.com/2013/06/oils-which-ones-soak-in-vs-coat-hair.html",
+          "type": "science",
+          "title": "Oils – Which Ones Soak In vs. Coat the Hair?",
+          "description": "Sweet almond oil's ability to penetrate (soak into) hair hasn't been well-researched but is it is likely to have moderate penetration (similar to olive oil, and much less than coconut oil)"
+        }
+      ],
+      "status": "ok",
+      "group": "oils"
+    },
+    "rosehip_oil": {
+      "name": "Rosehip Oil",
+      "id": "rosehip_oil",
+      "synonyms": [
+        "rosa canina seed oil",
+        "rosehip seed oil"
+      ],
+      "categories": [
         "light_oils"
       ],
-      "status": "ok"
+      "references": [
+        {
+          "url": "https://science-yhairblog.blogspot.com/2013/06/oils-which-ones-soak-in-vs-coat-hair.html",
+          "type": "science",
+          "title": "Oils – Which Ones Soak In vs. Coat the Hair?",
+          "description": "Rosehip oil's ability to penetrate (soak into) hair hasn't been well-researched but is it is likely to have low moderate penetration (lower than olive oil, and much less than coconut oil)"
+        }
+      ],
+      "status": "ok",
+      "group": "oils"
+    },
+    "perilla_oil": {
+      "name": "Perilla Oil",
+      "id": "perilla_oil",
+      "synonyms": [
+        "perilla frutescens seed oil",
+        "perilla seed oil"
+      ],
+      "categories": [
+        "light_oils"
+      ],
+      "references": [
+        {
+          "url": "https://science-yhairblog.blogspot.com/2013/06/oils-which-ones-soak-in-vs-coat-hair.html",
+          "type": "science",
+          "title": "Oils – Which Ones Soak In vs. Coat the Hair?",
+          "description": "Perilla oil's ability to penetrate (soak into) hair hasn't been well-researched but is it is likely to have low moderate penetration (lower than olive oil, and much less than coconut oil)"
+        }
+      ],
+      "status": "ok",
+      "group": "oils"
     },
     "butyrospermum_parkii_shea_butter": {
       "name": "Butyrospermum Parkii Shea Butter",
       "id": "butyrospermum_parkii_shea_butter",
       "description": "A natural butter that deeply moisturizes and nourishes hair",
       "categories": [
-        "heavy_oils"
+        "medium_oils"
       ],
       "synonyms": [
         "shea butter",
         "butyrospermum parkii",
         "shea oil"
       ],
-      "status": "ok"
+      "references": [
+        {
+          "url": "https://science-yhairblog.blogspot.com/2013/06/oils-which-ones-soak-in-vs-coat-hair.html",
+          "type": "science",
+          "title": "Oils – Which Ones Soak In vs. Coat the Hair?",
+          "description": "Shea butter's ability to penetrate (soak into) hair hasn't been well-researched but is it is likely to have moderate penetration (similar to olive oil, and much less than coconut oil)"
+        }
+      ],
+      "status": "ok",
+      "group": "oils"
+    },
+    "kokum_butter": {
+      "name": "Kokum Butter",
+      "id": "kokum_butter",
+      "categories": [
+        "medium_oils"
+      ],
+      "synonyms": [
+        "garcinia indica seed butter",
+        "kokum seed butter"
+      ],
+      "references": [
+        {
+          "url": "https://science-yhairblog.blogspot.com/2013/06/oils-which-ones-soak-in-vs-coat-hair.html",
+          "type": "science",
+          "title": "Oils – Which Ones Soak In vs. Coat the Hair?",
+          "description": "Kokum butter's ability to penetrate (soak into) hair hasn't been well-researched but is it is likely to have moderate penetration (similar to olive oil, and much less than coconut oil)"
+        }
+      ],
+      "status": "ok",
+      "group": "oils"
     },
     "aminomethyl_propanol": {
       "name": "Aminomethyl Propanol",
@@ -1291,15 +1856,17 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "other"
       ],
-      "status": "ok"
+      "status": "ok",
+      "group": "others"
     },
     "disodium_2_sulfolaurate": {
       "name": "Disodium 2-Sulfolaurate",
       "id": "disodium_2_sulfolaurate",
       "categories": [
-        "other_surfactants"
+        "other_anionic_surfactants"
       ],
-      "status": "ok"
+      "status": "ok",
+      "group": "surfactants"
     },
     "potassium_castorate": {
       "name": "Potassium Castorate",
@@ -1311,7 +1878,8 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "soaps"
       ],
-      "status": "warning"
+      "status": "warning",
+      "group": "others"
     },
     "potassium_cocoate": {
       "name": "Potassium Cocoate",
@@ -1323,7 +1891,8 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "soaps"
       ],
-      "status": "warning"
+      "status": "warning",
+      "group": "others"
     },
     "potassium_olivate": {
       "name": "Potassium Olivate",
@@ -1335,7 +1904,8 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "soaps"
       ],
-      "status": "warning"
+      "status": "warning",
+      "group": "others"
     },
     "potassium_palmate": {
       "name": "Potassium Palmate",
@@ -1347,7 +1917,8 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "soaps"
       ],
-      "status": "warning"
+      "status": "warning",
+      "group": "others"
     },
     "potassium_stearate": {
       "name": "Potassium Stearate",
@@ -1359,7 +1930,8 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "soaps"
       ],
-      "status": "warning"
+      "status": "warning",
+      "group": "others"
     },
     "saccharomyces_silicon_ferment": {
       "name": "Saccharomyces Silicon Ferment",
@@ -1371,15 +1943,8 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "other"
       ],
-      "status": "ok"
-    },
-    "soaps": {
-      "name": "Soap",
-      "id": "soaps",
-      "categories": [
-        "other_surfactants"
-      ],
-      "status": "ok"
+      "status": "ok",
+      "group": "others"
     },
     "sodium_castorate": {
       "name": "Sodium Castorate",
@@ -1391,7 +1956,8 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "soaps"
       ],
-      "status": "warning"
+      "status": "warning",
+      "group": "others"
     },
     "sodium_cocoate": {
       "name": "Sodium Cocoate",
@@ -1403,39 +1969,44 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "soaps"
       ],
-      "status": "warning"
+      "status": "warning",
+      "group": "others"
     },
     "sodium_lauroyl_hydrolyzed_silk": {
       "name": "Sodium Lauroyl Hydrolyzed Silk",
       "id": "sodium_lauroyl_hydrolyzed_silk",
       "categories": [
-        "other_surfactants"
+        "other_anionic_surfactants"
       ],
-      "status": "ok"
+      "status": "ok",
+      "group": "surfactants"
     },
     "sodium_lauroyl_lactylate": {
       "name": "Sodium Lauroyl Lactylate",
       "id": "sodium_lauroyl_lactylate",
       "categories": [
-        "other_surfactants"
+        "other_anionic_surfactants"
       ],
-      "status": "ok"
+      "status": "ok",
+      "group": "surfactants"
     },
     "sodium_lauroyl_oat_amino_acids": {
       "name": "Sodium Lauroyl Oat Amino Acids",
       "id": "sodium_lauroyl_oat_amino_acids",
       "categories": [
-        "other_surfactants"
+        "other_anionic_surfactants"
       ],
-      "status": "ok"
+      "status": "ok",
+      "group": "surfactants"
     },
     "sodium_methyl_2_sulfolaurate": {
       "name": "Sodium Methyl 2-Sulfolaurate",
       "id": "sodium_methyl_2_sulfolaurate",
       "categories": [
-        "other_surfactants"
+        "other_anionic_surfactants"
       ],
-      "status": "ok"
+      "status": "ok",
+      "group": "surfactants"
     },
     "sodium_olivate": {
       "name": "Sodium Olivate",
@@ -1447,7 +2018,8 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "soaps"
       ],
-      "status": "warning"
+      "status": "warning",
+      "group": "others"
     },
     "sodium_palmate": {
       "name": "Sodium Palmate",
@@ -1459,7 +2031,8 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "soaps"
       ],
-      "status": "warning"
+      "status": "warning",
+      "group": "others"
     },
     "sodium_stearate": {
       "name": "Sodium Stearate",
@@ -1471,7 +2044,8 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "soaps"
       ],
-      "status": "warning"
+      "status": "warning",
+      "group": "others"
     },
     "sodium_tallowate": {
       "name": "Sodium Tallowate",
@@ -1483,15 +2057,17 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "soaps"
       ],
-      "status": "warning"
+      "status": "warning",
+      "group": "others"
     },
     "triisopropanolamine": {
       "name": "Triisopropanolamine",
       "id": "triisopropanolamine",
       "categories": [
-        "other_surfactants"
+        "other_anionic_surfactants"
       ],
-      "status": "ok"
+      "status": "ok",
+      "group": "surfactants"
     },
     "witch_hazel": {
       "name": "Witch Hazel",
@@ -1506,7 +2082,8 @@ export const defaultDatabase: IngredientDatabase = {
         "astringents"
       ],
       "description": "Most witch hazel contains alcohol—check with the manufacturer to confirm. Even alcohol-free versions can be drying, so use cautiously on high porosity hair.",
-      "status": "warning"
+      "status": "warning",
+      "group": "others"
     },
     "unknown_paraben": {
       "name": "Unknown Paraben",
@@ -1517,7 +2094,8 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "parabens"
       ],
-      "status": "caution"
+      "status": "ok",
+      "group": "preservatives"
     },
     "water": {
       "name": "Water  ",
@@ -1528,7 +2106,8 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "other"
       ],
-      "status": "ok"
+      "status": "ok",
+      "group": "others"
     },
     "isododecane": {
       "name": "Solvent",
@@ -1536,7 +2115,8 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "solvents"
       ],
-      "status": "ok"
+      "status": "ok",
+      "group": "others"
     },
     "isohexadecane": {
       "name": "Isohexadecane",
@@ -1550,16 +2130,8 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "solvents"
       ],
-      "status": "ok"
-    },
-    "behentrimonium_methosulfate": {
-      "name": "Behentrimonium Methosulfate",
-      "id": "behentrimonium_methosulfate",
-      "categories": [
-        "other"
-      ],
-      "description": "Despite the name, this is not a sulfate. It is often used as a conditioner.",
-      "status": "ok"
+      "status": "ok",
+      "group": "others"
     },
     "flower_extract": {
       "name": "Flower Extract",
@@ -1568,7 +2140,8 @@ export const defaultDatabase: IngredientDatabase = {
         "other"
       ],
       "description": "This is a flower extract, but we're not sure which one. These are generally considered harmless or beneficial.",
-      "status": "ok"
+      "status": "ok",
+      "group": "others"
     },
     "aloe_barbadensis_leaf_extract": {
       "name": "Aloe Barbadensis Leaf Extract",
@@ -1581,35 +2154,8 @@ export const defaultDatabase: IngredientDatabase = {
         "aloe vera",
         "aloe barbadensis leaf juice"
       ],
-      "status": "ok"
-    },
-    "behentrimonium_chloride": {
-      "name": "Behentrimonium Chloride",
-      "id": "behentrimonium_chloride",
-      "description": "A conditioning agent that reduces static and detangles hair",
-      "categories": [
-        "other"
-      ],
-      "references": [
-        {
-          "url": "https://incidecoder.com/ingredients/behentrimonium-chloride"
-        }
-      ],
-      "status": "ok"
-    },
-    "cetrimonium_chloride": {
-      "name": "Cetrimonium Chloride",
-      "id": "cetrimonium_chloride",
-      "description": "A conditioning agent that detangles and adds shine",
-      "categories": [
-        "other"
-      ],
-      "references": [
-        {
-          "url": "https://incidecoder.com/ingredients/cetrimonium-chloride"
-        }
-      ],
-      "status": "ok"
+      "status": "ok",
+      "group": "others"
     },
     "citric_acid": {
       "name": "Citric Acid",
@@ -1623,7 +2169,8 @@ export const defaultDatabase: IngredientDatabase = {
           "url": "https://incidecoder.com/ingredients/citric-acid"
         }
       ],
-      "status": "ok"
+      "status": "ok",
+      "group": "others"
     },
     "ethylhexylglycerin": {
       "name": "Ethylhexylglycerin",
@@ -1632,7 +2179,8 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "humectants"
       ],
-      "status": "ok"
+      "status": "ok",
+      "group": "others"
     },
     "glycereth_26": {
       "name": "Glycereth-26",
@@ -1641,7 +2189,8 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "humectants"
       ],
-      "status": "ok"
+      "status": "ok",
+      "group": "others"
     },
     "glycerin": {
       "name": "Glycerin",
@@ -1650,7 +2199,8 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "humectants"
       ],
-      "status": "ok"
+      "status": "ok",
+      "group": "others"
     },
     "hydroxyethylcellulose": {
       "name": "Hydroxyethylcellulose",
@@ -1659,7 +2209,8 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "other"
       ],
-      "status": "ok"
+      "status": "ok",
+      "group": "others"
     },
     "hydroxypropyltrimonium_honey": {
       "name": "Hydroxypropyltrimonium Honey",
@@ -1668,7 +2219,8 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "other"
       ],
-      "status": "ok"
+      "status": "ok",
+      "group": "others"
     },
     "panthenol": {
       "name": "Panthenol",
@@ -1681,7 +2233,8 @@ export const defaultDatabase: IngredientDatabase = {
         "Provitamin B5",
         "Vitamin B5"
       ],
-      "status": "ok"
+      "status": "ok",
+      "group": "others"
     },
     "phenoxyethanol": {
       "name": "Phenoxyethanol",
@@ -1690,7 +2243,8 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "preservatives"
       ],
-      "status": "ok"
+      "status": "ok",
+      "group": "others"
     },
     "silk_amino_acids": {
       "name": "Silk Amino Acids",
@@ -1699,7 +2253,8 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "proteins"
       ],
-      "status": "ok"
+      "status": "ok",
+      "group": "others"
     },
     "sodium_phytate": {
       "name": "Sodium Phytate",
@@ -1708,7 +2263,8 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "other"
       ],
-      "status": "ok"
+      "status": "ok",
+      "group": "others"
     },
     "sorbic_acid": {
       "name": "Sorbic Acid",
@@ -1717,7 +2273,8 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "preservatives"
       ],
-      "status": "ok"
+      "status": "ok",
+      "group": "others"
     },
     "sorbitol": {
       "name": "Sorbitol",
@@ -1726,7 +2283,8 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "humectants"
       ],
-      "status": "ok"
+      "status": "ok",
+      "group": "others"
     },
     "tocopheryl_acetate": {
       "name": "Tocopheryl Acetate",
@@ -1738,7 +2296,8 @@ export const defaultDatabase: IngredientDatabase = {
       "synonyms": [
         "Vitamin E"
       ],
-      "status": "ok"
+      "status": "ok",
+      "group": "others"
     },
     "cellulose": {
       "name": "Cellulose",
@@ -1747,16 +2306,8 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "other"
       ],
-      "status": "ok"
-    },
-    "caprylic_capric_triglyceride": {
-      "name": "Caprylic Capric Triglyceride",
-      "id": "caprylic_capric_triglyceride",
-      "description": "A lightweight emollient derived from coconut oil, providing moisture without greasiness",
-      "categories": [
-        "other"
-      ],
-      "status": "ok"
+      "status": "ok",
+      "group": "others"
     },
     "peg_100_stearate": {
       "name": "PEG-100 Stearate",
@@ -1768,7 +2319,8 @@ export const defaultDatabase: IngredientDatabase = {
       "synonyms": [
         "PEG 100 Stearate"
       ],
-      "status": "ok"
+      "status": "ok",
+      "group": "others"
     },
     "fragrance": {
       "name": "Fragrance",
@@ -1780,7 +2332,8 @@ export const defaultDatabase: IngredientDatabase = {
         "parfum"
       ],
       "description": "A blend of aromatic compounds that provides a pleasant scent to hair care products. Some people are sensitive to fragrances and companies are not required to list which specific ingredients are used in their fragrance blends.",
-      "status": "ok"
+      "status": "ok",
+      "group": "others"
     },
     "guar_hydroxypropyltrimonium_chloride": {
       "name": "Guar Hydroxypropyltrimonium Chloride",
@@ -1793,20 +2346,45 @@ export const defaultDatabase: IngredientDatabase = {
         "guar gum quaternary ammonium",
         "cationic guar"
       ],
-      "status": "ok"
+      "status": "ok",
+      "group": "others"
     },
     "magnesium_sulfate": {
       "name": "Magnesium Sulfate",
       "id": "magnesium_sulfate",
-      "description": "A mineral salt used as a texturizer and curl enhancer in hair care products. Some people find the texture unpleasant or drying.",
+      "description": "A mineral salt used as a texturizer and curl enhancer in hair care products. Some people find the texture unpleasant or drying. If you have issues with hard water, you might want to avoid it, because it's an extra source of the same minerals that can build up on your hair.",
       "categories": [
         "other"
       ],
       "synonyms": [
         "epsom salt",
-        "magnesium salt"
+        "magnesium salt",
+        "magnesium sulphate"
       ],
-      "status": "ok"
+      "references": [
+        {
+          "title": "Magnesium Sulfate",
+          "url": "http://www.tightlycurly.com/ingredients/magnesium_sulfate",
+          "type": "author",
+          "status": "warning",
+          "description": "Mentions that this ingredient roughs up the hair cuticle, which can be drying. It's also alkaline, which can swell the hair shaft, causing further damage."
+        },
+        {
+          "url": "https://www.curlynikki.com/magnesium-sulfate-curly-friend-or-foe.html",
+          "type": "author",
+          "title": "Curly Nikki: Magnesium Sulfate- Curly Friend or Foe?",
+          "status": "caution",
+          "description": "Says it's a powerful curl enhancer but can be drying to some so advises using with a leave in conditioner."
+        },
+        {
+          "url": "https://ijdvl.com/scanning-electron-microscopy-study-of-hair-shaft-changes-related-to-hardness-of-water/",
+          "type": "science",
+          "title": "Scanning electron microscopy study of hair shaft changes related to hardness of water",
+          "description": "Notes that Magnesium sulfate can be a component of hard water, which deposits on the hair. But did not find any evidence of damage."
+        }
+      ],
+      "status": "ok",
+      "group": "others"
     },
     "phenyl_propanol": {
       "name": "Phenyl Propanol",
@@ -1817,7 +2395,25 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "other"
       ],
-      "status": "ok"
+      "status": "ok",
+      "group": "others"
+    },
+    "lanolin": {
+      "name": "Lanolin",
+      "id": "lanolin",
+      "categories": [
+        "other"
+      ],
+      "description": "This is an ingredient derived from wool with a complicated chemical structure and many uses. One issue with it is that it is comedogenic, meaning it can clog pores. This may be an issue for people with sensitive or dandruff prone scalps. It is also not vegan friendly.",
+      "references": [
+        {
+          "title": "Comedogenicity of current therapeutic products, cosmetics, and ingredients in the rabbit ear",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/6229554/",
+          "type": "science"
+        }
+      ],
+      "status": "ok",
+      "group": "others"
     },
     "amodimethicone": {
       "name": "Amodimethicone",
@@ -1829,7 +2425,8 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "non_water_soluble_silicones"
       ],
-      "status": "warning"
+      "status": "warning",
+      "group": "silicones"
     },
     "bis_peg_18_methyl_ether_dimethyl_silane": {
       "name": "Bis-PEG-18 Methyl Ether Dimethyl Silane",
@@ -1841,7 +2438,8 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "water_soluble_silicones"
       ],
-      "status": "ok"
+      "status": "warning",
+      "group": "silicones"
     },
     "cetearyl_methicone": {
       "name": "Cetearyl Methicone",
@@ -1853,7 +2451,8 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "non_water_soluble_silicones"
       ],
-      "status": "warning"
+      "status": "warning",
+      "group": "silicones"
     },
     "cyclohexasiloxane": {
       "name": "Cyclohexasiloxane",
@@ -1866,7 +2465,8 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "non_water_soluble_silicones"
       ],
-      "status": "warning"
+      "status": "warning",
+      "group": "silicones"
     },
     "cyclopentasiloxane": {
       "name": "Cyclopentasiloxane",
@@ -1879,7 +2479,8 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "non_water_soluble_silicones"
       ],
-      "status": "warning"
+      "status": "warning",
+      "group": "silicones"
     },
     "dimethicone": {
       "name": "Dimethicone",
@@ -1935,7 +2536,8 @@ export const defaultDatabase: IngredientDatabase = {
           "type": "science"
         }
       ],
-      "status": "warning"
+      "status": "warning",
+      "group": "silicones"
     },
     "dimethicone_copolyol": {
       "name": "Dimethicone Copolyol",
@@ -1947,7 +2549,8 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "water_soluble_silicones"
       ],
-      "status": "ok"
+      "status": "warning",
+      "group": "silicones"
     },
     "dimethiconol": {
       "name": "Dimethiconol",
@@ -1959,7 +2562,8 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "non_water_soluble_silicones"
       ],
-      "status": "warning"
+      "status": "warning",
+      "group": "silicones"
     },
     "lauryl_methicone_copolyol": {
       "name": "Lauryl Methicone Copolyol",
@@ -1971,7 +2575,8 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "water_soluble_silicones"
       ],
-      "status": "ok"
+      "status": "warning",
+      "group": "silicones"
     },
     "peg_10_dimethicone": {
       "name": "PEG-10 Dimethicone",
@@ -1983,7 +2588,8 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "water_soluble_silicones"
       ],
-      "status": "ok"
+      "status": "warning",
+      "group": "silicones"
     },
     "peg_12_dimethicone": {
       "name": "PEG-12 Dimethicone",
@@ -1995,7 +2601,8 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "water_soluble_silicones"
       ],
-      "status": "ok"
+      "status": "warning",
+      "group": "silicones"
     },
     "peg_14_dimethicone": {
       "name": "PEG-14 Dimethicone",
@@ -2007,7 +2614,8 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "water_soluble_silicones"
       ],
-      "status": "ok"
+      "status": "warning",
+      "group": "silicones"
     },
     "peg_7_amodimethicone": {
       "name": "PEG-7 Amodimethicone",
@@ -2019,7 +2627,8 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "water_soluble_silicones"
       ],
-      "status": "ok"
+      "status": "warning",
+      "group": "silicones"
     },
     "peg_8_dimethicone": {
       "name": "PEG-8 Dimethicone",
@@ -2031,7 +2640,8 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "water_soluble_silicones"
       ],
-      "status": "ok"
+      "status": "warning",
+      "group": "silicones"
     },
     "phenyl_trimethicone": {
       "name": "Phenyl Trimethicone",
@@ -2043,7 +2653,8 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "non_water_soluble_silicones"
       ],
-      "status": "warning"
+      "status": "warning",
+      "group": "silicones"
     },
     "silicone_quaternium_8": {
       "name": "Silicone Quaternium-8",
@@ -2055,7 +2666,8 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "non_water_soluble_silicones"
       ],
-      "status": "warning"
+      "status": "warning",
+      "group": "silicones"
     },
     "stearoxytrimethylsilane": {
       "name": "Stearoxytrimethylsilane",
@@ -2067,7 +2679,8 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "non_water_soluble_silicones"
       ],
-      "status": "warning"
+      "status": "warning",
+      "group": "silicones"
     },
     "trimethylsiloxyamodimethicone": {
       "name": "Trimethylsiloxyamodimethicone",
@@ -2079,7 +2692,8 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "non_water_soluble_silicones"
       ],
-      "status": "warning"
+      "status": "warning",
+      "group": "silicones"
     },
     "trimethylsiloxysilicate": {
       "name": "Trimethylsiloxysilicate",
@@ -2087,7 +2701,8 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "non_water_soluble_silicones"
       ],
-      "status": "warning"
+      "status": "warning",
+      "group": "silicones"
     },
     "cyclomethicone": {
       "name": "Cyclomethicone",
@@ -2099,7 +2714,8 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "evaporative_silicones"
       ],
-      "status": "ok"
+      "status": "warning",
+      "group": "silicones"
     },
     "silicone_quaternium_26": {
       "name": "Silicone Quaternium 26",
@@ -2107,7 +2723,8 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "water_soluble_silicones"
       ],
-      "status": "ok"
+      "status": "warning",
+      "group": "silicones"
     },
     "unknown_non_water_soluble_silicone": {
       "name": "Unknown Non-Water Soluble Silicone",
@@ -2115,7 +2732,8 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "non_water_soluble_silicones"
       ],
-      "status": "warning"
+      "status": "warning",
+      "group": "silicones"
     },
     "unknown_water_soluble_silicone": {
       "name": "Unknown Water Soluble Silicones",
@@ -2123,7 +2741,8 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "water_soluble_silicones"
       ],
-      "status": "ok"
+      "status": "warning",
+      "group": "silicones"
     },
     "unknown_sulfate": {
       "name": "Unknown Sulfate",
@@ -2132,23 +2751,26 @@ export const defaultDatabase: IngredientDatabase = {
         "sulfates"
       ],
       "description": "We're pretty sure this is a sulfate, but we're not sure which one.",
-      "status": "warning"
+      "status": "ok",
+      "group": "surfactants"
     },
     "unknown_sarcosinate": {
       "name": "Unknown Sarcosinate",
       "id": "unknown_sarcosinate",
       "categories": [
-        "other_surfactants"
+        "other_anionic_surfactants"
       ],
-      "status": "ok"
+      "status": "ok",
+      "group": "surfactants"
     },
     "unknown_cocoyl_glutamate": {
       "name": "Unknown Cocoyl Glutamate",
       "id": "unknown_cocoyl_glutamate",
       "categories": [
-        "other_surfactants"
+        "other_anionic_surfactants"
       ],
-      "status": "ok"
+      "status": "ok",
+      "group": "surfactants"
     },
     "unknown_wax": {
       "name": "Unknown Wax",
@@ -2156,7 +2778,8 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "non_water_soluble_waxes"
       ],
-      "status": "warning"
+      "status": "warning",
+      "group": "waxes"
     },
     "unknown_oil": {
       "name": "Unknown Oil",
@@ -2164,7 +2787,8 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "other"
       ],
-      "status": "ok"
+      "status": "ok",
+      "group": "others"
     },
     "unknown_polyquat": {
       "name": "Unknown Polyquat",
@@ -2173,7 +2797,8 @@ export const defaultDatabase: IngredientDatabase = {
         "polyquats"
       ],
       "description": "We're pretty sure this is a polyquat, but we're not sure which one.",
-      "status": "ok"
+      "status": "ok",
+      "group": "others"
     },
     "unknown_alcohol": {
       "name": "Unknown Alcohol",
@@ -2185,7 +2810,8 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "drying_alcohols"
       ],
-      "status": "caution"
+      "status": "caution",
+      "group": "alcohols"
     },
     "beeswax": {
       "name": "Beeswax",
@@ -2198,7 +2824,8 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "non_water_soluble_waxes"
       ],
-      "status": "warning"
+      "status": "warning",
+      "group": "waxes"
     },
     "candelilla_wax": {
       "name": "Candelilla Wax",
@@ -2210,7 +2837,8 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "non_water_soluble_waxes"
       ],
-      "status": "warning"
+      "status": "warning",
+      "group": "waxes"
     },
     "carnauba_wax": {
       "name": "Carnauba Wax",
@@ -2222,7 +2850,8 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "non_water_soluble_waxes"
       ],
-      "status": "warning"
+      "status": "warning",
+      "group": "waxes"
     },
     "ceteareth_20": {
       "name": "Ceteareth-20",
@@ -2234,7 +2863,8 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "water_soluble_waxes"
       ],
-      "status": "ok"
+      "status": "ok",
+      "group": "waxes"
     },
     "euphorbia_cerifera_wax": {
       "name": "Euphorbia Cerifera Wax",
@@ -2247,7 +2877,8 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "non_water_soluble_waxes"
       ],
-      "status": "warning"
+      "status": "warning",
+      "group": "waxes"
     },
     "microcrystalline_wax": {
       "name": "Microcrystalline Wax",
@@ -2259,7 +2890,8 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "non_water_soluble_waxes"
       ],
-      "status": "warning"
+      "status": "warning",
+      "group": "waxes"
     },
     "ozokerite": {
       "name": "Ozokerite",
@@ -2271,7 +2903,8 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "non_water_soluble_waxes"
       ],
-      "status": "warning"
+      "status": "warning",
+      "group": "waxes"
     },
     "paraffin_wax": {
       "name": "Paraffin Wax",
@@ -2283,7 +2916,8 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "non_water_soluble_waxes"
       ],
-      "status": "warning"
+      "status": "warning",
+      "group": "waxes"
     },
     "peg_12_carnauba_wax": {
       "name": "PEG-12 Carnauba Wax",
@@ -2295,7 +2929,8 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "water_soluble_waxes"
       ],
-      "status": "ok"
+      "status": "warning",
+      "group": "waxes"
     },
     "peg_40_hydrogenated_castor_oil": {
       "name": "PEG-40 Hydrogenated Castor Oil",
@@ -2307,7 +2942,8 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "water_soluble_waxes"
       ],
-      "status": "ok"
+      "status": "ok",
+      "group": "waxes"
     },
     "peg_8_beeswax": {
       "name": "PEG-8 Beeswax",
@@ -2319,7 +2955,8 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "water_soluble_waxes"
       ],
-      "status": "ok"
+      "status": "warning",
+      "group": "waxes"
     },
     "polysorbate_20": {
       "name": "Polysorbate 20",
@@ -2331,7 +2968,8 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "water_soluble_waxes"
       ],
-      "status": "ok"
+      "status": "ok",
+      "group": "waxes"
     }
   },
   "categories": {
@@ -2433,6 +3071,13 @@ export const defaultDatabase: IngredientDatabase = {
           "title": "Silicone Polymers in Skin Care",
           "url": "https://link.springer.com/article/10.1557/mrs2007.167",
           "type": "science"
+        },
+        {
+          "url": "https://science-yhairblog.blogspot.com/2014/04/silicone-ingredient-solubility-list.html",
+          "status": "caution",
+          "title": "Science-y Hair Blog",
+          "description": "varies, discusses the different water solubilities of different silicones",
+          "type": "science"
         }
       ]
     },
@@ -2480,6 +3125,13 @@ export const defaultDatabase: IngredientDatabase = {
         }
       ]
     },
+    "other_oils": {
+      "id": "other_oils",
+      "name": "Other Oils",
+      "group": "oils",
+      "description": "These are other oils that don't fit into the other categories",
+      "references": []
+    },
     "preservatives": {
       "id": "preservatives",
       "name": "Preservatives",
@@ -2487,18 +3139,11 @@ export const defaultDatabase: IngredientDatabase = {
       "description": "Preservatives in hair care products can help prevent the growth of bacteria and mold",
       "references": []
     },
-    "other_surfactants": {
-      "id": "other_surfactants",
-      "name": "Other surfactants",
+    "other_anionic_surfactants": {
+      "id": "other_anionic_surfactants",
+      "name": "Other Anionic Surfactants",
       "group": "surfactants",
-      "description": "These are other surfactants that don't fit into the other categories",
-      "references": []
-    },
-    "preservative_alcohols": {
-      "id": "preservative_alcohols",
-      "name": "Preservative Alcohols",
-      "group": "alcohols",
-      "description": "These alcohols are used as preservatives in hair care products and are not considered drying",
+      "description": "Like sulfates, these are anionic surfactants, which means they have a negative charge and are good at removing oil and dirt from the hair",
       "references": []
     },
     "astringents": {
@@ -2519,28 +3164,28 @@ export const defaultDatabase: IngredientDatabase = {
       "id": "mild_surfactants",
       "name": "Mild surfactants",
       "group": "surfactants",
-      "description": "These surfactants are less harsh than other surfactants and are often used in hair care products",
+      "description": "These surfactants are typically amphoteric, cationic, or non-ionic and are considered to be gentler on the hair and scalp than anionic surfactants like sulfates",
       "references": []
     },
     "heavy_oils": {
       "id": "heavy_oils",
       "name": "Heavy Oils and Butters",
       "group": "oils",
-      "description": "These oils and butters are thick and heavy and can weigh down hair",
+      "description": "These oils and butters are can penetrate (soak into) the hair shaft",
       "references": []
     },
     "light_oils": {
       "id": "light_oils",
       "name": "Light Oils",
       "group": "oils",
-      "description": "Light oils are oils that are thin and light",
+      "description": "Light oils have a low ability to penetrate (soak into) the hair shaft",
       "references": []
     },
     "medium_oils": {
       "id": "medium_oils",
       "name": "Medium Oils",
       "group": "oils",
-      "description": "Medium oils are standard oils that are not heavy or light",
+      "description": "Medium oils have a moderate ability to penetrate (soak into) the hair shaft",
       "references": []
     },
     "non_water_soluble_waxes": {
@@ -2582,7 +3227,7 @@ export const defaultDatabase: IngredientDatabase = {
       "id": "polyquats",
       "name": "Polyquats",
       "group": "others",
-      "description": "Polyquats have a moderate to high build up potential and might not be a good choice if you only use mild shampoos or cowash to cleanse your hair.",
+      "description": "Polyquats are positively charged polymers used in haircare products to condition, detangle, and add shine by forming a protective film around the hair shaft.",
       "inclusions": [
         "polyquat"
       ],
@@ -2594,6 +3239,13 @@ export const defaultDatabase: IngredientDatabase = {
       "name": "Petroleum Oils",
       "group": "oils",
       "description": "These are petroleum based ingredients that are often avoided for their build up potential as well as their petro-based origin.",
+      "references": []
+    },
+    "petroleum_jellies": {
+      "id": "petroleum_jellies",
+      "name": "Petroleum Jellies",
+      "group": "others",
+      "description": "Petroleum jellies are occlusive agents that can help to seal in moisture and protect the skin",
       "references": []
     },
     "humectants": {
@@ -2648,15 +3300,13 @@ export const defaultDatabase: IngredientDatabase = {
     },
     "surfactants": {
       "id": "surfactants",
-      "name": "surfactants",
+      "name": "Surfactants",
       "description": "surfactants in hair products can help remove dirt and oil from the hair and scalp",
       "inclusions": [
         "sulfate",
         "sulphate"
       ],
       "exclusions": [
-        "behentrimonium",
-        "methosulfate",
         "magnesium"
       ],
       "references": [
@@ -2931,7 +3581,8 @@ export const defaultSettings: Record<string, Setting> = {
     "name": "Petroleum Oils",
     "description": "These are petroleum based ingredients that are often avoided for their build up potential as well as their petro-based origin.",
     "categories": [
-      "petroleum_oils"
+      "petroleum_oils",
+      "petroleum_jellies"
     ],
     "defaultStatus": "warning"
   }

@@ -96,6 +96,13 @@
           "title": "Silicone Polymers in Skin Care",
           "url": "https://link.springer.com/article/10.1557/mrs2007.167",
           "type": "science"
+        },
+        {
+          "url": "https://science-yhairblog.blogspot.com/2014/04/silicone-ingredient-solubility-list.html",
+          "status": "caution",
+          "title": "Science-y Hair Blog",
+          "description": "varies, discusses the different water solubilities of different silicones",
+          "type": "science"
         }
       ]
     },
@@ -144,22 +151,23 @@
       ]
     },
     {
+      "id": "other_oils",
+      "name": "Other Oils",
+      "group": "oils",
+      "description": "These are other oils that don't fit into the other categories"
+    },
+
+    {
       "id": "preservatives",
       "name": "Preservatives",
       "group": "others",
       "description": "Preservatives in hair care products can help prevent the growth of bacteria and mold"
     },
     {
-      "id": "other_surfactants",
-      "name": "Other surfactants",
+      "id": "other_anionic_surfactants",
+      "name": "Other Anionic Surfactants",
       "group": "surfactants",
-      "description": "These are other surfactants that don't fit into the other categories"
-    },
-    {
-      "id": "preservative_alcohols",
-      "name": "Preservative Alcohols",
-      "group": "alcohols",
-      "description": "These alcohols are used as preservatives in hair care products and are not considered drying"
+      "description": "Like sulfates, these are anionic surfactants, which means they have a negative charge and are good at removing oil and dirt from the hair"
     },
     {
       "id": "astringents",
@@ -177,25 +185,25 @@
       "id": "mild_surfactants",
       "name": "Mild surfactants",
       "group": "surfactants",
-      "description": "These surfactants are less harsh than other surfactants and are often used in hair care products"
+      "description": "These surfactants are typically amphoteric, cationic, or non-ionic and are considered to be gentler on the hair and scalp than anionic surfactants like sulfates"
     },
     {
       "id": "heavy_oils",
       "name": "Heavy Oils and Butters",
       "group": "oils",
-      "description": "These oils and butters are thick and heavy and can weigh down hair"
+      "description": "These oils and butters are can penetrate (soak into) the hair shaft"
     },
     {
       "id": "light_oils",
       "name": "Light Oils",
       "group": "oils",
-      "description": "Light oils are oils that are thin and light"
+      "description": "Light oils have a low ability to penetrate (soak into) the hair shaft"
     },
     {
       "id": "medium_oils",
       "name": "Medium Oils",
       "group": "oils",
-      "description": "Medium oils are standard oils that are not heavy or light"
+      "description": "Medium oils have a moderate ability to penetrate (soak into) the hair shaft"
     },
     {
       "id": "non_water_soluble_waxes",
@@ -231,7 +239,7 @@
       "id": "polyquats",
       "name": "Polyquats",
       "group": "others",
-      "description": "Polyquats have a moderate to high build up potential and might not be a good choice if you only use mild shampoos or cowash to cleanse your hair.",
+      "description": "Polyquats are positively charged polymers used in haircare products to condition, detangle, and add shine by forming a protective film around the hair shaft.",
       "inclusions": [
         "polyquat"
       ],
@@ -242,6 +250,12 @@
       "name": "Petroleum Oils",
       "group": "oils",
       "description": "These are petroleum based ingredients that are often avoided for their build up potential as well as their petro-based origin."
+    },
+    {
+      "id": "petroleum_jellies",
+      "name": "Petroleum Jellies",
+      "group": "others",
+      "description": "Petroleum jellies are occlusive agents that can help to seal in moisture and protect the skin"
     },
     {
       "id": "humectants",

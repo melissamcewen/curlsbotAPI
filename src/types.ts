@@ -140,6 +140,8 @@ export interface Ingredient {
   synonyms?: string[];
   /** CB status */
   status: 'ok' | 'caution' | 'warning';
+  /** group */
+  group?: string;
 }
 
 /** represents a collection of ingredients   */

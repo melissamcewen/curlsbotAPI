@@ -31,6 +31,18 @@ function loadIngredientsFromDir(dirPath: string): any {
   const allIngredients: any[] = [];
   const analyzer = new Analyzer();
 
+  // First load categories to look up groups
+  const categoriesData = loadJsonFile(join(DATA_DIR, 'categories.json'));
+  const categoryGroups = (categoriesData?.categories || []).reduce(
+    (acc: Record<string, string>, cat: any) => {
+      if (cat.id && cat.group) {
+        acc[cat.id] = cat.group;
+      }
+      return acc;
+    },
+    {},
+  );
+
   for (const file of files) {
     const filePath = join(dirPath, file);
     try {
@@ -56,9 +68,22 @@ function loadIngredientsFromDir(dirPath: string): any {
     const analysis = analyzer.analyze(ingredient.name);
     const status = analysis.status === 'error' ? 'warning' : analysis.status;
 
+    // Look up group from categories
+    let group: string | undefined;
+    if (ingredient.categories && ingredient.categories.length > 0) {
+      // Find first category that has a group
+      for (const category of ingredient.categories) {
+        if (categoryGroups[category]) {
+          group = categoryGroups[category];
+          break;
+        }
+      }
+    }
+
     acc[ingredient.id] = {
       ...ingredient,
       status,
+      group,
     };
     return acc;
   }, {});

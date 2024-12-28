@@ -112,7 +112,8 @@
       "name": "Petroleum Oils",
       "description": "These are petroleum based ingredients that are often avoided for their build up potential as well as their petro-based origin.",
       "categories": [
-        "petroleum_oils"
+        "petroleum_oils",
+        "petroleum_jellies"
       ],
       "defaultStatus": "warning"
     }

@@ -36,15 +36,13 @@
     },
     {
       "id": "surfactants",
-      "name": "surfactants",
+      "name": "Surfactants",
       "description": "surfactants in hair products can help remove dirt and oil from the hair and scalp",
       "inclusions": [
         "sulfate",
         "sulphate"
       ],
       "exclusions": [
-        "behentrimonium",
-        "methosulfate",
         "magnesium"
       ],
       "references": [
@@ -111,7 +109,7 @@
           "type": "science",
           "title": "Hair Cosmetics: An Overview"
         },
-      
+
         {
           "url": "https://link.springer.com/article/10.1134/S1560090423600201",
           "type": "science",

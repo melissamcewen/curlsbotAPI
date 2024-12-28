@@ -8,7 +8,30 @@
         "apricot seed oil"
       ],
       "categories": [
+        "medium_oils"
+      ],
+      "references": [
+        {
+          "url": "https://science-yhairblog.blogspot.com/2013/06/oils-which-ones-soak-in-vs-coat-hair.html",
+          "type": "science",
+          "title": "Oils – Which Ones Soak In vs. Coat the Hair?",
+          "description": "Apricot kernel oil's ability to penetrate (soak into) hair hasn't been well-researched but is it is likely to have moderate penetration (similar to olive oil, and much less than coconut oil)"
+        }
+      ]
+    },
+    {
+      "name": "Safflower Oil",
+      "id": "safflower_oil",
+      "categories": [
         "light_oils"
+      ],
+      "references": [
+        {
+          "url": "https://science-yhairblog.blogspot.com/2013/06/oils-which-ones-soak-in-vs-coat-hair.html",
+          "type": "science",
+          "title": "Oils – Which Ones Soak In vs. Coat the Hair?",
+          "description": "Safflower oil's ability to penetrate (soak into) hair hasn't been well-researched but is it is likely to have low moderate penetration (lower than olive oil, and much less than coconut oil)"
+        }
       ]
     },
     {
@@ -19,7 +42,53 @@
         "argan tree oil"
       ],
       "categories": [
+        "medium_oils"
+      ],
+      "references": [
+        {
+          "url": "https://science-yhairblog.blogspot.com/2013/06/oils-which-ones-soak-in-vs-coat-hair.html",
+          "type": "science",
+          "title": "Oils – Which Ones Soak In vs. Coat the Hair?",
+          "description": "Argan Oil's ability to penetrate (soak into) hair hasn't been well-researched but is it is likely to have moderate penetration (similar to olive oil, and much less than coconut oil)"
+        }
+      ]
+    },
+    {
+      "name": "Cocoa Butter",
+      "id": "cocoa_butter",
+      "synonyms": [
+        "theobroma cacao seed butter",
+        "cacao seed butter"
+      ],
+      "categories": [
         "light_oils"
+      ],
+      "references": [
+        {
+          "url": "https://science-yhairblog.blogspot.com/2013/06/oils-which-ones-soak-in-vs-coat-hair.html",
+          "type": "science",
+          "title": "Oils – Which Ones Soak In vs. Coat the Hair?",
+          "description": "Cocoa butter's ability to penetrate (soak into) hair hasn't been well-researched but is it is likely to have low moderate penetration (lower than olive oil, and much less than coconut oil)"
+        }
+      ]
+    },
+    {
+      "name": "Sesame Seed Oil",
+      "id": "sesame_seed_oil",
+      "synonyms": [
+        "sesamum indicum seed oil",
+        "sesame oil"
+      ],
+      "categories": [
+        "medium_oils"
+      ],
+      "references": [
+        {
+          "url": "https://science-yhairblog.blogspot.com/2013/06/oils-which-ones-soak-in-vs-coat-hair.html",
+          "type": "science",
+          "title": "Oils – Which Ones Soak In vs. Coat the Hair?",
+          "description": "Sesame seed oil's ability to penetrate (soak into) hair hasn't been well-researched but is it is likely to have moderate penetration (similar to olive oil, and much less than coconut oil)"
+        }
       ]
     },
     {
@@ -31,6 +100,44 @@
       ],
       "categories": [
         "medium_oils"
+      ],
+      "references": [
+        {
+          "url": "https://science-yhairblog.blogspot.com/2013/06/oils-which-ones-soak-in-vs-coat-hair.html",
+          "type": "science",
+          "title": "Oils – Which Ones Soak In vs. Coat the Hair?",
+          "description": "Avocado oil's ability to penetrate (soak into) hair hasn't been well-researched but is it is likely to have moderate penetration (similar to olive oil, and much less than coconut oil)"
+        }
+      ]
+    },
+    {
+      "name": "Corn Oil",
+      "id": "corn_oil",
+      "categories": [
+        "medium_oils"
+      ],
+      "references": [
+        {
+          "url": "https://science-yhairblog.blogspot.com/2013/06/oils-which-ones-soak-in-vs-coat-hair.html",
+          "type": "science",
+          "title": "Oils – Which Ones Soak In vs. Coat the Hair?",
+          "description": "Corn oil's ability to penetrate (soak into) hair hasn't been well-researched but is it is likely to have moderate penetration (similar to olive oil, and much less than coconut oil)"
+        }
+      ]
+    },
+    {
+      "name": "Mustard Seed Oil",
+      "id": "mustard_seed_oil",
+      "categories": [
+        "medium_oils"
+      ],
+      "references": [
+        {
+          "url": "https://science-yhairblog.blogspot.com/2013/06/oils-which-ones-soak-in-vs-coat-hair.html",
+          "type": "science",
+          "title": "Oils – Which Ones Soak In vs. Coat the Hair?",
+          "description": "Mustard seed oil's ability to penetrate (soak into) hair hasn't been well-researched but is it is likely to have moderate penetration (similar to olive oil, and much less than coconut oil)"
+        }
       ]
     },
     {
@@ -41,7 +148,7 @@
         "baobab seed oil"
       ],
       "categories": [
-        "medium_oils"
+        "other_oils"
       ]
     },
     {
@@ -52,7 +159,26 @@
         "tea seed oil"
       ],
       "categories": [
+        "other_oils"
+      ]
+    },
+    {
+      "name": "Rice bran oil",
+      "id": "rice_bran_oil",
+      "categories": [
         "light_oils"
+      ],
+      "synonyms": [
+        "oryza sativa bran oil",
+        "rice bran extract"
+      ],
+      "references": [
+        {
+          "url": "https://science-yhairblog.blogspot.com/2013/06/oils-which-ones-soak-in-vs-coat-hair.html",
+          "type": "science",
+          "title": "Oils – Which Ones Soak In vs. Coat the Hair?",
+          "description": "Rice bran oil's ability to penetrate (soak into) hair has been well-researched and found to be low. It's likely to coat the hair rather than soak in."
+        }
       ]
     },
     {
@@ -63,7 +189,34 @@
         "castor seed oil"
       ],
       "categories": [
-        "heavy_oils"
+        "medium_oils"
+      ],
+      "references": [
+        {
+          "url": "https://science-yhairblog.blogspot.com/2013/06/oils-which-ones-soak-in-vs-coat-hair.html",
+          "type": "science",
+          "title": "Oils – Which Ones Soak In vs. Coat the Hair?",
+          "description": "There isn't a lot of research into Castor Oil's ability to penetrate (soak into) hair, but it's likely given the oil's chemistry"
+        }
+      ]
+    },
+    {
+      "name": "Hemp seed oil",
+      "id": "hemp_seed_oil",
+      "categories": [
+        "light_oils"
+      ],
+      "synonyms": [
+        "cannabis sativa seed oil",
+        "hemp oil"
+      ],
+      "references": [
+        {
+          "url": "https://science-yhairblog.blogspot.com/2013/06/oils-which-ones-soak-in-vs-coat-hair.html",
+          "type": "science",
+          "title": "Oils – Which Ones Soak In vs. Coat the Hair?",
+          "description": "Hemp seed oil's ability to penetrate (soak into) hair hasn't been well-researched but is it is likely to have low moderate penetration (lower than olive oil, and much less than coconut oil)"
+        }
       ]
     },
     {
@@ -74,7 +227,30 @@
         "coconut kernel oil"
       ],
       "categories": [
-        "medium_oils"
+        "heavy_oils"
+      ],
+      "references": [
+        {
+          "url": "https://science-yhairblog.blogspot.com/2013/06/oils-which-ones-soak-in-vs-coat-hair.html",
+          "type": "science",
+          "title": "Oils – Which Ones Soak In vs. Coat the Hair?",
+          "description": "Coconut oil is well documented to penetrate (soak into) hair"
+        }
+      ]
+    },
+    {
+      "name": "Ucuuba butter",
+      "id": "ucuuba_butter",
+      "categories": [
+        "heavy_oils"
+      ],
+      "references": [
+        {
+          "url": "https://science-yhairblog.blogspot.com/2013/06/oils-which-ones-soak-in-vs-coat-hair.html",
+          "type": "science",
+          "title": "Oils – Which Ones Soak In vs. Coat the Hair?",
+          "description": "Ucuuba butter is well documented to penetrate (soak into) hair"
+        }
       ]
     },
     {
@@ -86,9 +262,16 @@
       ],
       "categories": [
         "light_oils"
+      ],
+      "references": [
+        {
+          "url": "https://science-yhairblog.blogspot.com/2013/06/oils-which-ones-soak-in-vs-coat-hair.html",
+          "type": "science",
+          "title": "Oils – Which Ones Soak In vs. Coat the Hair?",
+          "description": "Grapeseed oil's ability to penetrate (soak into) hair hasn't been well-researched but is it is likely to have low moderate penetration (lower than olive oil, and much less than coconut oil)"
+        }
       ]
     },
-
     {
       "name": "Jojoba Oil",
       "id": "jojoba_oil",
@@ -98,17 +281,35 @@
       ],
       "categories": [
         "light_oils"
+      ],
+      "references": [
+        {
+          "url": "https://science-yhairblog.blogspot.com/2013/06/oils-which-ones-soak-in-vs-coat-hair.html",
+          "type": "science",
+          "title": "Oils – Which Ones Soak In vs. Coat the Hair?",
+          "description": "Jojoba oil is likely to coat the hair rather than soak in, based on its chemistry, so we consider it a light oil"
+        }
       ]
     },
     {
-      "name": "Lanolin",
-      "id": "lanolin",
-      "synonyms": [
-        "wool wax",
-        "wool grease"
-      ],
+      "name": "Lanolin oil",
+      "id": "lanolin_oil",
       "categories": [
-        "heavy_oils"
+        "light_oils"
+      ],
+      "description": "Lanolin oil is derived from sheep's wool, so it is not vegan. It is a light oil that is likely to coat the hair rather than soak in, based on its chemistry. However, it is likely comedogenic (meaning it can clog pores), so it might not be good for people with oily scalps.",
+      "references": [
+        {
+          "url": "https://www.cir-safety.org/sites/default/files/TAR_Lanolin_032024.pdf",
+          "type": "science",
+          "title": "CIR: Amended Safety Assessment of Lanolin-Derived Ingredients as Used in Cosmetics",
+          "description": "Based on this analysis, lanolin seems to have a low percentage of fats that could penetrate the hair shaft"
+        },
+        {
+          "title": "Comedogenicity of current therapeutic products, cosmetics, and ingredients in the rabbit ear",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/6229554/",
+          "type": "science"
+        }
       ]
     },
     {
@@ -119,7 +320,7 @@
         "marula seed oil"
       ],
       "categories": [
-        "light_oils"
+        "other_oils"
       ]
     },
     {
@@ -132,6 +333,14 @@
       ],
       "categories": [
         "petroleum_oils"
+      ],
+      "references": [
+        {
+          "url": "https://science-yhairblog.blogspot.com/2013/06/oils-which-ones-soak-in-vs-coat-hair.html",
+          "type": "science",
+          "title": "Oils – Which Ones Soak In vs. Coat the Hair?",
+          "description": "Mineral oil is likely to coat the hair rather than soak in, based on its chemistry"
+        }
       ]
     },
     {
@@ -144,7 +353,7 @@
         "mineral jelly"
       ],
       "categories": [
-        "petroleum_oils"
+        "petroleum_jellies"
       ]
     },
     {
@@ -156,9 +365,35 @@
       ],
       "categories": [
         "medium_oils"
+      ],
+      "references": [
+        {
+          "url": "https://science-yhairblog.blogspot.com/2013/06/oils-which-ones-soak-in-vs-coat-hair.html",
+          "type": "science",
+          "title": "Oils – Which Ones Soak In vs. Coat the Hair?",
+          "description": "Olive Oil's ability to penetrate (soak into) hair is well documented. It penetrates quite well, but not as well as heavy oils like coconut oil"
+        }
       ]
     },
-
+    {
+      "name": "Flaxseed Oil",
+      "id": "flaxseed_oil",
+      "synonyms": [
+        "linum usitatissimum seed oil",
+        "flax seed oil"
+      ],
+      "categories": [
+        "light_oils"
+      ],
+      "references": [
+        {
+          "url": "https://science-yhairblog.blogspot.com/2013/06/oils-which-ones-soak-in-vs-coat-hair.html",
+          "type": "science",
+          "title": "Oils – Which Ones Soak In vs. Coat the Hair?",
+          "description": "Flaxseed oil's ability to penetrate (soak into) hair hasn't been well-researched but is it is likely to have low moderate penetration (lower than olive oil, and much less than coconut oil)"
+        }
+      ]
+    },
     {
       "name": "Sunflower Oil",
       "id": "sunflower_oil",
@@ -167,7 +402,67 @@
         "sunflower seed oil"
       ],
       "categories": [
-        "medium_oils"
+        "heavy_oils"
+      ],
+      "references": [
+        {
+          "url": "https://science-yhairblog.blogspot.com/2013/06/oils-which-ones-soak-in-vs-coat-hair.html",
+          "type": "science",
+          "title": "Oils – Which Ones Soak In vs. Coat the Hair?",
+          "description": "Sunflower oil is somewhat documented to penetrate (soak into) hair"
+        }
+      ]
+    },
+    {
+      "name": "Palm kernel oil",
+      "id": "palm_kernel_oil",
+      "categories": [
+        "heavy_oils"
+      ],
+      "synonyms": [
+        "red palm oil"
+      ],
+      "references": [
+        {
+          "url": "https://science-yhairblog.blogspot.com/2013/06/oils-which-ones-soak-in-vs-coat-hair.html",
+          "type": "science",
+          "title": "Oils – Which Ones Soak In vs. Coat the Hair?",
+          "description": "Palm kernel oil's ability to penetrate (soak into) hair is not well researched, but is likely given the oil's chemistry"
+        }
+      ]
+    },
+    {
+      "name": "Caprylic Capric Triglyceride",
+      "id": "caprylic_capric_triglyceride",
+      "categories": [
+        "heavy_oils"
+      ],
+      "synonyms": [
+        "caprylic triglyceride",
+        "capric triglyceride"
+      ],
+      "references": [
+        {
+          "url": "https://science-yhairblog.blogspot.com/2013/06/oils-which-ones-soak-in-vs-coat-hair.html",
+          "type": "science",
+          "title": "Oils – Which Ones Soak In vs. Coat the Hair?",
+          "description": "Capric / Caprylic triglycerides' ability to penetrate (soak into) hair hasn't been researched, but is likely given the oil's chemistry"
+        }
+      ]
+    },
+    {
+      "name": "Babbasu Oil",
+      "id": "babbasu_oil",
+      "categories": [
+        "heavy_oils"
+      ],
+      "references": [
+        {
+          "url": "https://science-yhairblog.blogspot.com/2013/06/oils-which-ones-soak-in-vs-coat-hair.html",
+          "type": "science",
+          "title": "Oils – Which Ones Soak In vs. Coat the Hair?",
+          "description": "Babbasu oil's ability to penetrate (soak into) hair hasn't been researched, but is likely given the oil's chemistry"
+        }
       ]
     },
     {
@@ -178,7 +473,53 @@
         "almond oil"
       ],
       "categories": [
+        "medium_oils"
+      ],
+      "references": [
+        {
+          "url": "https://science-yhairblog.blogspot.com/2013/06/oils-which-ones-soak-in-vs-coat-hair.html",
+          "type": "science",
+          "title": "Oils – Which Ones Soak In vs. Coat the Hair?",
+          "description": "Sweet almond oil's ability to penetrate (soak into) hair hasn't been well-researched but is it is likely to have moderate penetration (similar to olive oil, and much less than coconut oil)"
+        }
+      ]
+    },
+    {
+      "name": "Rosehip Oil",
+      "id": "rosehip_oil",
+      "synonyms": [
+        "rosa canina seed oil",
+        "rosehip seed oil"
+      ],
+      "categories": [
         "light_oils"
+      ],
+      "references": [
+        {
+          "url": "https://science-yhairblog.blogspot.com/2013/06/oils-which-ones-soak-in-vs-coat-hair.html",
+          "type": "science",
+          "title": "Oils – Which Ones Soak In vs. Coat the Hair?",
+          "description": "Rosehip oil's ability to penetrate (soak into) hair hasn't been well-researched but is it is likely to have low moderate penetration (lower than olive oil, and much less than coconut oil)"
+        }
+      ]
+    },
+    {
+      "name": "Perilla Oil",
+      "id": "perilla_oil",
+      "synonyms": [
+        "perilla frutescens seed oil",
+        "perilla seed oil"
+      ],
+      "categories": [
+        "light_oils"
+      ],
+      "references": [
+        {
+          "url": "https://science-yhairblog.blogspot.com/2013/06/oils-which-ones-soak-in-vs-coat-hair.html",
+          "type": "science",
+          "title": "Oils – Which Ones Soak In vs. Coat the Hair?",
+          "description": "Perilla oil's ability to penetrate (soak into) hair hasn't been well-researched but is it is likely to have low moderate penetration (lower than olive oil, and much less than coconut oil)"
+        }
       ]
     },
     {
@@ -186,12 +527,39 @@
       "id": "butyrospermum_parkii_shea_butter",
       "description": "A natural butter that deeply moisturizes and nourishes hair",
       "categories": [
-        "heavy_oils"
+        "medium_oils"
       ],
       "synonyms": [
         "shea butter",
         "butyrospermum parkii",
         "shea oil"
+      ],
+      "references": [
+        {
+          "url": "https://science-yhairblog.blogspot.com/2013/06/oils-which-ones-soak-in-vs-coat-hair.html",
+          "type": "science",
+          "title": "Oils – Which Ones Soak In vs. Coat the Hair?",
+          "description": "Shea butter's ability to penetrate (soak into) hair hasn't been well-researched but is it is likely to have moderate penetration (similar to olive oil, and much less than coconut oil)"
+        }
+      ]
+    },
+    {
+      "name": "Kokum Butter",
+      "id": "kokum_butter",
+      "categories": [
+        "medium_oils"
+      ],
+      "synonyms": [
+        "garcinia indica seed butter",
+        "kokum seed butter"
+      ],
+      "references": [
+        {
+          "url": "https://science-yhairblog.blogspot.com/2013/06/oils-which-ones-soak-in-vs-coat-hair.html",
+          "type": "science",
+          "title": "Oils – Which Ones Soak In vs. Coat the Hair?",
+          "description": "Kokum butter's ability to penetrate (soak into) hair hasn't been well-researched but is it is likely to have moderate penetration (similar to olive oil, and much less than coconut oil)"
+        }
       ]
     }
   ]

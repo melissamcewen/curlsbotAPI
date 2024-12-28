@@ -9,7 +9,7 @@
         "alkyl benzene sulphate"
       ],
       "categories": [
-        "other_surfactants"
+        "other_anionic_surfactants"
       ]
     },
     {
@@ -68,7 +68,7 @@
         "ammonium xylene sulfonate"
       ],
       "categories": [
-        "other_surfactants"
+        "other_anionic_surfactants"
       ]
     },
     {
@@ -144,7 +144,7 @@
       "name": "Dioctyl Sodium Sulfosuccinate",
       "id": "dioctyl_sodium_sulfosuccinate",
       "categories": [
-        "other_surfactants"
+        "other_anionic_surfactants"
       ]
     },
     {
@@ -165,7 +165,7 @@
       "name": "Disodium Cocoyl Glutamate",
       "id": "disodium_cocoyl_glutamate",
       "categories": [
-        "other_surfactants"
+        "other_anionic_surfactants"
       ]
     },
     {
@@ -230,7 +230,7 @@
         "sodium c12-14 olefin sulphate"
       ],
       "categories": [
-        "other_surfactants"
+        "other_anionic_surfactants"
       ]
     },
     {
@@ -250,7 +250,7 @@
         "sodium c14-15 olefin sulphate"
       ],
       "categories": [
-        "other_surfactants"
+        "other_anionic_surfactants"
       ]
     },
     {
@@ -273,7 +273,7 @@
         "sodium c14-18 olefin sulphate"
       ],
       "categories": [
-        "other_surfactants"
+        "other_anionic_surfactants"
       ]
     },
     {
@@ -283,7 +283,7 @@
         "sodium c14-26 olefin sulphate"
       ],
       "categories": [
-        "other_surfactants"
+        "other_anionic_surfactants"
       ]
     },
     {
@@ -293,7 +293,7 @@
         "sodium c16-18 olefin sulphate"
       ],
       "categories": [
-        "other_surfactants"
+        "other_anionic_surfactants"
       ]
     },
     {
@@ -347,7 +347,7 @@
       "name": "Sodium Cocoyl Glutamate",
       "id": "sodium_cocoyl_glutamate",
       "categories": [
-        "other_surfactants"
+        "other_anionic_surfactants"
       ]
     },
     {
@@ -361,7 +361,7 @@
       "name": "Sodium Cocoyl Sarcosinate",
       "id": "sodium_cocoyl_sarcosinate",
       "categories": [
-        "other_surfactants"
+        "other_anionic_surfactants"
       ]
     },
     {
@@ -409,7 +409,7 @@
         "sodium laureth-40 sulphate"
       ],
       "categories": [
-        "other_surfactants"
+        "other_anionic_surfactants"
       ]
     },
     {
@@ -443,7 +443,7 @@
       "name": "Sodium Lauroyl Sarcosinate",
       "id": "sodium_lauroyl_sarcosinate",
       "categories": [
-        "other_surfactants"
+        "other_anionic_surfactants"
       ]
     },
     {
@@ -461,7 +461,7 @@
         "sodium lauroyl sarcosine"
       ],
       "categories": [
-        "other_surfactants"
+        "other_anionic_surfactants"
       ]
     },
     {
@@ -524,7 +524,7 @@
       "name": "Sodium Lauryl Sulfoacetate",
       "id": "sodium_lauryl_sulfoacetate",
       "categories": [
-        "other_surfactants"
+        "other_anionic_surfactants"
       ]
     },
     {
@@ -555,7 +555,7 @@
       "name": "Sodium Myristoyl Sarcosinate",
       "id": "sodium_myristoyl_sarcosinate",
       "categories": [
-        "other_surfactants"
+        "other_anionic_surfactants"
       ]
     },
     {
@@ -577,7 +577,7 @@
         "sodium xylene sulfonate"
       ],
       "categories": [
-        "other_surfactants"
+        "other_anionic_surfactants"
       ]
     },
     {
@@ -587,7 +587,7 @@
         "tea-dodecylbenzenesulfonate"
       ],
       "categories": [
-        "other_surfactants"
+        "other_anionic_surfactants"
       ]
     },
     {
@@ -617,9 +617,43 @@
         " sulfonate"
       ],
       "categories": [
-        "other_surfactants"
+        "other_anionic_surfactants"
       ],
       "description": "We're pretty sure this is a sulfonate, but we're not sure which one. "
+    },
+    {
+      "name": "Behentrimonium Chloride",
+      "id": "behentrimonium_chloride",
+      "description": "A cationic surfactant that gently cleanses and conditions hair",
+      "categories": [
+        "mild_surfactants"
+      ],
+      "references": [
+        {
+          "url": "https://incidecoder.com/ingredients/behentrimonium-chloride"
+        }
+      ]
+    },
+    {
+      "name": "Cetrimonium Chloride",
+      "id": "cetrimonium_chloride",
+     "description": "A cationic surfactant that gently cleanses and conditions hair",
+      "categories": [
+        "mild_surfactants"
+      ],
+      "references": [
+        {
+          "url": "https://incidecoder.com/ingredients/cetrimonium-chloride"
+        }
+      ]
+    },
+    {
+      "name": "Behentrimonium Methosulfate",
+      "id": "behentrimonium_methosulfate",
+      "categories": [
+        "mild_surfactants"
+      ],
+      "description": "Despite the name, this is not a sulfate. It a cationic surfactant that gently cleanses and conditions hair."
     }
   ]
 }

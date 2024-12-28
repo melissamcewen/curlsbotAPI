@@ -92,7 +92,7 @@
       ]
     },
     {
-      "name": "C30_50 Alcohols",
+      "name": "C30-50 Alcohols",
       "id": "c30_50_alcohols",
       "categories": [
         "emollient_alcohols"
@@ -245,7 +245,7 @@
         "phenyl ethyl alcohol"
       ],
       "categories": [
-        "preservative_alcohols"
+        "drying_alcohols"
       ],
       "references": [
         {
@@ -253,18 +253,8 @@
           "title": "INCIDecoder",
           "status": "ok"
         }
-      ]
-    },
-    {
-      "name": "Phenethyl Alcohol",
-      "id": "phenethyl_alcohol",
-      "synonyms": [
-        "phenylethyl alcohol",
-        "phenyl ethyl alcohol"
       ],
-      "categories": [
-        "preservative_alcohols"
-      ]
+      "description": "Phenethyl alcohol usually used as a preservative in small amounts. In this context it's unlikely to be drying or irritating."
     },
     {
       "name": "Propyl Alcohol",
