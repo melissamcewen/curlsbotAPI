@@ -31,6 +31,12 @@
           "type": "science",
           "title": "Oils – Which Ones Soak In vs. Coat the Hair?",
           "description": "Safflower oil's ability to penetrate (soak into) hair hasn't been well-researched but is it is likely to have low moderate penetration (lower than olive oil, and much less than coconut oil)"
+        },
+        {
+          "title": "Penetration of oils into hair",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/38922913/",
+          "type": "science",
+          "description": "Found that camellia oil can penetrate the hair shaft  at a low-moderate lvel compared to high penetration oils like coconut. It also found that safflower oil was just as good as coconut oil at preventing damage."
         }
       ]
     },
@@ -50,6 +56,19 @@
           "type": "science",
           "title": "Oils – Which Ones Soak In vs. Coat the Hair?",
           "description": "Argan Oil's ability to penetrate (soak into) hair hasn't been well-researched but is it is likely to have moderate penetration (similar to olive oil, and much less than coconut oil)"
+        },
+        {
+          "url": "https://link.springer.com/article/10.1186/s40691-021-00282-5",
+          "type": "science",
+          "title": "Effect of rinse-off hair conditioner containing argan oil or camellia oil on the recovery of hair damaged by bleaching",
+          "description": "Study found argan oil was effective at protecting bleached hair from damage, moreso than camellia oil"
+        },
+        {
+          "url": "https://www.mdpi.com/2079-9284/11/2/64",
+          "title": "Impact of Hair Damage on the Penetration Profile of Coconut, Avocado, and Argan Oils into Caucasian Hair Fibers",
+          "type": "science",
+          "description": "Found that argan oil could penetrate the hair shaft but not as well as coconut oil. Also found that argan oil increased susceptibility to breakage by making it more vulnerable to water/humidity",
+          "status": "caution"
         }
       ]
     },
@@ -107,6 +126,12 @@
           "type": "science",
           "title": "Oils – Which Ones Soak In vs. Coat the Hair?",
           "description": "Avocado oil's ability to penetrate (soak into) hair hasn't been well-researched but is it is likely to have moderate penetration (similar to olive oil, and much less than coconut oil)"
+        },
+        {
+          "url": "https://www.mdpi.com/2079-9284/11/2/64",
+          "title": "Impact of Hair Damage on the Penetration Profile of Coconut, Avocado, and Argan Oils into Caucasian Hair Fibers",
+          "type": "science",
+          "description": "Found that avocado oil didn't penetrate the hair shaft as well as argan oil, but did a better job protecting the hair from breakage."
         }
       ]
     },
@@ -159,7 +184,15 @@
         "tea seed oil"
       ],
       "categories": [
-        "other_oils"
+        "light_oils"
+      ],
+      "references": [
+        {
+          "title": "Penetration of oils into hair",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/38922913/",
+          "type": "science",
+          "description": "Found that camellia oil can penetrate the hair shaft about as well as safflower oil, which is low-moderate compared to high penetration oils like coconut. It also found that camellia oil was just as good as coconut oil at preventing damage."
+        }
       ]
     },
     {
@@ -447,6 +480,11 @@
           "type": "science",
           "title": "Oils – Which Ones Soak In vs. Coat the Hair?",
           "description": "Capric / Caprylic triglycerides' ability to penetrate (soak into) hair hasn't been researched, but is likely given the oil's chemistry"
+        },
+        {
+          "url": "https://link.springer.com/article/10.1186/s40691-023-00332-0",
+          "type": "science",
+          "title": "Found that these oils can penetrate the hair shaft more effectively than plain coconut oil"
         }
       ]
     },
