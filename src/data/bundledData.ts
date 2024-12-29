@@ -1276,7 +1276,7 @@ export const defaultDatabase: IngredientDatabase = {
           "title": "Penetration of oils into hair",
           "url": "https://pubmed.ncbi.nlm.nih.gov/38922913/",
           "type": "science",
-          "description": "Found that camellia oil can penetrate the hair shaft  at a low-moderate lvel compared to high penetration oils like coconut. It also found that safflower oil was just as good as coconut oil at preventing damage."
+          "description": "Found that camellia oil can penetrate the hair shaft  at a low-moderate level compared to high penetration oils like coconut. It also found that safflower oil was just as good as coconut oil at preventing damage."
         }
       ],
       "status": "ok",
@@ -3029,7 +3029,7 @@ export const defaultDatabase: IngredientDatabase = {
       "id": "drying_alcohols",
       "name": "Drying Alcohols",
       "group": "alcohols",
-      "description": "These alcohols are considered drying because they evaporate quickly and can strip natural oils from the hair and scalp",
+      "description": "Short-chain alcohols considered drying because they evaporate quickly and can strip natural oils from the hair and scalp",
       "references": [
         {
           "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4387693/",
@@ -3172,7 +3172,7 @@ export const defaultDatabase: IngredientDatabase = {
       "id": "emollient_alcohols",
       "name": "Emollient alcohols",
       "group": "alcohols",
-      "description": "Emollient alcohols are fatty alcohols that help to soften and moisturize hair",
+      "description": "These are long-chain fatty alcohols that help to soften and moisturize hair",
       "references": []
     },
     "water_soluble_silicones": {

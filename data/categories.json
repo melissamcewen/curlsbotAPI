@@ -4,7 +4,7 @@
       "id": "drying_alcohols",
       "name": "Drying Alcohols",
       "group": "alcohols",
-      "description": "These alcohols are considered drying because they evaporate quickly and can strip natural oils from the hair and scalp",
+      "description": "Short-chain alcohols considered drying because they evaporate quickly and can strip natural oils from the hair and scalp",
       "references": [
         {
           "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4387693/",
@@ -147,7 +147,7 @@
       "id": "emollient_alcohols",
       "name": "Emollient alcohols",
       "group": "alcohols",
-      "description": "Emollient alcohols are fatty alcohols that help to soften and moisturize hair"
+      "description": "These are long-chain fatty alcohols that help to soften and moisturize hair"
     },
     {
       "id": "water_soluble_silicones",
