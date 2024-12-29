@@ -77,15 +77,6 @@
       "id": "peg_8_beeswax",
       "synonyms": ["polyethylene glycol-8 beeswax", "ethoxylated beeswax"],
       "categories": ["water_soluble_waxes"]
-    },
-    {
-      "name": "Polysorbate 20",
-      "id": "polysorbate_20",
-      "synonyms": [
-        "sorbitan monolaurate ethoxylated",
-        "ethoxylated sorbitol laurate"
-      ],
-      "categories": ["water_soluble_waxes"]
     }
 
   ]

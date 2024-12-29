@@ -10,7 +10,7 @@ import {
 /* THESE ARE PRODUCTION TESTS USE THE DATA IN src/data/bundledData.ts */
 
 const list =
-  'Emulsifying Wax NF, beeswax, euphorbia cerifera (candelilla) wax, lonincera japonica (honeysuckle) flower extract';
+  'Emulsifying Wax NF, beeswax, euphorbia cerifera (candelilla) wax, lonincera japonica (honeysuckle) flower extract, PEG-12 Carnauba Wax';
 
 describe('Handling of waxes under the default system', () => {
   const analyzer = new Analyzer({
@@ -28,6 +28,7 @@ describe('Handling of waxes under the default system', () => {
       'beeswax',
       'euphorbia cerifera candelilla wax',
       'lonincera japonica honeysuckle flower extract',
+      'peg-12 carnauba wax'
     ]);
   });
 
@@ -61,6 +62,13 @@ describe('Handling of waxes under the default system', () => {
         status: 'ok',
         reason: undefined,
       },
+      {
+        normalized: 'peg-12 carnauba wax',
+        ingredientId: 'peg_12_carnauba_wax',
+        category: 'water_soluble_waxes',
+        status: 'ok',
+        reason: undefined,
+      }
     ];
 
     expectedResults.forEach((expected) => {

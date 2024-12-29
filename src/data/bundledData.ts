@@ -2255,9 +2255,10 @@ export const defaultDatabase: IngredientDatabase = {
       "id": "phenoxyethanol",
       "description": "A preservative that prevents microbial growth in hair care products",
       "categories": [
-        "preservatives"
+        "other_preservatives"
       ],
-      "status": "ok"
+      "status": "ok",
+      "group": "preservatives"
     },
     "silk_amino_acids": {
       "name": "Silk Amino Acids",
@@ -2284,9 +2285,10 @@ export const defaultDatabase: IngredientDatabase = {
       "id": "sorbic_acid",
       "description": "A preservative that inhibits the growth of mold and yeast",
       "categories": [
-        "preservatives"
+        "other_preservatives"
       ],
-      "status": "ok"
+      "status": "ok",
+      "group": "preservatives"
     },
     "sorbitol": {
       "name": "Sorbitol",
@@ -2423,6 +2425,19 @@ export const defaultDatabase: IngredientDatabase = {
           "url": "https://pubmed.ncbi.nlm.nih.gov/6229554/",
           "type": "science"
         }
+      ],
+      "status": "ok",
+      "group": "others"
+    },
+    "polysorbate_20": {
+      "name": "Polysorbate 20",
+      "id": "polysorbate_20",
+      "synonyms": [
+        "sorbitan monolaurate ethoxylated",
+        "ethoxylated sorbitol laurate"
+      ],
+      "categories": [
+        "other"
       ],
       "status": "ok",
       "group": "others"
@@ -2941,7 +2956,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "water_soluble_waxes"
       ],
-      "status": "caution",
+      "status": "ok",
       "group": "waxes"
     },
     "peg_40_hydrogenated_castor_oil": {
@@ -2963,19 +2978,6 @@ export const defaultDatabase: IngredientDatabase = {
       "synonyms": [
         "polyethylene glycol-8 beeswax",
         "ethoxylated beeswax"
-      ],
-      "categories": [
-        "water_soluble_waxes"
-      ],
-      "status": "caution",
-      "group": "waxes"
-    },
-    "polysorbate_20": {
-      "name": "Polysorbate 20",
-      "id": "polysorbate_20",
-      "synonyms": [
-        "sorbitan monolaurate ethoxylated",
-        "ethoxylated sorbitol laurate"
       ],
       "categories": [
         "water_soluble_waxes"
@@ -3351,6 +3353,13 @@ export const defaultDatabase: IngredientDatabase = {
       "name": "Proteins",
       "group": "others",
       "description": "Proteins in hair care products can help strengthen and repair hair, but some people find them drying",
+      "references": []
+    },
+    "other_preservatives": {
+      "id": "other_preservatives",
+      "name": "Other Preservatives",
+      "group": "preservatives",
+      "description": "These are other preservatives that don't fit into the other categories",
       "references": []
     }
   },

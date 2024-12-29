@@ -475,6 +475,17 @@
           "type": "science"
         }
       ]
-    }
+    },
+        {
+          "name": "Polysorbate 20",
+          "id": "polysorbate_20",
+          "synonyms": [
+            "sorbitan monolaurate ethoxylated",
+            "ethoxylated sorbitol laurate"
+          ],
+          "categories": [
+            "other"
+          ]
+        }
   ]
 }

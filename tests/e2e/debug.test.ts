@@ -6,54 +6,61 @@ import {
   defaultSystems,
   defaultSettings,
 } from '../../src/data/bundledData';
+import {
+  findIngredient,
+  partitionSearchSpace,
+  findCategoryByInclusion,
+  findGroupByInclusion,
+} from '../../src/utils/databaseUtils';
 
 /* THESE ARE PRODUCTION TESTS USE THE DATA IN src/data/bundledData.ts */
 
-const list =
-  'some sulfate';
+const list = 'peg-12 carnauba wax';
 
-describe('Handling of surfactants under the default system', () => {
+describe('Debugging ingredient matching', () => {
   const analyzer = new Analyzer({
     database: defaultDatabase,
     settings: defaultSettings,
   });
-  const result = analyzer.analyze(list);
-  it('should have a warning status', () => {
-    expect(result.status).toBe('warning');
-  });
 
-  it('should normalize the list', () => {
-    expect(result.ingredients.map((i) => i.normalized)).toEqual([
-      'some sulfate',
-    ]);
-  });
+  it('should correctly identify peg-12 carnauba wax', () => {
+    // Log the initial search
+    console.log('\nSearching for:', list);
 
-  describe('ingredient matching', () => {
-    const expectedResults = [
-      {
-        normalized: 'some sulfate',
-        ingredientId: 'unknown_sulfate',
-        category: 'surfactants',
-        status: 'warning',
-        reason: 'sulfate_free'
-      }
-    ];
+    // Check partitioning
+    const partitioned = partitionSearchSpace(defaultDatabase, list);
+    console.log(
+      '\nPartitioned database categories:',
+      Object.keys(partitioned.database.categories),
+    );
+    console.log('Default ingredient:', partitioned.defaultIngredient);
 
-    expectedResults.forEach((expected) => {
-      it(`correctly identifies ${expected.normalized}`, () => {
-        const ingredientMatch = result.ingredients.find(
-          (i) => i.normalized === expected.normalized,
-        );
+    // Check category and group matching
+    const categoryMatch = findCategoryByInclusion(
+      defaultDatabase.categories,
+      defaultDatabase.groups,
+      list,
+    );
+    console.log('\nCategory match:', categoryMatch);
 
-        expect(ingredientMatch).toBeDefined();
-        expect(ingredientMatch?.ingredient?.id).toBe(expected.ingredientId);
-        expect(ingredientMatch?.ingredient?.group).toBe(expected.category);
-        expect(ingredientMatch?.status).toBe(expected.status);
-        expect(
-          ingredientMatch?.reasons.find((r) => r.setting === expected.reason)
-            ?.setting,
-        ).toBe(expected.reason);
-      });
-    });
+    const groupMatch = findGroupByInclusion(defaultDatabase.groups, list);
+    console.log('Group match:', groupMatch);
+
+    // Check ingredient matching
+    const ingredientMatch = findIngredient(defaultDatabase, list);
+    console.log(
+      '\nIngredient match:',
+      JSON.stringify(ingredientMatch, null, 2),
+    );
+
+    // Run the analyzer
+    const result = analyzer.analyze(list);
+    console.log('\nFinal analysis result:', JSON.stringify(result, null, 2));
+
+    // Test assertions
+    expect(result.ingredients[0].ingredient?.id).toBe('peg_12_carnauba_wax');
+    expect(result.ingredients[0].ingredient?.categories).toContain(
+      'water_soluble_waxes',
+    );
   });
 });

@@ -229,20 +229,6 @@ export function filterDatabaseByCategory(
 
 /**
  * Find first category whose inclusions are contained within the search term
- * @param categories - Object containing all categories, where keys are category IDs
- * @param searchTerm - The term to search for within category inclusions
- * @returns Object containing matched categoryId and its defaultIngredient, or undefined if no match
- *
- * Example:
- * If categories = {
- *   "cat1": {
- *     inclusions: ["sulfate", "sls"],
- *     exclusions: ["free"],
- *     defaultIngredient: "sodium_lauryl_sulfate"
- *   }
- * }
- * and searchTerm = "sulfate free shampoo"
- * It will NOT match because while "sulfate" is in the search term, "free" is in exclusions
  */
 export function findCategoryByInclusion(
   categories: Categories,
@@ -265,10 +251,14 @@ export function findCategoryByInclusion(
     const hasInclusion = category.inclusions?.some((inclusion) =>
       normalizedSearchTerm.includes(inclusion.toLowerCase()),
     );
-    // to quality as a match they must also match the group inclusion
+
+    // to qualify as a match they must also match the group inclusion
     const group = findGroupByInclusion(groups, normalizedSearchTerm);
 
     if (!group) return false;
+
+    // Check to ensure the matched group is the same as the category's group
+    if (group.groupId !== category.group) return false;
 
     return hasInclusion;
   });
