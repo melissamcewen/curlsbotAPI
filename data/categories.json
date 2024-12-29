@@ -349,6 +349,12 @@
       "name": "Proteins",
       "group": "others",
       "description": "Proteins in hair care products can help strengthen and repair hair, but some people find them drying"
+    },
+    {
+      "id": "other_preservatives",
+      "name": "Other Preservatives",
+      "group": "preservatives",
+      "description": "These are other preservatives that don't fit into the other categories"
     }
   ]
 }
