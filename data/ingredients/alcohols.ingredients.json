@@ -180,10 +180,10 @@
       ]
     },
     {
-      "name": "Isopropanol",
-      "id": "isopropanol",
+      "name": "Isopropyl alcohol",
+      "id": "isopropyl_alcohol",
       "synonyms": [
-        "isopropyl alcohol",
+        "isopropanol",
         "2-propanol"
       ],
       "categories": [
@@ -264,19 +264,33 @@
       ]
     },
     {
-      "name": "SD Alcohol",
-      "id": "sd_alcohol",
+      "name": "Alcohol Denat",
+      "id": "alcohol_denat",
       "synonyms": [
         "alcohol denat",
         "alcohol-40b",
         "denatured alcohol",
-        "sd alcohol 40",
+        "sd alcohol",
         "sugarcane derived alcohol",
         "alcohol"
       ],
-      "description": "Dries out your hair and skin, and can cause irritation and dryness.",
       "categories": [
         "drying_alcohols"
+      ],
+      "references": [
+        {
+          "url": "https://incidecoder.com/ingredients/alcohol-denat",
+          "title": "INCIDecoder",
+          "status": "caution",
+          "description": "Says it can be drying if its in the first few ingredients of a product",
+          "type": "science"
+        },
+        {
+          "url": "http://www.tightlycurly.com/ingredients/",
+          "title": "Tightly Curly",
+          "status": "warning",
+          "description": "Says to avoid alcohol denat"
+        }
       ]
     },
     {

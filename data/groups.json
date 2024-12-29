@@ -153,7 +153,14 @@
         "oil"
       ],
       "defaultIngredient": "unknown_oil",
-      "description": "Oils in hair products can moisturize and add shine to hair"
+      "description": "Oils in hair products can moisturize and add shine to hair",
+      "references": [
+        {
+          "url": "https://science-yhairblog.blogspot.com/2013/06/oils-which-ones-soak-in-vs-coat-hair.html",
+          "type": "science",
+          "title": "Oils – Which Ones Soak In vs. Coat the Hair?"
+        }
+      ]
     }
   ]
 }

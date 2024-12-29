@@ -52,7 +52,34 @@
       "defaultIngredient": "unknown_paraben",
       "references": [
         {
-          "url": "https://thebeautybrains.com/2006/05/the-perils-of-parabens/"
+          "url": "https://thebeautybrains.com/2006/05/the-perils-of-parabens/",
+          "status": "ok",
+          "title": "The Beauty Brains: The Perils of Parabens",
+          "type": "science"
+        },
+        {
+          "url": "https://amzn.to/41QrGxJ",
+          "status": "warning",
+          "title": "Curly Girl: The Handbook by Lorraine Massey",
+          "type": "hairpro"
+        },
+        {
+          "url": "https://incidecoder.com/ingredients/parabens",
+          "status": "ok",
+          "title": "INCIDecoder: Parabens",
+          "type": "science"
+        },
+        {
+          "url": "https://labmuffin.com/should-you-be-avoiding-parabens-the-science/",
+          "status": "ok",
+          "title": "Lab Muffin: Should You Be Avoiding Parabens? The Science",
+          "type": "science"
+        },
+        {
+          "url": "http://www.tightlycurly.com/ingredients/",
+          "type": "author",
+          "title": "Tightly Curly",
+          "status": "ok"
         }
       ]
     },
@@ -70,7 +97,51 @@
         "methosulfate",
         "magnesium"
       ],
-      "defaultIngredient": "unknown_sulfate"
+      "defaultIngredient": "unknown_sulfate",
+      "references": [
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4387693/",
+          "type": "science",
+          "title": "Hair Cosmetics: An Overview"
+        },
+        {
+          "url": "https://amzn.to/41QrGxJ",
+          "status": "warning",
+          "title": "Curly Girl: The Handbook by Lorraine Massey",
+          "type": "hairpro"
+        },
+        {
+          "url": "https://labmuffin.com/the-science-of-hair-products-shampoo-and-conditioner-with-video/",
+          "status": "ok",
+          "title": "Lab Muffin: The Science of Hair Products: Shampoo and Conditioner",
+          "type": "science"
+        },
+        {
+          "url": "https://thebeautybrains.com/2008/07/should-my-shower-stay-sulfate-free/",
+          "status": "ok",
+          "title": "The Beauty Brains: Should my shower stay sulfate-free?",
+          "type": "science"
+        },
+        {
+          "url": "http://www.tightlycurly.com/ingredients/",
+          "type": "author",
+          "title": "Tightly Curly",
+          "status": "caution",
+          "description": "depends on the sulfate."
+        },
+        {
+          "url": "https://science-yhairblog.blogspot.com/2011/08/shampoos-harsh-mild-and-otherwise.html",
+          "type": "science",
+          "title": "Science-y Hair Blog: Shampoos: Harsh, Mild, and Otherwise",
+          "status": "caution",
+          "description": "Discusses how concentration of detergent matters in terms of mildness."
+        },
+        {
+          "url": "https://onlinelibrary.wiley.com/doi/10.1002/macp.202200420",
+          "type": "science",
+          "title": "Shampoo Science: A Review of the Physiochemical Processes behind the Function of a Shampoo"
+        }
+      ]
     },
     {
       "id": "emollient_alcohols",
@@ -156,13 +227,6 @@
       "group": "oils",
       "description": "These are other oils that don't fit into the other categories"
     },
-
-    {
-      "id": "preservatives",
-      "name": "Preservatives",
-      "group": "others",
-      "description": "Preservatives in hair care products can help prevent the growth of bacteria and mold"
-    },
     {
       "id": "other_anionic_surfactants",
       "name": "Other Anionic Surfactants",
@@ -178,8 +242,25 @@
     {
       "id": "soaps",
       "name": "Soaps",
-      "group": "others",
-      "description": "Soaps are cleansers made from fatty acids and alkali metals"
+      "group": "surfactants",
+      "description": "Soaps are cleansers made from fatty acids and alkali metals",
+      "references": [
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4171909/",
+          "type": "science",
+          "title": "Evaluation of pH of Bathing Soaps and Shampoos for Skin and Hair Care"
+        },
+        {
+          "url": "https://www.usgs.gov/faqs/why-does-it-take-so-long-rinse-soap-my-hands-what-are-hard-water-and-soft-water",
+          "type": "science",
+          "title": "USGS: Why does it take so long to rinse soap off my hands? What are hard water and soft water?"
+        },
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8954092/",
+          "type": "science",
+          "title": "Skin Cleansing without or with Compromise: Soaps and Syndets"
+        }
+      ]
     },
     {
       "id": "mild_surfactants",
@@ -255,7 +336,7 @@
       "id": "petroleum_jellies",
       "name": "Petroleum Jellies",
       "group": "others",
-      "description": "Petroleum jellies are occlusive agents that can help to seal in moisture and protect the skin"
+      "description": "These are petroleum based ingredients that are often avoided for their build up potential as well as their petro-based origin"
     },
     {
       "id": "humectants",

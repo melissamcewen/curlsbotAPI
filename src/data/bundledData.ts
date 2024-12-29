@@ -9,7 +9,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "emollient_alcohols"
       ],
-      "status": "caution",
+      "status": "ok",
       "group": "alcohols"
     },
     "amino_methyl_propanol": {
@@ -39,7 +39,7 @@ export const defaultDatabase: IngredientDatabase = {
       "synonyms": [
         "amyl cinnamyl alcohol"
       ],
-      "status": "caution",
+      "status": "ok",
       "group": "alcohols"
     },
     "arachidyl_alcohol": {
@@ -48,7 +48,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "emollient_alcohols"
       ],
-      "status": "caution",
+      "status": "ok",
       "group": "alcohols"
     },
     "behenyl_alcohol": {
@@ -61,7 +61,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "emollient_alcohols"
       ],
-      "status": "caution",
+      "status": "ok",
       "group": "alcohols"
     },
     "benzyl_alcohol": {
@@ -77,7 +77,7 @@ export const defaultDatabase: IngredientDatabase = {
           "status": "ok"
         }
       ],
-      "status": "caution",
+      "status": "ok",
       "group": "alcohols"
     },
     "brassica_alcohol": {
@@ -86,7 +86,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "emollient_alcohols"
       ],
-      "status": "caution",
+      "status": "ok",
       "group": "alcohols"
     },
     "butylene_alcohol": {
@@ -95,7 +95,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "emollient_alcohols"
       ],
-      "status": "caution",
+      "status": "ok",
       "group": "alcohols"
     },
     "c14_22_alcohol": {
@@ -104,7 +104,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "emollient_alcohols"
       ],
-      "status": "caution",
+      "status": "ok",
       "group": "alcohols"
     },
     "c20_c22_alcohol": {
@@ -113,7 +113,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "emollient_alcohols"
       ],
-      "status": "caution",
+      "status": "ok",
       "group": "alcohols"
     },
     "c30_50_alcohols": {
@@ -122,7 +122,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "emollient_alcohols"
       ],
-      "status": "caution",
+      "status": "ok",
       "group": "alcohols"
     },
     "cetearyl_alcohol": {
@@ -137,7 +137,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "emollient_alcohols"
       ],
-      "status": "caution",
+      "status": "ok",
       "group": "alcohols"
     },
     "cetyl_alcohol": {
@@ -154,7 +154,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "emollient_alcohols"
       ],
-      "status": "caution",
+      "status": "ok",
       "group": "alcohols"
     },
     "cetylated_lanolin_alcohol": {
@@ -163,7 +163,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "emollient_alcohols"
       ],
-      "status": "caution",
+      "status": "ok",
       "group": "alcohols"
     },
     "cinnamyl_alcohol": {
@@ -182,7 +182,7 @@ export const defaultDatabase: IngredientDatabase = {
           "status": "ok"
         }
       ],
-      "status": "caution",
+      "status": "ok",
       "group": "alcohols"
     },
     "coconut_alcohol": {
@@ -191,7 +191,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "emollient_alcohols"
       ],
-      "status": "caution",
+      "status": "ok",
       "group": "alcohols"
     },
     "ethyl_alcohol": {
@@ -217,14 +217,14 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "emollient_alcohols"
       ],
-      "status": "caution",
+      "status": "ok",
       "group": "alcohols"
     },
-    "isopropanol": {
-      "name": "Isopropanol",
-      "id": "isopropanol",
+    "isopropyl_alcohol": {
+      "name": "Isopropyl alcohol",
+      "id": "isopropyl_alcohol",
       "synonyms": [
-        "isopropyl alcohol",
+        "isopropanol",
         "2-propanol"
       ],
       "categories": [
@@ -239,7 +239,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "emollient_alcohols"
       ],
-      "status": "caution",
+      "status": "ok",
       "group": "alcohols"
     },
     "lanolin_alcohol": {
@@ -248,7 +248,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "emollient_alcohols"
       ],
-      "status": "caution",
+      "status": "ok",
       "group": "alcohols"
     },
     "lauryl_alcohol": {
@@ -262,7 +262,7 @@ export const defaultDatabase: IngredientDatabase = {
         "dodecanol",
         "dodecyl alcohol"
       ],
-      "status": "caution",
+      "status": "ok",
       "group": "alcohols"
     },
     "myristyl_alcohol": {
@@ -275,7 +275,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "emollient_alcohols"
       ],
-      "status": "caution",
+      "status": "ok",
       "group": "alcohols"
     },
     "oleyl_alcohol": {
@@ -287,7 +287,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "emollient_alcohols"
       ],
-      "status": "caution",
+      "status": "ok",
       "group": "alcohols"
     },
     "phenethyl_alcohol": {
@@ -320,20 +320,34 @@ export const defaultDatabase: IngredientDatabase = {
       "status": "caution",
       "group": "alcohols"
     },
-    "sd_alcohol": {
-      "name": "SD Alcohol",
-      "id": "sd_alcohol",
+    "alcohol_denat": {
+      "name": "Alcohol Denat",
+      "id": "alcohol_denat",
       "synonyms": [
         "alcohol denat",
         "alcohol-40b",
         "denatured alcohol",
-        "sd alcohol 40",
+        "sd alcohol",
         "sugarcane derived alcohol",
         "alcohol"
       ],
-      "description": "Dries out your hair and skin, and can cause irritation and dryness.",
       "categories": [
         "drying_alcohols"
+      ],
+      "references": [
+        {
+          "url": "https://incidecoder.com/ingredients/alcohol-denat",
+          "title": "INCIDecoder",
+          "status": "caution",
+          "description": "Says it can be drying if its in the first few ingredients of a product",
+          "type": "science"
+        },
+        {
+          "url": "http://www.tightlycurly.com/ingredients/",
+          "title": "Tightly Curly",
+          "status": "warning",
+          "description": "Says to avoid alcohol denat"
+        }
       ],
       "status": "caution",
       "group": "alcohols"
@@ -350,7 +364,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "emollient_alcohols"
       ],
-      "status": "caution",
+      "status": "ok",
       "group": "alcohols"
     },
     "undecyl_alcohol": {
@@ -359,7 +373,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "emollient_alcohols"
       ],
-      "status": "caution",
+      "status": "ok",
       "group": "alcohols"
     },
     "emulsifying_wax": {
@@ -385,7 +399,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "emollient_alcohols"
       ],
-      "status": "caution",
+      "status": "ok",
       "group": "alcohols"
     },
     "batyl_alcohol": {
@@ -394,7 +408,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "emollient_alcohols"
       ],
-      "status": "caution",
+      "status": "ok",
       "group": "alcohols"
     },
     "c12_15_alcohol": {
@@ -403,7 +417,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "emollient_alcohols"
       ],
-      "status": "caution",
+      "status": "ok",
       "group": "alcohols"
     },
     "c12_16_alcohol": {
@@ -412,7 +426,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "emollient_alcohols"
       ],
-      "status": "caution",
+      "status": "ok",
       "group": "alcohols"
     },
     "decyl_alcohol": {
@@ -421,7 +435,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "emollient_alcohols"
       ],
-      "status": "caution",
+      "status": "ok",
       "group": "alcohols"
     },
     "hydrogenated_rapeseed_alcohol": {
@@ -430,7 +444,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "emollient_alcohols"
       ],
-      "status": "caution",
+      "status": "ok",
       "group": "alcohols"
     },
     "jojoba_alcohol": {
@@ -439,7 +453,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "emollient_alcohols"
       ],
-      "status": "caution",
+      "status": "ok",
       "group": "alcohols"
     },
     "tridecyl_alcohol": {
@@ -448,7 +462,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "emollient_alcohols"
       ],
-      "status": "caution",
+      "status": "ok",
       "group": "alcohols"
     },
     "alkylbenzene_sulfonate": {
@@ -462,7 +476,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "other_anionic_surfactants"
       ],
-      "status": "ok",
+      "status": "caution",
       "group": "surfactants"
     },
     "ammonium_cocoyl_isethionate": {
@@ -483,7 +497,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "sulfates"
       ],
-      "status": "ok",
+      "status": "warning",
       "group": "surfactants"
     },
     "ammonium_laureth_sulfate": {
@@ -495,7 +509,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "sulfates"
       ],
-      "status": "ok",
+      "status": "warning",
       "group": "surfactants"
     },
     "ammonium_lauryl_sulfate": {
@@ -507,7 +521,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "sulfates"
       ],
-      "status": "ok",
+      "status": "warning",
       "group": "surfactants"
     },
     "ammonium_xylenesulfonate": {
@@ -521,7 +535,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "other_anionic_surfactants"
       ],
-      "status": "ok",
+      "status": "caution",
       "group": "surfactants"
     },
     "babassuamidopropyl_betaine": {
@@ -617,7 +631,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "other_anionic_surfactants"
       ],
-      "status": "ok",
+      "status": "caution",
       "group": "surfactants"
     },
     "disodium_cocoamphodiacetate": {
@@ -644,7 +658,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "other_anionic_surfactants"
       ],
-      "status": "ok",
+      "status": "caution",
       "group": "surfactants"
     },
     "disodium_laureth_succinate": {
@@ -683,7 +697,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "sulfates"
       ],
-      "status": "ok",
+      "status": "warning",
       "group": "surfactants"
     },
     "lauryl_glucoside": {
@@ -713,7 +727,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "sulfates"
       ],
-      "status": "ok",
+      "status": "warning",
       "group": "surfactants"
     },
     "sodium_c12_14_olefin_sulfonate": {
@@ -725,7 +739,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "other_anionic_surfactants"
       ],
-      "status": "ok",
+      "status": "caution",
       "group": "surfactants"
     },
     "sodium_c12_18_alkyl_sulfate": {
@@ -737,7 +751,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "sulfates"
       ],
-      "status": "ok",
+      "status": "warning",
       "group": "surfactants"
     },
     "sodium_c14_15_olefin_sulfonate": {
@@ -749,7 +763,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "other_anionic_surfactants"
       ],
-      "status": "ok",
+      "status": "caution",
       "group": "surfactants"
     },
     "sodium_c14_16_olefin_sulfonate": {
@@ -776,7 +790,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "other_anionic_surfactants"
       ],
-      "status": "ok",
+      "status": "caution",
       "group": "surfactants"
     },
     "sodium_c14_26_olefin_sulfonate": {
@@ -788,7 +802,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "other_anionic_surfactants"
       ],
-      "status": "ok",
+      "status": "caution",
       "group": "surfactants"
     },
     "sodium_c16_18_olefin_sulfonate": {
@@ -800,7 +814,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "other_anionic_surfactants"
       ],
-      "status": "ok",
+      "status": "caution",
       "group": "surfactants"
     },
     "sodium_cetearyl_sulfate": {
@@ -812,7 +826,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "sulfates"
       ],
-      "status": "ok",
+      "status": "warning",
       "group": "surfactants"
     },
     "sodium_coceth_sulfate": {
@@ -824,7 +838,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "sulfates"
       ],
-      "status": "ok",
+      "status": "warning",
       "group": "surfactants"
     },
     "sodium_coco_sulfate": {
@@ -836,7 +850,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "sulfates"
       ],
-      "status": "ok",
+      "status": "warning",
       "group": "surfactants"
     },
     "sodium_cocoamphoacetate": {
@@ -857,7 +871,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "sulfates"
       ],
-      "status": "ok",
+      "status": "warning",
       "group": "surfactants"
     },
     "sodium_cocoyl_glutamate": {
@@ -866,7 +880,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "other_anionic_surfactants"
       ],
-      "status": "ok",
+      "status": "caution",
       "group": "surfactants"
     },
     "sodium_cocoyl_isethionate": {
@@ -884,7 +898,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "other_anionic_surfactants"
       ],
-      "status": "ok",
+      "status": "caution",
       "group": "surfactants"
     },
     "sodium_laureth_sulfate": {
@@ -924,7 +938,7 @@ export const defaultDatabase: IngredientDatabase = {
           "type": "author"
         }
       ],
-      "status": "ok",
+      "status": "warning",
       "group": "surfactants"
     },
     "sodium_laureth_40_sulfate": {
@@ -936,7 +950,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "other_anionic_surfactants"
       ],
-      "status": "ok",
+      "status": "warning",
       "group": "surfactants"
     },
     "sodium_lauroamphoacetate": {
@@ -978,7 +992,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "other_anionic_surfactants"
       ],
-      "status": "ok",
+      "status": "caution",
       "group": "surfactants"
     },
     "sodium_lauryl_glucose_carboxylate": {
@@ -1000,7 +1014,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "other_anionic_surfactants"
       ],
-      "status": "ok",
+      "status": "caution",
       "group": "surfactants"
     },
     "sodium_lauryl_sulfate": {
@@ -1058,7 +1072,7 @@ export const defaultDatabase: IngredientDatabase = {
           "type": "science"
         }
       ],
-      "status": "ok",
+      "status": "warning",
       "group": "surfactants"
     },
     "sodium_lauryl_sulfoacetate": {
@@ -1067,7 +1081,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "other_anionic_surfactants"
       ],
-      "status": "ok",
+      "status": "caution",
       "group": "surfactants"
     },
     "sodium_laurylglucosides_hydroxypropylsulfonate": {
@@ -1097,7 +1111,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "sulfates"
       ],
-      "status": "ok",
+      "status": "warning",
       "group": "surfactants"
     },
     "sodium_myristoyl_sarcosinate": {
@@ -1106,7 +1120,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "other_anionic_surfactants"
       ],
-      "status": "ok",
+      "status": "caution",
       "group": "surfactants"
     },
     "sodium_polystyrene_sulfate": {
@@ -1118,7 +1132,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "sulfates"
       ],
-      "status": "ok",
+      "status": "warning",
       "group": "surfactants"
     },
     "sodium_xylenesulfonate": {
@@ -1132,7 +1146,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "other_anionic_surfactants"
       ],
-      "status": "ok",
+      "status": "caution",
       "group": "surfactants"
     },
     "tea_dodecylbenzenesulfonate": {
@@ -1144,7 +1158,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "other_anionic_surfactants"
       ],
-      "status": "ok",
+      "status": "caution",
       "group": "surfactants"
     },
     "tea_lauryl_sulfate": {
@@ -1156,7 +1170,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "sulfates"
       ],
-      "status": "ok",
+      "status": "warning",
       "group": "surfactants"
     },
     "triethanolamine_lauryl_sulfate": {
@@ -1168,7 +1182,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "sulfates"
       ],
-      "status": "ok",
+      "status": "warning",
       "group": "surfactants"
     },
     "sulfonate": {
@@ -1181,7 +1195,7 @@ export const defaultDatabase: IngredientDatabase = {
         "other_anionic_surfactants"
       ],
       "description": "We're pretty sure this is a sulfonate, but we're not sure which one. ",
-      "status": "ok",
+      "status": "caution",
       "group": "surfactants"
     },
     "behentrimonium_chloride": {
@@ -1604,7 +1618,7 @@ export const defaultDatabase: IngredientDatabase = {
           "description": "Mineral oil is likely to coat the hair rather than soak in, based on its chemistry"
         }
       ],
-      "status": "ok",
+      "status": "warning",
       "group": "oils"
     },
     "petrolatum": {
@@ -1865,7 +1879,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "other_anionic_surfactants"
       ],
-      "status": "ok",
+      "status": "caution",
       "group": "surfactants"
     },
     "potassium_castorate": {
@@ -1879,7 +1893,7 @@ export const defaultDatabase: IngredientDatabase = {
         "soaps"
       ],
       "status": "warning",
-      "group": "others"
+      "group": "surfactants"
     },
     "potassium_cocoate": {
       "name": "Potassium Cocoate",
@@ -1892,7 +1906,7 @@ export const defaultDatabase: IngredientDatabase = {
         "soaps"
       ],
       "status": "warning",
-      "group": "others"
+      "group": "surfactants"
     },
     "potassium_olivate": {
       "name": "Potassium Olivate",
@@ -1905,7 +1919,7 @@ export const defaultDatabase: IngredientDatabase = {
         "soaps"
       ],
       "status": "warning",
-      "group": "others"
+      "group": "surfactants"
     },
     "potassium_palmate": {
       "name": "Potassium Palmate",
@@ -1918,7 +1932,7 @@ export const defaultDatabase: IngredientDatabase = {
         "soaps"
       ],
       "status": "warning",
-      "group": "others"
+      "group": "surfactants"
     },
     "potassium_stearate": {
       "name": "Potassium Stearate",
@@ -1931,7 +1945,7 @@ export const defaultDatabase: IngredientDatabase = {
         "soaps"
       ],
       "status": "warning",
-      "group": "others"
+      "group": "surfactants"
     },
     "saccharomyces_silicon_ferment": {
       "name": "Saccharomyces Silicon Ferment",
@@ -1957,7 +1971,7 @@ export const defaultDatabase: IngredientDatabase = {
         "soaps"
       ],
       "status": "warning",
-      "group": "others"
+      "group": "surfactants"
     },
     "sodium_cocoate": {
       "name": "Sodium Cocoate",
@@ -1970,7 +1984,7 @@ export const defaultDatabase: IngredientDatabase = {
         "soaps"
       ],
       "status": "warning",
-      "group": "others"
+      "group": "surfactants"
     },
     "sodium_lauroyl_hydrolyzed_silk": {
       "name": "Sodium Lauroyl Hydrolyzed Silk",
@@ -1978,7 +1992,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "other_anionic_surfactants"
       ],
-      "status": "ok",
+      "status": "caution",
       "group": "surfactants"
     },
     "sodium_lauroyl_lactylate": {
@@ -1987,7 +2001,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "other_anionic_surfactants"
       ],
-      "status": "ok",
+      "status": "caution",
       "group": "surfactants"
     },
     "sodium_lauroyl_oat_amino_acids": {
@@ -1996,7 +2010,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "other_anionic_surfactants"
       ],
-      "status": "ok",
+      "status": "caution",
       "group": "surfactants"
     },
     "sodium_methyl_2_sulfolaurate": {
@@ -2005,7 +2019,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "other_anionic_surfactants"
       ],
-      "status": "ok",
+      "status": "caution",
       "group": "surfactants"
     },
     "sodium_olivate": {
@@ -2019,7 +2033,7 @@ export const defaultDatabase: IngredientDatabase = {
         "soaps"
       ],
       "status": "warning",
-      "group": "others"
+      "group": "surfactants"
     },
     "sodium_palmate": {
       "name": "Sodium Palmate",
@@ -2032,7 +2046,7 @@ export const defaultDatabase: IngredientDatabase = {
         "soaps"
       ],
       "status": "warning",
-      "group": "others"
+      "group": "surfactants"
     },
     "sodium_stearate": {
       "name": "Sodium Stearate",
@@ -2045,7 +2059,7 @@ export const defaultDatabase: IngredientDatabase = {
         "soaps"
       ],
       "status": "warning",
-      "group": "others"
+      "group": "surfactants"
     },
     "sodium_tallowate": {
       "name": "Sodium Tallowate",
@@ -2058,7 +2072,7 @@ export const defaultDatabase: IngredientDatabase = {
         "soaps"
       ],
       "status": "warning",
-      "group": "others"
+      "group": "surfactants"
     },
     "triisopropanolamine": {
       "name": "Triisopropanolamine",
@@ -2066,7 +2080,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "other_anionic_surfactants"
       ],
-      "status": "ok",
+      "status": "caution",
       "group": "surfactants"
     },
     "witch_hazel": {
@@ -2094,7 +2108,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "parabens"
       ],
-      "status": "ok",
+      "status": "caution",
       "group": "preservatives"
     },
     "water": {
@@ -2243,8 +2257,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "preservatives"
       ],
-      "status": "ok",
-      "group": "others"
+      "status": "ok"
     },
     "silk_amino_acids": {
       "name": "Silk Amino Acids",
@@ -2273,8 +2286,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "preservatives"
       ],
-      "status": "ok",
-      "group": "others"
+      "status": "ok"
     },
     "sorbitol": {
       "name": "Sorbitol",
@@ -2438,7 +2450,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "water_soluble_silicones"
       ],
-      "status": "warning",
+      "status": "caution",
       "group": "silicones"
     },
     "cetearyl_methicone": {
@@ -2549,7 +2561,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "water_soluble_silicones"
       ],
-      "status": "warning",
+      "status": "caution",
       "group": "silicones"
     },
     "dimethiconol": {
@@ -2575,7 +2587,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "water_soluble_silicones"
       ],
-      "status": "warning",
+      "status": "caution",
       "group": "silicones"
     },
     "peg_10_dimethicone": {
@@ -2588,7 +2600,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "water_soluble_silicones"
       ],
-      "status": "warning",
+      "status": "caution",
       "group": "silicones"
     },
     "peg_12_dimethicone": {
@@ -2601,7 +2613,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "water_soluble_silicones"
       ],
-      "status": "warning",
+      "status": "caution",
       "group": "silicones"
     },
     "peg_14_dimethicone": {
@@ -2614,7 +2626,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "water_soluble_silicones"
       ],
-      "status": "warning",
+      "status": "caution",
       "group": "silicones"
     },
     "peg_7_amodimethicone": {
@@ -2627,7 +2639,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "water_soluble_silicones"
       ],
-      "status": "warning",
+      "status": "caution",
       "group": "silicones"
     },
     "peg_8_dimethicone": {
@@ -2640,7 +2652,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "water_soluble_silicones"
       ],
-      "status": "warning",
+      "status": "caution",
       "group": "silicones"
     },
     "phenyl_trimethicone": {
@@ -2714,7 +2726,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "evaporative_silicones"
       ],
-      "status": "warning",
+      "status": "caution",
       "group": "silicones"
     },
     "silicone_quaternium_26": {
@@ -2723,7 +2735,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "water_soluble_silicones"
       ],
-      "status": "warning",
+      "status": "caution",
       "group": "silicones"
     },
     "unknown_non_water_soluble_silicone": {
@@ -2741,7 +2753,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "water_soluble_silicones"
       ],
-      "status": "warning",
+      "status": "caution",
       "group": "silicones"
     },
     "unknown_sulfate": {
@@ -2751,7 +2763,7 @@ export const defaultDatabase: IngredientDatabase = {
         "sulfates"
       ],
       "description": "We're pretty sure this is a sulfate, but we're not sure which one.",
-      "status": "ok",
+      "status": "warning",
       "group": "surfactants"
     },
     "unknown_sarcosinate": {
@@ -2760,7 +2772,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "other_anionic_surfactants"
       ],
-      "status": "ok",
+      "status": "caution",
       "group": "surfactants"
     },
     "unknown_cocoyl_glutamate": {
@@ -2769,7 +2781,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "other_anionic_surfactants"
       ],
-      "status": "ok",
+      "status": "caution",
       "group": "surfactants"
     },
     "unknown_wax": {
@@ -2929,7 +2941,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "water_soluble_waxes"
       ],
-      "status": "warning",
+      "status": "caution",
       "group": "waxes"
     },
     "peg_40_hydrogenated_castor_oil": {
@@ -2955,7 +2967,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "water_soluble_waxes"
       ],
-      "status": "warning",
+      "status": "caution",
       "group": "waxes"
     },
     "polysorbate_20": {
@@ -3025,7 +3037,34 @@ export const defaultDatabase: IngredientDatabase = {
       "defaultIngredient": "unknown_paraben",
       "references": [
         {
-          "url": "https://thebeautybrains.com/2006/05/the-perils-of-parabens/"
+          "url": "https://thebeautybrains.com/2006/05/the-perils-of-parabens/",
+          "status": "ok",
+          "title": "The Beauty Brains: The Perils of Parabens",
+          "type": "science"
+        },
+        {
+          "url": "https://amzn.to/41QrGxJ",
+          "status": "warning",
+          "title": "Curly Girl: The Handbook by Lorraine Massey",
+          "type": "hairpro"
+        },
+        {
+          "url": "https://incidecoder.com/ingredients/parabens",
+          "status": "ok",
+          "title": "INCIDecoder: Parabens",
+          "type": "science"
+        },
+        {
+          "url": "https://labmuffin.com/should-you-be-avoiding-parabens-the-science/",
+          "status": "ok",
+          "title": "Lab Muffin: Should You Be Avoiding Parabens? The Science",
+          "type": "science"
+        },
+        {
+          "url": "http://www.tightlycurly.com/ingredients/",
+          "type": "author",
+          "title": "Tightly Curly",
+          "status": "ok"
         }
       ]
     },
@@ -3044,7 +3083,50 @@ export const defaultDatabase: IngredientDatabase = {
         "magnesium"
       ],
       "defaultIngredient": "unknown_sulfate",
-      "references": []
+      "references": [
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4387693/",
+          "type": "science",
+          "title": "Hair Cosmetics: An Overview"
+        },
+        {
+          "url": "https://amzn.to/41QrGxJ",
+          "status": "warning",
+          "title": "Curly Girl: The Handbook by Lorraine Massey",
+          "type": "hairpro"
+        },
+        {
+          "url": "https://labmuffin.com/the-science-of-hair-products-shampoo-and-conditioner-with-video/",
+          "status": "ok",
+          "title": "Lab Muffin: The Science of Hair Products: Shampoo and Conditioner",
+          "type": "science"
+        },
+        {
+          "url": "https://thebeautybrains.com/2008/07/should-my-shower-stay-sulfate-free/",
+          "status": "ok",
+          "title": "The Beauty Brains: Should my shower stay sulfate-free?",
+          "type": "science"
+        },
+        {
+          "url": "http://www.tightlycurly.com/ingredients/",
+          "type": "author",
+          "title": "Tightly Curly",
+          "status": "caution",
+          "description": "depends on the sulfate."
+        },
+        {
+          "url": "https://science-yhairblog.blogspot.com/2011/08/shampoos-harsh-mild-and-otherwise.html",
+          "type": "science",
+          "title": "Science-y Hair Blog: Shampoos: Harsh, Mild, and Otherwise",
+          "status": "caution",
+          "description": "Discusses how concentration of detergent matters in terms of mildness."
+        },
+        {
+          "url": "https://onlinelibrary.wiley.com/doi/10.1002/macp.202200420",
+          "type": "science",
+          "title": "Shampoo Science: A Review of the Physiochemical Processes behind the Function of a Shampoo"
+        }
+      ]
     },
     "emollient_alcohols": {
       "id": "emollient_alcohols",
@@ -3132,13 +3214,6 @@ export const defaultDatabase: IngredientDatabase = {
       "description": "These are other oils that don't fit into the other categories",
       "references": []
     },
-    "preservatives": {
-      "id": "preservatives",
-      "name": "Preservatives",
-      "group": "others",
-      "description": "Preservatives in hair care products can help prevent the growth of bacteria and mold",
-      "references": []
-    },
     "other_anionic_surfactants": {
       "id": "other_anionic_surfactants",
       "name": "Other Anionic Surfactants",
@@ -3156,9 +3231,25 @@ export const defaultDatabase: IngredientDatabase = {
     "soaps": {
       "id": "soaps",
       "name": "Soaps",
-      "group": "others",
+      "group": "surfactants",
       "description": "Soaps are cleansers made from fatty acids and alkali metals",
-      "references": []
+      "references": [
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4171909/",
+          "type": "science",
+          "title": "Evaluation of pH of Bathing Soaps and Shampoos for Skin and Hair Care"
+        },
+        {
+          "url": "https://www.usgs.gov/faqs/why-does-it-take-so-long-rinse-soap-my-hands-what-are-hard-water-and-soft-water",
+          "type": "science",
+          "title": "USGS: Why does it take so long to rinse soap off my hands? What are hard water and soft water?"
+        },
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8954092/",
+          "type": "science",
+          "title": "Skin Cleansing without or with Compromise: Soaps and Syndets"
+        }
+      ]
     },
     "mild_surfactants": {
       "id": "mild_surfactants",
@@ -3245,7 +3336,7 @@ export const defaultDatabase: IngredientDatabase = {
       "id": "petroleum_jellies",
       "name": "Petroleum Jellies",
       "group": "others",
-      "description": "Petroleum jellies are occlusive agents that can help to seal in moisture and protect the skin",
+      "description": "These are petroleum based ingredients that are often avoided for their build up potential as well as their petro-based origin",
       "references": []
     },
     "humectants": {
@@ -3417,7 +3508,14 @@ export const defaultDatabase: IngredientDatabase = {
         "oil"
       ],
       "defaultIngredient": "unknown_oil",
-      "description": "Oils in hair products can moisturize and add shine to hair"
+      "description": "Oils in hair products can moisturize and add shine to hair",
+      "references": [
+        {
+          "url": "https://science-yhairblog.blogspot.com/2013/06/oils-which-ones-soak-in-vs-coat-hair.html",
+          "type": "science",
+          "title": "Oils – Which Ones Soak In vs. Coat the Hair?"
+        }
+      ]
     }
   }
 };

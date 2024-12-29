@@ -21,7 +21,7 @@ export const defaultProductDatabase: ProductDatabase = {
       "ingredients_raw": "aqua water eau, cocamidopropyl hydroxysultaine, disodium laureth sulfosuccinate, sodium lauryl sulfoacetate, sodium lauroyl sarcosinate, sodium polystyrene sulfonate, sodium chloride, cocamidopropylamine oxide, argania spinosa argan kernel oil, persea gratissima avocado oil, rosmarinus officinalis rosemary leaf extract, chamomilla recutita matricaria flower extract, lavandula angustifolia lavender flower extract, simmondsia chinensis jojoba seed extract, keratin amino acids, hydrolyzed keratin, silk amino acids, panthenol, sodium pca, cinnamidopropyltrimonium chloride, butylene glycol, peg-40 hydrogenated castor oil, peg-150 pentaerythrityl tetrastearate, peg-6 caprylic capric glycerides, caprylyl glycol, tetrasodium edta, disodium edta, chlorphenesin, phenoxyethanol, parfum fragrance, ci 17200 red 33, ci 19140 yellow 5, sodium hydroxide, citric acid, alpha-isomethyl ionone, butylphenyl methylpropional, linalool, hydroxyisohexyl 3-cyclohexene carboxaldehydethylpropional",
       "id": "clarifying_shampoo_au",
       "systems_excluded": [],
-      "status": "ok"
+      "status": "caution"
     },
     "wash_&_scrub_detox_pro-biotic_uk": {
       "name": "Wash & Scrub Detox Pro-biotic",
@@ -59,7 +59,7 @@ export const defaultProductDatabase: ProductDatabase = {
       "description": "This clarifying shampoo contains sulfates, making it ideal for occasional use to remove product buildup, especially for those with low-porosity hair. While effective, it may be drying. To minimize this, focus application on the scalp and consider adding conditioner to the ends.",
       "id": "water_works_clarifying_shampoo",
       "systems_excluded": [],
-      "status": "ok"
+      "status": "warning"
     },
     "gentle_clarifying_shampoo": {
       "name": "Gentle Clarifying Shampoo",
@@ -99,7 +99,7 @@ export const defaultProductDatabase: ProductDatabase = {
       "description": "This mask is a great gentle option for removing stubborn buildup without stripping out your natural oils.",
       "id": "natural_detox_hair_mask",
       "systems_excluded": [],
-      "status": "caution",
+      "status": "ok",
       "cost_rating": "3"
     },
     "light_conditioner": {
@@ -117,7 +117,7 @@ export const defaultProductDatabase: ProductDatabase = {
       "asin": "B005SIR28M",
       "id": "light_conditioner",
       "systems_excluded": [],
-      "status": "caution"
+      "status": "ok"
     },
     "daily_conditioner": {
       "name": "Daily Conditioner",
@@ -135,7 +135,7 @@ export const defaultProductDatabase: ProductDatabase = {
       "asin": "B005SIR2K0",
       "id": "daily_conditioner",
       "systems_excluded": [],
-      "status": "caution"
+      "status": "ok"
     },
     "pure_inspiration_daily_conditioner": {
       "name": "Pure Inspiration Daily Conditioner",
@@ -153,7 +153,7 @@ export const defaultProductDatabase: ProductDatabase = {
       "asin": "B074Q43PT4",
       "id": "pure_inspiration_daily_conditioner",
       "systems_excluded": [],
-      "status": "caution"
+      "status": "ok"
     },
     "hydrating_cream_conditioner": {
       "name": "Hydrating Cream Conditioner",
@@ -171,7 +171,7 @@ export const defaultProductDatabase: ProductDatabase = {
       "asin": "B074PWBRF9",
       "id": "hydrating_cream_conditioner",
       "systems_excluded": [],
-      "status": "caution"
+      "status": "ok"
     },
     "clarity_conditioner": {
       "name": "Clarity Conditioner",
@@ -189,7 +189,7 @@ export const defaultProductDatabase: ProductDatabase = {
       "asin": "B0BHC6CTQ5",
       "id": "clarity_conditioner",
       "systems_excluded": [],
-      "status": "caution"
+      "status": "ok"
     },
     "drench_&_quench_rich_conditioner_au": {
       "name": "Drench & Quench Rich Conditioner",
@@ -208,7 +208,7 @@ export const defaultProductDatabase: ProductDatabase = {
       "country": "AU",
       "id": "drench_&_quench_rich_conditioner_au",
       "systems_excluded": [],
-      "status": "caution"
+      "status": "ok"
     },
     "nourish_&_flourish_conditioner_au": {
       "name": "Nourish & Flourish Conditioner",
@@ -226,7 +226,7 @@ export const defaultProductDatabase: ProductDatabase = {
       "country": "AU",
       "id": "nourish_&_flourish_conditioner_au",
       "systems_excluded": [],
-      "status": "caution"
+      "status": "ok"
     },
     "essential_moisture_conditioner_uk": {
       "name": "Essential Moisture Conditioner",
@@ -264,7 +264,7 @@ export const defaultProductDatabase: ProductDatabase = {
       "asin": "B00641UCY8",
       "id": "coconut_cowash_cleansing_conditioner",
       "systems_excluded": [],
-      "status": "caution"
+      "status": "ok"
     },
     "co-wash_conditioning_cleanser": {
       "name": "Co-wash Conditioning Cleanser",
@@ -279,7 +279,7 @@ export const defaultProductDatabase: ProductDatabase = {
       "id": "co-wash_conditioning_cleanser",
       "product_categories": [],
       "systems_excluded": [],
-      "status": "caution"
+      "status": "ok"
     },
     "curl_quenching_conditioning_wash_uk": {
       "name": "Curl Quenching Conditioning Wash",
@@ -297,7 +297,7 @@ export const defaultProductDatabase: ProductDatabase = {
       "country": "UK",
       "id": "curl_quenching_conditioning_wash_uk",
       "systems_excluded": [],
-      "status": "caution"
+      "status": "ok"
     },
     "i_create_volume": {
       "name": "I Create Volume",
@@ -335,7 +335,7 @@ export const defaultProductDatabase: ProductDatabase = {
       "asin": "B0CHWM9YCJ",
       "id": "curly_hair_cream",
       "systems_excluded": [],
-      "status": "caution"
+      "status": "ok"
     },
     "cruise_control_curl_cream_au": {
       "name": "Cruise Control Curl Cream",
@@ -354,7 +354,7 @@ export const defaultProductDatabase: ProductDatabase = {
       "country": "AU",
       "id": "cruise_control_curl_cream_au",
       "systems_excluded": [],
-      "status": "caution"
+      "status": "ok"
     },
     "weightless_air_dry_cream_uk": {
       "name": "Weightless Air Dry Cream",
@@ -374,7 +374,7 @@ export const defaultProductDatabase: ProductDatabase = {
       "country": "UK",
       "id": "weightless_air_dry_cream_uk",
       "systems_excluded": [],
-      "status": "caution"
+      "status": "ok"
     },
     "curl_enhancing_custard": {
       "name": "Curl Enhancing Custard",
@@ -431,7 +431,7 @@ export const defaultProductDatabase: ProductDatabase = {
       "asin": "B00684AC82",
       "id": "deep_conditioning_treatment",
       "systems_excluded": [],
-      "status": "caution"
+      "status": "ok"
     },
     "deep_conditioner_&_repair": {
       "name": "Deep Conditioner & Repair",
@@ -450,7 +450,7 @@ export const defaultProductDatabase: ProductDatabase = {
       "asin": "B09YMWHVHD",
       "id": "deep_conditioner_&_repair",
       "systems_excluded": [],
-      "status": "caution"
+      "status": "ok"
     },
     "double_cream_deep_quencher_uk": {
       "name": "Double Cream Deep Quencher",
@@ -470,7 +470,7 @@ export const defaultProductDatabase: ProductDatabase = {
       "country": "UK",
       "id": "double_cream_deep_quencher_uk",
       "systems_excluded": [],
-      "status": "caution"
+      "status": "ok"
     },
     "chutzpah_volumising_foam_au": {
       "name": "Chutzpah Volumising Foam",
@@ -528,7 +528,7 @@ export const defaultProductDatabase: ProductDatabase = {
       "country": "UK",
       "id": "bouncy_strength_volume_foam_uk",
       "systems_excluded": [],
-      "status": "caution"
+      "status": "ok"
     },
     "i_create_hold": {
       "name": "I Create Hold",
@@ -663,7 +663,7 @@ export const defaultProductDatabase: ProductDatabase = {
       "ingredients_raw": "water aqua- eau, aloe barbadensis aloe vera leaf gel, cetearyl alcohol, glycerin, distearoylethyl dimonium chloride, caprylic capric triglyceride, hydrolyzed quinoa, gluconolactone, sodium benzoate, calcium gluconate, potassium sorbate, benzyl acetate, linalyl acetate, citronellol, abies balsamea needle oil, juniperus virginiana cedar oil, alpha-terpineol, amyl cinnamal, linalool, pogostemon cablin leaf oil, salvia sclarea clary sage oil, citrus reticulata tangerine peel oil, mentha citrata herb oil, eugenia caryophyllus clove oil, michelia alba leaf oil, lavandula angustifolia lavender oil, citrus limon lemon peel oil, citrus aurantifolia lime oil, lavandula hybrida lavandin oil, cinnamomum camphora camphor bark oil, alpha-lonone, evernia prunastri oakmoss extract, anisaldehyde, cistus ladaniferus resin, menthol, myristica fragrans nutmeg kernel oil, jasminum grandiflorum flower jasmine extract, nerol, benzaldehyde, chamomilla recutita matricaria flower extract, eucalyptus globulus leaf extract, ginkgo biloba leaf extract, aspalathus linearis leaf extract, honey extract, calophyllum inophyllum tamanu oil, rosmarinus officinalis rosemary oil, citric acid, eugenol, limonene",
       "id": "sweet_spirit_leave-in_conditioner",
       "systems_excluded": [],
-      "status": "caution"
+      "status": "ok"
     },
     "hydrate_&_plump_leave-in_conditioner_uk": {
       "name": "Hydrate & Plump Leave-In Conditioner",
@@ -720,7 +720,7 @@ export const defaultProductDatabase: ProductDatabase = {
       "country": "UK",
       "id": "bonding_oil_uk",
       "systems_excluded": [],
-      "status": "caution"
+      "status": "ok"
     },
     "bond_curl_rehab_salve,_bond_building_strength_treatment_for_weak,_damaged_hair": {
       "name": "Bond Curl Rehab Salve, Bond Building Strength Treatment for Weak, Damaged Hair",
@@ -736,7 +736,7 @@ export const defaultProductDatabase: ProductDatabase = {
       "ingredients_raw": "water aqua, cetearyl alcohol, salvia hispanica chia seed extract, creatine, polyquaternium-10, stearamidopropyl dimethylamine, lentinus edodes shiitake extract, opuntia tuna prickly pear fruit extract, cucurbita pepo pumpkin seed extract, psidium guajava guava fruit extract, prunus amygdalus dulcis sweet almond oil, ribes nigrum black currant fruit extract, brassica oleracea acephala kale leaf extract, leuconostoc radish root ferment filtrate, polyquaternium-37, hydroxypropylgluconamide, hydroxypropylammonium gluconate, disodium edta, potassium sorbate, tartaric acid, citric acid, ethylhexylglycerin, glycerin, behentrimonium chloride, phenoxyethanol, sodium benzoate, benzyl alcohol, geraniol, fragrance parfum, linalool, limonene",
       "id": "bond_curl_rehab_salve,_bond_building_strength_treatment_for_weak,_damaged_hair",
       "systems_excluded": [],
-      "status": "caution"
+      "status": "ok"
     },
     "bond_curl_rehab_salve_uk": {
       "name": "Bond Curl Rehab Salve",
@@ -755,7 +755,7 @@ export const defaultProductDatabase: ProductDatabase = {
       "country": "UK",
       "id": "bond_curl_rehab_salve_uk",
       "systems_excluded": [],
-      "status": "caution"
+      "status": "ok"
     },
     "curl_shampoo": {
       "name": "Curl Shampoo",
