@@ -142,6 +142,7 @@
       "categories": [
         "emollient_alcohols"
       ],
+      "description": "If you think the name sounds like cinnamon, you're right! This is a naturally occuring compound found in cinnamon, used mainly for its pleasant scent.",
       "references": [
         {
           "url": "https://incidecoder.com/ingredients/cinnamyl-alcohol",
@@ -254,7 +255,7 @@
           "status": "ok"
         }
       ],
-      "description": "Phenethyl alcohol usually used as a preservative in small amounts. In this context it's unlikely to be drying or irritating."
+      "description": "Phenethyl alcohol usually used as a preservative or for scent (it has a rose-like scent) in small amounts. In this context it's unlikely to be drying or irritating."
     },
     {
       "name": "Propyl Alcohol",
@@ -277,6 +278,7 @@
       "categories": [
         "drying_alcohols"
       ],
+      "description": "This is literally alcohol, like the kind in a bottle of vodka, except its been denatured, a process that makes it undrinkable.",
       "references": [
         {
           "url": "https://incidecoder.com/ingredients/alcohol-denat",
@@ -289,6 +291,7 @@
           "url": "http://www.tightlycurly.com/ingredients/",
           "title": "Tightly Curly",
           "status": "warning",
+          "type": "author",
           "description": "Says to avoid alcohol denat"
         }
       ]

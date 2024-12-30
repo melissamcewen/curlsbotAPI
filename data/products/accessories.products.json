@@ -5,30 +5,69 @@
       "product_categories": [
         "accessories"
       ],
-      "tags": ["style", "featured"],
-      "cost": 22.49,
+      "brand": "Segbeauty",
+      "tags": [
+        "style",
+        "featured"
+      ],
       "buy_url": "https://amzn.to/3VX9fUx",
-      "asin": "B07QZ315F8"
+      "asin": "B07QZ315F8",
+      "description": "Turn any hairdryer into a diffuser with this attachment"
     },
     {
       "name": "Curly Girl Microfiber Super Absorbent Anti Frizz Hair Towel",
       "product_categories": [
         "accessories"
       ],
-      "tags": ["style", "featured"],
-      "cost": 17.95,
+      "brand": "Curly Girl Store",
+      "tags": [
+        "style",
+        "featured"
+      ],
       "buy_url": "https://amzn.to/4iXc9Cv",
-      "asin": "B09D8PL1N5"
+      "asin": "B09D8PL1N5",
+      "description": "Help your hair dry faster and reduce frizz with a microfiber towel."
     },
     {
       "name": "Curl friendly soft headbands",
+      "brand": "By the creator of CurlsBot",
       "product_categories": [
         "accessories"
       ],
-      "tags": ["style", "featured"],
-      "cost": 10,
+      "tags": [
+        "style",
+        "featured"
+      ],
       "buy_url": "https://eldritchsalvage.etsy.com",
       "description": "These headbands are made by the creator of CurlsBot from soft, stretchy fabric that won't snag or pull on your curls. They're perfect for keeping your hair out of your face and creating lovely styles that won't damage your hair."
+    },
+    {
+      "name": "Curly Hair Sleep Cozy",
+      "brand": "Lohy",
+      "tags": [
+        "style",
+        "featured"
+      ],
+      "product_categories": [
+        "accessories"
+      ],
+      "buy_url": "https://lohy.com.au/products/curly-hair-products-lohy-cozy-turban?aff=49",
+      "description": "Protect your hair while you sleep with this cozy turban",
+      "country": "AU"
+    },
+    {
+      "buy_url": "https://lohy.com.au/products/curls-frills-hair-kit?aff=49",
+      "name": "Curly Hair Accessories Kit",
+      "brand": "Lohy",
+      "country": "AU",
+      "description": "A full kit of Lohy's most useful accessories such as a sleep turban, volume clips, and innovative hydration glove",
+      "tags": [
+        "style",
+        "featured"
+      ],
+      "product_categories": [
+        "accessories"
+      ]
     }
   ]
 }
