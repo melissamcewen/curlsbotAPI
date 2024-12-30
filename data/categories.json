@@ -333,22 +333,16 @@
       "description": "These are petroleum based ingredients that are often avoided for their build up potential as well as their petro-based origin."
     },
     {
-      "id": "petroleum_jellies",
-      "name": "Petroleum Jellies",
-      "group": "others",
-      "description": "These are petroleum based ingredients that are often avoided for their build up potential as well as their petro-based origin"
-    },
-    {
       "id": "film_forming_humectants",
       "name": "Film Forming Humectants",
       "group": "humectants",
-      "description": "these are large complex molecules that may be better at retaining moisture in low humidity conditions"
+      "description": "These are large, complex molecules that may be better at retaining moisture in low humidity conditions"
     },
     {
       "id": "simple_humectants",
-      "name": "Small Humectants",
+      "name": "Simple Humectants",
       "group": "humectants",
-      "description": "These humectants may perform poorly in low humidity conditions"
+      "description": "These lightweight humectants may perform poorly in low humidity conditions"
     },
     {
       "id": "proteins",

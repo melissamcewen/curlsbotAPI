@@ -175,6 +175,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "emollient_alcohols"
       ],
+      "description": "If you think the name sounds like cinnamon, you're right! This is a naturally occuring compound found in cinnamon, used mainly for its pleasant scent.",
       "references": [
         {
           "url": "https://incidecoder.com/ingredients/cinnamyl-alcohol",
@@ -307,7 +308,7 @@ export const defaultDatabase: IngredientDatabase = {
           "status": "ok"
         }
       ],
-      "description": "Phenethyl alcohol usually used as a preservative in small amounts. In this context it's unlikely to be drying or irritating.",
+      "description": "Phenethyl alcohol usually used as a preservative or for scent (it has a rose-like scent) in small amounts. In this context it's unlikely to be drying or irritating.",
       "status": "caution",
       "group": "alcohols"
     },
@@ -334,6 +335,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "drying_alcohols"
       ],
+      "description": "This is literally alcohol, like the kind in a bottle of vodka, except its been denatured, a process that makes it undrinkable.",
       "references": [
         {
           "url": "https://incidecoder.com/ingredients/alcohol-denat",
@@ -346,6 +348,7 @@ export const defaultDatabase: IngredientDatabase = {
           "url": "http://www.tightlycurly.com/ingredients/",
           "title": "Tightly Curly",
           "status": "warning",
+          "type": "author",
           "description": "Says to avoid alcohol denat"
         }
       ],
@@ -948,7 +951,7 @@ export const defaultDatabase: IngredientDatabase = {
         "sodium laureth-40 sulphate"
       ],
       "categories": [
-        "other_anionic_surfactants"
+        "sulfates"
       ],
       "status": "warning",
       "group": "surfactants"
@@ -1664,10 +1667,11 @@ export const defaultDatabase: IngredientDatabase = {
         "mineral jelly"
       ],
       "categories": [
-        "petroleum_jellies"
+        "petroleum_oils"
       ],
+      "description": "Forms an extremely water repellent barrier on your hair that isn't breathable. Very hard to remove, worse than silicones. Not recommended.",
       "status": "warning",
-      "group": "others"
+      "group": "oils"
     },
     "olive_oil": {
       "name": "Olive Oil",
@@ -2116,10 +2120,10 @@ export const defaultDatabase: IngredientDatabase = {
       "name": "Triisopropanolamine",
       "id": "triisopropanolamine",
       "categories": [
-        "other_anionic_surfactants"
+        "other"
       ],
-      "status": "caution",
-      "group": "surfactants"
+      "status": "ok",
+      "group": "others"
     },
     "witch_hazel": {
       "name": "Witch Hazel",
@@ -3487,25 +3491,18 @@ export const defaultDatabase: IngredientDatabase = {
       "description": "These are petroleum based ingredients that are often avoided for their build up potential as well as their petro-based origin.",
       "references": []
     },
-    "petroleum_jellies": {
-      "id": "petroleum_jellies",
-      "name": "Petroleum Jellies",
-      "group": "others",
-      "description": "These are petroleum based ingredients that are often avoided for their build up potential as well as their petro-based origin",
-      "references": []
-    },
     "film_forming_humectants": {
       "id": "film_forming_humectants",
       "name": "Film Forming Humectants",
       "group": "humectants",
-      "description": "these are large complex molecules that may be better at retaining moisture in low humidity conditions",
+      "description": "These are large, complex molecules that may be better at retaining moisture in low humidity conditions",
       "references": []
     },
     "simple_humectants": {
       "id": "simple_humectants",
-      "name": "Small Humectants",
+      "name": "Simple Humectants",
       "group": "humectants",
-      "description": "These humectants may perform poorly in low humidity conditions",
+      "description": "These lightweight humectants may perform poorly in low humidity conditions",
       "references": []
     },
     "proteins": {
@@ -3783,7 +3780,8 @@ export const defaultSettings: Record<string, Setting> = {
     "categories": [
       "sulfates"
     ],
-    "defaultStatus": "warning"
+    "defaultStatus": "warning",
+    "guide": "/categories/sulfates"
   },
   "paraben_caution": {
     "id": "paraben_caution",
@@ -3792,7 +3790,8 @@ export const defaultSettings: Record<string, Setting> = {
     "categories": [
       "parabens"
     ],
-    "defaultStatus": "caution"
+    "defaultStatus": "caution",
+    "guide": "/categories/parabens"
   },
   "drying_alcohol": {
     "id": "drying_alcohol",
@@ -3801,7 +3800,8 @@ export const defaultSettings: Record<string, Setting> = {
     "categories": [
       "drying_alcohols"
     ],
-    "defaultStatus": "caution"
+    "defaultStatus": "caution",
+    "guide": "/groups/alcohols"
   },
   "silicone_free": {
     "id": "silicone_free",
@@ -3823,7 +3823,8 @@ export const defaultSettings: Record<string, Setting> = {
       "mild_surfactants"
     ],
     "defaultStatus": "warning",
-    "allowedStatus": "ok"
+    "allowedStatus": "ok",
+    "guide": "/groups/surfactants"
   },
   "mild_surfactants_caution_others": {
     "id": "mild_surfactants_caution_others",
@@ -3836,7 +3837,8 @@ export const defaultSettings: Record<string, Setting> = {
       "mild_surfactants"
     ],
     "defaultStatus": "caution",
-    "allowedStatus": "ok"
+    "allowedStatus": "ok",
+    "guide": "/groups/surfactants"
   },
   "no_astringents": {
     "id": "no_astringents",
@@ -3854,7 +3856,8 @@ export const defaultSettings: Record<string, Setting> = {
     "categories": [
       "non_water_soluble_silicones"
     ],
-    "defaultStatus": "warning"
+    "defaultStatus": "warning",
+    "guide": "/groups/silicones"
   },
   "caution_silicones": {
     "id": "caution_silicones",
@@ -3863,7 +3866,8 @@ export const defaultSettings: Record<string, Setting> = {
     "groups": [
       "silicones"
     ],
-    "defaultStatus": "caution"
+    "defaultStatus": "caution",
+    "guide": "/groups/silicones"
   },
   "no_waxes": {
     "id": "no_waxes",
@@ -3872,7 +3876,8 @@ export const defaultSettings: Record<string, Setting> = {
     "categories": [
       "non_water_soluble_waxes"
     ],
-    "defaultStatus": "warning"
+    "defaultStatus": "warning",
+    "guide": "/groups/waxes"
   },
   "soap_free": {
     "id": "soap_free",
@@ -3881,17 +3886,18 @@ export const defaultSettings: Record<string, Setting> = {
     "categories": [
       "soaps"
     ],
-    "defaultStatus": "warning"
+    "defaultStatus": "warning",
+    "guide": "/categories/soap"
   },
   "no_petroleum": {
     "id": "no_petroleum",
     "name": "Petroleum Oils",
     "description": "These are petroleum based ingredients that are often avoided for their build up potential as well as their petro-based origin.",
     "categories": [
-      "petroleum_oils",
-      "petroleum_jellies"
+      "petroleum_oils"
     ],
-    "defaultStatus": "warning"
+    "defaultStatus": "warning",
+    "guide": "/categories/petroleum-oils"
   }
 };
 

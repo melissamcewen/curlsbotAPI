@@ -7,7 +7,8 @@
       "categories": [
         "sulfates"
       ],
-      "defaultStatus": "warning"
+      "defaultStatus": "warning",
+      "guide": "/categories/sulfates"
     },
     {
       "id": "paraben_caution",
@@ -16,7 +17,8 @@
       "categories": [
         "parabens"
       ],
-      "defaultStatus": "caution"
+      "defaultStatus": "caution",
+      "guide": "/categories/parabens"
     },
     {
       "id": "drying_alcohol",
@@ -25,7 +27,8 @@
       "categories": [
         "drying_alcohols"
       ],
-      "defaultStatus": "caution"
+      "defaultStatus": "caution",
+      "guide": "/groups/alcohols"
     },
     {
       "id": "silicone_free",
@@ -47,7 +50,8 @@
         "mild_surfactants"
       ],
       "defaultStatus": "warning",
-      "allowedStatus": "ok"
+      "allowedStatus": "ok",
+      "guide": "/groups/surfactants"
     },
     {
       "id": "mild_surfactants_caution_others",
@@ -60,7 +64,8 @@
         "mild_surfactants"
       ],
       "defaultStatus": "caution",
-      "allowedStatus": "ok"
+      "allowedStatus": "ok",
+      "guide": "/groups/surfactants"
     },
     {
       "id": "no_astringents",
@@ -78,7 +83,8 @@
       "categories": [
         "non_water_soluble_silicones"
       ],
-      "defaultStatus": "warning"
+      "defaultStatus": "warning",
+      "guide": "/groups/silicones"
     },
     {
       "id": "caution_silicones",
@@ -87,7 +93,8 @@
       "groups": [
         "silicones"
       ],
-      "defaultStatus": "caution"
+      "defaultStatus": "caution",
+      "guide": "/groups/silicones"
     },
     {
       "id": "no_waxes",
@@ -96,7 +103,8 @@
       "categories": [
         "non_water_soluble_waxes"
       ],
-      "defaultStatus": "warning"
+      "defaultStatus": "warning",
+      "guide": "/groups/waxes"
     },
     {
       "id": "soap_free",
@@ -105,17 +113,18 @@
       "categories": [
         "soaps"
       ],
-      "defaultStatus": "warning"
+      "defaultStatus": "warning",
+      "guide": "/categories/soap"
     },
     {
       "id": "no_petroleum",
       "name": "Petroleum Oils",
       "description": "These are petroleum based ingredients that are often avoided for their build up potential as well as their petro-based origin.",
       "categories": [
-        "petroleum_oils",
-        "petroleum_jellies"
+        "petroleum_oils"
       ],
-      "defaultStatus": "warning"
+      "defaultStatus": "warning",
+      "guide": "/categories/petroleum-oils"
     }
   ]
 }

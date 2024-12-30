@@ -386,8 +386,9 @@
         "mineral jelly"
       ],
       "categories": [
-        "petroleum_jellies"
-      ]
+        "petroleum_oils"
+      ],
+      "description": "Forms an extremely water repellent barrier on your hair that isn't breathable. Very hard to remove, worse than silicones. Not recommended."
     },
     {
       "name": "Olive Oil",

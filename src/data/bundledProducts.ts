@@ -8,35 +8,36 @@ export const defaultProductDatabase: ProductDatabase = {
       "product_categories": [
         "accessories"
       ],
+      "brand": "Segbeauty",
       "tags": [
         "style",
         "featured"
       ],
-      "cost": 22.49,
       "buy_url": "https://amzn.to/3VX9fUx",
       "asin": "B07QZ315F8",
+      "description": "Turn any hairdryer into a diffuser with this attachment",
       "id": "hair_diffuser_for_curly_hair_attachment",
-      "systems_excluded": [],
-      "cost_rating": "5"
+      "systems_excluded": []
     },
     "curly_girl_microfiber_super_absorbent_anti_frizz_hair_towel": {
       "name": "Curly Girl Microfiber Super Absorbent Anti Frizz Hair Towel",
       "product_categories": [
         "accessories"
       ],
+      "brand": "Curly Girl Store",
       "tags": [
         "style",
         "featured"
       ],
-      "cost": 17.95,
       "buy_url": "https://amzn.to/4iXc9Cv",
       "asin": "B09D8PL1N5",
+      "description": "Help your hair dry faster and reduce frizz with a microfiber towel.",
       "id": "curly_girl_microfiber_super_absorbent_anti_frizz_hair_towel",
-      "systems_excluded": [],
-      "cost_rating": "5"
+      "systems_excluded": []
     },
     "curl_friendly_soft_headbands": {
       "name": "Curl friendly soft headbands",
+      "brand": "By the creator of CurlsBot",
       "product_categories": [
         "accessories"
       ],
@@ -44,12 +45,42 @@ export const defaultProductDatabase: ProductDatabase = {
         "style",
         "featured"
       ],
-      "cost": 10,
       "buy_url": "https://eldritchsalvage.etsy.com",
       "description": "These headbands are made by the creator of CurlsBot from soft, stretchy fabric that won't snag or pull on your curls. They're perfect for keeping your hair out of your face and creating lovely styles that won't damage your hair.",
       "id": "curl_friendly_soft_headbands",
-      "systems_excluded": [],
-      "cost_rating": "5"
+      "systems_excluded": []
+    },
+    "curly_hair_sleep_cozy_au": {
+      "name": "Curly Hair Sleep Cozy",
+      "brand": "Lohy",
+      "tags": [
+        "style",
+        "featured"
+      ],
+      "product_categories": [
+        "accessories"
+      ],
+      "buy_url": "https://lohy.com.au/products/curly-hair-products-lohy-cozy-turban?aff=49",
+      "description": "Protect your hair while you sleep with this cozy turban",
+      "country": "AU",
+      "id": "curly_hair_sleep_cozy_au",
+      "systems_excluded": []
+    },
+    "curly_hair_accessories_kit_au": {
+      "buy_url": "https://lohy.com.au/products/curls-frills-hair-kit?aff=49",
+      "name": "Curly Hair Accessories Kit",
+      "brand": "Lohy",
+      "country": "AU",
+      "description": "A full kit of Lohy's most useful accessories such as a sleep turban, volume clips, and innovative hydration glove",
+      "tags": [
+        "style",
+        "featured"
+      ],
+      "product_categories": [
+        "accessories"
+      ],
+      "id": "curly_hair_accessories_kit_au",
+      "systems_excluded": []
     },
     "clarifying_shampoo_au": {
       "name": "Clarifying Shampoo",
@@ -989,6 +1020,7 @@ export const defaultProductDatabase: ProductDatabase = {
       "cost": 0.66,
       "ingredients_raw": "water, sodium c14-16 olefin sulfonate, cocamidopropyl betaine, propanediol, glycol distearate, phenoxyethanol, butyrospermum parkii shea butter, alanine, arginine, aspartic acid, glycine, histidine, isoleucine, phenylalanine, proline, serine, sodium pca, pca, sodium lactate, threonine, valine, citric acid, disodium edta, glycine soja soybean oil, glycine soja soybean sterols, glycolipids, guar hydroxypropyltrimonium chloride, hydroxyethylcellulose, hydroxyacetophenone, lauryl lactyl lactate, peg-150 distearate, phospholipids, ricinus communis castor seed oil, fragrance",
       "asin": "B09GC9CVQ8",
+      "description": "This gentle shampoo cleanses while conditioning.",
       "id": "curl_shampoo",
       "status": "ok",
       "cost_rating": "1"
