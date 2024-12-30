@@ -1,0 +1,34 @@
+{
+  "products": [
+    {
+      "name": "Hair Diffuser for Curly Hair Attachment",
+      "product_categories": [
+        "accessories"
+      ],
+      "tags": ["style"],
+      "cost": 22.49,
+      "buy_url": "https://amzn.to/3VX9fUx",
+      "asin": "B07QZ315F8"
+    },
+    {
+      "name": "Curly Girl Microfiber Super Absorbent Anti Frizz Hair Towel",
+      "product_categories": [
+        "accessories"
+      ],
+      "tags": ["style"],
+      "cost": 17.95,
+      "buy_url": "https://amzn.to/4iXc9Cv",
+      "asin": "B09D8PL1N5"
+    },
+    {
+      "name": "Curl friendly soft headbands",
+      "product_categories": [
+        "accessories"
+      ],
+      "tags": ["style"],
+      "cost": 10,
+      "buy_url": "https://eldritchsalvage.etsy.com",
+      "description": "These headbands are made by the creator of CurlsBot from soft, stretchy fabric that won't snag or pull on your curls. They're perfect for keeping your hair out of your face and creating lovely styles that won't damage your hair."
+    }
+  ]
+}

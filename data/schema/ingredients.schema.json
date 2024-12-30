@@ -55,7 +55,8 @@
                 "solvents",
                 "polyquats",
                 "petroleum_oils",
-                "humectants",
+                "film_forming_humectants",
+                "simple_humectants",
                 "proteins",
                 "petroleum_jellies",
                 "other_oils"

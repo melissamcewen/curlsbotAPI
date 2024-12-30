@@ -2200,14 +2200,59 @@ export const defaultDatabase: IngredientDatabase = {
       "id": "aloe_barbadensis_leaf_extract",
       "description": "A moisturizing ingredient that soothes the scalp and conditions hair",
       "categories": [
-        "other"
+        "film_forming_humectants"
       ],
       "synonyms": [
         "aloe vera",
         "aloe barbadensis leaf juice"
       ],
       "status": "ok",
-      "group": "others"
+      "group": "humectants"
+    },
+    "flaxseed_extract": {
+      "name": "Flaxseed Extract",
+      "id": "flaxseed_extract",
+      "categories": [
+        "film_forming_humectants"
+      ],
+      "status": "ok",
+      "group": "humectants"
+    },
+    "marshmallow_root_extract": {
+      "name": "Marshmallow root Extract",
+      "id": "marshmallow_root_extract",
+      "categories": [
+        "film_forming_humectants"
+      ],
+      "status": "ok",
+      "group": "humectants"
+    },
+    "irish_moss_extract": {
+      "name": "Irish Moss Extract",
+      "id": "irish_moss_extract",
+      "categories": [
+        "film_forming_humectants"
+      ],
+      "status": "ok",
+      "group": "humectants"
+    },
+    "pectin": {
+      "name": "Pectin",
+      "id": "pectin",
+      "categories": [
+        "film_forming_humectants"
+      ],
+      "status": "ok",
+      "group": "humectants"
+    },
+    "algae_extract": {
+      "name": "Algae Extract",
+      "id": "algae_extract",
+      "categories": [
+        "film_forming_humectants"
+      ],
+      "status": "ok",
+      "group": "humectants"
     },
     "citric_acid": {
       "name": "Citric Acid",
@@ -2229,64 +2274,114 @@ export const defaultDatabase: IngredientDatabase = {
       "id": "ethylhexylglycerin",
       "description": "A humectant and preservative enhancer",
       "categories": [
-        "humectants"
+        "film_forming_humectants"
       ],
       "status": "ok",
-      "group": "others"
+      "group": "humectants"
     },
     "glycereth_26": {
       "name": "Glycereth-26",
       "id": "glycereth_26",
       "description": "A lightweight humectant that provides hydration without greasiness",
       "categories": [
-        "humectants"
+        "film_forming_humectants"
       ],
       "status": "ok",
-      "group": "others"
+      "group": "humectants"
     },
     "glycerin": {
       "name": "Glycerin",
       "id": "glycerin",
       "description": "A powerful humectant that attracts moisture to the hair",
       "categories": [
-        "humectants"
+        "simple_humectants"
       ],
       "status": "ok",
-      "group": "others"
+      "group": "humectants"
     },
     "hydroxyethylcellulose": {
       "name": "Hydroxyethylcellulose",
       "id": "hydroxyethylcellulose",
       "description": "A thickening agent that improves product texture",
       "categories": [
-        "other"
+        "film_forming_humectants"
       ],
       "status": "ok",
-      "group": "others"
+      "group": "humectants"
     },
     "hydroxypropyltrimonium_honey": {
       "name": "Hydroxypropyltrimonium Honey",
       "id": "hydroxypropyltrimonium_honey",
       "description": "A conditioning agent derived from honey that adds shine and softness",
       "categories": [
-        "other"
+        "film_forming_humectants"
       ],
       "status": "ok",
-      "group": "others"
+      "group": "humectants"
     },
     "panthenol": {
       "name": "Panthenol",
       "id": "panthenol",
       "description": "A moisturizing and strengthening agent that enhances hair elasticity",
       "categories": [
-        "other"
+        "film_forming_humectants"
       ],
       "synonyms": [
-        "Provitamin B5",
-        "Vitamin B5"
+        "provitamin B5",
+        "vitamin B5"
       ],
       "status": "ok",
-      "group": "others"
+      "group": "humectants"
+    },
+    "butylene_glycol": {
+      "name": "Butylene glycol",
+      "id": "butylene_glycol",
+      "categories": [
+        "simple_humectants"
+      ],
+      "status": "ok",
+      "group": "humectants"
+    },
+    "sodium_hyaluronate": {
+      "name": "Sodium hyaluronate",
+      "id": "sodium_hyaluronate",
+      "categories": [
+        "film_forming_humectants"
+      ],
+      "references": [
+        {
+          "url": "https://incidecoder.com/ingredients/sodium-hyaluronate",
+          "title": "INCIDecoder: Sodium Hyaluronate",
+          "status": "good",
+          "type": "science",
+          "description": "Says it's a huge polymer with a very large water holding capacity"
+        }
+      ],
+      "status": "ok",
+      "group": "humectants"
+    },
+    "pca": {
+      "name": "PCA",
+      "id": "pca",
+      "categories": [
+        "film_forming_humectants"
+      ],
+      "references": [
+        {
+          "url": "https://incidecoder.com/ingredients/pca",
+          "title": "INCIDecoder: PCA",
+          "status": "good",
+          "type": "science"
+        },
+        {
+          "url": "https://www.taylorfrancis.com/books/mono/10.1201/b16716/handbook-cosmetic-science-technology-andr%C3%A9-barel-marc-paye-howard-maibach",
+          "title": "Handbook of Cosmetic Science and Technology",
+          "type": "science",
+          "description": "Says molecular weight is 129.11 vs. 92.1 for glycerin"
+        }
+      ],
+      "status": "ok",
+      "group": "humectants"
     },
     "phenoxyethanol": {
       "name": "Phenoxyethanol",
@@ -2333,10 +2428,19 @@ export const defaultDatabase: IngredientDatabase = {
       "id": "sorbitol",
       "description": "A humectant that retains moisture and adds hydration",
       "categories": [
-        "humectants"
+        "film_forming_humectants"
       ],
       "status": "ok",
-      "group": "others"
+      "group": "humectants"
+    },
+    "propylene_glycol": {
+      "name": "Propylene Glycol",
+      "id": "propylene_glycol",
+      "categories": [
+        "simple_humectants"
+      ],
+      "status": "ok",
+      "group": "humectants"
     },
     "tocopheryl_acetate": {
       "name": "Tocopheryl Acetate",
@@ -2392,14 +2496,24 @@ export const defaultDatabase: IngredientDatabase = {
       "id": "guar_hydroxypropyltrimonium_chloride",
       "description": "A conditioning agent derived from guar gum, improving detangling and reducing static in hair",
       "categories": [
-        "other"
+        "film_forming_humectants"
       ],
       "synonyms": [
         "guar gum quaternary ammonium",
+        "guar gum",
         "cationic guar"
       ],
       "status": "ok",
-      "group": "others"
+      "group": "humectants"
+    },
+    "xanthan_gum": {
+      "name": "Xanthan Gum",
+      "id": "xanthan_gum",
+      "categories": [
+        "film_forming_humectants"
+      ],
+      "status": "ok",
+      "group": "humectants"
     },
     "magnesium_sulfate": {
       "name": "Magnesium Sulfate",
@@ -3379,11 +3493,18 @@ export const defaultDatabase: IngredientDatabase = {
       "description": "These are petroleum based ingredients that are often avoided for their build up potential as well as their petro-based origin",
       "references": []
     },
-    "humectants": {
-      "id": "humectants",
-      "name": "Humectants",
-      "group": "others",
-      "description": "Humectants are ingredients that attract moisture to the hair",
+    "film_forming_humectants": {
+      "id": "film_forming_humectants",
+      "name": "Film Forming Humectants",
+      "group": "humectants",
+      "description": "these are large complex molecules that may be better at retaining moisture in low humidity conditions",
+      "references": []
+    },
+    "simple_humectants": {
+      "id": "simple_humectants",
+      "name": "Small Humectants",
+      "group": "humectants",
+      "description": "These humectants may perform poorly in low humidity conditions",
       "references": []
     },
     "proteins": {
@@ -3573,6 +3694,36 @@ export const defaultDatabase: IngredientDatabase = {
           "type": "science"
         }
       ]
+    },
+    "humectants": {
+      "id": "humectants",
+      "name": "Humectants",
+      "description": "Humectants are ingredients that attract moisture to the hair",
+      "references": [
+        {
+          "url": "https://science-yhairblog.blogspot.com/2015/02/glycerin-and-humidity.html",
+          "title": "Glycerin and Humidity",
+          "type": "science",
+          "description": "Humectants grab water out of air, but if air doesn't have enough water, it can become brittle and create friction, which can mean frizz. Theoretically this could dehydrate hair. Oils can slow water loss."
+        },
+        {
+          "url": "https://science-yhairblog.blogspot.com/2014/07/film-forming-humectants-what-they-are.html",
+          "title": "Film Forming Humectants - What They Are and Why You Need Them",
+          "type": "science"
+        },
+        {
+          "title": "Handbook of Cosmetic Science and Technology",
+          "type": "science",
+          "url": "https://www.taylorfrancis.com/books/mono/10.1201/b16716/handbook-cosmetic-science-technology-andr%C3%A9-barel-marc-paye-howard-maibach",
+          "description": "Mentions Panthenol can increase hair's volume"
+        },
+        {
+          "url": "https://labmuffin.com/skincare-chemistry-which-ingredients-are-humectants/",
+          "title": "Skincare Chemistry: How to pick out humectants",
+          "type": "science"
+        }
+      ],
+      "inclusions": []
     }
   }
 };

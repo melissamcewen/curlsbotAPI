@@ -248,11 +248,46 @@
       "id": "aloe_barbadensis_leaf_extract",
       "description": "A moisturizing ingredient that soothes the scalp and conditions hair",
       "categories": [
-        "other"
+        "film_forming_humectants"
       ],
       "synonyms": [
         "aloe vera",
         "aloe barbadensis leaf juice"
+      ]
+    },
+    {
+      "name": "Flaxseed Extract",
+      "id": "flaxseed_extract",
+      "categories": [
+        "film_forming_humectants"
+      ]
+    },
+    {
+      "name": "Marshmallow root Extract",
+      "id": "marshmallow_root_extract",
+      "categories": [
+        "film_forming_humectants"
+      ]
+    },
+    {
+      "name": "Irish Moss Extract",
+      "id": "irish_moss_extract",
+      "categories": [
+        "film_forming_humectants"
+      ]
+    },
+    {
+      "name": "Pectin",
+      "id": "pectin",
+      "categories": [
+        "film_forming_humectants"
+      ]
+    },
+    {
+      "name": "Algae Extract",
+      "id": "algae_extract",
+      "categories": [
+        "film_forming_humectants"
       ]
     },
     {
@@ -273,7 +308,7 @@
       "id": "ethylhexylglycerin",
       "description": "A humectant and preservative enhancer",
       "categories": [
-        "humectants"
+        "film_forming_humectants"
       ]
     },
     {
@@ -281,7 +316,7 @@
       "id": "glycereth_26",
       "description": "A lightweight humectant that provides hydration without greasiness",
       "categories": [
-        "humectants"
+        "film_forming_humectants"
       ]
     },
     {
@@ -289,7 +324,7 @@
       "id": "glycerin",
       "description": "A powerful humectant that attracts moisture to the hair",
       "categories": [
-        "humectants"
+        "simple_humectants"
       ]
     },
     {
@@ -297,7 +332,7 @@
       "id": "hydroxyethylcellulose",
       "description": "A thickening agent that improves product texture",
       "categories": [
-        "other"
+        "film_forming_humectants"
       ]
     },
     {
@@ -305,7 +340,7 @@
       "id": "hydroxypropyltrimonium_honey",
       "description": "A conditioning agent derived from honey that adds shine and softness",
       "categories": [
-        "other"
+        "film_forming_humectants"
       ]
     },
     {
@@ -313,11 +348,55 @@
       "id": "panthenol",
       "description": "A moisturizing and strengthening agent that enhances hair elasticity",
       "categories": [
-        "other"
+        "film_forming_humectants"
       ],
       "synonyms": [
-        "Provitamin B5",
-        "Vitamin B5"
+        "provitamin B5",
+        "vitamin B5"
+      ]
+    },
+    {
+      "name": "Butylene glycol",
+      "id": "butylene_glycol",
+      "categories": [
+        "simple_humectants"
+      ]
+    },
+    {
+      "name": "Sodium hyaluronate",
+      "id": "sodium_hyaluronate",
+      "categories": [
+        "film_forming_humectants"
+      ],
+      "references": [
+        {
+          "url": "https://incidecoder.com/ingredients/sodium-hyaluronate",
+          "title": "INCIDecoder: Sodium Hyaluronate",
+          "status": "good",
+          "type": "science",
+          "description": "Says it's a huge polymer with a very large water holding capacity"
+        }
+      ]
+    },
+    {
+      "name": "PCA",
+      "id": "pca",
+      "categories": [
+        "film_forming_humectants"
+      ],
+      "references": [
+        {
+          "url": "https://incidecoder.com/ingredients/pca",
+          "title": "INCIDecoder: PCA",
+          "status": "good",
+          "type": "science"
+        },
+        {
+          "url": "https://www.taylorfrancis.com/books/mono/10.1201/b16716/handbook-cosmetic-science-technology-andr%C3%A9-barel-marc-paye-howard-maibach",
+          "title": "Handbook of Cosmetic Science and Technology",
+          "type": "science",
+          "description": "Says molecular weight is 129.11 vs. 92.1 for glycerin"
+        }
       ]
     },
     {
@@ -357,7 +436,14 @@
       "id": "sorbitol",
       "description": "A humectant that retains moisture and adds hydration",
       "categories": [
-        "humectants"
+        "film_forming_humectants"
+      ]
+    },
+    {
+      "name": "Propylene Glycol",
+      "id": "propylene_glycol",
+      "categories": [
+        "simple_humectants"
       ]
     },
     {
@@ -379,7 +465,6 @@
         "other"
       ]
     },
-
     {
       "name": "PEG-100 Stearate",
       "id": "peg_100_stearate",
@@ -407,11 +492,19 @@
       "id": "guar_hydroxypropyltrimonium_chloride",
       "description": "A conditioning agent derived from guar gum, improving detangling and reducing static in hair",
       "categories": [
-        "other"
+        "film_forming_humectants"
       ],
       "synonyms": [
         "guar gum quaternary ammonium",
+        "guar gum",
         "cationic guar"
+      ]
+    },
+    {
+      "name": "Xanthan Gum",
+      "id": "xanthan_gum",
+      "categories": [
+        "film_forming_humectants"
       ]
     },
     {
@@ -426,7 +519,6 @@
         "magnesium salt",
         "magnesium sulphate"
       ],
-
       "references": [
         {
           "title": "Magnesium Sulfate",
@@ -435,7 +527,6 @@
           "status": "warning",
           "description": "Mentions that this ingredient roughs up the hair cuticle, which can be drying. It's also alkaline, which can swell the hair shaft, causing further damage."
         },
-
         {
           "url": "https://www.curlynikki.com/magnesium-sulfate-curly-friend-or-foe.html",
           "type": "author",
@@ -476,16 +567,16 @@
         }
       ]
     },
-        {
-          "name": "Polysorbate 20",
-          "id": "polysorbate_20",
-          "synonyms": [
-            "sorbitan monolaurate ethoxylated",
-            "ethoxylated sorbitol laurate"
-          ],
-          "categories": [
-            "other"
-          ]
-        }
+    {
+      "name": "Polysorbate 20",
+      "id": "polysorbate_20",
+      "synonyms": [
+        "sorbitan monolaurate ethoxylated",
+        "ethoxylated sorbitol laurate"
+      ],
+      "categories": [
+        "other"
+      ]
+    }
   ]
 }

@@ -172,6 +172,36 @@
           "type": "science"
         }
       ]
+    },
+    {
+      "id": "humectants",
+      "name": "Humectants",
+      "description": "Humectants are ingredients that attract moisture to the hair",
+      "references": [
+        {
+          "url": "https://science-yhairblog.blogspot.com/2015/02/glycerin-and-humidity.html",
+          "title": "Glycerin and Humidity",
+          "type": "science",
+          "description": "Humectants grab water out of air, but if air doesn't have enough water, it can become brittle and create friction, which can mean frizz. Theoretically this could dehydrate hair. Oils can slow water loss."
+        },
+        {
+          "url": "https://science-yhairblog.blogspot.com/2014/07/film-forming-humectants-what-they-are.html",
+          "title": "Film Forming Humectants - What They Are and Why You Need Them",
+          "type": "science"
+        },
+        {
+          "title": "Handbook of Cosmetic Science and Technology",
+          "type": "science",
+          "url": "https://www.taylorfrancis.com/books/mono/10.1201/b16716/handbook-cosmetic-science-technology-andr%C3%A9-barel-marc-paye-howard-maibach",
+          "description": "Mentions Panthenol can increase hair's volume"
+
+        },
+        {
+          "url": "https://labmuffin.com/skincare-chemistry-which-ingredients-are-humectants/",
+          "title": "Skincare Chemistry: How to pick out humectants",
+          "type": "science"
+        }
+      ]
     }
   ]
 }

@@ -3,6 +3,51 @@ import type { ProductDatabase } from '../types';
 
 export const defaultProductDatabase: ProductDatabase = {
   "products": {
+    "hair_diffuser_for_curly_hair_attachment": {
+      "name": "Hair Diffuser for Curly Hair Attachment",
+      "product_categories": [
+        "accessories"
+      ],
+      "tags": [
+        "style"
+      ],
+      "cost": 22.49,
+      "buy_url": "https://amzn.to/3VX9fUx",
+      "asin": "B07QZ315F8",
+      "id": "hair_diffuser_for_curly_hair_attachment",
+      "systems_excluded": [],
+      "cost_rating": "2"
+    },
+    "curly_girl_microfiber_super_absorbent_anti_frizz_hair_towel": {
+      "name": "Curly Girl Microfiber Super Absorbent Anti Frizz Hair Towel",
+      "product_categories": [
+        "accessories"
+      ],
+      "tags": [
+        "style"
+      ],
+      "cost": 17.95,
+      "buy_url": "https://amzn.to/4iXc9Cv",
+      "asin": "B09D8PL1N5",
+      "id": "curly_girl_microfiber_super_absorbent_anti_frizz_hair_towel",
+      "systems_excluded": [],
+      "cost_rating": "2"
+    },
+    "curl_friendly_soft_headbands": {
+      "name": "Curl friendly soft headbands",
+      "product_categories": [
+        "accessories"
+      ],
+      "tags": [
+        "style"
+      ],
+      "cost": 10,
+      "buy_url": "https://eldritchsalvage.etsy.com",
+      "description": "These headbands are made by the creator of CurlsBot from soft, stretchy fabric that won't snag or pull on your curls. They're perfect for keeping your hair out of your face and creating lovely styles that won't damage your hair.",
+      "id": "curl_friendly_soft_headbands",
+      "systems_excluded": [],
+      "cost_rating": "1"
+    },
     "clarifying_shampoo_au": {
       "name": "Clarifying Shampoo",
       "brand": "Moroccanoil",
