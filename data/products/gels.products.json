@@ -6,7 +6,7 @@
       "buy_url": "https://amzn.to/2BYccc7",
       "product_categories": ["gels"],
       "tags": ["normal_porosity", "hold", "high_porosity", "featured"],
-      "cost_rating": "2",
+      "cost": 2.8,
       "ingredients_raw": "water, aqua-eau, aloe barbadensis gel, hydroxyethylcellulose, maltodextrin copolymer, potassium hydroxide, gluconolactone, sodium benzoate, calcium gluconate, alkyl acrylate crosspolymer, citrus aurantium dulcis peel oil, caprylic capric triglyceride, potassium sorbate, sodium phytate, glycerin, chamomilla recutita matricaria flower extract, eucalyptus globulus leaf extract, ginkgo biloba leaf extract, aspalathus linearis leaf extract, honey extract, limonene",
       "asin": "B002EOUQR2"
     },
@@ -18,7 +18,8 @@
       "buy_url": "https://amzn.to/4iLNscf",
       "product_categories": ["gels"],
       "tags": ["high_porosity", "normal_porosity", "low_porosity", "curl_enhancer", "featured"],
-      "asin": "B093XG3RDK"
+      "asin": "B093XG3RDK",
+      "cost": 2.5
 
     },
     {
@@ -28,7 +29,8 @@
       "buy_url": "https://amzn.to/3ZSFbue",
       "product_categories": ["gels"],
       "tags": ["normal_porosity", "low_porosity", "volume", "featured"],
-      "asin": "B002EOSVUQ"
+      "asin": "B002EOSVUQ",
+      "cost": 2.8
     },
     {
       "name": "Irish Sea Moss Styling Gel",
@@ -60,7 +62,7 @@
 
     },
     {
-      "name": "Hydro Style Flexi-Jelly", 
+      "name": "Hydro Style Flexi-Jelly",
       "brand": "Curlsmith",
       "product_categories": ["gels"],
       "tags": ["normal_porosity", "low_porosity", "curl_enhancer", "featured", "high_porosity"],

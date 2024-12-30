@@ -139,10 +139,10 @@ function loadProductsFromDir(dirPath: string): any {
     // Convert cost to cost_rating
     let cost_rating: string | undefined = undefined;
     if (product.cost) {
-      if (product.cost <= 15) cost_rating = '1';
-      else if (product.cost <= 25) cost_rating = '2';
-      else if (product.cost <= 40) cost_rating = '3';
-      else if (product.cost <= 60) cost_rating = '4';
+      if (product.cost <= 0.75) cost_rating = '1';
+      else if (product.cost <= 1.5) cost_rating = '2';
+      else if (product.cost <= 2.25) cost_rating = '3';
+      else if (product.cost <= 3) cost_rating = '4';
       else cost_rating = '5';
     }
 

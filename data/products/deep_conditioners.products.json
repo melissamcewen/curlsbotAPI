@@ -6,7 +6,7 @@
        "buy_url": "https://amzn.to/3ZFDa4x",
        "product_categories": ["deep_conditioners"],
        "tags": ["high_porosity", "featured"],
-       "cost_rating": "2",
+       "cost": 1.2,
        "ingredients_raw": "aqua water, cetearyl alcohol, butyrospermum parkii shea butter, persea gratissima avocado oil, theobroma cacao cocoa seed butter, behentrimonium methosulfate, aloe barbadensis aloe vera leaf juice powder, equisetum arvense horsetail extract, mentha piperita peppermint leaf extract, rosmarinus officinalis rosemary flower leaf stem extract, laurus nobilis bay laurel leaf extract, ocimum basilicum basil leaf extract, urtica dioica nettle leaf extract, arctium lappa burdock root extract, althea officinalis marshmallow root extract, origanum vulgare oregano leaf extract, cymbopogon flexuosus lemongrass extract, thymus vulgaris thyme leaf extract, salvia officinalis sage leaf extract, lecithin, cinnamal, citral, eugenol, geraniol, citronellol, limonene, linalool, benzoic acid, dehydroacetic acid, phenoxyethanol",
        "asin": "B00684AC82"
      },
@@ -17,7 +17,8 @@
       "buy_url": "https://amzn.to/408QOOY",
       "product_categories": ["deep_conditioners", "featured"],
       "tags": ["low_porosity", "normal_porosity", "high_porosity"],
-      "asin": "B09YMWHVHD"
+      "asin": "B09YMWHVHD",
+      "cost": 3.38
      },
      {
       "name": "Double Cream Deep Quencher",

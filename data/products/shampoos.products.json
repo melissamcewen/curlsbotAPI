@@ -7,7 +7,7 @@
       "systems_excluded": ["curly_default"],
       "product_categories": ["shampoos"],
       "tags": ["normal_porosity", "low_porosity", "featured"],
-      "cost_rating": "2",
+      "cost": 0.66,
       "ingredients_raw": "water, sodium c14-16 olefin sulfonate, cocamidopropyl betaine, propanediol, glycol distearate, phenoxyethanol, butyrospermum parkii shea butter, alanine, arginine, aspartic acid, glycine, histidine, isoleucine, phenylalanine, proline, serine, sodium pca, pca, sodium lactate, threonine, valine, citric acid, disodium edta, glycine soja soybean oil, glycine soja soybean sterols, glycolipids, guar hydroxypropyltrimonium chloride, hydroxyethylcellulose, hydroxyacetophenone, lauryl lactyl lactate, peg-150 distearate, phospholipids, ricinus communis castor seed oil, fragrance",
       "asin": "B09GC9CVQ8"
     },
@@ -17,7 +17,7 @@
       "buy_url": "https://amzn.to/3BK5x9T",
       "product_categories": ["shampoos"],
       "tags": ["high_porosity", "normal_porosity", "featured"],
-      "cost_rating": "3",
+      "cost": 3.00,
       "ingredients_raw": "water aqua-eau, cocamidopropyl hydroxysultaine, sodium methyl cocoyl taurate, glycerin, caprylyl capryl glucoside, sodium cocoyl isethionate, glyceryl stearate se, sodium chloride, sodium lauroyl methyl isethionate, trisodium ethylenediamine disuccinate, guar hydroxypropyltrimonium chloride, plumeria actufolia flower extract, cananga odorata flower oil, lavandula angustifolia lavender oil, citrus aurantium dulcis orange peel oil, salvia sclarea clary oil, vanillin, pogostemon cablin oil, glycine soja soybean oil, sodium benzoate, pyrus malus apple fruit extract, potassium sorbate, simmondsia chinensis jojoba seed oil, oryza sativa rice extract, citric acid, hydrolyzed quinoa, hydrolyzed rice protein, calophyllum inophyllum tamanu oil, butyrospermum parkii shea butter, persia gratissima avocado oil, taraxacum officinale dandelion leaf extract, salvia officinalis sage leaf extract, melissa officinalis leaf extract, linalool, limonene",
       "asin": "B074PY4QJC"
     },
@@ -26,6 +26,7 @@
       "brand": "MopTop",
       "ingredients_raw": "water, sodium c14-16 olefin sulfonate, cocamidopropyl betaine, cocamide mea, glycol distearate, steareth-4, glycerin, hydroxypropyltrimonium honey, silk amino acids, hypnea musciformis extract seaweed, gelidiella acerosa extract seaweed, sargassum filipendula extract seaweed, sorbitol, rosmarinus officinalis rosemary leaf extract, salix alba willow bark extract, urtica dioica nettle extract, tocopheryl acetate vitamin e, panthenol vitamin b5, guar hydroxypropyltrimonium chloride, polyquaternium-10, fragrance phthalate free, sodium phytate, sorbic acid, sodium chloride, ethylhexylglycerin, phenoxyethanol, citric acid",
       "buy_url": "https://amzn.to/4fuIPQW",
+      "cost": 2,
       "product_categories": ["shampoos", "featured"],
       "tags": ["high_porosity", "normal_porosity"],
       "asin": "B005SIR214"
@@ -35,6 +36,7 @@
       "brand": "Innersense",
       "ingredients_raw": "citrus medica limonum lemon peel oil, eucalyptus globulus eucalyptus, cucurbita pepo pumpkin seed oil, hydroxypropyltrimonium honey, hydrolyzed quinoa, trisodium ethylenediamine disuccinate, sodium benzoate, hydrolyzed rice protein, guar hydroxypropyltrimonium chloride, persea gratissima avocado oil, oryza sativa rice bran oil, camellia sinensis green tea leaf extract, cucumis sativus cucumber fruit extract, persea gratissima avocado fruit extract, mangifera indica mango fruit extract, water, aqua-eau, cocamidopropyl hydroxysultaine, sodium cocoyl isethionate, caprylyl capryl glucoside, glycerin, sodium chloride, sodium lauroyl methyl isethionate, butyrosepermum parkii shea butter, citrus aurantium dulcis orange peel oil",
       "buy_url": "https://amzn.to/3ZSDywG",
+      "cost": 2.25,
       "product_categories": ["shampoos", "featured"],
       "tags": ["low_porosity", "normal_porosity"],
       "asin": "B074Q2CNMY"
@@ -46,7 +48,8 @@
       "buy_url": "https://amzn.to/41J8sKF",
       "product_categories": ["shampoos", "featured"],
       "tags": ["high_porosity", "normal_porosity"],
-      "asin": "B002RX2QFA"
+      "asin": "B002RX2QFA",
+      "cost": 3
     },
 
     {
@@ -56,7 +59,8 @@
       "buy_url": "https://amzn.to/4gLhRFK",
       "product_categories": ["shampoos", "featured"],
       "tags": ["low_porosity", "normal_porosity"],
-      "asin": "B0BHD3JKTL"
+      "asin": "B0BHD3JKTL",
+      "cost": 6
     },
     {
       "name": "Nourish & Flourish Shampoo",
@@ -65,7 +69,8 @@
       "tags": ["high_porosity", "normal_porosity", "featured", "low_porosity"],
       "buy_url": "https://lohy.com.au/products/nourish-flourish-curly-hair-shampoo?aff=49",
       "ingredients_raw": "aqua, lauryl glucoside, decyl glucoside, coco glucoside, cocamidopropyl betaine, glycerin, propanediol, camellia sinensis white tea leaf extract, chamomilla recutita matricaria flower leaf stem extract, citric acid, phenoxyethanol, guar hydroxypropyltrimonium chloride, hydrolysed soy protein, potassium sorbate, lemon scented tea tree oil, mandarin peel oil, rosemary oil, may chang, eucalyptus radiata, lavandin oil, salvia clary sclarea oil, pogostemon cablin patchouli oil",
-      "country": "AU"
+      "country": "AU",
+      "cost": 2.3
 
     },
     {
@@ -87,6 +92,18 @@
       "buy_url": "https://amzn.to/3Pdq0qB",
       "asin": "B0CZW7PPLQ",
       "country": "UK"
+    },
+    {
+      "name": "Curl Definition Shampoo",
+      "brand": "Not Your Mothers Naturals",
+      "ingredients_raw": "water aqua eau, sodium cocoyl isethionate, sodium lauroyl methyl isethionate, cocamidopropyl hydroxysultaine, peg-120 methyl glucose dioleate, glycol distearate, polyquaternium-10, quaternium-80, mangifera indica mango seed butter, gardenia tahitensis flower extract, glycerin, tetrasodium glutamate diacetate, fragrance parfum, linalool, hexyl cinnamal, coumarin, phenoxyethanol, ethylhexylglycerin, citric acid",
+      "product_categories": [
+        "shampoos"
+      ],
+      "tags": ["high porosity", "low porosity"],
+      "cost": 0.5,
+      "buy_url": "https://amzn.to/3W0nuIe",
+      "asin": "B07KQ24CZS"
     }
   ]
 }

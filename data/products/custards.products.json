@@ -7,7 +7,8 @@
       "product_categories": ["custards"],
       "tags": ["low_porosity", "curl_enhancer", "normal_porosity", "high_porosity", "featured"],
       "ingredients_raw": "water, glycerin, carboxymethylcellulose, aloe barbadensis leaf extract, pectin, hydroxypropyltrimonium honey, silk amino acids, hypnea musciformis extract seaweed, gelidiella acerosa extract seaweed, sargassum filipendula seaweed extract, sorbitol, rosmarinus officinalis rosemary leaf extract, salix alba willow bark extract, urtica dioica nettle extract, ethylhexylglycerin, phenoxyethanol, citrus senensis oil, citrus limon oil, citrus aurantifolia oil, citrus paradisi oil",
-      "asin": "B005SIR12E"
+      "asin": "B005SIR12E",
+      "cost": 2.3
     },
     {
       "name": "Curl Defining Styling Souffle",
@@ -17,7 +18,8 @@
       "tags": ["low_porosity", "normal_porosity", "high_porosity", "featured"],
       "buy_url": "https://amzn.to/40auHbe",
       "asin": "B07D7CKKL3",
-      "country": "UK"
+      "country": "UK",
+      "cost": 3.5
 
     }
   ]

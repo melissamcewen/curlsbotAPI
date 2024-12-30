@@ -11,7 +11,7 @@
         "low_porosity",
         "featured"
       ],
-      "cost_rating": "2",
+      "cost": 2.12,
       "ingredients_raw": "water, glycerin, cetyl alcohol coconut derived, stearyl alcohol coconut derived, olea europaea olive fruit oil, cetrimonium chloride, behentrimonium chloride, aloe barbadensis leaf extract, glycereth-26, hypnea musciformis extract seaweed, gelidiella acerosa extract seaweed, sargassum filipendula extract seaweed, sorbitol, hydroxypropyltrimonium honey, silk amino acids, rosmarinus officinalis rosemary leaf extract, chamomilla recutita matricaria flower extract, urtica dioica nettle extract, butyrospermum parkii shea butter, simmondsia chinensis jojoba seed oil, tocopheryl acetate vitamin e, panthenol vitamin b5, citrus senensis oil, citrus limon oil, citrus arantifolia oil, citrus paradisi oil, sodium phytate, hydroxyethylcellulose, phenoxyethanol, ethylhexylglycerin, citric acid",
       "asin": "B005SIR28M"
     },
@@ -28,7 +28,7 @@
         "featured"
       ],
       "ingredients_raw": "water, aloe barbadensis leaf extract, glycerin, cetyl alcohol, stearyl alcohol, cetrimonium chloride, behentrimonium chloride, olea europaea olive fruit oil, glycereth-26, butyrospermum parkii shea butter, hydroxypropyltrimonium honey, hypnea musciformis extract seaweed, gelidiella acerosa extract seaweed, sargassum filipendula extract seaweed, sorbitol, silk amino acids, rosmarinus officinalis rosemary leaf extract, chamomilla recutita matricaria flower extract, urtica dioica nettle extract, simmondsia chinensis jojoba seed oil, tocopheryl acetate vitamin e, panthenol vitamin b5, arnica montana flower extract, hydroxyethylcellulose, phenoxyethanol, sorbic acid, ethylhexylglycerin, citric acid, sodium phytate, fragrance",
-      "cost_rating": "2",
+        "cost": 2.12,
       "asin": "B005SIR2K0"
     },
     {
@@ -44,7 +44,7 @@
         "featured"
       ],
       "buy_url": "https://amzn.to/3ZQnjjL",
-      "cost_rating": "3",
+      "cost": 3,
       "asin": "B074Q43PT4"
     },
     {
@@ -60,7 +60,7 @@
         "featured"
       ],
       "buy_url": "https://amzn.to/4gmVZAG",
-      "cost_rating": "3",
+      "cost": 3,
       "asin": "B074PWBRF9"
     },
     {
@@ -76,7 +76,7 @@
         "featured"
       ],
       "buy_url": "https://amzn.to/4iNhH2s",
-      "cost_rating": "3",
+      "cost": 3,
       "asin": "B0BHC6CTQ5"
     },
     {
@@ -93,7 +93,8 @@
       ],
       "ingredients_raw": "aqua, aloe barbadensis aloe vera leaf juice, cetearyl alcohol, behentrimonium methosulfate, glycerin, propanediol, cocos nucifera coconut oil, cetrimonium chloride, phenoxyethanol, butyrospermum parkii shea butter, hydrolised soy protein, simmondsia chinensis jojoba seed oil, chamomila recutita matricaria flower leaf stem extract, camellia sinensis white tea leaf extract, guar hydroxypropyltrimonium chloride, polyquaternium-10, sodium benzoate, citrus aurantifolia lime oil, cymbopogan flexuosus lemongrass oil, sodium pca, sodium lactate, arginine, aspartic acid, pca, glycine, alanine, serine, valine, proline, threonine, isoleucine, histidine, phenylalanine",
       "buy_url": "https://lohy.com.au/products/drench-quench-curl-moisture-mask?aff=49",
-      "country": "AU"
+      "country": "AU",
+      "cost": 3.4
     },
     {
       "name": "Nourish & Flourish Conditioner",
@@ -108,7 +109,8 @@
       ],
       "buy_url": "https://lohy.com.au/products/nourish-flourish-conditioner-curly-hair?aff=49",
       "ingredients_raw": "aqua, cetearyl alcohol, glycerin, propanediol, cocos nucifera coconut oil, cetrimonium chloride, hydrolysed soy protein, phenoxyethanol, simmondsia chinensis jojoba seed oil, chamomila recutita matricaria flower leaf stem extract, cucumis sativus cucumber fruit extract, benzyl alcohol, guar hydroxypropyltrimonium chloride, lemon scented tea tree oil, mandarin peel oil, rosemary oil, may chang, eucalyptus radiata, lavandin oil, salvia clary sclarea oil, pogostemon cablin patchouli oil, citric acid, dehydroacetic acid",
-      "country": "AU"
+      "country": "AU",
+      "cost": 2.3
     },
     {
       "name": "Essential Moisture Conditioner",
@@ -123,9 +125,10 @@
         "featured"
       ],
       "ingredients_raw": "water aqua, cetearyl alcohol, hydroxypropyl starch phosphate, betaine, cetyl palmitate, behentrimonium chloride, butyrospermum parkii shea butter, cocos nucifera coconut oil, persea gratissima avocado oil, helianthus annuus sunflower seed oil, aloe barbadensis leaf juice, selaginella lepidophylla resurrection flower extract, ocimum basilicum basil leaf extract, piper nigrum black pepper seed extract, rosmarinus officinalis rosemary leaf extract, salvia officinalis sage leaf extract, carapa guaianensis andiroba seed oil, glycerin, guar hydroxypropyltrimonium chloride, panthenol, glyceryl undecylenate, fragrance parfum, citric acid, sodium hydroxide, sodium gluconate, glyceryl caprylate, potassium sorbate, sodium benzoate, limonene, linalool, isopropyl alcohol",
-      "buy_url": "https://amzn.to/3PdnFMl",
+      "buy_url": "https://amzn.to/3BDw34T",
       "country": "UK",
       "asin": "B0BPTBMJY4",
+      "cost": 1.6,
       "description": "This has a small amount of isopropyl alcohol, which we mark as caution, but as it's last on the ingredients list and this is a product meant to be washed out, it's unlikely to be harmful for hair."
     }
   ]

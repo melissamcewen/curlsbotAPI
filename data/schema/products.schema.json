@@ -51,7 +51,7 @@
           "cost": {
             "type": "number",
             "minimum": 0,
-            "description": "Cost of the product in USD"
+            "description": "Cost per oz of the product in USD"
           },
           "ingredients_raw": {
             "type": "string",

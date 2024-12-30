@@ -6,7 +6,7 @@
        "buy_url": "https://amzn.to/3ZXbMQS",
        "product_categories": ["cowashes"],
        "tags": ["high_porosity", "featured"],
-       "cost_rating": "2",
+       "cost": 0.54,
        "ingredients_raw": "aqua water eau, cetyl alcohol, cetrimonium chloride, cetearyl alcohol, cocos nucifera coconut oil, ricinus communis castor seed oil, cocos nucifera coconut fruit powder, citrus reticulata tangerine fruit extract, phytosterols, camillia sinensis leaf extract, peg-40 castor oil, stearlkonium chloride, serenoa serrulata fruit extract, quaternium-18, propylene glycol, c12-15 alkyl lactate, fragrance parfum, potassium sorbate, caprylyl glycol, phenoxyethanol, abies balsamea balsam canada resin, potassium chloride, limonene, glycerin, caprylic capric triglyceride",
         "asin": "B00641UCY8"
      },
@@ -14,9 +14,11 @@
       "name": "Co-wash Conditioning Cleanser",
       "brand": "MopTop",
       "ingredients_raw": "water, glycerin, cetyl alcohol coconut derived, stearyl alcohol coconut derived, olea europaea olive fruit oil, cetrimonium chloride, behentrimonium chloride, aloe barbadensis leaf extract, glycereth-26, hypnea musciformis extract seaweed, gelidiella acerosa extract seaweed, sargassum filipendula extract seaweed, sorbitol, hydroxypropyltrimonium honey, silk amino acids, rosmarinus officinalis rosemary leaf extract, chamomilla recutita matricaria flower extract, urtica dioica nettle extract, butyrospermum parkii shea butter, simmondsia chinensis jojoba seed oil, tocopheryl acetate vitamin e, panthenol vitamin b5, citrus senensis oil, citrus limon oil, citrus aurantifolia oil, citrus paradisi oil, sodium phytate, hydroxyethylcellulose, phenoxyethanol, ethylhexylglycerin, citric acid",
+      "product_categories": ["cowashes"],
       "buy_url": "https://amzn.to/3P9FvzP",
       "tags": ["high_porosity", "featured"],
-      "asin": "B005SIR5G6"
+      "asin": "B005SIR5G6",
+      "cost": 2.12
      },
      {
       "name": "Curl Quenching Conditioning Wash",
@@ -24,7 +26,7 @@
       "product_categories": ["cowashes"],
       "tags": ["high_porosity", "featured"],
       "ingredients_raw": "water aqua, cetearyl alcohol, hydroxypropyl starch phosphate, cetyl palmitate, behentrimonium chloride, cocamidopropyl betaine, fragrance parfum, selaginella lepidophylla resurrection flower extract, carapa guaianensis andiroba seed oil, persea gratissima avocado oil, salvia officinalis sage leaf extract, ocimum basilicum basil leaf extract, piper nigrum black pepper seed extract, aloe barbadensis aloe vera leaf juice, rosmarinus officinalis rosemary leaf extract, helianthus annuus sunflower seed oil, butyrospermum parkii shea butter, cocos nucifera coconut oil, glycerin, guar hydroxypropyltrimonium chloride, panthenol, glyceryl caprylate, glyceryl undecylenate, potassium sorbate, sodium benzoate, sodium hydroxide, sodium chloride, citric acid, disodium edta, limonene, linalool",
-      "buy_url": "https://amzn.to/4gOMx94",
+      "buy_url": "https://amzn.to/4fU0jXj",
       "asin": "B07D7CBBPC",
       "country": "UK"
      }
