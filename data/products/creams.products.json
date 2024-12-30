@@ -4,8 +4,15 @@
       "name": "I Create Volume",
       "brand": "Innersense",
       "buy_url": "https://amzn.to/3ZXk3o3",
-      "product_categories": ["creams"],
-      "tags": ["high_porosity", "curl_enhancer", "featured", "low_porosity"],
+      "product_categories": [
+        "creams"
+      ],
+      "tags": [
+        "high_porosity",
+        "curl_enhancer",
+        "featured",
+        "low_porosity"
+      ],
       "ingredients_raw": "water, aloe barbadensis aloe vera leaf gel, cyamopsis tetragonoloba guar gum, sorbitol, sclerotium gum, citrus aurantium amara bitter orange flower water, organic rooibos african camellia sinensis leaf extract, gluconolactone, sodium benzoate, calcium gluconate, potassium sorbate, hydrolyzed rice protein, glycerin, chamomilla recutita matricaria flower extract, eucalyptus globulus leaf extract, ginkgo biloba leaf extract, aspalathus linearis leaf extract, eucalyptus globulus extract, citric acid, maltodextrin, honey extract, linalool",
       "asin": "B002EOSVUQ"
     },
@@ -13,8 +20,15 @@
       "name": "Curly Hair Cream",
       "brand": "MopTop",
       "buy_url": "https://amzn.to/4fCbwLM",
-      "product_categories": ["creams"],
-      "tags": ["high_porosity", "curl_enhancer", "featured", "normal_porosity"],
+      "product_categories": [
+        "creams"
+      ],
+      "tags": [
+        "high_porosity",
+        "curl_enhancer",
+        "featured",
+        "normal_porosity"
+      ],
       "ingredients_raw": "water aqua, cetearyl alcohol, glyceryl stearate, propanediol, aloe barbadensis leaf juice, hydrogenated vegetable oil, peg-100 stearate, isopropyl palmitate, pvp, glycerin, caprylic capric triglyceride, glycereth-26, butyrospermum parkii shea butter, vp va copolymer, pectin, hydroxypropyltrimonium honey, coconut alkanes, polyquaternium-55, sodium polyitaconate, triethyl citrate, zea mays corn starch, sodium polyacrylate starch, hypnea musciformis extract, gelidiella acerosa extract, sargassum filipendula extract, sodium lactate, coco-caprylate caprate, ceteareth-20, acrylates beheneth-25 methacrylate copolymer, polyacrylate crosspolymer-6, cellulose, disodium edta, fragrance, phenoxyethanol, benzyl alcohol, aminomethyl propanol",
       "asin": "B0CHWM9YCJ"
     },
@@ -22,8 +36,15 @@
       "name": "Cruise Control Curl Cream",
       "brand": "Lohy",
       "buy_url": "https://lohy.com.au/products/cruise-control-curl-cream-curly-hair-styling?aff=49",
-      "product_categories": ["creams"],
-      "tags": ["high_porosity", "normal_porosity", "curl_enhancer", "featured"],
+      "product_categories": [
+        "creams"
+      ],
+      "tags": [
+        "high_porosity",
+        "normal_porosity",
+        "curl_enhancer",
+        "featured"
+      ],
       "ingredients_raw": "aqua, caprylic capric triglyceride, cetearyl alcohol, glycerin, propanediol, cetrimonium chloride, butyrospermum parkii shea butter, oryza sativa rice bran oil, glyceryl stearate, phenoxyethanol, citrus nobilis mandarin peel oil, hydrolised soy protein, cucumis sativus cucumber fruit extract, chamomila recutita matricaria flower leaf stem extract, camellia sinensis white tea leaf extract, polyquaternium-10, sodium benzoate",
       "country": "AU",
       "cost": 3
@@ -31,13 +52,37 @@
     {
       "name": "Weightless Air Dry Cream",
       "brand": "Curlsmith",
-      "product_categories": ["creams"],
-      "tags": ["high_porosity", "normal_porosity", "curl_enhancer", "featured"],
+      "product_categories": [
+        "creams"
+      ],
+      "tags": [
+        "high_porosity",
+        "normal_porosity",
+        "curl_enhancer",
+        "featured"
+      ],
       "ingredients_raw": "water aqua, ricinus communis castor seed oil, dicaprylyl carbonate, cetearyl alcohol, orbignya speciosa babassu kernel oil, behentrimonium chloride, sodium hyaluronate, astrocaryum murumuru seed butter, simmondsia chinensis jojoba seed oil, butyrospermum parkii shea butter, hylocereus undatus dragon fruit fruit extract, paullinia cupana guarana seed extract, urtica dioica nettle leaf extract, zingiber officinale ginger root extract, polyquaternium-10, panthenol, guar hydroxypropyltrimonium chloride, tocopherol, disodium edta, ethylhexylglycerin, glycerin, citric acid, sodium hydroxide, potassium sorbate, sodium benzoate, phenoxyethanol, linalool, limonene, citronellol, fragrance parfum",
       "buy_url": "https://amzn.to/4iZV6zV",
       "asin": "B08N5CCKJ8",
       "country": "UK",
-      "cost": 1
+      "cost": 3.3
+    },
+    {
+      "name": "Pinapple Swirl Curl Defining Cream",
+      "brand": "Pacifica",
+      "product_categories": [
+        "creams"
+      ],
+      "tags": [
+        "high_porosity",
+        "normal_porosity",
+        "curl_enhancer",
+        "featured"
+      ],
+      "cost": 3,
+      "ingredients_raw": "aqua, cetearyl alcohol, behentrimonium methosulfate, linum usitatissimum linseed seed extract, salvia hispanica seed extract, coco-caprylate, cetyl alcohol, hydroxyethylcellulose, cocos nucifera coconut oil, helianthus annuus sunflower oil, ananas sativus pineapple fruit extract, sodium hyaluronate, phenoxyethanol, ethylhexylglycerin, parfum natural, sodium citrate, citric acid",
+      "buy_url": "https://amzn.to/3BXFWKA",
+      "asin": "B07HLJ7MHL"
     }
   ]
 }

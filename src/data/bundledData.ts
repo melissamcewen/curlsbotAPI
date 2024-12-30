@@ -2501,7 +2501,8 @@ export const defaultDatabase: IngredientDatabase = {
       "synonyms": [
         "guar gum quaternary ammonium",
         "guar gum",
-        "cationic guar"
+        "cationic guar",
+        "hydroxypropyl guar"
       ],
       "status": "ok",
       "group": "humectants"

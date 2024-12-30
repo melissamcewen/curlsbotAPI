@@ -31,6 +31,23 @@
       "country": "UK",
       "cost": 2.6
 
+    },
+    {
+      "name": "Curl Boosting Hair Mousse",
+      "brand": "Herbal Essences",
+      "product_categories": [
+        "foams"
+      ],
+      "ingredients_raw": "water, isobutane, propane, polyquaternium-4, phenoxyethanol, propylene glycol, fragrance, c9-11 pareth-8, caprylyl glycol, 12-hexanediol, disodium edta, citric acid",
+
+      "tags": [
+        "normal_porosity",
+        "volume",
+        "low_porosity"
+      ],
+      "buy_url": "https://amzn.to/41UCcnP",
+      "asin": "B0B995XZ6T",
+      "cost": 0.7
     }
   ]
 }

@@ -28,7 +28,7 @@
         "featured"
       ],
       "ingredients_raw": "water, aloe barbadensis leaf extract, glycerin, cetyl alcohol, stearyl alcohol, cetrimonium chloride, behentrimonium chloride, olea europaea olive fruit oil, glycereth-26, butyrospermum parkii shea butter, hydroxypropyltrimonium honey, hypnea musciformis extract seaweed, gelidiella acerosa extract seaweed, sargassum filipendula extract seaweed, sorbitol, silk amino acids, rosmarinus officinalis rosemary leaf extract, chamomilla recutita matricaria flower extract, urtica dioica nettle extract, simmondsia chinensis jojoba seed oil, tocopheryl acetate vitamin e, panthenol vitamin b5, arnica montana flower extract, hydroxyethylcellulose, phenoxyethanol, sorbic acid, ethylhexylglycerin, citric acid, sodium phytate, fragrance",
-        "cost": 2.12,
+      "cost": 2.12,
       "asin": "B005SIR2K0"
     },
     {
@@ -130,6 +130,20 @@
       "asin": "B0BPTBMJY4",
       "cost": 1.6,
       "description": "This has a small amount of isopropyl alcohol, which we mark as caution, but as it's last on the ingredients list and this is a product meant to be washed out, it's unlikely to be harmful for hair."
+    },
+    {
+      "name": "Tea Tree Triple Treat Invigorating Conditioner",
+      "brand": "Giovanni",
+      "tags": [
+        "normal_porosity",
+        "low_porosity"
+      ],
+      "product_categories": [
+        "conditioners"
+      ],
+      "cost": 1,
+      "buy_url": "https://amzn.to/4j88bqW",
+      "ingredients_raw": "aqua purified water, cetyl alcohol, stearyl alcohol, glycerin, panthenol, cetrimonium chloride, cetearyl alcohol, hydroxypropyl guar, behentrimonium methosulfate, menthol, polysorbate 60, citric acid, ethylhexylglycerin, phenoxyethanol, mentha piperita peppermint oil, aloe barbadensis aloe vera leaf juice, carthamus tinctorius safflower oil, achillea millefolium extract, chamomilla recutita matricaria flower extract, equisetum arvense extract, eucalyptus globulus eucalyptus oil, lavandula angustifolia lavender leaf extract, melaleuca alternifolia tea tree leaf oil, rosmarinus officinalis rosemary leaf extract, salvia officinalis sage leaf extract, thymus vulgaris thyme extract, tussilago farfara coltsfoot flower extract, urtica dioica nettle extract, usda certified organic"
     }
   ]
 }
