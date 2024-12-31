@@ -989,15 +989,6 @@ export const defaultDatabase: IngredientDatabase = {
       "status": "ok",
       "group": "surfactants"
     },
-    "sodium_lauroyl_sarcosinate": {
-      "name": "Sodium Lauroyl Sarcosinate",
-      "id": "sodium_lauroyl_sarcosinate",
-      "categories": [
-        "other_anionic_surfactants"
-      ],
-      "status": "caution",
-      "group": "surfactants"
-    },
     "sodium_lauryl_glucose_carboxylate": {
       "name": "Sodium Lauryl Glucose Carboxylate",
       "id": "sodium_lauryl_glucose_carboxylate",
@@ -2910,6 +2901,25 @@ export const defaultDatabase: IngredientDatabase = {
       "status": "caution",
       "group": "silicones"
     },
+    "hydrolyzed_vegetable_protein_pg_propyl_silanetriol": {
+      "name": "Hydrolyzed Vegetable Protein PG-propyl Silanetriol",
+      "id": "hydrolyzed_vegetable_protein_pg_propyl_silanetriol",
+      "synonyms": [
+        "PG-propyl Silanetriol"
+      ],
+      "categories": [
+        "water_soluble_silicones"
+      ],
+      "references": [
+        {
+          "url": "https://science-yhairblog.blogspot.com/2014/04/silicone-ingredient-solubility-list.html",
+          "title": "Silicone Ingredient Solubility List",
+          "type": "science"
+        }
+      ],
+      "status": "warning",
+      "group": "silicones"
+    },
     "unknown_non_water_soluble_silicone": {
       "name": "Unknown Non-Water Soluble Silicone",
       "id": "unknown_non_water_soluble_silicone",
@@ -3301,7 +3311,8 @@ export const defaultDatabase: IngredientDatabase = {
       "description": "Water-soluble silicones in hair care products are a type of silicone that is easily washed out of the hair with regular shampoo",
       "inclusions": [
         "ppg",
-        "peg"
+        "peg",
+        "pg-"
       ],
       "exclusions": [
         "castor"

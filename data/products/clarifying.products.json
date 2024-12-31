@@ -86,6 +86,22 @@
       "cost": 5,
       "asin": "B09YS5YRTR",
       "description": "This mask is a great gentle option for removing stubborn buildup without stripping out your natural oils."
+    },
+    {
+      "name": "Scalp Care Clarifying Shampoo",
+      "brand": "Maui Moisture",
+      "cost": 0.61,
+      "buy_url": "https://amzn.to/4gV7M9j",
+      "asin": "B0CLBZ5PBS",
+      "ingredients_raw": "aloe barbadensis leaf juice, water aqua, sodium c14-16 olefin sulfonate, cocamidopropyl betaine, coco-glucoside, citric acid, glycol distearate, vinegar, tocopheryl acetate, cocos nucifera coconut water, nigella sativa seed oil, opuntia ficus-indica seed oil, adansonia digitata seed oil, cocos nucifera coconut seed butter, butyrospermum parkii shea butter, calophyllum inophyllum seed oil, moringa oleifera seed oil, tetraselmis suecica extract, hydroxyphenyl propamidobenzoic acid, peg-5 ethylhexanoate, trideceth-9, mannitol, polyquaternium-10, acrylates crosspolymer-4, laureth-4, glycerin, guar hydroxypropyltrimonium chloride, peg-150 pentaerythrityl tetrastearate, ppg-2 hydroxyethyl cocamide, hexylene glycol, sodium citrate, sodium hydroxide, sodium benzoate, fragrance parfum",
+      "product_categories": [
+        "clarifying_shampoos"
+      ],
+      "tags": [
+        "low_porosity",
+        "normal_porosity",
+        "high_porosity"
+      ]
     }
   ]
 }

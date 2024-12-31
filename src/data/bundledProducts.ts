@@ -123,7 +123,7 @@ export const defaultProductDatabase: ProductDatabase = {
       "id": "wash_&_scrub_detox_pro-biotic_uk",
       "systems_excluded": [],
       "status": "ok",
-      "cost_rating": "4"
+      "cost_rating": "5"
     },
     "water_works_clarifying_shampoo": {
       "name": "Water Works Clarifying Shampoo",
@@ -144,7 +144,7 @@ export const defaultProductDatabase: ProductDatabase = {
       "id": "water_works_clarifying_shampoo",
       "systems_excluded": [],
       "status": "warning",
-      "cost_rating": "4"
+      "cost_rating": "5"
     },
     "gentle_clarifying_shampoo": {
       "name": "Gentle Clarifying Shampoo",
@@ -189,6 +189,26 @@ export const defaultProductDatabase: ProductDatabase = {
       "status": "ok",
       "cost_rating": "5"
     },
+    "scalp_care_clarifying_shampoo": {
+      "name": "Scalp Care Clarifying Shampoo",
+      "brand": "Maui Moisture",
+      "cost": 0.61,
+      "buy_url": "https://amzn.to/4gV7M9j",
+      "asin": "B0CLBZ5PBS",
+      "ingredients_raw": "aloe barbadensis leaf juice, water aqua, sodium c14-16 olefin sulfonate, cocamidopropyl betaine, coco-glucoside, citric acid, glycol distearate, vinegar, tocopheryl acetate, cocos nucifera coconut water, nigella sativa seed oil, opuntia ficus-indica seed oil, adansonia digitata seed oil, cocos nucifera coconut seed butter, butyrospermum parkii shea butter, calophyllum inophyllum seed oil, moringa oleifera seed oil, tetraselmis suecica extract, hydroxyphenyl propamidobenzoic acid, peg-5 ethylhexanoate, trideceth-9, mannitol, polyquaternium-10, acrylates crosspolymer-4, laureth-4, glycerin, guar hydroxypropyltrimonium chloride, peg-150 pentaerythrityl tetrastearate, ppg-2 hydroxyethyl cocamide, hexylene glycol, sodium citrate, sodium hydroxide, sodium benzoate, fragrance parfum",
+      "product_categories": [
+        "clarifying_shampoos"
+      ],
+      "tags": [
+        "low_porosity",
+        "normal_porosity",
+        "high_porosity"
+      ],
+      "id": "scalp_care_clarifying_shampoo",
+      "systems_excluded": [],
+      "status": "ok",
+      "cost_rating": "1"
+    },
     "light_conditioner": {
       "name": "Light Conditioner",
       "brand": "MopTop",
@@ -206,7 +226,7 @@ export const defaultProductDatabase: ProductDatabase = {
       "id": "light_conditioner",
       "systems_excluded": [],
       "status": "ok",
-      "cost_rating": "3"
+      "cost_rating": "4"
     },
     "daily_conditioner": {
       "name": "Daily Conditioner",
@@ -226,7 +246,7 @@ export const defaultProductDatabase: ProductDatabase = {
       "id": "daily_conditioner",
       "systems_excluded": [],
       "status": "ok",
-      "cost_rating": "3"
+      "cost_rating": "4"
     },
     "pure_inspiration_daily_conditioner": {
       "name": "Pure Inspiration Daily Conditioner",
@@ -246,7 +266,7 @@ export const defaultProductDatabase: ProductDatabase = {
       "id": "pure_inspiration_daily_conditioner",
       "systems_excluded": [],
       "status": "ok",
-      "cost_rating": "4"
+      "cost_rating": "5"
     },
     "hydrating_cream_conditioner": {
       "name": "Hydrating Cream Conditioner",
@@ -266,7 +286,7 @@ export const defaultProductDatabase: ProductDatabase = {
       "id": "hydrating_cream_conditioner",
       "systems_excluded": [],
       "status": "ok",
-      "cost_rating": "4"
+      "cost_rating": "5"
     },
     "clarity_conditioner": {
       "name": "Clarity Conditioner",
@@ -286,7 +306,7 @@ export const defaultProductDatabase: ProductDatabase = {
       "id": "clarity_conditioner",
       "systems_excluded": [],
       "status": "ok",
-      "cost_rating": "4"
+      "cost_rating": "5"
     },
     "drench_&_quench_rich_conditioner_au": {
       "name": "Drench & Quench Rich Conditioner",
@@ -368,7 +388,7 @@ export const defaultProductDatabase: ProductDatabase = {
       "id": "tea_tree_triple_treat_invigorating_conditioner",
       "systems_excluded": [],
       "status": "ok",
-      "cost_rating": "2"
+      "cost_rating": "1"
     },
     "coconut_cowash_cleansing_conditioner": {
       "name": "Coconut Cowash Cleansing Conditioner",
@@ -405,7 +425,7 @@ export const defaultProductDatabase: ProductDatabase = {
       "id": "co-wash_conditioning_cleanser",
       "systems_excluded": [],
       "status": "ok",
-      "cost_rating": "3"
+      "cost_rating": "4"
     },
     "curl_quenching_conditioning_wash_uk": {
       "name": "Curl Quenching Conditioning Wash",
@@ -444,7 +464,7 @@ export const defaultProductDatabase: ProductDatabase = {
       "id": "i_create_volume",
       "systems_excluded": [],
       "status": "ok",
-      "cost_rating": "4"
+      "cost_rating": "5"
     },
     "curly_hair_cream": {
       "name": "Curly Hair Cream",
@@ -484,7 +504,7 @@ export const defaultProductDatabase: ProductDatabase = {
       "id": "cruise_control_curl_cream_au",
       "systems_excluded": [],
       "status": "ok",
-      "cost_rating": "4"
+      "cost_rating": "5"
     },
     "weightless_air_dry_cream_uk": {
       "name": "Weightless Air Dry Cream",
@@ -527,7 +547,7 @@ export const defaultProductDatabase: ProductDatabase = {
       "id": "pinapple_swirl_curl_defining_cream",
       "systems_excluded": [],
       "status": "ok",
-      "cost_rating": "4"
+      "cost_rating": "5"
     },
     "curl_enhancing_custard": {
       "name": "Curl Enhancing Custard",
@@ -697,7 +717,7 @@ export const defaultProductDatabase: ProductDatabase = {
       "id": "bouncy_strength_volume_foam_uk",
       "systems_excluded": [],
       "status": "ok",
-      "cost_rating": "4"
+      "cost_rating": "5"
     },
     "curl_boosting_hair_mousse": {
       "name": "Curl Boosting Hair Mousse",
@@ -738,7 +758,7 @@ export const defaultProductDatabase: ProductDatabase = {
       "id": "i_create_hold",
       "systems_excluded": [],
       "status": "ok",
-      "cost_rating": "4"
+      "cost_rating": "5"
     },
     "curl_enhancer_gel": {
       "name": "Curl Enhancer Gel",
@@ -858,7 +878,7 @@ export const defaultProductDatabase: ProductDatabase = {
       "id": "la_hold_styling_gel",
       "systems_excluded": [],
       "status": "ok",
-      "cost_rating": "2"
+      "cost_rating": "1"
     },
     "sweet_spirit_leave-in_conditioner": {
       "name": "Sweet Spirit Leave-In Conditioner",
@@ -878,7 +898,7 @@ export const defaultProductDatabase: ProductDatabase = {
       "id": "sweet_spirit_leave-in_conditioner",
       "systems_excluded": [],
       "status": "ok",
-      "cost_rating": "4"
+      "cost_rating": "5"
     },
     "hydrate_&_plump_leave-in_conditioner_uk": {
       "name": "Hydrate & Plump Leave-In Conditioner",
@@ -918,7 +938,7 @@ export const defaultProductDatabase: ProductDatabase = {
       "id": "direct_leave_in_weightless_moisture_conditioner",
       "systems_excluded": [],
       "status": "ok",
-      "cost_rating": "2"
+      "cost_rating": "1"
     },
     "hush_nourishing_oil_au": {
       "name": "Hush Nourishing Oil",
@@ -1043,7 +1063,7 @@ export const defaultProductDatabase: ProductDatabase = {
       "id": "hydrating_hairbath",
       "systems_excluded": [],
       "status": "ok",
-      "cost_rating": "4"
+      "cost_rating": "5"
     },
     "gentle_shampoo": {
       "name": "Gentle Shampoo",
@@ -1083,7 +1103,7 @@ export const defaultProductDatabase: ProductDatabase = {
       "id": "pure_harmony_hairbath",
       "systems_excluded": [],
       "status": "ok",
-      "cost_rating": "3"
+      "cost_rating": "4"
     },
     "color_awakening_hairbath": {
       "name": "Color Awakening Hairbath",
@@ -1103,7 +1123,7 @@ export const defaultProductDatabase: ProductDatabase = {
       "id": "color_awakening_hairbath",
       "systems_excluded": [],
       "status": "ok",
-      "cost_rating": "4"
+      "cost_rating": "5"
     },
     "clarity_hairbath": {
       "name": "Clarity Hairbath",

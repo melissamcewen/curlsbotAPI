@@ -440,13 +440,6 @@
       "description": "CurlsBot is in the process of reclassifying this ingredient. We believe it is a mild surfactant but in the past we've listed it as stronger"
     },
     {
-      "name": "Sodium Lauroyl Sarcosinate",
-      "id": "sodium_lauroyl_sarcosinate",
-      "categories": [
-        "other_anionic_surfactants"
-      ]
-    },
-    {
       "name": "Sodium Lauryl Glucose Carboxylate",
       "id": "sodium_lauryl_glucose_carboxylate",
       "categories": [

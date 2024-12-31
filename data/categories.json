@@ -156,7 +156,8 @@
       "description": "Water-soluble silicones in hair care products are a type of silicone that is easily washed out of the hair with regular shampoo",
       "inclusions": [
         "ppg",
-        "peg"
+        "peg",
+        "pg-"
       ],
       "exclusions": [
         "castor"
