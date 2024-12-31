@@ -166,12 +166,11 @@ describe('Silicone Analysis e2e complex list with curly_moderate system', () => 
       },
       {
         normalized: 'something pg-silanetriol',
-        ingredientId: 'unknown_water_soluble_silicone',
+        ingredientId: 'silanetriol',
         category: 'water_soluble_silicones',
         status: 'caution',
         reason: 'caution_silicones',
       },
-
     ];
 
     expectedResults.forEach((expected) => {

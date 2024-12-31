@@ -219,7 +219,14 @@
         "quaternized dimethicone"
       ],
       "categories": [
-        "non_water_soluble_silicones"
+        "water_soluble_silicones"
+      ],
+      "references": [
+        {
+          "url": "https://science-yhairblog.blogspot.com/2014/04/silicone-ingredient-solubility-list.html",
+          "title": "Silicone Ingredient Solubility List",
+          "type": "science"
+        }
       ]
     },
     {
@@ -284,7 +291,34 @@
           "title": "Silicone Ingredient Solubility List",
           "type": "science"
         }
-
+      ]
+    },
+    {
+      "name": "Hydrolyzed Wheat Protein Hydroxypropyl Polysiloxane",
+      "id": "hydrolyzed_wheat_protein_hydroxypropyl_polysiloxane",
+      "categories": [
+        "water_soluble_silicones"
+      ],
+      "references": [
+        {
+          "url": "https://science-yhairblog.blogspot.com/2014/04/silicone-ingredient-solubility-list.html",
+          "title": "Silicone Ingredient Solubility List",
+          "type": "science"
+        }
+      ]
+    },
+    {
+      "name": "Silanetriol",
+      "id": "silanetriol",
+      "categories": [
+        "water_soluble_silicones"
+      ],
+      "references": [
+        {
+          "url": "https://science-yhairblog.blogspot.com/2014/04/silicone-ingredient-solubility-list.html",
+          "title": "Silicone Ingredient Solubility List",
+          "type": "science"
+        }
       ]
     }
   ]

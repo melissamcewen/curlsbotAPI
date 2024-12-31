@@ -2213,9 +2213,24 @@ export const defaultDatabase: IngredientDatabase = {
       "status": "ok",
       "group": "humectants"
     },
+    "seaweed_extract": {
+      "name": "Seaweed Extract",
+      "id": "seaweed_extract",
+      "categories": [
+        "film_forming_humectants"
+      ],
+      "synonyms": [
+        "seaweed"
+      ],
+      "status": "ok",
+      "group": "humectants"
+    },
     "marshmallow_root_extract": {
       "name": "Marshmallow root Extract",
       "id": "marshmallow_root_extract",
+      "synonyms": [
+        "marshmallow"
+      ],
       "categories": [
         "film_forming_humectants"
       ],
@@ -2396,7 +2411,7 @@ export const defaultDatabase: IngredientDatabase = {
         "proteins"
       ],
       "status": "ok",
-      "group": "others"
+      "group": "humectants"
     },
     "sodium_phytate": {
       "name": "Sodium Phytate",
@@ -2421,9 +2436,8 @@ export const defaultDatabase: IngredientDatabase = {
     "sorbitol": {
       "name": "Sorbitol",
       "id": "sorbitol",
-      "description": "A humectant that retains moisture and adds hydration",
       "categories": [
-        "film_forming_humectants"
+        "simple_humectants"
       ],
       "status": "ok",
       "group": "humectants"
@@ -2564,7 +2578,7 @@ export const defaultDatabase: IngredientDatabase = {
       "name": "Lanolin",
       "id": "lanolin",
       "categories": [
-        "other"
+        "other_oils"
       ],
       "description": "This is an ingredient derived from wool with a complicated chemical structure and many uses. One issue with it is that it is comedogenic, meaning it can clog pores. This may be an issue for people with sensitive or dandruff prone scalps. It is also not vegan friendly.",
       "references": [
@@ -2575,7 +2589,7 @@ export const defaultDatabase: IngredientDatabase = {
         }
       ],
       "status": "ok",
-      "group": "others"
+      "group": "oils"
     },
     "polysorbate_20": {
       "name": "Polysorbate 20",
@@ -2586,6 +2600,613 @@ export const defaultDatabase: IngredientDatabase = {
       ],
       "categories": [
         "other"
+      ],
+      "status": "ok",
+      "group": "others"
+    },
+    "alanine": {
+      "name": "Alanine",
+      "id": "alanine",
+      "categories": [
+        "proteins"
+      ],
+      "status": "ok",
+      "group": "humectants"
+    },
+    "arginine": {
+      "name": "Arginine",
+      "id": "arginine",
+      "categories": [
+        "proteins"
+      ],
+      "status": "ok",
+      "group": "humectants"
+    },
+    "aspartic_acid": {
+      "name": "Aspartic Acid",
+      "id": "aspartic_acid",
+      "categories": [
+        "proteins"
+      ],
+      "status": "ok",
+      "group": "humectants"
+    },
+    "calcium_aspartate": {
+      "name": "calcium aspartate",
+      "id": "calcium_aspartate",
+      "categories": [
+        "proteins"
+      ],
+      "status": "ok",
+      "group": "humectants"
+    },
+    "calcium_glycinate": {
+      "name": "Calcium Glycinate",
+      "id": "calcium_glycinate",
+      "categories": [
+        "proteins"
+      ],
+      "status": "ok",
+      "group": "humectants"
+    },
+    "casein": {
+      "name": "Casein",
+      "id": "casein",
+      "categories": [
+        "proteins"
+      ],
+      "status": "ok",
+      "group": "humectants"
+    },
+    "collagen": {
+      "name": "Collagen",
+      "id": "collagen",
+      "categories": [
+        "proteins"
+      ],
+      "status": "ok",
+      "group": "humectants"
+    },
+    "cysteine": {
+      "name": "Cysteine",
+      "id": "cysteine",
+      "categories": [
+        "proteins"
+      ],
+      "status": "ok",
+      "group": "humectants"
+    },
+    "dipotassium_aspartate": {
+      "name": "Dipotassium aspartate",
+      "id": "dipotassium_aspartate",
+      "categories": [
+        "proteins"
+      ],
+      "status": "ok",
+      "group": "humectants"
+    },
+    "elastin": {
+      "name": "Elastin",
+      "id": "elastin",
+      "categories": [
+        "proteins"
+      ],
+      "status": "ok",
+      "group": "humectants"
+    },
+    "gelatin": {
+      "name": "Gelatin",
+      "id": "gelatin",
+      "categories": [
+        "proteins"
+      ],
+      "status": "ok",
+      "group": "humectants"
+    },
+    "glutamic_acid": {
+      "name": "Glutamic Acid",
+      "id": "glutamic_acid",
+      "categories": [
+        "proteins"
+      ],
+      "status": "ok",
+      "group": "humectants"
+    },
+    "histidine": {
+      "name": "Histidine",
+      "id": "histidine",
+      "categories": [
+        "proteins"
+      ],
+      "status": "ok",
+      "group": "humectants"
+    },
+    "lysine": {
+      "name": "Lysine",
+      "id": "lysine",
+      "categories": [
+        "proteins"
+      ],
+      "status": "ok",
+      "group": "humectants"
+    },
+    "glycine": {
+      "name": "Glycine",
+      "id": "glycine",
+      "categories": [
+        "proteins"
+      ],
+      "status": "ok",
+      "group": "humectants"
+    },
+    "keratin": {
+      "name": "Keratin",
+      "id": "keratin",
+      "categories": [
+        "proteins"
+      ],
+      "status": "ok",
+      "group": "humectants"
+    },
+    "magnesium_aspartate": {
+      "name": "Magnesium aspartate",
+      "id": "magnesium_aspartate",
+      "categories": [
+        "proteins"
+      ],
+      "status": "ok",
+      "group": "humectants"
+    },
+    "magnesium_glycinate": {
+      "name": "Magnesium Glycinate",
+      "id": "magnesium_glycinate",
+      "categories": [
+        "proteins"
+      ],
+      "status": "ok",
+      "group": "humectants"
+    },
+    "methionine": {
+      "name": "Methionine",
+      "id": "methionine",
+      "categories": [
+        "proteins"
+      ],
+      "status": "ok",
+      "group": "humectants"
+    },
+    "milk": {
+      "name": "Milk",
+      "id": "milk",
+      "categories": [
+        "proteins"
+      ],
+      "status": "ok",
+      "group": "humectants"
+    },
+    "peptide": {
+      "name": "Peptide",
+      "id": "peptide",
+      "categories": [
+        "proteins"
+      ],
+      "status": "ok",
+      "group": "humectants"
+    },
+    "phenylalanine": {
+      "name": "Phenylalanine",
+      "id": "phenylalanine",
+      "categories": [
+        "proteins"
+      ],
+      "status": "ok",
+      "group": "humectants"
+    },
+    "potassium_aspartate": {
+      "name": "Potassium aspartate",
+      "id": "potassium_aspartate",
+      "categories": [
+        "proteins"
+      ],
+      "status": "ok",
+      "group": "humectants"
+    },
+    "proline": {
+      "name": "Proline",
+      "id": "proline",
+      "categories": [
+        "proteins"
+      ],
+      "status": "ok",
+      "group": "humectants"
+    },
+    "serine": {
+      "name": "Serine",
+      "id": "serine",
+      "categories": [
+        "proteins"
+      ],
+      "status": "ok",
+      "group": "humectants"
+    },
+    "unknown_protein": {
+      "name": "Unknown Protein",
+      "id": "unknown_protein",
+      "synonyms": [
+        "protein"
+      ],
+      "categories": [
+        "proteins"
+      ],
+      "status": "ok",
+      "group": "humectants"
+    },
+    "silk": {
+      "name": "Silk",
+      "id": "silk",
+      "categories": [
+        "proteins"
+      ],
+      "synonyms": [
+        "sericin"
+      ],
+      "status": "ok",
+      "group": "humectants"
+    },
+    "sodium_aspartate": {
+      "name": "Sodium aspartate",
+      "id": "sodium_aspartate",
+      "categories": [
+        "proteins"
+      ],
+      "status": "ok",
+      "group": "humectants"
+    },
+    "sodium_glycinate": {
+      "name": "Sodium Glycinate",
+      "id": "sodium_glycinate",
+      "categories": [
+        "proteins"
+      ],
+      "status": "ok",
+      "group": "humectants"
+    },
+    "tyrosine": {
+      "name": "Tyrosine",
+      "id": "tyrosine",
+      "categories": [
+        "proteins"
+      ],
+      "status": "ok",
+      "group": "humectants"
+    },
+    "sodium_glutamate": {
+      "name": "Sodium Glutamate",
+      "id": "sodium_glutamate",
+      "categories": [
+        "proteins"
+      ],
+      "status": "ok",
+      "group": "humectants"
+    },
+    "acetamide_mea": {
+      "name": "Acetamide MEA",
+      "id": "acetamide_mea",
+      "categories": [
+        "simple_humectants"
+      ],
+      "status": "ok",
+      "group": "humectants"
+    },
+    "agave_nectar": {
+      "name": "Agave Nectar",
+      "id": "agave_nectar",
+      "synonyms": [
+        "agave"
+      ],
+      "categories": [
+        "simple_humectants"
+      ],
+      "status": "ok",
+      "group": "humectants"
+    },
+    "alantoin": {
+      "name": "Alantoin",
+      "id": "alantoin",
+      "categories": [
+        "simple_humectants"
+      ],
+      "synonyms": [
+        "allantoin"
+      ],
+      "status": "ok",
+      "group": "humectants"
+    },
+    "caprylyl_glycol": {
+      "name": "Caprylyl Glycol",
+      "id": "caprylyl_glycol",
+      "categories": [
+        "simple_humectants"
+      ],
+      "status": "ok",
+      "group": "humectants"
+    },
+    "ceramide": {
+      "name": "Ceramide",
+      "id": "ceramide",
+      "categories": [
+        "film_forming_humectants"
+      ],
+      "status": "ok",
+      "group": "humectants"
+    },
+    "coenzyme_q10": {
+      "name": "Coenzyme Q10",
+      "id": "coenzyme_q10",
+      "categories": [
+        "film_forming_humectants"
+      ],
+      "status": "ok",
+      "group": "humectants"
+    },
+    "dipropylene_glycol": {
+      "name": "Dipropylene Glycol",
+      "id": "dipropylene_glycol",
+      "categories": [
+        "simple_humectants"
+      ],
+      "status": "ok",
+      "group": "humectants"
+    },
+    "erythritol": {
+      "name": "Erythritol",
+      "id": "erythritol",
+      "categories": [
+        "simple_humectants"
+      ],
+      "status": "ok",
+      "group": "humectants"
+    },
+    "fructose": {
+      "name": "Fructose",
+      "id": "fructose",
+      "categories": [
+        "simple_humectants"
+      ],
+      "status": "ok",
+      "group": "humectants"
+    },
+    "glucose": {
+      "name": "Glucose",
+      "id": "glucose",
+      "categories": [
+        "simple_humectants"
+      ],
+      "status": "ok",
+      "group": "humectants"
+    },
+    "glyceryl_triacetate": {
+      "name": "Glyceryl Triacetate",
+      "id": "glyceryl_triacetate",
+      "categories": [
+        "simple_humectants"
+      ],
+      "status": "ok",
+      "group": "humectants"
+    },
+    "glycogen": {
+      "name": "Glycogen",
+      "id": "glycogen",
+      "categories": [
+        "film_forming_humectants"
+      ],
+      "status": "ok",
+      "group": "humectants"
+    },
+    "hexylene_glycol": {
+      "name": "Hexylene Glycol",
+      "id": "hexylene_glycol",
+      "categories": [
+        "simple_humectants"
+      ],
+      "status": "ok",
+      "group": "humectants"
+    },
+    "honey": {
+      "name": "Honey",
+      "id": "honey",
+      "categories": [
+        "simple_humectants"
+      ],
+      "status": "ok",
+      "group": "humectants"
+    },
+    "hyaluronic_acid": {
+      "name": "Hyaluronic Acid",
+      "id": "hyaluronic_acid",
+      "categories": [
+        "film_forming_humectants"
+      ],
+      "status": "ok",
+      "group": "humectants"
+    },
+    "inositol": {
+      "name": "Inositol",
+      "id": "inositol",
+      "categories": [
+        "simple_humectants"
+      ],
+      "status": "ok",
+      "group": "humectants"
+    },
+    "lactic_acid": {
+      "name": "Lactic Acid",
+      "id": "lactic_acid",
+      "categories": [
+        "simple_humectants"
+      ],
+      "status": "ok",
+      "group": "humectants"
+    },
+    "lecithin": {
+      "name": "Lecithin",
+      "id": "lecithin",
+      "categories": [
+        "film_forming_humectants"
+      ],
+      "status": "ok",
+      "group": "humectants"
+    },
+    "maltitol": {
+      "name": "Maltitol",
+      "id": "maltitol",
+      "categories": [
+        "film_forming_humectants"
+      ],
+      "status": "ok",
+      "group": "humectants"
+    },
+    "molasses": {
+      "name": "Molasses",
+      "id": "molasses",
+      "categories": [
+        "simple_humectants"
+      ],
+      "status": "ok",
+      "group": "humectants"
+    },
+    "niacinamide": {
+      "name": "Niacinamide",
+      "id": "niacinamide",
+      "categories": [
+        "simple_humectants"
+      ],
+      "status": "ok",
+      "group": "humectants"
+    },
+    "phytantriol": {
+      "name": "Phytantriol",
+      "id": "phytantriol",
+      "categories": [
+        "film_forming_humectants"
+      ],
+      "status": "ok",
+      "group": "humectants"
+    },
+    "polydextrose": {
+      "name": "Polydextrose",
+      "id": "polydextrose",
+      "categories": [
+        "film_forming_humectants"
+      ],
+      "status": "ok",
+      "group": "humectants"
+    },
+    "polyethylene_glycol": {
+      "name": "Polyethylene Glycol",
+      "id": "polyethylene_glycol",
+      "synonyms": [
+        "polyethyleneglycol"
+      ],
+      "categories": [
+        "film_forming_humectants"
+      ],
+      "status": "ok",
+      "group": "humectants"
+    },
+    "quillaja_saponaria_bark_extract": {
+      "name": "Quillaja Saponaria Bark Extract",
+      "id": "quillaja_saponaria_bark_extract",
+      "categories": [
+        "film_forming_humectants"
+      ],
+      "synonyms": [
+        "quillaja",
+        "quillaia"
+      ],
+      "status": "ok",
+      "group": "humectants"
+    },
+    "sodium_lactate": {
+      "name": "Sodium Lactate",
+      "id": "sodium_lactate",
+      "categories": [
+        "film_forming_humectants"
+      ],
+      "status": "ok",
+      "group": "humectants"
+    },
+    "sodium_pca": {
+      "name": "Sodium PCA",
+      "id": "sodium_pca",
+      "categories": [
+        "simple_humectants"
+      ],
+      "synonyms": [
+        "pyrrolidone carboxylic acid"
+      ],
+      "status": "ok",
+      "group": "humectants"
+    },
+    "urea": {
+      "name": "Urea",
+      "id": "urea",
+      "categories": [
+        "simple_humectants"
+      ],
+      "status": "ok",
+      "group": "humectants"
+    },
+    "xylitol": {
+      "name": "Xylitol",
+      "id": "xylitol",
+      "categories": [
+        "simple_humectants"
+      ],
+      "status": "ok",
+      "group": "humectants"
+    },
+    "c12_15_alkyl": {
+      "name": "C12-15 alkyl",
+      "id": "c12_15_alkyl",
+      "categories": [
+        "other_emollients"
+      ],
+      "status": "ok",
+      "group": "others"
+    },
+    "cetyl_esters": {
+      "name": "Cetyl esters",
+      "id": "cetyl_esters",
+      "categories": [
+        "other_emollients"
+      ],
+      "status": "ok",
+      "group": "others"
+    },
+    "isolaureth_6": {
+      "name": "Isolaureth-6",
+      "id": "isolaureth_6",
+      "categories": [
+        "other_emollients"
+      ],
+      "status": "ok",
+      "group": "others"
+    },
+    "sorbitol_esters": {
+      "name": "Sorbitol Esters",
+      "id": "sorbitol_esters",
+      "categories": [
+        "other_emollients"
+      ],
+      "status": "ok",
+      "group": "others"
+    },
+    "triethylhexanoin": {
+      "name": "Triethylhexanoin",
+      "id": "triethylhexanoin",
+      "categories": [
+        "other_emollients"
       ],
       "status": "ok",
       "group": "others"
@@ -2839,7 +3460,14 @@ export const defaultDatabase: IngredientDatabase = {
         "quaternized dimethicone"
       ],
       "categories": [
-        "non_water_soluble_silicones"
+        "water_soluble_silicones"
+      ],
+      "references": [
+        {
+          "url": "https://science-yhairblog.blogspot.com/2014/04/silicone-ingredient-solubility-list.html",
+          "title": "Silicone Ingredient Solubility List",
+          "type": "science"
+        }
       ],
       "status": "warning",
       "group": "silicones"
@@ -2918,6 +3546,38 @@ export const defaultDatabase: IngredientDatabase = {
         }
       ],
       "status": "caution",
+      "group": "silicones"
+    },
+    "hydrolyzed_wheat_protein_hydroxypropyl_polysiloxane": {
+      "name": "Hydrolyzed Wheat Protein Hydroxypropyl Polysiloxane",
+      "id": "hydrolyzed_wheat_protein_hydroxypropyl_polysiloxane",
+      "categories": [
+        "water_soluble_silicones"
+      ],
+      "references": [
+        {
+          "url": "https://science-yhairblog.blogspot.com/2014/04/silicone-ingredient-solubility-list.html",
+          "title": "Silicone Ingredient Solubility List",
+          "type": "science"
+        }
+      ],
+      "status": "warning",
+      "group": "silicones"
+    },
+    "silanetriol": {
+      "name": "Silanetriol",
+      "id": "silanetriol",
+      "categories": [
+        "water_soluble_silicones"
+      ],
+      "references": [
+        {
+          "url": "https://science-yhairblog.blogspot.com/2014/04/silicone-ingredient-solubility-list.html",
+          "title": "Silicone Ingredient Solubility List",
+          "type": "science"
+        }
+      ],
+      "status": "warning",
       "group": "silicones"
     },
     "unknown_non_water_soluble_silicone": {
@@ -3519,7 +4179,7 @@ export const defaultDatabase: IngredientDatabase = {
     "proteins": {
       "id": "proteins",
       "name": "Proteins",
-      "group": "others",
+      "group": "humectants",
       "description": "Proteins in hair care products can help strengthen and repair hair, but some people find them drying",
       "references": []
     },
@@ -3528,6 +4188,13 @@ export const defaultDatabase: IngredientDatabase = {
       "name": "Other Preservatives",
       "group": "preservatives",
       "description": "These are other preservatives that don't fit into the other categories",
+      "references": []
+    },
+    "other_emollients": {
+      "id": "other_emollients",
+      "name": "Other Emollients",
+      "group": "others",
+      "description": "These are other emollients that don't fit into the other categories",
       "references": []
     }
   },

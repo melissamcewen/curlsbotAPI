@@ -348,7 +348,7 @@
     {
       "id": "proteins",
       "name": "Proteins",
-      "group": "others",
+      "group": "humectants",
       "description": "Proteins in hair care products can help strengthen and repair hair, but some people find them drying"
     },
     {
@@ -356,6 +356,12 @@
       "name": "Other Preservatives",
       "group": "preservatives",
       "description": "These are other preservatives that don't fit into the other categories"
+    },
+    {
+      "id": "other_emollients",
+      "name": "Other Emollients",
+      "group": "others",
+      "description": "These are other emollients that don't fit into the other categories"
     }
   ]
 }

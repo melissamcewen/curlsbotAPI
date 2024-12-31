@@ -58,7 +58,8 @@
                 "film_forming_humectants",
                 "simple_humectants",
                 "proteins",
-                "other_oils"
+                "other_oils",
+                "other_emollients"
               ]
             },
             "description": "Categories to which the ingredient belongs"
