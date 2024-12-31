@@ -49,6 +49,12 @@ describe('Normalizer', () => {
       expect(isValidIngredientList('wwwx.not-a-url')).toBe(true);
     });
 
+    it('should reject product names', () => {
+      expect(isValidIngredientList('loreal shampoo')).toBe(false);
+      expect(isValidIngredientList('accure conditioner')).toBe(false);
+
+    });
+
 
   });
 

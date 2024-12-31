@@ -23,6 +23,12 @@ export function isValidIngredientList(value: string): boolean {
   if (/(?:https?:\/\/|www\.|\/{2})/i.test(value)) {
     return false;
   }
+  // Check for product names
+  const productNames = /(shampoo|conditioner)/i; // Add more product names as needed
+  if (productNames.test(value)) {
+    return false;
+  }
+
   return value.trim().length > 0;
 }
 

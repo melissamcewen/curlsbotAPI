@@ -2917,7 +2917,7 @@ export const defaultDatabase: IngredientDatabase = {
           "type": "science"
         }
       ],
-      "status": "warning",
+      "status": "caution",
       "group": "silicones"
     },
     "unknown_non_water_soluble_silicone": {
