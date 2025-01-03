@@ -3,9 +3,7 @@
     {
       "id": "alcohols",
       "name": "Alcohols",
-      "inclusions": [
-        "alcohol"
-      ],
+      "inclusions": ["alcohol"],
       "defaultIngredient": "unknown_alcohol",
       "description": "Alcohols in haircare products are used to help products dry quickly, preserve formulations, and enhance ingredient absorption into hair",
       "references": [
@@ -29,22 +27,15 @@
     {
       "id": "preservatives",
       "name": "Preservatives",
-      "inclusions": [
-        "paraben"
-      ],
+      "inclusions": ["paraben"],
       "description": "Preservatives in hair products can help prevent the growth of bacteria and mold"
     },
     {
       "id": "surfactants",
       "name": "Surfactants",
       "description": "surfactants in hair products can help remove dirt and oil from the hair and scalp",
-      "inclusions": [
-        "sulfate",
-        "sulphate"
-      ],
-      "exclusions": [
-        "magnesium"
-      ],
+      "inclusions": ["sulfate", "sulphate"],
+      "exclusions": ["magnesium", "behentrimonium", "methosulfate"],
       "references": [
         {
           "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4387693/",
@@ -129,13 +120,9 @@
     {
       "id": "waxes",
       "name": "Waxes",
-      "inclusions": [
-        "wax"
-      ],
+      "inclusions": ["wax"],
       "defaultIngredient": "unknown_wax",
-      "exclusions": [
-        "emulsifying"
-      ],
+      "exclusions": ["emulsifying"],
       "description": "Waxes in styling products can add texture, hold, and shine to hair",
       "references": [
         {
@@ -149,9 +136,7 @@
     {
       "id": "oils",
       "name": "Oils",
-      "inclusions": [
-        "oil"
-      ],
+      "inclusions": ["oil"],
       "defaultIngredient": "unknown_oil",
       "description": "Oils in hair products can moisturize and add shine to hair",
       "references": [
@@ -164,7 +149,6 @@
           "url": "https://link.springer.com/article/10.1186/s40691-023-00332-0",
           "type": "science",
           "title": "Determination of penetration and protection of fatty acids in bleached hair according to the fatty acid chain length and the application to understanding the protective effects of MCT oil and coconut oil"
-
         },
         {
           "url": "https://www.mdpi.com/2079-9284/11/2/64",
@@ -194,7 +178,6 @@
           "type": "science",
           "url": "https://www.taylorfrancis.com/books/mono/10.1201/b16716/handbook-cosmetic-science-technology-andr%C3%A9-barel-marc-paye-howard-maibach",
           "description": "Mentions Panthenol can increase hair's volume"
-
         },
         {
           "url": "https://labmuffin.com/skincare-chemistry-which-ingredients-are-humectants/",

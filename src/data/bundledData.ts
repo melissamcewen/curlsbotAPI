@@ -1197,7 +1197,7 @@ export const defaultDatabase: IngredientDatabase = {
       "id": "behentrimonium_chloride",
       "description": "A cationic surfactant that gently cleanses and conditions hair",
       "categories": [
-        "mild_surfactants"
+        "conditioning_agents"
       ],
       "references": [
         {
@@ -1205,14 +1205,14 @@ export const defaultDatabase: IngredientDatabase = {
         }
       ],
       "status": "ok",
-      "group": "surfactants"
+      "group": "others"
     },
     "cetrimonium_chloride": {
       "name": "Cetrimonium Chloride",
       "id": "cetrimonium_chloride",
       "description": "A cationic surfactant that gently cleanses and conditions hair",
       "categories": [
-        "mild_surfactants"
+        "conditioning_agents"
       ],
       "references": [
         {
@@ -1220,17 +1220,17 @@ export const defaultDatabase: IngredientDatabase = {
         }
       ],
       "status": "ok",
-      "group": "surfactants"
+      "group": "others"
     },
     "behentrimonium_methosulfate": {
       "name": "Behentrimonium Methosulfate",
       "id": "behentrimonium_methosulfate",
       "categories": [
-        "mild_surfactants"
+        "conditioning_agents"
       ],
       "description": "Despite the name, this is not a sulfate. It a cationic surfactant that gently cleanses and conditions hair.",
       "status": "ok",
-      "group": "surfactants"
+      "group": "others"
     },
     "apricot_kernel_oil": {
       "name": "Apricot Kernel Oil",
@@ -3469,7 +3469,7 @@ export const defaultDatabase: IngredientDatabase = {
           "type": "science"
         }
       ],
-      "status": "warning",
+      "status": "caution",
       "group": "silicones"
     },
     "stearoxytrimethylsilane": {
@@ -3561,7 +3561,7 @@ export const defaultDatabase: IngredientDatabase = {
           "type": "science"
         }
       ],
-      "status": "warning",
+      "status": "caution",
       "group": "silicones"
     },
     "silanetriol": {
@@ -3577,7 +3577,7 @@ export const defaultDatabase: IngredientDatabase = {
           "type": "science"
         }
       ],
-      "status": "warning",
+      "status": "caution",
       "group": "silicones"
     },
     "unknown_non_water_soluble_silicone": {
@@ -4196,6 +4196,13 @@ export const defaultDatabase: IngredientDatabase = {
       "group": "others",
       "description": "These are other emollients that don't fit into the other categories",
       "references": []
+    },
+    "conditioning_agents": {
+      "id": "conditioning_agents",
+      "name": "Conditioning Agents",
+      "group": "others",
+      "description": "These are conditioning agents that don't fit into the other categories",
+      "references": []
     }
   },
   "groups": {
@@ -4242,7 +4249,9 @@ export const defaultDatabase: IngredientDatabase = {
         "sulphate"
       ],
       "exclusions": [
-        "magnesium"
+        "magnesium",
+        "behentrimonium",
+        "methosulfate"
       ],
       "references": [
         {

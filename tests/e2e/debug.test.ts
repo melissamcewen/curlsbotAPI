@@ -15,7 +15,7 @@ import {
 
 /* THESE ARE PRODUCTION TESTS USE THE DATA IN src/data/bundledData.ts */
 
-const list = 'peg-12 carnauba wax';
+const list = 'behentrimonium methosulfate';
 
 describe('Debugging ingredient matching', () => {
   const analyzer = new Analyzer({
@@ -23,7 +23,7 @@ describe('Debugging ingredient matching', () => {
     settings: defaultSettings,
   });
 
-  it('should correctly identify peg-12 carnauba wax', () => {
+  it('should correctly identify behentrimonium methosulfate', () => {
     // Log the initial search
     console.log('\nSearching for:', list);
 
@@ -58,9 +58,9 @@ describe('Debugging ingredient matching', () => {
     console.log('\nFinal analysis result:', JSON.stringify(result, null, 2));
 
     // Test assertions
-    expect(result.ingredients[0].ingredient?.id).toBe('peg_12_carnauba_wax');
+    expect(result.ingredients[0].ingredient?.id).toBe('behentrimonium_methosulfate');
     expect(result.ingredients[0].ingredient?.categories).toContain(
-      'water_soluble_waxes',
+      'conditioning_agents',
     );
   });
 });

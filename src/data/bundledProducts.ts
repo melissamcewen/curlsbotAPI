@@ -3,20 +3,19 @@ import type { ProductDatabase } from '../types';
 
 export const defaultProductDatabase: ProductDatabase = {
   "products": {
-    "hair_diffuser_for_curly_hair_attachment": {
-      "name": "Hair Diffuser for Curly Hair Attachment",
+    "universal_diffuser": {
+      "name": "Universal Diffuser",
       "product_categories": [
         "accessories"
       ],
-      "brand": "Segbeauty",
+      "brand": "Bio Ionic",
       "tags": [
         "style",
         "featured"
       ],
-      "buy_url": "https://amzn.to/3VX9fUx",
-      "asin": "B07QZ315F8",
+      "buy_url": "https://click.linksynergy.com/link?id=9QcV0uNyab0&offerid=696429.4479416&type=2&murl=https%3a%2f%2fbioionic.com%2fproducts%2funiversal-diffuser-black%3fvariant%3d44904716697920%26utm_source%3dgoogle%26utm_medium%3dpaid%26utm_campaign%3dshopping%26utm_term%3d16",
       "description": "Turn any hairdryer into a diffuser with this attachment",
-      "id": "hair_diffuser_for_curly_hair_attachment",
+      "id": "universal_diffuser",
       "systems_excluded": []
     },
     "curly_girl_microfiber_super_absorbent_anti_frizz_hair_towel": {
@@ -209,6 +208,22 @@ export const defaultProductDatabase: ProductDatabase = {
       "status": "ok",
       "cost_rating": "1"
     },
+    "vitalcurl+_balancing_rinse_conditioner_": {
+      "name": "VitalCurl+ Balancing Rinse Conditioner ",
+      "brand": "Ouidad",
+      "ingredients_raw": "aqua water eau, cetearyl alcohol, cetyl alcohol, glycerin, stearyl alcohol, hydrolyzed wheat protein, helianthus annuus sunflower seed oil, olea europaea olive fruit oil, camellia japonica tsubaki seed oil, salvia hispanica chia seed oil, glycine soja soybean oil, canola canola oil huile de colza, glycine soja soybean sterols, glycolipids, tocopheryl acetate, glyceryl stearate, cetearyl ethylhexanoate, cetrimonium chloride, polyquaternium-59, hydroxyethylcellulose, phospholipids, lactic acid, isopropyl myristate, butylene glycol, benzophenone-4, disodium edta, bht, sodium hydroxide, hexylene glycol, caprylyl glycol, phenoxyethanol, hexyl cinnamal, limonene, linalool, parfum fragrance",
+      "product_categories": [
+        "conditioners"
+      ],
+      "tags": [
+        "normal_porosity",
+        "low_porosity"
+      ],
+      "buy_url": "https://click.linksynergy.com/link?id=9QcV0uNyab0&offerid=929395.3842998208&type=2&murl=https%3a%2f%2fwww.ouidad.com%2fproducts%2fvitalcurl-plus-balancing-rinse-conditioner%3fvariant%3d42433997242626",
+      "id": "vitalcurl+_balancing_rinse_conditioner_",
+      "systems_excluded": [],
+      "status": "ok"
+    },
     "light_conditioner": {
       "name": "Light Conditioner",
       "brand": "MopTop",
@@ -217,8 +232,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "conditioners"
       ],
       "tags": [
-        "low_porosity",
-        "featured"
+        "low_porosity"
       ],
       "cost": 2.12,
       "ingredients_raw": "water, glycerin, cetyl alcohol coconut derived, stearyl alcohol coconut derived, olea europaea olive fruit oil, cetrimonium chloride, behentrimonium chloride, aloe barbadensis leaf extract, glycereth-26, hypnea musciformis extract seaweed, gelidiella acerosa extract seaweed, sargassum filipendula extract seaweed, sorbitol, hydroxypropyltrimonium honey, silk amino acids, rosmarinus officinalis rosemary leaf extract, chamomilla recutita matricaria flower extract, urtica dioica nettle extract, butyrospermum parkii shea butter, simmondsia chinensis jojoba seed oil, tocopheryl acetate vitamin e, panthenol vitamin b5, citrus senensis oil, citrus limon oil, citrus arantifolia oil, citrus paradisi oil, sodium phytate, hydroxyethylcellulose, phenoxyethanol, ethylhexylglycerin, citric acid",
@@ -237,8 +251,7 @@ export const defaultProductDatabase: ProductDatabase = {
       ],
       "tags": [
         "normal_porosity",
-        "high_porosity",
-        "featured"
+        "high_porosity"
       ],
       "ingredients_raw": "water, aloe barbadensis leaf extract, glycerin, cetyl alcohol, stearyl alcohol, cetrimonium chloride, behentrimonium chloride, olea europaea olive fruit oil, glycereth-26, butyrospermum parkii shea butter, hydroxypropyltrimonium honey, hypnea musciformis extract seaweed, gelidiella acerosa extract seaweed, sargassum filipendula extract seaweed, sorbitol, silk amino acids, rosmarinus officinalis rosemary leaf extract, chamomilla recutita matricaria flower extract, urtica dioica nettle extract, simmondsia chinensis jojoba seed oil, tocopheryl acetate vitamin e, panthenol vitamin b5, arnica montana flower extract, hydroxyethylcellulose, phenoxyethanol, sorbic acid, ethylhexylglycerin, citric acid, sodium phytate, fragrance",
       "cost": 2.12,
@@ -257,8 +270,7 @@ export const defaultProductDatabase: ProductDatabase = {
       ],
       "tags": [
         "low_porosity",
-        "normal_porosity",
-        "featured"
+        "normal_porosity"
       ],
       "buy_url": "https://amzn.to/3ZQnjjL",
       "cost": 3,
@@ -277,8 +289,7 @@ export const defaultProductDatabase: ProductDatabase = {
       ],
       "tags": [
         "high_porosity",
-        "normal_porosity",
-        "featured"
+        "normal_porosity"
       ],
       "buy_url": "https://amzn.to/4gmVZAG",
       "cost": 3,
@@ -297,8 +308,7 @@ export const defaultProductDatabase: ProductDatabase = {
       ],
       "tags": [
         "low_porosity",
-        "normal_porosity",
-        "featured"
+        "normal_porosity"
       ],
       "buy_url": "https://amzn.to/4iNhH2s",
       "cost": 3,
@@ -317,8 +327,7 @@ export const defaultProductDatabase: ProductDatabase = {
       ],
       "tags": [
         "high_porosity",
-        "normal_porosity",
-        "featured"
+        "normal_porosity"
       ],
       "ingredients_raw": "aqua, aloe barbadensis aloe vera leaf juice, cetearyl alcohol, behentrimonium methosulfate, glycerin, propanediol, cocos nucifera coconut oil, cetrimonium chloride, phenoxyethanol, butyrospermum parkii shea butter, hydrolised soy protein, simmondsia chinensis jojoba seed oil, chamomila recutita matricaria flower leaf stem extract, camellia sinensis white tea leaf extract, guar hydroxypropyltrimonium chloride, polyquaternium-10, sodium benzoate, citrus aurantifolia lime oil, cymbopogan flexuosus lemongrass oil, sodium pca, sodium lactate, arginine, aspartic acid, pca, glycine, alanine, serine, valine, proline, threonine, isoleucine, histidine, phenylalanine",
       "buy_url": "https://lohy.com.au/products/drench-quench-curl-moisture-mask?aff=49",
@@ -337,7 +346,6 @@ export const defaultProductDatabase: ProductDatabase = {
       ],
       "tags": [
         "normal_porosity",
-        "featured",
         "low_porosity"
       ],
       "buy_url": "https://lohy.com.au/products/nourish-flourish-conditioner-curly-hair?aff=49",
@@ -358,8 +366,7 @@ export const defaultProductDatabase: ProductDatabase = {
       "tags": [
         "normal_porosity",
         "low_porosity",
-        "high_porosity",
-        "featured"
+        "high_porosity"
       ],
       "ingredients_raw": "water aqua, cetearyl alcohol, hydroxypropyl starch phosphate, betaine, cetyl palmitate, behentrimonium chloride, butyrospermum parkii shea butter, cocos nucifera coconut oil, persea gratissima avocado oil, helianthus annuus sunflower seed oil, aloe barbadensis leaf juice, selaginella lepidophylla resurrection flower extract, ocimum basilicum basil leaf extract, piper nigrum black pepper seed extract, rosmarinus officinalis rosemary leaf extract, salvia officinalis sage leaf extract, carapa guaianensis andiroba seed oil, glycerin, guar hydroxypropyltrimonium chloride, panthenol, glyceryl undecylenate, fragrance parfum, citric acid, sodium hydroxide, sodium gluconate, glyceryl caprylate, potassium sorbate, sodium benzoate, limonene, linalool, isopropyl alcohol",
       "buy_url": "https://amzn.to/3BDw34T",
@@ -390,6 +397,23 @@ export const defaultProductDatabase: ProductDatabase = {
       "status": "ok",
       "cost_rating": "1"
     },
+    "coil_infusion®_drink_up™_cleansing_conditioner": {
+      "name": "Coil Infusion® Drink Up™ Cleansing Conditioner",
+      "brand": "Ouidad",
+      "product_categories": [
+        "cowashes"
+      ],
+      "tags": [
+        "normal_porosity",
+        "high_porosity",
+        "featured"
+      ],
+      "ingredients_raw": "aqua water eau, cetearyl alcohol, glycerin, cetyl esters, cetyl alcohol, stearamidopropyl dimethylamine, behentrimonium chloride, butyrospermum parkii shea butter, helianthus annuus sunflower seed oil, propanediol, prunus amygdalus dulcis sweet almond oil, carthamus tinctorius safflower seed oil, ricinus communis castor seed oil, helianthus annuus sunflower extract, rosmarinus officinalis rosemary leaf extract, oryza sativa rice bran extract, euterpe oleracea fruit extract, eucalyptus globulus leaf oil, mauritia flexuosa fruit oil, morinda citrifolia fruit extract, cymbopogon schoenanthus extract, garcinia indica seed butter, sclerocarya birrea seed oil, hydrolyzed rice protein, aloe barbadensis leaf juice, palmitoyl tetrapeptide-20, squalane, tocopherol, hydroxyethylcellulose, capryloyl glycerin sebacic acid copolymer, hydrogenated castor oil sebacic acid copolymer, bht, panthenol, polysorbate 60, guar hydroxypropyltrimonium chloride, stearamine oxide, ethylhexyl olivate, diheptyl succinate, isododecane, citric acid, disodium edta, tetrasodium edta, sodium hydroxide, disodium phosphate, sodium phosphate, butylene glycol, caprylyl glycol, hexylene glycol, sodium benzoate, potassium sorbate, leuconostoc radish root ferment filtrate, chlorphenesin, phenoxyethanol, limonene, linalool, fragrance parfum",
+      "buy_url": "https://click.linksynergy.com/link?id=9QcV0uNyab0&offerid=929395.3842995312&type=2&murl=https%3a%2f%2fwww.ouidad.com%2fproducts%2fcoil-infusion-drink-up-cleansing-conditioner%3fvariant%3d42617151357186",
+      "id": "coil_infusion®_drink_up™_cleansing_conditioner",
+      "systems_excluded": [],
+      "status": "ok"
+    },
     "coconut_cowash_cleansing_conditioner": {
       "name": "Coconut Cowash Cleansing Conditioner",
       "brand": "As I Am",
@@ -417,8 +441,7 @@ export const defaultProductDatabase: ProductDatabase = {
       ],
       "buy_url": "https://amzn.to/3P9FvzP",
       "tags": [
-        "high_porosity",
-        "featured"
+        "high_porosity"
       ],
       "asin": "B005SIR5G6",
       "cost": 2.12,
@@ -434,8 +457,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "cowashes"
       ],
       "tags": [
-        "high_porosity",
-        "featured"
+        "high_porosity"
       ],
       "ingredients_raw": "water aqua, cetearyl alcohol, hydroxypropyl starch phosphate, cetyl palmitate, behentrimonium chloride, cocamidopropyl betaine, fragrance parfum, selaginella lepidophylla resurrection flower extract, carapa guaianensis andiroba seed oil, persea gratissima avocado oil, salvia officinalis sage leaf extract, ocimum basilicum basil leaf extract, piper nigrum black pepper seed extract, aloe barbadensis aloe vera leaf juice, rosmarinus officinalis rosemary leaf extract, helianthus annuus sunflower seed oil, butyrospermum parkii shea butter, cocos nucifera coconut oil, glycerin, guar hydroxypropyltrimonium chloride, panthenol, glyceryl caprylate, glyceryl undecylenate, potassium sorbate, sodium benzoate, sodium hydroxide, sodium chloride, citric acid, disodium edta, limonene, linalool",
       "buy_url": "https://amzn.to/4fU0jXj",
@@ -739,6 +761,46 @@ export const defaultProductDatabase: ProductDatabase = {
       "status": "ok",
       "cost_rating": "1"
     },
+    "advanced_climate_control_heat_&_humidity_gel": {
+      "name": "Advanced Climate Control Heat & Humidity Gel",
+      "brand": "Ouidad",
+      "ingredients_raw": "water aqua eau, butylene glycol, polyquaternium-28, sericin, chamomilla recutita matricaria flower extract, actinidia chinensis kiwi fruit extract, cassia auriculata leaf extract, wheat amino acids, hydrolyzed wheat protein pvp crosspolymer, tocopheryl acetate, retinyl palmitate, panthenol, polyquaternium-7, guar hydroxypropyltrimonium chloride, behentrimonium chloride, cetrimonium chloride, peg-60 almond glycerides, glycerin, ppg-26-buteth-26, peg-40 hydrogenated castor oil, vp dmapa acrylates copolymer, hydroxyethylcellulose, potassium sorbate, disodium edta, hexylene glycol, caprylyl glycol, ethylhexylglycerin, phenoxyethanol, parfum fragrance, alpha-lsomethyl lonone, benzyl benzoate, benzyl salicylate, citronellol, hexyl cinnamal, hydroxycitronellal, limonene, linalool",
+      "product_categories": [
+        "gels"
+      ],
+      "tags": [
+        "normal_porosity",
+        "high_porosity",
+        "low_porosity",
+        "hold",
+        "featured"
+      ],
+      "cost": 3,
+      "buy_url": "https://click.linksynergy.com/link?id=9QcV0uNyab0&offerid=929395.3842993508&type=2&murl=https%3a%2f%2fwww.ouidad.com%2fproducts%2fadvanced-climate-control-heat-and-humidity-gel%3fvariant%3d42617150865666",
+      "id": "advanced_climate_control_heat_&_humidity_gel",
+      "systems_excluded": [],
+      "status": "ok",
+      "cost_rating": "5"
+    },
+    "coil_infusion®_good_shape®_defining_gel": {
+      "name": "Coil Infusion® Good Shape® Defining Gel",
+      "brand": "Ouidad",
+      "product_categories": [
+        "gels"
+      ],
+      "tags": [
+        "normal_porosity",
+        "high_porosity",
+        "featured"
+      ],
+      "cost": 3.5,
+      "buy_url": "https://click.linksynergy.com/link?id=9QcV0uNyab0&offerid=929395.3842995708&type=2&murl=https%3a%2f%2fwww.ouidad.com%2fproducts%2fcoil-infusion-good-shape-defining-gel%3fvariant%3d42617151488258",
+      "ingredients_raw": "aqua water eau, polyquaternium-11, polyquaternium-37, argania spinosa argan oil, ricinus communis castor seed oil, hydrolyzed wheat protein, aloe barbadensis leaf juice, polyquaternium-7, panthenol, sericin, ppg-3 benzyl ether myristate, glycerin, pvp, hydroxyethylcellulose, isoceteth-20, citric acid, behentrimonium chloride, cetrimonium chloride, guar hydroxypropyltrimonium chloride, hydroxypropyl bis-hydroxyethyldimonium chloride, disodium edta, caprylyl glycol, iodopropynyl butylcarbamate, phenoxyethanol, limonene, linalool, fragrance parfum",
+      "id": "coil_infusion®_good_shape®_defining_gel",
+      "systems_excluded": [],
+      "status": "ok",
+      "cost_rating": "5"
+    },
     "i_create_hold": {
       "name": "I Create Hold",
       "brand": "Innersense",
@@ -1020,6 +1082,25 @@ export const defaultProductDatabase: ProductDatabase = {
       "id": "bond_curl_rehab_salve_uk",
       "systems_excluded": [],
       "status": "ok",
+      "cost_rating": "5"
+    },
+    "vitalcurl+_clear_&_gentle_shampoo": {
+      "name": "VitalCurl+ Clear & Gentle Shampoo",
+      "brand": "Ouidad",
+      "cost": 2.8,
+      "product_categories": [
+        "shampoos"
+      ],
+      "tags": [
+        "low_porosity",
+        "normal_porosity",
+        "featured"
+      ],
+      "ingredients_raw": "aqua water eau, sodium decylglucosides hydroxypropylsulfonate, cocamidopropyl hydroxysultaine, sodium methyl 2-sulfolaurate, cocamidopropylamine oxide, disodium 2-sulfolaurate, glycerin, helianthus annuus sunflower seed oil, salvia hispanica seed chia oil, camellia japonica tsubaki seed oil, panthenol, phospholipids, glycine soja soybean oil, glycolipids, glycine soja soybean sterols, sodium methyl cocoyl taurate, codamidopropyl pg-dimonium chloride phosphate, peg-150 distearate, ppg-2 hydroxyethyl cocamide, polyquaternium-22, butylene gycol, dmdm hydantoin, disodium edta, sodium chloride, iodopropynl butylcarbamate, citric acid, bha, hexyl cinnamal, limonene, linalool, fragrance parfum",
+      "buy_url": "https://click.linksynergy.com/link?id=9QcV0uNyab0&offerid=929395.3842998108&type=2&murl=https%3a%2f%2fwww.ouidad.com%2fproducts%2fvitalcurl-clear-and-gentle-shampoo%3fvariant%3d42433997144322",
+      "id": "vitalcurl+_clear_&_gentle_shampoo",
+      "systems_excluded": [],
+      "status": "caution",
       "cost_rating": "5"
     },
     "curl_shampoo": {

@@ -43,64 +43,64 @@ describe('Handling of surfactants under the default system', () => {
         ingredientId: 'sodium_laureth_sulfate',
         category: 'surfactants',
         status: 'warning',
-        reason: 'sulfate_free'
+        reason: 'sulfate_free',
       },
       {
         normalized: 'cocamidopropyl betaine',
         ingredientId: 'cocamidopropyl_betaine',
         category: 'surfactants',
         status: 'ok',
-        reason: 'mild_surfactants_caution_others'
+        reason: 'mild_surfactants_caution_others',
       },
       {
         normalized: 'cocamide mea',
         ingredientId: 'cocamide_mea',
         category: 'surfactants',
         status: 'ok',
-        reason: 'mild_surfactants_caution_others'
+        reason: 'mild_surfactants_caution_others',
       },
       {
         normalized: 'alkylbenzene sulfonate',
         ingredientId: 'alkylbenzene_sulfonate',
         category: 'surfactants',
         status: 'caution',
-        reason: 'mild_surfactants_caution_others'
+        reason: 'mild_surfactants_caution_others',
       },
       {
         normalized: 'ammonium laureth sulphate',
         ingredientId: 'ammonium_laureth_sulfate',
         category: 'surfactants',
         status: 'warning',
-        reason: 'sulfate_free'
+        reason: 'sulfate_free',
       },
       {
         normalized: 'dioctyl sodium sulfosuccinate',
         ingredientId: 'dioctyl_sodium_sulfosuccinate',
         category: 'surfactants',
         status: 'caution',
-        reason: 'mild_surfactants_caution_others'
+        reason: 'mild_surfactants_caution_others',
       },
       {
         normalized: 'sulfate',
         ingredientId: 'unknown_sulfate',
         category: 'surfactants',
         status: 'warning',
-        reason: 'sulfate_free'
+        reason: 'sulfate_free',
       },
       {
         normalized: 'behentrimonium methosulfate',
         ingredientId: 'behentrimonium_methosulfate',
-        category: 'surfactants',
+        category: 'others',
         status: 'ok',
-        reason: undefined
+        reason: undefined,
       },
       {
         normalized: 'magnesium sulfate',
         ingredientId: 'magnesium_sulfate',
         category: 'others',
         status: 'ok',
-        reason: undefined
-      }
+        reason: undefined,
+      },
     ];
 
     expectedResults.forEach((expected) => {
