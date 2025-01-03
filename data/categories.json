@@ -362,6 +362,12 @@
       "name": "Other Emollients",
       "group": "others",
       "description": "These are other emollients that don't fit into the other categories"
+    },
+    {
+      "id": "conditioning_agents",
+      "name": "Conditioning Agents",
+      "group": "others",
+      "description": "These are conditioning agents that don't fit into the other categories"
     }
   ]
 }

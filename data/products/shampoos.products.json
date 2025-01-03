@@ -1,6 +1,15 @@
 {
   "products": [
     {
+      "name": "VitalCurl+ Clear & Gentle Shampoo",
+      "brand": "Ouidad",
+      "cost": 2.8,
+      "product_categories": ["shampoos"],
+      "tags": ["low_porosity", "normal_porosity", "featured"],
+      "ingredients_raw": "aqua water eau, sodium decylglucosides hydroxypropylsulfonate, cocamidopropyl hydroxysultaine, sodium methyl 2-sulfolaurate, cocamidopropylamine oxide, disodium 2-sulfolaurate, glycerin, helianthus annuus sunflower seed oil, salvia hispanica seed chia oil, camellia japonica tsubaki seed oil, panthenol, phospholipids, glycine soja soybean oil, glycolipids, glycine soja soybean sterols, sodium methyl cocoyl taurate, codamidopropyl pg-dimonium chloride phosphate, peg-150 distearate, ppg-2 hydroxyethyl cocamide, polyquaternium-22, butylene gycol, dmdm hydantoin, disodium edta, sodium chloride, iodopropynl butylcarbamate, citric acid, bha, hexyl cinnamal, limonene, linalool, fragrance parfum",
+      "buy_url": "https://click.linksynergy.com/link?id=9QcV0uNyab0&offerid=929395.3842998108&type=2&murl=https%3a%2f%2fwww.ouidad.com%2fproducts%2fvitalcurl-clear-and-gentle-shampoo%3fvariant%3d42433997144322"
+    },
+    {
       "name": "Curl Shampoo",
       "brand": "Kristin Ess",
       "buy_url": "https://amzn.to/49LHTpT",

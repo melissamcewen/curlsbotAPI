@@ -59,7 +59,8 @@
                 "simple_humectants",
                 "proteins",
                 "other_oils",
-                "other_emollients"
+                "other_emollients",
+                "conditioning_agents"
               ]
             },
             "description": "Categories to which the ingredient belongs"

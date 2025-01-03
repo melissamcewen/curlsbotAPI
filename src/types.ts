@@ -266,3 +266,21 @@ export interface NormalizedIngredientList {
   isValid: boolean;
   ingredients: string[];
 }
+
+/**
+ * A PEH Analysis
+ */
+export interface PEHAnalysis {
+  //number of proteins
+  proteins: number;
+  //number of emollients
+  emollients: number;
+  //number of humectants
+  humectants: number;
+  //protein score
+  proteinScore: number;
+  //emollient score
+  emollientScore: number;
+  //humectant score
+  humectantScore: number;
+}

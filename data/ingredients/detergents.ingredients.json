@@ -619,7 +619,7 @@
       "id": "behentrimonium_chloride",
       "description": "A cationic surfactant that gently cleanses and conditions hair",
       "categories": [
-        "mild_surfactants"
+        "conditioning_agents"
       ],
       "references": [
         {
@@ -632,7 +632,7 @@
       "id": "cetrimonium_chloride",
      "description": "A cationic surfactant that gently cleanses and conditions hair",
       "categories": [
-        "mild_surfactants"
+        "conditioning_agents"
       ],
       "references": [
         {
@@ -644,7 +644,7 @@
       "name": "Behentrimonium Methosulfate",
       "id": "behentrimonium_methosulfate",
       "categories": [
-        "mild_surfactants"
+        "conditioning_agents"
       ],
       "description": "Despite the name, this is not a sulfate. It a cationic surfactant that gently cleanses and conditions hair."
     }

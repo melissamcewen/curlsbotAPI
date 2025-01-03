@@ -1,6 +1,38 @@
 {
   "products": [
     {
+      "name": "Advanced Climate Control Heat & Humidity Gel",
+      "brand": "Ouidad",
+      "ingredients_raw": "water aqua eau, butylene glycol, polyquaternium-28, sericin, chamomilla recutita matricaria flower extract, actinidia chinensis kiwi fruit extract, cassia auriculata leaf extract, wheat amino acids, hydrolyzed wheat protein pvp crosspolymer, tocopheryl acetate, retinyl palmitate, panthenol, polyquaternium-7, guar hydroxypropyltrimonium chloride, behentrimonium chloride, cetrimonium chloride, peg-60 almond glycerides, glycerin, ppg-26-buteth-26, peg-40 hydrogenated castor oil, vp dmapa acrylates copolymer, hydroxyethylcellulose, potassium sorbate, disodium edta, hexylene glycol, caprylyl glycol, ethylhexylglycerin, phenoxyethanol, parfum fragrance, alpha-lsomethyl lonone, benzyl benzoate, benzyl salicylate, citronellol, hexyl cinnamal, hydroxycitronellal, limonene, linalool",
+      "product_categories": [
+        "gels"
+      ],
+      "tags": [
+        "normal_porosity",
+        "high_porosity",
+        "low_porosity",
+        "hold",
+        "featured"
+      ],
+      "cost": 3,
+      "buy_url": "https://click.linksynergy.com/link?id=9QcV0uNyab0&offerid=929395.3842993508&type=2&murl=https%3a%2f%2fwww.ouidad.com%2fproducts%2fadvanced-climate-control-heat-and-humidity-gel%3fvariant%3d42617150865666"
+    },
+    {
+      "name": "Coil Infusion® Good Shape® Defining Gel",
+      "brand": "Ouidad",
+      "product_categories": [
+        "gels"
+      ],
+      "tags": [
+        "normal_porosity",
+        "high_porosity",
+        "featured"
+      ],
+      "cost": 3.5,
+      "buy_url": "https://click.linksynergy.com/link?id=9QcV0uNyab0&offerid=929395.3842995708&type=2&murl=https%3a%2f%2fwww.ouidad.com%2fproducts%2fcoil-infusion-good-shape-defining-gel%3fvariant%3d42617151488258",
+      "ingredients_raw": "aqua water eau, polyquaternium-11, polyquaternium-37, argania spinosa argan oil, ricinus communis castor seed oil, hydrolyzed wheat protein, aloe barbadensis leaf juice, polyquaternium-7, panthenol, sericin, ppg-3 benzyl ether myristate, glycerin, pvp, hydroxyethylcellulose, isoceteth-20, citric acid, behentrimonium chloride, cetrimonium chloride, guar hydroxypropyltrimonium chloride, hydroxypropyl bis-hydroxyethyldimonium chloride, disodium edta, caprylyl glycol, iodopropynyl butylcarbamate, phenoxyethanol, limonene, linalool, fragrance parfum"
+    },
+    {
       "name": "I Create Hold",
       "brand": "Innersense",
       "buy_url": "https://amzn.to/2BYccc7",
