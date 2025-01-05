@@ -2505,7 +2505,7 @@ export const defaultDatabase: IngredientDatabase = {
       "id": "guar_hydroxypropyltrimonium_chloride",
       "description": "A conditioning agent derived from guar gum, improving detangling and reducing static in hair",
       "categories": [
-        "film_forming_humectants"
+        "polyquats"
       ],
       "synonyms": [
         "guar gum quaternary ammonium",
@@ -2514,7 +2514,7 @@ export const defaultDatabase: IngredientDatabase = {
         "hydroxypropyl guar"
       ],
       "status": "ok",
-      "group": "humectants"
+      "group": "others"
     },
     "xanthan_gum": {
       "name": "Xanthan Gum",

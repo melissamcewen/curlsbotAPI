@@ -4,7 +4,7 @@ export function frizzbot(analysis: AnalysisResult): FrizzbotAnalysis {
   const definitions = {
     emollients: {
       groups: ['silicones', 'oils'],
-      categories: ['emollient_alcohols'],
+      categories: ['emollient_alcohols', 'polyquats'],
     },
     film_forming_humectants: {
       groups: [],
