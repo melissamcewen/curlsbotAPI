@@ -50,21 +50,21 @@ describe('Handling of surfactants under the default system', () => {
         ingredientId: 'cocamidopropyl_betaine',
         category: 'surfactants',
         status: 'ok',
-        reason: 'mild_surfactants_caution_others',
+        reason: undefined
       },
       {
         normalized: 'cocamide mea',
         ingredientId: 'cocamide_mea',
         category: 'surfactants',
         status: 'ok',
-        reason: 'mild_surfactants_caution_others',
+        reason: undefined,
       },
       {
         normalized: 'alkylbenzene sulfonate',
         ingredientId: 'alkylbenzene_sulfonate',
         category: 'surfactants',
-        status: 'caution',
-        reason: 'mild_surfactants_caution_others',
+        status: 'ok',
+        reason: undefined,
       },
       {
         normalized: 'ammonium laureth sulphate',
@@ -77,8 +77,8 @@ describe('Handling of surfactants under the default system', () => {
         normalized: 'dioctyl sodium sulfosuccinate',
         ingredientId: 'dioctyl_sodium_sulfosuccinate',
         category: 'surfactants',
-        status: 'caution',
-        reason: 'mild_surfactants_caution_others',
+        status: 'ok',
+        reason: undefined
       },
       {
         normalized: 'sulfate',

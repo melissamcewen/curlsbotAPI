@@ -1,11 +1,19 @@
 {
   "products": [
     {
+      "name": "Chai Latte Hair Cleanser",
+      "brand": "Ecoslay",
+      "ingredients_raw": "water, sodium methyl cocoyl taurate, sodium lauroyl sarcosinate, stearamidopropyl dimethylamine, black tea extract, slippery elm extract, sodium pca, propanediol, panthenol, peppermint oil, melissa leaf extract, nettle leaf extract, horsetail leaf extract, peppermint leaf extract, hydroxypropyl starch phosphate, sage extract, yucca leaf extract, burdock root extract, citric acid, lexfeel wow-a, vanilla planifolia fruit oil, ginger root oil, cinnamon leaf oil, clove flower oil, caprylhydroxamic acid gg",
+      "product_categories": ["shampoos"],
+      "tags": ["normal_porosity", "low_porosity", "featured", "black_owned", "woman_owned", "small_business", "high_porosity"],
+      "buy_url": "http://ecoslay.sjv.io/gOoWn2"
+    },
+    {
       "name": "VitalCurl+ Clear & Gentle Shampoo",
       "brand": "Ouidad",
       "cost": 2.8,
       "product_categories": ["shampoos"],
-      "tags": ["low_porosity", "normal_porosity", "featured"],
+      "tags": ["low_porosity", "normal_porosity", "high_porosity"],
       "ingredients_raw": "aqua water eau, sodium decylglucosides hydroxypropylsulfonate, cocamidopropyl hydroxysultaine, sodium methyl 2-sulfolaurate, cocamidopropylamine oxide, disodium 2-sulfolaurate, glycerin, helianthus annuus sunflower seed oil, salvia hispanica seed chia oil, camellia japonica tsubaki seed oil, panthenol, phospholipids, glycine soja soybean oil, glycolipids, glycine soja soybean sterols, sodium methyl cocoyl taurate, codamidopropyl pg-dimonium chloride phosphate, peg-150 distearate, ppg-2 hydroxyethyl cocamide, polyquaternium-22, butylene gycol, dmdm hydantoin, disodium edta, sodium chloride, iodopropynl butylcarbamate, citric acid, bha, hexyl cinnamal, limonene, linalool, fragrance parfum",
       "buy_url": "https://click.linksynergy.com/link?id=9QcV0uNyab0&offerid=929395.3842998108&type=2&murl=https%3a%2f%2fwww.ouidad.com%2fproducts%2fvitalcurl-clear-and-gentle-shampoo%3fvariant%3d42433997144322"
     },
@@ -15,7 +23,7 @@
       "buy_url": "https://amzn.to/49LHTpT",
       "systems_excluded": ["curly_default"],
       "product_categories": ["shampoos"],
-      "tags": ["normal_porosity", "low_porosity", "featured"],
+      "tags": ["normal_porosity", "low_porosity"],
       "cost": 0.66,
       "ingredients_raw": "water, sodium c14-16 olefin sulfonate, cocamidopropyl betaine, propanediol, glycol distearate, phenoxyethanol, butyrospermum parkii shea butter, alanine, arginine, aspartic acid, glycine, histidine, isoleucine, phenylalanine, proline, serine, sodium pca, pca, sodium lactate, threonine, valine, citric acid, disodium edta, glycine soja soybean oil, glycine soja soybean sterols, glycolipids, guar hydroxypropyltrimonium chloride, hydroxyethylcellulose, hydroxyacetophenone, lauryl lactyl lactate, peg-150 distearate, phospholipids, ricinus communis castor seed oil, fragrance",
       "asin": "B09GC9CVQ8",
@@ -37,7 +45,7 @@
       "ingredients_raw": "water, sodium c14-16 olefin sulfonate, cocamidopropyl betaine, cocamide mea, glycol distearate, steareth-4, glycerin, hydroxypropyltrimonium honey, silk amino acids, hypnea musciformis extract seaweed, gelidiella acerosa extract seaweed, sargassum filipendula extract seaweed, sorbitol, rosmarinus officinalis rosemary leaf extract, salix alba willow bark extract, urtica dioica nettle extract, tocopheryl acetate vitamin e, panthenol vitamin b5, guar hydroxypropyltrimonium chloride, polyquaternium-10, fragrance phthalate free, sodium phytate, sorbic acid, sodium chloride, ethylhexylglycerin, phenoxyethanol, citric acid",
       "buy_url": "https://amzn.to/4fuIPQW",
       "cost": 2,
-      "product_categories": ["shampoos", "featured"],
+      "product_categories": ["shampoos"],
       "tags": ["high_porosity", "normal_porosity"],
       "asin": "B005SIR214"
     },
@@ -47,7 +55,7 @@
       "ingredients_raw": "citrus medica limonum lemon peel oil, eucalyptus globulus eucalyptus, cucurbita pepo pumpkin seed oil, hydroxypropyltrimonium honey, hydrolyzed quinoa, trisodium ethylenediamine disuccinate, sodium benzoate, hydrolyzed rice protein, guar hydroxypropyltrimonium chloride, persea gratissima avocado oil, oryza sativa rice bran oil, camellia sinensis green tea leaf extract, cucumis sativus cucumber fruit extract, persea gratissima avocado fruit extract, mangifera indica mango fruit extract, water, aqua-eau, cocamidopropyl hydroxysultaine, sodium cocoyl isethionate, caprylyl capryl glucoside, glycerin, sodium chloride, sodium lauroyl methyl isethionate, butyrosepermum parkii shea butter, citrus aurantium dulcis orange peel oil",
       "buy_url": "https://amzn.to/3ZSDywG",
       "cost": 2.25,
-      "product_categories": ["shampoos", "featured"],
+      "product_categories": ["shampoos"],
       "tags": ["low_porosity", "normal_porosity"],
       "asin": "B074Q2CNMY"
     },
@@ -56,7 +64,7 @@
       "brand": "Innersense",
       "ingredients_raw": "water, aqua- eau, cocamidopropyl hydroxysultaine, sodium cocoyl isethionate, caprylyl capryl glucoside, glycerin, sodium chloride, sodium lauroyl methyl isethionate, butyrospermum parkii shea butter, citrus aurantium dulcis orange peel oil, citrus medica limonum lemon peel oil, eucalyptus globulus eucalyptus, cucurbita pepo pumpkin seed oil, hydroxypropyltrimonium honey, hydrolyzed quinoa, trisodium ethylenediamine disuccinate, sodium benzoate, hydrolyzed rice protein, guar hydroxypropyltrimonium chloride, potassium sorbate, citric acid, citrus sinensis orange oil, persea gratissima avocado oil, oryza sativa rice bran oil, camellia sinensis green tea leaf extract, cucumis sativus cucumber fruit extract, persea gratissima fruit extract, mangifera indica mango fruit extract",
       "buy_url": "https://amzn.to/41J8sKF",
-      "product_categories": ["shampoos", "featured"],
+      "product_categories": ["shampoos"],
       "tags": ["high_porosity", "normal_porosity"],
       "asin": "B002RX2QFA",
       "cost": 3
@@ -67,7 +75,7 @@
       "brand": "Innersense",
       "ingredients_raw": "water aqua eau, aloe barbadensis leaf juice, cocamidopropyl hydroxysultaine, sodium cocoyl isethionate, glycerin, caprylyl capryl glucoside, sodium levulinate, potassium sorbate, guar hydroxypropyltrimonium chloride, citric acid, butyrospermum parkii shea butter, sodium gluconate, tocopherol, swertia japonica extract, cyperus esculentus tuber extract, symphytum officinale leaf extract, xanthan gum, coconut acid, sodium isethionate",
       "buy_url": "https://amzn.to/4gLhRFK",
-      "product_categories": ["shampoos", "featured"],
+      "product_categories": ["shampoos"],
       "tags": ["low_porosity", "normal_porosity"],
       "asin": "B0BHD3JKTL",
       "cost": 6

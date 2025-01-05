@@ -1,6 +1,24 @@
 {
   "products": [
     {
+      "name": "Mud Pie Clay Clarifying Treatment",
+      "brand": "Ecoslay",
+      "ingredients_raw": "distilled water, aloe barbadensis leaf juice, cirtus aurantium amara distillate, bentonite, propanediol, apple cider vinegar, dermasoft eco 1388, potassium sorbate, sodium thiosulfate",
+      "product_categories": [
+        "clarifying_shampoos"
+      ],
+      "tags": [
+        "normal_porosity",
+        "high_porosity",
+        "low_porosity",
+        "featured",
+        "black_owned",
+        "woman_owned",
+        "small_business"],
+        "buy_url": "http://ecoslay.sjv.io/EEqZBe"
+
+    },
+    {
       "name": "Clarifying Shampoo",
       "brand": "Moroccanoil",
       "product_categories": [
@@ -46,7 +64,7 @@
         "normal_porosity",
         "featured"
       ],
-      "buy_url": "https://amzn.to/3Pfl2d4",
+      "buy_url": "https://click.linksynergy.com/link?id=9QcV0uNyab0&offerid=929395.3842991208&type=2&murl=https%3a%2f%2fwww.ouidad.com%2fproducts%2fwater-works-clarifying-shampoo%3fvariant%3d42617153618178",
       "cost": 2.8,
       "asin": "B0001Y74XG",
       "ingredients_raw": "water, ammonium laureth sulfate, sodium laureth sulfate, cocomidopropyl betaine, lauryl glucoside, butylene glycol, cocamide mea, polysorbate 20, sodium lauroamphoacetate, panthenol, saccharum officinarum sugar cane extract, citrus medica limonum lemon peel extract, citrus aurantium dulcis orange fruit extract, pyrus malus apple fruit extract, camellia oleifera leaf extract, cetrimonium chloride, polyquaternium-59, polyquaternium-10, citrus aurantium dulcis orange peel oil, citrus tangerina tangerine peel oil, disodium edta, methychloroisothiazolinone, methylisothiazolinone",

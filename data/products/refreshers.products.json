@@ -1,0 +1,19 @@
+{
+  "products": [
+    {
+      "name":"Sangria Hair Refresher",
+      "brand": "Ecoslay",
+      "ingredients_raw": "purified water, aloe barbadensis leaf juice, vaccinium angustifolium fruit water, prunus cerasus fruit water, hhydrolyzed silk protein, sodium pca, lactobacillus ferment, lactobacillus, cocos nucifera fruit extract, amaranthus caudatus seed extract, equisetum arvense extract, panthenol, cinnamidopropyltrimonium chloride, sodium gluconate",
+      "product_categories": [
+        "refreshers"
+      ],
+      "tags": [
+        "normal_porosity",
+        "high_porosity",
+        "low_porosity",
+        "featured",
+        "black_owned"],
+        "buy_url": "https://ecoslay.sjv.io/kORodn"
+    }
+  ]
+}

@@ -179,6 +179,10 @@ export interface Product {
   country?: string;
   /** Analysis status for the product */
   status?: 'ok' | 'caution' | 'warning' | 'error';
+  /** Analysis */
+  analysis?: AnalysisResult;
+  /** Frizzbot analysis */
+  frizzbot?: FrizzbotAnalysis;
 }
 
 /**
@@ -268,19 +272,14 @@ export interface NormalizedIngredientList {
 }
 
 /**
- * A PEH Analysis
+ * Represents the analysis result for the Frizzbot system
  */
-export interface PEHAnalysis {
-  //number of proteins
-  proteins: number;
-  //number of emollients
-  emollients: number;
-  //number of humectants
-  humectants: number;
-  //protein score
-  proteinScore: number;
-  //emollient score
-  emollientScore: number;
-  //humectant score
-  humectantScore: number;
-}
+export type FrizzbotAnalysis = {
+  simple_humectants_number: number;
+  film_forming_humectants_number: number;
+  emollients_number: number;
+  simple_humectants: string[];
+  film_forming_humectants: string[];
+  emollients: string[];
+  score: number;
+};

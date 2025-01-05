@@ -1,35 +1,73 @@
 {
   "products": [
-     {
-       "name": "Deep Conditioning Treatment",
-       "brand": "Jessicurl",
-       "buy_url": "https://amzn.to/3ZFDa4x",
-       "product_categories": ["deep_conditioners"],
-       "tags": ["high_porosity", "featured", "normal_porosity"],
-       "cost": 1.2,
-       "ingredients_raw": "aqua water, cetearyl alcohol, butyrospermum parkii shea butter, persea gratissima avocado oil, theobroma cacao cocoa seed butter, behentrimonium methosulfate, aloe barbadensis aloe vera leaf juice powder, equisetum arvense horsetail extract, mentha piperita peppermint leaf extract, rosmarinus officinalis rosemary flower leaf stem extract, laurus nobilis bay laurel leaf extract, ocimum basilicum basil leaf extract, urtica dioica nettle leaf extract, arctium lappa burdock root extract, althea officinalis marshmallow root extract, origanum vulgare oregano leaf extract, cymbopogon flexuosus lemongrass extract, thymus vulgaris thyme leaf extract, salvia officinalis sage leaf extract, lecithin, cinnamal, citral, eugenol, geraniol, citronellol, limonene, linalool, benzoic acid, dehydroacetic acid, phenoxyethanol",
-       "asin": "B00684AC82"
-     },
-     {
+    {
+      "name": "Banana Cream Deep Conditioner",
+      "brand": "Ecoslay",
+      "ingredients_raw": "okra extract, marshmallow root extract, aloe vera juice, coconut cream, behentrimonium methosulfate, ceteryl alcohol, avocado oil, argan oil, jojoba oil, benzyl alcohol dehydroacetic acid, banana extract",
+      "product_categories": [
+        "deep_conditioners"
+      ],
+      "tags": [
+        "normal_porosity",
+        "high_porosity",
+        "low_porosity",
+        "featured",
+        "black_owned",
+        "woman_owned",
+        "small_business"
+      ],
+      "buy_url": "https://ecoslay.sjv.io/4GdWVM"
+    },
+    {
+      "name": "Deep Conditioning Treatment",
+      "brand": "Jessicurl",
+      "buy_url": "https://amzn.to/3ZFDa4x",
+      "product_categories": [
+        "deep_conditioners"
+      ],
+      "tags": [
+        "high_porosity",
+        "featured",
+        "normal_porosity"
+      ],
+      "cost": 1.2,
+      "ingredients_raw": "aqua water, cetearyl alcohol, butyrospermum parkii shea butter, persea gratissima avocado oil, theobroma cacao cocoa seed butter, behentrimonium methosulfate, aloe barbadensis aloe vera leaf juice powder, equisetum arvense horsetail extract, mentha piperita peppermint leaf extract, rosmarinus officinalis rosemary flower leaf stem extract, laurus nobilis bay laurel leaf extract, ocimum basilicum basil leaf extract, urtica dioica nettle leaf extract, arctium lappa burdock root extract, althea officinalis marshmallow root extract, origanum vulgare oregano leaf extract, cymbopogon flexuosus lemongrass extract, thymus vulgaris thyme leaf extract, salvia officinalis sage leaf extract, lecithin, cinnamal, citral, eugenol, geraniol, citronellol, limonene, linalool, benzoic acid, dehydroacetic acid, phenoxyethanol",
+      "asin": "B00684AC82"
+    },
+    {
       "name": "Deep Conditioner & Repair",
       "brand": "Love Ur Curls",
       "ingredients_raw": "aqua water eau, butyrospermum parkii shea butter, persea gratissima avocado oil, cetyl alcohol, cetearyl alcohol, behentrimonium chloride, cetrimonium chloride, aloe barbadensis leaf juice, moringa oleifera seed oil, simmondsia chinensis jojoba seed oil, rosmarinus officinalis rosemary leaf oil, ceteareth-20, hydroxyethylcellulose, tocopheryl acetate vitamin e, d-panthenol provitmain b5, phenoxyethanol, ethylhexylglycerin, citric acid, fragrance parfum",
       "buy_url": "https://amzn.to/408QOOY",
-      "product_categories": ["deep_conditioners", "featured"],
-      "tags": ["low_porosity", "normal_porosity", "high_porosity", "featured"],
+      "product_categories": [
+        "deep_conditioners",
+        "featured"
+      ],
+      "tags": [
+        "low_porosity",
+        "normal_porosity",
+        "high_porosity",
+        "featured"
+      ],
       "asin": "B09YMWHVHD",
       "cost": 3.38
-     },
-     {
+    },
+    {
       "name": "Double Cream Deep Quencher",
       "brand": "Curlsmith",
-      "product_categories": ["deep_conditioners"],
-      "tags": ["high_porosity", "normal_porosity", "featured", "low_porosity"],
+      "product_categories": [
+        "deep_conditioners"
+      ],
+      "tags": [
+        "high_porosity",
+        "normal_porosity",
+        "featured",
+        "low_porosity"
+      ],
       "ingredients_raw": "water aqua, cetearyl alcohol, behentrimonium chloride, propanediol, hydroxypropyl starch phosphate, cetyl palmitate, fragrance parfum, guar hydroxypropyltrimonium chloride, selaginella lepidophylla resurrection flower extract, carapa guaianensis andiroba seed oil, aloe barbadensis aloe vera leaf juice, ocimum basilicum basil leaf extract, piper nigrum black pepper seed extract, rosmarinus officinalis rosemary leaf extract, salvia officinalis sage leaf extract, helianthus annuus sunflower seed oil, prunus armeniaca apricot kernel oil, persea gratissima avocado oil, butyrospermum parkii shea butter, panthenol, ethylhexylglycerin, citric acid, disodium edta, sodium hydroxide, potassium sorbate, sodium benzoate, glycerin, phenoxyethanol, linalool, limonene",
       "buy_url": "https://amzn.to/4iVdf1y",
       "asin": "B08639DTVD",
       "country": "UK"
-
-     }
+    }
   ]
 }

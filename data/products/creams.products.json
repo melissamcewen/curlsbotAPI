@@ -1,6 +1,23 @@
 {
   "products": [
     {
+      "name": "Lemon Buttercream Styling Cream",
+      "brand": "Ecoslay",
+      "buy_url": "http://ecoslay.sjv.io/19bWvR",
+      "product_categories": [
+        "creams"
+      ],
+      "tags": [
+        "high_porosity",
+        "normal_porosity",
+        "featured",
+        "black_owned",
+        "woman_owned",
+        "small_business"
+      ],
+      "ingredients_raw": "deionized water aqua, althaea officinalis marshmallow root extract, linum usitatissimum flaxseed extract, cetearyl alcohol, sodium pca, chamomile flower extract, slippery elm extract, peppermint mentha piperita oil, melissa melissa officinalis leaf extract, nettle urtica dioica leaf extract, horsetail equisetum arvense leaf extract, peppermint mentha piperita leaf extract, sage salvia officinalis extract, yucca yucca vera leaf extract, sucrose cocoate, panthenol, caprylhydroxamic acid, glyceryl caprylate, glycerin, citrus limon peel lemon oil, vanilla planifolia fruit oil, potassium sorbate"
+    },
+    {
       "name": "I Create Volume",
       "brand": "Innersense",
       "buy_url": "https://amzn.to/3ZXk3o3",

@@ -95,7 +95,8 @@
       "exclusions": [
         "behentrimonium",
         "methosulfate",
-        "magnesium"
+        "magnesium",
+        "thiosulfate"
       ],
       "defaultIngredient": "unknown_sulfate",
       "references": [

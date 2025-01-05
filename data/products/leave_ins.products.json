@@ -1,6 +1,23 @@
 {
   "products": [
     {
+      "name": "Rice Pudding Leave-In Conditioner and Moisturizer",
+      "brand": "Ecoslay",
+      "product_categories": [
+        "leave_ins"
+      ],
+      "tags": [
+        "normal_porosity",
+        "high_porosity",
+        "featured",
+        "black_owned",
+        "woman_owned",
+        "small_business"
+      ],
+      "ingredients_raw": "water, marshmallow root extract, fermented rice water, cetearyl alcohol, sodium pca, chamomile flower extract, slippery elm extract, nettle leaf extract, melissa leaf extract, peppermint leaf extract, horsetail leaf extract, yucca vera leaf extract, sucrose cocoate, panthenol, capryhydroxamic acid gg, jasmine essential oil, vanilla essential oil, potassium sorbate",
+      "buy_url": "http://ecoslay.sjv.io/6yGgNb"
+    },
+    {
       "name": "Sweet Spirit Leave-In Conditioner",
       "brand": "Innersense",
       "buy_url": "https://amzn.to/2yjHQ1r",

@@ -1,6 +1,44 @@
 {
   "products": [
     {
+      "name": "Jello Shot Curl Defining Gel",
+      "brand": "Ecoslay",
+      "ingredients_raw": "water, okra extract, aloe vera juice, pectin, chamomile flower extract, nettle leaf extract, melissa leaf extract, peppermint leaf extract, horsetail leaf extract, yucca vera leaf extract, propanediol, aminopropanol, strawberry fruit essence, benzyl alcohol dehydroacetic acid, carbomer 980, sodium gluconate",
+      "product_categories": [
+        "gels"
+      ],
+      "tags": [
+        "normal_porosity",
+        "high_porosity",
+        "low_porosity",
+        "curl_enhancer",
+        "featured",
+        "black_owned",
+        "woman_owned",
+        "small_business"
+      ],
+      "buy_url": "https://ecoslay.sjv.io/55j7vj"
+    },
+    {
+      "name": "Orange Marmalade Flaxseed and Aloe Curl Definer",
+      "brand": "Ecoslay",
+      "ingredients_raw": "flaxseed extract, agave nectar extract, pectin, aloe vera juice, marshmallow root extract, vitamin e, xanthan gum, optiphen plus, sweet orange essential oil",
+      "product_categories": [
+        "gels", "custards"
+      ],
+      "tags": [
+        "normal_porosity",
+        "high_porosity",
+        "low_porosity",
+        "curl_enhancer",
+        "featured",
+        "black_owned",
+        "woman_owned",
+        "small_business"],
+        "description": "CurlsBot note: This is the main styling product I use on my own hair- Melissa",
+        "buy_url": "https://ecoslay.sjv.io/qzg2M5"
+    },
+    {
       "name": "Advanced Climate Control Heat & Humidity Gel",
       "brand": "Ouidad",
       "ingredients_raw": "water aqua eau, butylene glycol, polyquaternium-28, sericin, chamomilla recutita matricaria flower extract, actinidia chinensis kiwi fruit extract, cassia auriculata leaf extract, wheat amino acids, hydrolyzed wheat protein pvp crosspolymer, tocopheryl acetate, retinyl palmitate, panthenol, polyquaternium-7, guar hydroxypropyltrimonium chloride, behentrimonium chloride, cetrimonium chloride, peg-60 almond glycerides, glycerin, ppg-26-buteth-26, peg-40 hydrogenated castor oil, vp dmapa acrylates copolymer, hydroxyethylcellulose, potassium sorbate, disodium edta, hexylene glycol, caprylyl glycol, ethylhexylglycerin, phenoxyethanol, parfum fragrance, alpha-lsomethyl lonone, benzyl benzoate, benzyl salicylate, citronellol, hexyl cinnamal, hydroxycitronellal, limonene, linalool",

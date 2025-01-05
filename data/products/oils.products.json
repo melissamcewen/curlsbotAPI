@@ -1,11 +1,34 @@
 {
   "products": [
     {
+      "name": "Moonshine Hair and Body Oil",
+      "brand": "Ecoslay",
+      "product_categories": [
+        "oils"
+      ],
+      "tags": [
+        "normal_porosity",
+        "high_porosity",
+        "featured",
+        "black_owned",
+        "woman_owned",
+        "small_business"
+      ],
+      "ingredients_raw": "jojoba oil, avocado oil, sweet almond oil, argan oil, castor oil, lemongrass essential oil, cinnamon essential oil, sweet orange essential oil, ginger essential oil, caprylhydroxamic gg",
+      "buy_url": "https://ecoslay.sjv.io/vP2ZJd"
+    },
+    {
       "name": "Hush Nourishing Oil",
-      "brand": "Hush",
+      "brand": "Lohy",
       "buy_url": "https://lohy.com.au/products/hush-finishing-oil-curly-hair?aff=49",
-      "product_categories": ["oils"],
-      "tags": ["high_porosity", "normal_porosity", "featured"],
+      "product_categories": [
+        "oils"
+      ],
+      "tags": [
+        "high_porosity",
+        "normal_porosity",
+        "featured"
+      ],
       "ingredients_raw": "helianthus annuus sunflower seed oil, oenothera biennis evening primrose oil, vitis vinifera grape seed oil, simmondsia chinensis jojoba seed oil, backhousia citriodora lemon myrtle leaf oil, tocopheryl acetate, rosa canina rosehip fruit oil, macadamia ternifolia seed oil",
       "country": "AU",
       "cost": 13
@@ -13,8 +36,14 @@
     {
       "name": "Bonding Oil",
       "brand": "Curlsmith",
-      "product_categories": ["oils"],
-      "tags": ["normal_porosity", "high_porosity", "featured"],
+      "product_categories": [
+        "oils"
+      ],
+      "tags": [
+        "normal_porosity",
+        "high_porosity",
+        "featured"
+      ],
       "ingredients_raw": "hydrogenated ethylhexyl olivate, hydrogenated olive oil unsaponifiables, coco-caprylate caprate, shea butter ethyl esters, hydrogenated castor oil sebacic acid copolymer, prunus armeniaca apricot kernel oil, hippophae rhamnoides sea buckthorn fruit oil, lens esculenta lentil seed extract, hydrolyzed cicer chickpea seed extract, chenopodium quinoa seed extract, fragrance parfum, linalool, limonene, geraniol, benzyl alcohol, citronellol",
       "buy_url": "https://amzn.to/3DwDN9b",
       "asin": "B09GC96P46",

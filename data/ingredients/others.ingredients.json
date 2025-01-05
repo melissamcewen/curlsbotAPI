@@ -770,6 +770,12 @@
       "name": "Triethylhexanoin",
       "id": "triethylhexanoin",
       "categories": ["other_emollients"]
+    },
+    {
+      "name": "Sodium Thiosulfate",
+      "id": "sodium_thiosulfate",
+      "categories": ["other"],
+      "description": "Not a sulfate detergent, a harmless additive"
     }
   ]
 }

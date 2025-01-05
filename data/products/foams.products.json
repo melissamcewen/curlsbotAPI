@@ -1,6 +1,14 @@
 {
   "products": [
     {
+      "name": "Lemon Drop Styling Foam",
+      "brand": "Ecoslay",
+      "ingredients_raw": "purified water aqua, mel, hydrolyzed corn starch, sodium polyitaconate, sucrose, propanediol, capryl caprylyl glucoside, linum usitatissimum seed extract, althaea officinalis root extract, antimicro root blend preservative bulb extract, caprylyl glycol, wasabia japonica root extract, zingiber officinale root extract, citrus limon peel oil, citrus aurantium bergamia fruit oil",
+      "product_categories": ["foams"],
+      "tags": ["normal_porosity", "high_porosity", "low_porosity", "featured", "black_owned", "woman_owned", "small_business"],
+      "buy_url": "https://ecoslay.sjv.io/7abJPr"
+    },
+    {
       "name": "Chutzpah Volumising Foam",
       "brand": "Lohy",
       "buy_url": "https://lohy.com.au/products/chutzpah-volumising-curl-foam?aff=49",

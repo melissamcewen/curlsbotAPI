@@ -479,7 +479,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "other_anionic_surfactants"
       ],
-      "status": "caution",
+      "status": "ok",
       "group": "surfactants"
     },
     "ammonium_cocoyl_isethionate": {
@@ -538,7 +538,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "other_anionic_surfactants"
       ],
-      "status": "caution",
+      "status": "ok",
       "group": "surfactants"
     },
     "babassuamidopropyl_betaine": {
@@ -634,7 +634,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "other_anionic_surfactants"
       ],
-      "status": "caution",
+      "status": "ok",
       "group": "surfactants"
     },
     "disodium_cocoamphodiacetate": {
@@ -661,7 +661,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "other_anionic_surfactants"
       ],
-      "status": "caution",
+      "status": "ok",
       "group": "surfactants"
     },
     "disodium_laureth_succinate": {
@@ -742,7 +742,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "other_anionic_surfactants"
       ],
-      "status": "caution",
+      "status": "ok",
       "group": "surfactants"
     },
     "sodium_c12_18_alkyl_sulfate": {
@@ -766,7 +766,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "other_anionic_surfactants"
       ],
-      "status": "caution",
+      "status": "ok",
       "group": "surfactants"
     },
     "sodium_c14_16_olefin_sulfonate": {
@@ -793,7 +793,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "other_anionic_surfactants"
       ],
-      "status": "caution",
+      "status": "ok",
       "group": "surfactants"
     },
     "sodium_c14_26_olefin_sulfonate": {
@@ -805,7 +805,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "other_anionic_surfactants"
       ],
-      "status": "caution",
+      "status": "ok",
       "group": "surfactants"
     },
     "sodium_c16_18_olefin_sulfonate": {
@@ -817,7 +817,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "other_anionic_surfactants"
       ],
-      "status": "caution",
+      "status": "ok",
       "group": "surfactants"
     },
     "sodium_cetearyl_sulfate": {
@@ -883,7 +883,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "other_anionic_surfactants"
       ],
-      "status": "caution",
+      "status": "ok",
       "group": "surfactants"
     },
     "sodium_cocoyl_isethionate": {
@@ -901,7 +901,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "other_anionic_surfactants"
       ],
-      "status": "caution",
+      "status": "ok",
       "group": "surfactants"
     },
     "sodium_laureth_sulfate": {
@@ -1008,7 +1008,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "other_anionic_surfactants"
       ],
-      "status": "caution",
+      "status": "ok",
       "group": "surfactants"
     },
     "sodium_lauryl_sulfate": {
@@ -1075,7 +1075,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "other_anionic_surfactants"
       ],
-      "status": "caution",
+      "status": "ok",
       "group": "surfactants"
     },
     "sodium_laurylglucosides_hydroxypropylsulfonate": {
@@ -1114,7 +1114,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "other_anionic_surfactants"
       ],
-      "status": "caution",
+      "status": "ok",
       "group": "surfactants"
     },
     "sodium_polystyrene_sulfate": {
@@ -1140,7 +1140,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "other_anionic_surfactants"
       ],
-      "status": "caution",
+      "status": "ok",
       "group": "surfactants"
     },
     "tea_dodecylbenzenesulfonate": {
@@ -1152,7 +1152,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "other_anionic_surfactants"
       ],
-      "status": "caution",
+      "status": "ok",
       "group": "surfactants"
     },
     "tea_lauryl_sulfate": {
@@ -1189,7 +1189,7 @@ export const defaultDatabase: IngredientDatabase = {
         "other_anionic_surfactants"
       ],
       "description": "We're pretty sure this is a sulfonate, but we're not sure which one. ",
-      "status": "caution",
+      "status": "ok",
       "group": "surfactants"
     },
     "behentrimonium_chloride": {
@@ -1912,7 +1912,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "other_anionic_surfactants"
       ],
-      "status": "caution",
+      "status": "ok",
       "group": "surfactants"
     },
     "potassium_castorate": {
@@ -2025,7 +2025,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "other_anionic_surfactants"
       ],
-      "status": "caution",
+      "status": "ok",
       "group": "surfactants"
     },
     "sodium_lauroyl_lactylate": {
@@ -2034,7 +2034,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "other_anionic_surfactants"
       ],
-      "status": "caution",
+      "status": "ok",
       "group": "surfactants"
     },
     "sodium_lauroyl_oat_amino_acids": {
@@ -2043,7 +2043,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "other_anionic_surfactants"
       ],
-      "status": "caution",
+      "status": "ok",
       "group": "surfactants"
     },
     "sodium_methyl_2_sulfolaurate": {
@@ -2052,7 +2052,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "other_anionic_surfactants"
       ],
-      "status": "caution",
+      "status": "ok",
       "group": "surfactants"
     },
     "sodium_olivate": {
@@ -3211,6 +3211,16 @@ export const defaultDatabase: IngredientDatabase = {
       "status": "ok",
       "group": "others"
     },
+    "sodium_thiosulfate": {
+      "name": "Sodium Thiosulfate",
+      "id": "sodium_thiosulfate",
+      "categories": [
+        "other"
+      ],
+      "description": "Not a sulfate detergent, a harmless additive",
+      "status": "ok",
+      "group": "others"
+    },
     "amodimethicone": {
       "name": "Amodimethicone",
       "id": "amodimethicone",
@@ -3614,7 +3624,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "other_anionic_surfactants"
       ],
-      "status": "caution",
+      "status": "ok",
       "group": "surfactants"
     },
     "unknown_cocoyl_glutamate": {
@@ -3623,7 +3633,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "other_anionic_surfactants"
       ],
-      "status": "caution",
+      "status": "ok",
       "group": "surfactants"
     },
     "unknown_wax": {
@@ -3909,7 +3919,8 @@ export const defaultDatabase: IngredientDatabase = {
       "exclusions": [
         "behentrimonium",
         "methosulfate",
-        "magnesium"
+        "magnesium",
+        "thiosulfate"
       ],
       "defaultIngredient": "unknown_sulfate",
       "references": [
@@ -4251,7 +4262,8 @@ export const defaultDatabase: IngredientDatabase = {
       "exclusions": [
         "magnesium",
         "behentrimonium",
-        "methosulfate"
+        "methosulfate",
+        "thiosulfate"
       ],
       "references": [
         {
@@ -4389,12 +4401,13 @@ export const defaultDatabase: IngredientDatabase = {
           "url": "https://science-yhairblog.blogspot.com/2015/02/glycerin-and-humidity.html",
           "title": "Glycerin and Humidity",
           "type": "science",
-          "description": "Humectants grab water out of air, but if air doesn't have enough water, it can become brittle and create friction, which can mean frizz. Theoretically this could dehydrate hair. Oils can slow water loss."
+          "description": "Humectants grab water out of air, but if air doesn't have enough water (dry weather), it can become brittle and create friction, which can mean frizz. Theoretically this could dehydrate hair. Oils can slow water loss. Notes that glycerin can be paired with emollients and film-formers to slow water loss. Caveats that none of this is well studied."
         },
         {
           "url": "https://science-yhairblog.blogspot.com/2014/07/film-forming-humectants-what-they-are.html",
           "title": "Film Forming Humectants - What They Are and Why You Need Them",
-          "type": "science"
+          "type": "science",
+          "description": "Defines film forming humectants as complex molecules that lose water more slowly because they have more 'nooks and crannies' for the water to hang out in. Also notes that hydrolyzed proteins can be film forming humectants. Smaller proteins can get under the cuticle and 'moisturize' from the inside. Medium/large proteins can form films. Pairing with oils can also help slow water loss."
         },
         {
           "title": "Handbook of Cosmetic Science and Technology",
@@ -4405,7 +4418,14 @@ export const defaultDatabase: IngredientDatabase = {
         {
           "url": "https://labmuffin.com/skincare-chemistry-which-ingredients-are-humectants/",
           "title": "Skincare Chemistry: How to pick out humectants",
-          "type": "science"
+          "type": "science",
+          "description": "Defines humectants as ingredient that grabs onto water slowing it from evaporating. Usually has OH and NH groups, as well as polarity, so can bond with water. Also needs to resist evaporation itself."
+        },
+        {
+          "url": "https://thebeautybrains.com/2014/01/whats-the-best-moisturizer/",
+          "title": "The Beauty Brains: What's the best moisturizer?",
+          "type": "science",
+          "description": "Defines humectants as ingredients that can hold large amounts of water and attract it from the atmosphere, but in dry conditions may pull water from your skin/hair"
         }
       ],
       "inclusions": []
@@ -4419,7 +4439,6 @@ export const defaultSystems: System[] = [
     "id": "curly_default",
     "description": "The Curly Default system is a hair care system that focuses on using products that are free of harsh chemicals and sulfates. It recommends using products that are free of drying alcohols, parabens, and other potentially harmful ingredients.",
     "settings": [
-      "mild_surfactants_caution_others",
       "drying_alcohol",
       "caution_silicones",
       "no_waxes",

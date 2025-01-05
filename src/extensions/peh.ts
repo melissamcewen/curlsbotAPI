@@ -1,6 +1,22 @@
 import type { AnalysisResult } from "types";
 
-import type { PEHAnalysis } from "types";
+/**
+ * A PEH Analysis
+ */
+export interface PEHAnalysis {
+  //number of proteins
+  proteins: number;
+  //number of emollients
+  emollients: number;
+  //number of humectants
+  humectants: number;
+  //protein score
+  proteinScore: number;
+  //emollient score
+  emollientScore: number;
+  //humectant score
+  humectantScore: number;
+}
 
 /// takes a AnalysisResult and returns a PEHAnalysis
 export function peh(analysis: AnalysisResult): PEHAnalysis {

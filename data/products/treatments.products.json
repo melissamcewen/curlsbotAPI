@@ -1,0 +1,39 @@
+{
+  "products": [
+    {
+      "name": "Ginger and Moringa Tea Rinse",
+      "brand": "Ecoslay",
+      "product_categories": [
+        "treatments"
+      ],
+      "tags": [
+        "normal_porosity",
+        "high_porosity",
+        "low_porosity",
+        "featured",
+        "black_owned",
+        "woman_owned",
+        "small_business"
+      ],
+      "ingredients_raw": "ginger extract, moringa extract, aloe vera juice, apple cider vinegar, optiphen plus",
+      "buy_url": "https://ecoslay.sjv.io/APKENx"
+    },
+    {
+      "name": "Matcha Boost Protein Strengthening Treatment",
+      "brand": "Ecoslay",
+      "product_categories": [
+        "treatments"
+      ],
+      "tags": [
+        "normal_porosity",
+        "high_porosity",
+        "featured",
+        "black_owned",
+        "woman_owned",
+        "small_business"
+      ],
+      "ingredients_raw": "distilled water, ceteryl alcohol, behentrimonium methosulfate, hydrolyzed quinoa protein, hydrolyzed keratin protein, matcha extract, propanediol, hp starch, caprylhydroxamic acid gg preservation blend caprylhydroxamic acid, glyceryl",
+      "buy_url": "http://ecoslay.sjv.io/yqrm1b"
+    }
+  ]
+}
