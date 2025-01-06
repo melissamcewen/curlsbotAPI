@@ -3,8 +3,8 @@ import type { AnalysisResult, FrizzbotAnalysis } from '../types';
 export function frizzbot(analysis: AnalysisResult): FrizzbotAnalysis {
   const definitions = {
     emollients: {
-      groups: ['silicones', 'oils'],
-      categories: ['emollient_alcohols', 'polyquats'],
+      groups: ['silicones', 'oils', 'waxes'],
+      categories: ['emollient_alcohols', 'polyquats', 'conditioning_agents', 'film_forming_agents'],
     },
     film_forming_humectants: {
       groups: [],

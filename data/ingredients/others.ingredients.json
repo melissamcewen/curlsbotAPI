@@ -3,12 +3,16 @@
     {
       "name": "Aminomethyl Propanol",
       "id": "aminomethyl_propanol",
-      "categories": ["other"]
+      "categories": [
+        "other"
+      ]
     },
     {
       "name": "Disodium 2-Sulfolaurate",
       "id": "disodium_2_sulfolaurate",
-      "categories": ["other_anionic_surfactants"]
+      "categories": [
+        "other_anionic_surfactants"
+      ]
     },
     {
       "name": "Potassium Castorate",
@@ -17,7 +21,9 @@
         "potassium salt of castor oil fatty acids",
         "castor oil soap"
       ],
-      "categories": ["soaps"]
+      "categories": [
+        "soaps"
+      ]
     },
     {
       "name": "Potassium Cocoate",
@@ -26,37 +32,64 @@
         "potassium salt of coconut oil fatty acids",
         "coconut oil soap"
       ],
-      "categories": ["soaps"]
+      "categories": [
+        "soaps"
+      ]
     },
     {
       "name": "Potassium Olivate",
       "id": "potassium_olivate",
-      "synonyms": ["potassium salt of olive oil fatty acids", "olive oil soap"],
-      "categories": ["soaps"]
+      "synonyms": [
+        "potassium salt of olive oil fatty acids",
+        "olive oil soap"
+      ],
+      "categories": [
+        "soaps"
+      ]
     },
     {
       "name": "Potassium Palmate",
       "id": "potassium_palmate",
-      "synonyms": ["potassium salt of palmitic acid", "palm oil soap"],
-      "categories": ["soaps"]
+      "synonyms": [
+        "potassium salt of palmitic acid",
+        "palm oil soap"
+      ],
+      "categories": [
+        "soaps"
+      ]
     },
     {
       "name": "Potassium Stearate",
       "id": "potassium_stearate",
-      "synonyms": ["potassium salt of stearic acid", "potassium soap"],
-      "categories": ["soaps"]
+      "synonyms": [
+        "potassium salt of stearic acid",
+        "potassium soap"
+      ],
+      "categories": [
+        "soaps"
+      ]
     },
     {
       "name": "Saccharomyces Silicon Ferment",
       "id": "saccharomyces_silicon_ferment",
-      "synonyms": ["saccharomycessilicon", "silicon ferment"],
-      "categories": ["other"]
+      "synonyms": [
+        "saccharomycessilicon",
+        "silicon ferment"
+      ],
+      "categories": [
+        "other"
+      ]
     },
     {
       "name": "Sodium Castorate",
       "id": "sodium_castorate",
-      "synonyms": ["sodium salt of castor oil fatty acids", "castor oil soap"],
-      "categories": ["soaps"]
+      "synonyms": [
+        "sodium salt of castor oil fatty acids",
+        "castor oil soap"
+      ],
+      "categories": [
+        "soaps"
+      ]
     },
     {
       "name": "Sodium Cocoate",
@@ -65,80 +98,129 @@
         "sodium salt of coconut oil fatty acids",
         "coconut oil soap"
       ],
-      "categories": ["soaps"]
+      "categories": [
+        "soaps"
+      ]
     },
     {
       "name": "Sodium Lauroyl Hydrolyzed Silk",
       "id": "sodium_lauroyl_hydrolyzed_silk",
-      "categories": ["other_anionic_surfactants"]
+      "categories": [
+        "other_anionic_surfactants"
+      ]
     },
     {
       "name": "Sodium Lauroyl Lactylate",
       "id": "sodium_lauroyl_lactylate",
-      "categories": ["other_anionic_surfactants"]
+      "categories": [
+        "other_anionic_surfactants"
+      ]
     },
     {
       "name": "Sodium Lauroyl Oat Amino Acids",
       "id": "sodium_lauroyl_oat_amino_acids",
-      "categories": ["other_anionic_surfactants"]
+      "categories": [
+        "other_anionic_surfactants"
+      ]
     },
     {
       "name": "Sodium Methyl 2-Sulfolaurate",
       "id": "sodium_methyl_2_sulfolaurate",
-      "categories": ["other_anionic_surfactants"]
+      "categories": [
+        "other_anionic_surfactants"
+      ]
     },
     {
       "name": "Sodium Olivate",
       "id": "sodium_olivate",
-      "synonyms": ["sodium salt of olive oil fatty acids", "olive oil soap"],
-      "categories": ["soaps"]
+      "synonyms": [
+        "sodium salt of olive oil fatty acids",
+        "olive oil soap"
+      ],
+      "categories": [
+        "soaps"
+      ]
     },
     {
       "name": "Sodium Palmate",
       "id": "sodium_palmate",
-      "synonyms": ["sodium salt of palmitic acid", "palm oil soap"],
-      "categories": ["soaps"]
+      "synonyms": [
+        "sodium salt of palmitic acid",
+        "palm oil soap"
+      ],
+      "categories": [
+        "soaps"
+      ]
     },
     {
       "name": "Sodium Stearate",
       "id": "sodium_stearate",
-      "synonyms": ["sodium salt of stearic acid", "stearic acid soap"],
-      "categories": ["soaps"]
+      "synonyms": [
+        "sodium salt of stearic acid",
+        "stearic acid soap"
+      ],
+      "categories": [
+        "soaps"
+      ]
     },
     {
       "name": "Sodium Tallowate",
       "id": "sodium_tallowate",
-      "synonyms": ["sodium salt of tallow fatty acids", "tallow soap"],
-      "categories": ["soaps"]
+      "synonyms": [
+        "sodium salt of tallow fatty acids",
+        "tallow soap"
+      ],
+      "categories": [
+        "soaps"
+      ]
     },
     {
       "name": "Triisopropanolamine",
       "id": "triisopropanolamine",
-      "categories": ["other"]
+      "categories": [
+        "other"
+      ]
     },
     {
       "name": "Witch Hazel",
       "id": "witch_hazel",
-      "synonyms": ["witch", "hamamelis", "hamamellis", "hazel"],
-      "categories": ["astringents"],
+      "synonyms": [
+        "witch",
+        "hamamelis",
+        "hamamellis",
+        "hazel"
+      ],
+      "categories": [
+        "astringents"
+      ],
       "description": "Most witch hazel contains alcohol—check with the manufacturer to confirm. Even alcohol-free versions can be drying, so use cautiously on high porosity hair."
     },
     {
       "name": "Unknown Paraben",
       "id": "unknown_paraben",
-      "synonyms": ["paraben"],
-      "categories": ["parabens"]
+      "synonyms": [
+        "paraben"
+      ],
+      "categories": [
+        "parabens"
+      ]
     },
     {
       "name": "Water  ",
       "id": "water",
-      "synonyms": ["aqua"],
-      "categories": ["other"]
+      "synonyms": [
+        "aqua"
+      ],
+      "categories": [
+        "other"
+      ]
     },
     {
       "name": "Solvent",
       "id": "isododecane",
-      "categories": ["solvents"]
+      "categories": [
+        "solvents"
+      ]
     },
     {
       "name": "Isohexadecane",
@@ -149,64 +231,95 @@
         "isohexanedecane",
         "isohexad"
       ],
-      "categories": ["solvents"]
+      "categories": [
+        "solvents"
+      ]
     },
     {
       "name": "Flower Extract",
       "id": "flower_extract",
-      "categories": ["other"],
+      "categories": [
+        "other"
+      ],
       "description": "This is a flower extract, but we're not sure which one. These are generally considered harmless or beneficial."
     },
     {
       "name": "Aloe Barbadensis Leaf Extract",
       "id": "aloe_barbadensis_leaf_extract",
       "description": "A moisturizing ingredient that soothes the scalp and conditions hair",
-      "categories": ["film_forming_humectants"],
-      "synonyms": ["aloe vera", "aloe barbadensis leaf juice"]
+      "categories": [
+        "film_forming_humectants"
+      ],
+      "synonyms": [
+        "aloe vera",
+        "aloe barbadensis leaf juice"
+      ]
     },
     {
       "name": "Flaxseed Extract",
       "id": "flaxseed_extract",
-      "categories": ["film_forming_humectants"]
+      "categories": [
+        "film_forming_humectants"
+      ]
     },
     {
       "name": "Seaweed Extract",
       "id": "seaweed_extract",
-      "categories": ["film_forming_humectants"],
-      "synonyms": ["seaweed"]
+      "categories": [
+        "film_forming_humectants"
+      ],
+      "synonyms": [
+        "seaweed"
+      ]
     },
     {
       "name": "Marshmallow root Extract",
       "id": "marshmallow_root_extract",
-      "synonyms": ["marshmallow"],
-      "categories": ["film_forming_humectants"]
+      "synonyms": [
+        "marshmallow"
+      ],
+      "categories": [
+        "film_forming_humectants"
+      ]
     },
     {
       "name": "Irish Moss Extract",
       "id": "irish_moss_extract",
-      "synonyms": ["irish moss"],
-      "categories": ["film_forming_humectants"]
+      "synonyms": [
+        "irish moss"
+      ],
+      "categories": [
+        "film_forming_humectants"
+      ]
     },
     {
       "name": "Irish Moss Extract",
       "id": "irish_moss_extract",
-      "categories": ["film_forming_humectants"]
+      "categories": [
+        "film_forming_humectants"
+      ]
     },
     {
       "name": "Pectin",
       "id": "pectin",
-      "categories": ["film_forming_humectants"]
+      "categories": [
+        "film_forming_humectants"
+      ]
     },
     {
       "name": "Algae Extract",
       "id": "algae_extract",
-      "categories": ["film_forming_humectants"]
+      "categories": [
+        "film_forming_humectants"
+      ]
     },
     {
       "name": "Citric Acid",
       "id": "citric_acid",
       "description": "Used to adjust pH levels and smooth hair cuticles",
-      "categories": ["other"],
+      "categories": [
+        "other"
+      ],
       "references": [
         {
           "url": "https://incidecoder.com/ingredients/citric-acid"
@@ -217,48 +330,67 @@
       "name": "Ethylhexylglycerin",
       "id": "ethylhexylglycerin",
       "description": "A humectant and preservative enhancer",
-      "categories": ["film_forming_humectants"]
+      "categories": [
+        "film_forming_humectants"
+      ]
     },
     {
       "name": "Glycereth-26",
       "id": "glycereth_26",
       "description": "A lightweight humectant that provides hydration without greasiness",
-      "categories": ["film_forming_humectants"]
+      "categories": [
+        "film_forming_humectants"
+      ]
     },
     {
       "name": "Glycerin",
       "id": "glycerin",
       "description": "A powerful humectant that attracts moisture to the hair",
-      "categories": ["simple_humectants"]
+      "categories": [
+        "simple_humectants"
+      ]
     },
     {
       "name": "Hydroxyethylcellulose",
       "id": "hydroxyethylcellulose",
       "description": "A thickening agent that improves product texture",
-      "categories": ["film_forming_humectants"]
+      "categories": [
+        "film_forming_humectants"
+      ]
     },
     {
       "name": "Hydroxypropyltrimonium Honey",
       "id": "hydroxypropyltrimonium_honey",
       "description": "A conditioning agent derived from honey that adds shine and softness",
-      "categories": ["film_forming_humectants"]
+      "categories": [
+        "film_forming_humectants"
+      ]
     },
     {
       "name": "Panthenol",
       "id": "panthenol",
       "description": "A moisturizing and strengthening agent that enhances hair elasticity",
-      "categories": ["film_forming_humectants"],
-      "synonyms": ["provitamin B5", "vitamin B5"]
+      "categories": [
+        "film_forming_humectants"
+      ],
+      "synonyms": [
+        "provitamin B5",
+        "vitamin B5"
+      ]
     },
     {
       "name": "Butylene glycol",
       "id": "butylene_glycol",
-      "categories": ["simple_humectants"]
+      "categories": [
+        "simple_humectants"
+      ]
     },
     {
       "name": "Sodium hyaluronate",
       "id": "sodium_hyaluronate",
-      "categories": ["film_forming_humectants"],
+      "categories": [
+        "film_forming_humectants"
+      ],
       "references": [
         {
           "url": "https://incidecoder.com/ingredients/sodium-hyaluronate",
@@ -272,7 +404,9 @@
     {
       "name": "PCA",
       "id": "pca",
-      "categories": ["film_forming_humectants"],
+      "categories": [
+        "film_forming_humectants"
+      ],
       "references": [
         {
           "url": "https://incidecoder.com/ingredients/pca",
@@ -292,69 +426,97 @@
       "name": "Phenoxyethanol",
       "id": "phenoxyethanol",
       "description": "A preservative that prevents microbial growth in hair care products",
-      "categories": ["other_preservatives"]
+      "categories": [
+        "other_preservatives"
+      ]
     },
     {
       "name": "Silk Amino Acids",
       "id": "silk_amino_acids",
       "description": "A protein derivative that strengthens and smooths hair",
-      "categories": ["proteins"]
+      "categories": [
+        "proteins"
+      ]
     },
     {
       "name": "Sodium Phytate",
       "id": "sodium_phytate",
       "description": "A chelating agent that stabilizes product formulations",
-      "categories": ["other"]
+      "categories": [
+        "other"
+      ]
     },
     {
       "name": "Sorbic Acid",
       "id": "sorbic_acid",
       "description": "A preservative that inhibits the growth of mold and yeast",
-      "categories": ["other_preservatives"]
+      "categories": [
+        "other_preservatives"
+      ]
     },
     {
       "name": "Sorbitol",
       "id": "sorbitol",
       "description": "A humectant that retains moisture and adds hydration",
-      "categories": ["film_forming_humectants"]
+      "categories": [
+        "film_forming_humectants"
+      ]
     },
     {
       "name": "Propylene Glycol",
       "id": "propylene_glycol",
-      "categories": ["simple_humectants"]
+      "categories": [
+        "simple_humectants"
+      ]
     },
     {
       "name": "Tocopheryl Acetate",
       "id": "tocopheryl_acetate",
       "description": "An antioxidant that protects hair and scalp from free radical damage",
-      "categories": ["other"],
-      "synonyms": ["Vitamin E"]
+      "categories": [
+        "other"
+      ],
+      "synonyms": [
+        "Vitamin E"
+      ]
     },
     {
       "name": "Cellulose",
       "id": "cellulose",
       "description": "A natural polymer used as a thickener and stabilizer in hair care formulations",
-      "categories": ["other"]
+      "categories": [
+        "other"
+      ]
     },
     {
       "name": "PEG-100 Stearate",
       "id": "peg_100_stearate",
       "description": "An emulsifier that helps blend water and oil, improving the texture and stability of hair care products",
-      "categories": ["other"],
-      "synonyms": ["PEG 100 Stearate"]
+      "categories": [
+        "other"
+      ],
+      "synonyms": [
+        "PEG 100 Stearate"
+      ]
     },
     {
       "name": "Fragrance",
       "id": "fragrance",
-      "categories": ["other"],
-      "synonyms": ["parfum"],
+      "categories": [
+        "other"
+      ],
+      "synonyms": [
+        "parfum"
+      ],
       "description": "A blend of aromatic compounds that provides a pleasant scent to hair care products. Some people are sensitive to fragrances and companies are not required to list which specific ingredients are used in their fragrance blends."
     },
     {
       "name": "Guar Hydroxypropyltrimonium Chloride",
       "id": "guar_hydroxypropyltrimonium_chloride",
       "description": "A conditioning agent derived from guar gum, improving detangling and reducing static in hair",
-      "categories": ["polyquats"],
+      "categories": [
+        "polyquats"
+      ],
       "synonyms": [
         "guar gum quaternary ammonium",
         "guar gum",
@@ -365,14 +527,22 @@
     {
       "name": "Xanthan Gum",
       "id": "xanthan_gum",
-      "categories": ["film_forming_humectants"]
+      "categories": [
+        "film_forming_agents"
+      ]
     },
     {
       "name": "Magnesium Sulfate",
       "id": "magnesium_sulfate",
       "description": "A mineral salt used as a texturizer and curl enhancer in hair care products. Some people find the texture unpleasant or drying. If you have issues with hard water, you might want to avoid it, because it's an extra source of the same minerals that can build up on your hair.",
-      "categories": ["other"],
-      "synonyms": ["epsom salt", "magnesium salt", "magnesium sulphate"],
+      "categories": [
+        "other"
+      ],
+      "synonyms": [
+        "epsom salt",
+        "magnesium salt",
+        "magnesium sulphate"
+      ],
       "references": [
         {
           "title": "Magnesium Sulfate",
@@ -399,13 +569,19 @@
     {
       "name": "Phenyl Propanol",
       "id": "phenyl_propanol",
-      "synonyms": ["phenylpropanol"],
-      "categories": ["other"]
+      "synonyms": [
+        "phenylpropanol"
+      ],
+      "categories": [
+        "other"
+      ]
     },
     {
       "name": "Lanolin",
       "id": "lanolin",
-      "categories": ["other_oils"],
+      "categories": [
+        "other_oils"
+      ],
       "description": "This is an ingredient derived from wool with a complicated chemical structure and many uses. One issue with it is that it is comedogenic, meaning it can clog pores. This may be an issue for people with sensitive or dandruff prone scalps. It is also not vegan friendly.",
       "references": [
         {
@@ -422,361 +598,632 @@
         "sorbitan monolaurate ethoxylated",
         "ethoxylated sorbitol laurate"
       ],
-      "categories": ["other"]
+      "categories": [
+        "other"
+      ]
     },
     {
       "name": "Alanine",
       "id": "alanine",
-      "categories": ["proteins"]
+      "categories": [
+        "proteins"
+      ]
     },
     {
       "name": "Arginine",
       "id": "arginine",
-      "categories": ["proteins"]
+      "categories": [
+        "proteins"
+      ]
     },
     {
       "name": "Aspartic Acid",
       "id": "aspartic_acid",
-      "categories": ["proteins"]
+      "categories": [
+        "proteins"
+      ]
     },
     {
       "name": "calcium aspartate",
       "id": "calcium_aspartate",
-      "categories": ["proteins"]
+      "categories": [
+        "proteins"
+      ]
     },
     {
       "name": "Calcium Glycinate",
       "id": "calcium_glycinate",
-      "categories": ["proteins"]
+      "categories": [
+        "proteins"
+      ]
     },
     {
       "name": "Casein",
       "id": "casein",
-      "categories": ["proteins"]
+      "categories": [
+        "proteins"
+      ]
     },
     {
       "name": "Calcium Glycinate",
       "id": "calcium_glycinate",
-      "categories": ["proteins"]
+      "categories": [
+        "proteins"
+      ]
     },
     {
       "name": "Collagen",
       "id": "collagen",
-      "categories": ["proteins"]
+      "categories": [
+        "proteins"
+      ]
     },
     {
       "name": "Cysteine",
       "id": "cysteine",
-      "categories": ["proteins"]
+      "categories": [
+        "proteins"
+      ]
     },
     {
       "name": "Dipotassium aspartate",
       "id": "dipotassium_aspartate",
-      "categories": ["proteins"]
+      "categories": [
+        "proteins"
+      ]
     },
     {
       "name": "Elastin",
       "id": "elastin",
-      "categories": ["proteins"]
+      "categories": [
+        "proteins"
+      ]
     },
     {
       "name": "Gelatin",
       "id": "gelatin",
-      "categories": ["proteins"]
+      "categories": [
+        "proteins"
+      ]
     },
     {
       "name": "Glutamic Acid",
       "id": "glutamic_acid",
-      "categories": ["proteins"]
+      "categories": [
+        "proteins"
+      ]
     },
     {
       "name": "Histidine",
       "id": "histidine",
-      "categories": ["proteins"]
+      "categories": [
+        "proteins"
+      ]
     },
     {
       "name": "Lysine",
       "id": "lysine",
-      "categories": ["proteins"]
+      "categories": [
+        "proteins"
+      ]
     },
     {
       "name": "Glycine",
       "id": "glycine",
-      "categories": ["proteins"]
+      "categories": [
+        "proteins"
+      ]
     },
     {
       "name": "Keratin",
       "id": "keratin",
-      "categories": ["proteins"]
+      "categories": [
+        "proteins"
+      ]
     },
     {
       "name": "Lysine",
       "id": "lysine",
-      "categories": ["proteins"]
+      "categories": [
+        "proteins"
+      ]
     },
     {
       "name": "Magnesium aspartate",
       "id": "magnesium_aspartate",
-      "categories": ["proteins"]
+      "categories": [
+        "proteins"
+      ]
     },
     {
       "name": "Magnesium Glycinate",
       "id": "magnesium_glycinate",
-      "categories": ["proteins"]
+      "categories": [
+        "proteins"
+      ]
     },
     {
       "name": "Methionine",
       "id": "methionine",
-      "categories": ["proteins"]
+      "categories": [
+        "proteins"
+      ]
     },
     {
       "name": "Milk",
       "id": "milk",
-      "categories": ["proteins"]
+      "categories": [
+        "proteins"
+      ]
     },
     {
       "name": "Peptide",
       "id": "peptide",
-      "categories": ["proteins"]
+      "categories": [
+        "proteins"
+      ]
     },
     {
       "name": "Phenylalanine",
       "id": "phenylalanine",
-      "categories": ["proteins"]
+      "categories": [
+        "proteins"
+      ]
     },
     {
       "name": "Potassium aspartate",
       "id": "potassium_aspartate",
-      "categories": ["proteins"]
+      "categories": [
+        "proteins"
+      ]
     },
     {
       "name": "Proline",
       "id": "proline",
-      "categories": ["proteins"]
+      "categories": [
+        "proteins"
+      ]
     },
     {
       "name": "Serine",
       "id": "serine",
-      "categories": ["proteins"]
+      "categories": [
+        "proteins"
+      ]
     },
     {
       "name": "Unknown Protein",
       "id": "unknown_protein",
-      "synonyms": ["protein"],
-      "categories": ["proteins"]
+      "synonyms": [
+        "protein"
+      ],
+      "categories": [
+        "proteins"
+      ]
     },
     {
       "name": "Silk",
       "id": "silk",
-      "categories": ["proteins"],
-      "synonyms": ["sericin"]
+      "categories": [
+        "proteins"
+      ],
+      "synonyms": [
+        "sericin"
+      ]
     },
     {
       "name": "Sodium aspartate",
       "id": "sodium_aspartate",
-      "categories": ["proteins"]
+      "categories": [
+        "proteins"
+      ]
     },
     {
       "name": "Sodium Glycinate",
       "id": "sodium_glycinate",
-      "categories": ["proteins"]
+      "categories": [
+        "proteins"
+      ]
     },
     {
       "name": "Tyrosine",
       "id": "tyrosine",
-      "categories": ["proteins"]
+      "categories": [
+        "proteins"
+      ]
     },
     {
       "name": "Sodium Glutamate",
       "id": "sodium_glutamate",
-      "categories": ["proteins"]
+      "categories": [
+        "proteins"
+      ]
     },
     {
       "name": "Acetamide MEA",
       "id": "acetamide_mea",
-      "categories": ["simple_humectants"]
+      "categories": [
+        "simple_humectants"
+      ]
     },
     {
       "name": "Agave Nectar",
       "id": "agave_nectar",
-      "synonyms": ["agave"],
-      "categories": ["simple_humectants"]
+      "synonyms": [
+        "agave"
+      ],
+      "categories": [
+        "simple_humectants"
+      ]
     },
     {
       "name": "Alantoin",
       "id": "alantoin",
-      "categories": ["simple_humectants"],
-      "synonyms": ["allantoin"]
+      "categories": [
+        "simple_humectants"
+      ],
+      "synonyms": [
+        "allantoin"
+      ]
     },
     {
       "name": "Caprylyl Glycol",
       "id": "caprylyl_glycol",
-      "categories": ["simple_humectants"]
+      "categories": [
+        "simple_humectants"
+      ]
     },
     {
       "name": "Ceramide",
       "id": "ceramide",
-      "categories": ["film_forming_humectants"]
+      "categories": [
+        "film_forming_humectants"
+      ]
     },
     {
       "name": "Coenzyme Q10",
       "id": "coenzyme_q10",
-      "categories": ["film_forming_humectants"]
+      "categories": [
+        "film_forming_humectants"
+      ]
     },
     {
       "name": "Dipropylene Glycol",
       "id": "dipropylene_glycol",
-      "categories": ["simple_humectants"]
+      "categories": [
+        "simple_humectants"
+      ]
     },
     {
       "name": "Erythritol",
       "id": "erythritol",
-      "categories": ["simple_humectants"]
+      "categories": [
+        "simple_humectants"
+      ]
     },
     {
       "name": "Fructose",
       "id": "fructose",
-      "categories": ["simple_humectants"]
+      "categories": [
+        "simple_humectants"
+      ]
     },
     {
       "name": "Glucose",
       "id": "glucose",
-      "categories": ["simple_humectants"]
+      "categories": [
+        "simple_humectants"
+      ]
     },
     {
       "name": "Glyceryl Triacetate",
       "id": "glyceryl_triacetate",
-      "categories": ["simple_humectants"]
+      "categories": [
+        "simple_humectants"
+      ]
     },
     {
       "name": "Glycogen",
       "id": "glycogen",
-      "categories": ["film_forming_humectants"]
+      "categories": [
+        "film_forming_humectants"
+      ]
     },
     {
       "name": "Hexylene Glycol",
       "id": "hexylene_glycol",
-      "categories": ["simple_humectants"]
+      "categories": [
+        "simple_humectants"
+      ]
     },
     {
       "name": "Honey",
       "id": "honey",
-      "categories": ["simple_humectants"]
+      "categories": [
+        "simple_humectants"
+      ]
     },
     {
       "name": "Hyaluronic Acid",
       "id": "hyaluronic_acid",
-      "categories": ["film_forming_humectants"]
+      "categories": [
+        "film_forming_humectants"
+      ]
     },
     {
       "name": "Inositol",
       "id": "inositol",
-      "categories": ["simple_humectants"]
+      "categories": [
+        "simple_humectants"
+      ]
     },
     {
       "name": "Lactic Acid",
       "id": "lactic_acid",
-      "categories": ["simple_humectants"]
+      "categories": [
+        "simple_humectants"
+      ]
     },
     {
       "name": "Lecithin",
       "id": "lecithin",
-      "categories": ["film_forming_humectants"]
+      "categories": [
+        "film_forming_humectants"
+      ]
     },
     {
       "name": "Maltitol",
       "id": "maltitol",
-      "categories": ["film_forming_humectants"]
+      "categories": [
+        "film_forming_humectants"
+      ]
     },
     {
       "name": "Molasses",
       "id": "molasses",
-      "categories": ["simple_humectants"]
+      "categories": [
+        "simple_humectants"
+      ]
     },
     {
       "name": "Niacinamide",
       "id": "niacinamide",
-      "categories": ["simple_humectants"]
+      "categories": [
+        "simple_humectants"
+      ]
     },
     {
       "name": "Phytantriol",
       "id": "phytantriol",
-      "categories": ["film_forming_humectants"]
+      "categories": [
+        "film_forming_humectants"
+      ]
     },
     {
       "name": "Polydextrose",
       "id": "polydextrose",
-      "categories": ["film_forming_humectants"]
+      "categories": [
+        "film_forming_humectants"
+      ]
     },
     {
       "name": "Polyethylene Glycol",
       "id": "polyethylene_glycol",
-      "synonyms": ["polyethyleneglycol"],
-      "categories": ["film_forming_humectants"]
+      "synonyms": [
+        "polyethyleneglycol"
+      ],
+      "categories": [
+        "film_forming_humectants"
+      ]
     },
     {
       "name": "Quillaja Saponaria Bark Extract",
       "id": "quillaja_saponaria_bark_extract",
-      "categories": ["film_forming_humectants"],
-      "synonyms": ["quillaja", "quillaia"]
+      "categories": [
+        "film_forming_humectants"
+      ],
+      "synonyms": [
+        "quillaja",
+        "quillaia"
+      ]
     },
     {
       "name": "Sodium Lactate",
       "id": "sodium_lactate",
-      "categories": ["film_forming_humectants"]
+      "categories": [
+        "film_forming_humectants"
+      ]
     },
     {
       "name": "Sodium PCA",
       "id": "sodium_pca",
-      "categories": ["simple_humectants"],
-      "synonyms": ["pyrrolidone carboxylic acid"]
+      "categories": [
+        "simple_humectants"
+      ],
+      "synonyms": [
+        "pyrrolidone carboxylic acid"
+      ]
     },
     {
       "name": "Sorbitol",
       "id": "sorbitol",
-      "categories": ["simple_humectants"]
+      "categories": [
+        "simple_humectants"
+      ]
     },
     {
       "name": "Urea",
       "id": "urea",
-      "categories": ["simple_humectants"]
+      "categories": [
+        "simple_humectants"
+      ]
     },
     {
       "name": "Xylitol",
       "id": "xylitol",
-      "categories": ["simple_humectants"]
+      "categories": [
+        "simple_humectants"
+      ]
     },
     {
       "name": "C12-15 alkyl",
       "id": "c12_15_alkyl",
-      "categories": ["other_emollients"]
+      "categories": [
+        "other_emollients"
+      ]
     },
     {
       "name": "Cetyl esters",
       "id": "cetyl_esters",
-      "categories": ["other_emollients"]
+      "categories": [
+        "other_emollients"
+      ]
     },
     {
       "name": "Isolaureth-6",
       "id": "isolaureth_6",
-      "categories": ["other_emollients"]
+      "categories": [
+        "other_emollients"
+      ]
     },
     {
       "name": "Sorbitol Esters",
       "id": "sorbitol_esters",
-      "categories": ["other_emollients"]
+      "categories": [
+        "other_emollients"
+      ]
     },
     {
       "name": "Triethylhexanoin",
       "id": "triethylhexanoin",
-      "categories": ["other_emollients"]
+      "categories": [
+        "other_emollients"
+      ]
     },
     {
       "name": "Sodium Thiosulfate",
       "id": "sodium_thiosulfate",
-      "categories": ["other"],
+      "categories": [
+        "other"
+      ],
       "description": "Not a sulfate detergent, a harmless additive"
-    }
+    },
+    {
+      "name": "Acrylates Copolymer",
+      "id": "acrylates_copolymer",
+      "categories": [
+        "film_forming_agents"
+      ]
+    },
+    {
+      "name": "Dehydroxanthan Gum",
+      "id": "dehydroxanthan_gum",
+      "categories": [
+        "film_forming_agents"
+      ]
+    },
+    {
+      "name": "Polyvinylpyrrolidone",
+      "id": "polyvinylpyrrolidone",
+      "synonyms": [
+        "PVP"
+      ],
+      "categories": [
+        "film_forming_agents"
+      ]
+    },
+    {
+      "name": "Copolymer",
+      "id": "copolymer",
+      "categories": [
+        "film_forming_agents"
+      ],
+      "description": "This is an unknown copolymer, not in our db yet"
+    },
+    {
+      "name": "Diheptyl Succinate",
+      "id": "diheptyl_succindate",
+      "categories": [
+        "conditioning_agents"
+      ],
+      "synonyms": [
+        "luxglide"
+      ],
+      "description": "This is a natural alternative to silicones, but like silicones, it doesn't seem to be water soluble",
+      "references": [
+        {
+          "url": "https://www.wholesalesuppliesplus.com/handmade101/learn-to-make-articles/a-chemists-perspective-on-luxglide-n5-and-n350.aspx",
+          "type": "industry",
+          "description": "Mentions it's a natural alternative to silicone, which is oil soluble.",
+          "title": "A Chemist's Perspective on LuxGlide N5 & N350"
+        },
+        {
+          "url": "https://incidecoder.com/ingredients/diheptyl-succinate",
+          "type": "science",
+          "title": "INCIDecoder: Diheptyl Succinate"
+        }
+      ]
+    },
+    {
+      "name": "Capryloyl Glycerin Sebacic Acid Copolymer",
+      "id": "capryloyl_glycerin_sebacic_acid_copolymer",
+      "categories": [
+        "conditioning_agents"
+      ],
+      "description": "This is a natural alternative to silicones, but like silicones, it doesn't seem to be water soluble"
+    },
+    {
+      "name": "Polyacrylate Crosspolymer-6",
+      "id": "polyacrylate_crosspolymer_6",
+      "categories": [
+        "film_forming_agents"
+      ]
+    },
+    {
+      "name": "Maltodextrin VP Copolymer",
+      "id": "maltodextrin_vp_copolymer",
+      "categories": [
+        "film_forming_agents"
+      ],
+      "references": [
+        {
+          "url": "https://www.happi.com/unique-styling-products-via-maltodextrinvp/",
+          "title": "Unique Styling Products Via Maltodextrin/VP",
+          "type": "industry",
+          "description": "Notes it is a natural ingredient used for providing hold and is easily washed out with water."
+        }
+      ]
+
+    },
+      {
+        "name": "VP VA copolymer",
+        "id": "vp_va_copolymer",
+        "categories": [
+          "film_forming_agents"
+        ],
+        "description": "Humidity resistant ingredient that provides hold in products like gels",
+        "references": [
+          {
+            "url": "https://incidecoder.com/ingredients/vp-va-copolymer",
+            "title": "INCIDecoder: VP/​VA Copolymer",
+            "type": "science"
+
+          }
+        ]
+      },
+      {
+        "name": "Propanediol",
+        "id": "propanediol",
+        "categories": ["simple_humectants"],
+        "description": "A natural alternative to propylene glycol"
+
+      },
+      {
+        "name": "Linum Usitatissimum Seed Extract",
+        "id": "linum_usitatissimum_seed_extract",
+        "categories": ["film_forming_humectants"],
+        "synonyms": ["flax seed extract"]
+
+      }
   ]
 }
-

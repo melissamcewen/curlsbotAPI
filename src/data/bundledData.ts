@@ -2520,10 +2520,10 @@ export const defaultDatabase: IngredientDatabase = {
       "name": "Xanthan Gum",
       "id": "xanthan_gum",
       "categories": [
-        "film_forming_humectants"
+        "film_forming_agents"
       ],
       "status": "ok",
-      "group": "humectants"
+      "group": "others"
     },
     "magnesium_sulfate": {
       "name": "Magnesium Sulfate",
@@ -3220,6 +3220,147 @@ export const defaultDatabase: IngredientDatabase = {
       "description": "Not a sulfate detergent, a harmless additive",
       "status": "ok",
       "group": "others"
+    },
+    "acrylates_copolymer": {
+      "name": "Acrylates Copolymer",
+      "id": "acrylates_copolymer",
+      "categories": [
+        "film_forming_agents"
+      ],
+      "status": "ok",
+      "group": "others"
+    },
+    "dehydroxanthan_gum": {
+      "name": "Dehydroxanthan Gum",
+      "id": "dehydroxanthan_gum",
+      "categories": [
+        "film_forming_agents"
+      ],
+      "status": "ok",
+      "group": "others"
+    },
+    "polyvinylpyrrolidone": {
+      "name": "Polyvinylpyrrolidone",
+      "id": "polyvinylpyrrolidone",
+      "synonyms": [
+        "PVP"
+      ],
+      "categories": [
+        "film_forming_agents"
+      ],
+      "status": "ok",
+      "group": "others"
+    },
+    "copolymer": {
+      "name": "Copolymer",
+      "id": "copolymer",
+      "categories": [
+        "film_forming_agents"
+      ],
+      "description": "This is an unknown copolymer, not in our db yet",
+      "status": "ok",
+      "group": "others"
+    },
+    "diheptyl_succindate": {
+      "name": "Diheptyl Succinate",
+      "id": "diheptyl_succindate",
+      "categories": [
+        "conditioning_agents"
+      ],
+      "synonyms": [
+        "luxglide"
+      ],
+      "description": "This is a natural alternative to silicones, but like silicones, it doesn't seem to be water soluble",
+      "references": [
+        {
+          "url": "https://www.wholesalesuppliesplus.com/handmade101/learn-to-make-articles/a-chemists-perspective-on-luxglide-n5-and-n350.aspx",
+          "type": "industry",
+          "description": "Mentions it's a natural alternative to silicone, which is oil soluble.",
+          "title": "A Chemist's Perspective on LuxGlide N5 & N350"
+        },
+        {
+          "url": "https://incidecoder.com/ingredients/diheptyl-succinate",
+          "type": "science",
+          "title": "INCIDecoder: Diheptyl Succinate"
+        }
+      ],
+      "status": "ok",
+      "group": "others"
+    },
+    "capryloyl_glycerin_sebacic_acid_copolymer": {
+      "name": "Capryloyl Glycerin Sebacic Acid Copolymer",
+      "id": "capryloyl_glycerin_sebacic_acid_copolymer",
+      "categories": [
+        "conditioning_agents"
+      ],
+      "description": "This is a natural alternative to silicones, but like silicones, it doesn't seem to be water soluble",
+      "status": "ok",
+      "group": "others"
+    },
+    "polyacrylate_crosspolymer_6": {
+      "name": "Polyacrylate Crosspolymer-6",
+      "id": "polyacrylate_crosspolymer_6",
+      "categories": [
+        "film_forming_agents"
+      ],
+      "status": "ok",
+      "group": "others"
+    },
+    "maltodextrin_vp_copolymer": {
+      "name": "Maltodextrin VP Copolymer",
+      "id": "maltodextrin_vp_copolymer",
+      "categories": [
+        "film_forming_agents"
+      ],
+      "references": [
+        {
+          "url": "https://www.happi.com/unique-styling-products-via-maltodextrinvp/",
+          "title": "Unique Styling Products Via Maltodextrin/VP",
+          "type": "industry",
+          "description": "Notes it is a natural ingredient used for providing hold and is easily washed out with water."
+        }
+      ],
+      "status": "ok",
+      "group": "others"
+    },
+    "vp_va_copolymer": {
+      "name": "VP VA copolymer",
+      "id": "vp_va_copolymer",
+      "categories": [
+        "film_forming_agents"
+      ],
+      "description": "Humidity resistant ingredient that provides hold in products like gels",
+      "references": [
+        {
+          "url": "https://incidecoder.com/ingredients/vp-va-copolymer",
+          "title": "INCIDecoder: VP/​VA Copolymer",
+          "type": "science"
+        }
+      ],
+      "status": "ok",
+      "group": "others"
+    },
+    "propanediol": {
+      "name": "Propanediol",
+      "id": "propanediol",
+      "categories": [
+        "simple_humectants"
+      ],
+      "description": "A natural alternative to propylene glycol",
+      "status": "ok",
+      "group": "humectants"
+    },
+    "linum_usitatissimum_seed_extract": {
+      "name": "Linum Usitatissimum Seed Extract",
+      "id": "linum_usitatissimum_seed_extract",
+      "categories": [
+        "film_forming_humectants"
+      ],
+      "synonyms": [
+        "flax seed extract"
+      ],
+      "status": "ok",
+      "group": "humectants"
     },
     "amodimethicone": {
       "name": "Amodimethicone",
@@ -4213,6 +4354,13 @@ export const defaultDatabase: IngredientDatabase = {
       "name": "Conditioning Agents",
       "group": "others",
       "description": "These are conditioning agents that don't fit into the other categories",
+      "references": []
+    },
+    "film_forming_agents": {
+      "id": "film_forming_agents",
+      "name": "Film Forming Agents",
+      "group": "others",
+      "description": "These ingredients form a thin invisible layer on the hair to hold style, prevent moisture loss, and protect from damage.",
       "references": []
     }
   },

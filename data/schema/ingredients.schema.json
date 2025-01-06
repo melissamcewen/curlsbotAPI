@@ -60,7 +60,8 @@
                 "proteins",
                 "other_oils",
                 "other_emollients",
-                "conditioning_agents"
+                "conditioning_agents",
+                "film_forming_agents"
               ]
             },
             "description": "Categories to which the ingredient belongs"

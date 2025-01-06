@@ -369,6 +369,13 @@
       "name": "Conditioning Agents",
       "group": "others",
       "description": "These are conditioning agents that don't fit into the other categories"
+    },
+
+    {
+      "id": "film_forming_agents",
+      "name": "Film Forming Agents",
+      "group": "others",
+      "description": "These ingredients form a thin invisible layer on the hair to hold style, prevent moisture loss, and protect from damage."
     }
   ]
 }
