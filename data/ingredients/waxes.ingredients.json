@@ -77,6 +77,30 @@
       "id": "peg_8_beeswax",
       "synonyms": ["polyethylene glycol-8 beeswax", "ethoxylated beeswax"],
       "categories": ["water_soluble_waxes"]
+    },
+    {
+      "name": "Jojoba Esters",
+      "id": "jojoba_esters",
+      "categories": [
+        "non_water_soluble_waxes"
+      ]
+    },
+    {
+      "name": "Cetyl Esters",
+      "id": "cetyl_esters",
+          "categories": [
+            "non_water_soluble_waxes"
+          ]
+
+    },
+    {
+      "name": "Unknown Ester",
+      "id": "unknown_ester",
+        "categories": [
+          "non_water_soluble_waxes"
+        ],
+        "synonyms": ["ester"],
+        "description": "This is an ester, a component of waxes"
     }
 
   ]

@@ -3176,13 +3176,13 @@ export const defaultDatabase: IngredientDatabase = {
       "group": "others"
     },
     "cetyl_esters": {
-      "name": "Cetyl esters",
+      "name": "Cetyl Esters",
       "id": "cetyl_esters",
       "categories": [
-        "other_emollients"
+        "non_water_soluble_waxes"
       ],
       "status": "ok",
-      "group": "others"
+      "group": "waxes"
     },
     "isolaureth_6": {
       "name": "Isolaureth-6",
@@ -3960,6 +3960,28 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "water_soluble_waxes"
       ],
+      "status": "ok",
+      "group": "waxes"
+    },
+    "jojoba_esters": {
+      "name": "Jojoba Esters",
+      "id": "jojoba_esters",
+      "categories": [
+        "non_water_soluble_waxes"
+      ],
+      "status": "ok",
+      "group": "waxes"
+    },
+    "unknown_ester": {
+      "name": "Unknown Ester",
+      "id": "unknown_ester",
+      "categories": [
+        "non_water_soluble_waxes"
+      ],
+      "synonyms": [
+        "ester"
+      ],
+      "description": "This is an ester, a component of waxes",
       "status": "ok",
       "group": "waxes"
     }
