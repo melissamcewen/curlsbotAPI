@@ -13,19 +13,16 @@
           "id": "2"
         },
         {
-          "id": 3
+          "id": "3"
         },
         {
-          "id": 4,
-          "status": "caution"
+          "id": "4"
         },
         {
-          "id": 5,
-          "status": "warning"
+          "id": "5"
         },
         {
-          "id": 6,
-          "status": "warning"
+          "id": "6"
         }
       ]
     },
@@ -38,22 +35,22 @@
       "defaultIngredient": "unknown_paraben",
       "references": [
         {
-          "id": 7
+          "id": "7"
         },
         {
-          "id": 6,
+          "id": "6",
           "status": "warning"
         },
         {
-          "id": 8,
+          "id": "8",
           "status": "ok"
         },
         {
-          "id": 9,
+          "id": "9",
           "status": "ok"
         },
         {
-          "id": 5,
+          "id": "5",
           "status": "ok"
         }
       ]
@@ -73,32 +70,32 @@
       "defaultIngredient": "unknown_sulfate",
       "references": [
         {
-          "id": 1
+          "id": "1"
         },
         {
-          "id": 6,
+          "id": "6",
           "status": "warning"
         },
         {
           "status": "ok",
-          "id": 10
+          "id": "10"
         },
         {
-          "id": 11,
+          "id": "11",
           "status": "ok"
         },
         {
-          "id": 5,
+          "id": "5",
           "status": "caution",
-          "description": "depends on the sulfate."
+          "notes": "depends on the sulfate."
         },
         {
-          "id": 12,
+          "id": "12",
           "status": "caution",
-          "description": "Discusses how concentration of detergent matters in terms of mildness."
+          "notes": "Discusses how concentration of detergent matters in terms of mildness."
         },
         {
-          "id": 13
+          "id": "13"
         }
       ]
     },
@@ -118,12 +115,12 @@
       "defaultIngredient": "unknown_water_soluble_silicone",
       "references": [
         {
-          "id": 14
+          "id": "14"
         },
         {
-          "id": 15,
+          "id": "15",
           "status": "caution",
-          "description": "varies, discusses the different water solubilities of different silicones"
+          "notes": "varies, discusses the different water solubilities of different silicones"
         }
       ]
     },
@@ -134,25 +131,25 @@
       "description": "Non-water-soluble silicones in hair care products are a type of silicone that cannot be easily washed out with gentle shampoos or cowash",
       "references": [
         {
-          "id": 16,
+          "id": "16",
           "status": "good"
         },
         {
           "status": "ok",
-          "id": 17
+          "id": "17"
         },
         {
-          "id": 18,
+          "id": "18",
           "status": "caution",
-          "description": "varies, discusses the different water solubilities of different silicones"
+          "notes": "varies, discusses the different water solubilities of different silicones"
         },
         {
-          "id": 6,
+          "id": "6",
           "status": "warning",
-          "description": "recommends avoiding silicones"
+          "notes": "recommends avoiding silicones"
         },
         {
-          "id": 19
+          "id": "19"
         }
       ]
     },
@@ -181,13 +178,13 @@
       "description": "Soaps are cleansers made from fatty acids and alkali metals",
       "references": [
         {
-          "id": 20
+          "id": "20"
         },
         {
-          "id": 21
+          "id": "21"
         },
         {
-          "id": 22
+          "id": "22"
         }
       ]
     },
