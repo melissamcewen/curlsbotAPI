@@ -813,11 +813,11 @@ export const defaultProductDatabase: ProductDatabase = {
       "buy_url": "https://click.linksynergy.com/link?id=9QcV0uNyab0&offerid=929395.3842995312&type=2&murl=https%3a%2f%2fwww.ouidad.com%2fproducts%2fcoil-infusion-drink-up-cleansing-conditioner%3fvariant%3d42617151357186",
       "id": "coil_infusion®_drink_up™_cleansing_conditioner",
       "systems_excluded": [],
-      "status": "ok",
+      "status": "warning",
       "frizzbot": {
         "simple_humectants_number": 5,
         "film_forming_humectants_number": 5,
-        "emollients_number": 14,
+        "emollients_number": 15,
         "simple_humectants": [
           "Glycerin",
           "Propanediol",
@@ -834,6 +834,7 @@ export const defaultProductDatabase: ProductDatabase = {
         ],
         "emollients": [
           "Cetearyl Alcohol",
+          "Cetyl Esters",
           "Cetyl Alcohol",
           "Behentrimonium Chloride",
           "Butyrospermum Parkii Shea Butter",
@@ -848,7 +849,7 @@ export const defaultProductDatabase: ProductDatabase = {
           "Guar Hydroxypropyltrimonium Chloride",
           "Diheptyl Succinate"
         ],
-        "score": -65
+        "score": -66
       }
     },
     "coconut_cowash_cleansing_conditioner": {

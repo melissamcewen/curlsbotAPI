@@ -3181,7 +3181,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "non_water_soluble_waxes"
       ],
-      "status": "ok",
+      "status": "warning",
       "group": "waxes"
     },
     "isolaureth_6": {
@@ -3969,7 +3969,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "non_water_soluble_waxes"
       ],
-      "status": "ok",
+      "status": "warning",
       "group": "waxes"
     },
     "unknown_ester": {
@@ -3982,7 +3982,7 @@ export const defaultDatabase: IngredientDatabase = {
         "ester"
       ],
       "description": "This is an ester, a component of waxes",
-      "status": "ok",
+      "status": "warning",
       "group": "waxes"
     }
   },
