@@ -57,8 +57,7 @@
       ],
       "references": [
         {
-          "url": "https://incidecoder.com/ingredients/benzyl-alcohol",
-          "title": "INCIDecor",
+          "id": "33",
           "status": "ok"
         }
       ]
@@ -145,8 +144,7 @@
       "description": "If you think the name sounds like cinnamon, you're right! This is a naturally occuring compound found in cinnamon, used mainly for its pleasant scent.",
       "references": [
         {
-          "url": "https://incidecoder.com/ingredients/cinnamyl-alcohol",
-          "title": "INCIDecoder",
+          "id": "34",
           "status": "ok"
         }
       ]
@@ -250,8 +248,7 @@
       ],
       "references": [
         {
-          "url": "https://incidecoder.com/ingredients/phenethyl-alcohol",
-          "title": "INCIDecoder",
+          "id": "35",
           "status": "ok"
         }
       ],
@@ -281,18 +278,14 @@
       "description": "This is literally alcohol, like the kind in a bottle of vodka, except its been denatured, a process that makes it undrinkable.",
       "references": [
         {
-          "url": "https://incidecoder.com/ingredients/alcohol-denat",
-          "title": "INCIDecoder",
+          "id": "36",
           "status": "caution",
-          "description": "Says it can be drying if its in the first few ingredients of a product",
-          "type": "science"
+          "notes": "Says it can be drying if its in the first few ingredients of a product"
         },
         {
-          "url": "http://www.tightlycurly.com/ingredients/",
-          "title": "Tightly Curly",
+          "id": "5",
           "status": "warning",
-          "type": "author",
-          "description": "Says to avoid alcohol denat"
+          "notes": "Says to avoid alcohol denat"
         }
       ]
     },
@@ -324,10 +317,9 @@
       ],
       "references": [
         {
-          "url": "https://incidecoder.com/ingredients/emulsifying-wax",
-          "title": "INCIDecoder",
+          "id": "37",
           "status": "ok",
-          "description": "This isn't an INCI ingredient, they think it's a mix of Cetearyl Alcohol (and) Polysorbate 60"
+          "notes": "This isn't an INCI ingredient, they think it's a mix of Cetearyl Alcohol (and) Polysorbate 60"
         }
       ]
     },

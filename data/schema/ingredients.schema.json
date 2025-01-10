@@ -1,19 +1,13 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "type": "object",
-  "required": [
-    "ingredients"
-  ],
+  "required": ["ingredients"],
   "properties": {
     "ingredients": {
       "type": "array",
       "items": {
         "type": "object",
-        "required": [
-          "name",
-          "id",
-          "categories"
-        ],
+        "required": ["name", "id", "categories"],
         "properties": {
           "name": {
             "type": "string",
@@ -70,47 +64,25 @@
             "type": "array",
             "items": {
               "type": "object",
-              "required": [
-                "url"
-              ],
+              "required": ["id"],
               "properties": {
-                "url": {
+                "id": {
                   "type": "string",
-                  "format": "uri",
-                  "description": "The URL of the reference"
+                  "description": "ID of the reference in the references.json file"
                 },
-                "title": {
+                "notes": {
                   "type": "string",
-                  "description": "Optional title of the reference"
-                },
-                "description": {
-                  "type": "string",
-                  "description": "Optional description of what this reference proves/shows"
-                },
-                "type": {
-                  "type": "string",
-                  "enum": [
-                    "science",
-                    "hairpro",
-                    "industry",
-                    "author",
-                    "other"
-                  ],
-                  "description": "Type of reference"
+                  "description": "Optional notes about this specific usage of the reference"
                 },
                 "status": {
                   "type": "string",
-                  "enum": [
-                    "ok",
-                    "caution",
-                    "warning",
-                    "good"
-                  ],
-                  "description": "Status of the reference"
+                  "enum": ["ok", "caution", "warning", "good"],
+                  "description": "Optional status for this specific usage"
                 }
               },
               "additionalProperties": false
-            }
+            },
+            "description": "Optional reference usages for the ingredient"
           },
           "synonyms": {
             "type": "array",

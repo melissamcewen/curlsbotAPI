@@ -2284,7 +2284,7 @@ export const defaultDatabase: IngredientDatabase = {
       "id": "ethylhexylglycerin",
       "description": "A humectant and preservative enhancer",
       "categories": [
-        "film_forming_humectants"
+        "simple_humectants"
       ],
       "status": "ok",
       "group": "humectants"
@@ -2294,7 +2294,7 @@ export const defaultDatabase: IngredientDatabase = {
       "id": "glycereth_26",
       "description": "A lightweight humectant that provides hydration without greasiness",
       "categories": [
-        "film_forming_humectants"
+        "simple_humectants"
       ],
       "status": "ok",
       "group": "humectants"
@@ -2334,7 +2334,7 @@ export const defaultDatabase: IngredientDatabase = {
       "id": "panthenol",
       "description": "A moisturizing and strengthening agent that enhances hair elasticity",
       "categories": [
-        "film_forming_humectants"
+        "simple_humectants"
       ],
       "synonyms": [
         "provitamin B5",
@@ -2356,7 +2356,7 @@ export const defaultDatabase: IngredientDatabase = {
       "name": "Sodium hyaluronate",
       "id": "sodium_hyaluronate",
       "categories": [
-        "film_forming_humectants"
+        "simple_humectants"
       ],
       "references": [
         {
@@ -2374,7 +2374,7 @@ export const defaultDatabase: IngredientDatabase = {
       "name": "PCA",
       "id": "pca",
       "categories": [
-        "film_forming_humectants"
+        "simple_humectants"
       ],
       "references": [
         {
@@ -2386,8 +2386,7 @@ export const defaultDatabase: IngredientDatabase = {
         {
           "url": "https://www.taylorfrancis.com/books/mono/10.1201/b16716/handbook-cosmetic-science-technology-andr%C3%A9-barel-marc-paye-howard-maibach",
           "title": "Handbook of Cosmetic Science and Technology",
-          "type": "science",
-          "description": "Says molecular weight is 129.11 vs. 92.1 for glycerin"
+          "type": "science"
         }
       ],
       "status": "ok",
@@ -2935,16 +2934,7 @@ export const defaultDatabase: IngredientDatabase = {
       "name": "Ceramide",
       "id": "ceramide",
       "categories": [
-        "film_forming_humectants"
-      ],
-      "status": "ok",
-      "group": "humectants"
-    },
-    "coenzyme_q10": {
-      "name": "Coenzyme Q10",
-      "id": "coenzyme_q10",
-      "categories": [
-        "film_forming_humectants"
+        "simple_humectants"
       ],
       "status": "ok",
       "group": "humectants"
@@ -3025,7 +3015,7 @@ export const defaultDatabase: IngredientDatabase = {
       "name": "Hyaluronic Acid",
       "id": "hyaluronic_acid",
       "categories": [
-        "film_forming_humectants"
+        "simple_humectants"
       ],
       "status": "ok",
       "group": "humectants"
@@ -3052,7 +3042,7 @@ export const defaultDatabase: IngredientDatabase = {
       "name": "Lecithin",
       "id": "lecithin",
       "categories": [
-        "film_forming_humectants"
+        "simple_humectants"
       ],
       "status": "ok",
       "group": "humectants"
@@ -3061,7 +3051,7 @@ export const defaultDatabase: IngredientDatabase = {
       "name": "Maltitol",
       "id": "maltitol",
       "categories": [
-        "film_forming_humectants"
+        "simple_humectants"
       ],
       "status": "ok",
       "group": "humectants"
@@ -3088,7 +3078,7 @@ export const defaultDatabase: IngredientDatabase = {
       "name": "Phytantriol",
       "id": "phytantriol",
       "categories": [
-        "film_forming_humectants"
+        "simple_humectants"
       ],
       "status": "ok",
       "group": "humectants"
@@ -3109,7 +3099,7 @@ export const defaultDatabase: IngredientDatabase = {
         "polyethyleneglycol"
       ],
       "categories": [
-        "film_forming_humectants"
+        "simple_humectants"
       ],
       "status": "ok",
       "group": "humectants"
@@ -3131,7 +3121,7 @@ export const defaultDatabase: IngredientDatabase = {
       "name": "Sodium Lactate",
       "id": "sodium_lactate",
       "categories": [
-        "film_forming_humectants"
+        "simple_humectants"
       ],
       "status": "ok",
       "group": "humectants"

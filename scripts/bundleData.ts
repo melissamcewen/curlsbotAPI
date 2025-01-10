@@ -10,14 +10,28 @@ const DATA_DIR = join(__dirname, '../data');
 const CONFIG_DIR = join(__dirname, '../data/config');
 const INGREDIENTS_OUTPUT_FILE = join(__dirname, '../src/data/bundledData.ts');
 const PRODUCTS_OUTPUT_FILE = join(__dirname, '../src/data/bundledProducts.ts');
+const REFERENCES_OUTPUT_FILE = join(
+  __dirname,
+  '../src/data/bundledReferences.ts',
+);
 
-function convertToReferenceObjects(refs: (string | Reference)[]): Reference[] {
-  return refs.map((ref) => {
-    if (typeof ref === 'string') {
-      return { url: ref };
-    }
-    return ref;
-  });
+function loadReferences(): Record<string, Reference> {
+  const referencesPath = join(DATA_DIR, 'references.references.json');
+  try {
+    const data = JSON.parse(readFileSync(referencesPath, 'utf-8'));
+    const stringRefs = data.references || {};
+    // Convert references to include their IDs
+    return Object.entries(stringRefs).reduce((acc, [key, value]) => {
+      acc[key] = {
+        ...(value as Reference),
+        id: key,
+      };
+      return acc;
+    }, {} as Record<string, Reference>);
+  } catch (error) {
+    console.error('Error loading references:', error);
+    return {};
+  }
 }
 
 function generateIdFromName(name: string, country?: string): string {
@@ -81,10 +95,14 @@ function loadIngredientsFromDir(dirPath: string): any {
       }
     }
 
+    // Keep reference usages as is - they already have the correct structure
+    const references = ingredient.references;
+
     acc[ingredient.id] = {
       ...ingredient,
       status,
       group,
+      references,
     };
     return acc;
   }, {});
@@ -177,6 +195,7 @@ function loadJsonFile(filePath: string): any {
 
 function generateBundledData() {
   // Load all data
+  const references = loadReferences();
   const ingredients = loadIngredientsFromDir(join(DATA_DIR, 'ingredients'));
   const products = loadProductsFromDir(join(DATA_DIR, 'products'));
   const categoriesData = loadJsonFile(join(DATA_DIR, 'categories.json'));
@@ -197,9 +216,7 @@ function generateBundledData() {
         name: cat.name || cat.id,
         description: cat.description || '',
         group: cat.group || 'others',
-        references: cat.references
-          ? convertToReferenceObjects(cat.references)
-          : [],
+        references: cat.references, // Keep reference usages as is
       };
       return acc;
     },
@@ -217,21 +234,19 @@ function generateBundledData() {
       name: group.name || group.id,
       inclusions: group.inclusions || [],
       defaultIngredient: group.defaultIngredient || undefined,
+      references: group.references, // Keep reference usages as is
     };
     return acc;
   }, {});
 
   const settings = (settingsData?.settings || []).reduce(
     (acc: any, setting: any) => {
-      // Ensure required fields exist
       if (!setting.id) {
         console.warn(`Warning: Setting missing required 'id' field:`, setting);
         return acc;
       }
-      // Preserve original structure but ensure required fields
       acc[setting.id] = {
-        ...setting, // Keep all original fields
-        // Ensure required fields have defaults if missing
+        ...setting,
         name: setting.name || setting.id,
         description: setting.description || '',
       };
@@ -275,28 +290,28 @@ export function getBundledSettings(): Record<string, Setting> {
 }
 `;
 
-  // Generate TypeScript code for products
-  const productsCode = `// This file is auto-generated. Do not edit directly.
-import type { ProductDatabase } from '../types';
+  // Generate TypeScript code for references
+  const referencesCode = `// This file is auto-generated. Do not edit directly.
+import type { References } from '../types';
 
-export const defaultProductDatabase: ProductDatabase = ${JSON.stringify(
-    { products },
+export const defaultReferences: References = ${JSON.stringify(
+    references,
     null,
     2,
   )};
 
-export function getBundledProducts(): ProductDatabase {
-  return defaultProductDatabase;
+export function getBundledReferences(): References {
+  return defaultReferences;
 }
 `;
 
   // Write the files
   writeFileSync(INGREDIENTS_OUTPUT_FILE, ingredientsCode);
-  writeFileSync(PRODUCTS_OUTPUT_FILE, productsCode);
+  writeFileSync(REFERENCES_OUTPUT_FILE, referencesCode);
   console.log(
     `Generated bundled ingredients data at ${INGREDIENTS_OUTPUT_FILE}`,
   );
-  console.log(`Generated bundled products data at ${PRODUCTS_OUTPUT_FILE}`);
+  console.log(`Generated bundled references data at ${REFERENCES_OUTPUT_FILE}`);
 }
 
 generateBundledData();

@@ -83,6 +83,18 @@ export interface Category {
 }
 
 /**
+ * Represents a specific usage of a reference, with optional notes and status
+ */
+export interface ReferenceUsage {
+  /** The ID of the reference */
+  id: string;
+  /** Optional notes about this specific usage of the reference */
+  notes?: string;
+  /** Optional status for this specific usage */
+  status?: 'ok' | 'caution' | 'warning' | 'good';
+}
+
+/**
  * Represents a group of related categories
  */
 export interface Group {
@@ -98,8 +110,8 @@ export interface Group {
   exclusions?: string[];
   /** default ingredient for the group */
   defaultIngredient?: string;
-  /** Optional source references for the category */
-  references?: Reference[];
+  /** Optional source reference usages for the category */
+  references?: ReferenceUsage[];
 }
 
 /**
@@ -111,17 +123,30 @@ export type Groups = Record<string, Group>;
  * Represents a reference link with optional metadata
  */
 export interface Reference {
+  /** The ID of the reference */
+  id: string;
   /** The URL of the reference */
   url: string;
   /** Optional title of the reference */
   title?: string;
   /** Optional description of what this reference proves/shows */
   description?: string;
+  /** Optional date of the reference */
+  date?: string;
+  /** Optional author of the reference */
+  author?: string;
+  /** Optional source of the reference */
+  source?: string;
   /** Type of reference */
   type?: 'science' | 'hairpro' | 'author' | 'other' | 'industry';
   /** status of the reference */
   status?: 'ok' | 'caution' | 'warning' | 'good';
 }
+
+/**
+ * Represents a collection of references
+ */
+export type References = Record<string, Reference>;
 
 /**
  * Represents an ingredient and its associated metadata
@@ -134,8 +159,8 @@ export interface Ingredient {
   description?: string;
   /** Categories to which the ingredient belongs */
   categories: string[];
-  /** Optional source references for the ingredient */
-  references?: Reference[];
+  /** Optional source reference usages for the ingredient */
+  references?: ReferenceUsage[];
   /** Optional synonyms for the ingredient */
   synonyms?: string[];
   /** CB status */
@@ -245,7 +270,7 @@ export interface Setting {
   /** Status for ingredients in allowedCategories (when using groups) */
   allowedStatus?: 'ok' | 'caution' | 'warning';
   /** URL for guide */
-  guide?: string
+  guide?: string;
 }
 
 /**

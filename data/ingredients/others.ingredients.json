@@ -322,7 +322,7 @@
       ],
       "references": [
         {
-          "url": "https://incidecoder.com/ingredients/citric-acid"
+          "id": "51"
         }
       ]
     },
@@ -393,11 +393,9 @@
       ],
       "references": [
         {
-          "url": "https://incidecoder.com/ingredients/sodium-hyaluronate",
-          "title": "INCIDecoder: Sodium Hyaluronate",
+          "id": "52",
           "status": "good",
-          "type": "science",
-          "description": "Says it's a huge polymer with a very large water holding capacity"
+          "notes": "Says it's a huge polymer with a very large water holding capacity"
         }
       ]
     },
@@ -409,15 +407,11 @@
       ],
       "references": [
         {
-          "url": "https://incidecoder.com/ingredients/pca",
-          "title": "INCIDecoder: PCA",
-          "status": "good",
-          "type": "science"
+          "id": "53",
+          "status": "good"
         },
         {
-          "url": "https://www.taylorfrancis.com/books/mono/10.1201/b16716/handbook-cosmetic-science-technology-andr%C3%A9-barel-marc-paye-howard-maibach",
-          "title": "Handbook of Cosmetic Science and Technology",
-          "type": "science"
+          "id": "30"
         }
       ]
     },
@@ -544,24 +538,18 @@
       ],
       "references": [
         {
-          "title": "Magnesium Sulfate",
-          "url": "http://www.tightlycurly.com/ingredients/magnesium_sulfate",
-          "type": "author",
+          "id": "54",
           "status": "warning",
-          "description": "Mentions that this ingredient roughs up the hair cuticle, which can be drying. It's also alkaline, which can swell the hair shaft, causing further damage."
+          "notes": "Mentions that this ingredient roughs up the hair cuticle, which can be drying. It's also alkaline, which can swell the hair shaft, causing further damage."
         },
         {
-          "url": "https://www.curlynikki.com/magnesium-sulfate-curly-friend-or-foe.html",
-          "type": "author",
-          "title": "Curly Nikki: Magnesium Sulfate- Curly Friend or Foe?",
+          "id": "55",
           "status": "caution",
-          "description": "Says it's a powerful curl enhancer but can be drying to some so advises using with a leave in conditioner."
+          "notes": "Says it's a powerful curl enhancer but can be drying to some so advises using with a leave in conditioner."
         },
         {
-          "url": "https://ijdvl.com/scanning-electron-microscopy-study-of-hair-shaft-changes-related-to-hardness-of-water/",
-          "type": "science",
-          "title": "Scanning electron microscopy study of hair shaft changes related to hardness of water",
-          "description": "Notes that Magnesium sulfate can be a component of hard water, which deposits on the hair. But did not find any evidence of damage."
+          "id": "56",
+          "notes": "Notes that Magnesium sulfate can be a component of hard water, which deposits on the hair. But did not find any evidence of damage."
         }
       ]
     },
@@ -584,9 +572,7 @@
       "description": "This is an ingredient derived from wool with a complicated chemical structure and many uses. One issue with it is that it is comedogenic, meaning it can clog pores. This may be an issue for people with sensitive or dandruff prone scalps. It is also not vegan friendly.",
       "references": [
         {
-          "title": "Comedogenicity of current therapeutic products, cosmetics, and ingredients in the rabbit ear",
-          "url": "https://pubmed.ncbi.nlm.nih.gov/6229554/",
-          "type": "science"
+          "id": "50"
         }
       ]
     },
@@ -1144,15 +1130,11 @@
       "description": "This is a natural alternative to silicones, but like silicones, it doesn't seem to be water soluble",
       "references": [
         {
-          "url": "https://www.wholesalesuppliesplus.com/handmade101/learn-to-make-articles/a-chemists-perspective-on-luxglide-n5-and-n350.aspx",
-          "type": "industry",
-          "description": "Mentions it's a natural alternative to silicone, which is oil soluble.",
-          "title": "A Chemist's Perspective on LuxGlide N5 & N350"
+          "id": "57",
+          "notes": "Mentions it's a natural alternative to silicone, which is oil soluble."
         },
         {
-          "url": "https://incidecoder.com/ingredients/diheptyl-succinate",
-          "type": "science",
-          "title": "INCIDecoder: Diheptyl Succinate"
+          "id": "58"
         }
       ]
     },
@@ -1179,43 +1161,41 @@
       ],
       "references": [
         {
-          "url": "https://www.happi.com/unique-styling-products-via-maltodextrinvp/",
-          "title": "Unique Styling Products Via Maltodextrin/VP",
-          "type": "industry",
-          "description": "Notes it is a natural ingredient used for providing hold and is easily washed out with water."
+          "id": "59",
+          "notes": "Notes it is a natural ingredient used for providing hold and is easily washed out with water."
         }
       ]
-
     },
-      {
-        "name": "VP VA copolymer",
-        "id": "vp_va_copolymer",
-        "categories": [
-          "film_forming_agents"
-        ],
-        "description": "Humidity resistant ingredient that provides hold in products like gels",
-        "references": [
-          {
-            "url": "https://incidecoder.com/ingredients/vp-va-copolymer",
-            "title": "INCIDecoder: VP/​VA Copolymer",
-            "type": "science"
-
-          }
-        ]
-      },
-      {
-        "name": "Propanediol",
-        "id": "propanediol",
-        "categories": ["simple_humectants"],
-        "description": "A natural alternative to propylene glycol"
-
-      },
-      {
-        "name": "Linum Usitatissimum Seed Extract",
-        "id": "linum_usitatissimum_seed_extract",
-        "categories": ["film_forming_humectants"],
-        "synonyms": ["flax seed extract"]
-
-      }
+    {
+      "name": "VP VA copolymer",
+      "id": "vp_va_copolymer",
+      "categories": [
+        "film_forming_agents"
+      ],
+      "description": "Humidity resistant ingredient that provides hold in products like gels",
+      "references": [
+        {
+          "id": "60"
+        }
+      ]
+    },
+    {
+      "name": "Propanediol",
+      "id": "propanediol",
+      "categories": [
+        "simple_humectants"
+      ],
+      "description": "A natural alternative to propylene glycol"
+    },
+    {
+      "name": "Linum Usitatissimum Seed Extract",
+      "id": "linum_usitatissimum_seed_extract",
+      "categories": [
+        "film_forming_humectants"
+      ],
+      "synonyms": [
+        "flax seed extract"
+      ]
+    }
   ]
 }

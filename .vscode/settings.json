@@ -7,6 +7,10 @@
     {
       "fileMatch": ["**/data/ingredients/*.ingredients.json"],
       "url": "./data/schema/ingredients.schema.json"
+    },
+    {
+      "fileMatch": ["**/data/references/*.references.json"],
+      "url": "./data/schema/references.schema.json"
     }
   ]
 }

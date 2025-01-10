@@ -3,44 +3,48 @@
     {
       "id": "alcohols",
       "name": "Alcohols",
-      "inclusions": ["alcohol"],
+      "inclusions": [
+        "alcohol"
+      ],
       "defaultIngredient": "unknown_alcohol",
       "description": "Alcohols in haircare products are used to help products dry quickly, preserve formulations, and enhance ingredient absorption into hair",
       "references": [
         {
-          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4387693/",
-          "type": "science",
-          "title": "Hair Cosmetics: An Overview"
+          "id": "1"
         },
         {
-          "url": "https://thebeautybrains.com/2014/04/why-is-there-isopropyl-alcohol-in-my-conditioner/",
-          "type": "science",
-          "title": "The Beauty Brains: Why is there isopropyl alcohol in my conditioner?"
+          "id": "2"
         },
         {
-          "url": "https://labmuffin.com/how-bad-is-alcohol-in-skincare-really/",
-          "type": "science",
-          "title": "Lab Muffin: How Bad is Alcohol in Skincare Really?"
+          "id": "3"
         }
       ]
     },
     {
       "id": "preservatives",
       "name": "Preservatives",
-      "inclusions": ["paraben"],
+      "inclusions": [
+        "paraben"
+      ],
       "description": "Preservatives in hair products can help prevent the growth of bacteria and mold"
     },
     {
       "id": "surfactants",
       "name": "Surfactants",
       "description": "surfactants in hair products can help remove dirt and oil from the hair and scalp",
-      "inclusions": ["sulfate", "sulphate"],
-      "exclusions": ["magnesium", "behentrimonium", "methosulfate", "thiosulfate"],
+      "inclusions": [
+        "sulfate",
+        "sulphate"
+      ],
+      "exclusions": [
+        "magnesium",
+        "behentrimonium",
+        "methosulfate",
+        "thiosulfate"
+      ],
       "references": [
         {
-          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4387693/",
-          "type": "science",
-          "title": "Hair Cosmetics: An Overview"
+          "id": "1"
         }
       ]
     },
@@ -70,46 +74,31 @@
       "description": "Synthetic ingredients that create a protective barrier on the hair, reducing friction and adding shine",
       "references": [
         {
-          "url": "https://labmuffin.com/silicone-mythbusting-with-video/",
-          "status": "good",
-          "title": "Lab Muffin",
-          "type": "science"
+          "id": "16",
+          "status": "good"
         },
         {
-          "url": "https://thebeautybrains.com/2007/01/are-silicones-bad-for-your-hair/",
-          "status": "ok",
-          "title": "The Beauty Brains",
-          "type": "science"
+          "id": "17",
+          "status": "ok"
         },
         {
-          "url": "https://science-yhairblog.blogspot.com/2014/04/silicone-ingredient-solubility-list.html",
+          "id": "15",
           "status": "caution",
-          "title": "Science-y Hair Blog",
-          "description": "varies, discusses the different water solubilities of different silicones",
-          "type": "science"
+          "notes": "varies, discusses the different water solubilities of different silicones"
         },
         {
-          "url": "https://amzn.to/41QrGxJ",
+          "id": "6",
           "status": "warning",
-          "title": "Curly Girl: The Handbook by Lorraine Massey",
-          "type": "hairpro",
-          "description": "recommends avoiding silicones"
+          "notes": "recommends avoiding silicones"
         },
         {
-          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4387693/",
-          "type": "science",
-          "title": "Hair Cosmetics: An Overview"
-        },
-
-        {
-          "url": "https://link.springer.com/article/10.1134/S1560090423600201",
-          "type": "science",
-          "title": "Silicones in Cosmetics"
+          "id": "1"
         },
         {
-          "url": "https://labmuffin.com/amodimethicone-my-new-favourite-hair-ingredient/",
-          "type": "science",
-          "title": "Lab Muffin: Amodimethicone - My New Favourite Hair Ingredient"
+          "id": "19"
+        },
+        {
+          "id": "23"
         }
       ]
     },
@@ -120,40 +109,38 @@
     {
       "id": "waxes",
       "name": "Waxes",
-      "inclusions": ["wax"],
+      "inclusions": [
+        "wax"
+      ],
       "defaultIngredient": "unknown_wax",
-      "exclusions": ["emulsifying"],
+      "exclusions": [
+        "emulsifying"
+      ],
       "description": "Waxes in styling products can add texture, hold, and shine to hair",
       "references": [
         {
-          "url": "https://www.researchgate.net/publication/383884298_The_Effectiveness_of_Aloe_Vera_in_Multiple_Moist_Spray_Products_as_a_Hair_Tonic_to_Reduce_Students_Scalp_Irritation",
-          "type": "science",
-          "title": "The Effectiveness of Aloe Vera in Multiple Moist Spray Products as a Hair Tonic to Reduce Students Scalp Irritation",
-          "description": "cites a study that hasn't be translated into into English that linked pomade to fungal growth"
+          "id": "24",
+          "notes": "cites a study that hasn't be translated into into English that linked pomade to fungal growth"
         }
       ]
     },
     {
       "id": "oils",
       "name": "Oils",
-      "inclusions": ["oil"],
+      "inclusions": [
+        "oil"
+      ],
       "defaultIngredient": "unknown_oil",
       "description": "Oils in hair products can moisturize and add shine to hair",
       "references": [
         {
-          "url": "https://science-yhairblog.blogspot.com/2013/06/oils-which-ones-soak-in-vs-coat-hair.html",
-          "type": "science",
-          "title": "Oils – Which Ones Soak In vs. Coat the Hair?"
+          "id": "25"
         },
         {
-          "url": "https://link.springer.com/article/10.1186/s40691-023-00332-0",
-          "type": "science",
-          "title": "Determination of penetration and protection of fatty acids in bleached hair according to the fatty acid chain length and the application to understanding the protective effects of MCT oil and coconut oil"
+          "id": "26"
         },
         {
-          "url": "https://www.mdpi.com/2079-9284/11/2/64",
-          "title": "Impact of Hair Damage on the Penetration Profile of Coconut, Avocado, and Argan Oils into Caucasian Hair Fibers",
-          "type": "science"
+          "id": "27"
         }
       ]
     },
@@ -163,34 +150,24 @@
       "description": "Humectants are ingredients that attract moisture to the hair",
       "references": [
         {
-          "url": "https://science-yhairblog.blogspot.com/2015/02/glycerin-and-humidity.html",
-          "title": "Glycerin and Humidity",
-          "type": "science",
-          "description": "Humectants grab water out of air, but if air doesn't have enough water (dry weather), it can become brittle and create friction, which can mean frizz. Theoretically this could dehydrate hair. Oils can slow water loss. Notes that glycerin can be paired with emollients and film-formers to slow water loss. Caveats that none of this is well studied."
+          "id": "28",
+          "notes": "Humectants grab water out of air, but if air doesn't have enough water (dry weather), it can become brittle and create friction, which can mean frizz. Theoretically this could dehydrate hair. Oils can slow water loss. Notes that glycerin can be paired with emollients and film-formers to slow water loss. Caveats that none of this is well studied."
         },
         {
-          "url": "https://science-yhairblog.blogspot.com/2014/07/film-forming-humectants-what-they-are.html",
-          "title": "Film Forming Humectants - What They Are and Why You Need Them",
-          "type": "science",
-          "description": "Defines film forming humectants as complex molecules that lose water more slowly because they have more 'nooks and crannies' for the water to hang out in. Also notes that hydrolyzed proteins can be film forming humectants. Smaller proteins can get under the cuticle and 'moisturize' from the inside. Medium/large proteins can form films. Pairing with oils can also help slow water loss."
+          "id": "29",
+          "notes": "Defines film forming humectants as complex molecules that lose water more slowly because they have more 'nooks and crannies' for the water to hang out in. Also notes that hydrolyzed proteins can be film forming humectants. Smaller proteins can get under the cuticle and 'moisturize' from the inside. Medium/large proteins can form films. Pairing with oils can also help slow water loss."
         },
         {
-          "title": "Handbook of Cosmetic Science and Technology",
-          "type": "science",
-          "url": "https://www.taylorfrancis.com/books/mono/10.1201/b16716/handbook-cosmetic-science-technology-andr%C3%A9-barel-marc-paye-howard-maibach",
-          "description": "Mentions Panthenol can increase hair's volume"
+          "id": "30",
+          "notes": "Mentions Panthenol can increase hair's volume"
         },
         {
-          "url": "https://labmuffin.com/skincare-chemistry-which-ingredients-are-humectants/",
-          "title": "Skincare Chemistry: How to pick out humectants",
-          "type": "science",
-          "description": "Defines humectants as ingredient that grabs onto water slowing it from evaporating. Usually has OH and NH groups, as well as polarity, so can bond with water. Also needs to resist evaporation itself."
+          "id": "31",
+          "notes": "Defines humectants as ingredient that grabs onto water slowing it from evaporating. Usually has OH and NH groups, as well as polarity, so can bond with water. Also needs to resist evaporation itself."
         },
         {
-          "url": "https://thebeautybrains.com/2014/01/whats-the-best-moisturizer/",
-          "title": "The Beauty Brains: What's the best moisturizer?",
-          "type": "science",
-          "description": "Defines humectants as ingredients that can hold large amounts of water and attract it from the atmosphere, but in dry conditions may pull water from your skin/hair"
+          "id": "32",
+          "notes": "Defines humectants as ingredients that can hold large amounts of water and attract it from the atmosphere, but in dry conditions may pull water from your skin/hair"
         }
       ]
     }

@@ -71,44 +71,32 @@
       "description": "One of the most common silicones, this is a conditioning powerhouse, smoothing and protecting hair with ease. The major downside is it's not easy to wash out, so it can cause buildup.",
       "references": [
         {
-          "title": "INCIDecoder",
-          "url": "https://incidecoder.com/ingredients/dimethicone",
+          "id": "61",
           "status": "caution",
-          "description": "notes it may be difficult to wash out",
-          "type": "science"
+          "notes": "notes it may be difficult to wash out"
         },
         {
-          "title": "Tightly Curly",
-          "url": "http://www.tightlycurly.com/ingredients/",
+          "id": "5",
           "status": "good",
-          "type": "author",
-          "description": "says it can be heavy but is a great conditioner"
+          "notes": "says it can be heavy but is a great conditioner"
         },
         {
-          "url": "https://amzn.to/41QrGxJ",
-          "status": "warning",
-          "title": "Curly Girl: The Handbook by Lorraine Massey",
-          "type": "hairpro"
+          "id": "6",
+          "status": "warning"
         },
         {
-          "url": "https://science-yhairblog.blogspot.com/2014/04/silicone-ingredient-solubility-list.html",
+          "id": "15",
           "status": "caution",
-          "title": "Science-y Hair Blog",
-          "description": "classifies as water insoluble, only should be used if you are using a cleanser capable of removing",
-          "type": "science"
+          "notes": "classifies as water insoluble, only should be used if you are using a cleanser capable of removing"
         },
         {
-          "url": "https://thebeautybrains.com/2007/01/are-silicones-bad-for-your-hair/",
+          "id": "17",
           "status": "caution",
-          "title": "The Beauty Brains",
-          "type": "science",
-          "description": "says its great for lowering porosity but can be hard to wash out"
+          "notes": "says its great for lowering porosity but can be hard to wash out"
         },
         {
-          "url": "https://labmuffin.com/silicone-mythbusting-with-video/",
-          "status": "good",
-          "title": "Lab Muffin",
-          "type": "science"
+          "id": "16",
+          "status": "good"
         }
       ]
     },
@@ -223,9 +211,7 @@
       ],
       "references": [
         {
-          "url": "https://science-yhairblog.blogspot.com/2014/04/silicone-ingredient-solubility-list.html",
-          "title": "Silicone Ingredient Solubility List",
-          "type": "science"
+          "id": "15"
         }
       ]
     },
@@ -287,9 +273,7 @@
       ],
       "references": [
         {
-          "url": "https://science-yhairblog.blogspot.com/2014/04/silicone-ingredient-solubility-list.html",
-          "title": "Silicone Ingredient Solubility List",
-          "type": "science"
+          "id": "15"
         }
       ]
     },
@@ -301,9 +285,7 @@
       ],
       "references": [
         {
-          "url": "https://science-yhairblog.blogspot.com/2014/04/silicone-ingredient-solubility-list.html",
-          "title": "Silicone Ingredient Solubility List",
-          "type": "science"
+          "id": "15"
         }
       ]
     },
@@ -315,9 +297,7 @@
       ],
       "references": [
         {
-          "url": "https://science-yhairblog.blogspot.com/2014/04/silicone-ingredient-solubility-list.html",
-          "title": "Silicone Ingredient Solubility List",
-          "type": "science"
+          "id": "15"
         }
       ]
     }
