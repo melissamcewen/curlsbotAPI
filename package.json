@@ -81,6 +81,10 @@
     "./src/data/bundledData": {
       "import": "./dist/data/bundledData.js",
       "types": "./dist/data/bundledData.d.ts"
+    },
+    "./src/data/bundledReferences": {
+      "import": "./dist/data/bundledReferences.js",
+      "types": "./dist/data/bundledReferences.d.ts"
     }
   }
 }

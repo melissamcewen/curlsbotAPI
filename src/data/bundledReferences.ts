@@ -1,0 +1,399 @@
+// This file is auto-generated. Do not edit directly.
+import type { References } from '../types';
+
+export const defaultReferences: References = {
+  "1": {
+    "id": "1",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4387693/",
+    "type": "science",
+    "title": "Hair Cosmetics: An Overview",
+    "author": "Dias M.",
+    "date": "2015",
+    "source": "International Journal of Trichology"
+  },
+  "2": {
+    "id": "2",
+    "url": "https://thebeautybrains.com/2014/04/why-is-there-isopropyl-alcohol-in-my-conditioner/",
+    "type": "science",
+    "title": "Why is there isopropyl alcohol in my conditioner?",
+    "author": "Romanowski P.",
+    "date": "2014",
+    "source": "The Beauty Brains"
+  },
+  "3": {
+    "id": "3",
+    "url": "https://labmuffin.com/how-bad-is-alcohol-in-skincare-really/",
+    "type": "science",
+    "title": "How Bad is Alcohol in Skincare Really?",
+    "author": "Wong M.",
+    "date": "2023",
+    "source": "Lab Muffin"
+  },
+  "4": {
+    "id": "4",
+    "url": "https://science-yhairblog.blogspot.com/2013/05/alcohol-in-hair-sprays.html",
+    "type": "science",
+    "title": "Science-y Hair Blog: Alcohol in Hair Sprays",
+    "source": "Science-y Hair Blog",
+    "date": "2013"
+  },
+  "5": {
+    "id": "5",
+    "url": "http://www.tightlycurly.com/ingredients/",
+    "type": "author",
+    "title": "Tightly Curly Ingredients",
+    "source": "Tightly Curly",
+    "date": "2010"
+  },
+  "6": {
+    "id": "6",
+    "url": "https://amzn.to/41QrGxJ",
+    "title": "Curly Girl: The Handbook",
+    "date": "2011",
+    "type": "hairpro",
+    "author": "Massey L."
+  },
+  "7": {
+    "id": "7",
+    "url": "https://thebeautybrains.com/2006/05/the-perils-of-parabens/",
+    "title": "The Perils of Parabens",
+    "type": "science",
+    "author": "Romanowski P.",
+    "date": "2006",
+    "source": "The Beauty Brains"
+  },
+  "8": {
+    "id": "8",
+    "url": "https://incidecoder.com/ingredients/parabens",
+    "title": "Parabens",
+    "type": "science",
+    "date": "2024",
+    "source": "INCIDecoder"
+  },
+  "9": {
+    "id": "9",
+    "url": "https://labmuffin.com/should-you-be-avoiding-parabens-the-science/",
+    "title": "Should You Be Avoiding Parabens? The Science",
+    "type": "science",
+    "author": "Wong M.",
+    "date": "2017",
+    "source": "Lab Muffin Beauty Science"
+  },
+  "10": {
+    "id": "10",
+    "url": "https://labmuffin.com/the-science-of-hair-products-shampoo-and-conditioner-with-video/",
+    "title": "Lab Muffin: The Science of Hair Products: Shampoo and Conditioner",
+    "type": "science"
+  },
+  "11": {
+    "id": "11",
+    "url": "https://thebeautybrains.com/2008/07/should-my-shower-stay-sulfate-free/",
+    "title": "The Beauty Brains: Should my shower stay sulfate-free?",
+    "type": "science"
+  },
+  "12": {
+    "id": "12",
+    "url": "https://science-yhairblog.blogspot.com/2011/08/shampoos-harsh-mild-and-otherwise.html",
+    "type": "science",
+    "title": "Science-y Hair Blog: Shampoos: Harsh, Mild, and Otherwise"
+  },
+  "13": {
+    "id": "13",
+    "url": "https://onlinelibrary.wiley.com/doi/10.1002/macp.202200420",
+    "type": "science",
+    "title": "Shampoo Science: A Review of the Physiochemical Processes behind the Function of a Shampoo"
+  },
+  "14": {
+    "id": "14",
+    "title": "Silicone Polymers in Skin Care",
+    "url": "https://link.springer.com/article/10.1557/mrs2007.167",
+    "type": "science"
+  },
+  "15": {
+    "id": "15",
+    "url": "https://science-yhairblog.blogspot.com/2014/04/silicone-ingredient-solubility-list.html",
+    "title": "Science-y Hair Blog",
+    "description": "varies, discusses the different water solubilities of different silicones",
+    "type": "science"
+  },
+  "16": {
+    "id": "16",
+    "url": "https://labmuffin.com/silicone-mythbusting-with-video/",
+    "title": "Lab Muffin",
+    "type": "science"
+  },
+  "17": {
+    "id": "17",
+    "url": "https://thebeautybrains.com/2007/01/are-silicones-bad-for-your-hair/",
+    "title": "The Beauty Brains",
+    "type": "science"
+  },
+  "18": {
+    "id": "18",
+    "url": "https://science-yhairblog.blogspot.com/2014/04/silicone-ingredient-solubility-list.html",
+    "title": "Science-y Hair Blog",
+    "description": "varies, discusses the different water solubilities of different silicones",
+    "type": "science"
+  },
+  "19": {
+    "id": "19",
+    "url": "https://link.springer.com/article/10.1134/S1560090423600201",
+    "type": "science",
+    "title": "Silicones in Cosmetics"
+  },
+  "20": {
+    "id": "20",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4171909/",
+    "type": "science",
+    "title": "Evaluation of pH of Bathing Soaps and Shampoos for Skin and Hair Care"
+  },
+  "21": {
+    "id": "21",
+    "url": "https://www.usgs.gov/faqs/why-does-it-take-so-long-rinse-soap-my-hands-what-are-hard-water-and-soft-water",
+    "type": "science",
+    "title": "USGS: Why does it take so long to rinse soap off my hands? What are hard water and soft water?"
+  },
+  "22": {
+    "id": "22",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8954092/",
+    "type": "science",
+    "title": "Skin Cleansing without or with Compromise: Soaps and Syndets"
+  },
+  "23": {
+    "id": "23",
+    "url": "https://labmuffin.com/amodimethicone-my-new-favourite-hair-ingredient/",
+    "title": "Lab Muffin: Amodimethicone - My New Favourite Hair Ingredient",
+    "type": "science"
+  },
+  "24": {
+    "id": "24",
+    "url": "https://www.researchgate.net/publication/383884298_The_Effectiveness_of_Aloe_Vera_in_Multiple_Moist_Spray_Products_as_a_Hair_Tonic_to_Reduce_Students_Scalp_Irritation",
+    "title": "The Effectiveness of Aloe Vera in Multiple Moist Spray Products as a Hair Tonic to Reduce Students Scalp Irritation",
+    "description": "cites a study that hasn't be translated into into English that linked pomade to fungal growth",
+    "type": "science"
+  },
+  "25": {
+    "id": "25",
+    "url": "https://science-yhairblog.blogspot.com/2013/06/oils-which-ones-soak-in-vs-coat-hair.html",
+    "title": "Oils – Which Ones Soak In vs. Coat the Hair?",
+    "type": "science"
+  },
+  "26": {
+    "id": "26",
+    "url": "https://link.springer.com/article/10.1186/s40691-023-00332-0",
+    "title": "Determination of penetration and protection of fatty acids in bleached hair according to the fatty acid chain length and the application to understanding the protective effects of MCT oil and coconut oil",
+    "type": "science"
+  },
+  "27": {
+    "id": "27",
+    "url": "https://www.mdpi.com/2079-9284/11/2/64",
+    "title": "Impact of Hair Damage on the Penetration Profile of Coconut, Avocado, and Argan Oils into Caucasian Hair Fibers",
+    "type": "science"
+  },
+  "28": {
+    "id": "28",
+    "url": "https://science-yhairblog.blogspot.com/2015/02/glycerin-and-humidity.html",
+    "title": "Glycerin and Humidity",
+    "description": "Humectants grab water out of air, but if air doesn't have enough water (dry weather), it can become brittle and create friction, which can mean frizz. Theoretically this could dehydrate hair. Oils can slow water loss. Notes that glycerin can be paired with emollients and film-formers to slow water loss. Caveats that none of this is well studied.",
+    "type": "science"
+  },
+  "29": {
+    "id": "29",
+    "url": "https://science-yhairblog.blogspot.com/2014/07/film-forming-humectants-what-they-are.html",
+    "title": "Film Forming Humectants - What They Are and Why You Need Them",
+    "type": "science"
+  },
+  "30": {
+    "id": "30",
+    "url": "https://www.taylorfrancis.com/books/mono/10.1201/b16716/handbook-cosmetic-science-technology-andr%C3%A9-barel-marc-paye-howard-maibach",
+    "title": "Handbook of Cosmetic Science and Technology",
+    "description": "Mentions Panthenol can increase hair's volume",
+    "type": "science"
+  },
+  "31": {
+    "id": "31",
+    "url": "https://labmuffin.com/skincare-chemistry-which-ingredients-are-humectants/",
+    "title": "Skincare Chemistry: How to pick out humectants",
+    "type": "science"
+  },
+  "32": {
+    "id": "32",
+    "url": "https://thebeautybrains.com/2014/01/whats-the-best-moisturizer/",
+    "title": "The Beauty Brains: What's the best moisturizer?",
+    "type": "science"
+  },
+  "33": {
+    "id": "33",
+    "url": "https://incidecoder.com/ingredients/benzyl-alcohol",
+    "title": "INCIDecor"
+  },
+  "34": {
+    "id": "34",
+    "url": "https://incidecoder.com/ingredients/cinnamyl-alcohol",
+    "title": "INCIDecoder"
+  },
+  "35": {
+    "id": "35",
+    "url": "https://incidecoder.com/ingredients/phenethyl-alcohol",
+    "title": "INCIDecoder"
+  },
+  "36": {
+    "id": "36",
+    "url": "https://incidecoder.com/ingredients/alcohol-denat",
+    "title": "INCIDecoder",
+    "description": "Says it can be drying if its in the first few ingredients of a product",
+    "type": "science"
+  },
+  "37": {
+    "id": "37",
+    "url": "https://incidecoder.com/ingredients/emulsifying-wax",
+    "title": "INCIDecoder",
+    "description": "This isn't an INCI ingredient, they think it's a mix of Cetearyl Alcohol (and) Polysorbate 60"
+  },
+  "38": {
+    "id": "38",
+    "url": "https://www.paulaschoice.com/ingredient-dictionary/ingredient-sodium-laureth-sulfate.html",
+    "title": "Paula's Choice",
+    "type": "author"
+  },
+  "39": {
+    "id": "39",
+    "url": "https://incidecoder.com/ingredients/sodium-laureth-sulfate",
+    "title": "INCIdecoder",
+    "type": "science"
+  },
+  "40": {
+    "id": "40",
+    "url": "http://www.tightlycurly.com/Ingredients.aspx?ingredientName=Sodium%20lauryl%20sulfate",
+    "title": "Tightly Curly",
+    "type": "author"
+  },
+  "41": {
+    "id": "41",
+    "url": "https://incidecoder.com/ingredients/sodium-lauryl-sulfate",
+    "title": "INCIdecoder",
+    "type": "science"
+  },
+  "42": {
+    "id": "42",
+    "url": "https://www.paulaschoice.com/ingredient-dictionary/ingredient-sodium-lauryl-sulfate.html",
+    "title": "Paula's Choice",
+    "type": "author"
+  },
+  "43": {
+    "id": "43",
+    "url": "https://www.epa.gov/saferchoice/safer-ingredients",
+    "title": "EPA Safer Choice",
+    "type": "science"
+  },
+  "44": {
+    "id": "44",
+    "url": "https://thebeautybrains.com/2007/06/sulfates-in-shampoos-what-are-they/",
+    "title": "The Beauty Brains",
+    "type": "science"
+  },
+  "45": {
+    "id": "45",
+    "url": "https://incidecoder.com/ingredients/behentrimonium-chloride"
+  },
+  "46": {
+    "id": "46",
+    "url": "https://incidecoder.com/ingredients/cetrimonium-chloride"
+  },
+  "47": {
+    "id": "47",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/38922913/",
+    "title": "Penetration of oils into hair",
+    "description": "Found that camellia oil can penetrate the hair shaft  at a low-moderate level compared to high penetration oils like coconut. It also found that safflower oil was just as good as coconut oil at preventing damage.",
+    "type": "science"
+  },
+  "48": {
+    "id": "48",
+    "url": "https://link.springer.com/article/10.1186/s40691-021-00282-5",
+    "title": "Effect of rinse-off hair conditioner containing argan oil or camellia oil on the recovery of hair damaged by bleaching",
+    "description": "Study found argan oil was effective at protecting bleached hair from damage, moreso than camellia oil",
+    "type": "science"
+  },
+  "49": {
+    "id": "49",
+    "url": "https://www.cir-safety.org/sites/default/files/TAR_Lanolin_032024.pdf",
+    "title": "CIR: Amended Safety Assessment of Lanolin-Derived Ingredients as Used in Cosmetics",
+    "description": "Based on this analysis, lanolin seems to have a low percentage of fats that could penetrate the hair shaft",
+    "type": "science"
+  },
+  "50": {
+    "id": "50",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/6229554/",
+    "title": "Comedogenicity of current therapeutic products, cosmetics, and ingredients in the rabbit ear",
+    "type": "science"
+  },
+  "51": {
+    "id": "51",
+    "url": "https://incidecoder.com/ingredients/citric-acid"
+  },
+  "52": {
+    "id": "52",
+    "url": "https://incidecoder.com/ingredients/sodium-hyaluronate",
+    "title": "INCIDecoder: Sodium Hyaluronate",
+    "description": "Says it's a huge polymer with a very large water holding capacity",
+    "type": "science"
+  },
+  "53": {
+    "id": "53",
+    "url": "https://incidecoder.com/ingredients/pca",
+    "title": "INCIDecoder: PCA",
+    "type": "science"
+  },
+  "54": {
+    "id": "54",
+    "url": "http://www.tightlycurly.com/ingredients/magnesium_sulfate",
+    "title": "Magnesium Sulfate",
+    "type": "author"
+  },
+  "55": {
+    "id": "55",
+    "url": "https://www.curlynikki.com/magnesium-sulfate-curly-friend-or-foe.html",
+    "title": "Curly Nikki: Magnesium Sulfate- Curly Friend or Foe?",
+    "type": "author"
+  },
+  "56": {
+    "id": "56",
+    "url": "https://ijdvl.com/scanning-electron-microscopy-study-of-hair-shaft-changes-related-to-hardness-of-water/",
+    "title": "Scanning electron microscopy study of hair shaft changes related to hardness of water",
+    "type": "science"
+  },
+  "57": {
+    "id": "57",
+    "url": "https://www.wholesalesuppliesplus.com/handmade101/learn-to-make-articles/a-chemists-perspective-on-luxglide-n5-and-n350.aspx",
+    "title": "A Chemist's Perspective on LuxGlide N5 & N350",
+    "type": "industry"
+  },
+  "58": {
+    "id": "58",
+    "url": "https://incidecoder.com/ingredients/diheptyl-succinate",
+    "title": "INCIDecoder: Diheptyl Succinate",
+    "type": "science"
+  },
+  "59": {
+    "id": "59",
+    "url": "https://www.happi.com/unique-styling-products-via-maltodextrinvp/",
+    "title": "Unique Styling Products Via Maltodextrin/VP",
+    "type": "industry"
+  },
+  "60": {
+    "id": "60",
+    "url": "https://incidecoder.com/ingredients/vp-va-copolymer",
+    "title": "INCIDecoder: VP/​VA Copolymer",
+    "type": "science"
+  },
+  "61": {
+    "id": "61",
+    "url": "https://incidecoder.com/ingredients/dimethicone",
+    "title": "INCIDecoder",
+    "type": "science"
+  }
+};
+
+export function getBundledReferences(): References {
+  return defaultReferences;
+}

@@ -192,7 +192,6 @@
       "id": "28",
       "url": "https://science-yhairblog.blogspot.com/2015/02/glycerin-and-humidity.html",
       "title": "Glycerin and Humidity",
-      "description": "Humectants grab water out of air, but if air doesn't have enough water (dry weather), it can become brittle and create friction, which can mean frizz. Theoretically this could dehydrate hair. Oils can slow water loss. Notes that glycerin can be paired with emollients and film-formers to slow water loss. Caveats that none of this is well studied.",
       "type": "science"
     },
     "29": {
@@ -392,6 +391,14 @@
       "url": "https://incidecoder.com/ingredients/dimethicone",
       "title": "INCIDecoder",
       "type": "science"
+    },
+    "62": {
+      "id": "62",
+      "url": "https://science-yhairblog.blogspot.com/2012/04/seasons-are-changing-dewpoint-visual-aid.html",
+      "title": "Seasons are Changing - Dewpoint Visual Aid",
+      "source": "Science-y Hair Blog",
+      "type": "science",
+      "date": "2012"
     }
   }
 }
