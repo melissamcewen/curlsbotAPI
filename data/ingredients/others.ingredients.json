@@ -329,9 +329,9 @@
     {
       "name": "Ethylhexylglycerin",
       "id": "ethylhexylglycerin",
-      "description": "A humectant and preservative enhancer",
+      "description": "A preservative enhancer",
       "categories": [
-        "simple_humectants"
+        "other_preservatives"
       ]
     },
     {
