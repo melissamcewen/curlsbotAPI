@@ -121,6 +121,12 @@ export interface Reference {
   type?: 'science' | 'hairpro' | 'author' | 'other' | 'industry';
   /** status of the reference */
   status?: 'ok' | 'caution' | 'warning' | 'good';
+  /** author of the reference */
+  author?: string;
+  /** date of the reference */
+  date?: string;
+  /** source of the reference */
+  source?: string;
 }
 
 /**

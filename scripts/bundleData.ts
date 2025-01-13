@@ -24,6 +24,9 @@ function loadReferences(): Record<string, Reference> {
           ...(ref.description && { description: ref.description }),
           ...(ref.type && { type: ref.type }),
           ...(ref.status && { status: ref.status }),
+          ...(ref.author && { author: ref.author }),
+          ...(ref.date && { date: ref.date }),
+          ...(ref.source && { source: ref.source }),
         };
         return acc;
       },

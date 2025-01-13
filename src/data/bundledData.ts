@@ -348,6 +348,8 @@ export const defaultDatabase: IngredientDatabase = {
           "url": "http://www.tightlycurly.com/ingredients/",
           "title": "Tightly Curly Ingredients",
           "type": "author",
+          "date": "2010",
+          "source": "Tightly Curly",
           "description": "Says to avoid alcohol denat",
           "status": "warning"
         }
@@ -926,6 +928,8 @@ export const defaultDatabase: IngredientDatabase = {
           "url": "https://amzn.to/41QrGxJ",
           "title": "Curly Girl: The Handbook",
           "type": "hairpro",
+          "author": "Massey L.",
+          "date": "2011",
           "status": "warning"
         },
         {
@@ -938,6 +942,8 @@ export const defaultDatabase: IngredientDatabase = {
           "url": "http://www.tightlycurly.com/ingredients/",
           "title": "Tightly Curly Ingredients",
           "type": "author",
+          "date": "2010",
+          "source": "Tightly Curly",
           "status": "ok"
         }
       ],
@@ -1045,6 +1051,8 @@ export const defaultDatabase: IngredientDatabase = {
           "url": "https://amzn.to/41QrGxJ",
           "title": "Curly Girl: The Handbook",
           "type": "hairpro",
+          "author": "Massey L.",
+          "date": "2011",
           "status": "warning"
         },
         {
@@ -2311,6 +2319,9 @@ export const defaultDatabase: IngredientDatabase = {
           "url": "https://amzn.to/4hd4Tko",
           "title": "Humectants in Personal Care Formulation",
           "type": "science",
+          "author": "Gesslein, B.W.",
+          "date": "1999",
+          "source": "Conditioning Agents for Hair and Skin",
           "description": "It's very good at holding water (equilibrium hygroscopicity) and is virtually non-toxic"
         }
       ],
@@ -3140,6 +3151,9 @@ export const defaultDatabase: IngredientDatabase = {
           "url": "https://amzn.to/4hd4Tko",
           "title": "Humectants in Personal Care Formulation",
           "type": "science",
+          "author": "Gesslein, B.W.",
+          "date": "1999",
+          "source": "Conditioning Agents for Hair and Skin",
           "description": "Moisture capacity 1.5 times greater than glycerin. Ability to hold water over time(dynamic hygroscopicity) is similar to glycerin"
         }
       ],
@@ -3157,6 +3171,9 @@ export const defaultDatabase: IngredientDatabase = {
           "url": "https://amzn.to/4hd4Tko",
           "title": "Humectants in Personal Care Formulation",
           "type": "science",
+          "author": "Gesslein, B.W.",
+          "date": "1999",
+          "source": "Conditioning Agents for Hair and Skin",
           "description": "One of the best of the traditional humectants at holding water over time (dynamic hygroscopicity) though it holds less water than humectants like glycerin (equilibrium hygroscopicity)"
         }
       ],
@@ -3388,12 +3405,18 @@ export const defaultDatabase: IngredientDatabase = {
           "url": "https://amzn.to/4hd4Tko",
           "title": "Proteins for Conditioning Hair and Skin",
           "type": "science",
+          "author": "Neudahl, G.",
+          "date": "1999",
+          "source": "Conditioning Agents for Hair and Skin",
           "description": "Hydrolyzed collagen with a molecular weight of 5000 to 15,000 Da is an excellent film-former that moisturizes the hair by coating the cuticle without deep absorption (film-former). Adds body, resiliency, shine, and manageability while reducing static."
         },
         {
           "url": "https://amzn.to/4hd4Tko",
           "title": "Proteins for Conditioning Hair and Skin",
           "type": "science",
+          "author": "Neudahl, G.",
+          "date": "1999",
+          "source": "Conditioning Agents for Hair and Skin",
           "description": "Hydrolyzed collagen with a molecular weight of 2000 Da demonstrates substantivity to hair, meaning it adheres well to the hair's surface and penetrates its structure. Adheres best on damaged hair. Enhances tensile strength (resistance to breaking) and elasticity"
         }
       ],
@@ -3491,6 +3514,8 @@ export const defaultDatabase: IngredientDatabase = {
           "url": "http://www.tightlycurly.com/ingredients/",
           "title": "Tightly Curly Ingredients",
           "type": "author",
+          "date": "2010",
+          "source": "Tightly Curly",
           "description": "says it can be heavy but is a great conditioner",
           "status": "good"
         },
@@ -3498,6 +3523,8 @@ export const defaultDatabase: IngredientDatabase = {
           "url": "https://amzn.to/41QrGxJ",
           "title": "Curly Girl: The Handbook",
           "type": "hairpro",
+          "author": "Massey L.",
+          "date": "2011",
           "status": "warning"
         },
         {
@@ -4205,18 +4232,27 @@ export const defaultDatabase: IngredientDatabase = {
           "url": "https://amzn.to/4hd4Tko",
           "title": "Humectants in Personal Care Formulation",
           "type": "science",
+          "author": "Gesslein, B.W.",
+          "date": "1999",
+          "source": "Conditioning Agents for Hair and Skin",
           "description": "Found protein was less effective than traditional humectants (glycerin etc.) and performed especially badly in 79% relative humidity or below"
         },
         {
           "url": "https://amzn.to/4hd4Tko",
           "title": "Biology of the Hair and Skin",
           "type": "science",
+          "author": "Draelos, Z.D.",
+          "date": "1999",
+          "source": "Conditioning Agents for Hair and Skin",
           "description": "Hydrolyzed proteins (1000 to 10000 molecular weight) can diffuse into cortex through cuticle to strengthen hair, but washes out on cleansing."
         },
         {
           "url": "https://amzn.to/4hd4Tko",
           "title": "Proteins for Conditioning Hair and Skin",
           "type": "science",
+          "author": "Neudahl, G.",
+          "date": "1999",
+          "source": "Conditioning Agents for Hair and Skin",
           "description": "Hydrolyzed proteins bound increases with hair damage. Help with cuticle damage and reducing brittleness"
         }
       ]
@@ -4340,12 +4376,18 @@ export const defaultDatabase: IngredientDatabase = {
           "url": "https://amzn.to/4hd4Tko",
           "title": "Humectants in Personal Care Formulation",
           "type": "science",
+          "author": "Gesslein, B.W.",
+          "date": "1999",
+          "source": "Conditioning Agents for Hair and Skin",
           "description": "No known humectant performed well in study at 20% relative humidity and below"
         },
         {
           "url": "https://amzn.to/4hd4Tko",
           "title": "Humectants in Personal Care Formulation",
           "type": "science",
+          "author": "Gesslein, B.W.",
+          "date": "1999",
+          "source": "Conditioning Agents for Hair and Skin",
           "description": "Humectants in shampoo likely do not remain in hair, but in leave ins they can form a film until washed, that can restore moisture to severely damaged hair"
         }
       ]
