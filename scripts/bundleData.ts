@@ -11,6 +11,54 @@ const CONFIG_DIR = join(__dirname, '../data/config');
 const INGREDIENTS_OUTPUT_FILE = join(__dirname, '../src/data/bundledData.ts');
 const PRODUCTS_OUTPUT_FILE = join(__dirname, '../src/data/bundledProducts.ts');
 
+// Load references data from references.references.json
+function loadReferences(): Record<string, Reference> {
+  const referencesPath = join(DATA_DIR, 'references.references.json');
+  try {
+    const data = JSON.parse(readFileSync(referencesPath, 'utf-8'));
+    return Object.entries(data.references).reduce(
+      (acc: Record<string, Reference>, [id, ref]: [string, any]) => {
+        acc[id] = {
+          url: ref.url,
+          ...(ref.title && { title: ref.title }),
+          ...(ref.description && { description: ref.description }),
+          ...(ref.type && { type: ref.type }),
+          ...(ref.status && { status: ref.status }),
+        };
+        return acc;
+      },
+      {},
+    );
+  } catch (error) {
+    console.error('Error loading references:', error);
+    process.exit(1);
+  }
+}
+
+// Convert reference IDs to full reference objects
+function populateReferences(
+  refs: any[],
+  referencesData: Record<string, Reference>,
+): Reference[] {
+  return refs.map((ref) => {
+    const referenceId = ref.id;
+    const baseReference = referencesData[referenceId];
+    if (!baseReference) {
+      console.warn(
+        `Warning: Reference ID "${referenceId}" not found in references.json`,
+      );
+      return { url: 'unknown' };
+    }
+
+    // Merge the base reference with any overrides from the ingredient's reference
+    return {
+      ...baseReference,
+      ...(ref.notes && { description: ref.notes }),
+      ...(ref.status && { status: ref.status }),
+    };
+  });
+}
+
 function convertToReferenceObjects(refs: (string | Reference)[]): Reference[] {
   return refs.map((ref) => {
     if (typeof ref === 'string') {
@@ -43,6 +91,9 @@ function loadIngredientsFromDir(dirPath: string): any {
     },
     {},
   );
+
+  // Load references data
+  const referencesData = loadReferences();
 
   for (const file of files) {
     const filePath = join(dirPath, file);
@@ -81,10 +132,16 @@ function loadIngredientsFromDir(dirPath: string): any {
       }
     }
 
+    // Populate references if they exist
+    const references = ingredient.references
+      ? populateReferences(ingredient.references, referencesData)
+      : undefined;
+
     acc[ingredient.id] = {
       ...ingredient,
       status,
       group,
+      references,
     };
     return acc;
   }, {});
@@ -183,6 +240,7 @@ function generateBundledData() {
   const groupsData = loadJsonFile(join(DATA_DIR, 'groups.json'));
   const systemsData = loadJsonFile(join(CONFIG_DIR, 'systems.json'));
   const settingsData = loadJsonFile(join(CONFIG_DIR, 'settings.json'));
+  const referencesData = loadReferences();
 
   // Convert categories and groups to record format
   const categories = (categoriesData?.categories || []).reduce(
@@ -191,16 +249,16 @@ function generateBundledData() {
         console.warn(`Warning: Category missing required 'id' field:`, cat);
         return acc;
       }
+
       acc[cat.id] = {
         ...cat, // Keep all original fields
         // Ensure required fields have defaults if missing
         name: cat.name || cat.id,
         description: cat.description || '',
         group: cat.group || 'others',
-        references: cat.references
-          ? convertToReferenceObjects(cat.references)
-          : [],
       };
+      // Remove references field if it exists
+      delete acc[cat.id].references;
       return acc;
     },
     {},
@@ -211,6 +269,7 @@ function generateBundledData() {
       console.warn(`Warning: Group missing required 'id' field:`, group);
       return acc;
     }
+
     acc[group.id] = {
       ...group, // Keep all original fields
       // Ensure required fields have defaults if missing
@@ -218,6 +277,8 @@ function generateBundledData() {
       inclusions: group.inclusions || [],
       defaultIngredient: group.defaultIngredient || undefined,
     };
+    // Remove references field if it exists
+    delete acc[group.id].references;
     return acc;
   }, {});
 

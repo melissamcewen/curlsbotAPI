@@ -1,0 +1,56 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "required": ["references"],
+  "properties": {
+    "references": {
+      "type": "object",
+      "patternProperties": {
+        "^[0-9]+$": {
+          "type": "object",
+          "required": ["url"],
+          "properties": {
+            "url": {
+              "type": "string",
+              "format": "uri",
+              "description": "The URL of the reference"
+            },
+            "title": {
+              "type": "string",
+              "description": "Optional title of the reference"
+            },
+            "description": {
+              "type": "string",
+              "description": "Optional description of what this reference proves/shows"
+            },
+            "date": {
+              "type": "string",
+              "description": "Optional date of the reference"
+            },
+            "author": {
+              "type": "string",
+              "description": "Optional author of the reference"
+            },
+            "source": {
+              "type": "string",
+              "description": "Optional source of the reference"
+            },
+            "type": {
+              "type": "string",
+              "enum": ["science", "hairpro", "industry", "author", "other"],
+              "description": "Type of reference"
+            },
+            "status": {
+              "type": "string",
+              "enum": ["ok", "caution", "warning", "good"],
+              "description": "Status of the reference"
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

@@ -340,16 +340,16 @@ export const defaultDatabase: IngredientDatabase = {
         {
           "url": "https://incidecoder.com/ingredients/alcohol-denat",
           "title": "INCIDecoder",
-          "status": "caution",
           "description": "Says it can be drying if its in the first few ingredients of a product",
-          "type": "science"
+          "type": "science",
+          "status": "caution"
         },
         {
           "url": "http://www.tightlycurly.com/ingredients/",
-          "title": "Tightly Curly",
-          "status": "warning",
+          "title": "Tightly Curly Ingredients",
           "type": "author",
-          "description": "Says to avoid alcohol denat"
+          "description": "Says to avoid alcohol denat",
+          "status": "warning"
         }
       ],
       "status": "caution",
@@ -389,8 +389,8 @@ export const defaultDatabase: IngredientDatabase = {
         {
           "url": "https://incidecoder.com/ingredients/emulsifying-wax",
           "title": "INCIDecoder",
-          "status": "ok",
-          "description": "This isn't an INCI ingredient, they think it's a mix of Cetearyl Alcohol (and) Polysorbate 60"
+          "description": "This isn't an INCI ingredient, they think it's a mix of Cetearyl Alcohol (and) Polysorbate 60",
+          "status": "ok"
         }
       ],
       "status": "ok",
@@ -918,27 +918,27 @@ export const defaultDatabase: IngredientDatabase = {
       "references": [
         {
           "url": "https://www.paulaschoice.com/ingredient-dictionary/ingredient-sodium-laureth-sulfate.html",
-          "status": "good",
           "title": "Paula's Choice",
-          "type": "author"
+          "type": "author",
+          "status": "good"
         },
         {
           "url": "https://amzn.to/41QrGxJ",
-          "status": "warning",
-          "title": "Curly Girl: The Handbook by Lorraine Massey",
-          "type": "hairpro"
+          "title": "Curly Girl: The Handbook",
+          "type": "hairpro",
+          "status": "warning"
         },
         {
           "url": "https://incidecoder.com/ingredients/sodium-laureth-sulfate",
-          "status": "ok",
           "title": "INCIdecoder",
-          "type": "science"
+          "type": "science",
+          "status": "ok"
         },
         {
           "url": "http://www.tightlycurly.com/ingredients/",
-          "status": "ok",
-          "title": "Tightly Curly",
-          "type": "author"
+          "title": "Tightly Curly Ingredients",
+          "type": "author",
+          "status": "ok"
         }
       ],
       "status": "warning",
@@ -1025,45 +1025,45 @@ export const defaultDatabase: IngredientDatabase = {
       "references": [
         {
           "url": "http://www.tightlycurly.com/Ingredients.aspx?ingredientName=Sodium%20lauryl%20sulfate",
-          "status": "warning",
           "title": "Tightly Curly",
-          "type": "author"
+          "type": "author",
+          "status": "warning"
         },
         {
           "url": "https://incidecoder.com/ingredients/sodium-lauryl-sulfate",
-          "status": "warning",
           "title": "INCIdecoder",
-          "type": "science"
+          "type": "science",
+          "status": "warning"
         },
         {
           "url": "https://www.paulaschoice.com/ingredient-dictionary/ingredient-sodium-lauryl-sulfate.html",
-          "status": "warning",
           "title": "Paula's Choice",
-          "type": "author"
+          "type": "author",
+          "status": "warning"
         },
         {
           "url": "https://amzn.to/41QrGxJ",
-          "status": "warning",
-          "title": "Curly Girl: The Handbook by Lorraine Massey",
-          "type": "hairpro"
+          "title": "Curly Girl: The Handbook",
+          "type": "hairpro",
+          "status": "warning"
         },
         {
           "url": "https://www.epa.gov/saferchoice/safer-ingredients",
-          "status": "ok",
           "title": "EPA Safer Choice",
-          "type": "science"
+          "type": "science",
+          "status": "ok"
         },
         {
           "url": "https://thebeautybrains.com/2007/06/sulfates-in-shampoos-what-are-they/",
-          "status": "ok",
           "title": "The Beauty Brains",
-          "type": "science"
+          "type": "science",
+          "status": "ok"
         },
         {
           "url": "https://labmuffin.com/the-science-of-hair-products-shampoo-and-conditioner-with-video/",
-          "status": "ok",
-          "title": "Lab Muffin",
-          "type": "science"
+          "title": "Lab Muffin: The Science of Hair Products: Shampoo and Conditioner",
+          "type": "science",
+          "status": "ok"
         }
       ],
       "status": "warning",
@@ -1245,8 +1245,8 @@ export const defaultDatabase: IngredientDatabase = {
       "references": [
         {
           "url": "https://science-yhairblog.blogspot.com/2013/06/oils-which-ones-soak-in-vs-coat-hair.html",
-          "type": "science",
           "title": "Oils – Which Ones Soak In vs. Coat the Hair?",
+          "type": "science",
           "description": "Apricot kernel oil's ability to penetrate (soak into) hair hasn't been well-researched but is it is likely to have moderate penetration (similar to olive oil, and much less than coconut oil)"
         }
       ],
@@ -1262,15 +1262,15 @@ export const defaultDatabase: IngredientDatabase = {
       "references": [
         {
           "url": "https://science-yhairblog.blogspot.com/2013/06/oils-which-ones-soak-in-vs-coat-hair.html",
-          "type": "science",
           "title": "Oils – Which Ones Soak In vs. Coat the Hair?",
+          "type": "science",
           "description": "Safflower oil's ability to penetrate (soak into) hair hasn't been well-researched but is it is likely to have low moderate penetration (lower than olive oil, and much less than coconut oil)"
         },
         {
-          "title": "Penetration of oils into hair",
           "url": "https://pubmed.ncbi.nlm.nih.gov/38922913/",
-          "type": "science",
-          "description": "Found that camellia oil can penetrate the hair shaft  at a low-moderate level compared to high penetration oils like coconut. It also found that safflower oil was just as good as coconut oil at preventing damage."
+          "title": "Penetration of oils into hair",
+          "description": "Found that camellia oil can penetrate the hair shaft  at a low-moderate level compared to high penetration oils like coconut. It also found that safflower oil was just as good as coconut oil at preventing damage.",
+          "type": "science"
         }
       ],
       "status": "ok",
@@ -1289,15 +1289,15 @@ export const defaultDatabase: IngredientDatabase = {
       "references": [
         {
           "url": "https://science-yhairblog.blogspot.com/2013/06/oils-which-ones-soak-in-vs-coat-hair.html",
-          "type": "science",
           "title": "Oils – Which Ones Soak In vs. Coat the Hair?",
+          "type": "science",
           "description": "Argan Oil's ability to penetrate (soak into) hair hasn't been well-researched but is it is likely to have moderate penetration (similar to olive oil, and much less than coconut oil)"
         },
         {
           "url": "https://link.springer.com/article/10.1186/s40691-021-00282-5",
-          "type": "science",
           "title": "Effect of rinse-off hair conditioner containing argan oil or camellia oil on the recovery of hair damaged by bleaching",
-          "description": "Study found argan oil was effective at protecting bleached hair from damage, moreso than camellia oil"
+          "description": "Study found argan oil was effective at protecting bleached hair from damage, moreso than camellia oil",
+          "type": "science"
         },
         {
           "url": "https://www.mdpi.com/2079-9284/11/2/64",
@@ -1323,8 +1323,8 @@ export const defaultDatabase: IngredientDatabase = {
       "references": [
         {
           "url": "https://science-yhairblog.blogspot.com/2013/06/oils-which-ones-soak-in-vs-coat-hair.html",
-          "type": "science",
           "title": "Oils – Which Ones Soak In vs. Coat the Hair?",
+          "type": "science",
           "description": "Cocoa butter's ability to penetrate (soak into) hair hasn't been well-researched but is it is likely to have low moderate penetration (lower than olive oil, and much less than coconut oil)"
         }
       ],
@@ -1344,8 +1344,8 @@ export const defaultDatabase: IngredientDatabase = {
       "references": [
         {
           "url": "https://science-yhairblog.blogspot.com/2013/06/oils-which-ones-soak-in-vs-coat-hair.html",
-          "type": "science",
           "title": "Oils – Which Ones Soak In vs. Coat the Hair?",
+          "type": "science",
           "description": "Sesame seed oil's ability to penetrate (soak into) hair hasn't been well-researched but is it is likely to have moderate penetration (similar to olive oil, and much less than coconut oil)"
         }
       ],
@@ -1365,8 +1365,8 @@ export const defaultDatabase: IngredientDatabase = {
       "references": [
         {
           "url": "https://science-yhairblog.blogspot.com/2013/06/oils-which-ones-soak-in-vs-coat-hair.html",
-          "type": "science",
           "title": "Oils – Which Ones Soak In vs. Coat the Hair?",
+          "type": "science",
           "description": "Avocado oil's ability to penetrate (soak into) hair hasn't been well-researched but is it is likely to have moderate penetration (similar to olive oil, and much less than coconut oil)"
         },
         {
@@ -1388,8 +1388,8 @@ export const defaultDatabase: IngredientDatabase = {
       "references": [
         {
           "url": "https://science-yhairblog.blogspot.com/2013/06/oils-which-ones-soak-in-vs-coat-hair.html",
-          "type": "science",
           "title": "Oils – Which Ones Soak In vs. Coat the Hair?",
+          "type": "science",
           "description": "Corn oil's ability to penetrate (soak into) hair hasn't been well-researched but is it is likely to have moderate penetration (similar to olive oil, and much less than coconut oil)"
         }
       ],
@@ -1405,8 +1405,8 @@ export const defaultDatabase: IngredientDatabase = {
       "references": [
         {
           "url": "https://science-yhairblog.blogspot.com/2013/06/oils-which-ones-soak-in-vs-coat-hair.html",
-          "type": "science",
           "title": "Oils – Which Ones Soak In vs. Coat the Hair?",
+          "type": "science",
           "description": "Mustard seed oil's ability to penetrate (soak into) hair hasn't been well-researched but is it is likely to have moderate penetration (similar to olive oil, and much less than coconut oil)"
         }
       ],
@@ -1438,10 +1438,10 @@ export const defaultDatabase: IngredientDatabase = {
       ],
       "references": [
         {
-          "title": "Penetration of oils into hair",
           "url": "https://pubmed.ncbi.nlm.nih.gov/38922913/",
-          "type": "science",
-          "description": "Found that camellia oil can penetrate the hair shaft about as well as safflower oil, which is low-moderate compared to high penetration oils like coconut. It also found that camellia oil was just as good as coconut oil at preventing damage."
+          "title": "Penetration of oils into hair",
+          "description": "Found that camellia oil can penetrate the hair shaft about as well as safflower oil, which is low-moderate compared to high penetration oils like coconut. It also found that camellia oil was just as good as coconut oil at preventing damage.",
+          "type": "science"
         }
       ],
       "status": "ok",
@@ -1460,8 +1460,8 @@ export const defaultDatabase: IngredientDatabase = {
       "references": [
         {
           "url": "https://science-yhairblog.blogspot.com/2013/06/oils-which-ones-soak-in-vs-coat-hair.html",
-          "type": "science",
           "title": "Oils – Which Ones Soak In vs. Coat the Hair?",
+          "type": "science",
           "description": "Rice bran oil's ability to penetrate (soak into) hair has been well-researched and found to be low. It's likely to coat the hair rather than soak in."
         }
       ],
@@ -1481,8 +1481,8 @@ export const defaultDatabase: IngredientDatabase = {
       "references": [
         {
           "url": "https://science-yhairblog.blogspot.com/2013/06/oils-which-ones-soak-in-vs-coat-hair.html",
-          "type": "science",
           "title": "Oils – Which Ones Soak In vs. Coat the Hair?",
+          "type": "science",
           "description": "There isn't a lot of research into Castor Oil's ability to penetrate (soak into) hair, but it's likely given the oil's chemistry"
         }
       ],
@@ -1502,8 +1502,8 @@ export const defaultDatabase: IngredientDatabase = {
       "references": [
         {
           "url": "https://science-yhairblog.blogspot.com/2013/06/oils-which-ones-soak-in-vs-coat-hair.html",
-          "type": "science",
           "title": "Oils – Which Ones Soak In vs. Coat the Hair?",
+          "type": "science",
           "description": "Hemp seed oil's ability to penetrate (soak into) hair hasn't been well-researched but is it is likely to have low moderate penetration (lower than olive oil, and much less than coconut oil)"
         }
       ],
@@ -1523,8 +1523,8 @@ export const defaultDatabase: IngredientDatabase = {
       "references": [
         {
           "url": "https://science-yhairblog.blogspot.com/2013/06/oils-which-ones-soak-in-vs-coat-hair.html",
-          "type": "science",
           "title": "Oils – Which Ones Soak In vs. Coat the Hair?",
+          "type": "science",
           "description": "Coconut oil is well documented to penetrate (soak into) hair"
         }
       ],
@@ -1540,8 +1540,8 @@ export const defaultDatabase: IngredientDatabase = {
       "references": [
         {
           "url": "https://science-yhairblog.blogspot.com/2013/06/oils-which-ones-soak-in-vs-coat-hair.html",
-          "type": "science",
           "title": "Oils – Which Ones Soak In vs. Coat the Hair?",
+          "type": "science",
           "description": "Ucuuba butter is well documented to penetrate (soak into) hair"
         }
       ],
@@ -1561,8 +1561,8 @@ export const defaultDatabase: IngredientDatabase = {
       "references": [
         {
           "url": "https://science-yhairblog.blogspot.com/2013/06/oils-which-ones-soak-in-vs-coat-hair.html",
-          "type": "science",
           "title": "Oils – Which Ones Soak In vs. Coat the Hair?",
+          "type": "science",
           "description": "Grapeseed oil's ability to penetrate (soak into) hair hasn't been well-researched but is it is likely to have low moderate penetration (lower than olive oil, and much less than coconut oil)"
         }
       ],
@@ -1582,8 +1582,8 @@ export const defaultDatabase: IngredientDatabase = {
       "references": [
         {
           "url": "https://science-yhairblog.blogspot.com/2013/06/oils-which-ones-soak-in-vs-coat-hair.html",
-          "type": "science",
           "title": "Oils – Which Ones Soak In vs. Coat the Hair?",
+          "type": "science",
           "description": "Jojoba oil is likely to coat the hair rather than soak in, based on its chemistry, so we consider it a light oil"
         }
       ],
@@ -1600,13 +1600,13 @@ export const defaultDatabase: IngredientDatabase = {
       "references": [
         {
           "url": "https://www.cir-safety.org/sites/default/files/TAR_Lanolin_032024.pdf",
-          "type": "science",
           "title": "CIR: Amended Safety Assessment of Lanolin-Derived Ingredients as Used in Cosmetics",
-          "description": "Based on this analysis, lanolin seems to have a low percentage of fats that could penetrate the hair shaft"
+          "description": "Based on this analysis, lanolin seems to have a low percentage of fats that could penetrate the hair shaft",
+          "type": "science"
         },
         {
-          "title": "Comedogenicity of current therapeutic products, cosmetics, and ingredients in the rabbit ear",
           "url": "https://pubmed.ncbi.nlm.nih.gov/6229554/",
+          "title": "Comedogenicity of current therapeutic products, cosmetics, and ingredients in the rabbit ear",
           "type": "science"
         }
       ],
@@ -1640,8 +1640,8 @@ export const defaultDatabase: IngredientDatabase = {
       "references": [
         {
           "url": "https://science-yhairblog.blogspot.com/2013/06/oils-which-ones-soak-in-vs-coat-hair.html",
-          "type": "science",
           "title": "Oils – Which Ones Soak In vs. Coat the Hair?",
+          "type": "science",
           "description": "Mineral oil is likely to coat the hair rather than soak in, based on its chemistry"
         }
       ],
@@ -1677,8 +1677,8 @@ export const defaultDatabase: IngredientDatabase = {
       "references": [
         {
           "url": "https://science-yhairblog.blogspot.com/2013/06/oils-which-ones-soak-in-vs-coat-hair.html",
-          "type": "science",
           "title": "Oils – Which Ones Soak In vs. Coat the Hair?",
+          "type": "science",
           "description": "Olive Oil's ability to penetrate (soak into) hair is well documented. It penetrates quite well, but not as well as heavy oils like coconut oil"
         }
       ],
@@ -1698,8 +1698,8 @@ export const defaultDatabase: IngredientDatabase = {
       "references": [
         {
           "url": "https://science-yhairblog.blogspot.com/2013/06/oils-which-ones-soak-in-vs-coat-hair.html",
-          "type": "science",
           "title": "Oils – Which Ones Soak In vs. Coat the Hair?",
+          "type": "science",
           "description": "Flaxseed oil's ability to penetrate (soak into) hair hasn't been well-researched but is it is likely to have low moderate penetration (lower than olive oil, and much less than coconut oil)"
         }
       ],
@@ -1719,8 +1719,8 @@ export const defaultDatabase: IngredientDatabase = {
       "references": [
         {
           "url": "https://science-yhairblog.blogspot.com/2013/06/oils-which-ones-soak-in-vs-coat-hair.html",
-          "type": "science",
           "title": "Oils – Which Ones Soak In vs. Coat the Hair?",
+          "type": "science",
           "description": "Sunflower oil is somewhat documented to penetrate (soak into) hair"
         }
       ],
@@ -1739,8 +1739,8 @@ export const defaultDatabase: IngredientDatabase = {
       "references": [
         {
           "url": "https://science-yhairblog.blogspot.com/2013/06/oils-which-ones-soak-in-vs-coat-hair.html",
-          "type": "science",
           "title": "Oils – Which Ones Soak In vs. Coat the Hair?",
+          "type": "science",
           "description": "Palm kernel oil's ability to penetrate (soak into) hair is not well researched, but is likely given the oil's chemistry"
         }
       ],
@@ -1760,14 +1760,14 @@ export const defaultDatabase: IngredientDatabase = {
       "references": [
         {
           "url": "https://science-yhairblog.blogspot.com/2013/06/oils-which-ones-soak-in-vs-coat-hair.html",
-          "type": "science",
           "title": "Oils – Which Ones Soak In vs. Coat the Hair?",
+          "type": "science",
           "description": "Capric / Caprylic triglycerides' ability to penetrate (soak into) hair hasn't been researched, but is likely given the oil's chemistry"
         },
         {
           "url": "https://link.springer.com/article/10.1186/s40691-023-00332-0",
-          "type": "science",
-          "title": "Found that these oils can penetrate the hair shaft more effectively than plain coconut oil"
+          "title": "Determination of penetration and protection of fatty acids in bleached hair according to the fatty acid chain length and the application to understanding the protective effects of MCT oil and coconut oil",
+          "type": "science"
         }
       ],
       "status": "ok",
@@ -1782,8 +1782,8 @@ export const defaultDatabase: IngredientDatabase = {
       "references": [
         {
           "url": "https://science-yhairblog.blogspot.com/2013/06/oils-which-ones-soak-in-vs-coat-hair.html",
-          "type": "science",
           "title": "Oils – Which Ones Soak In vs. Coat the Hair?",
+          "type": "science",
           "description": "Babbasu oil's ability to penetrate (soak into) hair hasn't been researched, but is likely given the oil's chemistry"
         }
       ],
@@ -1803,8 +1803,8 @@ export const defaultDatabase: IngredientDatabase = {
       "references": [
         {
           "url": "https://science-yhairblog.blogspot.com/2013/06/oils-which-ones-soak-in-vs-coat-hair.html",
-          "type": "science",
           "title": "Oils – Which Ones Soak In vs. Coat the Hair?",
+          "type": "science",
           "description": "Sweet almond oil's ability to penetrate (soak into) hair hasn't been well-researched but is it is likely to have moderate penetration (similar to olive oil, and much less than coconut oil)"
         }
       ],
@@ -1824,8 +1824,8 @@ export const defaultDatabase: IngredientDatabase = {
       "references": [
         {
           "url": "https://science-yhairblog.blogspot.com/2013/06/oils-which-ones-soak-in-vs-coat-hair.html",
-          "type": "science",
           "title": "Oils – Which Ones Soak In vs. Coat the Hair?",
+          "type": "science",
           "description": "Rosehip oil's ability to penetrate (soak into) hair hasn't been well-researched but is it is likely to have low moderate penetration (lower than olive oil, and much less than coconut oil)"
         }
       ],
@@ -1845,8 +1845,8 @@ export const defaultDatabase: IngredientDatabase = {
       "references": [
         {
           "url": "https://science-yhairblog.blogspot.com/2013/06/oils-which-ones-soak-in-vs-coat-hair.html",
-          "type": "science",
           "title": "Oils – Which Ones Soak In vs. Coat the Hair?",
+          "type": "science",
           "description": "Perilla oil's ability to penetrate (soak into) hair hasn't been well-researched but is it is likely to have low moderate penetration (lower than olive oil, and much less than coconut oil)"
         }
       ],
@@ -1868,8 +1868,8 @@ export const defaultDatabase: IngredientDatabase = {
       "references": [
         {
           "url": "https://science-yhairblog.blogspot.com/2013/06/oils-which-ones-soak-in-vs-coat-hair.html",
-          "type": "science",
           "title": "Oils – Which Ones Soak In vs. Coat the Hair?",
+          "type": "science",
           "description": "Shea butter's ability to penetrate (soak into) hair hasn't been well-researched but is it is likely to have moderate penetration (similar to olive oil, and much less than coconut oil)"
         }
       ],
@@ -1889,8 +1889,8 @@ export const defaultDatabase: IngredientDatabase = {
       "references": [
         {
           "url": "https://science-yhairblog.blogspot.com/2013/06/oils-which-ones-soak-in-vs-coat-hair.html",
-          "type": "science",
           "title": "Oils – Which Ones Soak In vs. Coat the Hair?",
+          "type": "science",
           "description": "Kokum butter's ability to penetrate (soak into) hair hasn't been well-researched but is it is likely to have moderate penetration (similar to olive oil, and much less than coconut oil)"
         }
       ],
@@ -2284,7 +2284,7 @@ export const defaultDatabase: IngredientDatabase = {
       "id": "ethylhexylglycerin",
       "description": "A humectant and preservative enhancer",
       "categories": [
-        "film_forming_humectants"
+        "simple_humectants"
       ],
       "status": "ok",
       "group": "humectants"
@@ -2294,7 +2294,7 @@ export const defaultDatabase: IngredientDatabase = {
       "id": "glycereth_26",
       "description": "A lightweight humectant that provides hydration without greasiness",
       "categories": [
-        "film_forming_humectants"
+        "simple_humectants"
       ],
       "status": "ok",
       "group": "humectants"
@@ -2334,7 +2334,7 @@ export const defaultDatabase: IngredientDatabase = {
       "id": "panthenol",
       "description": "A moisturizing and strengthening agent that enhances hair elasticity",
       "categories": [
-        "film_forming_humectants"
+        "simple_humectants"
       ],
       "synonyms": [
         "provitamin B5",
@@ -2356,15 +2356,15 @@ export const defaultDatabase: IngredientDatabase = {
       "name": "Sodium hyaluronate",
       "id": "sodium_hyaluronate",
       "categories": [
-        "film_forming_humectants"
+        "simple_humectants"
       ],
       "references": [
         {
           "url": "https://incidecoder.com/ingredients/sodium-hyaluronate",
           "title": "INCIDecoder: Sodium Hyaluronate",
-          "status": "good",
+          "description": "Says it's a huge polymer with a very large water holding capacity",
           "type": "science",
-          "description": "Says it's a huge polymer with a very large water holding capacity"
+          "status": "good"
         }
       ],
       "status": "ok",
@@ -2374,20 +2374,20 @@ export const defaultDatabase: IngredientDatabase = {
       "name": "PCA",
       "id": "pca",
       "categories": [
-        "film_forming_humectants"
+        "simple_humectants"
       ],
       "references": [
         {
           "url": "https://incidecoder.com/ingredients/pca",
           "title": "INCIDecoder: PCA",
-          "status": "good",
-          "type": "science"
+          "type": "science",
+          "status": "good"
         },
         {
           "url": "https://www.taylorfrancis.com/books/mono/10.1201/b16716/handbook-cosmetic-science-technology-andr%C3%A9-barel-marc-paye-howard-maibach",
           "title": "Handbook of Cosmetic Science and Technology",
-          "type": "science",
-          "description": "Says molecular weight is 129.11 vs. 92.1 for glycerin"
+          "description": "Mentions Panthenol can increase hair's volume",
+          "type": "science"
         }
       ],
       "status": "ok",
@@ -2539,23 +2539,23 @@ export const defaultDatabase: IngredientDatabase = {
       ],
       "references": [
         {
-          "title": "Magnesium Sulfate",
           "url": "http://www.tightlycurly.com/ingredients/magnesium_sulfate",
+          "title": "Magnesium Sulfate",
           "type": "author",
-          "status": "warning",
-          "description": "Mentions that this ingredient roughs up the hair cuticle, which can be drying. It's also alkaline, which can swell the hair shaft, causing further damage."
+          "description": "Mentions that this ingredient roughs up the hair cuticle, which can be drying. It's also alkaline, which can swell the hair shaft, causing further damage.",
+          "status": "warning"
         },
         {
           "url": "https://www.curlynikki.com/magnesium-sulfate-curly-friend-or-foe.html",
-          "type": "author",
           "title": "Curly Nikki: Magnesium Sulfate- Curly Friend or Foe?",
-          "status": "caution",
-          "description": "Says it's a powerful curl enhancer but can be drying to some so advises using with a leave in conditioner."
+          "type": "author",
+          "description": "Says it's a powerful curl enhancer but can be drying to some so advises using with a leave in conditioner.",
+          "status": "caution"
         },
         {
           "url": "https://ijdvl.com/scanning-electron-microscopy-study-of-hair-shaft-changes-related-to-hardness-of-water/",
-          "type": "science",
           "title": "Scanning electron microscopy study of hair shaft changes related to hardness of water",
+          "type": "science",
           "description": "Notes that Magnesium sulfate can be a component of hard water, which deposits on the hair. But did not find any evidence of damage."
         }
       ],
@@ -2583,8 +2583,8 @@ export const defaultDatabase: IngredientDatabase = {
       "description": "This is an ingredient derived from wool with a complicated chemical structure and many uses. One issue with it is that it is comedogenic, meaning it can clog pores. This may be an issue for people with sensitive or dandruff prone scalps. It is also not vegan friendly.",
       "references": [
         {
-          "title": "Comedogenicity of current therapeutic products, cosmetics, and ingredients in the rabbit ear",
           "url": "https://pubmed.ncbi.nlm.nih.gov/6229554/",
+          "title": "Comedogenicity of current therapeutic products, cosmetics, and ingredients in the rabbit ear",
           "type": "science"
         }
       ],
@@ -2935,16 +2935,7 @@ export const defaultDatabase: IngredientDatabase = {
       "name": "Ceramide",
       "id": "ceramide",
       "categories": [
-        "film_forming_humectants"
-      ],
-      "status": "ok",
-      "group": "humectants"
-    },
-    "coenzyme_q10": {
-      "name": "Coenzyme Q10",
-      "id": "coenzyme_q10",
-      "categories": [
-        "film_forming_humectants"
+        "simple_humectants"
       ],
       "status": "ok",
       "group": "humectants"
@@ -3025,7 +3016,7 @@ export const defaultDatabase: IngredientDatabase = {
       "name": "Hyaluronic Acid",
       "id": "hyaluronic_acid",
       "categories": [
-        "film_forming_humectants"
+        "simple_humectants"
       ],
       "status": "ok",
       "group": "humectants"
@@ -3052,7 +3043,7 @@ export const defaultDatabase: IngredientDatabase = {
       "name": "Lecithin",
       "id": "lecithin",
       "categories": [
-        "film_forming_humectants"
+        "simple_humectants"
       ],
       "status": "ok",
       "group": "humectants"
@@ -3061,7 +3052,7 @@ export const defaultDatabase: IngredientDatabase = {
       "name": "Maltitol",
       "id": "maltitol",
       "categories": [
-        "film_forming_humectants"
+        "simple_humectants"
       ],
       "status": "ok",
       "group": "humectants"
@@ -3088,7 +3079,7 @@ export const defaultDatabase: IngredientDatabase = {
       "name": "Phytantriol",
       "id": "phytantriol",
       "categories": [
-        "film_forming_humectants"
+        "simple_humectants"
       ],
       "status": "ok",
       "group": "humectants"
@@ -3109,7 +3100,7 @@ export const defaultDatabase: IngredientDatabase = {
         "polyethyleneglycol"
       ],
       "categories": [
-        "film_forming_humectants"
+        "simple_humectants"
       ],
       "status": "ok",
       "group": "humectants"
@@ -3131,7 +3122,7 @@ export const defaultDatabase: IngredientDatabase = {
       "name": "Sodium Lactate",
       "id": "sodium_lactate",
       "categories": [
-        "film_forming_humectants"
+        "simple_humectants"
       ],
       "status": "ok",
       "group": "humectants"
@@ -3274,14 +3265,14 @@ export const defaultDatabase: IngredientDatabase = {
       "references": [
         {
           "url": "https://www.wholesalesuppliesplus.com/handmade101/learn-to-make-articles/a-chemists-perspective-on-luxglide-n5-and-n350.aspx",
+          "title": "A Chemist's Perspective on LuxGlide N5 & N350",
           "type": "industry",
-          "description": "Mentions it's a natural alternative to silicone, which is oil soluble.",
-          "title": "A Chemist's Perspective on LuxGlide N5 & N350"
+          "description": "Mentions it's a natural alternative to silicone, which is oil soluble."
         },
         {
           "url": "https://incidecoder.com/ingredients/diheptyl-succinate",
-          "type": "science",
-          "title": "INCIDecoder: Diheptyl Succinate"
+          "title": "INCIDecoder: Diheptyl Succinate",
+          "type": "science"
         }
       ],
       "status": "ok",
@@ -3443,44 +3434,44 @@ export const defaultDatabase: IngredientDatabase = {
       "description": "One of the most common silicones, this is a conditioning powerhouse, smoothing and protecting hair with ease. The major downside is it's not easy to wash out, so it can cause buildup.",
       "references": [
         {
-          "title": "INCIDecoder",
           "url": "https://incidecoder.com/ingredients/dimethicone",
-          "status": "caution",
+          "title": "INCIDecoder",
+          "type": "science",
           "description": "notes it may be difficult to wash out",
-          "type": "science"
+          "status": "caution"
         },
         {
-          "title": "Tightly Curly",
           "url": "http://www.tightlycurly.com/ingredients/",
-          "status": "good",
+          "title": "Tightly Curly Ingredients",
           "type": "author",
-          "description": "says it can be heavy but is a great conditioner"
+          "description": "says it can be heavy but is a great conditioner",
+          "status": "good"
         },
         {
           "url": "https://amzn.to/41QrGxJ",
-          "status": "warning",
-          "title": "Curly Girl: The Handbook by Lorraine Massey",
-          "type": "hairpro"
+          "title": "Curly Girl: The Handbook",
+          "type": "hairpro",
+          "status": "warning"
         },
         {
           "url": "https://science-yhairblog.blogspot.com/2014/04/silicone-ingredient-solubility-list.html",
-          "status": "caution",
           "title": "Science-y Hair Blog",
           "description": "classifies as water insoluble, only should be used if you are using a cleanser capable of removing",
-          "type": "science"
+          "type": "science",
+          "status": "caution"
         },
         {
           "url": "https://thebeautybrains.com/2007/01/are-silicones-bad-for-your-hair/",
-          "status": "caution",
           "title": "The Beauty Brains",
           "type": "science",
-          "description": "says its great for lowering porosity but can be hard to wash out"
+          "description": "says its great for lowering porosity but can be hard to wash out",
+          "status": "caution"
         },
         {
           "url": "https://labmuffin.com/silicone-mythbusting-with-video/",
-          "status": "good",
           "title": "Lab Muffin",
-          "type": "science"
+          "type": "science",
+          "status": "good"
         }
       ],
       "status": "warning",
@@ -3616,7 +3607,8 @@ export const defaultDatabase: IngredientDatabase = {
       "references": [
         {
           "url": "https://science-yhairblog.blogspot.com/2014/04/silicone-ingredient-solubility-list.html",
-          "title": "Silicone Ingredient Solubility List",
+          "title": "Science-y Hair Blog",
+          "description": "varies, discusses the different water solubilities of different silicones",
           "type": "science"
         }
       ],
@@ -3692,7 +3684,8 @@ export const defaultDatabase: IngredientDatabase = {
       "references": [
         {
           "url": "https://science-yhairblog.blogspot.com/2014/04/silicone-ingredient-solubility-list.html",
-          "title": "Silicone Ingredient Solubility List",
+          "title": "Science-y Hair Blog",
+          "description": "varies, discusses the different water solubilities of different silicones",
           "type": "science"
         }
       ],
@@ -3708,7 +3701,8 @@ export const defaultDatabase: IngredientDatabase = {
       "references": [
         {
           "url": "https://science-yhairblog.blogspot.com/2014/04/silicone-ingredient-solubility-list.html",
-          "title": "Silicone Ingredient Solubility List",
+          "title": "Science-y Hair Blog",
+          "description": "varies, discusses the different water solubilities of different silicones",
           "type": "science"
         }
       ],
@@ -3724,7 +3718,8 @@ export const defaultDatabase: IngredientDatabase = {
       "references": [
         {
           "url": "https://science-yhairblog.blogspot.com/2014/04/silicone-ingredient-solubility-list.html",
-          "title": "Silicone Ingredient Solubility List",
+          "title": "Science-y Hair Blog",
+          "description": "varies, discusses the different water solubilities of different silicones",
           "type": "science"
         }
       ],
@@ -3991,42 +3986,7 @@ export const defaultDatabase: IngredientDatabase = {
       "id": "drying_alcohols",
       "name": "Drying Alcohols",
       "group": "alcohols",
-      "description": "Short-chain alcohols considered drying because they evaporate quickly and can strip natural oils from the hair and scalp",
-      "references": [
-        {
-          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4387693/",
-          "type": "science",
-          "title": "Hair Cosmetics: An Overview"
-        },
-        {
-          "url": "https://thebeautybrains.com/2014/04/why-is-there-isopropyl-alcohol-in-my-conditioner/",
-          "type": "science",
-          "title": "The Beauty Brains: Why is there isopropyl alcohol in my conditioner?"
-        },
-        {
-          "url": "https://labmuffin.com/how-bad-is-alcohol-in-skincare-really/",
-          "type": "science",
-          "title": "Lab Muffin: How Bad is Alcohol in Skincare Really?"
-        },
-        {
-          "url": "https://science-yhairblog.blogspot.com/2013/05/alcohol-in-hair-sprays.html",
-          "type": "science",
-          "title": "Science-y Hair Blog: Alcohol in Hair Sprays",
-          "status": "caution"
-        },
-        {
-          "url": "http://www.tightlycurly.com/ingredients/",
-          "type": "author",
-          "title": "Tightly Curly",
-          "status": "warning"
-        },
-        {
-          "url": "https://amzn.to/41QrGxJ",
-          "status": "warning",
-          "title": "Curly Girl: The Handbook by Lorraine Massey",
-          "type": "hairpro"
-        }
-      ]
+      "description": "Short-chain alcohols considered drying because they evaporate quickly and can strip natural oils from the hair and scalp"
     },
     "parabens": {
       "id": "parabens",
@@ -4036,39 +3996,7 @@ export const defaultDatabase: IngredientDatabase = {
       "inclusions": [
         "paraben"
       ],
-      "defaultIngredient": "unknown_paraben",
-      "references": [
-        {
-          "url": "https://thebeautybrains.com/2006/05/the-perils-of-parabens/",
-          "status": "ok",
-          "title": "The Beauty Brains: The Perils of Parabens",
-          "type": "science"
-        },
-        {
-          "url": "https://amzn.to/41QrGxJ",
-          "status": "warning",
-          "title": "Curly Girl: The Handbook by Lorraine Massey",
-          "type": "hairpro"
-        },
-        {
-          "url": "https://incidecoder.com/ingredients/parabens",
-          "status": "ok",
-          "title": "INCIDecoder: Parabens",
-          "type": "science"
-        },
-        {
-          "url": "https://labmuffin.com/should-you-be-avoiding-parabens-the-science/",
-          "status": "ok",
-          "title": "Lab Muffin: Should You Be Avoiding Parabens? The Science",
-          "type": "science"
-        },
-        {
-          "url": "http://www.tightlycurly.com/ingredients/",
-          "type": "author",
-          "title": "Tightly Curly",
-          "status": "ok"
-        }
-      ]
+      "defaultIngredient": "unknown_paraben"
     },
     "sulfates": {
       "id": "sulfates",
@@ -4085,58 +4013,13 @@ export const defaultDatabase: IngredientDatabase = {
         "magnesium",
         "thiosulfate"
       ],
-      "defaultIngredient": "unknown_sulfate",
-      "references": [
-        {
-          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4387693/",
-          "type": "science",
-          "title": "Hair Cosmetics: An Overview"
-        },
-        {
-          "url": "https://amzn.to/41QrGxJ",
-          "status": "warning",
-          "title": "Curly Girl: The Handbook by Lorraine Massey",
-          "type": "hairpro"
-        },
-        {
-          "url": "https://labmuffin.com/the-science-of-hair-products-shampoo-and-conditioner-with-video/",
-          "status": "ok",
-          "title": "Lab Muffin: The Science of Hair Products: Shampoo and Conditioner",
-          "type": "science"
-        },
-        {
-          "url": "https://thebeautybrains.com/2008/07/should-my-shower-stay-sulfate-free/",
-          "status": "ok",
-          "title": "The Beauty Brains: Should my shower stay sulfate-free?",
-          "type": "science"
-        },
-        {
-          "url": "http://www.tightlycurly.com/ingredients/",
-          "type": "author",
-          "title": "Tightly Curly",
-          "status": "caution",
-          "description": "depends on the sulfate."
-        },
-        {
-          "url": "https://science-yhairblog.blogspot.com/2011/08/shampoos-harsh-mild-and-otherwise.html",
-          "type": "science",
-          "title": "Science-y Hair Blog: Shampoos: Harsh, Mild, and Otherwise",
-          "status": "caution",
-          "description": "Discusses how concentration of detergent matters in terms of mildness."
-        },
-        {
-          "url": "https://onlinelibrary.wiley.com/doi/10.1002/macp.202200420",
-          "type": "science",
-          "title": "Shampoo Science: A Review of the Physiochemical Processes behind the Function of a Shampoo"
-        }
-      ]
+      "defaultIngredient": "unknown_sulfate"
     },
     "emollient_alcohols": {
       "id": "emollient_alcohols",
       "name": "Emollient alcohols",
       "group": "alcohols",
-      "description": "These are long-chain fatty alcohols that help to soften and moisturize hair",
-      "references": []
+      "description": "These are long-chain fatty alcohols that help to soften and moisturize hair"
     },
     "water_soluble_silicones": {
       "id": "water_soluble_silicones",
@@ -4151,172 +4034,91 @@ export const defaultDatabase: IngredientDatabase = {
       "exclusions": [
         "castor"
       ],
-      "defaultIngredient": "unknown_water_soluble_silicone",
-      "references": [
-        {
-          "title": "Silicone Polymers in Skin Care",
-          "url": "https://link.springer.com/article/10.1557/mrs2007.167",
-          "type": "science"
-        },
-        {
-          "url": "https://science-yhairblog.blogspot.com/2014/04/silicone-ingredient-solubility-list.html",
-          "status": "caution",
-          "title": "Science-y Hair Blog",
-          "description": "varies, discusses the different water solubilities of different silicones",
-          "type": "science"
-        }
-      ]
+      "defaultIngredient": "unknown_water_soluble_silicone"
     },
     "non_water_soluble_silicones": {
       "id": "non_water_soluble_silicones",
       "name": "Non-water-soluble Silicones",
       "group": "silicones",
-      "description": "Non-water-soluble silicones in hair care products are a type of silicone that cannot be easily washed out with gentle shampoos or cowash",
-      "references": [
-        {
-          "url": "https://labmuffin.com/silicone-mythbusting-with-video/",
-          "status": "good",
-          "title": "Lab Muffin",
-          "type": "science"
-        },
-        {
-          "url": "https://thebeautybrains.com/2007/01/are-silicones-bad-for-your-hair/",
-          "status": "ok",
-          "title": "The Beauty Brains",
-          "type": "science"
-        },
-        {
-          "url": "https://science-yhairblog.blogspot.com/2014/04/silicone-ingredient-solubility-list.html",
-          "status": "caution",
-          "title": "Science-y Hair Blog",
-          "description": "varies, discusses the different water solubilities of different silicones",
-          "type": "science"
-        },
-        {
-          "url": "https://amzn.to/41QrGxJ",
-          "status": "warning",
-          "title": "Curly Girl: The Handbook by Lorraine Massey",
-          "type": "hairpro",
-          "description": "recommends avoiding silicones"
-        },
-        {
-          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4387693/",
-          "type": "science",
-          "title": "Hair Cosmetics: An Overview"
-        },
-        {
-          "url": "https://link.springer.com/article/10.1134/S1560090423600201",
-          "type": "science",
-          "title": "Silicones in Cosmetics"
-        }
-      ]
+      "description": "Non-water-soluble silicones in hair care products are a type of silicone that cannot be easily washed out with gentle shampoos or cowash"
     },
     "other_oils": {
       "id": "other_oils",
       "name": "Other Oils",
       "group": "oils",
-      "description": "These are other oils that don't fit into the other categories",
-      "references": []
+      "description": "These are other oils that don't fit into the other categories"
     },
     "other_anionic_surfactants": {
       "id": "other_anionic_surfactants",
       "name": "Other Anionic Surfactants",
       "group": "surfactants",
-      "description": "Like sulfates, these are anionic surfactants, which means they have a negative charge and are good at removing oil and dirt from the hair",
-      "references": []
+      "description": "Like sulfates, these are anionic surfactants, which means they have a negative charge and are good at removing oil and dirt from the hair"
     },
     "astringents": {
       "id": "astringents",
       "name": "Astringents",
       "group": "others",
-      "description": "Astringents in hair care are substances that tighten pores and reduce oil production on the scalp",
-      "references": []
+      "description": "Astringents in hair care are substances that tighten pores and reduce oil production on the scalp"
     },
     "soaps": {
       "id": "soaps",
       "name": "Soaps",
       "group": "surfactants",
-      "description": "Soaps are cleansers made from fatty acids and alkali metals",
-      "references": [
-        {
-          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4171909/",
-          "type": "science",
-          "title": "Evaluation of pH of Bathing Soaps and Shampoos for Skin and Hair Care"
-        },
-        {
-          "url": "https://www.usgs.gov/faqs/why-does-it-take-so-long-rinse-soap-my-hands-what-are-hard-water-and-soft-water",
-          "type": "science",
-          "title": "USGS: Why does it take so long to rinse soap off my hands? What are hard water and soft water?"
-        },
-        {
-          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8954092/",
-          "type": "science",
-          "title": "Skin Cleansing without or with Compromise: Soaps and Syndets"
-        }
-      ]
+      "description": "Soaps are cleansers made from fatty acids and alkali metals"
     },
     "mild_surfactants": {
       "id": "mild_surfactants",
       "name": "Mild surfactants",
       "group": "surfactants",
-      "description": "These surfactants are typically amphoteric, cationic, or non-ionic and are considered to be gentler on the hair and scalp than anionic surfactants like sulfates",
-      "references": []
+      "description": "These surfactants are typically amphoteric, cationic, or non-ionic and are considered to be gentler on the hair and scalp than anionic surfactants like sulfates"
     },
     "heavy_oils": {
       "id": "heavy_oils",
       "name": "Heavy Oils and Butters",
       "group": "oils",
-      "description": "These oils and butters are can penetrate (soak into) the hair shaft",
-      "references": []
+      "description": "These oils and butters are can penetrate (soak into) the hair shaft"
     },
     "light_oils": {
       "id": "light_oils",
       "name": "Light Oils",
       "group": "oils",
-      "description": "Light oils have a low ability to penetrate (soak into) the hair shaft",
-      "references": []
+      "description": "Light oils have a low ability to penetrate (soak into) the hair shaft"
     },
     "medium_oils": {
       "id": "medium_oils",
       "name": "Medium Oils",
       "group": "oils",
-      "description": "Medium oils have a moderate ability to penetrate (soak into) the hair shaft",
-      "references": []
+      "description": "Medium oils have a moderate ability to penetrate (soak into) the hair shaft"
     },
     "non_water_soluble_waxes": {
       "id": "non_water_soluble_waxes",
       "name": "Non-water-soluble Waxes",
       "group": "waxes",
-      "description": "Non-water-soluble waxes are waxes that are not easily washed out from hair",
-      "references": []
+      "description": "Non-water-soluble waxes are waxes that are not easily washed out from hair"
     },
     "water_soluble_waxes": {
       "id": "water_soluble_waxes",
       "name": "Water-soluble Waxes",
       "group": "waxes",
-      "description": "Water-soluble waxes are waxes that are easily washed out from hair",
-      "references": []
+      "description": "Water-soluble waxes are waxes that are easily washed out from hair"
     },
     "evaporative_silicones": {
       "id": "evaporative_silicones",
       "name": "Evaporative Silicones",
       "group": "silicones",
-      "description": "Evaporative silicones are lightweight silicones that evaporate quickly, leaving no residue",
-      "references": []
+      "description": "Evaporative silicones are lightweight silicones that evaporate quickly, leaving no residue"
     },
     "other": {
       "id": "other",
       "name": "Other",
       "group": "others",
-      "description": "These are other ingredients that don't fit into the other categories",
-      "references": []
+      "description": "These are other ingredients that don't fit into the other categories"
     },
     "solvents": {
       "id": "solvents",
       "name": "Solvents",
       "group": "others",
-      "description": "Solvents are substances that dissolve other substances",
-      "references": []
+      "description": "Solvents are substances that dissolve other substances"
     },
     "polyquats": {
       "id": "polyquats",
@@ -4326,64 +4128,55 @@ export const defaultDatabase: IngredientDatabase = {
       "inclusions": [
         "polyquat"
       ],
-      "defaultIngredient": "unknown_polyquat",
-      "references": []
+      "defaultIngredient": "unknown_polyquat"
     },
     "petroleum_oils": {
       "id": "petroleum_oils",
       "name": "Petroleum Oils",
       "group": "oils",
-      "description": "These are petroleum based ingredients that are often avoided for their build up potential as well as their petro-based origin.",
-      "references": []
+      "description": "These are petroleum based ingredients that are often avoided for their build up potential as well as their petro-based origin."
     },
     "film_forming_humectants": {
       "id": "film_forming_humectants",
       "name": "Film Forming Humectants",
       "group": "humectants",
-      "description": "These are large, complex molecules that may be better at retaining moisture in low humidity conditions",
-      "references": []
+      "description": "These are large, complex molecules that may be better at retaining moisture in low humidity conditions"
     },
     "simple_humectants": {
       "id": "simple_humectants",
       "name": "Simple Humectants",
       "group": "humectants",
-      "description": "These lightweight humectants may perform poorly in low humidity conditions",
-      "references": []
+      "description": "These lightweight humectants may perform poorly in low humidity conditions"
     },
     "proteins": {
       "id": "proteins",
       "name": "Proteins",
       "group": "humectants",
-      "description": "Proteins in hair care products can help strengthen and repair hair, but some people find them drying",
-      "references": []
+      "description": "Proteins in hair care products can help strengthen and repair hair, but some people find them drying"
     },
     "other_preservatives": {
       "id": "other_preservatives",
       "name": "Other Preservatives",
       "group": "preservatives",
-      "description": "These are other preservatives that don't fit into the other categories",
-      "references": []
+      "description": "These are other preservatives that don't fit into the other categories"
     },
     "other_emollients": {
       "id": "other_emollients",
       "name": "Other Emollients",
       "group": "others",
-      "description": "These are other emollients that don't fit into the other categories",
-      "references": []
+      "description": "These are other emollients that don't fit into the other categories"
     },
     "conditioning_agents": {
       "id": "conditioning_agents",
       "name": "Conditioning Agents",
       "group": "others",
-      "description": "These are conditioning agents that don't fit into the other categories",
-      "references": []
+      "description": "These are conditioning agents that don't fit into the other categories"
     },
     "film_forming_agents": {
       "id": "film_forming_agents",
       "name": "Film Forming Agents",
       "group": "others",
-      "description": "These ingredients form a thin invisible layer on the hair to hold style, prevent moisture loss, and protect from damage.",
-      "references": []
+      "description": "These ingredients form a thin invisible layer on the hair to hold style, prevent moisture loss, and protect from damage."
     }
   },
   "groups": {
@@ -4394,24 +4187,7 @@ export const defaultDatabase: IngredientDatabase = {
         "alcohol"
       ],
       "defaultIngredient": "unknown_alcohol",
-      "description": "Alcohols in haircare products are used to help products dry quickly, preserve formulations, and enhance ingredient absorption into hair",
-      "references": [
-        {
-          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4387693/",
-          "type": "science",
-          "title": "Hair Cosmetics: An Overview"
-        },
-        {
-          "url": "https://thebeautybrains.com/2014/04/why-is-there-isopropyl-alcohol-in-my-conditioner/",
-          "type": "science",
-          "title": "The Beauty Brains: Why is there isopropyl alcohol in my conditioner?"
-        },
-        {
-          "url": "https://labmuffin.com/how-bad-is-alcohol-in-skincare-really/",
-          "type": "science",
-          "title": "Lab Muffin: How Bad is Alcohol in Skincare Really?"
-        }
-      ]
+      "description": "Alcohols in haircare products are used to help products dry quickly, preserve formulations, and enhance ingredient absorption into hair"
     },
     "preservatives": {
       "id": "preservatives",
@@ -4434,13 +4210,6 @@ export const defaultDatabase: IngredientDatabase = {
         "behentrimonium",
         "methosulfate",
         "thiosulfate"
-      ],
-      "references": [
-        {
-          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4387693/",
-          "type": "science",
-          "title": "Hair Cosmetics: An Overview"
-        }
       ]
     },
     "silicones": {
@@ -4466,50 +4235,7 @@ export const defaultDatabase: IngredientDatabase = {
         "polyquaternium"
       ],
       "defaultIngredient": "unknown_non_water_soluble_silicone",
-      "description": "Synthetic ingredients that create a protective barrier on the hair, reducing friction and adding shine",
-      "references": [
-        {
-          "url": "https://labmuffin.com/silicone-mythbusting-with-video/",
-          "status": "good",
-          "title": "Lab Muffin",
-          "type": "science"
-        },
-        {
-          "url": "https://thebeautybrains.com/2007/01/are-silicones-bad-for-your-hair/",
-          "status": "ok",
-          "title": "The Beauty Brains",
-          "type": "science"
-        },
-        {
-          "url": "https://science-yhairblog.blogspot.com/2014/04/silicone-ingredient-solubility-list.html",
-          "status": "caution",
-          "title": "Science-y Hair Blog",
-          "description": "varies, discusses the different water solubilities of different silicones",
-          "type": "science"
-        },
-        {
-          "url": "https://amzn.to/41QrGxJ",
-          "status": "warning",
-          "title": "Curly Girl: The Handbook by Lorraine Massey",
-          "type": "hairpro",
-          "description": "recommends avoiding silicones"
-        },
-        {
-          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4387693/",
-          "type": "science",
-          "title": "Hair Cosmetics: An Overview"
-        },
-        {
-          "url": "https://link.springer.com/article/10.1134/S1560090423600201",
-          "type": "science",
-          "title": "Silicones in Cosmetics"
-        },
-        {
-          "url": "https://labmuffin.com/amodimethicone-my-new-favourite-hair-ingredient/",
-          "type": "science",
-          "title": "Lab Muffin: Amodimethicone - My New Favourite Hair Ingredient"
-        }
-      ]
+      "description": "Synthetic ingredients that create a protective barrier on the hair, reducing friction and adding shine"
     },
     "others": {
       "id": "others",
@@ -4526,15 +4252,7 @@ export const defaultDatabase: IngredientDatabase = {
       "exclusions": [
         "emulsifying"
       ],
-      "description": "Waxes in styling products can add texture, hold, and shine to hair",
-      "references": [
-        {
-          "url": "https://www.researchgate.net/publication/383884298_The_Effectiveness_of_Aloe_Vera_in_Multiple_Moist_Spray_Products_as_a_Hair_Tonic_to_Reduce_Students_Scalp_Irritation",
-          "type": "science",
-          "title": "The Effectiveness of Aloe Vera in Multiple Moist Spray Products as a Hair Tonic to Reduce Students Scalp Irritation",
-          "description": "cites a study that hasn't be translated into into English that linked pomade to fungal growth"
-        }
-      ]
+      "description": "Waxes in styling products can add texture, hold, and shine to hair"
     },
     "oils": {
       "id": "oils",
@@ -4543,61 +4261,12 @@ export const defaultDatabase: IngredientDatabase = {
         "oil"
       ],
       "defaultIngredient": "unknown_oil",
-      "description": "Oils in hair products can moisturize and add shine to hair",
-      "references": [
-        {
-          "url": "https://science-yhairblog.blogspot.com/2013/06/oils-which-ones-soak-in-vs-coat-hair.html",
-          "type": "science",
-          "title": "Oils – Which Ones Soak In vs. Coat the Hair?"
-        },
-        {
-          "url": "https://link.springer.com/article/10.1186/s40691-023-00332-0",
-          "type": "science",
-          "title": "Determination of penetration and protection of fatty acids in bleached hair according to the fatty acid chain length and the application to understanding the protective effects of MCT oil and coconut oil"
-        },
-        {
-          "url": "https://www.mdpi.com/2079-9284/11/2/64",
-          "title": "Impact of Hair Damage on the Penetration Profile of Coconut, Avocado, and Argan Oils into Caucasian Hair Fibers",
-          "type": "science"
-        }
-      ]
+      "description": "Oils in hair products can moisturize and add shine to hair"
     },
     "humectants": {
       "id": "humectants",
       "name": "Humectants",
       "description": "Humectants are ingredients that attract moisture to the hair",
-      "references": [
-        {
-          "url": "https://science-yhairblog.blogspot.com/2015/02/glycerin-and-humidity.html",
-          "title": "Glycerin and Humidity",
-          "type": "science",
-          "description": "Humectants grab water out of air, but if air doesn't have enough water (dry weather), it can become brittle and create friction, which can mean frizz. Theoretically this could dehydrate hair. Oils can slow water loss. Notes that glycerin can be paired with emollients and film-formers to slow water loss. Caveats that none of this is well studied."
-        },
-        {
-          "url": "https://science-yhairblog.blogspot.com/2014/07/film-forming-humectants-what-they-are.html",
-          "title": "Film Forming Humectants - What They Are and Why You Need Them",
-          "type": "science",
-          "description": "Defines film forming humectants as complex molecules that lose water more slowly because they have more 'nooks and crannies' for the water to hang out in. Also notes that hydrolyzed proteins can be film forming humectants. Smaller proteins can get under the cuticle and 'moisturize' from the inside. Medium/large proteins can form films. Pairing with oils can also help slow water loss."
-        },
-        {
-          "title": "Handbook of Cosmetic Science and Technology",
-          "type": "science",
-          "url": "https://www.taylorfrancis.com/books/mono/10.1201/b16716/handbook-cosmetic-science-technology-andr%C3%A9-barel-marc-paye-howard-maibach",
-          "description": "Mentions Panthenol can increase hair's volume"
-        },
-        {
-          "url": "https://labmuffin.com/skincare-chemistry-which-ingredients-are-humectants/",
-          "title": "Skincare Chemistry: How to pick out humectants",
-          "type": "science",
-          "description": "Defines humectants as ingredient that grabs onto water slowing it from evaporating. Usually has OH and NH groups, as well as polarity, so can bond with water. Also needs to resist evaporation itself."
-        },
-        {
-          "url": "https://thebeautybrains.com/2014/01/whats-the-best-moisturizer/",
-          "title": "The Beauty Brains: What's the best moisturizer?",
-          "type": "science",
-          "description": "Defines humectants as ingredients that can hold large amounts of water and attract it from the atmosphere, but in dry conditions may pull water from your skin/hair"
-        }
-      ],
       "inclusions": []
     }
   }
