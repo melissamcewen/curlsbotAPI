@@ -250,14 +250,20 @@ function generateBundledData() {
         return acc;
       }
 
+      // Convert references to notes if they exist
+      const notes = cat.references
+        ? populateReferences(cat.references, referencesData)
+        : undefined;
+
       acc[cat.id] = {
         ...cat, // Keep all original fields
         // Ensure required fields have defaults if missing
         name: cat.name || cat.id,
         description: cat.description || '',
         group: cat.group || 'others',
+        ...(notes && { notes }),
       };
-      // Remove references field if it exists
+      // Remove old references field if it exists
       delete acc[cat.id].references;
       return acc;
     },
@@ -270,14 +276,20 @@ function generateBundledData() {
       return acc;
     }
 
+    // Convert references to notes if they exist
+    const notes = group.references
+      ? populateReferences(group.references, referencesData)
+      : undefined;
+
     acc[group.id] = {
       ...group, // Keep all original fields
       // Ensure required fields have defaults if missing
       name: group.name || group.id,
       inclusions: group.inclusions || [],
       defaultIngredient: group.defaultIngredient || undefined,
+      ...(notes && { notes }),
     };
-    // Remove references field if it exists
+    // Remove old references field if it exists
     delete acc[group.id].references;
     return acc;
   }, {});

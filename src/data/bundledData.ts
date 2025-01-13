@@ -2306,6 +2306,14 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "simple_humectants"
       ],
+      "references": [
+        {
+          "url": "https://amzn.to/4hd4Tko",
+          "title": "Humectants in Personal Care Formulation",
+          "type": "science",
+          "description": "It's very good at holding water (equilibrium hygroscopicity) and is virtually non-toxic"
+        }
+      ],
       "status": "ok",
       "group": "humectants"
     },
@@ -2432,15 +2440,6 @@ export const defaultDatabase: IngredientDatabase = {
       ],
       "status": "ok",
       "group": "preservatives"
-    },
-    "sorbitol": {
-      "name": "Sorbitol",
-      "id": "sorbitol",
-      "categories": [
-        "simple_humectants"
-      ],
-      "status": "ok",
-      "group": "humectants"
     },
     "propylene_glycol": {
       "name": "Propylene Glycol",
@@ -3136,6 +3135,31 @@ export const defaultDatabase: IngredientDatabase = {
       "synonyms": [
         "pyrrolidone carboxylic acid"
       ],
+      "references": [
+        {
+          "url": "https://amzn.to/4hd4Tko",
+          "title": "Humectants in Personal Care Formulation",
+          "type": "science",
+          "description": "Moisture capacity 1.5 times greater than glycerin. Ability to hold water over time(dynamic hygroscopicity) is similar to glycerin"
+        }
+      ],
+      "status": "ok",
+      "group": "humectants"
+    },
+    "sorbitol": {
+      "name": "Sorbitol",
+      "id": "sorbitol",
+      "categories": [
+        "simple_humectants"
+      ],
+      "references": [
+        {
+          "url": "https://amzn.to/4hd4Tko",
+          "title": "Humectants in Personal Care Formulation",
+          "type": "science",
+          "description": "One of the best of the traditional humectants at holding water over time (dynamic hygroscopicity) though it holds less water than humectants like glycerin (equilibrium hygroscopicity)"
+        }
+      ],
       "status": "ok",
       "group": "humectants"
     },
@@ -3349,6 +3373,29 @@ export const defaultDatabase: IngredientDatabase = {
       ],
       "synonyms": [
         "flax seed extract"
+      ],
+      "status": "ok",
+      "group": "humectants"
+    },
+    "hydrolyzed_collagen": {
+      "name": "Hydrolyzed Collagen",
+      "id": "hydrolyzed_collagen",
+      "categories": [
+        "proteins"
+      ],
+      "references": [
+        {
+          "url": "https://amzn.to/4hd4Tko",
+          "title": "Proteins for Conditioning Hair and Skin",
+          "type": "science",
+          "description": "Hydrolyzed collagen with a molecular weight of 5000 to 15,000 Da is an excellent film-former that moisturizes the hair by coating the cuticle without deep absorption (film-former). Adds body, resiliency, shine, and manageability while reducing static."
+        },
+        {
+          "url": "https://amzn.to/4hd4Tko",
+          "title": "Proteins for Conditioning Hair and Skin",
+          "type": "science",
+          "description": "Hydrolyzed collagen with a molecular weight of 2000 Da demonstrates substantivity to hair, meaning it adheres well to the hair's surface and penetrates its structure. Adheres best on damaged hair. Enhances tensile strength (resistance to breaking) and elasticity"
+        }
       ],
       "status": "ok",
       "group": "humectants"
@@ -4152,7 +4199,27 @@ export const defaultDatabase: IngredientDatabase = {
       "id": "proteins",
       "name": "Proteins",
       "group": "humectants",
-      "description": "Proteins in hair care products can help strengthen and repair hair, but some people find them drying"
+      "description": "Proteins in hair care products can help strengthen and repair hair, but some people find them drying",
+      "notes": [
+        {
+          "url": "https://amzn.to/4hd4Tko",
+          "title": "Humectants in Personal Care Formulation",
+          "type": "science",
+          "description": "Found protein was less effective than traditional humectants (glycerin etc.) and performed especially badly in 79% relative humidity or below"
+        },
+        {
+          "url": "https://amzn.to/4hd4Tko",
+          "title": "Biology of the Hair and Skin",
+          "type": "science",
+          "description": "Hydrolyzed proteins (1000 to 10000 molecular weight) can diffuse into cortex through cuticle to strengthen hair, but washes out on cleansing."
+        },
+        {
+          "url": "https://amzn.to/4hd4Tko",
+          "title": "Proteins for Conditioning Hair and Skin",
+          "type": "science",
+          "description": "Hydrolyzed proteins bound increases with hair damage. Help with cuticle damage and reducing brittleness"
+        }
+      ]
     },
     "other_preservatives": {
       "id": "other_preservatives",
@@ -4267,7 +4334,21 @@ export const defaultDatabase: IngredientDatabase = {
       "id": "humectants",
       "name": "Humectants",
       "description": "Humectants are ingredients that attract moisture to the hair",
-      "inclusions": []
+      "inclusions": [],
+      "notes": [
+        {
+          "url": "https://amzn.to/4hd4Tko",
+          "title": "Humectants in Personal Care Formulation",
+          "type": "science",
+          "description": "No known humectant performed well in study at 20% relative humidity and below"
+        },
+        {
+          "url": "https://amzn.to/4hd4Tko",
+          "title": "Humectants in Personal Care Formulation",
+          "type": "science",
+          "description": "Humectants in shampoo likely do not remain in hair, but in leave ins they can form a film until washed, that can restore moisture to severely damaged hair"
+        }
+      ]
     }
   }
 };

@@ -223,7 +223,6 @@
       "id": "33",
       "url": "https://incidecoder.com/ingredients/benzyl-alcohol",
       "title": "INCIDecor"
-
     },
     "34": {
       "id": "34",
@@ -352,9 +351,7 @@
       "id": "55",
       "url": "https://www.curlynikki.com/magnesium-sulfate-curly-friend-or-foe.html",
       "title": "Curly Nikki: Magnesium Sulfate- Curly Friend or Foe?",
-
       "type": "author"
-
     },
     "56": {
       "id": "56",
@@ -399,6 +396,33 @@
       "source": "Science-y Hair Blog",
       "type": "science",
       "date": "2012"
+    },
+    "63": {
+      "id": "63",
+      "url": "https://amzn.to/4hd4Tko",
+      "source": "Conditioning Agents for Hair and Skin",
+      "date": "1999",
+      "author": "Gesslein, B.W.",
+      "type": "science",
+      "title": "Humectants in Personal Care Formulation"
+    },
+    "64": {
+      "id": "64",
+      "url": "https://amzn.to/4hd4Tko",
+      "source": "Conditioning Agents for Hair and Skin",
+      "date": "1999",
+      "author": "Neudahl, G.",
+      "type": "science",
+      "title": "Proteins for Conditioning Hair and Skin"
+    },
+    "65": {
+      "id": "65",
+      "url": "https://amzn.to/4hd4Tko",
+      "source": "Conditioning Agents for Hair and Skin",
+      "date": "1999",
+      "author": "Draelos, Z.D.",
+      "type": "science",
+      "title": "Biology of the Hair and Skin"
     }
   }
 }

@@ -79,7 +79,7 @@ export interface Category {
   /** default ingredient for the category */
   defaultIngredient?: string;
   /** Optional source references for the category */
-  references?: Reference[];
+  notes?: Reference[];
 }
 
 /**
@@ -99,7 +99,7 @@ export interface Group {
   /** default ingredient for the group */
   defaultIngredient?: string;
   /** Optional source references for the category */
-  references?: Reference[];
+  notes?: Reference[];
 }
 
 /**

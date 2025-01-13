@@ -3,22 +3,34 @@
     {
       "id": "alcohols",
       "name": "Alcohols",
-      "inclusions": ["alcohol"],
+      "inclusions": [
+        "alcohol"
+      ],
       "defaultIngredient": "unknown_alcohol",
       "description": "Alcohols in haircare products are used to help products dry quickly, preserve formulations, and enhance ingredient absorption into hair"
     },
     {
       "id": "preservatives",
       "name": "Preservatives",
-      "inclusions": ["paraben"],
+      "inclusions": [
+        "paraben"
+      ],
       "description": "Preservatives in hair products can help prevent the growth of bacteria and mold"
     },
     {
       "id": "surfactants",
       "name": "Surfactants",
       "description": "surfactants in hair products can help remove dirt and oil from the hair and scalp",
-      "inclusions": ["sulfate", "sulphate"],
-      "exclusions": ["magnesium", "behentrimonium", "methosulfate", "thiosulfate"]
+      "inclusions": [
+        "sulfate",
+        "sulphate"
+      ],
+      "exclusions": [
+        "magnesium",
+        "behentrimonium",
+        "methosulfate",
+        "thiosulfate"
+      ]
     },
     {
       "id": "silicones",
@@ -52,22 +64,38 @@
     {
       "id": "waxes",
       "name": "Waxes",
-      "inclusions": ["wax"],
+      "inclusions": [
+        "wax"
+      ],
       "defaultIngredient": "unknown_wax",
-      "exclusions": ["emulsifying"],
+      "exclusions": [
+        "emulsifying"
+      ],
       "description": "Waxes in styling products can add texture, hold, and shine to hair"
     },
     {
       "id": "oils",
       "name": "Oils",
-      "inclusions": ["oil"],
+      "inclusions": [
+        "oil"
+      ],
       "defaultIngredient": "unknown_oil",
       "description": "Oils in hair products can moisturize and add shine to hair"
     },
     {
       "id": "humectants",
       "name": "Humectants",
-      "description": "Humectants are ingredients that attract moisture to the hair"
+      "description": "Humectants are ingredients that attract moisture to the hair",
+      "references": [
+        {
+          "id": "63",
+          "notes": "No known humectant performed well in study at 20% relative humidity and below"
+        },
+        {
+          "id": "63",
+          "notes": "Humectants in shampoo likely do not remain in hair, but in leave ins they can form a film until washed, that can restore moisture to severely damaged hair"
+        }
+      ]
     }
   ]
 }

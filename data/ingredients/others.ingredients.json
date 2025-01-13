@@ -348,6 +348,12 @@
       "description": "A powerful humectant that attracts moisture to the hair",
       "categories": [
         "simple_humectants"
+      ],
+      "references": [
+        {
+          "id": "63",
+          "notes": "It's very good at holding water (equilibrium hygroscopicity) and is virtually non-toxic"
+        }
       ]
     },
     {
@@ -445,14 +451,6 @@
       "description": "A preservative that inhibits the growth of mold and yeast",
       "categories": [
         "other_preservatives"
-      ]
-    },
-    {
-      "name": "Sorbitol",
-      "id": "sorbitol",
-      "description": "A humectant that retains moisture and adds hydration",
-      "categories": [
-        "film_forming_humectants"
       ]
     },
     {
@@ -1020,6 +1018,12 @@
       ],
       "synonyms": [
         "pyrrolidone carboxylic acid"
+      ],
+      "references": [
+        {
+          "id": "63",
+          "notes": "Moisture capacity 1.5 times greater than glycerin. Ability to hold water over time(dynamic hygroscopicity) is similar to glycerin"
+        }
       ]
     },
     {
@@ -1027,6 +1031,12 @@
       "id": "sorbitol",
       "categories": [
         "simple_humectants"
+      ],
+      "references": [
+        {
+          "id": "63",
+          "notes": "One of the best of the traditional humectants at holding water over time (dynamic hygroscopicity) though it holds less water than humectants like glycerin (equilibrium hygroscopicity)"
+        }
       ]
     },
     {
@@ -1195,6 +1205,23 @@
       ],
       "synonyms": [
         "flax seed extract"
+      ]
+    },
+    {
+      "name": "Hydrolyzed Collagen",
+      "id": "hydrolyzed_collagen",
+      "categories": [
+        "proteins"
+      ],
+      "references": [
+        {
+          "id": "64",
+          "notes": "Hydrolyzed collagen with a molecular weight of 5000 to 15,000 Da is an excellent film-former that moisturizes the hair by coating the cuticle without deep absorption (film-former). Adds body, resiliency, shine, and manageability while reducing static."
+        },
+        {
+          "id": "64",
+          "notes": "Hydrolyzed collagen with a molecular weight of 2000 Da demonstrates substantivity to hair, meaning it adheres well to the hair's surface and penetrates its structure. Adheres best on damaged hair. Enhances tensile strength (resistance to breaking) and elasticity"
+        }
       ]
     }
   ]

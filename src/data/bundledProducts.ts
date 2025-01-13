@@ -136,10 +136,11 @@ export const defaultProductDatabase: ProductDatabase = {
       "systems_excluded": [],
       "status": "ok",
       "frizzbot": {
-        "simple_humectants_number": 3,
-        "film_forming_humectants_number": 4,
+        "simple_humectants_number": 4,
+        "film_forming_humectants_number": 3,
         "emollients_number": 2,
         "simple_humectants": [
+          "Panthenol",
           "Sodium PCA",
           "Butylene glycol",
           "Caprylyl Glycol"
@@ -147,14 +148,13 @@ export const defaultProductDatabase: ProductDatabase = {
         "film_forming_humectants": [
           "Keratin",
           "Keratin",
-          "Silk Amino Acids",
-          "Panthenol"
+          "Silk Amino Acids"
         ],
         "emollients": [
           "Avocado Oil",
           "Castor Oil"
         ],
-        "score": -78
+        "score": -66
       },
       "cost_rating": "5"
     },
@@ -212,19 +212,18 @@ export const defaultProductDatabase: ProductDatabase = {
       "systems_excluded": [],
       "status": "warning",
       "frizzbot": {
-        "simple_humectants_number": 1,
-        "film_forming_humectants_number": 1,
+        "simple_humectants_number": 2,
+        "film_forming_humectants_number": 0,
         "emollients_number": 1,
         "simple_humectants": [
-          "Butylene glycol"
-        ],
-        "film_forming_humectants": [
+          "Butylene glycol",
           "Panthenol"
         ],
+        "film_forming_humectants": [],
         "emollients": [
           "Cetrimonium Chloride"
         ],
-        "score": -52
+        "score": 20
       },
       "cost_rating": "5"
     },
@@ -248,23 +247,23 @@ export const defaultProductDatabase: ProductDatabase = {
       "systems_excluded": [],
       "status": "ok",
       "frizzbot": {
-        "simple_humectants_number": 3,
-        "film_forming_humectants_number": 2,
+        "simple_humectants_number": 4,
+        "film_forming_humectants_number": 1,
         "emollients_number": 2,
         "simple_humectants": [
           "Propanediol",
+          "Panthenol",
           "Lactic Acid",
           "Caprylyl Glycol"
         ],
         "film_forming_humectants": [
-          "Panthenol",
           "Unknown Protein"
         ],
         "emollients": [
           "Argan Oil",
           "Coconut Oil"
         ],
-        "score": -61
+        "score": -12
       },
       "cost_rating": "5"
     },
@@ -289,15 +288,14 @@ export const defaultProductDatabase: ProductDatabase = {
       "systems_excluded": [],
       "status": "ok",
       "frizzbot": {
-        "simple_humectants_number": 1,
-        "film_forming_humectants_number": 1,
+        "simple_humectants_number": 2,
+        "film_forming_humectants_number": 0,
         "emollients_number": 6,
         "simple_humectants": [
-          "Glycerin"
-        ],
-        "film_forming_humectants": [
+          "Glycerin",
           "Panthenol"
         ],
+        "film_forming_humectants": [],
         "emollients": [
           "Cetearyl Alcohol",
           "Rice bran oil",
@@ -306,7 +304,7 @@ export const defaultProductDatabase: ProductDatabase = {
           "Stearyl Alcohol",
           "Benzyl Alcohol"
         ],
-        "score": -65
+        "score": -54
       },
       "cost_rating": "5"
     },
@@ -407,24 +405,24 @@ export const defaultProductDatabase: ProductDatabase = {
       "systems_excluded": [],
       "status": "ok",
       "frizzbot": {
-        "simple_humectants_number": 2,
-        "film_forming_humectants_number": 10,
+        "simple_humectants_number": 5,
+        "film_forming_humectants_number": 7,
         "emollients_number": 7,
         "simple_humectants": [
           "Glycerin",
-          "Sorbitol"
+          "Glycereth-26",
+          "Sorbitol",
+          "Panthenol",
+          "Ethylhexylglycerin"
         ],
         "film_forming_humectants": [
           "Aloe Barbadensis Leaf Extract",
-          "Glycereth-26",
           "Seaweed Extract",
           "Seaweed Extract",
           "Seaweed Extract",
           "Hydroxypropyltrimonium Honey",
           "Silk Amino Acids",
-          "Panthenol",
-          "Hydroxyethylcellulose",
-          "Ethylhexylglycerin"
+          "Hydroxyethylcellulose"
         ],
         "emollients": [
           "Cetyl Alcohol",
@@ -435,7 +433,7 @@ export const defaultProductDatabase: ProductDatabase = {
           "Butyrospermum Parkii Shea Butter",
           "Jojoba Oil"
         ],
-        "score": -78
+        "score": -68
       },
       "cost_rating": "4"
     },
@@ -457,24 +455,24 @@ export const defaultProductDatabase: ProductDatabase = {
       "systems_excluded": [],
       "status": "ok",
       "frizzbot": {
-        "simple_humectants_number": 2,
-        "film_forming_humectants_number": 10,
+        "simple_humectants_number": 5,
+        "film_forming_humectants_number": 7,
         "emollients_number": 7,
         "simple_humectants": [
           "Glycerin",
-          "Sorbitol"
+          "Glycereth-26",
+          "Sorbitol",
+          "Panthenol",
+          "Ethylhexylglycerin"
         ],
         "film_forming_humectants": [
           "Aloe Barbadensis Leaf Extract",
-          "Glycereth-26",
           "Hydroxypropyltrimonium Honey",
           "Seaweed Extract",
           "Seaweed Extract",
           "Seaweed Extract",
           "Silk Amino Acids",
-          "Panthenol",
-          "Hydroxyethylcellulose",
-          "Ethylhexylglycerin"
+          "Hydroxyethylcellulose"
         ],
         "emollients": [
           "Cetyl Alcohol",
@@ -485,7 +483,7 @@ export const defaultProductDatabase: ProductDatabase = {
           "Butyrospermum Parkii Shea Butter",
           "Jojoba Oil"
         ],
-        "score": -84
+        "score": -76
       },
       "cost_rating": "4"
     },
@@ -638,21 +636,21 @@ export const defaultProductDatabase: ProductDatabase = {
       "systems_excluded": [],
       "status": "ok",
       "frizzbot": {
-        "simple_humectants_number": 3,
-        "film_forming_humectants_number": 12,
+        "simple_humectants_number": 5,
+        "film_forming_humectants_number": 10,
         "emollients_number": 7,
         "simple_humectants": [
           "Glycerin",
           "Propanediol",
-          "Sodium PCA"
+          "Sodium PCA",
+          "Sodium Lactate",
+          "PCA"
         ],
         "film_forming_humectants": [
           "Aloe Barbadensis Leaf Extract",
           "Unknown Protein",
-          "Sodium Lactate",
           "Arginine",
           "Aspartic Acid",
-          "PCA",
           "Glycine",
           "Alanine",
           "Serine",
@@ -669,7 +667,7 @@ export const defaultProductDatabase: ProductDatabase = {
           "Jojoba Oil",
           "Guar Hydroxypropyltrimonium Chloride"
         ],
-        "score": -81
+        "score": -77
       },
       "cost_rating": "5"
     },
@@ -734,15 +732,15 @@ export const defaultProductDatabase: ProductDatabase = {
       "systems_excluded": [],
       "status": "caution",
       "frizzbot": {
-        "simple_humectants_number": 1,
-        "film_forming_humectants_number": 2,
+        "simple_humectants_number": 2,
+        "film_forming_humectants_number": 1,
         "emollients_number": 7,
         "simple_humectants": [
-          "Glycerin"
+          "Glycerin",
+          "Panthenol"
         ],
         "film_forming_humectants": [
-          "Aloe Barbadensis Leaf Extract",
-          "Panthenol"
+          "Aloe Barbadensis Leaf Extract"
         ],
         "emollients": [
           "Cetearyl Alcohol",
@@ -753,7 +751,7 @@ export const defaultProductDatabase: ProductDatabase = {
           "Sunflower Oil",
           "Guar Hydroxypropyltrimonium Chloride"
         ],
-        "score": -78
+        "score": -74
       },
       "cost_rating": "3"
     },
@@ -774,15 +772,15 @@ export const defaultProductDatabase: ProductDatabase = {
       "systems_excluded": [],
       "status": "ok",
       "frizzbot": {
-        "simple_humectants_number": 1,
-        "film_forming_humectants_number": 3,
+        "simple_humectants_number": 3,
+        "film_forming_humectants_number": 1,
         "emollients_number": 7,
         "simple_humectants": [
-          "Glycerin"
+          "Glycerin",
+          "Panthenol",
+          "Ethylhexylglycerin"
         ],
         "film_forming_humectants": [
-          "Panthenol",
-          "Ethylhexylglycerin",
           "Aloe Barbadensis Leaf Extract"
         ],
         "emollients": [
@@ -794,7 +792,7 @@ export const defaultProductDatabase: ProductDatabase = {
           "Behentrimonium Methosulfate",
           "Safflower Oil"
         ],
-        "score": -76
+        "score": -56
       },
       "cost_rating": "1"
     },
@@ -815,12 +813,13 @@ export const defaultProductDatabase: ProductDatabase = {
       "systems_excluded": [],
       "status": "warning",
       "frizzbot": {
-        "simple_humectants_number": 5,
-        "film_forming_humectants_number": 5,
+        "simple_humectants_number": 6,
+        "film_forming_humectants_number": 4,
         "emollients_number": 15,
         "simple_humectants": [
           "Glycerin",
           "Propanediol",
+          "Panthenol",
           "Butylene glycol",
           "Caprylyl Glycol",
           "Hexylene Glycol"
@@ -829,8 +828,7 @@ export const defaultProductDatabase: ProductDatabase = {
           "Unknown Protein",
           "Aloe Barbadensis Leaf Extract",
           "Peptide",
-          "Hydroxyethylcellulose",
-          "Panthenol"
+          "Hydroxyethylcellulose"
         ],
         "emollients": [
           "Cetearyl Alcohol",
@@ -849,7 +847,7 @@ export const defaultProductDatabase: ProductDatabase = {
           "Guar Hydroxypropyltrimonium Chloride",
           "Diheptyl Succinate"
         ],
-        "score": -66
+        "score": -64
       }
     },
     "coconut_cowash_cleansing_conditioner": {
@@ -908,24 +906,24 @@ export const defaultProductDatabase: ProductDatabase = {
       "systems_excluded": [],
       "status": "ok",
       "frizzbot": {
-        "simple_humectants_number": 2,
-        "film_forming_humectants_number": 10,
+        "simple_humectants_number": 5,
+        "film_forming_humectants_number": 7,
         "emollients_number": 7,
         "simple_humectants": [
           "Glycerin",
-          "Sorbitol"
+          "Glycereth-26",
+          "Sorbitol",
+          "Panthenol",
+          "Ethylhexylglycerin"
         ],
         "film_forming_humectants": [
           "Aloe Barbadensis Leaf Extract",
-          "Glycereth-26",
           "Seaweed Extract",
           "Seaweed Extract",
           "Seaweed Extract",
           "Hydroxypropyltrimonium Honey",
           "Silk Amino Acids",
-          "Panthenol",
-          "Hydroxyethylcellulose",
-          "Ethylhexylglycerin"
+          "Hydroxyethylcellulose"
         ],
         "emollients": [
           "Cetyl Alcohol",
@@ -936,7 +934,7 @@ export const defaultProductDatabase: ProductDatabase = {
           "Butyrospermum Parkii Shea Butter",
           "Jojoba Oil"
         ],
-        "score": -78
+        "score": -68
       },
       "cost_rating": "4"
     },
@@ -957,15 +955,15 @@ export const defaultProductDatabase: ProductDatabase = {
       "systems_excluded": [],
       "status": "ok",
       "frizzbot": {
-        "simple_humectants_number": 1,
-        "film_forming_humectants_number": 2,
+        "simple_humectants_number": 2,
+        "film_forming_humectants_number": 1,
         "emollients_number": 7,
         "simple_humectants": [
-          "Glycerin"
+          "Glycerin",
+          "Panthenol"
         ],
         "film_forming_humectants": [
-          "Aloe Barbadensis Leaf Extract",
-          "Panthenol"
+          "Aloe Barbadensis Leaf Extract"
         ],
         "emollients": [
           "Cetearyl Alcohol",
@@ -976,7 +974,7 @@ export const defaultProductDatabase: ProductDatabase = {
           "Coconut Oil",
           "Guar Hydroxypropyltrimonium Chloride"
         ],
-        "score": -78
+        "score": -73
       }
     },
     "lemon_buttercream_styling_cream": {
@@ -999,22 +997,22 @@ export const defaultProductDatabase: ProductDatabase = {
       "systems_excluded": [],
       "status": "ok",
       "frizzbot": {
-        "simple_humectants_number": 2,
-        "film_forming_humectants_number": 3,
+        "simple_humectants_number": 3,
+        "film_forming_humectants_number": 2,
         "emollients_number": 1,
         "simple_humectants": [
           "Sodium PCA",
+          "Panthenol",
           "Glycerin"
         ],
         "film_forming_humectants": [
           "Marshmallow root Extract",
-          "Flaxseed Extract",
-          "Panthenol"
+          "Flaxseed Extract"
         ],
         "emollients": [
           "Cetearyl Alcohol"
         ],
-        "score": -86
+        "score": -82
       }
     },
     "i_create_volume": {
@@ -1075,19 +1073,19 @@ export const defaultProductDatabase: ProductDatabase = {
       "systems_excluded": [],
       "status": "ok",
       "frizzbot": {
-        "simple_humectants_number": 2,
-        "film_forming_humectants_number": 5,
+        "simple_humectants_number": 4,
+        "film_forming_humectants_number": 3,
         "emollients_number": 9,
         "simple_humectants": [
           "Propanediol",
-          "Glycerin"
+          "Glycerin",
+          "Glycereth-26",
+          "Sodium Lactate"
         ],
         "film_forming_humectants": [
           "Aloe Barbadensis Leaf Extract",
-          "Glycereth-26",
           "Pectin",
-          "Hydroxypropyltrimonium Honey",
-          "Sodium Lactate"
+          "Hydroxypropyltrimonium Honey"
         ],
         "emollients": [
           "Cetearyl Alcohol",
@@ -1100,7 +1098,7 @@ export const defaultProductDatabase: ProductDatabase = {
           "Polyacrylate Crosspolymer-6",
           "Benzyl Alcohol"
         ],
-        "score": -75
+        "score": -65
       }
     },
     "cruise_control_curl_cream_au": {
@@ -1165,17 +1163,16 @@ export const defaultProductDatabase: ProductDatabase = {
       "systems_excluded": [],
       "status": "ok",
       "frizzbot": {
-        "simple_humectants_number": 1,
-        "film_forming_humectants_number": 3,
+        "simple_humectants_number": 4,
+        "film_forming_humectants_number": 0,
         "emollients_number": 6,
         "simple_humectants": [
-          "Glycerin"
-        ],
-        "film_forming_humectants": [
           "Sodium hyaluronate",
           "Panthenol",
-          "Ethylhexylglycerin"
+          "Ethylhexylglycerin",
+          "Glycerin"
         ],
+        "film_forming_humectants": [],
         "emollients": [
           "Castor Oil",
           "Cetearyl Alcohol",
@@ -1184,7 +1181,7 @@ export const defaultProductDatabase: ProductDatabase = {
           "Butyrospermum Parkii Shea Butter",
           "Guar Hydroxypropyltrimonium Chloride"
         ],
-        "score": -81
+        "score": -57
       },
       "cost_rating": "5"
     },
@@ -1208,14 +1205,15 @@ export const defaultProductDatabase: ProductDatabase = {
       "systems_excluded": [],
       "status": "ok",
       "frizzbot": {
-        "simple_humectants_number": 0,
-        "film_forming_humectants_number": 3,
+        "simple_humectants_number": 2,
+        "film_forming_humectants_number": 1,
         "emollients_number": 5,
-        "simple_humectants": [],
-        "film_forming_humectants": [
-          "Hydroxyethylcellulose",
+        "simple_humectants": [
           "Sodium hyaluronate",
           "Ethylhexylglycerin"
+        ],
+        "film_forming_humectants": [
+          "Hydroxyethylcellulose"
         ],
         "emollients": [
           "Cetearyl Alcohol",
@@ -1224,7 +1222,7 @@ export const defaultProductDatabase: ProductDatabase = {
           "Coconut Oil",
           "Sunflower Oil"
         ],
-        "score": -84
+        "score": -72
       },
       "cost_rating": "5"
     },
@@ -1249,12 +1247,13 @@ export const defaultProductDatabase: ProductDatabase = {
       "systems_excluded": [],
       "status": "ok",
       "frizzbot": {
-        "simple_humectants_number": 2,
-        "film_forming_humectants_number": 8,
+        "simple_humectants_number": 3,
+        "film_forming_humectants_number": 7,
         "emollients_number": 0,
         "simple_humectants": [
           "Glycerin",
-          "Sorbitol"
+          "Sorbitol",
+          "Ethylhexylglycerin"
         ],
         "film_forming_humectants": [
           "Aloe Barbadensis Leaf Extract",
@@ -1263,11 +1262,10 @@ export const defaultProductDatabase: ProductDatabase = {
           "Silk Amino Acids",
           "Seaweed Extract",
           "Seaweed Extract",
-          "Seaweed Extract",
-          "Ethylhexylglycerin"
+          "Seaweed Extract"
         ],
         "emollients": [],
-        "score": -85
+        "score": -82
       },
       "cost_rating": "4"
     },
@@ -1370,14 +1368,15 @@ export const defaultProductDatabase: ProductDatabase = {
       "systems_excluded": [],
       "status": "ok",
       "frizzbot": {
-        "simple_humectants_number": 0,
-        "film_forming_humectants_number": 3,
+        "simple_humectants_number": 1,
+        "film_forming_humectants_number": 2,
         "emollients_number": 4,
-        "simple_humectants": [],
+        "simple_humectants": [
+          "Lecithin"
+        ],
         "film_forming_humectants": [
           "Aloe Barbadensis Leaf Extract",
-          "Marshmallow root Extract",
-          "Lecithin"
+          "Marshmallow root Extract"
         ],
         "emollients": [
           "Cetearyl Alcohol",
@@ -1385,7 +1384,7 @@ export const defaultProductDatabase: ProductDatabase = {
           "Avocado Oil",
           "Behentrimonium Methosulfate"
         ],
-        "score": -83
+        "score": -80
       },
       "cost_rating": "2"
     },
@@ -1410,15 +1409,16 @@ export const defaultProductDatabase: ProductDatabase = {
       "systems_excluded": [],
       "status": "ok",
       "frizzbot": {
-        "simple_humectants_number": 0,
-        "film_forming_humectants_number": 4,
+        "simple_humectants_number": 2,
+        "film_forming_humectants_number": 2,
         "emollients_number": 8,
-        "simple_humectants": [],
-        "film_forming_humectants": [
-          "Aloe Barbadensis Leaf Extract",
-          "Hydroxyethylcellulose",
+        "simple_humectants": [
           "Panthenol",
           "Ethylhexylglycerin"
+        ],
+        "film_forming_humectants": [
+          "Aloe Barbadensis Leaf Extract",
+          "Hydroxyethylcellulose"
         ],
         "emollients": [
           "Butyrospermum Parkii Shea Butter",
@@ -1430,7 +1430,7 @@ export const defaultProductDatabase: ProductDatabase = {
           "Jojoba Oil",
           "Ceteareth-20"
         ],
-        "score": -83
+        "score": -76
       },
       "cost_rating": "5"
     },
@@ -1454,17 +1454,17 @@ export const defaultProductDatabase: ProductDatabase = {
       "systems_excluded": [],
       "status": "ok",
       "frizzbot": {
-        "simple_humectants_number": 2,
-        "film_forming_humectants_number": 3,
+        "simple_humectants_number": 4,
+        "film_forming_humectants_number": 1,
         "emollients_number": 7,
         "simple_humectants": [
           "Propanediol",
+          "Panthenol",
+          "Ethylhexylglycerin",
           "Glycerin"
         ],
         "film_forming_humectants": [
-          "Aloe Barbadensis Leaf Extract",
-          "Panthenol",
-          "Ethylhexylglycerin"
+          "Aloe Barbadensis Leaf Extract"
         ],
         "emollients": [
           "Cetearyl Alcohol",
@@ -1475,7 +1475,7 @@ export const defaultProductDatabase: ProductDatabase = {
           "Avocado Oil",
           "Butyrospermum Parkii Shea Butter"
         ],
-        "score": -70
+        "score": -60
       }
     },
     "lemon_drop_styling_foam": {
@@ -1611,23 +1611,23 @@ export const defaultProductDatabase: ProductDatabase = {
       "systems_excluded": [],
       "status": "ok",
       "frizzbot": {
-        "simple_humectants_number": 1,
-        "film_forming_humectants_number": 3,
+        "simple_humectants_number": 3,
+        "film_forming_humectants_number": 1,
         "emollients_number": 3,
         "simple_humectants": [
-          "Glycerin"
-        ],
-        "film_forming_humectants": [
-          "Unknown Protein",
+          "Glycerin",
           "Panthenol",
           "Ethylhexylglycerin"
+        ],
+        "film_forming_humectants": [
+          "Unknown Protein"
         ],
         "emollients": [
           "VP VA copolymer",
           "Castor Oil",
           "Benzyl Alcohol"
         ],
-        "score": -85
+        "score": -70
       },
       "cost_rating": "5"
     },
@@ -1763,21 +1763,21 @@ export const defaultProductDatabase: ProductDatabase = {
       "systems_excluded": [],
       "status": "ok",
       "frizzbot": {
-        "simple_humectants_number": 4,
-        "film_forming_humectants_number": 5,
+        "simple_humectants_number": 6,
+        "film_forming_humectants_number": 3,
         "emollients_number": 5,
         "simple_humectants": [
           "Butylene glycol",
+          "Panthenol",
           "Glycerin",
           "Hexylene Glycol",
-          "Caprylyl Glycol"
+          "Caprylyl Glycol",
+          "Ethylhexylglycerin"
         ],
         "film_forming_humectants": [
           "Silk",
           "Unknown Protein",
-          "Panthenol",
-          "Hydroxyethylcellulose",
-          "Ethylhexylglycerin"
+          "Hydroxyethylcellulose"
         ],
         "emollients": [
           "Guar Hydroxypropyltrimonium Chloride",
@@ -1786,7 +1786,7 @@ export const defaultProductDatabase: ProductDatabase = {
           "Castor Oil",
           "Acrylates Copolymer"
         ],
-        "score": -67
+        "score": -51
       },
       "cost_rating": "5"
     },
@@ -1808,17 +1808,17 @@ export const defaultProductDatabase: ProductDatabase = {
       "systems_excluded": [],
       "status": "ok",
       "frizzbot": {
-        "simple_humectants_number": 2,
-        "film_forming_humectants_number": 5,
+        "simple_humectants_number": 3,
+        "film_forming_humectants_number": 4,
         "emollients_number": 6,
         "simple_humectants": [
+          "Panthenol",
           "Glycerin",
           "Caprylyl Glycol"
         ],
         "film_forming_humectants": [
           "Unknown Protein",
           "Aloe Barbadensis Leaf Extract",
-          "Panthenol",
           "Silk",
           "Hydroxyethylcellulose"
         ],
@@ -1830,7 +1830,7 @@ export const defaultProductDatabase: ProductDatabase = {
           "Cetrimonium Chloride",
           "Guar Hydroxypropyltrimonium Chloride"
         ],
-        "score": -86
+        "score": -79
       },
       "cost_rating": "5"
     },
@@ -1893,25 +1893,25 @@ export const defaultProductDatabase: ProductDatabase = {
       "systems_excluded": [],
       "status": "ok",
       "frizzbot": {
-        "simple_humectants_number": 1,
-        "film_forming_humectants_number": 7,
+        "simple_humectants_number": 3,
+        "film_forming_humectants_number": 5,
         "emollients_number": 1,
         "simple_humectants": [
-          "Glycerin"
+          "Glycerin",
+          "Ethylhexylglycerin",
+          "Panthenol"
         ],
         "film_forming_humectants": [
           "Aloe Barbadensis Leaf Extract",
           "Hydroxyethylcellulose",
           "Hydroxypropyltrimonium Honey",
           "Algae Extract",
-          "Silk Amino Acids",
-          "Ethylhexylglycerin",
-          "Panthenol"
+          "Silk Amino Acids"
         ],
         "emollients": [
           "Maltodextrin VP Copolymer"
         ],
-        "score": -93
+        "score": -90
       },
       "cost_rating": "4"
     },
@@ -1934,24 +1934,24 @@ export const defaultProductDatabase: ProductDatabase = {
       "systems_excluded": [],
       "status": "ok",
       "frizzbot": {
-        "simple_humectants_number": 2,
-        "film_forming_humectants_number": 3,
+        "simple_humectants_number": 3,
+        "film_forming_humectants_number": 2,
         "emollients_number": 3,
         "simple_humectants": [
           "Sorbitol",
-          "Glycerin"
+          "Glycerin",
+          "Ethylhexylglycerin"
         ],
         "film_forming_humectants": [
           "Aloe Barbadensis Leaf Extract",
-          "Hydroxyethylcellulose",
-          "Ethylhexylglycerin"
+          "Hydroxyethylcellulose"
         ],
         "emollients": [
           "Rice bran oil",
           "Behentrimonium Chloride",
           "Guar Hydroxypropyltrimonium Chloride"
         ],
-        "score": -77
+        "score": -68
       }
     },
     "pow_strong_hold_gel_au": {
@@ -2047,23 +2047,22 @@ export const defaultProductDatabase: ProductDatabase = {
       "systems_excluded": [],
       "status": "ok",
       "frizzbot": {
-        "simple_humectants_number": 2,
-        "film_forming_humectants_number": 3,
+        "simple_humectants_number": 5,
+        "film_forming_humectants_number": 0,
         "emollients_number": 2,
         "simple_humectants": [
-          "Caprylyl Glycol",
-          "Glycerin"
-        ],
-        "film_forming_humectants": [
           "Sodium hyaluronate",
           "Panthenol",
+          "Caprylyl Glycol",
+          "Glycerin",
           "Ethylhexylglycerin"
         ],
+        "film_forming_humectants": [],
         "emollients": [
           "Polyvinylpyrrolidone",
           "Castor Oil"
         ],
-        "score": -82
+        "score": -32
       }
     },
     "la_hold_styling_gel": {
@@ -2122,20 +2121,20 @@ export const defaultProductDatabase: ProductDatabase = {
       "systems_excluded": [],
       "status": "ok",
       "frizzbot": {
-        "simple_humectants_number": 1,
-        "film_forming_humectants_number": 2,
+        "simple_humectants_number": 2,
+        "film_forming_humectants_number": 1,
         "emollients_number": 1,
         "simple_humectants": [
-          "Sodium PCA"
+          "Sodium PCA",
+          "Panthenol"
         ],
         "film_forming_humectants": [
-          "Marshmallow root Extract",
-          "Panthenol"
+          "Marshmallow root Extract"
         ],
         "emollients": [
           "Cetearyl Alcohol"
         ],
-        "score": -83
+        "score": -75
       }
     },
     "sweet_spirit_leave-in_conditioner": {
@@ -2196,16 +2195,15 @@ export const defaultProductDatabase: ProductDatabase = {
       "systems_excluded": [],
       "status": "caution",
       "frizzbot": {
-        "simple_humectants_number": 1,
-        "film_forming_humectants_number": 2,
+        "simple_humectants_number": 3,
+        "film_forming_humectants_number": 0,
         "emollients_number": 10,
         "simple_humectants": [
-          "Glycerin"
-        ],
-        "film_forming_humectants": [
+          "Glycerin",
           "Panthenol",
           "Ethylhexylglycerin"
         ],
+        "film_forming_humectants": [],
         "emollients": [
           "Cetearyl Alcohol",
           "Castor Oil",
@@ -2218,7 +2216,7 @@ export const defaultProductDatabase: ProductDatabase = {
           "Xanthan Gum",
           "Maltodextrin VP Copolymer"
         ],
-        "score": -74
+        "score": -59
       },
       "cost_rating": "3"
     },
@@ -2239,12 +2237,13 @@ export const defaultProductDatabase: ProductDatabase = {
       "systems_excluded": [],
       "status": "ok",
       "frizzbot": {
-        "simple_humectants_number": 0,
-        "film_forming_humectants_number": 3,
+        "simple_humectants_number": 1,
+        "film_forming_humectants_number": 2,
         "emollients_number": 4,
-        "simple_humectants": [],
+        "simple_humectants": [
+          "Panthenol"
+        ],
         "film_forming_humectants": [
-          "Panthenol",
           "Aloe Barbadensis Leaf Extract",
           "Glycine"
         ],
@@ -2254,7 +2253,7 @@ export const defaultProductDatabase: ProductDatabase = {
           "Sunflower Oil",
           "Benzyl Alcohol"
         ],
-        "score": -88
+        "score": -76
       },
       "cost_rating": "1"
     },
@@ -2380,22 +2379,21 @@ export const defaultProductDatabase: ProductDatabase = {
       "systems_excluded": [],
       "status": "ok",
       "frizzbot": {
-        "simple_humectants_number": 1,
-        "film_forming_humectants_number": 1,
+        "simple_humectants_number": 2,
+        "film_forming_humectants_number": 0,
         "emollients_number": 4,
         "simple_humectants": [
+          "Ethylhexylglycerin",
           "Glycerin"
         ],
-        "film_forming_humectants": [
-          "Ethylhexylglycerin"
-        ],
+        "film_forming_humectants": [],
         "emollients": [
           "Cetearyl Alcohol",
           "Sweet Almond Oil",
           "Behentrimonium Chloride",
           "Benzyl Alcohol"
         ],
-        "score": -75
+        "score": -65
       },
       "cost_rating": "5"
     },
@@ -2420,22 +2418,21 @@ export const defaultProductDatabase: ProductDatabase = {
       "systems_excluded": [],
       "status": "ok",
       "frizzbot": {
-        "simple_humectants_number": 1,
-        "film_forming_humectants_number": 1,
+        "simple_humectants_number": 2,
+        "film_forming_humectants_number": 0,
         "emollients_number": 4,
         "simple_humectants": [
+          "Ethylhexylglycerin",
           "Glycerin"
         ],
-        "film_forming_humectants": [
-          "Ethylhexylglycerin"
-        ],
+        "film_forming_humectants": [],
         "emollients": [
           "Cetearyl Alcohol",
           "Sweet Almond Oil",
           "Behentrimonium Chloride",
           "Benzyl Alcohol"
         ],
-        "score": -75
+        "score": -65
       },
       "cost_rating": "5"
     },
@@ -2458,19 +2455,19 @@ export const defaultProductDatabase: ProductDatabase = {
       "systems_excluded": [],
       "status": "ok",
       "frizzbot": {
-        "simple_humectants_number": 1,
-        "film_forming_humectants_number": 3,
+        "simple_humectants_number": 2,
+        "film_forming_humectants_number": 2,
         "emollients_number": 0,
         "simple_humectants": [
-          "Sodium PCA"
+          "Sodium PCA",
+          "Panthenol"
         ],
         "film_forming_humectants": [
           "Aloe Barbadensis Leaf Extract",
-          "Unknown Protein",
-          "Panthenol"
+          "Unknown Protein"
         ],
         "emollients": [],
-        "score": -91
+        "score": -84
       }
     },
     "chai_latte_hair_cleanser": {
@@ -2494,18 +2491,17 @@ export const defaultProductDatabase: ProductDatabase = {
       "systems_excluded": [],
       "status": "ok",
       "frizzbot": {
-        "simple_humectants_number": 2,
-        "film_forming_humectants_number": 1,
+        "simple_humectants_number": 3,
+        "film_forming_humectants_number": 0,
         "emollients_number": 0,
         "simple_humectants": [
           "Sodium PCA",
-          "Propanediol"
-        ],
-        "film_forming_humectants": [
+          "Propanediol",
           "Panthenol"
         ],
+        "film_forming_humectants": [],
         "emollients": [],
-        "score": -24
+        "score": 46
       }
     },
     "vitalcurl+_clear_&_gentle_shampoo": {
@@ -2526,20 +2522,20 @@ export const defaultProductDatabase: ProductDatabase = {
       "systems_excluded": [],
       "status": "ok",
       "frizzbot": {
-        "simple_humectants_number": 1,
-        "film_forming_humectants_number": 2,
+        "simple_humectants_number": 2,
+        "film_forming_humectants_number": 1,
         "emollients_number": 1,
         "simple_humectants": [
-          "Glycerin"
+          "Glycerin",
+          "Panthenol"
         ],
         "film_forming_humectants": [
-          "Panthenol",
           "Glycine"
         ],
         "emollients": [
           "Sunflower Oil"
         ],
-        "score": -71
+        "score": -33
       },
       "cost_rating": "5"
     },
@@ -2564,12 +2560,14 @@ export const defaultProductDatabase: ProductDatabase = {
       "id": "curl_shampoo",
       "status": "ok",
       "frizzbot": {
-        "simple_humectants_number": 2,
-        "film_forming_humectants_number": 12,
+        "simple_humectants_number": 4,
+        "film_forming_humectants_number": 10,
         "emollients_number": 3,
         "simple_humectants": [
           "Propanediol",
-          "Sodium PCA"
+          "Sodium PCA",
+          "PCA",
+          "Sodium Lactate"
         ],
         "film_forming_humectants": [
           "Alanine",
@@ -2580,8 +2578,6 @@ export const defaultProductDatabase: ProductDatabase = {
           "Phenylalanine",
           "Proline",
           "Serine",
-          "PCA",
-          "Sodium Lactate",
           "Glycine",
           "Hydroxyethylcellulose"
         ],
@@ -2590,7 +2586,7 @@ export const defaultProductDatabase: ProductDatabase = {
           "Guar Hydroxypropyltrimonium Chloride",
           "Castor Oil"
         ],
-        "score": -87
+        "score": -82
       },
       "cost_rating": "1"
     },
@@ -2650,26 +2646,26 @@ export const defaultProductDatabase: ProductDatabase = {
       "systems_excluded": [],
       "status": "ok",
       "frizzbot": {
-        "simple_humectants_number": 2,
-        "film_forming_humectants_number": 7,
+        "simple_humectants_number": 4,
+        "film_forming_humectants_number": 5,
         "emollients_number": 1,
         "simple_humectants": [
           "Glycerin",
-          "Sorbitol"
+          "Sorbitol",
+          "Panthenol",
+          "Ethylhexylglycerin"
         ],
         "film_forming_humectants": [
           "Hydroxypropyltrimonium Honey",
           "Silk Amino Acids",
           "Seaweed Extract",
           "Seaweed Extract",
-          "Seaweed Extract",
-          "Panthenol",
-          "Ethylhexylglycerin"
+          "Seaweed Extract"
         ],
         "emollients": [
           "Guar Hydroxypropyltrimonium Chloride"
         ],
-        "score": -87
+        "score": -78
       },
       "cost_rating": "3"
     },
@@ -2878,21 +2874,20 @@ export const defaultProductDatabase: ProductDatabase = {
       "systems_excluded": [],
       "status": "ok",
       "frizzbot": {
-        "simple_humectants_number": 1,
-        "film_forming_humectants_number": 1,
+        "simple_humectants_number": 2,
+        "film_forming_humectants_number": 0,
         "emollients_number": 3,
         "simple_humectants": [
-          "Glycerin"
-        ],
-        "film_forming_humectants": [
+          "Glycerin",
           "Panthenol"
         ],
+        "film_forming_humectants": [],
         "emollients": [
           "Xanthan Gum",
           "Guar Hydroxypropyltrimonium Chloride",
           "Guar Hydroxypropyltrimonium Chloride"
         ],
-        "score": -29
+        "score": -15
       }
     },
     "curl_definition_shampoo": {
@@ -2913,19 +2908,19 @@ export const defaultProductDatabase: ProductDatabase = {
       "systems_excluded": [],
       "status": "ok",
       "frizzbot": {
-        "simple_humectants_number": 2,
-        "film_forming_humectants_number": 2,
+        "simple_humectants_number": 3,
+        "film_forming_humectants_number": 1,
         "emollients_number": 0,
         "simple_humectants": [
           "Glucose",
-          "Glycerin"
-        ],
-        "film_forming_humectants": [
-          "Sodium Glutamate",
+          "Glycerin",
           "Ethylhexylglycerin"
         ],
+        "film_forming_humectants": [
+          "Sodium Glutamate"
+        ],
         "emollients": [],
-        "score": -34
+        "score": -1
       },
       "cost_rating": "1"
     },

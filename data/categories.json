@@ -170,7 +170,21 @@
       "id": "proteins",
       "name": "Proteins",
       "group": "humectants",
-      "description": "Proteins in hair care products can help strengthen and repair hair, but some people find them drying"
+      "description": "Proteins in hair care products can help strengthen and repair hair, but some people find them drying",
+      "references": [
+        {
+          "id": "63",
+          "notes": "Found protein was less effective than traditional humectants (glycerin etc.) and performed especially badly in 79% relative humidity or below"
+        },
+        {
+          "id": "65",
+          "notes": "Hydrolyzed proteins (1000 to 10000 molecular weight) can diffuse into cortex through cuticle to strengthen hair, but washes out on cleansing."
+        },
+        {
+          "id": "64",
+          "notes": "Hydrolyzed proteins bound increases with hair damage. Help with cuticle damage and reducing brittleness"
+        }
+      ]
     },
     {
       "id": "other_preservatives",
