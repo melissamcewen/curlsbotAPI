@@ -11,9 +11,7 @@
       "name": "Parabens",
       "group": "preservatives",
       "description": "Parabens are preservatives commonly used in cosmetic products to prevent bacterial growth",
-      "inclusions": [
-        "paraben"
-      ],
+      "inclusions": ["paraben"],
       "defaultIngredient": "unknown_paraben"
     },
     {
@@ -21,10 +19,7 @@
       "name": "Sulfates",
       "group": "surfactants",
       "description": "Sulfates are cleansing agents that create lather and remove oil and dirt",
-      "inclusions": [
-        "sulfate",
-        "sulphate"
-      ],
+      "inclusions": ["sulfate", "sulphate"],
       "exclusions": [
         "behentrimonium",
         "methosulfate",
@@ -44,14 +39,8 @@
       "name": "Water-soluble Silicones",
       "group": "silicones",
       "description": "Water-soluble silicones in hair care products are a type of silicone that is easily washed out of the hair with regular shampoo",
-      "inclusions": [
-        "ppg",
-        "peg",
-        "pg-"
-      ],
-      "exclusions": [
-        "castor"
-      ],
+      "inclusions": ["ppg", "peg", "pg-"],
+      "exclusions": ["castor"],
       "defaultIngredient": "unknown_water_soluble_silicone"
     },
     {
@@ -88,7 +77,13 @@
       "id": "mild_surfactants",
       "name": "Mild surfactants",
       "group": "surfactants",
-      "description": "These surfactants are typically amphoteric, cationic, or non-ionic and are considered to be gentler on the hair and scalp than anionic surfactants like sulfates"
+      "description": "These surfactants are typically amphoteric or cationic and are considered to be gentler on the hair and scalp than anionic surfactants like sulfates. The cationic surfactants are primarily used for conditioning.",
+      "references": [
+        {
+          "id": "66",
+          "notes": "Quaternary ammonium salts are positively charged, surfactant compounds that easily adhere to surfaces like hair."
+        }
+      ]
     },
     {
       "id": "heavy_oils",
@@ -143,10 +138,9 @@
       "name": "Polyquats",
       "group": "others",
       "description": "Polyquats are positively charged polymers used in haircare products to condition, detangle, and add shine by forming a protective film around the hair shaft.",
-      "inclusions": [
-        "polyquat"
-      ],
-      "defaultIngredient": "unknown_polyquat"
+      "inclusions": ["polyquat"],
+      "defaultIngredient": "unknown_polyquat",
+      "notes": [{}]
     },
     {
       "id": "petroleum_oils",

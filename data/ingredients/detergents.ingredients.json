@@ -615,6 +615,10 @@
       "references": [
         {
           "id": "46"
+        },
+        {
+          "id": "67",
+          "notes": "A quat (not a polyquat) that has good substantivity (ability to adhere and stay on hair)."
         }
       ]
     },
