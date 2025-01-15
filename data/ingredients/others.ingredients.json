@@ -20,6 +20,11 @@
       "categories": ["soaps"]
     },
     {
+      "name": "Soap",
+      "id": "soap",
+      "categories": ["soaps"]
+    },
+    {
       "name": "Potassium Cocoate",
       "id": "potassium_cocoate",
       "synonyms": [
@@ -981,6 +986,30 @@
         {
           "id": "64",
           "notes": "Wheat amino acid can function as humectants."
+        }
+      ]
+    },
+    {
+      "name": "Apple Cider Vinegar",
+      "id": "apple_cider_vinegar",
+      "categories": ["other"],
+      "references": [
+        {
+          "id": "69",
+          "notes": "Has a low pH (3.1- 5) which is similar to the pH of the scalp/hair. Has antimicrobial properties. Capable of tightening the hair cuticle and has a mild cleansing ability. Advises that undiluted ACV may be hazardous to the eyes."
+        }
+      ]
+    },
+    {
+      "name": "Baking Soda",
+      "id": "baking_soda",
+      "categories": ["other"],
+      "synonyms": ["sodium bicarbonate"],
+      "description": "An alkaline substance that can damage the hair cuticle and cause breakage",
+      "references": [
+        {
+          "id": "69",
+          "notes": "It has a very high pH (9.5-10.5) which is very different from the pH of the scalp/hair. Can cause the cuticle to open up, allowing water to break up proteins like keratin and increasing negative charges in the hair. This lowers the elasticity of the hair and can cause breakage."
         }
       ]
     }
