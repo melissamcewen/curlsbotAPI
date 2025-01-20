@@ -6,22 +6,38 @@
       "ingredients_raw": "purified water aqua, mel, hydrolyzed corn starch, sodium polyitaconate, sucrose, propanediol, capryl caprylyl glucoside, linum usitatissimum seed extract, althaea officinalis root extract, antimicro root blend preservative bulb extract, caprylyl glycol, wasabia japonica root extract, zingiber officinale root extract, citrus limon peel oil, citrus aurantium bergamia fruit oil",
       "product_categories": ["foams"],
       "tags": ["normal_porosity", "high_porosity", "low_porosity", "featured", "black_owned", "woman_owned", "small_business"],
-      "buy_url": "https://ecoslay.sjv.io/7abJPr"
+      "buy_links": [
+        {
+          "url": "https://ecoslay.sjv.io/7abJPr",
+          "retailer": "Ecoslay"
+        }
+      ],
+      "asin": "B09D8PL1N5"
     },
     {
       "name": "Chutzpah Volumising Foam",
       "brand": "Lohy",
-      "buy_url": "https://lohy.com.au/products/chutzpah-volumising-curl-foam?aff=49",
+      "buy_links": [
+        {
+          "url": "https://lohy.com.au/products/chutzpah-volumising-curl-foam?aff=49",
+          "retailer": "Lohy",
+          "country": "AU"
+        }
+      ],
       "product_categories": ["foams"],
       "tags": ["low_porosity", "curl_enhancer", "normal_porosity", "featured"],
       "ingredients_raw": "aqua, aloe barbadensis aloe vera leaf juice, pullulan, galactoarabinan, glycerin, propanediol, lauryl glucoside, decyl glucoside, cocamidopropyl betaine, camellia sinensis white tea leaf extract, chamomila recutita matricaria flower leaf stem extract, phenoxyethanol, hydrolised soy protein, potassium sorbate, citric acid, citrus limon lemon peel oil, pelargonium graveolens geranium flower oil",
-      "country": "AU",
       "cost": 4.4
     },
     {
       "name": "I Create Lift Volumizing Foam",
       "brand": "Innersense",
-      "buy_url": "https://amzn.to/3DA6phV",
+      "buy_links": [
+        {
+          "url": "https://amzn.to/3DA6phV",
+          "retailer": "Amazon"
+        }
+      ],
       "product_categories": ["foams"],
       "tags": ["normal_porosity", "volume", "low_porosity", "featured"],
       "asin": "B079B3HKZK",
@@ -34,9 +50,14 @@
       "product_categories": ["foams"],
       "tags": ["normal_porosity", "volume", "low_porosity", "featured"],
       "ingredients_raw": "water aqua, vp va copolymer, cocamidopropyl betaine, hydrolyzed rice protein, hydrolyzed hemp seed extract, ribes nigrum black currant fruit extract, lentinus edodes shiitake mushroom extract, psidium guajava guava fruit extract, brassica oleracea acephala kale leaf extract, cucurbita pepo pumpkin seed extract, opuntia tuna prickly pear fruit extract, glycerin, panthenol, potassium sorbate, ethylhexylglycerin, disodium edta, citric acid, sodium benzoate, peg-40 hydrogenated castor oil, phenoxyethanol, sodium hydroxide, linalool, limonene, geraniol, benzyl alcohol, fragrance parfum",
-      "buy_url": "https://amzn.to/49W9HrK",
+      "buy_links": [
+        {
+          "url": "https://amzn.to/49W9HrK",
+          "retailer": "Amazon",
+          "country": "UK"
+        }
+      ],
       "asin": "B08WPSW84H",
-      "country": "UK",
       "cost": 2.6
 
     },
@@ -53,7 +74,12 @@
         "volume",
         "low_porosity"
       ],
-      "buy_url": "https://amzn.to/41UCcnP",
+      "buy_links": [
+        {
+          "url": "https://amzn.to/41UCcnP",
+          "retailer": "Amazon"
+        }
+      ],
       "asin": "B0B995XZ6T",
       "cost": 0.7
     }

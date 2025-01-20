@@ -15,12 +15,23 @@
         "small_business"
       ],
       "ingredients_raw": "jojoba oil, avocado oil, sweet almond oil, argan oil, castor oil, lemongrass essential oil, cinnamon essential oil, sweet orange essential oil, ginger essential oil, caprylhydroxamic gg",
-      "buy_url": "https://ecoslay.sjv.io/vP2ZJd"
+      "buy_links": [
+        {
+          "url": "https://ecoslay.sjv.io/vP2ZJd",
+          "retailer": "Ecoslay"
+        }
+      ]
     },
     {
       "name": "Hush Nourishing Oil",
       "brand": "Lohy",
-      "buy_url": "https://lohy.com.au/products/hush-finishing-oil-curly-hair?aff=49",
+      "buy_links": [
+        {
+          "url": "https://lohy.com.au/products/hush-finishing-oil-curly-hair?aff=49",
+          "retailer": "Lohy",
+          "country": "AU"
+        }
+      ],
       "product_categories": [
         "oils"
       ],
@@ -30,7 +41,6 @@
         "featured"
       ],
       "ingredients_raw": "helianthus annuus sunflower seed oil, oenothera biennis evening primrose oil, vitis vinifera grape seed oil, simmondsia chinensis jojoba seed oil, backhousia citriodora lemon myrtle leaf oil, tocopheryl acetate, rosa canina rosehip fruit oil, macadamia ternifolia seed oil",
-      "country": "AU",
       "cost": 13
     },
     {
@@ -45,9 +55,14 @@
         "featured"
       ],
       "ingredients_raw": "hydrogenated ethylhexyl olivate, hydrogenated olive oil unsaponifiables, coco-caprylate caprate, shea butter ethyl esters, hydrogenated castor oil sebacic acid copolymer, prunus armeniaca apricot kernel oil, hippophae rhamnoides sea buckthorn fruit oil, lens esculenta lentil seed extract, hydrolyzed cicer chickpea seed extract, chenopodium quinoa seed extract, fragrance parfum, linalool, limonene, geraniol, benzyl alcohol, citronellol",
-      "buy_url": "https://amzn.to/3DwDN9b",
+      "buy_links": [
+        {
+          "url": "https://amzn.to/3DwDN9b",
+          "retailer": "Amazon",
+          "country": "UK"
+        }
+      ],
       "asin": "B09GC96P46",
-      "country": "UK",
       "cost": 15
     }
   ]

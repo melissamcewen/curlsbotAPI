@@ -15,12 +15,22 @@
         "small_business"
       ],
       "ingredients_raw": "water, marshmallow root extract, fermented rice water, cetearyl alcohol, sodium pca, chamomile flower extract, slippery elm extract, nettle leaf extract, melissa leaf extract, peppermint leaf extract, horsetail leaf extract, yucca vera leaf extract, sucrose cocoate, panthenol, capryhydroxamic acid gg, jasmine essential oil, vanilla essential oil, potassium sorbate",
-      "buy_url": "http://ecoslay.sjv.io/6yGgNb"
+      "buy_links": [
+        {
+          "url": "http://ecoslay.sjv.io/6yGgNb",
+          "retailer": "Ecoslay"
+        }
+      ]
     },
     {
       "name": "Sweet Spirit Leave-In Conditioner",
       "brand": "Innersense",
-      "buy_url": "https://amzn.to/2yjHQ1r",
+      "buy_links": [
+        {
+          "url": "https://amzn.to/2yjHQ1r",
+          "retailer": "Amazon"
+        }
+      ],
       "product_categories": [
         "leave_ins"
       ],
@@ -45,9 +55,14 @@
         "featured"
       ],
       "ingredients_raw": "water aqua eau, dicaprylyl carbonate, cetearyl alcohol, coco-caprylate caprate, ricinus communis castor seed oil, behentrimonium chloride, glycerin, panthenol, butyrospermum parkii shea butter, simmondsia chinensis jojoba seed oil, guar hydroxypropyltrimonium chloride, polyquaternium-10, olea europaea olive leaf extract, tilia tomentosa bud extract, arctium majus root extract, arnica montana flower extract, calendula officinalis flower extract, chamomilla recutita matricaria flower extract, citrus limon lemon peel extract, hedera helix ivy leaf extract, lamium album extract, nasturtium officinale extract, pinus sylvestris bud extract, rosmarinus officinalis rosemary leaf extract, salvia officinalis sage leaf extract, tropaeolum majus flower extract, isopropyl alcohol, pentylene glycol, tocopherol, maltodextrin, cyclodextrin, pvp, cyamopsis tetragonoloba guar gum, xanthan gum, maltodextrin vp copolymer, ethylhexylglycerin, fragrance parfum, citric acid, sodium gluconate, phytic acid, phenoxyethanol, potassium sorbate, sodium benzoate, hydroxycitronellal, citronellol",
-      "buy_url": "https://amzn.to/4fEo0CJ",
+      "buy_links": [
+        {
+          "url": "https://amzn.to/4fEo0CJ",
+          "retailer": "Amazon",
+          "country": "UK"
+        }
+      ],
       "asin": "B0CZVVB2C9",
-      "country": "UK",
       "description": "This has a small amount of isopropyl alcohol, which we mark as caution, but as it's towards the end of the ingredients list so it's unlikely to be harmful for hair.",
       "cost": 1.9
     },
@@ -61,7 +76,12 @@
         "normal_porosity",
         "high_porosity"
       ],
-      "buy_url": "https://amzn.to/4fK4aWC",
+      "buy_links": [
+        {
+          "url": "https://amzn.to/4fK4aWC",
+          "retailer": "Amazon"
+        }
+      ],
       "cost": 1,
       "ingredients_raw": "aqua purified water, cetyl alcohol, stearyl alcohol, tocopherol vitamin e, panthenol pro-vitamin b5, citrus grandis grapefruit fruit extract, aloe barbadensis aloe vera leaf juice, glycine soja soybean seed extract, chamomilla recutita matricaria flower extract, rosmarinus officinalis rosemary leaf extract, lavandula angustifolia lavender flower leaf stem extract, thymus vulgaris thyme extract, helianthus annuus sunflower seed oil, malva sylvestris mallow extract, cetrimonium bromide, natural fragrance, citric acid, phenoxyethanol, dehydroacetic acid, benzyl alcohol"
     }

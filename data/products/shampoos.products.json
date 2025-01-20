@@ -5,8 +5,13 @@
       "brand": "Ecoslay",
       "ingredients_raw": "water, sodium methyl cocoyl taurate, sodium lauroyl sarcosinate, stearamidopropyl dimethylamine, black tea extract, slippery elm extract, sodium pca, propanediol, panthenol, peppermint oil, melissa leaf extract, nettle leaf extract, horsetail leaf extract, peppermint leaf extract, hydroxypropyl starch phosphate, sage extract, yucca leaf extract, burdock root extract, citric acid, lexfeel wow-a, vanilla planifolia fruit oil, ginger root oil, cinnamon leaf oil, clove flower oil, caprylhydroxamic acid gg",
       "product_categories": ["shampoos"],
-      "tags": ["normal_porosity", "low_porosity", "featured", "black_owned", "woman_owned", "small_business", "high_porosity"],
-      "buy_url": "http://ecoslay.sjv.io/gOoWn2"
+      "tags": ["normal_porosity", "featured", "black_owned", "woman_owned", "small_business", "high_porosity"],
+      "buy_links": [
+        {
+          "url": "http://ecoslay.sjv.io/gOoWn2",
+          "retailer": "Ecoslay"
+        }
+      ]
     },
     {
       "name": "VitalCurl+ Clear & Gentle Shampoo",
@@ -15,12 +20,22 @@
       "product_categories": ["shampoos"],
       "tags": ["low_porosity", "normal_porosity", "high_porosity"],
       "ingredients_raw": "aqua water eau, sodium decylglucosides hydroxypropylsulfonate, cocamidopropyl hydroxysultaine, sodium methyl 2-sulfolaurate, cocamidopropylamine oxide, disodium 2-sulfolaurate, glycerin, helianthus annuus sunflower seed oil, salvia hispanica seed chia oil, camellia japonica tsubaki seed oil, panthenol, phospholipids, glycine soja soybean oil, glycolipids, glycine soja soybean sterols, sodium methyl cocoyl taurate, codamidopropyl pg-dimonium chloride phosphate, peg-150 distearate, ppg-2 hydroxyethyl cocamide, polyquaternium-22, butylene gycol, dmdm hydantoin, disodium edta, sodium chloride, iodopropynl butylcarbamate, citric acid, bha, hexyl cinnamal, limonene, linalool, fragrance parfum",
-      "buy_url": "https://click.linksynergy.com/link?id=9QcV0uNyab0&offerid=929395.3842998108&type=2&murl=https%3a%2f%2fwww.ouidad.com%2fproducts%2fvitalcurl-clear-and-gentle-shampoo%3fvariant%3d42433997144322"
+      "buy_links": [
+        {
+          "url": "https://click.linksynergy.com/link?id=9QcV0uNyab0&offerid=929395.3842998108&type=2&murl=https%3a%2f%2fwww.ouidad.com%2fproducts%2fvitalcurl-clear-and-gentle-shampoo%3fvariant%3d42433997144322",
+          "retailer": "Ouidad"
+        }
+      ]
     },
     {
       "name": "Curl Shampoo",
       "brand": "Kristin Ess",
-      "buy_url": "https://amzn.to/49LHTpT",
+      "buy_links": [
+        {
+          "url": "https://amzn.to/49LHTpT",
+          "retailer": "Amazon"
+        }
+      ],
       "systems_excluded": ["curly_default"],
       "product_categories": ["shampoos"],
       "tags": ["normal_porosity", "low_porosity"],
@@ -32,7 +47,12 @@
     {
       "name": "Hydrating Hairbath",
       "brand": "Innersense",
-      "buy_url": "https://amzn.to/3BK5x9T",
+      "buy_links": [
+        {
+          "url": "https://amzn.to/3BK5x9T",
+          "retailer": "Amazon"
+        }
+      ],
       "product_categories": ["shampoos"],
       "tags": ["high_porosity", "normal_porosity", "featured"],
       "cost": 3.00,
@@ -43,7 +63,12 @@
       "name": "Gentle Shampoo",
       "brand": "MopTop",
       "ingredients_raw": "water, sodium c14-16 olefin sulfonate, cocamidopropyl betaine, cocamide mea, glycol distearate, steareth-4, glycerin, hydroxypropyltrimonium honey, silk amino acids, hypnea musciformis extract seaweed, gelidiella acerosa extract seaweed, sargassum filipendula extract seaweed, sorbitol, rosmarinus officinalis rosemary leaf extract, salix alba willow bark extract, urtica dioica nettle extract, tocopheryl acetate vitamin e, panthenol vitamin b5, guar hydroxypropyltrimonium chloride, polyquaternium-10, fragrance phthalate free, sodium phytate, sorbic acid, sodium chloride, ethylhexylglycerin, phenoxyethanol, citric acid",
-      "buy_url": "https://amzn.to/4fuIPQW",
+      "buy_links": [
+        {
+          "url": "https://amzn.to/4fuIPQW",
+          "retailer": "Amazon"
+        }
+      ],
       "cost": 2,
       "product_categories": ["shampoos"],
       "tags": ["high_porosity", "normal_porosity"],
@@ -53,7 +78,12 @@
       "name": "Pure Harmony Hairbath",
       "brand": "Innersense",
       "ingredients_raw": "citrus medica limonum lemon peel oil, eucalyptus globulus eucalyptus, cucurbita pepo pumpkin seed oil, hydroxypropyltrimonium honey, hydrolyzed quinoa, trisodium ethylenediamine disuccinate, sodium benzoate, hydrolyzed rice protein, guar hydroxypropyltrimonium chloride, persea gratissima avocado oil, oryza sativa rice bran oil, camellia sinensis green tea leaf extract, cucumis sativus cucumber fruit extract, persea gratissima avocado fruit extract, mangifera indica mango fruit extract, water, aqua-eau, cocamidopropyl hydroxysultaine, sodium cocoyl isethionate, caprylyl capryl glucoside, glycerin, sodium chloride, sodium lauroyl methyl isethionate, butyrosepermum parkii shea butter, citrus aurantium dulcis orange peel oil",
-      "buy_url": "https://amzn.to/3ZSDywG",
+      "buy_links": [
+        {
+          "url": "https://amzn.to/3ZSDywG",
+          "retailer": "Amazon"
+        }
+      ],
       "cost": 2.25,
       "product_categories": ["shampoos"],
       "tags": ["low_porosity", "normal_porosity"],
@@ -63,7 +93,12 @@
       "name": "Color Awakening Hairbath",
       "brand": "Innersense",
       "ingredients_raw": "water, aqua- eau, cocamidopropyl hydroxysultaine, sodium cocoyl isethionate, caprylyl capryl glucoside, glycerin, sodium chloride, sodium lauroyl methyl isethionate, butyrospermum parkii shea butter, citrus aurantium dulcis orange peel oil, citrus medica limonum lemon peel oil, eucalyptus globulus eucalyptus, cucurbita pepo pumpkin seed oil, hydroxypropyltrimonium honey, hydrolyzed quinoa, trisodium ethylenediamine disuccinate, sodium benzoate, hydrolyzed rice protein, guar hydroxypropyltrimonium chloride, potassium sorbate, citric acid, citrus sinensis orange oil, persea gratissima avocado oil, oryza sativa rice bran oil, camellia sinensis green tea leaf extract, cucumis sativus cucumber fruit extract, persea gratissima fruit extract, mangifera indica mango fruit extract",
-      "buy_url": "https://amzn.to/41J8sKF",
+      "buy_links": [
+        {
+          "url": "https://amzn.to/41J8sKF",
+          "retailer": "Amazon"
+        }
+      ],
       "product_categories": ["shampoos"],
       "tags": ["high_porosity", "normal_porosity"],
       "asin": "B002RX2QFA",
@@ -74,7 +109,12 @@
       "name": "Clarity Hairbath",
       "brand": "Innersense",
       "ingredients_raw": "water aqua eau, aloe barbadensis leaf juice, cocamidopropyl hydroxysultaine, sodium cocoyl isethionate, glycerin, caprylyl capryl glucoside, sodium levulinate, potassium sorbate, guar hydroxypropyltrimonium chloride, citric acid, butyrospermum parkii shea butter, sodium gluconate, tocopherol, swertia japonica extract, cyperus esculentus tuber extract, symphytum officinale leaf extract, xanthan gum, coconut acid, sodium isethionate",
-      "buy_url": "https://amzn.to/4gLhRFK",
+      "buy_links": [
+        {
+          "url": "https://amzn.to/4gLhRFK",
+          "retailer": "Amazon"
+        }
+      ],
       "product_categories": ["shampoos"],
       "tags": ["low_porosity", "normal_porosity"],
       "asin": "B0BHD3JKTL",
@@ -85,9 +125,14 @@
       "brand": "Lohy",
       "product_categories": ["shampoos"],
       "tags": ["high_porosity", "normal_porosity", "featured", "low_porosity"],
-      "buy_url": "https://lohy.com.au/products/nourish-flourish-curly-hair-shampoo?aff=49",
+      "buy_links": [
+        {
+          "url": "https://lohy.com.au/products/nourish-flourish-curly-hair-shampoo?aff=49",
+          "retailer": "Lohy",
+          "country": "AU"
+        }
+      ],
       "ingredients_raw": "aqua, lauryl glucoside, decyl glucoside, coco glucoside, cocamidopropyl betaine, glycerin, propanediol, camellia sinensis white tea leaf extract, chamomilla recutita matricaria flower leaf stem extract, citric acid, phenoxyethanol, guar hydroxypropyltrimonium chloride, hydrolysed soy protein, potassium sorbate, lemon scented tea tree oil, mandarin peel oil, rosemary oil, may chang, eucalyptus radiata, lavandin oil, salvia clary sclarea oil, pogostemon cablin patchouli oil",
-      "country": "AU",
       "cost": 2.3
 
     },
@@ -97,9 +142,14 @@
       "product_categories": ["shampoos"],
       "tags": ["high_porosity", "normal_porosity", "featured"],
       "ingredients_raw": "water aqua, cocamidopropyl betaine, sodium methyl cocoyl taurate, lauryl glucoside, sodium chloride, peg-120 methyl glucose trioleate, betaine, helianthus annuus sunflower seed oil, aloe barbadensis leaf juice, selaginella lepidophylla resurrection flower extract, ocimum basilicum basil leaf extract, piper nigrum black pepper seed extract, rosmarinus officinalis rosemary leaf extract, salvia officinalis sage leaf extract, carapa guaianensis andiroba seed oil, propanediol, glycerin, guar hydroxypropyltrimonium chloride, polyquaternium-10, citric acid, phenoxyethanol, sodium benzoate, potassium sorbate, fragrance parfum, limonene, linalool",
-      "buy_url": "https://amzn.to/4gzkwmm",
-      "asin": "B0BPTC343Q",
-      "country": "UK"
+      "buy_links": [
+        {
+          "url": "https://amzn.to/4gzkwmm",
+          "retailer": "Amazon",
+          "country": "UK"
+        }
+      ],
+      "asin": "B0BPTC343Q"
     },
     {
       "name": "Full Body Weightless Cleanser",
@@ -107,9 +157,15 @@
       "product_categories": ["shampoos"],
       "tags": ["low_porosity", "normal_porosity", "featured"],
       "ingredients_raw": "water aqua eau, glycerin, coco-glucoside, decyl glucoside, sodium methyl cocoyl taurate, xanthan gum, saccharide isomerate, guar hydroxypropyltrimonium chloride, polyquaternium-10, tilia tomentosa bud extract, olea europaea olive leaf extract, arctium majus root extract, arnica montana flower extract, calendula officinalis flower extract, chamomilla recutita matricaria flower extract, citrus limon lemon peel extract, hedera helix ivy leaf extract, lamium album extract, nasturtium officinale extract, pinus sylvestris bud extract, rosmarinus officinalis rosemary leaf extract, salvia officinalis sage leaf extract, tropaeolum majus flower extract, pentylene glycol, panthenol, tocopherol, cyclodextrin, sodium chloride, cyamopsis tetragonoloba guar gum, fragrance parfum, citric acid, sodium hydroxide, sodium gluconate, sodium citrate, phytic acid, sodium benzoate, potassium sorbate, hydroxycitronellal, citronellol",
-      "buy_url": "https://amzn.to/3Pdq0qB",
-      "asin": "B0CZW7PPLQ",
-      "country": "UK"
+      "buy_links": [
+        {
+          "url": "https://amzn.to/3Pdq0qB",
+          "retailer": "Amazon",
+          "country": "UK"
+        }
+      ],
+      "asin": "B0CZW7PPLQ"
+
     },
     {
       "name": "Curl Definition Shampoo",
@@ -120,8 +176,45 @@
       ],
       "tags": ["high porosity", "low porosity"],
       "cost": 0.5,
-      "buy_url": "https://amzn.to/3W0nuIe",
+      "buy_links": [
+        {
+          "url": "https://amzn.to/3W0nuIe",
+          "retailer": "Amazon"
+        }
+      ],
       "asin": "B07KQ24CZS"
+    },
+    {
+      "name": "Energizing Shampoo",
+      "brand": "Curl Keeper",
+      "product_categories": ["shampoos"],
+      "tags": ["low_porosity", "normal_porosity", "featured"],
+      "buy_links": [
+        {
+          "url": "https://frizzoff.com/r?id=idp8mh",
+          "retailer": "Curl Keeper"
+        },
+        {
+          "url": "https://amzn.to/40CsOnQ",
+          "retailer": "Amazon"
+        }
+      ],
+      "description": "Like all Curl Keeper products, this shampoo has a low pH, which helps to keep the hair cuticle closed and prevent moisture loss.",
+      "ingredients_raw": "water eau, coco-glucoside, sodium chloride himalayan crystal salt, sodium c14-16 olefin sulfonate, disodium laureth sulfosuccinate, lauramide dea, panthenoil, polysorbate 80, silk amino acides, hydroxyproyl methylcellulose, citric acid, fragrance, dmdm hydantoin"
+    },
+    {
+      "name": "Smooth As Silk™ Deep Moisture Shampoo",
+      "brand": "Giovanni",
+      "product_categories": ["shampoos"],
+      "tags": ["low_porosity", "normal_porosity", "high_porosity"],
+      "buy_links": [
+        {
+          "url": "https://amzn.to/4h15AgY",
+          "retailer": "Amazon"
+        }
+      ],
+      "description": "An excellent low-pH (~5 protects against frizz) shampoo at a great price.",
+      "ingredients_raw": "aqua purified water, sodium lauroyl sarcosinate, cocamidopropyl betaine, sodium cocoamphoacetate, lauryl glucoside, decyl glucoside, sodium cocoyl glutamate, sodium lauryl glucose carboxylate, glycerin, pyrus malus apple fruit extract, aloe barbadensis aloe vera leaf juice, chamomilla recutita matricaria leaf extract, citrus aurantium dulcis valencia orange extract, citrus grandis grapefruit fruit extract, cymbopogon schoenanthus lemongrass extract, echinacea purpurea extract, glycine soja soybean seed extract, lavandula angustifolia lavender extract, rosmarinus officinalis rosemary leaf extract, macrocystis pyrifera sea kelp extract, mangifera indica mango extract, salix alba willow bark extract, xanthan gum, glycol distearate, panthenol pro-vitamin b5, citric acid, polysorbate 20, potassium sorbate, phenoxyethanol, natural fragrance"
     }
   ]
 }

@@ -16,7 +16,12 @@
         "small_business"
       ],
       "ingredients_raw": "ginger extract, moringa extract, aloe vera juice, apple cider vinegar, optiphen plus",
-      "buy_url": "https://ecoslay.sjv.io/APKENx"
+      "buy_links": [
+        {
+          "url": "https://ecoslay.sjv.io/APKENx",
+          "retailer": "Ecoslay"
+        }
+      ]
     },
     {
       "name": "Matcha Boost Protein Strengthening Treatment",
@@ -33,7 +38,12 @@
         "small_business"
       ],
       "ingredients_raw": "distilled water, ceteryl alcohol, behentrimonium methosulfate, hydrolyzed quinoa protein, hydrolyzed keratin protein, matcha extract, propanediol, hp starch, caprylhydroxamic acid gg preservation blend caprylhydroxamic acid, glyceryl",
-      "buy_url": "http://ecoslay.sjv.io/yqrm1b"
+      "buy_links": [
+        {
+          "url": "http://ecoslay.sjv.io/yqrm1b",
+          "retailer": "Ecoslay"
+        }
+      ]
     }
   ]
 }

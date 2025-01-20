@@ -164,7 +164,7 @@ export interface Product {
   /** Brand name */
   brand: string;
   /** URL where the product can be purchased */
-  buy_url: string;
+  buy_links: BuyLink[];
   /** Systems this product is excluded from */
   systems_excluded?: string[];
   /** Categories the product belongs to */
@@ -181,14 +181,20 @@ export interface Product {
   description?: string;
   /** ASIN of the product */
   asin?: string;
-  /** Country */
-  country?: string;
   /** Analysis status for the product */
   status?: 'ok' | 'caution' | 'warning' | 'error';
   /** Analysis */
   analysis?: AnalysisResult;
   /** Frizzbot analysis */
   frizzbot?: FrizzbotAnalysis;
+}
+
+/** Buy link */
+export interface BuyLink {
+  url: string;
+  country?: string;
+  retailer?: string;
+  description?: string;
 }
 
 /**

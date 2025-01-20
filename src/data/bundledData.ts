@@ -1225,6 +1225,15 @@ export const defaultDatabase: IngredientDatabase = {
       "references": [
         {
           "url": "https://incidecoder.com/ingredients/cetrimonium-chloride"
+        },
+        {
+          "url": "https://amzn.to/4hd4Tko",
+          "title": "Organo-Modified Siloxane Polymers for Conditioning",
+          "type": "science",
+          "author": "Abrutyn, Eric S.",
+          "date": "1999",
+          "source": "Conditioning Agents for Hair and Skin",
+          "description": "A quat (not a polyquat) that has good substantivity (ability to adhere and stay on hair)."
         }
       ],
       "status": "ok",
@@ -1930,6 +1939,15 @@ export const defaultDatabase: IngredientDatabase = {
         "potassium salt of castor oil fatty acids",
         "castor oil soap"
       ],
+      "categories": [
+        "soaps"
+      ],
+      "status": "warning",
+      "group": "surfactants"
+    },
+    "soap": {
+      "name": "Soap",
+      "id": "soap",
       "categories": [
         "soaps"
       ],
@@ -3418,10 +3436,272 @@ export const defaultDatabase: IngredientDatabase = {
           "date": "1999",
           "source": "Conditioning Agents for Hair and Skin",
           "description": "Hydrolyzed collagen with a molecular weight of 2000 Da demonstrates substantivity to hair, meaning it adheres well to the hair's surface and penetrates its structure. Adheres best on damaged hair. Enhances tensile strength (resistance to breaking) and elasticity"
+        },
+        {
+          "url": "https://amzn.to/4hd4Tko",
+          "title": "Proteins for Conditioning Hair and Skin",
+          "type": "science",
+          "author": "Neudahl, G.",
+          "date": "1999",
+          "source": "Conditioning Agents for Hair and Skin",
+          "description": "Hydrolyzed collagen temporarily mends split ends, particularly in leave-in products, though higher concentrations yield diminishing benefits for damaged hair."
         }
       ],
       "status": "ok",
       "group": "humectants"
+    },
+    "hydrolyzed_elastin": {
+      "name": "Hydrolyzed elastin",
+      "id": "hydrolyzed_elastin",
+      "categories": [
+        "proteins"
+      ],
+      "references": [
+        {
+          "url": "https://amzn.to/4hd4Tko",
+          "title": "Proteins for Conditioning Hair and Skin",
+          "type": "science",
+          "author": "Neudahl, G.",
+          "date": "1999",
+          "source": "Conditioning Agents for Hair and Skin",
+          "description": "Hydrolyzed elastin with a molecular weight of 2000 to 5000 Da is a good film-former, similar to hydrolyzed collagen. It is much less hygroscopic (less water-absorbing) than collagen due to its lower polar and charged amino acid content."
+        },
+        {
+          "url": "https://amzn.to/4hd4Tko",
+          "title": "Proteins for Conditioning Hair and Skin",
+          "type": "science",
+          "author": "Neudahl, G.",
+          "date": "1999",
+          "source": "Conditioning Agents for Hair and Skin",
+          "description": "Low-polarity protein hydrolysates like elastin and silk are preferable to collagen in applications where humidity resistance is desired."
+        }
+      ],
+      "status": "ok",
+      "group": "humectants"
+    },
+    "hydrolyzed_keratin": {
+      "name": "Hydrolyzed keratin",
+      "id": "hydrolyzed_keratin",
+      "categories": [
+        "proteins"
+      ],
+      "references": [
+        {
+          "url": "https://amzn.to/4hd4Tko",
+          "title": "Proteins for Conditioning Hair and Skin",
+          "type": "science",
+          "author": "Neudahl, G.",
+          "date": "1999",
+          "source": "Conditioning Agents for Hair and Skin",
+          "description": " High-molecular-weight hydrolyzed keratin (125,000 Da) provides long-term substantivity and conditioning effects when applied to reduced hair during permanent waving."
+        }
+      ],
+      "status": "ok",
+      "group": "humectants"
+    },
+    "hydrolyzed_sweet_almond_protein": {
+      "name": "Hydrolyzed Sweet Almond Protein",
+      "id": "hydrolyzed_sweet_almond_protein",
+      "categories": [
+        "proteins"
+      ],
+      "description": "Acts like almost a hybrid between a protein and a film-forming humectant because it contains both proteins and carbohydrates",
+      "references": [
+        {
+          "url": "https://amzn.to/4hd4Tko",
+          "title": "Proteins for Conditioning Hair and Skin",
+          "type": "science",
+          "author": "Neudahl, G.",
+          "date": "1999",
+          "source": "Conditioning Agents for Hair and Skin",
+          "description": "Hydrolyzed sweet almond protein contains both polypeptides and oligosaccharides.Conditioning effects result from polypeptides penetrating the hair and oligosaccharides coating it.  "
+        },
+        {
+          "url": "https://amzn.to/4hd4Tko",
+          "title": "Proteins for Conditioning Hair and Skin",
+          "type": "science",
+          "author": "Neudahl, G.",
+          "date": "1999",
+          "source": "Conditioning Agents for Hair and Skin",
+          "description": "In leave-in products, hydrolyzed sweet almond protein enhances moisture retention and shine."
+        },
+        {
+          "url": "https://amzn.to/4hd4Tko",
+          "title": "Proteins for Conditioning Hair and Skin",
+          "type": "science",
+          "author": "Neudahl, G.",
+          "date": "1999",
+          "source": "Conditioning Agents for Hair and Skin",
+          "description": "Strengthening of damaged hair and protection of hair fibers can be observed at use levels similar to those required for hydrolyzed collagen."
+        }
+      ],
+      "status": "ok",
+      "group": "humectants"
+    },
+    "hydrolyzed_wheat_protein": {
+      "name": "Hydrolyzed Wheat Protein",
+      "id": "hydrolyzed_wheat_protein",
+      "categories": [
+        "proteins"
+      ],
+      "description": "Acts like a hybrid between a film-forming humectant and a protein",
+      "references": [
+        {
+          "url": "https://amzn.to/4hd4Tko",
+          "title": "Proteins for Conditioning Hair and Skin",
+          "type": "science",
+          "author": "Neudahl, G.",
+          "date": "1999",
+          "source": "Conditioning Agents for Hair and Skin",
+          "description": "Hydrolyzed wheat protein and hydrolyzed wheat starch condition hair by both penetrating and coating, similar to hydrolyzed sweet almond protein."
+        },
+        {
+          "url": "https://amzn.to/4hd4Tko",
+          "title": "Proteins for Conditioning Hair and Skin",
+          "type": "science",
+          "author": "Neudahl, G.",
+          "date": "1999",
+          "source": "Conditioning Agents for Hair and Skin",
+          "description": "Substantivity to normal hair increases with concentration, peaking rapidly at 2% actives and plateauing above 5% actives."
+        },
+        {
+          "url": "https://amzn.to/4hd4Tko",
+          "title": "Proteins for Conditioning Hair and Skin",
+          "type": "science",
+          "author": "Neudahl, G.",
+          "date": "1999",
+          "source": "Conditioning Agents for Hair and Skin",
+          "description": "Studies on hair damaged with a 2% sodium hydroxide cream for 15 minutes showed that hydrolyzed wheat protein at 5% solids reduced brittleness at low relative humidity and limpness at high relative humidity."
+        }
+      ],
+      "status": "ok",
+      "group": "humectants"
+    },
+    "hydrolyzed_wheat_starch": {
+      "name": "Hydrolyzed Wheat Starch",
+      "id": "hydrolyzed_wheat_starch",
+      "categories": [
+        "film_forming_humectants"
+      ],
+      "description": "Acts like a hybrid between a film-forming humectant and a protein",
+      "references": [
+        {
+          "url": "https://amzn.to/4hd4Tko",
+          "title": "Proteins for Conditioning Hair and Skin",
+          "type": "science",
+          "author": "Neudahl, G.",
+          "date": "1999",
+          "source": "Conditioning Agents for Hair and Skin",
+          "description": "Hydrolyzed wheat protein and hydrolyzed wheat starch condition hair by both penetrating and coating, similar to hydrolyzed sweet almond protein."
+        }
+      ],
+      "status": "ok",
+      "group": "humectants"
+    },
+    "hydrolyzed_oat_protein": {
+      "name": "Hydrolyzed Oat Protein",
+      "id": "hydrolyzed_oat_protein",
+      "categories": [
+        "proteins"
+      ],
+      "description": "Acts like a hybrid between a protein and a film-forming humectant because it contains both proteins and carbohydrates",
+      "references": [
+        {
+          "url": "https://amzn.to/4hd4Tko",
+          "title": "Proteins for Conditioning Hair and Skin",
+          "type": "science",
+          "author": "Neudahl, G.",
+          "date": "1999",
+          "source": "Conditioning Agents for Hair and Skin",
+          "description": "Hydrolyzed oat protein provides substantivity, shine, split-end repair, and a protective barrier to hair."
+        }
+      ],
+      "status": "ok",
+      "group": "humectants"
+    },
+    "collagen_amino_acids": {
+      "name": "Collagen Amino Acids",
+      "id": "collagen_amino_acids",
+      "categories": [
+        "proteins"
+      ],
+      "references": [
+        {
+          "url": "https://amzn.to/4hd4Tko",
+          "title": "Proteins for Conditioning Hair and Skin",
+          "type": "science",
+          "author": "Neudahl, G.",
+          "date": "1999",
+          "source": "Conditioning Agents for Hair and Skin",
+          "description": "Collagen amino acids are very good at attracting and holding onto moisture (hygroscopic). This makes them excellent for moisturizing hair. Penetration makes hair pliable and soft, particularly at high relative humidity."
+        }
+      ],
+      "status": "ok",
+      "group": "humectants"
+    },
+    "wheat_amino_acids": {
+      "name": "Wheat Amino Acids",
+      "id": "wheat_amino_acids",
+      "categories": [
+        "proteins"
+      ],
+      "references": [
+        {
+          "url": "https://amzn.to/4hd4Tko",
+          "title": "Proteins for Conditioning Hair and Skin",
+          "type": "science",
+          "author": "Neudahl, G.",
+          "date": "1999",
+          "source": "Conditioning Agents for Hair and Skin",
+          "description": "Wheat amino acid can function as humectants."
+        }
+      ],
+      "status": "ok",
+      "group": "humectants"
+    },
+    "apple_cider_vinegar": {
+      "name": "Apple Cider Vinegar",
+      "id": "apple_cider_vinegar",
+      "categories": [
+        "other"
+      ],
+      "references": [
+        {
+          "url": "https://www.semanticscholar.org/paper/No-sulfates%2C-no-parabens%2C-and-the-%22no-poo%22-method%3A-Cline-Uwakwe/6fc55d2ab974b0c2fa1e4fed7814e0bdf97447cb",
+          "title": "No sulfates, no parabens, and the 'no-poo' method: a new patient perspective on common shampoo ingredients.",
+          "type": "science",
+          "author": "Cline, A. et al.",
+          "date": "2018",
+          "source": "Cutis",
+          "description": "Has a low pH (3.1- 5) which is similar to the pH of the scalp/hair. Has antimicrobial properties. Capable of tightening the hair cuticle and has a mild cleansing ability. Advises that undiluted ACV may be hazardous to the eyes."
+        }
+      ],
+      "status": "ok",
+      "group": "others"
+    },
+    "baking_soda": {
+      "name": "Baking Soda",
+      "id": "baking_soda",
+      "categories": [
+        "other"
+      ],
+      "synonyms": [
+        "sodium bicarbonate"
+      ],
+      "description": "An alkaline substance that can damage the hair cuticle and cause breakage",
+      "references": [
+        {
+          "url": "https://www.semanticscholar.org/paper/No-sulfates%2C-no-parabens%2C-and-the-%22no-poo%22-method%3A-Cline-Uwakwe/6fc55d2ab974b0c2fa1e4fed7814e0bdf97447cb",
+          "title": "No sulfates, no parabens, and the 'no-poo' method: a new patient perspective on common shampoo ingredients.",
+          "type": "science",
+          "author": "Cline, A. et al.",
+          "date": "2018",
+          "source": "Cutis",
+          "description": "It has a very high pH (9.5-10.5) which is very different from the pH of the scalp/hair. Can cause the cuticle to open up, allowing water to break up proteins like keratin and increasing negative charges in the hair. This lowers the elasticity of the hair and can cause breakage."
+        }
+      ],
+      "status": "ok",
+      "group": "others"
     },
     "amodimethicone": {
       "name": "Amodimethicone",
@@ -3432,6 +3712,27 @@ export const defaultDatabase: IngredientDatabase = {
       ],
       "categories": [
         "non_water_soluble_silicones"
+      ],
+      "description": "While not water soluble, it is breathable and does not build up on top of itself.",
+      "references": [
+        {
+          "url": "https://amzn.to/4hd4Tko",
+          "title": "Organo-Modified Siloxane Polymers for Conditioning",
+          "type": "science",
+          "author": "Abrutyn, Eric S.",
+          "date": "1999",
+          "source": "Conditioning Agents for Hair and Skin",
+          "description": "This is an Amino-functional silicone, which is a PDMS siloxane backbone with aminoalkyl groups. This adds positive charges, making it adhere better to hair (negatively charged) = increase substansitivity (ability to adhere and stay on hair)"
+        },
+        {
+          "url": "https://amzn.to/4hd4Tko",
+          "title": "Organo-Modified Siloxane Polymers for Conditioning",
+          "type": "science",
+          "author": "Abrutyn, Eric S.",
+          "date": "1999",
+          "source": "Conditioning Agents for Hair and Skin",
+          "description": "Can be used as a heat protectant and to speed up drying time (by capillary displacement of water held betwen hair fibers). The film it forms can be retained through multiple washes but doesn't build up on top of itself."
+        }
       ],
       "status": "warning",
       "group": "silicones"
@@ -3560,6 +3861,17 @@ export const defaultDatabase: IngredientDatabase = {
       ],
       "categories": [
         "water_soluble_silicones"
+      ],
+      "references": [
+        {
+          "url": "https://amzn.to/4hd4Tko",
+          "title": "Specialty Silicone Conditioning Agents",
+          "type": "science",
+          "author": "O’Lenick, A.J.",
+          "date": "1999",
+          "source": "Conditioning Agents for Hair and Skin",
+          "description": "Has both water, oil, and silicone soluble parts. Nonionic so can be used with aninoic surfactants in shampoos."
+        }
       ],
       "status": "caution",
       "group": "silicones"
@@ -3798,6 +4110,46 @@ export const defaultDatabase: IngredientDatabase = {
         }
       ],
       "status": "caution",
+      "group": "silicones"
+    },
+    "trimethylsilylamodimethicone": {
+      "name": "Trimethylsilylamodimethicone",
+      "id": "trimethylsilylamodimethicone",
+      "categories": [
+        "non_water_soluble_silicones"
+      ],
+      "references": [
+        {
+          "url": "https://amzn.to/4hd4Tko",
+          "title": "Organo-Modified Siloxane Polymers for Conditioning",
+          "type": "science",
+          "author": "Abrutyn, Eric S.",
+          "date": "1999",
+          "source": "Conditioning Agents for Hair and Skin",
+          "description": "This is an Amino-functional silicone, which is a PDMS siloxane backbone with aminoalkyl groups. This adds positive charges, making it adhere better to hair (negatively charged) = increase substansitivity (ability to adhere and stay on hair)"
+        }
+      ],
+      "status": "warning",
+      "group": "silicones"
+    },
+    "silsesquioxane": {
+      "name": "Silsesquioxane",
+      "id": "silsesquioxane",
+      "categories": [
+        "non_water_soluble_silicones"
+      ],
+      "references": [
+        {
+          "url": "https://amzn.to/4hd4Tko",
+          "title": "Organo-Modified Siloxane Polymers for Conditioning",
+          "type": "science",
+          "author": "Abrutyn, Eric S.",
+          "date": "1999",
+          "source": "Conditioning Agents for Hair and Skin",
+          "description": "This is a Crosslinked Poly(dimethylsiloxanes). It is thought that the crosslinking improves substantivity (ability to adhere and stay on hair) without adding heaviness to the films it forms"
+        }
+      ],
+      "status": "warning",
       "group": "silicones"
     },
     "unknown_non_water_soluble_silicone": {
@@ -4144,7 +4496,18 @@ export const defaultDatabase: IngredientDatabase = {
       "id": "mild_surfactants",
       "name": "Mild surfactants",
       "group": "surfactants",
-      "description": "These surfactants are typically amphoteric, cationic, or non-ionic and are considered to be gentler on the hair and scalp than anionic surfactants like sulfates"
+      "description": "These surfactants are typically amphoteric or cationic and are considered to be gentler on the hair and scalp than anionic surfactants like sulfates. The cationic surfactants are primarily used for conditioning.",
+      "notes": [
+        {
+          "url": "https://amzn.to/4hd4Tko",
+          "title": "Cationic Surfactants and Quaternary Derivatives for Hair and Skin Care",
+          "type": "science",
+          "author": "Jurczyk, M.J. et al.",
+          "date": "1999",
+          "source": "Conditioning Agents for Hair and Skin",
+          "description": "Quaternary ammonium salts are positively charged, surfactant compounds that easily adhere to surfaces like hair."
+        }
+      ]
     },
     "heavy_oils": {
       "id": "heavy_oils",
@@ -4202,7 +4565,10 @@ export const defaultDatabase: IngredientDatabase = {
       "inclusions": [
         "polyquat"
       ],
-      "defaultIngredient": "unknown_polyquat"
+      "defaultIngredient": "unknown_polyquat",
+      "notes": [
+        {}
+      ]
     },
     "petroleum_oils": {
       "id": "petroleum_oils",

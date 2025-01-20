@@ -7,7 +7,7 @@
       "type": "array",
       "items": {
         "type": "object",
-        "required": ["name", "brand", "buy_url", "product_categories"],
+        "required": ["name", "brand", "buy_links", "product_categories"],
         "properties": {
           "name": {
             "type": "string",
@@ -22,10 +22,32 @@
             "type": "string",
             "description": "Brand name"
           },
-          "buy_url": {
-            "type": "string",
-            "format": "uri",
-            "description": "URL where the product can be purchased"
+          "buy_links": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["url"],
+              "properties": {
+                "url": {
+                  "type": "string",
+                  "format": "uri",
+                  "description": "URL where the product can be purchased"
+                },
+                "country": {
+                  "type": "string",
+                  "description": "Country code for this link"
+                },
+                "retailer": {
+                  "type": "string",
+                  "description": "Name of the retailer"
+                },
+                "description": {
+                  "type": "string",
+                  "description": "Description of this purchase link"
+                }
+              }
+            },
+            "description": "Links where the product can be purchased"
           },
           "systems_excluded": {
             "type": "array",
@@ -64,10 +86,6 @@
           "asin": {
             "type": "string",
             "description": "Amazon Standard Identification Number"
-          },
-          "country": {
-            "type": "string",
-            "description": "Country code"
           }
         },
         "additionalProperties": false

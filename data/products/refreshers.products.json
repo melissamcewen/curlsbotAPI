@@ -12,8 +12,14 @@
         "high_porosity",
         "low_porosity",
         "featured",
-        "black_owned"],
-        "buy_url": "https://ecoslay.sjv.io/kORodn"
+        "black_owned"
+      ],
+      "buy_links": [
+        {
+          "url": "https://ecoslay.sjv.io/kORodn",
+          "retailer": "Ecoslay"
+        }
+      ]
     }
   ]
 }

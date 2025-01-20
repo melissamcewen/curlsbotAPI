@@ -15,7 +15,12 @@
         "black_owned",
         "woman_owned",
         "small_business"],
-        "buy_url": "http://ecoslay.sjv.io/EEqZBe"
+        "buy_links": [
+          {
+            "url": "http://ecoslay.sjv.io/EEqZBe",
+            "retailer": "Ecoslay"
+          }
+        ]
 
     },
     {
@@ -29,15 +34,20 @@
         "normal_porosity",
         "featured"
       ],
-      "buy_url": "https://amzn.to/4iSDfKT",
+      "buy_links": [
+        {
+          "url": "https://amzn.to/4iSDfKT",
+          "retailer": "Amazon",
+          "country": "AU"
+        }
+      ],
       "description": "This shampoo has some stronger cleansers, but that's fine in a clarifying shampoo because you're only using it once in a while. It's sulfate-free, so it won't strip your hair too much. It's also got some nice oils in it to help keep your hair from getting too dry.",
-      "country": "AU",
       "asin": "B0089NVH5W",
       "ingredients_raw": "aqua water eau, cocamidopropyl hydroxysultaine, disodium laureth sulfosuccinate, sodium lauryl sulfoacetate, sodium lauroyl sarcosinate, sodium polystyrene sulfonate, sodium chloride, cocamidopropylamine oxide, argania spinosa argan kernel oil, persea gratissima avocado oil, rosmarinus officinalis rosemary leaf extract, chamomilla recutita matricaria flower extract, lavandula angustifolia lavender flower extract, simmondsia chinensis jojoba seed extract, keratin amino acids, hydrolyzed keratin, silk amino acids, panthenol, sodium pca, cinnamidopropyltrimonium chloride, butylene glycol, peg-40 hydrogenated castor oil, peg-150 pentaerythrityl tetrastearate, peg-6 caprylic capric glycerides, caprylyl glycol, tetrasodium edta, disodium edta, chlorphenesin, phenoxyethanol, parfum fragrance, ci 17200 red 33, ci 19140 yellow 5, sodium hydroxide, citric acid, alpha-isomethyl ionone, butylphenyl methylpropional, linalool, hydroxyisohexyl 3-cyclohexene carboxaldehydethylpropional",
       "cost": 3.8
     },
     {
-      "name": "Wash & Scrub Detox Pro-biotic",
+      "name": "Wash & Scrub Detox Shampoo",
       "brand": "Curlsmith",
       "product_categories": [
         "clarifying_shampoos"
@@ -48,8 +58,18 @@
         "normal_porosity",
         "featured"
       ],
-      "buy_url": "https://amzn.to/4iUapKl",
-      "country": "UK",
+      "buy_links": [
+        {
+          "url": "https://amzn.to/4iUapKl",
+          "retailer": "Amazon",
+          "country": "UK"
+        },
+        {
+          "url": "https://amzn.to/4g18iBT",
+          "retailer": "Amazon",
+          "country": "US"
+        }
+      ],
       "asin": "B08636L8JY",
       "cost": 2.6
     },
@@ -64,7 +84,12 @@
         "normal_porosity",
         "featured"
       ],
-      "buy_url": "https://click.linksynergy.com/link?id=9QcV0uNyab0&offerid=929395.3842991208&type=2&murl=https%3a%2f%2fwww.ouidad.com%2fproducts%2fwater-works-clarifying-shampoo%3fvariant%3d42617153618178",
+      "buy_links": [
+        {
+          "url": "https://click.linksynergy.com/link?id=9QcV0uNyab0&offerid=929395.3842991208&type=2&murl=https%3a%2f%2fwww.ouidad.com%2fproducts%2fwater-works-clarifying-shampoo%3fvariant%3d42617153618178",
+          "retailer": "Ouidad"
+        }
+      ],
       "cost": 2.8,
       "asin": "B0001Y74XG",
       "ingredients_raw": "water, ammonium laureth sulfate, sodium laureth sulfate, cocomidopropyl betaine, lauryl glucoside, butylene glycol, cocamide mea, polysorbate 20, sodium lauroamphoacetate, panthenol, saccharum officinarum sugar cane extract, citrus medica limonum lemon peel extract, citrus aurantium dulcis orange fruit extract, pyrus malus apple fruit extract, camellia oleifera leaf extract, cetrimonium chloride, polyquaternium-59, polyquaternium-10, citrus aurantium dulcis orange peel oil, citrus tangerina tangerine peel oil, disodium edta, methychloroisothiazolinone, methylisothiazolinone",
@@ -82,7 +107,12 @@
         "featured"
       ],
       "ingredients_raw": "water, sodium lauroyl methyl isethionate, decyl glucoside, sodium cocoyl isethionate, disodium cocoamphodiacetate, propanediol, panthenol pro-vitamin b5, polyquaternium-10, hydroxypropyl methylcellulose, biotin, vanillin, hydrolyzed adansonia digitata baobab seed protein, nigella sativa virgin black cumin oil, stearamidopropyl dimethylamine, lactic acid, caprylhydroxamic acid, rosmarinus officinalis rosemary leaf extract, boswellia carterii oil, lactobacillus punica granatum fruit ferment extract, lactobacillus pumpkin ferment extract, argania spinosa kernel oil, cocos nucifera coconut oil, citrus aurantium bergamia bergamot fruit oil, anthemis nobilis flower oil, geranium maculatum oil, citrus paradisi grapefruit seed oil, lavandula angustifolia lavender oil, pogostemon cablin oil, citrus aurantium dulcis orange seed oil, citrus nobilis mandarin orange peel oil, caprylyl glycol",
-      "buy_url": "https://amzn.to/3ZRY0xK",
+      "buy_links": [
+        {
+          "url": "https://amzn.to/3ZRY0xK",
+          "retailer": "Amazon"
+        }
+      ],
       "asin": "B08BB41Q3R",
       "description": "This is a great choice for a gentle clarifying shampoo for high and medium porosity hair.",
       "cost": 4
@@ -100,7 +130,12 @@
         "featured"
       ],
       "ingredients_raw": "water aqua eau, cetearyl alcohol, kaolin, glycerin, vinegar, charcoal powder, oryza sativa rice bran oil, behentrimonium methosulfate, olea europaea olive fruit extract, butyrospermum parkii shea butter, stearalkonium chloride, hydrolyzed quinoa, epilobium angustifolium flower leaf stem extract, panthenol vitamin b-5, potassium sorbate, hydrolyzed adansonia digitata seed extract, sodium levulinate, stearyl alcohol, thiamine hcl, benzyl alcohol, sodium benzoate, glycine soja soybean oil, cananga odorata ylang ylang flower oil, citrus aurantium dulcis orange peel oil, lavandula angustifolia lavender oil, pogostemon cablin patchouli oil, salvia sclarea clary oil, linalool, limonene",
-      "buy_url": "https://amzn.to/4gTtFWm",
+      "buy_links": [
+        {
+          "url": "https://amzn.to/4gTtFWm",
+          "retailer": "Amazon"
+        }
+      ],
       "cost": 5,
       "asin": "B09YS5YRTR",
       "description": "This mask is a great gentle option for removing stubborn buildup without stripping out your natural oils."
@@ -109,7 +144,12 @@
       "name": "Scalp Care Clarifying Shampoo",
       "brand": "Maui Moisture",
       "cost": 0.61,
-      "buy_url": "https://amzn.to/4gV7M9j",
+      "buy_links": [
+        {
+          "url": "https://amzn.to/4gV7M9j",
+          "retailer": "Amazon"
+        }
+      ],
       "asin": "B0CLBZ5PBS",
       "ingredients_raw": "aloe barbadensis leaf juice, water aqua, sodium c14-16 olefin sulfonate, cocamidopropyl betaine, coco-glucoside, citric acid, glycol distearate, vinegar, tocopheryl acetate, cocos nucifera coconut water, nigella sativa seed oil, opuntia ficus-indica seed oil, adansonia digitata seed oil, cocos nucifera coconut seed butter, butyrospermum parkii shea butter, calophyllum inophyllum seed oil, moringa oleifera seed oil, tetraselmis suecica extract, hydroxyphenyl propamidobenzoic acid, peg-5 ethylhexanoate, trideceth-9, mannitol, polyquaternium-10, acrylates crosspolymer-4, laureth-4, glycerin, guar hydroxypropyltrimonium chloride, peg-150 pentaerythrityl tetrastearate, ppg-2 hydroxyethyl cocamide, hexylene glycol, sodium citrate, sodium hydroxide, sodium benzoate, fragrance parfum",
       "product_categories": [

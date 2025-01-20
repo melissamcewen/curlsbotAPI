@@ -10,8 +10,13 @@
         "style",
         "featured"
       ],
-      "buy_url": "https://click.linksynergy.com/link?id=9QcV0uNyab0&offerid=696429.4479416&type=2&murl=https%3a%2f%2fbioionic.com%2fproducts%2funiversal-diffuser-black%3fvariant%3d44904716697920%26utm_source%3dgoogle%26utm_medium%3dpaid%26utm_campaign%3dshopping%26utm_term%3d16",
-      "description": "Turn any hairdryer into a diffuser with this attachment"
+      "description": "Turn any hairdryer into a diffuser with this attachment",
+      "buy_links": [
+        {
+          "url": "https://click.linksynergy.com/link?id=9QcV0uNyab0&offerid=696429.4479416&type=2&murl=https%3a%2f%2fbioionic.com%2fproducts%2funiversal-diffuser-black%3fvariant%3d44904716697920%26utm_source%3dgoogle%26utm_medium%3dpaid%26utm_campaign%3dshopping%26utm_term%3d16",
+          "retailer": "Bio Ionic"
+        }
+      ]
     },
     {
       "name": "Curly Girl Microfiber Super Absorbent Anti Frizz Hair Towel",
@@ -23,7 +28,12 @@
         "style",
         "featured"
       ],
-      "buy_url": "https://amzn.to/4iXc9Cv",
+      "buy_links": [
+        {
+          "url": "https://amzn.to/4iXc9Cv",
+          "retailer": "Amazon"
+        }
+      ],
       "asin": "B09D8PL1N5",
       "description": "Help your hair dry faster and reduce frizz with a microfiber towel."
     },
@@ -37,7 +47,12 @@
         "style",
         "featured"
       ],
-      "buy_url": "https://eldritchsalvage.etsy.com",
+      "buy_links": [
+        {
+          "url": "https://eldritchsalvage.etsy.com",
+          "retailer": "Eldritch Salvage"
+        }
+      ],
       "description": "These headbands are made by the creator of CurlsBot from soft, stretchy fabric that won't snag or pull on your curls. They're perfect for keeping your hair out of your face and creating lovely styles that won't damage your hair."
     },
     {
@@ -50,15 +65,18 @@
       "product_categories": [
         "accessories"
       ],
-      "buy_url": "https://lohy.com.au/products/curly-hair-products-lohy-cozy-turban?aff=49",
-      "description": "Protect your hair while you sleep with this cozy turban",
-      "country": "AU"
+      "buy_links": [
+        {
+          "url": "https://lohy.com.au/products/curly-hair-products-lohy-cozy-turban?aff=49",
+          "retailer": "Lohy",
+          "country": "AU"
+        }
+      ],
+      "description": "Protect your hair while you sleep with this cozy turban"
     },
     {
-      "buy_url": "https://lohy.com.au/products/curls-frills-hair-kit?aff=49",
       "name": "Curly Hair Accessories Kit",
       "brand": "Lohy",
-      "country": "AU",
       "description": "A full kit of Lohy's most useful accessories such as a sleep turban, volume clips, and innovative hydration glove",
       "tags": [
         "style",
@@ -66,6 +84,13 @@
       ],
       "product_categories": [
         "accessories"
+      ],
+      "buy_links": [
+        {
+          "url": "https://lohy.com.au/products/curls-frills-hair-kit?aff=49",
+          "retailer": "Lohy",
+          "country": "AU"
+        }
       ]
     }
   ]

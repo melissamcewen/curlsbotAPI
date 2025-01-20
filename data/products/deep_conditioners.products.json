@@ -16,12 +16,23 @@
         "woman_owned",
         "small_business"
       ],
-      "buy_url": "https://ecoslay.sjv.io/4GdWVM"
+      "buy_links": [
+        {
+          "url": "https://ecoslay.sjv.io/4GdWVM",
+          "retailer": "Ecoslay"
+        }
+      ],
+      "asin": "B09D8PL1N5"
     },
     {
       "name": "Deep Conditioning Treatment",
       "brand": "Jessicurl",
-      "buy_url": "https://amzn.to/3ZFDa4x",
+      "buy_links": [
+        {
+          "url": "https://amzn.to/3ZFDa4x",
+          "retailer": "Amazon"
+        }
+      ],
       "product_categories": [
         "deep_conditioners"
       ],
@@ -38,7 +49,12 @@
       "name": "Deep Conditioner & Repair",
       "brand": "Love Ur Curls",
       "ingredients_raw": "aqua water eau, butyrospermum parkii shea butter, persea gratissima avocado oil, cetyl alcohol, cetearyl alcohol, behentrimonium chloride, cetrimonium chloride, aloe barbadensis leaf juice, moringa oleifera seed oil, simmondsia chinensis jojoba seed oil, rosmarinus officinalis rosemary leaf oil, ceteareth-20, hydroxyethylcellulose, tocopheryl acetate vitamin e, d-panthenol provitmain b5, phenoxyethanol, ethylhexylglycerin, citric acid, fragrance parfum",
-      "buy_url": "https://amzn.to/408QOOY",
+      "buy_links": [
+        {
+          "url": "https://amzn.to/408QOOY",
+          "retailer": "Amazon"
+        }
+      ],
       "product_categories": [
         "deep_conditioners",
         "featured"
@@ -65,9 +81,18 @@
         "low_porosity"
       ],
       "ingredients_raw": "water aqua, cetearyl alcohol, behentrimonium chloride, propanediol, hydroxypropyl starch phosphate, cetyl palmitate, fragrance parfum, guar hydroxypropyltrimonium chloride, selaginella lepidophylla resurrection flower extract, carapa guaianensis andiroba seed oil, aloe barbadensis aloe vera leaf juice, ocimum basilicum basil leaf extract, piper nigrum black pepper seed extract, rosmarinus officinalis rosemary leaf extract, salvia officinalis sage leaf extract, helianthus annuus sunflower seed oil, prunus armeniaca apricot kernel oil, persea gratissima avocado oil, butyrospermum parkii shea butter, panthenol, ethylhexylglycerin, citric acid, disodium edta, sodium hydroxide, potassium sorbate, sodium benzoate, glycerin, phenoxyethanol, linalool, limonene",
-      "buy_url": "https://amzn.to/4iVdf1y",
-      "asin": "B08639DTVD",
-      "country": "UK"
+      "buy_links": [
+        {
+          "url": "https://amzn.to/4iVdf1y",
+          "retailer": "Amazon",
+          "country": "UK"
+        },
+        {
+          "url": "https://amzn.to/3Edab0O",
+          "retailer": "Amazon"
+        }
+      ],
+      "asin": "B08639DTVD"
     }
   ]
 }

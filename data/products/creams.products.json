@@ -3,7 +3,12 @@
     {
       "name": "Lemon Buttercream Styling Cream",
       "brand": "Ecoslay",
-      "buy_url": "http://ecoslay.sjv.io/19bWvR",
+      "buy_links": [
+        {
+          "url": "http://ecoslay.sjv.io/19bWvR",
+          "retailer": "Ecoslay"
+        }
+      ],
       "product_categories": [
         "creams"
       ],
@@ -20,7 +25,12 @@
     {
       "name": "I Create Volume",
       "brand": "Innersense",
-      "buy_url": "https://amzn.to/3ZXk3o3",
+      "buy_links": [
+        {
+          "url": "https://amzn.to/3ZXk3o3",
+          "retailer": "Amazon"
+        }
+      ],
       "product_categories": [
         "creams"
       ],
@@ -36,7 +46,12 @@
     {
       "name": "Curly Hair Cream",
       "brand": "MopTop",
-      "buy_url": "https://amzn.to/4fCbwLM",
+      "buy_links": [
+        {
+          "url": "https://amzn.to/4fCbwLM",
+          "retailer": "Amazon"
+        }
+      ],
       "product_categories": [
         "creams"
       ],
@@ -52,7 +67,13 @@
     {
       "name": "Cruise Control Curl Cream",
       "brand": "Lohy",
-      "buy_url": "https://lohy.com.au/products/cruise-control-curl-cream-curly-hair-styling?aff=49",
+      "buy_links": [
+        {
+          "url": "https://lohy.com.au/products/cruise-control-curl-cream-curly-hair-styling?aff=49",
+          "retailer": "Lohy",
+          "country": "AU"
+        }
+      ],
       "product_categories": [
         "creams"
       ],
@@ -63,7 +84,6 @@
         "featured"
       ],
       "ingredients_raw": "aqua, caprylic capric triglyceride, cetearyl alcohol, glycerin, propanediol, cetrimonium chloride, butyrospermum parkii shea butter, oryza sativa rice bran oil, glyceryl stearate, phenoxyethanol, citrus nobilis mandarin peel oil, hydrolised soy protein, cucumis sativus cucumber fruit extract, chamomila recutita matricaria flower leaf stem extract, camellia sinensis white tea leaf extract, polyquaternium-10, sodium benzoate",
-      "country": "AU",
       "cost": 3
     },
     {
@@ -79,9 +99,18 @@
         "featured"
       ],
       "ingredients_raw": "water aqua, ricinus communis castor seed oil, dicaprylyl carbonate, cetearyl alcohol, orbignya speciosa babassu kernel oil, behentrimonium chloride, sodium hyaluronate, astrocaryum murumuru seed butter, simmondsia chinensis jojoba seed oil, butyrospermum parkii shea butter, hylocereus undatus dragon fruit fruit extract, paullinia cupana guarana seed extract, urtica dioica nettle leaf extract, zingiber officinale ginger root extract, polyquaternium-10, panthenol, guar hydroxypropyltrimonium chloride, tocopherol, disodium edta, ethylhexylglycerin, glycerin, citric acid, sodium hydroxide, potassium sorbate, sodium benzoate, phenoxyethanol, linalool, limonene, citronellol, fragrance parfum",
-      "buy_url": "https://amzn.to/4iZV6zV",
+      "buy_links": [
+        {
+          "url": "https://amzn.to/4iZV6zV",
+          "retailer": "Amazon",
+          "country": "UK"
+        },
+        {
+          "url": "https://amzn.to/4gbWmgy",
+          "retailer": "Amazon"
+        }
+      ],
       "asin": "B08N5CCKJ8",
-      "country": "UK",
       "cost": 3.3
     },
     {
@@ -98,7 +127,16 @@
       ],
       "cost": 3,
       "ingredients_raw": "aqua, cetearyl alcohol, behentrimonium methosulfate, linum usitatissimum linseed seed extract, salvia hispanica seed extract, coco-caprylate, cetyl alcohol, hydroxyethylcellulose, cocos nucifera coconut oil, helianthus annuus sunflower oil, ananas sativus pineapple fruit extract, sodium hyaluronate, phenoxyethanol, ethylhexylglycerin, parfum natural, sodium citrate, citric acid",
-      "buy_url": "https://amzn.to/3BXFWKA",
+      "buy_links": [
+        {
+          "url": "https://amzn.to/3BXFWKA",
+          "retailer": "Amazon"
+        },
+        {
+          "url": "https://sovrn.co/1mlplxb",
+          "retailer": "Pacifica"
+        }
+      ],
       "asin": "B07HLJ7MHL"
     }
   ]

@@ -3,35 +3,22 @@
     {
       "name": "Bond Curl Rehab Salve, Bond Building Strength Treatment for Weak, Damaged Hair",
       "brand": "Curlsmith",
-      "buy_url": "https://amzn.to/402sONw",
-      "product_categories": [
-        "pre_poo"
+      "buy_links": [
+        {
+          "url": "https://amzn.to/402sONw",
+          "retailer": "Amazon"
+        },
+        {
+          "url": "https://amzn.to/429CqI3",
+          "retailer": "Amazon",
+          "country": "UK"
+        }
       ],
-      "tags": [
-        "high_porosity",
-        "featured"
-      ],
+      "product_categories": ["pre_poo"],
+      "tags": ["high_porosity", "featured"],
       "cost": 3.75,
       "asin": "B08WPNSHCD",
       "ingredients_raw": "water aqua, cetearyl alcohol, salvia hispanica chia seed extract, creatine, polyquaternium-10, stearamidopropyl dimethylamine, lentinus edodes shiitake extract, opuntia tuna prickly pear fruit extract, cucurbita pepo pumpkin seed extract, psidium guajava guava fruit extract, prunus amygdalus dulcis sweet almond oil, ribes nigrum black currant fruit extract, brassica oleracea acephala kale leaf extract, leuconostoc radish root ferment filtrate, polyquaternium-37, hydroxypropylgluconamide, hydroxypropylammonium gluconate, disodium edta, potassium sorbate, tartaric acid, citric acid, ethylhexylglycerin, glycerin, behentrimonium chloride, phenoxyethanol, sodium benzoate, benzyl alcohol, geraniol, fragrance parfum, linalool, limonene"
-    },
-    {
-      "name": "Bond Curl Rehab Salve",
-      "brand": "Curlsmith",
-      "product_categories": [
-        "pre_poo",
-        "featured"
-      ],
-      "tags": [
-        "normal_porosity",
-        "high_porosity",
-        "featured"
-      ],
-      "ingredients_raw": "water aqua, cetearyl alcohol, salvia hispanica chia seed extract, creatine, polyquaternium-10, stearamidopropyl dimethylamine, lentinus edodes shiitake extract, opuntia tuna prickly pear fruit extract, cucurbita pepo pumpkin seed extract, psidium guajava guava fruit extract, prunus amygdalus dulcis sweet almond oil, ribes nigrum black currant fruit extract, brassica oleracea acephala kale leaf extract, leuconostoc radish root ferment filtrate, polyquaternium-37, hydroxypropylgluconamide, hydroxypropylammonium gluconate, disodium edta, potassium sorbate, tartaric acid, citric acid, ethylhexylglycerin, glycerin, behentrimonium chloride, phenoxyethanol, sodium benzoate, benzyl alcohol, geraniol, fragrance parfum, linalool, limonene",
-      "buy_url": "https://amzn.to/429CqI3",
-      "asin": "B08WPNSHCD",
-      "country": "UK",
-      "cost": 3.75
     }
   ]
 }

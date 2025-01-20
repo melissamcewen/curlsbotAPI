@@ -17,7 +17,12 @@
         "woman_owned",
         "small_business"
       ],
-      "buy_url": "https://ecoslay.sjv.io/55j7vj"
+      "buy_links": [
+        {
+          "url": "https://ecoslay.sjv.io/55j7vj",
+          "retailer": "Ecoslay"
+        }
+      ]
     },
     {
       "name": "Orange Marmalade Flaxseed and Aloe Curl Definer",
@@ -36,7 +41,12 @@
         "woman_owned",
         "small_business"],
         "description": "CurlsBot note: This is the main styling product I use on my own hair- Melissa",
-        "buy_url": "https://ecoslay.sjv.io/qzg2M5"
+        "buy_links": [
+          {
+            "url": "https://ecoslay.sjv.io/qzg2M5",
+            "retailer": "Ecoslay"
+          }
+        ]
     },
     {
       "name": "Advanced Climate Control Heat & Humidity Gel",
@@ -53,7 +63,12 @@
         "featured"
       ],
       "cost": 3,
-      "buy_url": "https://click.linksynergy.com/link?id=9QcV0uNyab0&offerid=929395.3842993508&type=2&murl=https%3a%2f%2fwww.ouidad.com%2fproducts%2fadvanced-climate-control-heat-and-humidity-gel%3fvariant%3d42617150865666"
+      "buy_links": [
+        {
+          "url": "https://click.linksynergy.com/link?id=9QcV0uNyab0&offerid=929395.3842993508&type=2&murl=https%3a%2f%2fwww.ouidad.com%2fproducts%2fadvanced-climate-control-heat-and-humidity-gel%3fvariant%3d42617150865666",
+          "retailer": "Ouidad"
+        }
+      ]
     },
     {
       "name": "Coil Infusion® Good Shape® Defining Gel",
@@ -67,13 +82,23 @@
         "featured"
       ],
       "cost": 3.5,
-      "buy_url": "https://click.linksynergy.com/link?id=9QcV0uNyab0&offerid=929395.3842995708&type=2&murl=https%3a%2f%2fwww.ouidad.com%2fproducts%2fcoil-infusion-good-shape-defining-gel%3fvariant%3d42617151488258",
+      "buy_links": [
+        {
+          "url": "https://click.linksynergy.com/link?id=9QcV0uNyab0&offerid=929395.3842995708&type=2&murl=https%3a%2f%2fwww.ouidad.com%2fproducts%2fcoil-infusion-good-shape-defining-gel%3fvariant%3d42617151488258",
+          "retailer": "Ouidad"
+        }
+      ],
       "ingredients_raw": "aqua water eau, polyquaternium-11, polyquaternium-37, argania spinosa argan oil, ricinus communis castor seed oil, hydrolyzed wheat protein, aloe barbadensis leaf juice, polyquaternium-7, panthenol, sericin, ppg-3 benzyl ether myristate, glycerin, pvp, hydroxyethylcellulose, isoceteth-20, citric acid, behentrimonium chloride, cetrimonium chloride, guar hydroxypropyltrimonium chloride, hydroxypropyl bis-hydroxyethyldimonium chloride, disodium edta, caprylyl glycol, iodopropynyl butylcarbamate, phenoxyethanol, limonene, linalool, fragrance parfum"
     },
     {
       "name": "I Create Hold",
       "brand": "Innersense",
-      "buy_url": "https://amzn.to/2BYccc7",
+      "buy_links": [
+        {
+          "url": "https://amzn.to/2BYccc7",
+          "retailer": "Amazon"
+        }
+      ],
       "product_categories": [
         "gels"
       ],
@@ -91,7 +116,12 @@
       "name": "Curl Enhancer Gel",
       "brand": "MopTop",
       "ingredients_raw": "water, aloe barbadensis leaf extract, polyacrylate-2 crosspolymer, maltodextrin vp copolymer, hydroxyethylcellulose, hydroxypropyltrimonium honey, laminaria saccharina algae extract, fucus vesiculosus bladderwrack extract, arnica montana flower extract, urtica dioica nettle extract, chamomilla recutita matricaria flower extract, silk amino acids, glycerin, sodium hydroxide, polyquaternium-10, ethylhexylglycerin, polysorbate-20, panthenol, phytic acid, phenoxyethanol, fragrance",
-      "buy_url": "https://amzn.to/4iLNscf",
+      "buy_links": [
+        {
+          "url": "https://amzn.to/4iLNscf",
+          "retailer": "Amazon"
+        }
+      ],
       "product_categories": [
         "gels"
       ],
@@ -109,7 +139,12 @@
       "name": "I Create Volume",
       "brand": "Innersense",
       "ingredients_raw": "water, aqua-eau, aloe barbadensis aloe vera leaf gel, cyamop-sistetragonolobus guar gum, sclerotium gum, citrus aurantium amara bitter orange flower water, organic rooibos african camellia sinensis leaf extract, sodium benzoate, calcium gluconate, potassium sorbate, hydrolyzed rice protein, glycerin, chamomilla recutita matricaria flower extract, eucalyptus globulus leaf extract, ginkgo biloba leaf extract, aspalathus linearis leaf extract, eucalyptus globulus extract, citric acid, maltodextrin, honey extract, linalool, sorbitol, gluconolactone",
-      "buy_url": "https://amzn.to/3ZSFbue",
+      "buy_links": [
+        {
+          "url": "https://amzn.to/3ZSFbue",
+          "retailer": "Amazon"
+        }
+      ],
       "product_categories": [
         "gels"
       ],
@@ -135,13 +170,17 @@
         "hold",
         "featured"
       ],
-      "buy_url": "https://amzn.to/4fyvVl5",
+      "buy_links": [
+        {
+          "url": "https://amzn.to/4fyvVl5",
+          "retailer": "Amazon"
+        }
+      ],
       "asin": "B09YMYDNX8"
     },
     {
       "name": "POW Strong Hold Gel",
       "brand": "Lohy",
-      "buy_url": "https://lohy.com.au/products/pow-strong-hold-gel-curly-hair?aff=49",
       "ingredients_raw": "aqua, aloe barbadensis aloe vera leaf juice, polyquaternium-10, glycerin, propanediol, vp va copolymer, phenoxyethanol, hydrolysed soy protein, camellia sinensis white tea leaf extract, chamomilla recutita matricaria flower leaf stem extract, sodium benzoate, eucalyptus globulus leaf oil, mentha arvensis peppermint leaf oil",
       "product_categories": [
         "gels"
@@ -152,12 +191,17 @@
         "hold",
         "featured"
       ],
-      "country": "AU"
+      "buy_links": [
+        {
+          "url": "https://lohy.com.au/products/pow-strong-hold-gel-curly-hair?aff=49",
+          "retailer": "Lohy",
+          "country": "AU"
+        }
+      ]
     },
     {
       "name": "Oomph Hydrating Gel",
       "brand": "Lohy",
-      "buy_url": "https://lohy.com.au/products/oomph-volumising-lotion-curly-hair-styling?aff=49",
       "ingredients_raw": "aqua, aloe barbadensis aloe vera leaf juice, pullulan, glycerin, propanediol, camellia sinensis white tea leaf extract, chamomilla recutita matricaria flower leaf stem extract, cyamopsis tetragonoloba guar gum, phenoxyethanol, hydrolysed soy protein, potassium sorbate, citrus limon lemon peel oil, pelargonium graveolens geranium flower oil",
       "product_categories": [
         "gels"
@@ -168,7 +212,13 @@
         "volume",
         "featured"
       ],
-      "country": "AU"
+      "buy_links": [
+        {
+          "url": "https://lohy.com.au/products/oomph-volumising-lotion-curly-hair-styling?aff=49",
+          "retailer": "Lohy",
+          "country": "AU"
+        }
+      ]
     },
     {
       "name": "Hydro Style Flexi-Jelly",
@@ -184,14 +234,25 @@
         "high_porosity"
       ],
       "ingredients_raw": "water aqua, pvp, peg-40 hydrogenated castor oil, sodium hyaluronate, camellia sinensis green tea leaf extract, lavandula angustifolia lavender flower extract, thymus vulgaris thyme leaf extract, thuja occidentalis white cedar leaf extract, phyllanthus emblica amla fruit extract, panthenol, disodium edta, carbomer, caprylyl glycol, sodium benzoate, potassium sorbate, aminomethyl propanol, glycerin, phenoxyethanol, ethylhexylglycerin, linalool, limonene, citronellol, fragrance parfum",
-      "buy_url": "https://amzn.to/3BHjZj1",
-      "asin": "B08N5BX78W",
-      "country": "UK"
+      "buy_links": [
+        {
+          "url": "https://amzn.to/3BHjZj1",
+          "retailer": "Amazon",
+          "country": "UK"
+        }
+      ],
+      "asin": "B08N5BX78W"
     },
     {
       "name": "LA Hold Styling Gel",
       "brand": "Giovanni",
-      "buy_url": "https://amzn.to/4fKkExP",
+      "buy_links": [
+        {
+          "url": "https://amzn.to/4fKkExP",
+          "retailer": "Amazon",
+          "country": "UK"
+        }
+      ],
       "cost": 1,
       "tags": [
         "normal_porosity",

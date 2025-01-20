@@ -71,9 +71,9 @@ function convertToReferenceObjects(refs: (string | Reference)[]): Reference[] {
   });
 }
 
-function generateIdFromName(name: string, country?: string): string {
+function generateIdFromName(name: string): string {
   const baseId = name.toLowerCase().replace(/\s+/g, '_');
-  return country ? `${baseId}_${country.toLowerCase()}` : baseId;
+  return baseId;
 }
 
 function loadIngredientsFromDir(dirPath: string): any {
@@ -157,6 +157,21 @@ function loadProductsFromDir(dirPath: string): any {
   const allProducts: any[] = [];
   const analyzer = new Analyzer();
 
+  // First load categories to look up groups
+  const categoriesData = loadJsonFile(join(DATA_DIR, 'categories.json'));
+  const categoryGroups = (categoriesData?.categories || []).reduce(
+    (acc: Record<string, string>, cat: { id?: string; group?: string }) => {
+      if (cat.id && cat.group) {
+        acc[cat.id] = cat.group;
+      }
+      return acc;
+    },
+    {},
+  );
+
+  // Load references data
+  const referencesData = loadReferences();
+
   for (const file of files) {
     const filePath = join(dirPath, file);
     try {
@@ -188,7 +203,7 @@ function loadProductsFromDir(dirPath: string): any {
       return acc;
     }
 
-    const productId = generateIdFromName(productName, product.country);
+    const productId = generateIdFromName(productName);
 
     // Analyze ingredients if raw ingredients exist
     let status: 'ok' | 'caution' | 'warning' | 'error' | undefined = undefined;
@@ -224,7 +239,7 @@ function loadProductsFromDir(dirPath: string): any {
       cost_rating,
     };
     return acc;
-  }, {});
+  }, {} as Record<string, any>);
 }
 
 function loadJsonFile(filePath: string): any {
