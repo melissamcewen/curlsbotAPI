@@ -1,9 +1,6 @@
 import type { AnalysisResult } from '../types';
 
-export interface PorosityAnalysis {
-  high: number;
-  low: number;
-}
+
 
 export function porosity(analysis: AnalysisResult): PorosityAnalysis {
   const definitions = {

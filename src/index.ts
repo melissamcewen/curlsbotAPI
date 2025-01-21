@@ -5,3 +5,4 @@ export * from './types';
 export * from './data/bundledData';
 export * from './data/bundledProducts';
 export * from './extensions/frizzbot';
+export * from './extensions/porosity';
