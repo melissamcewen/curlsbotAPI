@@ -1,6 +1,4 @@
-import type { AnalysisResult } from '../types';
-
-
+import type { AnalysisResult, PorosityAnalysis } from '../types';
 
 export function porosity(analysis: AnalysisResult): PorosityAnalysis {
   const definitions = {
@@ -33,7 +31,15 @@ export function porosity(analysis: AnalysisResult): PorosityAnalysis {
     },
     low: {
       bad: ['heavy_oils', 'non_water_soluble_waxes', 'water_soluble_waxes'],
-      medium: ['other_oils', 'light_oils', 'medium_oils', 'other_emollients'],
+      medium: [
+        'other_oils',
+        'light_oils',
+        'medium_oils',
+        'other_emollients',
+        'conditioning_agents',
+        'polyquats',
+        'film_forming_agents',
+      ],
       good: ['sulfates', 'other_anionic_surfactants'],
     },
   };
@@ -53,7 +59,7 @@ export function porosity(analysis: AnalysisResult): PorosityAnalysis {
           definitions.high.bad.includes(cat),
         )
       ) {
-        highScore -= 10 * positionWeight;
+        highScore -= 20 * positionWeight;
       }
       if (
         ingredient.ingredient.categories.some((cat) =>
@@ -69,21 +75,21 @@ export function porosity(analysis: AnalysisResult): PorosityAnalysis {
           definitions.low.bad.includes(cat),
         )
       ) {
-        lowScore -= 15 * positionWeight;
+        lowScore -= 35 * positionWeight;
       }
       if (
         ingredient.ingredient.categories.some((cat) =>
           definitions.low.medium.includes(cat),
         )
       ) {
-        lowScore -= 5 * positionWeight;
+        lowScore -= 9 * positionWeight;
       }
       if (
         ingredient.ingredient.categories.some((cat) =>
           definitions.low.good.includes(cat),
         )
       ) {
-        lowScore += 3 * positionWeight;
+        lowScore += 15 * positionWeight;
       }
     }
   });
