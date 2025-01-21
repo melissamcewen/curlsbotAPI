@@ -1,9 +1,10 @@
 import { readFileSync, writeFileSync, readdirSync } from 'fs';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
-import type { Reference, AnalysisResult, FrizzbotAnalysis } from '../src/types';
+import type { Reference, AnalysisResult, Extensions } from '../src/types';
 import { Analyzer } from '../src/analyzer';
 import { frizzbot } from '../src/extensions/frizzbot';
+import { porosity } from '../src/extensions/porosity';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const DATA_DIR = join(__dirname, '../data');
@@ -208,11 +209,17 @@ function loadProductsFromDir(dirPath: string): any {
     // Analyze ingredients if raw ingredients exist
     let status: 'ok' | 'caution' | 'warning' | 'error' | undefined = undefined;
     let analysis: AnalysisResult | undefined = undefined;
-    let frizzbotAnalysis: FrizzbotAnalysis | undefined = undefined;
+    let extensions: Extensions | undefined = undefined;
+
     if (product.ingredients_raw) {
       analysis = analyzer.analyze(product.ingredients_raw);
       status = analysis.status;
-      frizzbotAnalysis = frizzbot(analysis);
+
+      // Generate extensions
+      extensions = {
+        frizzbot: frizzbot(analysis),
+        porosity: porosity(analysis),
+      };
     }
 
     // Convert cost to cost_rating
@@ -234,7 +241,7 @@ function loadProductsFromDir(dirPath: string): any {
       tags: product.tags || [],
       status,
       //analysis,
-      frizzbot: frizzbotAnalysis,
+      extensions,
       cost: product.cost,
       cost_rating,
     };

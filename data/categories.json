@@ -139,8 +139,7 @@
       "group": "others",
       "description": "Polyquats are positively charged polymers used in haircare products to condition, detangle, and add shine by forming a protective film around the hair shaft.",
       "inclusions": ["polyquat"],
-      "defaultIngredient": "unknown_polyquat",
-      "notes": [{}]
+      "defaultIngredient": "unknown_polyquat"
     },
     {
       "id": "petroleum_oils",
@@ -158,7 +157,7 @@
       "id": "simple_humectants",
       "name": "Simple Humectants",
       "group": "humectants",
-      "description": "These lightweight humectants may perform poorly in low humidity conditions"
+      "description": "These humectants may perform poorly in low humidity conditions"
     },
     {
       "id": "proteins",

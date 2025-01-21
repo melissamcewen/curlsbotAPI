@@ -4565,10 +4565,7 @@ export const defaultDatabase: IngredientDatabase = {
       "inclusions": [
         "polyquat"
       ],
-      "defaultIngredient": "unknown_polyquat",
-      "notes": [
-        {}
-      ]
+      "defaultIngredient": "unknown_polyquat"
     },
     "petroleum_oils": {
       "id": "petroleum_oils",
@@ -4586,7 +4583,7 @@ export const defaultDatabase: IngredientDatabase = {
       "id": "simple_humectants",
       "name": "Simple Humectants",
       "group": "humectants",
-      "description": "These lightweight humectants may perform poorly in low humidity conditions"
+      "description": "These humectants may perform poorly in low humidity conditions"
     },
     "proteins": {
       "id": "proteins",
