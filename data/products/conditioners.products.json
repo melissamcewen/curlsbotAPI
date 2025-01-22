@@ -158,6 +158,25 @@
         }
       ],
       "ingredients_raw": "aqua purified water, cetyl alcohol, stearyl alcohol, glycerin, panthenol, cetrimonium chloride, cetearyl alcohol, hydroxypropyl guar, behentrimonium methosulfate, menthol, polysorbate 60, citric acid, ethylhexylglycerin, phenoxyethanol, mentha piperita peppermint oil, aloe barbadensis aloe vera leaf juice, carthamus tinctorius safflower oil, achillea millefolium extract, chamomilla recutita matricaria flower extract, equisetum arvense extract, eucalyptus globulus eucalyptus oil, lavandula angustifolia lavender leaf extract, melaleuca alternifolia tea tree leaf oil, rosmarinus officinalis rosemary leaf extract, salvia officinalis sage leaf extract, thymus vulgaris thyme extract, tussilago farfara coltsfoot flower extract, urtica dioica nettle extract, usda certified organic"
+    },
+    {
+      "name": "Behentrimonium Chloride 2% Conditioner",
+      "brand": "The Ordinary",
+      "product_categories": ["conditioners"],
+      "tags": ["normal_porosity", "low_porosity"],
+      "cost": 1.3,
+      "ingredients_raw": "aqua water, cetearyl alcohol, behentrimonium chloride, cyamopsis tetragonoloba guar gum, phytic acid, phenoxyethanol, chlorphenesin",
+      "description": "With only 7 ingredients and no oils, this conditioner is ideal for those with low porosity hair.",
+      "buy_links": [
+        {
+          "url": "https://amzn.to/40IHa63",
+          "retailer": "Amazon"
+        },
+        {
+          "url": "https://sovrn.co/hadzttr",
+          "retailer": "The Ordinary"
+        }
+      ]
     }
   ]
 }
