@@ -256,6 +256,18 @@
           "notes": "This is a Crosslinked Poly(dimethylsiloxanes). It is thought that the crosslinking improves substantivity (ability to adhere and stay on hair) without adding heaviness to the films it forms"
         }
       ]
+    },
+    {
+      "name": "Bis-diisopropanolamino-PG-propyl disiloxane/bis-vinyl dimethicone",
+      "id": "bis_diisopropanolamino_pg_propyl_disiloxane_bis_vinyl_dimethicone",
+      "categories": ["non_water_soluble_silicones"],
+      "synonyms": ["bis-vinyl dimethicone", "bis-diisopropanolamino-PG-propyl disiloxane"],
+      "references": [
+        {
+          "id": "70",
+          "notes": "This is HydroxySHIELD Polymer by Dow and it is a non-water soluble silicone"
+        }
+      ]
     }
   ]
 }

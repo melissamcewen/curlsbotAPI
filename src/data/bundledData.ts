@@ -1914,6 +1914,61 @@ export const defaultDatabase: IngredientDatabase = {
       "status": "ok",
       "group": "oils"
     },
+    "essential_oil": {
+      "name": "Essential Oil",
+      "id": "essential_oil",
+      "categories": [
+        "essential_oils"
+      ],
+      "description": "Essential oils are not really oils as they are not fatty. They are mainly used for their fragrance and therapeutic properties.",
+      "status": "ok",
+      "group": "others"
+    },
+    "vanilla_planifolia_fruit_oil": {
+      "name": "Vanilla Planifolia Fruit Oil",
+      "id": "vanilla_planifolia_fruit_oil",
+      "categories": [
+        "essential_oils"
+      ],
+      "status": "ok",
+      "group": "others"
+    },
+    "peppermint_oil": {
+      "name": "Peppermint Oil",
+      "id": "peppermint_oil",
+      "categories": [
+        "essential_oils"
+      ],
+      "status": "ok",
+      "group": "others"
+    },
+    "lavender_oil": {
+      "name": "Lavender Oil",
+      "id": "lavender_oil",
+      "categories": [
+        "essential_oils"
+      ],
+      "status": "ok",
+      "group": "others"
+    },
+    "rosemary_oil": {
+      "name": "Rosemary Oil",
+      "id": "rosemary_oil",
+      "categories": [
+        "essential_oils"
+      ],
+      "status": "ok",
+      "group": "others"
+    },
+    "tea_tree_oil": {
+      "name": "Tea Tree Oil",
+      "id": "tea_tree_oil",
+      "categories": [
+        "essential_oils"
+      ],
+      "status": "ok",
+      "group": "others"
+    },
     "aminomethyl_propanol": {
       "name": "Aminomethyl Propanol",
       "id": "aminomethyl_propanol",
@@ -4152,6 +4207,27 @@ export const defaultDatabase: IngredientDatabase = {
       "status": "warning",
       "group": "silicones"
     },
+    "bis_diisopropanolamino_pg_propyl_disiloxane_bis_vinyl_dimethicone": {
+      "name": "Bis-diisopropanolamino-PG-propyl disiloxane/bis-vinyl dimethicone",
+      "id": "bis_diisopropanolamino_pg_propyl_disiloxane_bis_vinyl_dimethicone",
+      "categories": [
+        "non_water_soluble_silicones"
+      ],
+      "synonyms": [
+        "bis-vinyl dimethicone",
+        "bis-diisopropanolamino-PG-propyl disiloxane"
+      ],
+      "references": [
+        {
+          "url": "https://www.dow.com/en-us/document-viewer.html?randomVar=8530979551752065537&docPath=/content/dam/dcc/documents/27/27-2/27-2861-01-hydroxyshield-polymer-product-guide.pdf",
+          "title": "Hydroxyshield Polymer Product Guide",
+          "type": "industry",
+          "description": "This is HydroxySHIELD Polymer by Dow and it is a non-water soluble silicone"
+        }
+      ],
+      "status": "warning",
+      "group": "silicones"
+    },
     "unknown_non_water_soluble_silicone": {
       "name": "Unknown Non-Water Soluble Silicone",
       "id": "unknown_non_water_soluble_silicone",
@@ -4451,11 +4527,10 @@ export const defaultDatabase: IngredientDatabase = {
       "id": "water_soluble_silicones",
       "name": "Water-soluble Silicones",
       "group": "silicones",
-      "description": "Water-soluble silicones in hair care products are a type of silicone that is easily washed out of the hair with regular shampoo",
+      "description": "Water-soluble silicones in hair care products are a type of silicone that is easily washed out of the hair with regular shampoo.",
       "inclusions": [
         "ppg",
-        "peg",
-        "pg-"
+        "peg"
       ],
       "exclusions": [
         "castor"
@@ -4643,6 +4718,12 @@ export const defaultDatabase: IngredientDatabase = {
       "name": "Film Forming Agents",
       "group": "others",
       "description": "These ingredients form a thin invisible layer on the hair to hold style, prevent moisture loss, and protect from damage."
+    },
+    "essential_oils": {
+      "id": "essential_oils",
+      "name": "Essential Oils",
+      "group": "others",
+      "description": "Essential oils are not really oils as they are not fatty. They are mainly used for their fragrance and therapeutic properties."
     }
   },
   "groups": {

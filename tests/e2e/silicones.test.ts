@@ -21,7 +21,7 @@ const analyzer = new Analyzer({
   settings: defaultSettings,
 });
 const list =
-  'peg-8 distearmonium chloride pg-dimethicone, cetearyl methicone, silicone, cyclomethicone, aminopropyl triethoxysilane, PEG/PPG-18/18 Dimethicone, Dimethicone, PEG-12 Dimethicone, silicone, Lauryl PEG / PPG - 18 / 18 Methicone, , triethoxysilane, coney, mdimethicon, peg-40 hydrogenated castor oil, trimethylsiloxysilicate, saccharomycessilicon, Peg-40 castor oil, peg-100 Something, quaternium- 95, Hydrolyzed Wheat Protein PG-Propyl Silanetriol,  Something PG-Silanetriol';
+  'peg-8 distearmonium chloride pg-dimethicone, cetearyl methicone, silicone, cyclomethicone, aminopropyl triethoxysilane, PEG/PPG-18/18 Dimethicone, Dimethicone, PEG-12 Dimethicone, silicone, Lauryl PEG / PPG - 18 / 18 Methicone, , triethoxysilane, coney, mdimethicon, peg-40 hydrogenated castor oil, trimethylsiloxysilicate, saccharomycessilicon, Peg-40 castor oil, peg-100 Something, quaternium- 95, Hydrolyzed Wheat Protein PG-Propyl Silanetriol,  Something PG-Silanetriol, bis-diisopropanolamino-PG-propyl disiloxane';
 const result = analyzer.analyze(list);
 
 describe('Silicone Analysis e2e complex list with curly_moderate system', () => {
@@ -68,7 +68,8 @@ describe('Silicone Analysis e2e complex list with curly_moderate system', () => 
       'peg-100 something',
       'quaternium- 95',
       'hydrolyzed wheat protein pg-propyl silanetriol',
-      'something pg-silanetriol'
+      'something pg-silanetriol',
+      'bis-diisopropanolamino-pg-propyl disiloxane'
     ]);
   });
   describe('ingredient matching', () => {
@@ -170,6 +171,14 @@ describe('Silicone Analysis e2e complex list with curly_moderate system', () => 
         category: 'water_soluble_silicones',
         status: 'caution',
         reason: 'caution_silicones',
+      },
+      {
+        normalized: 'bis-diisopropanolamino-pg-propyl disiloxane',
+        ingredientId:
+          'bis_diisopropanolamino_pg_propyl_disiloxane_bis_vinyl_dimethicone',
+        category: 'non_water_soluble_silicones',
+        status: 'warning',
+        reason: 'no_water_insoluble_silicones',
       },
     ];
 

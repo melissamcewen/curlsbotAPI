@@ -38,8 +38,8 @@
       "id": "water_soluble_silicones",
       "name": "Water-soluble Silicones",
       "group": "silicones",
-      "description": "Water-soluble silicones in hair care products are a type of silicone that is easily washed out of the hair with regular shampoo",
-      "inclusions": ["ppg", "peg", "pg-"],
+      "description": "Water-soluble silicones in hair care products are a type of silicone that is easily washed out of the hair with regular shampoo.",
+      "inclusions": ["ppg", "peg"],
       "exclusions": ["castor"],
       "defaultIngredient": "unknown_water_soluble_silicone"
     },
@@ -203,6 +203,12 @@
       "name": "Film Forming Agents",
       "group": "others",
       "description": "These ingredients form a thin invisible layer on the hair to hold style, prevent moisture loss, and protect from damage."
+    },
+    {
+      "id": "essential_oils",
+      "name": "Essential Oils",
+      "group": "others",
+      "description": "Essential oils are not really oils as they are not fatty. They are mainly used for their fragrance and therapeutic properties."
     }
   ]
 }

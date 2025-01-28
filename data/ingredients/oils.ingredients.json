@@ -530,6 +530,50 @@
           "notes": "Kokum butter's ability to penetrate (soak into) hair hasn't been well-researched but is it is likely to have moderate penetration (similar to olive oil, and much less than coconut oil)"
         }
       ]
+    },
+    {
+      "name": "Essential Oil",
+      "id": "essential_oil",
+      "categories": [
+        "essential_oils"
+      ],
+      "description": "Essential oils are not really oils as they are not fatty. They are mainly used for their fragrance and therapeutic properties."
+    },
+    {
+      "name": "Vanilla Planifolia Fruit Oil",
+      "id": "vanilla_planifolia_fruit_oil",
+      "categories": [
+        "essential_oils"
+      ]
+    },
+    {
+      "name": "Peppermint Oil",
+      "id": "peppermint_oil",
+      "categories": [
+        "essential_oils"
+      ]
+    },
+    {
+      "name": "Lavender Oil",
+      "id": "lavender_oil",
+      "categories": [
+        "essential_oils"
+      ]
+    },
+    {
+      "name": "Rosemary Oil",
+      "id": "rosemary_oil",
+      "categories": [
+        "essential_oils"
+      ]
+    },
+    {
+      "name": "Tea Tree Oil",
+      "id": "tea_tree_oil",
+      "categories": [
+        "essential_oils"
+      ]
     }
   ]
 }
+

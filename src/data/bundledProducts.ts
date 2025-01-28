@@ -167,6 +167,15 @@ export const defaultProductDatabase: ProductDatabase = {
           "url": "https://amzn.to/4iSDfKT",
           "retailer": "Amazon",
           "country": "AU"
+        },
+        {
+          "url": "https://fave.co/3PMQGyT",
+          "retailer": "Moroccanoil"
+        },
+        {
+          "url": "https://go.skimresources.com?id=276362X1762442&xs=1&url=https%3A%2F%2Fau.moroccanoil.com%2Fproducts%2Fclarifying-shampoo",
+          "retailer": "Moroccanoil",
+          "country": "AU"
         }
       ],
       "description": "This shampoo has some stronger cleansers, but that's fine in a clarifying shampoo because you're only using it once in a while. It's sulfate-free, so it won't strip your hair too much. It's also got some nice oils in it to help keep your hair from getting too dry.",
@@ -227,6 +236,15 @@ export const defaultProductDatabase: ProductDatabase = {
           "url": "https://amzn.to/4g18iBT",
           "retailer": "Amazon",
           "country": "US"
+        },
+        {
+          "url": "https://go.skimresources.com?id=276362X1762442&xs=1&url=https%3A%2F%2Fcurlsmith.com%2Fproducts%2Fwash-scrub-detox-pro-biotic",
+          "retailer": "Curlsmith"
+        },
+        {
+          "url": "https://go.skimresources.com?id=276362X1762442&xs=1&url=https%3A%2F%2Fuk.curlsmith.com%2Fproducts%2Fwash-scrub-detox-pro-biotic",
+          "retailer": "Curlsmith",
+          "country": "UK"
         }
       ],
       "asin": "B08636L8JY",
@@ -369,6 +387,10 @@ export const defaultProductDatabase: ProductDatabase = {
         {
           "url": "https://amzn.to/4gTtFWm",
           "retailer": "Amazon"
+        },
+        {
+          "url": "https://go.skimresources.com?id=276362X1762442&xs=1&url=https%3A%2F%2Fwww.ulta.com%2Fp%2Fdetox-hair-mask-treatment-pimprod2032274%3Fsku%3D2594263",
+          "retailer": "Ulta"
         }
       ],
       "cost": 5,
@@ -412,6 +434,10 @@ export const defaultProductDatabase: ProductDatabase = {
         {
           "url": "https://amzn.to/4gV7M9j",
           "retailer": "Amazon"
+        },
+        {
+          "url": "https://go.skimresources.com?id=276362X1762442&xs=1&url=https%3A%2F%2Fwww.cvs.com%2Fshop%2Fmaui-moisture-scalp-care-clarifying-shampoo-13-oz-prodid-916853",
+          "retailer": "CVS"
         }
       ],
       "asin": "B0CLBZ5PBS",
@@ -1042,7 +1068,7 @@ export const defaultProductDatabase: ProductDatabase = {
           "retailer": "Amazon"
         },
         {
-          "url": "https://sovrn.co/hadzttr",
+          "url": "https://fave.co/3PNA3D2",
           "retailer": "The Ordinary"
         }
       ],
