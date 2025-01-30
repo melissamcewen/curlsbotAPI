@@ -1914,16 +1914,6 @@ export const defaultDatabase: IngredientDatabase = {
       "status": "ok",
       "group": "oils"
     },
-    "essential_oil": {
-      "name": "Essential Oil",
-      "id": "essential_oil",
-      "categories": [
-        "essential_oils"
-      ],
-      "description": "Essential oils are not really oils as they are not fatty. They are mainly used for their fragrance and therapeutic properties.",
-      "status": "ok",
-      "group": "others"
-    },
     "vanilla_planifolia_fruit_oil": {
       "name": "Vanilla Planifolia Fruit Oil",
       "id": "vanilla_planifolia_fruit_oil",
@@ -1931,7 +1921,7 @@ export const defaultDatabase: IngredientDatabase = {
         "essential_oils"
       ],
       "status": "ok",
-      "group": "others"
+      "group": "oils"
     },
     "peppermint_oil": {
       "name": "Peppermint Oil",
@@ -1940,7 +1930,7 @@ export const defaultDatabase: IngredientDatabase = {
         "essential_oils"
       ],
       "status": "ok",
-      "group": "others"
+      "group": "oils"
     },
     "lavender_oil": {
       "name": "Lavender Oil",
@@ -1949,7 +1939,7 @@ export const defaultDatabase: IngredientDatabase = {
         "essential_oils"
       ],
       "status": "ok",
-      "group": "others"
+      "group": "oils"
     },
     "rosemary_oil": {
       "name": "Rosemary Oil",
@@ -1958,7 +1948,7 @@ export const defaultDatabase: IngredientDatabase = {
         "essential_oils"
       ],
       "status": "ok",
-      "group": "others"
+      "group": "oils"
     },
     "tea_tree_oil": {
       "name": "Tea Tree Oil",
@@ -1967,7 +1957,7 @@ export const defaultDatabase: IngredientDatabase = {
         "essential_oils"
       ],
       "status": "ok",
-      "group": "others"
+      "group": "oils"
     },
     "aminomethyl_propanol": {
       "name": "Aminomethyl Propanol",
@@ -4298,7 +4288,7 @@ export const defaultDatabase: IngredientDatabase = {
       "name": "Unknown Oil",
       "id": "unknown_oil",
       "categories": [
-        "other_oils"
+        "other"
       ],
       "status": "ok",
       "group": "others"
@@ -4325,6 +4315,16 @@ export const defaultDatabase: IngredientDatabase = {
       ],
       "status": "caution",
       "group": "alcohols"
+    },
+    "unknown_essential_oil": {
+      "name": "Unknown Essential Oil",
+      "id": "unknown_essential_oil",
+      "categories": [
+        "essential_oils"
+      ],
+      "description": "Essential oils are not really oils as they are not fatty. They are mainly used for their fragrance and therapeutic properties.",
+      "status": "ok",
+      "group": "oils"
     },
     "beeswax": {
       "name": "Beeswax",
@@ -4733,7 +4733,11 @@ export const defaultDatabase: IngredientDatabase = {
     "essential_oils": {
       "id": "essential_oils",
       "name": "Essential Oils",
-      "group": "others",
+      "group": "oils",
+      "inclusions": [
+        "essential"
+      ],
+      "defaultIngredient": "unknown_essential_oil",
       "description": "Essential oils are not really oils as they are not fatty. They are mainly used for their fragrance and therapeutic properties."
     }
   },

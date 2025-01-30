@@ -347,7 +347,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 4,
           "film_forming_humectants_number": 1,
-          "emollients_number": 2,
+          "emollients_number": 3,
           "simple_humectants": [
             "Propanediol",
             "Panthenol",
@@ -359,9 +359,10 @@ export const defaultProductDatabase: ProductDatabase = {
           ],
           "emollients": [
             "Argan Oil",
-            "Coconut Oil"
+            "Coconut Oil",
+            "Lavender Oil"
           ],
-          "score": -12
+          "score": -17
         },
         "porosity": {
           "high": 67,
@@ -403,7 +404,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 2,
           "film_forming_humectants_number": 0,
-          "emollients_number": 6,
+          "emollients_number": 7,
           "simple_humectants": [
             "Glycerin",
             "Panthenol"
@@ -415,9 +416,10 @@ export const defaultProductDatabase: ProductDatabase = {
             "Behentrimonium Methosulfate",
             "Butyrospermum Parkii Shea Butter",
             "Stearyl Alcohol",
-            "Benzyl Alcohol"
+            "Benzyl Alcohol",
+            "Lavender Oil"
           ],
-          "score": -54
+          "score": -55
         },
         "porosity": {
           "high": 84,
@@ -736,7 +738,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 2,
           "film_forming_humectants_number": 3,
-          "emollients_number": 9,
+          "emollients_number": 10,
           "simple_humectants": [
             "Glycerin",
             "Glycerin"
@@ -750,6 +752,7 @@ export const defaultProductDatabase: ProductDatabase = {
             "Cetearyl Alcohol",
             "Behentrimonium Methosulfate",
             "Diheptyl Succinate",
+            "Lavender Oil",
             "Coconut Oil",
             "Guar Hydroxypropyltrimonium Chloride",
             "Avocado Oil",
@@ -757,7 +760,7 @@ export const defaultProductDatabase: ProductDatabase = {
             "Jojoba Oil",
             "Benzyl Alcohol"
           ],
-          "score": -66
+          "score": -67
         },
         "porosity": {
           "high": 69,
@@ -907,7 +910,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 2,
           "film_forming_humectants_number": 1,
-          "emollients_number": 6,
+          "emollients_number": 8,
           "simple_humectants": [
             "Glycerin",
             "Propanediol"
@@ -921,9 +924,11 @@ export const defaultProductDatabase: ProductDatabase = {
             "Cetrimonium Chloride",
             "Jojoba Oil",
             "Benzyl Alcohol",
-            "Guar Hydroxypropyltrimonium Chloride"
+            "Guar Hydroxypropyltrimonium Chloride",
+            "Tea Tree Oil",
+            "Rosemary Oil"
           ],
-          "score": -55
+          "score": -57
         },
         "porosity": {
           "high": 78,
@@ -1014,7 +1019,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 3,
           "film_forming_humectants_number": 1,
-          "emollients_number": 7,
+          "emollients_number": 8,
           "simple_humectants": [
             "Glycerin",
             "Panthenol",
@@ -1030,9 +1035,10 @@ export const defaultProductDatabase: ProductDatabase = {
             "Cetearyl Alcohol",
             "Guar Hydroxypropyltrimonium Chloride",
             "Behentrimonium Methosulfate",
+            "Peppermint Oil",
             "Safflower Oil"
           ],
-          "score": -56
+          "score": -57
         },
         "porosity": {
           "high": 73,
@@ -1443,7 +1449,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 3,
           "film_forming_humectants_number": 2,
-          "emollients_number": 1,
+          "emollients_number": 2,
           "simple_humectants": [
             "Sodium PCA",
             "Panthenol",
@@ -1454,7 +1460,8 @@ export const defaultProductDatabase: ProductDatabase = {
             "Flaxseed Extract"
           ],
           "emollients": [
-            "Cetearyl Alcohol"
+            "Cetearyl Alcohol",
+            "Vanilla Planifolia Fruit Oil"
           ],
           "score": -82
         },
@@ -2187,7 +2194,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 2,
           "film_forming_humectants_number": 3,
-          "emollients_number": 3,
+          "emollients_number": 4,
           "simple_humectants": [
             "Glycerin",
             "Sorbitol"
@@ -2198,6 +2205,7 @@ export const defaultProductDatabase: ProductDatabase = {
             "Hydroxypropyltrimonium Honey"
           ],
           "emollients": [
+            "Lavender Oil",
             "Diheptyl Succinate",
             "Capryloyl Glycerin Sebacic Acid Copolymer",
             "Grapeseed Oil"
@@ -2387,7 +2395,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 1,
           "film_forming_humectants_number": 4,
-          "emollients_number": 1,
+          "emollients_number": 2,
           "simple_humectants": [
             "Agave Nectar"
           ],
@@ -2398,7 +2406,8 @@ export const defaultProductDatabase: ProductDatabase = {
             "Marshmallow root Extract"
           ],
           "emollients": [
-            "Xanthan Gum"
+            "Xanthan Gum",
+            "Unknown Essential Oil"
           ],
           "score": -88
         },
@@ -2847,7 +2856,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 0,
           "film_forming_humectants_number": 3,
-          "emollients_number": 2,
+          "emollients_number": 3,
           "simple_humectants": [],
           "film_forming_humectants": [
             "Hydroxyethylcellulose",
@@ -2856,9 +2865,10 @@ export const defaultProductDatabase: ProductDatabase = {
           ],
           "emollients": [
             "VP VA copolymer",
+            "Unknown Essential Oil",
             "Sunflower Oil"
           ],
-          "score": -91
+          "score": -90
         },
         "porosity": {
           "high": 55,
@@ -2895,7 +2905,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 2,
           "film_forming_humectants_number": 1,
-          "emollients_number": 1,
+          "emollients_number": 3,
           "simple_humectants": [
             "Sodium PCA",
             "Panthenol"
@@ -2904,7 +2914,9 @@ export const defaultProductDatabase: ProductDatabase = {
             "Marshmallow root Extract"
           ],
           "emollients": [
-            "Cetearyl Alcohol"
+            "Cetearyl Alcohol",
+            "Unknown Essential Oil",
+            "Unknown Essential Oil"
           ],
           "score": -75
         },
@@ -2941,7 +2953,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 2,
           "film_forming_humectants_number": 1,
-          "emollients_number": 2,
+          "emollients_number": 4,
           "simple_humectants": [
             "Glycerin",
             "Honey"
@@ -2951,7 +2963,9 @@ export const defaultProductDatabase: ProductDatabase = {
           ],
           "emollients": [
             "Cetearyl Alcohol",
-            "Caprylic Capric Triglyceride"
+            "Caprylic Capric Triglyceride",
+            "Lavender Oil",
+            "Rosemary Oil"
           ],
           "score": -76
         },
@@ -3095,7 +3109,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 0,
           "film_forming_humectants_number": 0,
-          "emollients_number": 5,
+          "emollients_number": 9,
           "simple_humectants": [],
           "film_forming_humectants": [],
           "emollients": [
@@ -3103,7 +3117,11 @@ export const defaultProductDatabase: ProductDatabase = {
             "Avocado Oil",
             "Sweet Almond Oil",
             "Argan Oil",
-            "Castor Oil"
+            "Castor Oil",
+            "Unknown Essential Oil",
+            "Unknown Essential Oil",
+            "Unknown Essential Oil",
+            "Unknown Essential Oil"
           ],
           "score": -76
         },
@@ -3329,15 +3347,18 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 3,
           "film_forming_humectants_number": 0,
-          "emollients_number": 0,
+          "emollients_number": 2,
           "simple_humectants": [
             "Sodium PCA",
             "Propanediol",
             "Panthenol"
           ],
           "film_forming_humectants": [],
-          "emollients": [],
-          "score": 46
+          "emollients": [
+            "Peppermint Oil",
+            "Vanilla Planifolia Fruit Oil"
+          ],
+          "score": 7
         },
         "porosity": {
           "high": 37,
@@ -3480,7 +3501,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 1,
           "film_forming_humectants_number": 1,
-          "emollients_number": 4,
+          "emollients_number": 5,
           "simple_humectants": [
             "Glycerin"
           ],
@@ -3489,11 +3510,12 @@ export const defaultProductDatabase: ProductDatabase = {
           ],
           "emollients": [
             "Guar Hydroxypropyltrimonium Chloride",
+            "Lavender Oil",
             "Jojoba Oil",
             "Butyrospermum Parkii Shea Butter",
             "Avocado Oil"
           ],
-          "score": -36
+          "score": -43
         },
         "porosity": {
           "high": 61,
@@ -3727,7 +3749,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 2,
           "film_forming_humectants_number": 1,
-          "emollients_number": 1,
+          "emollients_number": 3,
           "simple_humectants": [
             "Glycerin",
             "Propanediol"
@@ -3736,9 +3758,11 @@ export const defaultProductDatabase: ProductDatabase = {
             "Unknown Protein"
           ],
           "emollients": [
-            "Guar Hydroxypropyltrimonium Chloride"
+            "Guar Hydroxypropyltrimonium Chloride",
+            "Tea Tree Oil",
+            "Rosemary Oil"
           ],
-          "score": -20
+          "score": -36
         },
         "porosity": {
           "high": 59,

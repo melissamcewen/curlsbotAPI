@@ -532,14 +532,6 @@
       ]
     },
     {
-      "name": "Essential Oil",
-      "id": "essential_oil",
-      "categories": [
-        "essential_oils"
-      ],
-      "description": "Essential oils are not really oils as they are not fatty. They are mainly used for their fragrance and therapeutic properties."
-    },
-    {
       "name": "Vanilla Planifolia Fruit Oil",
       "id": "vanilla_planifolia_fruit_oil",
       "categories": [

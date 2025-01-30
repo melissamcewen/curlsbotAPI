@@ -207,7 +207,9 @@
     {
       "id": "essential_oils",
       "name": "Essential Oils",
-      "group": "others",
+      "group": "oils",
+      "inclusions": ["essential"],
+      "defaultIngredient": "unknown_essential_oil",
       "description": "Essential oils are not really oils as they are not fatty. They are mainly used for their fragrance and therapeutic properties."
     }
   ]

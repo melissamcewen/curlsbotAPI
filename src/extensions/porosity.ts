@@ -117,11 +117,7 @@ export function porosity(analysis: AnalysisResult): PorosityAnalysis {
       const percentagePosition = 1 - index / totalIngredients;
       const positionWeight = 0.2 + 0.8 * percentagePosition;
 
-      console.log(`\nAnalyzing ${ingredient.name}:`);
-      console.log(`Position weight: ${positionWeight.toFixed(2)}`);
-      console.log(
-        `Categories: ${ingredient.ingredient.categories.join(', ') || 'none'}`,
-      );
+
 
       // Track if ingredient affects each porosity type
       let affectsHigh = false;
@@ -142,7 +138,6 @@ export function porosity(analysis: AnalysisResult): PorosityAnalysis {
           const score = scoring.high[category] * positionWeight;
           highPorosityWeightedSum += score;
           affectsHigh = true;
-          console.log(`High porosity (${category}): ${score.toFixed(2)}`);
         }
       });
 
@@ -161,7 +156,6 @@ export function porosity(analysis: AnalysisResult): PorosityAnalysis {
           const score = scoring.low[category] * positionWeight;
           lowPorosityWeightedSum += score;
           affectsLow = true;
-          console.log(`Low porosity (${category}): ${score.toFixed(2)}`);
         }
       });
 
@@ -177,11 +171,7 @@ export function porosity(analysis: AnalysisResult): PorosityAnalysis {
 
         highPorosityWeightedSum += highScore;
         lowPorosityWeightedSum += lowScore;
-        console.log(
-          `Neutral ingredient - High porosity: ${highScore.toFixed(
-            2,
-          )}, Low porosity: ${lowScore.toFixed(2)}`,
-        );
+
 
         // Count neutral ingredients in both totals
         totalHighWeight += positionWeight;
@@ -203,9 +193,6 @@ export function porosity(analysis: AnalysisResult): PorosityAnalysis {
     if (totalWeight === 0) return 50;
 
     const avgScore = weightedSum / totalWeight;
-    console.log(
-      `\n${isLowPorosity ? 'Low' : 'High'} porosity final calculation:`,
-    );
 
 
     // Adjust base score and multiplier
@@ -213,7 +200,7 @@ export function porosity(analysis: AnalysisResult): PorosityAnalysis {
     const multiplier = isLowPorosity ? 35 : 25;
 
     const finalScore = Math.round(baseScore + avgScore * multiplier);
-    console.log(`Final score: ${finalScore}`);
+
     return finalScore;
   };
 
