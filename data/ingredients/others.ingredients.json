@@ -355,10 +355,16 @@
       "categories": ["polyquats"],
       "synonyms": [
         "guar gum quaternary ammonium",
-        "guar gum",
         "cationic guar",
         "hydroxypropyl guar"
       ]
+    },
+    {
+      "name": "Guar Gum",
+      "id": "guar_gum",
+      "categories": ["film_forming_agents"],
+      "synonyms": ["guar gum"]
+
     },
     {
       "name": "Xanthan Gum",

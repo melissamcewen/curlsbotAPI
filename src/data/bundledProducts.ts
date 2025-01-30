@@ -146,8 +146,8 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -82
         },
         "porosity": {
-          "high": 59,
-          "low": 90
+          "high": 46,
+          "low": 95
         }
       }
     },
@@ -208,8 +208,8 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -66
         },
         "porosity": {
-          "high": 79,
-          "low": 100
+          "high": 52,
+          "low": 56
         }
       },
       "cost_rating": "5"
@@ -267,8 +267,8 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -29
         },
         "porosity": {
-          "high": 83,
-          "low": 89
+          "high": 58,
+          "low": 95
         }
       },
       "cost_rating": "5"
@@ -313,8 +313,8 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": 20
         },
         "porosity": {
-          "high": 67,
-          "low": 100
+          "high": 39,
+          "low": 95
         }
       },
       "cost_rating": "5"
@@ -364,8 +364,8 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -12
         },
         "porosity": {
-          "high": 100,
-          "low": 83
+          "high": 67,
+          "low": 56
         }
       },
       "cost_rating": "5"
@@ -421,7 +421,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 84,
-          "low": 80
+          "low": 46
         }
       },
       "cost_rating": "5"
@@ -473,8 +473,8 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -91
         },
         "porosity": {
-          "high": 93,
-          "low": 81
+          "high": 57,
+          "low": 54
         }
       },
       "cost_rating": "1"
@@ -487,8 +487,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "conditioners"
       ],
       "tags": [
-        "normal_porosity",
-        "low_porosity"
+        "normal_porosity"
       ],
       "buy_links": [
         {
@@ -528,8 +527,8 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -69
         },
         "porosity": {
-          "high": 100,
-          "low": 72
+          "high": 84,
+          "low": 47
         }
       },
       "cost_rating": "2"
@@ -546,9 +545,7 @@ export const defaultProductDatabase: ProductDatabase = {
       "product_categories": [
         "conditioners"
       ],
-      "tags": [
-        "low_porosity"
-      ],
+      "tags": [],
       "cost": 2.12,
       "ingredients_raw": "water, glycerin, cetyl alcohol coconut derived, stearyl alcohol coconut derived, olea europaea olive fruit oil, cetrimonium chloride, behentrimonium chloride, aloe barbadensis leaf extract, glycereth-26, hypnea musciformis extract seaweed, gelidiella acerosa extract seaweed, sargassum filipendula extract seaweed, sorbitol, hydroxypropyltrimonium honey, silk amino acids, rosmarinus officinalis rosemary leaf extract, chamomilla recutita matricaria flower extract, urtica dioica nettle extract, butyrospermum parkii shea butter, simmondsia chinensis jojoba seed oil, tocopheryl acetate vitamin e, panthenol vitamin b5, citrus senensis oil, citrus limon oil, citrus arantifolia oil, citrus paradisi oil, sodium phytate, hydroxyethylcellulose, phenoxyethanol, ethylhexylglycerin, citric acid",
       "asin": "B005SIR28M",
@@ -588,8 +585,8 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -68
         },
         "porosity": {
-          "high": 100,
-          "low": 77
+          "high": 87,
+          "low": 42
         }
       },
       "cost_rating": "4"
@@ -649,8 +646,8 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -76
         },
         "porosity": {
-          "high": 100,
-          "low": 76
+          "high": 91,
+          "low": 34
         }
       },
       "cost_rating": "4"
@@ -663,7 +660,6 @@ export const defaultProductDatabase: ProductDatabase = {
         "conditioners"
       ],
       "tags": [
-        "low_porosity",
         "normal_porosity"
       ],
       "buy_links": [
@@ -709,7 +705,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 100,
-          "low": 64
+          "low": 0
         }
       },
       "cost_rating": "5"
@@ -764,8 +760,8 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -66
         },
         "porosity": {
-          "high": 100,
-          "low": 76
+          "high": 69,
+          "low": 53
         }
       },
       "cost_rating": "5"
@@ -778,7 +774,6 @@ export const defaultProductDatabase: ProductDatabase = {
         "conditioners"
       ],
       "tags": [
-        "low_porosity",
         "normal_porosity"
       ],
       "buy_links": [
@@ -816,8 +811,8 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -72
         },
         "porosity": {
-          "high": 98,
-          "low": 74
+          "high": 100,
+          "low": 5
         }
       },
       "cost_rating": "5"
@@ -881,8 +876,8 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -77
         },
         "porosity": {
-          "high": 100,
-          "low": 74
+          "high": 98,
+          "low": 10
         }
       },
       "cost_rating": "5"
@@ -894,8 +889,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "conditioners"
       ],
       "tags": [
-        "normal_porosity",
-        "low_porosity"
+        "normal_porosity"
       ],
       "buy_links": [
         {
@@ -932,8 +926,8 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -55
         },
         "porosity": {
-          "high": 94,
-          "low": 78
+          "high": 78,
+          "low": 47
         }
       },
       "cost_rating": "4"
@@ -946,7 +940,6 @@ export const defaultProductDatabase: ProductDatabase = {
       ],
       "tags": [
         "normal_porosity",
-        "low_porosity",
         "high_porosity"
       ],
       "ingredients_raw": "water aqua, cetearyl alcohol, hydroxypropyl starch phosphate, betaine, cetyl palmitate, behentrimonium chloride, butyrospermum parkii shea butter, cocos nucifera coconut oil, persea gratissima avocado oil, helianthus annuus sunflower seed oil, aloe barbadensis leaf juice, selaginella lepidophylla resurrection flower extract, ocimum basilicum basil leaf extract, piper nigrum black pepper seed extract, rosmarinus officinalis rosemary leaf extract, salvia officinalis sage leaf extract, carapa guaianensis andiroba seed oil, glycerin, guar hydroxypropyltrimonium chloride, panthenol, glyceryl undecylenate, fragrance parfum, citric acid, sodium hydroxide, sodium gluconate, glyceryl caprylate, potassium sorbate, sodium benzoate, limonene, linalool, isopropyl alcohol",
@@ -992,7 +985,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 100,
-          "low": 65
+          "low": 0
         }
       },
       "cost_rating": "3"
@@ -1001,8 +994,7 @@ export const defaultProductDatabase: ProductDatabase = {
       "name": "Tea Tree Triple Treat Invigorating Conditioner",
       "brand": "Giovanni",
       "tags": [
-        "normal_porosity",
-        "low_porosity"
+        "normal_porosity"
       ],
       "product_categories": [
         "conditioners"
@@ -1043,8 +1035,8 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -56
         },
         "porosity": {
-          "high": 100,
-          "low": 83
+          "high": 73,
+          "low": 84
         }
       },
       "cost_rating": "1"
@@ -1085,16 +1077,62 @@ export const defaultProductDatabase: ProductDatabase = {
           "emollients": [
             "Cetearyl Alcohol",
             "Behentrimonium Chloride",
-            "Guar Hydroxypropyltrimonium Chloride"
+            "Guar Gum"
           ],
           "score": -76
         },
         "porosity": {
-          "high": 64,
-          "low": 88
+          "high": 68,
+          "low": 95
         }
       },
       "cost_rating": "2"
+    },
+    "tropical_coconut_conditioner": {
+      "name": "Tropical Coconut Conditioner",
+      "brand": "Suave",
+      "product_categories": [
+        "conditioners"
+      ],
+      "tags": [
+        "normal_porosity",
+        "low_porosity"
+      ],
+      "cost": 0.09,
+      "buy_links": [
+        {
+          "url": "https://go.skimresources.com?id=276362X1762442&xs=1&url=https%3A%2F%2Fwww.walmart.com%2Fip%2FSuave-Essentials-Nourishing-Conditioner-Tropical-Coconut-22-5-fl-oz%2F943974558",
+          "retailer": "Walmart"
+        }
+      ],
+      "ingredients_raw": "water aqua, cetyl alcohol, stearamidopropyl dimethylamine, lactic acid, potassium chloride, fragrance parfum, disodium edta, peg-150 distearate, 2-bromo-2-nitropropane-1, 3-diol, methylchloroisothiazolinone, methylisothiazolinone, propylene glycol, tocopheryl acetate vitamin e acetate, silk amino acids, honey, urtica dioica nettle extract, rosmarinus officinalis rosemary leaf extract, cocos nucifera coconut fruit extract",
+      "id": "tropical_coconut_conditioner",
+      "systems_excluded": [],
+      "status": "ok",
+      "extensions": {
+        "frizzbot": {
+          "simple_humectants_number": 3,
+          "film_forming_humectants_number": 1,
+          "emollients_number": 1,
+          "simple_humectants": [
+            "Lactic Acid",
+            "Propylene Glycol",
+            "Honey"
+          ],
+          "film_forming_humectants": [
+            "Silk Amino Acids"
+          ],
+          "emollients": [
+            "Cetyl Alcohol"
+          ],
+          "score": -38
+        },
+        "porosity": {
+          "high": 63,
+          "low": 95
+        }
+      },
+      "cost_rating": "1"
     },
     "coil_infusion®_drink_up™_cleansing_conditioner": {
       "name": "Coil Infusion® Drink Up™ Cleansing Conditioner",
@@ -1157,7 +1195,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 100,
-          "low": 40
+          "low": 0
         }
       }
     },
@@ -1205,8 +1243,8 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -68
         },
         "porosity": {
-          "high": 97,
-          "low": 67
+          "high": 100,
+          "low": 0
         }
       },
       "cost_rating": "1"
@@ -1265,8 +1303,8 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -68
         },
         "porosity": {
-          "high": 100,
-          "low": 77
+          "high": 87,
+          "low": 42
         }
       },
       "cost_rating": "4"
@@ -1320,8 +1358,8 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -73
         },
         "porosity": {
-          "high": 100,
-          "low": 70
+          "high": 96,
+          "low": 5
         }
       }
     },
@@ -1372,8 +1410,8 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -59
         },
         "porosity": {
-          "high": 96,
-          "low": 80
+          "high": 84,
+          "low": 39
         }
       }
     },
@@ -1421,8 +1459,8 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -82
         },
         "porosity": {
-          "high": 77,
-          "low": 88
+          "high": 61,
+          "low": 95
         }
       }
     },
@@ -1465,13 +1503,13 @@ export const defaultProductDatabase: ProductDatabase = {
             "Unknown Protein"
           ],
           "emollients": [
-            "Guar Hydroxypropyltrimonium Chloride"
+            "Guar Gum"
           ],
           "score": -81
         },
         "porosity": {
-          "high": 72,
-          "low": 89
+          "high": 49,
+          "low": 95
         }
       },
       "cost_rating": "5"
@@ -1529,8 +1567,8 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -65
         },
         "porosity": {
-          "high": 100,
-          "low": 73
+          "high": 90,
+          "low": 16
         }
       }
     },
@@ -1580,8 +1618,8 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -58
         },
         "porosity": {
-          "high": 90,
-          "low": 75
+          "high": 100,
+          "low": 0
         }
       },
       "cost_rating": "5"
@@ -1638,8 +1676,8 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -57
         },
         "porosity": {
-          "high": 94,
-          "low": 76
+          "high": 95,
+          "low": 14
         }
       },
       "cost_rating": "5"
@@ -1694,8 +1732,8 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -72
         },
         "porosity": {
-          "high": 87,
-          "low": 77
+          "high": 100,
+          "low": 18
         }
       },
       "cost_rating": "5"
@@ -1748,8 +1786,8 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -82
         },
         "porosity": {
-          "high": 94,
-          "low": 90
+          "high": 68,
+          "low": 95
         }
       },
       "cost_rating": "4"
@@ -1803,8 +1841,8 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -9
         },
         "porosity": {
-          "high": 79,
-          "low": 79
+          "high": 70,
+          "low": 23
         }
       },
       "cost_rating": "5"
@@ -1856,8 +1894,8 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -89
         },
         "porosity": {
-          "high": 80,
-          "low": 81
+          "high": 100,
+          "low": 0
         }
       }
     },
@@ -1905,8 +1943,8 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -80
         },
         "porosity": {
-          "high": 88,
-          "low": 77
+          "high": 100,
+          "low": 0
         }
       },
       "cost_rating": "2"
@@ -1962,8 +2000,8 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -76
         },
         "porosity": {
-          "high": 100,
-          "low": 69
+          "high": 94,
+          "low": 7
         }
       },
       "cost_rating": "5"
@@ -2022,8 +2060,8 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -60
         },
         "porosity": {
-          "high": 100,
-          "low": 73
+          "high": 89,
+          "low": 22
         }
       }
     },
@@ -2069,8 +2107,8 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -31
         },
         "porosity": {
-          "high": 61,
-          "low": 90
+          "high": 54,
+          "low": 95
         }
       }
     },
@@ -2115,8 +2153,8 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -72
         },
         "porosity": {
-          "high": 88,
-          "low": 90
+          "high": 68,
+          "low": 95
         }
       },
       "cost_rating": "5"
@@ -2167,8 +2205,8 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -75
         },
         "porosity": {
-          "high": 100,
-          "low": 89
+          "high": 54,
+          "low": 86
         }
       },
       "cost_rating": "5"
@@ -2219,8 +2257,8 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -70
         },
         "porosity": {
-          "high": 87,
-          "low": 87
+          "high": 78,
+          "low": 57
         }
       },
       "cost_rating": "5"
@@ -2262,8 +2300,8 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": 46
         },
         "porosity": {
-          "high": 57,
-          "low": 90
+          "high": 30,
+          "low": 95
         }
       },
       "cost_rating": "1"
@@ -2312,8 +2350,8 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -91
         },
         "porosity": {
-          "high": 66,
-          "low": 89
+          "high": 61,
+          "low": 95
         }
       }
     },
@@ -2365,8 +2403,8 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -88
         },
         "porosity": {
-          "high": 77,
-          "low": 90
+          "high": 84,
+          "low": 95
         }
       }
     },
@@ -2423,8 +2461,8 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -60
         },
         "porosity": {
-          "high": 100,
-          "low": 86
+          "high": 79,
+          "low": 65
         }
       },
       "cost_rating": "5"
@@ -2478,8 +2516,8 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -79
         },
         "porosity": {
-          "high": 100,
-          "low": 79
+          "high": 97,
+          "low": 0
         }
       },
       "cost_rating": "5"
@@ -2527,8 +2565,8 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -79
         },
         "porosity": {
-          "high": 71,
-          "low": 85
+          "high": 60,
+          "low": 50
         }
       },
       "cost_rating": "5"
@@ -2581,8 +2619,8 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -90
         },
         "porosity": {
-          "high": 87,
-          "low": 90
+          "high": 69,
+          "low": 95
         }
       },
       "cost_rating": "4"
@@ -2632,8 +2670,8 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -68
         },
         "porosity": {
-          "high": 74,
-          "low": 88
+          "high": 59,
+          "low": 67
         }
       }
     },
@@ -2679,8 +2717,8 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -71
         },
         "porosity": {
-          "high": 73,
-          "low": 90
+          "high": 63,
+          "low": 95
         }
       }
     },
@@ -2721,13 +2759,13 @@ export const defaultProductDatabase: ProductDatabase = {
             "Unknown Protein"
           ],
           "emollients": [
-            "Guar Hydroxypropyltrimonium Chloride"
+            "Guar Gum"
           ],
           "score": -70
         },
         "porosity": {
-          "high": 71,
-          "low": 89
+          "high": 63,
+          "low": 95
         }
       }
     },
@@ -2776,8 +2814,8 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -32
         },
         "porosity": {
-          "high": 81,
-          "low": 84
+          "high": 74,
+          "low": 36
         }
       }
     },
@@ -2823,8 +2861,8 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -91
         },
         "porosity": {
-          "high": 76,
-          "low": 85
+          "high": 55,
+          "low": 58
         }
       },
       "cost_rating": "1"
@@ -2871,8 +2909,8 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -75
         },
         "porosity": {
-          "high": 68,
-          "low": 88
+          "high": 51,
+          "low": 95
         }
       }
     },
@@ -2918,8 +2956,8 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -76
         },
         "porosity": {
-          "high": 78,
-          "low": 81
+          "high": 38,
+          "low": 72
         }
       },
       "cost_rating": "5"
@@ -2968,15 +3006,15 @@ export const defaultProductDatabase: ProductDatabase = {
             "Jojoba Oil",
             "Guar Hydroxypropyltrimonium Chloride",
             "Polyvinylpyrrolidone",
-            "Guar Hydroxypropyltrimonium Chloride",
+            "Guar Gum",
             "Xanthan Gum",
             "Maltodextrin VP Copolymer"
           ],
           "score": -59
         },
         "porosity": {
-          "high": 100,
-          "low": 74
+          "high": 79,
+          "low": 31
         }
       },
       "cost_rating": "3"
@@ -3023,8 +3061,8 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -76
         },
         "porosity": {
-          "high": 82,
-          "low": 82
+          "high": 73,
+          "low": 69
         }
       },
       "cost_rating": "1"
@@ -3070,8 +3108,8 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -76
         },
         "porosity": {
-          "high": 78,
-          "low": 69
+          "high": 100,
+          "low": 0
         }
       }
     },
@@ -3113,8 +3151,8 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -76
         },
         "porosity": {
-          "high": 63,
-          "low": 79
+          "high": 91,
+          "low": 0
         }
       },
       "cost_rating": "5"
@@ -3160,8 +3198,8 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -76
         },
         "porosity": {
-          "high": 79,
-          "low": 69
+          "high": 100,
+          "low": 0
         }
       },
       "cost_rating": "5"
@@ -3212,8 +3250,8 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -65
         },
         "porosity": {
-          "high": 72,
-          "low": 83
+          "high": 80,
+          "low": 52
         }
       },
       "cost_rating": "5"
@@ -3258,8 +3296,8 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -84
         },
         "porosity": {
-          "high": 67,
-          "low": 90
+          "high": 51,
+          "low": 95
         }
       }
     },
@@ -3302,8 +3340,8 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": 46
         },
         "porosity": {
-          "high": 64,
-          "low": 99
+          "high": 37,
+          "low": 95
         }
       }
     },
@@ -3347,8 +3385,8 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -33
         },
         "porosity": {
-          "high": 59,
-          "low": 100
+          "high": 40,
+          "low": 60
         }
       },
       "cost_rating": "5"
@@ -3409,8 +3447,8 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -82
         },
         "porosity": {
-          "high": 100,
-          "low": 83
+          "high": 88,
+          "low": 36
         }
       },
       "cost_rating": "1"
@@ -3458,8 +3496,8 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -36
         },
         "porosity": {
-          "high": 100,
-          "low": 84
+          "high": 61,
+          "low": 65
         }
       },
       "cost_rating": "5"
@@ -3510,8 +3548,8 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -78
         },
         "porosity": {
-          "high": 100,
-          "low": 90
+          "high": 75,
+          "low": 95
         }
       },
       "cost_rating": "3"
@@ -3559,8 +3597,8 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -88
         },
         "porosity": {
-          "high": 92,
-          "low": 82
+          "high": 80,
+          "low": 31
         }
       },
       "cost_rating": "4"
@@ -3608,8 +3646,8 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -67
         },
         "porosity": {
-          "high": 100,
-          "low": 82
+          "high": 71,
+          "low": 46
         }
       },
       "cost_rating": "5"
@@ -3655,8 +3693,8 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -81
         },
         "porosity": {
-          "high": 97,
-          "low": 86
+          "high": 86,
+          "low": 45
         }
       },
       "cost_rating": "5"
@@ -3703,8 +3741,8 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -20
         },
         "porosity": {
-          "high": 100,
-          "low": 89
+          "high": 59,
+          "low": 95
         }
       },
       "cost_rating": "4"
@@ -3752,8 +3790,8 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -42
         },
         "porosity": {
-          "high": 100,
-          "low": 83
+          "high": 78,
+          "low": 42
         }
       }
     },
@@ -3793,13 +3831,13 @@ export const defaultProductDatabase: ProductDatabase = {
           "emollients": [
             "Xanthan Gum",
             "Guar Hydroxypropyltrimonium Chloride",
-            "Guar Hydroxypropyltrimonium Chloride"
+            "Guar Gum"
           ],
           "score": -15
         },
         "porosity": {
-          "high": 91,
-          "low": 89
+          "high": 55,
+          "low": 95
         }
       }
     },
@@ -3842,8 +3880,8 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -1
         },
         "porosity": {
-          "high": 91,
-          "low": 90
+          "high": 65,
+          "low": 95
         }
       },
       "cost_rating": "1"
@@ -3887,8 +3925,8 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -96
         },
         "porosity": {
-          "high": 69,
-          "low": 90
+          "high": 43,
+          "low": 95
         }
       }
     },
@@ -3934,8 +3972,8 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -53
         },
         "porosity": {
-          "high": 97,
-          "low": 100
+          "high": 59,
+          "low": 95
         }
       }
     },
@@ -3977,8 +4015,8 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -96
         },
         "porosity": {
-          "high": 54,
-          "low": 90
+          "high": 57,
+          "low": 95
         }
       }
     },
@@ -4025,8 +4063,8 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -82
         },
         "porosity": {
-          "high": 72,
-          "low": 88
+          "high": 84,
+          "low": 95
         }
       }
     }

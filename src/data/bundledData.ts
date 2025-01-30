@@ -2592,9 +2592,20 @@ export const defaultDatabase: IngredientDatabase = {
       ],
       "synonyms": [
         "guar gum quaternary ammonium",
-        "guar gum",
         "cationic guar",
         "hydroxypropyl guar"
+      ],
+      "status": "ok",
+      "group": "others"
+    },
+    "guar_gum": {
+      "name": "Guar Gum",
+      "id": "guar_gum",
+      "categories": [
+        "film_forming_agents"
+      ],
+      "synonyms": [
+        "guar gum"
       ],
       "status": "ok",
       "group": "others"
@@ -4287,7 +4298,7 @@ export const defaultDatabase: IngredientDatabase = {
       "name": "Unknown Oil",
       "id": "unknown_oil",
       "categories": [
-        "other"
+        "other_oils"
       ],
       "status": "ok",
       "group": "others"

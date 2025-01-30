@@ -5,7 +5,7 @@
       "brand": "Ouidad",
       "ingredients_raw": "aqua water eau, cetearyl alcohol, cetyl alcohol, glycerin, stearyl alcohol, hydrolyzed wheat protein, helianthus annuus sunflower seed oil, olea europaea olive fruit oil, camellia japonica tsubaki seed oil, salvia hispanica chia seed oil, glycine soja soybean oil, canola canola oil huile de colza, glycine soja soybean sterols, glycolipids, tocopheryl acetate, glyceryl stearate, cetearyl ethylhexanoate, cetrimonium chloride, polyquaternium-59, hydroxyethylcellulose, phospholipids, lactic acid, isopropyl myristate, butylene glycol, benzophenone-4, disodium edta, bht, sodium hydroxide, hexylene glycol, caprylyl glycol, phenoxyethanol, hexyl cinnamal, limonene, linalool, parfum fragrance",
       "product_categories": ["conditioners"],
-      "tags": ["normal_porosity", "low_porosity"],
+      "tags": ["normal_porosity"],
       "buy_links": [
         {
           "url": "https://click.linksynergy.com/link?id=9QcV0uNyab0&offerid=929395.3842998208&type=2&murl=https%3a%2f%2fwww.ouidad.com%2fproducts%2fvitalcurl-plus-balancing-rinse-conditioner%3fvariant%3d42433997242626",
@@ -25,7 +25,7 @@
         }
       ],
       "product_categories": ["conditioners"],
-      "tags": ["low_porosity"],
+      "tags": [],
       "cost": 2.12,
       "ingredients_raw": "water, glycerin, cetyl alcohol coconut derived, stearyl alcohol coconut derived, olea europaea olive fruit oil, cetrimonium chloride, behentrimonium chloride, aloe barbadensis leaf extract, glycereth-26, hypnea musciformis extract seaweed, gelidiella acerosa extract seaweed, sargassum filipendula extract seaweed, sorbitol, hydroxypropyltrimonium honey, silk amino acids, rosmarinus officinalis rosemary leaf extract, chamomilla recutita matricaria flower extract, urtica dioica nettle extract, butyrospermum parkii shea butter, simmondsia chinensis jojoba seed oil, tocopheryl acetate vitamin e, panthenol vitamin b5, citrus senensis oil, citrus limon oil, citrus arantifolia oil, citrus paradisi oil, sodium phytate, hydroxyethylcellulose, phenoxyethanol, ethylhexylglycerin, citric acid",
       "asin": "B005SIR28M"
@@ -50,7 +50,7 @@
       "brand": "Innersense",
       "ingredients_raw": "water aqua eau, cetearyl alcohol, glycerin, aloe barbadensis leaf juice, caprylic capric triglyceride, behentrimonium methosulfate, gluconolactone, stearalkonium chloride, oryza sativa rice extract, sodium benzoate, potassium sorbate, cetyl hydroxyethylcellulose, cocos nucifera coconut oil, oryza sativa rice bran oil, persea gratissima avocado oil, butyrospermum parkii shea butter, hydrolyzed quinoa, hydrolyzed rice protein, citric acid, citrus aurantium dulcis orange peel oil, camellia sinensis leaf extract, cucumis sativus cucumber fruit extract, mangifera indica mango fruit extract, persea gratissima avocado fruit extract, stearyl alcohol, amine hcl, calcium gluconate, benzyl alcohol, benzyl salicylate, citronellol, hexyl cinnamal, limonene, linalool",
       "product_categories": ["conditioners"],
-      "tags": ["low_porosity", "normal_porosity"],
+      "tags": ["normal_porosity"],
       "buy_links": [
         {
           "url": "https://amzn.to/3ZQnjjL",
@@ -84,7 +84,7 @@
       "brand": "Innersense",
       "ingredients_raw": "water aqua eau, aloe barbadensis leaf juice, cetearyl alcohol, glycerin, behentrimonium methosulfate, stearalkonium chloride, butyrospermum parkii shea butter, honey, citric acid, sodium levulinate, potassium sorbate, cocos nucifera coconut oil, prunus armeniaca apricot kernel oil, colloidal oatmeal, guar hydroxypropyltrimonium chloride, sodium gluconate, tocopherol, vaccinium macrocarpon cranberry seed oil, swertia japonica extract, stearyl alcohol, thiamine hcl, leuconostoc radish root ferment filtrate",
       "product_categories": ["conditioners"],
-      "tags": ["low_porosity", "normal_porosity"],
+      "tags": ["normal_porosity"],
       "buy_links": [
         {
           "url": "https://amzn.to/4iNhH2s",
@@ -113,7 +113,7 @@
       "name": "Nourish & Flourish Conditioner",
       "brand": "Lohy",
       "product_categories": ["conditioners"],
-      "tags": ["normal_porosity", "low_porosity"],
+      "tags": ["normal_porosity"],
       "buy_links": [
         {
           "url": "https://lohy.com.au/products/nourish-flourish-conditioner-curly-hair?aff=49",
@@ -128,7 +128,7 @@
       "name": "Essential Moisture Conditioner",
       "brand": "Curlsmith",
       "product_categories": ["conditioners"],
-      "tags": ["normal_porosity", "low_porosity", "high_porosity"],
+      "tags": ["normal_porosity", "high_porosity"],
       "ingredients_raw": "water aqua, cetearyl alcohol, hydroxypropyl starch phosphate, betaine, cetyl palmitate, behentrimonium chloride, butyrospermum parkii shea butter, cocos nucifera coconut oil, persea gratissima avocado oil, helianthus annuus sunflower seed oil, aloe barbadensis leaf juice, selaginella lepidophylla resurrection flower extract, ocimum basilicum basil leaf extract, piper nigrum black pepper seed extract, rosmarinus officinalis rosemary leaf extract, salvia officinalis sage leaf extract, carapa guaianensis andiroba seed oil, glycerin, guar hydroxypropyltrimonium chloride, panthenol, glyceryl undecylenate, fragrance parfum, citric acid, sodium hydroxide, sodium gluconate, glyceryl caprylate, potassium sorbate, sodium benzoate, limonene, linalool, isopropyl alcohol",
       "buy_links": [
         {
@@ -148,7 +148,7 @@
     {
       "name": "Tea Tree Triple Treat Invigorating Conditioner",
       "brand": "Giovanni",
-      "tags": ["normal_porosity", "low_porosity"],
+      "tags": ["normal_porosity"],
       "product_categories": ["conditioners"],
       "cost": 1,
       "buy_links": [
@@ -177,6 +177,20 @@
           "retailer": "The Ordinary"
         }
       ]
+    },
+    {
+      "name": "Tropical Coconut Conditioner",
+      "brand": "Suave",
+      "product_categories": ["conditioners"],
+      "tags": ["normal_porosity", "low_porosity"],
+      "cost": 0.09,
+      "buy_links": [
+        {
+          "url": "https://go.skimresources.com?id=276362X1762442&xs=1&url=https%3A%2F%2Fwww.walmart.com%2Fip%2FSuave-Essentials-Nourishing-Conditioner-Tropical-Coconut-22-5-fl-oz%2F943974558",
+          "retailer": "Walmart"
+        }
+      ],
+      "ingredients_raw": "water aqua, cetyl alcohol, stearamidopropyl dimethylamine, lactic acid, potassium chloride, fragrance parfum, disodium edta, peg-150 distearate, 2-bromo-2-nitropropane-1, 3-diol, methylchloroisothiazolinone, methylisothiazolinone, propylene glycol, tocopheryl acetate vitamin e acetate, silk amino acids, honey, urtica dioica nettle extract, rosmarinus officinalis rosemary leaf extract, cocos nucifera coconut fruit extract"
     }
   ]
 }
