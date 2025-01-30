@@ -71,4 +71,13 @@ describe('porosity scoring', () => {
       expect(result.low).toBeGreaterThan(80);
     });
   });
+
+  describe('unknown oils', () => {
+    const ingredients = 'someoil';
+    const analysis = analyzer.analyze(ingredients);
+    const result = porosity(analysis);
+    it('should score unknown oils poorly for low porosity', () => {
+      expect(result.low).toBeLessThan(30);
+    });
+  });
 });

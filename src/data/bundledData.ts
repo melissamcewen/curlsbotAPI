@@ -4288,10 +4288,10 @@ export const defaultDatabase: IngredientDatabase = {
       "name": "Unknown Oil",
       "id": "unknown_oil",
       "categories": [
-        "other"
+        "other_oils"
       ],
       "status": "ok",
-      "group": "others"
+      "group": "oils"
     },
     "unknown_polyquat": {
       "name": "Unknown Polyquat",

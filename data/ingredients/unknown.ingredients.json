@@ -34,7 +34,7 @@
     {
       "name": "Unknown Oil",
       "id": "unknown_oil",
-      "categories": ["other"]
+      "categories": ["other_oils"]
     },
     {
       "name": "Unknown Polyquat",
