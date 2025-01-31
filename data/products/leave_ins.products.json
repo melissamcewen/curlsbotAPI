@@ -29,6 +29,10 @@
         {
           "url": "https://amzn.to/2yjHQ1r",
           "retailer": "Amazon"
+        },
+        {
+          "url": "https://shop.beauty-heroes.com/products/sweet-spirit-leave-in-conditioner-innersense-organic-beauty",
+          "retailer": "Beauty Heroes"
         }
       ],
       "product_categories": [
@@ -60,6 +64,15 @@
           "url": "https://amzn.to/4fEo0CJ",
           "retailer": "Amazon",
           "country": "UK"
+        },
+        {
+          "url": "https://curlsmith.com/products/hydrate-plump-leave-in",
+          "retailer": "Curlsmith"
+        },
+        {
+          "url": "https://uk.curlsmith.com/products/hydrate-plump-leave-in",
+          "retailer": "Curlsmith",
+          "country": "UK"
         }
       ],
       "asin": "B0CZVVB2C9",
@@ -80,6 +93,10 @@
         {
           "url": "https://amzn.to/4fK4aWC",
           "retailer": "Amazon"
+        },
+        {
+          "url": "https://www.vitacost.com/giovanni-direct-leave-in-weightless-moisture-conditioner-for-all-hair-types",
+          "retailer": "Vitacost"
         }
       ],
       "cost": 1,

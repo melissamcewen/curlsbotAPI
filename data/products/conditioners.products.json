@@ -57,7 +57,7 @@
           "retailer": "Amazon"
         },
         {
-          "url": "https://sovrn.co/116i7os",
+          "url": "https://go.skimresources.com?id=276362X1762442&xs=1&url=https%3A%2F%2Fshop.beauty-heroes.com%2Fproducts%2Fpure-inspiration-conditioner-innersense-organic-beauty",
           "retailer": "Beauty Heroes"
         }
       ],
@@ -191,6 +191,28 @@
         }
       ],
       "ingredients_raw": "water aqua, cetyl alcohol, stearamidopropyl dimethylamine, lactic acid, potassium chloride, fragrance parfum, disodium edta, peg-150 distearate, 2-bromo-2-nitropropane-1, 3-diol, methylchloroisothiazolinone, methylisothiazolinone, propylene glycol, tocopheryl acetate vitamin e acetate, silk amino acids, honey, urtica dioica nettle extract, rosmarinus officinalis rosemary leaf extract, cocos nucifera coconut fruit extract"
+    },
+    {
+      "name": "Cream Conditioner",
+      "brand": "Curl Keeper",
+      "product_categories": ["conditioners"],
+      "tags": ["featured"],
+      "cost": 3,
+      "ingredients_raw": "water aqua eau, isopropyl myristate, cetearyl alcohol, simmondsia chinensis jojoba seed oil, cetrimonium chloride, ceteareth-33, panthenol, silk amino acids, wheat amino acids, parfum, sodium levulinate, potassium sorbate, lecithin, citric acid, sodium chloride, benzoic acid, benzyl alcohol, benzyl benzoate, phenoxyethanol, citral, citronellol, coumarin, eugenol, geraniol, limonene, linalool",
+      "buy_links": [
+        {
+          "url": "https://curlkeeper.com/r?id=6qjs4u",
+          "retailer": "Curl Keeper"
+        }
+      ]
+    },
+    {
+      "name": "Big Energy Conditioner",
+      "brand": "Curl Keeper",
+      "product_categories": ["conditioners"],
+      "tags": [ "featured"],
+      "cost": 2.8,
+      "ingredients_raw": "water aqua eau, cetyl alcohol, cetearyl alcohol, behentrimonium chloride, glycerin, propanediol, stearamido-propyl dimethylamine, isopropyl myristate, cocos nucifera coconut water, aloe barbadensis leaf juice, chamomilla recutita matricaria flower extract, lavandula angustifolia lavender extract, cetyl esters, cetrimonium chloride, guar hydroxypropyltrimonium chloride, dicetyldimonium chloride, propylene glycol, caprylyl glycol, 1, 2-hexanediol, leuconostoc radish root ferment filtrate, fragrance parfum, potassiu, sorbate, panthenol, to-copheryl acetate, sodium benzoate, edta, citric acid, isopropyl alcohol, phenoxyethanol, ethylhexylglycerin, amyl cinnamal, limonene, isoeugenol, linalool"
     }
   ]
 }

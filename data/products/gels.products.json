@@ -97,6 +97,10 @@
         {
           "url": "https://amzn.to/2BYccc7",
           "retailer": "Amazon"
+        },
+        {
+          "url": "https://shop.beauty-heroes.com/products/i-create-hold-innersense-organic-beauty",
+          "retailer": "Beauty Heroes"
         }
       ],
       "product_categories": [
@@ -143,6 +147,10 @@
         {
           "url": "https://amzn.to/3ZSFbue",
           "retailer": "Amazon"
+        },
+        {
+          "url": "https://shop.beauty-heroes.com/products/i-create-volume-innersense-organic-beauty",
+          "retailer": "Beauty Heroes"
         }
       ],
       "product_categories": [
@@ -174,6 +182,10 @@
         {
           "url": "https://amzn.to/4fyvVl5",
           "retailer": "Amazon"
+        },
+        {
+          "url": "https://curlwarehouse.com/products/love-ur-curls-irish-sea-moss-gel",
+          "retailer": "Curl Warehouse"
         }
       ],
       "asin": "B09YMYDNX8"
@@ -239,6 +251,15 @@
           "url": "https://amzn.to/3BHjZj1",
           "retailer": "Amazon",
           "country": "UK"
+        },
+        {
+          "url": "https://curlsmith.com/products/hydro-style-flexi-jelly",
+          "retailer": "Curlsmith"
+        },
+        {
+          "url": "https://uk.curlsmith.com/products/hydro-style-flexi-jelly",
+          "retailer": "Curlsmith",
+          "country": "UK"
         }
       ],
       "asin": "B08N5BX78W"
@@ -251,6 +272,14 @@
           "url": "https://amzn.to/4fKkExP",
           "retailer": "Amazon",
           "country": "UK"
+        },
+        {
+          "url": "https://www.vitacost.com/giovanni-l-a-natural-styling-gel-strong-hold",
+          "retailer": "Vitacost"
+        },
+        {
+          "url": "https://amzn.to/4glSQ3s",
+          "retailer": "Amazon"
         }
       ],
       "cost": 1,
@@ -264,6 +293,28 @@
       "product_categories": [
         "gels"
       ]
+    },
+    {
+      "name": "Curl Keeper® Original Liquid Styler",
+      "brand": "Curl Keeper",
+      "product_categories": [
+        "gels",
+        "fragrance-free"
+      ],
+      "tags": [
+        "normal_porosity",
+        "low_porosity",
+        "featured"
+      ],
+      "cost": 2.9,
+      "buy_links": [
+        {
+          "url": "https://curlkeeper.com/r?id=p0m4m5",
+          "retailer": "Curl Keeper"
+        }
+      ],
+      "ingredients_raw": "water aqua eau, vp va copolymer, propylene glycol, hydroxyethylcellulose, glycerin, oleth-20, polyquaternium-10, citric acid, dmdm hydantoin"
+
     }
   ]
 }

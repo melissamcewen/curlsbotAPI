@@ -364,7 +364,6 @@
       "id": "guar_gum",
       "categories": ["film_forming_agents"],
       "synonyms": ["guar gum"]
-
     },
     {
       "name": "Xanthan Gum",
@@ -749,24 +748,10 @@
       "id": "xylitol",
       "categories": ["simple_humectants"]
     },
-    {
-      "name": "C12-15 alkyl",
-      "id": "c12_15_alkyl",
-      "categories": ["other_emollients"]
-    },
-    {
-      "name": "Cetyl esters",
-      "id": "cetyl_esters",
-      "categories": ["other_emollients"]
-    },
+
     {
       "name": "Isolaureth-6",
       "id": "isolaureth_6",
-      "categories": ["other_emollients"]
-    },
-    {
-      "name": "Sorbitol Esters",
-      "id": "sorbitol_esters",
       "categories": ["other_emollients"]
     },
     {
@@ -1018,7 +1003,33 @@
           "notes": "It has a very high pH (9.5-10.5) which is very different from the pH of the scalp/hair. Can cause the cuticle to open up, allowing water to break up proteins like keratin and increasing negative charges in the hair. This lowers the elasticity of the hair and can cause breakage."
         }
       ]
+    },
+    ,
+    {
+      "name": "Jojoba Esters",
+      "id": "jojoba_esters",
+      "categories": ["esters"]
+    },
+    {
+      "name": "Cetyl Esters",
+      "id": "cetyl_esters",
+      "categories": ["esters"]
+    },
+    {
+      "name": "C12-15 alkyl",
+      "id": "c12_15_alkyl",
+      "categories": ["esters"]
+    },
+    {
+      "name": "Unknown Ester",
+      "id": "unknown_ester",
+      "categories": ["esters"],
+      "synonyms": ["ester"]
+    },
+    {
+      "name": "Sorbitol Esters",
+      "id": "sorbitol_esters",
+      "categories": ["esters"]
     }
   ]
 }
-

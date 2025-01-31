@@ -73,7 +73,7 @@ describe('porosity scoring', () => {
   });
 
   describe('unknown oils', () => {
-    const ingredients = 'someoil';
+    const ingredients = 'some oil';
     const analysis = analyzer.analyze(ingredients);
     const result = porosity(analysis);
     it('should score unknown oils poorly for low porosity', () => {

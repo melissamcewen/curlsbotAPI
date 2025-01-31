@@ -34,6 +34,10 @@
         {
           "url": "https://amzn.to/49LHTpT",
           "retailer": "Amazon"
+        },
+        {
+          "url": "https://www.kroger.com/p/kristin-ess-moisture-rich-curl-shampoo/0084079712927",
+          "retailer": "Kroger"
         }
       ],
       "systems_excluded": ["curly_default"],
@@ -51,6 +55,10 @@
         {
           "url": "https://amzn.to/3BK5x9T",
           "retailer": "Amazon"
+        },
+        {
+          "url": "https://shop.beauty-heroes.com/products/hydrating-cream-hairbath-innersense-organic-beauty",
+          "retailer": "Beauty Heroes"
         }
       ],
       "product_categories": ["shampoos"],
@@ -82,6 +90,10 @@
         {
           "url": "https://amzn.to/3ZSDywG",
           "retailer": "Amazon"
+        },
+        {
+          "url": "https://shop.beauty-heroes.com/products/pure-harmony-hairbath-innersense-organic-beauty",
+          "retailer": "Beauty Heroes"
         }
       ],
       "cost": 2.25,
@@ -97,6 +109,10 @@
         {
           "url": "https://amzn.to/41J8sKF",
           "retailer": "Amazon"
+        },
+        {
+          "url": "https://shop.beauty-heroes.com/products/color-awakening-hairbath-innersense-organic-beauty",
+          "retailer": "Beauty Heroes"
         }
       ],
       "product_categories": ["shampoos"],
@@ -113,6 +129,10 @@
         {
           "url": "https://amzn.to/4gLhRFK",
           "retailer": "Amazon"
+        },
+        {
+          "url": "https://shop.beauty-heroes.com/products/clarity-hairbath-innersense-organicy",
+          "retailer": "Beauty Heroes"
         }
       ],
       "product_categories": ["shampoos"],
@@ -147,6 +167,15 @@
           "url": "https://amzn.to/4gzkwmm",
           "retailer": "Amazon",
           "country": "UK"
+        },
+        {
+          "url": "https://curlsmith.com/products/essential-moisture-cleanser",
+          "retailer": "Curlsmith"
+        },
+        {
+          "url": "https://uk.curlsmith.com/products/essential-moisture-cleanser",
+          "retailer": "Curlsmith",
+          "country": "UK"
         }
       ],
       "asin": "B0BPTC343Q"
@@ -161,6 +190,15 @@
         {
           "url": "https://amzn.to/3Pdq0qB",
           "retailer": "Amazon",
+          "country": "UK"
+        },
+        {
+          "url": "https://curlsmith.com/products/full-body-weightless-cleanser",
+          "retailer": "Curlsmith"
+        },
+        {
+          "url": "https://uk.curlsmith.com/products/full-body-weightless-cleanser",
+          "retailer": "Curlsmith",
           "country": "UK"
         }
       ],
@@ -180,6 +218,10 @@
         {
           "url": "https://amzn.to/3W0nuIe",
           "retailer": "Amazon"
+        },
+        {
+          "url": "https://www.walmart.com/ip/Not-Your-Mother-s-Naturals-Tahitian-Gardenia-Flower-and-Mango-Butter-Shampoo-15-2-fl-oz/783360566",
+          "retailer": "Walmart"
         }
       ],
       "asin": "B07KQ24CZS"
@@ -211,6 +253,10 @@
         {
           "url": "https://amzn.to/4h15AgY",
           "retailer": "Amazon"
+        },
+        {
+          "url": "https://www.vitacost.com/giovanni-smooth-as-silk-deep-moisture-shampoo",
+          "retailer": "Vitacost"
         }
       ],
       "description": "An excellent low-pH (~5 protects against frizz) shampoo at a great price.",

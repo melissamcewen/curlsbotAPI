@@ -12,6 +12,15 @@
           "url": "https://amzn.to/429CqI3",
           "retailer": "Amazon",
           "country": "UK"
+        },
+        {
+          "url": "https://uk.curlsmith.com/products/bond-curl-rehab-salve",
+          "retailer": "Curlsmith",
+          "country": "UK"
+        },
+        {
+          "url": "https://curlsmith.com/products/bond-curl-rehab-salve",
+          "retailer": "Curlsmith"
         }
       ],
       "product_categories": ["pre_poo"],

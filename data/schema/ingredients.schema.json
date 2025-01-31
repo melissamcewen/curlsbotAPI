@@ -56,7 +56,8 @@
                 "other_emollients",
                 "conditioning_agents",
                 "film_forming_agents",
-                "essential_oils"
+                "essential_oils",
+                "esters"
               ]
             },
             "description": "Categories to which the ingredient belongs"

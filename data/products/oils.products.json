@@ -60,6 +60,15 @@
           "url": "https://amzn.to/3DwDN9b",
           "retailer": "Amazon",
           "country": "UK"
+        },
+        {
+          "url": "https://curlsmith.com/products/bonding-oil",
+          "retailer": "Curlsmith"
+        },
+        {
+          "url": "https://uk.curlsmith.com/products/bonding-oil",
+          "retailer": "Curlsmith",
+          "country": "UK"
         }
       ],
       "asin": "B09GC96P46",

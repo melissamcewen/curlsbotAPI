@@ -92,6 +92,24 @@
           "country": "AU"
         }
       ]
+    },
+    {
+      "name": "Pop-Up Curl Diffuser",
+      "brand": "Curl Keeper",
+      "product_categories": [
+        "accessories"
+      ],
+      "tags": [
+        "style",
+        "featured"
+      ],
+      "description": "Great for travel though I've used it at home for years because it's so easy to store",
+      "buy_links": [
+        {
+          "url": "https://curlkeeper.com/r?id=9l8okf",
+          "retailer": "Curl Keeper"
+        }
+      ]
     }
   ]
 }

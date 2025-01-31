@@ -30,6 +30,15 @@
         {
           "url": "https://amzn.to/40lMISJ",
           "retailer": "Amazon"
+        },
+        {
+          "url": "https://go.skimresources.com?id=276362X1762442&xs=1&url=https%3A%2F%2Fuk.curlsmith.com%2Fproducts%2Fcurl-souffle%3Fredirect%3D1",
+          "retailer": "Curlsmith",
+          "country": "UK"
+        },
+        {
+          "url": "https://go.skimresources.com?id=276362X1762442&xs=1&url=https%3A%2F%2Fcurlsmith.com%2Fproducts%2Fcurl-souffle",
+          "retailer": "Curlsmith"
         }
       ],
       "asin": "B07D7CKKL3",

@@ -211,6 +211,12 @@
       "inclusions": ["essential"],
       "defaultIngredient": "unknown_essential_oil",
       "description": "Essential oils are not really oils as they are not fatty. They are mainly used for their fragrance and therapeutic properties."
+    },
+    {
+      "id": "esters",
+      "name": "Esters",
+      "group": "others",
+      "description": "Esters are used in hair care products as emollients, conditioners, and carriers for other ingredients, contributing to smoothness, shine, and manageability."
     }
   ]
 }

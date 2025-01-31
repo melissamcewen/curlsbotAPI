@@ -36,6 +36,10 @@
         {
           "url": "https://amzn.to/3DA6phV",
           "retailer": "Amazon"
+        },
+        {
+          "url": "https://go.skimresources.com?id=276362X1762442&xs=1&url=https%3A%2F%2Fshop.beauty-heroes.com%2Fproducts%2Fi-create-lift-innersense-organic-beauty",
+          "retailer": "Beauty Heroes"
         }
       ],
       "product_categories": ["foams"],
@@ -54,6 +58,15 @@
         {
           "url": "https://amzn.to/49W9HrK",
           "retailer": "Amazon",
+          "country": "UK"
+        },
+        {
+          "url": "https://go.skimresources.com?id=276362X1762442&xs=1&url=https%3A%2F%2Fcurlsmith.com%2Fproducts%2Fbouncy-strength-volume-foam",
+          "retailer": "Curlsmith"
+        },
+        {
+          "url": "https://go.skimresources.com?id=276362X1762442&xs=1&url=https%3A%2F%2Fuk.curlsmith.com%2Fproducts%2Fbouncy-strength-volume-foam",
+          "retailer": "Curlsmith",
           "country": "UK"
         }
       ],
@@ -78,6 +91,10 @@
         {
           "url": "https://amzn.to/41UCcnP",
           "retailer": "Amazon"
+        },
+        {
+          "url": "https://www.cvs.com/shop/herbal-essences-curl-boosting-mousse-6-8-oz-prodid-184956",
+          "retailer": "CVS"
         }
       ],
       "asin": "B0B995XZ6T",

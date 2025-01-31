@@ -3,15 +3,10 @@
     {
       "name": "Beeswax",
       "id": "beeswax",
-      "synonyms": [
-        "cera alba",
-        "natural wax from bees",
-        "cire dabeille"
-      ],
-      "categories": [
-        "non_water_soluble_waxes"
-      ]
+      "synonyms": ["cera alba", "natural wax from bees", "cire dabeille"],
+      "categories": ["non_water_soluble_waxes"]
     },
+
     {
       "name": "Candelilla Wax",
       "id": "candelilla_wax",
@@ -19,20 +14,13 @@
         "euphorbia cerifera wax",
         "vegetable wax from candelilla shrub"
       ],
-      "categories": [
-        "non_water_soluble_waxes"
-      ]
+      "categories": ["non_water_soluble_waxes"]
     },
     {
       "name": "Carnauba Wax",
       "id": "carnauba_wax",
-      "synonyms": [
-        "copernicia cerifera wax",
-        "palm wax"
-      ],
-      "categories": [
-        "non_water_soluble_waxes"
-      ]
+      "synonyms": ["copernicia cerifera wax", "palm wax"],
+      "categories": ["non_water_soluble_waxes"]
     },
     {
       "name": "Ceteareth-20",
@@ -41,54 +29,31 @@
         "polyoxyethylene cetearyl ether",
         "ethoxylated cetearyl alcohol"
       ],
-      "categories": [
-        "water_soluble_waxes"
-      ]
+      "categories": ["water_soluble_waxes"]
     },
     {
       "name": "Euphorbia Cerifera Wax",
       "id": "euphorbia_cerifera_wax",
-      "synonyms": [
-        "candelilla wax",
-        "vegetable wax",
-        "natural plant wax"
-      ],
-      "categories": [
-        "non_water_soluble_waxes"
-      ]
+      "synonyms": ["candelilla wax", "vegetable wax", "natural plant wax"],
+      "categories": ["non_water_soluble_waxes"]
     },
     {
       "name": "Microcrystalline Wax",
       "id": "microcrystalline_wax",
-      "synonyms": [
-        "cera microcristallina",
-        "cire microcristalline"
-      ],
-      "categories": [
-        "non_water_soluble_waxes"
-      ]
+      "synonyms": ["cera microcristallina", "cire microcristalline"],
+      "categories": ["non_water_soluble_waxes"]
     },
     {
       "name": "Ozokerite",
       "id": "ozokerite",
-      "synonyms": [
-        "mineral wax",
-        "earth wax"
-      ],
-      "categories": [
-        "non_water_soluble_waxes"
-      ]
+      "synonyms": ["mineral wax", "earth wax"],
+      "categories": ["non_water_soluble_waxes"]
     },
     {
       "name": "Paraffin Wax",
       "id": "paraffin_wax",
-      "synonyms": [
-        "paraffin",
-        "petroleum-derived wax"
-      ],
-      "categories": [
-        "non_water_soluble_waxes"
-      ]
+      "synonyms": ["paraffin", "petroleum-derived wax"],
+      "categories": ["non_water_soluble_waxes"]
     },
     {
       "name": "PEG-12 Carnauba Wax",
@@ -97,9 +62,7 @@
         "polyethylene glycol-12 carnauba wax",
         "ethoxylated carnauba wax"
       ],
-      "categories": [
-        "water_soluble_waxes"
-      ]
+      "categories": ["water_soluble_waxes"]
     },
     {
       "name": "PEG-40 Hydrogenated Castor Oil",
@@ -108,45 +71,13 @@
         "polyethylene glycol-40 hydrogenated castor oil",
         "ethoxylated castor oil"
       ],
-      "categories": [
-        "water_soluble_waxes"
-      ]
+      "categories": ["water_soluble_waxes"]
     },
     {
       "name": "PEG-8 Beeswax",
       "id": "peg_8_beeswax",
-      "synonyms": [
-        "polyethylene glycol-8 beeswax",
-        "ethoxylated beeswax"
-      ],
-      "categories": [
-        "water_soluble_waxes"
-      ]
-    },
-    {
-      "name": "Jojoba Esters",
-      "id": "jojoba_esters",
-      "categories": [
-        "non_water_soluble_waxes"
-      ]
-    },
-    {
-      "name": "Cetyl Esters",
-      "id": "cetyl_esters",
-      "categories": [
-        "non_water_soluble_waxes"
-      ]
-    },
-    {
-      "name": "Unknown Ester",
-      "id": "unknown_ester",
-      "categories": [
-        "non_water_soluble_waxes"
-      ],
-      "synonyms": [
-        "ester"
-      ],
-      "description": "This is an ester, a component of waxes"
+      "synonyms": ["polyethylene glycol-8 beeswax", "ethoxylated beeswax"],
+      "categories": ["water_soluble_waxes"]
     }
   ]
 }

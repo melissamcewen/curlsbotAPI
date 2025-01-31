@@ -106,6 +106,26 @@ export const defaultProductDatabase: ProductDatabase = {
       "id": "curly_hair_accessories_kit",
       "systems_excluded": []
     },
+    "pop-up_curl_diffuser": {
+      "name": "Pop-Up Curl Diffuser",
+      "brand": "Curl Keeper",
+      "product_categories": [
+        "accessories"
+      ],
+      "tags": [
+        "style",
+        "featured"
+      ],
+      "description": "Great for travel though I've used it at home for years because it's so easy to store",
+      "buy_links": [
+        {
+          "url": "https://curlkeeper.com/r?id=9l8okf",
+          "retailer": "Curl Keeper"
+        }
+      ],
+      "id": "pop-up_curl_diffuser",
+      "systems_excluded": []
+    },
     "mud_pie_clay_clarifying_treatment": {
       "name": "Mud Pie Clay Clarifying Treatment",
       "brand": "Ecoslay",
@@ -189,7 +209,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 4,
           "film_forming_humectants_number": 3,
-          "emollients_number": 2,
+          "emollients_number": 3,
           "simple_humectants": [
             "Panthenol",
             "Sodium PCA",
@@ -202,14 +222,15 @@ export const defaultProductDatabase: ProductDatabase = {
             "Silk Amino Acids"
           ],
           "emollients": [
+            "Unknown Oil",
             "Avocado Oil",
             "Castor Oil"
           ],
-          "score": -66
+          "score": -68
         },
         "porosity": {
-          "high": 52,
-          "low": 56
+          "high": 63,
+          "low": 32
         }
       },
       "cost_rating": "5"
@@ -301,20 +322,22 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 2,
           "film_forming_humectants_number": 0,
-          "emollients_number": 1,
+          "emollients_number": 3,
           "simple_humectants": [
             "Butylene glycol",
             "Panthenol"
           ],
           "film_forming_humectants": [],
           "emollients": [
-            "Cetrimonium Chloride"
+            "Cetrimonium Chloride",
+            "Unknown Oil",
+            "Unknown Oil"
           ],
-          "score": 20
+          "score": -10
         },
         "porosity": {
-          "high": 39,
-          "low": 95
+          "high": 55,
+          "low": 55
         }
       },
       "cost_rating": "5"
@@ -347,7 +370,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 4,
           "film_forming_humectants_number": 1,
-          "emollients_number": 3,
+          "emollients_number": 12,
           "simple_humectants": [
             "Propanediol",
             "Panthenol",
@@ -358,15 +381,24 @@ export const defaultProductDatabase: ProductDatabase = {
             "Unknown Protein"
           ],
           "emollients": [
+            "Unknown Oil",
+            "Unknown Oil",
             "Argan Oil",
             "Coconut Oil",
-            "Lavender Oil"
+            "Unknown Oil",
+            "Unknown Oil",
+            "Unknown Oil",
+            "Unknown Oil",
+            "Lavender Oil",
+            "Unknown Oil",
+            "Unknown Oil",
+            "Unknown Oil"
           ],
-          "score": -17
+          "score": -47
         },
         "porosity": {
-          "high": 67,
-          "low": 56
+          "high": 100,
+          "low": 0
         }
       },
       "cost_rating": "5"
@@ -404,7 +436,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 2,
           "film_forming_humectants_number": 0,
-          "emollients_number": 7,
+          "emollients_number": 12,
           "simple_humectants": [
             "Glycerin",
             "Panthenol"
@@ -417,13 +449,18 @@ export const defaultProductDatabase: ProductDatabase = {
             "Butyrospermum Parkii Shea Butter",
             "Stearyl Alcohol",
             "Benzyl Alcohol",
-            "Lavender Oil"
+            "Unknown Oil",
+            "Unknown Oil",
+            "Unknown Oil",
+            "Lavender Oil",
+            "Unknown Oil",
+            "Unknown Oil"
           ],
-          "score": -55
+          "score": -59
         },
         "porosity": {
-          "high": 84,
-          "low": 46
+          "high": 100,
+          "low": 0
         }
       },
       "cost_rating": "5"
@@ -459,7 +496,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 2,
           "film_forming_humectants_number": 1,
-          "emollients_number": 3,
+          "emollients_number": 7,
           "simple_humectants": [
             "Glycerin",
             "Hexylene Glycol"
@@ -468,15 +505,19 @@ export const defaultProductDatabase: ProductDatabase = {
             "Aloe Barbadensis Leaf Extract"
           ],
           "emollients": [
+            "Unknown Oil",
+            "Unknown Oil",
             "Baobab Oil",
             "Butyrospermum Parkii Shea Butter",
+            "Unknown Oil",
+            "Unknown Oil",
             "Guar Hydroxypropyltrimonium Chloride"
           ],
-          "score": -91
+          "score": -88
         },
         "porosity": {
-          "high": 57,
-          "low": 54
+          "high": 100,
+          "low": 0
         }
       },
       "cost_rating": "1"
@@ -505,7 +546,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 5,
           "film_forming_humectants_number": 3,
-          "emollients_number": 6,
+          "emollients_number": 10,
           "simple_humectants": [
             "Glycerin",
             "Lactic Acid",
@@ -524,13 +565,17 @@ export const defaultProductDatabase: ProductDatabase = {
             "Stearyl Alcohol",
             "Sunflower Oil",
             "Olive Oil",
+            "Unknown Oil",
+            "Unknown Oil",
+            "Unknown Oil",
+            "Unknown Oil",
             "Cetrimonium Chloride"
           ],
-          "score": -69
+          "score": -70
         },
         "porosity": {
-          "high": 84,
-          "low": 47
+          "high": 100,
+          "low": 0
         }
       },
       "cost_rating": "2"
@@ -558,7 +603,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 5,
           "film_forming_humectants_number": 7,
-          "emollients_number": 7,
+          "emollients_number": 11,
           "simple_humectants": [
             "Glycerin",
             "Glycereth-26",
@@ -582,13 +627,17 @@ export const defaultProductDatabase: ProductDatabase = {
             "Cetrimonium Chloride",
             "Behentrimonium Chloride",
             "Butyrospermum Parkii Shea Butter",
-            "Jojoba Oil"
+            "Jojoba Oil",
+            "Unknown Oil",
+            "Unknown Oil",
+            "Unknown Oil",
+            "Unknown Oil"
           ],
-          "score": -68
+          "score": -69
         },
         "porosity": {
-          "high": 87,
-          "low": 42
+          "high": 100,
+          "low": 0
         }
       },
       "cost_rating": "4"
@@ -649,7 +698,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 91,
-          "low": 34
+          "low": 14
         }
       },
       "cost_rating": "4"
@@ -670,7 +719,7 @@ export const defaultProductDatabase: ProductDatabase = {
           "retailer": "Amazon"
         },
         {
-          "url": "https://sovrn.co/116i7os",
+          "url": "https://go.skimresources.com?id=276362X1762442&xs=1&url=https%3A%2F%2Fshop.beauty-heroes.com%2Fproducts%2Fpure-inspiration-conditioner-innersense-organic-beauty",
           "retailer": "Beauty Heroes"
         }
       ],
@@ -683,7 +732,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 1,
           "film_forming_humectants_number": 3,
-          "emollients_number": 9,
+          "emollients_number": 10,
           "simple_humectants": [
             "Glycerin"
           ],
@@ -700,6 +749,7 @@ export const defaultProductDatabase: ProductDatabase = {
             "Rice bran oil",
             "Avocado Oil",
             "Butyrospermum Parkii Shea Butter",
+            "Unknown Oil",
             "Stearyl Alcohol",
             "Benzyl Alcohol"
           ],
@@ -738,7 +788,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 2,
           "film_forming_humectants_number": 3,
-          "emollients_number": 10,
+          "emollients_number": 17,
           "simple_humectants": [
             "Glycerin",
             "Glycerin"
@@ -752,19 +802,26 @@ export const defaultProductDatabase: ProductDatabase = {
             "Cetearyl Alcohol",
             "Behentrimonium Methosulfate",
             "Diheptyl Succinate",
+            "Unknown Oil",
             "Lavender Oil",
+            "Unknown Oil",
+            "Unknown Oil",
+            "Unknown Oil",
+            "Unknown Oil",
             "Coconut Oil",
             "Guar Hydroxypropyltrimonium Chloride",
+            "Unknown Oil",
+            "Unknown Oil",
             "Avocado Oil",
             "Butyrospermum Parkii Shea Butter",
             "Jojoba Oil",
             "Benzyl Alcohol"
           ],
-          "score": -67
+          "score": -69
         },
         "porosity": {
-          "high": 69,
-          "low": 53
+          "high": 100,
+          "low": 0
         }
       },
       "cost_rating": "5"
@@ -794,7 +851,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 2,
           "film_forming_humectants_number": 1,
-          "emollients_number": 7,
+          "emollients_number": 8,
           "simple_humectants": [
             "Glycerin",
             "Honey"
@@ -809,13 +866,14 @@ export const defaultProductDatabase: ProductDatabase = {
             "Coconut Oil",
             "Apricot Kernel Oil",
             "Guar Hydroxypropyltrimonium Chloride",
+            "Unknown Oil",
             "Stearyl Alcohol"
           ],
           "score": -72
         },
         "porosity": {
           "high": 100,
-          "low": 5
+          "low": 0
         }
       },
       "cost_rating": "5"
@@ -847,7 +905,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 5,
           "film_forming_humectants_number": 10,
-          "emollients_number": 7,
+          "emollients_number": 9,
           "simple_humectants": [
             "Glycerin",
             "Propanediol",
@@ -874,13 +932,15 @@ export const defaultProductDatabase: ProductDatabase = {
             "Cetrimonium Chloride",
             "Butyrospermum Parkii Shea Butter",
             "Jojoba Oil",
-            "Guar Hydroxypropyltrimonium Chloride"
+            "Guar Hydroxypropyltrimonium Chloride",
+            "Unknown Oil",
+            "Unknown Oil"
           ],
           "score": -77
         },
         "porosity": {
-          "high": 98,
-          "low": 10
+          "high": 100,
+          "low": 0
         }
       },
       "cost_rating": "5"
@@ -910,7 +970,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 2,
           "film_forming_humectants_number": 1,
-          "emollients_number": 8,
+          "emollients_number": 12,
           "simple_humectants": [
             "Glycerin",
             "Propanediol"
@@ -926,13 +986,17 @@ export const defaultProductDatabase: ProductDatabase = {
             "Benzyl Alcohol",
             "Guar Hydroxypropyltrimonium Chloride",
             "Tea Tree Oil",
-            "Rosemary Oil"
+            "Unknown Oil",
+            "Rosemary Oil",
+            "Unknown Oil",
+            "Unknown Oil",
+            "Unknown Oil"
           ],
-          "score": -57
+          "score": -60
         },
         "porosity": {
-          "high": 78,
-          "low": 47
+          "high": 100,
+          "low": 0
         }
       },
       "cost_rating": "4"
@@ -969,7 +1033,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 2,
           "film_forming_humectants_number": 1,
-          "emollients_number": 7,
+          "emollients_number": 8,
           "simple_humectants": [
             "Glycerin",
             "Panthenol"
@@ -984,6 +1048,7 @@ export const defaultProductDatabase: ProductDatabase = {
             "Coconut Oil",
             "Avocado Oil",
             "Sunflower Oil",
+            "Unknown Oil",
             "Guar Hydroxypropyltrimonium Chloride"
           ],
           "score": -74
@@ -1019,7 +1084,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 3,
           "film_forming_humectants_number": 1,
-          "emollients_number": 8,
+          "emollients_number": 10,
           "simple_humectants": [
             "Glycerin",
             "Panthenol",
@@ -1036,13 +1101,15 @@ export const defaultProductDatabase: ProductDatabase = {
             "Guar Hydroxypropyltrimonium Chloride",
             "Behentrimonium Methosulfate",
             "Peppermint Oil",
-            "Safflower Oil"
+            "Safflower Oil",
+            "Unknown Oil",
+            "Unknown Oil"
           ],
-          "score": -57
+          "score": -58
         },
         "porosity": {
-          "high": 73,
-          "low": 84
+          "high": 86,
+          "low": 32
         }
       },
       "cost_rating": "1"
@@ -1089,7 +1156,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 68,
-          "low": 95
+          "low": 62
         }
       },
       "cost_rating": "2"
@@ -1135,10 +1202,105 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 63,
-          "low": 95
+          "low": 69
         }
       },
       "cost_rating": "1"
+    },
+    "cream_conditioner": {
+      "name": "Cream Conditioner",
+      "brand": "Curl Keeper",
+      "product_categories": [
+        "conditioners"
+      ],
+      "tags": [
+        "featured"
+      ],
+      "cost": 3,
+      "ingredients_raw": "water aqua eau, isopropyl myristate, cetearyl alcohol, simmondsia chinensis jojoba seed oil, cetrimonium chloride, ceteareth-33, panthenol, silk amino acids, wheat amino acids, parfum, sodium levulinate, potassium sorbate, lecithin, citric acid, sodium chloride, benzoic acid, benzyl alcohol, benzyl benzoate, phenoxyethanol, citral, citronellol, coumarin, eugenol, geraniol, limonene, linalool",
+      "buy_links": [
+        {
+          "url": "https://curlkeeper.com/r?id=6qjs4u",
+          "retailer": "Curl Keeper"
+        }
+      ],
+      "id": "cream_conditioner",
+      "systems_excluded": [],
+      "status": "ok",
+      "extensions": {
+        "frizzbot": {
+          "simple_humectants_number": 2,
+          "film_forming_humectants_number": 2,
+          "emollients_number": 4,
+          "simple_humectants": [
+            "Panthenol",
+            "Lecithin"
+          ],
+          "film_forming_humectants": [
+            "Silk Amino Acids",
+            "Wheat Amino Acids"
+          ],
+          "emollients": [
+            "Cetearyl Alcohol",
+            "Jojoba Oil",
+            "Cetrimonium Chloride",
+            "Benzyl Alcohol"
+          ],
+          "score": -73
+        },
+        "porosity": {
+          "high": 78,
+          "low": 39
+        }
+      },
+      "cost_rating": "5"
+    },
+    "big_energy_conditioner": {
+      "name": "Big Energy Conditioner",
+      "brand": "Curl Keeper",
+      "product_categories": [
+        "conditioners"
+      ],
+      "tags": [
+        "featured"
+      ],
+      "cost": 2.8,
+      "ingredients_raw": "water aqua eau, cetyl alcohol, cetearyl alcohol, behentrimonium chloride, glycerin, propanediol, stearamido-propyl dimethylamine, isopropyl myristate, cocos nucifera coconut water, aloe barbadensis leaf juice, chamomilla recutita matricaria flower extract, lavandula angustifolia lavender extract, cetyl esters, cetrimonium chloride, guar hydroxypropyltrimonium chloride, dicetyldimonium chloride, propylene glycol, caprylyl glycol, 1, 2-hexanediol, leuconostoc radish root ferment filtrate, fragrance parfum, potassiu, sorbate, panthenol, to-copheryl acetate, sodium benzoate, edta, citric acid, isopropyl alcohol, phenoxyethanol, ethylhexylglycerin, amyl cinnamal, limonene, isoeugenol, linalool",
+      "id": "big_energy_conditioner",
+      "systems_excluded": [],
+      "status": "warning",
+      "extensions": {
+        "frizzbot": {
+          "simple_humectants_number": 6,
+          "film_forming_humectants_number": 1,
+          "emollients_number": 6,
+          "simple_humectants": [
+            "Glycerin",
+            "Propanediol",
+            "Propylene Glycol",
+            "Caprylyl Glycol",
+            "Panthenol",
+            "Ethylhexylglycerin"
+          ],
+          "film_forming_humectants": [
+            "Aloe Barbadensis Leaf Extract"
+          ],
+          "emollients": [
+            "Cetyl Alcohol",
+            "Cetearyl Alcohol",
+            "Behentrimonium Chloride",
+            "Cetyl Esters",
+            "Cetrimonium Chloride",
+            "Guar Hydroxypropyltrimonium Chloride"
+          ],
+          "score": -53
+        },
+        "porosity": {
+          "high": 75,
+          "low": 39
+        }
+      },
+      "cost_rating": "5"
     },
     "coil_infusion®_drink_up™_cleansing_conditioner": {
       "name": "Coil Infusion® Drink Up™ Cleansing Conditioner",
@@ -1165,7 +1327,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 6,
           "film_forming_humectants_number": 4,
-          "emollients_number": 15,
+          "emollients_number": 18,
           "simple_humectants": [
             "Glycerin",
             "Propanediol",
@@ -1188,8 +1350,11 @@ export const defaultProductDatabase: ProductDatabase = {
             "Butyrospermum Parkii Shea Butter",
             "Sunflower Oil",
             "Sweet Almond Oil",
+            "Unknown Oil",
             "Castor Oil",
             "Rice bran oil",
+            "Unknown Oil",
+            "Unknown Oil",
             "Kokum Butter",
             "Marula Oil",
             "Capryloyl Glycerin Sebacic Acid Copolymer",
@@ -1197,7 +1362,7 @@ export const defaultProductDatabase: ProductDatabase = {
             "Guar Hydroxypropyltrimonium Chloride",
             "Diheptyl Succinate"
           ],
-          "score": -64
+          "score": -65
         },
         "porosity": {
           "high": 100,
@@ -1280,7 +1445,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 5,
           "film_forming_humectants_number": 7,
-          "emollients_number": 7,
+          "emollients_number": 11,
           "simple_humectants": [
             "Glycerin",
             "Glycereth-26",
@@ -1304,13 +1469,17 @@ export const defaultProductDatabase: ProductDatabase = {
             "Cetrimonium Chloride",
             "Behentrimonium Chloride",
             "Butyrospermum Parkii Shea Butter",
-            "Jojoba Oil"
+            "Jojoba Oil",
+            "Unknown Oil",
+            "Unknown Oil",
+            "Unknown Oil",
+            "Unknown Oil"
           ],
-          "score": -68
+          "score": -69
         },
         "porosity": {
-          "high": 87,
-          "low": 42
+          "high": 100,
+          "low": 0
         }
       },
       "cost_rating": "4"
@@ -1344,7 +1513,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 2,
           "film_forming_humectants_number": 1,
-          "emollients_number": 7,
+          "emollients_number": 8,
           "simple_humectants": [
             "Glycerin",
             "Panthenol"
@@ -1355,6 +1524,7 @@ export const defaultProductDatabase: ProductDatabase = {
           "emollients": [
             "Cetearyl Alcohol",
             "Behentrimonium Chloride",
+            "Unknown Oil",
             "Avocado Oil",
             "Sunflower Oil",
             "Butyrospermum Parkii Shea Butter",
@@ -1364,8 +1534,8 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -73
         },
         "porosity": {
-          "high": 96,
-          "low": 5
+          "high": 100,
+          "low": 0
         }
       }
     },
@@ -1417,7 +1587,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 84,
-          "low": 39
+          "low": 26
         }
       }
     },
@@ -1449,7 +1619,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 3,
           "film_forming_humectants_number": 2,
-          "emollients_number": 2,
+          "emollients_number": 4,
           "simple_humectants": [
             "Sodium PCA",
             "Panthenol",
@@ -1461,13 +1631,15 @@ export const defaultProductDatabase: ProductDatabase = {
           ],
           "emollients": [
             "Cetearyl Alcohol",
+            "Unknown Oil",
+            "Unknown Oil",
             "Vanilla Planifolia Fruit Oil"
           ],
-          "score": -82
+          "score": -81
         },
         "porosity": {
-          "high": 61,
-          "low": 95
+          "high": 89,
+          "low": 12
         }
       }
     },
@@ -1479,6 +1651,10 @@ export const defaultProductDatabase: ProductDatabase = {
         {
           "url": "https://amzn.to/3ZSFbue",
           "retailer": "Amazon"
+        },
+        {
+          "url": "https://shop.beauty-heroes.com/products/i-create-volume-innersense-organic-beauty",
+          "retailer": "Beauty Heroes"
         }
       ],
       "product_categories": [
@@ -1548,7 +1724,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 4,
           "film_forming_humectants_number": 3,
-          "emollients_number": 9,
+          "emollients_number": 10,
           "simple_humectants": [
             "Propanediol",
             "Glycerin",
@@ -1562,6 +1738,7 @@ export const defaultProductDatabase: ProductDatabase = {
           ],
           "emollients": [
             "Cetearyl Alcohol",
+            "Unknown Oil",
             "Polyvinylpyrrolidone",
             "Caprylic Capric Triglyceride",
             "Butyrospermum Parkii Shea Butter",
@@ -1571,11 +1748,11 @@ export const defaultProductDatabase: ProductDatabase = {
             "Polyacrylate Crosspolymer-6",
             "Benzyl Alcohol"
           ],
-          "score": -65
+          "score": -67
         },
         "porosity": {
-          "high": 90,
-          "low": 16
+          "high": 100,
+          "low": 0
         }
       }
     },
@@ -1607,7 +1784,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 2,
           "film_forming_humectants_number": 1,
-          "emollients_number": 5,
+          "emollients_number": 6,
           "simple_humectants": [
             "Glycerin",
             "Propanediol"
@@ -1620,9 +1797,10 @@ export const defaultProductDatabase: ProductDatabase = {
             "Cetearyl Alcohol",
             "Cetrimonium Chloride",
             "Butyrospermum Parkii Shea Butter",
-            "Rice bran oil"
+            "Rice bran oil",
+            "Unknown Oil"
           ],
-          "score": -58
+          "score": -59
         },
         "porosity": {
           "high": 100,
@@ -1664,7 +1842,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 4,
           "film_forming_humectants_number": 0,
-          "emollients_number": 6,
+          "emollients_number": 7,
           "simple_humectants": [
             "Sodium hyaluronate",
             "Panthenol",
@@ -1675,16 +1853,17 @@ export const defaultProductDatabase: ProductDatabase = {
           "emollients": [
             "Castor Oil",
             "Cetearyl Alcohol",
+            "Unknown Oil",
             "Behentrimonium Chloride",
             "Jojoba Oil",
             "Butyrospermum Parkii Shea Butter",
             "Guar Hydroxypropyltrimonium Chloride"
           ],
-          "score": -57
+          "score": -60
         },
         "porosity": {
-          "high": 95,
-          "low": 14
+          "high": 100,
+          "low": 0
         }
       },
       "cost_rating": "5"
@@ -1709,7 +1888,7 @@ export const defaultProductDatabase: ProductDatabase = {
           "retailer": "Amazon"
         },
         {
-          "url": "https://sovrn.co/1mlplxb",
+          "url": "https://fave.co/3Ct5kID",
           "retailer": "Pacifica"
         }
       ],
@@ -1740,7 +1919,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 100,
-          "low": 18
+          "low": 0
         }
       },
       "cost_rating": "5"
@@ -1774,7 +1953,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 3,
           "film_forming_humectants_number": 7,
-          "emollients_number": 0,
+          "emollients_number": 4,
           "simple_humectants": [
             "Glycerin",
             "Sorbitol",
@@ -1789,12 +1968,17 @@ export const defaultProductDatabase: ProductDatabase = {
             "Seaweed Extract",
             "Seaweed Extract"
           ],
-          "emollients": [],
-          "score": -82
+          "emollients": [
+            "Unknown Oil",
+            "Unknown Oil",
+            "Unknown Oil",
+            "Unknown Oil"
+          ],
+          "score": -81
         },
         "porosity": {
-          "high": 68,
-          "low": 95
+          "high": 90,
+          "low": 11
         }
       },
       "cost_rating": "4"
@@ -1821,6 +2005,15 @@ export const defaultProductDatabase: ProductDatabase = {
         {
           "url": "https://amzn.to/40lMISJ",
           "retailer": "Amazon"
+        },
+        {
+          "url": "https://go.skimresources.com?id=276362X1762442&xs=1&url=https%3A%2F%2Fuk.curlsmith.com%2Fproducts%2Fcurl-souffle%3Fredirect%3D1",
+          "retailer": "Curlsmith",
+          "country": "UK"
+        },
+        {
+          "url": "https://go.skimresources.com?id=276362X1762442&xs=1&url=https%3A%2F%2Fcurlsmith.com%2Fproducts%2Fcurl-souffle",
+          "retailer": "Curlsmith"
         }
       ],
       "asin": "B07D7CKKL3",
@@ -1832,7 +2025,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 2,
           "film_forming_humectants_number": 1,
-          "emollients_number": 3,
+          "emollients_number": 5,
           "simple_humectants": [
             "Glycerin",
             "Sorbitol"
@@ -1841,15 +2034,17 @@ export const defaultProductDatabase: ProductDatabase = {
             "Aloe Barbadensis Leaf Extract"
           ],
           "emollients": [
+            "Unknown Oil",
+            "Unknown Oil",
             "Avocado Oil",
             "Butyrospermum Parkii Shea Butter",
             "Sunflower Oil"
           ],
-          "score": -9
+          "score": -36
         },
         "porosity": {
-          "high": 70,
-          "low": 23
+          "high": 100,
+          "low": 0
         }
       },
       "cost_rating": "5"
@@ -1913,6 +2108,10 @@ export const defaultProductDatabase: ProductDatabase = {
         {
           "url": "https://amzn.to/3ZFDa4x",
           "retailer": "Amazon"
+        },
+        {
+          "url": "https://go.skimresources.com?id=276362X1762442&xs=1&url=https%3A%2F%2Fjessicurl.com%2Fproducts%2Fdeep-treatment",
+          "retailer": "Jessicurl"
         }
       ],
       "product_categories": [
@@ -1964,6 +2163,10 @@ export const defaultProductDatabase: ProductDatabase = {
         {
           "url": "https://amzn.to/408QOOY",
           "retailer": "Amazon"
+        },
+        {
+          "url": "https://go.skimresources.com?id=276362X1762442&xs=1&url=https%3A%2F%2Fcurlwarehouse.com%2Fproducts%2Flus-brands-love-ur-curls-deep-condition-repair",
+          "retailer": "Curl Warehouse"
         }
       ],
       "product_categories": [
@@ -1985,7 +2188,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 2,
           "film_forming_humectants_number": 2,
-          "emollients_number": 8,
+          "emollients_number": 10,
           "simple_humectants": [
             "Panthenol",
             "Ethylhexylglycerin"
@@ -2001,14 +2204,16 @@ export const defaultProductDatabase: ProductDatabase = {
             "Cetearyl Alcohol",
             "Behentrimonium Chloride",
             "Cetrimonium Chloride",
+            "Unknown Oil",
             "Jojoba Oil",
+            "Unknown Oil",
             "Ceteareth-20"
           ],
           "score": -76
         },
         "porosity": {
-          "high": 94,
-          "low": 7
+          "high": 100,
+          "low": 0
         }
       },
       "cost_rating": "5"
@@ -2035,6 +2240,15 @@ export const defaultProductDatabase: ProductDatabase = {
         {
           "url": "https://amzn.to/3Edab0O",
           "retailer": "Amazon"
+        },
+        {
+          "url": "https://go.skimresources.com?id=276362X1762442&xs=1&url=https%3A%2F%2Fcurlsmith.com%2Fproducts%2Fdouble-cream-deep-quencher",
+          "retailer": "Curlsmith"
+        },
+        {
+          "url": "https://go.skimresources.com?id=276362X1762442&xs=1&url=https%3A%2F%2Fuk.curlsmith.com%2Fproducts%2Fdouble-cream-deep-quencher",
+          "retailer": "Curlsmith",
+          "country": "UK"
         }
       ],
       "asin": "B08639DTVD",
@@ -2045,7 +2259,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 4,
           "film_forming_humectants_number": 1,
-          "emollients_number": 7,
+          "emollients_number": 8,
           "simple_humectants": [
             "Propanediol",
             "Panthenol",
@@ -2059,16 +2273,17 @@ export const defaultProductDatabase: ProductDatabase = {
             "Cetearyl Alcohol",
             "Behentrimonium Chloride",
             "Guar Hydroxypropyltrimonium Chloride",
+            "Unknown Oil",
             "Sunflower Oil",
             "Apricot Kernel Oil",
             "Avocado Oil",
             "Butyrospermum Parkii Shea Butter"
           ],
-          "score": -60
+          "score": -61
         },
         "porosity": {
-          "high": 89,
-          "low": 22
+          "high": 100,
+          "low": 0
         }
       }
     },
@@ -2102,7 +2317,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 2,
           "film_forming_humectants_number": 1,
-          "emollients_number": 0,
+          "emollients_number": 2,
           "simple_humectants": [
             "Propanediol",
             "Caprylyl Glycol"
@@ -2110,12 +2325,15 @@ export const defaultProductDatabase: ProductDatabase = {
           "film_forming_humectants": [
             "Linum Usitatissimum Seed Extract"
           ],
-          "emollients": [],
-          "score": -31
+          "emollients": [
+            "Unknown Oil",
+            "Unknown Oil"
+          ],
+          "score": -47
         },
         "porosity": {
-          "high": 54,
-          "low": 95
+          "high": 87,
+          "low": 7
         }
       }
     },
@@ -2147,7 +2365,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 2,
           "film_forming_humectants_number": 2,
-          "emollients_number": 0,
+          "emollients_number": 2,
           "simple_humectants": [
             "Glycerin",
             "Propanediol"
@@ -2156,12 +2374,15 @@ export const defaultProductDatabase: ProductDatabase = {
             "Aloe Barbadensis Leaf Extract",
             "Unknown Protein"
           ],
-          "emollients": [],
-          "score": -72
+          "emollients": [
+            "Unknown Oil",
+            "Unknown Oil"
+          ],
+          "score": -73
         },
         "porosity": {
-          "high": 68,
-          "low": 95
+          "high": 83,
+          "low": 39
         }
       },
       "cost_rating": "5"
@@ -2173,6 +2394,10 @@ export const defaultProductDatabase: ProductDatabase = {
         {
           "url": "https://amzn.to/3DA6phV",
           "retailer": "Amazon"
+        },
+        {
+          "url": "https://go.skimresources.com?id=276362X1762442&xs=1&url=https%3A%2F%2Fshop.beauty-heroes.com%2Fproducts%2Fi-create-lift-innersense-organic-beauty",
+          "retailer": "Beauty Heroes"
         }
       ],
       "product_categories": [
@@ -2194,7 +2419,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 2,
           "film_forming_humectants_number": 3,
-          "emollients_number": 4,
+          "emollients_number": 12,
           "simple_humectants": [
             "Glycerin",
             "Sorbitol"
@@ -2205,16 +2430,24 @@ export const defaultProductDatabase: ProductDatabase = {
             "Hydroxypropyltrimonium Honey"
           ],
           "emollients": [
+            "Unknown Oil",
             "Lavender Oil",
+            "Unknown Oil",
+            "Unknown Oil",
+            "Unknown Oil",
+            "Unknown Oil",
             "Diheptyl Succinate",
             "Capryloyl Glycerin Sebacic Acid Copolymer",
-            "Grapeseed Oil"
+            "Unknown Oil",
+            "Grapeseed Oil",
+            "Unknown Oil",
+            "Unknown Oil"
           ],
           "score": -75
         },
         "porosity": {
-          "high": 54,
-          "low": 86
+          "high": 100,
+          "low": 0
         }
       },
       "cost_rating": "5"
@@ -2236,6 +2469,15 @@ export const defaultProductDatabase: ProductDatabase = {
         {
           "url": "https://amzn.to/49W9HrK",
           "retailer": "Amazon",
+          "country": "UK"
+        },
+        {
+          "url": "https://go.skimresources.com?id=276362X1762442&xs=1&url=https%3A%2F%2Fcurlsmith.com%2Fproducts%2Fbouncy-strength-volume-foam",
+          "retailer": "Curlsmith"
+        },
+        {
+          "url": "https://go.skimresources.com?id=276362X1762442&xs=1&url=https%3A%2F%2Fuk.curlsmith.com%2Fproducts%2Fbouncy-strength-volume-foam",
+          "retailer": "Curlsmith",
           "country": "UK"
         }
       ],
@@ -2266,7 +2508,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 78,
-          "low": 57
+          "low": 49
         }
       },
       "cost_rating": "5"
@@ -2287,6 +2529,10 @@ export const defaultProductDatabase: ProductDatabase = {
         {
           "url": "https://amzn.to/41UCcnP",
           "retailer": "Amazon"
+        },
+        {
+          "url": "https://www.cvs.com/shop/herbal-essences-curl-boosting-mousse-6-8-oz-prodid-184956",
+          "retailer": "CVS"
         }
       ],
       "asin": "B0B995XZ6T",
@@ -2359,7 +2605,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 61,
-          "low": 95
+          "low": 81
         }
       }
     },
@@ -2538,6 +2784,10 @@ export const defaultProductDatabase: ProductDatabase = {
         {
           "url": "https://amzn.to/2BYccc7",
           "retailer": "Amazon"
+        },
+        {
+          "url": "https://shop.beauty-heroes.com/products/i-create-hold-innersense-organic-beauty",
+          "retailer": "Beauty Heroes"
         }
       ],
       "product_categories": [
@@ -2559,7 +2809,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 2,
           "film_forming_humectants_number": 1,
-          "emollients_number": 2,
+          "emollients_number": 3,
           "simple_humectants": [
             "Glycerin",
             "Honey"
@@ -2569,13 +2819,14 @@ export const defaultProductDatabase: ProductDatabase = {
           ],
           "emollients": [
             "Copolymer",
+            "Unknown Oil",
             "Caprylic Capric Triglyceride"
           ],
-          "score": -79
+          "score": -78
         },
         "porosity": {
-          "high": 60,
-          "low": 50
+          "high": 79,
+          "low": 13
         }
       },
       "cost_rating": "5"
@@ -2651,6 +2902,10 @@ export const defaultProductDatabase: ProductDatabase = {
         {
           "url": "https://amzn.to/4fyvVl5",
           "retailer": "Amazon"
+        },
+        {
+          "url": "https://curlwarehouse.com/products/love-ur-curls-irish-sea-moss-gel",
+          "retailer": "Curl Warehouse"
         }
       ],
       "asin": "B09YMYDNX8",
@@ -2661,7 +2916,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 3,
           "film_forming_humectants_number": 2,
-          "emollients_number": 3,
+          "emollients_number": 5,
           "simple_humectants": [
             "Sorbitol",
             "Glycerin",
@@ -2672,15 +2927,17 @@ export const defaultProductDatabase: ProductDatabase = {
             "Hydroxyethylcellulose"
           ],
           "emollients": [
+            "Unknown Oil",
+            "Unknown Oil",
             "Rice bran oil",
             "Behentrimonium Chloride",
             "Guar Hydroxypropyltrimonium Chloride"
           ],
-          "score": -68
+          "score": -71
         },
         "porosity": {
-          "high": 59,
-          "low": 67
+          "high": 100,
+          "low": 0
         }
       }
     },
@@ -2711,7 +2968,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 2,
           "film_forming_humectants_number": 2,
-          "emollients_number": 1,
+          "emollients_number": 3,
           "simple_humectants": [
             "Glycerin",
             "Propanediol"
@@ -2721,13 +2978,15 @@ export const defaultProductDatabase: ProductDatabase = {
             "Unknown Protein"
           ],
           "emollients": [
-            "VP VA copolymer"
+            "VP VA copolymer",
+            "Unknown Oil",
+            "Unknown Oil"
           ],
-          "score": -71
+          "score": -72
         },
         "porosity": {
-          "high": 63,
-          "low": 95
+          "high": 83,
+          "low": 30
         }
       }
     },
@@ -2758,7 +3017,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 2,
           "film_forming_humectants_number": 2,
-          "emollients_number": 1,
+          "emollients_number": 3,
           "simple_humectants": [
             "Glycerin",
             "Propanediol"
@@ -2768,13 +3027,15 @@ export const defaultProductDatabase: ProductDatabase = {
             "Unknown Protein"
           ],
           "emollients": [
-            "Guar Gum"
+            "Guar Gum",
+            "Unknown Oil",
+            "Unknown Oil"
           ],
-          "score": -70
+          "score": -71
         },
         "porosity": {
-          "high": 63,
-          "low": 95
+          "high": 84,
+          "low": 27
         }
       }
     },
@@ -2796,6 +3057,15 @@ export const defaultProductDatabase: ProductDatabase = {
         {
           "url": "https://amzn.to/3BHjZj1",
           "retailer": "Amazon",
+          "country": "UK"
+        },
+        {
+          "url": "https://curlsmith.com/products/hydro-style-flexi-jelly",
+          "retailer": "Curlsmith"
+        },
+        {
+          "url": "https://uk.curlsmith.com/products/hydro-style-flexi-jelly",
+          "retailer": "Curlsmith",
           "country": "UK"
         }
       ],
@@ -2836,6 +3106,14 @@ export const defaultProductDatabase: ProductDatabase = {
           "url": "https://amzn.to/4fKkExP",
           "retailer": "Amazon",
           "country": "UK"
+        },
+        {
+          "url": "https://www.vitacost.com/giovanni-l-a-natural-styling-gel-strong-hold",
+          "retailer": "Vitacost"
+        },
+        {
+          "url": "https://amzn.to/4glSQ3s",
+          "retailer": "Amazon"
         }
       ],
       "cost": 1,
@@ -2876,6 +3154,53 @@ export const defaultProductDatabase: ProductDatabase = {
         }
       },
       "cost_rating": "1"
+    },
+    "curl_keeper®_original_liquid_styler": {
+      "name": "Curl Keeper® Original Liquid Styler",
+      "brand": "Curl Keeper",
+      "product_categories": [
+        "gels",
+        "fragrance-free"
+      ],
+      "tags": [
+        "normal_porosity",
+        "low_porosity",
+        "featured"
+      ],
+      "cost": 2.9,
+      "buy_links": [
+        {
+          "url": "https://curlkeeper.com/r?id=p0m4m5",
+          "retailer": "Curl Keeper"
+        }
+      ],
+      "ingredients_raw": "water aqua eau, vp va copolymer, propylene glycol, hydroxyethylcellulose, glycerin, oleth-20, polyquaternium-10, citric acid, dmdm hydantoin",
+      "id": "curl_keeper®_original_liquid_styler",
+      "systems_excluded": [],
+      "status": "ok",
+      "extensions": {
+        "frizzbot": {
+          "simple_humectants_number": 2,
+          "film_forming_humectants_number": 1,
+          "emollients_number": 1,
+          "simple_humectants": [
+            "Propylene Glycol",
+            "Glycerin"
+          ],
+          "film_forming_humectants": [
+            "Hydroxyethylcellulose"
+          ],
+          "emollients": [
+            "VP VA copolymer"
+          ],
+          "score": -50
+        },
+        "porosity": {
+          "high": 69,
+          "low": 95
+        }
+      },
+      "cost_rating": "5"
     },
     "rice_pudding_leave-in_conditioner_and_moisturizer": {
       "name": "Rice Pudding Leave-In Conditioner and Moisturizer",
@@ -2922,7 +3247,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 51,
-          "low": 95
+          "low": 77
         }
       }
     },
@@ -2933,6 +3258,10 @@ export const defaultProductDatabase: ProductDatabase = {
         {
           "url": "https://amzn.to/2yjHQ1r",
           "retailer": "Amazon"
+        },
+        {
+          "url": "https://shop.beauty-heroes.com/products/sweet-spirit-leave-in-conditioner-innersense-organic-beauty",
+          "retailer": "Beauty Heroes"
         }
       ],
       "product_categories": [
@@ -2953,7 +3282,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 2,
           "film_forming_humectants_number": 1,
-          "emollients_number": 4,
+          "emollients_number": 18,
           "simple_humectants": [
             "Glycerin",
             "Honey"
@@ -2964,14 +3293,28 @@ export const defaultProductDatabase: ProductDatabase = {
           "emollients": [
             "Cetearyl Alcohol",
             "Caprylic Capric Triglyceride",
+            "Unknown Oil",
+            "Unknown Oil",
+            "Unknown Oil",
+            "Unknown Oil",
+            "Unknown Oil",
+            "Unknown Oil",
+            "Unknown Oil",
+            "Unknown Oil",
             "Lavender Oil",
+            "Unknown Oil",
+            "Unknown Oil",
+            "Unknown Oil",
+            "Unknown Oil",
+            "Unknown Oil",
+            "Unknown Oil",
             "Rosemary Oil"
           ],
           "score": -76
         },
         "porosity": {
-          "high": 38,
-          "low": 72
+          "high": 100,
+          "low": 0
         }
       },
       "cost_rating": "5"
@@ -2992,6 +3335,15 @@ export const defaultProductDatabase: ProductDatabase = {
         {
           "url": "https://amzn.to/4fEo0CJ",
           "retailer": "Amazon",
+          "country": "UK"
+        },
+        {
+          "url": "https://curlsmith.com/products/hydrate-plump-leave-in",
+          "retailer": "Curlsmith"
+        },
+        {
+          "url": "https://uk.curlsmith.com/products/hydrate-plump-leave-in",
+          "retailer": "Curlsmith",
           "country": "UK"
         }
       ],
@@ -3028,7 +3380,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 79,
-          "low": 31
+          "low": 22
         }
       },
       "cost_rating": "3"
@@ -3047,6 +3399,10 @@ export const defaultProductDatabase: ProductDatabase = {
         {
           "url": "https://amzn.to/4fK4aWC",
           "retailer": "Amazon"
+        },
+        {
+          "url": "https://www.vitacost.com/giovanni-direct-leave-in-weightless-moisture-conditioner-for-all-hair-types",
+          "retailer": "Vitacost"
         }
       ],
       "cost": 1,
@@ -3076,7 +3432,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 73,
-          "low": 69
+          "low": 39
         }
       },
       "cost_rating": "1"
@@ -3158,18 +3514,22 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 0,
           "film_forming_humectants_number": 0,
-          "emollients_number": 3,
+          "emollients_number": 7,
           "simple_humectants": [],
           "film_forming_humectants": [],
           "emollients": [
             "Sunflower Oil",
+            "Unknown Oil",
             "Grapeseed Oil",
-            "Jojoba Oil"
+            "Jojoba Oil",
+            "Unknown Oil",
+            "Unknown Oil",
+            "Unknown Oil"
           ],
           "score": -76
         },
         "porosity": {
-          "high": 91,
+          "high": 100,
           "low": 0
         }
       },
@@ -3192,6 +3552,15 @@ export const defaultProductDatabase: ProductDatabase = {
           "url": "https://amzn.to/3DwDN9b",
           "retailer": "Amazon",
           "country": "UK"
+        },
+        {
+          "url": "https://curlsmith.com/products/bonding-oil",
+          "retailer": "Curlsmith"
+        },
+        {
+          "url": "https://uk.curlsmith.com/products/bonding-oil",
+          "retailer": "Curlsmith",
+          "country": "UK"
         }
       ],
       "asin": "B09GC96P46",
@@ -3203,7 +3572,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 0,
           "film_forming_humectants_number": 0,
-          "emollients_number": 5,
+          "emollients_number": 6,
           "simple_humectants": [],
           "film_forming_humectants": [],
           "emollients": [
@@ -3211,6 +3580,7 @@ export const defaultProductDatabase: ProductDatabase = {
             "Butyrospermum Parkii Shea Butter",
             "Castor Oil",
             "Apricot Kernel Oil",
+            "Unknown Oil",
             "Benzyl Alcohol"
           ],
           "score": -76
@@ -3234,6 +3604,15 @@ export const defaultProductDatabase: ProductDatabase = {
           "url": "https://amzn.to/429CqI3",
           "retailer": "Amazon",
           "country": "UK"
+        },
+        {
+          "url": "https://uk.curlsmith.com/products/bond-curl-rehab-salve",
+          "retailer": "Curlsmith",
+          "country": "UK"
+        },
+        {
+          "url": "https://curlsmith.com/products/bond-curl-rehab-salve",
+          "retailer": "Curlsmith"
         }
       ],
       "product_categories": [
@@ -3269,7 +3648,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 80,
-          "low": 52
+          "low": 24
         }
       },
       "cost_rating": "5"
@@ -3347,7 +3726,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 3,
           "film_forming_humectants_number": 0,
-          "emollients_number": 2,
+          "emollients_number": 5,
           "simple_humectants": [
             "Sodium PCA",
             "Propanediol",
@@ -3356,13 +3735,16 @@ export const defaultProductDatabase: ProductDatabase = {
           "film_forming_humectants": [],
           "emollients": [
             "Peppermint Oil",
-            "Vanilla Planifolia Fruit Oil"
+            "Vanilla Planifolia Fruit Oil",
+            "Unknown Oil",
+            "Unknown Oil",
+            "Unknown Oil"
           ],
-          "score": 7
+          "score": -16
         },
         "porosity": {
-          "high": 37,
-          "low": 95
+          "high": 60,
+          "low": 45
         }
       }
     },
@@ -3392,7 +3774,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 2,
           "film_forming_humectants_number": 1,
-          "emollients_number": 1,
+          "emollients_number": 4,
           "simple_humectants": [
             "Glycerin",
             "Panthenol"
@@ -3401,13 +3783,16 @@ export const defaultProductDatabase: ProductDatabase = {
             "Glycine"
           ],
           "emollients": [
-            "Sunflower Oil"
+            "Sunflower Oil",
+            "Unknown Oil",
+            "Unknown Oil",
+            "Unknown Oil"
           ],
-          "score": -33
+          "score": -55
         },
         "porosity": {
-          "high": 40,
-          "low": 60
+          "high": 80,
+          "low": 0
         }
       },
       "cost_rating": "5"
@@ -3419,6 +3804,10 @@ export const defaultProductDatabase: ProductDatabase = {
         {
           "url": "https://amzn.to/49LHTpT",
           "retailer": "Amazon"
+        },
+        {
+          "url": "https://www.kroger.com/p/kristin-ess-moisture-rich-curl-shampoo/0084079712927",
+          "retailer": "Kroger"
         }
       ],
       "systems_excluded": [
@@ -3441,7 +3830,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 4,
           "film_forming_humectants_number": 10,
-          "emollients_number": 3,
+          "emollients_number": 4,
           "simple_humectants": [
             "Propanediol",
             "Sodium PCA",
@@ -3462,14 +3851,15 @@ export const defaultProductDatabase: ProductDatabase = {
           ],
           "emollients": [
             "Butyrospermum Parkii Shea Butter",
+            "Unknown Oil",
             "Guar Hydroxypropyltrimonium Chloride",
             "Castor Oil"
           ],
           "score": -82
         },
         "porosity": {
-          "high": 88,
-          "low": 36
+          "high": 93,
+          "low": 11
         }
       },
       "cost_rating": "1"
@@ -3481,6 +3871,10 @@ export const defaultProductDatabase: ProductDatabase = {
         {
           "url": "https://amzn.to/3BK5x9T",
           "retailer": "Amazon"
+        },
+        {
+          "url": "https://shop.beauty-heroes.com/products/hydrating-cream-hairbath-innersense-organic-beauty",
+          "retailer": "Beauty Heroes"
         }
       ],
       "product_categories": [
@@ -3501,7 +3895,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 1,
           "film_forming_humectants_number": 1,
-          "emollients_number": 5,
+          "emollients_number": 11,
           "simple_humectants": [
             "Glycerin"
           ],
@@ -3510,16 +3904,22 @@ export const defaultProductDatabase: ProductDatabase = {
           ],
           "emollients": [
             "Guar Hydroxypropyltrimonium Chloride",
+            "Unknown Oil",
             "Lavender Oil",
+            "Unknown Oil",
+            "Unknown Oil",
+            "Unknown Oil",
+            "Unknown Oil",
             "Jojoba Oil",
+            "Unknown Oil",
             "Butyrospermum Parkii Shea Butter",
             "Avocado Oil"
           ],
-          "score": -43
+          "score": -59
         },
         "porosity": {
-          "high": 61,
-          "low": 65
+          "high": 100,
+          "low": 0
         }
       },
       "cost_rating": "5"
@@ -3584,6 +3984,10 @@ export const defaultProductDatabase: ProductDatabase = {
         {
           "url": "https://amzn.to/3ZSDywG",
           "retailer": "Amazon"
+        },
+        {
+          "url": "https://shop.beauty-heroes.com/products/pure-harmony-hairbath-innersense-organic-beauty",
+          "retailer": "Beauty Heroes"
         }
       ],
       "cost": 2.25,
@@ -3602,7 +4006,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 1,
           "film_forming_humectants_number": 2,
-          "emollients_number": 4,
+          "emollients_number": 7,
           "simple_humectants": [
             "Glycerin"
           ],
@@ -3611,16 +4015,19 @@ export const defaultProductDatabase: ProductDatabase = {
             "Unknown Protein"
           ],
           "emollients": [
+            "Unknown Oil",
+            "Unknown Oil",
             "Guar Hydroxypropyltrimonium Chloride",
             "Avocado Oil",
             "Rice bran oil",
-            "Butyrospermum Parkii Shea Butter"
+            "Butyrospermum Parkii Shea Butter",
+            "Unknown Oil"
           ],
-          "score": -88
+          "score": -82
         },
         "porosity": {
-          "high": 80,
-          "low": 31
+          "high": 100,
+          "low": 0
         }
       },
       "cost_rating": "4"
@@ -3633,6 +4040,10 @@ export const defaultProductDatabase: ProductDatabase = {
         {
           "url": "https://amzn.to/41J8sKF",
           "retailer": "Amazon"
+        },
+        {
+          "url": "https://shop.beauty-heroes.com/products/color-awakening-hairbath-innersense-organic-beauty",
+          "retailer": "Beauty Heroes"
         }
       ],
       "product_categories": [
@@ -3651,7 +4062,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 1,
           "film_forming_humectants_number": 2,
-          "emollients_number": 4,
+          "emollients_number": 8,
           "simple_humectants": [
             "Glycerin"
           ],
@@ -3661,15 +4072,19 @@ export const defaultProductDatabase: ProductDatabase = {
           ],
           "emollients": [
             "Butyrospermum Parkii Shea Butter",
+            "Unknown Oil",
+            "Unknown Oil",
+            "Unknown Oil",
             "Guar Hydroxypropyltrimonium Chloride",
+            "Unknown Oil",
             "Avocado Oil",
             "Rice bran oil"
           ],
-          "score": -67
+          "score": -71
         },
         "porosity": {
-          "high": 71,
-          "low": 46
+          "high": 100,
+          "low": 0
         }
       },
       "cost_rating": "5"
@@ -3682,6 +4097,10 @@ export const defaultProductDatabase: ProductDatabase = {
         {
           "url": "https://amzn.to/4gLhRFK",
           "retailer": "Amazon"
+        },
+        {
+          "url": "https://shop.beauty-heroes.com/products/clarity-hairbath-innersense-organicy",
+          "retailer": "Beauty Heroes"
         }
       ],
       "product_categories": [
@@ -3749,7 +4168,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 2,
           "film_forming_humectants_number": 1,
-          "emollients_number": 3,
+          "emollients_number": 7,
           "simple_humectants": [
             "Glycerin",
             "Propanediol"
@@ -3760,13 +4179,17 @@ export const defaultProductDatabase: ProductDatabase = {
           "emollients": [
             "Guar Hydroxypropyltrimonium Chloride",
             "Tea Tree Oil",
-            "Rosemary Oil"
+            "Unknown Oil",
+            "Rosemary Oil",
+            "Unknown Oil",
+            "Unknown Oil",
+            "Unknown Oil"
           ],
-          "score": -36
+          "score": -50
         },
         "porosity": {
-          "high": 59,
-          "low": 95
+          "high": 82,
+          "low": 34
         }
       },
       "cost_rating": "4"
@@ -3788,6 +4211,15 @@ export const defaultProductDatabase: ProductDatabase = {
           "url": "https://amzn.to/4gzkwmm",
           "retailer": "Amazon",
           "country": "UK"
+        },
+        {
+          "url": "https://curlsmith.com/products/essential-moisture-cleanser",
+          "retailer": "Curlsmith"
+        },
+        {
+          "url": "https://uk.curlsmith.com/products/essential-moisture-cleanser",
+          "retailer": "Curlsmith",
+          "country": "UK"
         }
       ],
       "asin": "B0BPTC343Q",
@@ -3798,7 +4230,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 3,
           "film_forming_humectants_number": 1,
-          "emollients_number": 2,
+          "emollients_number": 3,
           "simple_humectants": [
             "Glucose",
             "Propanediol",
@@ -3809,13 +4241,14 @@ export const defaultProductDatabase: ProductDatabase = {
           ],
           "emollients": [
             "Sunflower Oil",
+            "Unknown Oil",
             "Guar Hydroxypropyltrimonium Chloride"
           ],
-          "score": -42
+          "score": -47
         },
         "porosity": {
-          "high": 78,
-          "low": 42
+          "high": 89,
+          "low": 12
         }
       }
     },
@@ -3835,6 +4268,15 @@ export const defaultProductDatabase: ProductDatabase = {
         {
           "url": "https://amzn.to/3Pdq0qB",
           "retailer": "Amazon",
+          "country": "UK"
+        },
+        {
+          "url": "https://curlsmith.com/products/full-body-weightless-cleanser",
+          "retailer": "Curlsmith"
+        },
+        {
+          "url": "https://uk.curlsmith.com/products/full-body-weightless-cleanser",
+          "retailer": "Curlsmith",
           "country": "UK"
         }
       ],
@@ -3881,6 +4323,10 @@ export const defaultProductDatabase: ProductDatabase = {
         {
           "url": "https://amzn.to/3W0nuIe",
           "retailer": "Amazon"
+        },
+        {
+          "url": "https://www.walmart.com/ip/Not-Your-Mother-s-Naturals-Tahitian-Gardenia-Flower-and-Mango-Butter-Shampoo-15-2-fl-oz/783360566",
+          "retailer": "Walmart"
         }
       ],
       "asin": "B07KQ24CZS",
@@ -3940,17 +4386,19 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 0,
           "film_forming_humectants_number": 1,
-          "emollients_number": 0,
+          "emollients_number": 1,
           "simple_humectants": [],
           "film_forming_humectants": [
             "Silk"
           ],
-          "emollients": [],
-          "score": -96
+          "emollients": [
+            "Unknown Oil"
+          ],
+          "score": -89
         },
         "porosity": {
-          "high": 43,
-          "low": 95
+          "high": 69,
+          "low": 40
         }
       }
     },
@@ -3969,6 +4417,10 @@ export const defaultProductDatabase: ProductDatabase = {
         {
           "url": "https://amzn.to/4h15AgY",
           "retailer": "Amazon"
+        },
+        {
+          "url": "https://www.vitacost.com/giovanni-smooth-as-silk-deep-moisture-shampoo",
+          "retailer": "Vitacost"
         }
       ],
       "description": "An excellent low-pH (~5 protects against frizz) shampoo at a great price.",
@@ -4088,7 +4540,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 84,
-          "low": 95
+          "low": 53
         }
       }
     }

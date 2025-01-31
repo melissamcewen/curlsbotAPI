@@ -11,13 +11,13 @@ type HighPorosityCategories = {
 
 type LowPorosityCategories = {
   heavy_oils: string[];
-  waxes: string[];
   medium_oils: string[];
   light_oils: string[];
   conditioning_agents: string[];
-  other_emollients: string[];
-  emollient_alcohols: string[];
+  emollients: string[];
   anionic_detergents: string[];
+  non_water_soluble_waxes: string[];
+  water_soluble_waxes: string[];
 };
 
 type HighPorosityScoring = {
@@ -28,17 +28,7 @@ type LowPorosityScoring = {
   [K in keyof LowPorosityCategories]: number;
 };
 
-export const HIGH_POROSITY_SCORING = {
-  heavy_oils: 10.0,
-  medium_oils: 8.0,
-  light_oils: 6.0,
-  emollients: 5.0,
-  conditioning_agents: 4.0,
-  waxes: 6.0,
-  neutral: 0.0001,
-  base_score: 0,
-  multiplier: 25,
-} as const;
+
 
 export function porosity(analysis: AnalysisResult): PorosityAnalysis {
   const definitions = {
@@ -67,12 +57,12 @@ export function porosity(analysis: AnalysisResult): PorosityAnalysis {
     } as HighPorosityCategories,
     low: {
       heavy_oils: ['heavy_oils'],
-      waxes: ['non_water_soluble_waxes', 'water_soluble_waxes'],
+      non_water_soluble_waxes: ['non_water_soluble_waxes'],
+      water_soluble_waxes: ['water_soluble_waxes'],
       medium_oils: ['medium_oils', 'other_oils'],
       light_oils: ['light_oils'],
       conditioning_agents: ['polyquats', 'non_water_soluble_silicones'],
-      other_emollients: ['other_emollients'],
-      emollient_alcohols: ['emollient_alcohols'],
+      emollients: ['emollient_alcohols', 'other_emollients', 'esters'],
       anionic_detergents: ['sulfates', 'other_anionic_surfactants'],
     } as LowPorosityCategories,
   };
@@ -92,12 +82,12 @@ export function porosity(analysis: AnalysisResult): PorosityAnalysis {
     } as HighPorosityScoring,
     low: {
       heavy_oils: -7.0,
-      waxes: -7.0,
+      non_water_soluble_waxes: -7.0,
+      water_soluble_waxes: -2.0,
       medium_oils: -5.0,
       light_oils: -3.0,
-      conditioning_agents: 2.0,
-      other_emollients: -4.0,
-      emollient_alcohols: 2.0,
+      conditioning_agents: -0.25,
+      emollients: -0.25,
       anionic_detergents: 2,
     } as LowPorosityScoring,
   };
@@ -196,8 +186,8 @@ export function porosity(analysis: AnalysisResult): PorosityAnalysis {
 
 
     // Adjust base score and multiplier
-    const baseScore = isLowPorosity ? 25 : 0;
-    const multiplier = isLowPorosity ? 35 : 25;
+    const baseScore = isLowPorosity ? 35 : 0;
+    const multiplier = isLowPorosity ? 45 : 25;
 
     const finalScore = Math.round(baseScore + avgScore * multiplier);
 

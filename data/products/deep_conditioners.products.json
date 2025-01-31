@@ -31,6 +31,10 @@
         {
           "url": "https://amzn.to/3ZFDa4x",
           "retailer": "Amazon"
+        },
+        {
+          "url": "https://go.skimresources.com?id=276362X1762442&xs=1&url=https%3A%2F%2Fjessicurl.com%2Fproducts%2Fdeep-treatment",
+          "retailer": "Jessicurl"
         }
       ],
       "product_categories": [
@@ -53,6 +57,10 @@
         {
           "url": "https://amzn.to/408QOOY",
           "retailer": "Amazon"
+        },
+        {
+          "url": "https://go.skimresources.com?id=276362X1762442&xs=1&url=https%3A%2F%2Fcurlwarehouse.com%2Fproducts%2Flus-brands-love-ur-curls-deep-condition-repair",
+          "retailer": "Curl Warehouse"
         }
       ],
       "product_categories": [
@@ -90,6 +98,15 @@
         {
           "url": "https://amzn.to/3Edab0O",
           "retailer": "Amazon"
+        },
+        {
+          "url": "https://go.skimresources.com?id=276362X1762442&xs=1&url=https%3A%2F%2Fcurlsmith.com%2Fproducts%2Fdouble-cream-deep-quencher",
+          "retailer": "Curlsmith"
+        },
+        {
+          "url": "https://go.skimresources.com?id=276362X1762442&xs=1&url=https%3A%2F%2Fuk.curlsmith.com%2Fproducts%2Fdouble-cream-deep-quencher",
+          "retailer": "Curlsmith",
+          "country": "UK"
         }
       ],
       "asin": "B08639DTVD"
