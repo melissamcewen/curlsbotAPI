@@ -40,7 +40,7 @@ export function porosity(analysis: AnalysisResult): PorosityAnalysis {
       heavy_oils: ['heavy_oils'],
       medium_oils: ['medium_oils', 'other_oils'],
       light_oils: ['light_oils'],
-      emollients: ['emollient_alcohols'],
+      emollients: ['emollient_alcohols', 'esters'],
       mild_surfactants: ['mild_surfactants'],
       conditioning_agents: [
         'conditioning_agents',
@@ -154,7 +154,7 @@ export function porosity(analysis: AnalysisResult): PorosityAnalysis {
         // For low porosity, neutral ingredients are good (they're not heavy/oily)
         // For high porosity, neutral ingredients are just okay
         const highNeutralScore = 0.0001;
-        const lowNeutralScore = 2.0;
+        const lowNeutralScore = 2.1;
 
         const highScore = highNeutralScore * positionWeight;
         const lowScore = lowNeutralScore * positionWeight;
@@ -186,7 +186,7 @@ export function porosity(analysis: AnalysisResult): PorosityAnalysis {
 
 
     // Adjust base score and multiplier
-    const baseScore = isLowPorosity ? 35 : 0;
+    const baseScore = isLowPorosity ? 27 : 0;
     const multiplier = isLowPorosity ? 45 : 25;
 
     const finalScore = Math.round(baseScore + avgScore * multiplier);

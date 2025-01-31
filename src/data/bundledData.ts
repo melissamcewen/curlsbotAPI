@@ -3272,36 +3272,9 @@ export const defaultDatabase: IngredientDatabase = {
       "status": "ok",
       "group": "humectants"
     },
-    "c12_15_alkyl": {
-      "name": "C12-15 alkyl",
-      "id": "c12_15_alkyl",
-      "categories": [
-        "other_emollients"
-      ],
-      "status": "ok",
-      "group": "others"
-    },
-    "cetyl_esters": {
-      "name": "Cetyl Esters",
-      "id": "cetyl_esters",
-      "categories": [
-        "non_water_soluble_waxes"
-      ],
-      "status": "warning",
-      "group": "waxes"
-    },
     "isolaureth_6": {
       "name": "Isolaureth-6",
       "id": "isolaureth_6",
-      "categories": [
-        "other_emollients"
-      ],
-      "status": "ok",
-      "group": "others"
-    },
-    "sorbitol_esters": {
-      "name": "Sorbitol Esters",
-      "id": "sorbitol_esters",
       "categories": [
         "other_emollients"
       ],
@@ -3755,6 +3728,54 @@ export const defaultDatabase: IngredientDatabase = {
           "source": "Cutis",
           "description": "It has a very high pH (9.5-10.5) which is very different from the pH of the scalp/hair. Can cause the cuticle to open up, allowing water to break up proteins like keratin and increasing negative charges in the hair. This lowers the elasticity of the hair and can cause breakage."
         }
+      ],
+      "status": "ok",
+      "group": "others"
+    },
+    "jojoba_esters": {
+      "name": "Jojoba Esters",
+      "id": "jojoba_esters",
+      "categories": [
+        "esters"
+      ],
+      "status": "ok",
+      "group": "others"
+    },
+    "cetyl_esters": {
+      "name": "Cetyl Esters",
+      "id": "cetyl_esters",
+      "categories": [
+        "esters"
+      ],
+      "status": "ok",
+      "group": "others"
+    },
+    "c12_15_alkyl": {
+      "name": "C12-15 alkyl",
+      "id": "c12_15_alkyl",
+      "categories": [
+        "esters"
+      ],
+      "status": "ok",
+      "group": "others"
+    },
+    "unknown_ester": {
+      "name": "Unknown Ester",
+      "id": "unknown_ester",
+      "categories": [
+        "esters"
+      ],
+      "synonyms": [
+        "ester"
+      ],
+      "status": "ok",
+      "group": "others"
+    },
+    "sorbitol_esters": {
+      "name": "Sorbitol Esters",
+      "id": "sorbitol_esters",
+      "categories": [
+        "esters"
       ],
       "status": "ok",
       "group": "others"
@@ -4470,28 +4491,6 @@ export const defaultDatabase: IngredientDatabase = {
       ],
       "status": "ok",
       "group": "waxes"
-    },
-    "jojoba_esters": {
-      "name": "Jojoba Esters",
-      "id": "jojoba_esters",
-      "categories": [
-        "non_water_soluble_waxes"
-      ],
-      "status": "warning",
-      "group": "waxes"
-    },
-    "unknown_ester": {
-      "name": "Unknown Ester",
-      "id": "unknown_ester",
-      "categories": [
-        "non_water_soluble_waxes"
-      ],
-      "synonyms": [
-        "ester"
-      ],
-      "description": "This is an ester, a component of waxes",
-      "status": "warning",
-      "group": "waxes"
     }
   },
   "categories": {
@@ -4739,6 +4738,12 @@ export const defaultDatabase: IngredientDatabase = {
       ],
       "defaultIngredient": "unknown_essential_oil",
       "description": "Essential oils are not really oils as they are not fatty. They are mainly used for their fragrance and therapeutic properties."
+    },
+    "esters": {
+      "id": "esters",
+      "name": "Esters",
+      "group": "others",
+      "description": "Esters are used in hair care products as emollients, conditioners, and carriers for other ingredients, contributing to smoothness, shine, and manageability."
     }
   },
   "groups": {

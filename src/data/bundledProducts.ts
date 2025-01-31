@@ -167,7 +167,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 46,
-          "low": 95
+          "low": 100
         }
       }
     },
@@ -230,7 +230,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 63,
-          "low": 32
+          "low": 38
         }
       },
       "cost_rating": "5"
@@ -289,7 +289,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 58,
-          "low": 95
+          "low": 100
         }
       },
       "cost_rating": "5"
@@ -337,7 +337,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 55,
-          "low": 55
+          "low": 67
         }
       },
       "cost_rating": "5"
@@ -698,7 +698,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 91,
-          "low": 14
+          "low": 17
         }
       },
       "cost_rating": "4"
@@ -1109,7 +1109,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 86,
-          "low": 32
+          "low": 33
         }
       },
       "cost_rating": "1"
@@ -1156,7 +1156,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 68,
-          "low": 62
+          "low": 81
         }
       },
       "cost_rating": "2"
@@ -1202,7 +1202,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 63,
-          "low": 69
+          "low": 90
         }
       },
       "cost_rating": "1"
@@ -1250,7 +1250,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 78,
-          "low": 39
+          "low": 51
         }
       },
       "cost_rating": "5"
@@ -1266,14 +1266,20 @@ export const defaultProductDatabase: ProductDatabase = {
       ],
       "cost": 2.8,
       "ingredients_raw": "water aqua eau, cetyl alcohol, cetearyl alcohol, behentrimonium chloride, glycerin, propanediol, stearamido-propyl dimethylamine, isopropyl myristate, cocos nucifera coconut water, aloe barbadensis leaf juice, chamomilla recutita matricaria flower extract, lavandula angustifolia lavender extract, cetyl esters, cetrimonium chloride, guar hydroxypropyltrimonium chloride, dicetyldimonium chloride, propylene glycol, caprylyl glycol, 1, 2-hexanediol, leuconostoc radish root ferment filtrate, fragrance parfum, potassiu, sorbate, panthenol, to-copheryl acetate, sodium benzoate, edta, citric acid, isopropyl alcohol, phenoxyethanol, ethylhexylglycerin, amyl cinnamal, limonene, isoeugenol, linalool",
+      "buy_links": [
+        {
+          "url": "https://curlkeeper.com/r?id=ms7prl",
+          "retailer": "Curl Keeper"
+        }
+      ],
       "id": "big_energy_conditioner",
       "systems_excluded": [],
-      "status": "warning",
+      "status": "caution",
       "extensions": {
         "frizzbot": {
           "simple_humectants_number": 6,
           "film_forming_humectants_number": 1,
-          "emollients_number": 6,
+          "emollients_number": 5,
           "simple_humectants": [
             "Glycerin",
             "Propanediol",
@@ -1289,15 +1295,14 @@ export const defaultProductDatabase: ProductDatabase = {
             "Cetyl Alcohol",
             "Cetearyl Alcohol",
             "Behentrimonium Chloride",
-            "Cetyl Esters",
             "Cetrimonium Chloride",
             "Guar Hydroxypropyltrimonium Chloride"
           ],
-          "score": -53
+          "score": -52
         },
         "porosity": {
-          "high": 75,
-          "low": 39
+          "high": 73,
+          "low": 72
         }
       },
       "cost_rating": "5"
@@ -1322,12 +1327,12 @@ export const defaultProductDatabase: ProductDatabase = {
       ],
       "id": "coil_infusion®_drink_up™_cleansing_conditioner",
       "systems_excluded": [],
-      "status": "warning",
+      "status": "ok",
       "extensions": {
         "frizzbot": {
           "simple_humectants_number": 6,
           "film_forming_humectants_number": 4,
-          "emollients_number": 18,
+          "emollients_number": 17,
           "simple_humectants": [
             "Glycerin",
             "Propanediol",
@@ -1344,7 +1349,6 @@ export const defaultProductDatabase: ProductDatabase = {
           ],
           "emollients": [
             "Cetearyl Alcohol",
-            "Cetyl Esters",
             "Cetyl Alcohol",
             "Behentrimonium Chloride",
             "Butyrospermum Parkii Shea Butter",
@@ -1362,7 +1366,7 @@ export const defaultProductDatabase: ProductDatabase = {
             "Guar Hydroxypropyltrimonium Chloride",
             "Diheptyl Succinate"
           ],
-          "score": -65
+          "score": -64
         },
         "porosity": {
           "high": 100,
@@ -1587,7 +1591,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 84,
-          "low": 26
+          "low": 35
         }
       }
     },
@@ -1639,7 +1643,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 89,
-          "low": 12
+          "low": 15
         }
       }
     },
@@ -1692,7 +1696,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 49,
-          "low": 95
+          "low": 100
         }
       },
       "cost_rating": "5"
@@ -1978,7 +1982,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 90,
-          "low": 11
+          "low": 13
         }
       },
       "cost_rating": "4"
@@ -2382,7 +2386,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 83,
-          "low": 39
+          "low": 48
         }
       },
       "cost_rating": "5"
@@ -2508,7 +2512,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 78,
-          "low": 49
+          "low": 62
         }
       },
       "cost_rating": "5"
@@ -2555,7 +2559,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 30,
-          "low": 95
+          "low": 100
         }
       },
       "cost_rating": "1"
@@ -2605,7 +2609,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 61,
-          "low": 81
+          "low": 100
         }
       }
     },
@@ -2659,7 +2663,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 84,
-          "low": 95
+          "low": 100
         }
       }
     },
@@ -2717,7 +2721,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 79,
-          "low": 65
+          "low": 67
         }
       },
       "cost_rating": "5"
@@ -2826,7 +2830,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 79,
-          "low": 13
+          "low": 15
         }
       },
       "cost_rating": "5"
@@ -2880,7 +2884,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 69,
-          "low": 95
+          "low": 100
         }
       },
       "cost_rating": "4"
@@ -2986,7 +2990,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 83,
-          "low": 30
+          "low": 37
         }
       }
     },
@@ -3035,7 +3039,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 84,
-          "low": 27
+          "low": 32
         }
       }
     },
@@ -3094,7 +3098,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 74,
-          "low": 36
+          "low": 45
         }
       }
     },
@@ -3150,7 +3154,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 55,
-          "low": 58
+          "low": 74
         }
       },
       "cost_rating": "1"
@@ -3197,7 +3201,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 69,
-          "low": 95
+          "low": 100
         }
       },
       "cost_rating": "5"
@@ -3247,7 +3251,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 51,
-          "low": 77
+          "low": 100
         }
       }
     },
@@ -3380,7 +3384,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 79,
-          "low": 22
+          "low": 17
         }
       },
       "cost_rating": "3"
@@ -3432,7 +3436,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 73,
-          "low": 39
+          "low": 52
         }
       },
       "cost_rating": "1"
@@ -3648,7 +3652,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 80,
-          "low": 24
+          "low": 32
         }
       },
       "cost_rating": "5"
@@ -3694,7 +3698,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 51,
-          "low": 95
+          "low": 100
         }
       }
     },
@@ -3744,7 +3748,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 60,
-          "low": 45
+          "low": 55
         }
       }
     },
@@ -3859,7 +3863,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 93,
-          "low": 11
+          "low": 3
         }
       },
       "cost_rating": "1"
@@ -3971,7 +3975,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 75,
-          "low": 95
+          "low": 100
         }
       },
       "cost_rating": "3"
@@ -4135,7 +4139,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 86,
-          "low": 45
+          "low": 32
         }
       },
       "cost_rating": "5"
@@ -4189,7 +4193,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 82,
-          "low": 34
+          "low": 29
         }
       },
       "cost_rating": "4"
@@ -4248,7 +4252,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 89,
-          "low": 12
+          "low": 2
         }
       }
     },
@@ -4303,7 +4307,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 55,
-          "low": 95
+          "low": 100
         }
       }
     },
@@ -4351,7 +4355,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 65,
-          "low": 95
+          "low": 100
         }
       },
       "cost_rating": "1"
@@ -4398,7 +4402,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 69,
-          "low": 40
+          "low": 49
         }
       }
     },
@@ -4449,7 +4453,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 59,
-          "low": 95
+          "low": 100
         }
       }
     },
@@ -4492,7 +4496,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 57,
-          "low": 95
+          "low": 100
         }
       }
     },
@@ -4540,7 +4544,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 84,
-          "low": 53
+          "low": 71
         }
       }
     }
