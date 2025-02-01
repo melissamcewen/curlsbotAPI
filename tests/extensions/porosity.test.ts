@@ -80,4 +80,14 @@ describe('porosity scoring', () => {
       expect(result.low).toBeLessThan(30);
     });
   });
+
+  describe('kristin ess shampoo', () => {
+    const ingredients =
+      'water, sodium c14-16 olefin sulfonate, cocamidopropyl betaine, propanediol, glycol distearate, phenoxyethanol, butyrospermum parkii shea butter, alanine, arginine, aspartic acid, glycine, histidine, isoleucine, phenylalanine, proline, serine, sodium pca, pca, sodium lactate, threonine, valine, citric acid, disodium edta, glycine soja soybean oil, glycine soja soybean sterols, glycolipids, guar hydroxypropyltrimonium chloride, hydroxyethylcellulose, hydroxyacetophenone, lauryl lactyl lactate, peg-150 distearate, phospholipids, ricinus communis castor seed oil, fragrance';
+    const analysis = analyzer.analyze(ingredients);
+    const result = porosity(analysis);
+    it('should score shampoo well for low porosity', () => {
+      expect(result.low).toBeGreaterThan(80);
+    });
+  });
 });

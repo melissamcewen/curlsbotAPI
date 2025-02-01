@@ -780,9 +780,8 @@ export const defaultDatabase: IngredientDatabase = {
         "sodium c1416 olefin sulfonate"
       ],
       "categories": [
-        "mild_surfactants"
+        "other_anionic_surfactants"
       ],
-      "description": "CurlsBot is in the process of reclassifying this ingredient. We believe it is a mild surfactant but in the past we've listed it as stronger",
       "status": "ok",
       "group": "surfactants"
     },

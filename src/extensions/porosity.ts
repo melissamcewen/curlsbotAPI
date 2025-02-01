@@ -81,14 +81,14 @@ export function porosity(analysis: AnalysisResult): PorosityAnalysis {
       waxes: 6,
     } as HighPorosityScoring,
     low: {
-      heavy_oils: -7.0,
+      heavy_oils: -6.0,
       non_water_soluble_waxes: -7.0,
       water_soluble_waxes: -2.0,
       medium_oils: -5.0,
       light_oils: -3.0,
       conditioning_agents: -0.25,
       emollients: -0.25,
-      anionic_detergents: 2,
+      anionic_detergents: 20,
     } as LowPorosityScoring,
   };
 
