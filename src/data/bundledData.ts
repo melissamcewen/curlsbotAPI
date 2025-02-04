@@ -1634,10 +1634,11 @@ export const defaultDatabase: IngredientDatabase = {
       "id": "marula_oil",
       "synonyms": [
         "sclerocarya birrea seed oil",
-        "marula seed oil"
+        "marula seed oil",
+        "sclerocarya birrea"
       ],
       "categories": [
-        "other_oils"
+        "light_oils"
       ],
       "status": "ok",
       "group": "oils"
@@ -1954,6 +1955,15 @@ export const defaultDatabase: IngredientDatabase = {
       "id": "tea_tree_oil",
       "categories": [
         "essential_oils"
+      ],
+      "status": "ok",
+      "group": "oils"
+    },
+    "squalane": {
+      "name": "Squalane",
+      "id": "squalane",
+      "categories": [
+        "light_oils"
       ],
       "status": "ok",
       "group": "oils"

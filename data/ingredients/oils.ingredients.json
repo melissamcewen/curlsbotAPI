@@ -306,10 +306,11 @@
       "id": "marula_oil",
       "synonyms": [
         "sclerocarya birrea seed oil",
-        "marula seed oil"
+        "marula seed oil",
+        "sclerocarya birrea"
       ],
       "categories": [
-        "other_oils"
+        "light_oils"
       ]
     },
     {
@@ -564,6 +565,13 @@
       "id": "tea_tree_oil",
       "categories": [
         "essential_oils"
+      ]
+    },
+    {
+      "name": "Squalane",
+      "id": "squalane",
+      "categories": [
+        "light_oils"
       ]
     }
   ]

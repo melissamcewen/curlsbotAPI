@@ -44,6 +44,69 @@
           "retailer": "Ecoslay"
         }
       ]
+    },
+    {
+      "name": "Multi-Peptide Serum for Hair Density",
+      "brand": "The Ordinary",
+      "product_categories": [
+        "treatments"
+      ],
+      "tags": [
+        "featured"
+      ],
+      "ingredients_raw": "aqua water, propanediol, butylene glycol, glycerin, caffeine, biotinoyl tripeptide-1, acetyl tetrapeptide-3, larix europaea wood extract, pisum sativum extract, scutellaria baicalensis root extract, triticum vulgare germ extract, glycine soja germ extract, trifolium pratense flower extract, camellia sinensis leaf extract, apigenin, oleanolic acid, arginine, glycine, calcium gluconate, zinc chloride, lactic acid, gluconolactone, dextran, maltodextrin, hydroxyethylcellulose, xanthan gum, pentylene glycol, dimethyl isosorbide, polysorbate 20, ppg-26-buteth-26, peg-40 hydrogenated castor oil, trisodium ethylenediamine disuccinate, sodium metabisulfite, sodium benzoate, phenoxyethanol, chlorphenesin",
+      "buy_links": [
+        {
+          "url": "https://theordinary.com/en-us/multi-peptide-serum-for-hair-density-hair-scalp-treatment-100434.html",
+          "retailer": "The Ordinary"
+        },
+        {
+          "url": "https://amzn.to/3CxvRo9",
+          "retailer": "Amazon"
+        }
+      ]
+    },
+    {
+      "name": "Natural Moisturizing Factors + HA for Scalp",
+      "brand": "The Ordinary",
+      "product_categories": [
+        "treatments"
+      ],
+      "tags": [
+        "featured"
+      ],
+      "buy_links": [
+        {
+          "url": "https://theordinary.com/en-us/natural-moisturizing-factors-ha-for-scalp-hair-scalp-treatment-100422.html",
+          "retailer": "The Ordinary"
+        },
+        {
+          "url": "https://amzn.to/4hqGzvY",
+          "retailer": "Amazon"
+        }
+      ],
+      "ingredients_raw": "aqua water, squalane, c12-13 alkyl glyceryl hydrolyzed hyaluronate, arginine, aspartic acid, glycine, alanine, serine, valine, isoleucine, proline, threonine, histidine, phenylalanine, glutamic acid, glucose, fructose, sucrose, pca, sodium pca, zinc pca, magnesium pca, manganese pca, urea, sodium lactate, lactic acid, hexyl nicotinate, lauryl glucoside, myristyl glucoside, polyglyceryl-6 laurate, isoceteth-20, dextrin, hexylene glycol, potassium sorbate, phenoxyethanol, chlorphenesin"
+    },
+    {
+      "name": "Glycolic Acid 7% Exfoliating Toner",
+      "brand": "The Ordinary",
+      "product_categories": [
+        "treatments"
+      ],
+      "tags": [
+        "featured"
+      ],
+      "buy_links": [
+        {
+          "url": "https://theordinary.com/en-us/glycolic-acid-7-exfoliating-toner-100418.html",
+          "retailer": "The Ordinary"
+        },
+        {
+          "url": "https://amzn.to/3CMuIJj",
+          "retailer": "Amazon"
+        }
+      ],
+      "ingredients_raw": "aqua water, glycolic acid, rosa damascena flower water, centaurea cyanus flower water, aloe barbadensis leaf water, propanediol, glycerin, triethanolamine, aminomethyl propanol, panax ginseng root extract, tasmannia lanceolata fruit leaf extract, aspartic acid, alanine, glycine, serine, valine, isoleucine, proline, threonine, histidine, phenylalanine, glutamic acid, arginine, pca, sodium pca, sodium lactate, fructose, glucose, sucrose, urea, hexyl nicotinate, dextrin, citric acid, polysorbate 20, gellan gum, trisodium ethylenediamine disuccinate, sodium chloride, hexylene glycol, potassium sorbate, sodium benzoate, 1, 2-hexanediol, caprylyl glycol"
     }
   ]
 }

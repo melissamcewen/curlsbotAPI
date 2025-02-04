@@ -261,6 +261,28 @@
       ],
       "description": "An excellent low-pH (~5 protects against frizz) shampoo at a great price.",
       "ingredients_raw": "aqua purified water, sodium lauroyl sarcosinate, cocamidopropyl betaine, sodium cocoamphoacetate, lauryl glucoside, decyl glucoside, sodium cocoyl glutamate, sodium lauryl glucose carboxylate, glycerin, pyrus malus apple fruit extract, aloe barbadensis aloe vera leaf juice, chamomilla recutita matricaria leaf extract, citrus aurantium dulcis valencia orange extract, citrus grandis grapefruit fruit extract, cymbopogon schoenanthus lemongrass extract, echinacea purpurea extract, glycine soja soybean seed extract, lavandula angustifolia lavender extract, rosmarinus officinalis rosemary leaf extract, macrocystis pyrifera sea kelp extract, mangifera indica mango extract, salix alba willow bark extract, xanthan gum, glycol distearate, panthenol pro-vitamin b5, citric acid, polysorbate 20, potassium sorbate, phenoxyethanol, natural fragrance"
+    },
+    {
+      "name": "Sulphate 4% Cleanser for Body and Hair",
+      "brand": "The Ordinary",
+      "product_categories": [
+        "shampoos"
+      ],
+      "tags": [
+        "featured"
+      ],
+      "buy_links": [
+        {
+          "url": "https://theordinary.com/en-us/4-sulphate-cleanser-for-body-and-hair-shampoo-100399.html",
+          "retailer": "The Ordinary"
+        },
+        {
+          "url": "https://amzn.to/4hHQm02",
+          "retailer": "Amazon"
+        }
+      ],
+      "ingredients_raw": "aqua water, sodium laureth sulfate, polysorbate 20, xanthan gum, tocopherol, phytic acid, trisodium ethylenediamine disuccinate, benzyl alcohol, ethylhexylglycerin, phenoxyethanol, chlorphenesin"
     }
   ]
 }
+

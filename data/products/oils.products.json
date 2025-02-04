@@ -73,6 +73,71 @@
       ],
       "asin": "B09GC96P46",
       "cost": 15
+    },
+    {
+      "name": "100% Plant-Derived Squalane",
+      "brand": "The Ordinary",
+      "product_categories": [
+        "oils",
+        "pre-poo"
+      ],
+      "tags": [
+        "featured"
+      ],
+      "ingredients_raw": "squalane",
+      "buy_links": [
+        {
+          "url": "https://amzn.to/4aMfaSl",
+          "retailer": "Amazon"
+        },
+        {
+          "url": "https://theordinary.com/en-us/100-plant-derived-squalane-face-oil-100398.html",
+          "retailer": "The Ordinary"
+        }
+      ]
+    },
+    {
+      "name": "100% Cold-Pressed Virgin Marula Oil",
+      "brand": "The Ordinary",
+      "product_categories": [
+        "oils"
+      ],
+      "tags": [
+        "featured"
+      ],
+      "ingredients_raw": "Sclerocarya Birrea Seed Oil",
+      "buy_links": [
+        {
+          "url": "https://theordinary.com/en-us/100-cold-pressed-virgin-marula-face-oil-100389.html",
+          "retailer": "The Ordinary"
+        },
+        {
+          "url": "https://amzn.to/3ErB1Td",
+          "retailer": "Amazon"
+        }
+      ]
+    },
+    {
+      "name": "The Ordinary 100% Organic Cold-Pressed Moroccan Argan Oil",
+      "brand": "The Ordinary",
+      "product_categories": [
+        "oils"
+      ],
+      "tags": [
+        "featured"
+      ],
+      "ingredients_raw": "Argania Spinosa Kernel Oil",
+      "buy_links": [
+        {
+          "url": "https://amzn.to/3Q2MDyw",
+          "retailer": "Amazon"
+        },
+        {
+          "url": "https://theordinary.com/en-us/100-organic-cold-pressed-moroccan-argan-face-oil-100393.html",
+          "retailer": "The Ordinary"
+        }
+      ]
     }
   ]
 }
+

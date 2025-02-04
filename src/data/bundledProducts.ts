@@ -516,8 +516,8 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -88
         },
         "porosity": {
-          "high": 100,
-          "low": 0
+          "high": 92,
+          "low": 21
         }
       },
       "cost_rating": "1"
@@ -698,7 +698,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 91,
-          "low": 17
+          "low": 8
         }
       },
       "cost_rating": "4"
@@ -1109,7 +1109,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 86,
-          "low": 33
+          "low": 34
         }
       },
       "cost_rating": "1"
@@ -1156,7 +1156,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 68,
-          "low": 81
+          "low": 95
         }
       },
       "cost_rating": "2"
@@ -1202,7 +1202,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 63,
-          "low": 90
+          "low": 100
         }
       },
       "cost_rating": "1"
@@ -1250,7 +1250,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 78,
-          "low": 51
+          "low": 62
         }
       },
       "cost_rating": "5"
@@ -1302,7 +1302,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 73,
-          "low": 72
+          "low": 86
         }
       },
       "cost_rating": "5"
@@ -1591,7 +1591,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 84,
-          "low": 35
+          "low": 44
         }
       }
     },
@@ -1643,7 +1643,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 89,
-          "low": 15
+          "low": 0
         }
       }
     },
@@ -1982,7 +1982,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 90,
-          "low": 13
+          "low": 0
         }
       },
       "cost_rating": "4"
@@ -2337,7 +2337,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 87,
-          "low": 7
+          "low": 0
         }
       }
     },
@@ -2386,7 +2386,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 83,
-          "low": 48
+          "low": 38
         }
       },
       "cost_rating": "5"
@@ -2512,7 +2512,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 78,
-          "low": 62
+          "low": 60
         }
       },
       "cost_rating": "5"
@@ -2721,7 +2721,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 79,
-          "low": 67
+          "low": 68
         }
       },
       "cost_rating": "5"
@@ -2830,7 +2830,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 79,
-          "low": 21
+          "low": 4
         }
       },
       "cost_rating": "5"
@@ -2990,7 +2990,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 83,
-          "low": 37
+          "low": 23
         }
       }
     },
@@ -3039,7 +3039,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 84,
-          "low": 32
+          "low": 17
         }
       }
     },
@@ -3098,7 +3098,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 74,
-          "low": 45
+          "low": 34
         }
       }
     },
@@ -3154,7 +3154,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 55,
-          "low": 79
+          "low": 81
         }
       },
       "cost_rating": "1"
@@ -3384,7 +3384,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 79,
-          "low": 17
+          "low": 8
         }
       },
       "cost_rating": "3"
@@ -3436,7 +3436,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 73,
-          "low": 56
+          "low": 61
         }
       },
       "cost_rating": "1"
@@ -3596,6 +3596,128 @@ export const defaultProductDatabase: ProductDatabase = {
       },
       "cost_rating": "5"
     },
+    "100%_plant-derived_squalane": {
+      "name": "100% Plant-Derived Squalane",
+      "brand": "The Ordinary",
+      "product_categories": [
+        "oils",
+        "pre-poo"
+      ],
+      "tags": [
+        "featured"
+      ],
+      "ingredients_raw": "squalane",
+      "buy_links": [
+        {
+          "url": "https://amzn.to/4aMfaSl",
+          "retailer": "Amazon"
+        },
+        {
+          "url": "https://theordinary.com/en-us/100-plant-derived-squalane-face-oil-100398.html",
+          "retailer": "The Ordinary"
+        }
+      ],
+      "id": "100%_plant-derived_squalane",
+      "systems_excluded": [],
+      "status": "ok",
+      "extensions": {
+        "frizzbot": {
+          "simple_humectants_number": 0,
+          "film_forming_humectants_number": 0,
+          "emollients_number": 0,
+          "simple_humectants": [],
+          "film_forming_humectants": [],
+          "emollients": [],
+          "score": 0
+        },
+        "porosity": {
+          "high": 50,
+          "low": 50
+        }
+      }
+    },
+    "100%_cold-pressed_virgin_marula_oil": {
+      "name": "100% Cold-Pressed Virgin Marula Oil",
+      "brand": "The Ordinary",
+      "product_categories": [
+        "oils"
+      ],
+      "tags": [
+        "featured"
+      ],
+      "ingredients_raw": "Sclerocarya Birrea Seed Oil",
+      "buy_links": [
+        {
+          "url": "https://theordinary.com/en-us/100-cold-pressed-virgin-marula-face-oil-100389.html",
+          "retailer": "The Ordinary"
+        },
+        {
+          "url": "https://amzn.to/3ErB1Td",
+          "retailer": "Amazon"
+        }
+      ],
+      "id": "100%_cold-pressed_virgin_marula_oil",
+      "systems_excluded": [],
+      "status": "ok",
+      "extensions": {
+        "frizzbot": {
+          "simple_humectants_number": 0,
+          "film_forming_humectants_number": 0,
+          "emollients_number": 1,
+          "simple_humectants": [],
+          "film_forming_humectants": [],
+          "emollients": [
+            "Marula Oil"
+          ],
+          "score": -76
+        },
+        "porosity": {
+          "high": 100,
+          "low": 0
+        }
+      }
+    },
+    "the_ordinary_100%_organic_cold-pressed_moroccan_argan_oil": {
+      "name": "The Ordinary 100% Organic Cold-Pressed Moroccan Argan Oil",
+      "brand": "The Ordinary",
+      "product_categories": [
+        "oils"
+      ],
+      "tags": [
+        "featured"
+      ],
+      "ingredients_raw": "Argania Spinosa Kernel Oil",
+      "buy_links": [
+        {
+          "url": "https://amzn.to/3Q2MDyw",
+          "retailer": "Amazon"
+        },
+        {
+          "url": "https://theordinary.com/en-us/100-organic-cold-pressed-moroccan-argan-face-oil-100393.html",
+          "retailer": "The Ordinary"
+        }
+      ],
+      "id": "the_ordinary_100%_organic_cold-pressed_moroccan_argan_oil",
+      "systems_excluded": [],
+      "status": "ok",
+      "extensions": {
+        "frizzbot": {
+          "simple_humectants_number": 0,
+          "film_forming_humectants_number": 0,
+          "emollients_number": 1,
+          "simple_humectants": [],
+          "film_forming_humectants": [],
+          "emollients": [
+            "Argan Oil"
+          ],
+          "score": -76
+        },
+        "porosity": {
+          "high": 100,
+          "low": 0
+        }
+      }
+    },
     "bond_curl_rehab_salve,_bond_building_strength_treatment_for_weak,_damaged_hair": {
       "name": "Bond Curl Rehab Salve, Bond Building Strength Treatment for Weak, Damaged Hair",
       "brand": "Curlsmith",
@@ -3652,7 +3774,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 80,
-          "low": 32
+          "low": 26
         }
       },
       "cost_rating": "5"
@@ -3862,8 +3984,8 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -82
         },
         "porosity": {
-          "high": 93,
-          "low": 3
+          "high": 84,
+          "low": 100
         }
       },
       "cost_rating": "1"
@@ -3974,7 +4096,7 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -78
         },
         "porosity": {
-          "high": 75,
+          "high": 63,
           "low": 100
         }
       },
@@ -4139,7 +4261,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 86,
-          "low": 32
+          "low": 24
         }
       },
       "cost_rating": "5"
@@ -4193,7 +4315,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 82,
-          "low": 29
+          "low": 16
         }
       },
       "cost_rating": "4"
@@ -4252,7 +4374,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 89,
-          "low": 10
+          "low": 0
         }
       }
     },
@@ -4401,8 +4523,8 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -89
         },
         "porosity": {
-          "high": 69,
-          "low": 49
+          "high": 44,
+          "low": 100
         }
       }
     },
@@ -4453,6 +4575,50 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 59,
+          "low": 100
+        }
+      }
+    },
+    "sulphate_4%_cleanser_for_body_and_hair": {
+      "name": "Sulphate 4% Cleanser for Body and Hair",
+      "brand": "The Ordinary",
+      "product_categories": [
+        "shampoos"
+      ],
+      "tags": [
+        "featured"
+      ],
+      "buy_links": [
+        {
+          "url": "https://theordinary.com/en-us/4-sulphate-cleanser-for-body-and-hair-shampoo-100399.html",
+          "retailer": "The Ordinary"
+        },
+        {
+          "url": "https://amzn.to/4hHQm02",
+          "retailer": "Amazon"
+        }
+      ],
+      "ingredients_raw": "aqua water, sodium laureth sulfate, polysorbate 20, xanthan gum, tocopherol, phytic acid, trisodium ethylenediamine disuccinate, benzyl alcohol, ethylhexylglycerin, phenoxyethanol, chlorphenesin",
+      "id": "sulphate_4%_cleanser_for_body_and_hair",
+      "systems_excluded": [],
+      "status": "warning",
+      "extensions": {
+        "frizzbot": {
+          "simple_humectants_number": 1,
+          "film_forming_humectants_number": 0,
+          "emollients_number": 2,
+          "simple_humectants": [
+            "Ethylhexylglycerin"
+          ],
+          "film_forming_humectants": [],
+          "emollients": [
+            "Xanthan Gum",
+            "Benzyl Alcohol"
+          ],
+          "score": -56
+        },
+        "porosity": {
+          "high": 28,
           "low": 100
         }
       }
@@ -4544,7 +4710,182 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 84,
-          "low": 71
+          "low": 85
+        }
+      }
+    },
+    "multi-peptide_serum_for_hair_density": {
+      "name": "Multi-Peptide Serum for Hair Density",
+      "brand": "The Ordinary",
+      "product_categories": [
+        "treatments"
+      ],
+      "tags": [
+        "featured"
+      ],
+      "ingredients_raw": "aqua water, propanediol, butylene glycol, glycerin, caffeine, biotinoyl tripeptide-1, acetyl tetrapeptide-3, larix europaea wood extract, pisum sativum extract, scutellaria baicalensis root extract, triticum vulgare germ extract, glycine soja germ extract, trifolium pratense flower extract, camellia sinensis leaf extract, apigenin, oleanolic acid, arginine, glycine, calcium gluconate, zinc chloride, lactic acid, gluconolactone, dextran, maltodextrin, hydroxyethylcellulose, xanthan gum, pentylene glycol, dimethyl isosorbide, polysorbate 20, ppg-26-buteth-26, peg-40 hydrogenated castor oil, trisodium ethylenediamine disuccinate, sodium metabisulfite, sodium benzoate, phenoxyethanol, chlorphenesin",
+      "buy_links": [
+        {
+          "url": "https://theordinary.com/en-us/multi-peptide-serum-for-hair-density-hair-scalp-treatment-100434.html",
+          "retailer": "The Ordinary"
+        },
+        {
+          "url": "https://amzn.to/3CxvRo9",
+          "retailer": "Amazon"
+        }
+      ],
+      "id": "multi-peptide_serum_for_hair_density",
+      "systems_excluded": [],
+      "status": "ok",
+      "extensions": {
+        "frizzbot": {
+          "simple_humectants_number": 4,
+          "film_forming_humectants_number": 6,
+          "emollients_number": 2,
+          "simple_humectants": [
+            "Propanediol",
+            "Butylene glycol",
+            "Glycerin",
+            "Lactic Acid"
+          ],
+          "film_forming_humectants": [
+            "Peptide",
+            "Peptide",
+            "Glycine",
+            "Arginine",
+            "Glycine",
+            "Hydroxyethylcellulose"
+          ],
+          "emollients": [
+            "Xanthan Gum",
+            "Castor Oil"
+          ],
+          "score": -43
+        },
+        "porosity": {
+          "high": 81,
+          "low": 84
+        }
+      }
+    },
+    "natural_moisturizing_factors_+_ha_for_scalp": {
+      "name": "Natural Moisturizing Factors + HA for Scalp",
+      "brand": "The Ordinary",
+      "product_categories": [
+        "treatments"
+      ],
+      "tags": [
+        "featured"
+      ],
+      "buy_links": [
+        {
+          "url": "https://theordinary.com/en-us/natural-moisturizing-factors-ha-for-scalp-hair-scalp-treatment-100422.html",
+          "retailer": "The Ordinary"
+        },
+        {
+          "url": "https://amzn.to/4hqGzvY",
+          "retailer": "Amazon"
+        }
+      ],
+      "ingredients_raw": "aqua water, squalane, c12-13 alkyl glyceryl hydrolyzed hyaluronate, arginine, aspartic acid, glycine, alanine, serine, valine, isoleucine, proline, threonine, histidine, phenylalanine, glutamic acid, glucose, fructose, sucrose, pca, sodium pca, zinc pca, magnesium pca, manganese pca, urea, sodium lactate, lactic acid, hexyl nicotinate, lauryl glucoside, myristyl glucoside, polyglyceryl-6 laurate, isoceteth-20, dextrin, hexylene glycol, potassium sorbate, phenoxyethanol, chlorphenesin",
+      "id": "natural_moisturizing_factors_+_ha_for_scalp",
+      "systems_excluded": [],
+      "status": "ok",
+      "extensions": {
+        "frizzbot": {
+          "simple_humectants_number": 11,
+          "film_forming_humectants_number": 9,
+          "emollients_number": 0,
+          "simple_humectants": [
+            "Glucose",
+            "Fructose",
+            "PCA",
+            "Sodium PCA",
+            "PCA",
+            "PCA",
+            "PCA",
+            "Urea",
+            "Sodium Lactate",
+            "Lactic Acid",
+            "Hexylene Glycol"
+          ],
+          "film_forming_humectants": [
+            "Arginine",
+            "Aspartic Acid",
+            "Glycine",
+            "Alanine",
+            "Serine",
+            "Proline",
+            "Histidine",
+            "Phenylalanine",
+            "Glutamic Acid"
+          ],
+          "emollients": [],
+          "score": -83
+        },
+        "porosity": {
+          "high": 92,
+          "low": 100
+        }
+      }
+    },
+    "glycolic_acid_7%_exfoliating_toner": {
+      "name": "Glycolic Acid 7% Exfoliating Toner",
+      "brand": "The Ordinary",
+      "product_categories": [
+        "treatments"
+      ],
+      "tags": [
+        "featured"
+      ],
+      "buy_links": [
+        {
+          "url": "https://theordinary.com/en-us/glycolic-acid-7-exfoliating-toner-100418.html",
+          "retailer": "The Ordinary"
+        },
+        {
+          "url": "https://amzn.to/3CMuIJj",
+          "retailer": "Amazon"
+        }
+      ],
+      "ingredients_raw": "aqua water, glycolic acid, rosa damascena flower water, centaurea cyanus flower water, aloe barbadensis leaf water, propanediol, glycerin, triethanolamine, aminomethyl propanol, panax ginseng root extract, tasmannia lanceolata fruit leaf extract, aspartic acid, alanine, glycine, serine, valine, isoleucine, proline, threonine, histidine, phenylalanine, glutamic acid, arginine, pca, sodium pca, sodium lactate, fructose, glucose, sucrose, urea, hexyl nicotinate, dextrin, citric acid, polysorbate 20, gellan gum, trisodium ethylenediamine disuccinate, sodium chloride, hexylene glycol, potassium sorbate, sodium benzoate, 1, 2-hexanediol, caprylyl glycol",
+      "id": "glycolic_acid_7%_exfoliating_toner",
+      "systems_excluded": [],
+      "status": "ok",
+      "extensions": {
+        "frizzbot": {
+          "simple_humectants_number": 10,
+          "film_forming_humectants_number": 9,
+          "emollients_number": 0,
+          "simple_humectants": [
+            "Propanediol",
+            "Glycerin",
+            "PCA",
+            "Sodium PCA",
+            "Sodium Lactate",
+            "Fructose",
+            "Glucose",
+            "Urea",
+            "Hexylene Glycol",
+            "Caprylyl Glycol"
+          ],
+          "film_forming_humectants": [
+            "Aspartic Acid",
+            "Alanine",
+            "Glycine",
+            "Serine",
+            "Proline",
+            "Histidine",
+            "Phenylalanine",
+            "Glutamic Acid",
+            "Arginine"
+          ],
+          "emollients": [],
+          "score": -62
+        },
+        "porosity": {
+          "high": 68,
+          "low": 100
         }
       }
     }

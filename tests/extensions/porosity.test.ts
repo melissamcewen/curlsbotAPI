@@ -90,4 +90,14 @@ describe('porosity scoring', () => {
       expect(result.low).toBeGreaterThan(80);
     });
   });
+
+  describe('Curl Keeper Conditioner formulated to be light', () => {
+    const ingredients =
+      'water aqua eau, cetyl alcohol, cetearyl alcohol, behentrimonium chloride, glycerin, propanediol, stearamido-propyl dimethylamine, isopropyl myristate, cocos nucifera coconut water, aloe barbadensis leaf juice, chamomilla recutita matricaria flower extract, lavandula angustifolia lavender extract, cetyl esters, cetrimonium chloride, guar hydroxypropyltrimonium chloride, dicetyldimonium chloride, propylene glycol, caprylyl glycol, 1, 2-hexanediol, leuconostoc radish root ferment filtrate, fragrance parfum, potassiu, sorbate, panthenol, to-copheryl acetate, sodium benzoate, edta, citric acid, isopropyl alcohol, phenoxyethanol, ethylhexylglycerin, amyl cinnamal, limonene, isoeugenol, linalool';
+    const analysis = analyzer.analyze(ingredients);
+    const result = porosity(analysis);
+    it('should score conditioner well for low porosity', () => {
+      expect(result.low).toBeGreaterThan(80);
+    });
+  });
 });
