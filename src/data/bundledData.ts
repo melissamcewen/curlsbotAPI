@@ -1764,32 +1764,6 @@ export const defaultDatabase: IngredientDatabase = {
       "status": "ok",
       "group": "oils"
     },
-    "caprylic_capric_triglyceride": {
-      "name": "Caprylic Capric Triglyceride",
-      "id": "caprylic_capric_triglyceride",
-      "categories": [
-        "heavy_oils"
-      ],
-      "synonyms": [
-        "caprylic triglyceride",
-        "capric triglyceride"
-      ],
-      "references": [
-        {
-          "url": "https://science-yhairblog.blogspot.com/2013/06/oils-which-ones-soak-in-vs-coat-hair.html",
-          "title": "Oils – Which Ones Soak In vs. Coat the Hair?",
-          "type": "science",
-          "description": "Capric / Caprylic triglycerides' ability to penetrate (soak into) hair hasn't been researched, but is likely given the oil's chemistry"
-        },
-        {
-          "url": "https://link.springer.com/article/10.1186/s40691-023-00332-0",
-          "title": "Determination of penetration and protection of fatty acids in bleached hair according to the fatty acid chain length and the application to understanding the protective effects of MCT oil and coconut oil",
-          "type": "science"
-        }
-      ],
-      "status": "ok",
-      "group": "oils"
-    },
     "babbasu_oil": {
       "name": "Babbasu Oil",
       "id": "babbasu_oil",
@@ -1964,6 +1938,15 @@ export const defaultDatabase: IngredientDatabase = {
       "id": "squalane",
       "categories": [
         "light_oils"
+      ],
+      "status": "ok",
+      "group": "oils"
+    },
+    "citrus_aurantium_dulcis_peel_oil": {
+      "name": "Citrus Aurantium Dulcis Peel Oil",
+      "id": "citrus_aurantium_dulcis_peel_oil",
+      "categories": [
+        "essential_oils"
       ],
       "status": "ok",
       "group": "oils"
@@ -3785,6 +3768,32 @@ export const defaultDatabase: IngredientDatabase = {
       "id": "sorbitol_esters",
       "categories": [
         "esters"
+      ],
+      "status": "ok",
+      "group": "others"
+    },
+    "caprylic_capric_triglyceride": {
+      "name": "Caprylic Capric Triglyceride",
+      "id": "caprylic_capric_triglyceride",
+      "categories": [
+        "esters"
+      ],
+      "synonyms": [
+        "caprylic triglyceride",
+        "capric triglyceride"
+      ],
+      "references": [
+        {
+          "url": "https://science-yhairblog.blogspot.com/2013/06/oils-which-ones-soak-in-vs-coat-hair.html",
+          "title": "Oils – Which Ones Soak In vs. Coat the Hair?",
+          "type": "science",
+          "description": "Capric / Caprylic triglycerides' ability to penetrate (soak into) hair hasn't been researched, but is likely given the oil's chemistry"
+        },
+        {
+          "url": "https://link.springer.com/article/10.1186/s40691-023-00332-0",
+          "title": "Determination of penetration and protection of fatty acids in bleached hair according to the fatty acid chain length and the application to understanding the protective effects of MCT oil and coconut oil",
+          "type": "science"
+        }
       ],
       "status": "ok",
       "group": "others"

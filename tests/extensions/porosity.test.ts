@@ -100,4 +100,14 @@ describe('porosity scoring', () => {
       expect(result.low).toBeGreaterThan(80);
     });
   });
+
+  describe('I create Hold', () => {
+    const ingredients =
+      'water, aqua-eau, aloe barbadensis gel, hydroxyethylcellulose, maltodextrin copolymer, potassium hydroxide, gluconolactone, sodium benzoate, calcium gluconate, alkyl acrylate crosspolymer, citrus aurantium dulcis peel oil, caprylic capric triglyceride, potassium sorbate, sodium phytate, glycerin, chamomilla recutita matricaria flower extract, eucalyptus globulus leaf extract, ginkgo biloba leaf extract, aspalathus linearis leaf extract, honey extract, limonene';
+    const analysis = analyzer.analyze(ingredients);
+    const result = porosity(analysis);
+    it('should score gel decently for low porosity', () => {
+      expect(result.low).toBeGreaterThan(75);
+    });
+  });
 });

@@ -412,26 +412,7 @@
         }
       ]
     },
-    {
-      "name": "Caprylic Capric Triglyceride",
-      "id": "caprylic_capric_triglyceride",
-      "categories": [
-        "heavy_oils"
-      ],
-      "synonyms": [
-        "caprylic triglyceride",
-        "capric triglyceride"
-      ],
-      "references": [
-        {
-          "id": "25",
-          "notes": "Capric / Caprylic triglycerides' ability to penetrate (soak into) hair hasn't been researched, but is likely given the oil's chemistry"
-        },
-        {
-          "id": "26"
-        }
-      ]
-    },
+   
     {
       "name": "Babbasu Oil",
       "id": "babbasu_oil",
@@ -572,6 +553,13 @@
       "id": "squalane",
       "categories": [
         "light_oils"
+      ]
+    },
+    {
+      "name": "Citrus Aurantium Dulcis Peel Oil",
+      "id": "citrus_aurantium_dulcis_peel_oil",
+      "categories": [
+        "essential_oils"
       ]
     }
   ]

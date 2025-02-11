@@ -1029,6 +1029,21 @@
       "name": "Sorbitol Esters",
       "id": "sorbitol_esters",
       "categories": ["esters"]
+    },
+    {
+      "name": "Caprylic Capric Triglyceride",
+      "id": "caprylic_capric_triglyceride",
+      "categories": ["esters"],
+      "synonyms": ["caprylic triglyceride", "capric triglyceride"],
+      "references": [
+        {
+          "id": "25",
+          "notes": "Capric / Caprylic triglycerides' ability to penetrate (soak into) hair hasn't been researched, but is likely given the oil's chemistry"
+        },
+        {
+          "id": "26"
+        }
+      ]
     }
   ]
 }

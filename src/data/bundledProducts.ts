@@ -698,7 +698,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 91,
-          "low": 8
+          "low": 17
         }
       },
       "cost_rating": "4"
@@ -1109,7 +1109,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 86,
-          "low": 34
+          "low": 43
         }
       },
       "cost_rating": "1"
@@ -1250,7 +1250,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 78,
-          "low": 62
+          "low": 87
         }
       },
       "cost_rating": "5"
@@ -1332,7 +1332,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 6,
           "film_forming_humectants_number": 4,
-          "emollients_number": 17,
+          "emollients_number": 18,
           "simple_humectants": [
             "Glycerin",
             "Propanediol",
@@ -1361,6 +1361,7 @@ export const defaultProductDatabase: ProductDatabase = {
             "Unknown Oil",
             "Kokum Butter",
             "Marula Oil",
+            "Squalane",
             "Capryloyl Glycerin Sebacic Acid Copolymer",
             "Castor Oil",
             "Guar Hydroxypropyltrimonium Chloride",
@@ -1591,7 +1592,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 84,
-          "low": 44
+          "low": 63
         }
       }
     },
@@ -2823,14 +2824,14 @@ export const defaultProductDatabase: ProductDatabase = {
           ],
           "emollients": [
             "Copolymer",
-            "Unknown Oil",
+            "Citrus Aurantium Dulcis Peel Oil",
             "Caprylic Capric Triglyceride"
           ],
           "score": -78
         },
         "porosity": {
-          "high": 79,
-          "low": 4
+          "high": 60,
+          "low": 70
         }
       },
       "cost_rating": "5"
@@ -3384,7 +3385,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 79,
-          "low": 8
+          "low": 21
         }
       },
       "cost_rating": "3"
@@ -3624,15 +3625,17 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 0,
           "film_forming_humectants_number": 0,
-          "emollients_number": 0,
+          "emollients_number": 1,
           "simple_humectants": [],
           "film_forming_humectants": [],
-          "emollients": [],
-          "score": 0
+          "emollients": [
+            "Squalane"
+          ],
+          "score": -76
         },
         "porosity": {
-          "high": 50,
-          "low": 50
+          "high": 100,
+          "low": 27
         }
       }
     },
@@ -3673,7 +3676,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 100,
-          "low": 0
+          "low": 27
         }
       }
     },
@@ -4795,7 +4798,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 11,
           "film_forming_humectants_number": 9,
-          "emollients_number": 0,
+          "emollients_number": 1,
           "simple_humectants": [
             "Glucose",
             "Fructose",
@@ -4820,12 +4823,14 @@ export const defaultProductDatabase: ProductDatabase = {
             "Phenylalanine",
             "Glutamic Acid"
           ],
-          "emollients": [],
-          "score": -83
+          "emollients": [
+            "Squalane"
+          ],
+          "score": -82
         },
         "porosity": {
-          "high": 92,
-          "low": 100
+          "high": 95,
+          "low": 89
         }
       }
     },
