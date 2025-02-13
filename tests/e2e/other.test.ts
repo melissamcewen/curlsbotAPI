@@ -10,7 +10,7 @@ import {
 /* THESE ARE PRODUCTION TESTS USE THE DATA IN src/data/bundledData.ts */
 
 const list =
-  'some essential oil';
+  'some essential oil, sulfated castor oil';
 
 describe('Handling of other ingredients under the default system', () => {
   const analyzer = new Analyzer({
@@ -24,7 +24,8 @@ describe('Handling of other ingredients under the default system', () => {
 
   it('should normalize the list', () => {
     expect(result.ingredients.map((i) => i.normalized)).toEqual([
-      'some essential oil'
+      'some essential oil',
+      'sulfated castor oil',
     ]);
   });
 
@@ -37,7 +38,13 @@ describe('Handling of other ingredients under the default system', () => {
         status: 'ok',
         reason: undefined,
       },
-
+      {
+        normalized: 'sulfated castor oil',
+        ingredientId: 'sulfated_castor_oil',
+        category: 'light_oils',
+        status: 'ok',
+        reason: undefined,
+      },
     ];
 
     expectedResults.forEach((expected) => {

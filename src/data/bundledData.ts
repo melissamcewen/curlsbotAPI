@@ -1951,6 +1951,26 @@ export const defaultDatabase: IngredientDatabase = {
       "status": "ok",
       "group": "oils"
     },
+    "sulfated_castor_oil": {
+      "name": "Sulfated Castor Oil",
+      "id": "sulfated_castor_oil",
+      "categories": [
+        "light_oils"
+      ],
+      "synonyms": [
+        "turkey red oil"
+      ],
+      "description": "A unique castor oil that has undergone a process known as 'sulfation', which makes it more water soluble than regular castor oil.",
+      "references": [
+        {
+          "url": "https://www.fromnaturewithlove.com/SOAP/product.asp?product_id=OILTURK70US904",
+          "title": "Turkey Red Oil (Sulfated Castor Oil), 70%",
+          "type": "industry"
+        }
+      ],
+      "status": "warning",
+      "group": "oils"
+    },
     "aminomethyl_propanol": {
       "name": "Aminomethyl Propanol",
       "id": "aminomethyl_propanol",
@@ -4794,7 +4814,8 @@ export const defaultDatabase: IngredientDatabase = {
         "magnesium",
         "behentrimonium",
         "methosulfate",
-        "thiosulfate"
+        "thiosulfate",
+        "sulfated"
       ]
     },
     "silicones": {
@@ -4886,7 +4907,6 @@ export const defaultSystems: System[] = [
       "drying_alcohol",
       "caution_silicones",
       "no_waxes",
-      "paraben_caution",
       "soap_free",
       "no_astringents",
       "no_water_insoluble_silicones",

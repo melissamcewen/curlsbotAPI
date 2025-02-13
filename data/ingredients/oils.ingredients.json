@@ -412,7 +412,7 @@
         }
       ]
     },
-   
+
     {
       "name": "Babbasu Oil",
       "id": "babbasu_oil",
@@ -560,6 +560,22 @@
       "id": "citrus_aurantium_dulcis_peel_oil",
       "categories": [
         "essential_oils"
+      ]
+    },
+    {
+      "name": "Sulfated Castor Oil",
+      "id": "sulfated_castor_oil",
+      "categories": [
+        "light_oils"
+      ],
+      "synonyms": [
+        "turkey red oil"
+      ],
+      "description": "A unique castor oil that has undergone a process known as 'sulfation', which makes it more water soluble than regular castor oil.",
+      "references": [
+        {
+          "id": "71"
+        }
       ]
     }
   ]

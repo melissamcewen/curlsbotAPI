@@ -732,7 +732,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 1,
           "film_forming_humectants_number": 3,
-          "emollients_number": 10,
+          "emollients_number": 9,
           "simple_humectants": [
             "Glycerin"
           ],
@@ -743,7 +743,6 @@ export const defaultProductDatabase: ProductDatabase = {
           ],
           "emollients": [
             "Cetearyl Alcohol",
-            "Caprylic Capric Triglyceride",
             "Behentrimonium Methosulfate",
             "Coconut Oil",
             "Rice bran oil",
@@ -1400,7 +1399,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 3,
           "film_forming_humectants_number": 0,
-          "emollients_number": 7,
+          "emollients_number": 6,
           "simple_humectants": [
             "Propylene Glycol",
             "Caprylyl Glycol",
@@ -1413,8 +1412,7 @@ export const defaultProductDatabase: ProductDatabase = {
             "Cetearyl Alcohol",
             "Coconut Oil",
             "Castor Oil",
-            "Castor Oil",
-            "Caprylic Capric Triglyceride"
+            "Castor Oil"
           ],
           "score": -68
         },
@@ -1729,7 +1727,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 4,
           "film_forming_humectants_number": 3,
-          "emollients_number": 10,
+          "emollients_number": 9,
           "simple_humectants": [
             "Propanediol",
             "Glycerin",
@@ -1745,7 +1743,6 @@ export const defaultProductDatabase: ProductDatabase = {
             "Cetearyl Alcohol",
             "Unknown Oil",
             "Polyvinylpyrrolidone",
-            "Caprylic Capric Triglyceride",
             "Butyrospermum Parkii Shea Butter",
             "VP VA copolymer",
             "Ceteareth-20",
@@ -1753,10 +1750,10 @@ export const defaultProductDatabase: ProductDatabase = {
             "Polyacrylate Crosspolymer-6",
             "Benzyl Alcohol"
           ],
-          "score": -67
+          "score": -66
         },
         "porosity": {
-          "high": 100,
+          "high": 95,
           "low": 0
         }
       }
@@ -1789,7 +1786,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 2,
           "film_forming_humectants_number": 1,
-          "emollients_number": 6,
+          "emollients_number": 5,
           "simple_humectants": [
             "Glycerin",
             "Propanediol"
@@ -1798,14 +1795,13 @@ export const defaultProductDatabase: ProductDatabase = {
             "Unknown Protein"
           ],
           "emollients": [
-            "Caprylic Capric Triglyceride",
             "Cetearyl Alcohol",
             "Cetrimonium Chloride",
             "Butyrospermum Parkii Shea Butter",
             "Rice bran oil",
             "Unknown Oil"
           ],
-          "score": -59
+          "score": -53
         },
         "porosity": {
           "high": 100,
@@ -2814,7 +2810,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 2,
           "film_forming_humectants_number": 1,
-          "emollients_number": 3,
+          "emollients_number": 2,
           "simple_humectants": [
             "Glycerin",
             "Honey"
@@ -2824,14 +2820,13 @@ export const defaultProductDatabase: ProductDatabase = {
           ],
           "emollients": [
             "Copolymer",
-            "Citrus Aurantium Dulcis Peel Oil",
-            "Caprylic Capric Triglyceride"
+            "Citrus Aurantium Dulcis Peel Oil"
           ],
-          "score": -78
+          "score": -79
         },
         "porosity": {
-          "high": 60,
-          "low": 70
+          "high": 49,
+          "low": 100
         }
       },
       "cost_rating": "5"
@@ -3287,7 +3282,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 2,
           "film_forming_humectants_number": 1,
-          "emollients_number": 18,
+          "emollients_number": 17,
           "simple_humectants": [
             "Glycerin",
             "Honey"
@@ -3297,7 +3292,6 @@ export const defaultProductDatabase: ProductDatabase = {
           ],
           "emollients": [
             "Cetearyl Alcohol",
-            "Caprylic Capric Triglyceride",
             "Unknown Oil",
             "Unknown Oil",
             "Unknown Oil",
