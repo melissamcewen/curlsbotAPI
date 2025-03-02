@@ -288,7 +288,7 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -29
         },
         "porosity": {
-          "high": 67,
+          "high": 89,
           "low": 85
         }
       },
@@ -336,7 +336,7 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -10
         },
         "porosity": {
-          "high": 52,
+          "high": 65,
           "low": 100
         }
       },
@@ -459,7 +459,7 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -59
         },
         "porosity": {
-          "high": 65,
+          "high": 88,
           "low": 0
         }
       },
@@ -516,7 +516,7 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -88
         },
         "porosity": {
-          "high": 28,
+          "high": 36,
           "low": 23
         }
       },
@@ -574,7 +574,7 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -70
         },
         "porosity": {
-          "high": 56,
+          "high": 66,
           "low": 0
         }
       },
@@ -636,7 +636,7 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -69
         },
         "porosity": {
-          "high": 52,
+          "high": 76,
           "low": 15
         }
       },
@@ -697,7 +697,7 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -76
         },
         "porosity": {
-          "high": 51,
+          "high": 75,
           "low": 52
         }
       },
@@ -755,7 +755,7 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -75
         },
         "porosity": {
-          "high": 62,
+          "high": 81,
           "low": 0
         }
       },
@@ -819,7 +819,7 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -69
         },
         "porosity": {
-          "high": 62,
+          "high": 98,
           "low": 0
         }
       },
@@ -871,7 +871,7 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -72
         },
         "porosity": {
-          "high": 70,
+          "high": 100,
           "low": 0
         }
       },
@@ -938,7 +938,7 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -77
         },
         "porosity": {
-          "high": 70,
+          "high": 100,
           "low": 0
         }
       },
@@ -994,7 +994,7 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -60
         },
         "porosity": {
-          "high": 65,
+          "high": 95,
           "low": 0
         }
       },
@@ -1053,7 +1053,7 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -74
         },
         "porosity": {
-          "high": 61,
+          "high": 94,
           "low": 0
         }
       },
@@ -1107,7 +1107,7 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -58
         },
         "porosity": {
-          "high": 82,
+          "high": 100,
           "low": 58
         }
       },
@@ -1154,7 +1154,7 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -76
         },
         "porosity": {
-          "high": 81,
+          "high": 100,
           "low": 100
         }
       },
@@ -1248,7 +1248,7 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -73
         },
         "porosity": {
-          "high": 61,
+          "high": 86,
           "low": 71
         }
       },
@@ -1300,7 +1300,7 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -52
         },
         "porosity": {
-          "high": 80,
+          "high": 100,
           "low": 81
         }
       },
@@ -1369,7 +1369,7 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -64
         },
         "porosity": {
-          "high": 61,
+          "high": 88,
           "low": 0
         }
       }
@@ -1417,7 +1417,7 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -68
         },
         "porosity": {
-          "high": 78,
+          "high": 100,
           "low": 0
         }
       },
@@ -1481,7 +1481,7 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -69
         },
         "porosity": {
-          "high": 52,
+          "high": 76,
           "low": 15
         }
       },
@@ -1537,7 +1537,7 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -73
         },
         "porosity": {
-          "high": 64,
+          "high": 96,
           "low": 0
         }
       }
@@ -1589,7 +1589,7 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -59
         },
         "porosity": {
-          "high": 71,
+          "high": 93,
           "low": 55
         }
       }
@@ -1804,7 +1804,7 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -53
         },
         "porosity": {
-          "high": 68,
+          "high": 91,
           "low": 2
         }
       },
@@ -1863,7 +1863,7 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -60
         },
         "porosity": {
-          "high": 65,
+          "high": 100,
           "low": 0
         }
       },
@@ -1919,7 +1919,7 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -72
         },
         "porosity": {
-          "high": 73,
+          "high": 100,
           "low": 20
         }
       },
@@ -2097,7 +2097,7 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -89
         },
         "porosity": {
-          "high": 66,
+          "high": 100,
           "low": 0
         }
       }
@@ -2150,7 +2150,7 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -80
         },
         "porosity": {
-          "high": 59,
+          "high": 91,
           "low": 0
         }
       },
@@ -2213,7 +2213,7 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -76
         },
         "porosity": {
-          "high": 60,
+          "high": 93,
           "low": 0
         }
       },
@@ -2283,7 +2283,7 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -61
         },
         "porosity": {
-          "high": 63,
+          "high": 100,
           "low": 0
         }
       }
@@ -2447,7 +2447,7 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -75
         },
         "porosity": {
-          "high": 48,
+          "high": 63,
           "low": 0
         }
       },
@@ -2717,7 +2717,7 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -60
         },
         "porosity": {
-          "high": 63,
+          "high": 100,
           "low": 64
         }
       },
@@ -2772,7 +2772,7 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -79
         },
         "porosity": {
-          "high": 54,
+          "high": 88,
           "low": 21
         }
       },
@@ -2936,7 +2936,7 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -71
         },
         "porosity": {
-          "high": 47,
+          "high": 80,
           "low": 4
         }
       }
@@ -3378,7 +3378,7 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -59
         },
         "porosity": {
-          "high": 49,
+          "high": 79,
           "low": 42
         }
       },
@@ -3770,7 +3770,7 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -65
         },
         "porosity": {
-          "high": 60,
+          "high": 78,
           "low": 32
         }
       },
@@ -3981,7 +3981,7 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -82
         },
         "porosity": {
-          "high": 43,
+          "high": 49,
           "low": 72
         }
       },
@@ -4041,7 +4041,7 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -59
         },
         "porosity": {
-          "high": 57,
+          "high": 71,
           "low": 0
         }
       },
@@ -4093,7 +4093,7 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -78
         },
         "porosity": {
-          "high": 37,
+          "high": 46,
           "low": 100
         }
       },
@@ -4149,7 +4149,7 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -82
         },
         "porosity": {
-          "high": 52,
+          "high": 72,
           "low": 0
         }
       },
@@ -4206,7 +4206,7 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -71
         },
         "porosity": {
-          "high": 51,
+          "high": 61,
           "low": 0
         }
       },
@@ -4257,7 +4257,7 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -81
         },
         "porosity": {
-          "high": 63,
+          "high": 85,
           "low": 49
         }
       },
@@ -4311,7 +4311,7 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -50
         },
         "porosity": {
-          "high": 60,
+          "high": 74,
           "low": 25
         }
       },
@@ -4370,7 +4370,7 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -47
         },
         "porosity": {
-          "high": 54,
+          "high": 66,
           "low": 23
         }
       }
@@ -4425,7 +4425,7 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -15
         },
         "porosity": {
-          "high": 47,
+          "high": 68,
           "low": 100
         }
       }
@@ -4706,7 +4706,7 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -82
         },
         "porosity": {
-          "high": 90,
+          "high": 100,
           "low": 69
         }
       }
