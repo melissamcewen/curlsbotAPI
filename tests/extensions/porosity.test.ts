@@ -46,7 +46,7 @@ describe('porosity scoring', () => {
   });
 
   describe('neutral products', () => {
-    const ingredients = 'water, aloe vera juice, citric acid, phenoxyethanol';
+    const ingredients = 'water, citric acid, phenoxyethanol';
 
     const analysis = analyzer.analyze(ingredients);
     const result = porosity(analysis);
@@ -55,9 +55,9 @@ describe('porosity scoring', () => {
       expect(result.low).toBeGreaterThan(80);
     });
 
-    it('should score products with mostly neutral ingredients poorly for high porosity', () => {
+    it('should score products with mostly neutral ingredients only ok for high porosity', () => {
       // Should score low for high porosity
-      expect(result.high).toBeLessThan(40);
+      expect(result.high).toBeLessThan(75);
     });
   });
 
@@ -152,6 +152,16 @@ describe('porosity scoring', () => {
     const result = porosity(analysis);
     it('should score leave-in conditioner well for high porosity', () => {
       expect(result.high).toBeGreaterThan(80);
+    });
+  });
+
+  describe('Curl Defining Styling Souffle', () => {
+    const ingredients =
+      'water aqua eau, glycerin, babassu oil polyglyceryl-4 esters, sorbitol, chondrus crispus carrageenan, aloe barbadensis leaf juice, butyrospermum parkii shea butter, persea gratissima avocado oil, helianthus annuus sunflower seed oil, linum usitatissimum linseed seed extract, ocimum basilicum basil leaf extract, piper nigrum black pepper seed extract, rosmarinus officinalis rosemary leaf extract, salvia officinalis sage leaf extract, selaginella lepidophylla resurrection flower extract, carapa guaianensis andiroba seed oil, glyceryl caprylate, glyceryl undecylenate, disodium edta, citric acid, potassium sorbate, sodium benzoate, fragrance parfum, limonene, linalool';
+    const analysis = analyzer.analyze(ingredients);
+    const result = porosity(analysis);
+    it('should score styling souffle well for high porosity', () => {
+      expect(result.high).toBeGreaterThan(70);
     });
   });
 });

@@ -172,6 +172,13 @@
     {
       "name": "Flaxseed Extract",
       "id": "flaxseed_extract",
+      "synonyms": ["linum usitatissimum", "linseed"],
+      "categories": ["film_forming_humectants"]
+    },
+    {
+      "name": "Carrageenan",
+      "id": "carrageenan",
+      "synonyms": ["chondrus crispus"],
       "categories": ["film_forming_humectants"]
     },
     {

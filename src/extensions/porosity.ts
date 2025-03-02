@@ -60,12 +60,12 @@ export function porosity(analysis: AnalysisResult): PorosityAnalysis {
     medium_oils: { high: 1, low: -7.8 },
     light_oils: { high: 0, low: -.5 },
     emollients: { high: 5, low: 0 },
-    mild_surfactants: { high: 4, low: 0 },
+    mild_surfactants: { high: 6, low: 0 },
     conditioning_agents: { high: 22, low: 2 },
     non_water_soluble_waxes: { high: 0, low: -7.0 },
     water_soluble_waxes: { high: 0, low: -2.0 },
     humectants: { high: 2, low: 0 },
-    film_forming_agents: { high: 0, low: 2 },
+    film_forming_agents: { high: 7, low: 2 },
   };
 
   // Add specific ingredient scoring
@@ -124,7 +124,7 @@ export function porosity(analysis: AnalysisResult): PorosityAnalysis {
       if (!affectsScoring) {
         // For low porosity, neutral ingredients are good (they're not heavy/oily)
         // For high porosity, neutral ingredients are just okay
-        const highNeutralScore = 0.0001;
+        const highNeutralScore = 2.0001;
         const lowNeutralScore = 2.6;
 
         highPorosityWeightedSum += highNeutralScore * positionWeight;

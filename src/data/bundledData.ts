@@ -2274,6 +2274,22 @@ export const defaultDatabase: IngredientDatabase = {
     "flaxseed_extract": {
       "name": "Flaxseed Extract",
       "id": "flaxseed_extract",
+      "synonyms": [
+        "linum usitatissimum",
+        "linseed"
+      ],
+      "categories": [
+        "film_forming_humectants"
+      ],
+      "status": "ok",
+      "group": "humectants"
+    },
+    "carrageenan": {
+      "name": "Carrageenan",
+      "id": "carrageenan",
+      "synonyms": [
+        "chondrus crispus"
+      ],
       "categories": [
         "film_forming_humectants"
       ],
