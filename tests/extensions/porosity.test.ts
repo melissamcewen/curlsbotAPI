@@ -12,9 +12,9 @@ describe('porosity scoring', () => {
     it('should score coconut oil very poorly for low porosity', () => {
       expect(result.low).toBeLessThan(30);
     });
-    it('should score coconut oil very well for high porosity', () => {
+    it('should score coconut oil ok for high porosity', () => {
       // Coconut oil should score very well for high porosity
-      expect(result.high).toBeGreaterThan(90);
+      expect(result.high).toBeGreaterThan(45);
     });
   });
 
@@ -27,9 +27,9 @@ describe('porosity scoring', () => {
       // Heavy products should score poorly for low porosity
       expect(result.low).toBeLessThan(50);
     });
-    it('should score heavy products well for high porosity', () => {
+    it('should score heavy products without a lot of good conditioners not that well for high porosity', () => {
       // But can still be good for high porosity
-      expect(result.high).toBeGreaterThan(70);
+      expect(result.high).toBeLessThan(70);
     });
   });
 
@@ -86,8 +86,8 @@ describe('porosity scoring', () => {
       'water, sodium c14-16 olefin sulfonate, cocamidopropyl betaine, propanediol, glycol distearate, phenoxyethanol, butyrospermum parkii shea butter, alanine, arginine, aspartic acid, glycine, histidine, isoleucine, phenylalanine, proline, serine, sodium pca, pca, sodium lactate, threonine, valine, citric acid, disodium edta, glycine soja soybean oil, glycine soja soybean sterols, glycolipids, guar hydroxypropyltrimonium chloride, hydroxyethylcellulose, hydroxyacetophenone, lauryl lactyl lactate, peg-150 distearate, phospholipids, ricinus communis castor seed oil, fragrance';
     const analysis = analyzer.analyze(ingredients);
     const result = porosity(analysis);
-    it('should score shampoo well for low porosity', () => {
-      expect(result.low).toBeGreaterThan(80);
+    it('should score shampoo ok for low porosity', () => {
+      expect(result.low).toBeGreaterThan(70);
     });
   });
 
@@ -108,6 +108,30 @@ describe('porosity scoring', () => {
     const result = porosity(analysis);
     it('should score gel decently for low porosity', () => {
       expect(result.low).toBeGreaterThan(75);
+    });
+  });
+
+  describe('Blue Magic', () => {
+    const ingredients =
+      'Petrolatum, Lanolin, Lecithin, Mineral Oil/Paraffinum Liquidum, Amyl Cinnamyl Cinnamyl Alcohol, Limonene, Linalool, Fragrance/Parfum, Green 6/CI 61565, Violet 2/CI 60725.';
+    const analysis = analyzer.analyze(ingredients);
+    const result = porosity(analysis);
+    it('should score gel poorly for low porosity', () => {
+      expect(result.low).toBeLessThan(30);
+    });
+  });
+
+  describe('Tony & Guy Volume Addiction Conditioner', () => {
+    const ingredients =
+      'Aqua (Water), Cetearyl Alcohol, Dimethicone, Stearamidopropyl Dimethylamine, Behentrimonium Chloride, Parfum (Fragrance), Dipropylene Glycol, Lactic Acid, Sodium Chloride, Amodimethicone, Disodium EDTA, PEG-150 Distearate, PEG-7 Propylheptyl Ether, Cetrimonium Chloride, DMDM Hydantoin, Phenoxyethanol, Methylchloroisothiazolinone, Methylisothiazolinone, Magnesium Nitrate, Magnesium Chloride, Citronellol, Geraniol, Limonene, Linalool';
+    const analysis = analyzer.analyze(ingredients);
+    const result = porosity(analysis);
+    it('should score conditioner well for high porosity', () => {
+      expect(result.high).toBeGreaterThan(80);
+    });
+
+    it('should score conditioner well for low porosity', () => {
+      expect(result.low).toBeGreaterThan(80);
     });
   });
 });

@@ -1,95 +1,80 @@
 import type { AnalysisResult, PorosityAnalysis } from '../types';
 
-type HighPorosityCategories = {
+type PorosityCategories = {
   alcohols: string[];
   anionic_detergents: string[];
-  emollients: string[];
-  mild_surfactants: string[];
-  conditioning_agents: string[];
-  waxes: string[];
-};
-
-type LowPorosityCategories = {
   heavy_oils: string[];
   medium_oils: string[];
   light_oils: string[];
-  conditioning_agents: string[];
   emollients: string[];
-  anionic_detergents: string[];
+  mild_surfactants: string[];
+  conditioning_agents: string[];
   non_water_soluble_waxes: string[];
   water_soluble_waxes: string[];
+  humectants: string[];
+  film_forming_agents: string[];
 };
 
-type HighPorosityScoring = {
-  [K in keyof HighPorosityCategories]: number;
+// Add specific ingredient scoring
+type SpecificIngredientScoring = {
+  [key: string]: {
+    high: number;
+    low: number;
+  };
 };
 
-type LowPorosityScoring = {
-  [K in keyof LowPorosityCategories]: number;
+type PorosityScoring = {
+  [K in keyof PorosityCategories]: {
+    high: number;
+    low: number;
+  };
 };
-
-
 
 export function porosity(analysis: AnalysisResult): PorosityAnalysis {
-  const definitions = {
-    high: {
-      //not as good for high porosity
-      alcohols: ['drying_alcohols', 'astringents'],
-      anionic_detergents: ['sulfates', 'other_anionic_surfactants'],
-      //good for high porosity
-      heavy_oils: ['heavy_oils'],
-      medium_oils: ['medium_oils', 'other_oils'],
-      light_oils: ['light_oils'],
-      emollients: ['emollient_alcohols', 'esters'],
-      mild_surfactants: ['mild_surfactants'],
-      conditioning_agents: [
-        'conditioning_agents',
-        'polyquats',
-        'film_forming_agents',
-        'evaporative_silicones',
-        'water_soluble_silicones',
-        'non_water_soluble_silicones',
-        'film_forming_humectants',
-        'simple_humectants',
-        'proteins',
-      ],
-      waxes: ['non_water_soluble_waxes', 'water_soluble_waxes'],
-    } as HighPorosityCategories,
-    low: {
-      heavy_oils: ['heavy_oils'],
-      non_water_soluble_waxes: ['non_water_soluble_waxes'],
-      water_soluble_waxes: ['water_soluble_waxes'],
-      medium_oils: ['medium_oils', 'other_oils'],
-      light_oils: ['light_oils'],
-      conditioning_agents: ['polyquats', 'non_water_soluble_silicones'],
-      emollients: ['emollient_alcohols', 'other_emollients', 'esters'],
-      anionic_detergents: ['sulfates', 'other_anionic_surfactants'],
-    } as LowPorosityCategories,
+  const definitions: PorosityCategories = {
+    alcohols: ['drying_alcohols', 'astringents'],
+    anionic_detergents: ['sulfates', 'other_anionic_surfactants'],
+    heavy_oils: ['heavy_oils'],
+    medium_oils: ['medium_oils', 'other_oils'],
+    light_oils: ['light_oils'],
+    emollients: ['emollient_alcohols', 'esters', 'other_emollients'],
+    mild_surfactants: ['mild_surfactants'],
+    conditioning_agents: ['conditioning_agents', 'polyquats'],
+    non_water_soluble_waxes: ['non_water_soluble_waxes'],
+    water_soluble_waxes: ['water_soluble_waxes'],
+    humectants: ['simple_humectants', 'proteins'],
+    film_forming_agents: [
+      'film_forming_agents',
+      'evaporative_silicones',
+      'water_soluble_silicones',
+      'non_water_soluble_silicones',
+      'film_forming_humectants',
+    ],
   };
 
-  // Scoring weights for each category (positive means good, negative means bad)
-  const scoring = {
-    high: {
-      alcohols: -2,
-      anionic_detergents: -2,
-      heavy_oils: 10,
-      medium_oils: 8,
-      light_oils: 6,
-      emollients: 5,
-      mild_surfactants: 4,
-      conditioning_agents: 4,
-      waxes: 6,
-    } as HighPorosityScoring,
-    low: {
-      heavy_oils: -8,
-      non_water_soluble_waxes: -7.0,
-      water_soluble_waxes: -2.0,
-      medium_oils: -7,
-      light_oils: 0,
-      conditioning_agents: 0,
-      emollients: 0,
-      anionic_detergents: 20,
-    } as LowPorosityScoring,
+  // Scoring weights for each category
+  const scoring: PorosityScoring = {
+    alcohols: { high: 0, low: 0 },
+    anionic_detergents: { high: 0, low: 20 },
+    heavy_oils: { high: 2, low: -8 },
+    medium_oils: { high: 1, low: -7.8 },
+    light_oils: { high: 0, low: -.5 },
+    emollients: { high: 5, low: 0 },
+    mild_surfactants: { high: 4, low: 0 },
+    conditioning_agents: { high: 10, low: 2 },
+    non_water_soluble_waxes: { high: 0, low: -7.0 },
+    water_soluble_waxes: { high: 0, low: -2.0 },
+    humectants: { high: 2, low: 0 },
+    film_forming_agents: { high: 0, low: 2 },
+  };
+
+  // Add specific ingredient scoring
+  const specificIngredientScoring: SpecificIngredientScoring = {
+    amodimethicone: {
+      high: 15, // Very good for high porosity
+      low: 0, // Decent for low porosity
+    },
+    // Add more specific ingredients as needed
   };
 
   const totalIngredients = analysis.ingredients.length;
@@ -107,69 +92,48 @@ export function porosity(analysis: AnalysisResult): PorosityAnalysis {
       const percentagePosition = 1 - index / totalIngredients;
       const positionWeight = 0.2 + 0.8 * percentagePosition;
 
+      // Check for specific ingredient scoring first
+      const specificScoring =
+        specificIngredientScoring[ingredient.ingredient.id];
+      if (specificScoring) {
+        highPorosityWeightedSum += specificScoring.high * positionWeight;
+        lowPorosityWeightedSum += specificScoring.low * positionWeight;
+        totalHighWeight += positionWeight;
+        totalLowWeight += positionWeight;
+        return; // Skip category-based scoring for this ingredient
+      }
 
+      // Track if ingredient affects either porosity type
+      let affectsScoring = false;
 
-      // Track if ingredient affects each porosity type
-      let affectsHigh = false;
-      let affectsLow = false;
-
-      // Check categories for high porosity
-      (
-        Object.entries(definitions.high) as [
-          keyof HighPorosityCategories,
-          string[],
-        ][]
-      ).forEach(([category, categoryIngredients]) => {
+      // Check categories for both porosity types
+      Object.entries(definitions).forEach(([category, categoryIngredients]) => {
         if (
           ingredient.ingredient!.categories.some((cat) =>
             categoryIngredients.includes(cat),
           )
         ) {
-          const score = scoring.high[category] * positionWeight;
-          highPorosityWeightedSum += score;
-          affectsHigh = true;
+          const categoryScoring = scoring[category as keyof PorosityCategories];
+          highPorosityWeightedSum += categoryScoring.high * positionWeight;
+          lowPorosityWeightedSum += categoryScoring.low * positionWeight;
+          affectsScoring = true;
         }
       });
 
-      // Check categories for low porosity
-      (
-        Object.entries(definitions.low) as [
-          keyof LowPorosityCategories,
-          string[],
-        ][]
-      ).forEach(([category, categoryIngredients]) => {
-        if (
-          ingredient.ingredient!.categories.some((cat) =>
-            categoryIngredients.includes(cat),
-          )
-        ) {
-          const score = scoring.low[category] * positionWeight;
-          lowPorosityWeightedSum += score;
-          affectsLow = true;
-        }
-      });
-
-      // If ingredient doesn't affect either porosity type, consider it neutral
-      if (!affectsHigh && !affectsLow) {
+      // If ingredient doesn't affect scoring, consider it neutral
+      if (!affectsScoring) {
         // For low porosity, neutral ingredients are good (they're not heavy/oily)
         // For high porosity, neutral ingredients are just okay
         const highNeutralScore = 0.0001;
-        const lowNeutralScore = 2.4;
+        const lowNeutralScore = 2.6;
 
-        const highScore = highNeutralScore * positionWeight;
-        const lowScore = lowNeutralScore * positionWeight;
-
-        highPorosityWeightedSum += highScore;
-        lowPorosityWeightedSum += lowScore;
-
-
-        // Count neutral ingredients in both totals
+        highPorosityWeightedSum += highNeutralScore * positionWeight;
+        lowPorosityWeightedSum += lowNeutralScore * positionWeight;
         totalHighWeight += positionWeight;
         totalLowWeight += positionWeight;
       } else {
-        // Add position weight to totals only if the ingredient affected that porosity type
-        if (affectsHigh) totalHighWeight += positionWeight;
-        if (affectsLow) totalLowWeight += positionWeight;
+        totalHighWeight += positionWeight;
+        totalLowWeight += positionWeight;
       }
     }
   });
@@ -183,7 +147,6 @@ export function porosity(analysis: AnalysisResult): PorosityAnalysis {
     if (totalWeight === 0) return 50;
 
     const avgScore = weightedSum / totalWeight;
-
 
     // Adjust base score and multiplier
     const baseScore = isLowPorosity ? 27 : 0;

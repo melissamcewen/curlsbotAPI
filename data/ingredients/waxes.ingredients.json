@@ -78,6 +78,18 @@
       "id": "peg_8_beeswax",
       "synonyms": ["polyethylene glycol-8 beeswax", "ethoxylated beeswax"],
       "categories": ["water_soluble_waxes"]
+    },
+    {
+      "name": "Petrolatum",
+      "id": "petrolatum",
+      "synonyms": [
+        "petroleum jelly",
+        "petrolatum",
+        "paraffin jelly",
+        "mineral jelly"
+      ],
+      "categories": ["non_water_soluble_waxes"],
+      "description": "Not a true wax, but functionally acts like one.Forms an extremely water repellent barrier on your hair that isn't breathable. Very hard to remove, worse than silicones. Not recommended."
     }
   ]
 }

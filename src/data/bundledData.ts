@@ -1652,7 +1652,7 @@ export const defaultDatabase: IngredientDatabase = {
         "petroleum oil"
       ],
       "categories": [
-        "petroleum_oils"
+        "light_oils"
       ],
       "references": [
         {
@@ -1662,22 +1662,6 @@ export const defaultDatabase: IngredientDatabase = {
           "description": "Mineral oil is likely to coat the hair rather than soak in, based on its chemistry"
         }
       ],
-      "status": "warning",
-      "group": "oils"
-    },
-    "petrolatum": {
-      "name": "Petrolatum",
-      "id": "petrolatum",
-      "synonyms": [
-        "petroleum jelly",
-        "petrolatum",
-        "paraffin jelly",
-        "mineral jelly"
-      ],
-      "categories": [
-        "petroleum_oils"
-      ],
-      "description": "Forms an extremely water repellent barrier on your hair that isn't breathable. Very hard to remove, worse than silicones. Not recommended.",
       "status": "warning",
       "group": "oils"
     },
@@ -1968,7 +1952,7 @@ export const defaultDatabase: IngredientDatabase = {
           "type": "industry"
         }
       ],
-      "status": "warning",
+      "status": "ok",
       "group": "oils"
     },
     "aminomethyl_propanol": {
@@ -2224,7 +2208,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "parabens"
       ],
-      "status": "caution",
+      "status": "ok",
       "group": "preservatives"
     },
     "water": {
@@ -4528,6 +4512,22 @@ export const defaultDatabase: IngredientDatabase = {
         "water_soluble_waxes"
       ],
       "status": "ok",
+      "group": "waxes"
+    },
+    "petrolatum": {
+      "name": "Petrolatum",
+      "id": "petrolatum",
+      "synonyms": [
+        "petroleum jelly",
+        "petrolatum",
+        "paraffin jelly",
+        "mineral jelly"
+      ],
+      "categories": [
+        "non_water_soluble_waxes"
+      ],
+      "description": "Not a true wax, but functionally acts like one.Forms an extremely water repellent barrier on your hair that isn't breathable. Very hard to remove, worse than silicones. Not recommended.",
+      "status": "warning",
       "group": "waxes"
     }
   },

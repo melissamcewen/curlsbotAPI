@@ -322,7 +322,7 @@
         "petroleum oil"
       ],
       "categories": [
-        "petroleum_oils"
+        "light_oils"
       ],
       "references": [
         {
@@ -331,20 +331,7 @@
         }
       ]
     },
-    {
-      "name": "Petrolatum",
-      "id": "petrolatum",
-      "synonyms": [
-        "petroleum jelly",
-        "petrolatum",
-        "paraffin jelly",
-        "mineral jelly"
-      ],
-      "categories": [
-        "petroleum_oils"
-      ],
-      "description": "Forms an extremely water repellent barrier on your hair that isn't breathable. Very hard to remove, worse than silicones. Not recommended."
-    },
+   
     {
       "name": "Olive Oil",
       "id": "olive_oil",
