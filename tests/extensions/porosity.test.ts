@@ -144,4 +144,14 @@ describe('porosity scoring', () => {
       expect(result.high).toBeGreaterThan(80);
     });
   });
+
+  describe('Hydrate & Plump Leave-In Conditioner', () => {
+    const ingredients =
+      'water aqua eau, dicaprylyl carbonate, cetearyl alcohol, coco-caprylate caprate, ricinus communis castor seed oil, behentrimonium chloride, glycerin, panthenol, butyrospermum parkii shea butter, simmondsia chinensis jojoba seed oil, guar hydroxypropyltrimonium chloride, polyquaternium-10, olea europaea olive leaf extract, tilia tomentosa bud extract, arctium majus root extract, arnica montana flower extract, calendula officinalis flower extract, chamomilla recutita matricaria flower extract, citrus limon lemon peel extract, hedera helix ivy leaf extract, lamium album extract, nasturtium officinale extract, pinus sylvestris bud extract, rosmarinus officinalis rosemary leaf extract, salvia officinalis sage leaf extract, tropaeolum majus flower extract, isopropyl alcohol, pentylene glycol, tocopherol, maltodextrin, cyclodextrin, pvp, cyamopsis tetragonoloba guar gum, xanthan gum, maltodextrin vp copolymer, ethylhexylglycerin, fragrance parfum, citric acid, sodium gluconate, phytic acid, phenoxyethanol, potassium sorbate, sodium benzoate, hydroxycitronellal, citronellol';
+    const analysis = analyzer.analyze(ingredients);
+    const result = porosity(analysis);
+    it('should score leave-in conditioner well for high porosity', () => {
+      expect(result.high).toBeGreaterThan(80);
+    });
+  });
 });
