@@ -101,7 +101,7 @@ export function processCommaParentheses(ingredient_list: string): string {
  */
 export function splitBySeparators(text: string): string[] {
   return text
-    .split(/(?:[,\n\r|&]|\s+and\s+)/) // Split by comma, newline, carriage return, pipe, ampersand, or " and "
+    .split(/(?:[,|&]|\s+and\s+)/) // Split by comma, pipe, ampersand, or " and "
     .map(part => part.trim())
     .filter(part => part.length > 0); // Change Boolean to explicit length check
 }

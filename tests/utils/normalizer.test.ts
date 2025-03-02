@@ -211,15 +211,17 @@ describe('Normalizer', () => {
     });
 
     it('should handle line breaks and excess spaces', () => {
-      const input = 'Water,\nGlycerin,   Aloe\r\nCitric    Acid';
+      const input = `Water,
+      Glycerin,
+      cetearyl
+      alcohol`;
       const result = normalizer(input);
 
       expect(result.isValid).toBe(true);
       expect(result.ingredients).toEqual([
         'water',
         'glycerin',
-        'aloe',
-        'citric acid',
+        'cetearyl alcohol',
       ]);
     });
 

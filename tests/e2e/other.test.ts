@@ -9,8 +9,8 @@ import {
 
 /* THESE ARE PRODUCTION TESTS USE THE DATA IN src/data/bundledData.ts */
 
-const list =
-  'some essential oil, sulfated castor oil';
+const list = `some essential oil, sulfated castor oil, cetearyl
+alcohol`;
 
 describe('Handling of other ingredients under the default system', () => {
   const analyzer = new Analyzer({
@@ -26,6 +26,7 @@ describe('Handling of other ingredients under the default system', () => {
     expect(result.ingredients.map((i) => i.normalized)).toEqual([
       'some essential oil',
       'sulfated castor oil',
+      'cetearyl alcohol',
     ]);
   });
 
@@ -44,6 +45,12 @@ describe('Handling of other ingredients under the default system', () => {
         category: 'light_oils',
         status: 'ok',
         reason: undefined,
+      },
+      {
+        normalized: 'cetearyl alcohol',
+        ingredientId: 'cetearyl_alcohol',
+        category: 'emollient_alcohols',
+        status: 'ok',
       },
     ];
 
