@@ -61,7 +61,7 @@ export function porosity(analysis: AnalysisResult): PorosityAnalysis {
     light_oils: { high: 0, low: -.5 },
     emollients: { high: 5, low: 0 },
     mild_surfactants: { high: 4, low: 0 },
-    conditioning_agents: { high: 10, low: 2 },
+    conditioning_agents: { high: 20, low: 2 },
     non_water_soluble_waxes: { high: 0, low: -7.0 },
     water_soluble_waxes: { high: 0, low: -2.0 },
     humectants: { high: 2, low: 0 },

@@ -134,4 +134,14 @@ describe('porosity scoring', () => {
       expect(result.low).toBeGreaterThan(80);
     });
   });
+
+  describe('Ouidad Coil Infusion', () => {
+    const ingredients =
+      'aqua water eau, polyquaternium-11, polyquaternium-37, argania spinosa argan oil, ricinus communis castor seed oil, hydrolyzed wheat protein, aloe barbadensis leaf juice, polyquaternium-7, panthenol, sericin, ppg-3 benzyl ether myristate, glycerin, pvp, hydroxyethylcellulose, isoceteth-20, citric acid, behentrimonium chloride, cetrimonium chloride, guar hydroxypropyltrimonium chloride, hydroxypropyl bis-hydroxyethyldimonium chloride, disodium edta, caprylyl glycol, iodopropynyl butylcarbamate, phenoxyethanol, limonene, linalool, fragrance parfum';
+    const analysis = analyzer.analyze(ingredients);
+    const result = porosity(analysis);
+    it('should score gel well for high porosity', () => {
+      expect(result.high).toBeGreaterThan(80);
+    });
+  });
 });

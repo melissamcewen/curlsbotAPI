@@ -1662,7 +1662,7 @@ export const defaultDatabase: IngredientDatabase = {
           "description": "Mineral oil is likely to coat the hair rather than soak in, based on its chemistry"
         }
       ],
-      "status": "warning",
+      "status": "ok",
       "group": "oils"
     },
     "olive_oil": {
