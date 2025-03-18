@@ -3792,6 +3792,15 @@ export const defaultDatabase: IngredientDatabase = {
       "status": "ok",
       "group": "others"
     },
+    "isopropanolamine": {
+      "name": "Isopropanolamine",
+      "id": "isopropanolamine",
+      "categories": [
+        "other"
+      ],
+      "status": "caution",
+      "group": "others"
+    },
     "caprylic_capric_triglyceride": {
       "name": "Caprylic Capric Triglyceride",
       "id": "caprylic_capric_triglyceride",

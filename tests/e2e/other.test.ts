@@ -10,7 +10,7 @@ import {
 /* THESE ARE PRODUCTION TESTS USE THE DATA IN src/data/bundledData.ts */
 
 const list = `some essential oil, sulfated castor oil, cetearyl
-alcohol`;
+alcohol, Isopropanolamine`;
 
 describe('Handling of other ingredients under the default system', () => {
   const analyzer = new Analyzer({
@@ -27,6 +27,7 @@ describe('Handling of other ingredients under the default system', () => {
       'some essential oil',
       'sulfated castor oil',
       'cetearyl alcohol',
+      'isopropanolamine',
     ]);
   });
 
@@ -50,6 +51,12 @@ describe('Handling of other ingredients under the default system', () => {
         normalized: 'cetearyl alcohol',
         ingredientId: 'cetearyl_alcohol',
         category: 'emollient_alcohols',
+        status: 'ok',
+      },
+      {
+        normalized: 'isopropanolamine',
+        ingredientId: 'isopropanolamine',
+        category: 'other',
         status: 'ok',
       },
     ];

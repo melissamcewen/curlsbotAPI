@@ -1038,6 +1038,11 @@
       "categories": ["esters"]
     },
     {
+      "name": "Isopropanolamine",
+      "id": "isopropanolamine",
+      "categories": ["other"]
+    },
+    {
       "name": "Caprylic Capric Triglyceride",
       "id": "caprylic_capric_triglyceride",
       "categories": ["esters"],
