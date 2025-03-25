@@ -3798,7 +3798,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "other"
       ],
-      "status": "caution",
+      "status": "ok",
       "group": "others"
     },
     "caprylic_capric_triglyceride": {

@@ -206,6 +206,7 @@
         }
       ]
     },
+  
     {
       "name": "Big Energy Conditioner",
       "brand": "Curl Keeper",
@@ -217,6 +218,20 @@
         {
           "url": "https://curlkeeper.com/r?id=ms7prl",
           "retailer": "Curl Keeper"
+        }
+      ]
+    },
+    {
+      "name": "Super Smooth Cream Conditioner",
+      "brand": "Bounce Curl",
+      "product_categories": ["conditioners"],
+      "tags": ["featured"],
+      "cost": 2.8,
+      "ingredients_raw": "organic aloe barbadensis leaf juice, behentrimonium methosulfate, cetearyl alcohol, hybrid safflower oil, glycerin, stearamidopropyl dimethylamine, propanediol, panthenol pro-vitamin b5, polyquternium-10, nigella sativa virgin black cumin oil, tocopheryl acetate vitamin e, citrus nobilis mandarin orange peel oil, vanillin, lactic acid, caprylhydroxamic acid, anthemis nobilis chamomile flower extract, althaea officinalis marshmallow root extract, geranium maculatum oil, camellia sinensis green tea leaf extract, rosmarinus officinalis rosemary leaf extract, brassica oleracea italica broccoli seed oil, urtica dioica nettle extract, salvia officinalis sage extract, pogostemon cablin oil, equisetum arvense horsetail extract, caryocar brasiliense pequi oil, citrus aurantium bergamia bergamot fruit oil, anthemis nobilis flower oil, citrus paradisi grapefruit seed oil, lavandula angustifolia lavender oil, citrus aurantium dulcis orange seed oil, cocos nucifera coconut oil, boswellia carterii oil, caprylyl glycol",
+      "buy_links": [
+        {
+          "url": "https://glnk.io/x26q/curlsbot1a7",
+          "retailer": "Bounce Curl"
         }
       ]
     }

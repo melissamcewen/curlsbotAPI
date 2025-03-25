@@ -3,6 +3,66 @@ import type { ProductDatabase } from '../types';
 
 export const defaultProductDatabase: ProductDatabase = {
   "products": {
+    "volume_root_clips": {
+      "name": "Volume Root Clips",
+      "brand": "Bounce Curl",
+      "product_categories": [
+        "accessories"
+      ],
+      "tags": [
+        "style",
+        "featured"
+      ],
+      "description": "These clips are specially designed to help you create volume at the roots of your hair",
+      "buy_links": [
+        {
+          "url": "https://glnk.io/x26q/curlsbot3oe",
+          "retailer": "Bounce Curl"
+        }
+      ],
+      "id": "volume_root_clips",
+      "systems_excluded": []
+    },
+    "volume_edgelift_brush": {
+      "name": "Volume EdgeLift Brush",
+      "brand": "Bounce Curl",
+      "product_categories": [
+        "accessories"
+      ],
+      "tags": [
+        "style",
+        "featured"
+      ],
+      "description": "The Volume EdgeLift Brush is a unique tool that helps you create voluminous curls/waves",
+      "buy_links": [
+        {
+          "url": "https://glnk.io/x26q/curlsbot3l6",
+          "retailer": "Bounce Curl"
+        }
+      ],
+      "id": "volume_edgelift_brush",
+      "systems_excluded": []
+    },
+    "define_edgelift_brush": {
+      "name": "Define EdgeLift Brush",
+      "brand": "Bounce Curl",
+      "product_categories": [
+        "accessories"
+      ],
+      "tags": [
+        "style",
+        "featured"
+      ],
+      "description": "The Define EdgeLift Brush is a unique brush that helps define your curls/waves",
+      "buy_links": [
+        {
+          "url": "https://glnk.io/x26q/curlsbot6au",
+          "retailer": "Bounce Curl"
+        }
+      ],
+      "id": "define_edgelift_brush",
+      "systems_excluded": []
+    },
     "universal_diffuser": {
       "name": "Universal Diffuser",
       "product_categories": [
@@ -349,20 +409,17 @@ export const defaultProductDatabase: ProductDatabase = {
         "clarifying_shampoos"
       ],
       "tags": [
+        "low_porosity",
         "normal_porosity",
-        "high_porosity",
-        "featured"
+        "high_porosity"
       ],
       "ingredients_raw": "water, sodium lauroyl methyl isethionate, decyl glucoside, sodium cocoyl isethionate, disodium cocoamphodiacetate, propanediol, panthenol pro-vitamin b5, polyquaternium-10, hydroxypropyl methylcellulose, biotin, vanillin, hydrolyzed adansonia digitata baobab seed protein, nigella sativa virgin black cumin oil, stearamidopropyl dimethylamine, lactic acid, caprylhydroxamic acid, rosmarinus officinalis rosemary leaf extract, boswellia carterii oil, lactobacillus punica granatum fruit ferment extract, lactobacillus pumpkin ferment extract, argania spinosa kernel oil, cocos nucifera coconut oil, citrus aurantium bergamia bergamot fruit oil, anthemis nobilis flower oil, geranium maculatum oil, citrus paradisi grapefruit seed oil, lavandula angustifolia lavender oil, pogostemon cablin oil, citrus aurantium dulcis orange seed oil, citrus nobilis mandarin orange peel oil, caprylyl glycol",
       "buy_links": [
         {
-          "url": "https://amzn.to/3ZRY0xK",
-          "retailer": "Amazon"
+          "url": "https://glnk.io/x26q/curlsbot258",
+          "retailer": "Bounce Curl"
         }
       ],
-      "asin": "B08BB41Q3R",
-      "description": "This is a great choice for a gentle clarifying shampoo for high and medium porosity hair.",
-      "cost": 4,
       "id": "gentle_clarifying_shampoo",
       "systems_excluded": [],
       "status": "ok",
@@ -400,8 +457,7 @@ export const defaultProductDatabase: ProductDatabase = {
           "high": 70,
           "low": 0
         }
-      },
-      "cost_rating": "5"
+      }
     },
     "natural_detox_hair_mask": {
       "name": "Natural Detox Hair Mask",
@@ -1306,6 +1362,69 @@ export const defaultProductDatabase: ProductDatabase = {
       },
       "cost_rating": "5"
     },
+    "super_smooth_cream_conditioner": {
+      "name": "Super Smooth Cream Conditioner",
+      "brand": "Bounce Curl",
+      "product_categories": [
+        "conditioners"
+      ],
+      "tags": [
+        "featured"
+      ],
+      "cost": 2.8,
+      "ingredients_raw": "organic aloe barbadensis leaf juice, behentrimonium methosulfate, cetearyl alcohol, hybrid safflower oil, glycerin, stearamidopropyl dimethylamine, propanediol, panthenol pro-vitamin b5, polyquternium-10, nigella sativa virgin black cumin oil, tocopheryl acetate vitamin e, citrus nobilis mandarin orange peel oil, vanillin, lactic acid, caprylhydroxamic acid, anthemis nobilis chamomile flower extract, althaea officinalis marshmallow root extract, geranium maculatum oil, camellia sinensis green tea leaf extract, rosmarinus officinalis rosemary leaf extract, brassica oleracea italica broccoli seed oil, urtica dioica nettle extract, salvia officinalis sage extract, pogostemon cablin oil, equisetum arvense horsetail extract, caryocar brasiliense pequi oil, citrus aurantium bergamia bergamot fruit oil, anthemis nobilis flower oil, citrus paradisi grapefruit seed oil, lavandula angustifolia lavender oil, citrus aurantium dulcis orange seed oil, cocos nucifera coconut oil, boswellia carterii oil, caprylyl glycol",
+      "buy_links": [
+        {
+          "url": "https://glnk.io/x26q/curlsbot1a7",
+          "retailer": "Bounce Curl"
+        }
+      ],
+      "id": "super_smooth_cream_conditioner",
+      "systems_excluded": [],
+      "status": "ok",
+      "extensions": {
+        "frizzbot": {
+          "simple_humectants_number": 5,
+          "film_forming_humectants_number": 2,
+          "emollients_number": 16,
+          "simple_humectants": [
+            "Glycerin",
+            "Propanediol",
+            "Panthenol",
+            "Lactic Acid",
+            "Caprylyl Glycol"
+          ],
+          "film_forming_humectants": [
+            "Aloe Barbadensis Leaf Extract",
+            "Marshmallow root Extract"
+          ],
+          "emollients": [
+            "Behentrimonium Methosulfate",
+            "Cetearyl Alcohol",
+            "Safflower Oil",
+            "Unknown Oil",
+            "Unknown Oil",
+            "Unknown Oil",
+            "Unknown Oil",
+            "Unknown Oil",
+            "Unknown Oil",
+            "Unknown Oil",
+            "Unknown Oil",
+            "Unknown Oil",
+            "Lavender Oil",
+            "Unknown Oil",
+            "Coconut Oil",
+            "Unknown Oil"
+          ],
+          "score": -73
+        },
+        "porosity": {
+          "high": 89,
+          "low": 0
+        }
+      },
+      "cost_rating": "5"
+    },
     "coil_infusion®_drink_up™_cleansing_conditioner": {
       "name": "Coil Infusion® Drink Up™ Cleansing Conditioner",
       "brand": "Ouidad",
@@ -1591,6 +1710,64 @@ export const defaultProductDatabase: ProductDatabase = {
         "porosity": {
           "high": 100,
           "low": 55
+        }
+      }
+    },
+    "hydra_drench_cleansing_conditioner": {
+      "name": "Hydra Drench Cleansing Conditioner",
+      "brand": "Bounce Curl",
+      "product_categories": [
+        "cowashes"
+      ],
+      "tags": [
+        "high_porosity"
+      ],
+      "ingredients_raw": "organic aloe barbadensis leaf juice, glycerin, behentrimonium methosulfate, caprylic capric triglyceride, cetearyl alcohol, sucrose cocoate, stearamidopropyl dimethylamine, propanediol, panthenol, hydrolyzed jojoba esters, vanillin, polyquaternium-10, lactic acid, caprylhydroxamic acid, nigella sativa virgin black cumin oil, althaea officinalis marshmallow root extract, pogostemon cablin oil, citrus paradisi grapefruit seed oil, camellia sinensis green tea leaf extract, rosmarinus officinalis rosemary leaf extract, citrus aurantium bergamia bergamot fruit oil, salvia officinalis sage extract, equisetum arvense horsetail extract, boswellia carterii oil, caryocar brasiliense pequi oil, brassica oleracea italica broccoli seed oil, anthemis nobilis chamomile flower extract, anthemis nobilis flower oil, urtica dioica nettle extract, citrus aurantium dulcis orange seed oil, cocos nucifera coconut oil, citrus nobilis mandarin orange peel oil, tocopheryl acetate, ethylhexylglycerin",
+      "buy_links": [
+        {
+          "url": "https://glnk.io/x26q/curlsbot7tx",
+          "retailer": "Bounce Curl"
+        }
+      ],
+      "id": "hydra_drench_cleansing_conditioner",
+      "systems_excluded": [],
+      "status": "ok",
+      "extensions": {
+        "frizzbot": {
+          "simple_humectants_number": 5,
+          "film_forming_humectants_number": 2,
+          "emollients_number": 13,
+          "simple_humectants": [
+            "Glycerin",
+            "Propanediol",
+            "Panthenol",
+            "Lactic Acid",
+            "Ethylhexylglycerin"
+          ],
+          "film_forming_humectants": [
+            "Aloe Barbadensis Leaf Extract",
+            "Marshmallow root Extract"
+          ],
+          "emollients": [
+            "Behentrimonium Methosulfate",
+            "Cetearyl Alcohol",
+            "Unknown Oil",
+            "Unknown Oil",
+            "Unknown Oil",
+            "Unknown Oil",
+            "Unknown Oil",
+            "Unknown Oil",
+            "Unknown Oil",
+            "Unknown Oil",
+            "Unknown Oil",
+            "Coconut Oil",
+            "Unknown Oil"
+          ],
+          "score": -67
+        },
+        "porosity": {
+          "high": 100,
+          "low": 0
         }
       }
     },
@@ -1926,6 +2103,113 @@ export const defaultProductDatabase: ProductDatabase = {
       },
       "cost_rating": "5"
     },
+    "avocado_&_rose_oil_clump_&_define_cream": {
+      "name": "Avocado & Rose Oil Clump & Define Cream",
+      "brand": "Bounce Curl",
+      "product_categories": [
+        "creams"
+      ],
+      "tags": [
+        "high_porosity",
+        "normal_porosity",
+        "curl_enhancer",
+        "featured"
+      ],
+      "ingredients_raw": "water, cetearyl alcohol, persea gratissima avocado oil, caprylic capric triglyceride, aloe barbadensis leaf juice, cetrimonium chloride, vp va copolymer, sorbitol, astrocaryum murumuru seed butter, argania spinosa kernel oil, butyrospermum parkii shea butter, rosa centifolia rose oil, crambe abyssinica seed oil, glycerin, hydroxyethylcellulose, nigella sativa virgin black cumin oil, trigonella foenum-graecum fenugreek seed extract, tocopheryl acetate vitamin e, adansonia digitata baobab seed oil, behentrimonium methosulfate, hydroxypropyl starch phosphate, phenoxyethanol, ethylhexylglycerin",
+      "buy_links": [
+        {
+          "url": "https://glnk.io/x26q/curlsbot52q",
+          "retailer": "Bounce Curl"
+        }
+      ],
+      "id": "avocado_&_rose_oil_clump_&_define_cream",
+      "systems_excluded": [],
+      "status": "ok",
+      "extensions": {
+        "frizzbot": {
+          "simple_humectants_number": 3,
+          "film_forming_humectants_number": 2,
+          "emollients_number": 11,
+          "simple_humectants": [
+            "Sorbitol",
+            "Glycerin",
+            "Ethylhexylglycerin"
+          ],
+          "film_forming_humectants": [
+            "Aloe Barbadensis Leaf Extract",
+            "Hydroxyethylcellulose"
+          ],
+          "emollients": [
+            "Cetearyl Alcohol",
+            "Avocado Oil",
+            "Cetrimonium Chloride",
+            "VP VA copolymer",
+            "Argan Oil",
+            "Butyrospermum Parkii Shea Butter",
+            "Unknown Oil",
+            "Unknown Oil",
+            "Unknown Oil",
+            "Baobab Oil",
+            "Behentrimonium Methosulfate"
+          ],
+          "score": -74
+        },
+        "porosity": {
+          "high": 100,
+          "low": 0
+        }
+      }
+    },
+    "light_hold_creme_gel": {
+      "name": "Light Hold Creme Gel",
+      "brand": "Bounce Curl",
+      "product_categories": [
+        "creams"
+      ],
+      "tags": [
+        "high_porosity",
+        "normal_porosity",
+        "curl_enhancer",
+        "featured"
+      ],
+      "ingredients_raw": "water, vp va copolymer, glycerin, hydrolyzed jojoba esters, jojoba esters, hydrolyzed quinoa protein, hydrolyzed oat protein, aloe barbadensis leaf extract, panax ginseng root extract, salvia officinalis sage extract, nigella sativa virgin black cumin oil, boswellia carter oil, aminomethyl propanol, carbomer, sodium phytate, caprylyl glycol, hexylene glycol, phenoxyethanol, citric acid",
+      "buy_links": [
+        {
+          "url": "https://glnk.io/x26q/curlsbot86p",
+          "retailer": "Bounce Curl"
+        }
+      ],
+      "id": "light_hold_creme_gel",
+      "systems_excluded": [],
+      "status": "ok",
+      "extensions": {
+        "frizzbot": {
+          "simple_humectants_number": 3,
+          "film_forming_humectants_number": 3,
+          "emollients_number": 3,
+          "simple_humectants": [
+            "Glycerin",
+            "Caprylyl Glycol",
+            "Hexylene Glycol"
+          ],
+          "film_forming_humectants": [
+            "Unknown Protein",
+            "Hydrolyzed Oat Protein",
+            "Aloe Barbadensis Leaf Extract"
+          ],
+          "emollients": [
+            "VP VA copolymer",
+            "Unknown Oil",
+            "Unknown Oil"
+          ],
+          "score": -70
+        },
+        "porosity": {
+          "high": 81,
+          "low": 31
+        }
+      }
+    },
     "curl_enhancing_custard": {
       "name": "Curl Enhancing Custard",
       "brand": "MopTop",
@@ -2052,6 +2336,53 @@ export const defaultProductDatabase: ProductDatabase = {
         }
       },
       "cost_rating": "5"
+    },
+    "curling_jelly_coil_and_curl_definer_": {
+      "name": "Curling Jelly Coil and Curl Definer ",
+      "brand": "As I Am",
+      "ingredients_raw": "aqueous, water, aqua purificada, purified extracts aloe barbadensis leaf, beta vulgaris beet root, glycerin, hydroxyethylcellulose, xanthan gum, pectin, citric acid, tocopheryl acetate, potassium sorbate, diazolidinyl urea and iodopropynyl butylcarbamate, fragrance parfum, limonene",
+      "product_categories": [
+        "custards"
+      ],
+      "tags": [
+        "low_porosity",
+        "normal_porosity",
+        "high_porosity",
+        "featured"
+      ],
+      "buy_links": [
+        {
+          "url": "https://www.lookfantastic.com/p/as-i-am-curling-jelly-coil-and-curl-definer-227g/11321484/",
+          "retailer": "Look Fantastic",
+          "country": "UK"
+        }
+      ],
+      "id": "curling_jelly_coil_and_curl_definer_",
+      "systems_excluded": [],
+      "status": "ok",
+      "extensions": {
+        "frizzbot": {
+          "simple_humectants_number": 2,
+          "film_forming_humectants_number": 2,
+          "emollients_number": 1,
+          "simple_humectants": [
+            "Glycerin",
+            "Urea"
+          ],
+          "film_forming_humectants": [
+            "Hydroxyethylcellulose",
+            "Pectin"
+          ],
+          "emollients": [
+            "Xanthan Gum"
+          ],
+          "score": -68
+        },
+        "porosity": {
+          "high": 89,
+          "low": 100
+        }
+      }
     },
     "banana_cream_deep_conditioner": {
       "name": "Banana Cream Deep Conditioner",
@@ -3440,6 +3771,57 @@ export const defaultProductDatabase: ProductDatabase = {
       },
       "cost_rating": "1"
     },
+    "moisture_balance_leave-in_conditioner": {
+      "name": "Moisture Balance Leave-In Conditioner",
+      "brand": "Bounce Curl",
+      "product_categories": [
+        "leave_ins"
+      ],
+      "tags": [
+        "normal_porosity",
+        "high_porosity",
+        "featured"
+      ],
+      "ingredients_raw": "water, cetearyl alcohol, simmondsia chinesis jojoba seed oil, ethylhexyl palmitate, olea europe olive fruit oil, glyceryl stearate, astrocaryum murumuru seed butter, argania spinosa kernel oil argan oil, butyrospermum parkii shea butter, persea gratissima avocado oil, rosa centifolia rose oil, citrus aurantium amara neroli oil, tocopheryl acetate vitamin e, behentrimonium methosulfate, cetrimonium chloride, biotin, nigella sativa virgin black cumin oil, trigonella foenum-graecum fenugreek seed extract, phenoxyethanol, ethylhexylglycerin",
+      "buy_links": [
+        {
+          "url": "https://glnk.io/x26q/curlsbot1qg",
+          "retailer": "Bounce Curl"
+        }
+      ],
+      "id": "moisture_balance_leave-in_conditioner",
+      "systems_excluded": [],
+      "status": "ok",
+      "extensions": {
+        "frizzbot": {
+          "simple_humectants_number": 1,
+          "film_forming_humectants_number": 0,
+          "emollients_number": 11,
+          "simple_humectants": [
+            "Ethylhexylglycerin"
+          ],
+          "film_forming_humectants": [],
+          "emollients": [
+            "Cetearyl Alcohol",
+            "Jojoba Oil",
+            "Olive Oil",
+            "Argan Oil",
+            "Butyrospermum Parkii Shea Butter",
+            "Avocado Oil",
+            "Unknown Oil",
+            "Unknown Oil",
+            "Behentrimonium Methosulfate",
+            "Cetrimonium Chloride",
+            "Unknown Oil"
+          ],
+          "score": -74
+        },
+        "porosity": {
+          "high": 91,
+          "low": 0
+        }
+      }
+    },
     "moonshine_hair_and_body_oil": {
       "name": "Moonshine Hair and Body Oil",
       "brand": "Ecoslay",
@@ -3715,6 +4097,52 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 25,
+          "low": 0
+        }
+      }
+    },
+    "light_oil": {
+      "name": "Light Oil",
+      "brand": "Bounce Curl",
+      "product_categories": [
+        "oils"
+      ],
+      "tags": [
+        "featured"
+      ],
+      "ingredients_raw": "organic helianthus annuus sunflower seed oil, tocopheryl acetate vitamin e, xerochrysum bracteatum flower, adansonia digitata seed oil, organic argania spinosa kernel oil, organic balanites roxburghii seed oil, organic borago officinalis seed oil, organic corylus avellana hazel seed oil, passiflora edulis passion flower seed oil, organic prunus amygdalus dulcis sweet almond oil, organic rosa canina fruit oil, organic simmondsia chinensis jojoba seed oil",
+      "buy_links": [
+        {
+          "url": "https://glnk.io/x26q/curlsbot4cu",
+          "retailer": "Bounce Curl"
+        }
+      ],
+      "id": "light_oil",
+      "systems_excluded": [],
+      "status": "ok",
+      "extensions": {
+        "frizzbot": {
+          "simple_humectants_number": 0,
+          "film_forming_humectants_number": 0,
+          "emollients_number": 10,
+          "simple_humectants": [],
+          "film_forming_humectants": [],
+          "emollients": [
+            "Sunflower Oil",
+            "Baobab Oil",
+            "Argan Oil",
+            "Unknown Oil",
+            "Unknown Oil",
+            "Unknown Oil",
+            "Unknown Oil",
+            "Sweet Almond Oil",
+            "Unknown Oil",
+            "Jojoba Oil"
+          ],
+          "score": -76
+        },
+        "porosity": {
+          "high": 31,
           "low": 0
         }
       }
@@ -4621,6 +5049,105 @@ export const defaultProductDatabase: ProductDatabase = {
         "porosity": {
           "high": 68,
           "low": 100
+        }
+      }
+    },
+    "pure_silk_moisturizing_shampoo": {
+      "name": "Pure Silk Moisturizing Shampoo",
+      "brand": "Bounce Curl",
+      "product_categories": [
+        "shampoos"
+      ],
+      "tags": [
+        "high_porosity",
+        "normal_porosity",
+        "featured"
+      ],
+      "ingredients_raw": "water, helianthus annuus sunflower seed oil, cocamidopropyl betaine, disodium laureth sulfosuccinate, diethylhexyl sodium sulfosuccinate, glycerin panthenol polyquaternium-10, biotin, hydrolyzed quinoa, hydrolyzed adansonia digitata baobab seed protein, gluconolactone sodium benzoate, sodium laurylglucosides hydroxypropylsulfonate, lycium barbarum fruit extract, coffea arabica coffee seed extract, euterpe oleracea fruit extract, morinda citrifolia extract, punica granatum fruit extract, camellia sinensis leaf extract, garcinia mangostana fruit extract, calendula officinalis flower extract, rosmarinus officinalis rosemary leaf extract, citrus aurantium bergamia bergamot fruit oil, vanillin, hybrid safflower oil, boswellia carterii oil, pelargonium graveolens geranium oil, citrus grandis grapefruit peel oil, lavandula angustifolia lavender oil, pogostemon cablin patchouli oil, citrus aurantium dulcis orange peel oil, cocos nucifera coconut oil, citrus nobilis mandarin orange peel oil, citric acid",
+      "buy_links": [
+        {
+          "url": "https://glnk.io/x26q/curlsbot33h",
+          "retailer": "Bounce Curl"
+        }
+      ],
+      "id": "pure_silk_moisturizing_shampoo",
+      "systems_excluded": [],
+      "status": "ok",
+      "extensions": {
+        "frizzbot": {
+          "simple_humectants_number": 1,
+          "film_forming_humectants_number": 1,
+          "emollients_number": 11,
+          "simple_humectants": [
+            "Panthenol"
+          ],
+          "film_forming_humectants": [
+            "Unknown Protein"
+          ],
+          "emollients": [
+            "Sunflower Oil",
+            "Unknown Oil",
+            "Safflower Oil",
+            "Unknown Oil",
+            "Unknown Oil",
+            "Unknown Oil",
+            "Lavender Oil",
+            "Unknown Oil",
+            "Unknown Oil",
+            "Coconut Oil",
+            "Unknown Oil"
+          ],
+          "score": -71
+        },
+        "porosity": {
+          "high": 66,
+          "low": 0
+        }
+      }
+    },
+    "hair_spray": {
+      "name": "Hair Spray",
+      "brand": "Bounce Curl",
+      "product_categories": [
+        "sprays"
+      ],
+      "tags": [
+        "high_porosity",
+        "normal_porosity",
+        "featured"
+      ],
+      "ingredients_raw": "water, octylacrylamide acrylates butylaminoethyl methacyrlate copolymer, heptyl glucoside, panthenol, aminomethyl propanol, aloe barbadensis leaf extract, panax ginseng root extract, salvia officinalis sage extract, nigella sativa virgin black cumin oil boswellia carterii oil, caprylhydroxamic acid, propanediol, caprylyl glycol, fragrance, citric acid",
+      "buy_links": [
+        {
+          "url": "https://glnk.io/x26q/curlsbot0la",
+          "retailer": "Bounce Curl"
+        }
+      ],
+      "id": "hair_spray",
+      "systems_excluded": [],
+      "status": "ok",
+      "extensions": {
+        "frizzbot": {
+          "simple_humectants_number": 3,
+          "film_forming_humectants_number": 1,
+          "emollients_number": 2,
+          "simple_humectants": [
+            "Panthenol",
+            "Propanediol",
+            "Caprylyl Glycol"
+          ],
+          "film_forming_humectants": [
+            "Aloe Barbadensis Leaf Extract"
+          ],
+          "emollients": [
+            "Copolymer",
+            "Unknown Oil"
+          ],
+          "score": -52
+        },
+        "porosity": {
+          "high": 81,
+          "low": 66
         }
       }
     },

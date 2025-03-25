@@ -101,6 +101,19 @@
       ],
       "cost": 1,
       "ingredients_raw": "aqua purified water, cetyl alcohol, stearyl alcohol, tocopherol vitamin e, panthenol pro-vitamin b5, citrus grandis grapefruit fruit extract, aloe barbadensis aloe vera leaf juice, glycine soja soybean seed extract, chamomilla recutita matricaria flower extract, rosmarinus officinalis rosemary leaf extract, lavandula angustifolia lavender flower leaf stem extract, thymus vulgaris thyme extract, helianthus annuus sunflower seed oil, malva sylvestris mallow extract, cetrimonium bromide, natural fragrance, citric acid, phenoxyethanol, dehydroacetic acid, benzyl alcohol"
+    },
+    {
+      "name": "Moisture Balance Leave-In Conditioner",
+      "brand": "Bounce Curl",
+      "product_categories": ["leave_ins"],
+      "tags": ["normal_porosity", "high_porosity", "featured"],
+      "ingredients_raw": "water, cetearyl alcohol, simmondsia chinesis jojoba seed oil, ethylhexyl palmitate, olea europe olive fruit oil, glyceryl stearate, astrocaryum murumuru seed butter, argania spinosa kernel oil argan oil, butyrospermum parkii shea butter, persea gratissima avocado oil, rosa centifolia rose oil, citrus aurantium amara neroli oil, tocopheryl acetate vitamin e, behentrimonium methosulfate, cetrimonium chloride, biotin, nigella sativa virgin black cumin oil, trigonella foenum-graecum fenugreek seed extract, phenoxyethanol, ethylhexylglycerin",
+      "buy_links": [
+        {
+          "url": "https://glnk.io/x26q/curlsbot1qg",
+          "retailer": "Bounce Curl"
+        }
+      ]
     }
   ]
 }

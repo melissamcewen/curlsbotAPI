@@ -137,6 +137,23 @@
           "retailer": "The Ordinary"
         }
       ]
+    },
+    {
+      "name": "Light Oil",
+      "brand": "Bounce Curl",
+      "product_categories": [
+        "oils"
+      ],
+      "tags": [
+        "featured"
+      ],
+      "ingredients_raw": "organic helianthus annuus sunflower seed oil, tocopheryl acetate vitamin e, xerochrysum bracteatum flower, adansonia digitata seed oil, organic argania spinosa kernel oil, organic balanites roxburghii seed oil, organic borago officinalis seed oil, organic corylus avellana hazel seed oil, passiflora edulis passion flower seed oil, organic prunus amygdalus dulcis sweet almond oil, organic rosa canina fruit oil, organic simmondsia chinensis jojoba seed oil",
+      "buy_links": [
+        {
+          "url": "https://glnk.io/x26q/curlsbot4cu",
+          "retailer": "Bounce Curl"
+        }
+      ]
     }
   ]
 }

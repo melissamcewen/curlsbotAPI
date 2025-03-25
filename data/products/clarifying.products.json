@@ -186,6 +186,25 @@
         "normal_porosity",
         "high_porosity"
       ]
+    },
+    {
+      "name": "Gentle Clarifying Shampoo",
+      "brand": "Bounce Curl",
+      "product_categories": [
+        "clarifying_shampoos"
+      ],
+      "tags": [
+        "low_porosity",
+        "normal_porosity",
+        "high_porosity"
+      ],
+      "ingredients_raw": "water, sodium lauroyl methyl isethionate, decyl glucoside, sodium cocoyl isethionate, disodium cocoamphodiacetate, propanediol, panthenol pro-vitamin b5, polyquaternium-10, hydroxypropyl methylcellulose, biotin, vanillin, hydrolyzed adansonia digitata baobab seed protein, nigella sativa virgin black cumin oil, stearamidopropyl dimethylamine, lactic acid, caprylhydroxamic acid, rosmarinus officinalis rosemary leaf extract, boswellia carterii oil, lactobacillus punica granatum fruit ferment extract, lactobacillus pumpkin ferment extract, argania spinosa kernel oil, cocos nucifera coconut oil, citrus aurantium bergamia bergamot fruit oil, anthemis nobilis flower oil, geranium maculatum oil, citrus paradisi grapefruit seed oil, lavandula angustifolia lavender oil, pogostemon cablin oil, citrus aurantium dulcis orange seed oil, citrus nobilis mandarin orange peel oil, caprylyl glycol",
+      "buy_links": [
+        {
+          "url": "https://glnk.io/x26q/curlsbot258",
+          "retailer": "Bounce Curl"
+        }
+      ]
     }
   ]
 }

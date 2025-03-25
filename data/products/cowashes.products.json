@@ -80,6 +80,19 @@
       "ingredients_raw": "aqua water eau, stearyl alcohol, sodium lauroamphoacetate, hydroxypropyl starch phosphate, behentrimonium chloride, cetyl alcohol, cocamidopropyl hydroxysultaine, anastatica hierochuntica extract, oryza sativa rice bran oil, hydroxypropyl bis-hydroxyethyldimonium chloride, hexylene glycol, butylene glycol, ceteareth-20, caprylyl glycol, phenoxyethanol, citric acid, disodium edta, isopropyl alcohol, benzyl salicylate, fragrance parfum",
       "description": "A gentle low pH cleanser. Has a drying alcohol (isopropyl alcohol) but low on the ingredients list and this is less of a concern in a wash-out product."
 
+     },
+     {
+      "name": "Hydra Drench Cleansing Conditioner",
+      "brand": "Bounce Curl",
+      "product_categories": ["cowashes"],
+      "tags": ["high_porosity"],
+      "ingredients_raw": "organic aloe barbadensis leaf juice, glycerin, behentrimonium methosulfate, caprylic capric triglyceride, cetearyl alcohol, sucrose cocoate, stearamidopropyl dimethylamine, propanediol, panthenol, hydrolyzed jojoba esters, vanillin, polyquaternium-10, lactic acid, caprylhydroxamic acid, nigella sativa virgin black cumin oil, althaea officinalis marshmallow root extract, pogostemon cablin oil, citrus paradisi grapefruit seed oil, camellia sinensis green tea leaf extract, rosmarinus officinalis rosemary leaf extract, citrus aurantium bergamia bergamot fruit oil, salvia officinalis sage extract, equisetum arvense horsetail extract, boswellia carterii oil, caryocar brasiliense pequi oil, brassica oleracea italica broccoli seed oil, anthemis nobilis chamomile flower extract, anthemis nobilis flower oil, urtica dioica nettle extract, citrus aurantium dulcis orange seed oil, cocos nucifera coconut oil, citrus nobilis mandarin orange peel oil, tocopheryl acetate, ethylhexylglycerin",
+      "buy_links": [
+        {
+          "url": "https://glnk.io/x26q/curlsbot7tx",
+          "retailer": "Bounce Curl"
+        }
+      ]
      }
   ]
 }

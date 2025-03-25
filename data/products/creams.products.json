@@ -138,6 +138,32 @@
         }
       ],
       "asin": "B07HLJ7MHL"
+    },
+    {
+      "name": "Avocado & Rose Oil Clump & Define Cream",
+      "brand": "Bounce Curl",
+      "product_categories": ["creams"],
+      "tags": ["high_porosity", "normal_porosity", "curl_enhancer", "featured"],
+      "ingredients_raw": "water, cetearyl alcohol, persea gratissima avocado oil, caprylic capric triglyceride, aloe barbadensis leaf juice, cetrimonium chloride, vp va copolymer, sorbitol, astrocaryum murumuru seed butter, argania spinosa kernel oil, butyrospermum parkii shea butter, rosa centifolia rose oil, crambe abyssinica seed oil, glycerin, hydroxyethylcellulose, nigella sativa virgin black cumin oil, trigonella foenum-graecum fenugreek seed extract, tocopheryl acetate vitamin e, adansonia digitata baobab seed oil, behentrimonium methosulfate, hydroxypropyl starch phosphate, phenoxyethanol, ethylhexylglycerin",
+      "buy_links": [
+        {
+          "url": "https://glnk.io/x26q/curlsbot52q",
+          "retailer": "Bounce Curl"
+        }
+      ]
+    },
+    {
+      "name": "Light Hold Creme Gel",
+      "brand": "Bounce Curl",
+      "product_categories": ["creams"],
+      "tags": ["high_porosity", "normal_porosity", "curl_enhancer", "featured"],
+      "ingredients_raw": "water, vp va copolymer, glycerin, hydrolyzed jojoba esters, jojoba esters, hydrolyzed quinoa protein, hydrolyzed oat protein, aloe barbadensis leaf extract, panax ginseng root extract, salvia officinalis sage extract, nigella sativa virgin black cumin oil, boswellia carter oil, aminomethyl propanol, carbomer, sodium phytate, caprylyl glycol, hexylene glycol, phenoxyethanol, citric acid",
+      "buy_links": [
+        {
+          "url": "https://glnk.io/x26q/curlsbot86p",
+          "retailer": "Bounce Curl"
+        }
+      ]
     }
   ]
 }

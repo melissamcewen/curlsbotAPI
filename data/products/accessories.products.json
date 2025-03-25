@@ -1,15 +1,49 @@
 {
   "products": [
     {
+      "name": "Volume Root Clips",
+      "brand": "Bounce Curl",
+      "product_categories": ["accessories"],
+      "tags": ["style", "featured"],
+      "description": "These clips are specially designed to help you create volume at the roots of your hair",
+      "buy_links": [
+        {
+          "url": "https://glnk.io/x26q/curlsbot3oe",
+          "retailer": "Bounce Curl"
+        }
+      ]
+    },
+    {
+      "name": "Volume EdgeLift Brush",
+      "brand": "Bounce Curl",
+      "product_categories": ["accessories"],
+      "tags": ["style", "featured"],
+      "description": "The Volume EdgeLift Brush is a unique tool that helps you create voluminous curls/waves",
+      "buy_links": [
+        {
+          "url": "https://glnk.io/x26q/curlsbot3l6",
+          "retailer": "Bounce Curl"
+        }
+      ]
+    },
+    {
+      "name": "Define EdgeLift Brush",
+      "brand": "Bounce Curl",
+      "product_categories": ["accessories"],
+      "tags": ["style", "featured"],
+      "description": "The Define EdgeLift Brush is a unique brush that helps define your curls/waves",
+      "buy_links": [
+        {
+          "url": "https://glnk.io/x26q/curlsbot6au",
+          "retailer": "Bounce Curl"
+        }
+      ]
+    },
+    {
       "name": "Universal Diffuser",
-      "product_categories": [
-        "accessories"
-      ],
+      "product_categories": ["accessories"],
       "brand": "Bio Ionic",
-      "tags": [
-        "style",
-        "featured"
-      ],
+      "tags": ["style", "featured"],
       "description": "Turn any hairdryer into a diffuser with this attachment",
       "buy_links": [
         {
@@ -20,14 +54,9 @@
     },
     {
       "name": "Curly Girl Microfiber Super Absorbent Anti Frizz Hair Towel",
-      "product_categories": [
-        "accessories"
-      ],
+      "product_categories": ["accessories"],
       "brand": "Curly Girl Store",
-      "tags": [
-        "style",
-        "featured"
-      ],
+      "tags": ["style", "featured"],
       "buy_links": [
         {
           "url": "https://amzn.to/4iXc9Cv",
@@ -40,13 +69,8 @@
     {
       "name": "Curl friendly soft headbands",
       "brand": "By the creator of CurlsBot",
-      "product_categories": [
-        "accessories"
-      ],
-      "tags": [
-        "style",
-        "featured"
-      ],
+      "product_categories": ["accessories"],
+      "tags": ["style", "featured"],
       "buy_links": [
         {
           "url": "https://eldritchsalvage.etsy.com",
@@ -58,13 +82,8 @@
     {
       "name": "Curly Hair Sleep Cozy",
       "brand": "Lohy",
-      "tags": [
-        "style",
-        "featured"
-      ],
-      "product_categories": [
-        "accessories"
-      ],
+      "tags": ["style", "featured"],
+      "product_categories": ["accessories"],
       "buy_links": [
         {
           "url": "https://lohy.com.au/products/curly-hair-products-lohy-cozy-turban?aff=49",
@@ -78,13 +97,8 @@
       "name": "Curly Hair Accessories Kit",
       "brand": "Lohy",
       "description": "A full kit of Lohy's most useful accessories such as a sleep turban, volume clips, and innovative hydration glove",
-      "tags": [
-        "style",
-        "featured"
-      ],
-      "product_categories": [
-        "accessories"
-      ],
+      "tags": ["style", "featured"],
+      "product_categories": ["accessories"],
       "buy_links": [
         {
           "url": "https://lohy.com.au/products/curls-frills-hair-kit?aff=49",
@@ -96,13 +110,8 @@
     {
       "name": "Pop-Up Curl Diffuser",
       "brand": "Curl Keeper",
-      "product_categories": [
-        "accessories"
-      ],
-      "tags": [
-        "style",
-        "featured"
-      ],
+      "product_categories": ["accessories"],
+      "tags": ["style", "featured"],
       "description": "Great for travel though I've used it at home for years because it's so easy to store",
       "buy_links": [
         {

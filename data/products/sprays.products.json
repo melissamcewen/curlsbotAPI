@@ -1,0 +1,19 @@
+{
+  "products": [
+    {
+      "name": "Hair Spray",
+      "brand": "Bounce Curl",
+      "product_categories": ["sprays"],
+      "tags": ["high_porosity", "normal_porosity", "featured"],
+      "ingredients_raw": "water, octylacrylamide acrylates butylaminoethyl methacyrlate copolymer, heptyl glucoside, panthenol, aminomethyl propanol, aloe barbadensis leaf extract, panax ginseng root extract, salvia officinalis sage extract, nigella sativa virgin black cumin oil boswellia carterii oil, caprylhydroxamic acid, propanediol, caprylyl glycol, fragrance, citric acid",
+      "buy_links": [
+        {
+          "url": "https://glnk.io/x26q/curlsbot0la",
+          "retailer": "Bounce Curl"
+        }
+      ]
+    }
+  ]
+}
+
+

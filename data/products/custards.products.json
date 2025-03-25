@@ -44,6 +44,20 @@
       "asin": "B07D7CKKL3",
       "cost": 3.5
 
+    },
+    {
+      "name": "Curling Jelly Coil and Curl Definer ",
+      "brand": "As I Am",
+      "ingredients_raw": "aqueous, water, aqua purificada, purified extracts aloe barbadensis leaf, beta vulgaris beet root, glycerin, hydroxyethylcellulose, xanthan gum, pectin, citric acid, tocopheryl acetate, potassium sorbate, diazolidinyl urea and iodopropynyl butylcarbamate, fragrance parfum, limonene",
+      "product_categories": ["custards"],
+      "tags": ["low_porosity", "normal_porosity", "high_porosity", "featured"],
+      "buy_links": [
+        {
+          "url": "https://www.lookfantastic.com/p/as-i-am-curling-jelly-coil-and-curl-definer-227g/11321484/",
+          "retailer": "Look Fantastic",
+          "country": "UK"
+        }
+      ]
     }
   ]
 }
