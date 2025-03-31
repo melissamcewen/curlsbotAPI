@@ -37,12 +37,6 @@
       "categories": ["other_oils"]
     },
     {
-      "name": "Unknown Polyquat",
-      "id": "unknown_polyquat",
-      "categories": ["polyquats"],
-      "description": "We're pretty sure this is a polyquat, but we're not sure which one."
-    },
-    {
       "name": "Unknown Alcohol",
       "id": "unknown_alcohol",
       "synonyms": ["alcohol"],

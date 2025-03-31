@@ -2600,6 +2600,19 @@ export const defaultDatabase: IngredientDatabase = {
       "status": "ok",
       "group": "others"
     },
+    "unknown_polyquat": {
+      "name": "Unknown Polyquat",
+      "id": "unknown_polyquat",
+      "categories": [
+        "polyquats"
+      ],
+      "synonyms": [
+        "polyquaternium"
+      ],
+      "description": "We're pretty sure this is a polyquat, but we're not sure which one.",
+      "status": "ok",
+      "group": "others"
+    },
     "guar_gum": {
       "name": "Guar Gum",
       "id": "guar_gum",
@@ -4360,16 +4373,6 @@ export const defaultDatabase: IngredientDatabase = {
       ],
       "status": "ok",
       "group": "oils"
-    },
-    "unknown_polyquat": {
-      "name": "Unknown Polyquat",
-      "id": "unknown_polyquat",
-      "categories": [
-        "polyquats"
-      ],
-      "description": "We're pretty sure this is a polyquat, but we're not sure which one.",
-      "status": "ok",
-      "group": "others"
     },
     "unknown_alcohol": {
       "name": "Unknown Alcohol",

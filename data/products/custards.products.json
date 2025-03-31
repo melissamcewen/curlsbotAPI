@@ -58,6 +58,33 @@
           "country": "UK"
         }
       ]
+    },
+    {
+      "name": "Gelebration Spray",
+      "brand": "Jessicurl",
+      "ingredients_raw": "aqua water, linum usitatissimum linseed flaxseed extract, glycerin, simmondsia chinensis jojoba seed oil, aloe barbadensis aloe vera leaf juice powder, magnesium sulfate, benzoic acid, dehydroacetic acid, phenoxyethanol",
+      "product_categories": ["custards"],
+      "description": "Technically not a custard, but serves the same purpose",
+      "tags": ["low_porosity", "normal_porosity", "fragrance_free", "liquid_gels", "featured", "type_2_hair"],
+      "buy_links": [
+        {
+          "url": "https://jessicurl.com/products/gelebration-spray",
+          "retailer": "Jessicurl"
+        }
+      ]
+    },
+    {
+      "name": "Rockin' Ringlets Styling Potion",
+      "brand": "Jessicurl",
+      "ingredients_raw": "aqua water, linum usitatissimum linseed flaxseed extract, glycerin, simmondsia chinensis jojoba seed oil, aloe barbadensis aloe vera leaf juice powder, magnesium sulfate, benzoic acid, dehydroacetic acid, phenoxyethanol",
+      "product_categories": ["custards"],
+      "tags": ["low_porosity", "normal_porosity", "high_porosity", "featured", "type_3_hair", "fragrance_free"],
+      "buy_links": [
+        {
+          "url": "https://jessicurl.com/products/rockin-ringlets-styling-potion",
+          "retailer": "Jessicurl"
+        }
+      ]
     }
   ]
 }

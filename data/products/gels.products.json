@@ -315,6 +315,26 @@
       ],
       "ingredients_raw": "water aqua eau, vp va copolymer, propylene glycol, hydroxyethylcellulose, glycerin, oleth-20, polyquaternium-10, citric acid, dmdm hydantoin"
 
+    },
+    {
+      "name": "Spiralicious",
+      "brand": "Jessicurl",
+      "ingredients_raw": "aqua water, polyquaternium-69, polyquaternium-11, hydroxyethylcellulose, simmondsia chinensis jojoba seed oil, panthenol, parfum fragrance, c12-15 alkyl benzoate, diazolidinyl urea, iodopropynyl butylcarbamate, alcohol, coumarin, limonene",
+      "product_categories": [
+        "gels"
+      ],
+      "tags": [
+        "low_porosity",
+        "normal_porosity",
+        "featured",
+        "liquid_gels"
+      ],
+      "buy_links": [
+        {
+          "url": "https://jessicurl.com/products/spiralicious-styling-gel",
+          "retailer": "Jessicurl"
+        }
+      ]
     }
   ]
 }

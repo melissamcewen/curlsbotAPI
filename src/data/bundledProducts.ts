@@ -2384,6 +2384,53 @@ export const defaultProductDatabase: ProductDatabase = {
         }
       }
     },
+    "gelebration_spray": {
+      "name": "Gelebration Spray",
+      "brand": "Jessicurl",
+      "ingredients_raw": "aqua water, linum usitatissimum linseed flaxseed extract, glycerin, simmondsia chinensis jojoba seed oil, aloe barbadensis aloe vera leaf juice powder, magnesium sulfate, benzoic acid, dehydroacetic acid, phenoxyethanol",
+      "product_categories": [
+        "custards"
+      ],
+      "description": "Technically not a custard, but serves the same purpose",
+      "tags": [
+        "low_porosity",
+        "normal_porosity",
+        "fragrance_free",
+        "liquid_gels",
+        "featured"
+      ],
+      "buy_links": [
+        {
+          "url": "https://jessicurl.com/products/gelebration-spray",
+          "retailer": "Jessicurl"
+        }
+      ],
+      "id": "gelebration_spray",
+      "systems_excluded": [],
+      "status": "ok",
+      "extensions": {
+        "frizzbot": {
+          "simple_humectants_number": 1,
+          "film_forming_humectants_number": 2,
+          "emollients_number": 1,
+          "simple_humectants": [
+            "Glycerin"
+          ],
+          "film_forming_humectants": [
+            "Flaxseed Extract",
+            "Aloe Barbadensis Leaf Extract"
+          ],
+          "emollients": [
+            "Jojoba Oil"
+          ],
+          "score": -81
+        },
+        "porosity": {
+          "high": 82,
+          "low": 97
+        }
+      }
+    },
     "banana_cream_deep_conditioner": {
       "name": "Banana Cream Deep Conditioner",
       "brand": "Ecoslay",
@@ -3536,6 +3583,51 @@ export const defaultProductDatabase: ProductDatabase = {
         }
       },
       "cost_rating": "5"
+    },
+    "spiralicious": {
+      "name": "Spiralicious",
+      "brand": "Jessicurl",
+      "ingredients_raw": "aqua water, polyquaternium-69, polyquaternium-11, hydroxyethylcellulose, simmondsia chinensis jojoba seed oil, panthenol, parfum fragrance, c12-15 alkyl benzoate, diazolidinyl urea, iodopropynyl butylcarbamate, alcohol, coumarin, limonene",
+      "product_categories": [
+        "gels"
+      ],
+      "tags": [
+        "low_porosity",
+        "normal_porosity",
+        "featured",
+        "liquid_gels"
+      ],
+      "buy_links": [
+        {
+          "url": "https://jessicurl.com/products/spiralicious-styling-gel",
+          "retailer": "Jessicurl"
+        }
+      ],
+      "id": "spiralicious",
+      "systems_excluded": [],
+      "status": "caution",
+      "extensions": {
+        "frizzbot": {
+          "simple_humectants_number": 2,
+          "film_forming_humectants_number": 1,
+          "emollients_number": 1,
+          "simple_humectants": [
+            "Panthenol",
+            "Urea"
+          ],
+          "film_forming_humectants": [
+            "Hydroxyethylcellulose"
+          ],
+          "emollients": [
+            "Jojoba Oil"
+          ],
+          "score": -62
+        },
+        "porosity": {
+          "high": 66,
+          "low": 74
+        }
+      }
     },
     "rice_pudding_leave-in_conditioner_and_moisturizer": {
       "name": "Rice Pudding Leave-In Conditioner and Moisturizer",
