@@ -183,7 +183,7 @@
       "id": "other_preservatives",
       "name": "Other Preservatives",
       "group": "preservatives",
-      "description": "These are other preservatives that don't fit into the other categories"
+      "description": "These are other preservatives that don't fit into the other categories. They help prevent bacteria and mold from growing in the product."
     },
     {
       "id": "other_emollients",

@@ -1248,6 +1248,16 @@ export const defaultDatabase: IngredientDatabase = {
       "status": "ok",
       "group": "others"
     },
+    "stearamidopropyl_dimethylamine": {
+      "name": "Stearamidopropyl Dimethylamine",
+      "id": "stearamidopropyl_dimethylamine",
+      "categories": [
+        "conditioning_agents"
+      ],
+      "description": "A cationic surfactant used for conditioning hair",
+      "status": "ok",
+      "group": "others"
+    },
     "apricot_kernel_oil": {
       "name": "Apricot Kernel Oil",
       "id": "apricot_kernel_oil",
@@ -3849,6 +3859,122 @@ export const defaultDatabase: IngredientDatabase = {
       "status": "ok",
       "group": "others"
     },
+    "potassium_sorbate": {
+      "name": "Potassium Sorbate",
+      "id": "potassium_sorbate",
+      "categories": [
+        "other_preservatives"
+      ],
+      "status": "ok",
+      "group": "preservatives"
+    },
+    "sodium_chloride": {
+      "name": "Sodium Chloride",
+      "id": "sodium_chloride",
+      "categories": [
+        "other"
+      ],
+      "status": "ok",
+      "group": "others"
+    },
+    "rosmarinus_officinalis_rosemary_leaf_extract": {
+      "name": "Rosmarinus officinalis rosemary leaf extract",
+      "id": "rosmarinus_officinalis_rosemary_leaf_extract",
+      "categories": [
+        "other"
+      ],
+      "description": "Rosemary leaf extract is a botanical extract that is known to have anti-inflammatory and antimicrobial properties.",
+      "status": "ok",
+      "group": "others"
+    },
+    "disodium_edta": {
+      "name": "Disodium EDTA",
+      "id": "disodium_edta",
+      "categories": [
+        "other"
+      ],
+      "description": "Common product stabilizer",
+      "status": "ok",
+      "group": "others"
+    },
+    "chlorphenesin": {
+      "name": "Chlorphenesin",
+      "id": "chlorphenesin",
+      "categories": [
+        "other_preservatives"
+      ],
+      "status": "ok",
+      "group": "preservatives"
+    },
+    "sodium_hydroxide": {
+      "name": "Sodium Hydroxide",
+      "id": "sodium_hydroxide",
+      "categories": [
+        "other"
+      ],
+      "description": "pH adjuster to help balance the product",
+      "status": "ok",
+      "group": "others"
+    },
+    "linalool": {
+      "name": "Linalool",
+      "id": "linalool",
+      "categories": [
+        "other"
+      ],
+      "description": "Common fragrance ingredient",
+      "status": "ok",
+      "group": "others"
+    },
+    "leuconostoc_radish_root_ferment_filtrate": {
+      "name": "Leuconostoc Radish Root Ferment Filtrate",
+      "id": "leuconostoc_radish_root_ferment_filtrate",
+      "categories": [
+        "other_preservatives"
+      ],
+      "description": "A natural preservative made from radishes",
+      "status": "ok",
+      "group": "preservatives"
+    },
+    "sodium_benzoate": {
+      "name": "Sodium Benzoate",
+      "id": "sodium_benzoate",
+      "categories": [
+        "other_preservatives"
+      ],
+      "description": "Common preservative",
+      "status": "ok",
+      "group": "preservatives"
+    },
+    "limonene": {
+      "name": "Limonene",
+      "id": "limonene",
+      "categories": [
+        "other"
+      ],
+      "description": "Common fragrance ingredient",
+      "status": "ok",
+      "group": "others"
+    },
+    "salvia_officinalis_sage_leaf_extract": {
+      "name": "Salvia officinalis sage leaf extract",
+      "id": "salvia_officinalis_sage_leaf_extract",
+      "categories": [
+        "other"
+      ],
+      "description": "Sage leaf extract",
+      "status": "ok",
+      "group": "others"
+    },
+    "tocopherol": {
+      "name": "Tocopherol",
+      "id": "tocopherol",
+      "categories": [
+        "other_emollients"
+      ],
+      "status": "ok",
+      "group": "others"
+    },
     "amodimethicone": {
       "name": "Amodimethicone",
       "id": "amodimethicone",
@@ -4784,7 +4910,7 @@ export const defaultDatabase: IngredientDatabase = {
       "id": "other_preservatives",
       "name": "Other Preservatives",
       "group": "preservatives",
-      "description": "These are other preservatives that don't fit into the other categories"
+      "description": "These are other preservatives that don't fit into the other categories. They help prevent bacteria and mold from growing in the product."
     },
     "other_emollients": {
       "id": "other_emollients",

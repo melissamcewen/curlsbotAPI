@@ -66,9 +66,10 @@ describe('Handling of other ingredients under the default system', () => {
       },
       {
         normalized: 'polyquat 1',
-        ingredientId: 'polyquat_1',
-        category: 'other',
+        ingredientId: undefined,
+        category: undefined,
         status: 'ok',
+        reason: undefined,
       },
     ];
 

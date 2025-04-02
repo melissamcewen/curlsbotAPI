@@ -1052,7 +1052,7 @@
     {
       "name": "Hydrolyzed Corn Starch",
       "id": "hydrolyzed_corn_starch",
-      "categories": ["film_forming_humectants"] 
+      "categories": ["film_forming_humectants"]
     },
 
     {
@@ -1069,6 +1069,75 @@
           "id": "26"
         }
       ]
+    },
+    {
+      "name": "Potassium Sorbate",
+      "id": "potassium_sorbate",
+      "categories": ["other_preservatives"]
+    },
+    {
+      "name": "Sodium Chloride",
+      "id": "sodium_chloride",
+      "categories": ["other"]
+    },
+    {
+      "name": "Rosmarinus officinalis rosemary leaf extract",
+      "id": "rosmarinus_officinalis_rosemary_leaf_extract",
+      "categories": ["other"],
+      "description": "Rosemary leaf extract is a botanical extract that is known to have anti-inflammatory and antimicrobial properties."
+    },
+    {
+      "name": "Disodium EDTA",
+      "id": "disodium_edta",
+      "categories": ["other"],
+      "description": "Common product stabilizer"
+    },
+    {
+      "name": "Chlorphenesin",
+      "id": "chlorphenesin",
+      "categories": ["other_preservatives"]
+    },
+    {
+      "name": "Sodium Hydroxide",
+      "id": "sodium_hydroxide",
+      "categories": ["other"],
+      "description": "pH adjuster to help balance the product"
+    },
+    {
+      "name": "Linalool",
+      "id": "linalool",
+      "categories": ["other"],
+      "description": "Common fragrance ingredient"
+    },
+    {
+      "name": "Leuconostoc Radish Root Ferment Filtrate",
+      "id": "leuconostoc_radish_root_ferment_filtrate",
+      "categories": ["other_preservatives"],
+      "description": "A natural preservative made from radishes"
+    },
+    {
+      "name": "Sodium Benzoate",
+      "id": "sodium_benzoate",
+      "categories": ["other_preservatives"],
+      "description": "Common preservative"
+    },
+    {
+      "name": "Limonene",
+      "id": "limonene",
+      "categories": ["other"],
+      "description": "Common fragrance ingredient"
+    },
+    {
+      "name": "Salvia officinalis sage leaf extract",
+      "id": "salvia_officinalis_sage_leaf_extract",
+      "categories": ["other"],
+      "description": "Sage leaf extract"
+    },
+    {
+      "name": "Tocopherol",
+      "id": "tocopherol",
+      "categories": ["other_emollients"]
     }
+
   ]
 }

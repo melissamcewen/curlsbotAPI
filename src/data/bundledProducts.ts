@@ -1360,7 +1360,7 @@ export const defaultProductDatabase: ProductDatabase = {
             "Cetrimonium Chloride",
             "Guar Hydroxypropyltrimonium Chloride"
           ],
-          "score": -52
+          "score": -51
         },
         "porosity": {
           "high": 100,

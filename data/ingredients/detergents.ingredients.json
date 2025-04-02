@@ -8,56 +8,36 @@
         "alkyl benzene sulfonate",
         "alkyl benzene sulphate"
       ],
-      "categories": [
-        "other_anionic_surfactants"
-      ]
+      "categories": ["other_anionic_surfactants"]
     },
     {
       "name": "Ammonium Cocoyl Isethionate",
       "id": "ammonium_cocoyl_isethionate",
-      "categories": [
-        "mild_surfactants"
-      ]
+      "categories": ["mild_surfactants"]
     },
     {
       "name": "Ammonium Cocoyl Sulfate",
       "id": "ammonium_cocoyl_sulfate",
-      "synonyms": [
-        "ammonium cocoyl sulphate"
-      ],
-      "categories": [
-        "sulfates"
-      ]
+      "synonyms": ["ammonium cocoyl sulphate"],
+      "categories": ["sulfates"]
     },
     {
       "name": "Ammonium Laureth Sulfate",
       "id": "ammonium_laureth_sulfate",
-      "synonyms": [
-        "ammonium laureth sulphate"
-      ],
-      "categories": [
-        "sulfates"
-      ]
+      "synonyms": ["ammonium laureth sulphate"],
+      "categories": ["sulfates"]
     },
     {
       "name": "Ammonium Lauryl Sulfate",
       "id": "ammonium_lauryl_sulfate",
-      "synonyms": [
-        "ammonium lauryl sulphate"
-      ],
-      "categories": [
-        "sulfates"
-      ]
+      "synonyms": ["ammonium lauryl sulphate"],
+      "categories": ["sulfates"]
     },
     {
       "name": "Ammonium Lauryl Sulfate",
       "id": "ammonium_lauryl_sulfate",
-      "synonyms": [
-        "ammonium lauryl sulphate"
-      ],
-      "categories": [
-        "sulfates"
-      ]
+      "synonyms": ["ammonium lauryl sulphate"],
+      "categories": ["sulfates"]
     },
     {
       "name": "Ammonium Xylenesulfonate",
@@ -67,191 +47,129 @@
         "ammonium xylene-sulfonate",
         "ammonium xylene sulfonate"
       ],
-      "categories": [
-        "other_anionic_surfactants"
-      ]
+      "categories": ["other_anionic_surfactants"]
     },
     {
       "name": "Babassuamidopropyl Betaine",
       "id": "babassuamidopropyl_betaine",
-      "categories": [
-        "mild_surfactants"
-      ]
+      "categories": ["mild_surfactants"]
     },
     {
       "name": "Capryl Glucoside",
       "id": "capryl_glucoside",
-      "synonyms": [
-        "capryl glucoside, caprylyl glucoside"
-      ],
-      "categories": [
-        "mild_surfactants"
-      ]
+      "synonyms": ["capryl glucoside, caprylyl glucoside"],
+      "categories": ["mild_surfactants"]
     },
     {
       "name": "Cocamidopropyl Betaine",
       "id": "cocamidopropyl_betaine",
-      "categories": [
-        "mild_surfactants"
-      ]
+      "categories": ["mild_surfactants"]
     },
     {
       "name": "Cocamidopropyl Hydroxysultaine",
       "id": "cocamidopropyl_hydroxysultaine",
-      "categories": [
-        "mild_surfactants"
-      ]
+      "categories": ["mild_surfactants"]
     },
     {
       "name": "Coco Betaine",
       "id": "coco_betaine",
-      "categories": [
-        "mild_surfactants"
-      ]
+      "categories": ["mild_surfactants"]
     },
     {
       "name": "Coco Glucoside",
       "id": "coco_glucoside",
-      "categories": [
-        "mild_surfactants"
-      ]
+      "categories": ["mild_surfactants"]
     },
     {
       "name": "Cocamide MEA",
       "id": "cocamide_mea",
-      "synonyms": [
-        "coconut monoethanolamide"
-      ],
-      "categories": [
-        "mild_surfactants"
-      ]
+      "synonyms": ["coconut monoethanolamide"],
+      "categories": ["mild_surfactants"]
     },
     {
       "name": "Decyl Glucoside",
       "id": "decyl_glucoside",
-      "categories": [
-        "mild_surfactants"
-      ]
+      "categories": ["mild_surfactants"]
     },
     {
       "name": "Decyl Polyglucose",
       "id": "decyl_polyglucose",
-      "categories": [
-        "mild_surfactants"
-      ]
+      "categories": ["mild_surfactants"]
     },
     {
       "name": "Dioctyl Sodium Sulfosuccinate",
       "id": "dioctyl_sodium_sulfosuccinate",
-      "categories": [
-        "other_anionic_surfactants"
-      ]
+      "categories": ["other_anionic_surfactants"]
     },
     {
       "name": "Disodium Cocoamphodiacetate",
       "id": "disodium_cocoamphodiacetate",
-      "categories": [
-        "mild_surfactants"
-      ]
+      "categories": ["mild_surfactants"]
     },
     {
       "name": "Disodium Cocoamphodipropionate",
       "id": "disodium_cocoamphodipropionate",
-      "categories": [
-        "mild_surfactants"
-      ]
+      "categories": ["mild_surfactants"]
     },
     {
       "name": "Disodium Cocoyl Glutamate",
       "id": "disodium_cocoyl_glutamate",
-      "categories": [
-        "other_anionic_surfactants"
-      ]
+      "categories": ["other_anionic_surfactants"]
     },
     {
       "name": "Disodium Laureth Succinate",
       "id": "disodium_laureth_succinate",
-      "categories": [
-        "mild_surfactants"
-      ]
+      "categories": ["mild_surfactants"]
     },
     {
       "name": "Disodium Laureth Sulfosuccinate",
       "id": "disodium_laureth_sulfosuccinate",
-      "categories": [
-        "mild_surfactants"
-      ]
+      "categories": ["mild_surfactants"]
     },
     {
       "name": "Disodium Lauryl Sulfosuccinate",
       "id": "disodium_lauryl_sulfosuccinate",
-      "categories": [
-        "mild_surfactants"
-      ]
+      "categories": ["mild_surfactants"]
     },
     {
       "name": "Ethyl PEG-15 Cocamine Sulfate",
       "id": "ethyl_peg_15_cocamine_sulfate",
-      "synonyms": [
-        "ethyl peg-15 cocamine sulphate"
-      ],
-      "categories": [
-        "sulfates"
-      ]
+      "synonyms": ["ethyl peg-15 cocamine sulphate"],
+      "categories": ["sulfates"]
     },
     {
       "name": "Lauryl Glucoside",
       "id": "lauryl_glucoside",
-      "categories": [
-        "mild_surfactants"
-      ]
+      "categories": ["mild_surfactants"]
     },
     {
       "name": "Lauryl Hydroxysultaine",
       "id": "lauryl_hydroxysultaine",
-      "categories": [
-        "mild_surfactants"
-      ]
+      "categories": ["mild_surfactants"]
     },
     {
       "name": "Sodium Alkyl Sulfate",
       "id": "sodium_alkyl_sulfate",
-      "synonyms": [
-        "sodium alkyl sulphate"
-      ],
-      "categories": [
-        "sulfates"
-      ]
+      "synonyms": ["sodium alkyl sulphate"],
+      "categories": ["sulfates"]
     },
     {
       "name": "Sodium C12-14 Olefin Sulfonate",
       "id": "sodium_c12_14_olefin_sulfonate",
-      "synonyms": [
-        "sodium c12-14 olefin sulphate"
-      ],
-      "categories": [
-        "other_anionic_surfactants"
-      ]
+      "synonyms": ["sodium c12-14 olefin sulphate"],
+      "categories": ["other_anionic_surfactants"]
     },
     {
       "name": "Sodium C12-18 Alkyl Sulfate",
       "id": "sodium_c12_18_alkyl_sulfate",
-      "synonyms": [
-        "sodium c12-18 alkyl sulphate"
-      ],
-      "categories": [
-        "sulfates"
-      ]
+      "synonyms": ["sodium c12-18 alkyl sulphate"],
+      "categories": ["sulfates"]
     },
     {
       "name": "Sodium C14-15 Olefin Sulfonate",
       "id": "sodium_c14_15_olefin_sulfonate",
-      "synonyms": [
-        "sodium c14-15 olefin sulphate"
-      ],
-      "categories": [
-        "other_anionic_surfactants"
-      ]
+      "synonyms": ["sodium c14-15 olefin sulphate"],
+      "categories": ["other_anionic_surfactants"]
     },
     {
       "name": "Sodium C14-16 Olefin Sulfonate",
@@ -261,118 +179,75 @@
         "sodium c14 16 olefin sulfonate",
         "sodium c1416 olefin sulfonate"
       ],
-      "categories": [
-        "other_anionic_surfactants"
-      ]
+      "categories": ["other_anionic_surfactants"]
     },
     {
       "name": "Sodium C14-18 Olefin Sulfonate",
       "id": "sodium_c14_18_olefin_sulfonate",
-      "synonyms": [
-        "sodium c14-18 olefin sulphate"
-      ],
-      "categories": [
-        "other_anionic_surfactants"
-      ]
+      "synonyms": ["sodium c14-18 olefin sulphate"],
+      "categories": ["other_anionic_surfactants"]
     },
     {
       "name": "Sodium C14-26 Olefin Sulfonate",
       "id": "sodium_c14_26_olefin_sulfonate",
-      "synonyms": [
-        "sodium c14-26 olefin sulphate"
-      ],
-      "categories": [
-        "other_anionic_surfactants"
-      ]
+      "synonyms": ["sodium c14-26 olefin sulphate"],
+      "categories": ["other_anionic_surfactants"]
     },
     {
       "name": "Sodium C16-18 Olefin Sulfonate",
       "id": "sodium_c16_18_olefin_sulfonate",
-      "synonyms": [
-        "sodium c16-18 olefin sulphate"
-      ],
-      "categories": [
-        "other_anionic_surfactants"
-      ]
+      "synonyms": ["sodium c16-18 olefin sulphate"],
+      "categories": ["other_anionic_surfactants"]
     },
     {
       "name": "Sodium Cetearyl Sulfate",
       "id": "sodium_cetearyl_sulfate",
-      "synonyms": [
-        "sodium cetearyl sulphate"
-      ],
-      "categories": [
-        "sulfates"
-      ]
+      "synonyms": ["sodium cetearyl sulphate"],
+      "categories": ["sulfates"]
     },
     {
       "name": "Sodium Coceth Sulfate",
       "id": "sodium_coceth_sulfate",
-      "synonyms": [
-        "sodium coceth sulphate"
-      ],
-      "categories": [
-        "sulfates"
-      ]
+      "synonyms": ["sodium coceth sulphate"],
+      "categories": ["sulfates"]
     },
     {
       "name": "Sodium Coco Sulfate",
       "id": "sodium_coco_sulfate",
-      "synonyms": [
-        "sodium coco sulphate"
-      ],
-      "categories": [
-        "sulfates"
-      ]
+      "synonyms": ["sodium coco sulphate"],
+      "categories": ["sulfates"]
     },
     {
       "name": "Sodium Cocoamphoacetate",
       "id": "sodium_cocoamphoacetate",
-      "categories": [
-        "mild_surfactants"
-      ]
+      "categories": ["mild_surfactants"]
     },
     {
       "name": "Sodium Cocosulfate",
       "id": "sodium_cocosulfate",
-      "synonyms": [
-        "sodium cocosulphate"
-      ],
-      "categories": [
-        "sulfates"
-      ]
+      "synonyms": ["sodium cocosulphate"],
+      "categories": ["sulfates"]
     },
     {
       "name": "Sodium Cocoyl Glutamate",
       "id": "sodium_cocoyl_glutamate",
-      "categories": [
-        "other_anionic_surfactants"
-      ]
+      "categories": ["other_anionic_surfactants"]
     },
     {
       "name": "Sodium Cocoyl Isethionate",
       "id": "sodium_cocoyl_isethionate",
-      "categories": [
-        "mild_surfactants"
-      ]
+      "categories": ["mild_surfactants"]
     },
     {
       "name": "Sodium Cocoyl Sarcosinate",
       "id": "sodium_cocoyl_sarcosinate",
-      "categories": [
-        "other_anionic_surfactants"
-      ]
+      "categories": ["other_anionic_surfactants"]
     },
     {
       "name": "Sodium Laureth Sulfate",
       "id": "sodium_laureth_sulfate",
-      "synonyms": [
-        "sodium laureth sulphate",
-        "sles"
-      ],
-      "categories": [
-        "sulfates"
-      ],
+      "synonyms": ["sodium laureth sulphate", "sles"],
+      "categories": ["sulfates"],
       "description": "Not to be confused with SLS (sodium lauryl sulfate), as it is known to be milder.",
       "references": [
         {
@@ -396,26 +271,18 @@
     {
       "name": "Sodium Laureth-40 Sulfate",
       "id": "sodium_laureth_40_sulfate",
-      "synonyms": [
-        "sodium laureth-40 sulphate"
-      ],
-      "categories": [
-        "sulfates"
-      ]
+      "synonyms": ["sodium laureth-40 sulphate"],
+      "categories": ["sulfates"]
     },
     {
       "name": "Sodium Lauroamphoacetate",
       "id": "sodium_lauroamphoacetate",
-      "categories": [
-        "mild_surfactants"
-      ]
+      "categories": ["mild_surfactants"]
     },
     {
       "name": "Sodium Lauroyl Glutamate",
       "id": "sodium_lauroyl_glutamate",
-      "categories": [
-        "mild_surfactants"
-      ]
+      "categories": ["mild_surfactants"]
     },
     {
       "name": "Sodium Lauroyl Methyl Isethionate",
@@ -425,39 +292,25 @@
         "sodium lauroyl methyl lsethionate",
         "sodium lauroylmethyl isethionate"
       ],
-      "categories": [
-        "mild_surfactants"
-      ],
+      "categories": ["mild_surfactants"],
       "description": "CurlsBot is in the process of reclassifying this ingredient. We believe it is a mild surfactant but in the past we've listed it as stronger"
     },
     {
       "name": "Sodium Lauryl Glucose Carboxylate",
       "id": "sodium_lauryl_glucose_carboxylate",
-      "categories": [
-        "mild_surfactants"
-      ]
+      "categories": ["mild_surfactants"]
     },
     {
       "name": "Sodium Lauryl Sarcosinate",
       "id": "sodium_lauryl_sarcosinate",
-      "synonyms": [
-        "sodium lauroyl sarcosinate",
-        "sodium lauroyl sarcosine"
-      ],
-      "categories": [
-        "other_anionic_surfactants"
-      ]
+      "synonyms": ["sodium lauroyl sarcosinate", "sodium lauroyl sarcosine"],
+      "categories": ["other_anionic_surfactants"]
     },
     {
       "name": "Sodium Lauryl Sulfate",
       "id": "sodium_lauryl_sulfate",
-      "synonyms": [
-        "sodium lauryl sulphate",
-        "sls"
-      ],
-      "categories": [
-        "sulfates"
-      ],
+      "synonyms": ["sodium lauryl sulphate", "sls"],
+      "categories": ["sulfates"],
       "description": "Probably one of the most infamous sulfates. It's a strong cleanser that can be drying to hair. It's also a common irritant for people with sensitive skin. However, as always, much depends on the formulation.",
       "references": [
         {
@@ -493,50 +346,34 @@
     {
       "name": "Sodium Lauryl Sulfoacetate",
       "id": "sodium_lauryl_sulfoacetate",
-      "categories": [
-        "other_anionic_surfactants"
-      ]
+      "categories": ["other_anionic_surfactants"]
     },
     {
       "name": "Sodium Laurylglucosides Hydroxypropylsulfonate",
       "id": "sodium_laurylglucosides_hydroxypropylsulfonate",
-      "categories": [
-        "mild_surfactants"
-      ]
+      "categories": ["mild_surfactants"]
     },
     {
       "name": "Sodium Methyl Cocoyl Taurate",
       "id": "sodium_methyl_cocoyl_taurate",
-      "categories": [
-        "mild_surfactants"
-      ]
+      "categories": ["mild_surfactants"]
     },
     {
       "name": "Sodium Myreth Sulfate",
       "id": "sodium_myreth_sulfate",
-      "synonyms": [
-        "sodium myreth sulphate"
-      ],
-      "categories": [
-        "sulfates"
-      ]
+      "synonyms": ["sodium myreth sulphate"],
+      "categories": ["sulfates"]
     },
     {
       "name": "Sodium Myristoyl Sarcosinate",
       "id": "sodium_myristoyl_sarcosinate",
-      "categories": [
-        "other_anionic_surfactants"
-      ]
+      "categories": ["other_anionic_surfactants"]
     },
     {
       "name": "Sodium Polystyrene Sulfate",
       "id": "sodium_polystyrene_sulfate",
-      "synonyms": [
-        "sodium polystyrene sulphate"
-      ],
-      "categories": [
-        "sulfates"
-      ]
+      "synonyms": ["sodium polystyrene sulphate"],
+      "categories": ["sulfates"]
     },
     {
       "name": "Sodium Xylenesulfonate",
@@ -546,58 +383,38 @@
         "sodium xylene-sulfonate",
         "sodium xylene sulfonate"
       ],
-      "categories": [
-        "other_anionic_surfactants"
-      ]
+      "categories": ["other_anionic_surfactants"]
     },
     {
       "name": "Tea Dodecylbenzenesulfonate",
       "id": "tea_dodecylbenzenesulfonate",
-      "synonyms": [
-        "tea-dodecylbenzenesulfonate"
-      ],
-      "categories": [
-        "other_anionic_surfactants"
-      ]
+      "synonyms": ["tea-dodecylbenzenesulfonate"],
+      "categories": ["other_anionic_surfactants"]
     },
     {
       "name": "Tea Lauryl Sulfate",
       "id": "tea_lauryl_sulfate",
-      "synonyms": [
-        "tea lauryl sulphate"
-      ],
-      "categories": [
-        "sulfates"
-      ]
+      "synonyms": ["tea lauryl sulphate"],
+      "categories": ["sulfates"]
     },
     {
       "name": "Triethanolamine Lauryl Sulfate",
       "id": "triethanolamine_lauryl_sulfate",
-      "synonyms": [
-        "triethanolamine lauryl sulphate"
-      ],
-      "categories": [
-        "sulfates"
-      ]
+      "synonyms": ["triethanolamine lauryl sulphate"],
+      "categories": ["sulfates"]
     },
     {
       "name": "Sulfonate",
       "id": "sulfonate",
-      "synonyms": [
-        " sulfonate"
-      ],
-      "categories": [
-        "other_anionic_surfactants"
-      ],
+      "synonyms": [" sulfonate"],
+      "categories": ["other_anionic_surfactants"],
       "description": "We're pretty sure this is a sulfonate, but we're not sure which one. "
     },
     {
       "name": "Behentrimonium Chloride",
       "id": "behentrimonium_chloride",
       "description": "A cationic surfactant that gently cleanses and conditions hair",
-      "categories": [
-        "conditioning_agents"
-      ],
+      "categories": ["conditioning_agents"],
       "references": [
         {
           "id": "45"
@@ -608,9 +425,7 @@
       "name": "Cetrimonium Chloride",
       "id": "cetrimonium_chloride",
       "description": "A cationic surfactant that gently cleanses and conditions hair",
-      "categories": [
-        "conditioning_agents"
-      ],
+      "categories": ["conditioning_agents"],
       "references": [
         {
           "id": "46"
@@ -624,10 +439,14 @@
     {
       "name": "Behentrimonium Methosulfate",
       "id": "behentrimonium_methosulfate",
-      "categories": [
-        "conditioning_agents"
-      ],
+      "categories": ["conditioning_agents"],
       "description": "Despite the name, this is not a sulfate. It a cationic surfactant that gently cleanses and conditions hair."
+    },
+    {
+      "name": "Stearamidopropyl Dimethylamine",
+      "id": "stearamidopropyl_dimethylamine",
+      "categories": ["conditioning_agents"],
+      "description": "A cationic surfactant used for conditioning hair"
     }
   ]
 }
