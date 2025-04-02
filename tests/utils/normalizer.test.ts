@@ -19,6 +19,14 @@ describe('Normalizer', () => {
   });
 
   describe('isValidIngredientList', () => {
+   it('should reject single letter/numbers', () => {
+     expect(isValidIngredientList('1')).toBe(false);
+     expect(isValidIngredientList('polyquat 1')).toBe(true);
+
+     expect(isValidIngredientList('a')).toBe(false);
+     expect(isValidIngredientList('polyquat a')).toBe(true);
+   });
+
     it('should reject URLs', () => {
       expect(isValidIngredientList('http://example.com')).toBe(false);
       expect(isValidIngredientList('https://test.com')).toBe(false);

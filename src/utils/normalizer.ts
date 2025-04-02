@@ -19,6 +19,11 @@ export function isValidIngredient(value: string): boolean {
  * @returns `true` if list is valid, `false` if it contains URLs or is empty
  */
 export function isValidIngredientList(value: string): boolean {
+  // Check for strings shorter than 2 characters
+  if (value.length < 2) {
+    return false;
+  }
+
   // Check for URLs
   if (/(?:https?:\/\/|www\.|\/{2})/i.test(value)) {
     return false;

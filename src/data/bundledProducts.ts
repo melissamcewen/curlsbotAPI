@@ -2757,24 +2757,25 @@ export const defaultProductDatabase: ProductDatabase = {
       "extensions": {
         "frizzbot": {
           "simple_humectants_number": 2,
-          "film_forming_humectants_number": 1,
+          "film_forming_humectants_number": 2,
           "emollients_number": 2,
           "simple_humectants": [
             "Propanediol",
             "Caprylyl Glycol"
           ],
           "film_forming_humectants": [
+            "Hydrolyzed Corn Starch",
             "Linum Usitatissimum Seed Extract"
           ],
           "emollients": [
             "Unknown Oil",
             "Unknown Oil"
           ],
-          "score": -47
+          "score": -77
         },
         "porosity": {
-          "high": 69,
-          "low": 20
+          "high": 91,
+          "low": 41
         }
       }
     },

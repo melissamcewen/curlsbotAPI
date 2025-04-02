@@ -1,4 +1,10 @@
-import { readFileSync, writeFileSync, readdirSync } from 'fs';
+import {
+  readFileSync,
+  writeFileSync,
+  readdirSync,
+  mkdirSync,
+  existsSync,
+} from 'fs';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
 import type { Reference, AnalysisResult, Extensions } from '../src/types';
@@ -9,8 +15,10 @@ import { porosity } from '../src/extensions/porosity';
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const DATA_DIR = join(__dirname, '../data');
 const CONFIG_DIR = join(__dirname, '../data/config');
+const LOGS_DIR = join(__dirname, '../logs');
 const INGREDIENTS_OUTPUT_FILE = join(__dirname, '../src/data/bundledData.ts');
 const PRODUCTS_OUTPUT_FILE = join(__dirname, '../src/data/bundledProducts.ts');
+const UNKNOWN_INGREDIENTS_LOG = join(LOGS_DIR, 'unknown_ingredients.json');
 
 // Load references data from references.references.json
 function loadReferences(): Record<string, Reference> {
@@ -151,12 +159,29 @@ function loadIngredientsFromDir(dirPath: string): any {
   }, {});
 }
 
+// Function to log unknown ingredients with their source products
+function logUnknownIngredients(
+  productName: string,
+  analysis: AnalysisResult,
+  unknownIngredients: Record<string, Set<string>>,
+) {
+  for (const ingredient of analysis.ingredients) {
+    if (!ingredient.ingredient || ingredient.normalized.includes('unknown')) {
+      if (!unknownIngredients[ingredient.normalized]) {
+        unknownIngredients[ingredient.normalized] = new Set();
+      }
+      unknownIngredients[ingredient.normalized].add(productName);
+    }
+  }
+}
+
 function loadProductsFromDir(dirPath: string): any {
   const files = readdirSync(dirPath).filter((file) =>
     file.endsWith('.products.json'),
   );
   const allProducts: any[] = [];
   const analyzer = new Analyzer();
+  const unknownIngredients: Record<string, Set<string>> = {};
 
   // First load categories to look up groups
   const categoriesData = loadJsonFile(join(DATA_DIR, 'categories.json'));
@@ -193,7 +218,7 @@ function loadProductsFromDir(dirPath: string): any {
     }
   }
 
-  return allProducts.reduce((acc, product) => {
+  const products = allProducts.reduce((acc, product) => {
     // Generate ID from name if name exists, otherwise use existing ID or warn
     const productName = product.name || product.id;
     if (!productName) {
@@ -214,6 +239,9 @@ function loadProductsFromDir(dirPath: string): any {
     if (product.ingredients_raw) {
       analysis = analyzer.analyze(product.ingredients_raw);
       status = analysis.status;
+
+      // Log unknown ingredients
+      logUnknownIngredients(product.name, analysis, unknownIngredients);
 
       // Generate extensions
       extensions = {
@@ -240,13 +268,14 @@ function loadProductsFromDir(dirPath: string): any {
       systems_excluded: product.systems_excluded || [],
       tags: product.tags || [],
       status,
-      //analysis,
       extensions,
       cost: product.cost,
       cost_rating,
     };
     return acc;
   }, {} as Record<string, any>);
+
+  return { products, unknownIngredients };
 }
 
 function loadJsonFile(filePath: string): any {
@@ -258,14 +287,39 @@ function loadJsonFile(filePath: string): any {
 }
 
 function generateBundledData() {
+  // Ensure logs directory exists
+  if (!existsSync(LOGS_DIR)) {
+    mkdirSync(LOGS_DIR, { recursive: true });
+  }
+
   // Load all data
   const ingredients = loadIngredientsFromDir(join(DATA_DIR, 'ingredients'));
-  const products = loadProductsFromDir(join(DATA_DIR, 'products'));
+  const { products, unknownIngredients } = loadProductsFromDir(
+    join(DATA_DIR, 'products'),
+  );
   const categoriesData = loadJsonFile(join(DATA_DIR, 'categories.json'));
   const groupsData = loadJsonFile(join(DATA_DIR, 'groups.json'));
   const systemsData = loadJsonFile(join(CONFIG_DIR, 'systems.json'));
   const settingsData = loadJsonFile(join(CONFIG_DIR, 'settings.json'));
   const referencesData = loadReferences();
+
+  // Write unknown ingredients log if any were found
+  if (Object.keys(unknownIngredients).length > 0) {
+    // Convert Sets to arrays for JSON serialization
+    const serializable = Object.fromEntries(
+      Object.entries(unknownIngredients).map(([ingredient, products]) => [
+        ingredient,
+        Array.from(products as Set<string>),
+      ]),
+    );
+    writeFileSync(
+      UNKNOWN_INGREDIENTS_LOG,
+      JSON.stringify(serializable, null, 2),
+    );
+    console.log(
+      `Generated unknown ingredients log at ${UNKNOWN_INGREDIENTS_LOG}`,
+    );
+  }
 
   // Convert categories and groups to record format
   const categories = (categoriesData?.categories || []).reduce(
