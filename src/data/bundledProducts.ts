@@ -337,19 +337,20 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 1,
           "film_forming_humectants_number": 0,
-          "emollients_number": 1,
+          "emollients_number": 2,
           "simple_humectants": [
             "Glycerin"
           ],
           "film_forming_humectants": [],
           "emollients": [
-            "Guar Hydroxypropyltrimonium Chloride"
+            "Guar Hydroxypropyltrimonium Chloride",
+            "Unknown Polyquat"
           ],
-          "score": -29
+          "score": -48
         },
         "porosity": {
           "high": 100,
-          "low": 85
+          "low": 87
         }
       },
       "cost_rating": "5"
@@ -382,7 +383,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 2,
           "film_forming_humectants_number": 0,
-          "emollients_number": 3,
+          "emollients_number": 5,
           "simple_humectants": [
             "Butylene glycol",
             "Panthenol"
@@ -390,13 +391,15 @@ export const defaultProductDatabase: ProductDatabase = {
           "film_forming_humectants": [],
           "emollients": [
             "Cetrimonium Chloride",
+            "Unknown Polyquat",
+            "Unknown Polyquat",
             "Unknown Oil",
             "Unknown Oil"
           ],
-          "score": -10
+          "score": -29
         },
         "porosity": {
-          "high": 92,
+          "high": 100,
           "low": 100
         }
       },
@@ -427,7 +430,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 4,
           "film_forming_humectants_number": 1,
-          "emollients_number": 12,
+          "emollients_number": 13,
           "simple_humectants": [
             "Propanediol",
             "Panthenol",
@@ -438,6 +441,7 @@ export const defaultProductDatabase: ProductDatabase = {
             "Unknown Protein"
           ],
           "emollients": [
+            "Unknown Polyquat",
             "Unknown Oil",
             "Unknown Oil",
             "Argan Oil",
@@ -451,10 +455,10 @@ export const defaultProductDatabase: ProductDatabase = {
             "Unknown Oil",
             "Unknown Oil"
           ],
-          "score": -47
+          "score": -51
         },
         "porosity": {
-          "high": 70,
+          "high": 97,
           "low": 0
         }
       }
@@ -552,7 +556,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 2,
           "film_forming_humectants_number": 1,
-          "emollients_number": 7,
+          "emollients_number": 8,
           "simple_humectants": [
             "Glycerin",
             "Hexylene Glycol"
@@ -567,13 +571,14 @@ export const defaultProductDatabase: ProductDatabase = {
             "Butyrospermum Parkii Shea Butter",
             "Unknown Oil",
             "Unknown Oil",
+            "Unknown Polyquat",
             "Guar Hydroxypropyltrimonium Chloride"
           ],
           "score": -88
         },
         "porosity": {
-          "high": 72,
-          "low": 23
+          "high": 91,
+          "low": 27
         }
       },
       "cost_rating": "1"
@@ -602,7 +607,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 5,
           "film_forming_humectants_number": 3,
-          "emollients_number": 10,
+          "emollients_number": 11,
           "simple_humectants": [
             "Glycerin",
             "Lactic Acid",
@@ -625,12 +630,13 @@ export const defaultProductDatabase: ProductDatabase = {
             "Unknown Oil",
             "Unknown Oil",
             "Unknown Oil",
-            "Cetrimonium Chloride"
+            "Cetrimonium Chloride",
+            "Unknown Polyquat"
           ],
           "score": -70
         },
         "porosity": {
-          "high": 82,
+          "high": 99,
           "low": 0
         }
       },
@@ -960,7 +966,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 5,
           "film_forming_humectants_number": 10,
-          "emollients_number": 9,
+          "emollients_number": 10,
           "simple_humectants": [
             "Glycerin",
             "Propanediol",
@@ -988,6 +994,7 @@ export const defaultProductDatabase: ProductDatabase = {
             "Butyrospermum Parkii Shea Butter",
             "Jojoba Oil",
             "Guar Hydroxypropyltrimonium Chloride",
+            "Unknown Polyquat",
             "Unknown Oil",
             "Unknown Oil"
           ],
@@ -995,7 +1002,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 100,
-          "low": 0
+          "low": 2
         }
       },
       "cost_rating": "5"
@@ -1736,7 +1743,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 5,
           "film_forming_humectants_number": 2,
-          "emollients_number": 13,
+          "emollients_number": 14,
           "simple_humectants": [
             "Glycerin",
             "Propanediol",
@@ -1751,6 +1758,7 @@ export const defaultProductDatabase: ProductDatabase = {
           "emollients": [
             "Behentrimonium Methosulfate",
             "Cetearyl Alcohol",
+            "Unknown Polyquat",
             "Unknown Oil",
             "Unknown Oil",
             "Unknown Oil",
@@ -1904,7 +1912,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 4,
           "film_forming_humectants_number": 3,
-          "emollients_number": 9,
+          "emollients_number": 10,
           "simple_humectants": [
             "Propanediol",
             "Glycerin",
@@ -1922,6 +1930,7 @@ export const defaultProductDatabase: ProductDatabase = {
             "Polyvinylpyrrolidone",
             "Butyrospermum Parkii Shea Butter",
             "VP VA copolymer",
+            "Unknown Polyquat",
             "Ceteareth-20",
             "Copolymer",
             "Polyacrylate Crosspolymer-6",
@@ -1930,8 +1939,8 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -66
         },
         "porosity": {
-          "high": 95,
-          "low": 38
+          "high": 100,
+          "low": 41
         }
       }
     },
@@ -1963,7 +1972,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 2,
           "film_forming_humectants_number": 1,
-          "emollients_number": 5,
+          "emollients_number": 6,
           "simple_humectants": [
             "Glycerin",
             "Propanediol"
@@ -1976,13 +1985,14 @@ export const defaultProductDatabase: ProductDatabase = {
             "Cetrimonium Chloride",
             "Butyrospermum Parkii Shea Butter",
             "Rice bran oil",
-            "Unknown Oil"
+            "Unknown Oil",
+            "Unknown Polyquat"
           ],
-          "score": -53
+          "score": -54
         },
         "porosity": {
           "high": 100,
-          "low": 2
+          "low": 6
         }
       },
       "cost_rating": "5"
@@ -2020,7 +2030,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 4,
           "film_forming_humectants_number": 0,
-          "emollients_number": 7,
+          "emollients_number": 8,
           "simple_humectants": [
             "Sodium hyaluronate",
             "Panthenol",
@@ -2035,9 +2045,10 @@ export const defaultProductDatabase: ProductDatabase = {
             "Behentrimonium Chloride",
             "Jojoba Oil",
             "Butyrospermum Parkii Shea Butter",
+            "Unknown Polyquat",
             "Guar Hydroxypropyltrimonium Chloride"
           ],
-          "score": -60
+          "score": -61
         },
         "porosity": {
           "high": 100,
@@ -2397,7 +2408,8 @@ export const defaultProductDatabase: ProductDatabase = {
         "normal_porosity",
         "fragrance_free",
         "liquid_gels",
-        "featured"
+        "featured",
+        "type_2_hair"
       ],
       "buy_links": [
         {
@@ -2406,6 +2418,53 @@ export const defaultProductDatabase: ProductDatabase = {
         }
       ],
       "id": "gelebration_spray",
+      "systems_excluded": [],
+      "status": "ok",
+      "extensions": {
+        "frizzbot": {
+          "simple_humectants_number": 1,
+          "film_forming_humectants_number": 2,
+          "emollients_number": 1,
+          "simple_humectants": [
+            "Glycerin"
+          ],
+          "film_forming_humectants": [
+            "Flaxseed Extract",
+            "Aloe Barbadensis Leaf Extract"
+          ],
+          "emollients": [
+            "Jojoba Oil"
+          ],
+          "score": -81
+        },
+        "porosity": {
+          "high": 82,
+          "low": 97
+        }
+      }
+    },
+    "rockin'_ringlets_styling_potion": {
+      "name": "Rockin' Ringlets Styling Potion",
+      "brand": "Jessicurl",
+      "ingredients_raw": "aqua water, linum usitatissimum linseed flaxseed extract, glycerin, simmondsia chinensis jojoba seed oil, aloe barbadensis aloe vera leaf juice powder, magnesium sulfate, benzoic acid, dehydroacetic acid, phenoxyethanol",
+      "product_categories": [
+        "custards"
+      ],
+      "tags": [
+        "low_porosity",
+        "normal_porosity",
+        "high_porosity",
+        "featured",
+        "type_3_hair",
+        "fragrance_free"
+      ],
+      "buy_links": [
+        {
+          "url": "https://jessicurl.com/products/rockin-ringlets-styling-potion",
+          "retailer": "Jessicurl"
+        }
+      ],
+      "id": "rockin'_ringlets_styling_potion",
       "systems_excluded": [],
       "status": "ok",
       "extensions": {
@@ -2926,17 +2985,19 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 2,
           "film_forming_humectants_number": 0,
-          "emollients_number": 0,
+          "emollients_number": 1,
           "simple_humectants": [
             "Propylene Glycol",
             "Caprylyl Glycol"
           ],
           "film_forming_humectants": [],
-          "emollients": [],
-          "score": 46
+          "emollients": [
+            "Unknown Polyquat"
+          ],
+          "score": -18
         },
         "porosity": {
-          "high": 50,
+          "high": 100,
           "low": 100
         }
       },
@@ -3073,7 +3134,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 6,
           "film_forming_humectants_number": 4,
-          "emollients_number": 5,
+          "emollients_number": 7,
           "simple_humectants": [
             "Butylene glycol",
             "Panthenol",
@@ -3089,17 +3150,19 @@ export const defaultProductDatabase: ProductDatabase = {
             "Hydroxyethylcellulose"
           ],
           "emollients": [
+            "Unknown Polyquat",
+            "Unknown Polyquat",
             "Guar Hydroxypropyltrimonium Chloride",
             "Behentrimonium Chloride",
             "Cetrimonium Chloride",
             "Castor Oil",
             "Acrylates Copolymer"
           ],
-          "score": -60
+          "score": -64
         },
         "porosity": {
           "high": 100,
-          "low": 64
+          "low": 70
         }
       },
       "cost_rating": "5"
@@ -3130,7 +3193,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 3,
           "film_forming_humectants_number": 4,
-          "emollients_number": 6,
+          "emollients_number": 9,
           "simple_humectants": [
             "Panthenol",
             "Glycerin",
@@ -3143,18 +3206,21 @@ export const defaultProductDatabase: ProductDatabase = {
             "Hydroxyethylcellulose"
           ],
           "emollients": [
+            "Unknown Polyquat",
+            "Unknown Polyquat",
             "Argan Oil",
             "Castor Oil",
+            "Unknown Polyquat",
             "Polyvinylpyrrolidone",
             "Behentrimonium Chloride",
             "Cetrimonium Chloride",
             "Guar Hydroxypropyltrimonium Chloride"
           ],
-          "score": -79
+          "score": -78
         },
         "porosity": {
           "high": 100,
-          "low": 21
+          "low": 41
         }
       },
       "cost_rating": "5"
@@ -3241,7 +3307,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 3,
           "film_forming_humectants_number": 5,
-          "emollients_number": 1,
+          "emollients_number": 2,
           "simple_humectants": [
             "Glycerin",
             "Ethylhexylglycerin",
@@ -3255,9 +3321,10 @@ export const defaultProductDatabase: ProductDatabase = {
             "Silk Amino Acids"
           ],
           "emollients": [
-            "Maltodextrin VP Copolymer"
+            "Maltodextrin VP Copolymer",
+            "Unknown Polyquat"
           ],
-          "score": -90
+          "score": -89
         },
         "porosity": {
           "high": 100,
@@ -3297,7 +3364,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 3,
           "film_forming_humectants_number": 3,
-          "emollients_number": 5,
+          "emollients_number": 7,
           "simple_humectants": [
             "Sorbitol",
             "Glycerin",
@@ -3312,14 +3379,16 @@ export const defaultProductDatabase: ProductDatabase = {
             "Unknown Oil",
             "Unknown Oil",
             "Rice bran oil",
+            "Unknown Polyquat",
+            "Unknown Polyquat",
             "Behentrimonium Chloride",
             "Guar Hydroxypropyltrimonium Chloride"
           ],
-          "score": -81
+          "score": -80
         },
         "porosity": {
           "high": 100,
-          "low": 16
+          "low": 29
         }
       }
     },
@@ -3350,7 +3419,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 2,
           "film_forming_humectants_number": 2,
-          "emollients_number": 3,
+          "emollients_number": 4,
           "simple_humectants": [
             "Glycerin",
             "Propanediol"
@@ -3360,15 +3429,16 @@ export const defaultProductDatabase: ProductDatabase = {
             "Unknown Protein"
           ],
           "emollients": [
+            "Unknown Polyquat",
             "VP VA copolymer",
             "Unknown Oil",
             "Unknown Oil"
           ],
-          "score": -72
+          "score": -73
         },
         "porosity": {
-          "high": 82,
-          "low": 50
+          "high": 100,
+          "low": 58
         }
       }
     },
@@ -3564,7 +3634,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 2,
           "film_forming_humectants_number": 1,
-          "emollients_number": 1,
+          "emollients_number": 2,
           "simple_humectants": [
             "Propylene Glycol",
             "Glycerin"
@@ -3573,13 +3643,14 @@ export const defaultProductDatabase: ProductDatabase = {
             "Hydroxyethylcellulose"
           ],
           "emollients": [
-            "VP VA copolymer"
+            "VP VA copolymer",
+            "Unknown Polyquat"
           ],
-          "score": -50
+          "score": -54
         },
         "porosity": {
-          "high": 96,
-          "low": 97
+          "high": 100,
+          "low": 99
         }
       },
       "cost_rating": "5"
@@ -3610,7 +3681,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 2,
           "film_forming_humectants_number": 1,
-          "emollients_number": 1,
+          "emollients_number": 3,
           "simple_humectants": [
             "Panthenol",
             "Urea"
@@ -3619,13 +3690,15 @@ export const defaultProductDatabase: ProductDatabase = {
             "Hydroxyethylcellulose"
           ],
           "emollients": [
+            "Unknown Polyquat",
+            "Unknown Polyquat",
             "Jojoba Oil"
           ],
-          "score": -62
+          "score": -70
         },
         "porosity": {
-          "high": 66,
-          "low": 74
+          "high": 100,
+          "low": 86
         }
       }
     },
@@ -3783,7 +3856,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 3,
           "film_forming_humectants_number": 0,
-          "emollients_number": 10,
+          "emollients_number": 11,
           "simple_humectants": [
             "Glycerin",
             "Panthenol",
@@ -3797,16 +3870,17 @@ export const defaultProductDatabase: ProductDatabase = {
             "Butyrospermum Parkii Shea Butter",
             "Jojoba Oil",
             "Guar Hydroxypropyltrimonium Chloride",
+            "Unknown Polyquat",
             "Polyvinylpyrrolidone",
             "Guar Gum",
             "Xanthan Gum",
             "Maltodextrin VP Copolymer"
           ],
-          "score": -59
+          "score": -60
         },
         "porosity": {
           "high": 100,
-          "low": 42
+          "low": 46
         }
       },
       "cost_rating": "3"
@@ -4279,7 +4353,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 2,
           "film_forming_humectants_number": 0,
-          "emollients_number": 4,
+          "emollients_number": 6,
           "simple_humectants": [
             "Ethylhexylglycerin",
             "Glycerin"
@@ -4287,15 +4361,17 @@ export const defaultProductDatabase: ProductDatabase = {
           "film_forming_humectants": [],
           "emollients": [
             "Cetearyl Alcohol",
+            "Unknown Polyquat",
             "Sweet Almond Oil",
+            "Unknown Polyquat",
             "Behentrimonium Chloride",
             "Benzyl Alcohol"
           ],
-          "score": -65
+          "score": -69
         },
         "porosity": {
           "high": 100,
-          "low": 32
+          "low": 51
         }
       },
       "cost_rating": "5"
@@ -4421,7 +4497,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 2,
           "film_forming_humectants_number": 1,
-          "emollients_number": 4,
+          "emollients_number": 5,
           "simple_humectants": [
             "Glycerin",
             "Panthenol"
@@ -4433,12 +4509,13 @@ export const defaultProductDatabase: ProductDatabase = {
             "Sunflower Oil",
             "Unknown Oil",
             "Unknown Oil",
-            "Unknown Oil"
+            "Unknown Oil",
+            "Unknown Polyquat"
           ],
-          "score": -55
+          "score": -56
         },
         "porosity": {
-          "high": 47,
+          "high": 68,
           "low": 100
         }
       },
@@ -4597,7 +4674,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 4,
           "film_forming_humectants_number": 5,
-          "emollients_number": 1,
+          "emollients_number": 2,
           "simple_humectants": [
             "Glycerin",
             "Sorbitol",
@@ -4612,7 +4689,8 @@ export const defaultProductDatabase: ProductDatabase = {
             "Seaweed Extract"
           ],
           "emollients": [
-            "Guar Hydroxypropyltrimonium Chloride"
+            "Guar Hydroxypropyltrimonium Chloride",
+            "Unknown Polyquat"
           ],
           "score": -78
         },
@@ -4877,7 +4955,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 3,
           "film_forming_humectants_number": 1,
-          "emollients_number": 3,
+          "emollients_number": 4,
           "simple_humectants": [
             "Glucose",
             "Propanediol",
@@ -4889,13 +4967,14 @@ export const defaultProductDatabase: ProductDatabase = {
           "emollients": [
             "Sunflower Oil",
             "Unknown Oil",
-            "Guar Hydroxypropyltrimonium Chloride"
+            "Guar Hydroxypropyltrimonium Chloride",
+            "Unknown Polyquat"
           ],
-          "score": -47
+          "score": -50
         },
         "porosity": {
           "high": 100,
-          "low": 23
+          "low": 27
         }
       }
     },
@@ -4935,7 +5014,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 2,
           "film_forming_humectants_number": 0,
-          "emollients_number": 3,
+          "emollients_number": 4,
           "simple_humectants": [
             "Glycerin",
             "Panthenol"
@@ -4944,9 +5023,10 @@ export const defaultProductDatabase: ProductDatabase = {
           "emollients": [
             "Xanthan Gum",
             "Guar Hydroxypropyltrimonium Chloride",
+            "Unknown Polyquat",
             "Guar Gum"
           ],
-          "score": -15
+          "score": -26
         },
         "porosity": {
           "high": 100,
@@ -4984,7 +5064,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 3,
           "film_forming_humectants_number": 1,
-          "emollients_number": 0,
+          "emollients_number": 1,
           "simple_humectants": [
             "Glucose",
             "Glycerin",
@@ -4993,12 +5073,14 @@ export const defaultProductDatabase: ProductDatabase = {
           "film_forming_humectants": [
             "Sodium Glutamate"
           ],
-          "emollients": [],
-          "score": -1
+          "emollients": [
+            "Unknown Polyquat"
+          ],
+          "score": -25
         },
         "porosity": {
-          "high": 86,
-          "low": 69
+          "high": 100,
+          "low": 73
         }
       },
       "cost_rating": "1"
@@ -5167,17 +5249,16 @@ export const defaultProductDatabase: ProductDatabase = {
       "status": "ok",
       "extensions": {
         "frizzbot": {
-          "simple_humectants_number": 1,
+          "simple_humectants_number": 0,
           "film_forming_humectants_number": 1,
-          "emollients_number": 11,
-          "simple_humectants": [
-            "Panthenol"
-          ],
+          "emollients_number": 12,
+          "simple_humectants": [],
           "film_forming_humectants": [
             "Unknown Protein"
           ],
           "emollients": [
             "Sunflower Oil",
+            "Unknown Polyquat",
             "Unknown Oil",
             "Safflower Oil",
             "Unknown Oil",
@@ -5189,10 +5270,10 @@ export const defaultProductDatabase: ProductDatabase = {
             "Coconut Oil",
             "Unknown Oil"
           ],
-          "score": -71
+          "score": -80
         },
         "porosity": {
-          "high": 66,
+          "high": 100,
           "low": 0
         }
       }

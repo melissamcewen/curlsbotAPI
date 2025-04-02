@@ -169,7 +169,6 @@ describe('porosity scoring', () => {
       'aqua water, polyquaternium-69, polyquaternium-11, hydroxyethylcellulose, simmondsia chinensis jojoba seed oil, panthenol, parfum fragrance, c12-15 alkyl benzoate, diazolidinyl urea, iodopropynyl butylcarbamate, alcohol, coumarin, limonene';
     const analysis = analyzer.analyze(ingredients);
     const result = porosity(analysis);
-    console.log(result);
     it('should score spiralicious well for low and high porosity', () => {
       expect(result.low).toBeGreaterThan(70);
       expect(result.high).toBeGreaterThan(70);

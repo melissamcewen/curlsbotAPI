@@ -1050,6 +1050,12 @@
       "categories": ["other"]
     },
     {
+      "name": "Hydrolyzed Corn Starch",
+      "id": "hydrolyzed_corn_starch",
+      "categories": ["film_forming_humectants"] 
+    },
+
+    {
       "name": "Caprylic Capric Triglyceride",
       "id": "caprylic_capric_triglyceride",
       "categories": ["esters"],

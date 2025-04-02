@@ -3814,6 +3814,15 @@ export const defaultDatabase: IngredientDatabase = {
       "status": "ok",
       "group": "others"
     },
+    "hydrolyzed_corn_starch": {
+      "name": "Hydrolyzed Corn Starch",
+      "id": "hydrolyzed_corn_starch",
+      "categories": [
+        "film_forming_humectants"
+      ],
+      "status": "ok",
+      "group": "humectants"
+    },
     "caprylic_capric_triglyceride": {
       "name": "Caprylic Capric Triglyceride",
       "id": "caprylic_capric_triglyceride",
@@ -5050,7 +5059,7 @@ export const defaultSettings: Record<string, Setting> = {
   "no_water_insoluble_silicones": {
     "id": "no_water_insoluble_silicones",
     "name": "Water Insoluble Silicones",
-    "description": "These are silicones that are not water-soluble and can build up on the hair, leading to a heavy, greasy feel and potentially hindering moisture absorption.",
+    "description": "These are silicones that are not water-soluble and can build up on the hair if you don't use a cleansing shampoo",
     "categories": [
       "non_water_soluble_silicones"
     ],
