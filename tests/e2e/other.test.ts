@@ -10,7 +10,7 @@ import {
 /* THESE ARE PRODUCTION TESTS USE THE DATA IN src/data/bundledData.ts */
 
 const list = `some essential oil, sulfated castor oil, cetearyl
-alcohol, Isopropanolamine`;
+alcohol, Isopropanolamine, polyquat 1, 1`;
 
 describe('Handling of other ingredients under the default system', () => {
   const analyzer = new Analyzer({
@@ -28,8 +28,13 @@ describe('Handling of other ingredients under the default system', () => {
       'sulfated castor oil',
       'cetearyl alcohol',
       'isopropanolamine',
+      'polyquat 1',
     ]);
   });
+ it('should not include 1 as an ingredient', () => {
+    expect(result.ingredients.map((i) => i.normalized)).not.toContain('1');
+  });
+
 
   describe('ingredient matching', () => {
     const expectedResults = [
@@ -56,6 +61,12 @@ describe('Handling of other ingredients under the default system', () => {
       {
         normalized: 'isopropanolamine',
         ingredientId: 'isopropanolamine',
+        category: 'other',
+        status: 'ok',
+      },
+      {
+        normalized: 'polyquat 1',
+        ingredientId: 'polyquat_1',
         category: 'other',
         status: 'ok',
       },

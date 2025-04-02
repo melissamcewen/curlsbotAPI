@@ -8,7 +8,7 @@ import type { NormalizedIngredientList } from '../types';
 export function isValidIngredient(value: string): boolean {
   const normalized = value.trim();
   // Check if after normalization we actually have alphanumeric content
-  return normalized.length > 0 &&
+  return normalized.length > 1 &&
          normalized.length <= 150 &&
          /[a-zA-Z0-9]/.test(normalized); // Must contain at least one alphanumeric character
 }

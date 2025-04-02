@@ -139,6 +139,7 @@ describe('Normalizer', () => {
       });
     });
 
+
     it('should return invalid result for empty or whitespace input', () => {
       const inputs = ['', '   ', '\n\n', '\t'];
 
@@ -171,6 +172,14 @@ describe('Normalizer', () => {
         'glycerin',
         'invalid',
         'sd alcohol 40-b',
+      ]);
+    });
+    it('should not include 1 as an ingredient', () => {
+      const input = 'polyquat 1, 1';
+      const result = normalizer(input);
+      expect(result.isValid).toBe(true);
+      expect(result.ingredients).toEqual([
+        'polyquat 1',
       ]);
     });
 

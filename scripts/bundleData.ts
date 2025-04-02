@@ -19,6 +19,7 @@ const LOGS_DIR = join(__dirname, '../logs');
 const INGREDIENTS_OUTPUT_FILE = join(__dirname, '../src/data/bundledData.ts');
 const PRODUCTS_OUTPUT_FILE = join(__dirname, '../src/data/bundledProducts.ts');
 const UNKNOWN_INGREDIENTS_LOG = join(LOGS_DIR, 'unknown_ingredients.json');
+const FLAGGED_PRODUCTS_LOG = join(LOGS_DIR, 'flagged_products.json');
 
 // Load references data from references.references.json
 function loadReferences(): Record<string, Reference> {
@@ -175,6 +176,46 @@ function logUnknownIngredients(
   }
 }
 
+// Function to track products with non-ok status
+interface FlaggedProduct {
+  name: string;
+  status: 'caution' | 'warning' | 'error';
+  reasons: string[];
+  ingredients_raw?: string;
+  tags: string[];
+  flagged_ingredients: Array<{
+    name: string;
+    status: 'caution' | 'warning';
+    reasons: string[];
+  }>;
+}
+
+function logFlaggedProduct(
+  product: { name: string; ingredients_raw?: string; tags?: string[] },
+  analysis: AnalysisResult,
+  flaggedProducts: FlaggedProduct[],
+) {
+  if (analysis.status !== 'ok') {
+    // Get all ingredients that have caution or warning status
+    const flaggedIngredients = analysis.ingredients
+      .filter((ing) => ing.status === 'caution' || ing.status === 'warning')
+      .map((ing) => ({
+        name: ing.name,
+        status: ing.status as 'caution' | 'warning',
+        reasons: ing.reasons.map((r) => `${r.name}: ${r.reason}`),
+      }));
+
+    flaggedProducts.push({
+      name: product.name,
+      status: analysis.status,
+      reasons: analysis.reasons.map((r) => `${r.name}: ${r.reason}`),
+      ingredients_raw: product.ingredients_raw,
+      tags: product.tags || [],
+      flagged_ingredients: flaggedIngredients,
+    });
+  }
+}
+
 function loadProductsFromDir(dirPath: string): any {
   const files = readdirSync(dirPath).filter((file) =>
     file.endsWith('.products.json'),
@@ -182,6 +223,7 @@ function loadProductsFromDir(dirPath: string): any {
   const allProducts: any[] = [];
   const analyzer = new Analyzer();
   const unknownIngredients: Record<string, Set<string>> = {};
+  const flaggedProducts: FlaggedProduct[] = [];
 
   // First load categories to look up groups
   const categoriesData = loadJsonFile(join(DATA_DIR, 'categories.json'));
@@ -243,6 +285,9 @@ function loadProductsFromDir(dirPath: string): any {
       // Log unknown ingredients
       logUnknownIngredients(product.name, analysis, unknownIngredients);
 
+      // Log products with non-ok status
+      logFlaggedProduct(product, analysis, flaggedProducts);
+
       // Generate extensions
       extensions = {
         frizzbot: frizzbot(analysis),
@@ -275,7 +320,7 @@ function loadProductsFromDir(dirPath: string): any {
     return acc;
   }, {} as Record<string, any>);
 
-  return { products, unknownIngredients };
+  return { products, unknownIngredients, flaggedProducts };
 }
 
 function loadJsonFile(filePath: string): any {
@@ -294,7 +339,7 @@ function generateBundledData() {
 
   // Load all data
   const ingredients = loadIngredientsFromDir(join(DATA_DIR, 'ingredients'));
-  const { products, unknownIngredients } = loadProductsFromDir(
+  const { products, unknownIngredients, flaggedProducts } = loadProductsFromDir(
     join(DATA_DIR, 'products'),
   );
   const categoriesData = loadJsonFile(join(DATA_DIR, 'categories.json'));
@@ -305,7 +350,6 @@ function generateBundledData() {
 
   // Write unknown ingredients log if any were found
   if (Object.keys(unknownIngredients).length > 0) {
-    // Convert Sets to arrays for JSON serialization
     const serializable = Object.fromEntries(
       Object.entries(unknownIngredients).map(([ingredient, products]) => [
         ingredient,
@@ -319,6 +363,15 @@ function generateBundledData() {
     console.log(
       `Generated unknown ingredients log at ${UNKNOWN_INGREDIENTS_LOG}`,
     );
+  }
+
+  // Write flagged products log if any were found
+  if (flaggedProducts.length > 0) {
+    writeFileSync(
+      FLAGGED_PRODUCTS_LOG,
+      JSON.stringify(flaggedProducts, null, 2),
+    );
+    console.log(`Generated flagged products log at ${FLAGGED_PRODUCTS_LOG}`);
   }
 
   // Convert categories and groups to record format
