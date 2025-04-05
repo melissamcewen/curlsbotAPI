@@ -371,7 +371,7 @@
       "id": "unknown_polyquat",
       "categories": ["polyquats"],
       "synonyms": ["polyquaternium"],
-      "description": "We're pretty sure this is a polyquat, but we're not sure which one."
+      "description": "We're pretty sure this is a polyquat, but we're not sure which one. Polyquats are a conditioning agent that can be used to help with detangling and styling."
     },
     {
       "name": "Guar Gum",
@@ -1137,7 +1137,36 @@
       "name": "Tocopherol",
       "id": "tocopherol",
       "categories": ["other_emollients"]
+    },
+    {
+      "name": "Urtica Dioica Nettle Extract",
+      "id": "urtica_dioica_nettle_extract",
+      "categories": ["other"],
+      "description": "Nettle extract"
+    },
+    {
+      "name": "Citronellol",
+      "id": "citronellol",
+      "categories": ["other"],
+      "description": "Common fragrance ingredient"
+    },
+    {
+      "name": "Hydrolyzed Quinoa",
+      "id": "hydrolyzed_quinoa",
+      "categories": ["proteins"],
+      "description": "Hydrolyzed quinoa"
+    },
+    {
+      "name": "Vanillin",
+      "id": "vanillin",
+      "categories": ["other"],
+      "description": "Common fragrance ingredient"
+    },
+    {
+      "name": "Sodium Gluconate",
+      "id": "sodium_gluconate",
+      "categories": ["other"],
+      "description": "If high in the ingredient list, it's probably a humectant. If low, it's probably used to balance the formula."
     }
-
   ]
 }

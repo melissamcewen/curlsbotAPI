@@ -350,15 +350,21 @@ function generateBundledData() {
 
   // Write unknown ingredients log if any were found
   if (Object.keys(unknownIngredients).length > 0) {
-    const serializable = Object.fromEntries(
-      Object.entries(unknownIngredients).map(([ingredient, products]) => [
+    // Convert to array, sort by number of products, then convert back to object
+    const sortedEntries = Object.entries(unknownIngredients)
+      .map(([ingredient, products]) => ({
         ingredient,
-        Array.from(products as Set<string>),
-      ]),
-    );
+        products: Array.from(products as Set<string>),
+      }))
+      .sort((a, b) => b.products.length - a.products.length)
+      .reduce((acc, { ingredient, products }) => {
+        acc[ingredient] = products;
+        return acc;
+      }, {} as Record<string, string[]>);
+
     writeFileSync(
       UNKNOWN_INGREDIENTS_LOG,
-      JSON.stringify(serializable, null, 2),
+      JSON.stringify(sortedEntries, null, 2),
     );
     console.log(
       `Generated unknown ingredients log at ${UNKNOWN_INGREDIENTS_LOG}`,

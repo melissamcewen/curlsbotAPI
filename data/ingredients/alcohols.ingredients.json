@@ -392,6 +392,14 @@
       "categories": [
         "emollient_alcohols"
       ]
+    },
+    {
+      "name": "Fatty Alcohol",
+      "id": "fatty_alcohol",
+      "categories": [
+        "emollient_alcohols"
+      ],
+      "description": "This is probably part of an ingredient list that's just labeling another ingredient"
     }
   ]
 }
