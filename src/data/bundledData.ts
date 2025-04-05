@@ -470,6 +470,16 @@ export const defaultDatabase: IngredientDatabase = {
       "status": "ok",
       "group": "alcohols"
     },
+    "fatty_alcohol": {
+      "name": "Fatty Alcohol",
+      "id": "fatty_alcohol",
+      "categories": [
+        "emollient_alcohols"
+      ],
+      "description": "This is probably part of an ingredient list that's just labeling another ingredient",
+      "status": "caution",
+      "group": "alcohols"
+    },
     "alkylbenzene_sulfonate": {
       "name": "Alkylbenzene Sulfonate",
       "id": "alkylbenzene_sulfonate",
@@ -2619,7 +2629,7 @@ export const defaultDatabase: IngredientDatabase = {
       "synonyms": [
         "polyquaternium"
       ],
-      "description": "We're pretty sure this is a polyquat, but we're not sure which one.",
+      "description": "We're pretty sure this is a polyquat, but we're not sure which one. Polyquats are a conditioning agent that can be used to help with detangling and styling.",
       "status": "ok",
       "group": "others"
     },
@@ -3972,6 +3982,56 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "other_emollients"
       ],
+      "status": "ok",
+      "group": "others"
+    },
+    "urtica_dioica_nettle_extract": {
+      "name": "Urtica Dioica Nettle Extract",
+      "id": "urtica_dioica_nettle_extract",
+      "categories": [
+        "other"
+      ],
+      "description": "Nettle extract",
+      "status": "ok",
+      "group": "others"
+    },
+    "citronellol": {
+      "name": "Citronellol",
+      "id": "citronellol",
+      "categories": [
+        "other"
+      ],
+      "description": "Common fragrance ingredient",
+      "status": "ok",
+      "group": "others"
+    },
+    "hydrolyzed_quinoa": {
+      "name": "Hydrolyzed Quinoa",
+      "id": "hydrolyzed_quinoa",
+      "categories": [
+        "proteins"
+      ],
+      "description": "Hydrolyzed quinoa",
+      "status": "ok",
+      "group": "humectants"
+    },
+    "vanillin": {
+      "name": "Vanillin",
+      "id": "vanillin",
+      "categories": [
+        "other"
+      ],
+      "description": "Common fragrance ingredient",
+      "status": "ok",
+      "group": "others"
+    },
+    "sodium_gluconate": {
+      "name": "Sodium Gluconate",
+      "id": "sodium_gluconate",
+      "categories": [
+        "other"
+      ],
+      "description": "If high in the ingredient list, it's probably a humectant. If low, it's probably used to balance the formula.",
       "status": "ok",
       "group": "others"
     },

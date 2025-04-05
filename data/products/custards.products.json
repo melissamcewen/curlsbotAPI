@@ -85,6 +85,23 @@
           "retailer": "Jessicurl"
         }
       ]
+    },
+    {
+      "name": "Curling Custard",
+      "brand": "Kinky Curly",
+      "ingredients_raw": "botanical infusion of water aqua, equisetum arvense horsetail, chamomile, urtica dioica nettle, althea officinalis, marshmallow, organic aloe vera juice, agave tequilana, agave nectar extract, tocopheryl acetate vitamin e, pectin, citric acid, potassium sorbate, fragrance",
+      "product_categories": ["custards"],
+      "tags": ["low_porosity", "normal_porosity", "high_porosity", "featured"],
+      "buy_links": [
+        {
+          "url": "https://www.sallybeauty.com/hair-care/shop-by-product/hair-styling-products/gels-and-glazes/curl-custard-gel/SBS-801402.html?gQT=2",
+          "retailer": "Sally Beauty"
+        },
+        {
+          "url": "https://amzn.to/43GxOtv",
+          "retailer": "Amazon"
+        }
+      ]
     }
   ]
 }
