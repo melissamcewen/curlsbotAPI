@@ -1167,6 +1167,12 @@
       "id": "sodium_gluconate",
       "categories": ["other"],
       "description": "If high in the ingredient list, it's probably a humectant. If low, it's probably used to balance the formula."
+    },
+    {
+      "name": "Ulmus rubra bark extract",
+      "id": "ulmus_rubra_bark_extract",
+      "categories": ["film_forming_humectants"],
+      "synonyms": ["slippery elm bark"]
     }
   ]
 }

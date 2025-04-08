@@ -154,6 +154,19 @@
           "retailer": "Bounce Curl"
         }
       ]
+    },
+    {
+      "name": "The Curl Creme",
+      "brand": "Shirley Jane",
+      "product_categories": ["creams"],
+      "tags": ["woman_owned", "small_business"],
+      "ingredients_raw": "water aqua, behentrimonium methosulfate, persea gratissima avocado fruit oil, glycerin, leuconostoc radish root ferment filtrate, cetyl alcohol, ricinus communis castor seed oil, gluconodeltalactone and sodium benzoate, panthenol, simmondsia chinensis jojoba seed oil, caprylic capric triglyceride, water, glycerin, glycine soja soybean seed extract, water, camellia sinensis leaf extract, water, chamomilla recutita matricaria flower extract, inci nomenclature glycerin, vitis vinifera grape seed extract, polyhydroxystearic acid, behenyl behenate, tocopherol, water, butylene glycol, nymphaea coerulea flower extract, oat amino acids, tetrasodium glutamate diacetate, fragrance parfum, citric acid",
+      "buy_links": [
+        {
+          "url": "https://shirley-jane.com/products/the-curl-creme",
+          "retailer": "Shirley Jane"
+        }
+      ]
     }
   ]
 }

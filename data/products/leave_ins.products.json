@@ -114,6 +114,19 @@
           "retailer": "Bounce Curl"
         }
       ]
+    },
+    {
+      "name": "Refreshing Curls Leave in Treatment",
+      "brand": "Fancy's Hair Innovation",
+      "product_categories": ["leave_ins"],
+      "tags": [],
+      "ingredients_raw": "distilled water, slippery elm, marshmallow root extract, glycerin, sorbitol, wheat germ oil, sunflower seed oil, apricot oil, cetearyl alcohol, panthenol provitmain b5, behentrimonium methosulfate, behentrimonium chloride, tocopheryl, phenoxyethanol, potassium sorbate, citric acid",
+      "buy_links": [
+        {
+          "url": "https://www.fancyshairinnovation.com/shop/refreshing-curls-leave-in-treatment",
+          "retailer": "Fancy's Hair Innovation"
+        }
+      ]
     }
   ]
 }

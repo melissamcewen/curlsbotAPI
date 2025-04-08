@@ -5,7 +5,8 @@
       "id": "apricot_kernel_oil",
       "synonyms": [
         "prunus armeniaca kernel oil",
-        "apricot seed oil"
+        "apricot seed oil",
+        "apricot oil"
       ],
       "categories": [
         "medium_oils"
@@ -331,7 +332,7 @@
         }
       ]
     },
-   
+
     {
       "name": "Olive Oil",
       "id": "olive_oil",
