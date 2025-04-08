@@ -165,12 +165,12 @@ describe('porosity scoring', () => {
       expect(result.high).toBeGreaterThan(60);
     });
   });
-  describe('Spiralicious', () => {
+  describe('Gelebration', () => {
     const ingredients =
-      'aqua water, polyquaternium-69, polyquaternium-11, hydroxyethylcellulose, simmondsia chinensis jojoba seed oil, panthenol, parfum fragrance, c12-15 alkyl benzoate, diazolidinyl urea, iodopropynyl butylcarbamate, alcohol, coumarin, limonene';
+      'Aqua (Water), Linum Usitatissimum (Linseed/Flaxseed Extract), Glycerin, Simmondsia Chinensis (Jojoba) Seed Oil, Aloe Barbadensis (Aloe Vera) Leaf Juice Powder, Magnesium Sulfate, Benzoic Acid, Dehydroacetic Acid, Phenoxyethanol';
     const analysis = analyzer.analyze(ingredients);
     const result = porosity(analysis);
-    it('should score spiralicious well for low and high porosity', () => {
+    it('should score Gelebration well for low and high porosity', () => {
       expect(result.low).toBeGreaterThan(70);
       expect(result.high).toBeGreaterThan(70);
     });

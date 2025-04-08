@@ -25,15 +25,15 @@ describe('Debugging ingredient matching', () => {
 
   it('should correctly identify behentrimonium methosulfate', () => {
     // Log the initial search
-    console.log('\nSearching for:', list);
+  //  console.log('\nSearching for:', list);
 
     // Check partitioning
     const partitioned = partitionSearchSpace(defaultDatabase, list);
-    console.log(
-      '\nPartitioned database categories:',
-      Object.keys(partitioned.database.categories),
-    );
-    console.log('Default ingredient:', partitioned.defaultIngredient);
+  //  console.log(
+  //    '\nPartitioned database categories:',
+  //    Object.keys(partitioned.database.categories),
+  //  );
+    //console.log('Default ingredient:', partitioned.defaultIngredient);
 
     // Check category and group matching
     const categoryMatch = findCategoryByInclusion(
@@ -41,21 +41,21 @@ describe('Debugging ingredient matching', () => {
       defaultDatabase.groups,
       list,
     );
-    console.log('\nCategory match:', categoryMatch);
+   // console.log('\nCategory match:', categoryMatch);
 
     const groupMatch = findGroupByInclusion(defaultDatabase.groups, list);
-    console.log('Group match:', groupMatch);
+    //console.log('Group match:', groupMatch);
 
     // Check ingredient matching
     const ingredientMatch = findIngredient(defaultDatabase, list);
-    console.log(
-      '\nIngredient match:',
-      JSON.stringify(ingredientMatch, null, 2),
-    );
+    //console.log(
+    //  '\nIngredient match:',
+    //  JSON.stringify(ingredientMatch, null, 2),
+    //);
 
     // Run the analyzer
     const result = analyzer.analyze(list);
-    console.log('\nFinal analysis result:', JSON.stringify(result, null, 2));
+    //console.log('\nFinal analysis result:', JSON.stringify(result, null, 2));
 
     // Test assertions
     expect(result.ingredients[0].ingredient?.id).toBe('behentrimonium_methosulfate');
