@@ -99,6 +99,19 @@
       ],
       "asin": "B0B995XZ6T",
       "cost": 0.7
+    },
+    {
+      "name": "Curl Foam",
+      "brand": "Trybe",
+      "ingredients_raw": "purified water, vegetable glycerin, hydrolyzed soy protein, caprylic capric triglycerides mct oil, sodium c14-16 olefin sulfonate, polyquaternium-7, prunus amygdalus dulcis sweet almond oil, emblica officinalis fruit indian gooseberry pulp oil, panthenol dl, vp va copolymer, phenoxyethanol and caprylyl glycol and sorbic acid, polysorbate 20, fragrance",
+      "product_categories": ["foams"],
+      "tags": [],
+      "buy_links": [
+        {
+          "url": "https://trybehaircare.com/products/curl-foam",
+          "retailer": "Trybe"
+        }
+      ]
     }
   ]
 }

@@ -13,8 +13,6 @@
         "creams"
       ],
       "tags": [
-        "high_porosity",
-        "normal_porosity",
         "featured",
         "black_owned",
         "woman_owned",
@@ -35,10 +33,7 @@
         "creams"
       ],
       "tags": [
-        "high_porosity",
-        "curl_enhancer",
-        "featured",
-        "low_porosity"
+        "featured"
       ],
       "ingredients_raw": "water, aloe barbadensis aloe vera leaf gel, cyamopsis tetragonoloba guar gum, sorbitol, sclerotium gum, citrus aurantium amara bitter orange flower water, organic rooibos african camellia sinensis leaf extract, gluconolactone, sodium benzoate, calcium gluconate, potassium sorbate, hydrolyzed rice protein, glycerin, chamomilla recutita matricaria flower extract, eucalyptus globulus leaf extract, ginkgo biloba leaf extract, aspalathus linearis leaf extract, eucalyptus globulus extract, citric acid, maltodextrin, honey extract, linalool",
       "asin": "B002EOSVUQ"
@@ -56,10 +51,8 @@
         "creams"
       ],
       "tags": [
-        "high_porosity",
         "curl_enhancer",
-        "featured",
-        "normal_porosity"
+        "featured"
       ],
       "ingredients_raw": "water aqua, cetearyl alcohol, glyceryl stearate, propanediol, aloe barbadensis leaf juice, hydrogenated vegetable oil, peg-100 stearate, isopropyl palmitate, pvp, glycerin, caprylic capric triglyceride, glycereth-26, butyrospermum parkii shea butter, vp va copolymer, pectin, hydroxypropyltrimonium honey, coconut alkanes, polyquaternium-55, sodium polyitaconate, triethyl citrate, zea mays corn starch, sodium polyacrylate starch, hypnea musciformis extract, gelidiella acerosa extract, sargassum filipendula extract, sodium lactate, coco-caprylate caprate, ceteareth-20, acrylates beheneth-25 methacrylate copolymer, polyacrylate crosspolymer-6, cellulose, disodium edta, fragrance, phenoxyethanol, benzyl alcohol, aminomethyl propanol",
       "asin": "B0CHWM9YCJ"
@@ -120,9 +113,6 @@
         "creams"
       ],
       "tags": [
-        "high_porosity",
-        "normal_porosity",
-        "curl_enhancer",
         "featured"
       ],
       "cost": 3,
@@ -143,7 +133,7 @@
       "name": "Avocado & Rose Oil Clump & Define Cream",
       "brand": "Bounce Curl",
       "product_categories": ["creams"],
-      "tags": ["high_porosity", "normal_porosity", "curl_enhancer", "featured"],
+      "tags": ["featured"],
       "ingredients_raw": "water, cetearyl alcohol, persea gratissima avocado oil, caprylic capric triglyceride, aloe barbadensis leaf juice, cetrimonium chloride, vp va copolymer, sorbitol, astrocaryum murumuru seed butter, argania spinosa kernel oil, butyrospermum parkii shea butter, rosa centifolia rose oil, crambe abyssinica seed oil, glycerin, hydroxyethylcellulose, nigella sativa virgin black cumin oil, trigonella foenum-graecum fenugreek seed extract, tocopheryl acetate vitamin e, adansonia digitata baobab seed oil, behentrimonium methosulfate, hydroxypropyl starch phosphate, phenoxyethanol, ethylhexylglycerin",
       "buy_links": [
         {
@@ -156,7 +146,7 @@
       "name": "Light Hold Creme Gel",
       "brand": "Bounce Curl",
       "product_categories": ["creams"],
-      "tags": ["high_porosity", "normal_porosity", "curl_enhancer", "featured"],
+      "tags": ["featured"],
       "ingredients_raw": "water, vp va copolymer, glycerin, hydrolyzed jojoba esters, jojoba esters, hydrolyzed quinoa protein, hydrolyzed oat protein, aloe barbadensis leaf extract, panax ginseng root extract, salvia officinalis sage extract, nigella sativa virgin black cumin oil, boswellia carter oil, aminomethyl propanol, carbomer, sodium phytate, caprylyl glycol, hexylene glycol, phenoxyethanol, citric acid",
       "buy_links": [
         {

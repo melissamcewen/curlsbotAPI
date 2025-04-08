@@ -335,6 +335,19 @@
           "retailer": "Jessicurl"
         }
       ]
+    },
+    {
+      "name": "Wash and Go Flaxseed Gel",
+      "brand": "CurlMix",
+      "ingredients_raw": "water, linum usitatissimum flaxseed gel, ricinus communis castor oil, glycerin, xanthan gum, vitamin e, phenoxyethanol, caprylyl glycol",
+      "product_categories": ["gels"],
+      "tags": ["hold", "black_owned", "woman_owned", "small_business", "fragrance-free"],
+      "buy_links": [
+        {
+          "url": "https://curlmix.com/products/heavy-hold-flaxseed-gel-curly-hair-fragrance-free",
+          "retailer": "CurlMix"
+        }
+      ]
     }
   ]
 }

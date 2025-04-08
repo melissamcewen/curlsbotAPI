@@ -1,7 +1,7 @@
 {
   "products": [
     {
-      "name": "VitalCurl+ Balancing Rinse Conditioner ",
+      "name": "VitalCurl+ Balancing Rinse Conditioner",
       "brand": "Ouidad",
       "ingredients_raw": "aqua water eau, cetearyl alcohol, cetyl alcohol, glycerin, stearyl alcohol, hydrolyzed wheat protein, helianthus annuus sunflower seed oil, olea europaea olive fruit oil, camellia japonica tsubaki seed oil, salvia hispanica chia seed oil, glycine soja soybean oil, canola canola oil huile de colza, glycine soja soybean sterols, glycolipids, tocopheryl acetate, glyceryl stearate, cetearyl ethylhexanoate, cetrimonium chloride, polyquaternium-59, hydroxyethylcellulose, phospholipids, lactic acid, isopropyl myristate, butylene glycol, benzophenone-4, disodium edta, bht, sodium hydroxide, hexylene glycol, caprylyl glycol, phenoxyethanol, hexyl cinnamal, limonene, linalool, parfum fragrance",
       "product_categories": ["conditioners"],
@@ -206,7 +206,7 @@
         }
       ]
     },
-  
+
     {
       "name": "Big Energy Conditioner",
       "brand": "Curl Keeper",
@@ -232,6 +232,19 @@
         {
           "url": "https://glnk.io/x26q/curlsbot1a7",
           "retailer": "Bounce Curl"
+        }
+      ]
+    },
+    {
+      "name": "Repairing Conditioner",
+      "brand": "My Bright Body",
+      "ingredients_raw": "water, disunfloweroylethyl dimonium chloride, simmondsia chinensis jojoba oil, sodium alginate, hydrolyzed quinoa, isoamyl laurate, panthenol, althaea officinalis marshmallow leaf root extract, glyceryl stearate, hydrogenated ethylhexyl olivate, hydrogenated olive oil unsaponifiables, glycerin, sunflower seed oil glycerides, gluconodeltalactone, lauryl lactyl lactate, eucalyptus globulus eucalyptus oil, mentha piperita peppermint oil, rosmarinus officinalis rosemary oil, sodium benzoate",
+      "product_categories": ["conditioners"],
+      "tags": ["woman_owned", "small_business"],
+      "buy_links": [
+        {
+          "url": "https://mybrightbody.com/collections/hair/products/repairing-conditioner",
+          "retailer": "My Bright Body"
         }
       ]
     }
