@@ -247,6 +247,35 @@
           "retailer": "My Bright Body"
         }
       ]
+    },
+    {
+      "name": "Curl Jelly Conditioner",
+      "brand": "Umberto Giannini",
+      "product_categories": ["conditioners"],
+      "tags": [],
+      "ingredients_raw": "aqua water, cetearyl alcohol, glycerin, propylene glycol, behentrimonium chloride, hydroxyethylcellulose, cetrimonium chloride, phenoxyethanol, polyquaternium-37, polyquaternium-11, parfum fragrance, sodium benzoate, citric acid, disodium edta, coumarin, alpha-isomethyl ionone, linalool, coriandrum sativum coriander fruit oil, lavandula angustifolia lavender oil, salvia sclarea clary sage oil, ethylhexylglycerin, cinnamomum zeylanicum cinnamom bark oil, cuminum cyminum cumin seed oil, dipteryx odorata tonka beans bean extract, elettaria cardamomum cardamon seed oil, mentha piperita peppermint oil, styrax benzoin gum, vanilla planifolia seed, ci 17200 red no 33, ci 19140 yellow no5",
+      "buy_links": [
+        {
+          "url": "https://www.lookfantastic.se/umberto-giannini-curl-jelly-care-conditioner-250ml/12671462.html",
+          "retailer": "Look Fantastic",
+          "country": "SE"
+        }
+      ]
+    },
+    {
+      "name": "Curl Jelly Conditioner",
+      "brand": "Umberto Giannini",
+      "product_categories": ["conditioners"],
+      "tags": [],
+      "ingredients_raw": "aqua water eau, cetearyl alcohol, cocos nucifera coconut oil, glyceryl stearate, cetrimonium chloride, butyrospermum parkii shea butter, coco-caprylate, glycerin, olea europaea olive fruit oil, parfum fragrance, phenoxyethanol, sodium benzoate, citric acid, persea gratissima avocado oil, ethylhexylglycerin, sodium phytate, chondrus crispus carrageenan extract, laminaria digitata extract, citrus aurantium dulcis orange peel oil, pelargonium graveolens flower oil, crithmum maritimum extract, potassium sorbate, benzyl salicylate, linalool, butylphenyl methylpropional",
+      "buy_links": [
+        {
+          "url": "https://www.luxplus.dk/produkt/noughty-wave-hello-curl-defining-conditioner-250-ml",
+          "retailer": "Lux Plus",
+          "country": "DK"
+        }
+      ]
     }
+
   ]
 }

@@ -348,6 +348,21 @@
           "retailer": "CurlMix"
         }
       ]
+    },
+    {
+      "name": "Curl Jelly Scrunching Jelly",
+      "brand": "Umberto Giannini",
+      "ingredients_raw": "aqua, xanthan gum, propylene glycol, glycerin, phenoxyethanol, acrylates palmeth-25 acrylate copolymer, peg-40 hydrogenated castor oil, polyquaternium-11, sodium benzoate, dipropylene glycol, sodium methylparaben, aminomethyl propanol, parfum, benzophenone-4, coumarin, alpha-isomethyl ionone, linalool, ci 17200",
+      "product_categories": ["gels"],
+      "tags": [],
+
+      "buy_links": [
+        {
+          "url": "https://www.lookfantastic.se/umberto-giannini-curl-jelly-scrunching-jelly-200ml/12671461.html",
+          "retailer": "Look Fantastic",
+          "country": "SE"
+        }
+      ]
     }
   ]
 }
