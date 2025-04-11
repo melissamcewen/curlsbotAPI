@@ -217,6 +217,24 @@
       "name": "Esters",
       "group": "others",
       "description": "Esters are used in hair care products as emollients, conditioners, and carriers for other ingredients, contributing to smoothness, shine, and manageability."
+    },
+    {
+      "id": "polysorbates",
+      "name": "Polysorbates",
+      "group": "others",
+      "description": "Polysorbates are used in haircare products as emulsifiers to help blend oil and water-based ingredients, ensuring even distribution and improved texture."
+    },
+    {
+      "id": "fatty_acids",
+      "name": "Fatty Acids",
+      "group": "others",
+      "description": "Fatty acids are used in haircare to moisturize, strengthen, and protect the hair by nourishing the scalp and smoothing the hair cuticle."
+    },
+    {
+      "id": "amino_acids",
+      "name": "Amino Acids",
+      "group": "humectants",
+      "description": "Amino acids are used in haircare to repair and strengthen hair by rebuilding damaged protein structures and improving moisture retention."
     }
   ]
 }

@@ -314,15 +314,6 @@ export const defaultProductDatabase: ProductDatabase = {
           "country": "UK"
         },
         {
-          "url": "https://amzn.to/4g18iBT",
-          "retailer": "Amazon",
-          "country": "US"
-        },
-        {
-          "url": "https://go.skimresources.com?id=276362X1762442&xs=1&url=https%3A%2F%2Fcurlsmith.com%2Fproducts%2Fwash-scrub-detox-pro-biotic",
-          "retailer": "Curlsmith"
-        },
-        {
           "url": "https://go.skimresources.com?id=276362X1762442&xs=1&url=https%3A%2F%2Fuk.curlsmith.com%2Fproducts%2Fwash-scrub-detox-pro-biotic",
           "retailer": "Curlsmith",
           "country": "UK"
@@ -411,11 +402,7 @@ export const defaultProductDatabase: ProductDatabase = {
       "product_categories": [
         "clarifying_shampoos"
       ],
-      "tags": [
-        "low_porosity",
-        "normal_porosity",
-        "high_porosity"
-      ],
+      "tags": [],
       "ingredients_raw": "water, sodium lauroyl methyl isethionate, decyl glucoside, sodium cocoyl isethionate, disodium cocoamphodiacetate, propanediol, panthenol pro-vitamin b5, polyquaternium-10, hydroxypropyl methylcellulose, biotin, vanillin, hydrolyzed adansonia digitata baobab seed protein, nigella sativa virgin black cumin oil, stearamidopropyl dimethylamine, lactic acid, caprylhydroxamic acid, rosmarinus officinalis rosemary leaf extract, boswellia carterii oil, lactobacillus punica granatum fruit ferment extract, lactobacillus pumpkin ferment extract, argania spinosa kernel oil, cocos nucifera coconut oil, citrus aurantium bergamia bergamot fruit oil, anthemis nobilis flower oil, geranium maculatum oil, citrus paradisi grapefruit seed oil, lavandula angustifolia lavender oil, pogostemon cablin oil, citrus aurantium dulcis orange seed oil, citrus nobilis mandarin orange peel oil, caprylyl glycol",
       "buy_links": [
         {
@@ -423,6 +410,7 @@ export const defaultProductDatabase: ProductDatabase = {
           "retailer": "Bounce Curl"
         }
       ],
+      "description": "A shampoo that clarifies without stripping your hair.",
       "id": "gentle_clarifying_shampoo",
       "systems_excluded": [],
       "status": "ok",
@@ -496,13 +484,15 @@ export const defaultProductDatabase: ProductDatabase = {
       "extensions": {
         "frizzbot": {
           "simple_humectants_number": 2,
-          "film_forming_humectants_number": 0,
+          "film_forming_humectants_number": 1,
           "emollients_number": 12,
           "simple_humectants": [
             "Glycerin",
             "Panthenol"
           ],
-          "film_forming_humectants": [],
+          "film_forming_humectants": [
+            "Hydrolyzed Quinoa"
+          ],
           "emollients": [
             "Cetearyl Alcohol",
             "Rice bran oil",
@@ -517,10 +507,10 @@ export const defaultProductDatabase: ProductDatabase = {
             "Unknown Oil",
             "Unknown Oil"
           ],
-          "score": -59
+          "score": -64
         },
         "porosity": {
-          "high": 92,
+          "high": 90,
           "low": 0
         }
       },
@@ -545,11 +535,7 @@ export const defaultProductDatabase: ProductDatabase = {
       "product_categories": [
         "clarifying_shampoos"
       ],
-      "tags": [
-        "low_porosity",
-        "normal_porosity",
-        "high_porosity"
-      ],
+      "tags": [],
       "id": "scalp_care_clarifying_shampoo",
       "systems_excluded": [],
       "status": "ok",
@@ -584,8 +570,66 @@ export const defaultProductDatabase: ProductDatabase = {
       },
       "cost_rating": "1"
     },
-    "vitalcurl+_balancing_rinse_conditioner_": {
-      "name": "VitalCurl+ Balancing Rinse Conditioner ",
+    "curl_reset_detox_shampoo": {
+      "name": "Curl Reset Detox Shampoo",
+      "brand": "Curlsmith",
+      "product_categories": [
+        "clarifying_shampoos"
+      ],
+      "ingredients_raw": "water aqua eau, sodium c14-16 olefin sulfonate, cellulose, cocamidopropyl hydroxysultaine, acrylates copolymer, sodium cocoyl isethionate, malva sylvestris mallow flower extract, zingiber officinale ginger root extract, urtica dioica nettle leaf extract, vinegar acetum vinaigre, glycerin, mentha piperita peppermint oil, polyquaternium-10, sodium gluconate, phytic acid, propanediol, helianthus annuus sunflower seed oil, tocopherol, sodium chloride, potassium sorbate, sodium hydroxide, phenoxyethanol, sodium benzoate, fragrance parfum, linalool, limonene, citrus aurantium peel oil",
+      "tags": [
+        "low_porosity",
+        "normal_porosity",
+        "featured"
+      ],
+      "buy_links": [
+        {
+          "url": "https://amzn.to/44fMMqA",
+          "retailer": "Amazon"
+        },
+        {
+          "url": "https://www.ulta.com/p/curl-reset-detox-shampoo-pimprod2050695?sku=2636663",
+          "retailer": "Ulta"
+        },
+        {
+          "url": "https://curlsmith.com/products/curl-reset-detox-shampoo",
+          "retailer": "Curlsmith"
+        }
+      ],
+      "asin": "B08636L8JY",
+      "description": "This shampoo was recently reformulated to remove not just product buildup, but also mineral buildup from hard water.",
+      "cost": 2.6,
+      "id": "curl_reset_detox_shampoo",
+      "systems_excluded": [],
+      "status": "ok",
+      "extensions": {
+        "frizzbot": {
+          "simple_humectants_number": 2,
+          "film_forming_humectants_number": 0,
+          "emollients_number": 5,
+          "simple_humectants": [
+            "Glycerin",
+            "Propanediol"
+          ],
+          "film_forming_humectants": [],
+          "emollients": [
+            "Acrylates Copolymer",
+            "Peppermint Oil",
+            "Unknown Polyquat",
+            "Sunflower Oil",
+            "Unknown Oil"
+          ],
+          "score": -54
+        },
+        "porosity": {
+          "high": 93,
+          "low": 100
+        }
+      },
+      "cost_rating": "5"
+    },
+    "vitalcurl+_balancing_rinse_conditioner": {
+      "name": "VitalCurl+ Balancing Rinse Conditioner",
       "brand": "Ouidad",
       "ingredients_raw": "aqua water eau, cetearyl alcohol, cetyl alcohol, glycerin, stearyl alcohol, hydrolyzed wheat protein, helianthus annuus sunflower seed oil, olea europaea olive fruit oil, camellia japonica tsubaki seed oil, salvia hispanica chia seed oil, glycine soja soybean oil, canola canola oil huile de colza, glycine soja soybean sterols, glycolipids, tocopheryl acetate, glyceryl stearate, cetearyl ethylhexanoate, cetrimonium chloride, polyquaternium-59, hydroxyethylcellulose, phospholipids, lactic acid, isopropyl myristate, butylene glycol, benzophenone-4, disodium edta, bht, sodium hydroxide, hexylene glycol, caprylyl glycol, phenoxyethanol, hexyl cinnamal, limonene, linalool, parfum fragrance",
       "product_categories": [
@@ -601,7 +645,7 @@ export const defaultProductDatabase: ProductDatabase = {
         }
       ],
       "cost": 1.5,
-      "id": "vitalcurl+_balancing_rinse_conditioner_",
+      "id": "vitalcurl+_balancing_rinse_conditioner",
       "systems_excluded": [],
       "status": "ok",
       "extensions": {
@@ -700,7 +744,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 100,
-          "low": 19
+          "low": 23
         }
       },
       "cost_rating": "4"
@@ -761,7 +805,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 100,
-          "low": 55
+          "low": 57
         }
       },
       "cost_rating": "4"
@@ -794,7 +838,7 @@ export const defaultProductDatabase: ProductDatabase = {
       "extensions": {
         "frizzbot": {
           "simple_humectants_number": 1,
-          "film_forming_humectants_number": 3,
+          "film_forming_humectants_number": 4,
           "emollients_number": 9,
           "simple_humectants": [
             "Glycerin"
@@ -802,6 +846,7 @@ export const defaultProductDatabase: ProductDatabase = {
           "film_forming_humectants": [
             "Aloe Barbadensis Leaf Extract",
             "Hydroxyethylcellulose",
+            "Hydrolyzed Quinoa",
             "Unknown Protein"
           ],
           "emollients": [
@@ -815,11 +860,11 @@ export const defaultProductDatabase: ProductDatabase = {
             "Stearyl Alcohol",
             "Benzyl Alcohol"
           ],
-          "score": -75
+          "score": -76
         },
         "porosity": {
           "high": 100,
-          "low": 7
+          "low": 10
         }
       },
       "cost_rating": "5"
@@ -849,7 +894,7 @@ export const defaultProductDatabase: ProductDatabase = {
       "extensions": {
         "frizzbot": {
           "simple_humectants_number": 2,
-          "film_forming_humectants_number": 3,
+          "film_forming_humectants_number": 4,
           "emollients_number": 17,
           "simple_humectants": [
             "Glycerin",
@@ -858,7 +903,8 @@ export const defaultProductDatabase: ProductDatabase = {
           "film_forming_humectants": [
             "Aloe Barbadensis Leaf Extract",
             "Hydroxyethylcellulose",
-            "Unknown Protein"
+            "Unknown Protein",
+            "Hydrolyzed Quinoa"
           ],
           "emollients": [
             "Cetearyl Alcohol",
@@ -879,7 +925,7 @@ export const defaultProductDatabase: ProductDatabase = {
             "Jojoba Oil",
             "Benzyl Alcohol"
           ],
-          "score": -69
+          "score": -70
         },
         "porosity": {
           "high": 100,
@@ -935,7 +981,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 100,
-          "low": 0
+          "low": 3
         }
       },
       "cost_rating": "5"
@@ -1172,7 +1218,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 100,
-          "low": 62
+          "low": 64
         }
       },
       "cost_rating": "1"
@@ -1266,7 +1312,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 100,
-          "low": 92
+          "low": 95
         }
       },
       "cost_rating": "1"
@@ -1313,8 +1359,8 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -73
         },
         "porosity": {
-          "high": 97,
-          "low": 83
+          "high": 95,
+          "low": 85
         }
       },
       "cost_rating": "5"
@@ -1435,6 +1481,103 @@ export const defaultProductDatabase: ProductDatabase = {
       },
       "cost_rating": "5"
     },
+    "repairing_conditioner": {
+      "name": "Repairing Conditioner",
+      "brand": "My Bright Body",
+      "ingredients_raw": "water, disunfloweroylethyl dimonium chloride, simmondsia chinensis jojoba oil, sodium alginate, hydrolyzed quinoa, isoamyl laurate, panthenol, althaea officinalis marshmallow leaf root extract, glyceryl stearate, hydrogenated ethylhexyl olivate, hydrogenated olive oil unsaponifiables, glycerin, sunflower seed oil glycerides, gluconodeltalactone, lauryl lactyl lactate, eucalyptus globulus eucalyptus oil, mentha piperita peppermint oil, rosmarinus officinalis rosemary oil, sodium benzoate",
+      "product_categories": [
+        "conditioners"
+      ],
+      "tags": [
+        "woman_owned",
+        "small_business"
+      ],
+      "buy_links": [
+        {
+          "url": "https://mybrightbody.com/collections/hair/products/repairing-conditioner",
+          "retailer": "My Bright Body"
+        }
+      ],
+      "id": "repairing_conditioner",
+      "systems_excluded": [],
+      "status": "ok",
+      "extensions": {
+        "frizzbot": {
+          "simple_humectants_number": 2,
+          "film_forming_humectants_number": 2,
+          "emollients_number": 6,
+          "simple_humectants": [
+            "Panthenol",
+            "Glycerin"
+          ],
+          "film_forming_humectants": [
+            "Hydrolyzed Quinoa",
+            "Marshmallow root Extract"
+          ],
+          "emollients": [
+            "Jojoba Oil",
+            "Olive Oil",
+            "Sunflower Oil",
+            "Unknown Oil",
+            "Peppermint Oil",
+            "Rosemary Oil"
+          ],
+          "score": -75
+        },
+        "porosity": {
+          "high": 53,
+          "low": 0
+        }
+      }
+    },
+    "curl_jelly_conditioner": {
+      "name": "Curl Jelly Conditioner",
+      "brand": "Umberto Giannini",
+      "product_categories": [
+        "conditioners"
+      ],
+      "tags": [],
+      "ingredients_raw": "aqua water eau, cetearyl alcohol, cocos nucifera coconut oil, glyceryl stearate, cetrimonium chloride, butyrospermum parkii shea butter, coco-caprylate, glycerin, olea europaea olive fruit oil, parfum fragrance, phenoxyethanol, sodium benzoate, citric acid, persea gratissima avocado oil, ethylhexylglycerin, sodium phytate, chondrus crispus carrageenan extract, laminaria digitata extract, citrus aurantium dulcis orange peel oil, pelargonium graveolens flower oil, crithmum maritimum extract, potassium sorbate, benzyl salicylate, linalool, butylphenyl methylpropional",
+      "buy_links": [
+        {
+          "url": "https://www.luxplus.dk/produkt/noughty-wave-hello-curl-defining-conditioner-250-ml",
+          "retailer": "Lux Plus",
+          "country": "DK"
+        }
+      ],
+      "id": "curl_jelly_conditioner",
+      "systems_excluded": [],
+      "status": "ok",
+      "extensions": {
+        "frizzbot": {
+          "simple_humectants_number": 2,
+          "film_forming_humectants_number": 1,
+          "emollients_number": 8,
+          "simple_humectants": [
+            "Glycerin",
+            "Ethylhexylglycerin"
+          ],
+          "film_forming_humectants": [
+            "Carrageenan"
+          ],
+          "emollients": [
+            "Cetearyl Alcohol",
+            "Coconut Oil",
+            "Cetrimonium Chloride",
+            "Butyrospermum Parkii Shea Butter",
+            "Olive Oil",
+            "Avocado Oil",
+            "Unknown Oil",
+            "Unknown Oil"
+          ],
+          "score": -69
+        },
+        "porosity": {
+          "high": 90,
+          "low": 0
+        }
+      }
+    },
     "coil_infusion®_drink_up™_cleansing_conditioner": {
       "name": "Coil Infusion® Drink Up™ Cleansing Conditioner",
       "brand": "Ouidad",
@@ -1442,8 +1585,6 @@ export const defaultProductDatabase: ProductDatabase = {
         "cowashes"
       ],
       "tags": [
-        "normal_porosity",
-        "high_porosity",
         "featured"
       ],
       "ingredients_raw": "aqua water eau, cetearyl alcohol, glycerin, cetyl esters, cetyl alcohol, stearamidopropyl dimethylamine, behentrimonium chloride, butyrospermum parkii shea butter, helianthus annuus sunflower seed oil, propanediol, prunus amygdalus dulcis sweet almond oil, carthamus tinctorius safflower seed oil, ricinus communis castor seed oil, helianthus annuus sunflower extract, rosmarinus officinalis rosemary leaf extract, oryza sativa rice bran extract, euterpe oleracea fruit extract, eucalyptus globulus leaf oil, mauritia flexuosa fruit oil, morinda citrifolia fruit extract, cymbopogon schoenanthus extract, garcinia indica seed butter, sclerocarya birrea seed oil, hydrolyzed rice protein, aloe barbadensis leaf juice, palmitoyl tetrapeptide-20, squalane, tocopherol, hydroxyethylcellulose, capryloyl glycerin sebacic acid copolymer, hydrogenated castor oil sebacic acid copolymer, bht, panthenol, polysorbate 60, guar hydroxypropyltrimonium chloride, stearamine oxide, ethylhexyl olivate, diheptyl succinate, isododecane, citric acid, disodium edta, tetrasodium edta, sodium hydroxide, disodium phosphate, sodium phosphate, butylene glycol, caprylyl glycol, hexylene glycol, sodium benzoate, potassium sorbate, leuconostoc radish root ferment filtrate, chlorphenesin, phenoxyethanol, limonene, linalool, fragrance parfum",
@@ -1516,9 +1657,7 @@ export const defaultProductDatabase: ProductDatabase = {
       "product_categories": [
         "cowashes"
       ],
-      "tags": [
-        "high_porosity"
-      ],
+      "tags": [],
       "cost": 0.54,
       "ingredients_raw": "aqua water eau, cetyl alcohol, cetrimonium chloride, cetearyl alcohol, cocos nucifera coconut oil, ricinus communis castor seed oil, cocos nucifera coconut fruit powder, citrus reticulata tangerine fruit extract, phytosterols, camillia sinensis leaf extract, peg-40 castor oil, stearlkonium chloride, serenoa serrulata fruit extract, quaternium-18, propylene glycol, c12-15 alkyl lactate, fragrance parfum, potassium sorbate, caprylyl glycol, phenoxyethanol, abies balsamea balsam canada resin, potassium chloride, limonene, glycerin, caprylic capric triglyceride",
       "asin": "B00641UCY8",
@@ -1566,9 +1705,7 @@ export const defaultProductDatabase: ProductDatabase = {
           "retailer": "Amazon"
         }
       ],
-      "tags": [
-        "high_porosity"
-      ],
+      "tags": [],
       "asin": "B005SIR5G6",
       "cost": 2.12,
       "id": "co-wash_conditioning_cleanser",
@@ -1612,7 +1749,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 100,
-          "low": 19
+          "low": 23
         }
       },
       "cost_rating": "4"
@@ -1623,9 +1760,7 @@ export const defaultProductDatabase: ProductDatabase = {
       "product_categories": [
         "cowashes"
       ],
-      "tags": [
-        "high_porosity"
-      ],
+      "tags": [],
       "ingredients_raw": "water aqua, cetearyl alcohol, hydroxypropyl starch phosphate, cetyl palmitate, behentrimonium chloride, cocamidopropyl betaine, fragrance parfum, selaginella lepidophylla resurrection flower extract, carapa guaianensis andiroba seed oil, persea gratissima avocado oil, salvia officinalis sage leaf extract, ocimum basilicum basil leaf extract, piper nigrum black pepper seed extract, aloe barbadensis aloe vera leaf juice, rosmarinus officinalis rosemary leaf extract, helianthus annuus sunflower seed oil, butyrospermum parkii shea butter, cocos nucifera coconut oil, glycerin, guar hydroxypropyltrimonium chloride, panthenol, glyceryl caprylate, glyceryl undecylenate, potassium sorbate, sodium benzoate, sodium hydroxide, sodium chloride, citric acid, disodium edta, limonene, linalool",
       "buy_links": [
         {
@@ -1679,8 +1814,6 @@ export const defaultProductDatabase: ProductDatabase = {
         "cowashes"
       ],
       "tags": [
-        "high_porosity",
-        "normal_porosity",
         "featured"
       ],
       "buy_links": [
@@ -1730,9 +1863,7 @@ export const defaultProductDatabase: ProductDatabase = {
       "product_categories": [
         "cowashes"
       ],
-      "tags": [
-        "high_porosity"
-      ],
+      "tags": [],
       "ingredients_raw": "organic aloe barbadensis leaf juice, glycerin, behentrimonium methosulfate, caprylic capric triglyceride, cetearyl alcohol, sucrose cocoate, stearamidopropyl dimethylamine, propanediol, panthenol, hydrolyzed jojoba esters, vanillin, polyquaternium-10, lactic acid, caprylhydroxamic acid, nigella sativa virgin black cumin oil, althaea officinalis marshmallow root extract, pogostemon cablin oil, citrus paradisi grapefruit seed oil, camellia sinensis green tea leaf extract, rosmarinus officinalis rosemary leaf extract, citrus aurantium bergamia bergamot fruit oil, salvia officinalis sage extract, equisetum arvense horsetail extract, boswellia carterii oil, caryocar brasiliense pequi oil, brassica oleracea italica broccoli seed oil, anthemis nobilis chamomile flower extract, anthemis nobilis flower oil, urtica dioica nettle extract, citrus aurantium dulcis orange seed oil, cocos nucifera coconut oil, citrus nobilis mandarin orange peel oil, tocopheryl acetate, ethylhexylglycerin",
       "buy_links": [
         {
@@ -1797,8 +1928,6 @@ export const defaultProductDatabase: ProductDatabase = {
         "creams"
       ],
       "tags": [
-        "high_porosity",
-        "normal_porosity",
         "featured",
         "black_owned",
         "woman_owned",
@@ -1903,10 +2032,8 @@ export const defaultProductDatabase: ProductDatabase = {
         "creams"
       ],
       "tags": [
-        "high_porosity",
         "curl_enhancer",
-        "featured",
-        "normal_porosity"
+        "featured"
       ],
       "ingredients_raw": "water aqua, cetearyl alcohol, glyceryl stearate, propanediol, aloe barbadensis leaf juice, hydrogenated vegetable oil, peg-100 stearate, isopropyl palmitate, pvp, glycerin, caprylic capric triglyceride, glycereth-26, butyrospermum parkii shea butter, vp va copolymer, pectin, hydroxypropyltrimonium honey, coconut alkanes, polyquaternium-55, sodium polyitaconate, triethyl citrate, zea mays corn starch, sodium polyacrylate starch, hypnea musciformis extract, gelidiella acerosa extract, sargassum filipendula extract, sodium lactate, coco-caprylate caprate, ceteareth-20, acrylates beheneth-25 methacrylate copolymer, polyacrylate crosspolymer-6, cellulose, disodium edta, fragrance, phenoxyethanol, benzyl alcohol, aminomethyl propanol",
       "asin": "B0CHWM9YCJ",
@@ -2057,7 +2184,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 100,
-          "low": 8
+          "low": 10
         }
       },
       "cost_rating": "5"
@@ -2069,9 +2196,6 @@ export const defaultProductDatabase: ProductDatabase = {
         "creams"
       ],
       "tags": [
-        "high_porosity",
-        "normal_porosity",
-        "curl_enhancer",
         "featured"
       ],
       "cost": 3,
@@ -2126,9 +2250,6 @@ export const defaultProductDatabase: ProductDatabase = {
         "creams"
       ],
       "tags": [
-        "high_porosity",
-        "normal_porosity",
-        "curl_enhancer",
         "featured"
       ],
       "ingredients_raw": "water, cetearyl alcohol, persea gratissima avocado oil, caprylic capric triglyceride, aloe barbadensis leaf juice, cetrimonium chloride, vp va copolymer, sorbitol, astrocaryum murumuru seed butter, argania spinosa kernel oil, butyrospermum parkii shea butter, rosa centifolia rose oil, crambe abyssinica seed oil, glycerin, hydroxyethylcellulose, nigella sativa virgin black cumin oil, trigonella foenum-graecum fenugreek seed extract, tocopheryl acetate vitamin e, adansonia digitata baobab seed oil, behentrimonium methosulfate, hydroxypropyl starch phosphate, phenoxyethanol, ethylhexylglycerin",
@@ -2183,9 +2304,6 @@ export const defaultProductDatabase: ProductDatabase = {
         "creams"
       ],
       "tags": [
-        "high_porosity",
-        "normal_porosity",
-        "curl_enhancer",
         "featured"
       ],
       "ingredients_raw": "water, vp va copolymer, glycerin, hydrolyzed jojoba esters, jojoba esters, hydrolyzed quinoa protein, hydrolyzed oat protein, aloe barbadensis leaf extract, panax ginseng root extract, salvia officinalis sage extract, nigella sativa virgin black cumin oil, boswellia carter oil, aminomethyl propanol, carbomer, sodium phytate, caprylyl glycol, hexylene glycol, phenoxyethanol, citric acid",
@@ -2209,7 +2327,7 @@ export const defaultProductDatabase: ProductDatabase = {
             "Hexylene Glycol"
           ],
           "film_forming_humectants": [
-            "Unknown Protein",
+            "Hydrolyzed Quinoa",
             "Hydrolyzed Oat Protein",
             "Aloe Barbadensis Leaf Extract"
           ],
@@ -2223,6 +2341,57 @@ export const defaultProductDatabase: ProductDatabase = {
         "porosity": {
           "high": 81,
           "low": 31
+        }
+      }
+    },
+    "the_curl_creme": {
+      "name": "The Curl Creme",
+      "brand": "Shirley Jane",
+      "product_categories": [
+        "creams"
+      ],
+      "tags": [
+        "woman_owned",
+        "small_business"
+      ],
+      "ingredients_raw": "water aqua, behentrimonium methosulfate, persea gratissima avocado fruit oil, glycerin, leuconostoc radish root ferment filtrate, cetyl alcohol, ricinus communis castor seed oil, gluconodeltalactone and sodium benzoate, panthenol, simmondsia chinensis jojoba seed oil, caprylic capric triglyceride, water, glycerin, glycine soja soybean seed extract, water, camellia sinensis leaf extract, water, chamomilla recutita matricaria flower extract, inci nomenclature glycerin, vitis vinifera grape seed extract, polyhydroxystearic acid, behenyl behenate, tocopherol, water, butylene glycol, nymphaea coerulea flower extract, oat amino acids, tetrasodium glutamate diacetate, fragrance parfum, citric acid",
+      "buy_links": [
+        {
+          "url": "https://shirley-jane.com/products/the-curl-creme",
+          "retailer": "Shirley Jane"
+        }
+      ],
+      "id": "the_curl_creme",
+      "systems_excluded": [],
+      "status": "ok",
+      "extensions": {
+        "frizzbot": {
+          "simple_humectants_number": 5,
+          "film_forming_humectants_number": 2,
+          "emollients_number": 5,
+          "simple_humectants": [
+            "Glycerin",
+            "Panthenol",
+            "Glycerin",
+            "Glycerin",
+            "Butylene glycol"
+          ],
+          "film_forming_humectants": [
+            "Glycine",
+            "Sodium Glutamate"
+          ],
+          "emollients": [
+            "Behentrimonium Methosulfate",
+            "Avocado Oil",
+            "Cetyl Alcohol",
+            "Castor Oil",
+            "Jojoba Oil"
+          ],
+          "score": -55
+        },
+        "porosity": {
+          "high": 85,
+          "low": 38
         }
       }
     },
@@ -2279,8 +2448,8 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -81
         },
         "porosity": {
-          "high": 97,
-          "low": 56
+          "high": 95,
+          "low": 60
         }
       },
       "cost_rating": "4"
@@ -2495,6 +2664,55 @@ export const defaultProductDatabase: ProductDatabase = {
         }
       }
     },
+    "curling_custard": {
+      "name": "Curling Custard",
+      "brand": "Kinky Curly",
+      "ingredients_raw": "botanical infusion of water aqua, equisetum arvense horsetail, chamomile, urtica dioica nettle, althea officinalis, marshmallow, organic aloe vera juice, agave tequilana, agave nectar extract, tocopheryl acetate vitamin e, pectin, citric acid, potassium sorbate, fragrance",
+      "product_categories": [
+        "custards"
+      ],
+      "tags": [
+        "low_porosity",
+        "normal_porosity",
+        "high_porosity",
+        "featured"
+      ],
+      "buy_links": [
+        {
+          "url": "https://www.sallybeauty.com/hair-care/shop-by-product/hair-styling-products/gels-and-glazes/curl-custard-gel/SBS-801402.html?gQT=2",
+          "retailer": "Sally Beauty"
+        },
+        {
+          "url": "https://amzn.to/43GxOtv",
+          "retailer": "Amazon"
+        }
+      ],
+      "id": "curling_custard",
+      "systems_excluded": [],
+      "status": "ok",
+      "extensions": {
+        "frizzbot": {
+          "simple_humectants_number": 2,
+          "film_forming_humectants_number": 3,
+          "emollients_number": 0,
+          "simple_humectants": [
+            "Agave Nectar",
+            "Agave Nectar"
+          ],
+          "film_forming_humectants": [
+            "Marshmallow root Extract",
+            "Aloe Barbadensis Leaf Extract",
+            "Pectin"
+          ],
+          "emollients": [],
+          "score": -79
+        },
+        "porosity": {
+          "high": 92,
+          "low": 100
+        }
+      }
+    },
     "banana_cream_deep_conditioner": {
       "name": "Banana Cream Deep Conditioner",
       "brand": "Ecoslay",
@@ -2596,7 +2814,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 100,
-          "low": 6
+          "low": 12
         }
       },
       "cost_rating": "2"
@@ -2893,7 +3111,7 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -75
         },
         "porosity": {
-          "high": 96,
+          "high": 94,
           "low": 0
         }
       },
@@ -3008,6 +3226,102 @@ export const defaultProductDatabase: ProductDatabase = {
         }
       },
       "cost_rating": "1"
+    },
+    "curl_foam": {
+      "name": "Curl Foam",
+      "brand": "Trybe",
+      "ingredients_raw": "purified water, vegetable glycerin, hydrolyzed soy protein, caprylic capric triglycerides mct oil, sodium c14-16 olefin sulfonate, polyquaternium-7, prunus amygdalus dulcis sweet almond oil, emblica officinalis fruit indian gooseberry pulp oil, panthenol dl, vp va copolymer, phenoxyethanol and caprylyl glycol and sorbic acid, polysorbate 20, fragrance",
+      "product_categories": [
+        "foams"
+      ],
+      "tags": [],
+      "buy_links": [
+        {
+          "url": "https://trybehaircare.com/products/curl-foam",
+          "retailer": "Trybe"
+        }
+      ],
+      "id": "curl_foam",
+      "systems_excluded": [],
+      "status": "ok",
+      "extensions": {
+        "frizzbot": {
+          "simple_humectants_number": 3,
+          "film_forming_humectants_number": 1,
+          "emollients_number": 5,
+          "simple_humectants": [
+            "Glycerin",
+            "Panthenol",
+            "Caprylyl Glycol"
+          ],
+          "film_forming_humectants": [
+            "Unknown Protein"
+          ],
+          "emollients": [
+            "Unknown Oil",
+            "Unknown Polyquat",
+            "Sweet Almond Oil",
+            "Unknown Oil",
+            "VP VA copolymer"
+          ],
+          "score": -56
+        },
+        "porosity": {
+          "high": 86,
+          "low": 65
+        }
+      }
+    },
+    "モチカールムース｜mochi_curl_mousse": {
+      "name": "モチカールムース｜Mochi Curl Mousse",
+      "brand": "Curly Me",
+      "ingredients_raw": "aqua, butane, pentylene glycol, polyquaternium-11, butylene glycol, dipotassium glycyrrhizate, arginine, sodium hyaluronate, panthenol, swertia japonica extract, glycine soja soybean seed extract, simmondsia chinensis jojoba seed oil, citrus junos seed oil, citrus junos fruit extract, scutellaria baicalensis root extract, sodium lauraminopropionate, polysorbate 80, peg-40 hydrogenated castor oil, citric acid, phenoxyethanol, citrus reticulata tangerine peel oil, lavandula angustifolia lavender oil, salvia sclarea clary oil, juniperus communis fruit oil, zingiber officinale ginger root oil",
+      "product_categories": [
+        "foams"
+      ],
+      "tags": [],
+      "buy_links": [
+        {
+          "url": "https://www.curlyme.jp/items/97872137",
+          "retailer": "Curly Me",
+          "country": "JP"
+        }
+      ],
+      "id": "モチカールムース｜mochi_curl_mousse",
+      "systems_excluded": [],
+      "status": "ok",
+      "extensions": {
+        "frizzbot": {
+          "simple_humectants_number": 3,
+          "film_forming_humectants_number": 2,
+          "emollients_number": 9,
+          "simple_humectants": [
+            "Butylene glycol",
+            "Sodium hyaluronate",
+            "Panthenol"
+          ],
+          "film_forming_humectants": [
+            "Arginine",
+            "Glycine"
+          ],
+          "emollients": [
+            "Unknown Polyquat",
+            "Jojoba Oil",
+            "Unknown Oil",
+            "Castor Oil",
+            "Unknown Oil",
+            "Lavender Oil",
+            "Unknown Oil",
+            "Unknown Oil",
+            "Unknown Oil"
+          ],
+          "score": -60
+        },
+        "porosity": {
+          "high": 87,
+          "low": 0
+        }
+      }
     },
     "jello_shot_curl_defining_gel": {
       "name": "Jello Shot Curl Defining Gel",
@@ -3168,7 +3482,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 100,
-          "low": 77
+          "low": 78
         }
       },
       "cost_rating": "5"
@@ -3551,8 +3865,8 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -32
         },
         "porosity": {
-          "high": 60,
-          "low": 65
+          "high": 59,
+          "low": 67
         }
       }
     },
@@ -3607,8 +3921,8 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -90
         },
         "porosity": {
-          "high": 92,
-          "low": 84
+          "high": 91,
+          "low": 86
         }
       },
       "cost_rating": "1"
@@ -3708,6 +4022,96 @@ export const defaultProductDatabase: ProductDatabase = {
         }
       }
     },
+    "wash_and_go_flaxseed_gel": {
+      "name": "Wash and Go Flaxseed Gel",
+      "brand": "CurlMix",
+      "ingredients_raw": "water, linum usitatissimum flaxseed gel, ricinus communis castor oil, glycerin, xanthan gum, vitamin e, phenoxyethanol, caprylyl glycol",
+      "product_categories": [
+        "gels"
+      ],
+      "tags": [
+        "hold",
+        "black_owned",
+        "woman_owned",
+        "small_business",
+        "fragrance-free"
+      ],
+      "buy_links": [
+        {
+          "url": "https://curlmix.com/products/heavy-hold-flaxseed-gel-curly-hair-fragrance-free",
+          "retailer": "CurlMix"
+        }
+      ],
+      "id": "wash_and_go_flaxseed_gel",
+      "systems_excluded": [],
+      "status": "ok",
+      "extensions": {
+        "frizzbot": {
+          "simple_humectants_number": 2,
+          "film_forming_humectants_number": 1,
+          "emollients_number": 2,
+          "simple_humectants": [
+            "Glycerin",
+            "Caprylyl Glycol"
+          ],
+          "film_forming_humectants": [
+            "Flaxseed Extract"
+          ],
+          "emollients": [
+            "Castor Oil",
+            "Xanthan Gum"
+          ],
+          "score": -70
+        },
+        "porosity": {
+          "high": 82,
+          "low": 42
+        }
+      }
+    },
+    "curl_jelly_scrunching_jelly": {
+      "name": "Curl Jelly Scrunching Jelly",
+      "brand": "Umberto Giannini",
+      "ingredients_raw": "aqua, xanthan gum, propylene glycol, glycerin, phenoxyethanol, acrylates palmeth-25 acrylate copolymer, peg-40 hydrogenated castor oil, polyquaternium-11, sodium benzoate, dipropylene glycol, sodium methylparaben, aminomethyl propanol, parfum, benzophenone-4, coumarin, alpha-isomethyl ionone, linalool, ci 17200",
+      "product_categories": [
+        "gels"
+      ],
+      "tags": [],
+      "buy_links": [
+        {
+          "url": "https://www.lookfantastic.se/umberto-giannini-curl-jelly-scrunching-jelly-200ml/12671461.html",
+          "retailer": "Look Fantastic",
+          "country": "SE"
+        }
+      ],
+      "id": "curl_jelly_scrunching_jelly",
+      "systems_excluded": [],
+      "status": "ok",
+      "extensions": {
+        "frizzbot": {
+          "simple_humectants_number": 3,
+          "film_forming_humectants_number": 0,
+          "emollients_number": 4,
+          "simple_humectants": [
+            "Propylene Glycol",
+            "Glycerin",
+            "Dipropylene Glycol"
+          ],
+          "film_forming_humectants": [],
+          "emollients": [
+            "Xanthan Gum",
+            "Copolymer",
+            "Castor Oil",
+            "Unknown Polyquat"
+          ],
+          "score": -34
+        },
+        "porosity": {
+          "high": 100,
+          "low": 75
+        }
+      }
+    },
     "rice_pudding_leave-in_conditioner_and_moisturizer": {
       "name": "Rice Pudding Leave-In Conditioner and Moisturizer",
       "brand": "Ecoslay",
@@ -3787,14 +4191,15 @@ export const defaultProductDatabase: ProductDatabase = {
       "extensions": {
         "frizzbot": {
           "simple_humectants_number": 2,
-          "film_forming_humectants_number": 1,
+          "film_forming_humectants_number": 2,
           "emollients_number": 17,
           "simple_humectants": [
             "Glycerin",
             "Honey"
           ],
           "film_forming_humectants": [
-            "Aloe Barbadensis Leaf Extract"
+            "Aloe Barbadensis Leaf Extract",
+            "Hydrolyzed Quinoa"
           ],
           "emollients": [
             "Cetearyl Alcohol",
@@ -3815,7 +4220,7 @@ export const defaultProductDatabase: ProductDatabase = {
             "Unknown Oil",
             "Rosemary Oil"
           ],
-          "score": -76
+          "score": -79
         },
         "porosity": {
           "high": 53,
@@ -3886,7 +4291,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 100,
-          "low": 55
+          "low": 58
         }
       },
       "cost_rating": "3"
@@ -3990,6 +4395,52 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 91,
+          "low": 0
+        }
+      }
+    },
+    "refreshing_curls_leave_in_treatment": {
+      "name": "Refreshing Curls Leave in Treatment",
+      "brand": "Fancy's Hair Innovation",
+      "product_categories": [
+        "leave_ins"
+      ],
+      "tags": [],
+      "ingredients_raw": "distilled water, slippery elm, marshmallow root extract, glycerin, sorbitol, wheat germ oil, sunflower seed oil, apricot oil, cetearyl alcohol, panthenol provitmain b5, behentrimonium methosulfate, behentrimonium chloride, tocopheryl, phenoxyethanol, potassium sorbate, citric acid",
+      "buy_links": [
+        {
+          "url": "https://www.fancyshairinnovation.com/shop/refreshing-curls-leave-in-treatment",
+          "retailer": "Fancy's Hair Innovation"
+        }
+      ],
+      "id": "refreshing_curls_leave_in_treatment",
+      "systems_excluded": [],
+      "status": "ok",
+      "extensions": {
+        "frizzbot": {
+          "simple_humectants_number": 3,
+          "film_forming_humectants_number": 1,
+          "emollients_number": 6,
+          "simple_humectants": [
+            "Glycerin",
+            "Sorbitol",
+            "Panthenol"
+          ],
+          "film_forming_humectants": [
+            "Marshmallow root Extract"
+          ],
+          "emollients": [
+            "Unknown Oil",
+            "Sunflower Oil",
+            "Unknown Oil",
+            "Cetearyl Alcohol",
+            "Behentrimonium Methosulfate",
+            "Behentrimonium Chloride"
+          ],
+          "score": -59
+        },
+        "porosity": {
+          "high": 100,
           "low": 0
         }
       }
@@ -4143,7 +4594,7 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -76
         },
         "porosity": {
-          "high": 36,
+          "high": 37,
           "low": 0
         }
       },
@@ -4343,7 +4794,7 @@ export const defaultProductDatabase: ProductDatabase = {
         }
       ],
       "product_categories": [
-        "pre_poo"
+        "pre-poo"
       ],
       "tags": [
         "high_porosity",
@@ -4423,7 +4874,7 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -84
         },
         "porosity": {
-          "high": 71,
+          "high": 70,
           "low": 100
         }
       }
@@ -4626,12 +5077,13 @@ export const defaultProductDatabase: ProductDatabase = {
       "extensions": {
         "frizzbot": {
           "simple_humectants_number": 1,
-          "film_forming_humectants_number": 1,
+          "film_forming_humectants_number": 2,
           "emollients_number": 11,
           "simple_humectants": [
             "Glycerin"
           ],
           "film_forming_humectants": [
+            "Hydrolyzed Quinoa",
             "Unknown Protein"
           ],
           "emollients": [
@@ -4647,10 +5099,10 @@ export const defaultProductDatabase: ProductDatabase = {
             "Butyrospermum Parkii Shea Butter",
             "Avocado Oil"
           ],
-          "score": -59
+          "score": -63
         },
         "porosity": {
-          "high": 91,
+          "high": 89,
           "low": 0
         }
       },
@@ -4738,13 +5190,14 @@ export const defaultProductDatabase: ProductDatabase = {
       "extensions": {
         "frizzbot": {
           "simple_humectants_number": 1,
-          "film_forming_humectants_number": 2,
+          "film_forming_humectants_number": 3,
           "emollients_number": 7,
           "simple_humectants": [
             "Glycerin"
           ],
           "film_forming_humectants": [
             "Hydroxypropyltrimonium Honey",
+            "Hydrolyzed Quinoa",
             "Unknown Protein"
           ],
           "emollients": [
@@ -4756,10 +5209,10 @@ export const defaultProductDatabase: ProductDatabase = {
             "Butyrospermum Parkii Shea Butter",
             "Unknown Oil"
           ],
-          "score": -82
+          "score": -85
         },
         "porosity": {
-          "high": 100,
+          "high": 97,
           "low": 0
         }
       },
@@ -4794,13 +5247,14 @@ export const defaultProductDatabase: ProductDatabase = {
       "extensions": {
         "frizzbot": {
           "simple_humectants_number": 1,
-          "film_forming_humectants_number": 2,
+          "film_forming_humectants_number": 3,
           "emollients_number": 8,
           "simple_humectants": [
             "Glycerin"
           ],
           "film_forming_humectants": [
             "Hydroxypropyltrimonium Honey",
+            "Hydrolyzed Quinoa",
             "Unknown Protein"
           ],
           "emollients": [
@@ -4813,10 +5267,10 @@ export const defaultProductDatabase: ProductDatabase = {
             "Avocado Oil",
             "Rice bran oil"
           ],
-          "score": -71
+          "score": -74
         },
         "porosity": {
-          "high": 90,
+          "high": 88,
           "low": 0
         }
       },
@@ -4868,7 +5322,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 100,
-          "low": 56
+          "low": 61
         }
       },
       "cost_rating": "5"
@@ -5258,10 +5712,11 @@ export const defaultProductDatabase: ProductDatabase = {
       "extensions": {
         "frizzbot": {
           "simple_humectants_number": 0,
-          "film_forming_humectants_number": 1,
+          "film_forming_humectants_number": 2,
           "emollients_number": 12,
           "simple_humectants": [],
           "film_forming_humectants": [
+            "Hydrolyzed Quinoa",
             "Unknown Protein"
           ],
           "emollients": [
@@ -5278,10 +5733,10 @@ export const defaultProductDatabase: ProductDatabase = {
             "Coconut Oil",
             "Unknown Oil"
           ],
-          "score": -80
+          "score": -83
         },
         "porosity": {
-          "high": 100,
+          "high": 96,
           "low": 0
         }
       }
@@ -5408,7 +5863,7 @@ export const defaultProductDatabase: ProductDatabase = {
             "Propanediol"
           ],
           "film_forming_humectants": [
-            "Unknown Protein",
+            "Hydrolyzed Quinoa",
             "Hydrolyzed keratin"
           ],
           "emollients": [

@@ -309,7 +309,7 @@
       "name": "Silk Amino Acids",
       "id": "silk_amino_acids",
       "description": "A protein derivative that strengthens and smooths hair",
-      "categories": ["proteins"]
+      "categories": ["amino_acids"]
     },
     {
       "name": "Sodium Phytate",
@@ -431,7 +431,13 @@
         "sorbitan monolaurate ethoxylated",
         "ethoxylated sorbitol laurate"
       ],
-      "categories": ["other"]
+      "categories": ["polysorbates"]
+    },
+    {
+      "name": "Polysorbate",
+      "id": "polysorbate",
+      "description": "This is a polysorbate we haven't added to the database yet.",
+      "categories": ["polysorbates"]
     },
     {
       "name": "Alanine",
@@ -476,7 +482,7 @@
     {
       "name": "Cysteine",
       "id": "cysteine",
-      "categories": ["proteins"]
+      "categories": ["amino_acids"]
     },
     {
       "name": "Dipotassium aspartate",
@@ -496,33 +502,29 @@
     {
       "name": "Glutamic Acid",
       "id": "glutamic_acid",
-      "categories": ["proteins"]
+      "categories": ["amino_acids"]
     },
     {
       "name": "Histidine",
       "id": "histidine",
-      "categories": ["proteins"]
+      "categories": ["amino_acids"]
     },
     {
       "name": "Lysine",
       "id": "lysine",
-      "categories": ["proteins"]
+      "categories": ["amino_acids"]
     },
     {
       "name": "Glycine",
       "id": "glycine",
-      "categories": ["proteins"]
+      "categories": ["amino_acids"]
     },
     {
       "name": "Keratin",
       "id": "keratin",
       "categories": ["proteins"]
     },
-    {
-      "name": "Lysine",
-      "id": "lysine",
-      "categories": ["proteins"]
-    },
+
     {
       "name": "Magnesium aspartate",
       "id": "magnesium_aspartate",
@@ -561,12 +563,12 @@
     {
       "name": "Proline",
       "id": "proline",
-      "categories": ["proteins"]
+      "categories": ["amino_acids"]
     },
     {
       "name": "Serine",
       "id": "serine",
-      "categories": ["proteins"]
+      "categories": ["amino_acids"]
     },
     {
       "name": "Unknown Protein",
@@ -593,7 +595,7 @@
     {
       "name": "Tyrosine",
       "id": "tyrosine",
-      "categories": ["proteins"]
+      "categories": ["amino_acids"]
     },
     {
       "name": "Sodium Glutamate",
@@ -974,7 +976,7 @@
     {
       "name": "Collagen Amino Acids",
       "id": "collagen_amino_acids",
-      "categories": ["proteins"],
+      "categories": ["amino_acids"],
       "references": [
         {
           "id": "64",
@@ -986,7 +988,7 @@
     {
       "name": "Wheat Amino Acids",
       "id": "wheat_amino_acids",
-      "categories": ["proteins"],
+      "categories": ["amino_acids"],
       "references": [
         {
           "id": "64",

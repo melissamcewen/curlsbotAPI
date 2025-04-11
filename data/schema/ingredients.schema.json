@@ -57,7 +57,10 @@
                 "conditioning_agents",
                 "film_forming_agents",
                 "essential_oils",
-                "esters"
+                "esters",
+                "polysorbates",
+                "fatty_acids",
+                "amino_acids"
               ]
             },
             "description": "Categories to which the ingredient belongs"

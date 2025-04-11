@@ -477,7 +477,7 @@ export const defaultDatabase: IngredientDatabase = {
         "emollient_alcohols"
       ],
       "description": "This is probably part of an ingredient list that's just labeling another ingredient",
-      "status": "caution",
+      "status": "ok",
       "group": "alcohols"
     },
     "alkylbenzene_sulfonate": {
@@ -1273,7 +1273,8 @@ export const defaultDatabase: IngredientDatabase = {
       "id": "apricot_kernel_oil",
       "synonyms": [
         "prunus armeniaca kernel oil",
-        "apricot seed oil"
+        "apricot seed oil",
+        "apricot oil"
       ],
       "categories": [
         "medium_oils"
@@ -2522,7 +2523,7 @@ export const defaultDatabase: IngredientDatabase = {
       "id": "silk_amino_acids",
       "description": "A protein derivative that strengthens and smooths hair",
       "categories": [
-        "proteins"
+        "amino_acids"
       ],
       "status": "ok",
       "group": "humectants"
@@ -2728,7 +2729,17 @@ export const defaultDatabase: IngredientDatabase = {
         "ethoxylated sorbitol laurate"
       ],
       "categories": [
-        "other"
+        "polysorbates"
+      ],
+      "status": "ok",
+      "group": "others"
+    },
+    "polysorbate": {
+      "name": "Polysorbate",
+      "id": "polysorbate",
+      "description": "This is a polysorbate we haven't added to the database yet.",
+      "categories": [
+        "polysorbates"
       ],
       "status": "ok",
       "group": "others"
@@ -2800,7 +2811,7 @@ export const defaultDatabase: IngredientDatabase = {
       "name": "Cysteine",
       "id": "cysteine",
       "categories": [
-        "proteins"
+        "amino_acids"
       ],
       "status": "ok",
       "group": "humectants"
@@ -2836,7 +2847,7 @@ export const defaultDatabase: IngredientDatabase = {
       "name": "Glutamic Acid",
       "id": "glutamic_acid",
       "categories": [
-        "proteins"
+        "amino_acids"
       ],
       "status": "ok",
       "group": "humectants"
@@ -2845,7 +2856,7 @@ export const defaultDatabase: IngredientDatabase = {
       "name": "Histidine",
       "id": "histidine",
       "categories": [
-        "proteins"
+        "amino_acids"
       ],
       "status": "ok",
       "group": "humectants"
@@ -2854,7 +2865,7 @@ export const defaultDatabase: IngredientDatabase = {
       "name": "Lysine",
       "id": "lysine",
       "categories": [
-        "proteins"
+        "amino_acids"
       ],
       "status": "ok",
       "group": "humectants"
@@ -2863,7 +2874,7 @@ export const defaultDatabase: IngredientDatabase = {
       "name": "Glycine",
       "id": "glycine",
       "categories": [
-        "proteins"
+        "amino_acids"
       ],
       "status": "ok",
       "group": "humectants"
@@ -2944,7 +2955,7 @@ export const defaultDatabase: IngredientDatabase = {
       "name": "Proline",
       "id": "proline",
       "categories": [
-        "proteins"
+        "amino_acids"
       ],
       "status": "ok",
       "group": "humectants"
@@ -2953,7 +2964,7 @@ export const defaultDatabase: IngredientDatabase = {
       "name": "Serine",
       "id": "serine",
       "categories": [
-        "proteins"
+        "amino_acids"
       ],
       "status": "ok",
       "group": "humectants"
@@ -3004,7 +3015,7 @@ export const defaultDatabase: IngredientDatabase = {
       "name": "Tyrosine",
       "id": "tyrosine",
       "categories": [
-        "proteins"
+        "amino_acids"
       ],
       "status": "ok",
       "group": "humectants"
@@ -3697,7 +3708,7 @@ export const defaultDatabase: IngredientDatabase = {
       "name": "Collagen Amino Acids",
       "id": "collagen_amino_acids",
       "categories": [
-        "proteins"
+        "amino_acids"
       ],
       "references": [
         {
@@ -3717,7 +3728,7 @@ export const defaultDatabase: IngredientDatabase = {
       "name": "Wheat Amino Acids",
       "id": "wheat_amino_acids",
       "categories": [
-        "proteins"
+        "amino_acids"
       ],
       "references": [
         {
@@ -4034,6 +4045,18 @@ export const defaultDatabase: IngredientDatabase = {
       "description": "If high in the ingredient list, it's probably a humectant. If low, it's probably used to balance the formula.",
       "status": "ok",
       "group": "others"
+    },
+    "ulmus_rubra_bark_extract": {
+      "name": "Ulmus rubra bark extract",
+      "id": "ulmus_rubra_bark_extract",
+      "categories": [
+        "film_forming_humectants"
+      ],
+      "synonyms": [
+        "slippery elm bark"
+      ],
+      "status": "ok",
+      "group": "humectants"
     },
     "amodimethicone": {
       "name": "Amodimethicone",
@@ -5005,6 +5028,24 @@ export const defaultDatabase: IngredientDatabase = {
       "name": "Esters",
       "group": "others",
       "description": "Esters are used in hair care products as emollients, conditioners, and carriers for other ingredients, contributing to smoothness, shine, and manageability."
+    },
+    "polysorbates": {
+      "id": "polysorbates",
+      "name": "Polysorbates",
+      "group": "others",
+      "description": "Polysorbates are used in haircare products as emulsifiers to help blend oil and water-based ingredients, ensuring even distribution and improved texture."
+    },
+    "fatty_acids": {
+      "id": "fatty_acids",
+      "name": "Fatty Acids",
+      "group": "others",
+      "description": "Fatty acids are used in haircare to moisturize, strengthen, and protect the hair by nourishing the scalp and smoothing the hair cuticle."
+    },
+    "amino_acids": {
+      "id": "amino_acids",
+      "name": "Amino Acids",
+      "group": "humectants",
+      "description": "Amino acids are used in haircare to repair and strengthen hair by rebuilding damaged protein structures and improving moisture retention."
     }
   },
   "groups": {
