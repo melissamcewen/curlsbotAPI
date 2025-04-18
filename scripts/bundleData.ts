@@ -11,6 +11,7 @@ import type { Reference, AnalysisResult, Extensions } from '../src/types';
 import { Analyzer } from '../src/analyzer';
 import { frizzbot } from '../src/extensions/frizzbot';
 import { porosity } from '../src/extensions/porosity';
+import { sebderm } from '../src/extensions/sebdermbot';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const DATA_DIR = join(__dirname, '../data');
@@ -20,6 +21,7 @@ const INGREDIENTS_OUTPUT_FILE = join(__dirname, '../src/data/bundledData.ts');
 const PRODUCTS_OUTPUT_FILE = join(__dirname, '../src/data/bundledProducts.ts');
 const UNKNOWN_INGREDIENTS_LOG = join(LOGS_DIR, 'unknown_ingredients.json');
 const FLAGGED_PRODUCTS_LOG = join(LOGS_DIR, 'flagged_products.json');
+const SEBDERM_SAFE_PRODUCTS_LOG = join(LOGS_DIR, 'sebderm_safe_products.json');
 
 // Load references data from references.references.json
 function loadReferences(): Record<string, Reference> {
@@ -224,6 +226,14 @@ function loadProductsFromDir(dirPath: string): any {
   const analyzer = new Analyzer();
   const unknownIngredients: Record<string, Set<string>> = {};
   const flaggedProducts: FlaggedProduct[] = [];
+  const sebdermSafeProducts: Array<{
+    name: string;
+    brand: string;
+    ingredients_raw?: string;
+    buy_links: any[];
+    cost?: number;
+    cost_rating?: string;
+  }> = [];
 
   // First load categories to look up groups
   const categoriesData = loadJsonFile(join(DATA_DIR, 'categories.json'));
@@ -292,6 +302,7 @@ function loadProductsFromDir(dirPath: string): any {
       extensions = {
         frizzbot: frizzbot(analysis),
         porosity: porosity(analysis),
+        sebderm: sebderm(analysis),
       };
     }
 
@@ -303,6 +314,18 @@ function loadProductsFromDir(dirPath: string): any {
       else if (product.cost <= 2) cost_rating = '3';
       else if (product.cost <= 2.5) cost_rating = '4';
       else cost_rating = '5';
+    }
+
+    // Check if product is sebderm-safe
+    if (extensions?.sebderm && !extensions.sebderm.hasTriggers) {
+      sebdermSafeProducts.push({
+        name: product.name,
+        brand: product.brand,
+        ingredients_raw: product.ingredients_raw,
+        buy_links: product.buy_links || [],
+        cost: product.cost,
+        cost_rating: cost_rating,
+      });
     }
 
     acc[productId] = {
@@ -320,7 +343,7 @@ function loadProductsFromDir(dirPath: string): any {
     return acc;
   }, {} as Record<string, any>);
 
-  return { products, unknownIngredients, flaggedProducts };
+  return { products, unknownIngredients, flaggedProducts, sebdermSafeProducts };
 }
 
 function loadJsonFile(filePath: string): any {
@@ -339,9 +362,8 @@ function generateBundledData() {
 
   // Load all data
   const ingredients = loadIngredientsFromDir(join(DATA_DIR, 'ingredients'));
-  const { products, unknownIngredients, flaggedProducts } = loadProductsFromDir(
-    join(DATA_DIR, 'products'),
-  );
+  const { products, unknownIngredients, flaggedProducts, sebdermSafeProducts } =
+    loadProductsFromDir(join(DATA_DIR, 'products'));
   const categoriesData = loadJsonFile(join(DATA_DIR, 'categories.json'));
   const groupsData = loadJsonFile(join(DATA_DIR, 'groups.json'));
   const systemsData = loadJsonFile(join(CONFIG_DIR, 'systems.json'));
@@ -378,6 +400,24 @@ function generateBundledData() {
       JSON.stringify(flaggedProducts, null, 2),
     );
     console.log(`Generated flagged products log at ${FLAGGED_PRODUCTS_LOG}`);
+  }
+
+  // Write sebderm-safe products log
+  if (sebdermSafeProducts.length > 0) {
+    // Sort by brand then name
+    const sortedProducts = sebdermSafeProducts.sort((a, b) => {
+      const brandCompare = a.brand.localeCompare(b.brand);
+      if (brandCompare !== 0) return brandCompare;
+      return a.name.localeCompare(b.name);
+    });
+
+    writeFileSync(
+      SEBDERM_SAFE_PRODUCTS_LOG,
+      JSON.stringify(sortedProducts, null, 2),
+    );
+    console.log(
+      `Generated sebderm-safe products log at ${SEBDERM_SAFE_PRODUCTS_LOG}`,
+    );
   }
 
   // Convert categories and groups to record format

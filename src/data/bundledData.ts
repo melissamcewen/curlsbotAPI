@@ -5210,7 +5210,7 @@ export const defaultSettings: Record<string, Setting> = {
   "sulfate_free": {
     "id": "sulfate_free",
     "name": "Sulfates",
-    "description": "Sulfates are a common ingredient in hair care products that can strip the hair of its natural oils. This can lead to dryness, especially for those with color-treated or chemically processed hair. Some people prefer to use sulfate-free products to maintain healthier hair.",
+    "description": "Sulfates are a common cleanser in hair care products. The Curly Girl Method recommends avoiding them but some people find them fine.",
     "categories": [
       "sulfates"
     ],
@@ -5240,7 +5240,7 @@ export const defaultSettings: Record<string, Setting> = {
   "silicone_free": {
     "id": "silicone_free",
     "name": "Silicones",
-    "description": "Silicones are synthetic ingredients that can provide hair benefits but may build up, leading to potential hair issues.",
+    "description": "Silicones are useful conditioning ingredients, but the Curly Girl Method recommends avoiding them.",
     "groups": [
       "silicones"
     ],

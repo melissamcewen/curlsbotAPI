@@ -228,6 +228,10 @@ export const defaultProductDatabase: ProductDatabase = {
         "porosity": {
           "high": 80,
           "low": 100
+        },
+        "sebderm": {
+          "hasTriggers": false,
+          "triggers": []
         }
       }
     },
@@ -269,7 +273,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 4,
           "film_forming_humectants_number": 3,
-          "emollients_number": 3,
+          "emollients_number": 2,
           "simple_humectants": [
             "Panthenol",
             "Sodium PCA",
@@ -282,15 +286,34 @@ export const defaultProductDatabase: ProductDatabase = {
             "Silk Amino Acids"
           ],
           "emollients": [
-            "Unknown Oil",
             "Avocado Oil",
             "Castor Oil"
           ],
-          "score": -68
+          "score": -66
         },
         "porosity": {
           "high": 50,
           "low": 100
+        },
+        "sebderm": {
+          "hasTriggers": true,
+          "triggers": [
+            {
+              "id": "avocado_oil",
+              "name": "Avocado Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            },
+            {
+              "id": "silk_amino_acids",
+              "name": "Silk Amino Acids",
+              "reason": "Amino acids can be metabolized by Malassezia, potentially worsening symptoms"
+            },
+            {
+              "id": "castor_oil",
+              "name": "Castor Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            }
+          ]
         }
       },
       "cost_rating": "5"
@@ -342,6 +365,10 @@ export const defaultProductDatabase: ProductDatabase = {
         "porosity": {
           "high": 100,
           "low": 100
+        },
+        "sebderm": {
+          "hasTriggers": false,
+          "triggers": []
         }
       },
       "cost_rating": "5"
@@ -374,7 +401,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 2,
           "film_forming_humectants_number": 0,
-          "emollients_number": 5,
+          "emollients_number": 3,
           "simple_humectants": [
             "Butylene glycol",
             "Panthenol"
@@ -383,15 +410,23 @@ export const defaultProductDatabase: ProductDatabase = {
           "emollients": [
             "Cetrimonium Chloride",
             "Unknown Polyquat",
-            "Unknown Polyquat",
-            "Unknown Oil",
-            "Unknown Oil"
+            "Unknown Polyquat"
           ],
-          "score": -29
+          "score": -12
         },
         "porosity": {
           "high": 100,
           "low": 100
+        },
+        "sebderm": {
+          "hasTriggers": true,
+          "triggers": [
+            {
+              "id": "polysorbate_20",
+              "name": "Polysorbate 20",
+              "reason": "polysorbates can feed Malassezia yeast"
+            }
+          ]
         }
       },
       "cost_rating": "5"
@@ -418,7 +453,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 4,
           "film_forming_humectants_number": 1,
-          "emollients_number": 14,
+          "emollients_number": 4,
           "simple_humectants": [
             "Propanediol",
             "Panthenol",
@@ -430,25 +465,30 @@ export const defaultProductDatabase: ProductDatabase = {
           ],
           "emollients": [
             "Unknown Polyquat",
-            "Unknown Oil",
             "Stearamidopropyl Dimethylamine",
-            "Unknown Oil",
             "Argan Oil",
-            "Coconut Oil",
-            "Unknown Oil",
-            "Unknown Oil",
-            "Unknown Oil",
-            "Unknown Oil",
-            "Lavender Oil",
-            "Unknown Oil",
-            "Unknown Oil",
-            "Unknown Oil"
+            "Coconut Oil"
           ],
-          "score": -53
+          "score": -33
         },
         "porosity": {
           "high": 100,
           "low": 0
+        },
+        "sebderm": {
+          "hasTriggers": true,
+          "triggers": [
+            {
+              "id": "argan_oil",
+              "name": "Argan Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            },
+            {
+              "id": "coconut_oil",
+              "name": "Coconut Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            }
+          ]
         }
       }
     },
@@ -485,7 +525,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 2,
           "film_forming_humectants_number": 1,
-          "emollients_number": 12,
+          "emollients_number": 6,
           "simple_humectants": [
             "Glycerin",
             "Panthenol"
@@ -499,19 +539,33 @@ export const defaultProductDatabase: ProductDatabase = {
             "Behentrimonium Methosulfate",
             "Butyrospermum Parkii Shea Butter",
             "Stearyl Alcohol",
-            "Benzyl Alcohol",
-            "Unknown Oil",
-            "Unknown Oil",
-            "Unknown Oil",
-            "Lavender Oil",
-            "Unknown Oil",
-            "Unknown Oil"
+            "Benzyl Alcohol"
           ],
-          "score": -64
+          "score": -61
         },
         "porosity": {
           "high": 90,
           "low": 0
+        },
+        "sebderm": {
+          "hasTriggers": true,
+          "triggers": [
+            {
+              "id": "cetearyl_alcohol",
+              "name": "Cetearyl Alcohol",
+              "reason": "This specific fatty alcohol can feed Malassezia yeast"
+            },
+            {
+              "id": "rice_bran_oil",
+              "name": "Rice bran oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            },
+            {
+              "id": "butyrospermum_parkii_shea_butter",
+              "name": "Butyrospermum Parkii Shea Butter",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            }
+          ]
         }
       },
       "cost_rating": "5"
@@ -543,7 +597,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 2,
           "film_forming_humectants_number": 1,
-          "emollients_number": 8,
+          "emollients_number": 3,
           "simple_humectants": [
             "Glycerin",
             "Hexylene Glycol"
@@ -552,20 +606,25 @@ export const defaultProductDatabase: ProductDatabase = {
             "Aloe Barbadensis Leaf Extract"
           ],
           "emollients": [
-            "Unknown Oil",
-            "Unknown Oil",
-            "Baobab Oil",
             "Butyrospermum Parkii Shea Butter",
-            "Unknown Oil",
-            "Unknown Oil",
             "Unknown Polyquat",
             "Guar Hydroxypropyltrimonium Chloride"
           ],
-          "score": -88
+          "score": -92
         },
         "porosity": {
           "high": 89,
           "low": 31
+        },
+        "sebderm": {
+          "hasTriggers": true,
+          "triggers": [
+            {
+              "id": "butyrospermum_parkii_shea_butter",
+              "name": "Butyrospermum Parkii Shea Butter",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            }
+          ]
         }
       },
       "cost_rating": "1"
@@ -606,7 +665,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 2,
           "film_forming_humectants_number": 0,
-          "emollients_number": 5,
+          "emollients_number": 3,
           "simple_humectants": [
             "Glycerin",
             "Propanediol"
@@ -614,16 +673,24 @@ export const defaultProductDatabase: ProductDatabase = {
           "film_forming_humectants": [],
           "emollients": [
             "Acrylates Copolymer",
-            "Peppermint Oil",
             "Unknown Polyquat",
-            "Sunflower Oil",
-            "Unknown Oil"
+            "Sunflower Oil"
           ],
-          "score": -54
+          "score": -47
         },
         "porosity": {
           "high": 93,
           "low": 100
+        },
+        "sebderm": {
+          "hasTriggers": true,
+          "triggers": [
+            {
+              "id": "sunflower_oil",
+              "name": "Sunflower Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            }
+          ]
         }
       },
       "cost_rating": "5"
@@ -652,7 +719,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 5,
           "film_forming_humectants_number": 3,
-          "emollients_number": 11,
+          "emollients_number": 7,
           "simple_humectants": [
             "Glycerin",
             "Lactic Acid",
@@ -671,83 +738,91 @@ export const defaultProductDatabase: ProductDatabase = {
             "Stearyl Alcohol",
             "Sunflower Oil",
             "Olive Oil",
-            "Unknown Oil",
-            "Unknown Oil",
-            "Unknown Oil",
-            "Unknown Oil",
             "Cetrimonium Chloride",
             "Unknown Polyquat"
           ],
-          "score": -70
+          "score": -69
         },
         "porosity": {
           "high": 96,
           "low": 0
+        },
+        "sebderm": {
+          "hasTriggers": true,
+          "triggers": [
+            {
+              "id": "cetearyl_alcohol",
+              "name": "Cetearyl Alcohol",
+              "reason": "This specific fatty alcohol can feed Malassezia yeast"
+            },
+            {
+              "id": "sunflower_oil",
+              "name": "Sunflower Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            },
+            {
+              "id": "olive_oil",
+              "name": "Olive Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            },
+            {
+              "id": "glycine",
+              "name": "Glycine",
+              "reason": "Amino acids can be metabolized by Malassezia, potentially worsening symptoms"
+            }
+          ]
         }
       },
       "cost_rating": "2"
     },
     "light_conditioner": {
       "name": "Light Conditioner",
-      "brand": "MopTop",
-      "buy_links": [
-        {
-          "url": "https://amzn.to/2ApLXiq",
-          "retailer": "Amazon"
-        }
-      ],
+      "brand": "CleverCurl",
       "product_categories": [
         "conditioners"
       ],
       "tags": [],
-      "cost": 2.12,
-      "ingredients_raw": "water, glycerin, cetyl alcohol coconut derived, stearyl alcohol coconut derived, olea europaea olive fruit oil, cetrimonium chloride, behentrimonium chloride, aloe barbadensis leaf extract, glycereth-26, hypnea musciformis extract seaweed, gelidiella acerosa extract seaweed, sargassum filipendula extract seaweed, sorbitol, hydroxypropyltrimonium honey, silk amino acids, rosmarinus officinalis rosemary leaf extract, chamomilla recutita matricaria flower extract, urtica dioica nettle extract, butyrospermum parkii shea butter, simmondsia chinensis jojoba seed oil, tocopheryl acetate vitamin e, panthenol vitamin b5, citrus senensis oil, citrus limon oil, citrus arantifolia oil, citrus paradisi oil, sodium phytate, hydroxyethylcellulose, phenoxyethanol, ethylhexylglycerin, citric acid",
-      "asin": "B005SIR28M",
+      "ingredients_raw": "aloe barbadensis aloe vera leaf juice, stearyl alcohol, cetyl alcohol, behentrimonium chloride, glyceryl stearate, hydrolysed rice protein, panthenol vitamin b5, tocopheryl vitamin e, glycerin, cetrimonium chloride, citric acid, allergen-free fragrance, glyceryl caprylate, sodium levulinate, sodium anisate, potassium sorbate",
+      "buy_links": [
+        {
+          "url": "https://www.clevercurl.com.au/our-range/light-conditioner/",
+          "retailer": "CleverCurl",
+          "country": "AU"
+        }
+      ],
       "id": "light_conditioner",
       "systems_excluded": [],
       "status": "ok",
       "extensions": {
         "frizzbot": {
-          "simple_humectants_number": 5,
-          "film_forming_humectants_number": 7,
-          "emollients_number": 11,
+          "simple_humectants_number": 2,
+          "film_forming_humectants_number": 2,
+          "emollients_number": 4,
           "simple_humectants": [
-            "Glycerin",
-            "Glycereth-26",
-            "Sorbitol",
             "Panthenol",
-            "Ethylhexylglycerin"
+            "Glycerin"
           ],
           "film_forming_humectants": [
             "Aloe Barbadensis Leaf Extract",
-            "Seaweed Extract",
-            "Seaweed Extract",
-            "Seaweed Extract",
-            "Hydroxypropyltrimonium Honey",
-            "Silk Amino Acids",
-            "Hydroxyethylcellulose"
+            "Unknown Protein"
           ],
           "emollients": [
-            "Cetyl Alcohol",
             "Stearyl Alcohol",
-            "Olive Oil",
-            "Cetrimonium Chloride",
+            "Cetyl Alcohol",
             "Behentrimonium Chloride",
-            "Butyrospermum Parkii Shea Butter",
-            "Jojoba Oil",
-            "Unknown Oil",
-            "Unknown Oil",
-            "Unknown Oil",
-            "Unknown Oil"
+            "Cetrimonium Chloride"
           ],
-          "score": -69
+          "score": -83
         },
         "porosity": {
           "high": 100,
-          "low": 23
+          "low": 81
+        },
+        "sebderm": {
+          "hasTriggers": false,
+          "triggers": []
         }
-      },
-      "cost_rating": "4"
+      }
     },
     "daily_conditioner": {
       "name": "Daily Conditioner",
@@ -805,7 +880,32 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 100,
-          "low": 57
+          "low": 61
+        },
+        "sebderm": {
+          "hasTriggers": true,
+          "triggers": [
+            {
+              "id": "olive_oil",
+              "name": "Olive Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            },
+            {
+              "id": "butyrospermum_parkii_shea_butter",
+              "name": "Butyrospermum Parkii Shea Butter",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            },
+            {
+              "id": "silk_amino_acids",
+              "name": "Silk Amino Acids",
+              "reason": "Amino acids can be metabolized by Malassezia, potentially worsening symptoms"
+            },
+            {
+              "id": "jojoba_oil",
+              "name": "Jojoba Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            }
+          ]
         }
       },
       "cost_rating": "4"
@@ -839,7 +939,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 1,
           "film_forming_humectants_number": 4,
-          "emollients_number": 9,
+          "emollients_number": 8,
           "simple_humectants": [
             "Glycerin"
           ],
@@ -856,7 +956,6 @@ export const defaultProductDatabase: ProductDatabase = {
             "Rice bran oil",
             "Avocado Oil",
             "Butyrospermum Parkii Shea Butter",
-            "Unknown Oil",
             "Stearyl Alcohol",
             "Benzyl Alcohol"
           ],
@@ -865,6 +964,36 @@ export const defaultProductDatabase: ProductDatabase = {
         "porosity": {
           "high": 100,
           "low": 10
+        },
+        "sebderm": {
+          "hasTriggers": true,
+          "triggers": [
+            {
+              "id": "cetearyl_alcohol",
+              "name": "Cetearyl Alcohol",
+              "reason": "This specific fatty alcohol can feed Malassezia yeast"
+            },
+            {
+              "id": "coconut_oil",
+              "name": "Coconut Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            },
+            {
+              "id": "rice_bran_oil",
+              "name": "Rice bran oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            },
+            {
+              "id": "avocado_oil",
+              "name": "Avocado Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            },
+            {
+              "id": "butyrospermum_parkii_shea_butter",
+              "name": "Butyrospermum Parkii Shea Butter",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            }
+          ]
         }
       },
       "cost_rating": "5"
@@ -895,7 +1024,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 2,
           "film_forming_humectants_number": 4,
-          "emollients_number": 17,
+          "emollients_number": 9,
           "simple_humectants": [
             "Glycerin",
             "Glycerin"
@@ -910,26 +1039,48 @@ export const defaultProductDatabase: ProductDatabase = {
             "Cetearyl Alcohol",
             "Behentrimonium Methosulfate",
             "Diheptyl Succinate",
-            "Unknown Oil",
-            "Lavender Oil",
-            "Unknown Oil",
-            "Unknown Oil",
-            "Unknown Oil",
-            "Unknown Oil",
             "Coconut Oil",
             "Guar Hydroxypropyltrimonium Chloride",
-            "Unknown Oil",
-            "Unknown Oil",
             "Avocado Oil",
             "Butyrospermum Parkii Shea Butter",
             "Jojoba Oil",
             "Benzyl Alcohol"
           ],
-          "score": -70
+          "score": -68
         },
         "porosity": {
           "high": 100,
           "low": 0
+        },
+        "sebderm": {
+          "hasTriggers": true,
+          "triggers": [
+            {
+              "id": "cetearyl_alcohol",
+              "name": "Cetearyl Alcohol",
+              "reason": "This specific fatty alcohol can feed Malassezia yeast"
+            },
+            {
+              "id": "coconut_oil",
+              "name": "Coconut Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            },
+            {
+              "id": "avocado_oil",
+              "name": "Avocado Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            },
+            {
+              "id": "butyrospermum_parkii_shea_butter",
+              "name": "Butyrospermum Parkii Shea Butter",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            },
+            {
+              "id": "jojoba_oil",
+              "name": "Jojoba Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            }
+          ]
         }
       },
       "cost_rating": "5"
@@ -959,7 +1110,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 2,
           "film_forming_humectants_number": 1,
-          "emollients_number": 8,
+          "emollients_number": 7,
           "simple_humectants": [
             "Glycerin",
             "Honey"
@@ -974,7 +1125,6 @@ export const defaultProductDatabase: ProductDatabase = {
             "Coconut Oil",
             "Apricot Kernel Oil",
             "Guar Hydroxypropyltrimonium Chloride",
-            "Unknown Oil",
             "Stearyl Alcohol"
           ],
           "score": -72
@@ -982,6 +1132,31 @@ export const defaultProductDatabase: ProductDatabase = {
         "porosity": {
           "high": 100,
           "low": 3
+        },
+        "sebderm": {
+          "hasTriggers": true,
+          "triggers": [
+            {
+              "id": "cetearyl_alcohol",
+              "name": "Cetearyl Alcohol",
+              "reason": "This specific fatty alcohol can feed Malassezia yeast"
+            },
+            {
+              "id": "butyrospermum_parkii_shea_butter",
+              "name": "Butyrospermum Parkii Shea Butter",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            },
+            {
+              "id": "coconut_oil",
+              "name": "Coconut Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            },
+            {
+              "id": "apricot_kernel_oil",
+              "name": "Apricot Kernel Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            }
+          ]
         }
       },
       "cost_rating": "5"
@@ -1013,7 +1188,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 5,
           "film_forming_humectants_number": 10,
-          "emollients_number": 10,
+          "emollients_number": 8,
           "simple_humectants": [
             "Glycerin",
             "Propanediol",
@@ -1041,15 +1216,58 @@ export const defaultProductDatabase: ProductDatabase = {
             "Butyrospermum Parkii Shea Butter",
             "Jojoba Oil",
             "Guar Hydroxypropyltrimonium Chloride",
-            "Unknown Polyquat",
-            "Unknown Oil",
-            "Unknown Oil"
+            "Unknown Polyquat"
           ],
           "score": -77
         },
         "porosity": {
           "high": 100,
-          "low": 7
+          "low": 16
+        },
+        "sebderm": {
+          "hasTriggers": true,
+          "triggers": [
+            {
+              "id": "cetearyl_alcohol",
+              "name": "Cetearyl Alcohol",
+              "reason": "This specific fatty alcohol can feed Malassezia yeast"
+            },
+            {
+              "id": "coconut_oil",
+              "name": "Coconut Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            },
+            {
+              "id": "butyrospermum_parkii_shea_butter",
+              "name": "Butyrospermum Parkii Shea Butter",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            },
+            {
+              "id": "jojoba_oil",
+              "name": "Jojoba Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            },
+            {
+              "id": "glycine",
+              "name": "Glycine",
+              "reason": "Amino acids can be metabolized by Malassezia, potentially worsening symptoms"
+            },
+            {
+              "id": "serine",
+              "name": "Serine",
+              "reason": "Amino acids can be metabolized by Malassezia, potentially worsening symptoms"
+            },
+            {
+              "id": "proline",
+              "name": "Proline",
+              "reason": "Amino acids can be metabolized by Malassezia, potentially worsening symptoms"
+            },
+            {
+              "id": "histidine",
+              "name": "Histidine",
+              "reason": "Amino acids can be metabolized by Malassezia, potentially worsening symptoms"
+            }
+          ]
         }
       },
       "cost_rating": "5"
@@ -1079,7 +1297,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 2,
           "film_forming_humectants_number": 1,
-          "emollients_number": 12,
+          "emollients_number": 6,
           "simple_humectants": [
             "Glycerin",
             "Propanediol"
@@ -1093,19 +1311,33 @@ export const defaultProductDatabase: ProductDatabase = {
             "Cetrimonium Chloride",
             "Jojoba Oil",
             "Benzyl Alcohol",
-            "Guar Hydroxypropyltrimonium Chloride",
-            "Tea Tree Oil",
-            "Unknown Oil",
-            "Rosemary Oil",
-            "Unknown Oil",
-            "Unknown Oil",
-            "Unknown Oil"
+            "Guar Hydroxypropyltrimonium Chloride"
           ],
-          "score": -60
+          "score": -55
         },
         "porosity": {
           "high": 100,
           "low": 0
+        },
+        "sebderm": {
+          "hasTriggers": true,
+          "triggers": [
+            {
+              "id": "cetearyl_alcohol",
+              "name": "Cetearyl Alcohol",
+              "reason": "This specific fatty alcohol can feed Malassezia yeast"
+            },
+            {
+              "id": "coconut_oil",
+              "name": "Coconut Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            },
+            {
+              "id": "jojoba_oil",
+              "name": "Jojoba Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            }
+          ]
         }
       },
       "cost_rating": "4"
@@ -1142,7 +1374,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 2,
           "film_forming_humectants_number": 1,
-          "emollients_number": 8,
+          "emollients_number": 7,
           "simple_humectants": [
             "Glycerin",
             "Panthenol"
@@ -1157,7 +1389,6 @@ export const defaultProductDatabase: ProductDatabase = {
             "Coconut Oil",
             "Avocado Oil",
             "Sunflower Oil",
-            "Unknown Oil",
             "Guar Hydroxypropyltrimonium Chloride"
           ],
           "score": -74
@@ -1165,6 +1396,36 @@ export const defaultProductDatabase: ProductDatabase = {
         "porosity": {
           "high": 100,
           "low": 0
+        },
+        "sebderm": {
+          "hasTriggers": true,
+          "triggers": [
+            {
+              "id": "cetearyl_alcohol",
+              "name": "Cetearyl Alcohol",
+              "reason": "This specific fatty alcohol can feed Malassezia yeast"
+            },
+            {
+              "id": "butyrospermum_parkii_shea_butter",
+              "name": "Butyrospermum Parkii Shea Butter",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            },
+            {
+              "id": "coconut_oil",
+              "name": "Coconut Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            },
+            {
+              "id": "avocado_oil",
+              "name": "Avocado Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            },
+            {
+              "id": "sunflower_oil",
+              "name": "Sunflower Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            }
+          ]
         }
       },
       "cost_rating": "3"
@@ -1193,7 +1454,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 3,
           "film_forming_humectants_number": 1,
-          "emollients_number": 10,
+          "emollients_number": 7,
           "simple_humectants": [
             "Glycerin",
             "Panthenol",
@@ -1209,16 +1470,33 @@ export const defaultProductDatabase: ProductDatabase = {
             "Cetearyl Alcohol",
             "Guar Hydroxypropyltrimonium Chloride",
             "Behentrimonium Methosulfate",
-            "Peppermint Oil",
-            "Safflower Oil",
-            "Unknown Oil",
-            "Unknown Oil"
+            "Safflower Oil"
           ],
-          "score": -58
+          "score": -56
         },
         "porosity": {
           "high": 100,
-          "low": 64
+          "low": 68
+        },
+        "sebderm": {
+          "hasTriggers": true,
+          "triggers": [
+            {
+              "id": "cetearyl_alcohol",
+              "name": "Cetearyl Alcohol",
+              "reason": "This specific fatty alcohol can feed Malassezia yeast"
+            },
+            {
+              "id": "polysorbate",
+              "name": "Polysorbate",
+              "reason": "polysorbates can feed Malassezia yeast"
+            },
+            {
+              "id": "safflower_oil",
+              "name": "Safflower Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            }
+          ]
         }
       },
       "cost_rating": "1"
@@ -1266,6 +1544,16 @@ export const defaultProductDatabase: ProductDatabase = {
         "porosity": {
           "high": 100,
           "low": 100
+        },
+        "sebderm": {
+          "hasTriggers": true,
+          "triggers": [
+            {
+              "id": "cetearyl_alcohol",
+              "name": "Cetearyl Alcohol",
+              "reason": "This specific fatty alcohol can feed Malassezia yeast"
+            }
+          ]
         }
       },
       "cost_rating": "2"
@@ -1312,7 +1600,17 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 100,
-          "low": 95
+          "low": 100
+        },
+        "sebderm": {
+          "hasTriggers": true,
+          "triggers": [
+            {
+              "id": "silk_amino_acids",
+              "name": "Silk Amino Acids",
+              "reason": "Amino acids can be metabolized by Malassezia, potentially worsening symptoms"
+            }
+          ]
         }
       },
       "cost_rating": "1"
@@ -1360,7 +1658,32 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 95,
-          "low": 85
+          "low": 100
+        },
+        "sebderm": {
+          "hasTriggers": true,
+          "triggers": [
+            {
+              "id": "cetearyl_alcohol",
+              "name": "Cetearyl Alcohol",
+              "reason": "This specific fatty alcohol can feed Malassezia yeast"
+            },
+            {
+              "id": "jojoba_oil",
+              "name": "Jojoba Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            },
+            {
+              "id": "silk_amino_acids",
+              "name": "Silk Amino Acids",
+              "reason": "Amino acids can be metabolized by Malassezia, potentially worsening symptoms"
+            },
+            {
+              "id": "wheat_amino_acids",
+              "name": "Wheat Amino Acids",
+              "reason": "Amino acids can be metabolized by Malassezia, potentially worsening symptoms"
+            }
+          ]
         }
       },
       "cost_rating": "5"
@@ -1413,6 +1736,21 @@ export const defaultProductDatabase: ProductDatabase = {
         "porosity": {
           "high": 100,
           "low": 87
+        },
+        "sebderm": {
+          "hasTriggers": true,
+          "triggers": [
+            {
+              "id": "cetearyl_alcohol",
+              "name": "Cetearyl Alcohol",
+              "reason": "This specific fatty alcohol can feed Malassezia yeast"
+            },
+            {
+              "id": "cetyl_esters",
+              "name": "Cetyl Esters",
+              "reason": "Esters can feed Malassezia yeast"
+            }
+          ]
         }
       },
       "cost_rating": "5"
@@ -1441,7 +1779,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 5,
           "film_forming_humectants_number": 2,
-          "emollients_number": 17,
+          "emollients_number": 5,
           "simple_humectants": [
             "Glycerin",
             "Propanediol",
@@ -1458,25 +1796,33 @@ export const defaultProductDatabase: ProductDatabase = {
             "Cetearyl Alcohol",
             "Safflower Oil",
             "Stearamidopropyl Dimethylamine",
-            "Unknown Oil",
-            "Unknown Oil",
-            "Unknown Oil",
-            "Unknown Oil",
-            "Unknown Oil",
-            "Unknown Oil",
-            "Unknown Oil",
-            "Unknown Oil",
-            "Unknown Oil",
-            "Lavender Oil",
-            "Unknown Oil",
-            "Coconut Oil",
-            "Unknown Oil"
+            "Coconut Oil"
           ],
-          "score": -73
+          "score": -72
         },
         "porosity": {
           "high": 100,
           "low": 0
+        },
+        "sebderm": {
+          "hasTriggers": true,
+          "triggers": [
+            {
+              "id": "cetearyl_alcohol",
+              "name": "Cetearyl Alcohol",
+              "reason": "This specific fatty alcohol can feed Malassezia yeast"
+            },
+            {
+              "id": "safflower_oil",
+              "name": "Safflower Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            },
+            {
+              "id": "coconut_oil",
+              "name": "Coconut Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            }
+          ]
         }
       },
       "cost_rating": "5"
@@ -1505,7 +1851,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 2,
           "film_forming_humectants_number": 2,
-          "emollients_number": 6,
+          "emollients_number": 3,
           "simple_humectants": [
             "Panthenol",
             "Glycerin"
@@ -1517,16 +1863,33 @@ export const defaultProductDatabase: ProductDatabase = {
           "emollients": [
             "Jojoba Oil",
             "Olive Oil",
-            "Sunflower Oil",
-            "Unknown Oil",
-            "Peppermint Oil",
-            "Rosemary Oil"
+            "Sunflower Oil"
           ],
           "score": -75
         },
         "porosity": {
           "high": 53,
           "low": 0
+        },
+        "sebderm": {
+          "hasTriggers": true,
+          "triggers": [
+            {
+              "id": "jojoba_oil",
+              "name": "Jojoba Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            },
+            {
+              "id": "olive_oil",
+              "name": "Olive Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            },
+            {
+              "id": "sunflower_oil",
+              "name": "Sunflower Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            }
+          ]
         }
       }
     },
@@ -1552,7 +1915,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 2,
           "film_forming_humectants_number": 1,
-          "emollients_number": 8,
+          "emollients_number": 6,
           "simple_humectants": [
             "Glycerin",
             "Ethylhexylglycerin"
@@ -1566,15 +1929,99 @@ export const defaultProductDatabase: ProductDatabase = {
             "Cetrimonium Chloride",
             "Butyrospermum Parkii Shea Butter",
             "Olive Oil",
-            "Avocado Oil",
-            "Unknown Oil",
-            "Unknown Oil"
+            "Avocado Oil"
           ],
           "score": -69
         },
         "porosity": {
           "high": 90,
           "low": 0
+        },
+        "sebderm": {
+          "hasTriggers": true,
+          "triggers": [
+            {
+              "id": "cetearyl_alcohol",
+              "name": "Cetearyl Alcohol",
+              "reason": "This specific fatty alcohol can feed Malassezia yeast"
+            },
+            {
+              "id": "coconut_oil",
+              "name": "Coconut Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            },
+            {
+              "id": "butyrospermum_parkii_shea_butter",
+              "name": "Butyrospermum Parkii Shea Butter",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            },
+            {
+              "id": "olive_oil",
+              "name": "Olive Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            },
+            {
+              "id": "avocado_oil",
+              "name": "Avocado Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            }
+          ]
+        }
+      }
+    },
+    "curl_conditioner": {
+      "name": "Curl Conditioner",
+      "brand": "Sachajuan",
+      "product_categories": [
+        "conditioners"
+      ],
+      "tags": [],
+      "ingredients_raw": "aqua water, cetyl alcohol, stearyl alcohol, glyceryl stearate, dicaprylyl ether, stearamidopropyl dimethylamine, behentrimonium chloride, polyquaternium-10, phenoxyethanol, parfum fragrance, lactic acid, peg-40 hydrogenated castor oil, isopropyl alcohol, pg-hydroxyethylcellulose cocodimonium chloride, ethylhexylglycerin, linalool, limonene, benzyl salicylate, hexyl cinnamal, hydrolyzed rhodophycea red algae extract",
+      "buy_links": [
+        {
+          "url": "https://shop.sachajuan.com/products/curl-conditioner",
+          "retailer": "Sachajuan"
+        }
+      ],
+      "id": "curl_conditioner",
+      "systems_excluded": [],
+      "status": "caution",
+      "extensions": {
+        "frizzbot": {
+          "simple_humectants_number": 2,
+          "film_forming_humectants_number": 2,
+          "emollients_number": 6,
+          "simple_humectants": [
+            "Lactic Acid",
+            "Ethylhexylglycerin"
+          ],
+          "film_forming_humectants": [
+            "Hydroxyethylcellulose",
+            "Algae Extract"
+          ],
+          "emollients": [
+            "Cetyl Alcohol",
+            "Stearyl Alcohol",
+            "Stearamidopropyl Dimethylamine",
+            "Behentrimonium Chloride",
+            "Unknown Polyquat",
+            "Castor Oil"
+          ],
+          "score": -73
+        },
+        "porosity": {
+          "high": 100,
+          "low": 71
+        },
+        "sebderm": {
+          "hasTriggers": true,
+          "triggers": [
+            {
+              "id": "castor_oil",
+              "name": "Castor Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            }
+          ]
         }
       }
     },
@@ -1601,7 +2048,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 6,
           "film_forming_humectants_number": 4,
-          "emollients_number": 19,
+          "emollients_number": 16,
           "simple_humectants": [
             "Glycerin",
             "Propanediol",
@@ -1624,11 +2071,8 @@ export const defaultProductDatabase: ProductDatabase = {
             "Butyrospermum Parkii Shea Butter",
             "Sunflower Oil",
             "Sweet Almond Oil",
-            "Unknown Oil",
             "Castor Oil",
             "Rice bran oil",
-            "Unknown Oil",
-            "Unknown Oil",
             "Kokum Butter",
             "Marula Oil",
             "Squalane",
@@ -1637,11 +2081,71 @@ export const defaultProductDatabase: ProductDatabase = {
             "Guar Hydroxypropyltrimonium Chloride",
             "Diheptyl Succinate"
           ],
-          "score": -65
+          "score": -64
         },
         "porosity": {
           "high": 100,
           "low": 0
+        },
+        "sebderm": {
+          "hasTriggers": true,
+          "triggers": [
+            {
+              "id": "cetearyl_alcohol",
+              "name": "Cetearyl Alcohol",
+              "reason": "This specific fatty alcohol can feed Malassezia yeast"
+            },
+            {
+              "id": "cetyl_esters",
+              "name": "Cetyl Esters",
+              "reason": "Esters can feed Malassezia yeast"
+            },
+            {
+              "id": "butyrospermum_parkii_shea_butter",
+              "name": "Butyrospermum Parkii Shea Butter",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            },
+            {
+              "id": "sunflower_oil",
+              "name": "Sunflower Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            },
+            {
+              "id": "sweet_almond_oil",
+              "name": "Sweet Almond Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            },
+            {
+              "id": "castor_oil",
+              "name": "Castor Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            },
+            {
+              "id": "rice_bran_oil",
+              "name": "Rice bran oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            },
+            {
+              "id": "kokum_butter",
+              "name": "Kokum Butter",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            },
+            {
+              "id": "marula_oil",
+              "name": "Marula Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            },
+            {
+              "id": "castor_oil",
+              "name": "Castor Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            },
+            {
+              "id": "polysorbate",
+              "name": "Polysorbate",
+              "reason": "polysorbates can feed Malassezia yeast"
+            }
+          ]
         }
       }
     },
@@ -1688,6 +2192,36 @@ export const defaultProductDatabase: ProductDatabase = {
         "porosity": {
           "high": 100,
           "low": 0
+        },
+        "sebderm": {
+          "hasTriggers": true,
+          "triggers": [
+            {
+              "id": "cetearyl_alcohol",
+              "name": "Cetearyl Alcohol",
+              "reason": "This specific fatty alcohol can feed Malassezia yeast"
+            },
+            {
+              "id": "coconut_oil",
+              "name": "Coconut Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            },
+            {
+              "id": "castor_oil",
+              "name": "Castor Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            },
+            {
+              "id": "castor_oil",
+              "name": "Castor Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            },
+            {
+              "id": "c12_15_alkyl",
+              "name": "C12-15 alkyl",
+              "reason": "Esters can feed Malassezia yeast"
+            }
+          ]
         }
       },
       "cost_rating": "1"
@@ -1715,7 +2249,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 5,
           "film_forming_humectants_number": 7,
-          "emollients_number": 11,
+          "emollients_number": 7,
           "simple_humectants": [
             "Glycerin",
             "Glycereth-26",
@@ -1739,17 +2273,38 @@ export const defaultProductDatabase: ProductDatabase = {
             "Cetrimonium Chloride",
             "Behentrimonium Chloride",
             "Butyrospermum Parkii Shea Butter",
-            "Jojoba Oil",
-            "Unknown Oil",
-            "Unknown Oil",
-            "Unknown Oil",
-            "Unknown Oil"
+            "Jojoba Oil"
           ],
-          "score": -69
+          "score": -68
         },
         "porosity": {
           "high": 100,
-          "low": 23
+          "low": 27
+        },
+        "sebderm": {
+          "hasTriggers": true,
+          "triggers": [
+            {
+              "id": "olive_oil",
+              "name": "Olive Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            },
+            {
+              "id": "silk_amino_acids",
+              "name": "Silk Amino Acids",
+              "reason": "Amino acids can be metabolized by Malassezia, potentially worsening symptoms"
+            },
+            {
+              "id": "butyrospermum_parkii_shea_butter",
+              "name": "Butyrospermum Parkii Shea Butter",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            },
+            {
+              "id": "jojoba_oil",
+              "name": "Jojoba Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            }
+          ]
         }
       },
       "cost_rating": "4"
@@ -1781,7 +2336,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 2,
           "film_forming_humectants_number": 1,
-          "emollients_number": 8,
+          "emollients_number": 7,
           "simple_humectants": [
             "Glycerin",
             "Panthenol"
@@ -1792,7 +2347,6 @@ export const defaultProductDatabase: ProductDatabase = {
           "emollients": [
             "Cetearyl Alcohol",
             "Behentrimonium Chloride",
-            "Unknown Oil",
             "Avocado Oil",
             "Sunflower Oil",
             "Butyrospermum Parkii Shea Butter",
@@ -1804,6 +2358,36 @@ export const defaultProductDatabase: ProductDatabase = {
         "porosity": {
           "high": 100,
           "low": 12
+        },
+        "sebderm": {
+          "hasTriggers": true,
+          "triggers": [
+            {
+              "id": "cetearyl_alcohol",
+              "name": "Cetearyl Alcohol",
+              "reason": "This specific fatty alcohol can feed Malassezia yeast"
+            },
+            {
+              "id": "avocado_oil",
+              "name": "Avocado Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            },
+            {
+              "id": "sunflower_oil",
+              "name": "Sunflower Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            },
+            {
+              "id": "butyrospermum_parkii_shea_butter",
+              "name": "Butyrospermum Parkii Shea Butter",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            },
+            {
+              "id": "coconut_oil",
+              "name": "Coconut Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            }
+          ]
         }
       }
     },
@@ -1854,6 +2438,21 @@ export const defaultProductDatabase: ProductDatabase = {
         "porosity": {
           "high": 100,
           "low": 58
+        },
+        "sebderm": {
+          "hasTriggers": true,
+          "triggers": [
+            {
+              "id": "rice_bran_oil",
+              "name": "Rice bran oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            },
+            {
+              "id": "ceteareth_20",
+              "name": "Ceteareth-20",
+              "reason": "Can create a barrier that traps moisture and heat, promoting yeast growth"
+            }
+          ]
         }
       }
     },
@@ -1878,7 +2477,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 5,
           "film_forming_humectants_number": 2,
-          "emollients_number": 15,
+          "emollients_number": 5,
           "simple_humectants": [
             "Glycerin",
             "Propanediol",
@@ -1895,23 +2494,33 @@ export const defaultProductDatabase: ProductDatabase = {
             "Cetearyl Alcohol",
             "Stearamidopropyl Dimethylamine",
             "Unknown Polyquat",
-            "Unknown Oil",
-            "Unknown Oil",
-            "Unknown Oil",
-            "Unknown Oil",
-            "Unknown Oil",
-            "Unknown Oil",
-            "Unknown Oil",
-            "Unknown Oil",
-            "Unknown Oil",
-            "Coconut Oil",
-            "Unknown Oil"
+            "Coconut Oil"
           ],
-          "score": -68
+          "score": -65
         },
         "porosity": {
           "high": 100,
           "low": 0
+        },
+        "sebderm": {
+          "hasTriggers": true,
+          "triggers": [
+            {
+              "id": "cetearyl_alcohol",
+              "name": "Cetearyl Alcohol",
+              "reason": "This specific fatty alcohol can feed Malassezia yeast"
+            },
+            {
+              "id": "jojoba_esters",
+              "name": "Jojoba Esters",
+              "reason": "Esters can feed Malassezia yeast"
+            },
+            {
+              "id": "coconut_oil",
+              "name": "Coconut Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            }
+          ]
         }
       }
     },
@@ -1941,7 +2550,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 3,
           "film_forming_humectants_number": 2,
-          "emollients_number": 4,
+          "emollients_number": 1,
           "simple_humectants": [
             "Sodium PCA",
             "Panthenol",
@@ -1952,16 +2561,23 @@ export const defaultProductDatabase: ProductDatabase = {
             "Flaxseed Extract"
           ],
           "emollients": [
-            "Cetearyl Alcohol",
-            "Unknown Oil",
-            "Unknown Oil",
-            "Vanilla Planifolia Fruit Oil"
+            "Cetearyl Alcohol"
           ],
-          "score": -81
+          "score": -82
         },
         "porosity": {
           "high": 85,
           "low": 36
+        },
+        "sebderm": {
+          "hasTriggers": true,
+          "triggers": [
+            {
+              "id": "cetearyl_alcohol",
+              "name": "Cetearyl Alcohol",
+              "reason": "This specific fatty alcohol can feed Malassezia yeast"
+            }
+          ]
         }
       }
     },
@@ -2015,6 +2631,10 @@ export const defaultProductDatabase: ProductDatabase = {
         "porosity": {
           "high": 75,
           "low": 100
+        },
+        "sebderm": {
+          "hasTriggers": false,
+          "triggers": []
         }
       },
       "cost_rating": "5"
@@ -2044,7 +2664,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 4,
           "film_forming_humectants_number": 3,
-          "emollients_number": 10,
+          "emollients_number": 9,
           "simple_humectants": [
             "Propanediol",
             "Glycerin",
@@ -2058,7 +2678,6 @@ export const defaultProductDatabase: ProductDatabase = {
           ],
           "emollients": [
             "Cetearyl Alcohol",
-            "Unknown Oil",
             "Polyvinylpyrrolidone",
             "Butyrospermum Parkii Shea Butter",
             "VP VA copolymer",
@@ -2068,11 +2687,31 @@ export const defaultProductDatabase: ProductDatabase = {
             "Polyacrylate Crosspolymer-6",
             "Benzyl Alcohol"
           ],
-          "score": -66
+          "score": -65
         },
         "porosity": {
           "high": 100,
           "low": 43
+        },
+        "sebderm": {
+          "hasTriggers": true,
+          "triggers": [
+            {
+              "id": "cetearyl_alcohol",
+              "name": "Cetearyl Alcohol",
+              "reason": "This specific fatty alcohol can feed Malassezia yeast"
+            },
+            {
+              "id": "butyrospermum_parkii_shea_butter",
+              "name": "Butyrospermum Parkii Shea Butter",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            },
+            {
+              "id": "ceteareth_20",
+              "name": "Ceteareth-20",
+              "reason": "Can create a barrier that traps moisture and heat, promoting yeast growth"
+            }
+          ]
         }
       }
     },
@@ -2104,7 +2743,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 2,
           "film_forming_humectants_number": 1,
-          "emollients_number": 6,
+          "emollients_number": 5,
           "simple_humectants": [
             "Glycerin",
             "Propanediol"
@@ -2117,14 +2756,33 @@ export const defaultProductDatabase: ProductDatabase = {
             "Cetrimonium Chloride",
             "Butyrospermum Parkii Shea Butter",
             "Rice bran oil",
-            "Unknown Oil",
             "Unknown Polyquat"
           ],
-          "score": -54
+          "score": -52
         },
         "porosity": {
           "high": 100,
           "low": 10
+        },
+        "sebderm": {
+          "hasTriggers": true,
+          "triggers": [
+            {
+              "id": "cetearyl_alcohol",
+              "name": "Cetearyl Alcohol",
+              "reason": "This specific fatty alcohol can feed Malassezia yeast"
+            },
+            {
+              "id": "butyrospermum_parkii_shea_butter",
+              "name": "Butyrospermum Parkii Shea Butter",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            },
+            {
+              "id": "rice_bran_oil",
+              "name": "Rice bran oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            }
+          ]
         }
       },
       "cost_rating": "5"
@@ -2162,7 +2820,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 4,
           "film_forming_humectants_number": 0,
-          "emollients_number": 8,
+          "emollients_number": 7,
           "simple_humectants": [
             "Sodium hyaluronate",
             "Panthenol",
@@ -2173,18 +2831,42 @@ export const defaultProductDatabase: ProductDatabase = {
           "emollients": [
             "Castor Oil",
             "Cetearyl Alcohol",
-            "Unknown Oil",
             "Behentrimonium Chloride",
             "Jojoba Oil",
             "Butyrospermum Parkii Shea Butter",
             "Unknown Polyquat",
             "Guar Hydroxypropyltrimonium Chloride"
           ],
-          "score": -61
+          "score": -59
         },
         "porosity": {
           "high": 100,
           "low": 10
+        },
+        "sebderm": {
+          "hasTriggers": true,
+          "triggers": [
+            {
+              "id": "castor_oil",
+              "name": "Castor Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            },
+            {
+              "id": "cetearyl_alcohol",
+              "name": "Cetearyl Alcohol",
+              "reason": "This specific fatty alcohol can feed Malassezia yeast"
+            },
+            {
+              "id": "jojoba_oil",
+              "name": "Jojoba Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            },
+            {
+              "id": "butyrospermum_parkii_shea_butter",
+              "name": "Butyrospermum Parkii Shea Butter",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            }
+          ]
         }
       },
       "cost_rating": "5"
@@ -2239,6 +2921,26 @@ export const defaultProductDatabase: ProductDatabase = {
         "porosity": {
           "high": 100,
           "low": 30
+        },
+        "sebderm": {
+          "hasTriggers": true,
+          "triggers": [
+            {
+              "id": "cetearyl_alcohol",
+              "name": "Cetearyl Alcohol",
+              "reason": "This specific fatty alcohol can feed Malassezia yeast"
+            },
+            {
+              "id": "coconut_oil",
+              "name": "Coconut Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            },
+            {
+              "id": "sunflower_oil",
+              "name": "Sunflower Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            }
+          ]
         }
       },
       "cost_rating": "5"
@@ -2266,7 +2968,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 3,
           "film_forming_humectants_number": 2,
-          "emollients_number": 11,
+          "emollients_number": 7,
           "simple_humectants": [
             "Sorbitol",
             "Glycerin",
@@ -2283,17 +2985,38 @@ export const defaultProductDatabase: ProductDatabase = {
             "VP VA copolymer",
             "Argan Oil",
             "Butyrospermum Parkii Shea Butter",
-            "Unknown Oil",
-            "Unknown Oil",
-            "Unknown Oil",
-            "Baobab Oil",
             "Behentrimonium Methosulfate"
           ],
-          "score": -74
+          "score": -73
         },
         "porosity": {
           "high": 100,
           "low": 0
+        },
+        "sebderm": {
+          "hasTriggers": true,
+          "triggers": [
+            {
+              "id": "cetearyl_alcohol",
+              "name": "Cetearyl Alcohol",
+              "reason": "This specific fatty alcohol can feed Malassezia yeast"
+            },
+            {
+              "id": "avocado_oil",
+              "name": "Avocado Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            },
+            {
+              "id": "argan_oil",
+              "name": "Argan Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            },
+            {
+              "id": "butyrospermum_parkii_shea_butter",
+              "name": "Butyrospermum Parkii Shea Butter",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            }
+          ]
         }
       }
     },
@@ -2320,7 +3043,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 3,
           "film_forming_humectants_number": 3,
-          "emollients_number": 3,
+          "emollients_number": 1,
           "simple_humectants": [
             "Glycerin",
             "Caprylyl Glycol",
@@ -2332,15 +3055,28 @@ export const defaultProductDatabase: ProductDatabase = {
             "Aloe Barbadensis Leaf Extract"
           ],
           "emollients": [
-            "VP VA copolymer",
-            "Unknown Oil",
-            "Unknown Oil"
+            "VP VA copolymer"
           ],
-          "score": -70
+          "score": -69
         },
         "porosity": {
           "high": 81,
           "low": 31
+        },
+        "sebderm": {
+          "hasTriggers": true,
+          "triggers": [
+            {
+              "id": "jojoba_esters",
+              "name": "Jojoba Esters",
+              "reason": "Esters can feed Malassezia yeast"
+            },
+            {
+              "id": "jojoba_esters",
+              "name": "Jojoba Esters",
+              "reason": "Esters can feed Malassezia yeast"
+            }
+          ]
         }
       }
     },
@@ -2391,7 +3127,32 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 85,
-          "low": 38
+          "low": 43
+        },
+        "sebderm": {
+          "hasTriggers": true,
+          "triggers": [
+            {
+              "id": "avocado_oil",
+              "name": "Avocado Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            },
+            {
+              "id": "castor_oil",
+              "name": "Castor Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            },
+            {
+              "id": "jojoba_oil",
+              "name": "Jojoba Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            },
+            {
+              "id": "glycine",
+              "name": "Glycine",
+              "reason": "Amino acids can be metabolized by Malassezia, potentially worsening symptoms"
+            }
+          ]
         }
       }
     },
@@ -2424,7 +3185,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 3,
           "film_forming_humectants_number": 7,
-          "emollients_number": 4,
+          "emollients_number": 0,
           "simple_humectants": [
             "Glycerin",
             "Sorbitol",
@@ -2439,17 +3200,22 @@ export const defaultProductDatabase: ProductDatabase = {
             "Seaweed Extract",
             "Seaweed Extract"
           ],
-          "emollients": [
-            "Unknown Oil",
-            "Unknown Oil",
-            "Unknown Oil",
-            "Unknown Oil"
-          ],
-          "score": -81
+          "emollients": [],
+          "score": -82
         },
         "porosity": {
           "high": 95,
-          "low": 60
+          "low": 68
+        },
+        "sebderm": {
+          "hasTriggers": true,
+          "triggers": [
+            {
+              "id": "silk_amino_acids",
+              "name": "Silk Amino Acids",
+              "reason": "Amino acids can be metabolized by Malassezia, potentially worsening symptoms"
+            }
+          ]
         }
       },
       "cost_rating": "4"
@@ -2496,7 +3262,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 2,
           "film_forming_humectants_number": 3,
-          "emollients_number": 5,
+          "emollients_number": 3,
           "simple_humectants": [
             "Glycerin",
             "Sorbitol"
@@ -2507,17 +3273,35 @@ export const defaultProductDatabase: ProductDatabase = {
             "Aloe Barbadensis Leaf Extract"
           ],
           "emollients": [
-            "Unknown Oil",
-            "Unknown Oil",
             "Avocado Oil",
             "Butyrospermum Parkii Shea Butter",
             "Sunflower Oil"
           ],
-          "score": -60
+          "score": -54
         },
         "porosity": {
           "high": 66,
           "low": 3
+        },
+        "sebderm": {
+          "hasTriggers": true,
+          "triggers": [
+            {
+              "id": "avocado_oil",
+              "name": "Avocado Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            },
+            {
+              "id": "butyrospermum_parkii_shea_butter",
+              "name": "Butyrospermum Parkii Shea Butter",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            },
+            {
+              "id": "sunflower_oil",
+              "name": "Sunflower Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            }
+          ]
         }
       },
       "cost_rating": "5"
@@ -2566,6 +3350,10 @@ export const defaultProductDatabase: ProductDatabase = {
         "porosity": {
           "high": 85,
           "low": 100
+        },
+        "sebderm": {
+          "hasTriggers": false,
+          "triggers": []
         }
       }
     },
@@ -2614,6 +3402,16 @@ export const defaultProductDatabase: ProductDatabase = {
         "porosity": {
           "high": 82,
           "low": 97
+        },
+        "sebderm": {
+          "hasTriggers": true,
+          "triggers": [
+            {
+              "id": "jojoba_oil",
+              "name": "Jojoba Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            }
+          ]
         }
       }
     },
@@ -2661,6 +3459,16 @@ export const defaultProductDatabase: ProductDatabase = {
         "porosity": {
           "high": 82,
           "low": 97
+        },
+        "sebderm": {
+          "hasTriggers": true,
+          "triggers": [
+            {
+              "id": "jojoba_oil",
+              "name": "Jojoba Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            }
+          ]
         }
       }
     },
@@ -2710,6 +3518,10 @@ export const defaultProductDatabase: ProductDatabase = {
         "porosity": {
           "high": 92,
           "low": 100
+        },
+        "sebderm": {
+          "hasTriggers": false,
+          "triggers": []
         }
       }
     },
@@ -2762,6 +3574,31 @@ export const defaultProductDatabase: ProductDatabase = {
         "porosity": {
           "high": 100,
           "low": 0
+        },
+        "sebderm": {
+          "hasTriggers": true,
+          "triggers": [
+            {
+              "id": "cetearyl_alcohol",
+              "name": "Cetearyl Alcohol",
+              "reason": "This specific fatty alcohol can feed Malassezia yeast"
+            },
+            {
+              "id": "avocado_oil",
+              "name": "Avocado Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            },
+            {
+              "id": "argan_oil",
+              "name": "Argan Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            },
+            {
+              "id": "jojoba_oil",
+              "name": "Jojoba Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            }
+          ]
         }
       }
     },
@@ -2815,6 +3652,26 @@ export const defaultProductDatabase: ProductDatabase = {
         "porosity": {
           "high": 100,
           "low": 12
+        },
+        "sebderm": {
+          "hasTriggers": true,
+          "triggers": [
+            {
+              "id": "cetearyl_alcohol",
+              "name": "Cetearyl Alcohol",
+              "reason": "This specific fatty alcohol can feed Malassezia yeast"
+            },
+            {
+              "id": "butyrospermum_parkii_shea_butter",
+              "name": "Butyrospermum Parkii Shea Butter",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            },
+            {
+              "id": "avocado_oil",
+              "name": "Avocado Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            }
+          ]
         }
       },
       "cost_rating": "2"
@@ -2852,7 +3709,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 2,
           "film_forming_humectants_number": 2,
-          "emollients_number": 10,
+          "emollients_number": 8,
           "simple_humectants": [
             "Panthenol",
             "Ethylhexylglycerin"
@@ -2868,9 +3725,7 @@ export const defaultProductDatabase: ProductDatabase = {
             "Cetearyl Alcohol",
             "Behentrimonium Chloride",
             "Cetrimonium Chloride",
-            "Unknown Oil",
             "Jojoba Oil",
-            "Unknown Oil",
             "Ceteareth-20"
           ],
           "score": -76
@@ -2878,6 +3733,36 @@ export const defaultProductDatabase: ProductDatabase = {
         "porosity": {
           "high": 100,
           "low": 0
+        },
+        "sebderm": {
+          "hasTriggers": true,
+          "triggers": [
+            {
+              "id": "butyrospermum_parkii_shea_butter",
+              "name": "Butyrospermum Parkii Shea Butter",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            },
+            {
+              "id": "avocado_oil",
+              "name": "Avocado Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            },
+            {
+              "id": "cetearyl_alcohol",
+              "name": "Cetearyl Alcohol",
+              "reason": "This specific fatty alcohol can feed Malassezia yeast"
+            },
+            {
+              "id": "jojoba_oil",
+              "name": "Jojoba Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            },
+            {
+              "id": "ceteareth_20",
+              "name": "Ceteareth-20",
+              "reason": "Can create a barrier that traps moisture and heat, promoting yeast growth"
+            }
+          ]
         }
       },
       "cost_rating": "5"
@@ -2923,7 +3808,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 4,
           "film_forming_humectants_number": 1,
-          "emollients_number": 8,
+          "emollients_number": 7,
           "simple_humectants": [
             "Propanediol",
             "Panthenol",
@@ -2937,17 +3822,46 @@ export const defaultProductDatabase: ProductDatabase = {
             "Cetearyl Alcohol",
             "Behentrimonium Chloride",
             "Guar Hydroxypropyltrimonium Chloride",
-            "Unknown Oil",
             "Sunflower Oil",
             "Apricot Kernel Oil",
             "Avocado Oil",
             "Butyrospermum Parkii Shea Butter"
           ],
-          "score": -61
+          "score": -60
         },
         "porosity": {
           "high": 100,
           "low": 23
+        },
+        "sebderm": {
+          "hasTriggers": true,
+          "triggers": [
+            {
+              "id": "cetearyl_alcohol",
+              "name": "Cetearyl Alcohol",
+              "reason": "This specific fatty alcohol can feed Malassezia yeast"
+            },
+            {
+              "id": "sunflower_oil",
+              "name": "Sunflower Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            },
+            {
+              "id": "apricot_kernel_oil",
+              "name": "Apricot Kernel Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            },
+            {
+              "id": "avocado_oil",
+              "name": "Avocado Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            },
+            {
+              "id": "butyrospermum_parkii_shea_butter",
+              "name": "Butyrospermum Parkii Shea Butter",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            }
+          ]
         }
       }
     },
@@ -2981,7 +3895,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 2,
           "film_forming_humectants_number": 2,
-          "emollients_number": 2,
+          "emollients_number": 0,
           "simple_humectants": [
             "Propanediol",
             "Caprylyl Glycol"
@@ -2990,15 +3904,16 @@ export const defaultProductDatabase: ProductDatabase = {
             "Hydrolyzed Corn Starch",
             "Linum Usitatissimum Seed Extract"
           ],
-          "emollients": [
-            "Unknown Oil",
-            "Unknown Oil"
-          ],
-          "score": -77
+          "emollients": [],
+          "score": -78
         },
         "porosity": {
           "high": 91,
           "low": 41
+        },
+        "sebderm": {
+          "hasTriggers": false,
+          "triggers": []
         }
       }
     },
@@ -3030,7 +3945,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 2,
           "film_forming_humectants_number": 2,
-          "emollients_number": 2,
+          "emollients_number": 0,
           "simple_humectants": [
             "Glycerin",
             "Propanediol"
@@ -3039,15 +3954,16 @@ export const defaultProductDatabase: ProductDatabase = {
             "Aloe Barbadensis Leaf Extract",
             "Unknown Protein"
           ],
-          "emollients": [
-            "Unknown Oil",
-            "Unknown Oil"
-          ],
-          "score": -73
+          "emollients": [],
+          "score": -72
         },
         "porosity": {
           "high": 90,
           "low": 47
+        },
+        "sebderm": {
+          "hasTriggers": false,
+          "triggers": []
         }
       },
       "cost_rating": "5"
@@ -3084,7 +4000,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 2,
           "film_forming_humectants_number": 3,
-          "emollients_number": 12,
+          "emollients_number": 3,
           "simple_humectants": [
             "Glycerin",
             "Sorbitol"
@@ -3095,24 +4011,25 @@ export const defaultProductDatabase: ProductDatabase = {
             "Hydroxypropyltrimonium Honey"
           ],
           "emollients": [
-            "Unknown Oil",
-            "Lavender Oil",
-            "Unknown Oil",
-            "Unknown Oil",
-            "Unknown Oil",
-            "Unknown Oil",
             "Diheptyl Succinate",
             "Capryloyl Glycerin Sebacic Acid Copolymer",
-            "Unknown Oil",
-            "Grapeseed Oil",
-            "Unknown Oil",
-            "Unknown Oil"
+            "Grapeseed Oil"
           ],
           "score": -75
         },
         "porosity": {
           "high": 94,
           "low": 0
+        },
+        "sebderm": {
+          "hasTriggers": true,
+          "triggers": [
+            {
+              "id": "grapeseed_oil",
+              "name": "Grapeseed Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            }
+          ]
         }
       },
       "cost_rating": "5"
@@ -3174,6 +4091,16 @@ export const defaultProductDatabase: ProductDatabase = {
         "porosity": {
           "high": 72,
           "low": 77
+        },
+        "sebderm": {
+          "hasTriggers": true,
+          "triggers": [
+            {
+              "id": "castor_oil",
+              "name": "Castor Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            }
+          ]
         }
       },
       "cost_rating": "5"
@@ -3223,6 +4150,10 @@ export const defaultProductDatabase: ProductDatabase = {
         "porosity": {
           "high": 100,
           "low": 100
+        },
+        "sebderm": {
+          "hasTriggers": false,
+          "triggers": []
         }
       },
       "cost_rating": "1"
@@ -3248,7 +4179,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 3,
           "film_forming_humectants_number": 1,
-          "emollients_number": 5,
+          "emollients_number": 3,
           "simple_humectants": [
             "Glycerin",
             "Panthenol",
@@ -3258,17 +4189,30 @@ export const defaultProductDatabase: ProductDatabase = {
             "Unknown Protein"
           ],
           "emollients": [
-            "Unknown Oil",
             "Unknown Polyquat",
             "Sweet Almond Oil",
-            "Unknown Oil",
             "VP VA copolymer"
           ],
-          "score": -56
+          "score": -49
         },
         "porosity": {
           "high": 86,
           "low": 65
+        },
+        "sebderm": {
+          "hasTriggers": true,
+          "triggers": [
+            {
+              "id": "sweet_almond_oil",
+              "name": "Sweet Almond Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            },
+            {
+              "id": "polysorbate_20",
+              "name": "Polysorbate 20",
+              "reason": "polysorbates can feed Malassezia yeast"
+            }
+          ]
         }
       }
     },
@@ -3294,7 +4238,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 3,
           "film_forming_humectants_number": 2,
-          "emollients_number": 9,
+          "emollients_number": 3,
           "simple_humectants": [
             "Butylene glycol",
             "Sodium hyaluronate",
@@ -3307,19 +4251,38 @@ export const defaultProductDatabase: ProductDatabase = {
           "emollients": [
             "Unknown Polyquat",
             "Jojoba Oil",
-            "Unknown Oil",
-            "Castor Oil",
-            "Unknown Oil",
-            "Lavender Oil",
-            "Unknown Oil",
-            "Unknown Oil",
-            "Unknown Oil"
+            "Castor Oil"
           ],
-          "score": -60
+          "score": -54
         },
         "porosity": {
-          "high": 87,
+          "high": 85,
           "low": 0
+        },
+        "sebderm": {
+          "hasTriggers": true,
+          "triggers": [
+            {
+              "id": "glycine",
+              "name": "Glycine",
+              "reason": "Amino acids can be metabolized by Malassezia, potentially worsening symptoms"
+            },
+            {
+              "id": "jojoba_oil",
+              "name": "Jojoba Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            },
+            {
+              "id": "polysorbate",
+              "name": "Polysorbate",
+              "reason": "polysorbates can feed Malassezia yeast"
+            },
+            {
+              "id": "castor_oil",
+              "name": "Castor Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            }
+          ]
         }
       }
     },
@@ -3369,6 +4332,10 @@ export const defaultProductDatabase: ProductDatabase = {
         "porosity": {
           "high": 100,
           "low": 100
+        },
+        "sebderm": {
+          "hasTriggers": false,
+          "triggers": []
         }
       }
     },
@@ -3404,7 +4371,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 1,
           "film_forming_humectants_number": 4,
-          "emollients_number": 2,
+          "emollients_number": 1,
           "simple_humectants": [
             "Agave Nectar"
           ],
@@ -3415,14 +4382,17 @@ export const defaultProductDatabase: ProductDatabase = {
             "Marshmallow root Extract"
           ],
           "emollients": [
-            "Xanthan Gum",
-            "Unknown Essential Oil"
+            "Xanthan Gum"
           ],
           "score": -88
         },
         "porosity": {
           "high": 100,
           "low": 100
+        },
+        "sebderm": {
+          "hasTriggers": false,
+          "triggers": []
         }
       }
     },
@@ -3482,7 +4452,22 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 100,
-          "low": 78
+          "low": 84
+        },
+        "sebderm": {
+          "hasTriggers": true,
+          "triggers": [
+            {
+              "id": "wheat_amino_acids",
+              "name": "Wheat Amino Acids",
+              "reason": "Amino acids can be metabolized by Malassezia, potentially worsening symptoms"
+            },
+            {
+              "id": "castor_oil",
+              "name": "Castor Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            }
+          ]
         }
       },
       "cost_rating": "5"
@@ -3541,6 +4526,21 @@ export const defaultProductDatabase: ProductDatabase = {
         "porosity": {
           "high": 100,
           "low": 48
+        },
+        "sebderm": {
+          "hasTriggers": true,
+          "triggers": [
+            {
+              "id": "argan_oil",
+              "name": "Argan Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            },
+            {
+              "id": "castor_oil",
+              "name": "Castor Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            }
+          ]
         }
       },
       "cost_rating": "5"
@@ -3577,7 +4577,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 2,
           "film_forming_humectants_number": 1,
-          "emollients_number": 2,
+          "emollients_number": 1,
           "simple_humectants": [
             "Glycerin",
             "Honey"
@@ -3586,14 +4586,17 @@ export const defaultProductDatabase: ProductDatabase = {
             "Hydroxyethylcellulose"
           ],
           "emollients": [
-            "Copolymer",
-            "Citrus Aurantium Dulcis Peel Oil"
+            "Copolymer"
           ],
           "score": -79
         },
         "porosity": {
           "high": 82,
           "low": 100
+        },
+        "sebderm": {
+          "hasTriggers": false,
+          "triggers": []
         }
       },
       "cost_rating": "5"
@@ -3649,6 +4652,21 @@ export const defaultProductDatabase: ProductDatabase = {
         "porosity": {
           "high": 100,
           "low": 100
+        },
+        "sebderm": {
+          "hasTriggers": true,
+          "triggers": [
+            {
+              "id": "silk_amino_acids",
+              "name": "Silk Amino Acids",
+              "reason": "Amino acids can be metabolized by Malassezia, potentially worsening symptoms"
+            },
+            {
+              "id": "polysorbate",
+              "name": "Polysorbate",
+              "reason": "polysorbates can feed Malassezia yeast"
+            }
+          ]
         }
       },
       "cost_rating": "4"
@@ -3684,7 +4702,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 3,
           "film_forming_humectants_number": 3,
-          "emollients_number": 7,
+          "emollients_number": 5,
           "simple_humectants": [
             "Sorbitol",
             "Glycerin",
@@ -3696,19 +4714,27 @@ export const defaultProductDatabase: ProductDatabase = {
             "Hydroxyethylcellulose"
           ],
           "emollients": [
-            "Unknown Oil",
-            "Unknown Oil",
             "Rice bran oil",
             "Unknown Polyquat",
             "Unknown Polyquat",
             "Behentrimonium Chloride",
             "Guar Hydroxypropyltrimonium Chloride"
           ],
-          "score": -80
+          "score": -82
         },
         "porosity": {
           "high": 100,
           "low": 29
+        },
+        "sebderm": {
+          "hasTriggers": true,
+          "triggers": [
+            {
+              "id": "rice_bran_oil",
+              "name": "Rice bran oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            }
+          ]
         }
       }
     },
@@ -3739,7 +4765,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 2,
           "film_forming_humectants_number": 2,
-          "emollients_number": 4,
+          "emollients_number": 2,
           "simple_humectants": [
             "Glycerin",
             "Propanediol"
@@ -3750,15 +4776,17 @@ export const defaultProductDatabase: ProductDatabase = {
           ],
           "emollients": [
             "Unknown Polyquat",
-            "VP VA copolymer",
-            "Unknown Oil",
-            "Unknown Oil"
+            "VP VA copolymer"
           ],
-          "score": -73
+          "score": -72
         },
         "porosity": {
           "high": 100,
           "low": 63
+        },
+        "sebderm": {
+          "hasTriggers": false,
+          "triggers": []
         }
       }
     },
@@ -3789,7 +4817,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 2,
           "film_forming_humectants_number": 2,
-          "emollients_number": 3,
+          "emollients_number": 1,
           "simple_humectants": [
             "Glycerin",
             "Propanediol"
@@ -3799,15 +4827,17 @@ export const defaultProductDatabase: ProductDatabase = {
             "Unknown Protein"
           ],
           "emollients": [
-            "Guar Gum",
-            "Unknown Oil",
-            "Unknown Oil"
+            "Guar Gum"
           ],
-          "score": -71
+          "score": -70
         },
         "porosity": {
           "high": 79,
           "low": 53
+        },
+        "sebderm": {
+          "hasTriggers": false,
+          "triggers": []
         }
       }
     },
@@ -3867,6 +4897,16 @@ export const defaultProductDatabase: ProductDatabase = {
         "porosity": {
           "high": 59,
           "low": 67
+        },
+        "sebderm": {
+          "hasTriggers": true,
+          "triggers": [
+            {
+              "id": "castor_oil",
+              "name": "Castor Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            }
+          ]
         }
       }
     },
@@ -3906,7 +4946,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 0,
           "film_forming_humectants_number": 3,
-          "emollients_number": 3,
+          "emollients_number": 2,
           "simple_humectants": [],
           "film_forming_humectants": [
             "Hydroxyethylcellulose",
@@ -3915,14 +4955,28 @@ export const defaultProductDatabase: ProductDatabase = {
           ],
           "emollients": [
             "VP VA copolymer",
-            "Unknown Essential Oil",
             "Sunflower Oil"
           ],
-          "score": -90
+          "score": -91
         },
         "porosity": {
           "high": 91,
-          "low": 86
+          "low": 94
+        },
+        "sebderm": {
+          "hasTriggers": true,
+          "triggers": [
+            {
+              "id": "sunflower_oil",
+              "name": "Sunflower Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            },
+            {
+              "id": "glycine",
+              "name": "Glycine",
+              "reason": "Amino acids can be metabolized by Malassezia, potentially worsening symptoms"
+            }
+          ]
         }
       },
       "cost_rating": "1"
@@ -3971,6 +5025,10 @@ export const defaultProductDatabase: ProductDatabase = {
         "porosity": {
           "high": 100,
           "low": 99
+        },
+        "sebderm": {
+          "hasTriggers": false,
+          "triggers": []
         }
       },
       "cost_rating": "5"
@@ -4019,6 +5077,21 @@ export const defaultProductDatabase: ProductDatabase = {
         "porosity": {
           "high": 100,
           "low": 88
+        },
+        "sebderm": {
+          "hasTriggers": true,
+          "triggers": [
+            {
+              "id": "jojoba_oil",
+              "name": "Jojoba Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            },
+            {
+              "id": "c12_15_alkyl",
+              "name": "C12-15 alkyl",
+              "reason": "Esters can feed Malassezia yeast"
+            }
+          ]
         }
       }
     },
@@ -4066,6 +5139,16 @@ export const defaultProductDatabase: ProductDatabase = {
         "porosity": {
           "high": 82,
           "low": 42
+        },
+        "sebderm": {
+          "hasTriggers": true,
+          "triggers": [
+            {
+              "id": "castor_oil",
+              "name": "Castor Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            }
+          ]
         }
       }
     },
@@ -4109,6 +5192,16 @@ export const defaultProductDatabase: ProductDatabase = {
         "porosity": {
           "high": 100,
           "low": 75
+        },
+        "sebderm": {
+          "hasTriggers": true,
+          "triggers": [
+            {
+              "id": "castor_oil",
+              "name": "Castor Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            }
+          ]
         }
       }
     },
@@ -4140,7 +5233,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 2,
           "film_forming_humectants_number": 1,
-          "emollients_number": 3,
+          "emollients_number": 1,
           "simple_humectants": [
             "Sodium PCA",
             "Panthenol"
@@ -4149,15 +5242,23 @@ export const defaultProductDatabase: ProductDatabase = {
             "Marshmallow root Extract"
           ],
           "emollients": [
-            "Cetearyl Alcohol",
-            "Unknown Essential Oil",
-            "Unknown Essential Oil"
+            "Cetearyl Alcohol"
           ],
           "score": -75
         },
         "porosity": {
           "high": 78,
           "low": 100
+        },
+        "sebderm": {
+          "hasTriggers": true,
+          "triggers": [
+            {
+              "id": "cetearyl_alcohol",
+              "name": "Cetearyl Alcohol",
+              "reason": "This specific fatty alcohol can feed Malassezia yeast"
+            }
+          ]
         }
       }
     },
@@ -4192,7 +5293,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 2,
           "film_forming_humectants_number": 2,
-          "emollients_number": 17,
+          "emollients_number": 1,
           "simple_humectants": [
             "Glycerin",
             "Honey"
@@ -4202,29 +5303,23 @@ export const defaultProductDatabase: ProductDatabase = {
             "Hydrolyzed Quinoa"
           ],
           "emollients": [
-            "Cetearyl Alcohol",
-            "Unknown Oil",
-            "Unknown Oil",
-            "Unknown Oil",
-            "Unknown Oil",
-            "Unknown Oil",
-            "Unknown Oil",
-            "Unknown Oil",
-            "Unknown Oil",
-            "Lavender Oil",
-            "Unknown Oil",
-            "Unknown Oil",
-            "Unknown Oil",
-            "Unknown Oil",
-            "Unknown Oil",
-            "Unknown Oil",
-            "Rosemary Oil"
+            "Cetearyl Alcohol"
           ],
-          "score": -79
+          "score": -81
         },
         "porosity": {
           "high": 53,
           "low": 0
+        },
+        "sebderm": {
+          "hasTriggers": true,
+          "triggers": [
+            {
+              "id": "cetearyl_alcohol",
+              "name": "Cetearyl Alcohol",
+              "reason": "This specific fatty alcohol can feed Malassezia yeast"
+            }
+          ]
         }
       },
       "cost_rating": "5"
@@ -4292,6 +5387,31 @@ export const defaultProductDatabase: ProductDatabase = {
         "porosity": {
           "high": 100,
           "low": 58
+        },
+        "sebderm": {
+          "hasTriggers": true,
+          "triggers": [
+            {
+              "id": "cetearyl_alcohol",
+              "name": "Cetearyl Alcohol",
+              "reason": "This specific fatty alcohol can feed Malassezia yeast"
+            },
+            {
+              "id": "castor_oil",
+              "name": "Castor Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            },
+            {
+              "id": "butyrospermum_parkii_shea_butter",
+              "name": "Butyrospermum Parkii Shea Butter",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            },
+            {
+              "id": "jojoba_oil",
+              "name": "Jojoba Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            }
+          ]
         }
       },
       "cost_rating": "3"
@@ -4343,7 +5463,22 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 85,
-          "low": 58
+          "low": 67
+        },
+        "sebderm": {
+          "hasTriggers": true,
+          "triggers": [
+            {
+              "id": "glycine",
+              "name": "Glycine",
+              "reason": "Amino acids can be metabolized by Malassezia, potentially worsening symptoms"
+            },
+            {
+              "id": "sunflower_oil",
+              "name": "Sunflower Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            }
+          ]
         }
       },
       "cost_rating": "1"
@@ -4373,7 +5508,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 1,
           "film_forming_humectants_number": 0,
-          "emollients_number": 11,
+          "emollients_number": 8,
           "simple_humectants": [
             "Ethylhexylglycerin"
           ],
@@ -4385,17 +5520,49 @@ export const defaultProductDatabase: ProductDatabase = {
             "Argan Oil",
             "Butyrospermum Parkii Shea Butter",
             "Avocado Oil",
-            "Unknown Oil",
-            "Unknown Oil",
             "Behentrimonium Methosulfate",
-            "Cetrimonium Chloride",
-            "Unknown Oil"
+            "Cetrimonium Chloride"
           ],
           "score": -74
         },
         "porosity": {
           "high": 91,
           "low": 0
+        },
+        "sebderm": {
+          "hasTriggers": true,
+          "triggers": [
+            {
+              "id": "cetearyl_alcohol",
+              "name": "Cetearyl Alcohol",
+              "reason": "This specific fatty alcohol can feed Malassezia yeast"
+            },
+            {
+              "id": "jojoba_oil",
+              "name": "Jojoba Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            },
+            {
+              "id": "olive_oil",
+              "name": "Olive Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            },
+            {
+              "id": "argan_oil",
+              "name": "Argan Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            },
+            {
+              "id": "butyrospermum_parkii_shea_butter",
+              "name": "Butyrospermum Parkii Shea Butter",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            },
+            {
+              "id": "avocado_oil",
+              "name": "Avocado Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            }
+          ]
         }
       }
     },
@@ -4420,7 +5587,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 3,
           "film_forming_humectants_number": 1,
-          "emollients_number": 6,
+          "emollients_number": 5,
           "simple_humectants": [
             "Glycerin",
             "Sorbitol",
@@ -4430,18 +5597,37 @@ export const defaultProductDatabase: ProductDatabase = {
             "Marshmallow root Extract"
           ],
           "emollients": [
-            "Unknown Oil",
             "Sunflower Oil",
-            "Unknown Oil",
+            "Apricot Kernel Oil",
             "Cetearyl Alcohol",
             "Behentrimonium Methosulfate",
             "Behentrimonium Chloride"
           ],
-          "score": -59
+          "score": -56
         },
         "porosity": {
           "high": 100,
           "low": 0
+        },
+        "sebderm": {
+          "hasTriggers": true,
+          "triggers": [
+            {
+              "id": "sunflower_oil",
+              "name": "Sunflower Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            },
+            {
+              "id": "apricot_kernel_oil",
+              "name": "Apricot Kernel Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            },
+            {
+              "id": "cetearyl_alcohol",
+              "name": "Cetearyl Alcohol",
+              "reason": "This specific fatty alcohol can feed Malassezia yeast"
+            }
+          ]
         }
       }
     },
@@ -4473,7 +5659,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 0,
           "film_forming_humectants_number": 0,
-          "emollients_number": 9,
+          "emollients_number": 5,
           "simple_humectants": [],
           "film_forming_humectants": [],
           "emollients": [
@@ -4481,17 +5667,43 @@ export const defaultProductDatabase: ProductDatabase = {
             "Avocado Oil",
             "Sweet Almond Oil",
             "Argan Oil",
-            "Castor Oil",
-            "Unknown Essential Oil",
-            "Unknown Essential Oil",
-            "Unknown Essential Oil",
-            "Unknown Essential Oil"
+            "Castor Oil"
           ],
           "score": -76
         },
         "porosity": {
           "high": 29,
           "low": 0
+        },
+        "sebderm": {
+          "hasTriggers": true,
+          "triggers": [
+            {
+              "id": "jojoba_oil",
+              "name": "Jojoba Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            },
+            {
+              "id": "avocado_oil",
+              "name": "Avocado Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            },
+            {
+              "id": "sweet_almond_oil",
+              "name": "Sweet Almond Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            },
+            {
+              "id": "argan_oil",
+              "name": "Argan Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            },
+            {
+              "id": "castor_oil",
+              "name": "Castor Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            }
+          ]
         }
       }
     },
@@ -4522,23 +5734,39 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 0,
           "film_forming_humectants_number": 0,
-          "emollients_number": 7,
+          "emollients_number": 3,
           "simple_humectants": [],
           "film_forming_humectants": [],
           "emollients": [
             "Sunflower Oil",
-            "Unknown Oil",
             "Grapeseed Oil",
-            "Jojoba Oil",
-            "Unknown Oil",
-            "Unknown Oil",
-            "Unknown Oil"
+            "Jojoba Oil"
           ],
           "score": -76
         },
         "porosity": {
           "high": 25,
           "low": 0
+        },
+        "sebderm": {
+          "hasTriggers": true,
+          "triggers": [
+            {
+              "id": "sunflower_oil",
+              "name": "Sunflower Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            },
+            {
+              "id": "grapeseed_oil",
+              "name": "Grapeseed Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            },
+            {
+              "id": "jojoba_oil",
+              "name": "Jojoba Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            }
+          ]
         }
       },
       "cost_rating": "5"
@@ -4580,7 +5808,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 0,
           "film_forming_humectants_number": 0,
-          "emollients_number": 6,
+          "emollients_number": 5,
           "simple_humectants": [],
           "film_forming_humectants": [],
           "emollients": [
@@ -4588,7 +5816,6 @@ export const defaultProductDatabase: ProductDatabase = {
             "Butyrospermum Parkii Shea Butter",
             "Castor Oil",
             "Apricot Kernel Oil",
-            "Unknown Oil",
             "Benzyl Alcohol"
           ],
           "score": -76
@@ -4596,6 +5823,31 @@ export const defaultProductDatabase: ProductDatabase = {
         "porosity": {
           "high": 37,
           "low": 0
+        },
+        "sebderm": {
+          "hasTriggers": true,
+          "triggers": [
+            {
+              "id": "olive_oil",
+              "name": "Olive Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            },
+            {
+              "id": "butyrospermum_parkii_shea_butter",
+              "name": "Butyrospermum Parkii Shea Butter",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            },
+            {
+              "id": "castor_oil",
+              "name": "Castor Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            },
+            {
+              "id": "apricot_kernel_oil",
+              "name": "Apricot Kernel Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            }
+          ]
         }
       },
       "cost_rating": "5"
@@ -4639,6 +5891,10 @@ export const defaultProductDatabase: ProductDatabase = {
         "porosity": {
           "high": 0,
           "low": 4
+        },
+        "sebderm": {
+          "hasTriggers": false,
+          "triggers": []
         }
       }
     },
@@ -4680,6 +5936,16 @@ export const defaultProductDatabase: ProductDatabase = {
         "porosity": {
           "high": 0,
           "low": 4
+        },
+        "sebderm": {
+          "hasTriggers": true,
+          "triggers": [
+            {
+              "id": "marula_oil",
+              "name": "Marula Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            }
+          ]
         }
       }
     },
@@ -4721,6 +5987,16 @@ export const defaultProductDatabase: ProductDatabase = {
         "porosity": {
           "high": 25,
           "low": 0
+        },
+        "sebderm": {
+          "hasTriggers": true,
+          "triggers": [
+            {
+              "id": "argan_oil",
+              "name": "Argan Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            }
+          ]
         }
       }
     },
@@ -4747,19 +6023,13 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 0,
           "film_forming_humectants_number": 0,
-          "emollients_number": 10,
+          "emollients_number": 4,
           "simple_humectants": [],
           "film_forming_humectants": [],
           "emollients": [
             "Sunflower Oil",
-            "Baobab Oil",
             "Argan Oil",
-            "Unknown Oil",
-            "Unknown Oil",
-            "Unknown Oil",
-            "Unknown Oil",
             "Sweet Almond Oil",
-            "Unknown Oil",
             "Jojoba Oil"
           ],
           "score": -76
@@ -4767,6 +6037,31 @@ export const defaultProductDatabase: ProductDatabase = {
         "porosity": {
           "high": 31,
           "low": 0
+        },
+        "sebderm": {
+          "hasTriggers": true,
+          "triggers": [
+            {
+              "id": "sunflower_oil",
+              "name": "Sunflower Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            },
+            {
+              "id": "argan_oil",
+              "name": "Argan Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            },
+            {
+              "id": "sweet_almond_oil",
+              "name": "Sweet Almond Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            },
+            {
+              "id": "jojoba_oil",
+              "name": "Jojoba Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            }
+          ]
         }
       }
     },
@@ -4830,6 +6125,21 @@ export const defaultProductDatabase: ProductDatabase = {
         "porosity": {
           "high": 100,
           "low": 80
+        },
+        "sebderm": {
+          "hasTriggers": true,
+          "triggers": [
+            {
+              "id": "cetearyl_alcohol",
+              "name": "Cetearyl Alcohol",
+              "reason": "This specific fatty alcohol can feed Malassezia yeast"
+            },
+            {
+              "id": "sweet_almond_oil",
+              "name": "Sweet Almond Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            }
+          ]
         }
       },
       "cost_rating": "5"
@@ -4876,6 +6186,10 @@ export const defaultProductDatabase: ProductDatabase = {
         "porosity": {
           "high": 70,
           "low": 100
+        },
+        "sebderm": {
+          "hasTriggers": false,
+          "triggers": []
         }
       }
     },
@@ -4907,7 +6221,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 3,
           "film_forming_humectants_number": 0,
-          "emollients_number": 6,
+          "emollients_number": 1,
           "simple_humectants": [
             "Sodium PCA",
             "Propanediol",
@@ -4915,18 +6229,17 @@ export const defaultProductDatabase: ProductDatabase = {
           ],
           "film_forming_humectants": [],
           "emollients": [
-            "Stearamidopropyl Dimethylamine",
-            "Peppermint Oil",
-            "Vanilla Planifolia Fruit Oil",
-            "Unknown Oil",
-            "Unknown Oil",
-            "Unknown Oil"
+            "Stearamidopropyl Dimethylamine"
           ],
-          "score": -35
+          "score": -6
         },
         "porosity": {
           "high": 100,
           "low": 100
+        },
+        "sebderm": {
+          "hasTriggers": false,
+          "triggers": []
         }
       }
     },
@@ -4956,7 +6269,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 2,
           "film_forming_humectants_number": 1,
-          "emollients_number": 5,
+          "emollients_number": 2,
           "simple_humectants": [
             "Glycerin",
             "Panthenol"
@@ -4966,16 +6279,28 @@ export const defaultProductDatabase: ProductDatabase = {
           ],
           "emollients": [
             "Sunflower Oil",
-            "Unknown Oil",
-            "Unknown Oil",
-            "Unknown Oil",
             "Unknown Polyquat"
           ],
-          "score": -56
+          "score": -40
         },
         "porosity": {
           "high": 67,
           "low": 100
+        },
+        "sebderm": {
+          "hasTriggers": true,
+          "triggers": [
+            {
+              "id": "sunflower_oil",
+              "name": "Sunflower Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            },
+            {
+              "id": "glycine",
+              "name": "Glycine",
+              "reason": "Amino acids can be metabolized by Malassezia, potentially worsening symptoms"
+            }
+          ]
         }
       },
       "cost_rating": "5"
@@ -5013,7 +6338,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 4,
           "film_forming_humectants_number": 10,
-          "emollients_number": 4,
+          "emollients_number": 3,
           "simple_humectants": [
             "Propanediol",
             "Sodium PCA",
@@ -5034,7 +6359,6 @@ export const defaultProductDatabase: ProductDatabase = {
           ],
           "emollients": [
             "Butyrospermum Parkii Shea Butter",
-            "Unknown Oil",
             "Guar Hydroxypropyltrimonium Chloride",
             "Castor Oil"
           ],
@@ -5042,7 +6366,47 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 65,
-          "low": 74
+          "low": 98
+        },
+        "sebderm": {
+          "hasTriggers": true,
+          "triggers": [
+            {
+              "id": "butyrospermum_parkii_shea_butter",
+              "name": "Butyrospermum Parkii Shea Butter",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            },
+            {
+              "id": "glycine",
+              "name": "Glycine",
+              "reason": "Amino acids can be metabolized by Malassezia, potentially worsening symptoms"
+            },
+            {
+              "id": "histidine",
+              "name": "Histidine",
+              "reason": "Amino acids can be metabolized by Malassezia, potentially worsening symptoms"
+            },
+            {
+              "id": "proline",
+              "name": "Proline",
+              "reason": "Amino acids can be metabolized by Malassezia, potentially worsening symptoms"
+            },
+            {
+              "id": "serine",
+              "name": "Serine",
+              "reason": "Amino acids can be metabolized by Malassezia, potentially worsening symptoms"
+            },
+            {
+              "id": "glycine",
+              "name": "Glycine",
+              "reason": "Amino acids can be metabolized by Malassezia, potentially worsening symptoms"
+            },
+            {
+              "id": "castor_oil",
+              "name": "Castor Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            }
+          ]
         }
       },
       "cost_rating": "1"
@@ -5078,7 +6442,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 1,
           "film_forming_humectants_number": 2,
-          "emollients_number": 11,
+          "emollients_number": 4,
           "simple_humectants": [
             "Glycerin"
           ],
@@ -5088,22 +6452,35 @@ export const defaultProductDatabase: ProductDatabase = {
           ],
           "emollients": [
             "Guar Hydroxypropyltrimonium Chloride",
-            "Unknown Oil",
-            "Lavender Oil",
-            "Unknown Oil",
-            "Unknown Oil",
-            "Unknown Oil",
-            "Unknown Oil",
             "Jojoba Oil",
-            "Unknown Oil",
             "Butyrospermum Parkii Shea Butter",
             "Avocado Oil"
           ],
-          "score": -63
+          "score": -47
         },
         "porosity": {
           "high": 89,
           "low": 0
+        },
+        "sebderm": {
+          "hasTriggers": true,
+          "triggers": [
+            {
+              "id": "jojoba_oil",
+              "name": "Jojoba Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            },
+            {
+              "id": "butyrospermum_parkii_shea_butter",
+              "name": "Butyrospermum Parkii Shea Butter",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            },
+            {
+              "id": "avocado_oil",
+              "name": "Avocado Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            }
+          ]
         }
       },
       "cost_rating": "5"
@@ -5157,6 +6534,16 @@ export const defaultProductDatabase: ProductDatabase = {
         "porosity": {
           "high": 100,
           "low": 100
+        },
+        "sebderm": {
+          "hasTriggers": true,
+          "triggers": [
+            {
+              "id": "silk_amino_acids",
+              "name": "Silk Amino Acids",
+              "reason": "Amino acids can be metabolized by Malassezia, potentially worsening symptoms"
+            }
+          ]
         }
       },
       "cost_rating": "3"
@@ -5191,7 +6578,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 1,
           "film_forming_humectants_number": 3,
-          "emollients_number": 7,
+          "emollients_number": 4,
           "simple_humectants": [
             "Glycerin"
           ],
@@ -5201,19 +6588,36 @@ export const defaultProductDatabase: ProductDatabase = {
             "Unknown Protein"
           ],
           "emollients": [
-            "Unknown Oil",
-            "Unknown Oil",
             "Guar Hydroxypropyltrimonium Chloride",
             "Avocado Oil",
             "Rice bran oil",
-            "Butyrospermum Parkii Shea Butter",
-            "Unknown Oil"
+            "Butyrospermum Parkii Shea Butter"
           ],
-          "score": -85
+          "score": -90
         },
         "porosity": {
           "high": 97,
           "low": 0
+        },
+        "sebderm": {
+          "hasTriggers": true,
+          "triggers": [
+            {
+              "id": "avocado_oil",
+              "name": "Avocado Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            },
+            {
+              "id": "rice_bran_oil",
+              "name": "Rice bran oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            },
+            {
+              "id": "butyrospermum_parkii_shea_butter",
+              "name": "Butyrospermum Parkii Shea Butter",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            }
+          ]
         }
       },
       "cost_rating": "4"
@@ -5248,7 +6652,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 1,
           "film_forming_humectants_number": 3,
-          "emollients_number": 8,
+          "emollients_number": 4,
           "simple_humectants": [
             "Glycerin"
           ],
@@ -5259,11 +6663,7 @@ export const defaultProductDatabase: ProductDatabase = {
           ],
           "emollients": [
             "Butyrospermum Parkii Shea Butter",
-            "Unknown Oil",
-            "Unknown Oil",
-            "Unknown Oil",
             "Guar Hydroxypropyltrimonium Chloride",
-            "Unknown Oil",
             "Avocado Oil",
             "Rice bran oil"
           ],
@@ -5272,6 +6672,26 @@ export const defaultProductDatabase: ProductDatabase = {
         "porosity": {
           "high": 88,
           "low": 0
+        },
+        "sebderm": {
+          "hasTriggers": true,
+          "triggers": [
+            {
+              "id": "butyrospermum_parkii_shea_butter",
+              "name": "Butyrospermum Parkii Shea Butter",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            },
+            {
+              "id": "avocado_oil",
+              "name": "Avocado Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            },
+            {
+              "id": "rice_bran_oil",
+              "name": "Rice bran oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            }
+          ]
         }
       },
       "cost_rating": "5"
@@ -5323,6 +6743,16 @@ export const defaultProductDatabase: ProductDatabase = {
         "porosity": {
           "high": 100,
           "low": 61
+        },
+        "sebderm": {
+          "hasTriggers": true,
+          "triggers": [
+            {
+              "id": "butyrospermum_parkii_shea_butter",
+              "name": "Butyrospermum Parkii Shea Butter",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            }
+          ]
         }
       },
       "cost_rating": "5"
@@ -5355,7 +6785,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 2,
           "film_forming_humectants_number": 1,
-          "emollients_number": 7,
+          "emollients_number": 1,
           "simple_humectants": [
             "Glycerin",
             "Propanediol"
@@ -5364,19 +6794,17 @@ export const defaultProductDatabase: ProductDatabase = {
             "Unknown Protein"
           ],
           "emollients": [
-            "Guar Hydroxypropyltrimonium Chloride",
-            "Tea Tree Oil",
-            "Unknown Oil",
-            "Rosemary Oil",
-            "Unknown Oil",
-            "Unknown Oil",
-            "Unknown Oil"
+            "Guar Hydroxypropyltrimonium Chloride"
           ],
-          "score": -50
+          "score": -20
         },
         "porosity": {
           "high": 100,
           "low": 31
+        },
+        "sebderm": {
+          "hasTriggers": false,
+          "triggers": []
         }
       },
       "cost_rating": "4"
@@ -5417,7 +6845,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 3,
           "film_forming_humectants_number": 1,
-          "emollients_number": 4,
+          "emollients_number": 3,
           "simple_humectants": [
             "Glucose",
             "Propanediol",
@@ -5428,15 +6856,24 @@ export const defaultProductDatabase: ProductDatabase = {
           ],
           "emollients": [
             "Sunflower Oil",
-            "Unknown Oil",
             "Guar Hydroxypropyltrimonium Chloride",
             "Unknown Polyquat"
           ],
-          "score": -50
+          "score": -46
         },
         "porosity": {
           "high": 100,
           "low": 55
+        },
+        "sebderm": {
+          "hasTriggers": true,
+          "triggers": [
+            {
+              "id": "sunflower_oil",
+              "name": "Sunflower Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            }
+          ]
         }
       }
     },
@@ -5493,6 +6930,10 @@ export const defaultProductDatabase: ProductDatabase = {
         "porosity": {
           "high": 100,
           "low": 100
+        },
+        "sebderm": {
+          "hasTriggers": false,
+          "triggers": []
         }
       }
     },
@@ -5543,6 +6984,10 @@ export const defaultProductDatabase: ProductDatabase = {
         "porosity": {
           "high": 100,
           "low": 77
+        },
+        "sebderm": {
+          "hasTriggers": false,
+          "triggers": []
         }
       },
       "cost_rating": "1"
@@ -5577,19 +7022,27 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 0,
           "film_forming_humectants_number": 1,
-          "emollients_number": 1,
+          "emollients_number": 0,
           "simple_humectants": [],
           "film_forming_humectants": [
             "Silk"
           ],
-          "emollients": [
-            "Unknown Oil"
-          ],
-          "score": -89
+          "emollients": [],
+          "score": -96
         },
         "porosity": {
           "high": 53,
           "low": 100
+        },
+        "sebderm": {
+          "hasTriggers": true,
+          "triggers": [
+            {
+              "id": "polysorbate",
+              "name": "Polysorbate",
+              "reason": "polysorbates can feed Malassezia yeast"
+            }
+          ]
         }
       }
     },
@@ -5641,6 +7094,21 @@ export const defaultProductDatabase: ProductDatabase = {
         "porosity": {
           "high": 89,
           "low": 100
+        },
+        "sebderm": {
+          "hasTriggers": true,
+          "triggers": [
+            {
+              "id": "glycine",
+              "name": "Glycine",
+              "reason": "Amino acids can be metabolized by Malassezia, potentially worsening symptoms"
+            },
+            {
+              "id": "polysorbate_20",
+              "name": "Polysorbate 20",
+              "reason": "polysorbates can feed Malassezia yeast"
+            }
+          ]
         }
       }
     },
@@ -5685,6 +7153,16 @@ export const defaultProductDatabase: ProductDatabase = {
         "porosity": {
           "high": 74,
           "low": 100
+        },
+        "sebderm": {
+          "hasTriggers": true,
+          "triggers": [
+            {
+              "id": "polysorbate_20",
+              "name": "Polysorbate 20",
+              "reason": "polysorbates can feed Malassezia yeast"
+            }
+          ]
         }
       }
     },
@@ -5713,7 +7191,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 0,
           "film_forming_humectants_number": 2,
-          "emollients_number": 12,
+          "emollients_number": 4,
           "simple_humectants": [],
           "film_forming_humectants": [
             "Hydrolyzed Quinoa",
@@ -5722,22 +7200,34 @@ export const defaultProductDatabase: ProductDatabase = {
           "emollients": [
             "Sunflower Oil",
             "Unknown Polyquat",
-            "Unknown Oil",
             "Safflower Oil",
-            "Unknown Oil",
-            "Unknown Oil",
-            "Unknown Oil",
-            "Lavender Oil",
-            "Unknown Oil",
-            "Unknown Oil",
-            "Coconut Oil",
-            "Unknown Oil"
+            "Coconut Oil"
           ],
-          "score": -83
+          "score": -86
         },
         "porosity": {
           "high": 96,
           "low": 0
+        },
+        "sebderm": {
+          "hasTriggers": true,
+          "triggers": [
+            {
+              "id": "sunflower_oil",
+              "name": "Sunflower Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            },
+            {
+              "id": "safflower_oil",
+              "name": "Safflower Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            },
+            {
+              "id": "coconut_oil",
+              "name": "Coconut Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            }
+          ]
         }
       }
     },
@@ -5766,7 +7256,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 3,
           "film_forming_humectants_number": 1,
-          "emollients_number": 2,
+          "emollients_number": 1,
           "simple_humectants": [
             "Panthenol",
             "Propanediol",
@@ -5776,14 +7266,17 @@ export const defaultProductDatabase: ProductDatabase = {
             "Aloe Barbadensis Leaf Extract"
           ],
           "emollients": [
-            "Copolymer",
-            "Unknown Oil"
+            "Copolymer"
           ],
-          "score": -52
+          "score": -48
         },
         "porosity": {
           "high": 81,
           "low": 66
+        },
+        "sebderm": {
+          "hasTriggers": false,
+          "triggers": []
         }
       }
     },
@@ -5827,6 +7320,10 @@ export const defaultProductDatabase: ProductDatabase = {
         "porosity": {
           "high": 100,
           "low": 100
+        },
+        "sebderm": {
+          "hasTriggers": false,
+          "triggers": []
         }
       }
     },
@@ -5875,6 +7372,16 @@ export const defaultProductDatabase: ProductDatabase = {
         "porosity": {
           "high": 100,
           "low": 69
+        },
+        "sebderm": {
+          "hasTriggers": true,
+          "triggers": [
+            {
+              "id": "cetearyl_alcohol",
+              "name": "Cetearyl Alcohol",
+              "reason": "This specific fatty alcohol can feed Malassezia yeast"
+            }
+          ]
         }
       }
     },
@@ -5928,7 +7435,32 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 59,
-          "low": 54
+          "low": 69
+        },
+        "sebderm": {
+          "hasTriggers": true,
+          "triggers": [
+            {
+              "id": "glycine",
+              "name": "Glycine",
+              "reason": "Amino acids can be metabolized by Malassezia, potentially worsening symptoms"
+            },
+            {
+              "id": "glycine",
+              "name": "Glycine",
+              "reason": "Amino acids can be metabolized by Malassezia, potentially worsening symptoms"
+            },
+            {
+              "id": "polysorbate_20",
+              "name": "Polysorbate 20",
+              "reason": "polysorbates can feed Malassezia yeast"
+            },
+            {
+              "id": "castor_oil",
+              "name": "Castor Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            }
+          ]
         }
       }
     },
@@ -5991,7 +7523,37 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 49,
-          "low": 38
+          "low": 67
+        },
+        "sebderm": {
+          "hasTriggers": true,
+          "triggers": [
+            {
+              "id": "glycine",
+              "name": "Glycine",
+              "reason": "Amino acids can be metabolized by Malassezia, potentially worsening symptoms"
+            },
+            {
+              "id": "serine",
+              "name": "Serine",
+              "reason": "Amino acids can be metabolized by Malassezia, potentially worsening symptoms"
+            },
+            {
+              "id": "proline",
+              "name": "Proline",
+              "reason": "Amino acids can be metabolized by Malassezia, potentially worsening symptoms"
+            },
+            {
+              "id": "histidine",
+              "name": "Histidine",
+              "reason": "Amino acids can be metabolized by Malassezia, potentially worsening symptoms"
+            },
+            {
+              "id": "glutamic_acid",
+              "name": "Glutamic Acid",
+              "reason": "Amino acids can be metabolized by Malassezia, potentially worsening symptoms"
+            }
+          ]
         }
       }
     },
@@ -6051,7 +7613,42 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 50,
-          "low": 69
+          "low": 92
+        },
+        "sebderm": {
+          "hasTriggers": true,
+          "triggers": [
+            {
+              "id": "glycine",
+              "name": "Glycine",
+              "reason": "Amino acids can be metabolized by Malassezia, potentially worsening symptoms"
+            },
+            {
+              "id": "serine",
+              "name": "Serine",
+              "reason": "Amino acids can be metabolized by Malassezia, potentially worsening symptoms"
+            },
+            {
+              "id": "proline",
+              "name": "Proline",
+              "reason": "Amino acids can be metabolized by Malassezia, potentially worsening symptoms"
+            },
+            {
+              "id": "histidine",
+              "name": "Histidine",
+              "reason": "Amino acids can be metabolized by Malassezia, potentially worsening symptoms"
+            },
+            {
+              "id": "glutamic_acid",
+              "name": "Glutamic Acid",
+              "reason": "Amino acids can be metabolized by Malassezia, potentially worsening symptoms"
+            },
+            {
+              "id": "polysorbate_20",
+              "name": "Polysorbate 20",
+              "reason": "polysorbates can feed Malassezia yeast"
+            }
+          ]
         }
       }
     }

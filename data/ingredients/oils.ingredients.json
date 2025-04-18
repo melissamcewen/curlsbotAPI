@@ -551,6 +551,18 @@
       ]
     },
     {
+      "name": "Pogostemon Cablin Oil",
+      "id": "pogostemon_cablin_oil",
+      "categories": [
+        "essential_oils"
+      ],
+      "synonyms": [
+        "pogostemon cablin"
+      ],
+      "description": "Pogostemon cablin oil is primarily used for its fragrance"
+    },
+
+    {
       "name": "Sulfated Castor Oil",
       "id": "sulfated_castor_oil",
       "categories": [

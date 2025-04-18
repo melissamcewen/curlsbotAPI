@@ -1,19 +1,31 @@
 import type { AnalysisResult, SebdermAnalysis } from '../types';
 
 interface TriggerDefinition {
-  type: 'group' | 'category';
+  type: 'group' | 'category' | 'specific';
   id: string;
   reason: string;
   exceptions?: string[];
+  specificIds?: string[];
 }
 
 const triggerDefinitions: TriggerDefinition[] = [
   {
-    type: 'group',
-    id: 'oils',
+    type: 'category',
+    id: 'light_oils',
     reason: 'Contains fatty acids that can feed Malassezia yeast',
-    exceptions: ['squalane', 'mineral_oil', 'caprylic_capric_triglyceride'], // MCT oil
+    exceptions: ['squalane', 'mineral_oil'],
   },
+  {
+    type: 'category',
+    id: 'medium_oils',
+    reason: 'Contains fatty acids that can feed Malassezia yeast',
+  },
+  {
+    type: 'category',
+    id: 'heavy_oils',
+    reason: 'Contains fatty acids that can feed Malassezia yeast',
+  },
+
   {
     type: 'group',
     id: 'waxes',
@@ -21,19 +33,21 @@ const triggerDefinitions: TriggerDefinition[] = [
       'Can create a barrier that traps moisture and heat, promoting yeast growth',
   },
   {
-    type: 'category',
+    type: 'specific',
     id: 'emollient_alcohols',
-    reason: 'Fatty alcohols can feed Malassezia yeast',
+    reason: 'This specific fatty alcohol can feed Malassezia yeast',
+    specificIds: ['emulsifying_wax', 'cetearyl_alcohol'], 
   },
   {
     type: 'category',
     id: 'esters',
     reason: 'Esters can feed Malassezia yeast',
+    exceptions: ['caprylic_capric_triglyceride'],
   },
   {
     type: 'category',
     id: 'polysorbates',
-    reason: 'Polysorbates can feed Malassezia yeast',
+    reason: 'polysorbates can feed Malassezia yeast',
   },
   {
     type: 'category',
@@ -60,13 +74,27 @@ export function sebderm(analysis: AnalysisResult): SebdermAnalysis {
         let isMatch = false;
 
         if (def.type === 'group' && ingredient.ingredient.group === def.id) {
-          // For groups, check if it's not in exceptions list
-          isMatch = !def.exceptions?.includes(ingredient.ingredient.id);
+          // For oils group, check both exceptions list and essential_oils category
+          if (def.id === 'oils') {
+            isMatch =
+              !def.exceptions?.includes(ingredient.ingredient.id) &&
+              !ingredient.ingredient.categories.includes('essential_oils');
+          } else {
+            // For other groups, just check exceptions list
+            isMatch = !def.exceptions?.includes(ingredient.ingredient.id);
+          }
         } else if (
           def.type === 'category' &&
           ingredient.ingredient.categories.includes(def.id)
         ) {
-          // For categories, no exceptions currently
+          // Check exceptions for categories
+          isMatch = !def.exceptions?.includes(ingredient.ingredient.id);
+        } else if (
+          def.type === 'specific' &&
+          ingredient.ingredient.categories.includes(def.id) &&
+          def.specificIds?.includes(ingredient.ingredient.id)
+        ) {
+          // For specific ingredients within a category
           isMatch = true;
         }
 

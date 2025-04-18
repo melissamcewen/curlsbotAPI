@@ -275,7 +275,34 @@
           "country": "DK"
         }
       ]
-    }
+    },
+    {
+      "name": "Light Conditioner",
+      "brand": "CleverCurl",
+      "product_categories": ["conditioners"],
+      "tags": [],
+      "ingredients_raw": "aloe barbadensis aloe vera leaf juice, stearyl alcohol, cetyl alcohol, behentrimonium chloride, glyceryl stearate, hydrolysed rice protein, panthenol vitamin b5, tocopheryl vitamin e, glycerin, cetrimonium chloride, citric acid, allergen-free fragrance, glyceryl caprylate, sodium levulinate, sodium anisate, potassium sorbate",
+      "buy_links": [
+        {
+          "url": "https://www.clevercurl.com.au/our-range/light-conditioner/",
+          "retailer": "CleverCurl",
+          "country": "AU"
+        }
 
+      ]
+    },
+    {
+      "name": "Curl Conditioner",
+      "brand": "Sachajuan",
+      "product_categories": ["conditioners"],
+      "tags": [],
+      "ingredients_raw": "aqua water, cetyl alcohol, stearyl alcohol, glyceryl stearate, dicaprylyl ether, stearamidopropyl dimethylamine, behentrimonium chloride, polyquaternium-10, phenoxyethanol, parfum fragrance, lactic acid, peg-40 hydrogenated castor oil, isopropyl alcohol, pg-hydroxyethylcellulose cocodimonium chloride, ethylhexylglycerin, linalool, limonene, benzyl salicylate, hexyl cinnamal, hydrolyzed rhodophycea red algae extract",
+      "buy_links": [
+        {
+          "url": "https://shop.sachajuan.com/products/curl-conditioner",
+          "retailer": "Sachajuan"
+        }
+      ]
+    }
   ]
 }
