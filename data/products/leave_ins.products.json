@@ -127,6 +127,25 @@
           "retailer": "Fancy's Hair Innovation"
         }
       ]
+    },
+    {
+      "name": "Soft Leave-In Cream",
+      "brand": "Tootilab",
+      "product_categories": ["leave_ins"],
+      "tags": ["normal_porosity", "high_porosity", "featured"],
+      "ingredients_raw": "water aqua, cocamidopropyl betaine, lauryl glucoside, glycerin, sodium methyl cocoyl taurate, aloe barbadensis leaf juice powder, caprylyl capryl glucoside, sodium lauroyl sarcosinate, sodium cocoamphoacetate, inulin, fragrance parfum, benzyl alcohol, polyquaternium-7, potassium sorbate, saccharide isomerate, argan oil glycereth-8 esters, guar hydroxypropyltrimonium chloride, citric acid, sodium chloride, alpha-glucan oligosaccharide, trisodium ethylenediamine disuccinate, tocopherol, helianthus annuus sunflower seed oil, sodium citrate, hexyl cinnamal",
+      "description": "A lightweight leave-in that prevents your hair from getting dry",
+      "buy_links": [
+        {
+          "url": "https://collabs.shop/szsngr",
+          "retailer": "Tootilab"
+        },
+        {
+          "url": "https://collabs.shop/szsngr",
+          "retailer": "Tootilab",
+          "country": "EU"
+        }
+      ]
     }
   ]
 }

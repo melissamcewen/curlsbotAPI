@@ -295,6 +295,26 @@
           "retailer": "Bounce Curl"
         }
       ]
+    },
+    {
+      "name": "Gentle Shampoo",
+      "brand": "Tootilab",
+      "product_categories": ["shampoos"],
+      "tags": ["featured", "women-owned", "low_ph"],
+      "ingredients_raw": "water aqua, cocamidopropyl betaine, lauryl glucoside, glycerin, sodium methyl cocoyl taurate, aloe barbadensis leaf juice powder, caprylyl capryl glucoside, sodium lauroyl sarcosinate, sodium cocoamphoacetate, inulin, fragrance parfum, benzyl alcohol, polyquaternium-7, potassium sorbate, saccharide isomerate, argan oil glycereth-8 esters, guar hydroxypropyltrimonium chloride, citric acid, sodium chloride, alpha-glucan oligosaccharide, trisodium ethylenediamine disuccinate, tocopherol, helianthus annuus sunflower seed oil, sodium citrate, hexyl cinnamal",
+      "description": "A gentle shampoo with lots of slip and a low pH (which helps prevent frizz).",
+      "buy_links": [
+        {
+          "url": "https://collabs.shop/ha9w1t",
+          "retailer": "Tootilab",
+          "country": "EU"
+        },
+        {
+            "url": "https://collabs.shop/ha9w1t",
+            "retailer": "Tootilab",
+          "country": "US"
+        }
+      ]
     }
   ]
 }

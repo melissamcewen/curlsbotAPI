@@ -1175,6 +1175,38 @@
       "id": "ulmus_rubra_bark_extract",
       "categories": ["film_forming_humectants"],
       "synonyms": ["slippery elm bark"]
+    },
+    {
+      "name": "Trisodium Ethylenediamine Disuccinate",
+      "id": "trisodium_ethylenediamine_disuccinate",
+      "categories": ["other"],
+      "description": "A useful chelating agent to bind metal ions, preventing them from interfering with the product's effectiveness, stability, and color."
+    },
+    {
+      "name": "Hexyl Cinnamal",
+      "id": "hexyl_cinnamal",
+      "categories": ["other"],
+      "description": "Common fragrance ingredient"
+    },
+    {
+      "name": "Glyceryl Stearate",
+      "id": "glyceryl_stearate",
+      "categories": ["other"],
+      "description": "Common emulsifier (helps oil/water mix)"
+    },
+    {
+      "name": "Sodium Citrate",
+      "id": "sodium_citrate",
+      "categories": ["other"],
+      "description": "Common pH adjuster"
+    },
+    {
+      "name": "Phytic Acid",
+      "id": "phytic_acid",
+      "categories": ["other"],
+      "description": "Naturally derived chelating agent (helps bind minerals so they can be washed out)"
     }
+
+
   ]
 }

@@ -303,6 +303,25 @@
           "retailer": "Sachajuan"
         }
       ]
+    },
+    {
+      "name": "Detangling Conditioner",
+      "brand": "Tootilab",
+      "product_categories": ["conditioners"],
+      "tags": ["women-owned", "featured"],
+      "ingredients_raw": "water aqua, cetearyl alcohol, glycerin, behentrimonium chloride, propylene glycol, polyglyceryl-4 caprate, hydroxyethylcellulose, cetrimonium chloride, inulin, phenoxyethanol, fragrance parfum, polyquaternium-37, polyquaternium-11, saccharide isomerate, citric acid, sodium benzoate, cocos nucifera coconut seed butter, alpha-glucan oligosaccharide, laureth-2, ribes nigrum black currant seed oil, trisodium ethylenediamine disuccinate, niacinamide, panthenol, pentylene glycol, sodium citrate, ethylhexylglycerin, hexyl cinnamal",
+      "description": "A detangling conditioner with lots of slip.",
+      "buy_links": [
+        {
+          "url": "https://collabs.shop/qn2ik3",
+          "retailer": "Tootilab",
+          "country": "EU"
+        },
+        {
+          "url": "https://collabs.shop/qn2ik3",
+          "retailer": "Tootilab"
+        }
+      ]
     }
   ]
 }

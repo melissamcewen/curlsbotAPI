@@ -363,6 +363,25 @@
           "country": "SE"
         }
       ]
+    },
+    {
+      "name": "All Weather Styling Gel",
+      "brand": "Tootilab",
+      "product_categories": ["gels"],
+      "tags": ["featured", "women-owned"],
+      "ingredients_raw": "water aqua, hydrolyzed corn starch, glycerin, guar hydroxypropyltrimonium chloride, hydroxyethylcellulose, citric acid, phenoxyethanol, benzyl alcohol, fragrance parfum, fructose, hydroxyacetophenone, sodium hydroxide, trisodium ethylenediamine disuccinate, polyglyceryl-4 caprate, ethylhexylglycerin, pentylene glycol, salicylic acid, sodium citrate, sodium hyaluronate, polyporus umbellatus mushroom extract, pogostemon cablin oil, tetramethyl acetyloctahydronaphthalenes, hexyl cinnamal, limonene, linalyl acetate, juniperus virginiana oil, citrus aurantium peel oil, alpha-isomethyl ionone, linalool",
+      "description": "An all-purpose gel that will hold your curls/waves even in humid weather.",
+      "buy_links": [
+        {
+          "url": "https://collabs.shop/cebjoi",
+          "retailer": "Tootilab",
+          "country": "EU"
+        },
+        {
+          "url": "https://collabs.shop/cebjoi",
+          "retailer": "Tootilab"
+        }
+      ]
     }
   ]
 }

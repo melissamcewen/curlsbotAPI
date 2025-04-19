@@ -112,20 +112,6 @@
           "retailer": "Trybe"
         }
       ]
-    },
-    {
-      "name": "モチカールムース｜Mochi Curl Mousse",
-      "brand": "Curly Me",
-      "ingredients_raw": "aqua, butane, pentylene glycol, polyquaternium-11, butylene glycol, dipotassium glycyrrhizate, arginine, sodium hyaluronate, panthenol, swertia japonica extract, glycine soja soybean seed extract, simmondsia chinensis jojoba seed oil, citrus junos seed oil, citrus junos fruit extract, scutellaria baicalensis root extract, sodium lauraminopropionate, polysorbate 80, peg-40 hydrogenated castor oil, citric acid, phenoxyethanol, citrus reticulata tangerine peel oil, lavandula angustifolia lavender oil, salvia sclarea clary oil, juniperus communis fruit oil, zingiber officinale ginger root oil",
-      "product_categories": ["foams"],
-      "tags": [],
-      "buy_links": [
-        {
-          "url": "https://www.curlyme.jp/items/97872137",
-          "retailer": "Curly Me",
-          "country": "JP"
-        }
-      ]
     }
   ]
 }

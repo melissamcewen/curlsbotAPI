@@ -613,8 +613,8 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -92
         },
         "porosity": {
-          "high": 89,
-          "low": 31
+          "high": 88,
+          "low": 34
         },
         "sebderm": {
           "hasTriggers": true,
@@ -679,7 +679,7 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -47
         },
         "porosity": {
-          "high": 93,
+          "high": 91,
           "low": 100
         },
         "sebderm": {
@@ -744,7 +744,7 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -69
         },
         "porosity": {
-          "high": 96,
+          "high": 93,
           "low": 0
         },
         "sebderm": {
@@ -816,7 +816,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 100,
-          "low": 81
+          "low": 87
         },
         "sebderm": {
           "hasTriggers": false,
@@ -963,7 +963,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 100,
-          "low": 10
+          "low": 13
         },
         "sebderm": {
           "hasTriggers": true,
@@ -1317,7 +1317,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 100,
-          "low": 0
+          "low": 6
         },
         "sebderm": {
           "hasTriggers": true,
@@ -1868,8 +1868,8 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -75
         },
         "porosity": {
-          "high": 53,
-          "low": 0
+          "high": 52,
+          "low": 4
         },
         "sebderm": {
           "hasTriggers": true,
@@ -1934,7 +1934,7 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -69
         },
         "porosity": {
-          "high": 90,
+          "high": 87,
           "low": 0
         },
         "sebderm": {
@@ -2011,7 +2011,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 100,
-          "low": 71
+          "low": 79
         },
         "sebderm": {
           "hasTriggers": true,
@@ -2020,6 +2020,72 @@ export const defaultProductDatabase: ProductDatabase = {
               "id": "castor_oil",
               "name": "Castor Oil",
               "reason": "Contains fatty acids that can feed Malassezia yeast"
+            }
+          ]
+        }
+      }
+    },
+    "detangling_conditioner": {
+      "name": "Detangling Conditioner",
+      "brand": "Tootilab",
+      "product_categories": [
+        "conditioners"
+      ],
+      "tags": [
+        "women-owned",
+        "featured"
+      ],
+      "ingredients_raw": "water aqua, cetearyl alcohol, glycerin, behentrimonium chloride, propylene glycol, polyglyceryl-4 caprate, hydroxyethylcellulose, cetrimonium chloride, inulin, phenoxyethanol, fragrance parfum, polyquaternium-37, polyquaternium-11, saccharide isomerate, citric acid, sodium benzoate, cocos nucifera coconut seed butter, alpha-glucan oligosaccharide, laureth-2, ribes nigrum black currant seed oil, trisodium ethylenediamine disuccinate, niacinamide, panthenol, pentylene glycol, sodium citrate, ethylhexylglycerin, hexyl cinnamal",
+      "description": "A detangling conditioner with lots of slip.",
+      "buy_links": [
+        {
+          "url": "https://collabs.shop/qn2ik3",
+          "retailer": "Tootilab",
+          "country": "EU"
+        },
+        {
+          "url": "https://collabs.shop/qn2ik3",
+          "retailer": "Tootilab"
+        }
+      ],
+      "id": "detangling_conditioner",
+      "systems_excluded": [],
+      "status": "ok",
+      "extensions": {
+        "frizzbot": {
+          "simple_humectants_number": 5,
+          "film_forming_humectants_number": 1,
+          "emollients_number": 5,
+          "simple_humectants": [
+            "Glycerin",
+            "Propylene Glycol",
+            "Niacinamide",
+            "Panthenol",
+            "Ethylhexylglycerin"
+          ],
+          "film_forming_humectants": [
+            "Hydroxyethylcellulose"
+          ],
+          "emollients": [
+            "Cetearyl Alcohol",
+            "Behentrimonium Chloride",
+            "Cetrimonium Chloride",
+            "Unknown Polyquat",
+            "Unknown Polyquat"
+          ],
+          "score": -49
+        },
+        "porosity": {
+          "high": 100,
+          "low": 86
+        },
+        "sebderm": {
+          "hasTriggers": true,
+          "triggers": [
+            {
+              "id": "cetearyl_alcohol",
+              "name": "Cetearyl Alcohol",
+              "reason": "This specific fatty alcohol can feed Malassezia yeast"
             }
           ]
         }
@@ -2691,7 +2757,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 100,
-          "low": 43
+          "low": 49
         },
         "sebderm": {
           "hasTriggers": true,
@@ -2762,7 +2828,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 100,
-          "low": 10
+          "low": 19
         },
         "sebderm": {
           "hasTriggers": true,
@@ -2920,7 +2986,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 100,
-          "low": 30
+          "low": 34
         },
         "sebderm": {
           "hasTriggers": true,
@@ -4018,8 +4084,8 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -75
         },
         "porosity": {
-          "high": 94,
-          "low": 0
+          "high": 95,
+          "low": 6
         },
         "sebderm": {
           "hasTriggers": true,
@@ -4216,76 +4282,6 @@ export const defaultProductDatabase: ProductDatabase = {
         }
       }
     },
-    "モチカールムース｜mochi_curl_mousse": {
-      "name": "モチカールムース｜Mochi Curl Mousse",
-      "brand": "Curly Me",
-      "ingredients_raw": "aqua, butane, pentylene glycol, polyquaternium-11, butylene glycol, dipotassium glycyrrhizate, arginine, sodium hyaluronate, panthenol, swertia japonica extract, glycine soja soybean seed extract, simmondsia chinensis jojoba seed oil, citrus junos seed oil, citrus junos fruit extract, scutellaria baicalensis root extract, sodium lauraminopropionate, polysorbate 80, peg-40 hydrogenated castor oil, citric acid, phenoxyethanol, citrus reticulata tangerine peel oil, lavandula angustifolia lavender oil, salvia sclarea clary oil, juniperus communis fruit oil, zingiber officinale ginger root oil",
-      "product_categories": [
-        "foams"
-      ],
-      "tags": [],
-      "buy_links": [
-        {
-          "url": "https://www.curlyme.jp/items/97872137",
-          "retailer": "Curly Me",
-          "country": "JP"
-        }
-      ],
-      "id": "モチカールムース｜mochi_curl_mousse",
-      "systems_excluded": [],
-      "status": "ok",
-      "extensions": {
-        "frizzbot": {
-          "simple_humectants_number": 3,
-          "film_forming_humectants_number": 2,
-          "emollients_number": 3,
-          "simple_humectants": [
-            "Butylene glycol",
-            "Sodium hyaluronate",
-            "Panthenol"
-          ],
-          "film_forming_humectants": [
-            "Arginine",
-            "Glycine"
-          ],
-          "emollients": [
-            "Unknown Polyquat",
-            "Jojoba Oil",
-            "Castor Oil"
-          ],
-          "score": -54
-        },
-        "porosity": {
-          "high": 85,
-          "low": 0
-        },
-        "sebderm": {
-          "hasTriggers": true,
-          "triggers": [
-            {
-              "id": "glycine",
-              "name": "Glycine",
-              "reason": "Amino acids can be metabolized by Malassezia, potentially worsening symptoms"
-            },
-            {
-              "id": "jojoba_oil",
-              "name": "Jojoba Oil",
-              "reason": "Contains fatty acids that can feed Malassezia yeast"
-            },
-            {
-              "id": "polysorbate",
-              "name": "Polysorbate",
-              "reason": "polysorbates can feed Malassezia yeast"
-            },
-            {
-              "id": "castor_oil",
-              "name": "Castor Oil",
-              "reason": "Contains fatty acids that can feed Malassezia yeast"
-            }
-          ]
-        }
-      }
-    },
     "jello_shot_curl_defining_gel": {
       "name": "Jello Shot Curl Defining Gel",
       "brand": "Ecoslay",
@@ -4452,7 +4448,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 100,
-          "low": 84
+          "low": 85
         },
         "sebderm": {
           "hasTriggers": true,
@@ -5205,6 +5201,63 @@ export const defaultProductDatabase: ProductDatabase = {
         }
       }
     },
+    "all_weather_styling_gel": {
+      "name": "All Weather Styling Gel",
+      "brand": "Tootilab",
+      "product_categories": [
+        "gels"
+      ],
+      "tags": [
+        "featured",
+        "women-owned"
+      ],
+      "ingredients_raw": "water aqua, hydrolyzed corn starch, glycerin, guar hydroxypropyltrimonium chloride, hydroxyethylcellulose, citric acid, phenoxyethanol, benzyl alcohol, fragrance parfum, fructose, hydroxyacetophenone, sodium hydroxide, trisodium ethylenediamine disuccinate, polyglyceryl-4 caprate, ethylhexylglycerin, pentylene glycol, salicylic acid, sodium citrate, sodium hyaluronate, polyporus umbellatus mushroom extract, pogostemon cablin oil, tetramethyl acetyloctahydronaphthalenes, hexyl cinnamal, limonene, linalyl acetate, juniperus virginiana oil, citrus aurantium peel oil, alpha-isomethyl ionone, linalool",
+      "description": "An all-purpose gel that will hold your curls/waves even in humid weather.",
+      "buy_links": [
+        {
+          "url": "https://collabs.shop/cebjoi",
+          "retailer": "Tootilab",
+          "country": "EU"
+        },
+        {
+          "url": "https://collabs.shop/cebjoi",
+          "retailer": "Tootilab"
+        }
+      ],
+      "id": "all_weather_styling_gel",
+      "systems_excluded": [],
+      "status": "ok",
+      "extensions": {
+        "frizzbot": {
+          "simple_humectants_number": 4,
+          "film_forming_humectants_number": 2,
+          "emollients_number": 2,
+          "simple_humectants": [
+            "Glycerin",
+            "Fructose",
+            "Ethylhexylglycerin",
+            "Sodium hyaluronate"
+          ],
+          "film_forming_humectants": [
+            "Hydrolyzed Corn Starch",
+            "Hydroxyethylcellulose"
+          ],
+          "emollients": [
+            "Guar Hydroxypropyltrimonium Chloride",
+            "Benzyl Alcohol"
+          ],
+          "score": -70
+        },
+        "porosity": {
+          "high": 100,
+          "low": 89
+        },
+        "sebderm": {
+          "hasTriggers": false,
+          "triggers": []
+        }
+      }
+    },
     "rice_pudding_leave-in_conditioner_and_moisturizer": {
       "name": "Rice Pudding Leave-In Conditioner and Moisturizer",
       "brand": "Ecoslay",
@@ -5308,7 +5361,7 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -81
         },
         "porosity": {
-          "high": 53,
+          "high": 54,
           "low": 0
         },
         "sebderm": {
@@ -5386,7 +5439,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 100,
-          "low": 58
+          "low": 60
         },
         "sebderm": {
           "hasTriggers": true,
@@ -5526,7 +5579,7 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -74
         },
         "porosity": {
-          "high": 91,
+          "high": 87,
           "low": 0
         },
         "sebderm": {
@@ -5626,6 +5679,74 @@ export const defaultProductDatabase: ProductDatabase = {
               "id": "cetearyl_alcohol",
               "name": "Cetearyl Alcohol",
               "reason": "This specific fatty alcohol can feed Malassezia yeast"
+            }
+          ]
+        }
+      }
+    },
+    "soft_leave-in_cream": {
+      "name": "Soft Leave-In Cream",
+      "brand": "Tootilab",
+      "product_categories": [
+        "leave_ins"
+      ],
+      "tags": [
+        "normal_porosity",
+        "high_porosity",
+        "featured"
+      ],
+      "ingredients_raw": "water aqua, cocamidopropyl betaine, lauryl glucoside, glycerin, sodium methyl cocoyl taurate, aloe barbadensis leaf juice powder, caprylyl capryl glucoside, sodium lauroyl sarcosinate, sodium cocoamphoacetate, inulin, fragrance parfum, benzyl alcohol, polyquaternium-7, potassium sorbate, saccharide isomerate, argan oil glycereth-8 esters, guar hydroxypropyltrimonium chloride, citric acid, sodium chloride, alpha-glucan oligosaccharide, trisodium ethylenediamine disuccinate, tocopherol, helianthus annuus sunflower seed oil, sodium citrate, hexyl cinnamal",
+      "description": "A lightweight leave-in that prevents your hair from getting dry",
+      "buy_links": [
+        {
+          "url": "https://collabs.shop/szsngr",
+          "retailer": "Tootilab"
+        },
+        {
+          "url": "https://collabs.shop/szsngr",
+          "retailer": "Tootilab",
+          "country": "EU"
+        }
+      ],
+      "id": "soft_leave-in_cream",
+      "systems_excluded": [],
+      "status": "ok",
+      "extensions": {
+        "frizzbot": {
+          "simple_humectants_number": 1,
+          "film_forming_humectants_number": 1,
+          "emollients_number": 5,
+          "simple_humectants": [
+            "Glycerin"
+          ],
+          "film_forming_humectants": [
+            "Aloe Barbadensis Leaf Extract"
+          ],
+          "emollients": [
+            "Benzyl Alcohol",
+            "Unknown Polyquat",
+            "Argan Oil",
+            "Guar Hydroxypropyltrimonium Chloride",
+            "Sunflower Oil"
+          ],
+          "score": -64
+        },
+        "porosity": {
+          "high": 100,
+          "low": 100
+        },
+        "sebderm": {
+          "hasTriggers": true,
+          "triggers": [
+            {
+              "id": "argan_oil",
+              "name": "Argan Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            },
+            {
+              "id": "sunflower_oil",
+              "name": "Sunflower Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
             }
           ]
         }
@@ -6284,7 +6405,7 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -40
         },
         "porosity": {
-          "high": 67,
+          "high": 66,
           "low": 100
         },
         "sebderm": {
@@ -6459,8 +6580,8 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -47
         },
         "porosity": {
-          "high": 89,
-          "low": 0
+          "high": 86,
+          "low": 14
         },
         "sebderm": {
           "hasTriggers": true,
@@ -6487,49 +6608,51 @@ export const defaultProductDatabase: ProductDatabase = {
     },
     "gentle_shampoo": {
       "name": "Gentle Shampoo",
-      "brand": "MopTop",
-      "ingredients_raw": "water, sodium c14-16 olefin sulfonate, cocamidopropyl betaine, cocamide mea, glycol distearate, steareth-4, glycerin, hydroxypropyltrimonium honey, silk amino acids, hypnea musciformis extract seaweed, gelidiella acerosa extract seaweed, sargassum filipendula extract seaweed, sorbitol, rosmarinus officinalis rosemary leaf extract, salix alba willow bark extract, urtica dioica nettle extract, tocopheryl acetate vitamin e, panthenol vitamin b5, guar hydroxypropyltrimonium chloride, polyquaternium-10, fragrance phthalate free, sodium phytate, sorbic acid, sodium chloride, ethylhexylglycerin, phenoxyethanol, citric acid",
-      "buy_links": [
-        {
-          "url": "https://amzn.to/4fuIPQW",
-          "retailer": "Amazon"
-        }
-      ],
-      "cost": 2,
+      "brand": "Tootilab",
       "product_categories": [
         "shampoos"
       ],
       "tags": [
-        "high_porosity",
-        "normal_porosity"
+        "featured",
+        "women-owned",
+        "low_ph"
       ],
-      "asin": "B005SIR214",
+      "ingredients_raw": "water aqua, cocamidopropyl betaine, lauryl glucoside, glycerin, sodium methyl cocoyl taurate, aloe barbadensis leaf juice powder, caprylyl capryl glucoside, sodium lauroyl sarcosinate, sodium cocoamphoacetate, inulin, fragrance parfum, benzyl alcohol, polyquaternium-7, potassium sorbate, saccharide isomerate, argan oil glycereth-8 esters, guar hydroxypropyltrimonium chloride, citric acid, sodium chloride, alpha-glucan oligosaccharide, trisodium ethylenediamine disuccinate, tocopherol, helianthus annuus sunflower seed oil, sodium citrate, hexyl cinnamal",
+      "description": "A gentle shampoo with lots of slip and a low pH (which helps prevent frizz).",
+      "buy_links": [
+        {
+          "url": "https://collabs.shop/ha9w1t",
+          "retailer": "Tootilab",
+          "country": "EU"
+        },
+        {
+          "url": "https://collabs.shop/ha9w1t",
+          "retailer": "Tootilab",
+          "country": "US"
+        }
+      ],
       "id": "gentle_shampoo",
       "systems_excluded": [],
       "status": "ok",
       "extensions": {
         "frizzbot": {
-          "simple_humectants_number": 4,
-          "film_forming_humectants_number": 5,
-          "emollients_number": 2,
+          "simple_humectants_number": 1,
+          "film_forming_humectants_number": 1,
+          "emollients_number": 5,
           "simple_humectants": [
-            "Glycerin",
-            "Sorbitol",
-            "Panthenol",
-            "Ethylhexylglycerin"
+            "Glycerin"
           ],
           "film_forming_humectants": [
-            "Hydroxypropyltrimonium Honey",
-            "Silk Amino Acids",
-            "Seaweed Extract",
-            "Seaweed Extract",
-            "Seaweed Extract"
+            "Aloe Barbadensis Leaf Extract"
           ],
           "emollients": [
+            "Benzyl Alcohol",
+            "Unknown Polyquat",
+            "Argan Oil",
             "Guar Hydroxypropyltrimonium Chloride",
-            "Unknown Polyquat"
+            "Sunflower Oil"
           ],
-          "score": -78
+          "score": -64
         },
         "porosity": {
           "high": 100,
@@ -6539,14 +6662,18 @@ export const defaultProductDatabase: ProductDatabase = {
           "hasTriggers": true,
           "triggers": [
             {
-              "id": "silk_amino_acids",
-              "name": "Silk Amino Acids",
-              "reason": "Amino acids can be metabolized by Malassezia, potentially worsening symptoms"
+              "id": "argan_oil",
+              "name": "Argan Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            },
+            {
+              "id": "sunflower_oil",
+              "name": "Sunflower Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
             }
           ]
         }
-      },
-      "cost_rating": "3"
+      }
     },
     "pure_harmony_hairbath": {
       "name": "Pure Harmony Hairbath",
@@ -6596,7 +6723,7 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -90
         },
         "porosity": {
-          "high": 97,
+          "high": 94,
           "low": 0
         },
         "sebderm": {
@@ -6670,7 +6797,7 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -74
         },
         "porosity": {
-          "high": 88,
+          "high": 87,
           "low": 0
         },
         "sebderm": {
@@ -6800,7 +6927,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 100,
-          "low": 31
+          "low": 41
         },
         "sebderm": {
           "hasTriggers": false,
@@ -6983,7 +7110,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 100,
-          "low": 77
+          "low": 80
         },
         "sebderm": {
           "hasTriggers": false,
@@ -7151,7 +7278,7 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -56
         },
         "porosity": {
-          "high": 74,
+          "high": 70,
           "low": 100
         },
         "sebderm": {
@@ -7206,7 +7333,7 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -86
         },
         "porosity": {
-          "high": 96,
+          "high": 97,
           "low": 0
         },
         "sebderm": {
@@ -7435,7 +7562,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 59,
-          "low": 69
+          "low": 71
         },
         "sebderm": {
           "hasTriggers": true,
@@ -7613,7 +7740,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 50,
-          "low": 92
+          "low": 93
         },
         "sebderm": {
           "hasTriggers": true,

@@ -1956,6 +1956,19 @@ export const defaultDatabase: IngredientDatabase = {
       "status": "ok",
       "group": "oils"
     },
+    "pogostemon_cablin_oil": {
+      "name": "Pogostemon Cablin Oil",
+      "id": "pogostemon_cablin_oil",
+      "categories": [
+        "essential_oils"
+      ],
+      "synonyms": [
+        "pogostemon cablin"
+      ],
+      "description": "Pogostemon cablin oil is primarily used for its fragrance",
+      "status": "ok",
+      "group": "oils"
+    },
     "sulfated_castor_oil": {
       "name": "Sulfated Castor Oil",
       "id": "sulfated_castor_oil",
@@ -4057,6 +4070,56 @@ export const defaultDatabase: IngredientDatabase = {
       ],
       "status": "ok",
       "group": "humectants"
+    },
+    "trisodium_ethylenediamine_disuccinate": {
+      "name": "Trisodium Ethylenediamine Disuccinate",
+      "id": "trisodium_ethylenediamine_disuccinate",
+      "categories": [
+        "other"
+      ],
+      "description": "A useful chelating agent to bind metal ions, preventing them from interfering with the product's effectiveness, stability, and color.",
+      "status": "ok",
+      "group": "others"
+    },
+    "hexyl_cinnamal": {
+      "name": "Hexyl Cinnamal",
+      "id": "hexyl_cinnamal",
+      "categories": [
+        "other"
+      ],
+      "description": "Common fragrance ingredient",
+      "status": "ok",
+      "group": "others"
+    },
+    "glyceryl_stearate": {
+      "name": "Glyceryl Stearate",
+      "id": "glyceryl_stearate",
+      "categories": [
+        "other"
+      ],
+      "description": "Common emulsifier (helps oil/water mix)",
+      "status": "ok",
+      "group": "others"
+    },
+    "sodium_citrate": {
+      "name": "Sodium Citrate",
+      "id": "sodium_citrate",
+      "categories": [
+        "other"
+      ],
+      "description": "Common pH adjuster",
+      "status": "ok",
+      "group": "others"
+    },
+    "phytic_acid": {
+      "name": "Phytic Acid",
+      "id": "phytic_acid",
+      "categories": [
+        "other"
+      ],
+      "description": "Naturally derived chelating agent (helps bind minerals so they can be washed out)",
+      "status": "ok",
+      "group": "others"
     },
     "amodimethicone": {
       "name": "Amodimethicone",
