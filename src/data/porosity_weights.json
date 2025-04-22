@@ -1,0 +1,31 @@
+{
+  "low": {
+    "alcohols": 0,
+    "anionic_detergents": 0.17261512017723016,
+    "heavy_oils": -0.0827458927874845,
+    "medium_oils": -0.0827458927874845,
+    "petroleum_oils": -5,
+    "light_oils": -0.028529346109011477,
+    "other_oils": -1.116848329407586,
+    "esters": 0.05049496121539236,
+    "other_emollients": -0.4195291442819901,
+    "emollient_alcohols": -0.5330829594591019,
+    "mild_surfactants": 0,
+    "polyquats": -0.5909752896837266,
+    "conditioning_agents": 0.8754693667847906,
+    "non_water_soluble_waxes": -0.3031942292633317,
+    "water_soluble_waxes": -0.19577066547254185,
+    "humectants": 0.32610313472800245,
+    "evaporative_silicones": 0.0,
+    "water_soluble_silicones": -0.31096451427750926,
+    "film_forming_humectants": 0.5036517105736391,
+    "non_water_soluble_silicones": -0.36123690084951254,
+    "film_forming_agents": 0.005063979140546686,
+    "amodimethicone": 0.04953814508455602,
+    "neutral": 0.18106856008467936,
+    "fatty_acids": 0.0,
+    "amino_acids": 0.1014280176389306,
+    "proteins": 0.34021147818229736,
+    "unknown": 2
+  }
+}

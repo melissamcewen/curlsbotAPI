@@ -53,6 +53,7 @@
     "ajv-formats": "^3.0.1",
     "commander": "^12.1.0",
     "csv-parse": "^5.6.0",
+    "csv-stringify": "^6.5.2",
     "eslint": "^8.0.0",
     "eslint-import-resolver-typescript": "^3.0.0",
     "eslint-plugin-import": "^2.25.0",

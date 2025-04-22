@@ -159,7 +159,7 @@ describe('porosity scoring', () => {
     const ingredients =
       'water aqua eau, glycerin, babassu oil polyglyceryl-4 esters, sorbitol, chondrus crispus carrageenan, aloe barbadensis leaf juice, butyrospermum parkii shea butter, persea gratissima avocado oil, helianthus annuus sunflower seed oil, linum usitatissimum linseed seed extract, ocimum basilicum basil leaf extract, piper nigrum black pepper seed extract, rosmarinus officinalis rosemary leaf extract, salvia officinalis sage leaf extract, selaginella lepidophylla resurrection flower extract, carapa guaianensis andiroba seed oil, glyceryl caprylate, glyceryl undecylenate, disodium edta, citric acid, potassium sorbate, sodium benzoate, fragrance parfum, limonene, linalool';
     const analysis = analyzer.analyze(ingredients);
-    console.log(analysis.ingredients);
+   // console.log(analysis.ingredients);
     const result = porosity(analysis);
     it('should score styling souffle OK for high porosity', () => {
       expect(result.high).toBeGreaterThan(60);
@@ -174,6 +174,17 @@ describe('porosity scoring', () => {
       expect(result.low).toBeGreaterThan(70);
       expect(result.high).toBeGreaterThan(70);
     });
+  });
+
+  describe('As I Am Rice Water', () => {
+    const ingredients =
+      'aqua water eau, glycerin, betaine, cetearyl alcohol, cetyl alcohol, linum usitatissimum linseed seed extract, brassicamidopropyl dimethylamine, polyglyceryl-3 betainate acetate, oryza sativa rice extract, biotin, ceramide np, phytosterols, inositol, copper tripeptide-1, serenoa serrulata fruit extract, cocos nucifera coconut oil, cetyl esters, c12-15 alkyl lactate, lactic acid, lauramidopropyl hydroxysultaine, caprylhydroxamic acid, sodium chloride, caprylyl glycol, potassium sorbate, sodium benzoate';
+    const analysis = analyzer.analyze(ingredients);
+    const result = porosity(analysis);
+      it('should score As I Am Rice Water Conditioner decently for low and high porosity', () => {
+        expect(result.low).toBeGreaterThan(60);
+        expect(result.high).toBeGreaterThan(70);
+      });
   });
 
 });
