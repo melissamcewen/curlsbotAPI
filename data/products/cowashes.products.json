@@ -58,7 +58,11 @@
         {
           "url": "https://amzn.to/4h7ic6o",
           "retailer": "Amazon"
-        }
+        },
+          {
+            "url": "https://curlsmonthly.com/?ref=curlsbot",
+            "retailer": "Curls Monthly"
+          }
       ],
       "asin": "B07D7CBBPC"
      },

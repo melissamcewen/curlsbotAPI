@@ -1,5 +1,5 @@
 import type { AnalysisResult, PorosityAnalysis } from '../types';
-import porosityWeights from '../data/porosity_weights.json';
+import porosityCategoryWeights from '../data/porosity_weights.json';
 
 type PorosityCategories = {
   alcohols: string[];
@@ -31,12 +31,19 @@ type PorosityScoring = {
   };
 };
 
-// Define the structure of the weights file
-interface PorosityWeights {
-  low: {
-    [key: string]: number;
-  };
+// Special ingredients that need custom penalties for low porosity
+interface SpecialLowPorosityIngredients {
+  [key: string]: number; // ingredient ID -> penalty multiplier
 }
+
+// Ingredients that automatically disqualify a product for low porosity hair
+// These are extremely problematic ingredients that make a product unsuitable for low porosity hair
+const automaticLowPorosityDisqualifiers = new Set([
+  'petrolatum',
+  'lanolin',
+  'lanolin_oil',
+  // Add other automatic disqualifiers as needed
+]);
 
 export function porosity(analysis: AnalysisResult): PorosityAnalysis {
   const definitions: PorosityCategories = {
@@ -80,62 +87,124 @@ export function porosity(analysis: AnalysisResult): PorosityAnalysis {
   const specificIngredientScoring: SpecificIngredientScoring = {
     amodimethicone: {
       high: 15, // Very good for high porosity
-      low: 0, // Decent for low porosity
+      low: 0, // This low value is ignored in ML calculation
     },
     // Add more specific ingredients as needed
   };
 
-  // Modified definitions structure for ML low porosity calculation
-  // This matches the structure used in training
-  const mlDefinitions = {
-    alcohols: ['drying_alcohols', 'astringents'],
-    anionic_detergents: ['sulfates', 'other_anionic_surfactants'],
-    heavy_oils: ['heavy_oils'],
-    medium_oils: ['medium_oils'],
-    light_oils: ['light_oils'],
-    other_oils: ['other_oils'],
-    esters: ['esters'],
-    other_emollients: ['other_emollients'],
-    emollient_alcohols: ['emollient_alcohols'],
-    mild_surfactants: ['mild_surfactants'],
-    polyquats: ['polyquats'],
-    conditioning_agents: ['conditioning_agents'],
-    non_water_soluble_waxes: ['non_water_soluble_waxes'],
-    water_soluble_waxes: ['water_soluble_waxes'],
-    humectants: ['simple_humectants', 'proteins'],
-    evaporative_silicones: ['evaporative_silicones'],
-    water_soluble_silicones: ['water_soluble_silicones'],
-    film_forming_humectants: ['film_forming_humectants'],
-    non_water_soluble_silicones: ['non_water_soluble_silicones'],
-    film_forming_agents: ['film_forming_agents'],
-    petroleum_oils: ['petroleum_oils'],
-    amino_acids: ['amino_acids'],
-    proteins: ['proteins'],
-
+  // Special ingredients that need custom handling for low porosity
+  // These are problematic ingredients that deserve higher penalties
+  // Higher values = more problematic for low porosity
+  const specialLowPorosityIngredients: SpecialLowPorosityIngredients = {
+    petrolatum: 40, // Extremely occlusive, very problematic for low porosity
+    lanolin: 35, // Very occlusive, highly problematic for low porosity
+    lanolin_oil: 35, // Very occlusive, highly problematic for low porosity
   };
 
   const totalIngredients = analysis.ingredients.length;
+
+  // Check if any automatic disqualifiers are present in the ingredients list
+  let hasAutomaticDisqualifier = false;
+  for (const ingredient of analysis.ingredients) {
+    if (!ingredient.ingredient) continue;
+
+    if (automaticLowPorosityDisqualifiers.has(ingredient.ingredient.id)) {
+      hasAutomaticDisqualifier = true;
+      break;
+    }
+  }
+
+  // Get max number of ingredients to consider for low porosity from metadata
+  const maxLowPorosityIngredients =
+    porosityCategoryWeights.metadata?.effective_ingredients || 5;
 
   // Initialize variables for high porosity calculation (original method)
   let highPorosityWeightedSum = 0;
   let totalHighWeight = 0;
 
-  // Initialize features for low porosity ML calculation
-  const features: Record<string, number> = {};
+  // Initialize for low porosity calculation
+  let lowPorosityScore = 100; // Start with perfect score
+  let lowPorosityPenaltySum = 0;
 
-  // Initialize all features to 0
-  Object.keys(porosityWeights.low).forEach((feat) => {
-    features[feat] = 0;
-  });
+  // Track bad ingredients and categories for simple products
+  const badIngredientsHit = new Set<string>();
+  const badCategoriesHit = new Set<string>();
 
-  // Analyze each ingredient
+  // Apply penalty for products with very few ingredients
+  const applyIngredientDiversityPenalty = () => {
+    // If product has very few ingredients, apply an additional penalty
+    if (totalIngredients <= 3) {
+      // The fewer the ingredients, the higher the penalty
+      const fewIngredientsPenalty = Math.max(0, 20 - totalIngredients * 5);
+      lowPorosityPenaltySum += fewIngredientsPenalty;
+
+      // If product has few ingredients AND contains bad ingredients, penalty is higher
+      if (badIngredientsHit.size > 0 || badCategoriesHit.size > 0) {
+        // Stronger penalty if the few ingredients include bad ones
+        const badIngredientRatio =
+          (badIngredientsHit.size + badCategoriesHit.size) / totalIngredients;
+        const concentratedBadnessPenalty = badIngredientRatio * 20;
+        lowPorosityPenaltySum += concentratedBadnessPenalty;
+      }
+    }
+
+    // For products that are mostly a single bad ingredient (like "coconut oil")
+    // apply an extreme penalty
+    if (
+      totalIngredients === 1 &&
+      (badIngredientsHit.size > 0 || badCategoriesHit.size > 0)
+    ) {
+      lowPorosityPenaltySum += 50; // Very strong penalty for single-ingredient bad products
+    }
+  };
+
+  // Create filtered list of ingredients for low porosity analysis
+  // This handles duplicate ingredients and removes completely unknown ingredients
+  const filteredIngredientsForLowPorosity = [];
+  const seenIngredientIds = new Set<string>();
+  const skipIds = new Set(['unknown', 'water', 'aqua', 'eau']);
+
+  for (const ingredient of analysis.ingredients) {
+    if (!ingredient.ingredient) continue;
+
+    const id = ingredient.ingredient.id;
+
+    // Skip completely unknown ingredients (but not ones like unknown_butter)
+    if (id === 'unknown') continue;
+
+    // Check for duplicate ingredients or common duplicates like water/aqua
+    if (skipIds.has(id) && seenIngredientIds.has('water')) continue;
+
+    // For water/aqua/eau, standardize to 'water'
+    const normalizedId = skipIds.has(id) ? 'water' : id;
+
+    // Skip if we've seen this ingredient before
+    if (seenIngredientIds.has(normalizedId)) continue;
+
+    // Add to filtered list and mark as seen
+    seenIngredientIds.add(normalizedId);
+    filteredIngredientsForLowPorosity.push({
+      ingredient: ingredient.ingredient,
+      originalIndex: filteredIngredientsForLowPorosity.length,
+    });
+
+    // Once we have enough effective ingredients, stop
+    if (filteredIngredientsForLowPorosity.length >= maxLowPorosityIngredients)
+      break;
+  }
+
+  // Analyze each ingredient for HIGH POROSITY (using all ingredients)
   analysis.ingredients.forEach((ingredient, index) => {
-    // Calculate position weight (0.2 to 1.0)
-    const percentagePosition = 1 - index / totalIngredients;
-    const positionWeight = 0.3 + 1.0 * Math.exp(-2 * (1 - percentagePosition));
+    // Skip if no ingredient data
+    if (!ingredient.ingredient) return;
 
-    // HIGH POROSITY CALCULATION (Original Method)
-    if (ingredient.ingredient?.categories) {
+    // For high porosity, calculate position weight using exponential decay
+    const percentagePosition = 1 - index / totalIngredients;
+    const highPorosityPositionWeight =
+      0.3 + Math.exp(-2 * (1 - percentagePosition));
+
+    // HIGH POROSITY CALCULATION (Original Method - Unchanged)
+    if (ingredient.ingredient.categories) {
       // Check for specific ingredient scoring first
       const specificScoring =
         ingredient.ingredient.id in specificIngredientScoring
@@ -143,8 +212,9 @@ export function porosity(analysis: AnalysisResult): PorosityAnalysis {
           : undefined;
 
       if (specificScoring) {
-        highPorosityWeightedSum += specificScoring.high * positionWeight;
-        totalHighWeight += positionWeight;
+        highPorosityWeightedSum +=
+          specificScoring.high * highPorosityPositionWeight;
+        totalHighWeight += highPorosityPositionWeight;
       } else {
         // Track if ingredient affects high porosity type
         let affectsHighScoring = false;
@@ -159,7 +229,8 @@ export function porosity(analysis: AnalysisResult): PorosityAnalysis {
             ) {
               const categoryScoring =
                 scoring[category as keyof PorosityCategories];
-              highPorosityWeightedSum += categoryScoring.high * positionWeight;
+              highPorosityWeightedSum +=
+                categoryScoring.high * highPorosityPositionWeight;
               affectsHighScoring = true;
             }
           },
@@ -169,54 +240,104 @@ export function porosity(analysis: AnalysisResult): PorosityAnalysis {
         if (!affectsHighScoring) {
           // For high porosity, neutral ingredients are just okay
           const highNeutralScore = 2.0001;
-          highPorosityWeightedSum += highNeutralScore * positionWeight;
+          highPorosityWeightedSum +=
+            highNeutralScore * highPorosityPositionWeight;
         }
 
-        totalHighWeight += positionWeight;
+        totalHighWeight += highPorosityPositionWeight;
       }
     } else if (ingredient.ingredient) {
       // Handle unknown ingredients for high porosity
       const highUnknownScore = 2.0001;
-      highPorosityWeightedSum += highUnknownScore * positionWeight;
-      totalHighWeight += positionWeight;
-    }
-
-    // LOW POROSITY CALCULATION (ML Method)
-    const ingredientId = ingredient.ingredient?.id;
-    if (!ingredientId) return;
-
-    // Handle "unknown" specially
-    if (ingredientId === 'unknown') {
-      features['unknown'] = (features['unknown'] || 0) + positionWeight;
-      return;
-    }
-
-    // Handle special ingredients
-    if (ingredientId === 'amodimethicone') {
-      features['amodimethicone'] =
-        (features['amodimethicone'] || 0) + positionWeight;
-      return;
-    }
-
-    // Handle categories
-    const categories = ingredient.ingredient?.categories;
-    if (!categories || categories.length === 0) return;
-
-    let matched = false;
-
-    // Match categories exactly as in Python training
-    Object.entries(mlDefinitions).forEach(([feature, categoryList]) => {
-      if (categories.some((cat) => categoryList.includes(cat))) {
-        features[feature] = (features[feature] || 0) + positionWeight;
-        matched = true;
-      }
-    });
-
-    // If no matches, count as neutral
-    if (!matched) {
-      features['neutral'] = (features['neutral'] || 0) + positionWeight;
+      highPorosityWeightedSum += highUnknownScore * highPorosityPositionWeight;
+      totalHighWeight += highPorosityPositionWeight;
     }
   });
+
+  // Skip low porosity analysis if automatic disqualifier is found
+  if (!hasAutomaticDisqualifier) {
+
+    // Analyze filtered ingredients for LOW POROSITY
+    filteredIngredientsForLowPorosity.forEach(
+      ({ ingredient, originalIndex }, index) => {
+        const ingredientId = ingredient.id;
+
+        // Special exceptions handling (petrolatum, lanolin, etc.)
+        if (
+          ingredientId in specialLowPorosityIngredients &&
+          typeof specialLowPorosityIngredients[ingredientId] === 'number'
+        ) {
+          const penaltyMultiplier = specialLowPorosityIngredients[ingredientId];
+          // Apply full penalty for special ingredients
+          const penalty = penaltyMultiplier;
+          lowPorosityPenaltySum += penalty;
+          badIngredientsHit.add(ingredientId);
+          return;
+        }
+
+        // Check if ingredient is in the bad_ingredients list from ML model
+        if (
+          porosityCategoryWeights.bad_ingredients &&
+          Object.prototype.hasOwnProperty.call(
+            porosityCategoryWeights.bad_ingredients,
+            ingredientId,
+          )
+        ) {
+          // Get the ML-derived severity
+          const severity =
+            porosityCategoryWeights.bad_ingredients[
+              ingredientId as keyof typeof porosityCategoryWeights.bad_ingredients
+            ];
+
+          // Position factor - first ingredient has the most impact, decreasing linearly
+          /* removing this for now
+          const positionFactor = 1 - (index / maxLowPorosityIngredients) * 0.5; // 1.0 to 0.5 based on position
+          */
+
+          // Apply penalty based on severity and position
+          //const penalty = severity * 50 * positionFactor;
+          const penalty = severity * 50;
+          lowPorosityPenaltySum += penalty;
+          badIngredientsHit.add(ingredientId);
+          return;
+        }
+
+        // Check ingredient categories against bad categories
+        const categories = ingredient.categories || [];
+        if (categories.length > 0) {
+          for (const cat of categories) {
+            if (
+              porosityCategoryWeights.bad_categories &&
+              Object.prototype.hasOwnProperty.call(
+                porosityCategoryWeights.bad_categories,
+                cat,
+              )
+            ) {
+              // Get the ML-derived severity for this category
+              const severity =
+                porosityCategoryWeights.bad_categories[
+                  cat as keyof typeof porosityCategoryWeights.bad_categories
+                ];
+
+              // Position factor - first ingredient has the most impact, decreasing linearly
+             /* const positionFactor =
+                1 - (index / maxLowPorosityIngredients) * 0.5; // 1.0 to 0.5 based on position
+              */
+
+              // Apply penalty based on severity and position
+             // const penalty = severity * 40 * positionFactor;
+              const penalty = severity * 40;
+              lowPorosityPenaltySum += penalty;
+              badCategoriesHit.add(cat);
+            }
+          }
+        }
+      },
+    );
+
+    // Apply the ingredient diversity penalty for simple products
+    applyIngredientDiversityPenalty();
+  }
 
   // Calculate high porosity score (original method)
   const calculateHighScore = (weightedSum: number, totalWeight: number) => {
@@ -230,27 +351,16 @@ export function porosity(analysis: AnalysisResult): PorosityAnalysis {
     return finalScore;
   };
 
+  // Calculate final scores
   const highScore = calculateHighScore(
     highPorosityWeightedSum,
     totalHighWeight,
   );
 
-  // Calculate low porosity score (ML method)
-  const lowWeights = porosityWeights.low;
-  let lowRawScore = 0;
-
-  Object.keys(features).forEach((feat) => {
-    if (feat in lowWeights) {
-      lowRawScore +=
-        (features[feat] || 0) * lowWeights[feat as keyof typeof lowWeights];
-    }
-  });
-
-  // Apply sigmoid function to get probability
-  const lowProb = 1 / (1 + Math.exp(-lowRawScore));
-
-  // Scale to 0-100
-  const lowScore = Math.round(lowProb * 100);
+  // For low porosity, apply the total penalty to the perfect score or set to 0 if disqualified
+  const lowScore = hasAutomaticDisqualifier
+    ? 0
+    : Math.round(Math.max(0, lowPorosityScore - lowPorosityPenaltySum));
 
   // Ensure scores stay within 0 to 100 range
   return {

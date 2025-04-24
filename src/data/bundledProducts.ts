@@ -226,7 +226,7 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -82
         },
         "porosity": {
-          "high": 80,
+          "high": 79,
           "low": 100
         },
         "sebderm": {
@@ -273,7 +273,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 4,
           "film_forming_humectants_number": 3,
-          "emollients_number": 2,
+          "emollients_number": 3,
           "simple_humectants": [
             "Panthenol",
             "Sodium PCA",
@@ -286,18 +286,24 @@ export const defaultProductDatabase: ProductDatabase = {
             "Silk Amino Acids"
           ],
           "emollients": [
+            "Argan Oil",
             "Avocado Oil",
             "Castor Oil"
           ],
-          "score": -66
+          "score": -68
         },
         "porosity": {
-          "high": 50,
+          "high": 51,
           "low": 100
         },
         "sebderm": {
           "hasTriggers": true,
           "triggers": [
+            {
+              "id": "argan_oil",
+              "name": "Argan Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            },
             {
               "id": "avocado_oil",
               "name": "Avocado Oil",
@@ -473,7 +479,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 100,
-          "low": 0
+          "low": 100
         },
         "sebderm": {
           "hasTriggers": true,
@@ -544,8 +550,8 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -61
         },
         "porosity": {
-          "high": 90,
-          "low": 0
+          "high": 87,
+          "low": 100
         },
         "sebderm": {
           "hasTriggers": true,
@@ -613,8 +619,8 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -92
         },
         "porosity": {
-          "high": 88,
-          "low": 34
+          "high": 90,
+          "low": 100
         },
         "sebderm": {
           "hasTriggers": true,
@@ -679,7 +685,7 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -47
         },
         "porosity": {
-          "high": 91,
+          "high": 88,
           "low": 100
         },
         "sebderm": {
@@ -718,7 +724,7 @@ export const defaultProductDatabase: ProductDatabase = {
       "extensions": {
         "frizzbot": {
           "simple_humectants_number": 5,
-          "film_forming_humectants_number": 3,
+          "film_forming_humectants_number": 2,
           "emollients_number": 7,
           "simple_humectants": [
             "Glycerin",
@@ -729,7 +735,6 @@ export const defaultProductDatabase: ProductDatabase = {
           ],
           "film_forming_humectants": [
             "Hydrolyzed Wheat Protein",
-            "Glycine",
             "Hydroxyethylcellulose"
           ],
           "emollients": [
@@ -741,11 +746,11 @@ export const defaultProductDatabase: ProductDatabase = {
             "Cetrimonium Chloride",
             "Unknown Polyquat"
           ],
-          "score": -69
+          "score": -66
         },
         "porosity": {
-          "high": 93,
-          "low": 0
+          "high": 89,
+          "low": 80
         },
         "sebderm": {
           "hasTriggers": true,
@@ -764,11 +769,6 @@ export const defaultProductDatabase: ProductDatabase = {
               "id": "olive_oil",
               "name": "Olive Oil",
               "reason": "Contains fatty acids that can feed Malassezia yeast"
-            },
-            {
-              "id": "glycine",
-              "name": "Glycine",
-              "reason": "Amino acids can be metabolized by Malassezia, potentially worsening symptoms"
             }
           ]
         }
@@ -816,7 +816,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 100,
-          "low": 87
+          "low": 70
         },
         "sebderm": {
           "hasTriggers": false,
@@ -880,7 +880,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 100,
-          "low": 61
+          "low": 80
         },
         "sebderm": {
           "hasTriggers": true,
@@ -963,7 +963,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 100,
-          "low": 13
+          "low": 100
         },
         "sebderm": {
           "hasTriggers": true,
@@ -1050,7 +1050,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 100,
-          "low": 0
+          "low": 100
         },
         "sebderm": {
           "hasTriggers": true,
@@ -1131,7 +1131,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 100,
-          "low": 3
+          "low": 100
         },
         "sebderm": {
           "hasTriggers": true,
@@ -1222,7 +1222,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 100,
-          "low": 16
+          "low": 100
         },
         "sebderm": {
           "hasTriggers": true,
@@ -1317,7 +1317,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 100,
-          "low": 6
+          "low": 80
         },
         "sebderm": {
           "hasTriggers": true,
@@ -1395,7 +1395,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 100,
-          "low": 0
+          "low": 57
         },
         "sebderm": {
           "hasTriggers": true,
@@ -1476,7 +1476,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 100,
-          "low": 68
+          "low": 73
         },
         "sebderm": {
           "hasTriggers": true,
@@ -1735,7 +1735,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 100,
-          "low": 87
+          "low": 100
         },
         "sebderm": {
           "hasTriggers": true,
@@ -1802,7 +1802,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 100,
-          "low": 0
+          "low": 100
         },
         "sebderm": {
           "hasTriggers": true,
@@ -1868,8 +1868,8 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -75
         },
         "porosity": {
-          "high": 52,
-          "low": 4
+          "high": 51,
+          "low": 100
         },
         "sebderm": {
           "hasTriggers": true,
@@ -1935,7 +1935,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 87,
-          "low": 0
+          "low": 73
         },
         "sebderm": {
           "hasTriggers": true,
@@ -2011,7 +2011,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 100,
-          "low": 79
+          "low": 73
         },
         "sebderm": {
           "hasTriggers": true,
@@ -2077,7 +2077,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 100,
-          "low": 86
+          "low": 100
         },
         "sebderm": {
           "hasTriggers": true,
@@ -2114,7 +2114,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 6,
           "film_forming_humectants_number": 4,
-          "emollients_number": 16,
+          "emollients_number": 17,
           "simple_humectants": [
             "Glycerin",
             "Propanediol",
@@ -2137,6 +2137,7 @@ export const defaultProductDatabase: ProductDatabase = {
             "Butyrospermum Parkii Shea Butter",
             "Sunflower Oil",
             "Sweet Almond Oil",
+            "Safflower Oil",
             "Castor Oil",
             "Rice bran oil",
             "Kokum Butter",
@@ -2151,7 +2152,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 100,
-          "low": 0
+          "low": 100
         },
         "sebderm": {
           "hasTriggers": true,
@@ -2179,6 +2180,11 @@ export const defaultProductDatabase: ProductDatabase = {
             {
               "id": "sweet_almond_oil",
               "name": "Sweet Almond Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            },
+            {
+              "id": "safflower_oil",
+              "name": "Safflower Oil",
               "reason": "Contains fatty acids that can feed Malassezia yeast"
             },
             {
@@ -2257,7 +2263,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 100,
-          "low": 0
+          "low": 80
         },
         "sebderm": {
           "hasTriggers": true,
@@ -2345,7 +2351,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 100,
-          "low": 27
+          "low": 61
         },
         "sebderm": {
           "hasTriggers": true,
@@ -2392,6 +2398,10 @@ export const defaultProductDatabase: ProductDatabase = {
         {
           "url": "https://amzn.to/4h7ic6o",
           "retailer": "Amazon"
+        },
+        {
+          "url": "https://curlsmonthly.com/?ref=curlsbot",
+          "retailer": "Curls Monthly"
         }
       ],
       "asin": "B07D7CBBPC",
@@ -2423,7 +2433,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 100,
-          "low": 12
+          "low": 100
         },
         "sebderm": {
           "hasTriggers": true,
@@ -2503,7 +2513,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 100,
-          "low": 58
+          "low": 70
         },
         "sebderm": {
           "hasTriggers": true,
@@ -2566,7 +2576,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 100,
-          "low": 0
+          "low": 100
         },
         "sebderm": {
           "hasTriggers": true,
@@ -2632,8 +2642,8 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -82
         },
         "porosity": {
-          "high": 85,
-          "low": 36
+          "high": 84,
+          "low": 100
         },
         "sebderm": {
           "hasTriggers": true,
@@ -2695,7 +2705,7 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -81
         },
         "porosity": {
-          "high": 75,
+          "high": 74,
           "low": 100
         },
         "sebderm": {
@@ -2757,7 +2767,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 100,
-          "low": 49
+          "low": 100
         },
         "sebderm": {
           "hasTriggers": true,
@@ -2828,7 +2838,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 100,
-          "low": 19
+          "low": 100
         },
         "sebderm": {
           "hasTriggers": true,
@@ -2886,7 +2896,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 4,
           "film_forming_humectants_number": 0,
-          "emollients_number": 7,
+          "emollients_number": 8,
           "simple_humectants": [
             "Sodium hyaluronate",
             "Panthenol",
@@ -2898,16 +2908,17 @@ export const defaultProductDatabase: ProductDatabase = {
             "Castor Oil",
             "Cetearyl Alcohol",
             "Behentrimonium Chloride",
+            "Astrocaryum Murumuru Seed Butter",
             "Jojoba Oil",
             "Butyrospermum Parkii Shea Butter",
             "Unknown Polyquat",
             "Guar Hydroxypropyltrimonium Chloride"
           ],
-          "score": -59
+          "score": -60
         },
         "porosity": {
           "high": 100,
-          "low": 10
+          "low": 28
         },
         "sebderm": {
           "hasTriggers": true,
@@ -2921,6 +2932,11 @@ export const defaultProductDatabase: ProductDatabase = {
               "id": "cetearyl_alcohol",
               "name": "Cetearyl Alcohol",
               "reason": "This specific fatty alcohol can feed Malassezia yeast"
+            },
+            {
+              "id": "astrocaryum_murumuru_seed_butter",
+              "name": "Astrocaryum Murumuru Seed Butter",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
             },
             {
               "id": "jojoba_oil",
@@ -2986,7 +3002,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 100,
-          "low": 34
+          "low": 100
         },
         "sebderm": {
           "hasTriggers": true,
@@ -3034,7 +3050,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 3,
           "film_forming_humectants_number": 2,
-          "emollients_number": 7,
+          "emollients_number": 8,
           "simple_humectants": [
             "Sorbitol",
             "Glycerin",
@@ -3049,6 +3065,7 @@ export const defaultProductDatabase: ProductDatabase = {
             "Avocado Oil",
             "Cetrimonium Chloride",
             "VP VA copolymer",
+            "Astrocaryum Murumuru Seed Butter",
             "Argan Oil",
             "Butyrospermum Parkii Shea Butter",
             "Behentrimonium Methosulfate"
@@ -3057,7 +3074,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 100,
-          "low": 0
+          "low": 80
         },
         "sebderm": {
           "hasTriggers": true,
@@ -3070,6 +3087,11 @@ export const defaultProductDatabase: ProductDatabase = {
             {
               "id": "avocado_oil",
               "name": "Avocado Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            },
+            {
+              "id": "astrocaryum_murumuru_seed_butter",
+              "name": "Astrocaryum Murumuru Seed Butter",
               "reason": "Contains fatty acids that can feed Malassezia yeast"
             },
             {
@@ -3126,8 +3148,8 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -69
         },
         "porosity": {
-          "high": 81,
-          "low": 31
+          "high": 79,
+          "low": 100
         },
         "sebderm": {
           "hasTriggers": true,
@@ -3169,7 +3191,7 @@ export const defaultProductDatabase: ProductDatabase = {
       "extensions": {
         "frizzbot": {
           "simple_humectants_number": 5,
-          "film_forming_humectants_number": 2,
+          "film_forming_humectants_number": 1,
           "emollients_number": 5,
           "simple_humectants": [
             "Glycerin",
@@ -3179,7 +3201,6 @@ export const defaultProductDatabase: ProductDatabase = {
             "Butylene glycol"
           ],
           "film_forming_humectants": [
-            "Glycine",
             "Sodium Glutamate"
           ],
           "emollients": [
@@ -3189,11 +3210,11 @@ export const defaultProductDatabase: ProductDatabase = {
             "Castor Oil",
             "Jojoba Oil"
           ],
-          "score": -55
+          "score": -50
         },
         "porosity": {
           "high": 85,
-          "low": 43
+          "low": 80
         },
         "sebderm": {
           "hasTriggers": true,
@@ -3212,11 +3233,6 @@ export const defaultProductDatabase: ProductDatabase = {
               "id": "jojoba_oil",
               "name": "Jojoba Oil",
               "reason": "Contains fatty acids that can feed Malassezia yeast"
-            },
-            {
-              "id": "glycine",
-              "name": "Glycine",
-              "reason": "Amino acids can be metabolized by Malassezia, potentially worsening symptoms"
             }
           ]
         }
@@ -3270,8 +3286,8 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -82
         },
         "porosity": {
-          "high": 95,
-          "low": 68
+          "high": 91,
+          "low": 100
         },
         "sebderm": {
           "hasTriggers": true,
@@ -3346,8 +3362,8 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -54
         },
         "porosity": {
-          "high": 66,
-          "low": 3
+          "high": 65,
+          "low": 45
         },
         "sebderm": {
           "hasTriggers": true,
@@ -3414,7 +3430,7 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -68
         },
         "porosity": {
-          "high": 85,
+          "high": 82,
           "low": 100
         },
         "sebderm": {
@@ -3466,8 +3482,8 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -81
         },
         "porosity": {
-          "high": 82,
-          "low": 97
+          "high": 81,
+          "low": 100
         },
         "sebderm": {
           "hasTriggers": true,
@@ -3523,8 +3539,8 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -81
         },
         "porosity": {
-          "high": 82,
-          "low": 97
+          "high": 81,
+          "low": 100
         },
         "sebderm": {
           "hasTriggers": true,
@@ -3582,7 +3598,7 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -79
         },
         "porosity": {
-          "high": 92,
+          "high": 89,
           "low": 100
         },
         "sebderm": {
@@ -3639,7 +3655,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 100,
-          "low": 0
+          "low": 85
         },
         "sebderm": {
           "hasTriggers": true,
@@ -3717,7 +3733,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 100,
-          "low": 12
+          "low": 57
         },
         "sebderm": {
           "hasTriggers": true,
@@ -3798,7 +3814,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 100,
-          "low": 0
+          "low": 51
         },
         "sebderm": {
           "hasTriggers": true,
@@ -3897,7 +3913,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 100,
-          "low": 23
+          "low": 100
         },
         "sebderm": {
           "hasTriggers": true,
@@ -3974,8 +3990,8 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -78
         },
         "porosity": {
-          "high": 91,
-          "low": 41
+          "high": 87,
+          "low": 100
         },
         "sebderm": {
           "hasTriggers": false,
@@ -4024,8 +4040,8 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -72
         },
         "porosity": {
-          "high": 90,
-          "low": 47
+          "high": 86,
+          "low": 100
         },
         "sebderm": {
           "hasTriggers": false,
@@ -4085,7 +4101,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 95,
-          "low": 6
+          "low": 100
         },
         "sebderm": {
           "hasTriggers": true,
@@ -4155,8 +4171,8 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -70
         },
         "porosity": {
-          "high": 72,
-          "low": 77
+          "high": 73,
+          "low": 100
         },
         "sebderm": {
           "hasTriggers": true,
@@ -4262,8 +4278,8 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -49
         },
         "porosity": {
-          "high": 86,
-          "low": 65
+          "high": 83,
+          "low": 51
         },
         "sebderm": {
           "hasTriggers": true,
@@ -4411,6 +4427,10 @@ export const defaultProductDatabase: ProductDatabase = {
         {
           "url": "https://click.linksynergy.com/link?id=9QcV0uNyab0&offerid=929395.3842993508&type=2&murl=https%3a%2f%2fwww.ouidad.com%2fproducts%2fadvanced-climate-control-heat-and-humidity-gel%3fvariant%3d42617150865666",
           "retailer": "Ouidad"
+        },
+        {
+          "url": "https://curlsmonthly.com/?ref=curlsbot",
+          "retailer": "Curls Monthly"
         }
       ],
       "id": "advanced_climate_control_heat_&_humidity_gel",
@@ -4448,7 +4468,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 100,
-          "low": 85
+          "low": 100
         },
         "sebderm": {
           "hasTriggers": true,
@@ -4521,7 +4541,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 100,
-          "low": 48
+          "low": 62
         },
         "sebderm": {
           "hasTriggers": true,
@@ -4587,7 +4607,7 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -79
         },
         "porosity": {
-          "high": 82,
+          "high": 81,
           "low": 100
         },
         "sebderm": {
@@ -4720,7 +4740,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 100,
-          "low": 29
+          "low": 45
         },
         "sebderm": {
           "hasTriggers": true,
@@ -4778,7 +4798,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 100,
-          "low": 63
+          "low": 100
         },
         "sebderm": {
           "hasTriggers": false,
@@ -4828,8 +4848,8 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -70
         },
         "porosity": {
-          "high": 79,
-          "low": 53
+          "high": 77,
+          "low": 100
         },
         "sebderm": {
           "hasTriggers": false,
@@ -4892,7 +4912,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 59,
-          "low": 67
+          "low": 80
         },
         "sebderm": {
           "hasTriggers": true,
@@ -4941,23 +4961,22 @@ export const defaultProductDatabase: ProductDatabase = {
       "extensions": {
         "frizzbot": {
           "simple_humectants_number": 0,
-          "film_forming_humectants_number": 3,
+          "film_forming_humectants_number": 2,
           "emollients_number": 2,
           "simple_humectants": [],
           "film_forming_humectants": [
             "Hydroxyethylcellulose",
-            "Aloe Barbadensis Leaf Extract",
-            "Glycine"
+            "Aloe Barbadensis Leaf Extract"
           ],
           "emollients": [
             "VP VA copolymer",
             "Sunflower Oil"
           ],
-          "score": -91
+          "score": -90
         },
         "porosity": {
-          "high": 91,
-          "low": 94
+          "high": 89,
+          "low": 100
         },
         "sebderm": {
           "hasTriggers": true,
@@ -4966,11 +4985,6 @@ export const defaultProductDatabase: ProductDatabase = {
               "id": "sunflower_oil",
               "name": "Sunflower Oil",
               "reason": "Contains fatty acids that can feed Malassezia yeast"
-            },
-            {
-              "id": "glycine",
-              "name": "Glycine",
-              "reason": "Amino acids can be metabolized by Malassezia, potentially worsening symptoms"
             }
           ]
         }
@@ -4994,6 +5008,10 @@ export const defaultProductDatabase: ProductDatabase = {
         {
           "url": "https://curlkeeper.com/r?id=p0m4m5",
           "retailer": "Curl Keeper"
+        },
+        {
+          "url": "https://curlsmonthly.com/?ref=curlsbot",
+          "retailer": "Curls Monthly"
         }
       ],
       "ingredients_raw": "water aqua eau, vp va copolymer, propylene glycol, hydroxyethylcellulose, glycerin, oleth-20, polyquaternium-10, citric acid, dmdm hydantoin",
@@ -5020,7 +5038,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 100,
-          "low": 99
+          "low": 100
         },
         "sebderm": {
           "hasTriggers": false,
@@ -5072,7 +5090,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 100,
-          "low": 88
+          "low": 100
         },
         "sebderm": {
           "hasTriggers": true,
@@ -5133,8 +5151,8 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -70
         },
         "porosity": {
-          "high": 82,
-          "low": 42
+          "high": 81,
+          "low": 80
         },
         "sebderm": {
           "hasTriggers": true,
@@ -5187,7 +5205,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 100,
-          "low": 75
+          "low": 100
         },
         "sebderm": {
           "hasTriggers": true,
@@ -5220,8 +5238,8 @@ export const defaultProductDatabase: ProductDatabase = {
           "country": "EU"
         },
         {
-          "url": "https://collabs.shop/cebjoi",
-          "retailer": "Tootilab"
+          "url": "https://curlsmonthly.com/?ref=curlsbot",
+          "retailer": "Try with Curls Monthly"
         }
       ],
       "id": "all_weather_styling_gel",
@@ -5250,7 +5268,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 100,
-          "low": 89
+          "low": 100
         },
         "sebderm": {
           "hasTriggers": false,
@@ -5300,7 +5318,7 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -75
         },
         "porosity": {
-          "high": 78,
+          "high": 77,
           "low": 100
         },
         "sebderm": {
@@ -5361,8 +5379,8 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -81
         },
         "porosity": {
-          "high": 54,
-          "low": 0
+          "high": 55,
+          "low": 100
         },
         "sebderm": {
           "hasTriggers": true,
@@ -5439,7 +5457,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 100,
-          "low": 60
+          "low": 80
         },
         "sebderm": {
           "hasTriggers": true,
@@ -5497,14 +5515,13 @@ export const defaultProductDatabase: ProductDatabase = {
       "extensions": {
         "frizzbot": {
           "simple_humectants_number": 1,
-          "film_forming_humectants_number": 2,
+          "film_forming_humectants_number": 1,
           "emollients_number": 4,
           "simple_humectants": [
             "Panthenol"
           ],
           "film_forming_humectants": [
-            "Aloe Barbadensis Leaf Extract",
-            "Glycine"
+            "Aloe Barbadensis Leaf Extract"
           ],
           "emollients": [
             "Cetyl Alcohol",
@@ -5512,20 +5529,15 @@ export const defaultProductDatabase: ProductDatabase = {
             "Sunflower Oil",
             "Benzyl Alcohol"
           ],
-          "score": -76
+          "score": -70
         },
         "porosity": {
-          "high": 85,
-          "low": 67
+          "high": 83,
+          "low": 73
         },
         "sebderm": {
           "hasTriggers": true,
           "triggers": [
-            {
-              "id": "glycine",
-              "name": "Glycine",
-              "reason": "Amino acids can be metabolized by Malassezia, potentially worsening symptoms"
-            },
             {
               "id": "sunflower_oil",
               "name": "Sunflower Oil",
@@ -5561,7 +5573,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 1,
           "film_forming_humectants_number": 0,
-          "emollients_number": 8,
+          "emollients_number": 9,
           "simple_humectants": [
             "Ethylhexylglycerin"
           ],
@@ -5570,6 +5582,7 @@ export const defaultProductDatabase: ProductDatabase = {
             "Cetearyl Alcohol",
             "Jojoba Oil",
             "Olive Oil",
+            "Astrocaryum Murumuru Seed Butter",
             "Argan Oil",
             "Butyrospermum Parkii Shea Butter",
             "Avocado Oil",
@@ -5579,8 +5592,8 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -74
         },
         "porosity": {
-          "high": 87,
-          "low": 0
+          "high": 86,
+          "low": 82
         },
         "sebderm": {
           "hasTriggers": true,
@@ -5598,6 +5611,11 @@ export const defaultProductDatabase: ProductDatabase = {
             {
               "id": "olive_oil",
               "name": "Olive Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            },
+            {
+              "id": "astrocaryum_murumuru_seed_butter",
+              "name": "Astrocaryum Murumuru Seed Butter",
               "reason": "Contains fatty acids that can feed Malassezia yeast"
             },
             {
@@ -5660,7 +5678,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 100,
-          "low": 0
+          "low": 58
         },
         "sebderm": {
           "hasTriggers": true,
@@ -5706,6 +5724,10 @@ export const defaultProductDatabase: ProductDatabase = {
           "url": "https://collabs.shop/szsngr",
           "retailer": "Tootilab",
           "country": "EU"
+        },
+        {
+          "url": "https://curlsmonthly.com/?ref=curlsbot",
+          "retailer": "Curls Monthly"
         }
       ],
       "id": "soft_leave-in_cream",
@@ -5793,8 +5815,8 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -76
         },
         "porosity": {
-          "high": 29,
-          "low": 0
+          "high": 28,
+          "low": 23
         },
         "sebderm": {
           "hasTriggers": true,
@@ -5866,8 +5888,8 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -76
         },
         "porosity": {
-          "high": 25,
-          "low": 0
+          "high": 26,
+          "low": 14
         },
         "sebderm": {
           "hasTriggers": true,
@@ -5942,7 +5964,7 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -76
         },
         "porosity": {
-          "high": 37,
+          "high": 39,
           "low": 0
         },
         "sebderm": {
@@ -6011,7 +6033,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 0,
-          "low": 4
+          "low": 85
         },
         "sebderm": {
           "hasTriggers": false,
@@ -6056,7 +6078,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 0,
-          "low": 4
+          "low": 85
         },
         "sebderm": {
           "hasTriggers": true,
@@ -6245,7 +6267,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 100,
-          "low": 80
+          "low": 85
         },
         "sebderm": {
           "hasTriggers": true,
@@ -6305,7 +6327,7 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -84
         },
         "porosity": {
-          "high": 70,
+          "high": 71,
           "low": 100
         },
         "sebderm": {
@@ -6389,23 +6411,21 @@ export const defaultProductDatabase: ProductDatabase = {
       "extensions": {
         "frizzbot": {
           "simple_humectants_number": 2,
-          "film_forming_humectants_number": 1,
+          "film_forming_humectants_number": 0,
           "emollients_number": 2,
           "simple_humectants": [
             "Glycerin",
             "Panthenol"
           ],
-          "film_forming_humectants": [
-            "Glycine"
-          ],
+          "film_forming_humectants": [],
           "emollients": [
             "Sunflower Oil",
             "Unknown Polyquat"
           ],
-          "score": -40
+          "score": -15
         },
         "porosity": {
-          "high": 66,
+          "high": 64,
           "low": 100
         },
         "sebderm": {
@@ -6415,11 +6435,6 @@ export const defaultProductDatabase: ProductDatabase = {
               "id": "sunflower_oil",
               "name": "Sunflower Oil",
               "reason": "Contains fatty acids that can feed Malassezia yeast"
-            },
-            {
-              "id": "glycine",
-              "name": "Glycine",
-              "reason": "Amino acids can be metabolized by Malassezia, potentially worsening symptoms"
             }
           ]
         }
@@ -6458,7 +6473,7 @@ export const defaultProductDatabase: ProductDatabase = {
       "extensions": {
         "frizzbot": {
           "simple_humectants_number": 4,
-          "film_forming_humectants_number": 10,
+          "film_forming_humectants_number": 9,
           "emollients_number": 3,
           "simple_humectants": [
             "Propanediol",
@@ -6475,7 +6490,6 @@ export const defaultProductDatabase: ProductDatabase = {
             "Phenylalanine",
             "Proline",
             "Serine",
-            "Glycine",
             "Hydroxyethylcellulose"
           ],
           "emollients": [
@@ -6483,11 +6497,11 @@ export const defaultProductDatabase: ProductDatabase = {
             "Guar Hydroxypropyltrimonium Chloride",
             "Castor Oil"
           ],
-          "score": -82
+          "score": -81
         },
         "porosity": {
-          "high": 65,
-          "low": 98
+          "high": 66,
+          "low": 100
         },
         "sebderm": {
           "hasTriggers": true,
@@ -6515,11 +6529,6 @@ export const defaultProductDatabase: ProductDatabase = {
             {
               "id": "serine",
               "name": "Serine",
-              "reason": "Amino acids can be metabolized by Malassezia, potentially worsening symptoms"
-            },
-            {
-              "id": "glycine",
-              "name": "Glycine",
               "reason": "Amino acids can be metabolized by Malassezia, potentially worsening symptoms"
             },
             {
@@ -6580,8 +6589,8 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -47
         },
         "porosity": {
-          "high": 86,
-          "low": 14
+          "high": 85,
+          "low": 100
         },
         "sebderm": {
           "hasTriggers": true,
@@ -6723,8 +6732,8 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -90
         },
         "porosity": {
-          "high": 94,
-          "low": 0
+          "high": 92,
+          "low": 31
         },
         "sebderm": {
           "hasTriggers": true,
@@ -6797,8 +6806,8 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -74
         },
         "porosity": {
-          "high": 87,
-          "low": 0
+          "high": 86,
+          "low": 100
         },
         "sebderm": {
           "hasTriggers": true,
@@ -6869,7 +6878,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 100,
-          "low": 61
+          "low": 100
         },
         "sebderm": {
           "hasTriggers": true,
@@ -6927,7 +6936,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 100,
-          "low": 41
+          "low": 100
         },
         "sebderm": {
           "hasTriggers": false,
@@ -6990,7 +6999,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 100,
-          "low": 55
+          "low": 100
         },
         "sebderm": {
           "hasTriggers": true,
@@ -7094,7 +7103,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 3,
           "film_forming_humectants_number": 1,
-          "emollients_number": 1,
+          "emollients_number": 2,
           "simple_humectants": [
             "Glucose",
             "Glycerin",
@@ -7104,17 +7113,24 @@ export const defaultProductDatabase: ProductDatabase = {
             "Sodium Glutamate"
           ],
           "emollients": [
-            "Unknown Polyquat"
+            "Unknown Polyquat",
+            "Mangifera indica mango seed butter"
           ],
-          "score": -25
+          "score": -36
         },
         "porosity": {
           "high": 100,
-          "low": 80
+          "low": 100
         },
         "sebderm": {
-          "hasTriggers": false,
-          "triggers": []
+          "hasTriggers": true,
+          "triggers": [
+            {
+              "id": "mangifera_indica_mango_seed_butter",
+              "name": "Mangifera indica mango seed butter",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            }
+          ]
         }
       },
       "cost_rating": "1"
@@ -7159,7 +7175,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 53,
-          "low": 100
+          "low": 58
         },
         "sebderm": {
           "hasTriggers": true,
@@ -7202,7 +7218,7 @@ export const defaultProductDatabase: ProductDatabase = {
       "extensions": {
         "frizzbot": {
           "simple_humectants_number": 3,
-          "film_forming_humectants_number": 2,
+          "film_forming_humectants_number": 1,
           "emollients_number": 1,
           "simple_humectants": [
             "Glycerin",
@@ -7210,26 +7226,20 @@ export const defaultProductDatabase: ProductDatabase = {
             "Panthenol"
           ],
           "film_forming_humectants": [
-            "Aloe Barbadensis Leaf Extract",
-            "Glycine"
+            "Aloe Barbadensis Leaf Extract"
           ],
           "emollients": [
             "Xanthan Gum"
           ],
-          "score": -53
+          "score": -33
         },
         "porosity": {
-          "high": 89,
+          "high": 86,
           "low": 100
         },
         "sebderm": {
           "hasTriggers": true,
           "triggers": [
-            {
-              "id": "glycine",
-              "name": "Glycine",
-              "reason": "Amino acids can be metabolized by Malassezia, potentially worsening symptoms"
-            },
             {
               "id": "polysorbate_20",
               "name": "Polysorbate 20",
@@ -7278,7 +7288,7 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -56
         },
         "porosity": {
-          "high": 70,
+          "high": 68,
           "low": 100
         },
         "sebderm": {
@@ -7333,8 +7343,8 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -86
         },
         "porosity": {
-          "high": 97,
-          "low": 0
+          "high": 93,
+          "low": 78
         },
         "sebderm": {
           "hasTriggers": true,
@@ -7398,8 +7408,8 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -48
         },
         "porosity": {
-          "high": 81,
-          "low": 66
+          "high": 80,
+          "low": 100
         },
         "sebderm": {
           "hasTriggers": false,
@@ -7498,7 +7508,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 100,
-          "low": 69
+          "low": 100
         },
         "sebderm": {
           "hasTriggers": true,
@@ -7538,7 +7548,7 @@ export const defaultProductDatabase: ProductDatabase = {
       "extensions": {
         "frizzbot": {
           "simple_humectants_number": 4,
-          "film_forming_humectants_number": 6,
+          "film_forming_humectants_number": 5,
           "emollients_number": 2,
           "simple_humectants": [
             "Propanediol",
@@ -7549,7 +7559,6 @@ export const defaultProductDatabase: ProductDatabase = {
           "film_forming_humectants": [
             "Peptide",
             "Peptide",
-            "Glycine",
             "Arginine",
             "Glycine",
             "Hydroxyethylcellulose"
@@ -7558,20 +7567,15 @@ export const defaultProductDatabase: ProductDatabase = {
             "Xanthan Gum",
             "Castor Oil"
           ],
-          "score": -43
+          "score": -35
         },
         "porosity": {
-          "high": 59,
-          "low": 71
+          "high": 57,
+          "low": 100
         },
         "sebderm": {
           "hasTriggers": true,
           "triggers": [
-            {
-              "id": "glycine",
-              "name": "Glycine",
-              "reason": "Amino acids can be metabolized by Malassezia, potentially worsening symptoms"
-            },
             {
               "id": "glycine",
               "name": "Glycine",
@@ -7650,7 +7654,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 49,
-          "low": 67
+          "low": 100
         },
         "sebderm": {
           "hasTriggers": true,
@@ -7740,7 +7744,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 50,
-          "low": 93
+          "low": 100
         },
         "sebderm": {
           "hasTriggers": true,

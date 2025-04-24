@@ -8,9 +8,7 @@
         "apricot seed oil",
         "apricot oil"
       ],
-      "categories": [
-        "medium_oils"
-      ],
+      "categories": ["medium_oils"],
       "references": [
         {
           "id": "25",
@@ -21,9 +19,8 @@
     {
       "name": "Safflower Oil",
       "id": "safflower_oil",
-      "categories": [
-        "light_oils"
-      ],
+      "categories": ["light_oils"],
+      "synonyms": ["carthamus tinctorius seed oil", "safflower seed oil"],
       "references": [
         {
           "id": "25",
@@ -38,13 +35,8 @@
     {
       "name": "Argan Oil",
       "id": "argan_oil",
-      "synonyms": [
-        "argania spinosa kernel oil",
-        "argan tree oil"
-      ],
-      "categories": [
-        "medium_oils"
-      ],
+      "synonyms": ["argania spinosa kernel oil", "argan tree oil", "argan kernal oil", "argania spinosa"],
+      "categories": ["medium_oils"],
       "references": [
         {
           "id": "25",
@@ -64,13 +56,8 @@
     {
       "name": "Cocoa Butter",
       "id": "cocoa_butter",
-      "synonyms": [
-        "theobroma cacao seed butter",
-        "cacao seed butter"
-      ],
-      "categories": [
-        "light_oils"
-      ],
+      "synonyms": ["theobroma cacao seed butter", "cacao seed butter"],
+      "categories": ["light_oils"],
       "references": [
         {
           "id": "25",
@@ -81,13 +68,8 @@
     {
       "name": "Sesame Seed Oil",
       "id": "sesame_seed_oil",
-      "synonyms": [
-        "sesamum indicum seed oil",
-        "sesame oil"
-      ],
-      "categories": [
-        "medium_oils"
-      ],
+      "synonyms": ["sesamum indicum seed oil", "sesame oil"],
+      "categories": ["medium_oils"],
       "references": [
         {
           "id": "25",
@@ -98,13 +80,8 @@
     {
       "name": "Avocado Oil",
       "id": "avocado_oil",
-      "synonyms": [
-        "persea gratissima oil",
-        "avocado fruit oil"
-      ],
-      "categories": [
-        "medium_oils"
-      ],
+      "synonyms": ["persea gratissima oil", "avocado fruit oil"],
+      "categories": ["medium_oils"],
       "references": [
         {
           "id": "25",
@@ -119,9 +96,7 @@
     {
       "name": "Corn Oil",
       "id": "corn_oil",
-      "categories": [
-        "medium_oils"
-      ],
+      "categories": ["medium_oils"],
       "references": [
         {
           "id": "25",
@@ -132,9 +107,7 @@
     {
       "name": "Mustard Seed Oil",
       "id": "mustard_seed_oil",
-      "categories": [
-        "medium_oils"
-      ],
+      "categories": ["medium_oils"],
       "references": [
         {
           "id": "25",
@@ -145,24 +118,14 @@
     {
       "name": "Baobab Oil",
       "id": "baobab_oil",
-      "synonyms": [
-        "adansonia digitata seed oil",
-        "baobab seed oil"
-      ],
-      "categories": [
-        "other_oils"
-      ]
+      "synonyms": ["adansonia digitata seed oil", "baobab seed oil"],
+      "categories": ["other_oils"]
     },
     {
       "name": "Camellia Oil",
       "id": "camellia_oil",
-      "synonyms": [
-        "camellia oleifera seed oil",
-        "tea seed oil"
-      ],
-      "categories": [
-        "light_oils"
-      ],
+      "synonyms": ["camellia oleifera seed oil", "tea seed oil"],
+      "categories": ["light_oils"],
       "references": [
         {
           "id": "47",
@@ -173,13 +136,8 @@
     {
       "name": "Rice bran oil",
       "id": "rice_bran_oil",
-      "categories": [
-        "light_oils"
-      ],
-      "synonyms": [
-        "oryza sativa bran oil",
-        "rice bran extract"
-      ],
+      "categories": ["light_oils"],
+      "synonyms": ["oryza sativa bran oil", "rice bran extract"],
       "references": [
         {
           "id": "25",
@@ -190,13 +148,8 @@
     {
       "name": "Castor Oil",
       "id": "castor_oil",
-      "synonyms": [
-        "ricinus communis seed oil",
-        "castor seed oil"
-      ],
-      "categories": [
-        "medium_oils"
-      ],
+      "synonyms": ["ricinus communis seed oil", "castor seed oil"],
+      "categories": ["medium_oils"],
       "references": [
         {
           "id": "25",
@@ -207,13 +160,8 @@
     {
       "name": "Hemp seed oil",
       "id": "hemp_seed_oil",
-      "categories": [
-        "light_oils"
-      ],
-      "synonyms": [
-        "cannabis sativa seed oil",
-        "hemp oil"
-      ],
+      "categories": ["light_oils"],
+      "synonyms": ["cannabis sativa seed oil", "hemp oil"],
       "references": [
         {
           "id": "25",
@@ -224,13 +172,8 @@
     {
       "name": "Coconut Oil",
       "id": "coconut_oil",
-      "synonyms": [
-        "cocos nucifera oil",
-        "coconut kernel oil"
-      ],
-      "categories": [
-        "heavy_oils"
-      ],
+      "synonyms": ["cocos nucifera oil", "coconut kernel oil", "coconutoil"],
+      "categories": ["heavy_oils"],
       "references": [
         {
           "id": "25",
@@ -241,9 +184,7 @@
     {
       "name": "Ucuuba butter",
       "id": "ucuuba_butter",
-      "categories": [
-        "heavy_oils"
-      ],
+      "categories": ["heavy_oils"],
       "references": [
         {
           "id": "25",
@@ -254,13 +195,8 @@
     {
       "name": "Grapeseed Oil",
       "id": "grapeseed_oil",
-      "synonyms": [
-        "vitis vinifera seed oil",
-        "grape seed oil"
-      ],
-      "categories": [
-        "light_oils"
-      ],
+      "synonyms": ["vitis vinifera seed oil", "grape seed oil"],
+      "categories": ["light_oils"],
       "references": [
         {
           "id": "25",
@@ -271,13 +207,8 @@
     {
       "name": "Jojoba Oil",
       "id": "jojoba_oil",
-      "synonyms": [
-        "simmondsia chinensis seed oil",
-        "jojoba seed oil"
-      ],
-      "categories": [
-        "light_oils"
-      ],
+      "synonyms": ["simmondsia chinensis seed oil", "jojoba seed oil"],
+      "categories": ["light_oils"],
       "references": [
         {
           "id": "25",
@@ -288,9 +219,7 @@
     {
       "name": "Lanolin oil",
       "id": "lanolin_oil",
-      "categories": [
-        "light_oils"
-      ],
+      "categories": ["light_oils"],
       "description": "Lanolin oil is derived from sheep's wool, so it is not vegan. It is a light oil that is likely to coat the hair rather than soak in, based on its chemistry. However, it is likely comedogenic (meaning it can clog pores), so it might not be good for people with oily scalps.",
       "references": [
         {
@@ -310,21 +239,13 @@
         "marula seed oil",
         "sclerocarya birrea"
       ],
-      "categories": [
-        "light_oils"
-      ]
+      "categories": ["light_oils"]
     },
     {
       "name": "Mineral Oil",
       "id": "mineral_oil",
-      "synonyms": [
-        "paraffinum liquidum",
-        "liquid paraffin",
-        "petroleum oil"
-      ],
-      "categories": [
-        "light_oils"
-      ],
+      "synonyms": ["paraffinum liquidum", "liquid paraffin", "petroleum oil"],
+      "categories": ["light_oils"],
       "references": [
         {
           "id": "25",
@@ -336,13 +257,8 @@
     {
       "name": "Olive Oil",
       "id": "olive_oil",
-      "synonyms": [
-        "olea europaea fruit oil",
-        "olive fruit oil"
-      ],
-      "categories": [
-        "medium_oils"
-      ],
+      "synonyms": ["olea europaea fruit oil", "olive fruit oil"],
+      "categories": ["medium_oils"],
       "references": [
         {
           "id": "25",
@@ -353,13 +269,8 @@
     {
       "name": "Flaxseed Oil",
       "id": "flaxseed_oil",
-      "synonyms": [
-        "linum usitatissimum seed oil",
-        "flax seed oil"
-      ],
-      "categories": [
-        "light_oils"
-      ],
+      "synonyms": ["linum usitatissimum seed oil", "flax seed oil"],
+      "categories": ["light_oils"],
       "references": [
         {
           "id": "25",
@@ -370,13 +281,8 @@
     {
       "name": "Sunflower Oil",
       "id": "sunflower_oil",
-      "synonyms": [
-        "helianthus annuus seed oil",
-        "sunflower seed oil"
-      ],
-      "categories": [
-        "heavy_oils"
-      ],
+      "synonyms": ["helianthus annuus seed oil", "sunflower seed oil"],
+      "categories": ["heavy_oils"],
       "references": [
         {
           "id": "25",
@@ -387,12 +293,8 @@
     {
       "name": "Palm kernel oil",
       "id": "palm_kernel_oil",
-      "categories": [
-        "heavy_oils"
-      ],
-      "synonyms": [
-        "red palm oil"
-      ],
+      "categories": ["heavy_oils"],
+      "synonyms": ["red palm oil"],
       "references": [
         {
           "id": "25",
@@ -404,9 +306,7 @@
     {
       "name": "Babbasu Oil",
       "id": "babbasu_oil",
-      "categories": [
-        "heavy_oils"
-      ],
+      "categories": ["heavy_oils"],
       "references": [
         {
           "id": "25",
@@ -417,13 +317,8 @@
     {
       "name": "Sweet Almond Oil",
       "id": "sweet_almond_oil",
-      "synonyms": [
-        "prunus amygdalus dulcis oil",
-        "almond oil"
-      ],
-      "categories": [
-        "medium_oils"
-      ],
+      "synonyms": ["prunus amygdalus dulcis oil", "almond oil"],
+      "categories": ["medium_oils"],
       "references": [
         {
           "id": "25",
@@ -434,13 +329,8 @@
     {
       "name": "Rosehip Oil",
       "id": "rosehip_oil",
-      "synonyms": [
-        "rosa canina seed oil",
-        "rosehip seed oil"
-      ],
-      "categories": [
-        "light_oils"
-      ],
+      "synonyms": ["rosa canina seed oil", "rosehip seed oil"],
+      "categories": ["light_oils"],
       "references": [
         {
           "id": "25",
@@ -451,13 +341,8 @@
     {
       "name": "Perilla Oil",
       "id": "perilla_oil",
-      "synonyms": [
-        "perilla frutescens seed oil",
-        "perilla seed oil"
-      ],
-      "categories": [
-        "light_oils"
-      ],
+      "synonyms": ["perilla frutescens seed oil", "perilla seed oil"],
+      "categories": ["light_oils"],
       "references": [
         {
           "id": "25",
@@ -469,14 +354,8 @@
       "name": "Butyrospermum Parkii Shea Butter",
       "id": "butyrospermum_parkii_shea_butter",
       "description": "A natural butter that deeply moisturizes and nourishes hair",
-      "categories": [
-        "medium_oils"
-      ],
-      "synonyms": [
-        "shea butter",
-        "butyrospermum parkii",
-        "shea oil"
-      ],
+      "categories": ["medium_oils"],
+      "synonyms": ["shea butter", "butyrospermum parkii", "shea oil"],
       "references": [
         {
           "id": "25",
@@ -487,13 +366,8 @@
     {
       "name": "Kokum Butter",
       "id": "kokum_butter",
-      "categories": [
-        "medium_oils"
-      ],
-      "synonyms": [
-        "garcinia indica seed butter",
-        "kokum seed butter"
-      ],
+      "categories": ["medium_oils"],
+      "synonyms": ["garcinia indica seed butter", "kokum seed butter"],
       "references": [
         {
           "id": "25",
@@ -504,80 +378,133 @@
     {
       "name": "Vanilla Planifolia Fruit Oil",
       "id": "vanilla_planifolia_fruit_oil",
-      "categories": [
-        "essential_oils"
-      ]
+      "categories": ["essential_oils"]
     },
     {
       "name": "Peppermint Oil",
       "id": "peppermint_oil",
-      "categories": [
-        "essential_oils"
-      ]
+      "categories": ["essential_oils"]
     },
     {
       "name": "Lavender Oil",
       "id": "lavender_oil",
-      "categories": [
-        "essential_oils"
-      ]
+      "categories": ["essential_oils"]
     },
     {
       "name": "Rosemary Oil",
       "id": "rosemary_oil",
-      "categories": [
-        "essential_oils"
-      ]
+      "categories": ["essential_oils"]
     },
     {
       "name": "Tea Tree Oil",
       "id": "tea_tree_oil",
-      "categories": [
-        "essential_oils"
-      ]
+      "categories": ["essential_oils"]
     },
     {
       "name": "Squalane",
       "id": "squalane",
-      "categories": [
-        "light_oils"
-      ]
+      "categories": ["light_oils"]
     },
     {
       "name": "Citrus Aurantium Dulcis Peel Oil",
       "id": "citrus_aurantium_dulcis_peel_oil",
-      "categories": [
-        "essential_oils"
-      ]
+      "categories": ["essential_oils"]
     },
     {
       "name": "Pogostemon Cablin Oil",
       "id": "pogostemon_cablin_oil",
-      "categories": [
-        "essential_oils"
-      ],
-      "synonyms": [
-        "pogostemon cablin"
-      ],
+      "categories": ["essential_oils"],
+      "synonyms": ["pogostemon cablin"],
       "description": "Pogostemon cablin oil is primarily used for its fragrance"
     },
 
     {
       "name": "Sulfated Castor Oil",
       "id": "sulfated_castor_oil",
-      "categories": [
-        "light_oils"
-      ],
-      "synonyms": [
-        "turkey red oil"
-      ],
+      "categories": ["light_oils"],
+      "synonyms": ["turkey red oil"],
       "description": "A unique castor oil that has undergone a process known as 'sulfation', which makes it more water soluble than regular castor oil.",
       "references": [
         {
           "id": "71"
         }
       ]
+    },
+    {
+      "name": "Astrocaryum Murumuru Seed Butter",
+      "id": "astrocaryum_murumuru_seed_butter",
+      "categories": ["heavy_oils"]
+    },
+    {
+      "name": "Unknown butter",
+      "id": "unknown_butter",
+      "categories": ["heavy_oils"]
+    },
+    {
+      "name": "Mangifera indica mango seed butter",
+      "id": "mangifera_indica_mango_seed_butter",
+      "categories": ["heavy_oils"],
+      "synonyms": ["mango seed butter", "mango seed oil"]
+    },
+    {
+      "name": "Theobroma Cacao Seed Butter",
+      "id": "theobroma_cacao_seed_butter",
+      "categories": ["heavy_oils"],
+      "synonyms": ["cacao butter"]
+    },
+    {
+      "name": "Soybean Oil",
+      "id": "soybean_oil",
+      "categories": ["other_oils"],
+      "synonyms": ["soyabean oil", "glycine soja"]
+    },
+    {
+      "name": "Macadamia Ternifolia Seed Oil",
+      "id": "macadamia_ternifolia_seed_oil",
+      "categories": ["other_oils"],
+      "synonyms": ["macadamia seed oil"]
+    },
+    {
+      "name": "Hydrogenated Vegetable Oil",
+      "id": "hydrogenated_vegetable_oil",
+      "categories": ["other_oils"],
+      "synonyms": ["hydrogenated oil"]
+    },
+    {
+      "name": "Daucus Carota Sativa Carrot Seed Oil",
+      "id": "daucus_carota_sativa_carrot_seed_oil",
+      "categories": ["other_oils"],
+      "synonyms": ["carrot seed oil"]
+    },
+    {
+      "name": "Canola Oil",
+      "id": "canola_oil",
+      "categories": ["other_oils"],
+      "synonyms": ["canola seed oil"]
+    },
+    {
+      "name": "Mongongo Seed Oil",
+      "id": "mongongo_seed_oil",
+      "categories": ["other_oils"],
+      "synonyms": ["mongongo oil"]
+    },
+    {
+      "name": "Limnanthes Alba Meadowfoam Seed Oil",
+      "id": "limnanthes_alba_meadowfoam_seed_oil",
+      "categories": ["other_oils"],
+      "synonyms": ["meadowfoam seed oil"]
+    },
+    {
+      "name": "Orange Peel Oil",
+      "id": "orange_peel_oil",
+      "categories": ["essential_oils"],
+      "synonyms": ["citrus aurantium dulcis"]
+    },
+    {
+      "name": "Crambe Abyssinica Seed Oil",
+      "id": "crambe_abyssinica_seed_oil",
+      "categories": ["other_oils"]
     }
+
   ]
 }
-

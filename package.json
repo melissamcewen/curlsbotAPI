@@ -1,6 +1,6 @@
 {
   "name": "haircare-ingredients-analyzer",
-  "version": "1.4.1",
+  "version": "1.5.0",
   "description": "Library for analyzing haircare product ingredients",
   "main": "./dist/index.umd.js",
   "module": "./dist/index.es.js",
@@ -31,7 +31,8 @@
     "export-ingredients": "tsx scripts/export-ingredients.ts",
     "import-ingredients": "tsx scripts/import-ingredients.ts",
     "convert-references": "tsx scripts/convert-references.ts",
-    "normalize": "tsx cli/normalize.ts"
+    "normalize": "tsx cli/normalize.ts",
+    "update-products": "tsx scripts/createTrainingData.ts"
   },
   "keywords": [
     "haircare",

@@ -1296,6 +1296,10 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "light_oils"
       ],
+      "synonyms": [
+        "carthamus tinctorius seed oil",
+        "safflower seed oil"
+      ],
       "references": [
         {
           "url": "https://science-yhairblog.blogspot.com/2013/06/oils-which-ones-soak-in-vs-coat-hair.html",
@@ -1318,7 +1322,9 @@ export const defaultDatabase: IngredientDatabase = {
       "id": "argan_oil",
       "synonyms": [
         "argania spinosa kernel oil",
-        "argan tree oil"
+        "argan tree oil",
+        "argan kernal oil",
+        "argania spinosa"
       ],
       "categories": [
         "medium_oils"
@@ -1552,7 +1558,8 @@ export const defaultDatabase: IngredientDatabase = {
       "id": "coconut_oil",
       "synonyms": [
         "cocos nucifera oil",
-        "coconut kernel oil"
+        "coconut kernel oil",
+        "coconutoil"
       ],
       "categories": [
         "heavy_oils"
@@ -1985,6 +1992,155 @@ export const defaultDatabase: IngredientDatabase = {
           "title": "Turkey Red Oil (Sulfated Castor Oil), 70%",
           "type": "industry"
         }
+      ],
+      "status": "ok",
+      "group": "oils"
+    },
+    "astrocaryum_murumuru_seed_butter": {
+      "name": "Astrocaryum Murumuru Seed Butter",
+      "id": "astrocaryum_murumuru_seed_butter",
+      "categories": [
+        "heavy_oils"
+      ],
+      "status": "ok",
+      "group": "oils"
+    },
+    "unknown_butter": {
+      "name": "Unknown butter",
+      "id": "unknown_butter",
+      "categories": [
+        "heavy_oils"
+      ],
+      "status": "ok",
+      "group": "oils"
+    },
+    "mangifera_indica_mango_seed_butter": {
+      "name": "Mangifera indica mango seed butter",
+      "id": "mangifera_indica_mango_seed_butter",
+      "categories": [
+        "heavy_oils"
+      ],
+      "synonyms": [
+        "mango seed butter",
+        "mango seed oil"
+      ],
+      "status": "ok",
+      "group": "oils"
+    },
+    "theobroma_cacao_seed_butter": {
+      "name": "Theobroma Cacao Seed Butter",
+      "id": "theobroma_cacao_seed_butter",
+      "categories": [
+        "heavy_oils"
+      ],
+      "synonyms": [
+        "cacao butter"
+      ],
+      "status": "ok",
+      "group": "oils"
+    },
+    "soybean_oil": {
+      "name": "Soybean Oil",
+      "id": "soybean_oil",
+      "categories": [
+        "other_oils"
+      ],
+      "synonyms": [
+        "soyabean oil",
+        "glycine soja"
+      ],
+      "status": "ok",
+      "group": "oils"
+    },
+    "macadamia_ternifolia_seed_oil": {
+      "name": "Macadamia Ternifolia Seed Oil",
+      "id": "macadamia_ternifolia_seed_oil",
+      "categories": [
+        "other_oils"
+      ],
+      "synonyms": [
+        "macadamia seed oil"
+      ],
+      "status": "ok",
+      "group": "oils"
+    },
+    "hydrogenated_vegetable_oil": {
+      "name": "Hydrogenated Vegetable Oil",
+      "id": "hydrogenated_vegetable_oil",
+      "categories": [
+        "other_oils"
+      ],
+      "synonyms": [
+        "hydrogenated oil"
+      ],
+      "status": "ok",
+      "group": "oils"
+    },
+    "daucus_carota_sativa_carrot_seed_oil": {
+      "name": "Daucus Carota Sativa Carrot Seed Oil",
+      "id": "daucus_carota_sativa_carrot_seed_oil",
+      "categories": [
+        "other_oils"
+      ],
+      "synonyms": [
+        "carrot seed oil"
+      ],
+      "status": "ok",
+      "group": "oils"
+    },
+    "canola_oil": {
+      "name": "Canola Oil",
+      "id": "canola_oil",
+      "categories": [
+        "other_oils"
+      ],
+      "synonyms": [
+        "canola seed oil"
+      ],
+      "status": "ok",
+      "group": "oils"
+    },
+    "mongongo_seed_oil": {
+      "name": "Mongongo Seed Oil",
+      "id": "mongongo_seed_oil",
+      "categories": [
+        "other_oils"
+      ],
+      "synonyms": [
+        "mongongo oil"
+      ],
+      "status": "ok",
+      "group": "oils"
+    },
+    "limnanthes_alba_meadowfoam_seed_oil": {
+      "name": "Limnanthes Alba Meadowfoam Seed Oil",
+      "id": "limnanthes_alba_meadowfoam_seed_oil",
+      "categories": [
+        "other_oils"
+      ],
+      "synonyms": [
+        "meadowfoam seed oil"
+      ],
+      "status": "ok",
+      "group": "oils"
+    },
+    "orange_peel_oil": {
+      "name": "Orange Peel Oil",
+      "id": "orange_peel_oil",
+      "categories": [
+        "essential_oils"
+      ],
+      "synonyms": [
+        "citrus aurantium dulcis"
+      ],
+      "status": "ok",
+      "group": "oils"
+    },
+    "crambe_abyssinica_seed_oil": {
+      "name": "Crambe Abyssinica Seed Oil",
+      "id": "crambe_abyssinica_seed_oil",
+      "categories": [
+        "other_oils"
       ],
       "status": "ok",
       "group": "oils"

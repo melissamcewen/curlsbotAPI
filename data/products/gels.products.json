@@ -4,9 +4,7 @@
       "name": "Jello Shot Curl Defining Gel",
       "brand": "Ecoslay",
       "ingredients_raw": "water, okra extract, aloe vera juice, pectin, chamomile flower extract, nettle leaf extract, melissa leaf extract, peppermint leaf extract, horsetail leaf extract, yucca vera leaf extract, propanediol, aminopropanol, strawberry fruit essence, benzyl alcohol dehydroacetic acid, carbomer 980, sodium gluconate",
-      "product_categories": [
-        "gels"
-      ],
+      "product_categories": ["gels"],
       "tags": [
         "normal_porosity",
         "high_porosity",
@@ -28,9 +26,7 @@
       "name": "Orange Marmalade Flaxseed and Aloe Curl Definer",
       "brand": "Ecoslay",
       "ingredients_raw": "flaxseed extract, agave nectar extract, pectin, aloe vera juice, marshmallow root extract, vitamin e, xanthan gum, optiphen plus, sweet orange essential oil",
-      "product_categories": [
-        "gels", "custards"
-      ],
+      "product_categories": ["gels", "custards"],
       "tags": [
         "normal_porosity",
         "high_porosity",
@@ -39,22 +35,21 @@
         "featured",
         "black_owned",
         "woman_owned",
-        "small_business"],
-        "description": "CurlsBot note: This is the main styling product I use on my own hair- Melissa",
-        "buy_links": [
-          {
-            "url": "https://ecoslay.sjv.io/qzg2M5",
-            "retailer": "Ecoslay"
-          }
-        ]
+        "small_business"
+      ],
+      "description": "CurlsBot note: This is the main styling product I use on my own hair- Melissa",
+      "buy_links": [
+        {
+          "url": "https://ecoslay.sjv.io/qzg2M5",
+          "retailer": "Ecoslay"
+        }
+      ]
     },
     {
       "name": "Advanced Climate Control Heat & Humidity Gel",
       "brand": "Ouidad",
       "ingredients_raw": "water aqua eau, butylene glycol, polyquaternium-28, sericin, chamomilla recutita matricaria flower extract, actinidia chinensis kiwi fruit extract, cassia auriculata leaf extract, wheat amino acids, hydrolyzed wheat protein pvp crosspolymer, tocopheryl acetate, retinyl palmitate, panthenol, polyquaternium-7, guar hydroxypropyltrimonium chloride, behentrimonium chloride, cetrimonium chloride, peg-60 almond glycerides, glycerin, ppg-26-buteth-26, peg-40 hydrogenated castor oil, vp dmapa acrylates copolymer, hydroxyethylcellulose, potassium sorbate, disodium edta, hexylene glycol, caprylyl glycol, ethylhexylglycerin, phenoxyethanol, parfum fragrance, alpha-lsomethyl lonone, benzyl benzoate, benzyl salicylate, citronellol, hexyl cinnamal, hydroxycitronellal, limonene, linalool",
-      "product_categories": [
-        "gels"
-      ],
+      "product_categories": ["gels"],
       "tags": [
         "normal_porosity",
         "high_porosity",
@@ -67,20 +62,18 @@
         {
           "url": "https://click.linksynergy.com/link?id=9QcV0uNyab0&offerid=929395.3842993508&type=2&murl=https%3a%2f%2fwww.ouidad.com%2fproducts%2fadvanced-climate-control-heat-and-humidity-gel%3fvariant%3d42617150865666",
           "retailer": "Ouidad"
-        }
+        },
+          {
+            "url": "https://curlsmonthly.com/?ref=curlsbot",
+            "retailer": "Curls Monthly"
+          }
       ]
     },
     {
       "name": "Coil Infusion® Good Shape® Defining Gel",
       "brand": "Ouidad",
-      "product_categories": [
-        "gels"
-      ],
-      "tags": [
-        "normal_porosity",
-        "high_porosity",
-        "featured"
-      ],
+      "product_categories": ["gels"],
+      "tags": ["normal_porosity", "high_porosity", "featured"],
       "cost": 3.5,
       "buy_links": [
         {
@@ -103,15 +96,8 @@
           "retailer": "Beauty Heroes"
         }
       ],
-      "product_categories": [
-        "gels"
-      ],
-      "tags": [
-        "normal_porosity",
-        "hold",
-        "high_porosity",
-        "featured"
-      ],
+      "product_categories": ["gels"],
+      "tags": ["normal_porosity", "hold", "high_porosity", "featured"],
       "cost": 2.8,
       "ingredients_raw": "water, aqua-eau, aloe barbadensis gel, hydroxyethylcellulose, maltodextrin copolymer, potassium hydroxide, gluconolactone, sodium benzoate, calcium gluconate, alkyl acrylate crosspolymer, citrus aurantium dulcis peel oil, caprylic capric triglyceride, potassium sorbate, sodium phytate, glycerin, chamomilla recutita matricaria flower extract, eucalyptus globulus leaf extract, ginkgo biloba leaf extract, aspalathus linearis leaf extract, honey extract, limonene",
       "asin": "B002EOUQR2"
@@ -126,9 +112,7 @@
           "retailer": "Amazon"
         }
       ],
-      "product_categories": [
-        "gels"
-      ],
+      "product_categories": ["gels"],
       "tags": [
         "high_porosity",
         "normal_porosity",
@@ -153,15 +137,8 @@
           "retailer": "Beauty Heroes"
         }
       ],
-      "product_categories": [
-        "gels"
-      ],
-      "tags": [
-        "normal_porosity",
-        "low_porosity",
-        "volume",
-        "featured"
-      ],
+      "product_categories": ["gels"],
+      "tags": ["normal_porosity", "low_porosity", "volume", "featured"],
       "asin": "B002EOSVUQ",
       "cost": 2.8
     },
@@ -169,15 +146,8 @@
       "name": "Irish Sea Moss Styling Gel",
       "brand": "Love Ur Curls",
       "ingredients_raw": "aqua water eau, chondrus crispus irish sea moss extract, passiflora edulis passion fruit seed oil, euterpe oleracea acai fruit oil, oryza sativa rice bran oil, aloe barbadensis aloe vera leaf extract, polyquaternium-37, sorbitol, polyquaternium-69, behentrimonium chloride, guar hydroxypropyltrimonium chloride, hydroxyethylcellulose, citric acid, glycerin, phenoxyethanol, ethylhexylglycerin, fragrance parfum",
-      "product_categories": [
-        "gels"
-      ],
-      "tags": [
-        "low_porosity",
-        "normal_porosity",
-        "hold",
-        "featured"
-      ],
+      "product_categories": ["gels"],
+      "tags": ["low_porosity", "normal_porosity", "hold", "featured"],
       "buy_links": [
         {
           "url": "https://amzn.to/4fyvVl5",
@@ -194,15 +164,8 @@
       "name": "POW Strong Hold Gel",
       "brand": "Lohy",
       "ingredients_raw": "aqua, aloe barbadensis aloe vera leaf juice, polyquaternium-10, glycerin, propanediol, vp va copolymer, phenoxyethanol, hydrolysed soy protein, camellia sinensis white tea leaf extract, chamomilla recutita matricaria flower leaf stem extract, sodium benzoate, eucalyptus globulus leaf oil, mentha arvensis peppermint leaf oil",
-      "product_categories": [
-        "gels"
-      ],
-      "tags": [
-        "normal_porosity",
-        "low_porosity",
-        "hold",
-        "featured"
-      ],
+      "product_categories": ["gels"],
+      "tags": ["normal_porosity", "low_porosity", "hold", "featured"],
       "buy_links": [
         {
           "url": "https://lohy.com.au/products/pow-strong-hold-gel-curly-hair?aff=49",
@@ -215,15 +178,8 @@
       "name": "Oomph Hydrating Gel",
       "brand": "Lohy",
       "ingredients_raw": "aqua, aloe barbadensis aloe vera leaf juice, pullulan, glycerin, propanediol, camellia sinensis white tea leaf extract, chamomilla recutita matricaria flower leaf stem extract, cyamopsis tetragonoloba guar gum, phenoxyethanol, hydrolysed soy protein, potassium sorbate, citrus limon lemon peel oil, pelargonium graveolens geranium flower oil",
-      "product_categories": [
-        "gels"
-      ],
-      "tags": [
-        "normal_porosity",
-        "high_porosity",
-        "volume",
-        "featured"
-      ],
+      "product_categories": ["gels"],
+      "tags": ["normal_porosity", "high_porosity", "volume", "featured"],
       "buy_links": [
         {
           "url": "https://lohy.com.au/products/oomph-volumising-lotion-curly-hair-styling?aff=49",
@@ -235,9 +191,7 @@
     {
       "name": "Hydro Style Flexi-Jelly",
       "brand": "Curlsmith",
-      "product_categories": [
-        "gels"
-      ],
+      "product_categories": ["gels"],
       "tags": [
         "normal_porosity",
         "low_porosity",
@@ -290,45 +244,32 @@
         "high_porosity"
       ],
       "ingredients_raw": "aqua purified water, vp va copolymer, hydroxyethylcellulose plant derived, tocopherol vitamin e, citric acid, phenoxyethanol, citrus grandis grapefruit seed extract, fragrance includes essential oils, aloe barbadensis aloe vera leaf juice, helianthus annuus sunflower seed oil, glycine soja soybean seed extract, betula alba extract, malva sylvestris mallow extract, achillea millefolium extract, chamomilla recutita matricaria flower extract, equisetum arvense extract, lavandula angustifolia lavender extract, rosmarinus officinalis rosemary leaf extract, salvia sclarea clary extract, thymus vulgaris thyme extract, tussilago farfara coltsfoot flower extract, urtica dioica nettle extract",
-      "product_categories": [
-        "gels"
-      ]
+      "product_categories": ["gels"]
     },
     {
       "name": "Curl Keeper® Original Liquid Styler",
       "brand": "Curl Keeper",
-      "product_categories": [
-        "gels",
-        "fragrance-free"
-      ],
-      "tags": [
-        "normal_porosity",
-        "low_porosity",
-        "featured"
-      ],
+      "product_categories": ["gels", "fragrance-free"],
+      "tags": ["normal_porosity", "low_porosity", "featured"],
       "cost": 2.9,
       "buy_links": [
         {
           "url": "https://curlkeeper.com/r?id=p0m4m5",
           "retailer": "Curl Keeper"
+        },
+        {
+          "url": "https://curlsmonthly.com/?ref=curlsbot",
+          "retailer": "Curls Monthly"
         }
       ],
       "ingredients_raw": "water aqua eau, vp va copolymer, propylene glycol, hydroxyethylcellulose, glycerin, oleth-20, polyquaternium-10, citric acid, dmdm hydantoin"
-
     },
     {
       "name": "Spiralicious",
       "brand": "Jessicurl",
       "ingredients_raw": "aqua water, polyquaternium-69, polyquaternium-11, hydroxyethylcellulose, simmondsia chinensis jojoba seed oil, panthenol, parfum fragrance, c12-15 alkyl benzoate, diazolidinyl urea, iodopropynyl butylcarbamate, alcohol, coumarin, limonene",
-      "product_categories": [
-        "gels"
-      ],
-      "tags": [
-        "low_porosity",
-        "normal_porosity",
-        "featured",
-        "liquid_gels"
-      ],
+      "product_categories": ["gels"],
+      "tags": ["low_porosity", "normal_porosity", "featured", "liquid_gels"],
       "buy_links": [
         {
           "url": "https://jessicurl.com/products/spiralicious-styling-gel",
@@ -341,7 +282,13 @@
       "brand": "CurlMix",
       "ingredients_raw": "water, linum usitatissimum flaxseed gel, ricinus communis castor oil, glycerin, xanthan gum, vitamin e, phenoxyethanol, caprylyl glycol",
       "product_categories": ["gels"],
-      "tags": ["hold", "black_owned", "woman_owned", "small_business", "fragrance-free"],
+      "tags": [
+        "hold",
+        "black_owned",
+        "woman_owned",
+        "small_business",
+        "fragrance-free"
+      ],
       "buy_links": [
         {
           "url": "https://curlmix.com/products/heavy-hold-flaxseed-gel-curly-hair-fragrance-free",
@@ -378,8 +325,8 @@
           "country": "EU"
         },
         {
-          "url": "https://collabs.shop/cebjoi",
-          "retailer": "Tootilab"
+          "url": "https://curlsmonthly.com/?ref=curlsbot",
+          "retailer": "Try with Curls Monthly"
         }
       ]
     }

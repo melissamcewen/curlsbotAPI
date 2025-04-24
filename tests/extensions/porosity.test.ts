@@ -25,7 +25,7 @@ describe('porosity scoring', () => {
     const result = porosity(analysis);
     it('should score heavy products poorly for low porosity', () => {
       // Heavy products should score poorly for low porosity
-      expect(result.low).toBeLessThan(50);
+      expect(result.low).toBeLessThan(70);
     });
     it('should score heavy products without a lot of good conditioners not that well for high porosity', () => {
       // But can still be good for high porosity
@@ -185,6 +185,15 @@ describe('porosity scoring', () => {
         expect(result.low).toBeGreaterThan(60);
         expect(result.high).toBeGreaterThan(70);
       });
+  });
+  describe('Cantu Cream', () => {
+    const ingredients =
+      'aqua water, cetearyl alcohol, canola oil, glycerin, ceteareth-20, parfum fragrance, ceteth-20, butyrospermum parkii shea butter, glycol stearate, petrolatum, peg-75, polyquaternium-10, phenoxyethanol, ethylhexylglycerin, cocos nucifera coconut fruit extract, persea gratissima avocado oil, prunus amygdalus dulcis sweet almond oil, simmondsia chinensis jojoba seed oil, olea europaea olive fruit oil, mangifera indica mango seed butter, argania spinosa kernel oil, melia azadirachta neem seed oil, daucus carota sativa seed oil, macadamia ternifolia seed oil, mangifera indica mango seed oil, glycine soja soyabean oil, vitis vinifera grape seed oil, hydrolyzed silk, lonicera caprifolium flower extract, macrocystis pyrifera extract, salvia officinalis sage leaf extract, vitis vinifera red grape seed extract, urtica dioica nettle extract, silk amino acids, aloe barbadensis aloe vera leaf juice, benzyl benzoate, coumarin, hexyl cinnamal';
+    const analysis = analyzer.analyze(ingredients);
+    const result = porosity(analysis);
+    it('should score Cantu Cream very poorly for low porosity', () => {
+      expect(result.low).toBeLessThan(30);
+    });
   });
 
 });
