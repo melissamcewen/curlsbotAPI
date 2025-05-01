@@ -242,6 +242,7 @@
       "id": "glycerin",
       "description": "A powerful humectant that attracts moisture to the hair",
       "categories": ["simple_humectants"],
+      "synonyms": ["glycerol"],
       "references": [
         {
           "id": "63",

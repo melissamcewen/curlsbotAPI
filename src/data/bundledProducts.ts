@@ -550,7 +550,7 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -61
         },
         "porosity": {
-          "high": 87,
+          "high": 88,
           "low": 100
         },
         "sebderm": {
@@ -750,7 +750,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 89,
-          "low": 80
+          "low": 100
         },
         "sebderm": {
           "hasTriggers": true,
@@ -816,7 +816,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 100,
-          "low": 70
+          "low": 100
         },
         "sebderm": {
           "hasTriggers": false,
@@ -880,7 +880,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 100,
-          "low": 80
+          "low": 100
         },
         "sebderm": {
           "hasTriggers": true,
@@ -1317,7 +1317,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 100,
-          "low": 80
+          "low": 67
         },
         "sebderm": {
           "hasTriggers": true,
@@ -1395,7 +1395,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 100,
-          "low": 57
+          "low": 36
         },
         "sebderm": {
           "hasTriggers": true,
@@ -1476,7 +1476,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 100,
-          "low": 73
+          "low": 100
         },
         "sebderm": {
           "hasTriggers": true,
@@ -1934,8 +1934,8 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -69
         },
         "porosity": {
-          "high": 87,
-          "low": 73
+          "high": 88,
+          "low": 67
         },
         "sebderm": {
           "hasTriggers": true,
@@ -2011,7 +2011,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 100,
-          "low": 73
+          "low": 100
         },
         "sebderm": {
           "hasTriggers": true,
@@ -2263,7 +2263,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 100,
-          "low": 80
+          "low": 67
         },
         "sebderm": {
           "hasTriggers": true,
@@ -2351,7 +2351,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 100,
-          "low": 61
+          "low": 75
         },
         "sebderm": {
           "hasTriggers": true,
@@ -2513,7 +2513,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 100,
-          "low": 70
+          "low": 100
         },
         "sebderm": {
           "hasTriggers": true,
@@ -2918,7 +2918,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 100,
-          "low": 28
+          "low": 48
         },
         "sebderm": {
           "hasTriggers": true,
@@ -3074,7 +3074,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 100,
-          "low": 80
+          "low": 75
         },
         "sebderm": {
           "hasTriggers": true,
@@ -3214,7 +3214,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 85,
-          "low": 80
+          "low": 75
         },
         "sebderm": {
           "hasTriggers": true,
@@ -3363,7 +3363,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 65,
-          "low": 45
+          "low": 73
         },
         "sebderm": {
           "hasTriggers": true,
@@ -3655,7 +3655,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 100,
-          "low": 85
+          "low": 75
         },
         "sebderm": {
           "hasTriggers": true,
@@ -3733,7 +3733,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 100,
-          "low": 57
+          "low": 44
         },
         "sebderm": {
           "hasTriggers": true,
@@ -3814,7 +3814,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 100,
-          "low": 51
+          "low": 44
         },
         "sebderm": {
           "hasTriggers": true,
@@ -4100,7 +4100,7 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -75
         },
         "porosity": {
-          "high": 95,
+          "high": 96,
           "low": 100
         },
         "sebderm": {
@@ -4279,7 +4279,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 83,
-          "low": 51
+          "low": 73
         },
         "sebderm": {
           "hasTriggers": true,
@@ -4541,7 +4541,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 100,
-          "low": 62
+          "low": 50
         },
         "sebderm": {
           "hasTriggers": true,
@@ -4740,7 +4740,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 100,
-          "low": 45
+          "low": 73
         },
         "sebderm": {
           "hasTriggers": true,
@@ -4912,7 +4912,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 59,
-          "low": 80
+          "low": 75
         },
         "sebderm": {
           "hasTriggers": true,
@@ -5152,7 +5152,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 81,
-          "low": 80
+          "low": 75
         },
         "sebderm": {
           "hasTriggers": true,
@@ -5457,7 +5457,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 100,
-          "low": 80
+          "low": 75
         },
         "sebderm": {
           "hasTriggers": true,
@@ -5533,7 +5533,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 83,
-          "low": 73
+          "low": 100
         },
         "sebderm": {
           "hasTriggers": true,
@@ -5593,7 +5593,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 86,
-          "low": 82
+          "low": 75
         },
         "sebderm": {
           "hasTriggers": true,
@@ -5678,7 +5678,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 100,
-          "low": 58
+          "low": 73
         },
         "sebderm": {
           "hasTriggers": true,
@@ -5816,7 +5816,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 28,
-          "low": 23
+          "low": 1
         },
         "sebderm": {
           "hasTriggers": true,
@@ -5889,7 +5889,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 26,
-          "low": 14
+          "low": 49
         },
         "sebderm": {
           "hasTriggers": true,
@@ -6267,7 +6267,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 100,
-          "low": 85
+          "low": 75
         },
         "sebderm": {
           "hasTriggers": true,
@@ -6589,7 +6589,7 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -47
         },
         "porosity": {
-          "high": 85,
+          "high": 86,
           "low": 100
         },
         "sebderm": {
@@ -6733,7 +6733,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 92,
-          "low": 31
+          "low": 73
         },
         "sebderm": {
           "hasTriggers": true,
@@ -6806,7 +6806,7 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -74
         },
         "porosity": {
-          "high": 86,
+          "high": 88,
           "low": 100
         },
         "sebderm": {
@@ -7175,7 +7175,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 53,
-          "low": 58
+          "low": 73
         },
         "sebderm": {
           "hasTriggers": true,
@@ -7234,7 +7234,7 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -33
         },
         "porosity": {
-          "high": 86,
+          "high": 85,
           "low": 100
         },
         "sebderm": {
@@ -7343,8 +7343,8 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -86
         },
         "porosity": {
-          "high": 93,
-          "low": 78
+          "high": 95,
+          "low": 76
         },
         "sebderm": {
           "hasTriggers": true,

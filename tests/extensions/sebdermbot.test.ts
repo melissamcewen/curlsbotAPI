@@ -62,5 +62,5 @@ describe('sebderm', () => {
     expect(result.triggers[0].id).toBe('coconut_oil');
   });
 
-  
+
 });

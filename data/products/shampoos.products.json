@@ -315,6 +315,67 @@
           "country": "US"
         }
       ]
+    },
+    {
+      "name": "Bond Building Shampoo",
+      "brand": "Curl Talk",
+      "product_categories": ["shampoos"],
+      "tags": ["wavy", "curly", "coily", "sample", "budget"],
+      "ingredients_raw": "water aqua, sodium lauroyl sarcosinate, sodium cocoyl isethionate, cocamidopropyl hydroxysultaine, glycol distearate, peg-150 distearate, propanediol, hydroxypropylgluconamide, hydroxypropylammonium gluconate, aspergillus ferment, arginine, rice amino acids, persea gratissima avocado oil, mauritia flexuosa fruit oil, sclerocarya birrea seed oil, polyquaternium-10, hydroxypropyl guar hydroxypropyltrimonium chloride, tocopherol, tetrasodium glutamate diacetate, fragrance parfum, phenoxyethanol, ethylhexylglycerin, citric acid",
+      "description": "Maintain healthy curls with a shampoo that gently cleanses while repairing bonds to reduce breakage, tame frizz, and enhance curl definition",
+      "buy_links": [
+        {
+          "url": "https://amzn.to/4jMHDes",
+          "retailer": "Amazon"
+        },
+        {
+          "url": "https://www.cvs.com/shop/not-your-mother-s-curl-talk-bond-repair-shampoo-8-oz-prodid-334816",
+          "retailer": "CVS"
+        }
+      ]
+
+    },
+    {
+      "name": "Outta My Hair Gentle Daily Shampoo",
+      "brand": "Hairitage ",
+      "product_categories": ["shampoos"],
+      "tags": ["wavy", "curly", "sample"],
+      "ingredients_raw": "water aqua eau, sodium c14-16 olefin sulfonate, cocamidopropyl betaine, fragrance parfum, cocamide mipa, glycol distearate, guar hydroxypropyltrimonium chloride, benzyl alcohol, panthenol, polyquaternium-44, polyquaternium-7, polysorbate 20, dehydroacetic acid, citric acid, sodium gluconate, simmondsia chinensis jojoba seed oil, aloe barbadensis leaf juice, tocopheryl acetate, decyl glucoside, glycerin, simmondsia chinensis jojoba seed extract",
+      "description": "Formulated with a unique blend of potent ingredients, this shampoocleanses impurities and excess oils without stripping hair, making it ultra-mild, moisture-rich, and safe for everyday use",
+      "buy_links": [
+        {
+          "url": "https://www.amazon.com/Hairitage-Gentle-Hydrating-Moisturizing-Shampoo/dp/B09CNY24G3",
+          "retailer": "Amazon"
+        }
+      ]
+    },
+    {
+      "name": "Cleansed Moisturizing Shampoo",
+      "brand": "Miche",
+      "product_categories": ["shampoos"],
+      "tags": ["wavy", "curly", "coily","sample"],
+      "ingredients_raw": "water, salix alba white willow bark extract, hibiscus sabdariffa hibiscus flower extract, panax ginseng ginseng root extract, ilex raraguariensis yerba mate leaf extract, sodium c14-16 alpha olefin sulfonate, cocamidopropyl betaine, disodium cocoamphodipropionate, sodium cocoyl isethionates, glycol distearate, vegetable glycerin, guar hydroxypropyltrimonium chloride, citric acid, phenoxyethanol, caprylyl glycol, sorbic acid, phthalate-free fragrance",
+      "description": "A sulfate-free, pH-balanced shampoo that moisturizes, restores dry hair, and stimulates the scalp with hibiscus and ginseng",
+      "buy_links": [
+        {
+          "url": "https://amzn.to/4k2Qn00",
+          "retailer": "Amazon"
+        }
+      ]
+    },
+    {
+      "name": "Curl Liberating Shampoo",
+      "brand": "Imbue",
+      "product_categories": ["shampoos"],
+      "tags": ["curly", "coily", "sample"],
+      "ingredients_raw": "aqua water eau, coco-glucoside, laureth-6 carboxylic acid, peg-120 methyl glucose dioleate, glycerin, panthenol, peg-7 glyceryl cocoate, polyquaternium-10, peg-75 shea butter glycerides, cocos nucifera coconut fruit extract, theobroma cacao cocoa seed butter, theobroma grandiflorum seed butter, helianthus annuus sunflower seed oil, tocopherol, betaine, parfum fragrance, hydroxypropyl guar hydroxypropyltrimonium chloride, peg-4, peg-6, castor oil hydrogenated ethoxylated, peg-7, peg-8, sodium hydroxide, disodium edta, potassium sorbate, sodium benzoate, methylchloroisothiazolinone, methylisothiazolinone, linalool, limonene, hexyl cinnamal",
+      "description": "A sulfate-free, hydrating shampoo that removes buildup without stripping moisture, leaving curls soft, shiny, and defined from wash day and beyond",
+      "buy_links": [
+        {
+          "url": "https://amzn.to/3ERSp41",
+          "retailer": "Amazon"
+        }
+      ]
     }
   ]
 }

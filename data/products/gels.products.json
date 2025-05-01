@@ -62,11 +62,7 @@
         {
           "url": "https://click.linksynergy.com/link?id=9QcV0uNyab0&offerid=929395.3842993508&type=2&murl=https%3a%2f%2fwww.ouidad.com%2fproducts%2fadvanced-climate-control-heat-and-humidity-gel%3fvariant%3d42617150865666",
           "retailer": "Ouidad"
-        },
-          {
-            "url": "https://curlsmonthly.com/?ref=curlsbot",
-            "retailer": "Curls Monthly"
-          }
+        }
       ]
     },
     {
@@ -256,10 +252,6 @@
         {
           "url": "https://curlkeeper.com/r?id=p0m4m5",
           "retailer": "Curl Keeper"
-        },
-        {
-          "url": "https://curlsmonthly.com/?ref=curlsbot",
-          "retailer": "Curls Monthly"
         }
       ],
       "ingredients_raw": "water aqua eau, vp va copolymer, propylene glycol, hydroxyethylcellulose, glycerin, oleth-20, polyquaternium-10, citric acid, dmdm hydantoin"
@@ -324,10 +316,10 @@
           "retailer": "Tootilab",
           "country": "EU"
         },
-        {
-          "url": "https://curlsmonthly.com/?ref=curlsbot",
-          "retailer": "Try with Curls Monthly"
-        }
+          {
+            "url": "https://collabs.shop/cebjoi",
+            "retailer": "Tootilab"
+          }
       ]
     }
   ]

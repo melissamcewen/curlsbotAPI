@@ -8,6 +8,8 @@ interface TriggerDefinition {
   specificIds?: string[];
 }
 
+///add Glycerol
+
 const triggerDefinitions: TriggerDefinition[] = [
   {
     type: 'category',
@@ -36,7 +38,7 @@ const triggerDefinitions: TriggerDefinition[] = [
     type: 'specific',
     id: 'emollient_alcohols',
     reason: 'This specific fatty alcohol can feed Malassezia yeast',
-    specificIds: ['emulsifying_wax', 'cetearyl_alcohol'], 
+    specificIds: ['emulsifying_wax', 'cetearyl_alcohol'],
   },
   {
     type: 'category',

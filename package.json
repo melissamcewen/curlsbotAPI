@@ -32,7 +32,8 @@
     "import-ingredients": "tsx scripts/import-ingredients.ts",
     "convert-references": "tsx scripts/convert-references.ts",
     "normalize": "tsx cli/normalize.ts",
-    "update-products": "tsx scripts/createTrainingData.ts"
+    "update-products": "tsx scripts/createTrainingData.ts",
+    "convert-csv-to-json": "tsx scripts/csvToJson.js"
   },
   "keywords": [
     "haircare",
@@ -84,5 +85,8 @@
       "import": "./dist/data/bundledData.js",
       "types": "./dist/data/bundledData.d.ts"
     }
+  },
+  "dependencies": {
+    "csv-parser": "^3.2.0"
   }
 }
