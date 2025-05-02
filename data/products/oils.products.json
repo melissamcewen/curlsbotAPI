@@ -3,9 +3,7 @@
     {
       "name": "Moonshine Hair and Body Oil",
       "brand": "Ecoslay",
-      "product_categories": [
-        "oils"
-      ],
+      "product_categories": ["oils"],
       "tags": [
         "normal_porosity",
         "high_porosity",
@@ -29,37 +27,25 @@
         {
           "url": "https://lohy.com.au/products/hush-finishing-oil-curly-hair?aff=49",
           "retailer": "Lohy",
-          "country": "AU"
+          "countries": ["AU"]
         }
       ],
-      "product_categories": [
-        "oils"
-      ],
-      "tags": [
-        "high_porosity",
-        "normal_porosity",
-        "featured"
-      ],
+      "product_categories": ["oils"],
+      "tags": ["high_porosity", "normal_porosity", "featured"],
       "ingredients_raw": "helianthus annuus sunflower seed oil, oenothera biennis evening primrose oil, vitis vinifera grape seed oil, simmondsia chinensis jojoba seed oil, backhousia citriodora lemon myrtle leaf oil, tocopheryl acetate, rosa canina rosehip fruit oil, macadamia ternifolia seed oil",
       "cost": 13
     },
     {
       "name": "Bonding Oil",
       "brand": "Curlsmith",
-      "product_categories": [
-        "oils"
-      ],
-      "tags": [
-        "normal_porosity",
-        "high_porosity",
-        "featured"
-      ],
+      "product_categories": ["oils"],
+      "tags": ["normal_porosity", "high_porosity", "featured"],
       "ingredients_raw": "hydrogenated ethylhexyl olivate, hydrogenated olive oil unsaponifiables, coco-caprylate caprate, shea butter ethyl esters, hydrogenated castor oil sebacic acid copolymer, prunus armeniaca apricot kernel oil, hippophae rhamnoides sea buckthorn fruit oil, lens esculenta lentil seed extract, hydrolyzed cicer chickpea seed extract, chenopodium quinoa seed extract, fragrance parfum, linalool, limonene, geraniol, benzyl alcohol, citronellol",
       "buy_links": [
         {
           "url": "https://amzn.to/3DwDN9b",
           "retailer": "Amazon",
-          "country": "UK"
+          "countries": ["UK"]
         },
         {
           "url": "https://curlsmith.com/products/bonding-oil",
@@ -68,7 +54,7 @@
         {
           "url": "https://uk.curlsmith.com/products/bonding-oil",
           "retailer": "Curlsmith",
-          "country": "UK"
+          "countries": ["UK"]
         }
       ],
       "asin": "B09GC96P46",
@@ -77,13 +63,8 @@
     {
       "name": "100% Plant-Derived Squalane",
       "brand": "The Ordinary",
-      "product_categories": [
-        "oils",
-        "pre-poo"
-      ],
-      "tags": [
-        "featured"
-      ],
+      "product_categories": ["oils", "pre-poo"],
+      "tags": ["featured"],
       "ingredients_raw": "squalane",
       "buy_links": [
         {
@@ -99,12 +80,8 @@
     {
       "name": "100% Cold-Pressed Virgin Marula Oil",
       "brand": "The Ordinary",
-      "product_categories": [
-        "oils"
-      ],
-      "tags": [
-        "featured"
-      ],
+      "product_categories": ["oils"],
+      "tags": ["featured"],
       "ingredients_raw": "Sclerocarya Birrea Seed Oil",
       "buy_links": [
         {
@@ -120,12 +97,8 @@
     {
       "name": "The Ordinary 100% Organic Cold-Pressed Moroccan Argan Oil",
       "brand": "The Ordinary",
-      "product_categories": [
-        "oils"
-      ],
-      "tags": [
-        "featured"
-      ],
+      "product_categories": ["oils"],
+      "tags": ["featured"],
       "ingredients_raw": "Argania Spinosa Kernel Oil",
       "buy_links": [
         {
@@ -141,12 +114,8 @@
     {
       "name": "Light Oil",
       "brand": "Bounce Curl",
-      "product_categories": [
-        "oils"
-      ],
-      "tags": [
-        "featured"
-      ],
+      "product_categories": ["oils"],
+      "tags": ["featured"],
       "ingredients_raw": "organic helianthus annuus sunflower seed oil, tocopheryl acetate vitamin e, xerochrysum bracteatum flower, adansonia digitata seed oil, organic argania spinosa kernel oil, organic balanites roxburghii seed oil, organic borago officinalis seed oil, organic corylus avellana hazel seed oil, passiflora edulis passion flower seed oil, organic prunus amygdalus dulcis sweet almond oil, organic rosa canina fruit oil, organic simmondsia chinensis jojoba seed oil",
       "buy_links": [
         {
@@ -154,7 +123,31 @@
           "retailer": "Bounce Curl"
         }
       ]
+    },
+    {
+      "name": "Doux Drops",
+      "brand": "The Doux",
+      "buy_links": [
+        {
+          "url": "https://thedoux.com/products/doux-drops-bonding-polish-spray",
+          "retailer": "The Doux"
+        },
+        {
+          "url": "https://amzn.to/3GzpsKN",
+          "retailer": "Amazon"
+        }
+      ],
+      "product_categories": ["oils", "sprays", "serums"],
+      "tags": [
+        "samples",
+        "wavy",
+        "curly",
+        "coily",
+        "high_porosity",
+        "heat_protectant"
+      ],
+      "ingredients_raw": "dimethicone, c13-14 isoalkane formerly c13-14 isoparaffin, adansonia digitata seed oil, simmondsia chinensis jojoba seed oil, brassica campestris aleurites fordi oil copolymer, fragrance, isopropyl myristate, tocopheryl acetate, green 6 ci 61565",
+      "description": "A shine-boosting, bond-building serum that repairs and strengthens hair, smooths the cuticle, and protects against breakage—perfect for straight styles, blowouts, or curly wash days"
     }
   ]
 }
-

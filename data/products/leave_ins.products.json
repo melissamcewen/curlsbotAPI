@@ -3,9 +3,7 @@
     {
       "name": "Rice Pudding Leave-In Conditioner and Moisturizer",
       "brand": "Ecoslay",
-      "product_categories": [
-        "leave_ins"
-      ],
+      "product_categories": ["leave_ins"],
       "tags": [
         "normal_porosity",
         "high_porosity",
@@ -35,14 +33,8 @@
           "retailer": "Beauty Heroes"
         }
       ],
-      "product_categories": [
-        "leave_ins"
-      ],
-      "tags": [
-        "high_porosity",
-        "normal_porosity",
-        "featured"
-      ],
+      "product_categories": ["leave_ins"],
+      "tags": ["high_porosity", "normal_porosity", "featured"],
       "cost": 2.8,
       "asin": "B004KM1OEK",
       "ingredients_raw": "water aqua- eau, aloe barbadensis aloe vera leaf gel, cetearyl alcohol, glycerin, distearoylethyl dimonium chloride, caprylic capric triglyceride, hydrolyzed quinoa, gluconolactone, sodium benzoate, calcium gluconate, potassium sorbate, benzyl acetate, linalyl acetate, citronellol, abies balsamea needle oil, juniperus virginiana cedar oil, alpha-terpineol, amyl cinnamal, linalool, pogostemon cablin leaf oil, salvia sclarea clary sage oil, citrus reticulata tangerine peel oil, mentha citrata herb oil, eugenia caryophyllus clove oil, michelia alba leaf oil, lavandula angustifolia lavender oil, citrus limon lemon peel oil, citrus aurantifolia lime oil, lavandula hybrida lavandin oil, cinnamomum camphora camphor bark oil, alpha-lonone, evernia prunastri oakmoss extract, anisaldehyde, cistus ladaniferus resin, menthol, myristica fragrans nutmeg kernel oil, jasminum grandiflorum flower jasmine extract, nerol, benzaldehyde, chamomilla recutita matricaria flower extract, eucalyptus globulus leaf extract, ginkgo biloba leaf extract, aspalathus linearis leaf extract, honey extract, calophyllum inophyllum tamanu oil, rosmarinus officinalis rosemary oil, citric acid, eugenol, limonene"
@@ -50,20 +42,14 @@
     {
       "name": "Hydrate & Plump Leave-In Conditioner",
       "brand": "Curlsmith",
-      "product_categories": [
-        "leave_ins"
-      ],
-      "tags": [
-        "normal_porosity",
-        "high_porosity",
-        "featured"
-      ],
+      "product_categories": ["leave_ins"],
+      "tags": ["normal_porosity", "high_porosity", "featured"],
       "ingredients_raw": "water aqua eau, dicaprylyl carbonate, cetearyl alcohol, coco-caprylate caprate, ricinus communis castor seed oil, behentrimonium chloride, glycerin, panthenol, butyrospermum parkii shea butter, simmondsia chinensis jojoba seed oil, guar hydroxypropyltrimonium chloride, polyquaternium-10, olea europaea olive leaf extract, tilia tomentosa bud extract, arctium majus root extract, arnica montana flower extract, calendula officinalis flower extract, chamomilla recutita matricaria flower extract, citrus limon lemon peel extract, hedera helix ivy leaf extract, lamium album extract, nasturtium officinale extract, pinus sylvestris bud extract, rosmarinus officinalis rosemary leaf extract, salvia officinalis sage leaf extract, tropaeolum majus flower extract, isopropyl alcohol, pentylene glycol, tocopherol, maltodextrin, cyclodextrin, pvp, cyamopsis tetragonoloba guar gum, xanthan gum, maltodextrin vp copolymer, ethylhexylglycerin, fragrance parfum, citric acid, sodium gluconate, phytic acid, phenoxyethanol, potassium sorbate, sodium benzoate, hydroxycitronellal, citronellol",
       "buy_links": [
         {
           "url": "https://amzn.to/4fEo0CJ",
           "retailer": "Amazon",
-          "country": "UK"
+          "countries": ["UK"]
         },
         {
           "url": "https://curlsmith.com/products/hydrate-plump-leave-in",
@@ -72,7 +58,7 @@
         {
           "url": "https://uk.curlsmith.com/products/hydrate-plump-leave-in",
           "retailer": "Curlsmith",
-          "country": "UK"
+          "countries": ["UK"]
         }
       ],
       "asin": "B0CZVVB2C9",
@@ -82,13 +68,8 @@
     {
       "name": "Direct Leave In Weightless Moisture Conditioner",
       "brand": "Giovanni",
-      "product_categories": [
-        "leave_ins"
-      ],
-      "tags": [
-        "normal_porosity",
-        "high_porosity"
-      ],
+      "product_categories": ["leave_ins"],
+      "tags": ["normal_porosity", "high_porosity"],
       "buy_links": [
         {
           "url": "https://amzn.to/4fK4aWC",
@@ -116,34 +97,17 @@
       ]
     },
     {
-      "name": "Refreshing Curls Leave in Treatment",
-      "brand": "Fancy's Hair Innovation",
-      "product_categories": ["leave_ins"],
-      "tags": [],
-      "ingredients_raw": "distilled water, slippery elm, marshmallow root extract, glycerin, sorbitol, wheat germ oil, sunflower seed oil, apricot oil, cetearyl alcohol, panthenol provitmain b5, behentrimonium methosulfate, behentrimonium chloride, tocopheryl, phenoxyethanol, potassium sorbate, citric acid",
-      "buy_links": [
-        {
-          "url": "https://www.fancyshairinnovation.com/shop/refreshing-curls-leave-in-treatment",
-          "retailer": "Fancy's Hair Innovation"
-        }
-      ]
-    },
-    {
       "name": "Soft Leave-In Cream",
       "brand": "Tootilab",
       "product_categories": ["leave_ins"],
-      "tags": ["normal_porosity", "high_porosity", "featured"],
+      "tags": ["samples", "wavy", "curly", "coily", "high_porosity"],
       "ingredients_raw": "water aqua, cocamidopropyl betaine, lauryl glucoside, glycerin, sodium methyl cocoyl taurate, aloe barbadensis leaf juice powder, caprylyl capryl glucoside, sodium lauroyl sarcosinate, sodium cocoamphoacetate, inulin, fragrance parfum, benzyl alcohol, polyquaternium-7, potassium sorbate, saccharide isomerate, argan oil glycereth-8 esters, guar hydroxypropyltrimonium chloride, citric acid, sodium chloride, alpha-glucan oligosaccharide, trisodium ethylenediamine disuccinate, tocopherol, helianthus annuus sunflower seed oil, sodium citrate, hexyl cinnamal",
       "description": "A lightweight leave-in that prevents your hair from getting dry",
       "buy_links": [
         {
           "url": "https://collabs.shop/szsngr",
-          "retailer": "Tootilab"
-        },
-        {
-          "url": "https://collabs.shop/szsngr",
           "retailer": "Tootilab",
-          "country": "EU"
+          "countries": ["EU", "UK", "US"]
         }
       ]
     }

@@ -9,15 +9,8 @@
           "retailer": "Ecoslay"
         }
       ],
-      "product_categories": [
-        "creams"
-      ],
-      "tags": [
-        "featured",
-        "black_owned",
-        "woman_owned",
-        "small_business"
-      ],
+      "product_categories": ["creams"],
+      "tags": ["featured", "black_owned", "woman_owned", "small_business"],
       "ingredients_raw": "deionized water aqua, althaea officinalis marshmallow root extract, linum usitatissimum flaxseed extract, cetearyl alcohol, sodium pca, chamomile flower extract, slippery elm extract, peppermint mentha piperita oil, melissa melissa officinalis leaf extract, nettle urtica dioica leaf extract, horsetail equisetum arvense leaf extract, peppermint mentha piperita leaf extract, sage salvia officinalis extract, yucca yucca vera leaf extract, sucrose cocoate, panthenol, caprylhydroxamic acid, glyceryl caprylate, glycerin, citrus limon peel lemon oil, vanilla planifolia fruit oil, potassium sorbate"
     },
     {
@@ -29,12 +22,8 @@
           "retailer": "Amazon"
         }
       ],
-      "product_categories": [
-        "creams"
-      ],
-      "tags": [
-        "featured"
-      ],
+      "product_categories": ["creams"],
+      "tags": ["featured"],
       "ingredients_raw": "water, aloe barbadensis aloe vera leaf gel, cyamopsis tetragonoloba guar gum, sorbitol, sclerotium gum, citrus aurantium amara bitter orange flower water, organic rooibos african camellia sinensis leaf extract, gluconolactone, sodium benzoate, calcium gluconate, potassium sorbate, hydrolyzed rice protein, glycerin, chamomilla recutita matricaria flower extract, eucalyptus globulus leaf extract, ginkgo biloba leaf extract, aspalathus linearis leaf extract, eucalyptus globulus extract, citric acid, maltodextrin, honey extract, linalool",
       "asin": "B002EOSVUQ"
     },
@@ -47,13 +36,8 @@
           "retailer": "Amazon"
         }
       ],
-      "product_categories": [
-        "creams"
-      ],
-      "tags": [
-        "curl_enhancer",
-        "featured"
-      ],
+      "product_categories": ["creams"],
+      "tags": ["curl_enhancer", "featured"],
       "ingredients_raw": "water aqua, cetearyl alcohol, glyceryl stearate, propanediol, aloe barbadensis leaf juice, hydrogenated vegetable oil, peg-100 stearate, isopropyl palmitate, pvp, glycerin, caprylic capric triglyceride, glycereth-26, butyrospermum parkii shea butter, vp va copolymer, pectin, hydroxypropyltrimonium honey, coconut alkanes, polyquaternium-55, sodium polyitaconate, triethyl citrate, zea mays corn starch, sodium polyacrylate starch, hypnea musciformis extract, gelidiella acerosa extract, sargassum filipendula extract, sodium lactate, coco-caprylate caprate, ceteareth-20, acrylates beheneth-25 methacrylate copolymer, polyacrylate crosspolymer-6, cellulose, disodium edta, fragrance, phenoxyethanol, benzyl alcohol, aminomethyl propanol",
       "asin": "B0CHWM9YCJ"
     },
@@ -64,39 +48,25 @@
         {
           "url": "https://lohy.com.au/products/cruise-control-curl-cream-curly-hair-styling?aff=49",
           "retailer": "Lohy",
-          "country": "AU"
+          "countries": ["AU"]
         }
       ],
-      "product_categories": [
-        "creams"
-      ],
-      "tags": [
-        "high_porosity",
-        "normal_porosity",
-        "curl_enhancer",
-        "featured"
-      ],
+      "product_categories": ["creams"],
+      "tags": ["high_porosity", "normal_porosity", "curl_enhancer", "featured"],
       "ingredients_raw": "aqua, caprylic capric triglyceride, cetearyl alcohol, glycerin, propanediol, cetrimonium chloride, butyrospermum parkii shea butter, oryza sativa rice bran oil, glyceryl stearate, phenoxyethanol, citrus nobilis mandarin peel oil, hydrolised soy protein, cucumis sativus cucumber fruit extract, chamomila recutita matricaria flower leaf stem extract, camellia sinensis white tea leaf extract, polyquaternium-10, sodium benzoate",
       "cost": 3
     },
     {
       "name": "Weightless Air Dry Cream",
       "brand": "Curlsmith",
-      "product_categories": [
-        "creams"
-      ],
-      "tags": [
-        "high_porosity",
-        "normal_porosity",
-        "curl_enhancer",
-        "featured"
-      ],
+      "product_categories": ["creams"],
+      "tags": ["high_porosity", "normal_porosity", "curl_enhancer", "featured"],
       "ingredients_raw": "water aqua, ricinus communis castor seed oil, dicaprylyl carbonate, cetearyl alcohol, orbignya speciosa babassu kernel oil, behentrimonium chloride, sodium hyaluronate, astrocaryum murumuru seed butter, simmondsia chinensis jojoba seed oil, butyrospermum parkii shea butter, hylocereus undatus dragon fruit fruit extract, paullinia cupana guarana seed extract, urtica dioica nettle leaf extract, zingiber officinale ginger root extract, polyquaternium-10, panthenol, guar hydroxypropyltrimonium chloride, tocopherol, disodium edta, ethylhexylglycerin, glycerin, citric acid, sodium hydroxide, potassium sorbate, sodium benzoate, phenoxyethanol, linalool, limonene, citronellol, fragrance parfum",
       "buy_links": [
         {
           "url": "https://amzn.to/4iZV6zV",
           "retailer": "Amazon",
-          "country": "UK"
+          "countries": ["UK"]
         },
         {
           "url": "https://amzn.to/4gbWmgy",
@@ -109,12 +79,8 @@
     {
       "name": "Pinapple Swirl Curl Defining Cream",
       "brand": "Pacifica",
-      "product_categories": [
-        "creams"
-      ],
-      "tags": [
-        "featured"
-      ],
+      "product_categories": ["creams"],
+      "tags": ["featured"],
       "cost": 3,
       "ingredients_raw": "aqua, cetearyl alcohol, behentrimonium methosulfate, linum usitatissimum linseed seed extract, salvia hispanica seed extract, coco-caprylate, cetyl alcohol, hydroxyethylcellulose, cocos nucifera coconut oil, helianthus annuus sunflower oil, ananas sativus pineapple fruit extract, sodium hyaluronate, phenoxyethanol, ethylhexylglycerin, parfum natural, sodium citrate, citric acid",
       "buy_links": [
@@ -167,6 +133,24 @@
           "retailer": "Shirley Jane"
         }
       ]
+    },
+    {
+      "name": "Curl Passion Curl Perfectionist",
+      "brand": "Milk_Shake",
+      "buy_links": [
+        {
+          "url": "https://www.milkshakehair.com/products/milk_shake-lifestyling-curl-perfectionist",
+          "retailer": "Milk_Shake"
+        },
+        {
+          "url": "https://amzn.to/3Sh9FCN",
+          "retailer": "Amazon"
+        }
+      ],
+      "product_categories": ["creams"],
+      "tags": ["samples", "wavy", "curly", "coily", "low_porosity", "premium"],
+      "ingredients_raw": "aqua water, cyclopentasiloxane, glycerin, polysorbate 60, myristyl alcohol, stearyl alcohol, cetyl alcohol, pvp, hydroxypropyl starch phosphate, citrus limon lemon peel extract, vaccinium myrtillus fruit extract, pyrus malus apple fruit extract, helianthus annuus sunflower seed extract, lactis serum proteinum, hydrolyzed chestnut extract, hydrolyzed quinoa, ethylhexyl methoxycinnamate, polyquaternium-10, hydroxypropyl guar, polyquaternium-28, diethylamino hydroxybenzoyl hexyl benzoate, butylene glycol, benzyl benzoate, citric acid, lactic acid, amyl cinnamal, linalool, benzyl salicylate, coumarin, hexyl cinnamal, limonene, citronellol, geraniol, benzyl alcohol, parfum fragrance, phenoxyethanol, caprylyl glycol, potassium sorbate, sodium benzoate",
+      "description": "A curl-defining cream that tames frizz, enhances natural texture, provides light hold, and contains protein for added strength"
     }
   ]
 }

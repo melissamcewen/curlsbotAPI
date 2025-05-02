@@ -104,7 +104,7 @@
         {
           "url": "https://lohy.com.au/products/drench-quench-curl-moisture-mask?aff=49",
           "retailer": "Lohy",
-          "country": "AU"
+          "countries": ["AU"]
         }
       ],
       "cost": 3.4
@@ -118,7 +118,7 @@
         {
           "url": "https://lohy.com.au/products/nourish-flourish-conditioner-curly-hair?aff=49",
           "retailer": "Lohy",
-          "country": "AU"
+          "countries": ["AU"]
         }
       ],
       "ingredients_raw": "aqua, cetearyl alcohol, glycerin, propanediol, cocos nucifera coconut oil, cetrimonium chloride, hydrolysed soy protein, phenoxyethanol, simmondsia chinensis jojoba seed oil, chamomila recutita matricaria flower leaf stem extract, cucumis sativus cucumber fruit extract, benzyl alcohol, guar hydroxypropyltrimonium chloride, lemon scented tea tree oil, mandarin peel oil, rosemary oil, may chang, eucalyptus radiata, lavandin oil, salvia clary sclarea oil, pogostemon cablin patchouli oil, citric acid, dehydroacetic acid",
@@ -134,7 +134,7 @@
         {
           "url": "https://amzn.to/3BDw34T",
           "retailer": "Amazon",
-          "country": "UK"
+          "countries": ["UK"]
         },
         {
           "url": "https://amzn.to/3Q3TZC5",
@@ -211,7 +211,7 @@
       "name": "Big Energy Conditioner",
       "brand": "Curl Keeper",
       "product_categories": ["conditioners"],
-      "tags": [ "featured"],
+      "tags": ["featured"],
       "cost": 2.8,
       "ingredients_raw": "water aqua eau, cetyl alcohol, cetearyl alcohol, behentrimonium chloride, glycerin, propanediol, stearamido-propyl dimethylamine, isopropyl myristate, cocos nucifera coconut water, aloe barbadensis leaf juice, chamomilla recutita matricaria flower extract, lavandula angustifolia lavender extract, cetyl esters, cetrimonium chloride, guar hydroxypropyltrimonium chloride, dicetyldimonium chloride, propylene glycol, caprylyl glycol, 1, 2-hexanediol, leuconostoc radish root ferment filtrate, fragrance parfum, potassiu, sorbate, panthenol, to-copheryl acetate, sodium benzoate, edta, citric acid, isopropyl alcohol, phenoxyethanol, ethylhexylglycerin, amyl cinnamal, limonene, isoeugenol, linalool",
       "buy_links": [
@@ -235,19 +235,7 @@
         }
       ]
     },
-    {
-      "name": "Repairing Conditioner",
-      "brand": "My Bright Body",
-      "ingredients_raw": "water, disunfloweroylethyl dimonium chloride, simmondsia chinensis jojoba oil, sodium alginate, hydrolyzed quinoa, isoamyl laurate, panthenol, althaea officinalis marshmallow leaf root extract, glyceryl stearate, hydrogenated ethylhexyl olivate, hydrogenated olive oil unsaponifiables, glycerin, sunflower seed oil glycerides, gluconodeltalactone, lauryl lactyl lactate, eucalyptus globulus eucalyptus oil, mentha piperita peppermint oil, rosmarinus officinalis rosemary oil, sodium benzoate",
-      "product_categories": ["conditioners"],
-      "tags": ["woman_owned", "small_business"],
-      "buy_links": [
-        {
-          "url": "https://mybrightbody.com/collections/hair/products/repairing-conditioner",
-          "retailer": "My Bright Body"
-        }
-      ]
-    },
+
     {
       "name": "Curl Jelly Conditioner",
       "brand": "Umberto Giannini",
@@ -258,7 +246,7 @@
         {
           "url": "https://www.lookfantastic.se/umberto-giannini-curl-jelly-care-conditioner-250ml/12671462.html",
           "retailer": "Look Fantastic",
-          "country": "SE"
+          "countries": ["SE"]
         }
       ]
     },
@@ -272,35 +260,7 @@
         {
           "url": "https://www.luxplus.dk/produkt/noughty-wave-hello-curl-defining-conditioner-250-ml",
           "retailer": "Lux Plus",
-          "country": "DK"
-        }
-      ]
-    },
-    {
-      "name": "Light Conditioner",
-      "brand": "CleverCurl",
-      "product_categories": ["conditioners"],
-      "tags": [],
-      "ingredients_raw": "aloe barbadensis aloe vera leaf juice, stearyl alcohol, cetyl alcohol, behentrimonium chloride, glyceryl stearate, hydrolysed rice protein, panthenol vitamin b5, tocopheryl vitamin e, glycerin, cetrimonium chloride, citric acid, allergen-free fragrance, glyceryl caprylate, sodium levulinate, sodium anisate, potassium sorbate",
-      "buy_links": [
-        {
-          "url": "https://www.clevercurl.com.au/our-range/light-conditioner/",
-          "retailer": "CleverCurl",
-          "country": "AU"
-        }
-
-      ]
-    },
-    {
-      "name": "Curl Conditioner",
-      "brand": "Sachajuan",
-      "product_categories": ["conditioners"],
-      "tags": [],
-      "ingredients_raw": "aqua water, cetyl alcohol, stearyl alcohol, glyceryl stearate, dicaprylyl ether, stearamidopropyl dimethylamine, behentrimonium chloride, polyquaternium-10, phenoxyethanol, parfum fragrance, lactic acid, peg-40 hydrogenated castor oil, isopropyl alcohol, pg-hydroxyethylcellulose cocodimonium chloride, ethylhexylglycerin, linalool, limonene, benzyl salicylate, hexyl cinnamal, hydrolyzed rhodophycea red algae extract",
-      "buy_links": [
-        {
-          "url": "https://shop.sachajuan.com/products/curl-conditioner",
-          "retailer": "Sachajuan"
+          "countries": ["DK"]
         }
       ]
     },
@@ -315,13 +275,32 @@
         {
           "url": "https://collabs.shop/qn2ik3",
           "retailer": "Tootilab",
-          "country": "EU"
+          "countries": ["EU"]
         },
         {
           "url": "https://collabs.shop/qn2ik3",
           "retailer": "Tootilab"
         }
       ]
+    },
+    {
+      "name": "No. 5 Bond Maintenance Conditioner",
+      "brand": "Olaplex",
+      "buy_links": [
+        {
+          "url": "https://olaplex.com/products/olaplex-n-5-bond-maintenance-conditioner-us",
+          "retailer": "Olaplex"
+        },
+        {
+          "url": "https://www.lookfantastic.com/p/olaplex-no.5-fine-bond-maintenance-conditioner-250ml/16162872/",
+          "retailer": "Look Fantastic",
+          "countries": ["UK", "EU"]
+        }
+      ],
+      "product_categories": ["conditioners"],
+      "tags": ["samples", "wavy", "curly", "coily"],
+      "ingredients_raw": "water aqua eau, sodium lauroyl methyl isethionate, cocamidopropyl hydroxysultaine, potassium cocoyl glycinate, disodium cocoyl glutamate, sodium lauroyl sarcosinate, potassium cocoate, decyl glucoside, glycereth-26, bis-aminopropyl diglycol dimaleate, cocamidopropylamine oxide, disodium laureth sulfosuccinate, glycol distearate, sodium cocoyl glutamate, methyl gluceth-20, acrylates copolymer, peg-120 methyl glucose dioleate, amodimethicone, citric acid, sodium lauryl sulfoacetate, polyquaternium-10, ethylhexylglycerin, divinyldimethicone dimethicone copolymer, polyquaternium-11, trisodium ethylenediamine disuccinate, guar hydroxypropyltrimonium chloride, c11-15 pareth-7, laureth-9, glycerin, trideceth-12, c12-13 pareth-23, c12-13 pareth-3, hydrolyzed vegetable protein, pg-propyl silanetriol, panthenol, acetic acid, tetrasodium edta, pentasodium triphosphate, sodium hydroxide, disodium edta, helianthus annus sunflower seed oil, tocopherol, prunus armeniaca apricot kernel oil, pseudozyma epicola camellia sinensis seed oil ferment extract filtrate, pseudozyma epicola argania spinosa kernel oil ferment filtrate, quaternium-95, propanediol, helianthus annus sunflower seed extract, peg-8, euterpe oleracea fruit extract, punica granatum extract, rosemarinus officinalis rosemary leaf extract, musa sapientum banana fruit extract, origanum vulgare lear extract, morinda citrifolia fruit extract, articum lappa root extract, peg-8 smdi copolymer, sodium hyaluronate, palmitoyl myristyl serinate, sodium polyacrylate, pentaerythrityl tetra-di-t-butyl hydroxyhydrocinnamate, biotin, benzoic acid, phenoxyethanol, chlorphenesin, potassium sorbate, sodium benzoate, fragrance parfum, citral, hexyl cinnamal, limonene",
+      "description": "A highly concentrated conditioner with Olaplex’s bonding technology that repairs, strengthens, and moisturizes hair prone to damage or dryness"
     }
   ]
 }

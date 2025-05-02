@@ -33,9 +33,12 @@
                   "format": "uri",
                   "description": "URL where the product can be purchased"
                 },
-                "country": {
-                  "type": "string",
-                  "description": "Country code for this link"
+                "countries": {
+                  "type": "array",
+                  "description": "Array of country codes for this link",
+                  "items": {
+                    "type": "string"
+                  }
                 },
                 "retailer": {
                   "type": "string",

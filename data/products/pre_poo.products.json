@@ -11,12 +11,12 @@
         {
           "url": "https://amzn.to/429CqI3",
           "retailer": "Amazon",
-          "country": "UK"
+          "countries": ["UK"]
         },
         {
           "url": "https://uk.curlsmith.com/products/bond-curl-rehab-salve",
           "retailer": "Curlsmith",
-          "country": "UK"
+          "countries": ["UK"]
         },
         {
           "url": "https://curlsmith.com/products/bond-curl-rehab-salve",
@@ -24,10 +24,11 @@
         }
       ],
       "product_categories": ["pre-poo"],
-      "tags": ["high_porosity", "featured"],
+      "tags": ["samples", "wavy", "curly", "coily", "low_porosity"],
       "cost": 3.75,
       "asin": "B08WPNSHCD",
-      "ingredients_raw": "water aqua, cetearyl alcohol, salvia hispanica chia seed extract, creatine, polyquaternium-10, stearamidopropyl dimethylamine, lentinus edodes shiitake extract, opuntia tuna prickly pear fruit extract, cucurbita pepo pumpkin seed extract, psidium guajava guava fruit extract, prunus amygdalus dulcis sweet almond oil, ribes nigrum black currant fruit extract, brassica oleracea acephala kale leaf extract, leuconostoc radish root ferment filtrate, polyquaternium-37, hydroxypropylgluconamide, hydroxypropylammonium gluconate, disodium edta, potassium sorbate, tartaric acid, citric acid, ethylhexylglycerin, glycerin, behentrimonium chloride, phenoxyethanol, sodium benzoate, benzyl alcohol, geraniol, fragrance parfum, linalool, limonene"
+      "ingredients_raw": "water aqua, cetearyl alcohol, salvia hispanica chia seed extract, creatine, polyquaternium-10, stearamidopropyl dimethylamine, lentinus edodes shiitake extract, opuntia tuna prickly pear fruit extract, cucurbita pepo pumpkin seed extract, psidium guajava guava fruit extract, prunus amygdalus dulcis sweet almond oil, ribes nigrum black currant fruit extract, brassica oleracea acephala kale leaf extract, leuconostoc radish root ferment filtrate, polyquaternium-37, hydroxypropylgluconamide, hydroxypropylammonium gluconate, disodium edta, potassium sorbate, tartaric acid, citric acid, ethylhexylglycerin, glycerin, behentrimonium chloride, phenoxyethanol, sodium benzoate, benzyl alcohol, geraniol, fragrance parfum, linalool, limonene",
+      "description": "A protein-rich bond-building treatment that targets all 3 hair bonds to repair, strengthen, and reduce damage—formulated specifically for curls"
     }
   ]
 }

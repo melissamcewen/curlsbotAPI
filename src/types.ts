@@ -245,7 +245,7 @@ export interface Product {
 /** Buy link */
 export interface BuyLink {
   url: string;
-  country?: string;
+  countries?: string[];
   retailer?: string;
   description?: string;
 }

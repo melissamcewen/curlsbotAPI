@@ -5,7 +5,15 @@
       "brand": "Ecoslay",
       "ingredients_raw": "purified water aqua, mel, hydrolyzed corn starch, sodium polyitaconate, sucrose, propanediol, capryl caprylyl glucoside, linum usitatissimum seed extract, althaea officinalis root extract, antimicro root blend preservative bulb extract, caprylyl glycol, wasabia japonica root extract, zingiber officinale root extract, citrus limon peel oil, citrus aurantium bergamia fruit oil",
       "product_categories": ["foams"],
-      "tags": ["normal_porosity", "high_porosity", "low_porosity", "featured", "black_owned", "woman_owned", "small_business"],
+      "tags": [
+        "normal_porosity",
+        "high_porosity",
+        "low_porosity",
+        "featured",
+        "black_owned",
+        "woman_owned",
+        "small_business"
+      ],
       "buy_links": [
         {
           "url": "https://ecoslay.sjv.io/7abJPr",
@@ -21,7 +29,7 @@
         {
           "url": "https://lohy.com.au/products/chutzpah-volumising-curl-foam?aff=49",
           "retailer": "Lohy",
-          "country": "AU"
+          "countries": ["AU"]
         }
       ],
       "product_categories": ["foams"],
@@ -58,7 +66,7 @@
         {
           "url": "https://amzn.to/49W9HrK",
           "retailer": "Amazon",
-          "country": "UK"
+          "countries": ["UK"]
         },
         {
           "url": "https://go.skimresources.com?id=276362X1762442&xs=1&url=https%3A%2F%2Fcurlsmith.com%2Fproducts%2Fbouncy-strength-volume-foam",
@@ -67,26 +75,19 @@
         {
           "url": "https://go.skimresources.com?id=276362X1762442&xs=1&url=https%3A%2F%2Fuk.curlsmith.com%2Fproducts%2Fbouncy-strength-volume-foam",
           "retailer": "Curlsmith",
-          "country": "UK"
+          "countries": ["UK"]
         }
       ],
       "asin": "B08WPSW84H",
       "cost": 2.6
-
     },
     {
       "name": "Curl Boosting Hair Mousse",
       "brand": "Herbal Essences",
-      "product_categories": [
-        "foams"
-      ],
+      "product_categories": ["foams"],
       "ingredients_raw": "water, isobutane, propane, polyquaternium-4, phenoxyethanol, propylene glycol, fragrance, c9-11 pareth-8, caprylyl glycol, 12-hexanediol, disodium edta, citric acid",
 
-      "tags": [
-        "normal_porosity",
-        "volume",
-        "low_porosity"
-      ],
+      "tags": ["normal_porosity", "volume", "low_porosity"],
       "buy_links": [
         {
           "url": "https://amzn.to/41UCcnP",
@@ -99,19 +100,6 @@
       ],
       "asin": "B0B995XZ6T",
       "cost": 0.7
-    },
-    {
-      "name": "Curl Foam",
-      "brand": "Trybe",
-      "ingredients_raw": "purified water, vegetable glycerin, hydrolyzed soy protein, caprylic capric triglycerides mct oil, sodium c14-16 olefin sulfonate, polyquaternium-7, prunus amygdalus dulcis sweet almond oil, emblica officinalis fruit indian gooseberry pulp oil, panthenol dl, vp va copolymer, phenoxyethanol and caprylyl glycol and sorbic acid, polysorbate 20, fragrance",
-      "product_categories": ["foams"],
-      "tags": [],
-      "buy_links": [
-        {
-          "url": "https://trybehaircare.com/products/curl-foam",
-          "retailer": "Trybe"
-        }
-      ]
     }
   ]
 }

@@ -1,12 +1,10 @@
 {
   "products": [
     {
-      "name":"Sangria Hair Refresher",
+      "name": "Sangria Hair Refresher",
       "brand": "Ecoslay",
       "ingredients_raw": "purified water, aloe barbadensis leaf juice, vaccinium angustifolium fruit water, prunus cerasus fruit water, hhydrolyzed silk protein, sodium pca, lactobacillus ferment, lactobacillus, cocos nucifera fruit extract, amaranthus caudatus seed extract, equisetum arvense extract, panthenol, cinnamidopropyltrimonium chloride, sodium gluconate",
-      "product_categories": [
-        "refreshers"
-      ],
+      "product_categories": ["refreshers"],
       "tags": [
         "normal_porosity",
         "high_porosity",
@@ -20,6 +18,20 @@
           "retailer": "Ecoslay"
         }
       ]
+    },
+    {
+      "name": "Pamper My Curls All-in-One Moisture Mist",
+      "brand": "Inashi",
+      "buy_links": [
+        {
+          "url": "https://amzn.to/4iHnxRu",
+          "retailer": "Amazon"
+        }
+      ],
+      "product_categories": ["leave_ins", "sprays", "refreshers"],
+      "tags": ["samples", "wavy", "curly", "coily", "low_porosity"],
+      "ingredients_raw": "aqua water eau, aloe barbadensis aloe vera extract, glycerin, panthenol, cetrimonium chloride, behentrimonium methosulfate, cetearyl alcohol, cetyl alcohol, caprylyl glycol, phenoxyethanol, sorbic acid, citrus sinensis orange peel oil expressed, lavandula angustifolia lavender oil althaea officinalis marshmallow leaf root extract, hydrolyzed adansonia digitata baobab seed extract, hydrolyzed quinoa, chamomille recutita matricaria flower extract, urtica dioica nettle leaf extract, equisetum arvense horsetail leaf extract, angelica archangelica angelica root extract, linalool, limonene",
+      "description": "A lightweight, oil-free mist that moisturizes and refreshes curls without weighing them down, with marshmallow root for slip and botanical extracts to soothe the scalp"
     }
   ]
 }

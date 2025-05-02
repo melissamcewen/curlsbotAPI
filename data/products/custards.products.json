@@ -10,7 +10,13 @@
         }
       ],
       "product_categories": ["custards"],
-      "tags": ["low_porosity", "curl_enhancer", "normal_porosity", "high_porosity", "featured"],
+      "tags": [
+        "low_porosity",
+        "curl_enhancer",
+        "normal_porosity",
+        "high_porosity",
+        "featured"
+      ],
       "ingredients_raw": "water, glycerin, carboxymethylcellulose, aloe barbadensis leaf extract, pectin, hydroxypropyltrimonium honey, silk amino acids, hypnea musciformis extract seaweed, gelidiella acerosa extract seaweed, sargassum filipendula seaweed extract, sorbitol, rosmarinus officinalis rosemary leaf extract, salix alba willow bark extract, urtica dioica nettle extract, ethylhexylglycerin, phenoxyethanol, citrus senensis oil, citrus limon oil, citrus aurantifolia oil, citrus paradisi oil",
       "asin": "B005SIR12E",
       "cost": 2.3
@@ -25,7 +31,7 @@
         {
           "url": "https://amzn.to/40auHbe",
           "retailer": "Amazon",
-          "country": "UK"
+          "countries": ["UK"]
         },
         {
           "url": "https://amzn.to/40lMISJ",
@@ -34,7 +40,7 @@
         {
           "url": "https://go.skimresources.com?id=276362X1762442&xs=1&url=https%3A%2F%2Fuk.curlsmith.com%2Fproducts%2Fcurl-souffle%3Fredirect%3D1",
           "retailer": "Curlsmith",
-          "country": "UK"
+          "countries": ["UK"]
         },
         {
           "url": "https://go.skimresources.com?id=276362X1762442&xs=1&url=https%3A%2F%2Fcurlsmith.com%2Fproducts%2Fcurl-souffle",
@@ -43,7 +49,6 @@
       ],
       "asin": "B07D7CKKL3",
       "cost": 3.5
-
     },
     {
       "name": "Curling Jelly Coil and Curl Definer ",
@@ -55,7 +60,7 @@
         {
           "url": "https://www.lookfantastic.com/p/as-i-am-curling-jelly-coil-and-curl-definer-227g/11321484/",
           "retailer": "Look Fantastic",
-          "country": "UK"
+          "countries": ["UK"]
         }
       ]
     },
@@ -65,7 +70,14 @@
       "ingredients_raw": "aqua water, linum usitatissimum linseed flaxseed extract, glycerin, simmondsia chinensis jojoba seed oil, aloe barbadensis aloe vera leaf juice powder, magnesium sulfate, benzoic acid, dehydroacetic acid, phenoxyethanol",
       "product_categories": ["custards"],
       "description": "Technically not a custard, but serves the same purpose",
-      "tags": ["low_porosity", "normal_porosity", "fragrance_free", "liquid_gels", "featured", "type_2_hair"],
+      "tags": [
+        "low_porosity",
+        "normal_porosity",
+        "fragrance_free",
+        "liquid_gels",
+        "featured",
+        "type_2_hair"
+      ],
       "buy_links": [
         {
           "url": "https://jessicurl.com/products/gelebration-spray",
@@ -78,7 +90,14 @@
       "brand": "Jessicurl",
       "ingredients_raw": "aqua water, linum usitatissimum linseed flaxseed extract, glycerin, simmondsia chinensis jojoba seed oil, aloe barbadensis aloe vera leaf juice powder, magnesium sulfate, benzoic acid, dehydroacetic acid, phenoxyethanol",
       "product_categories": ["custards"],
-      "tags": ["low_porosity", "normal_porosity", "high_porosity", "featured", "type_3_hair", "fragrance_free"],
+      "tags": [
+        "low_porosity",
+        "normal_porosity",
+        "high_porosity",
+        "featured",
+        "type_3_hair",
+        "fragrance_free"
+      ],
       "buy_links": [
         {
           "url": "https://jessicurl.com/products/rockin-ringlets-styling-potion",

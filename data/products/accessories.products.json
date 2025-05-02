@@ -88,7 +88,7 @@
         {
           "url": "https://lohy.com.au/products/curly-hair-products-lohy-cozy-turban?aff=49",
           "retailer": "Lohy",
-          "country": "AU"
+          "countries": ["AU"]
         }
       ],
       "description": "Protect your hair while you sleep with this cozy turban"
@@ -103,7 +103,7 @@
         {
           "url": "https://lohy.com.au/products/curls-frills-hair-kit?aff=49",
           "retailer": "Lohy",
-          "country": "AU"
+          "countries": ["AU"]
         }
       ]
     },

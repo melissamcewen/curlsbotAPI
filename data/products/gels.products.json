@@ -50,17 +50,15 @@
       "brand": "Ouidad",
       "ingredients_raw": "water aqua eau, butylene glycol, polyquaternium-28, sericin, chamomilla recutita matricaria flower extract, actinidia chinensis kiwi fruit extract, cassia auriculata leaf extract, wheat amino acids, hydrolyzed wheat protein pvp crosspolymer, tocopheryl acetate, retinyl palmitate, panthenol, polyquaternium-7, guar hydroxypropyltrimonium chloride, behentrimonium chloride, cetrimonium chloride, peg-60 almond glycerides, glycerin, ppg-26-buteth-26, peg-40 hydrogenated castor oil, vp dmapa acrylates copolymer, hydroxyethylcellulose, potassium sorbate, disodium edta, hexylene glycol, caprylyl glycol, ethylhexylglycerin, phenoxyethanol, parfum fragrance, alpha-lsomethyl lonone, benzyl benzoate, benzyl salicylate, citronellol, hexyl cinnamal, hydroxycitronellal, limonene, linalool",
       "product_categories": ["gels"],
-      "tags": [
-        "normal_porosity",
-        "high_porosity",
-        "low_porosity",
-        "hold",
-        "featured"
-      ],
+      "tags": ["samples", "wavy", "curly", "coily"],
       "cost": 3,
       "buy_links": [
         {
           "url": "https://click.linksynergy.com/link?id=9QcV0uNyab0&offerid=929395.3842993508&type=2&murl=https%3a%2f%2fwww.ouidad.com%2fproducts%2fadvanced-climate-control-heat-and-humidity-gel%3fvariant%3d42617150865666",
+          "retailer": "Ouidad"
+        },
+        {
+          "url": "https://www.ouidad.com/products/advanced-climate-control-heat-and-humidity-gel?variant=42617150865666",
           "retailer": "Ouidad"
         }
       ]
@@ -166,7 +164,7 @@
         {
           "url": "https://lohy.com.au/products/pow-strong-hold-gel-curly-hair?aff=49",
           "retailer": "Lohy",
-          "country": "AU"
+          "countries": ["AU"]
         }
       ]
     },
@@ -180,7 +178,7 @@
         {
           "url": "https://lohy.com.au/products/oomph-volumising-lotion-curly-hair-styling?aff=49",
           "retailer": "Lohy",
-          "country": "AU"
+          "countries": ["AU"]
         }
       ]
     },
@@ -200,7 +198,7 @@
         {
           "url": "https://amzn.to/3BHjZj1",
           "retailer": "Amazon",
-          "country": "UK"
+          "countries": ["UK"]
         },
         {
           "url": "https://curlsmith.com/products/hydro-style-flexi-jelly",
@@ -209,7 +207,7 @@
         {
           "url": "https://uk.curlsmith.com/products/hydro-style-flexi-jelly",
           "retailer": "Curlsmith",
-          "country": "UK"
+          "countries": ["UK"]
         }
       ],
       "asin": "B08N5BX78W"
@@ -221,7 +219,7 @@
         {
           "url": "https://amzn.to/4fKkExP",
           "retailer": "Amazon",
-          "country": "UK"
+          "countries": ["UK"]
         },
         {
           "url": "https://www.vitacost.com/giovanni-l-a-natural-styling-gel-strong-hold",
@@ -270,25 +268,6 @@
       ]
     },
     {
-      "name": "Wash and Go Flaxseed Gel",
-      "brand": "CurlMix",
-      "ingredients_raw": "water, linum usitatissimum flaxseed gel, ricinus communis castor oil, glycerin, xanthan gum, vitamin e, phenoxyethanol, caprylyl glycol",
-      "product_categories": ["gels"],
-      "tags": [
-        "hold",
-        "black_owned",
-        "woman_owned",
-        "small_business",
-        "fragrance-free"
-      ],
-      "buy_links": [
-        {
-          "url": "https://curlmix.com/products/heavy-hold-flaxseed-gel-curly-hair-fragrance-free",
-          "retailer": "CurlMix"
-        }
-      ]
-    },
-    {
       "name": "Curl Jelly Scrunching Jelly",
       "brand": "Umberto Giannini",
       "ingredients_raw": "aqua, xanthan gum, propylene glycol, glycerin, phenoxyethanol, acrylates palmeth-25 acrylate copolymer, peg-40 hydrogenated castor oil, polyquaternium-11, sodium benzoate, dipropylene glycol, sodium methylparaben, aminomethyl propanol, parfum, benzophenone-4, coumarin, alpha-isomethyl ionone, linalool, ci 17200",
@@ -299,7 +278,7 @@
         {
           "url": "https://www.lookfantastic.se/umberto-giannini-curl-jelly-scrunching-jelly-200ml/12671461.html",
           "retailer": "Look Fantastic",
-          "country": "SE"
+          "countries": ["SE"]
         }
       ]
     },
@@ -307,20 +286,30 @@
       "name": "All Weather Styling Gel",
       "brand": "Tootilab",
       "product_categories": ["gels"],
-      "tags": ["featured", "women-owned"],
+      "tags": ["samples", "wavy", "curly", "coily", "high_porosity"],
       "ingredients_raw": "water aqua, hydrolyzed corn starch, glycerin, guar hydroxypropyltrimonium chloride, hydroxyethylcellulose, citric acid, phenoxyethanol, benzyl alcohol, fragrance parfum, fructose, hydroxyacetophenone, sodium hydroxide, trisodium ethylenediamine disuccinate, polyglyceryl-4 caprate, ethylhexylglycerin, pentylene glycol, salicylic acid, sodium citrate, sodium hyaluronate, polyporus umbellatus mushroom extract, pogostemon cablin oil, tetramethyl acetyloctahydronaphthalenes, hexyl cinnamal, limonene, linalyl acetate, juniperus virginiana oil, citrus aurantium peel oil, alpha-isomethyl ionone, linalool",
       "description": "An all-purpose gel that will hold your curls/waves even in humid weather.",
       "buy_links": [
         {
           "url": "https://collabs.shop/cebjoi",
           "retailer": "Tootilab",
-          "country": "EU"
-        },
-          {
-            "url": "https://collabs.shop/cebjoi",
-            "retailer": "Tootilab"
-          }
+          "countries": ["EU", "US", "UK"]
+        }
       ]
+    },
+    {
+      "name": "All About Curls High Definition Gel",
+      "brand": "Zotos",
+      "buy_links": [
+        {
+          "url": "https://amzn.to/44k4TvD",
+          "retailer": "Amazon"
+        }
+      ],
+      "product_categories": ["gels"],
+      "tags": ["samples", "wavy", "curly", "coily", "premium"],
+      "ingredients_raw": "water aqua eau, propylene glycol, acrylates copolymer, aminomethyl propanol, glycerin, peg-60 hydrogenated castor oil, carbomer, hydroxyethylcellulose, quaternium-22, tetrasodium edta, dmdm hydantoin, iodopropynyl butylcarbamate, fragrance parfum",
+      "description": "A color-safe styling gel that delivers strong hold, locks in moisture, and enhances shine for firmly defined, frizz-free curls"
     }
   ]
 }

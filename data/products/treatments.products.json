@@ -107,6 +107,32 @@
         }
       ],
       "ingredients_raw": "aqua water, glycolic acid, rosa damascena flower water, centaurea cyanus flower water, aloe barbadensis leaf water, propanediol, glycerin, triethanolamine, aminomethyl propanol, panax ginseng root extract, tasmannia lanceolata fruit leaf extract, aspartic acid, alanine, glycine, serine, valine, isoleucine, proline, threonine, histidine, phenylalanine, glutamic acid, arginine, pca, sodium pca, sodium lactate, fructose, glucose, sucrose, urea, hexyl nicotinate, dextrin, citric acid, polysorbate 20, gellan gum, trisodium ethylenediamine disuccinate, sodium chloride, hexylene glycol, potassium sorbate, sodium benzoate, 1, 2-hexanediol, caprylyl glycol"
+    },
+    {
+      "name": "Scalp Balancing Sake Rinse",
+      "brand": "NatureLab Tokyo",
+      "buy_links": [
+        {
+          "url": "https://www.ulta.com/p/perfect-clean-scalp-rinse-pimprod2037622?sku=2603016",
+          "retailer": "Ulta"
+        },
+        {
+          "url": "https://amzn.to/42WaUfL",
+          "retailer": "Amazon"
+        }
+      ],
+      "product_categories": [
+        "treatments"
+      ],
+      "tags": [
+        "samples",
+        "wavy",
+        "curly",
+        "coily",
+        "low_porosity"
+      ],
+      "ingredients_raw": "aqua, water, eau, peg-40 hydrogenated castor oil, alcohol denat, glycerin, propylene glycol, sorbitol, apple cider vinegar, menthol, saccharomyces rice ferment filtrate, hydrolyzed corn protein, hydrolyzed wheat protein, hydrolyzed soy protein, panax ginseng root extract, leuconostoc radish root ferment filtrate, shea butter ethyl esters, sodium hyaluronate, pentylene glycol, butylene glycol, xanthan gum, ethylhexylglycerin, disodium edta, sodium hydroxide, phenoxyethanol, t-butyl alcohol, parfum fragrance, linalool",
+      "description": "A nourishing Japanese sake rinse that restores your scalp’s natural balance while removing buildup and impurities for optimal scalp health"
     }
   ]
 }

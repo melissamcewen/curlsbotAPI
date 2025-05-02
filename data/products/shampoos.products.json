@@ -5,7 +5,14 @@
       "brand": "Ecoslay",
       "ingredients_raw": "water, sodium methyl cocoyl taurate, sodium lauroyl sarcosinate, stearamidopropyl dimethylamine, black tea extract, slippery elm extract, sodium pca, propanediol, panthenol, peppermint oil, melissa leaf extract, nettle leaf extract, horsetail leaf extract, peppermint leaf extract, hydroxypropyl starch phosphate, sage extract, yucca leaf extract, burdock root extract, citric acid, lexfeel wow-a, vanilla planifolia fruit oil, ginger root oil, cinnamon leaf oil, clove flower oil, caprylhydroxamic acid gg",
       "product_categories": ["shampoos"],
-      "tags": ["normal_porosity", "featured", "black_owned", "woman_owned", "small_business", "high_porosity"],
+      "tags": [
+        "normal_porosity",
+        "featured",
+        "black_owned",
+        "woman_owned",
+        "small_business",
+        "high_porosity"
+      ],
       "buy_links": [
         {
           "url": "http://ecoslay.sjv.io/gOoWn2",
@@ -63,7 +70,7 @@
       ],
       "product_categories": ["shampoos"],
       "tags": ["high_porosity", "normal_porosity", "featured"],
-      "cost": 3.00,
+      "cost": 3.0,
       "ingredients_raw": "water aqua-eau, cocamidopropyl hydroxysultaine, sodium methyl cocoyl taurate, glycerin, caprylyl capryl glucoside, sodium cocoyl isethionate, glyceryl stearate se, sodium chloride, sodium lauroyl methyl isethionate, trisodium ethylenediamine disuccinate, guar hydroxypropyltrimonium chloride, plumeria actufolia flower extract, cananga odorata flower oil, lavandula angustifolia lavender oil, citrus aurantium dulcis orange peel oil, salvia sclarea clary oil, vanillin, pogostemon cablin oil, glycine soja soybean oil, sodium benzoate, pyrus malus apple fruit extract, potassium sorbate, simmondsia chinensis jojoba seed oil, oryza sativa rice extract, citric acid, hydrolyzed quinoa, hydrolyzed rice protein, calophyllum inophyllum tamanu oil, butyrospermum parkii shea butter, persia gratissima avocado oil, taraxacum officinale dandelion leaf extract, salvia officinalis sage leaf extract, melissa officinalis leaf extract, linalool, limonene",
       "asin": "B074PY4QJC"
     },
@@ -149,12 +156,11 @@
         {
           "url": "https://lohy.com.au/products/nourish-flourish-curly-hair-shampoo?aff=49",
           "retailer": "Lohy",
-          "country": "AU"
+          "countries": ["AU"]
         }
       ],
       "ingredients_raw": "aqua, lauryl glucoside, decyl glucoside, coco glucoside, cocamidopropyl betaine, glycerin, propanediol, camellia sinensis white tea leaf extract, chamomilla recutita matricaria flower leaf stem extract, citric acid, phenoxyethanol, guar hydroxypropyltrimonium chloride, hydrolysed soy protein, potassium sorbate, lemon scented tea tree oil, mandarin peel oil, rosemary oil, may chang, eucalyptus radiata, lavandin oil, salvia clary sclarea oil, pogostemon cablin patchouli oil",
       "cost": 2.3
-
     },
     {
       "name": "Essential Moisture Cleanser",
@@ -166,7 +172,7 @@
         {
           "url": "https://amzn.to/4gzkwmm",
           "retailer": "Amazon",
-          "country": "UK"
+          "countries": ["UK"]
         },
         {
           "url": "https://curlsmith.com/products/essential-moisture-cleanser",
@@ -175,7 +181,7 @@
         {
           "url": "https://uk.curlsmith.com/products/essential-moisture-cleanser",
           "retailer": "Curlsmith",
-          "country": "UK"
+          "countries": ["UK"]
         }
       ],
       "asin": "B0BPTC343Q"
@@ -190,7 +196,7 @@
         {
           "url": "https://amzn.to/3Pdq0qB",
           "retailer": "Amazon",
-          "country": "UK"
+          "countries": ["UK"]
         },
         {
           "url": "https://curlsmith.com/products/full-body-weightless-cleanser",
@@ -199,19 +205,16 @@
         {
           "url": "https://uk.curlsmith.com/products/full-body-weightless-cleanser",
           "retailer": "Curlsmith",
-          "country": "UK"
+          "countries": ["UK"]
         }
       ],
       "asin": "B0CZW7PPLQ"
-
     },
     {
       "name": "Curl Definition Shampoo",
       "brand": "Not Your Mothers Naturals",
       "ingredients_raw": "water aqua eau, sodium cocoyl isethionate, sodium lauroyl methyl isethionate, cocamidopropyl hydroxysultaine, peg-120 methyl glucose dioleate, glycol distearate, polyquaternium-10, quaternium-80, mangifera indica mango seed butter, gardenia tahitensis flower extract, glycerin, tetrasodium glutamate diacetate, fragrance parfum, linalool, hexyl cinnamal, coumarin, phenoxyethanol, ethylhexylglycerin, citric acid",
-      "product_categories": [
-        "shampoos"
-      ],
+      "product_categories": ["shampoos"],
       "tags": ["high porosity", "low porosity"],
       "cost": 0.5,
       "buy_links": [
@@ -265,12 +268,8 @@
     {
       "name": "Sulphate 4% Cleanser for Body and Hair",
       "brand": "The Ordinary",
-      "product_categories": [
-        "shampoos"
-      ],
-      "tags": [
-        "featured"
-      ],
+      "product_categories": ["shampoos"],
+      "tags": ["featured"],
       "buy_links": [
         {
           "url": "https://theordinary.com/en-us/4-sulphate-cleanser-for-body-and-hair-shampoo-100399.html",
@@ -307,12 +306,7 @@
         {
           "url": "https://collabs.shop/ha9w1t",
           "retailer": "Tootilab",
-          "country": "EU"
-        },
-        {
-            "url": "https://collabs.shop/ha9w1t",
-            "retailer": "Tootilab",
-          "country": "US"
+          "countries": ["EU", "UK", "US"]
         }
       ]
     },
@@ -320,7 +314,7 @@
       "name": "Bond Building Shampoo",
       "brand": "Curl Talk",
       "product_categories": ["shampoos"],
-      "tags": ["wavy", "curly", "coily", "sample", "budget"],
+      "tags": ["wavy", "curly", "coily", "samples", "budget"],
       "ingredients_raw": "water aqua, sodium lauroyl sarcosinate, sodium cocoyl isethionate, cocamidopropyl hydroxysultaine, glycol distearate, peg-150 distearate, propanediol, hydroxypropylgluconamide, hydroxypropylammonium gluconate, aspergillus ferment, arginine, rice amino acids, persea gratissima avocado oil, mauritia flexuosa fruit oil, sclerocarya birrea seed oil, polyquaternium-10, hydroxypropyl guar hydroxypropyltrimonium chloride, tocopherol, tetrasodium glutamate diacetate, fragrance parfum, phenoxyethanol, ethylhexylglycerin, citric acid",
       "description": "Maintain healthy curls with a shampoo that gently cleanses while repairing bonds to reduce breakage, tame frizz, and enhance curl definition",
       "buy_links": [
@@ -333,13 +327,12 @@
           "retailer": "CVS"
         }
       ]
-
     },
     {
       "name": "Outta My Hair Gentle Daily Shampoo",
-      "brand": "Hairitage ",
+      "brand": "Hairitage",
       "product_categories": ["shampoos"],
-      "tags": ["wavy", "curly", "sample"],
+      "tags": ["wavy", "curly", "samples"],
       "ingredients_raw": "water aqua eau, sodium c14-16 olefin sulfonate, cocamidopropyl betaine, fragrance parfum, cocamide mipa, glycol distearate, guar hydroxypropyltrimonium chloride, benzyl alcohol, panthenol, polyquaternium-44, polyquaternium-7, polysorbate 20, dehydroacetic acid, citric acid, sodium gluconate, simmondsia chinensis jojoba seed oil, aloe barbadensis leaf juice, tocopheryl acetate, decyl glucoside, glycerin, simmondsia chinensis jojoba seed extract",
       "description": "Formulated with a unique blend of potent ingredients, this shampoocleanses impurities and excess oils without stripping hair, making it ultra-mild, moisture-rich, and safe for everyday use",
       "buy_links": [
@@ -353,7 +346,7 @@
       "name": "Cleansed Moisturizing Shampoo",
       "brand": "Miche",
       "product_categories": ["shampoos"],
-      "tags": ["wavy", "curly", "coily","sample"],
+      "tags": ["wavy", "curly", "coily", "samples"],
       "ingredients_raw": "water, salix alba white willow bark extract, hibiscus sabdariffa hibiscus flower extract, panax ginseng ginseng root extract, ilex raraguariensis yerba mate leaf extract, sodium c14-16 alpha olefin sulfonate, cocamidopropyl betaine, disodium cocoamphodipropionate, sodium cocoyl isethionates, glycol distearate, vegetable glycerin, guar hydroxypropyltrimonium chloride, citric acid, phenoxyethanol, caprylyl glycol, sorbic acid, phthalate-free fragrance",
       "description": "A sulfate-free, pH-balanced shampoo that moisturizes, restores dry hair, and stimulates the scalp with hibiscus and ginseng",
       "buy_links": [
@@ -367,7 +360,7 @@
       "name": "Curl Liberating Shampoo",
       "brand": "Imbue",
       "product_categories": ["shampoos"],
-      "tags": ["curly", "coily", "sample"],
+      "tags": ["curly", "coily", "samples"],
       "ingredients_raw": "aqua water eau, coco-glucoside, laureth-6 carboxylic acid, peg-120 methyl glucose dioleate, glycerin, panthenol, peg-7 glyceryl cocoate, polyquaternium-10, peg-75 shea butter glycerides, cocos nucifera coconut fruit extract, theobroma cacao cocoa seed butter, theobroma grandiflorum seed butter, helianthus annuus sunflower seed oil, tocopherol, betaine, parfum fragrance, hydroxypropyl guar hydroxypropyltrimonium chloride, peg-4, peg-6, castor oil hydrogenated ethoxylated, peg-7, peg-8, sodium hydroxide, disodium edta, potassium sorbate, sodium benzoate, methylchloroisothiazolinone, methylisothiazolinone, linalool, limonene, hexyl cinnamal",
       "description": "A sulfate-free, hydrating shampoo that removes buildup without stripping moisture, leaving curls soft, shiny, and defined from wash day and beyond",
       "buy_links": [
@@ -376,7 +369,72 @@
           "retailer": "Amazon"
         }
       ]
+    },
+    {
+      "name": "Sunrise Rituals: Signature Shampoo",
+      "brand": "Voir",
+      "buy_links": [
+        {
+          "url": "https://amzn.to/3GQ7gfO",
+          "retailer": "Amazon"
+        }
+      ],
+      "product_categories": ["shampoos"],
+      "tags": ["samples", "wavy", "curly", "coily", "low_porosity"],
+      "ingredients_raw": "aqua water eau, sodium cocoyl isethionate, cocamidopropyl betaine, glycerin, sodium chloride, hydrolyzed hyaluronic acid, sodium hyaluronate, bixa orellana annatto seed extract, aloe barbadensis aloe vera leaf juice, betula alba birch sap juice, polyquaternium-7, panthenol, guar hydroxypropyltrimonium chloride, tocopherol, maltodextrin, coco-glucoside, glyceryl oleate, lactic acid, hydrogenated palm glycerides citrate, tetrasodium edta, cocamidopropyl dimethylamine, sodium hydroxide, citric acid, parfum fragrance, limonene, linalool, potassium sorbate, sodium benzoate, phenoxyethanol, benzyl alcohol, dehydroacetic acid",
+      "description": "A daily go-to shampoo infused with hyaluronic and lactic acids that gently cleanses while boosting smoothness and shine"
+    },
+    {
+      "name": "Big Energy Volumizing Shampoo",
+      "brand": "Curl Keeper",
+      "buy_links": [
+        {
+          "url": "https://curlkeeper.com/r?id=ttmupk",
+          "retailer": "Curl Keeper"
+        }
+      ],
+      "product_categories": ["shampoos"],
+      "tags": ["samples", "wavy", "curly", "low_porosity"],
+      "ingredients_raw": "water eau, coco-glucoside, sodium chloride himalayan crystal salt, sodium c14-16 olefin sulfonate, disodium laureth sulfosuccinate, lauramide dea, panthenoil, polysorbate 80, silk amino acides, hydroxyproyl methylcellulose, citric acid, fragrance, dmdm hydantoin",
+      "description": "Cleanses and stimulates your scalp, giving you the perfect foundation for voluminous curls."
+    },
+
+    {
+      "name": "Scalp Revitalizing Solution Hair Thickening Shampoo",
+      "brand": "Dr. Groot",
+      "buy_links": [
+        {
+          "url": "https://lgbeauty.com/products/dr-groot-scalp-revitalizing-solution-hair-thickening-shampoo",
+          "retailer": "LG Beauty"
+        },
+        {
+          "url": "https://amzn.to/3GAgpJD",
+          "retailer": "Amazon"
+        }
+      ],
+      "product_categories": ["shampoos"],
+      "tags": ["samples", "wavy", "curly", "coily", "low_porosity"],
+      "ingredients_raw": "water eau, disodium laureth sulfosuccinate, disodium lauryl sulfosuccinate, glycerin, cocamidopropyl betaine, parfum fragrance, acrylates c10-30 alkyl acrylate crosspolymer, sodium cocoyl isethionate, saccharomyces cerevisiae extract, yeast extract extrait de levure, beta-glucan, inulin, maltodextrin, bifida ferment lysate, lactobacillus ferment lysate, anthemis nobilis flower water, rosmarinus officinalis rosemary extract, biotin, caffeine, melissa officinalis flower leaf stem water, houttuynia cordata extract, panax ginseng root extract, paeonia suffruticosa branch flower leaf extract, paeonia suffruticosa root extract, artemisia annua extract, azadirachta indica leaf extract, camellia sinensis leaf extract, mentha arvensis leaf extract, centella asiatica leaf extract, hyaluronic acid, polygonum multiflorum root extract, panax ginseng leaf stem extract, arginine, benzyl alcohol, aspartic acid, polylysine, zingiber officinale ginger root extract, ganoderma lucidum mushroom extract, pca, serine, glycine, alanine, althaea officinalis root extract, calendula officinalis flower extract, chamaecyparis obtusa leaf extract, phellinus linteus extract, valine, dehydroacetic acid, isoleucine, proline, threonine, histidine, phenylalanine, sodium pca, alchemilla vulgaris extract, vinegar vinaigre, zea mays corn starch, dextrin, peg-crosspolymer, caprylyl glycol, di-c12-13 alkyl malate, polyquaternium-7, microcrystalline cellulose, cocamide mea, coco-glucoside, glyceryl oleate, menthol, panthenol, salicylic acid, coconut acid, niacinamide, ppg-3 caprylyl ether, mannitol, chromium hydroxide green ci 77289, sodium isethionate, tetrasodium edta, methylpropanediol, ethylhexylglycerin, chlorophyllin-copper complex, citric acid, potassium hydroxide, pentylene glycol, alcohol, butylene glycol, 2-hexanediol, sodium lactate, potassium sorbate, hexylene glycol, sodium chloride, sodium benzoate",
+      "description": "A one-of-a-kind volumizing shampoo with probiotic beads, biotin, rosemary, and caffeine to support scalp health and promote stronger, healthier hair growth"
+    },
+    {
+      "name": "No. 4 Bond Maintenance Shampoo",
+      "brand": "Olaplex",
+      "buy_links": [
+        {
+          "url": "https://olaplex.com/products/olaplex-n-4-bond-maintenance-shampoo-us",
+          "retailer": "Olaplex"
+        },
+        {
+          "url": "https://www.lookfantastic.com/p/olaplex-no.4-fine-bond-maintenance-shampoo-250ml/16162873/",
+          "retailer": "Olaplex",
+          "countries": ["UK", "EU"]
+        }
+      ],
+      "product_categories": ["shampoos"],
+      "tags": ["samples", "wavy", "curly", "coily"],
+      "ingredients_raw": "water aqua eau, sodium lauroyl methyl isethionate, cocamidopropyl hydroxysultaine, potassium cocoyl glycinate, disodium cocoyl glutamate, sodium lauroyl sarcosinate, potassium cocoate, decyl glucoside, glycereth-26, bis-aminopropyl diglycol dimaleate, cocamidopropylamine oxide, disodium laureth sulfosuccinate, glycol distearate, sodium cocoyl glutamate, methyl gluceth-20, acrylates copolymer, peg-120 methyl glucose dioleate, amodimethicone, citric acid, sodium lauryl sulfoacetate, polyquaternium-10, ethylhexylglycerin, divinyldimethicone dimethicone copolymer, polyquaternium-11, trisodium ethylenediamine disuccinate, guar hydroxypropyltrimonium chloride, c11-15 pareth-7, laureth-9, glycerin, trideceth-12, c12-13 pareth-23, c12-13 pareth-3, hydrolyzed vegetable protein, pg-propyl silanetriol, panthenol, acetic acid, tetrasodium edta, pentasodium triphosphate, sodium hydroxide, disodium edta, helianthus annus sunflower seed oil, tocopherol, prunus armeniaca apricot kernel oil, pseudozyma epicola camellia sinensis seed oil ferment extract filtrate, pseudozyma epicola argania spinosa kernel oil ferment filtrate, quaternium-95, propanediol, helianthus annus sunflower seed extract, peg-8, euterpe oleracea fruit extract, punica granatum extract, rosemarinus officinalis rosemary leaf extract, musa sapientum banana fruit extract, origanum vulgare lear extract, morinda citrifolia fruit extract, articum lappa root extract, peg-8 smdi copolymer, sodium hyaluronate, palmitoyl myristyl serinate, sodium polyacrylate, pentaerythrityl tetra-di-t-butyl hydroxyhydrocinnamate, biotin, benzoic acid, phenoxyethanol, chlorphenesin, potassium sorbate, sodium benzoate, fragrance parfum, citral, hexyl cinnamal, limonene",
+      "description": "A highly concentrated, color-safe shampoo with Olaplex’s bonding technology that gently cleanses, strengthens, and adds shine while repairing damage and improving manageability"
     }
   ]
 }
-

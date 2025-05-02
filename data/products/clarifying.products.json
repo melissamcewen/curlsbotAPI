@@ -30,7 +30,7 @@
         {
           "url": "https://amzn.to/4iSDfKT",
           "retailer": "Amazon",
-          "country": "AU"
+          "countries": ["AU"]
         },
         {
           "url": "https://fave.co/3PMQGyT",
@@ -39,7 +39,7 @@
         {
           "url": "https://go.skimresources.com?id=276362X1762442&xs=1&url=https%3A%2F%2Fau.moroccanoil.com%2Fproducts%2Fclarifying-shampoo",
           "retailer": "Moroccanoil",
-          "country": "AU"
+          "countries": ["AU"]
         }
       ],
       "description": "This shampoo has some stronger cleansers, but that's fine in a clarifying shampoo because you're only using it once in a while. It's sulfate-free, so it won't strip your hair too much. It's also got some nice oils in it to help keep your hair from getting too dry.",
@@ -57,12 +57,12 @@
         {
           "url": "https://amzn.to/4iUapKl",
           "retailer": "Amazon",
-          "country": "UK"
+          "countries": ["UK"]
         },
         {
           "url": "https://go.skimresources.com?id=276362X1762442&xs=1&url=https%3A%2F%2Fuk.curlsmith.com%2Fproducts%2Fwash-scrub-detox-pro-biotic",
           "retailer": "Curlsmith",
-          "country": "UK"
+          "countries": ["UK"]
         }
       ],
       "asin": "B08636L8JY",
@@ -152,7 +152,6 @@
         }
       ],
       "description": "A shampoo that clarifies without stripping your hair."
-
     },
     {
       "name": "Curl Reset Detox Shampoo",
@@ -177,6 +176,20 @@
       "asin": "B08636L8JY",
       "description": "This shampoo was recently reformulated to remove not just product buildup, but also mineral buildup from hard water.",
       "cost": 2.6
+    },
+    {
+      "name": "Perfect Clean 2-in-1 Scalp Scrub & Shampoo",
+      "brand": "NatureLab Tokyo",
+      "buy_links": [
+        {
+          "url": "https://www.ulta.com/p/perfect-clean-2-in-1-scalp-scrub-clarifying-shampoo-pimprod2013672?sku=2564029",
+          "retailer": "Ulta"
+        }
+      ],
+      "product_categories": ["clarifying_shampoos", "treatments"],
+      "tags": ["samples", "wavy", "curly", "coily", "low_porosity"],
+      "ingredients_raw": "sucrose, glycerin, sodium c14-16 olefin sulfonate, cocamide mea, glycol distearate, aqua, eau, water, ricinus communis castor seed oil, saccharomyces rice ferment filtrate, salix alba willow bark extract, butyrospermum parkii shea butter, cocos nucifera coconut oil, melaleuca alternifolia tea tree leaf oil, vitis vinifera grape fruit extract, argania spinosa callus culture extract, malus domestica fruit cell culture extract, glutamic acid, sodium pca, hydrolyzed coix lacryma-jobi ma-yuen seed, platinum powder, trigonella foenum-graecum hydroxypropyltrimonium chloride, locust bean hydroxypropyltrimonium chloride, sodium hyaluronate, hydroxypropyltrimonium hyaluronate, prunus domestica seed extract, argania spinosa kernel oil, lupinus albus seed oil, mangifera indica mango seed oil, theobroma grandiflorum seed butter, adansonia digitata seed oil, carapa guaianensis seed oil, sclerocarya birrea seed oil, argan oil polyglyceryl-6 esters, sodium cocoyl glycinate, propanediol, cocamidopropyl betaine, butylene glycol, guar hydroxypropyltrimonium chloride, isomalt, xanthan gum, polysorbate 80, citric acid, sodium citrate, trisodium phosphate, sodium chloride, lecithin, bht, sodium gluconate, phenoxyethanol, sodium benzoate, fragrance",
+      "description": "A 2-in-1 scalp scrub and clarifying shampoo that gently removes buildup and impurities to reveal a healthy scalp and immensely shiny hair"
     }
   ]
 }
