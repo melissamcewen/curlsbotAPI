@@ -243,8 +243,11 @@
     {
       "name": "Curl Keeper® Original Liquid Styler",
       "brand": "Curl Keeper",
-      "product_categories": ["gels", "fragrance-free"],
-      "tags": ["normal_porosity", "low_porosity", "featured"],
+      "product_categories": ["gels"],
+      "tags": ["samples",
+        "wavy",
+        "curly",
+        "coily"],
       "cost": 2.9,
       "buy_links": [
         {
@@ -252,7 +255,8 @@
           "retailer": "Curl Keeper"
         }
       ],
-      "ingredients_raw": "water aqua eau, vp va copolymer, propylene glycol, hydroxyethylcellulose, glycerin, oleth-20, polyquaternium-10, citric acid, dmdm hydantoin"
+      "ingredients_raw": "water aqua eau, vp va copolymer, propylene glycol, hydroxyethylcellulose, glycerin, oleth-20, polyquaternium-10, citric acid, dmdm hydantoin",
+      "description": "A water-based formula that reactivates with water for frizz control and curl refresh without buildup"
     },
     {
       "name": "Spiralicious",

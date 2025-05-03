@@ -62,7 +62,25 @@
           "product_categories": {
             "type": "array",
             "items": {
-              "type": "string"
+              "type": "string",
+              "enum": [
+                "creams",
+                "accessories",
+                "conditioners",
+                "cowashes",
+                "leave_ins",
+                "custards",
+                "foams",
+                "gels",
+                "oils",
+                "refreshers",
+                "shampoos",
+                "clarifying_shampoos",
+                "sprays",
+                "treatments",
+                "pre-poo",
+                "deep_conditioners"
+              ]
             },
             "description": "Categories the product belongs to"
           },
@@ -84,7 +102,8 @@
           },
           "description": {
             "type": "string",
-            "description": "Description of the product"
+            "description": "Description of the product",
+            "maxLength": 120
           },
           "asin": {
             "type": "string",
