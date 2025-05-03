@@ -314,8 +314,7 @@
         }
       ],
       "product_categories": [
-        "deep_conditioners",
-        "Protein Treatments"
+        "deep_conditioners"
       ],
       "tags": [
         "samples",
@@ -602,8 +601,7 @@
         }
       ],
       "product_categories": [
-        "creams",
-        "Leave-in conditioners"
+        "creams"
       ],
       "tags": [
         "samples",
@@ -634,7 +632,7 @@
         "coily"
       ],
       "ingredients_raw": "water aqua eau, caprylic capric triglyceride, cetearyl alcohol, cocos nucifera coconut oil, cetrimonium chloride, aloe barbadensis aloe vera leaf juice, trehalose, glycerin, fragrance parfum, hydroxypropyl starch phosphate, polyurethane-14, amp acrylates copolymer, pvp, behentrimonium chloride, cetyl alcohol, panthenol provitamin b5, butyrospermum parkii shea butter, beeswax, tamarindus indica tamarind fruit extract, ethylhexylglycerin, phenoxyethanol",
-      "description": "A curl cream with Aloe Vera, Coconut Oil, and Shea Butter that defines texture without crunch, leaving curls bouncy, shiny, frizz-free, and weightless"
+      "description": "A curl cream that defines texture without crunch, leaving curls bouncy, shiny, frizz-free, and weightless"
     },
     {
       "name": "Curl Talk Curl Cream",
@@ -700,7 +698,7 @@
         "low_porosity"
       ],
       "ingredients_raw": "aqua water eau, hydrolyzed rice protein, hydrolyzed quinoa, hydroxyethylcellulose, caprylyl glycol, phenoxyethanol, sorbic acid, cetrimonium chloride, chamomille recutita matricaria flower extract, urtica dioica nettle leaf extract, polyquaternium-10",
-      "description": "A frizz-fighting liquid gel with quinoa and rice proteins to boost color retention, repair curls, and leave them soft, voluminous, and bouncy"
+      "description": "A frizz-fighting liquid gel to boost color retention, repair curls, and leave them soft, voluminous, and bouncy"
     },
     {
       "name": "Curl Talk Gel",
@@ -1160,7 +1158,7 @@
         "wavy",
         "curly",
         "coily",
-        "bond_builder",
+        "bond_builder"
       ],
       "ingredients_raw": "water aqua, bis-aminopropyl diglycol dimaleate, propylene glycol, cetearyl alcohol, behentrimonium methosulfate, cetyl alcohol, phenoxyethanol, glycerin, hydroxyethyl ethylcellulose, stearamidopropyl dimethylamine, quaternium-91, sodium benzoate, cetrimonium methosulfate, cetrimonium chloride, fragrance parfum, polyquaternium-37, tetrasodium edta, benzyl benzoate, etidronic acid, ascorbic acid, phytantriol, tocopheryl acetate, aloe barbadensis leaf juice, panthenol, simmondsia chinensis jojoba seed oil, citric acid, potassium sorbate",
       "description": "A pre-shampoo treatment to repair and strengthen hair from the inside out"

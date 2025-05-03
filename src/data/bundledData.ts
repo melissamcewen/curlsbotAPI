@@ -2579,6 +2579,9 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "simple_humectants"
       ],
+      "synonyms": [
+        "glycerol"
+      ],
       "references": [
         {
           "url": "https://amzn.to/4hd4Tko",
