@@ -196,4 +196,23 @@ describe('porosity scoring', () => {
     });
   });
 
+  describe('Define and Shine Gel', () => {
+    const ingredients =
+      'Aqua (Water/Eau), Hydrolyzed Rice Protein, Hydrolyzed Quinoa, Hydroxyethylcellulose, Caprylyl Glycol, Phenoxyethanol, Sorbic Acid, Cetrimonium Chloride, Chamomille Recutita (Matricaria) Flower Extract, Urtica Dioica (Nettle) Leaf Extract, Polyquaternium-10';
+    const analysis = analyzer.analyze(ingredients);
+    const result = porosity(analysis);
+    it('should score Define and Shine Gel very well for low porosity', () => {
+      expect(result.low).toBeGreaterThan(80);
+    });
+  });
+
+  describe('Uncle Funkys Super Curl Moisture Cream', () => {
+    const ingredients =
+      'Water, Glycine Soja (Soybean) Oil, Glycerin, Cocos Nucifera (Coconut) Oil, Honey, Polymide-1, Caprylic/Capric Triglyceride, Butyrospermum Parkii (Shea Butter), Fragrance, Cetearyl Alcohol, Ceteareth-20, Glyceryl Stearate, Aloe Barbadensis Leaf Extract, Olea Europaea (Olive) Fruit Oil, Prunus Amygdalus Dulcis (Sweet Almond) Oil, Macadamia Ternifolia (Macadamia) Seed Oil, Potassium Hydroxide, Xanthan Gum, Carbomer, Tetrasodium EDTA, Phenoxyethanol, Caprylyl Glycol, Potassium Sorbate, Caramel.';
+    const analysis = analyzer.analyze(ingredients);
+    const result = porosity(analysis);
+    it('should score Uncle Funkys Super Curl Moisture Cream poorly for low porosity', () => {
+      expect(result.low).toBeLessThan(50);
+    });
+  });
 });
