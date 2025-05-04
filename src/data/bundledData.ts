@@ -4280,6 +4280,16 @@ export const defaultDatabase: IngredientDatabase = {
       "status": "ok",
       "group": "others"
     },
+    "c10_40_isoalkylamidopropylethyldimonium_ethosulfate": {
+      "name": "C10-40 Isoalkylamidopropylethyldimonium Ethosulfate",
+      "id": "c10_40_isoalkylamidopropylethyldimonium_ethosulfate",
+      "categories": [
+        "other"
+      ],
+      "description": "Conditioning agent",
+      "status": "warning",
+      "group": "others"
+    },
     "amodimethicone": {
       "name": "Amodimethicone",
       "id": "amodimethicone",
@@ -5301,7 +5311,8 @@ export const defaultDatabase: IngredientDatabase = {
         "behentrimonium",
         "methosulfate",
         "thiosulfate",
-        "sulfated"
+        "sulfated",
+        "ethosulfate"
       ]
     },
     "silicones": {

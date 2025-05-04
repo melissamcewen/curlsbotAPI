@@ -10,7 +10,7 @@ import {
 /* THESE ARE PRODUCTION TESTS USE THE DATA IN src/data/bundledData.ts */
 
 const list = `some essential oil, sulfated castor oil, cetearyl
-alcohol, Isopropanolamine, polyquat 1, 1`;
+alcohol, Isopropanolamine, polyquat 1, 1, C10-40 Isoalkylamidopropylethyldimonium Ethosulfate`;
 
 describe('Handling of other ingredients under the default system', () => {
   const analyzer = new Analyzer({
@@ -29,6 +29,7 @@ describe('Handling of other ingredients under the default system', () => {
       'cetearyl alcohol',
       'isopropanolamine',
       'polyquat 1',
+      'c10-40 isoalkylamidopropylethyldimonium ethosulfate',
     ]);
   });
  it('should not include 1 as an ingredient', () => {
@@ -70,6 +71,12 @@ describe('Handling of other ingredients under the default system', () => {
         category: undefined,
         status: 'ok',
         reason: undefined,
+      },
+      {
+        normalized: 'c10-40 isoalkylamidopropylethyldimonium ethosulfate',
+        ingredientId: 'c10_40_isoalkylamidopropylethyldimonium_ethosulfate',
+        category: 'other',
+        status: 'ok',
       },
     ];
 

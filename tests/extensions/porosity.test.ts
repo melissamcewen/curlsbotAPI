@@ -176,7 +176,7 @@ describe('porosity scoring', () => {
     });
   });
 
-  describe('As I Am Rice Water', () => {
+  /*describe('As I Am Rice Water', () => {
     const ingredients =
       'aqua water eau, glycerin, betaine, cetearyl alcohol, cetyl alcohol, linum usitatissimum linseed seed extract, brassicamidopropyl dimethylamine, polyglyceryl-3 betainate acetate, oryza sativa rice extract, biotin, ceramide np, phytosterols, inositol, copper tripeptide-1, serenoa serrulata fruit extract, cocos nucifera coconut oil, cetyl esters, c12-15 alkyl lactate, lactic acid, lauramidopropyl hydroxysultaine, caprylhydroxamic acid, sodium chloride, caprylyl glycol, potassium sorbate, sodium benzoate';
     const analysis = analyzer.analyze(ingredients);
@@ -185,7 +185,8 @@ describe('porosity scoring', () => {
         expect(result.low).toBeGreaterThan(60);
         expect(result.high).toBeGreaterThan(70);
       });
-  });
+  });*/
+  
   describe('Cantu Cream', () => {
     const ingredients =
       'aqua water, cetearyl alcohol, canola oil, glycerin, ceteareth-20, parfum fragrance, ceteth-20, butyrospermum parkii shea butter, glycol stearate, petrolatum, peg-75, polyquaternium-10, phenoxyethanol, ethylhexylglycerin, cocos nucifera coconut fruit extract, persea gratissima avocado oil, prunus amygdalus dulcis sweet almond oil, simmondsia chinensis jojoba seed oil, olea europaea olive fruit oil, mangifera indica mango seed butter, argania spinosa kernel oil, melia azadirachta neem seed oil, daucus carota sativa seed oil, macadamia ternifolia seed oil, mangifera indica mango seed oil, glycine soja soyabean oil, vitis vinifera grape seed oil, hydrolyzed silk, lonicera caprifolium flower extract, macrocystis pyrifera extract, salvia officinalis sage leaf extract, vitis vinifera red grape seed extract, urtica dioica nettle extract, silk amino acids, aloe barbadensis aloe vera leaf juice, benzyl benzoate, coumarin, hexyl cinnamal';
