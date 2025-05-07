@@ -5890,7 +5890,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 100,
-          "low": 32
+          "low": 7
         },
         "sebderm": {
           "hasTriggers": true,
@@ -10256,7 +10256,7 @@ export const defaultProductDatabase: ProductDatabase = {
         }
       ],
       "product_categories": [
-        "shampoos"
+        "conditioners"
       ],
       "tags": [
         "samples",
@@ -10631,7 +10631,7 @@ export const defaultProductDatabase: ProductDatabase = {
       "description": "A lightweight curl primer that delivers deep moisture without buildup to leave hair feeling product-free",
       "id": "curl_wow_flo-etry_vital_natural_serum",
       "systems_excluded": [],
-      "status": "warning",
+      "status": "caution",
       "extensions": {
         "frizzbot": {
           "simple_humectants_number": 4,
@@ -10661,7 +10661,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 100,
-          "low": 44
+          "low": 11
         },
         "sebderm": {
           "hasTriggers": true,

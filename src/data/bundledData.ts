@@ -4287,7 +4287,7 @@ export const defaultDatabase: IngredientDatabase = {
         "other"
       ],
       "description": "Conditioning agent",
-      "status": "warning",
+      "status": "ok",
       "group": "others"
     },
     "amodimethicone": {
