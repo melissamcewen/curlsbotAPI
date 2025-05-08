@@ -39,7 +39,7 @@
       "name": "Bonding Oil",
       "brand": "Curlsmith",
       "product_categories": ["oils"],
-      "tags": ["normal_porosity", "high_porosity", "featured"],
+      "tags": ["normal_porosity", "high_porosity", "featured", "bonding"],
       "ingredients_raw": "hydrogenated ethylhexyl olivate, hydrogenated olive oil unsaponifiables, coco-caprylate caprate, shea butter ethyl esters, hydrogenated castor oil sebacic acid copolymer, prunus armeniaca apricot kernel oil, hippophae rhamnoides sea buckthorn fruit oil, lens esculenta lentil seed extract, hydrolyzed cicer chickpea seed extract, chenopodium quinoa seed extract, fragrance parfum, linalool, limonene, geraniol, benzyl alcohol, citronellol",
       "buy_links": [
         {
