@@ -2138,7 +2138,8 @@ export const defaultProductDatabase: ProductDatabase = {
         "samples",
         "wavy",
         "curly",
-        "coily"
+        "coily",
+        "bonding"
       ],
       "ingredients_raw": "water aqua eau, sodium lauroyl methyl isethionate, cocamidopropyl hydroxysultaine, potassium cocoyl glycinate, disodium cocoyl glutamate, sodium lauroyl sarcosinate, potassium cocoate, decyl glucoside, glycereth-26, bis-aminopropyl diglycol dimaleate, cocamidopropylamine oxide, disodium laureth sulfosuccinate, glycol distearate, sodium cocoyl glutamate, methyl gluceth-20, acrylates copolymer, peg-120 methyl glucose dioleate, amodimethicone, citric acid, sodium lauryl sulfoacetate, polyquaternium-10, ethylhexylglycerin, divinyldimethicone dimethicone copolymer, polyquaternium-11, trisodium ethylenediamine disuccinate, guar hydroxypropyltrimonium chloride, c11-15 pareth-7, laureth-9, glycerin, trideceth-12, c12-13 pareth-23, c12-13 pareth-3, hydrolyzed vegetable protein, pg-propyl silanetriol, panthenol, acetic acid, tetrasodium edta, pentasodium triphosphate, sodium hydroxide, disodium edta, helianthus annus sunflower seed oil, tocopherol, prunus armeniaca apricot kernel oil, pseudozyma epicola camellia sinensis seed oil ferment extract filtrate, pseudozyma epicola argania spinosa kernel oil ferment filtrate, quaternium-95, propanediol, helianthus annus sunflower seed extract, peg-8, euterpe oleracea fruit extract, punica granatum extract, rosemarinus officinalis rosemary leaf extract, musa sapientum banana fruit extract, origanum vulgare lear extract, morinda citrifolia fruit extract, articum lappa root extract, peg-8 smdi copolymer, sodium hyaluronate, palmitoyl myristyl serinate, sodium polyacrylate, pentaerythrityl tetra-di-t-butyl hydroxyhydrocinnamate, biotin, benzoic acid, phenoxyethanol, chlorphenesin, potassium sorbate, sodium benzoate, fragrance parfum, citral, hexyl cinnamal, limonene",
       "description": "A highly concentrated conditioner with Olaplex’s bonding technology that repairs, strengthens, and moisturizes hair prone to damage or dryness",
@@ -4581,6 +4582,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "coily"
       ],
       "cost": 3,
+      "description": "Ouidad's best-selling gel that protects against frizz in even the most humid conditions",
       "buy_links": [
         {
           "url": "https://click.linksynergy.com/link?id=9QcV0uNyab0&offerid=929395.3842993508&type=2&murl=https%3a%2f%2fwww.ouidad.com%2fproducts%2fadvanced-climate-control-heat-and-humidity-gel%3fvariant%3d42617150865666",
@@ -5636,7 +5638,6 @@ export const defaultProductDatabase: ProductDatabase = {
         }
       ],
       "product_categories": [
-        "shampoos",
         "conditioners"
       ],
       "tags": [
@@ -5644,7 +5645,8 @@ export const defaultProductDatabase: ProductDatabase = {
         "wavy",
         "curly",
         "coily",
-        "drugstore"
+        "drugstore",
+        "bonding"
       ],
       "ingredients_raw": "water aqua, cetearyl alcohol, cetyl alcohol, behentrimonium chloride, propanediol, stearalkonium chloride, caprylic capric triglyceride, hydroxypropylgluconamide, hydroxypropylammonium gluconate, aspergillus ferment, arginine, rice amino acids, persea gratissima avocado oil, mauritia flexuosa fruit oil, sclerocarya birrea seed oil, cetrimonium chloride, hydroxyethylcellulose, tetrasodium glutamate diacetate, fragrance parfum, phenoxyethanol, ethylhexylglycerin",
       "description": "A bond-building conditioner that hydrates, repairs, and reduces breakage, split ends, and frizz for healthier curls",
@@ -7051,7 +7053,8 @@ export const defaultProductDatabase: ProductDatabase = {
         "samples",
         "wavy",
         "curly",
-        "coily"
+        "coily",
+        "bonding"
       ],
       "ingredients_raw": "water, cetearyl alcohol, propylene glycol, behentrimonium methosulfate, cetyl alcohol, phenoxyethanol, glycerin, stearamidopropyl dimethylamine, aloe barbadensis leaf juice, fragrance, hydroxypropyl methylcellulose, citric acid, sodium benzoate, potassium sorbate, hydroxypropylgluconamide, hydroxypropylammonium gluconate, quaternium-91, polyquaternium-37, dicaprylyl carbonate, cetrimonium chloride, simmondsia chinensis jojoba seed oil, cetrimonium methosulfate, etidronic acid, tocopheryl acetate, tocopherol, tetrasodium glutamate diacetate, linalool, lauryl glucoside, hydroxycitronellal, ascorbyl palmitate, panthenol, phytantriol, ascorbic acid",
       "description": "Repairs bonds, prevents split ends, and reduces breakage by 70% while improving detangling by 90% after one use",
@@ -7124,7 +7127,8 @@ export const defaultProductDatabase: ProductDatabase = {
         "curly",
         "coily",
         "high_porosity",
-        "drugstore"
+        "drugstore",
+        "bonding"
       ],
       "ingredients_raw": "water aqua eau, cetearyl alcohol, butylene glycol, bis-4-pca dimethicone, behentrimonium chloride, caprylic capric triglyceride, glycerin, cetrimonium chloride, ceteareth-20, disodium peg-12 dimethicone sulfosuccinate, acrylamidopropyltrimonium chloride acrylates copolymer, caesalpinia spinosa gum, isohexadecane, coceth-7, isopropyl alcohol, fragrance parfum, hexyl cinnamal, aminomethyl propanol, phenoxyethanol, ethylhexylglycerin, lactic acid",
       "description": "Strengthens hair, reduces breakage by 56% after one use, and leaves it softer, smoother, and bouncier",
@@ -7191,7 +7195,8 @@ export const defaultProductDatabase: ProductDatabase = {
         "samples",
         "wavy",
         "curly",
-        "coily"
+        "coily",
+        "bonding"
       ],
       "ingredients_raw": "water aqua, cocos nucifera coconut fruit extract, cetearyl alcohol, glycerin, behentrimonium chloride, persea gratissima avocado oil, behenyl alcohol, cocos nucifera coconut oil, butyrospermum parkii shea butter, c12-15 alkyl benzoate, helianthus annuus sunflower seed oil, olea europaea olive fruit oil, pentaerythrityl tetraethylhexanoate, arginine, biotin, cocoyl hydrolyzed collagen, hydrolyzed vegetable protein, tocopherol, tocopheryl acetate, ceramide np, simmondsia chinensis jojoba seed oil, azadirachta indica seed oil, gardenia tahitensis flower extract, glycol distearate, caprylyl glycol, hydroxyethylcellulose, hydroxyethyl cetearamidopropyldimonium chloride, ethyl lauroyl arginate hcl, isopropyl alcohol, sodium nitrate, sodium benzoate, fragrance parfum, coumarin, benzyl benzoate",
       "description": "Restores and protects hair bonds weakened by chemicals, styling, or environmental stressors",
@@ -7850,7 +7855,7 @@ export const defaultProductDatabase: ProductDatabase = {
       }
     },
     "hydrating_curl_cream": {
-      "name": "Hydrating curl Cream",
+      "name": "Hydrating Curl Cream",
       "brand": "Ocoa",
       "buy_links": [
         {
@@ -8183,8 +8188,8 @@ export const defaultProductDatabase: ProductDatabase = {
         }
       }
     },
-    "naturelab_tokyo_perfect_repair_leave-in_treatment": {
-      "name": "Naturelab Tokyo Perfect Repair Leave-in Treatment",
+    "perfect_repair_leave-in_treatment": {
+      "name": "Perfect Repair Leave-in Treatment",
       "brand": "NatureLab Tokyo",
       "buy_links": [
         {
@@ -8204,7 +8209,7 @@ export const defaultProductDatabase: ProductDatabase = {
       ],
       "ingredients_raw": "aqua, water, eau, butylene glycol, cocamidopropyl betaine, phyllostachys pubescens meristem cell lysate, argania spinosa callus culture extract, malus domestica fruit cell culture extract, vitis vinifera grape fruit cell extract, opuntia ficus-indica seed oil, prunus domestica seed extract, argania spinosa kernel oil, lupinus albus seed oil, mangifera indica mango seed oil, theobroma grandiflorum seed butter, adansonia digitata seed oil, carapa guaianensis seed oil, sclerocarya birrea seed oil, hydrolyzed pea protein, hydrolyzed coix lacryma-jobi ma-yuen seed, glutamic acid, sodium pca, pentylene glycol, isomalt, polyquaternium-10, polyquaternium-7, styrene vp copolymer, xanthan gum, polysorbate 20, lecithin, peg-60 hydrogenated castor oil, benzotriazolyl dodecyl p-cresol, glycerin, sodium benzoate, phenoxyethanol, parfum fragrance, yellow 5 ci 19140, blue ci 42090, red 33 ci 17200",
       "description": "A protein-packed leave-in foam that speeds up drying, protects against heat, fights frizz, and adds shine",
-      "id": "naturelab_tokyo_perfect_repair_leave-in_treatment",
+      "id": "perfect_repair_leave-in_treatment",
       "systems_excluded": [],
       "status": "ok",
       "extensions": {
@@ -8487,7 +8492,7 @@ export const defaultProductDatabase: ProductDatabase = {
     },
     "leave-in_detangler": {
       "name": "Leave-in Detangler",
-      "brand": "All About",
+      "brand": "All About Curls",
       "buy_links": [
         {
           "url": "https://amzn.to/3EQ1KcC",
@@ -8990,7 +8995,8 @@ export const defaultProductDatabase: ProductDatabase = {
         "wavy",
         "curly",
         "coily",
-        "low_porosity"
+        "low_porosity",
+        "bonding"
       ],
       "ingredients_raw": "water, hydroxypropylgluconamide, hydroxypropylammonium gluconate, polysorbate 20, phenoxyethanol, fragrance, potassium sorbate, citric acid, aminomethyl propanol",
       "description": "Instantly helps repair hair, smooth strands and reduce breakage after just one use",
@@ -9032,13 +9038,16 @@ export const defaultProductDatabase: ProductDatabase = {
           "retailer": "Olaplex"
         }
       ],
-      "product_categories": [],
+      "product_categories": [
+        "gels"
+      ],
       "tags": [
         "samples",
         "wavy",
         "curly",
         "coily",
-        "high_porosity"
+        "high_porosity",
+        "bonding"
       ],
       "ingredients_raw": "Water/Aqua/Eau, Xylitylglucoside, Hydroxyethylcellulose, Anhydroxylitol, Bis-Aminopropyl Diglycol Dimaleate, Glycerin, Propanediol, Maltitol, Polyimide-1, Guar Hydroxypropyltrimonium Chloride, Hydroxypropyl Starch Phosphate, Caprylyl/Capryl Glucoside, Xylitol, Aspergillus Ferment, Acacia Senegal Gum, Ethylhexylglycerin, Cetyl Hydroxyethylcellulose, Polyquaternium-10, Glycolipids, Arginine, Cocos Nucifera (Coconut) Oil, Persea Gratissima (Avocado) Oil, Sodium Cocoyl Glutamate, Olive Oil Polyglyceryl-6 Esters, Sodium Hydroxide, Citric Acid, Trisodium Ethylenediamine Disuccinate, Glyceryl Caprylate, Glyceryl Stearate, PG-Hydroxyethylcellulose Cocodimonium Chloride, Lactic Acid, Cetearyl Alcohol, Cocos Nucifera (Coconut) Fruit Juice, Cocos Nucifera (Coconut) Water, Glyceryl Undecylenate, Phospholipids, Polyglyceryl-10 Dioleate, Polyglyceryl-10 Oleate, Sodium Stearoyl Lactylate, Pelvetia Canaliculata Extract, Disodium Phosphate, Hydrated Silica, Silica Dimethyl Silylate, Caprylyl Glyceryl Ether, Sodium Phosphate, Polysorbate 60, Phenoxyethanol, Potassium Sorbate, Sodium Benzoate, Sorbic Acid, Glyoxal, Fragrance (Parfum), Limonene, Hexyl Cinnamal, Linalool, Citral, Citronellol, Yellow 5 (CI 19140), Yellow 6 (CI 15985)",
       "description": "A humidity-resistant gel with flexible hold that fights frizz, hydrates, and strengthens curl bonds",
@@ -9130,7 +9139,8 @@ export const defaultProductDatabase: ProductDatabase = {
         "curly",
         "coily",
         "high_porosity",
-        "heat_protectant"
+        "heat_protectant",
+        "bonding"
       ],
       "ingredients_raw": "Water/Aqua/Eau, Propanediol, Betaine, Quaternium-22, Bis-Aminopropyl Diglycol Dimaleate, Sodium Hyaluronate, Cetrimonium Chloride, Panthenol, Hydroxyethylcellulose, PVP, Guar Hydroxypropyltrimonium Chloride, Furcellaria Lumbricalis Extract, Pelvetia Canaliculata Extract, Xylitylglucoside, Polyquaternium-44, Anhydroxylitol, Maltitol, Citric Acid, Trisodium Ethylenediamine Disuccinate, Xylitol, Ethylhexylglycerin, Sodium Hydroxide, Sorbic Acid, Phenoxyethanol, Sodium Benzoate, Fragrance (Parfum), Citral, Citronellol, Hexyl Cinnamal, Limonene, Linalool",
       "description": "Shields hair from pollution and protects against heat damage while adding satin shine and reducing static and tangles",
@@ -10334,7 +10344,7 @@ export const defaultProductDatabase: ProductDatabase = {
       }
     },
     "define_&_shine_mango_papaya_curl_defining_custard_styling_gel": {
-      "name": "Define & shine Mango Papaya Curl Defining Custard Styling Gel",
+      "name": "Define & Shine Mango Papaya Curl Defining Custard Styling Gel",
       "brand": "Inahsi",
       "buy_links": [
         {
@@ -11338,7 +11348,8 @@ export const defaultProductDatabase: ProductDatabase = {
       "tags": [
         "normal_porosity",
         "high_porosity",
-        "featured"
+        "featured",
+        "bonding"
       ],
       "ingredients_raw": "hydrogenated ethylhexyl olivate, hydrogenated olive oil unsaponifiables, coco-caprylate caprate, shea butter ethyl esters, hydrogenated castor oil sebacic acid copolymer, prunus armeniaca apricot kernel oil, hippophae rhamnoides sea buckthorn fruit oil, lens esculenta lentil seed extract, hydrolyzed cicer chickpea seed extract, chenopodium quinoa seed extract, fragrance parfum, linalool, limonene, geraniol, benzyl alcohol, citronellol",
       "buy_links": [
@@ -11728,7 +11739,8 @@ export const defaultProductDatabase: ProductDatabase = {
         "wavy",
         "curly",
         "coily",
-        "low_porosity"
+        "low_porosity",
+        "bonding"
       ],
       "cost": 3.75,
       "asin": "B08WPNSHCD",
@@ -12722,7 +12734,7 @@ export const defaultProductDatabase: ProductDatabase = {
           "retailer": "Amazon"
         }
       ],
-      "description": "Like all Curl Keeper products, this shampoo has a low pH, which helps to keep the hair cuticle closed and prevent moisture loss.",
+      "description": "This shampoo has a low pH, which helps to keep the hair cuticle closed and prevent moisture loss.",
       "ingredients_raw": "water eau, coco-glucoside, sodium chloride himalayan crystal salt, sodium c14-16 olefin sulfonate, disodium laureth sulfosuccinate, lauramide dea, panthenoil, polysorbate 80, silk amino acides, hydroxyproyl methylcellulose, citric acid, fragrance, dmdm hydantoin",
       "id": "energizing_shampoo",
       "systems_excluded": [],
@@ -12948,7 +12960,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "budget"
       ],
       "ingredients_raw": "water aqua, sodium lauroyl sarcosinate, sodium cocoyl isethionate, cocamidopropyl hydroxysultaine, glycol distearate, peg-150 distearate, propanediol, hydroxypropylgluconamide, hydroxypropylammonium gluconate, aspergillus ferment, arginine, rice amino acids, persea gratissima avocado oil, mauritia flexuosa fruit oil, sclerocarya birrea seed oil, polyquaternium-10, hydroxypropyl guar hydroxypropyltrimonium chloride, tocopherol, tetrasodium glutamate diacetate, fragrance parfum, phenoxyethanol, ethylhexylglycerin, citric acid",
-      "description": "Maintain healthy curls with a shampoo that gently cleanses while repairing bonds to reduce breakage, tame frizz, and enhance curl definition",
+      "description": "Gently cleanses while repairing bonds to reduce breakage, tame frizz, and enhance curl definition",
       "buy_links": [
         {
           "url": "https://amzn.to/4jMHDes",
@@ -13013,10 +13025,11 @@ export const defaultProductDatabase: ProductDatabase = {
       "tags": [
         "wavy",
         "curly",
-        "samples"
+        "samples",
+        "bonding"
       ],
       "ingredients_raw": "water aqua eau, sodium c14-16 olefin sulfonate, cocamidopropyl betaine, fragrance parfum, cocamide mipa, glycol distearate, guar hydroxypropyltrimonium chloride, benzyl alcohol, panthenol, polyquaternium-44, polyquaternium-7, polysorbate 20, dehydroacetic acid, citric acid, sodium gluconate, simmondsia chinensis jojoba seed oil, aloe barbadensis leaf juice, tocopheryl acetate, decyl glucoside, glycerin, simmondsia chinensis jojoba seed extract",
-      "description": "Formulated with a unique blend of potent ingredients, this shampoocleanses impurities and excess oils without stripping hair, making it ultra-mild, moisture-rich, and safe for everyday use",
+      "description": "This shampoo cleanses impurities and excess oils without stripping hair",
       "buy_links": [
         {
           "url": "https://www.amazon.com/Hairitage-Gentle-Hydrating-Moisturizing-Shampoo/dp/B09CNY24G3",
@@ -13081,7 +13094,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "samples"
       ],
       "ingredients_raw": "water, salix alba white willow bark extract, hibiscus sabdariffa hibiscus flower extract, panax ginseng ginseng root extract, ilex raraguariensis yerba mate leaf extract, sodium c14-16 alpha olefin sulfonate, cocamidopropyl betaine, disodium cocoamphodipropionate, sodium cocoyl isethionates, glycol distearate, vegetable glycerin, guar hydroxypropyltrimonium chloride, citric acid, phenoxyethanol, caprylyl glycol, sorbic acid, phthalate-free fragrance",
-      "description": "A sulfate-free, pH-balanced shampoo that moisturizes, restores dry hair, and stimulates the scalp with hibiscus and ginseng",
+      "description": "A sulfate-free, pH-balanced shampoo that moisturizes, restores dry hair, and stimulates the scalp",
       "buy_links": [
         {
           "url": "https://amzn.to/4k2Qn00",
@@ -13128,7 +13141,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "samples"
       ],
       "ingredients_raw": "aqua water eau, coco-glucoside, laureth-6 carboxylic acid, peg-120 methyl glucose dioleate, glycerin, panthenol, peg-7 glyceryl cocoate, polyquaternium-10, peg-75 shea butter glycerides, cocos nucifera coconut fruit extract, theobroma cacao cocoa seed butter, theobroma grandiflorum seed butter, helianthus annuus sunflower seed oil, tocopherol, betaine, parfum fragrance, hydroxypropyl guar hydroxypropyltrimonium chloride, peg-4, peg-6, castor oil hydrogenated ethoxylated, peg-7, peg-8, sodium hydroxide, disodium edta, potassium sorbate, sodium benzoate, methylchloroisothiazolinone, methylisothiazolinone, linalool, limonene, hexyl cinnamal",
-      "description": "A sulfate-free, hydrating shampoo that removes buildup without stripping moisture, leaving curls soft, shiny, and defined from wash day and beyond",
+      "description": "A sulfate-free shampoo that removes buildup without stripping moisture, leaving curls soft, shiny, and defined",
       "buy_links": [
         {
           "url": "https://amzn.to/3ERSp41",
@@ -13312,10 +13325,11 @@ export const defaultProductDatabase: ProductDatabase = {
         "wavy",
         "curly",
         "coily",
-        "low_porosity"
+        "low_porosity",
+        "bonding"
       ],
       "ingredients_raw": "water eau, disodium laureth sulfosuccinate, disodium lauryl sulfosuccinate, glycerin, cocamidopropyl betaine, parfum fragrance, acrylates c10-30 alkyl acrylate crosspolymer, sodium cocoyl isethionate, saccharomyces cerevisiae extract, yeast extract extrait de levure, beta-glucan, inulin, maltodextrin, bifida ferment lysate, lactobacillus ferment lysate, anthemis nobilis flower water, rosmarinus officinalis rosemary extract, biotin, caffeine, melissa officinalis flower leaf stem water, houttuynia cordata extract, panax ginseng root extract, paeonia suffruticosa branch flower leaf extract, paeonia suffruticosa root extract, artemisia annua extract, azadirachta indica leaf extract, camellia sinensis leaf extract, mentha arvensis leaf extract, centella asiatica leaf extract, hyaluronic acid, polygonum multiflorum root extract, panax ginseng leaf stem extract, arginine, benzyl alcohol, aspartic acid, polylysine, zingiber officinale ginger root extract, ganoderma lucidum mushroom extract, pca, serine, glycine, alanine, althaea officinalis root extract, calendula officinalis flower extract, chamaecyparis obtusa leaf extract, phellinus linteus extract, valine, dehydroacetic acid, isoleucine, proline, threonine, histidine, phenylalanine, sodium pca, alchemilla vulgaris extract, vinegar vinaigre, zea mays corn starch, dextrin, peg-crosspolymer, caprylyl glycol, di-c12-13 alkyl malate, polyquaternium-7, microcrystalline cellulose, cocamide mea, coco-glucoside, glyceryl oleate, menthol, panthenol, salicylic acid, coconut acid, niacinamide, ppg-3 caprylyl ether, mannitol, chromium hydroxide green ci 77289, sodium isethionate, tetrasodium edta, methylpropanediol, ethylhexylglycerin, chlorophyllin-copper complex, citric acid, potassium hydroxide, pentylene glycol, alcohol, butylene glycol, 2-hexanediol, sodium lactate, potassium sorbate, hexylene glycol, sodium chloride, sodium benzoate",
-      "description": "A one-of-a-kind volumizing shampoo with probiotic beads, biotin, rosemary, and caffeine to support scalp health and promote stronger, healthier hair growth",
+      "description": "With probiotic beads, biotin, rosemary, and caffeine to support scalp health and promote stronger, healthier hair growth",
       "id": "scalp_revitalizing_solution_hair_thickening_shampoo",
       "systems_excluded": [],
       "status": "caution",
@@ -13415,10 +13429,11 @@ export const defaultProductDatabase: ProductDatabase = {
         "samples",
         "wavy",
         "curly",
-        "coily"
+        "coily",
+        "bonding"
       ],
       "ingredients_raw": "water aqua eau, sodium lauroyl methyl isethionate, cocamidopropyl hydroxysultaine, potassium cocoyl glycinate, disodium cocoyl glutamate, sodium lauroyl sarcosinate, potassium cocoate, decyl glucoside, glycereth-26, bis-aminopropyl diglycol dimaleate, cocamidopropylamine oxide, disodium laureth sulfosuccinate, glycol distearate, sodium cocoyl glutamate, methyl gluceth-20, acrylates copolymer, peg-120 methyl glucose dioleate, amodimethicone, citric acid, sodium lauryl sulfoacetate, polyquaternium-10, ethylhexylglycerin, divinyldimethicone dimethicone copolymer, polyquaternium-11, trisodium ethylenediamine disuccinate, guar hydroxypropyltrimonium chloride, c11-15 pareth-7, laureth-9, glycerin, trideceth-12, c12-13 pareth-23, c12-13 pareth-3, hydrolyzed vegetable protein, pg-propyl silanetriol, panthenol, acetic acid, tetrasodium edta, pentasodium triphosphate, sodium hydroxide, disodium edta, helianthus annus sunflower seed oil, tocopherol, prunus armeniaca apricot kernel oil, pseudozyma epicola camellia sinensis seed oil ferment extract filtrate, pseudozyma epicola argania spinosa kernel oil ferment filtrate, quaternium-95, propanediol, helianthus annus sunflower seed extract, peg-8, euterpe oleracea fruit extract, punica granatum extract, rosemarinus officinalis rosemary leaf extract, musa sapientum banana fruit extract, origanum vulgare lear extract, morinda citrifolia fruit extract, articum lappa root extract, peg-8 smdi copolymer, sodium hyaluronate, palmitoyl myristyl serinate, sodium polyacrylate, pentaerythrityl tetra-di-t-butyl hydroxyhydrocinnamate, biotin, benzoic acid, phenoxyethanol, chlorphenesin, potassium sorbate, sodium benzoate, fragrance parfum, citral, hexyl cinnamal, limonene",
-      "description": "A highly concentrated, color-safe shampoo with Olaplex’s bonding technology that gently cleanses, strengthens, and adds shine while repairing damage and improving manageability",
+      "description": "Uses Olaplex’s bonding technology to gently cleanse, strengthen, and add shine while repairing damage",
       "id": "no._4_bond_maintenance_shampoo",
       "systems_excluded": [],
       "status": "warning",
