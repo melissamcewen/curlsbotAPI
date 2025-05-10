@@ -9912,34 +9912,70 @@ export const defaultProductDatabase: ProductDatabase = {
         "curly",
         "coily",
         "low_porosity",
-        "protein-free"
+        "protein",
+        "glycerin-free"
       ],
-      "ingredients_raw": "Water (Aqua) Polyquaternium-69 Isobutane Vp/Va Copolymer Hydrolyzed Vegetable Protein Hydrolyzed Pea Protein Mangifera Indica (Mango) Seed Butter Theobroma Grandiflorum Seed Butter Moringa Oleifera Seed Oil Cysteine Hcl Silybum Marianum Seed Extract Helianthus Annuus (Sunflower) Seed Oil Limnanthes Alba (Meadowfoam) Seed Oil Urtica Dioica (Nettle) Extract Malva Sylvestris (Mallow) Flower Extract Dimethiconol Meadowfoamate Sodium Pca Magnesium Pca Zinc Pca Manganese Pca Copaifera Officinalis (Balsam Copaiba) Resin Opuntia Vulgaris Leaf Extract Glycerin Vinegar Maltooligosyl Glucoside Hydrogenated Starch Hydrolysate Coco-Glucoside Tapioca Starch Phenoxyethanol Caprylyl Glycol Quaternium-95 Propanediol Sodium Benzoate Potassium Sorbate Propane Fragrance (Parfum) Limonene",
+      "ingredients_raw": "Water (Aqua), Polyquaternium-69, Isobutane, Vp/Va Copolymer, Hydrolyzed Vegetable Protein, Hydrolyzed Pea Protein, Mangifera Indica (Mango) Seed Butter, Theobroma Grandiflorum Seed Butter, Moringa Oleifera Seed Oil, Cysteine Hcl, Silybum Marianum Seed Extract, Helianthus Annuus (Sunflower) Seed Oil, Limnanthes Alba (Meadowfoam) Seed Oil, Urtica Dioica (Nettle) Extract, Malva Sylvestris (Mallow) Flower Extract, Dimethiconol Meadowfoamate, Sodium Pca, Magnesium Pca, Zinc Pca, Manganese Pca, Copaifera Officinalis (Balsam Copaiba) Resin, Opuntia Vulgaris Leaf Extract, Glycerin, Vinegar, Maltooligosyl Glucoside, Hydrogenated Starch Hydrolysate, Coco-Glucoside, Tapioca Starch, Phenoxyethanol, Caprylyl Glycol, Quaternium-95, Propanediol, Sodium Benzoate, Potassium Sorbate, Propane, Fragrance (Parfum), Limonene",
       "description": "A lightweight mousse that defines curls and waves with flexible hold and adds brilliant shine",
       "id": "butter_whip_styling_foam",
       "systems_excluded": [],
-      "status": "error",
+      "status": "warning",
       "extensions": {
         "frizzbot": {
-          "simple_humectants_number": 0,
-          "film_forming_humectants_number": 0,
-          "emollients_number": 0,
-          "simple_humectants": [],
-          "film_forming_humectants": [],
-          "emollients": [],
-          "score": 0
+          "simple_humectants_number": 7,
+          "film_forming_humectants_number": 3,
+          "emollients_number": 5,
+          "simple_humectants": [
+            "Sodium PCA",
+            "PCA",
+            "PCA",
+            "PCA",
+            "Glycerin",
+            "Caprylyl Glycol",
+            "Propanediol"
+          ],
+          "film_forming_humectants": [
+            "Unknown Protein",
+            "Unknown Protein",
+            "Cysteine"
+          ],
+          "emollients": [
+            "Unknown Polyquat",
+            "VP VA copolymer",
+            "Mangifera indica mango seed butter",
+            "Sunflower Oil",
+            "Dimethiconol"
+          ],
+          "score": -74
         },
         "porosity": {
-          "high": 50,
-          "low": 50
+          "high": 91,
+          "low": 4
         },
         "sebderm": {
-          "hasTriggers": false,
-          "triggers": []
+          "hasTriggers": true,
+          "triggers": [
+            {
+              "id": "mangifera_indica_mango_seed_butter",
+              "name": "Mangifera indica mango seed butter",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            },
+            {
+              "id": "cysteine",
+              "name": "Cysteine",
+              "reason": "Amino acids can be metabolized by Malassezia, potentially worsening symptoms"
+            },
+            {
+              "id": "sunflower_oil",
+              "name": "Sunflower Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            }
+          ]
         },
         "autoTagger": {
           "tags": [
-            "protein-free"
+            "protein",
+            "glycerin-free"
           ]
         }
       }

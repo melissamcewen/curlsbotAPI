@@ -24,6 +24,7 @@ const UNKNOWN_INGREDIENTS_LOG = join(LOGS_DIR, 'unknown_ingredients.json');
 const FLAGGED_PRODUCTS_LOG = join(LOGS_DIR, 'flagged_products.json');
 const SEBDERM_SAFE_PRODUCTS_LOG = join(LOGS_DIR, 'sebderm_safe_products.json');
 const AUTO_TAGGED_PRODUCTS_LOG = join(LOGS_DIR, 'auto_tagged_products.json');
+const INVALID_LISTS_LOG = join(LOGS_DIR, 'invalid_ingredient_lists.json');
 
 // Load references data from references.references.json
 function loadReferences(): Record<string, Reference> {
@@ -250,6 +251,27 @@ function logAutoTaggedProduct(
   }
 }
 
+// Function to log invalid ingredient lists
+interface InvalidList {
+  name: string;
+  brand: string;
+  ingredients_raw: string;
+  error: string;
+}
+
+function logInvalidList(
+  product: { name: string; brand: string; ingredients_raw: string },
+  error: string,
+  invalidLists: InvalidList[],
+) {
+  invalidLists.push({
+    name: product.name,
+    brand: product.brand,
+    ingredients_raw: product.ingredients_raw,
+    error,
+  });
+}
+
 function loadProductsFromDir(dirPath: string): any {
   const files = readdirSync(dirPath).filter((file) =>
     file.endsWith('.products.json'),
@@ -267,6 +289,7 @@ function loadProductsFromDir(dirPath: string): any {
     cost_rating?: string;
   }> = [];
   const autoTaggedProducts: AutoTaggedProduct[] = [];
+  const invalidLists: InvalidList[] = [];
 
   // First load categories to look up groups
   const categoriesData = loadJsonFile(join(DATA_DIR, 'categories.json'));
@@ -322,30 +345,42 @@ function loadProductsFromDir(dirPath: string): any {
     let extensions: Extensions | undefined = undefined;
 
     if (product.ingredients_raw) {
-      analysis = analyzer.analyze(product.ingredients_raw);
-      status = analysis.status;
+      try {
+        analysis = analyzer.analyze(product.ingredients_raw);
+        status = analysis.status;
 
-      // Log unknown ingredients
-      logUnknownIngredients(product.name, analysis, unknownIngredients);
+        // Log unknown ingredients
+        logUnknownIngredients(product.name, analysis, unknownIngredients);
 
-      // Log products with non-ok status
-      logFlaggedProduct(product, analysis, flaggedProducts);
+        // Log products with non-ok status
+        logFlaggedProduct(product, analysis, flaggedProducts);
 
-      // Generate extensions
-      const autoTags = autoTagger(analysis).tags;
-      extensions = {
-        frizzbot: frizzbot(analysis),
-        porosity: porosity(analysis),
-        sebderm: sebderm(analysis),
-        autoTagger: { tags: autoTags },
-      };
+        // Generate extensions
+        const autoTags = autoTagger(analysis).tags;
+        extensions = {
+          frizzbot: frizzbot(analysis),
+          porosity: porosity(analysis),
+          sebderm: sebderm(analysis),
+          autoTagger: { tags: autoTags },
+        };
 
-      // Log auto-tagged products
-      logAutoTaggedProduct(product, autoTags, autoTaggedProducts);
+        // Log auto-tagged products
+        logAutoTaggedProduct(product, autoTags, autoTaggedProducts);
 
-      // Merge auto-tags with existing tags
-      const allTags = [...new Set([...(product.tags || []), ...autoTags])];
-      product.tags = allTags;
+        // Merge auto-tags with existing tags
+        const allTags = [...new Set([...(product.tags || []), ...autoTags])];
+        product.tags = allTags;
+      } catch (error) {
+        // Log invalid ingredient lists
+        logInvalidList(
+          product,
+          error instanceof Error
+            ? error.message
+            : 'Unknown error during analysis',
+          invalidLists,
+        );
+        status = 'error';
+      }
     }
 
     // Convert cost to cost_rating
@@ -391,6 +426,7 @@ function loadProductsFromDir(dirPath: string): any {
     flaggedProducts,
     sebdermSafeProducts,
     autoTaggedProducts,
+    invalidLists,
   };
 }
 
@@ -416,6 +452,7 @@ function generateBundledData() {
     flaggedProducts,
     sebdermSafeProducts,
     autoTaggedProducts,
+    invalidLists,
   } = loadProductsFromDir(join(DATA_DIR, 'products'));
   const categoriesData = loadJsonFile(join(DATA_DIR, 'categories.json'));
   const groupsData = loadJsonFile(join(DATA_DIR, 'groups.json'));
@@ -488,6 +525,21 @@ function generateBundledData() {
     );
     console.log(
       `Generated auto-tagged products log at ${AUTO_TAGGED_PRODUCTS_LOG}`,
+    );
+  }
+
+  // Write invalid lists log
+  if (invalidLists.length > 0) {
+    // Sort by brand then name
+    const sortedLists = invalidLists.sort((a, b) => {
+      const brandCompare = a.brand.localeCompare(b.brand);
+      if (brandCompare !== 0) return brandCompare;
+      return a.name.localeCompare(b.name);
+    });
+
+    writeFileSync(INVALID_LISTS_LOG, JSON.stringify(sortedLists, null, 2));
+    console.log(
+      `Generated invalid ingredient lists log at ${INVALID_LISTS_LOG}`,
     );
   }
 
