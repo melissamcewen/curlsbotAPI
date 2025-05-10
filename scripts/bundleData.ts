@@ -12,6 +12,7 @@ import { Analyzer } from '../src/analyzer';
 import { frizzbot } from '../src/extensions/frizzbot';
 import { porosity } from '../src/extensions/porosity';
 import { sebderm } from '../src/extensions/sebdermbot';
+import { autoTagger } from '../src/extensions/autoTagger';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const DATA_DIR = join(__dirname, '../data');
@@ -22,6 +23,7 @@ const PRODUCTS_OUTPUT_FILE = join(__dirname, '../src/data/bundledProducts.ts');
 const UNKNOWN_INGREDIENTS_LOG = join(LOGS_DIR, 'unknown_ingredients.json');
 const FLAGGED_PRODUCTS_LOG = join(LOGS_DIR, 'flagged_products.json');
 const SEBDERM_SAFE_PRODUCTS_LOG = join(LOGS_DIR, 'sebderm_safe_products.json');
+const AUTO_TAGGED_PRODUCTS_LOG = join(LOGS_DIR, 'auto_tagged_products.json');
 
 // Load references data from references.references.json
 function loadReferences(): Record<string, Reference> {
@@ -218,6 +220,36 @@ function logFlaggedProduct(
   }
 }
 
+// Function to log auto-tagged products
+interface AutoTaggedProduct {
+  name: string;
+  brand: string;
+  ingredients_raw?: string;
+  auto_tags: string[];
+  manual_tags: string[];
+}
+
+function logAutoTaggedProduct(
+  product: {
+    name: string;
+    brand: string;
+    ingredients_raw?: string;
+    tags?: string[];
+  },
+  autoTags: string[],
+  autoTaggedProducts: AutoTaggedProduct[],
+) {
+  if (autoTags.length > 0) {
+    autoTaggedProducts.push({
+      name: product.name,
+      brand: product.brand,
+      ingredients_raw: product.ingredients_raw,
+      auto_tags: autoTags,
+      manual_tags: product.tags || [],
+    });
+  }
+}
+
 function loadProductsFromDir(dirPath: string): any {
   const files = readdirSync(dirPath).filter((file) =>
     file.endsWith('.products.json'),
@@ -234,6 +266,7 @@ function loadProductsFromDir(dirPath: string): any {
     cost?: number;
     cost_rating?: string;
   }> = [];
+  const autoTaggedProducts: AutoTaggedProduct[] = [];
 
   // First load categories to look up groups
   const categoriesData = loadJsonFile(join(DATA_DIR, 'categories.json'));
@@ -299,11 +332,20 @@ function loadProductsFromDir(dirPath: string): any {
       logFlaggedProduct(product, analysis, flaggedProducts);
 
       // Generate extensions
+      const autoTags = autoTagger(analysis).tags;
       extensions = {
         frizzbot: frizzbot(analysis),
         porosity: porosity(analysis),
         sebderm: sebderm(analysis),
+        autoTagger: { tags: autoTags },
       };
+
+      // Log auto-tagged products
+      logAutoTaggedProduct(product, autoTags, autoTaggedProducts);
+
+      // Merge auto-tags with existing tags
+      const allTags = [...new Set([...(product.tags || []), ...autoTags])];
+      product.tags = allTags;
     }
 
     // Convert cost to cost_rating
@@ -343,7 +385,13 @@ function loadProductsFromDir(dirPath: string): any {
     return acc;
   }, {} as Record<string, any>);
 
-  return { products, unknownIngredients, flaggedProducts, sebdermSafeProducts };
+  return {
+    products,
+    unknownIngredients,
+    flaggedProducts,
+    sebdermSafeProducts,
+    autoTaggedProducts,
+  };
 }
 
 function loadJsonFile(filePath: string): any {
@@ -362,8 +410,13 @@ function generateBundledData() {
 
   // Load all data
   const ingredients = loadIngredientsFromDir(join(DATA_DIR, 'ingredients'));
-  const { products, unknownIngredients, flaggedProducts, sebdermSafeProducts } =
-    loadProductsFromDir(join(DATA_DIR, 'products'));
+  const {
+    products,
+    unknownIngredients,
+    flaggedProducts,
+    sebdermSafeProducts,
+    autoTaggedProducts,
+  } = loadProductsFromDir(join(DATA_DIR, 'products'));
   const categoriesData = loadJsonFile(join(DATA_DIR, 'categories.json'));
   const groupsData = loadJsonFile(join(DATA_DIR, 'groups.json'));
   const systemsData = loadJsonFile(join(CONFIG_DIR, 'systems.json'));
@@ -417,6 +470,24 @@ function generateBundledData() {
     );
     console.log(
       `Generated sebderm-safe products log at ${SEBDERM_SAFE_PRODUCTS_LOG}`,
+    );
+  }
+
+  // Write auto-tagged products log
+  if (autoTaggedProducts.length > 0) {
+    // Sort by brand then name
+    const sortedProducts = autoTaggedProducts.sort((a, b) => {
+      const brandCompare = a.brand.localeCompare(b.brand);
+      if (brandCompare !== 0) return brandCompare;
+      return a.name.localeCompare(b.name);
+    });
+
+    writeFileSync(
+      AUTO_TAGGED_PRODUCTS_LOG,
+      JSON.stringify(sortedProducts, null, 2),
+    );
+    console.log(
+      `Generated auto-tagged products log at ${AUTO_TAGGED_PRODUCTS_LOG}`,
     );
   }
 
