@@ -443,17 +443,17 @@
     {
       "name": "Alanine",
       "id": "alanine",
-      "categories": ["proteins"]
+      "categories": ["amino_acids"]
     },
     {
       "name": "Arginine",
       "id": "arginine",
-      "categories": ["proteins"]
+      "categories": ["amino_acids"]
     },
     {
       "name": "Aspartic Acid",
       "id": "aspartic_acid",
-      "categories": ["proteins"]
+      "categories": ["amino_acids"]
     },
     {
       "name": "calcium aspartate",
@@ -463,16 +463,11 @@
     {
       "name": "Calcium Glycinate",
       "id": "calcium_glycinate",
-      "categories": ["proteins"]
+      "categories": ["amino_acids"]
     },
     {
       "name": "Casein",
       "id": "casein",
-      "categories": ["proteins"]
-    },
-    {
-      "name": "Calcium Glycinate",
-      "id": "calcium_glycinate",
       "categories": ["proteins"]
     },
     {

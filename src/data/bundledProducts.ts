@@ -9264,9 +9264,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "accessories"
       ],
       "tags": [
-        "samples",
-        "protein-free",
-        "glycerin-free"
+        "samples"
       ],
       "ingredients_raw": "na",
       "description": "This super-soft satin scrunchie is adorable paired with any outfit",

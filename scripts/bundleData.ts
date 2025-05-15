@@ -364,12 +364,18 @@ function loadProductsFromDir(dirPath: string): any {
           autoTagger: { tags: autoTags },
         };
 
-        // Log auto-tagged products
-        logAutoTaggedProduct(product, autoTags, autoTaggedProducts);
+        // Only log and apply auto-tags if the product is not an accessory
+        if (!product.product_categories?.includes('accessories')) {
+          // Log auto-tagged products
+          logAutoTaggedProduct(product, autoTags, autoTaggedProducts);
 
-        // Merge auto-tags with existing tags
-        const allTags = [...new Set([...(product.tags || []), ...autoTags])];
-        product.tags = allTags;
+          // Merge auto-tags with existing tags
+          const allTags = [...new Set([...(product.tags || []), ...autoTags])];
+          product.tags = allTags;
+        } else {
+          // For accessories, just keep the existing tags
+          product.tags = product.tags || [];
+        }
       } catch (error) {
         // Log invalid ingredient lists
         logInvalidList(
