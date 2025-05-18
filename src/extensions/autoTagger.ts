@@ -12,14 +12,14 @@ const tagRules: TagRule[] = [
   {
     tag: 'protein-free',
     type: 'category',
-    value: ['protein', 'amino_acids'],
+    value: ['proteins', 'amino_acids'],
     negate: true,
     mutuallyExclusiveWith: ['protein'],
   },
   {
     tag: 'protein',
     type: 'category',
-    value: ['protein', 'amino_acids'],
+    value: ['proteins', 'amino_acids'],
   },
   {
     tag: 'glycerin-free',
@@ -53,8 +53,10 @@ export function autoTagger(analysis: AnalysisResult): AutoTaggerAnalysis {
                   ingredient.ingredient?.categories.includes(cat),
                 )
               : ingredient.ingredient.categories.includes(rule.value as string);
+          
             return !hasCategory;
           });
+
         } else {
           // For positive rules (like protein), ANY ingredient can have the category
           shouldApplyTag = analysis.ingredients.some((ingredient) => {

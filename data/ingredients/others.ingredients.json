@@ -199,11 +199,7 @@
       "synonyms": ["irish moss"],
       "categories": ["film_forming_humectants"]
     },
-    {
-      "name": "Irish Moss Extract",
-      "id": "irish_moss_extract",
-      "categories": ["film_forming_humectants"]
-    },
+
     {
       "name": "Pectin",
       "id": "pectin",
@@ -857,7 +853,7 @@
     {
       "name": "Linum Usitatissimum Seed Extract",
       "id": "linum_usitatissimum_seed_extract",
-      "categories": ["film_forming_humectants"],
+      "categories": ["proteins"],
       "synonyms": ["flax seed extract"]
     },
     {
@@ -1207,6 +1203,13 @@
       "id": "c10_40_isoalkylamidopropylethyldimonium_ethosulfate",
       "categories": ["other"],
       "description": "Conditioning agent"
+    },
+    {
+      "name": "Salvia hispanica chia seed extract",
+      "id": "salvia_hispanica_chia_seed_extract",
+      "synonyms": ["chia seed extract"],
+      "categories": ["proteins"],
+      "description": "Chia seed extract"
     }
 
 

@@ -2513,6 +2513,9 @@ export const defaultDatabase: IngredientDatabase = {
     "irish_moss_extract": {
       "name": "Irish Moss Extract",
       "id": "irish_moss_extract",
+      "synonyms": [
+        "irish moss"
+      ],
       "categories": [
         "film_forming_humectants"
       ],
@@ -2920,7 +2923,7 @@ export const defaultDatabase: IngredientDatabase = {
       "name": "Alanine",
       "id": "alanine",
       "categories": [
-        "proteins"
+        "amino_acids"
       ],
       "status": "ok",
       "group": "humectants"
@@ -2929,7 +2932,7 @@ export const defaultDatabase: IngredientDatabase = {
       "name": "Arginine",
       "id": "arginine",
       "categories": [
-        "proteins"
+        "amino_acids"
       ],
       "status": "ok",
       "group": "humectants"
@@ -2938,7 +2941,7 @@ export const defaultDatabase: IngredientDatabase = {
       "name": "Aspartic Acid",
       "id": "aspartic_acid",
       "categories": [
-        "proteins"
+        "amino_acids"
       ],
       "status": "ok",
       "group": "humectants"
@@ -2956,7 +2959,7 @@ export const defaultDatabase: IngredientDatabase = {
       "name": "Calcium Glycinate",
       "id": "calcium_glycinate",
       "categories": [
-        "proteins"
+        "amino_acids"
       ],
       "status": "ok",
       "group": "humectants"
@@ -3661,7 +3664,7 @@ export const defaultDatabase: IngredientDatabase = {
       "name": "Linum Usitatissimum Seed Extract",
       "id": "linum_usitatissimum_seed_extract",
       "categories": [
-        "film_forming_humectants"
+        "proteins"
       ],
       "synonyms": [
         "flax seed extract"
@@ -4289,6 +4292,19 @@ export const defaultDatabase: IngredientDatabase = {
       "description": "Conditioning agent",
       "status": "ok",
       "group": "others"
+    },
+    "salvia_hispanica_chia_seed_extract": {
+      "name": "Salvia hispanica chia seed extract",
+      "id": "salvia_hispanica_chia_seed_extract",
+      "synonyms": [
+        "chia seed extract"
+      ],
+      "categories": [
+        "proteins"
+      ],
+      "description": "Chia seed extract",
+      "status": "ok",
+      "group": "humectants"
     },
     "amodimethicone": {
       "name": "Amodimethicone",

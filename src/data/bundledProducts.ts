@@ -5720,8 +5720,8 @@ export const defaultProductDatabase: ProductDatabase = {
       },
       "cost_rating": "1"
     },
-    "curl_keeper®_original_liquid_styler": {
-      "name": "Curl Keeper® Original Liquid Styler",
+    "curl_keeper_original_liquid_styler": {
+      "name": "Curl Keeper Original Liquid Styler",
       "brand": "Curl Keeper",
       "product_categories": [
         "gels"
@@ -5743,7 +5743,7 @@ export const defaultProductDatabase: ProductDatabase = {
       ],
       "ingredients_raw": "water aqua eau, vp va copolymer, propylene glycol, hydroxyethylcellulose, glycerin, oleth-20, polyquaternium-10, citric acid, dmdm hydantoin",
       "description": "A water-based formula that reactivates with water for frizz control and curl refresh without buildup",
-      "id": "curl_keeper®_original_liquid_styler",
+      "id": "curl_keeper_original_liquid_styler",
       "systems_excluded": [],
       "status": "ok",
       "extensions": {
