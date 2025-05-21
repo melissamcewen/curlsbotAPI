@@ -4300,9 +4300,18 @@ export const defaultDatabase: IngredientDatabase = {
         "chia seed extract"
       ],
       "categories": [
-        "proteins"
+        "film_forming_humectants"
       ],
       "description": "Chia seed extract",
+      "status": "ok",
+      "group": "humectants"
+    },
+    "creatine": {
+      "name": "Creatine",
+      "id": "creatine",
+      "categories": [
+        "proteins"
+      ],
       "status": "ok",
       "group": "humectants"
     },

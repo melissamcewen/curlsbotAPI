@@ -265,7 +265,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "curly",
         "coily",
         "low_porosity",
-        "protein-free",
+        "protein",
         "glycerin-free"
       ],
       "ingredients_raw": "water, sodium lauroyl methyl isethionate, cocamidopropyl betaine, propanediol, acrylates crosspolymer-4, tetrasodium glutamate diacetate, polysorbate 20, glycerin, fragrance, aminomethyl propanol, aloe barbadensis leaf juice, amaranthus caudatus seed extract, hydrolyzed rice protein, hydrolyzed quinoa, polyquaternium-10, cetrimonium chloride, phenoxyethanol, ethylhexylglycerin, citric acid, sodium hydroxide",
@@ -311,7 +311,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein-free",
+            "protein",
             "glycerin-free"
           ]
         }
@@ -457,7 +457,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "clarifying_shampoos"
       ],
       "tags": [
-        "protein-free",
+        "protein",
         "glycerin-free"
       ],
       "ingredients_raw": "water, sodium lauroyl methyl isethionate, decyl glucoside, sodium cocoyl isethionate, disodium cocoamphodiacetate, propanediol, panthenol pro-vitamin b5, polyquaternium-10, hydroxypropyl methylcellulose, biotin, vanillin, hydrolyzed adansonia digitata baobab seed protein, nigella sativa virgin black cumin oil, stearamidopropyl dimethylamine, lactic acid, caprylhydroxamic acid, rosmarinus officinalis rosemary leaf extract, boswellia carterii oil, lactobacillus punica granatum fruit ferment extract, lactobacillus pumpkin ferment extract, argania spinosa kernel oil, cocos nucifera coconut oil, citrus aurantium bergamia bergamot fruit oil, anthemis nobilis flower oil, geranium maculatum oil, citrus paradisi grapefruit seed oil, lavandula angustifolia lavender oil, pogostemon cablin oil, citrus aurantium dulcis orange seed oil, citrus nobilis mandarin orange peel oil, caprylyl glycol",
@@ -514,7 +514,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein-free",
+            "protein",
             "glycerin-free"
           ]
         }
@@ -531,7 +531,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "normal_porosity",
         "high_porosity",
         "featured",
-        "protein-free",
+        "protein",
         "glycerin-free"
       ],
       "ingredients_raw": "water aqua eau, cetearyl alcohol, kaolin, glycerin, vinegar, charcoal powder, oryza sativa rice bran oil, behentrimonium methosulfate, olea europaea olive fruit extract, butyrospermum parkii shea butter, stearalkonium chloride, hydrolyzed quinoa, epilobium angustifolium flower leaf stem extract, panthenol vitamin b-5, potassium sorbate, hydrolyzed adansonia digitata seed extract, sodium levulinate, stearyl alcohol, thiamine hcl, benzyl alcohol, sodium benzoate, glycine soja soybean oil, cananga odorata ylang ylang flower oil, citrus aurantium dulcis orange peel oil, lavandula angustifolia lavender oil, pogostemon cablin patchouli oil, salvia sclarea clary oil, linalool, limonene",
@@ -599,7 +599,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein-free",
+            "protein",
             "glycerin-free"
           ]
         }
@@ -881,7 +881,7 @@ export const defaultProductDatabase: ProductDatabase = {
       ],
       "tags": [
         "normal_porosity",
-        "protein-free",
+        "protein",
         "glycerin-free"
       ],
       "buy_links": [
@@ -947,7 +947,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein-free",
+            "protein",
             "glycerin-free"
           ]
         }
@@ -1149,7 +1149,7 @@ export const defaultProductDatabase: ProductDatabase = {
       ],
       "tags": [
         "normal_porosity",
-        "protein-free",
+        "protein",
         "glycerin-free"
       ],
       "buy_links": [
@@ -1229,7 +1229,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein-free",
+            "protein",
             "glycerin-free"
           ]
         }
@@ -1246,7 +1246,7 @@ export const defaultProductDatabase: ProductDatabase = {
       "tags": [
         "high_porosity",
         "normal_porosity",
-        "protein-free",
+        "protein",
         "glycerin-free"
       ],
       "buy_links": [
@@ -1324,7 +1324,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein-free",
+            "protein",
             "glycerin-free"
           ]
         }
@@ -1480,7 +1480,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 100,
-          "low": 16
+          "low": 25
         },
         "sebderm": {
           "hasTriggers": true,
@@ -1506,8 +1506,23 @@ export const defaultProductDatabase: ProductDatabase = {
               "reason": "Contains fatty acids that can feed Malassezia yeast"
             },
             {
+              "id": "arginine",
+              "name": "Arginine",
+              "reason": "Amino acids can be metabolized by Malassezia, potentially worsening symptoms"
+            },
+            {
+              "id": "aspartic_acid",
+              "name": "Aspartic Acid",
+              "reason": "Amino acids can be metabolized by Malassezia, potentially worsening symptoms"
+            },
+            {
               "id": "glycine",
               "name": "Glycine",
+              "reason": "Amino acids can be metabolized by Malassezia, potentially worsening symptoms"
+            },
+            {
+              "id": "alanine",
+              "name": "Alanine",
               "reason": "Amino acids can be metabolized by Malassezia, potentially worsening symptoms"
             },
             {
@@ -1544,7 +1559,7 @@ export const defaultProductDatabase: ProductDatabase = {
       ],
       "tags": [
         "normal_porosity",
-        "protein-free",
+        "protein",
         "glycerin-free"
       ],
       "buy_links": [
@@ -1609,7 +1624,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein-free",
+            "protein",
             "glycerin-free"
           ]
         }
@@ -2352,7 +2367,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "curly",
         "coily",
         "bonding",
-        "protein-free",
+        "protein",
         "glycerin-free"
       ],
       "ingredients_raw": "water aqua eau, sodium lauroyl methyl isethionate, cocamidopropyl hydroxysultaine, potassium cocoyl glycinate, disodium cocoyl glutamate, sodium lauroyl sarcosinate, potassium cocoate, decyl glucoside, glycereth-26, bis-aminopropyl diglycol dimaleate, cocamidopropylamine oxide, disodium laureth sulfosuccinate, glycol distearate, sodium cocoyl glutamate, methyl gluceth-20, acrylates copolymer, peg-120 methyl glucose dioleate, amodimethicone, citric acid, sodium lauryl sulfoacetate, polyquaternium-10, ethylhexylglycerin, divinyldimethicone dimethicone copolymer, polyquaternium-11, trisodium ethylenediamine disuccinate, guar hydroxypropyltrimonium chloride, c11-15 pareth-7, laureth-9, glycerin, trideceth-12, c12-13 pareth-23, c12-13 pareth-3, hydrolyzed vegetable protein, pg-propyl silanetriol, panthenol, acetic acid, tetrasodium edta, pentasodium triphosphate, sodium hydroxide, disodium edta, helianthus annus sunflower seed oil, tocopherol, prunus armeniaca apricot kernel oil, pseudozyma epicola camellia sinensis seed oil ferment extract filtrate, pseudozyma epicola argania spinosa kernel oil ferment filtrate, quaternium-95, propanediol, helianthus annus sunflower seed extract, peg-8, euterpe oleracea fruit extract, punica granatum extract, rosemarinus officinalis rosemary leaf extract, musa sapientum banana fruit extract, origanum vulgare lear extract, morinda citrifolia fruit extract, articum lappa root extract, peg-8 smdi copolymer, sodium hyaluronate, palmitoyl myristyl serinate, sodium polyacrylate, pentaerythrityl tetra-di-t-butyl hydroxyhydrocinnamate, biotin, benzoic acid, phenoxyethanol, chlorphenesin, potassium sorbate, sodium benzoate, fragrance parfum, citral, hexyl cinnamal, limonene",
@@ -2418,7 +2433,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein-free",
+            "protein",
             "glycerin-free"
           ]
         }
@@ -2432,7 +2447,7 @@ export const defaultProductDatabase: ProductDatabase = {
       ],
       "tags": [
         "featured",
-        "protein-free",
+        "protein",
         "glycerin-free"
       ],
       "ingredients_raw": "aqua water eau, cetearyl alcohol, glycerin, cetyl esters, cetyl alcohol, stearamidopropyl dimethylamine, behentrimonium chloride, butyrospermum parkii shea butter, helianthus annuus sunflower seed oil, propanediol, prunus amygdalus dulcis sweet almond oil, carthamus tinctorius safflower seed oil, ricinus communis castor seed oil, helianthus annuus sunflower extract, rosmarinus officinalis rosemary leaf extract, oryza sativa rice bran extract, euterpe oleracea fruit extract, eucalyptus globulus leaf oil, mauritia flexuosa fruit oil, morinda citrifolia fruit extract, cymbopogon schoenanthus extract, garcinia indica seed butter, sclerocarya birrea seed oil, hydrolyzed rice protein, aloe barbadensis leaf juice, palmitoyl tetrapeptide-20, squalane, tocopherol, hydroxyethylcellulose, capryloyl glycerin sebacic acid copolymer, hydrogenated castor oil sebacic acid copolymer, bht, panthenol, polysorbate 60, guar hydroxypropyltrimonium chloride, stearamine oxide, ethylhexyl olivate, diheptyl succinate, isododecane, citric acid, disodium edta, tetrasodium edta, sodium hydroxide, disodium phosphate, sodium phosphate, butylene glycol, caprylyl glycol, hexylene glycol, sodium benzoate, potassium sorbate, leuconostoc radish root ferment filtrate, chlorphenesin, phenoxyethanol, limonene, linalool, fragrance parfum",
@@ -2556,7 +2571,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein-free",
+            "protein",
             "glycerin-free"
           ]
         }
@@ -3082,7 +3097,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "low_porosity",
         "volume",
         "featured",
-        "protein-free",
+        "protein",
         "glycerin-free"
       ],
       "asin": "B002EOSVUQ",
@@ -3119,7 +3134,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein-free",
+            "protein",
             "glycerin-free"
           ]
         }
@@ -3230,7 +3245,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "normal_porosity",
         "curl_enhancer",
         "featured",
-        "protein-free",
+        "protein",
         "glycerin-free"
       ],
       "ingredients_raw": "aqua, caprylic capric triglyceride, cetearyl alcohol, glycerin, propanediol, cetrimonium chloride, butyrospermum parkii shea butter, oryza sativa rice bran oil, glyceryl stearate, phenoxyethanol, citrus nobilis mandarin peel oil, hydrolised soy protein, cucumis sativus cucumber fruit extract, chamomila recutita matricaria flower leaf stem extract, camellia sinensis white tea leaf extract, polyquaternium-10, sodium benzoate",
@@ -3285,7 +3300,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein-free",
+            "protein",
             "glycerin-free"
           ]
         }
@@ -3571,7 +3586,7 @@ export const defaultProductDatabase: ProductDatabase = {
       ],
       "tags": [
         "featured",
-        "protein-free",
+        "protein",
         "glycerin-free"
       ],
       "ingredients_raw": "water, vp va copolymer, glycerin, hydrolyzed jojoba esters, jojoba esters, hydrolyzed quinoa protein, hydrolyzed oat protein, aloe barbadensis leaf extract, panax ginseng root extract, salvia officinalis sage extract, nigella sativa virgin black cumin oil, boswellia carter oil, aminomethyl propanol, carbomer, sodium phytate, caprylyl glycol, hexylene glycol, phenoxyethanol, citric acid",
@@ -3625,7 +3640,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein-free",
+            "protein",
             "glycerin-free"
           ]
         }
@@ -3640,7 +3655,7 @@ export const defaultProductDatabase: ProductDatabase = {
       "tags": [
         "woman_owned",
         "small_business",
-        "protein-free",
+        "protein",
         "glycerin-free"
       ],
       "ingredients_raw": "water aqua, behentrimonium methosulfate, persea gratissima avocado fruit oil, glycerin, leuconostoc radish root ferment filtrate, cetyl alcohol, ricinus communis castor seed oil, gluconodeltalactone and sodium benzoate, panthenol, simmondsia chinensis jojoba seed oil, caprylic capric triglyceride, water, glycerin, glycine soja soybean seed extract, water, camellia sinensis leaf extract, water, chamomilla recutita matricaria flower extract, inci nomenclature glycerin, vitis vinifera grape seed extract, polyhydroxystearic acid, behenyl behenate, tocopherol, water, butylene glycol, nymphaea coerulea flower extract, oat amino acids, tetrasodium glutamate diacetate, fragrance parfum, citric acid",
@@ -3703,7 +3718,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein-free",
+            "protein",
             "glycerin-free"
           ]
         }
@@ -3732,7 +3747,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "coily",
         "low_porosity",
         "premium",
-        "protein-free",
+        "protein",
         "glycerin-free"
       ],
       "ingredients_raw": "aqua water, cyclopentasiloxane, glycerin, polysorbate 60, myristyl alcohol, stearyl alcohol, cetyl alcohol, pvp, hydroxypropyl starch phosphate, citrus limon lemon peel extract, vaccinium myrtillus fruit extract, pyrus malus apple fruit extract, helianthus annuus sunflower seed extract, lactis serum proteinum, hydrolyzed chestnut extract, hydrolyzed quinoa, ethylhexyl methoxycinnamate, polyquaternium-10, hydroxypropyl guar, polyquaternium-28, diethylamino hydroxybenzoyl hexyl benzoate, butylene glycol, benzyl benzoate, citric acid, lactic acid, amyl cinnamal, linalool, benzyl salicylate, coumarin, hexyl cinnamal, limonene, citronellol, geraniol, benzyl alcohol, parfum fragrance, phenoxyethanol, caprylyl glycol, potassium sorbate, sodium benzoate",
@@ -3784,7 +3799,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein-free",
+            "protein",
             "glycerin-free"
           ]
         }
@@ -4605,7 +4620,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "black_owned",
         "woman_owned",
         "small_business",
-        "protein-free",
+        "protein",
         "glycerin-free"
       ],
       "buy_links": [
@@ -4635,8 +4650,8 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -78
         },
         "porosity": {
-          "high": 91,
-          "low": 41
+          "high": 73,
+          "low": 27
         },
         "sebderm": {
           "hasTriggers": false,
@@ -4644,7 +4659,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein-free",
+            "protein",
             "glycerin-free"
           ]
         }
@@ -4670,7 +4685,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "curl_enhancer",
         "normal_porosity",
         "featured",
-        "protein-free",
+        "protein",
         "glycerin-free"
       ],
       "ingredients_raw": "aqua, aloe barbadensis aloe vera leaf juice, pullulan, galactoarabinan, glycerin, propanediol, lauryl glucoside, decyl glucoside, cocamidopropyl betaine, camellia sinensis white tea leaf extract, chamomila recutita matricaria flower leaf stem extract, phenoxyethanol, hydrolised soy protein, potassium sorbate, citric acid, citrus limon lemon peel oil, pelargonium graveolens geranium flower oil",
@@ -4704,7 +4719,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein-free",
+            "protein",
             "glycerin-free"
           ]
         }
@@ -4732,7 +4747,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "volume",
         "low_porosity",
         "featured",
-        "protein-free",
+        "protein",
         "glycerin-free"
       ],
       "asin": "B079B3HKZK",
@@ -4778,7 +4793,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein-free",
+            "protein",
             "glycerin-free"
           ]
         }
@@ -4796,7 +4811,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "volume",
         "low_porosity",
         "featured",
-        "protein-free",
+        "protein",
         "glycerin-free"
       ],
       "ingredients_raw": "water aqua, vp va copolymer, cocamidopropyl betaine, hydrolyzed rice protein, hydrolyzed hemp seed extract, ribes nigrum black currant fruit extract, lentinus edodes shiitake mushroom extract, psidium guajava guava fruit extract, brassica oleracea acephala kale leaf extract, cucurbita pepo pumpkin seed extract, opuntia tuna prickly pear fruit extract, glycerin, panthenol, potassium sorbate, ethylhexylglycerin, disodium edta, citric acid, sodium benzoate, peg-40 hydrogenated castor oil, phenoxyethanol, sodium hydroxide, linalool, limonene, geraniol, benzyl alcohol, fragrance parfum",
@@ -4861,7 +4876,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein-free",
+            "protein",
             "glycerin-free"
           ]
         }
@@ -5153,7 +5168,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "normal_porosity",
         "high_porosity",
         "featured",
-        "protein-free",
+        "protein",
         "glycerin-free"
       ],
       "cost": 3.5,
@@ -5217,7 +5232,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein-free",
+            "protein",
             "glycerin-free"
           ]
         }
@@ -5453,7 +5468,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "low_porosity",
         "hold",
         "featured",
-        "protein-free",
+        "protein",
         "glycerin-free"
       ],
       "buy_links": [
@@ -5497,7 +5512,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein-free",
+            "protein",
             "glycerin-free"
           ]
         }
@@ -5515,7 +5530,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "high_porosity",
         "volume",
         "featured",
-        "protein-free",
+        "protein",
         "glycerin-free"
       ],
       "buy_links": [
@@ -5558,7 +5573,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein-free",
+            "protein",
             "glycerin-free"
           ]
         }
@@ -6114,11 +6129,21 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 72,
-          "low": 72
+          "low": 80
         },
         "sebderm": {
           "hasTriggers": true,
           "triggers": [
+            {
+              "id": "arginine",
+              "name": "Arginine",
+              "reason": "Amino acids can be metabolized by Malassezia, potentially worsening symptoms"
+            },
+            {
+              "id": "aspartic_acid",
+              "name": "Aspartic Acid",
+              "reason": "Amino acids can be metabolized by Malassezia, potentially worsening symptoms"
+            },
             {
               "id": "lysine",
               "name": "Lysine",
@@ -6127,6 +6152,11 @@ export const defaultProductDatabase: ProductDatabase = {
             {
               "id": "glycine",
               "name": "Glycine",
+              "reason": "Amino acids can be metabolized by Malassezia, potentially worsening symptoms"
+            },
+            {
+              "id": "alanine",
+              "name": "Alanine",
               "reason": "Amino acids can be metabolized by Malassezia, potentially worsening symptoms"
             },
             {
@@ -6171,7 +6201,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "curly",
         "coily",
         "high_porosity",
-        "protein-free",
+        "protein",
         "glycerin-free"
       ],
       "ingredients_raw": "water aqua eau, cetearyl alcohol, decyl glucoside, hydroxypropyl starch phosphate, behentrimonium chloride, ceteareth-20, orchis mascula flower extract, butyrospermum parkii shea butter extract, cocos nucifera coconut oil, sclerocarya birrea seed oil, prunus amygdalus dulcis sweet almond fruit extract, hydrolyzed soy protein, glycine soja soybean oil, isopropyl alcohol, citric acid, tetrasodium edta, glycerin, lecithin, propylene glycol, magnesium chloride, magnesium nitrate, methylchloroisothiazolinone, methylisothiazolinone, dmdm hydantoin, limonene, coumarin, linalool, alpha-isomethyl ionone, fragrance parfum",
@@ -6238,7 +6268,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein-free",
+            "protein",
             "glycerin-free"
           ]
         }
@@ -6263,7 +6293,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "coily",
         "drugstore",
         "bonding",
-        "protein-free",
+        "protein",
         "glycerin-free"
       ],
       "ingredients_raw": "water aqua, cetearyl alcohol, cetyl alcohol, behentrimonium chloride, propanediol, stearalkonium chloride, caprylic capric triglyceride, hydroxypropylgluconamide, hydroxypropylammonium gluconate, aspergillus ferment, arginine, rice amino acids, persea gratissima avocado oil, mauritia flexuosa fruit oil, sclerocarya birrea seed oil, cetrimonium chloride, hydroxyethylcellulose, tetrasodium glutamate diacetate, fragrance parfum, phenoxyethanol, ethylhexylglycerin",
@@ -6297,7 +6327,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 100,
-          "low": 23
+          "low": 31
         },
         "sebderm": {
           "hasTriggers": true,
@@ -6306,6 +6336,11 @@ export const defaultProductDatabase: ProductDatabase = {
               "id": "cetearyl_alcohol",
               "name": "Cetearyl Alcohol",
               "reason": "This specific fatty alcohol can feed Malassezia yeast"
+            },
+            {
+              "id": "arginine",
+              "name": "Arginine",
+              "reason": "Amino acids can be metabolized by Malassezia, potentially worsening symptoms"
             },
             {
               "id": "avocado_oil",
@@ -6321,7 +6356,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein-free",
+            "protein",
             "glycerin-free"
           ]
         }
@@ -6497,7 +6532,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "samples",
         "curly",
         "coily",
-        "protein-free",
+        "protein",
         "glycerin-free"
       ],
       "ingredients_raw": "aqua water eau, cetearyl alcohol, cetyl alcohol, glyceryl stearate, peg-100 stearate, cetrimonium chloride, panthenol, olea europaea olive fruit oil, butyrospermum parkii shea butter, cocos nucifera coconut oil, theobroma cacao cocoa seed butter, theobroma grandiflorum seed butter, hydrolyzed soy protein, tocopheryl acetate, helianthus annuus sunflower seed oil, tocopherol, parfum fragrance, bis c13-15 alkoxy pg-amodimethicone, methoxy peg ppg-7 3 aminopropyl dimethicone, behentrimonium methosulfate, c10-40 isoalkylamidopropylethyldimonium ethosulfate, peg-4, peg-6, castor oil hydrogenated ethoxylated, c14-15 alcohols, peg-7, guar hydroxypropyltrimonium chloride, peg-8, isotridecanol, citric acid, sodium hydroxide, tetrasodium edta, sodium benzoate, linalool, limonene",
@@ -6573,7 +6608,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein-free",
+            "protein",
             "glycerin-free"
           ]
         }
@@ -6875,7 +6910,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "coily",
         "high_porosity",
         "premium",
-        "protein-free",
+        "protein",
         "glycerin-free"
       ],
       "ingredients_raw": "water aqua eau, cetearyl alcohol, isoamyl laurate, behentrimonium chloride, glycerin, glyceryl stearate se, cocos nucifera coconut oil, honey mel miel, butyrospermum parkii shea butter extract, hydrolyzed soy protein, prunus amygdalus dulcis sweet almond fruit extract, sclerocarya birrea seed oil, glycine soja soybean oil, phenoxyethanol, polyquaternium-67, glyceryl laurate, sodium gluconate, citric acid, lecithin, isopropyl alcohol, limonene, coumarin, linalool, alpha-isomethyl ionone, fragrance parfum",
@@ -6937,7 +6972,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein-free",
+            "protein",
             "glycerin-free"
           ]
         }
@@ -6961,7 +6996,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "curly",
         "low_porosity",
         "premium",
-        "protein-free",
+        "protein",
         "glycerin-free"
       ],
       "ingredients_raw": "water aqua eau, cetearyl alcohol, glycerin, butylene glycol, cetyl alcohol, hydrolyzed soy protein, hydrolyzed rice protein, isopropyl myristate, behentrimonium chloride, panthenol, ethyl macadamiate, hydrolyzed pea protein, cetrimonium chloride, olea europaea fruit oil, magnesium ascorbate, linum usitatissimum seed extract, citric acid, potassium sorbate, phenoxyethanol, stearalkonium chloride, polysorbate 20, limonene, benzyl salicylate, fragrance parfum",
@@ -6996,7 +7031,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 100,
-          "low": 55
+          "low": 51
         },
         "sebderm": {
           "hasTriggers": true,
@@ -7020,7 +7055,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein-free",
+            "protein",
             "glycerin-free"
           ]
         }
@@ -7044,7 +7079,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "curly",
         "coily",
         "low_porosity",
-        "protein-free",
+        "protein",
         "glycerin-free"
       ],
       "ingredients_raw": "aqua water eau, brassica alcohol, glycerin, brassicyl isoleucinate esylate, distearoylethyl dimonium chloride, capryloyl glycerin sebacic acid copolymer, diheptyl succinate, cetearyl alcohol, hydrolyzed hyaluronic acid, sodium hyaluronate, bixa orellana annatto seed extract, betula alba birch sap juice, polyquaternium-7, panthenol, cetrimonium chloride, arginine, lactic acid, parfum fragrance, limonene, linalool, sodium benzoate, potassium sorbate, phenoxyethanol, benzyl alcohol, dehydroacetic acid",
@@ -7080,7 +7115,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 100,
-          "low": 81
+          "low": 86
         },
         "sebderm": {
           "hasTriggers": true,
@@ -7089,12 +7124,17 @@ export const defaultProductDatabase: ProductDatabase = {
               "id": "cetearyl_alcohol",
               "name": "Cetearyl Alcohol",
               "reason": "This specific fatty alcohol can feed Malassezia yeast"
+            },
+            {
+              "id": "arginine",
+              "name": "Arginine",
+              "reason": "Amino acids can be metabolized by Malassezia, potentially worsening symptoms"
             }
           ]
         },
         "autoTagger": {
           "tags": [
-            "protein-free",
+            "protein",
             "glycerin-free"
           ]
         }
@@ -7118,7 +7158,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "curly",
         "coily",
         "high_porosity",
-        "protein-free",
+        "protein",
         "glycerin-free"
       ],
       "ingredients_raw": "aqua water eau, cetyl alcohol, propylene glycol, palmitamidopropyltrimonium chloride, theobroma cacao cocoa seed butter, theobroma grandiflorum seed butter, distearoylethyl dimonium chloride, cetearyl alcohol, panthenol, triticum vulgare wheat bran extract, triticum vulgare wheat germ oil, butyrospermum parkii shea butter, cocos nucifera coconut oil, hydrolyzed corn protein, hydrolyzed soy protein, hydrolyzed wheat protein, helianthus annuus sunflower seed oil, camellia oleifera seed oil, parfum fragrance, cetrimonium chloride, cetearyl nonanoate, ethylhexyl isononanoate, peg-20 stearate, linoleic acid, tocopherol, citric acid, sodium hydroxide, sodium benzoate, tetrasodium edta, phenoxyethanol, linalool, limonene, hexyl cinnamal, citral",
@@ -7187,7 +7227,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein-free",
+            "protein",
             "glycerin-free"
           ]
         }
@@ -7512,7 +7552,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 100,
-          "low": 38
+          "low": 44
         },
         "sebderm": {
           "hasTriggers": true,
@@ -7563,8 +7603,23 @@ export const defaultProductDatabase: ProductDatabase = {
               "reason": "Contains fatty acids that can feed Malassezia yeast"
             },
             {
+              "id": "arginine",
+              "name": "Arginine",
+              "reason": "Amino acids can be metabolized by Malassezia, potentially worsening symptoms"
+            },
+            {
+              "id": "aspartic_acid",
+              "name": "Aspartic Acid",
+              "reason": "Amino acids can be metabolized by Malassezia, potentially worsening symptoms"
+            },
+            {
               "id": "glycine",
               "name": "Glycine",
+              "reason": "Amino acids can be metabolized by Malassezia, potentially worsening symptoms"
+            },
+            {
+              "id": "alanine",
+              "name": "Alanine",
               "reason": "Amino acids can be metabolized by Malassezia, potentially worsening symptoms"
             },
             {
@@ -7740,7 +7795,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 95,
-          "low": 17
+          "low": 22
         },
         "sebderm": {
           "hasTriggers": true,
@@ -7768,6 +7823,11 @@ export const defaultProductDatabase: ProductDatabase = {
             {
               "id": "wheat_amino_acids",
               "name": "Wheat Amino Acids",
+              "reason": "Amino acids can be metabolized by Malassezia, potentially worsening symptoms"
+            },
+            {
+              "id": "arginine",
+              "name": "Arginine",
               "reason": "Amino acids can be metabolized by Malassezia, potentially worsening symptoms"
             },
             {
@@ -7807,7 +7867,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "curly",
         "coily",
         "bonding",
-        "protein-free",
+        "protein",
         "glycerin-free"
       ],
       "ingredients_raw": "water, cetearyl alcohol, propylene glycol, behentrimonium methosulfate, cetyl alcohol, phenoxyethanol, glycerin, stearamidopropyl dimethylamine, aloe barbadensis leaf juice, fragrance, hydroxypropyl methylcellulose, citric acid, sodium benzoate, potassium sorbate, hydroxypropylgluconamide, hydroxypropylammonium gluconate, quaternium-91, polyquaternium-37, dicaprylyl carbonate, cetrimonium chloride, simmondsia chinensis jojoba seed oil, cetrimonium methosulfate, etidronic acid, tocopheryl acetate, tocopherol, tetrasodium glutamate diacetate, linalool, lauryl glucoside, hydroxycitronellal, ascorbyl palmitate, panthenol, phytantriol, ascorbic acid",
@@ -7862,7 +7922,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein-free",
+            "protein",
             "glycerin-free"
           ]
         }
@@ -7965,7 +8025,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "curly",
         "coily",
         "bonding",
-        "protein-free",
+        "protein",
         "glycerin-free"
       ],
       "ingredients_raw": "water aqua, cocos nucifera coconut fruit extract, cetearyl alcohol, glycerin, behentrimonium chloride, persea gratissima avocado oil, behenyl alcohol, cocos nucifera coconut oil, butyrospermum parkii shea butter, c12-15 alkyl benzoate, helianthus annuus sunflower seed oil, olea europaea olive fruit oil, pentaerythrityl tetraethylhexanoate, arginine, biotin, cocoyl hydrolyzed collagen, hydrolyzed vegetable protein, tocopherol, tocopheryl acetate, ceramide np, simmondsia chinensis jojoba seed oil, azadirachta indica seed oil, gardenia tahitensis flower extract, glycol distearate, caprylyl glycol, hydroxyethylcellulose, hydroxyethyl cetearamidopropyldimonium chloride, ethyl lauroyl arginate hcl, isopropyl alcohol, sodium nitrate, sodium benzoate, fragrance parfum, coumarin, benzyl benzoate",
@@ -8045,6 +8105,11 @@ export const defaultProductDatabase: ProductDatabase = {
               "reason": "Contains fatty acids that can feed Malassezia yeast"
             },
             {
+              "id": "arginine",
+              "name": "Arginine",
+              "reason": "Amino acids can be metabolized by Malassezia, potentially worsening symptoms"
+            },
+            {
               "id": "jojoba_oil",
               "name": "Jojoba Oil",
               "reason": "Contains fatty acids that can feed Malassezia yeast"
@@ -8053,7 +8118,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein-free",
+            "protein",
             "glycerin-free"
           ]
         }
@@ -8076,7 +8141,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "wavy",
         "curly",
         "coily",
-        "protein-free",
+        "protein",
         "glycerin-free"
       ],
       "ingredients_raw": "aqua water eau, cetyl alcohol, glycerin, stearyl alcohol, glyceryl stearate se, prunus amygdalus dulcis sweet almond oil, carthamus tinctorius safflower seed extract, guar hydroxypropyltrimonium chloride, picea mariana bark black spruce extract, polyquaternium-7, hydrolyzed keratin, panthenol, simmondsia chinensis jojoba seed oil, tocopheryl acetate, aloe barbadensis aloe vera leaf juice, maltodextrin, parfum fragrance, citric acid, potassium sorbate, sodium benzoate, caprylyl glycol, myristyl alcohol, arachidyl alcohol, phenoxyethanol, benzyl salicylate, linalool, limonene",
@@ -8131,7 +8196,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein-free",
+            "protein",
             "glycerin-free"
           ]
         }
@@ -8155,7 +8220,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "wavy",
         "curly",
         "coily",
-        "protein-free",
+        "protein",
         "glycerin-free"
       ],
       "ingredients_raw": "aqua water eau, cetyl alcohol, behentrimonium chloride, glycol distearate, isopropyl alcohol, butyrospermum parkii shea butter, quaternium-80, propylene glycol, epilobium angustifolium flower leaf stem extract, trifolium pratense clover flower extract, acetyl tetrapeptide-3, dextran, polyquaternium-7, hydroxypropyltrimonium honey, hydrolyzed collagen, hydrolyzed milk protein, hydrolyzed keratin, olea europaea olive fruit oil, argania spinosa kernel argan oil, sclerocarya birrea marula seed oil, moringa oil hydrogenated moringa oil esters, panthenol, butylene glycol, parfum fragrance, caprylyl glycol, phenoxyethanol, sodium hydroxide, tocopherol, potassium sorbate, sodium metabisulfite, sodium benzoate, sorbic acid",
@@ -8223,7 +8288,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein-free",
+            "protein",
             "glycerin-free"
           ]
         }
@@ -8450,7 +8515,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "curly",
         "coily",
         "high_porosity",
-        "protein-free",
+        "protein",
         "glycerin-free"
       ],
       "ingredients_raw": "water aqua, linum usitatissimum linseed extract, salvia hispanica chia seed extract, behentrimonium methosulfate, quaternium-87, cetearyl alcohol, cetyl alcohol, panthenol, mangifera indica mango seed butter, prunus amygdalus dulcis sweet almond oil, caprylhydroxamic acid, caprylyl glycol, glycerin, argania spinosa kernel oil, camellia sinensis leaf extract, simmondsia chinensis jojoba seed oil, peg ppg-8 3 diisostearate, astrocaryum vulgare kernel oil, tocopherol, olea europea olive fruit oil, euterpe oleracea acai fruit oil, mauritia flexuosa buriti fruit oil, fragrance, polyquaternium-73",
@@ -8461,7 +8526,7 @@ export const defaultProductDatabase: ProductDatabase = {
       "extensions": {
         "frizzbot": {
           "simple_humectants_number": 3,
-          "film_forming_humectants_number": 1,
+          "film_forming_humectants_number": 2,
           "emollients_number": 9,
           "simple_humectants": [
             "Panthenol",
@@ -8469,7 +8534,8 @@ export const defaultProductDatabase: ProductDatabase = {
             "Glycerin"
           ],
           "film_forming_humectants": [
-            "Flaxseed Extract"
+            "Flaxseed Extract",
+            "Salvia hispanica chia seed extract"
           ],
           "emollients": [
             "Behentrimonium Methosulfate",
@@ -8482,7 +8548,7 @@ export const defaultProductDatabase: ProductDatabase = {
             "Olive Oil",
             "Unknown Polyquat"
           ],
-          "score": -75
+          "score": -81
         },
         "porosity": {
           "high": 100,
@@ -8525,7 +8591,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein-free",
+            "protein",
             "glycerin-free"
           ]
         }
@@ -8638,7 +8704,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "coily",
         "low_porosity",
         "drugstore",
-        "protein-free",
+        "protein",
         "glycerin-free"
       ],
       "ingredients_raw": "water aqua eau, polyacrylamide, c13-14 isoalkane, shea butter ethyl esters, polyquaternium-10, keratin amino acids, oryza sativa rice extract, acyl coenzyme a desaturase, lactobacillus tomato fruit ferment extract, leuconostoc radish root ferment filtrate, pg-hydroxyethylcellulose cocodimonium chloride, laureth-7, disodium edta, citric acid, ethylhexylglycerin, phenoxyethanol, fragrance parfum, linalool, limonene, hydroxycitronellal, citronellol",
@@ -8680,7 +8746,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein-free",
+            "protein",
             "glycerin-free"
           ]
         }
@@ -8798,7 +8864,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "curly",
         "coily",
         "low_porosity",
-        "protein-free",
+        "protein",
         "glycerin-free"
       ],
       "ingredients_raw": "aqua water eau, hydrolyzed rice protein, hydrolyzed quinoa, hydroxyethylcellulose, caprylyl glycol, phenoxyethanol, sorbic acid, cetrimonium chloride, chamomille recutita matricaria flower extract, urtica dioica nettle leaf extract, polyquaternium-10",
@@ -8835,7 +8901,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein-free",
+            "protein",
             "glycerin-free"
           ]
         }
@@ -8860,7 +8926,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "coily",
         "low_porosity",
         "drugstore",
-        "protein-free",
+        "protein",
         "glycerin-free"
       ],
       "ingredients_raw": "water aqua, glycerin, vp va copolymer, propanediol, pvp, peg-40 hydrogenated castor oil, lactobacillus tomato fruit ferment extract, oryza sativa rice extract, keratin amino acids, leuconostoc radish root ferment filtrate, acyl coenzyme a desaturase, carbomer, fragrance parfum, disodium edta, phenoxyethanol, ethylhexylglycerin, sodium hydroxide",
@@ -8904,7 +8970,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein-free",
+            "protein",
             "glycerin-free"
           ]
         }
@@ -8998,7 +9064,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "curly",
         "coily",
         "low_porosity",
-        "protein-free",
+        "protein",
         "glycerin-free"
       ],
       "ingredients_raw": "behentrimonium methosulfate, cetearyl alcohol, theobroma cacao seed butter, argania spinosa kernel butter, ribes nigrum butter, guar hydroxypropyltrimonium chloride stearic acid, cetrimonium chloride, lactobacillus ferment, hydrolyzed rice protein, panthenol provitamin b5, stearic acid, brassica oleracea italica seed oil, citrus limon peel oil, clitoria ternatea flower extract, phenoxyethanol and caprylyl glycol, tanacetum annuum flower oil",
@@ -9054,7 +9120,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein-free",
+            "protein",
             "glycerin-free"
           ]
         }
@@ -9183,7 +9249,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "wavy",
         "curly",
         "coily",
-        "protein-free",
+        "protein",
         "glycerin-free"
       ],
       "ingredients_raw": "water, aloe barbadensis aloe vera leaf juice, propylene glycol, lactobacillus tomato fruit ferment extract, oryza sativa rice extract, keratin amino acids, acyl coenzyme a desaturase, cetrimonium chloride, hydroxyethyl cellulose, cocos nucifera coconut water, vitis vinifera grape seed extract, polyquaternium-10, juniperus communis juniper berry fruit extract, polysorbate-20, salvia officinalis sage leaf extract, fragrance, phenoxyethanol, sorbic acid, caprylyl glycol",
@@ -9226,7 +9292,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein-free",
+            "protein",
             "glycerin-free"
           ]
         }
@@ -9830,7 +9896,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "coily",
         "high_porosity",
         "heat_protectant",
-        "protein-free",
+        "protein",
         "glycerin-free"
       ],
       "ingredients_raw": "water aqua, isopropyl myristate, argania spinosa argan kernel oil, amodimethicone trideceth-12, cetrimonium chloride, peg-12 dimethicone, polyquaternium-11, caprylic capric triglyceride, vitis vinifera grape seed oil, fragrance parfum, polysorbate-20, bambusa vulgaris bamboo extract, hydrolyzed quinoa, hydrolyzed wheat protein, silkamino acids, dehydroacetic acid, benzyl alcohol, sodium chloride",
@@ -9886,7 +9952,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein-free",
+            "protein",
             "glycerin-free"
           ]
         }
@@ -10056,7 +10122,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "coily",
         "high_porosity",
         "bonding",
-        "protein-free",
+        "protein",
         "glycerin-free"
       ],
       "ingredients_raw": "Water/Aqua/Eau, Xylitylglucoside, Hydroxyethylcellulose, Anhydroxylitol, Bis-Aminopropyl Diglycol Dimaleate, Glycerin, Propanediol, Maltitol, Polyimide-1, Guar Hydroxypropyltrimonium Chloride, Hydroxypropyl Starch Phosphate, Caprylyl/Capryl Glucoside, Xylitol, Aspergillus Ferment, Acacia Senegal Gum, Ethylhexylglycerin, Cetyl Hydroxyethylcellulose, Polyquaternium-10, Glycolipids, Arginine, Cocos Nucifera (Coconut) Oil, Persea Gratissima (Avocado) Oil, Sodium Cocoyl Glutamate, Olive Oil Polyglyceryl-6 Esters, Sodium Hydroxide, Citric Acid, Trisodium Ethylenediamine Disuccinate, Glyceryl Caprylate, Glyceryl Stearate, PG-Hydroxyethylcellulose Cocodimonium Chloride, Lactic Acid, Cetearyl Alcohol, Cocos Nucifera (Coconut) Fruit Juice, Cocos Nucifera (Coconut) Water, Glyceryl Undecylenate, Phospholipids, Polyglyceryl-10 Dioleate, Polyglyceryl-10 Oleate, Sodium Stearoyl Lactylate, Pelvetia Canaliculata Extract, Disodium Phosphate, Hydrated Silica, Silica Dimethyl Silylate, Caprylyl Glyceryl Ether, Sodium Phosphate, Polysorbate 60, Phenoxyethanol, Potassium Sorbate, Sodium Benzoate, Sorbic Acid, Glyoxal, Fragrance (Parfum), Limonene, Hexyl Cinnamal, Linalool, Citral, Citronellol, Yellow 5 (CI 19140), Yellow 6 (CI 15985)",
@@ -10097,11 +10163,16 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 100,
-          "low": 78
+          "low": 82
         },
         "sebderm": {
           "hasTriggers": true,
           "triggers": [
+            {
+              "id": "arginine",
+              "name": "Arginine",
+              "reason": "Amino acids can be metabolized by Malassezia, potentially worsening symptoms"
+            },
             {
               "id": "coconut_oil",
               "name": "Coconut Oil",
@@ -10131,7 +10202,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein-free",
+            "protein",
             "glycerin-free"
           ]
         }
@@ -10447,7 +10518,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "wavy",
         "curly",
         "coily",
-        "protein-free",
+        "protein",
         "glycerin-free"
       ],
       "ingredients_raw": "aqua water eau, cetearyl alcohol, cetrimonium chloride, argania spinosa argan kernel oil, hydroxypropyltrimonium hydrolyzed rice protein siloxysilicate, oryza sativa rice extract, leuconostoc radish root ferment filtrate, populus tremuloides bark extract, panthenol, sodium pca, glycerin, isopropyl palmitate, tocopherol, caprylyl glycol, tetrasodium glutamate diacetate, ethylhexylglycerin, distearyldimonium chloride, chlorphenesin, potassium hydroxide, citric acid, parfum fragrance, benzyl benzoate, citrus aurantium peel oil, limonene",
@@ -10499,7 +10570,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein-free",
+            "protein",
             "glycerin-free"
           ]
         }
@@ -11143,7 +11214,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "curly",
         "coily",
         "low_porosity",
-        "protein-free",
+        "protein",
         "glycerin-free"
       ],
       "ingredients_raw": "aqua water eau, cocamidopropyl hydroxysultaine, sodium methyl 2-sulfolaurate, sodium lauroyl methyl isethionate, disodium 2-sulfolaurate, glycerin, ferngully bio-repair blend, chlorophyllin-copper complex sclerocarya birrea seed oil, psidium guajava seed oil, astrocaryum murumuru seed butter, althaea officinalis flower extract, panthenol, olea europaea olive fruit oil, argania spinosa kernel oil, sodium hyaluronate, hydrolyzed rice protein, allantoin, hydrolyzed barley protein, lactic acid, fragrance parfum, guar hydroxypropyltrimonium chloride, potassium sorbate, sodium benzoate, ethylhexylglycerin",
@@ -11208,7 +11279,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein-free",
+            "protein",
             "glycerin-free"
           ]
         }
@@ -11520,7 +11591,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "wavy",
         "curly",
         "coily",
-        "protein-free",
+        "protein",
         "glycerin-free"
       ],
       "ingredients_raw": "aqua purified water, vp va copolymer, hydroxyethylcellulose, hydrolyzed oat protein, persea gratissima avocado oil, helianthus annuus sunflower seed oil, panthenol-dl pro vitamin b5, capryl gycol, phenoxyethanol, sorbic acid, coumarin, limonene",
@@ -11568,7 +11639,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein-free",
+            "protein",
             "glycerin-free"
           ]
         }
@@ -11766,7 +11837,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "curly",
         "coily",
         "low_porosity",
-        "protein-free",
+        "protein",
         "glycerin-free"
       ],
       "ingredients_raw": "sodium chloride, water aqua, glycerin, sodium cocoyl isethionate, sodium methyl cocoyl taurate, coconut acid, cocamidopropyl betaine, propanediol, glyceryl laurate, hydrolyzed quinoa, hydrolyzed rice protein, phyllanthus emblica fruit extract, melia azadirachta leaf extract, zingiber officinale ginger root extract, quillaja saponaria extract, coconut alkanes, coco-caprylate caprate, capryloyl caproyl methyl glucamide, lauroyl myristoyl methyl glucamide, panthenol, maltodextrin, fragrance parfum, phenoxyethanol, ethylhexylglycerin, potassium sorbate, sodium benzoate",
@@ -11803,7 +11874,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein-free",
+            "protein",
             "glycerin-free"
           ]
         }
@@ -11828,7 +11899,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "coily",
         "low_porosity",
         "premium",
-        "protein-free",
+        "protein",
         "glycerin-free"
       ],
       "ingredients_raw": "water aqua, behentrimonium methosulfate, cetearyl alcohol, cocos nucifera coconut oil, peg-40 ppg-8 methylaminopropyl hydroxypropyl dimethicone copolymer, glycerin, simmondsia chinensis jojoba seed oil, caryocar brasiliense pequi fruit oil, propylene glycol dicaprylate dicaprate, hydrolyzed rice protein, polyquaternium-37, dipropylene glycol, phenoxyethanol, c10-40 isoalkylamidopropylethyldimonium ethosulfate, ppg-26-buteth-26, quaternium-33, ceteareth-20, caprylyl glycol, peg-40 hydrogenated castor oil, ppg-1 trideceth-6, fragrance parfum, tocopherol, benzyl alcohol, potassium sorbate, sodium benzoate f714-1",
@@ -11899,7 +11970,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein-free",
+            "protein",
             "glycerin-free"
           ]
         }
@@ -11922,7 +11993,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "wavy",
         "curly",
         "coily",
-        "protein-free",
+        "protein",
         "glycerin-free"
       ],
       "ingredients_raw": "distilled water, ginger, rosemary, lemongrass extract infusion, aloe vera leaf juice, polyquaternium-55, cocamidopropyl hydroxysultaine, polysorbate 20, isostearamidopropyl morpholine lactate, hydrolyzed silk protein, pvp, phenoxyethanol, ethylhexylglycerin, benzoic acid, dehydroacetic acid, phthalate-free fragrance",
@@ -11964,7 +12035,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein-free",
+            "protein",
             "glycerin-free"
           ]
         }
@@ -12055,7 +12126,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "high_porosity",
         "normal_porosity",
         "featured",
-        "protein-free",
+        "protein",
         "glycerin-free"
       ],
       "cost": 2.8,
@@ -12098,7 +12169,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein-free",
+            "protein",
             "glycerin-free"
           ]
         }
@@ -13061,7 +13132,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "coily",
         "low_porosity",
         "bonding",
-        "protein-free",
+        "protein",
         "glycerin-free"
       ],
       "cost": 3.75,
@@ -13074,13 +13145,15 @@ export const defaultProductDatabase: ProductDatabase = {
       "extensions": {
         "frizzbot": {
           "simple_humectants_number": 2,
-          "film_forming_humectants_number": 0,
+          "film_forming_humectants_number": 1,
           "emollients_number": 7,
           "simple_humectants": [
             "Ethylhexylglycerin",
             "Glycerin"
           ],
-          "film_forming_humectants": [],
+          "film_forming_humectants": [
+            "Salvia hispanica chia seed extract"
+          ],
           "emollients": [
             "Cetearyl Alcohol",
             "Unknown Polyquat",
@@ -13090,11 +13163,11 @@ export const defaultProductDatabase: ProductDatabase = {
             "Behentrimonium Chloride",
             "Benzyl Alcohol"
           ],
-          "score": -70
+          "score": -80
         },
         "porosity": {
           "high": 100,
-          "low": 80
+          "low": 76
         },
         "sebderm": {
           "hasTriggers": true,
@@ -13113,7 +13186,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein-free",
+            "protein",
             "glycerin-free"
           ]
         }
@@ -13133,7 +13206,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "low_porosity",
         "featured",
         "black_owned",
-        "protein-free",
+        "protein",
         "glycerin-free"
       ],
       "buy_links": [
@@ -13171,7 +13244,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein-free",
+            "protein",
             "glycerin-free"
           ]
         }
@@ -13197,7 +13270,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "curly",
         "coily",
         "low_porosity",
-        "protein-free",
+        "protein",
         "glycerin-free"
       ],
       "ingredients_raw": "aqua water eau, aloe barbadensis aloe vera extract, glycerin, panthenol, cetrimonium chloride, behentrimonium methosulfate, cetearyl alcohol, cetyl alcohol, caprylyl glycol, phenoxyethanol, sorbic acid, citrus sinensis orange peel oil expressed, lavandula angustifolia lavender oil althaea officinalis marshmallow leaf root extract, hydrolyzed adansonia digitata baobab seed extract, hydrolyzed quinoa, chamomille recutita matricaria flower extract, urtica dioica nettle leaf extract, equisetum arvense horsetail leaf extract, angelica archangelica angelica root extract, linalool, limonene",
@@ -13243,7 +13316,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein-free",
+            "protein",
             "glycerin-free"
           ]
         }
@@ -13432,7 +13505,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 64,
-          "low": 85
+          "low": 100
         },
         "sebderm": {
           "hasTriggers": true,
@@ -13441,6 +13514,21 @@ export const defaultProductDatabase: ProductDatabase = {
               "id": "butyrospermum_parkii_shea_butter",
               "name": "Butyrospermum Parkii Shea Butter",
               "reason": "Contains fatty acids that can feed Malassezia yeast"
+            },
+            {
+              "id": "alanine",
+              "name": "Alanine",
+              "reason": "Amino acids can be metabolized by Malassezia, potentially worsening symptoms"
+            },
+            {
+              "id": "arginine",
+              "name": "Arginine",
+              "reason": "Amino acids can be metabolized by Malassezia, potentially worsening symptoms"
+            },
+            {
+              "id": "aspartic_acid",
+              "name": "Aspartic Acid",
+              "reason": "Amino acids can be metabolized by Malassezia, potentially worsening symptoms"
             },
             {
               "id": "glycine",
@@ -13498,7 +13586,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "high_porosity",
         "normal_porosity",
         "featured",
-        "protein-free",
+        "protein",
         "glycerin-free"
       ],
       "cost": 3,
@@ -13553,7 +13641,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein-free",
+            "protein",
             "glycerin-free"
           ]
         }
@@ -13657,7 +13745,7 @@ export const defaultProductDatabase: ProductDatabase = {
       "tags": [
         "low_porosity",
         "normal_porosity",
-        "protein-free",
+        "protein",
         "glycerin-free"
       ],
       "asin": "B074Q2CNMY",
@@ -13711,7 +13799,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein-free",
+            "protein",
             "glycerin-free"
           ]
         }
@@ -13738,7 +13826,7 @@ export const defaultProductDatabase: ProductDatabase = {
       "tags": [
         "high_porosity",
         "normal_porosity",
-        "protein-free",
+        "protein",
         "glycerin-free"
       ],
       "asin": "B002RX2QFA",
@@ -13793,7 +13881,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein-free",
+            "protein",
             "glycerin-free"
           ]
         }
@@ -13880,7 +13968,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "normal_porosity",
         "featured",
         "low_porosity",
-        "protein-free",
+        "protein",
         "glycerin-free"
       ],
       "buy_links": [
@@ -13924,7 +14012,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein-free",
+            "protein",
             "glycerin-free"
           ]
         }
@@ -14093,7 +14181,7 @@ export const defaultProductDatabase: ProductDatabase = {
       "tags": [
         "high porosity",
         "low porosity",
-        "protein-free",
+        "protein",
         "glycerin-free"
       ],
       "cost": 0.5,
@@ -14146,7 +14234,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein-free",
+            "protein",
             "glycerin-free"
           ]
         }
@@ -14163,7 +14251,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "low_porosity",
         "normal_porosity",
         "featured",
-        "protein-free",
+        "protein",
         "glycerin-free"
       ],
       "buy_links": [
@@ -14209,7 +14297,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein-free",
+            "protein",
             "glycerin-free"
           ]
         }
@@ -14355,7 +14443,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "high_porosity",
         "normal_porosity",
         "featured",
-        "protein-free",
+        "protein",
         "glycerin-free"
       ],
       "ingredients_raw": "water, helianthus annuus sunflower seed oil, cocamidopropyl betaine, disodium laureth sulfosuccinate, diethylhexyl sodium sulfosuccinate, glycerin panthenol polyquaternium-10, biotin, hydrolyzed quinoa, hydrolyzed adansonia digitata baobab seed protein, gluconolactone sodium benzoate, sodium laurylglucosides hydroxypropylsulfonate, lycium barbarum fruit extract, coffea arabica coffee seed extract, euterpe oleracea fruit extract, morinda citrifolia extract, punica granatum fruit extract, camellia sinensis leaf extract, garcinia mangostana fruit extract, calendula officinalis flower extract, rosmarinus officinalis rosemary leaf extract, citrus aurantium bergamia bergamot fruit oil, vanillin, hybrid safflower oil, boswellia carterii oil, pelargonium graveolens geranium oil, citrus grandis grapefruit peel oil, lavandula angustifolia lavender oil, pogostemon cablin patchouli oil, citrus aurantium dulcis orange peel oil, cocos nucifera coconut oil, citrus nobilis mandarin orange peel oil, citric acid",
@@ -14412,7 +14500,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein-free",
+            "protein",
             "glycerin-free"
           ]
         }
@@ -14430,7 +14518,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "coily",
         "samples",
         "budget",
-        "protein-free",
+        "protein",
         "glycerin-free"
       ],
       "ingredients_raw": "water aqua, sodium lauroyl sarcosinate, sodium cocoyl isethionate, cocamidopropyl hydroxysultaine, glycol distearate, peg-150 distearate, propanediol, hydroxypropylgluconamide, hydroxypropylammonium gluconate, aspergillus ferment, arginine, rice amino acids, persea gratissima avocado oil, mauritia flexuosa fruit oil, sclerocarya birrea seed oil, polyquaternium-10, hydroxypropyl guar hydroxypropyltrimonium chloride, tocopherol, tetrasodium glutamate diacetate, fragrance parfum, phenoxyethanol, ethylhexylglycerin, citric acid",
@@ -14477,6 +14565,11 @@ export const defaultProductDatabase: ProductDatabase = {
           "hasTriggers": true,
           "triggers": [
             {
+              "id": "arginine",
+              "name": "Arginine",
+              "reason": "Amino acids can be metabolized by Malassezia, potentially worsening symptoms"
+            },
+            {
               "id": "avocado_oil",
               "name": "Avocado Oil",
               "reason": "Contains fatty acids that can feed Malassezia yeast"
@@ -14490,7 +14583,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein-free",
+            "protein",
             "glycerin-free"
           ]
         }
@@ -14782,7 +14875,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "wavy",
         "curly",
         "low_porosity",
-        "protein-free",
+        "protein",
         "glycerin-free"
       ],
       "ingredients_raw": "water eau, coco-glucoside, sodium chloride himalayan crystal salt, sodium c14-16 olefin sulfonate, disodium laureth sulfosuccinate, lauramide dea, panthenoil, polysorbate 80, silk amino acides, hydroxyproyl methylcellulose, citric acid, fragrance, dmdm hydantoin",
@@ -14818,7 +14911,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein-free",
+            "protein",
             "glycerin-free"
           ]
         }
@@ -14893,11 +14986,21 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 81,
-          "low": 75
+          "low": 86
         },
         "sebderm": {
           "hasTriggers": true,
           "triggers": [
+            {
+              "id": "arginine",
+              "name": "Arginine",
+              "reason": "Amino acids can be metabolized by Malassezia, potentially worsening symptoms"
+            },
+            {
+              "id": "aspartic_acid",
+              "name": "Aspartic Acid",
+              "reason": "Amino acids can be metabolized by Malassezia, potentially worsening symptoms"
+            },
             {
               "id": "lysine",
               "name": "Lysine",
@@ -14911,6 +15014,11 @@ export const defaultProductDatabase: ProductDatabase = {
             {
               "id": "glycine",
               "name": "Glycine",
+              "reason": "Amino acids can be metabolized by Malassezia, potentially worsening symptoms"
+            },
+            {
+              "id": "alanine",
+              "name": "Alanine",
               "reason": "Amino acids can be metabolized by Malassezia, potentially worsening symptoms"
             },
             {
@@ -14959,7 +15067,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "curly",
         "coily",
         "bonding",
-        "protein-free",
+        "protein",
         "glycerin-free"
       ],
       "ingredients_raw": "water aqua eau, sodium lauroyl methyl isethionate, cocamidopropyl hydroxysultaine, potassium cocoyl glycinate, disodium cocoyl glutamate, sodium lauroyl sarcosinate, potassium cocoate, decyl glucoside, glycereth-26, bis-aminopropyl diglycol dimaleate, cocamidopropylamine oxide, disodium laureth sulfosuccinate, glycol distearate, sodium cocoyl glutamate, methyl gluceth-20, acrylates copolymer, peg-120 methyl glucose dioleate, amodimethicone, citric acid, sodium lauryl sulfoacetate, polyquaternium-10, ethylhexylglycerin, divinyldimethicone dimethicone copolymer, polyquaternium-11, trisodium ethylenediamine disuccinate, guar hydroxypropyltrimonium chloride, c11-15 pareth-7, laureth-9, glycerin, trideceth-12, c12-13 pareth-23, c12-13 pareth-3, hydrolyzed vegetable protein, pg-propyl silanetriol, panthenol, acetic acid, tetrasodium edta, pentasodium triphosphate, sodium hydroxide, disodium edta, helianthus annus sunflower seed oil, tocopherol, prunus armeniaca apricot kernel oil, pseudozyma epicola camellia sinensis seed oil ferment extract filtrate, pseudozyma epicola argania spinosa kernel oil ferment filtrate, quaternium-95, propanediol, helianthus annus sunflower seed extract, peg-8, euterpe oleracea fruit extract, punica granatum extract, rosemarinus officinalis rosemary leaf extract, musa sapientum banana fruit extract, origanum vulgare lear extract, morinda citrifolia fruit extract, articum lappa root extract, peg-8 smdi copolymer, sodium hyaluronate, palmitoyl myristyl serinate, sodium polyacrylate, pentaerythrityl tetra-di-t-butyl hydroxyhydrocinnamate, biotin, benzoic acid, phenoxyethanol, chlorphenesin, potassium sorbate, sodium benzoate, fragrance parfum, citral, hexyl cinnamal, limonene",
@@ -15025,7 +15133,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein-free",
+            "protein",
             "glycerin-free"
           ]
         }
@@ -15218,7 +15326,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "black_owned",
         "woman_owned",
         "small_business",
-        "protein-free",
+        "protein",
         "glycerin-free"
       ],
       "ingredients_raw": "distilled water, ceteryl alcohol, behentrimonium methosulfate, hydrolyzed quinoa protein, hydrolyzed keratin protein, matcha extract, propanediol, hp starch, caprylhydroxamic acid gg preservation blend caprylhydroxamic acid, glyceryl",
@@ -15265,7 +15373,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein-free",
+            "protein",
             "glycerin-free"
           ]
         }
@@ -15322,11 +15430,16 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 57,
-          "low": 39
+          "low": 46
         },
         "sebderm": {
           "hasTriggers": true,
           "triggers": [
+            {
+              "id": "arginine",
+              "name": "Arginine",
+              "reason": "Amino acids can be metabolized by Malassezia, potentially worsening symptoms"
+            },
             {
               "id": "glycine",
               "name": "Glycine",
@@ -15413,14 +15526,29 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 49,
-          "low": 67
+          "low": 87
         },
         "sebderm": {
           "hasTriggers": true,
           "triggers": [
             {
+              "id": "arginine",
+              "name": "Arginine",
+              "reason": "Amino acids can be metabolized by Malassezia, potentially worsening symptoms"
+            },
+            {
+              "id": "aspartic_acid",
+              "name": "Aspartic Acid",
+              "reason": "Amino acids can be metabolized by Malassezia, potentially worsening symptoms"
+            },
+            {
               "id": "glycine",
               "name": "Glycine",
+              "reason": "Amino acids can be metabolized by Malassezia, potentially worsening symptoms"
+            },
+            {
+              "id": "alanine",
+              "name": "Alanine",
               "reason": "Amino acids can be metabolized by Malassezia, potentially worsening symptoms"
             },
             {
@@ -15511,11 +15639,21 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 50,
-          "low": 93
+          "low": 100
         },
         "sebderm": {
           "hasTriggers": true,
           "triggers": [
+            {
+              "id": "aspartic_acid",
+              "name": "Aspartic Acid",
+              "reason": "Amino acids can be metabolized by Malassezia, potentially worsening symptoms"
+            },
+            {
+              "id": "alanine",
+              "name": "Alanine",
+              "reason": "Amino acids can be metabolized by Malassezia, potentially worsening symptoms"
+            },
             {
               "id": "glycine",
               "name": "Glycine",
@@ -15539,6 +15677,11 @@ export const defaultProductDatabase: ProductDatabase = {
             {
               "id": "glutamic_acid",
               "name": "Glutamic Acid",
+              "reason": "Amino acids can be metabolized by Malassezia, potentially worsening symptoms"
+            },
+            {
+              "id": "arginine",
+              "name": "Arginine",
               "reason": "Amino acids can be metabolized by Malassezia, potentially worsening symptoms"
             },
             {
@@ -15578,7 +15721,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "curly",
         "coily",
         "low_porosity",
-        "protein-free",
+        "protein",
         "glycerin-free"
       ],
       "ingredients_raw": "aqua, water, eau, peg-40 hydrogenated castor oil, alcohol denat, glycerin, propylene glycol, sorbitol, apple cider vinegar, menthol, saccharomyces rice ferment filtrate, hydrolyzed corn protein, hydrolyzed wheat protein, hydrolyzed soy protein, panax ginseng root extract, leuconostoc radish root ferment filtrate, shea butter ethyl esters, sodium hyaluronate, pentylene glycol, butylene glycol, xanthan gum, ethylhexylglycerin, disodium edta, sodium hydroxide, phenoxyethanol, t-butyl alcohol, parfum fragrance, linalool",
@@ -15632,7 +15775,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein-free",
+            "protein",
             "glycerin-free"
           ]
         }

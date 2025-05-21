@@ -1208,8 +1208,13 @@
       "name": "Salvia hispanica chia seed extract",
       "id": "salvia_hispanica_chia_seed_extract",
       "synonyms": ["chia seed extract"],
-      "categories": ["proteins"],
+      "categories": ["film_forming_humectants"],
       "description": "Chia seed extract"
+    },
+    {
+      "name": "Creatine",
+      "id": "creatine",
+      "categories": ["proteins"]
     }
 
 
