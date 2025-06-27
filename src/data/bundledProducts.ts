@@ -8515,7 +8515,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "curly",
         "coily",
         "high_porosity",
-        "protein",
+        "protein-free",
         "glycerin-free"
       ],
       "ingredients_raw": "water aqua, linum usitatissimum linseed extract, salvia hispanica chia seed extract, behentrimonium methosulfate, quaternium-87, cetearyl alcohol, cetyl alcohol, panthenol, mangifera indica mango seed butter, prunus amygdalus dulcis sweet almond oil, caprylhydroxamic acid, caprylyl glycol, glycerin, argania spinosa kernel oil, camellia sinensis leaf extract, simmondsia chinensis jojoba seed oil, peg ppg-8 3 diisostearate, astrocaryum vulgare kernel oil, tocopherol, olea europea olive fruit oil, euterpe oleracea acai fruit oil, mauritia flexuosa buriti fruit oil, fragrance, polyquaternium-73",
@@ -8591,7 +8591,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein",
+            "protein-free",
             "glycerin-free"
           ]
         }
@@ -13145,14 +13145,15 @@ export const defaultProductDatabase: ProductDatabase = {
       "extensions": {
         "frizzbot": {
           "simple_humectants_number": 2,
-          "film_forming_humectants_number": 1,
+          "film_forming_humectants_number": 2,
           "emollients_number": 7,
           "simple_humectants": [
             "Ethylhexylglycerin",
             "Glycerin"
           ],
           "film_forming_humectants": [
-            "Salvia hispanica chia seed extract"
+            "Salvia hispanica chia seed extract",
+            "Creatine"
           ],
           "emollients": [
             "Cetearyl Alcohol",
@@ -13163,11 +13164,11 @@ export const defaultProductDatabase: ProductDatabase = {
             "Behentrimonium Chloride",
             "Benzyl Alcohol"
           ],
-          "score": -80
+          "score": -84
         },
         "porosity": {
           "high": 100,
-          "low": 76
+          "low": 79
         },
         "sebderm": {
           "hasTriggers": true,

@@ -137,7 +137,7 @@
           "retailer": "Amazon"
         }
       ],
-      "product_categories": ["oils", "sprays", "serums"],
+      "product_categories": ["oils"],
       "tags": [
         "samples",
         "wavy",
@@ -147,7 +147,21 @@
         "heat_protectant"
       ],
       "ingredients_raw": "dimethicone, c13-14 isoalkane formerly c13-14 isoparaffin, adansonia digitata seed oil, simmondsia chinensis jojoba seed oil, brassica campestris aleurites fordi oil copolymer, fragrance, isopropyl myristate, tocopheryl acetate, green 6 ci 61565",
-      "description": "A shine-boosting, bond-building serum that repairs and strengthens hair, smooths the cuticle, and protects against breakage—perfect for straight styles, blowouts, or curly wash days"
+      "description": "A shine-boosting, bond-building serum that strengthens hair, smooths the cuticle, and protects against breakage"
+    },
+    {
+      "name": "Glow Repair Hair Glaze",
+      "brand": "Abyssian",
+      "buy_links": [
+        {
+          "url": "https://www.abyssianhaircare.com/products/glow-repair-hair-glaze?sca_ref=8856193.zOm2bkFoAE87&utm_source=cursbot&utm_medium=curlsbot_link&utm_campaign=curlsbot",
+          "retailer": "Abyssian"
+        }
+      ],
+      "product_categories": ["oils"],
+      "tags": ["featured"],
+      "ingredients_raw": "isododecane, neopentyl glycol diheptanoate, capryloyl glycine, isononyl isononanoate, octyldodecanol, caprylic capric triglyceride, limnanthes alba meadowfoam seed oil, propylene glycol dibenzoate, ferulic acid, tocopherol, crambe abyssinica seed oil, tetrahexyldecyl ascorbate, terminalia ferdinandiana fruit extract, rosmarinus officinalis rosemary leaf oil, triticum vulgare wheat germ oil, parfum, octyldodecyl oleate, raphanus sativus radish seed extract, magnolia officinalis bark extract, rosmarinus officinalis rosemary leaf extract, hydrogenated castor oil sebacic acid copolymer, helianthus annuus sunflower seed oil, haematococcus pluvialis extract, quaternium-70, zinc oxide",
+      "description": "A lightweight serum that shields hair from environmental damage while leaving it soft, smooth, and brilliantly shiny."
     }
   ]
 }

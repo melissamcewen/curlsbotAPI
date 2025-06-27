@@ -1215,8 +1215,19 @@
       "name": "Creatine",
       "id": "creatine",
       "categories": ["proteins"]
+    },
+    {
+      "name": "Hydroxypropylammonium Gluconate",
+      "id": "hydroxypropylammonium_gluconate",
+      "categories": ["film_forming_humectants"],
+      "description": "Often with Hydroxypropyl Gluconamide as part of FiberHance, a bond-building product"
+    },
+    {
+      "name": "Hydroxypropyl Gluconamide",
+      "id": "hydroxypropyl_gluconamide",
+      "categories": ["film_forming_humectants"],
+      "description": "Often with Hydroxypropylammonium Gluconate as part of FiberHance, a bond-building product"
     }
-
 
   ]
 }
