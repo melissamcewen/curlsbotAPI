@@ -1,27 +1,6 @@
 {
   "products": [
     {
-      "name": "Mud Pie Clay Clarifying Treatment",
-      "brand": "Ecoslay",
-      "ingredients_raw": "distilled water, aloe barbadensis leaf juice, cirtus aurantium amara distillate, bentonite, propanediol, apple cider vinegar, dermasoft eco 1388, potassium sorbate, sodium thiosulfate",
-      "product_categories": ["clarifying_shampoos"],
-      "tags": [
-        "normal_porosity",
-        "high_porosity",
-        "low_porosity",
-        "featured",
-        "black_owned",
-        "woman_owned",
-        "small_business"
-      ],
-      "buy_links": [
-        {
-          "url": "http://ecoslay.sjv.io/EEqZBe",
-          "retailer": "Ecoslay"
-        }
-      ]
-    },
-    {
       "name": "Clarifying Shampoo",
       "brand": "Moroccanoil",
       "product_categories": ["clarifying_shampoos"],
@@ -42,7 +21,7 @@
           "countries": ["AU"]
         }
       ],
-      "description": "This shampoo has some stronger cleansers, but that's fine in a clarifying shampoo because you're only using it once in a while. It's sulfate-free, so it won't strip your hair too much. It's also got some nice oils in it to help keep your hair from getting too dry.",
+      "description": "This sulfate-free clarifying shampoo uses stronger cleansers for clarifying, balanced with nourishing oils to prevent dryness.",
       "asin": "B0089NVH5W",
       "ingredients_raw": "aqua water eau, cocamidopropyl hydroxysultaine, disodium laureth sulfosuccinate, sodium lauryl sulfoacetate, sodium lauroyl sarcosinate, sodium polystyrene sulfonate, sodium chloride, cocamidopropylamine oxide, argania spinosa argan kernel oil, persea gratissima avocado oil, rosmarinus officinalis rosemary leaf extract, chamomilla recutita matricaria flower extract, lavandula angustifolia lavender flower extract, simmondsia chinensis jojoba seed extract, keratin amino acids, hydrolyzed keratin, silk amino acids, panthenol, sodium pca, cinnamidopropyltrimonium chloride, butylene glycol, peg-40 hydrogenated castor oil, peg-150 pentaerythrityl tetrastearate, peg-6 caprylic capric glycerides, caprylyl glycol, tetrasodium edta, disodium edta, chlorphenesin, phenoxyethanol, parfum fragrance, ci 17200 red 33, ci 19140 yellow 5, sodium hydroxide, citric acid, alpha-isomethyl ionone, butylphenyl methylpropional, linalool, hydroxyisohexyl 3-cyclohexene carboxaldehydethylpropional",
       "cost": 3.8
@@ -82,7 +61,7 @@
       "cost": 2.8,
       "asin": "B0001Y74XG",
       "ingredients_raw": "water, ammonium laureth sulfate, sodium laureth sulfate, cocomidopropyl betaine, lauryl glucoside, butylene glycol, cocamide mea, polysorbate 20, sodium lauroamphoacetate, panthenol, saccharum officinarum sugar cane extract, citrus medica limonum lemon peel extract, citrus aurantium dulcis orange fruit extract, pyrus malus apple fruit extract, camellia oleifera leaf extract, cetrimonium chloride, polyquaternium-59, polyquaternium-10, citrus aurantium dulcis orange peel oil, citrus tangerina tangerine peel oil, disodium edta, methychloroisothiazolinone, methylisothiazolinone",
-      "description": "This clarifying shampoo contains sulfates, making it ideal for occasional use to remove product buildup, especially for those with low-porosity hair. While effective, it may be drying. To minimize this, focus application on the scalp and consider adding conditioner to the ends."
+      "description": "Astrong, sulfate-based cleanser designed to deep-clean the scalp and hair, removing product buildup, oils, and residues."
     },
     {
       "name": "Gentle Clarifying Shampoo",

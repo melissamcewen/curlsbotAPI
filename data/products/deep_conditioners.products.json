@@ -20,7 +20,8 @@
           "retailer": "Ecoslay"
         }
       ],
-      "asin": "B09D8PL1N5"
+      "asin": "B09D8PL1N5",
+      "description": "A rich, plant-powered treatment ideal for restoring and repairing curly, dry, or damaged hair"
     },
     {
       "name": "Deep Conditioning Treatment",
@@ -59,7 +60,7 @@
           "retailer": "Curl Warehouse"
         }
       ],
-      "product_categories": ["deep_conditioners", "featured"],
+      "product_categories": ["deep_conditioners"],
       "tags": ["low_porosity", "normal_porosity", "high_porosity", "featured"],
       "asin": "B09YMWHVHD",
       "cost": 3.38

@@ -190,63 +190,6 @@ export const defaultProductDatabase: ProductDatabase = {
       "id": "pop-up_curl_diffuser",
       "systems_excluded": []
     },
-    "mud_pie_clay_clarifying_treatment": {
-      "name": "Mud Pie Clay Clarifying Treatment",
-      "brand": "Ecoslay",
-      "ingredients_raw": "distilled water, aloe barbadensis leaf juice, cirtus aurantium amara distillate, bentonite, propanediol, apple cider vinegar, dermasoft eco 1388, potassium sorbate, sodium thiosulfate",
-      "product_categories": [
-        "clarifying_shampoos"
-      ],
-      "tags": [
-        "normal_porosity",
-        "high_porosity",
-        "low_porosity",
-        "featured",
-        "black_owned",
-        "woman_owned",
-        "small_business",
-        "protein-free",
-        "glycerin-free"
-      ],
-      "buy_links": [
-        {
-          "url": "http://ecoslay.sjv.io/EEqZBe",
-          "retailer": "Ecoslay"
-        }
-      ],
-      "id": "mud_pie_clay_clarifying_treatment",
-      "systems_excluded": [],
-      "status": "ok",
-      "extensions": {
-        "frizzbot": {
-          "simple_humectants_number": 1,
-          "film_forming_humectants_number": 1,
-          "emollients_number": 0,
-          "simple_humectants": [
-            "Propanediol"
-          ],
-          "film_forming_humectants": [
-            "Aloe Barbadensis Leaf Extract"
-          ],
-          "emollients": [],
-          "score": -82
-        },
-        "porosity": {
-          "high": 80,
-          "low": 100
-        },
-        "sebderm": {
-          "hasTriggers": false,
-          "triggers": []
-        },
-        "autoTagger": {
-          "tags": [
-            "protein-free",
-            "glycerin-free"
-          ]
-        }
-      }
-    },
     "clarifying_shampoo": {
       "name": "Clarifying Shampoo",
       "brand": "Odele",
@@ -406,7 +349,7 @@ export const defaultProductDatabase: ProductDatabase = {
       "cost": 2.8,
       "asin": "B0001Y74XG",
       "ingredients_raw": "water, ammonium laureth sulfate, sodium laureth sulfate, cocomidopropyl betaine, lauryl glucoside, butylene glycol, cocamide mea, polysorbate 20, sodium lauroamphoacetate, panthenol, saccharum officinarum sugar cane extract, citrus medica limonum lemon peel extract, citrus aurantium dulcis orange fruit extract, pyrus malus apple fruit extract, camellia oleifera leaf extract, cetrimonium chloride, polyquaternium-59, polyquaternium-10, citrus aurantium dulcis orange peel oil, citrus tangerina tangerine peel oil, disodium edta, methychloroisothiazolinone, methylisothiazolinone",
-      "description": "This clarifying shampoo contains sulfates, making it ideal for occasional use to remove product buildup, especially for those with low-porosity hair. While effective, it may be drying. To minimize this, focus application on the scalp and consider adding conditioner to the ends.",
+      "description": "Astrong, sulfate-based cleanser designed to deep-clean the scalp and hair, removing product buildup, oils, and residues.",
       "id": "water_works_clarifying_shampoo",
       "systems_excluded": [],
       "status": "warning",
@@ -2451,6 +2394,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "glycerin-free"
       ],
       "ingredients_raw": "aqua water eau, cetearyl alcohol, glycerin, cetyl esters, cetyl alcohol, stearamidopropyl dimethylamine, behentrimonium chloride, butyrospermum parkii shea butter, helianthus annuus sunflower seed oil, propanediol, prunus amygdalus dulcis sweet almond oil, carthamus tinctorius safflower seed oil, ricinus communis castor seed oil, helianthus annuus sunflower extract, rosmarinus officinalis rosemary leaf extract, oryza sativa rice bran extract, euterpe oleracea fruit extract, eucalyptus globulus leaf oil, mauritia flexuosa fruit oil, morinda citrifolia fruit extract, cymbopogon schoenanthus extract, garcinia indica seed butter, sclerocarya birrea seed oil, hydrolyzed rice protein, aloe barbadensis leaf juice, palmitoyl tetrapeptide-20, squalane, tocopherol, hydroxyethylcellulose, capryloyl glycerin sebacic acid copolymer, hydrogenated castor oil sebacic acid copolymer, bht, panthenol, polysorbate 60, guar hydroxypropyltrimonium chloride, stearamine oxide, ethylhexyl olivate, diheptyl succinate, isododecane, citric acid, disodium edta, tetrasodium edta, sodium hydroxide, disodium phosphate, sodium phosphate, butylene glycol, caprylyl glycol, hexylene glycol, sodium benzoate, potassium sorbate, leuconostoc radish root ferment filtrate, chlorphenesin, phenoxyethanol, limonene, linalool, fragrance parfum",
+      "description": "A luxurious, multi-functional cleanser that deeply conditions and moisturizes while gently cleansing.",
       "buy_links": [
         {
           "url": "https://click.linksynergy.com/link?id=9QcV0uNyab0&offerid=929395.3842995312&type=2&murl=https%3a%2f%2fwww.ouidad.com%2fproducts%2fcoil-infusion-drink-up-cleansing-conditioner%3fvariant%3d42617151357186",
@@ -2595,6 +2539,7 @@ export const defaultProductDatabase: ProductDatabase = {
       ],
       "cost": 0.54,
       "ingredients_raw": "aqua water eau, cetyl alcohol, cetrimonium chloride, cetearyl alcohol, cocos nucifera coconut oil, ricinus communis castor seed oil, cocos nucifera coconut fruit powder, citrus reticulata tangerine fruit extract, phytosterols, camillia sinensis leaf extract, peg-40 castor oil, stearlkonium chloride, serenoa serrulata fruit extract, quaternium-18, propylene glycol, c12-15 alkyl lactate, fragrance parfum, potassium sorbate, caprylyl glycol, phenoxyethanol, abies balsamea balsam canada resin, potassium chloride, limonene, glycerin, caprylic capric triglyceride",
+      "description": "A creamy, conditioning cleanser formulated to gently clean while deeply moisturizing.",
       "asin": "B00641UCY8",
       "id": "coconut_cowash_cleansing_conditioner",
       "systems_excluded": [],
@@ -2680,6 +2625,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "protein",
         "glycerin-free"
       ],
+      "description": "A moisturizing, non-stripping cleanser and conditioner hybrid designed for textured, dry, or curly hair.",
       "asin": "B005SIR5G6",
       "cost": 2.12,
       "id": "co-wash_conditioning_cleanser",
@@ -3031,6 +2977,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "glycerin-free"
       ],
       "ingredients_raw": "deionized water aqua, althaea officinalis marshmallow root extract, linum usitatissimum flaxseed extract, cetearyl alcohol, sodium pca, chamomile flower extract, slippery elm extract, peppermint mentha piperita oil, melissa melissa officinalis leaf extract, nettle urtica dioica leaf extract, horsetail equisetum arvense leaf extract, peppermint mentha piperita leaf extract, sage salvia officinalis extract, yucca yucca vera leaf extract, sucrose cocoate, panthenol, caprylhydroxamic acid, glyceryl caprylate, glycerin, citrus limon peel lemon oil, vanilla planifolia fruit oil, potassium sorbate",
+      "description": "A botanical-rich, moisturizing, and detangling cream designed to condition, soften, and support hair and scalp health",
       "id": "lemon_buttercream_styling_cream",
       "systems_excluded": [],
       "status": "ok",
@@ -3161,6 +3108,7 @@ export const defaultProductDatabase: ProductDatabase = {
       ],
       "ingredients_raw": "water aqua, cetearyl alcohol, glyceryl stearate, propanediol, aloe barbadensis leaf juice, hydrogenated vegetable oil, peg-100 stearate, isopropyl palmitate, pvp, glycerin, caprylic capric triglyceride, glycereth-26, butyrospermum parkii shea butter, vp va copolymer, pectin, hydroxypropyltrimonium honey, coconut alkanes, polyquaternium-55, sodium polyitaconate, triethyl citrate, zea mays corn starch, sodium polyacrylate starch, hypnea musciformis extract, gelidiella acerosa extract, sargassum filipendula extract, sodium lactate, coco-caprylate caprate, ceteareth-20, acrylates beheneth-25 methacrylate copolymer, polyacrylate crosspolymer-6, cellulose, disodium edta, fragrance, phenoxyethanol, benzyl alcohol, aminomethyl propanol",
       "asin": "B0CHWM9YCJ",
+      "description": "A multi-functional protective hair styling cream that helps protect and define curls",
       "id": "curly_hair_cream",
       "systems_excluded": [],
       "status": "ok",
@@ -3827,6 +3775,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "glycerin-free"
       ],
       "ingredients_raw": "water, glycerin, carboxymethylcellulose, aloe barbadensis leaf extract, pectin, hydroxypropyltrimonium honey, silk amino acids, hypnea musciformis extract seaweed, gelidiella acerosa extract seaweed, sargassum filipendula seaweed extract, sorbitol, rosmarinus officinalis rosemary leaf extract, salix alba willow bark extract, urtica dioica nettle extract, ethylhexylglycerin, phenoxyethanol, citrus senensis oil, citrus limon oil, citrus aurantifolia oil, citrus paradisi oil",
+      "description": "A lightweight custard that provides hold, enhances volume, and adds moisture with seaweed and honey",
       "asin": "B005SIR12E",
       "cost": 2.3,
       "id": "curl_enhancing_custard",
@@ -4106,6 +4055,7 @@ export const defaultProductDatabase: ProductDatabase = {
       "name": "Rockin' Ringlets Styling Potion",
       "brand": "Jessicurl",
       "ingredients_raw": "aqua water, linum usitatissimum linseed flaxseed extract, glycerin, simmondsia chinensis jojoba seed oil, aloe barbadensis aloe vera leaf juice powder, magnesium sulfate, benzoic acid, dehydroacetic acid, phenoxyethanol",
+      "description": "A unique liquid gel that moisturizes with natural film-forming humectants and helps enhance and define curls",
       "product_categories": [
         "custards"
       ],
@@ -4253,6 +4203,7 @@ export const defaultProductDatabase: ProductDatabase = {
         }
       ],
       "asin": "B09D8PL1N5",
+      "description": "A rich, plant-powered treatment ideal for restoring and repairing curly, dry, or damaged hair",
       "id": "banana_cream_deep_conditioner",
       "systems_excluded": [],
       "status": "ok",
@@ -4411,8 +4362,7 @@ export const defaultProductDatabase: ProductDatabase = {
         }
       ],
       "product_categories": [
-        "deep_conditioners",
-        "featured"
+        "deep_conditioners"
       ],
       "tags": [
         "low_porosity",
@@ -4836,6 +4786,7 @@ export const defaultProductDatabase: ProductDatabase = {
         }
       ],
       "asin": "B08WPSW84H",
+      "description": "A lightweight foam helps build volume and provides humidity protection",
       "cost": 2.6,
       "id": "bouncy_strength_volume_foam",
       "systems_excluded": [],
@@ -10081,7 +10032,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "glycerin-free"
       ],
       "ingredients_raw": "water, hydroxypropylgluconamide, hydroxypropylammonium gluconate, polysorbate 20, phenoxyethanol, fragrance, potassium sorbate, citric acid, aminomethyl propanol",
-      "description": "Instantly helps repair hair, smooth strands and reduce breakage after just one use",
+      "description": "Instantly helps repair hair, smooth strands and reduce breakage after just one use. Designed to be used with Bonding Pre-Shampoo. ",
       "id": "bonding_primer",
       "systems_excluded": [],
       "status": "ok",
@@ -10338,8 +10289,8 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -67
         },
         "porosity": {
-          "high": 76,
-          "low": 0
+          "high": 78,
+          "low": 5
         },
         "sebderm": {
           "hasTriggers": true,
@@ -13740,6 +13691,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "protein-free",
         "glycerin-free"
       ],
+      "description": "This gentle, botanical-rich shampoo is handmade in Georgia and has a delicious chai latte scent.",
       "buy_links": [
         {
           "url": "http://ecoslay.sjv.io/gOoWn2",
@@ -15555,6 +15507,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "glycerin-free"
       ],
       "ingredients_raw": "water, octylacrylamide acrylates butylaminoethyl methacyrlate copolymer, heptyl glucoside, panthenol, aminomethyl propanol, aloe barbadensis leaf extract, panax ginseng root extract, salvia officinalis sage extract, nigella sativa virgin black cumin oil boswellia carterii oil, caprylhydroxamic acid, propanediol, caprylyl glycol, fragrance, citric acid",
+      "description": "A lightweight spray that helps set your style in place and resist humidity",
       "buy_links": [
         {
           "url": "https://glnk.io/x26q/curlsbot0la",
