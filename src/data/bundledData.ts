@@ -4315,6 +4315,26 @@ export const defaultDatabase: IngredientDatabase = {
       "status": "ok",
       "group": "humectants"
     },
+    "hydroxypropylammonium_gluconate": {
+      "name": "Hydroxypropylammonium Gluconate",
+      "id": "hydroxypropylammonium_gluconate",
+      "categories": [
+        "film_forming_humectants"
+      ],
+      "description": "Often with Hydroxypropyl Gluconamide as part of FiberHance, a bond-building product",
+      "status": "ok",
+      "group": "humectants"
+    },
+    "hydroxypropyl_gluconamide": {
+      "name": "Hydroxypropyl Gluconamide",
+      "id": "hydroxypropyl_gluconamide",
+      "categories": [
+        "film_forming_humectants"
+      ],
+      "description": "Often with Hydroxypropylammonium Gluconate as part of FiberHance, a bond-building product",
+      "status": "ok",
+      "group": "humectants"
+    },
     "amodimethicone": {
       "name": "Amodimethicone",
       "id": "amodimethicone",
@@ -5387,6 +5407,9 @@ export const defaultDatabase: IngredientDatabase = {
       "name": "Oils",
       "inclusions": [
         "oil"
+      ],
+      "exclusions": [
+        "extract"
       ],
       "defaultIngredient": "unknown_oil",
       "description": "Oils in hair products can moisturize and add shine to hair"

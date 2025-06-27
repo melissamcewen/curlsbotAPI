@@ -81,6 +81,9 @@
       "inclusions": [
         "oil"
       ],
+      "exclusions": [
+        "extract"
+      ],
       "defaultIngredient": "unknown_oil",
       "description": "Oils in hair products can moisturize and add shine to hair"
     },

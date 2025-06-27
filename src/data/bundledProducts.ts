@@ -6304,13 +6304,14 @@ export const defaultProductDatabase: ProductDatabase = {
       "extensions": {
         "frizzbot": {
           "simple_humectants_number": 2,
-          "film_forming_humectants_number": 3,
+          "film_forming_humectants_number": 4,
           "emollients_number": 6,
           "simple_humectants": [
             "Propanediol",
             "Ethylhexylglycerin"
           ],
           "film_forming_humectants": [
+            "Hydroxypropylammonium Gluconate",
             "Arginine",
             "Hydroxyethylcellulose",
             "Sodium Glutamate"
@@ -6323,11 +6324,11 @@ export const defaultProductDatabase: ProductDatabase = {
             "Marula Oil",
             "Cetrimonium Chloride"
           ],
-          "score": -72
+          "score": -75
         },
         "porosity": {
           "high": 100,
-          "low": 31
+          "low": 37
         },
         "sebderm": {
           "hasTriggers": true,
@@ -6442,6 +6443,10 @@ export const defaultProductDatabase: ProductDatabase = {
         {
           "url": "https://amzn.to/4iFCweR",
           "retailer": "Amazon"
+        },
+        {
+          "url": "https://www.michebeauty.com/collections/deep-conditioners/products/prime-smoothing-detangling-conditioner?rfsn=8688386.3de231",
+          "retailer": "Miche"
         }
       ],
       "product_categories": [
@@ -7511,7 +7516,7 @@ export const defaultProductDatabase: ProductDatabase = {
       "extensions": {
         "frizzbot": {
           "simple_humectants_number": 7,
-          "film_forming_humectants_number": 8,
+          "film_forming_humectants_number": 9,
           "emollients_number": 14,
           "simple_humectants": [
             "Propanediol",
@@ -7523,6 +7528,7 @@ export const defaultProductDatabase: ProductDatabase = {
             "Ceramide"
           ],
           "film_forming_humectants": [
+            "Hydroxypropylammonium Gluconate",
             "Arginine",
             "Aspartic Acid",
             "Glycine",
@@ -7548,11 +7554,11 @@ export const defaultProductDatabase: ProductDatabase = {
             "Squalane",
             "Olive Oil"
           ],
-          "score": -69
+          "score": -70
         },
         "porosity": {
           "high": 100,
-          "low": 44
+          "low": 46
         },
         "sebderm": {
           "hasTriggers": true,
@@ -7747,6 +7753,10 @@ export const defaultProductDatabase: ProductDatabase = {
         {
           "url": "https://amzn.to/3GxRWV5",
           "retailer": "Amazon"
+        },
+        {
+          "url": "https://www.michebeauty.com/collections/deep-conditioners/products/strengthen-protein-deep-conditioner?rfsn=8688386.3de231",
+          "retailer": "Miche"
         }
       ],
       "product_categories": [
@@ -7878,7 +7888,7 @@ export const defaultProductDatabase: ProductDatabase = {
       "extensions": {
         "frizzbot": {
           "simple_humectants_number": 4,
-          "film_forming_humectants_number": 2,
+          "film_forming_humectants_number": 3,
           "emollients_number": 7,
           "simple_humectants": [
             "Propylene Glycol",
@@ -7888,6 +7898,7 @@ export const defaultProductDatabase: ProductDatabase = {
           ],
           "film_forming_humectants": [
             "Aloe Barbadensis Leaf Extract",
+            "Hydroxypropylammonium Gluconate",
             "Sodium Glutamate"
           ],
           "emollients": [
@@ -7899,11 +7910,11 @@ export const defaultProductDatabase: ProductDatabase = {
             "Cetrimonium Chloride",
             "Jojoba Oil"
           ],
-          "score": -58
+          "score": -61
         },
         "porosity": {
           "high": 100,
-          "low": 95
+          "low": 96
         },
         "sebderm": {
           "hasTriggers": true,
@@ -8997,6 +9008,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "wavy",
         "curly",
         "low_porosity",
+        "heat_protection",
         "protein-free",
         "glycerin-free"
       ],
@@ -9835,18 +9847,20 @@ export const defaultProductDatabase: ProductDatabase = {
       "extensions": {
         "frizzbot": {
           "simple_humectants_number": 0,
-          "film_forming_humectants_number": 0,
+          "film_forming_humectants_number": 1,
           "emollients_number": 2,
           "simple_humectants": [],
-          "film_forming_humectants": [],
+          "film_forming_humectants": [
+            "Hydroxypropylammonium Gluconate"
+          ],
           "emollients": [
             "Argan Oil",
             "Sunflower Oil"
           ],
-          "score": -76
+          "score": -85
         },
         "porosity": {
-          "high": 74,
+          "high": 83,
           "low": 0
         },
         "sebderm": {
@@ -10074,15 +10088,17 @@ export const defaultProductDatabase: ProductDatabase = {
       "extensions": {
         "frizzbot": {
           "simple_humectants_number": 0,
-          "film_forming_humectants_number": 0,
+          "film_forming_humectants_number": 1,
           "emollients_number": 0,
           "simple_humectants": [],
-          "film_forming_humectants": [],
+          "film_forming_humectants": [
+            "Hydroxypropylammonium Gluconate"
+          ],
           "emollients": [],
-          "score": 0
+          "score": -96
         },
         "porosity": {
-          "high": 50,
+          "high": 71,
           "low": 100
         },
         "sebderm": {
@@ -11828,7 +11844,6 @@ export const defaultProductDatabase: ProductDatabase = {
         }
       ],
       "product_categories": [
-        "clarifying_shampoos",
         "treatments"
       ],
       "tags": [
@@ -11983,6 +11998,10 @@ export const defaultProductDatabase: ProductDatabase = {
         {
           "url": "https://amzn.to/3EQ3jYc",
           "retailer": "Amazon"
+        },
+        {
+          "url": "https://www.michebeauty.com/collections/stylers/products/set-curl-defining-mousse?rfsn=8688386.3de231",
+          "retailer": "Miche"
         }
       ],
       "product_categories": [
@@ -12030,6 +12049,316 @@ export const defaultProductDatabase: ProductDatabase = {
               "id": "polysorbate_20",
               "name": "Polysorbate 20",
               "reason": "polysorbates can feed Malassezia yeast"
+            }
+          ]
+        },
+        "autoTagger": {
+          "tags": [
+            "protein",
+            "glycerin-free"
+          ]
+        }
+      }
+    },
+    "tropical_oasis_anti-humidity_firm_hold_hair_gel": {
+      "name": "Tropical Oasis Anti-Humidity Firm Hold Hair Gel",
+      "brand": "Miche",
+      "buy_links": [
+        {
+          "url": "https://amzn.to/4nu6pCK",
+          "retailer": "Amazon"
+        },
+        {
+          "url": "https://www.michebeauty.com/products/tropical-oasis-firm-hold-hair-gel?rfsn=8688386.3de231",
+          "retailer": "Miche"
+        }
+      ],
+      "product_categories": [
+        "gels"
+      ],
+      "tags": [
+        "samples",
+        "wavy",
+        "curly",
+        "coily",
+        "protein",
+        "glycerin-free"
+      ],
+      "ingredients_raw": "distilled water, fresh pineapple juice extract, aloe vera juice, glycerin, maltodextrin vp copolymer, gluconodeltalactone, sodium benzoate, hydoxyethycelluolose, hydrolyzed quinoa protein, phthalate-free fragrance",
+      "description": "A frizz-fighting lightweight gel perfect for protecting against humidity",
+      "id": "tropical_oasis_anti-humidity_firm_hold_hair_gel",
+      "systems_excluded": [],
+      "status": "ok",
+      "extensions": {
+        "frizzbot": {
+          "simple_humectants_number": 1,
+          "film_forming_humectants_number": 2,
+          "emollients_number": 1,
+          "simple_humectants": [
+            "Glycerin"
+          ],
+          "film_forming_humectants": [
+            "Aloe Barbadensis Leaf Extract",
+            "Hydrolyzed Quinoa"
+          ],
+          "emollients": [
+            "Maltodextrin VP Copolymer"
+          ],
+          "score": -79
+        },
+        "porosity": {
+          "high": 93,
+          "low": 100
+        },
+        "sebderm": {
+          "hasTriggers": false,
+          "triggers": []
+        },
+        "autoTagger": {
+          "tags": [
+            "protein",
+            "glycerin-free"
+          ]
+        }
+      }
+    },
+    "sculpt_curl_defining_gel": {
+      "name": "Sculpt Curl Defining Gel",
+      "brand": "Miche",
+      "buy_links": [
+        {
+          "url": "https://www.michebeauty.com/products/sculpt-curl-defining-gel?rfsn=8688386.3de231",
+          "retailer": "Miche"
+        },
+        {
+          "url": "https://amzn.to/4npiCbD",
+          "retailer": "Amazon"
+        }
+      ],
+      "product_categories": [
+        "gels"
+      ],
+      "tags": [
+        "samples",
+        "wavy",
+        "curly",
+        "coily",
+        "high_porosity",
+        "protein",
+        "glycerin-free"
+      ],
+      "ingredients_raw": "distilled water infused with organic aloe vera extract, chamomile extract, nettle leaf extract, slippery elm extract, bamboo extract, glycerin, glycine betaine beet sugar extract, hydroxyethylcellulose, xanthan gum, propanediol, phthalate-free fragrance, benzylalcohol, dehydroacetic acid, carbomer, jojoba seed oil simmondsia chinesis, aminomethyl propanol ph adjustor",
+      "description": "A strong-hold gel that provides hold, definition, and shine for curls and coils.",
+      "id": "sculpt_curl_defining_gel",
+      "systems_excluded": [],
+      "status": "caution",
+      "extensions": {
+        "frizzbot": {
+          "simple_humectants_number": 2,
+          "film_forming_humectants_number": 3,
+          "emollients_number": 2,
+          "simple_humectants": [
+            "Glycerin",
+            "Propanediol"
+          ],
+          "film_forming_humectants": [
+            "Aloe Barbadensis Leaf Extract",
+            "Glycine",
+            "Hydroxyethylcellulose"
+          ],
+          "emollients": [
+            "Xanthan Gum",
+            "Jojoba Oil"
+          ],
+          "score": -87
+        },
+        "porosity": {
+          "high": 92,
+          "low": 92
+        },
+        "sebderm": {
+          "hasTriggers": true,
+          "triggers": [
+            {
+              "id": "glycine",
+              "name": "Glycine",
+              "reason": "Amino acids can be metabolized by Malassezia, potentially worsening symptoms"
+            },
+            {
+              "id": "jojoba_oil",
+              "name": "Jojoba Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            }
+          ]
+        },
+        "autoTagger": {
+          "tags": [
+            "protein",
+            "glycerin-free"
+          ]
+        }
+      }
+    },
+    "bounce_styling_cream": {
+      "name": "Bounce Styling Cream",
+      "brand": "Miche",
+      "buy_links": [
+        {
+          "url": "https://www.michebeauty.com/products/bounce-curl-defining-cream",
+          "retailer": "Miche"
+        },
+        {
+          "url": "https://amzn.to/44oyBOE",
+          "retailer": "Amazon"
+        }
+      ],
+      "product_categories": [
+        "creams"
+      ],
+      "tags": [
+        "samples",
+        "curly",
+        "coily",
+        "high_porosity",
+        "protein",
+        "glycerin-free"
+      ],
+      "ingredients_raw": "distilled water, marshmallow root, slippery elm, flaxseed extract infusion, behentrimonium methosulfate, cetearyl alcohol, linum usitatissmum flax seed oil, mango butter mangifera indica, caprylic capric triglyceride, gluconolactone, sodium benzoate, cetyl esters, glyceryl stearate, sclerotium gum, phthalate-free fragrance, glycine betaine beet sugar extract",
+      "description": "A versatile styling cream that delivers bouncy, defined, shiny, and hydrated hairstyles in one step.",
+      "id": "bounce_styling_cream",
+      "systems_excluded": [],
+      "status": "ok",
+      "extensions": {
+        "frizzbot": {
+          "simple_humectants_number": 0,
+          "film_forming_humectants_number": 3,
+          "emollients_number": 3,
+          "simple_humectants": [],
+          "film_forming_humectants": [
+            "Marshmallow root Extract",
+            "Flaxseed Extract",
+            "Glycine"
+          ],
+          "emollients": [
+            "Behentrimonium Methosulfate",
+            "Cetearyl Alcohol",
+            "Flaxseed Oil"
+          ],
+          "score": -92
+        },
+        "porosity": {
+          "high": 100,
+          "low": 95
+        },
+        "sebderm": {
+          "hasTriggers": true,
+          "triggers": [
+            {
+              "id": "cetearyl_alcohol",
+              "name": "Cetearyl Alcohol",
+              "reason": "This specific fatty alcohol can feed Malassezia yeast"
+            },
+            {
+              "id": "flaxseed_oil",
+              "name": "Flaxseed Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            },
+            {
+              "id": "cetyl_esters",
+              "name": "Cetyl Esters",
+              "reason": "Esters can feed Malassezia yeast"
+            },
+            {
+              "id": "glycine",
+              "name": "Glycine",
+              "reason": "Amino acids can be metabolized by Malassezia, potentially worsening symptoms"
+            }
+          ]
+        },
+        "autoTagger": {
+          "tags": [
+            "protein",
+            "glycerin-free"
+          ]
+        }
+      }
+    },
+    "boost_hydrate_and_refresh_spray": {
+      "name": "Boost Hydrate and Refresh Spray",
+      "brand": "Miche",
+      "buy_links": [
+        {
+          "url": "https://www.michebeauty.com/products/boost-hydrating-curl-refresher-leave-in-spray?rfsn=8688386.3de231",
+          "retailer": "Miche"
+        },
+        {
+          "url": "https://amzn.to/4lzo2iJ",
+          "retailer": "Amazon"
+        }
+      ],
+      "product_categories": [
+        "refreshers"
+      ],
+      "tags": [
+        "samples",
+        "wavy",
+        "curly",
+        "coily",
+        "low_porosity",
+        "protein",
+        "glycerin-free"
+      ],
+      "ingredients_raw": "distilled water, aloe vera juice, rosemary extract, persea gratissima avocado oil, caprylic capric triglyceride, glycine beet sugar extract, behentrimonium methosulfate, cetearyl alcohol, propanediol, phenoxyethanol, caprylyl glycol, sorbic acid, phthalate-free fragrance, diheptyl succinate, capryloyl glycerin sebacic acid copolymer, hydrolyzed silk protein, polyquaternium -10, panthenol pro-vitamin b5",
+      "description": "A refresher spray that instantly revives hairstyles needing extra moisture between wash days.",
+      "id": "boost_hydrate_and_refresh_spray",
+      "systems_excluded": [],
+      "status": "ok",
+      "extensions": {
+        "frizzbot": {
+          "simple_humectants_number": 3,
+          "film_forming_humectants_number": 3,
+          "emollients_number": 6,
+          "simple_humectants": [
+            "Propanediol",
+            "Caprylyl Glycol",
+            "Panthenol"
+          ],
+          "film_forming_humectants": [
+            "Aloe Barbadensis Leaf Extract",
+            "Glycine",
+            "Unknown Protein"
+          ],
+          "emollients": [
+            "Avocado Oil",
+            "Behentrimonium Methosulfate",
+            "Cetearyl Alcohol",
+            "Diheptyl Succinate",
+            "Capryloyl Glycerin Sebacic Acid Copolymer",
+            "Unknown Polyquat"
+          ],
+          "score": -81
+        },
+        "porosity": {
+          "high": 100,
+          "low": 61
+        },
+        "sebderm": {
+          "hasTriggers": true,
+          "triggers": [
+            {
+              "id": "avocado_oil",
+              "name": "Avocado Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            },
+            {
+              "id": "glycine",
+              "name": "Glycine",
+              "reason": "Amino acids can be metabolized by Malassezia, potentially worsening symptoms"
+            },
+            {
+              "id": "cetearyl_alcohol",
+              "name": "Cetearyl Alcohol",
+              "reason": "This specific fatty alcohol can feed Malassezia yeast"
             }
           ]
         },
@@ -13035,9 +13364,7 @@ export const defaultProductDatabase: ProductDatabase = {
         }
       ],
       "product_categories": [
-        "oils",
-        "sprays",
-        "serums"
+        "oils"
       ],
       "tags": [
         "samples",
@@ -13050,7 +13377,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "glycerin-free"
       ],
       "ingredients_raw": "dimethicone, c13-14 isoalkane formerly c13-14 isoparaffin, adansonia digitata seed oil, simmondsia chinensis jojoba seed oil, brassica campestris aleurites fordi oil copolymer, fragrance, isopropyl myristate, tocopheryl acetate, green 6 ci 61565",
-      "description": "A shine-boosting, bond-building serum that repairs and strengthens hair, smooths the cuticle, and protects against breakage—perfect for straight styles, blowouts, or curly wash days",
+      "description": "A shine-boosting, bond-building serum that strengthens hair, smooths the cuticle, and protects against breakage",
       "id": "doux_drops",
       "systems_excluded": [],
       "status": "warning",
@@ -13090,6 +13417,78 @@ export const defaultProductDatabase: ProductDatabase = {
         "autoTagger": {
           "tags": [
             "protein-free",
+            "glycerin-free"
+          ]
+        }
+      }
+    },
+    "glow_repair_hair_glaze": {
+      "name": "Glow Repair Hair Glaze",
+      "brand": "Abyssian",
+      "buy_links": [
+        {
+          "url": "https://www.abyssianhaircare.com/products/glow-repair-hair-glaze?sca_ref=8856193.zOm2bkFoAE87&utm_source=cursbot&utm_medium=curlsbot_link&utm_campaign=curlsbot",
+          "retailer": "Abyssian"
+        }
+      ],
+      "product_categories": [
+        "oils"
+      ],
+      "tags": [
+        "featured",
+        "protein",
+        "glycerin-free"
+      ],
+      "ingredients_raw": "isododecane, neopentyl glycol diheptanoate, capryloyl glycine, isononyl isononanoate, octyldodecanol, caprylic capric triglyceride, limnanthes alba meadowfoam seed oil, propylene glycol dibenzoate, ferulic acid, tocopherol, crambe abyssinica seed oil, tetrahexyldecyl ascorbate, terminalia ferdinandiana fruit extract, rosmarinus officinalis rosemary leaf oil, triticum vulgare wheat germ oil, parfum, octyldodecyl oleate, raphanus sativus radish seed extract, magnolia officinalis bark extract, rosmarinus officinalis rosemary leaf extract, hydrogenated castor oil sebacic acid copolymer, helianthus annuus sunflower seed oil, haematococcus pluvialis extract, quaternium-70, zinc oxide",
+      "description": "A lightweight serum that shields hair from environmental damage while leaving it soft, smooth, and brilliantly shiny.",
+      "id": "glow_repair_hair_glaze",
+      "systems_excluded": [],
+      "status": "ok",
+      "extensions": {
+        "frizzbot": {
+          "simple_humectants_number": 1,
+          "film_forming_humectants_number": 1,
+          "emollients_number": 3,
+          "simple_humectants": [
+            "Propylene Glycol"
+          ],
+          "film_forming_humectants": [
+            "Glycine"
+          ],
+          "emollients": [
+            "Lauryl Alcohol",
+            "Castor Oil",
+            "Sunflower Oil"
+          ],
+          "score": -81
+        },
+        "porosity": {
+          "high": 63,
+          "low": 0
+        },
+        "sebderm": {
+          "hasTriggers": true,
+          "triggers": [
+            {
+              "id": "glycine",
+              "name": "Glycine",
+              "reason": "Amino acids can be metabolized by Malassezia, potentially worsening symptoms"
+            },
+            {
+              "id": "castor_oil",
+              "name": "Castor Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            },
+            {
+              "id": "sunflower_oil",
+              "name": "Sunflower Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            }
+          ]
+        },
+        "autoTagger": {
+          "tags": [
+            "protein",
             "glycerin-free"
           ]
         }
@@ -13145,7 +13544,7 @@ export const defaultProductDatabase: ProductDatabase = {
       "extensions": {
         "frizzbot": {
           "simple_humectants_number": 2,
-          "film_forming_humectants_number": 2,
+          "film_forming_humectants_number": 3,
           "emollients_number": 7,
           "simple_humectants": [
             "Ethylhexylglycerin",
@@ -13153,7 +13552,8 @@ export const defaultProductDatabase: ProductDatabase = {
           ],
           "film_forming_humectants": [
             "Salvia hispanica chia seed extract",
-            "Creatine"
+            "Creatine",
+            "Hydroxypropylammonium Gluconate"
           ],
           "emollients": [
             "Cetearyl Alcohol",
@@ -13164,11 +13564,11 @@ export const defaultProductDatabase: ProductDatabase = {
             "Behentrimonium Chloride",
             "Benzyl Alcohol"
           ],
-          "score": -84
+          "score": -85
         },
         "porosity": {
           "high": 100,
-          "low": 79
+          "low": 81
         },
         "sebderm": {
           "hasTriggers": true,
@@ -14540,13 +14940,14 @@ export const defaultProductDatabase: ProductDatabase = {
       "extensions": {
         "frizzbot": {
           "simple_humectants_number": 2,
-          "film_forming_humectants_number": 2,
+          "film_forming_humectants_number": 3,
           "emollients_number": 4,
           "simple_humectants": [
             "Propanediol",
             "Ethylhexylglycerin"
           ],
           "film_forming_humectants": [
+            "Hydroxypropylammonium Gluconate",
             "Arginine",
             "Sodium Glutamate"
           ],
@@ -14556,7 +14957,7 @@ export const defaultProductDatabase: ProductDatabase = {
             "Unknown Polyquat",
             "Guar Hydroxypropyltrimonium Chloride"
           ],
-          "score": -65
+          "score": -75
         },
         "porosity": {
           "high": 100,
