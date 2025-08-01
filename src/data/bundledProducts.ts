@@ -4284,6 +4284,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "curly",
         "coily",
         "high_porosity",
+        "samples",
         "protein-free",
         "glycerin-free"
       ],
@@ -5041,10 +5042,6 @@ export const defaultProductDatabase: ProductDatabase = {
       "buy_links": [
         {
           "url": "https://click.linksynergy.com/link?id=9QcV0uNyab0&offerid=929395.3842993508&type=2&murl=https%3a%2f%2fwww.ouidad.com%2fproducts%2fadvanced-climate-control-heat-and-humidity-gel%3fvariant%3d42617150865666",
-          "retailer": "Ouidad"
-        },
-        {
-          "url": "https://www.ouidad.com/products/advanced-climate-control-heat-and-humidity-gel?variant=42617150865666",
           "retailer": "Ouidad"
         }
       ],
@@ -6472,9 +6469,9 @@ export const defaultProductDatabase: ProductDatabase = {
         }
       }
     },
-    "imbue_curl_respecting_conditioner": {
-      "name": "Imbue Curl Respecting Conditioner",
-      "brand": "",
+    "curl_respecting_conditioner": {
+      "name": "Curl Respecting Conditioner",
+      "brand": "Imbue",
       "buy_links": [
         {
           "url": "https://amzn.to/42XqNTb",
@@ -6493,7 +6490,7 @@ export const defaultProductDatabase: ProductDatabase = {
       ],
       "ingredients_raw": "aqua water eau, cetearyl alcohol, cetyl alcohol, glyceryl stearate, peg-100 stearate, cetrimonium chloride, panthenol, olea europaea olive fruit oil, butyrospermum parkii shea butter, cocos nucifera coconut oil, theobroma cacao cocoa seed butter, theobroma grandiflorum seed butter, hydrolyzed soy protein, tocopheryl acetate, helianthus annuus sunflower seed oil, tocopherol, parfum fragrance, bis c13-15 alkoxy pg-amodimethicone, methoxy peg ppg-7 3 aminopropyl dimethicone, behentrimonium methosulfate, c10-40 isoalkylamidopropylethyldimonium ethosulfate, peg-4, peg-6, castor oil hydrogenated ethoxylated, c14-15 alcohols, peg-7, guar hydroxypropyltrimonium chloride, peg-8, isotridecanol, citric acid, sodium hydroxide, tetrasodium edta, sodium benzoate, linalool, limonene",
       "description": "A lightweight conditioner infused with nourishing plant oils to help fingers or combs glide through curls with ease",
-      "id": "imbue_curl_respecting_conditioner",
+      "id": "curl_respecting_conditioner",
       "systems_excluded": [],
       "status": "warning",
       "extensions": {
@@ -7806,9 +7803,9 @@ export const defaultProductDatabase: ProductDatabase = {
         }
       }
     },
-    "bondbar_bonding_pre-shampoo_treatment": {
-      "name": "bondbar Bonding Pre-Shampoo Treatment",
-      "brand": "",
+    "bonding_pre-shampoo_treatment": {
+      "name": "Bonding Pre-Shampoo Treatment",
+      "brand": "bondbar",
       "buy_links": [
         {
           "url": "https://www.sallybeauty.com/hair-care/shop-by-product/shampoo/bonding-pre-shampoo/SBS-009285.html?srsltid=AfmBOoqOkLic0x5YyIwBqKfXsyrQK6PmurJr57R7oL6PQfmNU0fTQbXF",
@@ -7833,7 +7830,7 @@ export const defaultProductDatabase: ProductDatabase = {
       ],
       "ingredients_raw": "water, cetearyl alcohol, propylene glycol, behentrimonium methosulfate, cetyl alcohol, phenoxyethanol, glycerin, stearamidopropyl dimethylamine, aloe barbadensis leaf juice, fragrance, hydroxypropyl methylcellulose, citric acid, sodium benzoate, potassium sorbate, hydroxypropylgluconamide, hydroxypropylammonium gluconate, quaternium-91, polyquaternium-37, dicaprylyl carbonate, cetrimonium chloride, simmondsia chinensis jojoba seed oil, cetrimonium methosulfate, etidronic acid, tocopheryl acetate, tocopherol, tetrasodium glutamate diacetate, linalool, lauryl glucoside, hydroxycitronellal, ascorbyl palmitate, panthenol, phytantriol, ascorbic acid",
       "description": "Repairs bonds, prevents split ends, and reduces breakage by 70% while improving detangling by 90% after one use",
-      "id": "bondbar_bonding_pre-shampoo_treatment",
+      "id": "bonding_pre-shampoo_treatment",
       "systems_excluded": [],
       "status": "ok",
       "extensions": {
@@ -9195,9 +9192,9 @@ export const defaultProductDatabase: ProductDatabase = {
         }
       }
     },
-    "treluxe_reflex_styling_serum": {
-      "name": "TreLuxe Reflex Styling Serum",
-      "brand": "",
+    "reflex_styling_serum": {
+      "name": "Reflex Styling Serum",
+      "brand": "TreLuxe",
       "buy_links": [
         {
           "url": "https://amzn.to/4iMFuhU",
@@ -9217,7 +9214,7 @@ export const defaultProductDatabase: ProductDatabase = {
       ],
       "ingredients_raw": "water, aloe barbadensis aloe vera leaf juice, propylene glycol, lactobacillus tomato fruit ferment extract, oryza sativa rice extract, keratin amino acids, acyl coenzyme a desaturase, cetrimonium chloride, hydroxyethyl cellulose, cocos nucifera coconut water, vitis vinifera grape seed extract, polyquaternium-10, juniperus communis juniper berry fruit extract, polysorbate-20, salvia officinalis sage leaf extract, fragrance, phenoxyethanol, sorbic acid, caprylyl glycol",
       "description": "Lightweight styling serum that enhances curl definition and elasticity with flexible hold, while hydrating and smoothing",
-      "id": "treluxe_reflex_styling_serum",
+      "id": "reflex_styling_serum",
       "systems_excluded": [],
       "status": "ok",
       "extensions": {

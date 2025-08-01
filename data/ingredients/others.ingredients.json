@@ -1227,6 +1227,13 @@
       "id": "hydroxypropyl_gluconamide",
       "categories": ["film_forming_humectants"],
       "description": "Often with Hydroxypropylammonium Gluconate as part of FiberHance, a bond-building product"
+    },
+    {
+      "name": "Cicer Arietinum Seed Extract",
+      "id": "cicer_arietinum_seed_extract",
+      "synonyms": ["chickpea seed extract", "chickpea extract"],
+      "categories": ["proteins"],
+      "description": "Chickpea seed extract"
     }
 
   ]

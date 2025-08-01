@@ -4335,6 +4335,20 @@ export const defaultDatabase: IngredientDatabase = {
       "status": "ok",
       "group": "humectants"
     },
+    "cicer_arietinum_seed_extract": {
+      "name": "Cicer Arietinum Seed Extract",
+      "id": "cicer_arietinum_seed_extract",
+      "synonyms": [
+        "chickpea seed extract",
+        "chickpea extract"
+      ],
+      "categories": [
+        "proteins"
+      ],
+      "description": "Chickpea seed extract",
+      "status": "ok",
+      "group": "humectants"
+    },
     "amodimethicone": {
       "name": "Amodimethicone",
       "id": "amodimethicone",
