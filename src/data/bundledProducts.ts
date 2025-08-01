@@ -208,8 +208,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "curly",
         "coily",
         "low_porosity",
-        "protein",
-        "glycerin-free"
+        "protein"
       ],
       "ingredients_raw": "water, sodium lauroyl methyl isethionate, cocamidopropyl betaine, propanediol, acrylates crosspolymer-4, tetrasodium glutamate diacetate, polysorbate 20, glycerin, fragrance, aminomethyl propanol, aloe barbadensis leaf juice, amaranthus caudatus seed extract, hydrolyzed rice protein, hydrolyzed quinoa, polyquaternium-10, cetrimonium chloride, phenoxyethanol, ethylhexylglycerin, citric acid, sodium hydroxide",
       "description": "Remove buildup from products, pollutants, and hard water with this salon-grade clarifying wash",
@@ -254,8 +253,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein",
-            "glycerin-free"
+            "protein"
           ]
         }
       }
@@ -271,8 +269,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "low_porosity",
         "normal_porosity",
         "featured",
-        "protein-free",
-        "glycerin-free"
+        "protein-free"
       ],
       "buy_links": [
         {
@@ -320,8 +317,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein-free",
-            "glycerin-free"
+            "protein-free"
           ]
         }
       },
@@ -474,8 +470,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "normal_porosity",
         "high_porosity",
         "featured",
-        "protein",
-        "glycerin-free"
+        "protein"
       ],
       "ingredients_raw": "water aqua eau, cetearyl alcohol, kaolin, glycerin, vinegar, charcoal powder, oryza sativa rice bran oil, behentrimonium methosulfate, olea europaea olive fruit extract, butyrospermum parkii shea butter, stearalkonium chloride, hydrolyzed quinoa, epilobium angustifolium flower leaf stem extract, panthenol vitamin b-5, potassium sorbate, hydrolyzed adansonia digitata seed extract, sodium levulinate, stearyl alcohol, thiamine hcl, benzyl alcohol, sodium benzoate, glycine soja soybean oil, cananga odorata ylang ylang flower oil, citrus aurantium dulcis orange peel oil, lavandula angustifolia lavender oil, pogostemon cablin patchouli oil, salvia sclarea clary oil, linalool, limonene",
       "buy_links": [
@@ -542,8 +537,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein",
-            "glycerin-free"
+            "protein"
           ]
         }
       },
@@ -569,8 +563,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "clarifying_shampoos"
       ],
       "tags": [
-        "protein-free",
-        "glycerin-free"
+        "protein-free"
       ],
       "id": "scalp_care_clarifying_shampoo",
       "systems_excluded": [],
@@ -610,8 +603,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein-free",
-            "glycerin-free"
+            "protein-free"
           ]
         }
       },
@@ -628,8 +620,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "low_porosity",
         "normal_porosity",
         "featured",
-        "protein-free",
-        "glycerin-free"
+        "protein-free"
       ],
       "buy_links": [
         {
@@ -684,8 +675,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein-free",
-            "glycerin-free"
+            "protein-free"
           ]
         }
       },
@@ -710,8 +700,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "curly",
         "coily",
         "low_porosity",
-        "protein",
-        "glycerin-free"
+        "protein"
       ],
       "ingredients_raw": "sucrose, glycerin, sodium c14-16 olefin sulfonate, cocamide mea, glycol distearate, aqua, eau, water, ricinus communis castor seed oil, saccharomyces rice ferment filtrate, salix alba willow bark extract, butyrospermum parkii shea butter, cocos nucifera coconut oil, melaleuca alternifolia tea tree leaf oil, vitis vinifera grape fruit extract, argania spinosa callus culture extract, malus domestica fruit cell culture extract, glutamic acid, sodium pca, hydrolyzed coix lacryma-jobi ma-yuen seed, platinum powder, trigonella foenum-graecum hydroxypropyltrimonium chloride, locust bean hydroxypropyltrimonium chloride, sodium hyaluronate, hydroxypropyltrimonium hyaluronate, prunus domestica seed extract, argania spinosa kernel oil, lupinus albus seed oil, mangifera indica mango seed oil, theobroma grandiflorum seed butter, adansonia digitata seed oil, carapa guaianensis seed oil, sclerocarya birrea seed oil, argan oil polyglyceryl-6 esters, sodium cocoyl glycinate, propanediol, cocamidopropyl betaine, butylene glycol, guar hydroxypropyltrimonium chloride, isomalt, xanthan gum, polysorbate 80, citric acid, sodium citrate, trisodium phosphate, sodium chloride, lecithin, bht, sodium gluconate, phenoxyethanol, sodium benzoate, fragrance",
       "description": "A 2-in-1 scalp scrub and clarifying shampoo that gently removes buildup and impurities to reveal a healthy scalp and immensely shiny hair",
@@ -809,8 +798,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein",
-            "glycerin-free"
+            "protein"
           ]
         }
       }
@@ -824,8 +812,7 @@ export const defaultProductDatabase: ProductDatabase = {
       ],
       "tags": [
         "normal_porosity",
-        "protein",
-        "glycerin-free"
+        "protein"
       ],
       "buy_links": [
         {
@@ -890,8 +877,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein",
-            "glycerin-free"
+            "protein"
           ]
         }
       },
@@ -910,8 +896,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "conditioners"
       ],
       "tags": [
-        "protein",
-        "glycerin-free"
+        "protein"
       ],
       "cost": 2.12,
       "ingredients_raw": "water, glycerin, cetyl alcohol coconut derived, stearyl alcohol coconut derived, olea europaea olive fruit oil, cetrimonium chloride, behentrimonium chloride, aloe barbadensis leaf extract, glycereth-26, hypnea musciformis extract seaweed, gelidiella acerosa extract seaweed, sargassum filipendula extract seaweed, sorbitol, hydroxypropyltrimonium honey, silk amino acids, rosmarinus officinalis rosemary leaf extract, chamomilla recutita matricaria flower extract, urtica dioica nettle extract, butyrospermum parkii shea butter, simmondsia chinensis jojoba seed oil, tocopheryl acetate vitamin e, panthenol vitamin b5, citrus senensis oil, citrus limon oil, citrus arantifolia oil, citrus paradisi oil, sodium phytate, hydroxyethylcellulose, phenoxyethanol, ethylhexylglycerin, citric acid",
@@ -982,8 +967,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein",
-            "glycerin-free"
+            "protein"
           ]
         }
       },
@@ -1004,8 +988,7 @@ export const defaultProductDatabase: ProductDatabase = {
       "tags": [
         "normal_porosity",
         "high_porosity",
-        "protein",
-        "glycerin-free"
+        "protein"
       ],
       "ingredients_raw": "water, aloe barbadensis leaf extract, glycerin, cetyl alcohol, stearyl alcohol, cetrimonium chloride, behentrimonium chloride, olea europaea olive fruit oil, glycereth-26, butyrospermum parkii shea butter, hydroxypropyltrimonium honey, hypnea musciformis extract seaweed, gelidiella acerosa extract seaweed, sargassum filipendula extract seaweed, sorbitol, silk amino acids, rosmarinus officinalis rosemary leaf extract, chamomilla recutita matricaria flower extract, urtica dioica nettle extract, simmondsia chinensis jojoba seed oil, tocopheryl acetate vitamin e, panthenol vitamin b5, arnica montana flower extract, hydroxyethylcellulose, phenoxyethanol, sorbic acid, ethylhexylglycerin, citric acid, sodium phytate, fragrance",
       "cost": 2.12,
@@ -1076,8 +1059,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein",
-            "glycerin-free"
+            "protein"
           ]
         }
       },
@@ -1092,8 +1074,7 @@ export const defaultProductDatabase: ProductDatabase = {
       ],
       "tags": [
         "normal_porosity",
-        "protein",
-        "glycerin-free"
+        "protein"
       ],
       "buy_links": [
         {
@@ -1172,8 +1153,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein",
-            "glycerin-free"
+            "protein"
           ]
         }
       },
@@ -1189,8 +1169,7 @@ export const defaultProductDatabase: ProductDatabase = {
       "tags": [
         "high_porosity",
         "normal_porosity",
-        "protein",
-        "glycerin-free"
+        "protein"
       ],
       "buy_links": [
         {
@@ -1267,8 +1246,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein",
-            "glycerin-free"
+            "protein"
           ]
         }
       },
@@ -1283,8 +1261,7 @@ export const defaultProductDatabase: ProductDatabase = {
       ],
       "tags": [
         "normal_porosity",
-        "protein-free",
-        "glycerin-free"
+        "protein-free"
       ],
       "buy_links": [
         {
@@ -1351,8 +1328,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein-free",
-            "glycerin-free"
+            "protein-free"
           ]
         }
       },
@@ -1368,8 +1344,7 @@ export const defaultProductDatabase: ProductDatabase = {
       "tags": [
         "high_porosity",
         "normal_porosity",
-        "protein",
-        "glycerin-free"
+        "protein"
       ],
       "ingredients_raw": "aqua, aloe barbadensis aloe vera leaf juice, cetearyl alcohol, behentrimonium methosulfate, glycerin, propanediol, cocos nucifera coconut oil, cetrimonium chloride, phenoxyethanol, butyrospermum parkii shea butter, hydrolised soy protein, simmondsia chinensis jojoba seed oil, chamomila recutita matricaria flower leaf stem extract, camellia sinensis white tea leaf extract, guar hydroxypropyltrimonium chloride, polyquaternium-10, sodium benzoate, citrus aurantifolia lime oil, cymbopogan flexuosus lemongrass oil, sodium pca, sodium lactate, arginine, aspartic acid, pca, glycine, alanine, serine, valine, proline, threonine, isoleucine, histidine, phenylalanine",
       "buy_links": [
@@ -1487,8 +1462,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein",
-            "glycerin-free"
+            "protein"
           ]
         }
       },
@@ -1502,8 +1476,7 @@ export const defaultProductDatabase: ProductDatabase = {
       ],
       "tags": [
         "normal_porosity",
-        "protein",
-        "glycerin-free"
+        "protein"
       ],
       "buy_links": [
         {
@@ -1567,8 +1540,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein",
-            "glycerin-free"
+            "protein"
           ]
         }
       },
@@ -1583,8 +1555,7 @@ export const defaultProductDatabase: ProductDatabase = {
       "tags": [
         "normal_porosity",
         "high_porosity",
-        "protein-free",
-        "glycerin-free"
+        "protein-free"
       ],
       "ingredients_raw": "water aqua, cetearyl alcohol, hydroxypropyl starch phosphate, betaine, cetyl palmitate, behentrimonium chloride, butyrospermum parkii shea butter, cocos nucifera coconut oil, persea gratissima avocado oil, helianthus annuus sunflower seed oil, aloe barbadensis leaf juice, selaginella lepidophylla resurrection flower extract, ocimum basilicum basil leaf extract, piper nigrum black pepper seed extract, rosmarinus officinalis rosemary leaf extract, salvia officinalis sage leaf extract, carapa guaianensis andiroba seed oil, glycerin, guar hydroxypropyltrimonium chloride, panthenol, glyceryl undecylenate, fragrance parfum, citric acid, sodium hydroxide, sodium gluconate, glyceryl caprylate, potassium sorbate, sodium benzoate, limonene, linalool, isopropyl alcohol",
       "buy_links": [
@@ -1665,8 +1636,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein-free",
-            "glycerin-free"
+            "protein-free"
           ]
         }
       },
@@ -1677,8 +1647,7 @@ export const defaultProductDatabase: ProductDatabase = {
       "brand": "Giovanni",
       "tags": [
         "normal_porosity",
-        "protein-free",
-        "glycerin-free"
+        "protein-free"
       ],
       "product_categories": [
         "conditioners"
@@ -1744,8 +1713,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein-free",
-            "glycerin-free"
+            "protein-free"
           ]
         }
       },
@@ -1973,8 +1941,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "wavy",
         "curly",
         "low_porosity",
-        "protein-free",
-        "glycerin-free"
+        "protein-free"
       ],
       "cost": 2.8,
       "ingredients_raw": "water aqua eau, cetyl alcohol, cetearyl alcohol, behentrimonium chloride, glycerin, propanediol, stearamido-propyl dimethylamine, isopropyl myristate, cocos nucifera coconut water, aloe barbadensis leaf juice, chamomilla recutita matricaria flower extract, lavandula angustifolia lavender extract, cetyl esters, cetrimonium chloride, guar hydroxypropyltrimonium chloride, dicetyldimonium chloride, propylene glycol, caprylyl glycol, 1, 2-hexanediol, leuconostoc radish root ferment filtrate, fragrance parfum, potassiu, sorbate, panthenol, to-copheryl acetate, sodium benzoate, edta, citric acid, isopropyl alcohol, phenoxyethanol, ethylhexylglycerin, amyl cinnamal, limonene, isoeugenol, linalool",
@@ -1984,7 +1951,7 @@ export const defaultProductDatabase: ProductDatabase = {
           "retailer": "Curl Keeper"
         }
       ],
-      "description": "An ultra-lightweight conditione to keep hair big, bouncy, and full of life",
+      "description": "An ultra-lightweight conditioner to keep hair big, bouncy, and full of life",
       "id": "big_energy_conditioner",
       "systems_excluded": [],
       "status": "caution",
@@ -2034,8 +2001,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein-free",
-            "glycerin-free"
+            "protein-free"
           ]
         }
       },
@@ -2049,8 +2015,7 @@ export const defaultProductDatabase: ProductDatabase = {
       ],
       "tags": [
         "featured",
-        "protein-free",
-        "glycerin-free"
+        "protein-free"
       ],
       "cost": 2.8,
       "ingredients_raw": "organic aloe barbadensis leaf juice, behentrimonium methosulfate, cetearyl alcohol, hybrid safflower oil, glycerin, stearamidopropyl dimethylamine, propanediol, panthenol pro-vitamin b5, polyquternium-10, nigella sativa virgin black cumin oil, tocopheryl acetate vitamin e, citrus nobilis mandarin orange peel oil, vanillin, lactic acid, caprylhydroxamic acid, anthemis nobilis chamomile flower extract, althaea officinalis marshmallow root extract, geranium maculatum oil, camellia sinensis green tea leaf extract, rosmarinus officinalis rosemary leaf extract, brassica oleracea italica broccoli seed oil, urtica dioica nettle extract, salvia officinalis sage extract, pogostemon cablin oil, equisetum arvense horsetail extract, caryocar brasiliense pequi oil, citrus aurantium bergamia bergamot fruit oil, anthemis nobilis flower oil, citrus paradisi grapefruit seed oil, lavandula angustifolia lavender oil, citrus aurantium dulcis orange seed oil, cocos nucifera coconut oil, boswellia carterii oil, caprylyl glycol",
@@ -2114,8 +2079,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein-free",
-            "glycerin-free"
+            "protein-free"
           ]
         }
       },
@@ -2128,8 +2092,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "conditioners"
       ],
       "tags": [
-        "protein-free",
-        "glycerin-free"
+        "protein-free"
       ],
       "ingredients_raw": "aqua water eau, cetearyl alcohol, cocos nucifera coconut oil, glyceryl stearate, cetrimonium chloride, butyrospermum parkii shea butter, coco-caprylate, glycerin, olea europaea olive fruit oil, parfum fragrance, phenoxyethanol, sodium benzoate, citric acid, persea gratissima avocado oil, ethylhexylglycerin, sodium phytate, chondrus crispus carrageenan extract, laminaria digitata extract, citrus aurantium dulcis orange peel oil, pelargonium graveolens flower oil, crithmum maritimum extract, potassium sorbate, benzyl salicylate, linalool, butylphenyl methylpropional",
       "buy_links": [
@@ -2202,8 +2165,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein-free",
-            "glycerin-free"
+            "protein-free"
           ]
         }
       }
@@ -2217,8 +2179,7 @@ export const defaultProductDatabase: ProductDatabase = {
       "tags": [
         "women-owned",
         "featured",
-        "protein-free",
-        "glycerin-free"
+        "protein-free"
       ],
       "ingredients_raw": "water aqua, cetearyl alcohol, glycerin, behentrimonium chloride, propylene glycol, polyglyceryl-4 caprate, hydroxyethylcellulose, cetrimonium chloride, inulin, phenoxyethanol, fragrance parfum, polyquaternium-37, polyquaternium-11, saccharide isomerate, citric acid, sodium benzoate, cocos nucifera coconut seed butter, alpha-glucan oligosaccharide, laureth-2, ribes nigrum black currant seed oil, trisodium ethylenediamine disuccinate, niacinamide, panthenol, pentylene glycol, sodium citrate, ethylhexylglycerin, hexyl cinnamal",
       "description": "A detangling conditioner with lots of slip.",
@@ -2278,8 +2239,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein-free",
-            "glycerin-free"
+            "protein-free"
           ]
         }
       }
@@ -2310,8 +2270,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "curly",
         "coily",
         "bonding",
-        "protein",
-        "glycerin-free"
+        "protein"
       ],
       "ingredients_raw": "water aqua eau, sodium lauroyl methyl isethionate, cocamidopropyl hydroxysultaine, potassium cocoyl glycinate, disodium cocoyl glutamate, sodium lauroyl sarcosinate, potassium cocoate, decyl glucoside, glycereth-26, bis-aminopropyl diglycol dimaleate, cocamidopropylamine oxide, disodium laureth sulfosuccinate, glycol distearate, sodium cocoyl glutamate, methyl gluceth-20, acrylates copolymer, peg-120 methyl glucose dioleate, amodimethicone, citric acid, sodium lauryl sulfoacetate, polyquaternium-10, ethylhexylglycerin, divinyldimethicone dimethicone copolymer, polyquaternium-11, trisodium ethylenediamine disuccinate, guar hydroxypropyltrimonium chloride, c11-15 pareth-7, laureth-9, glycerin, trideceth-12, c12-13 pareth-23, c12-13 pareth-3, hydrolyzed vegetable protein, pg-propyl silanetriol, panthenol, acetic acid, tetrasodium edta, pentasodium triphosphate, sodium hydroxide, disodium edta, helianthus annus sunflower seed oil, tocopherol, prunus armeniaca apricot kernel oil, pseudozyma epicola camellia sinensis seed oil ferment extract filtrate, pseudozyma epicola argania spinosa kernel oil ferment filtrate, quaternium-95, propanediol, helianthus annus sunflower seed extract, peg-8, euterpe oleracea fruit extract, punica granatum extract, rosemarinus officinalis rosemary leaf extract, musa sapientum banana fruit extract, origanum vulgare lear extract, morinda citrifolia fruit extract, articum lappa root extract, peg-8 smdi copolymer, sodium hyaluronate, palmitoyl myristyl serinate, sodium polyacrylate, pentaerythrityl tetra-di-t-butyl hydroxyhydrocinnamate, biotin, benzoic acid, phenoxyethanol, chlorphenesin, potassium sorbate, sodium benzoate, fragrance parfum, citral, hexyl cinnamal, limonene",
       "description": "A highly concentrated conditioner with Olaplex’s bonding technology that repairs, strengthens, and moisturizes hair prone to damage or dryness",
@@ -2376,8 +2335,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein",
-            "glycerin-free"
+            "protein"
           ]
         }
       }
@@ -2390,8 +2348,7 @@ export const defaultProductDatabase: ProductDatabase = {
       ],
       "tags": [
         "featured",
-        "protein",
-        "glycerin-free"
+        "protein"
       ],
       "ingredients_raw": "aqua water eau, cetearyl alcohol, glycerin, cetyl esters, cetyl alcohol, stearamidopropyl dimethylamine, behentrimonium chloride, butyrospermum parkii shea butter, helianthus annuus sunflower seed oil, propanediol, prunus amygdalus dulcis sweet almond oil, carthamus tinctorius safflower seed oil, ricinus communis castor seed oil, helianthus annuus sunflower extract, rosmarinus officinalis rosemary leaf extract, oryza sativa rice bran extract, euterpe oleracea fruit extract, eucalyptus globulus leaf oil, mauritia flexuosa fruit oil, morinda citrifolia fruit extract, cymbopogon schoenanthus extract, garcinia indica seed butter, sclerocarya birrea seed oil, hydrolyzed rice protein, aloe barbadensis leaf juice, palmitoyl tetrapeptide-20, squalane, tocopherol, hydroxyethylcellulose, capryloyl glycerin sebacic acid copolymer, hydrogenated castor oil sebacic acid copolymer, bht, panthenol, polysorbate 60, guar hydroxypropyltrimonium chloride, stearamine oxide, ethylhexyl olivate, diheptyl succinate, isododecane, citric acid, disodium edta, tetrasodium edta, sodium hydroxide, disodium phosphate, sodium phosphate, butylene glycol, caprylyl glycol, hexylene glycol, sodium benzoate, potassium sorbate, leuconostoc radish root ferment filtrate, chlorphenesin, phenoxyethanol, limonene, linalool, fragrance parfum",
       "description": "A luxurious, multi-functional cleanser that deeply conditions and moisturizes while gently cleansing.",
@@ -2515,8 +2472,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein",
-            "glycerin-free"
+            "protein"
           ]
         }
       }
@@ -2534,8 +2490,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "cowashes"
       ],
       "tags": [
-        "protein-free",
-        "glycerin-free"
+        "protein-free"
       ],
       "cost": 0.54,
       "ingredients_raw": "aqua water eau, cetyl alcohol, cetrimonium chloride, cetearyl alcohol, cocos nucifera coconut oil, ricinus communis castor seed oil, cocos nucifera coconut fruit powder, citrus reticulata tangerine fruit extract, phytosterols, camillia sinensis leaf extract, peg-40 castor oil, stearlkonium chloride, serenoa serrulata fruit extract, quaternium-18, propylene glycol, c12-15 alkyl lactate, fragrance parfum, potassium sorbate, caprylyl glycol, phenoxyethanol, abies balsamea balsam canada resin, potassium chloride, limonene, glycerin, caprylic capric triglyceride",
@@ -2601,8 +2556,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein-free",
-            "glycerin-free"
+            "protein-free"
           ]
         }
       },
@@ -2622,8 +2576,7 @@ export const defaultProductDatabase: ProductDatabase = {
         }
       ],
       "tags": [
-        "protein",
-        "glycerin-free"
+        "protein"
       ],
       "description": "A moisturizing, non-stripping cleanser and conditioner hybrid designed for textured, dry, or curly hair.",
       "asin": "B005SIR5G6",
@@ -2694,8 +2647,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein",
-            "glycerin-free"
+            "protein"
           ]
         }
       },
@@ -2712,8 +2664,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "curly",
         "coily",
         "high_porosity",
-        "protein-free",
-        "glycerin-free"
+        "protein-free"
       ],
       "ingredients_raw": "water aqua, cetearyl alcohol, hydroxypropyl starch phosphate, cetyl palmitate, behentrimonium chloride, cocamidopropyl betaine, fragrance parfum, selaginella lepidophylla resurrection flower extract, carapa guaianensis andiroba seed oil, persea gratissima avocado oil, salvia officinalis sage leaf extract, ocimum basilicum basil leaf extract, piper nigrum black pepper seed extract, aloe barbadensis aloe vera leaf juice, rosmarinus officinalis rosemary leaf extract, helianthus annuus sunflower seed oil, butyrospermum parkii shea butter, cocos nucifera coconut oil, glycerin, guar hydroxypropyltrimonium chloride, panthenol, glyceryl caprylate, glyceryl undecylenate, potassium sorbate, sodium benzoate, sodium hydroxide, sodium chloride, citric acid, disodium edta, limonene, linalool",
       "description": "A 2-in-1 shampoo and conditioner that gently cleanses buildup, soothes the scalp, promotes healthy hair growth, and boosts shine",
@@ -2800,8 +2751,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein-free",
-            "glycerin-free"
+            "protein-free"
           ]
         }
       }
@@ -2886,8 +2836,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "cowashes"
       ],
       "tags": [
-        "protein-free",
-        "glycerin-free"
+        "protein-free"
       ],
       "ingredients_raw": "organic aloe barbadensis leaf juice, glycerin, behentrimonium methosulfate, caprylic capric triglyceride, cetearyl alcohol, sucrose cocoate, stearamidopropyl dimethylamine, propanediol, panthenol, hydrolyzed jojoba esters, vanillin, polyquaternium-10, lactic acid, caprylhydroxamic acid, nigella sativa virgin black cumin oil, althaea officinalis marshmallow root extract, pogostemon cablin oil, citrus paradisi grapefruit seed oil, camellia sinensis green tea leaf extract, rosmarinus officinalis rosemary leaf extract, citrus aurantium bergamia bergamot fruit oil, salvia officinalis sage extract, equisetum arvense horsetail extract, boswellia carterii oil, caryocar brasiliense pequi oil, brassica oleracea italica broccoli seed oil, anthemis nobilis chamomile flower extract, anthemis nobilis flower oil, urtica dioica nettle extract, citrus aurantium dulcis orange seed oil, cocos nucifera coconut oil, citrus nobilis mandarin orange peel oil, tocopheryl acetate, ethylhexylglycerin",
       "buy_links": [
@@ -2950,8 +2899,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein-free",
-            "glycerin-free"
+            "protein-free"
           ]
         }
       }
@@ -2973,8 +2921,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "black_owned",
         "woman_owned",
         "small_business",
-        "protein-free",
-        "glycerin-free"
+        "protein-free"
       ],
       "ingredients_raw": "deionized water aqua, althaea officinalis marshmallow root extract, linum usitatissimum flaxseed extract, cetearyl alcohol, sodium pca, chamomile flower extract, slippery elm extract, peppermint mentha piperita oil, melissa melissa officinalis leaf extract, nettle urtica dioica leaf extract, horsetail equisetum arvense leaf extract, peppermint mentha piperita leaf extract, sage salvia officinalis extract, yucca yucca vera leaf extract, sucrose cocoate, panthenol, caprylhydroxamic acid, glyceryl caprylate, glycerin, citrus limon peel lemon oil, vanilla planifolia fruit oil, potassium sorbate",
       "description": "A botanical-rich, moisturizing, and detangling cream designed to condition, soften, and support hair and scalp health",
@@ -3016,8 +2963,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein-free",
-            "glycerin-free"
+            "protein-free"
           ]
         }
       }
@@ -3044,8 +2990,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "low_porosity",
         "volume",
         "featured",
-        "protein",
-        "glycerin-free"
+        "protein"
       ],
       "asin": "B002EOSVUQ",
       "cost": 2.8,
@@ -3081,8 +3026,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein",
-            "glycerin-free"
+            "protein"
           ]
         }
       },
@@ -3103,8 +3047,7 @@ export const defaultProductDatabase: ProductDatabase = {
       "tags": [
         "curl_enhancer",
         "featured",
-        "protein-free",
-        "glycerin-free"
+        "protein-free"
       ],
       "ingredients_raw": "water aqua, cetearyl alcohol, glyceryl stearate, propanediol, aloe barbadensis leaf juice, hydrogenated vegetable oil, peg-100 stearate, isopropyl palmitate, pvp, glycerin, caprylic capric triglyceride, glycereth-26, butyrospermum parkii shea butter, vp va copolymer, pectin, hydroxypropyltrimonium honey, coconut alkanes, polyquaternium-55, sodium polyitaconate, triethyl citrate, zea mays corn starch, sodium polyacrylate starch, hypnea musciformis extract, gelidiella acerosa extract, sargassum filipendula extract, sodium lactate, coco-caprylate caprate, ceteareth-20, acrylates beheneth-25 methacrylate copolymer, polyacrylate crosspolymer-6, cellulose, disodium edta, fragrance, phenoxyethanol, benzyl alcohol, aminomethyl propanol",
       "asin": "B0CHWM9YCJ",
@@ -3167,8 +3110,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein-free",
-            "glycerin-free"
+            "protein-free"
           ]
         }
       }
@@ -3193,8 +3135,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "normal_porosity",
         "curl_enhancer",
         "featured",
-        "protein",
-        "glycerin-free"
+        "protein"
       ],
       "ingredients_raw": "aqua, caprylic capric triglyceride, cetearyl alcohol, glycerin, propanediol, cetrimonium chloride, butyrospermum parkii shea butter, oryza sativa rice bran oil, glyceryl stearate, phenoxyethanol, citrus nobilis mandarin peel oil, hydrolised soy protein, cucumis sativus cucumber fruit extract, chamomila recutita matricaria flower leaf stem extract, camellia sinensis white tea leaf extract, polyquaternium-10, sodium benzoate",
       "cost": 3,
@@ -3248,8 +3189,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein",
-            "glycerin-free"
+            "protein"
           ]
         }
       },
@@ -3266,8 +3206,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "normal_porosity",
         "curl_enhancer",
         "featured",
-        "protein-free",
-        "glycerin-free"
+        "protein-free"
       ],
       "ingredients_raw": "water aqua, ricinus communis castor seed oil, dicaprylyl carbonate, cetearyl alcohol, orbignya speciosa babassu kernel oil, behentrimonium chloride, sodium hyaluronate, astrocaryum murumuru seed butter, simmondsia chinensis jojoba seed oil, butyrospermum parkii shea butter, hylocereus undatus dragon fruit fruit extract, paullinia cupana guarana seed extract, urtica dioica nettle leaf extract, zingiber officinale ginger root extract, polyquaternium-10, panthenol, guar hydroxypropyltrimonium chloride, tocopherol, disodium edta, ethylhexylglycerin, glycerin, citric acid, sodium hydroxide, potassium sorbate, sodium benzoate, phenoxyethanol, linalool, limonene, citronellol, fragrance parfum",
       "buy_links": [
@@ -3348,8 +3287,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein-free",
-            "glycerin-free"
+            "protein-free"
           ]
         }
       },
@@ -3445,8 +3383,7 @@ export const defaultProductDatabase: ProductDatabase = {
       ],
       "tags": [
         "featured",
-        "protein-free",
-        "glycerin-free"
+        "protein-free"
       ],
       "ingredients_raw": "water, cetearyl alcohol, persea gratissima avocado oil, caprylic capric triglyceride, aloe barbadensis leaf juice, cetrimonium chloride, vp va copolymer, sorbitol, astrocaryum murumuru seed butter, argania spinosa kernel oil, butyrospermum parkii shea butter, rosa centifolia rose oil, crambe abyssinica seed oil, glycerin, hydroxyethylcellulose, nigella sativa virgin black cumin oil, trigonella foenum-graecum fenugreek seed extract, tocopheryl acetate vitamin e, adansonia digitata baobab seed oil, behentrimonium methosulfate, hydroxypropyl starch phosphate, phenoxyethanol, ethylhexylglycerin",
       "buy_links": [
@@ -3520,8 +3457,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein-free",
-            "glycerin-free"
+            "protein-free"
           ]
         }
       }
@@ -3534,8 +3470,7 @@ export const defaultProductDatabase: ProductDatabase = {
       ],
       "tags": [
         "featured",
-        "protein",
-        "glycerin-free"
+        "protein"
       ],
       "ingredients_raw": "water, vp va copolymer, glycerin, hydrolyzed jojoba esters, jojoba esters, hydrolyzed quinoa protein, hydrolyzed oat protein, aloe barbadensis leaf extract, panax ginseng root extract, salvia officinalis sage extract, nigella sativa virgin black cumin oil, boswellia carter oil, aminomethyl propanol, carbomer, sodium phytate, caprylyl glycol, hexylene glycol, phenoxyethanol, citric acid",
       "buy_links": [
@@ -3588,8 +3523,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein",
-            "glycerin-free"
+            "protein"
           ]
         }
       }
@@ -3603,8 +3537,7 @@ export const defaultProductDatabase: ProductDatabase = {
       "tags": [
         "woman_owned",
         "small_business",
-        "protein",
-        "glycerin-free"
+        "protein"
       ],
       "ingredients_raw": "water aqua, behentrimonium methosulfate, persea gratissima avocado fruit oil, glycerin, leuconostoc radish root ferment filtrate, cetyl alcohol, ricinus communis castor seed oil, gluconodeltalactone and sodium benzoate, panthenol, simmondsia chinensis jojoba seed oil, caprylic capric triglyceride, water, glycerin, glycine soja soybean seed extract, water, camellia sinensis leaf extract, water, chamomilla recutita matricaria flower extract, inci nomenclature glycerin, vitis vinifera grape seed extract, polyhydroxystearic acid, behenyl behenate, tocopherol, water, butylene glycol, nymphaea coerulea flower extract, oat amino acids, tetrasodium glutamate diacetate, fragrance parfum, citric acid",
       "buy_links": [
@@ -3666,8 +3599,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein",
-            "glycerin-free"
+            "protein"
           ]
         }
       }
@@ -3695,8 +3627,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "coily",
         "low_porosity",
         "premium",
-        "protein",
-        "glycerin-free"
+        "protein"
       ],
       "ingredients_raw": "aqua water, cyclopentasiloxane, glycerin, polysorbate 60, myristyl alcohol, stearyl alcohol, cetyl alcohol, pvp, hydroxypropyl starch phosphate, citrus limon lemon peel extract, vaccinium myrtillus fruit extract, pyrus malus apple fruit extract, helianthus annuus sunflower seed extract, lactis serum proteinum, hydrolyzed chestnut extract, hydrolyzed quinoa, ethylhexyl methoxycinnamate, polyquaternium-10, hydroxypropyl guar, polyquaternium-28, diethylamino hydroxybenzoyl hexyl benzoate, butylene glycol, benzyl benzoate, citric acid, lactic acid, amyl cinnamal, linalool, benzyl salicylate, coumarin, hexyl cinnamal, limonene, citronellol, geraniol, benzyl alcohol, parfum fragrance, phenoxyethanol, caprylyl glycol, potassium sorbate, sodium benzoate",
       "description": "Tames frizz, enhances natural texture, provides light hold, and contains protein for added strength",
@@ -3747,8 +3678,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein",
-            "glycerin-free"
+            "protein"
           ]
         }
       }
@@ -3771,8 +3701,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "normal_porosity",
         "high_porosity",
         "featured",
-        "protein",
-        "glycerin-free"
+        "protein"
       ],
       "ingredients_raw": "water, glycerin, carboxymethylcellulose, aloe barbadensis leaf extract, pectin, hydroxypropyltrimonium honey, silk amino acids, hypnea musciformis extract seaweed, gelidiella acerosa extract seaweed, sargassum filipendula seaweed extract, sorbitol, rosmarinus officinalis rosemary leaf extract, salix alba willow bark extract, urtica dioica nettle extract, ethylhexylglycerin, phenoxyethanol, citrus senensis oil, citrus limon oil, citrus aurantifolia oil, citrus paradisi oil",
       "description": "A lightweight custard that provides hold, enhances volume, and adds moisture with seaweed and honey",
@@ -3819,8 +3748,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein",
-            "glycerin-free"
+            "protein"
           ]
         }
       },
@@ -3838,8 +3766,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "normal_porosity",
         "high_porosity",
         "featured",
-        "protein-free",
-        "glycerin-free"
+        "protein-free"
       ],
       "buy_links": [
         {
@@ -3917,8 +3844,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein-free",
-            "glycerin-free"
+            "protein-free"
           ]
         }
       },
@@ -3936,8 +3862,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "normal_porosity",
         "high_porosity",
         "featured",
-        "protein-free",
-        "glycerin-free"
+        "protein-free"
       ],
       "buy_links": [
         {
@@ -3979,8 +3904,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein-free",
-            "glycerin-free"
+            "protein-free"
           ]
         }
       }
@@ -4000,8 +3924,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "liquid_gels",
         "featured",
         "type_2_hair",
-        "protein-free",
-        "glycerin-free"
+        "protein-free"
       ],
       "buy_links": [
         {
@@ -4045,8 +3968,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein-free",
-            "glycerin-free"
+            "protein-free"
           ]
         }
       }
@@ -4066,8 +3988,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "featured",
         "type_3_hair",
         "fragrance_free",
-        "protein-free",
-        "glycerin-free"
+        "protein-free"
       ],
       "buy_links": [
         {
@@ -4111,8 +4032,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein-free",
-            "glycerin-free"
+            "protein-free"
           ]
         }
       }
@@ -4457,8 +4377,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "normal_porosity",
         "featured",
         "low_porosity",
-        "protein-free",
-        "glycerin-free"
+        "protein-free"
       ],
       "ingredients_raw": "water aqua, cetearyl alcohol, behentrimonium chloride, propanediol, hydroxypropyl starch phosphate, cetyl palmitate, fragrance parfum, guar hydroxypropyltrimonium chloride, selaginella lepidophylla resurrection flower extract, carapa guaianensis andiroba seed oil, aloe barbadensis aloe vera leaf juice, ocimum basilicum basil leaf extract, piper nigrum black pepper seed extract, rosmarinus officinalis rosemary leaf extract, salvia officinalis sage leaf extract, helianthus annuus sunflower seed oil, prunus armeniaca apricot kernel oil, persea gratissima avocado oil, butyrospermum parkii shea butter, panthenol, ethylhexylglycerin, citric acid, disodium edta, sodium hydroxide, potassium sorbate, sodium benzoate, glycerin, phenoxyethanol, linalool, limonene",
       "buy_links": [
@@ -4550,8 +4469,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein-free",
-            "glycerin-free"
+            "protein-free"
           ]
         }
       }
@@ -4636,8 +4554,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "curl_enhancer",
         "normal_porosity",
         "featured",
-        "protein",
-        "glycerin-free"
+        "protein"
       ],
       "ingredients_raw": "aqua, aloe barbadensis aloe vera leaf juice, pullulan, galactoarabinan, glycerin, propanediol, lauryl glucoside, decyl glucoside, cocamidopropyl betaine, camellia sinensis white tea leaf extract, chamomila recutita matricaria flower leaf stem extract, phenoxyethanol, hydrolised soy protein, potassium sorbate, citric acid, citrus limon lemon peel oil, pelargonium graveolens geranium flower oil",
       "cost": 4.4,
@@ -4670,8 +4587,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein",
-            "glycerin-free"
+            "protein"
           ]
         }
       },
@@ -4698,8 +4614,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "volume",
         "low_porosity",
         "featured",
-        "protein",
-        "glycerin-free"
+        "protein"
       ],
       "asin": "B079B3HKZK",
       "ingredients_raw": "water, pullulan, galactoarabinan, aloe barbadensis aloe vera leaf juice, glycerin, caprylyl capryl glucoside, gluconolactone, sodium benzoate, calcium gluconate, hydrolyzed rice protein, decyl glucoside, lauryl glucoside, sorbitol, potassium sorbate, cananga odorata flower oil, lavandula angustifolia lavender oil, citrus aurantium dulcis orange peel oil, salvia sclarea clary oil, vanillin, pogostemon cablin patchouli oil, glycine soja soybean oil, hydroxypropyltrimonium honey, sorbic acid, citric acid, diheptyl succinate, capryloyl glycerin sebacic acid copolymer, vaccinium macrocarpon cranberry seed oil, vitis vinifera grape seed oil, cucurbita pepo pumpkin seed oil, macadamia ternifolia seed oil, macelignan, tocopherol, linalool, limonene",
@@ -4744,8 +4659,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein",
-            "glycerin-free"
+            "protein"
           ]
         }
       },
@@ -4762,8 +4676,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "volume",
         "low_porosity",
         "featured",
-        "protein",
-        "glycerin-free"
+        "protein"
       ],
       "ingredients_raw": "water aqua, vp va copolymer, cocamidopropyl betaine, hydrolyzed rice protein, hydrolyzed hemp seed extract, ribes nigrum black currant fruit extract, lentinus edodes shiitake mushroom extract, psidium guajava guava fruit extract, brassica oleracea acephala kale leaf extract, cucurbita pepo pumpkin seed extract, opuntia tuna prickly pear fruit extract, glycerin, panthenol, potassium sorbate, ethylhexylglycerin, disodium edta, citric acid, sodium benzoate, peg-40 hydrogenated castor oil, phenoxyethanol, sodium hydroxide, linalool, limonene, geraniol, benzyl alcohol, fragrance parfum",
       "buy_links": [
@@ -4828,8 +4741,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein",
-            "glycerin-free"
+            "protein"
           ]
         }
       },
@@ -5034,8 +4946,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "wavy",
         "curly",
         "coily",
-        "protein",
-        "glycerin-free"
+        "protein"
       ],
       "cost": 3,
       "description": "Ouidad's best-selling gel that protects against frizz in even the most humid conditions",
@@ -5099,8 +5010,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein",
-            "glycerin-free"
+            "protein"
           ]
         }
       },
@@ -5116,8 +5026,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "normal_porosity",
         "high_porosity",
         "featured",
-        "protein",
-        "glycerin-free"
+        "protein"
       ],
       "cost": 3.5,
       "buy_links": [
@@ -5180,8 +5089,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein",
-            "glycerin-free"
+            "protein"
           ]
         }
       },
@@ -5208,8 +5116,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "hold",
         "high_porosity",
         "featured",
-        "protein-free",
-        "glycerin-free"
+        "protein-free"
       ],
       "cost": 2.8,
       "ingredients_raw": "water, aqua-eau, aloe barbadensis gel, hydroxyethylcellulose, maltodextrin copolymer, potassium hydroxide, gluconolactone, sodium benzoate, calcium gluconate, alkyl acrylate crosspolymer, citrus aurantium dulcis peel oil, caprylic capric triglyceride, potassium sorbate, sodium phytate, glycerin, chamomilla recutita matricaria flower extract, eucalyptus globulus leaf extract, ginkgo biloba leaf extract, aspalathus linearis leaf extract, honey extract, limonene",
@@ -5244,8 +5151,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein-free",
-            "glycerin-free"
+            "protein-free"
           ]
         }
       },
@@ -5270,8 +5176,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "low_porosity",
         "curl_enhancer",
         "featured",
-        "protein",
-        "glycerin-free"
+        "protein"
       ],
       "asin": "B093XG3RDK",
       "cost": 2.5,
@@ -5322,8 +5227,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein",
-            "glycerin-free"
+            "protein"
           ]
         }
       },
@@ -5341,8 +5245,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "normal_porosity",
         "hold",
         "featured",
-        "protein-free",
-        "glycerin-free"
+        "protein-free"
       ],
       "buy_links": [
         {
@@ -5398,8 +5301,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein-free",
-            "glycerin-free"
+            "protein-free"
           ]
         }
       }
@@ -5416,8 +5318,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "low_porosity",
         "hold",
         "featured",
-        "protein",
-        "glycerin-free"
+        "protein"
       ],
       "buy_links": [
         {
@@ -5460,8 +5361,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein",
-            "glycerin-free"
+            "protein"
           ]
         }
       }
@@ -5478,8 +5378,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "high_porosity",
         "volume",
         "featured",
-        "protein",
-        "glycerin-free"
+        "protein"
       ],
       "buy_links": [
         {
@@ -5521,8 +5420,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein",
-            "glycerin-free"
+            "protein"
           ]
         }
       }
@@ -5539,8 +5437,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "curl_enhancer",
         "featured",
         "high_porosity",
-        "protein-free",
-        "glycerin-free"
+        "protein-free"
       ],
       "ingredients_raw": "water aqua, pvp, peg-40 hydrogenated castor oil, sodium hyaluronate, camellia sinensis green tea leaf extract, lavandula angustifolia lavender flower extract, thymus vulgaris thyme leaf extract, thuja occidentalis white cedar leaf extract, phyllanthus emblica amla fruit extract, panthenol, disodium edta, carbomer, caprylyl glycol, sodium benzoate, potassium sorbate, aminomethyl propanol, glycerin, phenoxyethanol, ethylhexylglycerin, linalool, limonene, citronellol, fragrance parfum",
       "buy_links": [
@@ -5602,8 +5499,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein-free",
-            "glycerin-free"
+            "protein-free"
           ]
         }
       }
@@ -5694,8 +5590,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "wavy",
         "curly",
         "coily",
-        "protein-free",
-        "glycerin-free"
+        "protein-free"
       ],
       "cost": 2.9,
       "buy_links": [
@@ -5737,8 +5632,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein-free",
-            "glycerin-free"
+            "protein-free"
           ]
         }
       },
@@ -5822,8 +5716,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "gels"
       ],
       "tags": [
-        "protein-free",
-        "glycerin-free"
+        "protein-free"
       ],
       "buy_links": [
         {
@@ -5872,8 +5765,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein-free",
-            "glycerin-free"
+            "protein-free"
           ]
         }
       }
@@ -5890,8 +5782,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "curly",
         "coily",
         "high_porosity",
-        "protein-free",
-        "glycerin-free"
+        "protein-free"
       ],
       "ingredients_raw": "water aqua, hydrolyzed corn starch, glycerin, guar hydroxypropyltrimonium chloride, hydroxyethylcellulose, citric acid, phenoxyethanol, benzyl alcohol, fragrance parfum, fructose, hydroxyacetophenone, sodium hydroxide, trisodium ethylenediamine disuccinate, polyglyceryl-4 caprate, ethylhexylglycerin, pentylene glycol, salicylic acid, sodium citrate, sodium hyaluronate, polyporus umbellatus mushroom extract, pogostemon cablin oil, tetramethyl acetyloctahydronaphthalenes, hexyl cinnamal, limonene, linalyl acetate, juniperus virginiana oil, citrus aurantium peel oil, alpha-isomethyl ionone, linalool",
       "description": "An all-purpose gel that will hold your curls/waves even in humid weather.",
@@ -5940,8 +5831,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein-free",
-            "glycerin-free"
+            "protein-free"
           ]
         }
       }
@@ -5964,8 +5854,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "curly",
         "coily",
         "premium",
-        "protein-free",
-        "glycerin-free"
+        "protein-free"
       ],
       "ingredients_raw": "water aqua eau, propylene glycol, acrylates copolymer, aminomethyl propanol, glycerin, peg-60 hydrogenated castor oil, carbomer, hydroxyethylcellulose, quaternium-22, tetrasodium edta, dmdm hydantoin, iodopropynyl butylcarbamate, fragrance parfum",
       "description": "A color-safe styling gel that delivers strong hold, locks in moisture, and enhances shine for firmly defined, frizz-free curls",
@@ -6006,8 +5895,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein-free",
-            "glycerin-free"
+            "protein-free"
           ]
         }
       }
@@ -6030,8 +5918,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "curly",
         "coily",
         "low_porosity",
-        "protein",
-        "glycerin-free"
+        "protein"
       ],
       "ingredients_raw": "butylene glycol, dipropylene glycol, alcohol denat, myristyl alcohol, water, steartrimonium chloride, alcohol, fragrance, triethylhexanoin, cetrimonium chloride, cetyl ethylhexanoate, glycerin, panthenol, salicylic acid, niacinamide, methylpropanediol, maltodextrin, anthemis nobilis flower water, melissa officinalis flower leaf stem water, inulin, rosmarinus officinalis rosemary extract, peg-crosspolymer, biotin, caffeine, pentylene glycol, yeast extract, panax ginseng root extract, vinegar, 2-hexanediol, houttuynia cordata extract, sodium benzoate, paeonia suffruticosa branch flower leaf extract, paeonia suffruticosa root extract, artemisia annua extract, azadirachta indica leaf extract, camellia sinensis leaf extract, sodium pca, sodium lactate, mentha arvensis leaf extract, centella asiatica leaf extract, hyaluronic acid, polygonum multiflorum root extract, saccharomyces cerevisiae extract, panax ginseng leaf stem extract, arginine, caprylyl glycol, benzyl alcohol, aspartic acid, dextrin, polylysine, zingiber officinale ginger root extract, ganoderma lucidum mushroom extract, pca, beta-glucan, potassium sorbate, citric acid, glycine, alanine, althaea officinalis root extract, calendula officinalis flower extract, chamaecyparis obtusa leaf extract, ethylhexylglycerin, phellinus linteus extract, serine, valine, bifida ferment lysate, lactobacillus ferment lysate, dehydroacetic acid, isoleucine, proline, threonine, histidine, phenylalanine, alchemilla vulgaris extract, limonene, hexyl cinnamal, citral, geraniol, linalool, citronellol, benzyl",
       "description": "A hair-thickening treatment that soothes the scalp, boosts growth, and delivers healthier-looking hair in just 5 seconds",
@@ -6126,8 +6013,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein",
-            "glycerin-free"
+            "protein"
           ]
         }
       }
@@ -6149,8 +6035,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "curly",
         "coily",
         "high_porosity",
-        "protein",
-        "glycerin-free"
+        "protein"
       ],
       "ingredients_raw": "water aqua eau, cetearyl alcohol, decyl glucoside, hydroxypropyl starch phosphate, behentrimonium chloride, ceteareth-20, orchis mascula flower extract, butyrospermum parkii shea butter extract, cocos nucifera coconut oil, sclerocarya birrea seed oil, prunus amygdalus dulcis sweet almond fruit extract, hydrolyzed soy protein, glycine soja soybean oil, isopropyl alcohol, citric acid, tetrasodium edta, glycerin, lecithin, propylene glycol, magnesium chloride, magnesium nitrate, methylchloroisothiazolinone, methylisothiazolinone, dmdm hydantoin, limonene, coumarin, linalool, alpha-isomethyl ionone, fragrance parfum",
       "description": "A color-safe, no-lather cleanser that gently cleanses and hydrates all curl types for soft, strong, frizz-free curls",
@@ -6216,8 +6101,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein",
-            "glycerin-free"
+            "protein"
           ]
         }
       }
@@ -6328,8 +6212,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "wavy",
         "curly",
         "coily",
-        "protein-free",
-        "glycerin-free"
+        "protein-free"
       ],
       "ingredients_raw": "water aqua eau, cetearyl alcohol, carthamus tinctorus safflower seed oil, glycerin, stearalkonium chloride, fragrance parfum, cetyl alcohol, behentrimonium methosulfate, dimethicone althaea officinalis root extract, macadamia ternifolia seed oil stearamine oxide, polyquaternium-7, isohexadecane, acrylamidopropyltrimonium chloride acrylates copolymer, coceth-7, phenoxyethanol, benzyl alcohol, citric acid",
       "description": "A deep conditioner that delivers intense hydration, volume, and rejuvenation to dry, damaged strands",
@@ -6378,8 +6261,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein-free",
-            "glycerin-free"
+            "protein-free"
           ]
         }
       }
@@ -6666,8 +6548,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "coily",
         "high_porosity",
         "premium",
-        "protein-free",
-        "glycerin-free"
+        "protein-free"
       ],
       "ingredients_raw": "water aqua eau, cetearyl alcohol, olea europaea fruit oil, cetyl alcohol, glycerin, butylene glycol, butyrospermum parkii butter, sodium pca, stearalkonium chloride, ethyl macademiate, magnesium ascorbate, panthenol, citric acid, phenoxyethanol, polysorbate 20, isopropyl myristate, cetrimonium chloride, polyquaternium-10, potassium sorbate, polyquaternium-4, polyquaternium-7, limonene, benzyl salicylate, fragance parfum",
       "description": "A deep treatment that delivers intense moisture to dry, brittle hair, transforming it into soft, shiny strands",
@@ -6729,8 +6610,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein-free",
-            "glycerin-free"
+            "protein-free"
           ]
         }
       }
@@ -6753,8 +6633,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "curly",
         "coily",
         "premium",
-        "protein-free",
-        "glycerin-free"
+        "protein-free"
       ],
       "ingredients_raw": "water aqua eau, olea europaea fruit oil, cetearyl alcohol, cetyl alcohol, glycerin, butylene glycol, stearalkonium chloride, butyrospermum parkii butter, macadamia ternifolia seed oil, persea gratissima oil, ethyl macademiate, behentrimonium chloride, magnesium ascorbate, tocopherol, panthenol, argania spinosa kernel oil, propylene glycol, polyquaternium-7, sclerocarya birrea seed oil, vitis vinifera seed oil, citric acid, phenoxyethanol, polysorbate 20, isopropyl myristate, cetrimonium chloride, malic acid, potassium sorbate, limonene, hexyl cinnamal, sodium benzoate, fragance parfum",
       "description": "An oil-fusion treatment that infuses lightweight, non-greasy emollients to boost shine ",
@@ -6839,8 +6718,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein-free",
-            "glycerin-free"
+            "protein-free"
           ]
         }
       }
@@ -6863,8 +6741,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "coily",
         "high_porosity",
         "premium",
-        "protein",
-        "glycerin-free"
+        "protein"
       ],
       "ingredients_raw": "water aqua eau, cetearyl alcohol, isoamyl laurate, behentrimonium chloride, glycerin, glyceryl stearate se, cocos nucifera coconut oil, honey mel miel, butyrospermum parkii shea butter extract, hydrolyzed soy protein, prunus amygdalus dulcis sweet almond fruit extract, sclerocarya birrea seed oil, glycine soja soybean oil, phenoxyethanol, polyquaternium-67, glyceryl laurate, sodium gluconate, citric acid, lecithin, isopropyl alcohol, limonene, coumarin, linalool, alpha-isomethyl ionone, fragrance parfum",
       "description": "This conditoner delivers the moisture your curls crave and leaves your strands silky-soft and easy to detangle and style",
@@ -6925,8 +6802,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein",
-            "glycerin-free"
+            "protein"
           ]
         }
       }
@@ -6949,8 +6825,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "curly",
         "low_porosity",
         "premium",
-        "protein",
-        "glycerin-free"
+        "protein"
       ],
       "ingredients_raw": "water aqua eau, cetearyl alcohol, glycerin, butylene glycol, cetyl alcohol, hydrolyzed soy protein, hydrolyzed rice protein, isopropyl myristate, behentrimonium chloride, panthenol, ethyl macadamiate, hydrolyzed pea protein, cetrimonium chloride, olea europaea fruit oil, magnesium ascorbate, linum usitatissimum seed extract, citric acid, potassium sorbate, phenoxyethanol, stearalkonium chloride, polysorbate 20, limonene, benzyl salicylate, fragrance parfum",
       "description": "Restores amino acids and proteins to strengthen damaged hair, improve elasticity, and prevent breakage",
@@ -7008,8 +6883,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein",
-            "glycerin-free"
+            "protein"
           ]
         }
       }
@@ -7032,8 +6906,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "curly",
         "coily",
         "low_porosity",
-        "protein",
-        "glycerin-free"
+        "protein"
       ],
       "ingredients_raw": "aqua water eau, brassica alcohol, glycerin, brassicyl isoleucinate esylate, distearoylethyl dimonium chloride, capryloyl glycerin sebacic acid copolymer, diheptyl succinate, cetearyl alcohol, hydrolyzed hyaluronic acid, sodium hyaluronate, bixa orellana annatto seed extract, betula alba birch sap juice, polyquaternium-7, panthenol, cetrimonium chloride, arginine, lactic acid, parfum fragrance, limonene, linalool, sodium benzoate, potassium sorbate, phenoxyethanol, benzyl alcohol, dehydroacetic acid",
       "description": "Smooths frizz, restores shine, and deeply hydrates with moisturizing botanicals plus hyaluronic and lactic acids",
@@ -7087,8 +6960,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein",
-            "glycerin-free"
+            "protein"
           ]
         }
       }
@@ -7283,8 +7155,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "wavy",
         "curly",
         "coily",
-        "protein",
-        "glycerin-free"
+        "protein"
       ],
       "ingredients_raw": "water aqua, cetearyl alcohol, glycerin, zea mays starch, cetrimonium chloride, butyrospermum parkii butter, glycine soja oil, benzyl alcohol, parfum, alcohol, hydroxyethyl urea, benzoic acid, bht, ceteareth-60 myristyl glycol, hydrolyzed rice bran protein, hexyl cinnamal, kappaphycus alvarezii extract, hydrolyzed soy protein, sorbic acid, linalool, acacia senegal gum, laminaria saccharina extract, butylphenyl methylpropional, d-limonene, lactic acid, glycine, phenoxyethanol, tocopheryl acetate, ethylhexylglycerin, potassium sorbate, sodium benzoate",
       "description": "100% vegan collagen  supports healthy hair growth, enhances strength, and helps prevent age-related thinning",
@@ -7341,8 +7212,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein",
-            "glycerin-free"
+            "protein"
           ]
         }
       }
@@ -7365,8 +7235,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "curly",
         "coily",
         "high_porosity",
-        "protein-free",
-        "glycerin-free"
+        "protein-free"
       ],
       "ingredients_raw": "water, aqua, eau, cetearyl alcohol, glycerin, behentrimonium chloride, glycine soja soybean oil, polyquaternium-7, stearyl alcohol, neopentyl glycol diheptanoate, isododecane, butyrospermum parkii shea butter, panthenol, ricinus communis castor seed oil, persea gratissima avocado oil, salvia hispanica chia seed, honey, juglans regia walnut shell powder, urtica dioica nettle extract, tocopheryl acetate, hydroxyethylcellulose, potassium sorbate, phenoxyethanol, ethylhexylglycerin, fragrance parfum, geraniol",
       "description": "Delivers intense moisture, smoothing curls without weighing them down",
@@ -7429,8 +7298,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein-free",
-            "glycerin-free"
+            "protein-free"
           ]
         }
       }
@@ -7619,8 +7487,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "curly",
         "coily",
         "low_porosity",
-        "protein",
-        "glycerin-free"
+        "protein"
       ],
       "ingredients_raw": "water, soy lecithin, sodium chloride himalayan crystal salt, simmondsia chinensis jojoba, glycerin, polyquaternium-37, isoceteth-20, fragrance parfum, panthenol, hydrogenated polydecene, trideceth-6, psidium guajava fruit extract guava, ulmus fulva bark extract slippery elm, trigonella foenum graceum seed extract fenugreek, althaea officinalis root extract marshmallow root, honey extract, laminaria ochroleuca extract kelp, aloe barbadensis leaf juice, helianthus annuus sunflower extract, chamomilla recutita, extract chamomile, calendula officinalis extract marigold, silk amino acids, trehalose, urea, serine, pentylene glycol, algin, glyceryl polyacrylate, sodium hyaluronate, xanthan gum, hydroxypropyl guar, cetrimonium chloride, polyquaternium-7, dectyldimonium chloride, propylene glycol, oleth-20, cetearyl alcohol, ceteareth-33, sodium pca, sorbitol, benzyl alcohol, caprylyl glycol, pullulan, disodium phosphate, potassium phosphate, xylitol, potassium sorbate, sodium benzoate, benzoic acid, amyl cinnamal, limonene, isoeugenol, linalool",
       "description": "Restores strength, shine, and pH balance to damaged or color-treated curls while adding volume",
@@ -7688,8 +7555,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein",
-            "glycerin-free"
+            "protein"
           ]
         }
       }
@@ -7825,8 +7691,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "curly",
         "coily",
         "bonding",
-        "protein",
-        "glycerin-free"
+        "protein"
       ],
       "ingredients_raw": "water, cetearyl alcohol, propylene glycol, behentrimonium methosulfate, cetyl alcohol, phenoxyethanol, glycerin, stearamidopropyl dimethylamine, aloe barbadensis leaf juice, fragrance, hydroxypropyl methylcellulose, citric acid, sodium benzoate, potassium sorbate, hydroxypropylgluconamide, hydroxypropylammonium gluconate, quaternium-91, polyquaternium-37, dicaprylyl carbonate, cetrimonium chloride, simmondsia chinensis jojoba seed oil, cetrimonium methosulfate, etidronic acid, tocopheryl acetate, tocopherol, tetrasodium glutamate diacetate, linalool, lauryl glucoside, hydroxycitronellal, ascorbyl palmitate, panthenol, phytantriol, ascorbic acid",
       "description": "Repairs bonds, prevents split ends, and reduces breakage by 70% while improving detangling by 90% after one use",
@@ -7881,8 +7746,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein",
-            "glycerin-free"
+            "protein"
           ]
         }
       }
@@ -7908,8 +7772,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "high_porosity",
         "drugstore",
         "bonding",
-        "protein-free",
-        "glycerin-free"
+        "protein-free"
       ],
       "ingredients_raw": "water aqua eau, cetearyl alcohol, butylene glycol, bis-4-pca dimethicone, behentrimonium chloride, caprylic capric triglyceride, glycerin, cetrimonium chloride, ceteareth-20, disodium peg-12 dimethicone sulfosuccinate, acrylamidopropyltrimonium chloride acrylates copolymer, caesalpinia spinosa gum, isohexadecane, coceth-7, isopropyl alcohol, fragrance parfum, hexyl cinnamal, aminomethyl propanol, phenoxyethanol, ethylhexylglycerin, lactic acid",
       "description": "Strengthens hair, reduces breakage by 56% after one use, and leaves it softer, smoother, and bouncier",
@@ -7960,8 +7823,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein-free",
-            "glycerin-free"
+            "protein-free"
           ]
         }
       }
@@ -7984,8 +7846,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "curly",
         "coily",
         "bonding",
-        "protein",
-        "glycerin-free"
+        "protein"
       ],
       "ingredients_raw": "water aqua, cocos nucifera coconut fruit extract, cetearyl alcohol, glycerin, behentrimonium chloride, persea gratissima avocado oil, behenyl alcohol, cocos nucifera coconut oil, butyrospermum parkii shea butter, c12-15 alkyl benzoate, helianthus annuus sunflower seed oil, olea europaea olive fruit oil, pentaerythrityl tetraethylhexanoate, arginine, biotin, cocoyl hydrolyzed collagen, hydrolyzed vegetable protein, tocopherol, tocopheryl acetate, ceramide np, simmondsia chinensis jojoba seed oil, azadirachta indica seed oil, gardenia tahitensis flower extract, glycol distearate, caprylyl glycol, hydroxyethylcellulose, hydroxyethyl cetearamidopropyldimonium chloride, ethyl lauroyl arginate hcl, isopropyl alcohol, sodium nitrate, sodium benzoate, fragrance parfum, coumarin, benzyl benzoate",
       "description": "Restores and protects hair bonds weakened by chemicals, styling, or environmental stressors",
@@ -8077,8 +7938,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein",
-            "glycerin-free"
+            "protein"
           ]
         }
       }
@@ -8100,8 +7960,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "wavy",
         "curly",
         "coily",
-        "protein",
-        "glycerin-free"
+        "protein"
       ],
       "ingredients_raw": "aqua water eau, cetyl alcohol, glycerin, stearyl alcohol, glyceryl stearate se, prunus amygdalus dulcis sweet almond oil, carthamus tinctorius safflower seed extract, guar hydroxypropyltrimonium chloride, picea mariana bark black spruce extract, polyquaternium-7, hydrolyzed keratin, panthenol, simmondsia chinensis jojoba seed oil, tocopheryl acetate, aloe barbadensis aloe vera leaf juice, maltodextrin, parfum fragrance, citric acid, potassium sorbate, sodium benzoate, caprylyl glycol, myristyl alcohol, arachidyl alcohol, phenoxyethanol, benzyl salicylate, linalool, limonene",
       "description": "Protects against fading, damage, and breakage while boosting shine and rebuilding the hair’s natural barrier",
@@ -8155,8 +8014,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein",
-            "glycerin-free"
+            "protein"
           ]
         }
       }
@@ -8377,8 +8235,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "curly",
         "coily",
         "high_porosity",
-        "protein-free",
-        "glycerin-free"
+        "protein-free"
       ],
       "ingredients_raw": "water, glycine soja soybean oil, glycerin, cocos nucifera coconut oil, honey, polymide-1, caprylic capric triglyceride, butyrospermum parkii shea butter, fragrance, cetearyl alcohol, ceteareth-20, glyceryl stearate, aloe barbadensis leaf extract, olea europaea olive fruit oil, prunus amygdalus dulcis sweet almond oil, macadamia ternifolia macadamia seed oil, potassium hydroxide, xanthan gum, carbomer, tetrasodium edta, phenoxyethanol, caprylyl glycol, potassium sorbate, caramel",
       "description": "Detangles tight textures, defines looser curls, and hydrates with almond oil, coconut oil, and shea butter",
@@ -8450,8 +8307,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein-free",
-            "glycerin-free"
+            "protein-free"
           ]
         }
       }
@@ -8474,8 +8330,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "curly",
         "coily",
         "high_porosity",
-        "protein-free",
-        "glycerin-free"
+        "protein-free"
       ],
       "ingredients_raw": "water aqua, linum usitatissimum linseed extract, salvia hispanica chia seed extract, behentrimonium methosulfate, quaternium-87, cetearyl alcohol, cetyl alcohol, panthenol, mangifera indica mango seed butter, prunus amygdalus dulcis sweet almond oil, caprylhydroxamic acid, caprylyl glycol, glycerin, argania spinosa kernel oil, camellia sinensis leaf extract, simmondsia chinensis jojoba seed oil, peg ppg-8 3 diisostearate, astrocaryum vulgare kernel oil, tocopherol, olea europea olive fruit oil, euterpe oleracea acai fruit oil, mauritia flexuosa buriti fruit oil, fragrance, polyquaternium-73",
       "description": "A lightweight, vegan hair butter that delivers deep moisture for easy curl revival!",
@@ -8550,8 +8405,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein-free",
-            "glycerin-free"
+            "protein-free"
           ]
         }
       }
@@ -8573,8 +8427,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "wavy",
         "curly",
         "coily",
-        "protein-free",
-        "glycerin-free"
+        "protein-free"
       ],
       "ingredients_raw": "water aqua eau, caprylic capric triglyceride, cetearyl alcohol, cocos nucifera coconut oil, cetrimonium chloride, aloe barbadensis aloe vera leaf juice, trehalose, glycerin, fragrance parfum, hydroxypropyl starch phosphate, polyurethane-14, amp acrylates copolymer, pvp, behentrimonium chloride, cetyl alcohol, panthenol provitamin b5, butyrospermum parkii shea butter, beeswax, tamarindus indica tamarind fruit extract, ethylhexylglycerin, phenoxyethanol",
       "description": "A curl cream that defines texture without crunch, leaving curls bouncy, shiny, frizz-free, and weightless",
@@ -8638,8 +8491,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein-free",
-            "glycerin-free"
+            "protein-free"
           ]
         }
       }
@@ -8728,8 +8580,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "wavy",
         "curly",
         "coily",
-        "protein",
-        "glycerin-free"
+        "protein"
       ],
       "ingredients_raw": "water aqua, cetearyl alcohol, cetyl alcohol, helianthus annuus sunflower seed oil, glycerin, propanediol, sclerocarya birrea marula seed oil, mangifera indica mango seed butter, fragrance parfum, chenopodium quinoa seed oil, chenopodium quinoa seed extract, hibiscus rosa-sinensis flower extract, rosmarinus officinalis rosemary leaf extract, daucus carota sativa carrot root extract, oryza sativa rice extract, hydrolyzed soy protein, glycine max soybean seed extract, panax ginseng root extract, hydrolyzed vegetable protein, urtica dioica nettle extract, butylene glycol, cetrimonium chloride, gluconolactone, tetrasodium glutamate diacetate, calcium gluconate, guar hydroxypropyltrimonium chloride, sodium benzoate",
       "description": "Defines, hydrates, and protects curls with hibiscus, mango butter, and marula oil",
@@ -8799,8 +8650,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein",
-            "glycerin-free"
+            "protein"
           ]
         }
       }
@@ -8885,8 +8735,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "coily",
         "low_porosity",
         "drugstore",
-        "protein",
-        "glycerin-free"
+        "protein"
       ],
       "ingredients_raw": "water aqua, glycerin, vp va copolymer, propanediol, pvp, peg-40 hydrogenated castor oil, lactobacillus tomato fruit ferment extract, oryza sativa rice extract, keratin amino acids, leuconostoc radish root ferment filtrate, acyl coenzyme a desaturase, carbomer, fragrance parfum, disodium edta, phenoxyethanol, ethylhexylglycerin, sodium hydroxide",
       "description": "A flexible-firm hold gel that defines curls, controls frizz, and adds strength with protein",
@@ -8929,8 +8778,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein",
-            "glycerin-free"
+            "protein"
           ]
         }
       }
@@ -9104,8 +8952,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "curly",
         "coily",
         "low_porosity",
-        "protein",
-        "glycerin-free"
+        "protein"
       ],
       "ingredients_raw": "aqua, water, eau, butylene glycol, cocamidopropyl betaine, phyllostachys pubescens meristem cell lysate, argania spinosa callus culture extract, malus domestica fruit cell culture extract, vitis vinifera grape fruit cell extract, opuntia ficus-indica seed oil, prunus domestica seed extract, argania spinosa kernel oil, lupinus albus seed oil, mangifera indica mango seed oil, theobroma grandiflorum seed butter, adansonia digitata seed oil, carapa guaianensis seed oil, sclerocarya birrea seed oil, hydrolyzed pea protein, hydrolyzed coix lacryma-jobi ma-yuen seed, glutamic acid, sodium pca, pentylene glycol, isomalt, polyquaternium-10, polyquaternium-7, styrene vp copolymer, xanthan gum, polysorbate 20, lecithin, peg-60 hydrogenated castor oil, benzotriazolyl dodecyl p-cresol, glycerin, sodium benzoate, phenoxyethanol, parfum fragrance, yellow 5 ci 19140, blue ci 42090, red 33 ci 17200",
       "description": "A protein-packed leave-in foam that speeds up drying, protects against heat, fights frizz, and adds shine",
@@ -9186,8 +9033,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein",
-            "glycerin-free"
+            "protein"
           ]
         }
       }
@@ -9342,8 +9188,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "curly",
         "coily",
         "low_porosity",
-        "protein-free",
-        "glycerin-free"
+        "protein-free"
       ],
       "ingredients_raw": "water aqua eau, caprylic capric triglyceride, behentrimonium chloride, cocos nucifera coconut oil, cetearyl alcohol, polyurethane-14, amp-acrylates copolymer, pvp, trehalose, glycerin, stearyl alcohol, olea europaea olive fruit oil, butyrospermum parkii shea butter, hydroxypropyl starch phosphate, panthenol, melia azadirachta seed oil neem oil, equisetum arvense extract, aloe barbadensis leaf juice, humulus lupulus hops extract, ulmus fulva bark extract, urtica dioica nettle extract, euphorbia cerifera candelilla wax, ethylhexylglycerin, phenoxyethanol, fragrance parfum",
       "description": "A refreshing detangling spray that revives curls between washes and smooths freshly washed hair",
@@ -9412,8 +9257,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein-free",
-            "glycerin-free"
+            "protein-free"
           ]
         }
       }
@@ -9437,8 +9281,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "curly",
         "coily",
         "premium",
-        "protein-free",
-        "glycerin-free"
+        "protein-free"
       ],
       "ingredients_raw": "aqua, water, eau, cetearyl alcohol, cocos nucifera coconut oil, glycerin, hydroxyethylcellulose, behenyl alcohol, hydroxyethyl cetearamidopropyldimonium chloride, ceteareth-20, sodium benzoate, polyquaternium-10, parfum fragrance, citric acid, potassium sorbate, disodium edta, butyrospermum parkii shea butter, argania spinosa kernel oil, stearamidopropyl dimethylamine, aminomethyl propanol, limonene, coumarin, linalool, hydroxycitronellal, hexyl cinnamal, amyl cinnamal, cinnamyl alcohol, benzyl salicylate, isoeugenol, geraniol, citral, eugenol",
       "description": "Softens curls, controls frizz on no-cleanse days, and makes detangling and styling easy for all curl types",
@@ -9505,8 +9348,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein-free",
-            "glycerin-free"
+            "protein-free"
           ]
         }
       }
@@ -9938,8 +9780,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "curly",
         "coily",
         "low_porosity",
-        "protein",
-        "glycerin-free"
+        "protein"
       ],
       "ingredients_raw": "Water (Aqua), Polyquaternium-69, Isobutane, Vp/Va Copolymer, Hydrolyzed Vegetable Protein, Hydrolyzed Pea Protein, Mangifera Indica (Mango) Seed Butter, Theobroma Grandiflorum Seed Butter, Moringa Oleifera Seed Oil, Cysteine Hcl, Silybum Marianum Seed Extract, Helianthus Annuus (Sunflower) Seed Oil, Limnanthes Alba (Meadowfoam) Seed Oil, Urtica Dioica (Nettle) Extract, Malva Sylvestris (Mallow) Flower Extract, Dimethiconol Meadowfoamate, Sodium Pca, Magnesium Pca, Zinc Pca, Manganese Pca, Copaifera Officinalis (Balsam Copaiba) Resin, Opuntia Vulgaris Leaf Extract, Glycerin, Vinegar, Maltooligosyl Glucoside, Hydrogenated Starch Hydrolysate, Coco-Glucoside, Tapioca Starch, Phenoxyethanol, Caprylyl Glycol, Quaternium-95, Propanediol, Sodium Benzoate, Potassium Sorbate, Propane, Fragrance (Parfum), Limonene",
       "description": "A lightweight mousse that defines curls and waves with flexible hold and adds brilliant shine",
@@ -10000,8 +9841,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein",
-            "glycerin-free"
+            "protein"
           ]
         }
       }
@@ -10086,8 +9926,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "coily",
         "high_porosity",
         "bonding",
-        "protein",
-        "glycerin-free"
+        "protein"
       ],
       "ingredients_raw": "Water/Aqua/Eau, Xylitylglucoside, Hydroxyethylcellulose, Anhydroxylitol, Bis-Aminopropyl Diglycol Dimaleate, Glycerin, Propanediol, Maltitol, Polyimide-1, Guar Hydroxypropyltrimonium Chloride, Hydroxypropyl Starch Phosphate, Caprylyl/Capryl Glucoside, Xylitol, Aspergillus Ferment, Acacia Senegal Gum, Ethylhexylglycerin, Cetyl Hydroxyethylcellulose, Polyquaternium-10, Glycolipids, Arginine, Cocos Nucifera (Coconut) Oil, Persea Gratissima (Avocado) Oil, Sodium Cocoyl Glutamate, Olive Oil Polyglyceryl-6 Esters, Sodium Hydroxide, Citric Acid, Trisodium Ethylenediamine Disuccinate, Glyceryl Caprylate, Glyceryl Stearate, PG-Hydroxyethylcellulose Cocodimonium Chloride, Lactic Acid, Cetearyl Alcohol, Cocos Nucifera (Coconut) Fruit Juice, Cocos Nucifera (Coconut) Water, Glyceryl Undecylenate, Phospholipids, Polyglyceryl-10 Dioleate, Polyglyceryl-10 Oleate, Sodium Stearoyl Lactylate, Pelvetia Canaliculata Extract, Disodium Phosphate, Hydrated Silica, Silica Dimethyl Silylate, Caprylyl Glyceryl Ether, Sodium Phosphate, Polysorbate 60, Phenoxyethanol, Potassium Sorbate, Sodium Benzoate, Sorbic Acid, Glyoxal, Fragrance (Parfum), Limonene, Hexyl Cinnamal, Linalool, Citral, Citronellol, Yellow 5 (CI 19140), Yellow 6 (CI 15985)",
       "description": "A humidity-resistant gel with flexible hold that fights frizz, hydrates, and strengthens curl bonds",
@@ -10166,8 +10005,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein",
-            "glycerin-free"
+            "protein"
           ]
         }
       }
@@ -10330,8 +10168,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "curly",
         "coily",
         "bond_builder",
-        "protein-free",
-        "glycerin-free"
+        "protein-free"
       ],
       "ingredients_raw": "water aqua, bis-aminopropyl diglycol dimaleate, propylene glycol, cetearyl alcohol, behentrimonium methosulfate, cetyl alcohol, phenoxyethanol, glycerin, hydroxyethyl ethylcellulose, stearamidopropyl dimethylamine, quaternium-91, sodium benzoate, cetrimonium methosulfate, cetrimonium chloride, fragrance parfum, polyquaternium-37, tetrasodium edta, benzyl benzoate, etidronic acid, ascorbic acid, phytantriol, tocopheryl acetate, aloe barbadensis leaf juice, panthenol, simmondsia chinensis jojoba seed oil, citric acid, potassium sorbate",
       "description": "A pre-shampoo treatment to repair and strengthen hair from the inside out",
@@ -10384,8 +10221,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein-free",
-            "glycerin-free"
+            "protein-free"
           ]
         }
       }
@@ -10413,8 +10249,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "curly",
         "coily",
         "low_porosity",
-        "protein-free",
-        "glycerin-free"
+        "protein-free"
       ],
       "ingredients_raw": "aqua water, cetearyl alcohol, glycerin, behentrimonium chloride, juglans regia walnut shell powder, c15-19 alkane, cocos nucifera coconut oil, benzyl alcohol, palmitamidopropyltrimonium chloride, cocos nucifera coconut shell powder, parfum fragrance, piroctone olamine, chlorphenesin, salicylic acid, tocopherol, benzophenone-4, trisodium ethylenediamine disuccinate, citric acid, sorbic acid, bromelain, ananas sativus pineapple extract, lactobacillus ferment, limonene, ci 19140 yellow no5, ci 42090",
       "description": "A natural exfoliating treatment that removes dead skin and excess oil to prevent flakes and restore a healthy scalp",
@@ -10459,8 +10294,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein-free",
-            "glycerin-free"
+            "protein-free"
           ]
         }
       }
@@ -10482,8 +10316,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "wavy",
         "curly",
         "coily",
-        "protein",
-        "glycerin-free"
+        "protein"
       ],
       "ingredients_raw": "aqua water eau, cetearyl alcohol, cetrimonium chloride, argania spinosa argan kernel oil, hydroxypropyltrimonium hydrolyzed rice protein siloxysilicate, oryza sativa rice extract, leuconostoc radish root ferment filtrate, populus tremuloides bark extract, panthenol, sodium pca, glycerin, isopropyl palmitate, tocopherol, caprylyl glycol, tetrasodium glutamate diacetate, ethylhexylglycerin, distearyldimonium chloride, chlorphenesin, potassium hydroxide, citric acid, parfum fragrance, benzyl benzoate, citrus aurantium peel oil, limonene",
       "description": "Strengthening, hydrating treatment that will repair the look of dry, damaged and over-processed hair",
@@ -10534,8 +10367,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein",
-            "glycerin-free"
+            "protein"
           ]
         }
       }
@@ -11030,8 +10862,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "curly",
         "coily",
         "low_porosity",
-        "protein",
-        "glycerin-free"
+        "protein"
       ],
       "ingredients_raw": "aqua, organic helianthus annuus sunflower seed oil, canola oil, behentrimonium methosulfate colza oil, glyceryl stearate, glycerin, oenocarpus bataua, rahua, ungurahua oil, stearalkonium chloride, organic butyrospermum parkii shea butter, organic hydrolyzed quinoa, glycine, lavandula angustifolia lavender oil, eucalyptus globulus leaf oil, panthenol, potassium sorbate",
       "description": "Moisture and low protein penetrate deeply to strengthen, soften, and hydrate hair from root to tip",
@@ -11083,8 +10914,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein",
-            "glycerin-free"
+            "protein"
           ]
         }
       }
@@ -11107,8 +10937,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "curly",
         "coily",
         "low_porosity",
-        "protein-free",
-        "glycerin-free"
+        "protein-free"
       ],
       "ingredients_raw": "water aqua eau, cetearyl alcohol, glycerin, isoamyl laurate, sea silt, cetrimonium chloride, propanediol, prunus armeniaca apricot kernel oil, musa sapientum banana fruit extract, melia azadirachta leaf extract, bentonite, fragrance parfum, glyceryl stearate, 2-hexanediol, methyl diisopropyl propionamide, caprylhydroxamic acid, menthol, butylene glycol, citric acid, quartz, coumarin",
       "description": "A post-shampoo scalp mask with Sea Silt to purify, Neem/Menthol to soothe, and Apricot Oil to restore moisture levels",
@@ -11154,8 +10983,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein-free",
-            "glycerin-free"
+            "protein-free"
           ]
         }
       }
@@ -11178,8 +11006,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "curly",
         "coily",
         "low_porosity",
-        "protein",
-        "glycerin-free"
+        "protein"
       ],
       "ingredients_raw": "aqua water eau, cocamidopropyl hydroxysultaine, sodium methyl 2-sulfolaurate, sodium lauroyl methyl isethionate, disodium 2-sulfolaurate, glycerin, ferngully bio-repair blend, chlorophyllin-copper complex sclerocarya birrea seed oil, psidium guajava seed oil, astrocaryum murumuru seed butter, althaea officinalis flower extract, panthenol, olea europaea olive fruit oil, argania spinosa kernel oil, sodium hyaluronate, hydrolyzed rice protein, allantoin, hydrolyzed barley protein, lactic acid, fragrance parfum, guar hydroxypropyltrimonium chloride, potassium sorbate, sodium benzoate, ethylhexylglycerin",
       "description": "A gentle sulfate-free shampoo to nourish and hydrate your strands with a small touch of protein",
@@ -11243,8 +11070,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein",
-            "glycerin-free"
+            "protein"
           ]
         }
       }
@@ -11395,8 +11221,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "curly",
         "coily",
         "high_porosity",
-        "protein-free",
-        "glycerin-free"
+        "protein-free"
       ],
       "ingredients_raw": "water aqua, aloe barbadensis leaf juice powder, brassica campestris aleurites fordi oil copolymer, c13-15 alkane, polyquaternium-69, caprylic capric triglyceride, isopentyldiol, glycerin, phenethyl alcohol, fragrance, caprylhydroxamic acid, simmondsiachinensis jojoba seed oil, tocopheryl acetate, ananas sativus pineapple fruit extract, althaea officinalis marshmallow rootextract, equisetum arvense horsetail extract, urtica dioica nettle extract",
       "description": "Prevents heat damage while also bonding and repairing hair",
@@ -11437,8 +11262,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein-free",
-            "glycerin-free"
+            "protein-free"
           ]
         }
       }
@@ -11693,8 +11517,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "curly",
         "coily",
         "high_porosity",
-        "protein-free",
-        "glycerin-free"
+        "protein-free"
       ],
       "ingredients_raw": "aqua, water, eau, aloe barbadensis aloe vera leaf juice, behentrimonium chloride, glycerin, limnanthes alba meadowfoam seed oil, cetearyl alcohol, theobroma cacao cocoa seed butter, butyrospermum parkii shea butter, fragrance parfum, glyceryl stearate, cetyl alcohol, tocopherol, bacopa monnieri extract, eclipta prostrata extract, curcuma longa tumeric root extract, musa sapientum banana fruit extract, withania somnifera root extract, emblica officinalis fruit extract, acer saccharum sugar maple extract, hibiscus sabdariffa flower extract, bixa orellana seed extract, aegle marmelos root extract, desmodium gangeticum root extract, gmelina arborea root extract, oroxylum indicum root extract, premna serratifolia root extract, solanum indicum root extract, solanum xanthocarpum root extract, stereospermum suaveolens root extract, tribulus terrestris root extract, saccharum officinarum sugarcane extract, trigonella foenum-graecum seed extract, vaccinium myrtillus fruit extract, uraria picta root extract, linum usitatissimum linseed seed oil, sesamum indicum sesame seed oil, melia azadirachta neem seed oil, helianthus annuus sunflower seed oil, carthamus tinctorius safflower seed oil, brassica campestris rapeseed seed oil, orbignya speciosa kernel oil, astrocaryum murumuru seed butter, mangifera indica mango seed butter, cocos nucifera coconut fruit water, hydroxyethylcellulose, guar hydroxypropyltrimonium chloride, sodium stearoyl lactylate, polyquaternium-10, leuconostoc radish root ferment filtrate, tocopheryl acetate, citrus aurantium dulcis orange fruit extract, citrus limon lemon fruit extract, ethylhexylglycerin, citric acid, isopropyl alcohol, potassium sorbate, phenoxyethanol, glycine soja soybean oil, propylene glycol, potassium hydroxide, coumarin",
       "description": "A rich and moisturizing deep treatment / hair mask that is designed to restore hydration, add shine and smooth frizz",
@@ -11776,8 +11599,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein-free",
-            "glycerin-free"
+            "protein-free"
           ]
         }
       }
@@ -11800,8 +11622,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "curly",
         "coily",
         "low_porosity",
-        "protein",
-        "glycerin-free"
+        "protein"
       ],
       "ingredients_raw": "sodium chloride, water aqua, glycerin, sodium cocoyl isethionate, sodium methyl cocoyl taurate, coconut acid, cocamidopropyl betaine, propanediol, glyceryl laurate, hydrolyzed quinoa, hydrolyzed rice protein, phyllanthus emblica fruit extract, melia azadirachta leaf extract, zingiber officinale ginger root extract, quillaja saponaria extract, coconut alkanes, coco-caprylate caprate, capryloyl caproyl methyl glucamide, lauroyl myristoyl methyl glucamide, panthenol, maltodextrin, fragrance parfum, phenoxyethanol, ethylhexylglycerin, potassium sorbate, sodium benzoate",
       "description": "A protein-rich exfoliating shampoo to boost circulation, reduce buildup, and gently remove flakiness",
@@ -11837,8 +11658,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein",
-            "glycerin-free"
+            "protein"
           ]
         }
       }
@@ -11862,8 +11682,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "coily",
         "low_porosity",
         "premium",
-        "protein",
-        "glycerin-free"
+        "protein"
       ],
       "ingredients_raw": "water aqua, behentrimonium methosulfate, cetearyl alcohol, cocos nucifera coconut oil, peg-40 ppg-8 methylaminopropyl hydroxypropyl dimethicone copolymer, glycerin, simmondsia chinensis jojoba seed oil, caryocar brasiliense pequi fruit oil, propylene glycol dicaprylate dicaprate, hydrolyzed rice protein, polyquaternium-37, dipropylene glycol, phenoxyethanol, c10-40 isoalkylamidopropylethyldimonium ethosulfate, ppg-26-buteth-26, quaternium-33, ceteareth-20, caprylyl glycol, peg-40 hydrogenated castor oil, ppg-1 trideceth-6, fragrance parfum, tocopherol, benzyl alcohol, potassium sorbate, sodium benzoate f714-1",
       "description": "A lightweight curl primer that delivers deep moisture without buildup to leave hair feeling product-free",
@@ -11933,8 +11752,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein",
-            "glycerin-free"
+            "protein"
           ]
         }
       }
@@ -12029,8 +11847,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "wavy",
         "curly",
         "coily",
-        "protein",
-        "glycerin-free"
+        "protein"
       ],
       "ingredients_raw": "distilled water, fresh pineapple juice extract, aloe vera juice, glycerin, maltodextrin vp copolymer, gluconodeltalactone, sodium benzoate, hydoxyethycelluolose, hydrolyzed quinoa protein, phthalate-free fragrance",
       "description": "A frizz-fighting lightweight gel perfect for protecting against humidity",
@@ -12064,8 +11881,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein",
-            "glycerin-free"
+            "protein"
           ]
         }
       }
@@ -12092,8 +11908,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "curly",
         "coily",
         "high_porosity",
-        "protein",
-        "glycerin-free"
+        "protein"
       ],
       "ingredients_raw": "distilled water infused with organic aloe vera extract, chamomile extract, nettle leaf extract, slippery elm extract, bamboo extract, glycerin, glycine betaine beet sugar extract, hydroxyethylcellulose, xanthan gum, propanediol, phthalate-free fragrance, benzylalcohol, dehydroacetic acid, carbomer, jojoba seed oil simmondsia chinesis, aminomethyl propanol ph adjustor",
       "description": "A strong-hold gel that provides hold, definition, and shine for curls and coils.",
@@ -12141,8 +11956,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein",
-            "glycerin-free"
+            "protein"
           ]
         }
       }
@@ -12403,8 +12217,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "high_porosity",
         "normal_porosity",
         "featured",
-        "protein",
-        "glycerin-free"
+        "protein"
       ],
       "cost": 2.8,
       "asin": "B004KM1OEK",
@@ -12446,8 +12259,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein",
-            "glycerin-free"
+            "protein"
           ]
         }
       },
@@ -12463,8 +12275,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "normal_porosity",
         "high_porosity",
         "featured",
-        "protein-free",
-        "glycerin-free"
+        "protein-free"
       ],
       "ingredients_raw": "water aqua eau, dicaprylyl carbonate, cetearyl alcohol, coco-caprylate caprate, ricinus communis castor seed oil, behentrimonium chloride, glycerin, panthenol, butyrospermum parkii shea butter, simmondsia chinensis jojoba seed oil, guar hydroxypropyltrimonium chloride, polyquaternium-10, olea europaea olive leaf extract, tilia tomentosa bud extract, arctium majus root extract, arnica montana flower extract, calendula officinalis flower extract, chamomilla recutita matricaria flower extract, citrus limon lemon peel extract, hedera helix ivy leaf extract, lamium album extract, nasturtium officinale extract, pinus sylvestris bud extract, rosmarinus officinalis rosemary leaf extract, salvia officinalis sage leaf extract, tropaeolum majus flower extract, isopropyl alcohol, pentylene glycol, tocopherol, maltodextrin, cyclodextrin, pvp, cyamopsis tetragonoloba guar gum, xanthan gum, maltodextrin vp copolymer, ethylhexylglycerin, fragrance parfum, citric acid, sodium gluconate, phytic acid, phenoxyethanol, potassium sorbate, sodium benzoate, hydroxycitronellal, citronellol",
       "buy_links": [
@@ -12550,8 +12361,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein-free",
-            "glycerin-free"
+            "protein-free"
           ]
         }
       },
@@ -12735,8 +12545,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "curly",
         "coily",
         "high_porosity",
-        "protein-free",
-        "glycerin-free"
+        "protein-free"
       ],
       "ingredients_raw": "water aqua, cocamidopropyl betaine, lauryl glucoside, glycerin, sodium methyl cocoyl taurate, aloe barbadensis leaf juice powder, caprylyl capryl glucoside, sodium lauroyl sarcosinate, sodium cocoamphoacetate, inulin, fragrance parfum, benzyl alcohol, polyquaternium-7, potassium sorbate, saccharide isomerate, argan oil glycereth-8 esters, guar hydroxypropyltrimonium chloride, citric acid, sodium chloride, alpha-glucan oligosaccharide, trisodium ethylenediamine disuccinate, tocopherol, helianthus annuus sunflower seed oil, sodium citrate, hexyl cinnamal",
       "description": "A lightweight leave-in that prevents your hair from getting dry",
@@ -12795,8 +12604,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein-free",
-            "glycerin-free"
+            "protein-free"
           ]
         }
       }
@@ -12970,7 +12778,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "high_porosity",
         "featured",
         "bonding",
-        "protein-free",
+        "protein",
         "glycerin-free"
       ],
       "ingredients_raw": "hydrogenated ethylhexyl olivate, hydrogenated olive oil unsaponifiables, coco-caprylate caprate, shea butter ethyl esters, hydrogenated castor oil sebacic acid copolymer, prunus armeniaca apricot kernel oil, hippophae rhamnoides sea buckthorn fruit oil, lens esculenta lentil seed extract, hydrolyzed cicer chickpea seed extract, chenopodium quinoa seed extract, fragrance parfum, linalool, limonene, geraniol, benzyl alcohol, citronellol",
@@ -13002,10 +12810,12 @@ export const defaultProductDatabase: ProductDatabase = {
       "extensions": {
         "frizzbot": {
           "simple_humectants_number": 0,
-          "film_forming_humectants_number": 0,
+          "film_forming_humectants_number": 1,
           "emollients_number": 5,
           "simple_humectants": [],
-          "film_forming_humectants": [],
+          "film_forming_humectants": [
+            "Cicer Arietinum Seed Extract"
+          ],
           "emollients": [
             "Olive Oil",
             "Butyrospermum Parkii Shea Butter",
@@ -13013,10 +12823,10 @@ export const defaultProductDatabase: ProductDatabase = {
             "Apricot Kernel Oil",
             "Benzyl Alcohol"
           ],
-          "score": -76
+          "score": -80
         },
         "porosity": {
-          "high": 37,
+          "high": 38,
           "low": 0
         },
         "sebderm": {
@@ -13046,7 +12856,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein-free",
+            "protein",
             "glycerin-free"
           ]
         }
@@ -13479,8 +13289,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "coily",
         "low_porosity",
         "bonding",
-        "protein",
-        "glycerin-free"
+        "protein"
       ],
       "cost": 3.75,
       "asin": "B08WPNSHCD",
@@ -13535,8 +13344,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein",
-            "glycerin-free"
+            "protein"
           ]
         }
       },
@@ -13619,8 +13427,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "curly",
         "coily",
         "low_porosity",
-        "protein",
-        "glycerin-free"
+        "protein"
       ],
       "ingredients_raw": "aqua water eau, aloe barbadensis aloe vera extract, glycerin, panthenol, cetrimonium chloride, behentrimonium methosulfate, cetearyl alcohol, cetyl alcohol, caprylyl glycol, phenoxyethanol, sorbic acid, citrus sinensis orange peel oil expressed, lavandula angustifolia lavender oil althaea officinalis marshmallow leaf root extract, hydrolyzed adansonia digitata baobab seed extract, hydrolyzed quinoa, chamomille recutita matricaria flower extract, urtica dioica nettle leaf extract, equisetum arvense horsetail leaf extract, angelica archangelica angelica root extract, linalool, limonene",
       "description": "A lightweight, oil-free mist that moisturizes and refreshes curls without weighing them down",
@@ -13665,8 +13472,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein",
-            "glycerin-free"
+            "protein"
           ]
         }
       }
@@ -13741,8 +13547,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "low_porosity",
         "normal_porosity",
         "high_porosity",
-        "protein-free",
-        "glycerin-free"
+        "protein-free"
       ],
       "ingredients_raw": "aqua water eau, sodium decylglucosides hydroxypropylsulfonate, cocamidopropyl hydroxysultaine, sodium methyl 2-sulfolaurate, cocamidopropylamine oxide, disodium 2-sulfolaurate, glycerin, helianthus annuus sunflower seed oil, salvia hispanica seed chia oil, camellia japonica tsubaki seed oil, panthenol, phospholipids, glycine soja soybean oil, glycolipids, glycine soja soybean sterols, sodium methyl cocoyl taurate, codamidopropyl pg-dimonium chloride phosphate, peg-150 distearate, ppg-2 hydroxyethyl cocamide, polyquaternium-22, butylene gycol, dmdm hydantoin, disodium edta, sodium chloride, iodopropynl butylcarbamate, citric acid, bha, hexyl cinnamal, limonene, linalool, fragrance parfum",
       "buy_links": [
@@ -13786,8 +13591,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein-free",
-            "glycerin-free"
+            "protein-free"
           ]
         }
       },
@@ -13936,8 +13740,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "high_porosity",
         "normal_porosity",
         "featured",
-        "protein",
-        "glycerin-free"
+        "protein"
       ],
       "cost": 3,
       "ingredients_raw": "water aqua-eau, cocamidopropyl hydroxysultaine, sodium methyl cocoyl taurate, glycerin, caprylyl capryl glucoside, sodium cocoyl isethionate, glyceryl stearate se, sodium chloride, sodium lauroyl methyl isethionate, trisodium ethylenediamine disuccinate, guar hydroxypropyltrimonium chloride, plumeria actufolia flower extract, cananga odorata flower oil, lavandula angustifolia lavender oil, citrus aurantium dulcis orange peel oil, salvia sclarea clary oil, vanillin, pogostemon cablin oil, glycine soja soybean oil, sodium benzoate, pyrus malus apple fruit extract, potassium sorbate, simmondsia chinensis jojoba seed oil, oryza sativa rice extract, citric acid, hydrolyzed quinoa, hydrolyzed rice protein, calophyllum inophyllum tamanu oil, butyrospermum parkii shea butter, persia gratissima avocado oil, taraxacum officinale dandelion leaf extract, salvia officinalis sage leaf extract, melissa officinalis leaf extract, linalool, limonene",
@@ -13991,8 +13794,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein",
-            "glycerin-free"
+            "protein"
           ]
         }
       },
@@ -14008,8 +13810,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "featured",
         "women-owned",
         "low_ph",
-        "protein-free",
-        "glycerin-free"
+        "protein-free"
       ],
       "ingredients_raw": "water aqua, cocamidopropyl betaine, lauryl glucoside, glycerin, sodium methyl cocoyl taurate, aloe barbadensis leaf juice powder, caprylyl capryl glucoside, sodium lauroyl sarcosinate, sodium cocoamphoacetate, inulin, fragrance parfum, benzyl alcohol, polyquaternium-7, potassium sorbate, saccharide isomerate, argan oil glycereth-8 esters, guar hydroxypropyltrimonium chloride, citric acid, sodium chloride, alpha-glucan oligosaccharide, trisodium ethylenediamine disuccinate, tocopherol, helianthus annuus sunflower seed oil, sodium citrate, hexyl cinnamal",
       "description": "A gentle shampoo with lots of slip and a low pH (which helps prevent frizz).",
@@ -14068,8 +13869,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein-free",
-            "glycerin-free"
+            "protein-free"
           ]
         }
       }
@@ -14095,8 +13895,7 @@ export const defaultProductDatabase: ProductDatabase = {
       "tags": [
         "low_porosity",
         "normal_porosity",
-        "protein",
-        "glycerin-free"
+        "protein"
       ],
       "asin": "B074Q2CNMY",
       "id": "pure_harmony_hairbath",
@@ -14149,8 +13948,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein",
-            "glycerin-free"
+            "protein"
           ]
         }
       },
@@ -14176,8 +13974,7 @@ export const defaultProductDatabase: ProductDatabase = {
       "tags": [
         "high_porosity",
         "normal_porosity",
-        "protein",
-        "glycerin-free"
+        "protein"
       ],
       "asin": "B002RX2QFA",
       "cost": 3,
@@ -14231,8 +14028,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein",
-            "glycerin-free"
+            "protein"
           ]
         }
       },
@@ -14258,8 +14054,7 @@ export const defaultProductDatabase: ProductDatabase = {
       "tags": [
         "low_porosity",
         "normal_porosity",
-        "protein-free",
-        "glycerin-free"
+        "protein-free"
       ],
       "asin": "B0BHD3JKTL",
       "cost": 6,
@@ -14300,8 +14095,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein-free",
-            "glycerin-free"
+            "protein-free"
           ]
         }
       },
@@ -14318,8 +14112,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "normal_porosity",
         "featured",
         "low_porosity",
-        "protein",
-        "glycerin-free"
+        "protein"
       ],
       "buy_links": [
         {
@@ -14362,8 +14155,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein",
-            "glycerin-free"
+            "protein"
           ]
         }
       },
@@ -14379,8 +14171,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "high_porosity",
         "normal_porosity",
         "featured",
-        "protein-free",
-        "glycerin-free"
+        "protein-free"
       ],
       "ingredients_raw": "water aqua, cocamidopropyl betaine, sodium methyl cocoyl taurate, lauryl glucoside, sodium chloride, peg-120 methyl glucose trioleate, betaine, helianthus annuus sunflower seed oil, aloe barbadensis leaf juice, selaginella lepidophylla resurrection flower extract, ocimum basilicum basil leaf extract, piper nigrum black pepper seed extract, rosmarinus officinalis rosemary leaf extract, salvia officinalis sage leaf extract, carapa guaianensis andiroba seed oil, propanediol, glycerin, guar hydroxypropyltrimonium chloride, polyquaternium-10, citric acid, phenoxyethanol, sodium benzoate, potassium sorbate, fragrance parfum, limonene, linalool",
       "buy_links": [
@@ -14443,8 +14234,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein-free",
-            "glycerin-free"
+            "protein-free"
           ]
         }
       }
@@ -14459,8 +14249,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "low_porosity",
         "normal_porosity",
         "featured",
-        "protein-free",
-        "glycerin-free"
+        "protein-free"
       ],
       "ingredients_raw": "water aqua eau, glycerin, coco-glucoside, decyl glucoside, sodium methyl cocoyl taurate, xanthan gum, saccharide isomerate, guar hydroxypropyltrimonium chloride, polyquaternium-10, tilia tomentosa bud extract, olea europaea olive leaf extract, arctium majus root extract, arnica montana flower extract, calendula officinalis flower extract, chamomilla recutita matricaria flower extract, citrus limon lemon peel extract, hedera helix ivy leaf extract, lamium album extract, nasturtium officinale extract, pinus sylvestris bud extract, rosmarinus officinalis rosemary leaf extract, salvia officinalis sage leaf extract, tropaeolum majus flower extract, pentylene glycol, panthenol, tocopherol, cyclodextrin, sodium chloride, cyamopsis tetragonoloba guar gum, fragrance parfum, citric acid, sodium hydroxide, sodium gluconate, sodium citrate, phytic acid, sodium benzoate, potassium sorbate, hydroxycitronellal, citronellol",
       "buy_links": [
@@ -14515,8 +14304,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein-free",
-            "glycerin-free"
+            "protein-free"
           ]
         }
       }
@@ -14531,8 +14319,7 @@ export const defaultProductDatabase: ProductDatabase = {
       "tags": [
         "high porosity",
         "low porosity",
-        "protein",
-        "glycerin-free"
+        "protein"
       ],
       "cost": 0.5,
       "buy_links": [
@@ -14584,8 +14371,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein",
-            "glycerin-free"
+            "protein"
           ]
         }
       },
@@ -14663,8 +14449,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "low_porosity",
         "normal_porosity",
         "high_porosity",
-        "protein-free",
-        "glycerin-free"
+        "protein-free"
       ],
       "buy_links": [
         {
@@ -14715,8 +14500,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein-free",
-            "glycerin-free"
+            "protein-free"
           ]
         }
       }
@@ -14951,8 +14735,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "curly",
         "samples",
         "bonding",
-        "protein-free",
-        "glycerin-free"
+        "protein-free"
       ],
       "ingredients_raw": "water aqua eau, sodium c14-16 olefin sulfonate, cocamidopropyl betaine, fragrance parfum, cocamide mipa, glycol distearate, guar hydroxypropyltrimonium chloride, benzyl alcohol, panthenol, polyquaternium-44, polyquaternium-7, polysorbate 20, dehydroacetic acid, citric acid, sodium gluconate, simmondsia chinensis jojoba seed oil, aloe barbadensis leaf juice, tocopheryl acetate, decyl glucoside, glycerin, simmondsia chinensis jojoba seed extract",
       "description": "This shampoo cleanses impurities and excess oils without stripping hair",
@@ -15007,8 +14790,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein-free",
-            "glycerin-free"
+            "protein-free"
           ]
         }
       }
@@ -15079,8 +14861,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "curly",
         "coily",
         "samples",
-        "protein-free",
-        "glycerin-free"
+        "protein-free"
       ],
       "ingredients_raw": "aqua water eau, coco-glucoside, laureth-6 carboxylic acid, peg-120 methyl glucose dioleate, glycerin, panthenol, peg-7 glyceryl cocoate, polyquaternium-10, peg-75 shea butter glycerides, cocos nucifera coconut fruit extract, theobroma cacao cocoa seed butter, theobroma grandiflorum seed butter, helianthus annuus sunflower seed oil, tocopherol, betaine, parfum fragrance, hydroxypropyl guar hydroxypropyltrimonium chloride, peg-4, peg-6, castor oil hydrogenated ethoxylated, peg-7, peg-8, sodium hydroxide, disodium edta, potassium sorbate, sodium benzoate, methylchloroisothiazolinone, methylisothiazolinone, linalool, limonene, hexyl cinnamal",
       "description": "A sulfate-free shampoo that removes buildup without stripping moisture, leaving curls soft, shiny, and defined",
@@ -15139,8 +14920,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein-free",
-            "glycerin-free"
+            "protein-free"
           ]
         }
       }
@@ -15163,8 +14943,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "curly",
         "coily",
         "low_porosity",
-        "protein-free",
-        "glycerin-free"
+        "protein-free"
       ],
       "ingredients_raw": "aqua water eau, sodium cocoyl isethionate, cocamidopropyl betaine, glycerin, sodium chloride, hydrolyzed hyaluronic acid, sodium hyaluronate, bixa orellana annatto seed extract, aloe barbadensis aloe vera leaf juice, betula alba birch sap juice, polyquaternium-7, panthenol, guar hydroxypropyltrimonium chloride, tocopherol, maltodextrin, coco-glucoside, glyceryl oleate, lactic acid, hydrogenated palm glycerides citrate, tetrasodium edta, cocamidopropyl dimethylamine, sodium hydroxide, citric acid, parfum fragrance, limonene, linalool, potassium sorbate, sodium benzoate, phenoxyethanol, benzyl alcohol, dehydroacetic acid",
       "description": "A daily go-to shampoo infused with hyaluronic and lactic acids that gently cleanses while boosting smoothness and shine",
@@ -15203,8 +14982,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein-free",
-            "glycerin-free"
+            "protein-free"
           ]
         }
       }
@@ -15291,8 +15069,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "coily",
         "low_porosity",
         "bonding",
-        "protein",
-        "glycerin-free"
+        "protein"
       ],
       "ingredients_raw": "water eau, disodium laureth sulfosuccinate, disodium lauryl sulfosuccinate, glycerin, cocamidopropyl betaine, parfum fragrance, acrylates c10-30 alkyl acrylate crosspolymer, sodium cocoyl isethionate, saccharomyces cerevisiae extract, yeast extract extrait de levure, beta-glucan, inulin, maltodextrin, bifida ferment lysate, lactobacillus ferment lysate, anthemis nobilis flower water, rosmarinus officinalis rosemary extract, biotin, caffeine, melissa officinalis flower leaf stem water, houttuynia cordata extract, panax ginseng root extract, paeonia suffruticosa branch flower leaf extract, paeonia suffruticosa root extract, artemisia annua extract, azadirachta indica leaf extract, camellia sinensis leaf extract, mentha arvensis leaf extract, centella asiatica leaf extract, hyaluronic acid, polygonum multiflorum root extract, panax ginseng leaf stem extract, arginine, benzyl alcohol, aspartic acid, polylysine, zingiber officinale ginger root extract, ganoderma lucidum mushroom extract, pca, serine, glycine, alanine, althaea officinalis root extract, calendula officinalis flower extract, chamaecyparis obtusa leaf extract, phellinus linteus extract, valine, dehydroacetic acid, isoleucine, proline, threonine, histidine, phenylalanine, sodium pca, alchemilla vulgaris extract, vinegar vinaigre, zea mays corn starch, dextrin, peg-crosspolymer, caprylyl glycol, di-c12-13 alkyl malate, polyquaternium-7, microcrystalline cellulose, cocamide mea, coco-glucoside, glyceryl oleate, menthol, panthenol, salicylic acid, coconut acid, niacinamide, ppg-3 caprylyl ether, mannitol, chromium hydroxide green ci 77289, sodium isethionate, tetrasodium edta, methylpropanediol, ethylhexylglycerin, chlorophyllin-copper complex, citric acid, potassium hydroxide, pentylene glycol, alcohol, butylene glycol, 2-hexanediol, sodium lactate, potassium sorbate, hexylene glycol, sodium chloride, sodium benzoate",
       "description": "With probiotic beads, biotin, rosemary, and caffeine to support scalp health and promote stronger, healthier hair growth",
@@ -15386,8 +15163,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein",
-            "glycerin-free"
+            "protein"
           ]
         }
       }
@@ -15418,8 +15194,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "curly",
         "coily",
         "bonding",
-        "protein",
-        "glycerin-free"
+        "protein"
       ],
       "ingredients_raw": "water aqua eau, sodium lauroyl methyl isethionate, cocamidopropyl hydroxysultaine, potassium cocoyl glycinate, disodium cocoyl glutamate, sodium lauroyl sarcosinate, potassium cocoate, decyl glucoside, glycereth-26, bis-aminopropyl diglycol dimaleate, cocamidopropylamine oxide, disodium laureth sulfosuccinate, glycol distearate, sodium cocoyl glutamate, methyl gluceth-20, acrylates copolymer, peg-120 methyl glucose dioleate, amodimethicone, citric acid, sodium lauryl sulfoacetate, polyquaternium-10, ethylhexylglycerin, divinyldimethicone dimethicone copolymer, polyquaternium-11, trisodium ethylenediamine disuccinate, guar hydroxypropyltrimonium chloride, c11-15 pareth-7, laureth-9, glycerin, trideceth-12, c12-13 pareth-23, c12-13 pareth-3, hydrolyzed vegetable protein, pg-propyl silanetriol, panthenol, acetic acid, tetrasodium edta, pentasodium triphosphate, sodium hydroxide, disodium edta, helianthus annus sunflower seed oil, tocopherol, prunus armeniaca apricot kernel oil, pseudozyma epicola camellia sinensis seed oil ferment extract filtrate, pseudozyma epicola argania spinosa kernel oil ferment filtrate, quaternium-95, propanediol, helianthus annus sunflower seed extract, peg-8, euterpe oleracea fruit extract, punica granatum extract, rosemarinus officinalis rosemary leaf extract, musa sapientum banana fruit extract, origanum vulgare lear extract, morinda citrifolia fruit extract, articum lappa root extract, peg-8 smdi copolymer, sodium hyaluronate, palmitoyl myristyl serinate, sodium polyacrylate, pentaerythrityl tetra-di-t-butyl hydroxyhydrocinnamate, biotin, benzoic acid, phenoxyethanol, chlorphenesin, potassium sorbate, sodium benzoate, fragrance parfum, citral, hexyl cinnamal, limonene",
       "description": "Uses Olaplex’s bonding technology to gently cleanse, strengthen, and add shine while repairing damage",
@@ -15484,8 +15259,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein",
-            "glycerin-free"
+            "protein"
           ]
         }
       }
@@ -15567,8 +15341,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "curly",
         "coily",
         "low_porosity",
-        "protein-free",
-        "glycerin-free"
+        "protein-free"
       ],
       "ingredients_raw": "water aqua eau, vp va copolymer, propylene glycol, glycerin, panthenol, oleth-20, carbomer, triethanolamine, polyquaternium-11, parfum, benzyl alcohol, caprylyl glycol, benzoic acid, amyl cinnamal, geraniol, linalool",
       "description": "Spray gel that delivers the hold of a gel with added definition, volume, and shine—made with gentle, natural ingredients",
@@ -15604,8 +15377,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein-free",
-            "glycerin-free"
+            "protein-free"
           ]
         }
       }
@@ -15739,8 +15511,7 @@ export const defaultProductDatabase: ProductDatabase = {
       ],
       "tags": [
         "featured",
-        "protein",
-        "glycerin-free"
+        "protein"
       ],
       "ingredients_raw": "aqua water, propanediol, butylene glycol, glycerin, caffeine, biotinoyl tripeptide-1, acetyl tetrapeptide-3, larix europaea wood extract, pisum sativum extract, scutellaria baicalensis root extract, triticum vulgare germ extract, glycine soja germ extract, trifolium pratense flower extract, camellia sinensis leaf extract, apigenin, oleanolic acid, arginine, glycine, calcium gluconate, zinc chloride, lactic acid, gluconolactone, dextran, maltodextrin, hydroxyethylcellulose, xanthan gum, pentylene glycol, dimethyl isosorbide, polysorbate 20, ppg-26-buteth-26, peg-40 hydrogenated castor oil, trisodium ethylenediamine disuccinate, sodium metabisulfite, sodium benzoate, phenoxyethanol, chlorphenesin",
       "buy_links": [
@@ -15811,8 +15582,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein",
-            "glycerin-free"
+            "protein"
           ]
         }
       }
@@ -15941,8 +15711,7 @@ export const defaultProductDatabase: ProductDatabase = {
       ],
       "tags": [
         "featured",
-        "protein",
-        "glycerin-free"
+        "protein"
       ],
       "buy_links": [
         {
@@ -16045,8 +15814,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein",
-            "glycerin-free"
+            "protein"
           ]
         }
       }
@@ -16073,8 +15841,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "curly",
         "coily",
         "low_porosity",
-        "protein",
-        "glycerin-free"
+        "protein"
       ],
       "ingredients_raw": "aqua, water, eau, peg-40 hydrogenated castor oil, alcohol denat, glycerin, propylene glycol, sorbitol, apple cider vinegar, menthol, saccharomyces rice ferment filtrate, hydrolyzed corn protein, hydrolyzed wheat protein, hydrolyzed soy protein, panax ginseng root extract, leuconostoc radish root ferment filtrate, shea butter ethyl esters, sodium hyaluronate, pentylene glycol, butylene glycol, xanthan gum, ethylhexylglycerin, disodium edta, sodium hydroxide, phenoxyethanol, t-butyl alcohol, parfum fragrance, linalool",
       "description": "A nourishing Japanese sake rinse that restores your scalp’s natural balance while removing buildup and impurities for optimal scalp health",
@@ -16127,8 +15894,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein",
-            "glycerin-free"
+            "protein"
           ]
         }
       }

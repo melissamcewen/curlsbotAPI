@@ -82,13 +82,25 @@ export function autoTagger(analysis: AnalysisResult): AutoTaggerAnalysis {
         break;
 
       case 'ingredient':
-        shouldApplyTag = analysis.ingredients.some((ingredient) => {
-          const hasIngredient = Array.isArray(rule.value)
-            ? rule.value.includes(ingredient.name.toLowerCase())
-            : ingredient.name.toLowerCase() ===
-              (rule.value as string).toLowerCase();
-          return rule.negate ? !hasIngredient : hasIngredient;
-        });
+        if (rule.negate) {
+          // For negated rules (like glycerin-free), ALL ingredients must NOT have the ingredient
+          shouldApplyTag = analysis.ingredients.every((ingredient) => {
+            const hasIngredient = Array.isArray(rule.value)
+              ? rule.value.includes(ingredient.name.toLowerCase())
+              : ingredient.name.toLowerCase() ===
+                (rule.value as string).toLowerCase();
+            return !hasIngredient;
+          });
+        } else {
+          // For positive rules, ANY ingredient can have the ingredient
+          shouldApplyTag = analysis.ingredients.some((ingredient) => {
+            const hasIngredient = Array.isArray(rule.value)
+              ? rule.value.includes(ingredient.name.toLowerCase())
+              : ingredient.name.toLowerCase() ===
+                (rule.value as string).toLowerCase();
+            return hasIngredient;
+          });
+        }
         break;
 
       case 'string':
