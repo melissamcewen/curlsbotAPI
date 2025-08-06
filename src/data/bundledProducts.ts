@@ -2273,7 +2273,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "protein"
       ],
       "ingredients_raw": "water aqua eau, sodium lauroyl methyl isethionate, cocamidopropyl hydroxysultaine, potassium cocoyl glycinate, disodium cocoyl glutamate, sodium lauroyl sarcosinate, potassium cocoate, decyl glucoside, glycereth-26, bis-aminopropyl diglycol dimaleate, cocamidopropylamine oxide, disodium laureth sulfosuccinate, glycol distearate, sodium cocoyl glutamate, methyl gluceth-20, acrylates copolymer, peg-120 methyl glucose dioleate, amodimethicone, citric acid, sodium lauryl sulfoacetate, polyquaternium-10, ethylhexylglycerin, divinyldimethicone dimethicone copolymer, polyquaternium-11, trisodium ethylenediamine disuccinate, guar hydroxypropyltrimonium chloride, c11-15 pareth-7, laureth-9, glycerin, trideceth-12, c12-13 pareth-23, c12-13 pareth-3, hydrolyzed vegetable protein, pg-propyl silanetriol, panthenol, acetic acid, tetrasodium edta, pentasodium triphosphate, sodium hydroxide, disodium edta, helianthus annus sunflower seed oil, tocopherol, prunus armeniaca apricot kernel oil, pseudozyma epicola camellia sinensis seed oil ferment extract filtrate, pseudozyma epicola argania spinosa kernel oil ferment filtrate, quaternium-95, propanediol, helianthus annus sunflower seed extract, peg-8, euterpe oleracea fruit extract, punica granatum extract, rosemarinus officinalis rosemary leaf extract, musa sapientum banana fruit extract, origanum vulgare lear extract, morinda citrifolia fruit extract, articum lappa root extract, peg-8 smdi copolymer, sodium hyaluronate, palmitoyl myristyl serinate, sodium polyacrylate, pentaerythrityl tetra-di-t-butyl hydroxyhydrocinnamate, biotin, benzoic acid, phenoxyethanol, chlorphenesin, potassium sorbate, sodium benzoate, fragrance parfum, citral, hexyl cinnamal, limonene",
-      "description": "A highly concentrated conditioner with Olaplex’s bonding technology that repairs, strengthens, and moisturizes hair prone to damage or dryness",
+      "description": "A highly concentrated conditioner with Olaplex’s bonding technology that repairs hair prone to damage or dryness",
       "id": "no._5_bond_maintenance_conditioner",
       "systems_excluded": [],
       "status": "warning",
@@ -2332,6 +2332,62 @@ export const defaultProductDatabase: ProductDatabase = {
               "reason": "Contains fatty acids that can feed Malassezia yeast"
             }
           ]
+        },
+        "autoTagger": {
+          "tags": [
+            "protein"
+          ]
+        }
+      }
+    },
+    "crack_conditioner": {
+      "name": "Crack Conditioner",
+      "brand": "Crack",
+      "buy_links": [
+        {
+          "url": "https://amzn.to/40PkTmY",
+          "retailer": "Amazon"
+        }
+      ],
+      "product_categories": [
+        "conditioners"
+      ],
+      "tags": [
+        "protein"
+      ],
+      "ingredients_raw": "water aqua, dimethicone, dimethiconol,  laureth-23, laureth-4, cetyl alcohol, cetrimonium chloride, fragrance parfum, phenoxyethanol, panthenol, benzoic acid, potassium sorbate, hydrolyzed wheat protein, tetrasodium glutamate diacetate, gaultheria procumgens wintergreen leaf, anthemis nobilis flower, calendula officinalis flower, glycerin, geraniol, linalool, limonene",
+      "description": "A rare find: a conditioner that does not contain any ingredients known to feed Malassezia, the fungus that causes seborrheic dermatitis.",
+      "id": "crack_conditioner",
+      "systems_excluded": [],
+      "status": "warning",
+      "extensions": {
+        "frizzbot": {
+          "simple_humectants_number": 2,
+          "film_forming_humectants_number": 2,
+          "emollients_number": 4,
+          "simple_humectants": [
+            "Panthenol",
+            "Glycerin"
+          ],
+          "film_forming_humectants": [
+            "Hydrolyzed Wheat Protein",
+            "Sodium Glutamate"
+          ],
+          "emollients": [
+            "Dimethicone",
+            "Dimethiconol",
+            "Cetyl Alcohol",
+            "Cetrimonium Chloride"
+          ],
+          "score": -73
+        },
+        "porosity": {
+          "high": 100,
+          "low": 100
+        },
+        "sebderm": {
+          "hasTriggers": false,
+          "triggers": []
         },
         "autoTagger": {
           "tags": [
