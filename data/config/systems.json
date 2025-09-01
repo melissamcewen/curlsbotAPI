@@ -12,7 +12,7 @@
         "no_astringents",
         "no_water_insoluble_silicones",
         "sulfate_free",
-        "no_petroleum"
+        "no_mineral_oil"
       ]
     },
     {
@@ -24,7 +24,7 @@
         "drying_alcohol",
         "no_water_insoluble_silicones",
         "no_waxes",
-        "no_petroleum",
+        "no_mineral_oil",
         "caution_silicones"
       ]
     },
@@ -37,7 +37,7 @@
         "drying_alcohol",
         "no_water_insoluble_silicones",
         "no_waxes",
-        "no_petroleum",
+        "no_mineral_oil",
         "caution_silicones"
       ]
     }

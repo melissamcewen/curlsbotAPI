@@ -480,6 +480,15 @@ export const defaultDatabase: IngredientDatabase = {
       "status": "ok",
       "group": "alcohols"
     },
+    "c20_22_alcohol": {
+      "name": "C20-22 Alcohol",
+      "id": "c20_22_alcohol",
+      "categories": [
+        "emollient_alcohols"
+      ],
+      "status": "ok",
+      "group": "alcohols"
+    },
     "alkylbenzene_sulfonate": {
       "name": "Alkylbenzene Sulfonate",
       "id": "alkylbenzene_sulfonate",
@@ -1690,7 +1699,7 @@ export const defaultDatabase: IngredientDatabase = {
           "description": "Mineral oil is likely to coat the hair rather than soak in, based on its chemistry"
         }
       ],
-      "status": "ok",
+      "status": "warning",
       "group": "oils"
     },
     "olive_oil": {
@@ -5063,7 +5072,7 @@ export const defaultDatabase: IngredientDatabase = {
       "categories": [
         "non_water_soluble_waxes"
       ],
-      "description": "Not a true wax, but functionally acts like one.Forms an extremely water repellent barrier on your hair that isn't breathable. Very hard to remove, worse than silicones. Not recommended.",
+      "description": "Not a true wax, but functionally acts like one. Forms an extremely water repellent barrier on your hair that isn't breathable. Very hard to remove, worse than silicones. Not recommended.",
       "status": "warning",
       "group": "waxes"
     }
@@ -5470,7 +5479,7 @@ export const defaultSystems: System[] = [
       "no_astringents",
       "no_water_insoluble_silicones",
       "sulfate_free",
-      "no_petroleum"
+      "no_mineral_oil"
     ]
   },
   {
@@ -5482,7 +5491,7 @@ export const defaultSystems: System[] = [
       "drying_alcohol",
       "no_water_insoluble_silicones",
       "no_waxes",
-      "no_petroleum",
+      "no_mineral_oil",
       "caution_silicones"
     ]
   },
@@ -5495,7 +5504,7 @@ export const defaultSystems: System[] = [
       "drying_alcohol",
       "no_water_insoluble_silicones",
       "no_waxes",
-      "no_petroleum",
+      "no_mineral_oil",
       "caution_silicones"
     ]
   }
@@ -5618,15 +5627,15 @@ export const defaultSettings: Record<string, Setting> = {
     "defaultStatus": "warning",
     "guide": "/categories/soap"
   },
-  "no_petroleum": {
-    "id": "no_petroleum",
-    "name": "Petroleum Oils",
-    "description": "These are petroleum based ingredients that are often avoided for their build up potential as well as their petro-based origin.",
-    "categories": [
-      "petroleum_oils"
+  "no_mineral_oil": {
+    "id": "no_mineral_oil",
+    "name": "Mineral Oil",
+    "description": "The original Curly Girl Handbook mentions mineral oil in one chapter, but there is no scientific evidence to suggest it is harmful. We mark it as caution because some people consider it non-cgm.",
+    "ingredients": [
+      "mineral_oil"
     ],
-    "defaultStatus": "warning",
-    "guide": "/categories/petroleum-oils"
+    "defaultStatus": "caution",
+    "guide": "/ingredients/mineral-oil"
   }
 };
 

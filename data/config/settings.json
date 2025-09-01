@@ -117,14 +117,14 @@
       "guide": "/categories/soap"
     },
     {
-      "id": "no_petroleum",
-      "name": "Petroleum Oils",
-      "description": "These are petroleum based ingredients that are often avoided for their build up potential as well as their petro-based origin.",
-      "categories": [
-        "petroleum_oils"
+      "id": "no_mineral_oil",
+      "name": "Mineral Oil",
+      "description": "The original Curly Girl Handbook mentions mineral oil in one chapter, but there is no scientific evidence to suggest it is harmful. We mark it as caution because some people consider it non-cgm.",
+      "ingredients": [
+        "mineral_oil"
       ],
-      "defaultStatus": "warning",
-      "guide": "/categories/petroleum-oils"
+      "defaultStatus": "caution",
+      "guide": "/ingredients/mineral-oil"
     }
   ]
 }

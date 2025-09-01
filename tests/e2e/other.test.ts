@@ -10,7 +10,7 @@ import {
 /* THESE ARE PRODUCTION TESTS USE THE DATA IN src/data/bundledData.ts */
 
 const list = `some essential oil, sulfated castor oil, cetearyl
-alcohol, Isopropanolamine, polyquat 1, 1, C10-40 Isoalkylamidopropylethyldimonium Ethosulfate`;
+alcohol, Isopropanolamine, polyquat 1, 1, C10-40 Isoalkylamidopropylethyldimonium Ethosulfate, c20-22 alcohols, paraffinum liquidum`;
 
 describe('Handling of other ingredients under the default system', () => {
   const analyzer = new Analyzer({
@@ -18,8 +18,8 @@ describe('Handling of other ingredients under the default system', () => {
     settings: defaultSettings,
   });
   const result = analyzer.analyze(list);
-  it('should have a ok status', () => {
-    expect(result.status).toBe('ok');
+  it('should have a caution status', () => {
+    expect(result.status).toBe('caution');
   });
 
   it('should normalize the list', () => {
@@ -30,6 +30,8 @@ describe('Handling of other ingredients under the default system', () => {
       'isopropanolamine',
       'polyquat 1',
       'c10-40 isoalkylamidopropylethyldimonium ethosulfate',
+      'c20-22 alcohols',
+      'paraffinum liquidum',
     ]);
   });
  it('should not include 1 as an ingredient', () => {
@@ -78,6 +80,20 @@ describe('Handling of other ingredients under the default system', () => {
         category: 'other',
         status: 'ok',
       },
+      {
+        normalized: 'c20-22 alcohols',
+        ingredientId: 'c20_22_alcohol',
+        category: 'emollient_alcohols',
+        status: 'ok',
+      },
+      {
+        normalized: 'paraffinum liquidum',
+        ingredientId: 'mineral_oil',
+        category: 'light_oils',
+        status: 'caution',
+        reason: 'no_mineral_oil',
+      },
+
     ];
 
     expectedResults.forEach((expected) => {

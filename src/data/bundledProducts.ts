@@ -463,7 +463,7 @@ export const defaultProductDatabase: ProductDatabase = {
       "name": "Natural Detox Hair Mask",
       "brand": "Innersense",
       "product_categories": [
-        "clarifying_shampoos"
+        "treatments"
       ],
       "tags": [
         "low_porosity",

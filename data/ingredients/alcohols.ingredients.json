@@ -400,6 +400,13 @@
         "emollient_alcohols"
       ],
       "description": "This is probably part of an ingredient list that's just labeling another ingredient"
+    },
+    {
+      "name": "C20-22 Alcohol",
+      "id": "c20_22_alcohol",
+      "categories": [
+        "emollient_alcohols"
+      ]
     }
   ]
 }
