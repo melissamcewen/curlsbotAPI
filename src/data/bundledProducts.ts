@@ -327,12 +327,13 @@ export const defaultProductDatabase: ProductDatabase = {
       "name": "Water Works Clarifying Shampoo",
       "brand": "Ouidad",
       "product_categories": [
-        "clarifying_shampoos"
+        "clarifying_shampoos",
+        "shampoos"
       ],
       "tags": [
         "low_porosity",
         "normal_porosity",
-        "featured",
+        "premium",
         "protein-free",
         "glycerin-free"
       ],
@@ -340,6 +341,10 @@ export const defaultProductDatabase: ProductDatabase = {
         {
           "url": "https://click.linksynergy.com/link?id=9QcV0uNyab0&offerid=929395.3842991208&type=2&murl=https%3a%2f%2fwww.ouidad.com%2fproducts%2fwater-works-clarifying-shampoo%3fvariant%3d42617153618178",
           "retailer": "Ouidad"
+        },
+        {
+          "url": "https://amzn.to/4lVVpMc",
+          "retailer": "Amazon"
         }
       ],
       "cost": 2.8,
@@ -2259,6 +2264,10 @@ export const defaultProductDatabase: ProductDatabase = {
             "UK",
             "EU"
           ]
+        },
+        {
+          "url": "https://amzn.to/4p6k8QF",
+          "retailer": "Amazon"
         }
       ],
       "product_categories": [
@@ -2269,7 +2278,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "wavy",
         "curly",
         "coily",
-        "bonding",
+        "premium",
         "protein"
       ],
       "ingredients_raw": "water aqua eau, sodium lauroyl methyl isethionate, cocamidopropyl hydroxysultaine, potassium cocoyl glycinate, disodium cocoyl glutamate, sodium lauroyl sarcosinate, potassium cocoate, decyl glucoside, glycereth-26, bis-aminopropyl diglycol dimaleate, cocamidopropylamine oxide, disodium laureth sulfosuccinate, glycol distearate, sodium cocoyl glutamate, methyl gluceth-20, acrylates copolymer, peg-120 methyl glucose dioleate, amodimethicone, citric acid, sodium lauryl sulfoacetate, polyquaternium-10, ethylhexylglycerin, divinyldimethicone dimethicone copolymer, polyquaternium-11, trisodium ethylenediamine disuccinate, guar hydroxypropyltrimonium chloride, c11-15 pareth-7, laureth-9, glycerin, trideceth-12, c12-13 pareth-23, c12-13 pareth-3, hydrolyzed vegetable protein, pg-propyl silanetriol, panthenol, acetic acid, tetrasodium edta, pentasodium triphosphate, sodium hydroxide, disodium edta, helianthus annus sunflower seed oil, tocopherol, prunus armeniaca apricot kernel oil, pseudozyma epicola camellia sinensis seed oil ferment extract filtrate, pseudozyma epicola argania spinosa kernel oil ferment filtrate, quaternium-95, propanediol, helianthus annus sunflower seed extract, peg-8, euterpe oleracea fruit extract, punica granatum extract, rosemarinus officinalis rosemary leaf extract, musa sapientum banana fruit extract, origanum vulgare lear extract, morinda citrifolia fruit extract, articum lappa root extract, peg-8 smdi copolymer, sodium hyaluronate, palmitoyl myristyl serinate, sodium polyacrylate, pentaerythrityl tetra-di-t-butyl hydroxyhydrocinnamate, biotin, benzoic acid, phenoxyethanol, chlorphenesin, potassium sorbate, sodium benzoate, fragrance parfum, citral, hexyl cinnamal, limonene",
@@ -2720,6 +2729,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "curly",
         "coily",
         "high_porosity",
+        "premium",
         "protein-free"
       ],
       "ingredients_raw": "water aqua, cetearyl alcohol, hydroxypropyl starch phosphate, cetyl palmitate, behentrimonium chloride, cocamidopropyl betaine, fragrance parfum, selaginella lepidophylla resurrection flower extract, carapa guaianensis andiroba seed oil, persea gratissima avocado oil, salvia officinalis sage leaf extract, ocimum basilicum basil leaf extract, piper nigrum black pepper seed extract, aloe barbadensis aloe vera leaf juice, rosmarinus officinalis rosemary leaf extract, helianthus annuus sunflower seed oil, butyrospermum parkii shea butter, cocos nucifera coconut oil, glycerin, guar hydroxypropyltrimonium chloride, panthenol, glyceryl caprylate, glyceryl undecylenate, potassium sorbate, sodium benzoate, sodium hydroxide, sodium chloride, citric acid, disodium edta, limonene, linalool",
@@ -3749,7 +3759,8 @@ export const defaultProductDatabase: ProductDatabase = {
         }
       ],
       "product_categories": [
-        "custards"
+        "custards",
+        "gels"
       ],
       "tags": [
         "low_porosity",
@@ -3815,7 +3826,8 @@ export const defaultProductDatabase: ProductDatabase = {
       "brand": "Curlsmith",
       "ingredients_raw": "water aqua, glycerin, babassu oil polyglyceryl-4 esters, sorbitol, chondrus crispus irish moss powder, fragrance parfum, linum usitatissimum linseed seed extract, carapa guaianensis andiroba seed oil, rosmarinus officinalis rosemary leaf extract, salvia officinalis sage leaf extract, persea gratissima avocado oil, selaginella lepidophylla resurrection flower extract, aloe barbadensis aloe vera leaf juice, ocimum basilicum basil leaf extract, piper nigrum black pepper seed extract, butyrospermum parkii shea butter, helianthus annuus sunflower seed oil, glyceryl caprylate, glyceryl undecylenate, potassium sorbate, sodium benzoate, disodium edta, citric acid, limonene, linalool",
       "product_categories": [
-        "custards"
+        "custards",
+        "gels"
       ],
       "tags": [
         "low_porosity",
@@ -3911,7 +3923,8 @@ export const defaultProductDatabase: ProductDatabase = {
       "brand": "As I Am",
       "ingredients_raw": "aqueous, water, aqua purificada, purified extracts aloe barbadensis leaf, beta vulgaris beet root, glycerin, hydroxyethylcellulose, xanthan gum, pectin, citric acid, tocopheryl acetate, potassium sorbate, diazolidinyl urea and iodopropynyl butylcarbamate, fragrance parfum, limonene",
       "product_categories": [
-        "custards"
+        "custards",
+        "gels"
       ],
       "tags": [
         "low_porosity",
@@ -3970,7 +3983,8 @@ export const defaultProductDatabase: ProductDatabase = {
       "brand": "Jessicurl",
       "ingredients_raw": "aqua water, linum usitatissimum linseed flaxseed extract, glycerin, simmondsia chinensis jojoba seed oil, aloe barbadensis aloe vera leaf juice powder, magnesium sulfate, benzoic acid, dehydroacetic acid, phenoxyethanol",
       "product_categories": [
-        "custards"
+        "custards",
+        "gels"
       ],
       "description": "Technically not a custard, but serves the same purpose",
       "tags": [
@@ -4035,7 +4049,8 @@ export const defaultProductDatabase: ProductDatabase = {
       "ingredients_raw": "aqua water, linum usitatissimum linseed flaxseed extract, glycerin, simmondsia chinensis jojoba seed oil, aloe barbadensis aloe vera leaf juice powder, magnesium sulfate, benzoic acid, dehydroacetic acid, phenoxyethanol",
       "description": "A unique liquid gel that moisturizes with natural film-forming humectants and helps enhance and define curls",
       "product_categories": [
-        "custards"
+        "custards",
+        "gels"
       ],
       "tags": [
         "low_porosity",
@@ -4098,7 +4113,8 @@ export const defaultProductDatabase: ProductDatabase = {
       "brand": "Kinky Curly",
       "ingredients_raw": "botanical infusion of water aqua, equisetum arvense horsetail, chamomile, urtica dioica nettle, althea officinalis, marshmallow, organic aloe vera juice, agave tequilana, agave nectar extract, tocopheryl acetate vitamin e, pectin, citric acid, potassium sorbate, fragrance",
       "product_categories": [
-        "custards"
+        "custards",
+        "gels"
       ],
       "tags": [
         "low_porosity",
@@ -6158,6 +6174,90 @@ export const defaultProductDatabase: ProductDatabase = {
         "autoTagger": {
           "tags": [
             "protein"
+          ]
+        }
+      }
+    },
+    "bond_building_shampoo": {
+      "name": "Bond Building Shampoo",
+      "brand": "Curl Talk",
+      "product_categories": [
+        "shampoos"
+      ],
+      "tags": [
+        "wavy",
+        "curly",
+        "coily",
+        "samples",
+        "budget",
+        "protein",
+        "glycerin-free"
+      ],
+      "ingredients_raw": "water aqua, sodium lauroyl sarcosinate, sodium cocoyl isethionate, cocamidopropyl hydroxysultaine, glycol distearate, peg-150 distearate, propanediol, hydroxypropylgluconamide, hydroxypropylammonium gluconate, aspergillus ferment, arginine, rice amino acids, persea gratissima avocado oil, mauritia flexuosa fruit oil, sclerocarya birrea seed oil, polyquaternium-10, hydroxypropyl guar hydroxypropyltrimonium chloride, tocopherol, tetrasodium glutamate diacetate, fragrance parfum, phenoxyethanol, ethylhexylglycerin, citric acid",
+      "description": "Gently cleanses while repairing bonds to reduce breakage, tame frizz, and enhance curl definition",
+      "buy_links": [
+        {
+          "url": "https://amzn.to/4jMHDes",
+          "retailer": "Amazon"
+        },
+        {
+          "url": "https://www.cvs.com/shop/not-your-mother-s-curl-talk-bond-repair-shampoo-8-oz-prodid-334816",
+          "retailer": "CVS"
+        }
+      ],
+      "id": "bond_building_shampoo",
+      "systems_excluded": [],
+      "status": "ok",
+      "extensions": {
+        "frizzbot": {
+          "simple_humectants_number": 2,
+          "film_forming_humectants_number": 3,
+          "emollients_number": 4,
+          "simple_humectants": [
+            "Propanediol",
+            "Ethylhexylglycerin"
+          ],
+          "film_forming_humectants": [
+            "Hydroxypropylammonium Gluconate",
+            "Arginine",
+            "Sodium Glutamate"
+          ],
+          "emollients": [
+            "Avocado Oil",
+            "Marula Oil",
+            "Unknown Polyquat",
+            "Guar Hydroxypropyltrimonium Chloride"
+          ],
+          "score": -75
+        },
+        "porosity": {
+          "high": 100,
+          "low": 100
+        },
+        "sebderm": {
+          "hasTriggers": true,
+          "triggers": [
+            {
+              "id": "arginine",
+              "name": "Arginine",
+              "reason": "Amino acids can be metabolized by Malassezia, potentially worsening symptoms"
+            },
+            {
+              "id": "avocado_oil",
+              "name": "Avocado Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            },
+            {
+              "id": "marula_oil",
+              "name": "Marula Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            }
+          ]
+        },
+        "autoTagger": {
+          "tags": [
+            "protein",
+            "glycerin-free"
           ]
         }
       }
@@ -9836,6 +9936,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "curly",
         "coily",
         "low_porosity",
+        "premium",
         "protein"
       ],
       "ingredients_raw": "Water (Aqua), Polyquaternium-69, Isobutane, Vp/Va Copolymer, Hydrolyzed Vegetable Protein, Hydrolyzed Pea Protein, Mangifera Indica (Mango) Seed Butter, Theobroma Grandiflorum Seed Butter, Moringa Oleifera Seed Oil, Cysteine Hcl, Silybum Marianum Seed Extract, Helianthus Annuus (Sunflower) Seed Oil, Limnanthes Alba (Meadowfoam) Seed Oil, Urtica Dioica (Nettle) Extract, Malva Sylvestris (Mallow) Flower Extract, Dimethiconol Meadowfoamate, Sodium Pca, Magnesium Pca, Zinc Pca, Manganese Pca, Copaifera Officinalis (Balsam Copaiba) Resin, Opuntia Vulgaris Leaf Extract, Glycerin, Vinegar, Maltooligosyl Glucoside, Hydrogenated Starch Hydrolysate, Coco-Glucoside, Tapioca Starch, Phenoxyethanol, Caprylyl Glycol, Quaternium-95, Propanediol, Sodium Benzoate, Potassium Sorbate, Propane, Fragrance (Parfum), Limonene",
@@ -9970,6 +10071,10 @@ export const defaultProductDatabase: ProductDatabase = {
         {
           "url": "https://olaplex.com/products/olaplex-n-10-bond-shaper-curl-defining-gel-us",
           "retailer": "Olaplex"
+        },
+        {
+          "url": "https://amzn.to/463fbzz",
+          "retailer": "Amazon"
         }
       ],
       "product_categories": [
@@ -9982,6 +10087,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "coily",
         "high_porosity",
         "bonding",
+        "premium",
         "protein"
       ],
       "ingredients_raw": "Water/Aqua/Eau, Xylitylglucoside, Hydroxyethylcellulose, Anhydroxylitol, Bis-Aminopropyl Diglycol Dimaleate, Glycerin, Propanediol, Maltitol, Polyimide-1, Guar Hydroxypropyltrimonium Chloride, Hydroxypropyl Starch Phosphate, Caprylyl/Capryl Glucoside, Xylitol, Aspergillus Ferment, Acacia Senegal Gum, Ethylhexylglycerin, Cetyl Hydroxyethylcellulose, Polyquaternium-10, Glycolipids, Arginine, Cocos Nucifera (Coconut) Oil, Persea Gratissima (Avocado) Oil, Sodium Cocoyl Glutamate, Olive Oil Polyglyceryl-6 Esters, Sodium Hydroxide, Citric Acid, Trisodium Ethylenediamine Disuccinate, Glyceryl Caprylate, Glyceryl Stearate, PG-Hydroxyethylcellulose Cocodimonium Chloride, Lactic Acid, Cetearyl Alcohol, Cocos Nucifera (Coconut) Fruit Juice, Cocos Nucifera (Coconut) Water, Glyceryl Undecylenate, Phospholipids, Polyglyceryl-10 Dioleate, Polyglyceryl-10 Oleate, Sodium Stearoyl Lactylate, Pelvetia Canaliculata Extract, Disodium Phosphate, Hydrated Silica, Silica Dimethyl Silylate, Caprylyl Glyceryl Ether, Sodium Phosphate, Polysorbate 60, Phenoxyethanol, Potassium Sorbate, Sodium Benzoate, Sorbic Acid, Glyoxal, Fragrance (Parfum), Limonene, Hexyl Cinnamal, Linalool, Citral, Citronellol, Yellow 5 (CI 19140), Yellow 6 (CI 15985)",
@@ -10073,6 +10179,10 @@ export const defaultProductDatabase: ProductDatabase = {
         {
           "url": "https://olaplex.com/products/olaplex-n-9-bond-protector-nourishing-hair-serum-us",
           "retailer": "Olaplex"
+        },
+        {
+          "url": "https://amzn.to/4mMDTeN",
+          "retailer": "Amazon"
         }
       ],
       "product_categories": [
@@ -10086,6 +10196,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "high_porosity",
         "heat_protectant",
         "bonding",
+        "premium",
         "protein-free",
         "glycerin-free"
       ],
@@ -10142,6 +10253,10 @@ export const defaultProductDatabase: ProductDatabase = {
         {
           "url": "https://olaplex.com/products/olaplex-n-7-bonding-oil-us",
           "retailer": "Olaplex"
+        },
+        {
+          "url": "https://amzn.to/4lVY9sY",
+          "retailer": "Amazon"
         }
       ],
       "product_categories": [
@@ -10154,6 +10269,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "coily",
         "high_porosity",
         "heat_protectant",
+        "premium",
         "protein-free",
         "glycerin-free"
       ],
@@ -10213,6 +10329,10 @@ export const defaultProductDatabase: ProductDatabase = {
         {
           "url": "https://olaplex.com/products/olaplex-n-3-hair-perfector-us",
           "retailer": "Olaplex"
+        },
+        {
+          "url": "https://amzn.to/46484GS",
+          "retailer": "Amazon"
         }
       ],
       "product_categories": [
@@ -10224,6 +10344,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "curly",
         "coily",
         "bond_builder",
+        "premium",
         "protein-free"
       ],
       "ingredients_raw": "water aqua, bis-aminopropyl diglycol dimaleate, propylene glycol, cetearyl alcohol, behentrimonium methosulfate, cetyl alcohol, phenoxyethanol, glycerin, hydroxyethyl ethylcellulose, stearamidopropyl dimethylamine, quaternium-91, sodium benzoate, cetrimonium methosulfate, cetrimonium chloride, fragrance parfum, polyquaternium-37, tetrasodium edta, benzyl benzoate, etidronic acid, ascorbic acid, phytantriol, tocopheryl acetate, aloe barbadensis leaf juice, panthenol, simmondsia chinensis jojoba seed oil, citric acid, potassium sorbate",
@@ -10675,6 +10796,10 @@ export const defaultProductDatabase: ProductDatabase = {
         {
           "url": "https://rahua.com/products/hydration-conditioner",
           "retailer": "Rahua"
+        },
+        {
+          "url": "https://amzn.to/4g8PaTZ",
+          "retailer": "Amazon"
         }
       ],
       "product_categories": [
@@ -10685,10 +10810,11 @@ export const defaultProductDatabase: ProductDatabase = {
         "wavy",
         "curly",
         "coily",
+        "premium",
         "protein",
         "glycerin-free"
       ],
-      "ingredients_raw": "aqua, herbal infusion of organic aloe barbadensis leaf extract, organic camellia sinensis green tea leaf extract, organic rosmarinus officinalis rosemary leaf extract, organic robus ideous raspberry leaf extract, behentrimonium methosulfate, cetearyl alcohol, vegetable glycerin, oenocarpus bataua rahua ungurahua oil, simmondsia chinensis jojoba seed oil, helianthus annuus sunflower seed oil, butyrospermum parkii shea butter, stearalkonium chloride, organic saccharum officinarum molasses extract, bursera graveolens palo santo oil, hydrolyzed quinoa, potassium sorbate, glycine, panthenol",
+      "ingredients_raw": "aqua, organic aloe barbadensis leaf extract, organic camellia sinensis green tea leaf extract, organic rosmarinus officinalis rosemary leaf extract, organic robus ideous raspberry leaf extract, behentrimonium methosulfate, cetearyl alcohol, vegetable glycerin, oenocarpus bataua rahua ungurahua oil, simmondsia chinensis jojoba seed oil, helianthus annuus sunflower seed oil, butyrospermum parkii shea butter, stearalkonium chloride, organic saccharum officinarum molasses extract, bursera graveolens palo santo oil, hydrolyzed quinoa, potassium sorbate, glycine, panthenol",
       "description": "A rich formula infused with Amazonian oils and protein-bonding sugars to hydrate and replenish the thirstiest hair",
       "id": "hydration_conditioner",
       "systems_excluded": [],
@@ -10766,6 +10892,10 @@ export const defaultProductDatabase: ProductDatabase = {
         {
           "url": "https://rahua.com/products/hydration-hair-mask",
           "retailer": "Rahua"
+        },
+        {
+          "url": "https://amzn.to/3UWrdWr",
+          "retailer": "Amazon"
         }
       ],
       "product_categories": [
@@ -10776,6 +10906,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "wavy",
         "curly",
         "coily",
+        "premium",
         "protein",
         "glycerin-free"
       ],
@@ -10849,6 +10980,10 @@ export const defaultProductDatabase: ProductDatabase = {
         {
           "url": "https://rahua.com/products/aloe-vera-hair-gel",
           "retailer": "Rahua"
+        },
+        {
+          "url": "https://amzn.to/465K9qT",
+          "retailer": "Amazon"
         }
       ],
       "product_categories": [
@@ -10860,6 +10995,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "curly",
         "coily",
         "low_porosity",
+        "premium",
         "protein-free",
         "glycerin-free"
       ],
@@ -10907,6 +11043,10 @@ export const defaultProductDatabase: ProductDatabase = {
         {
           "url": "https://rahua.com/products/omega-9-hair-mask",
           "retailer": "Rahua"
+        },
+        {
+          "url": "https://amzn.to/4mW3p15",
+          "retailer": "Amazon"
         }
       ],
       "product_categories": [
@@ -10918,6 +11058,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "curly",
         "coily",
         "low_porosity",
+        "premium",
         "protein"
       ],
       "ingredients_raw": "aqua, organic helianthus annuus sunflower seed oil, canola oil, behentrimonium methosulfate colza oil, glyceryl stearate, glycerin, oenocarpus bataua, rahua, ungurahua oil, stearalkonium chloride, organic butyrospermum parkii shea butter, organic hydrolyzed quinoa, glycine, lavandula angustifolia lavender oil, eucalyptus globulus leaf oil, panthenol, potassium sorbate",
@@ -12188,6 +12329,360 @@ export const defaultProductDatabase: ProductDatabase = {
         }
       }
     },
+    "olaplex_no._10_bond_shaper_curl_defining_gel": {
+      "name": "Olaplex No. 10 Bond Shaper Curl Defining Gel",
+      "brand": "Olaplex",
+      "buy_links": [
+        {
+          "url": "https://olaplex.com/products/olaplex-n-10-bond-shaper-curl-defining-gel-us",
+          "retailer": "Olaplex"
+        },
+        {
+          "url": "https://www.ulta.com/p/no10-curl-defining-frizz-reducing-hair-gel-pimprod2047423?",
+          "retailer": "Ulta"
+        }
+      ],
+      "product_categories": [
+        "gels"
+      ],
+      "tags": [
+        "samples",
+        "wavy",
+        "curly",
+        "coily",
+        "high_porosity",
+        "protein"
+      ],
+      "ingredients_raw": "water aqua eau, xylitylglucoside, hydroxyethylcellulose, anhydroxylitol, bis-aminopropyl diglycol dimaleate, glycerin, propanediol, maltitol, polyimide-1, guar hydroxypropyltrimonium chloride, hydroxypropyl starch phosphate, caprylyl capryl glucoside, xylitol, aspergillus ferment, acacia senegal gum, ethylhexylglycerin, cetyl hydroxyethylcellulose, polyquaternium-10, glycolipids, arginine, cocos nucifera coconut oil, persea gratissima avocado oil, sodium cocoyl glutamate, olive oil polyglyceryl-6 esters, sodium hydroxide, citric acid, trisodium ethylenediamine disuccinate, glyceryl caprylate, glyceryl stearate, pg-hydroxyethylcellulose cocodimonium chloride, lactic acid, cetearyl alcohol, cocos nucifera coconut fruit juice, cocos nucifera water, glyceryl undecylenate, phospholipids, polyglyceryl-10 dioleate, polyglyceryl-10 oleate, sodium stearoyl lactylate, pelvetia canaliculata extract, disodium phosphate, hydrated silica, silica dimethyl silylate, phenoxyethanol, potassium sorbate, sodium benzoate, fragrance parfum, limonene, hexyl cinnamal, linalool, citral, citronellol",
+      "description": "Humidity-resistant curl gel that defines natural curl patterns with flexible hold, frizz control, and bond-building tech",
+      "id": "olaplex_no._10_bond_shaper_curl_defining_gel",
+      "systems_excluded": [],
+      "status": "warning",
+      "extensions": {
+        "frizzbot": {
+          "simple_humectants_number": 7,
+          "film_forming_humectants_number": 4,
+          "emollients_number": 7,
+          "simple_humectants": [
+            "Xylitol",
+            "Glycerin",
+            "Propanediol",
+            "Maltitol",
+            "Xylitol",
+            "Ethylhexylglycerin",
+            "Lactic Acid"
+          ],
+          "film_forming_humectants": [
+            "Hydroxyethylcellulose",
+            "Hydroxyethylcellulose",
+            "Arginine",
+            "Hydroxyethylcellulose"
+          ],
+          "emollients": [
+            "Guar Hydroxypropyltrimonium Chloride",
+            "Unknown Polyquat",
+            "Coconut Oil",
+            "Avocado Oil",
+            "Olive Oil",
+            "Cetearyl Alcohol",
+            "Unknown Non-Water Soluble Silicone"
+          ],
+          "score": -46
+        },
+        "porosity": {
+          "high": 100,
+          "low": 79
+        },
+        "sebderm": {
+          "hasTriggers": true,
+          "triggers": [
+            {
+              "id": "arginine",
+              "name": "Arginine",
+              "reason": "Amino acids can be metabolized by Malassezia, potentially worsening symptoms"
+            },
+            {
+              "id": "coconut_oil",
+              "name": "Coconut Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            },
+            {
+              "id": "avocado_oil",
+              "name": "Avocado Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            },
+            {
+              "id": "olive_oil",
+              "name": "Olive Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            },
+            {
+              "id": "cetearyl_alcohol",
+              "name": "Cetearyl Alcohol",
+              "reason": "This specific fatty alcohol can feed Malassezia yeast"
+            }
+          ]
+        },
+        "autoTagger": {
+          "tags": [
+            "protein"
+          ]
+        }
+      }
+    },
+    "wavetech_wave_foam": {
+      "name": "Wavetech Wave Foam",
+      "brand": "Xmondo",
+      "buy_links": [
+        {
+          "url": "https://amzn.to/4lTtaxC",
+          "retailer": "Amazon"
+        }
+      ],
+      "product_categories": [
+        "foams"
+      ],
+      "tags": [
+        "samples",
+        "wavy",
+        "curly",
+        "low_porosity",
+        "protein-free"
+      ],
+      "ingredients_raw": "water aqua, cocamidopropyl betaine, polyquaternium-10, pg-hydroxyethylcellulose cocodimonium chloride, vp dmapa acrylates copolymer, glycerin, polyquaternium-11, polysorbate 20, panthenol, dipropylene glycol, polyquaternium-70, peg-12 dimethicone, phenoxyethanol, ethylhexylglycerin, fragrance parfum, linalool, hexyl cinnamal, limonene, benzyl salicylate, alpha isomethyl ionone, red 33 ci 17200",
+      "description": "A styling foam designed to create soft, defined waves without the crunch for the perfect natural-wavy look",
+      "id": "wavetech_wave_foam",
+      "systems_excluded": [],
+      "status": "caution",
+      "extensions": {
+        "frizzbot": {
+          "simple_humectants_number": 4,
+          "film_forming_humectants_number": 1,
+          "emollients_number": 5,
+          "simple_humectants": [
+            "Glycerin",
+            "Panthenol",
+            "Dipropylene Glycol",
+            "Ethylhexylglycerin"
+          ],
+          "film_forming_humectants": [
+            "Hydroxyethylcellulose"
+          ],
+          "emollients": [
+            "Unknown Polyquat",
+            "Acrylates Copolymer",
+            "Unknown Polyquat",
+            "Unknown Polyquat",
+            "PEG-12 Dimethicone"
+          ],
+          "score": -60
+        },
+        "porosity": {
+          "high": 100,
+          "low": 100
+        },
+        "sebderm": {
+          "hasTriggers": true,
+          "triggers": [
+            {
+              "id": "polysorbate_20",
+              "name": "Polysorbate 20",
+              "reason": "polysorbates can feed Malassezia yeast"
+            }
+          ]
+        },
+        "autoTagger": {
+          "tags": [
+            "protein-free"
+          ]
+        }
+      }
+    },
+    "healing_moisture_moi_moi_hair_masque": {
+      "name": "Healing Moisture Moi Moi Hair Masque",
+      "brand": "L'Anza ",
+      "buy_links": [
+        {
+          "url": "https://amzn.to/4g7wTGM",
+          "retailer": "Amazon"
+        }
+      ],
+      "product_categories": [
+        "deep_conditioners"
+      ],
+      "tags": [
+        "samples",
+        "wavy",
+        "curly",
+        "coily",
+        "low_porosity",
+        "premium",
+        "protein"
+      ],
+      "ingredients_raw": "water eau aqua, cetearyl alcohol, glycol distearate, glycereth-26, cyclopentasiloxane, dimethiconol meadowfoamate, glyceryl stearate se, silicone quaternium-3, steartrimonium chloride, dimethicone peg-8 meadowfoamate, panthenyl ethyl ether, keratin amino acids, crambe abyssinica seed oil, orbignya speciosa kernel oil, euterpe oleracea fruit oil, coffea arabica seed oil, astrocaryum murumuru seed butter, polygonum cuspidatum root extract, stevia rebaudiana leaf stem extract, aloe barbadensis leaf extract, cereus grandiflorus flower extract, aleurites moluccana seed oil, sodium pca, magnesium pca, zinc pca, manganese pca, ascorbyl methylsilanol pectinate, phytic acid, phytantriol, dimethicone, polyether-1, trideceth-12, bht, trimethyl- siloxyamodimethicone, sodium hyaluronate, phenoxyethanol, aminomethyl propanol, caprylyl glycol, isopentyldiol, tocopheryl acetate, cetrimonium chloride, glycerin, urea, saccharide hydrolysate, magnesium aspartate, glycine, alanine, creatine, benzotriazolyl dodecyl p-cresol, butylene glycol, propylene glycol, fragrance parfum, linalool, benzyl salicylate, coumarin, hexyl cinnamal, limonene, mica ci 77019, titanium dioxide ci 77891, yellow 5 ci 19140, red 40 ci 16035",
+      "description": "A rich, hydrating masque to restore extremely dry, brittle hair.",
+      "id": "healing_moisture_moi_moi_hair_masque",
+      "systems_excluded": [],
+      "status": "warning",
+      "extensions": {
+        "frizzbot": {
+          "simple_humectants_number": 12,
+          "film_forming_humectants_number": 7,
+          "emollients_number": 9,
+          "simple_humectants": [
+            "Glycereth-26",
+            "Sodium PCA",
+            "PCA",
+            "PCA",
+            "PCA",
+            "Phytantriol",
+            "Sodium hyaluronate",
+            "Caprylyl Glycol",
+            "Glycerin",
+            "Urea",
+            "Butylene glycol",
+            "Propylene Glycol"
+          ],
+          "film_forming_humectants": [
+            "Keratin",
+            "Aloe Barbadensis Leaf Extract",
+            "Pectin",
+            "Magnesium aspartate",
+            "Glycine",
+            "Alanine",
+            "Creatine"
+          ],
+          "emollients": [
+            "Cetearyl Alcohol",
+            "Cyclopentasiloxane",
+            "Dimethiconol",
+            "Unknown Non-Water Soluble Silicone",
+            "Unknown Water Soluble Silicones",
+            "Astrocaryum Murumuru Seed Butter",
+            "Dimethicone",
+            "Amodimethicone",
+            "Cetrimonium Chloride"
+          ],
+          "score": -60
+        },
+        "porosity": {
+          "high": 89,
+          "low": 15
+        },
+        "sebderm": {
+          "hasTriggers": true,
+          "triggers": [
+            {
+              "id": "cetearyl_alcohol",
+              "name": "Cetearyl Alcohol",
+              "reason": "This specific fatty alcohol can feed Malassezia yeast"
+            },
+            {
+              "id": "astrocaryum_murumuru_seed_butter",
+              "name": "Astrocaryum Murumuru Seed Butter",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            },
+            {
+              "id": "glycine",
+              "name": "Glycine",
+              "reason": "Amino acids can be metabolized by Malassezia, potentially worsening symptoms"
+            },
+            {
+              "id": "alanine",
+              "name": "Alanine",
+              "reason": "Amino acids can be metabolized by Malassezia, potentially worsening symptoms"
+            }
+          ]
+        },
+        "autoTagger": {
+          "tags": [
+            "protein"
+          ]
+        }
+      }
+    },
+    "neem_plant_silk_serum": {
+      "name": "Neem Plant Silk Serum",
+      "brand": "L'Anza ",
+      "buy_links": [
+        {
+          "url": "https://amzn.to/4p3RI9Y",
+          "retailer": "Amazon"
+        }
+      ],
+      "product_categories": [
+        "oils"
+      ],
+      "tags": [
+        "samples",
+        "wavy",
+        "curly",
+        "coily",
+        "high_porosity",
+        "premium",
+        "heat_protectants",
+        "protein",
+        "glycerin-free"
+      ],
+      "ingredients_raw": "cyclopentasiloxane, dimethicone, caprylyl methicone, diphenylsiloxy phenyl trimethicone, perfluorononyl dimethicone, melia azadirachta extract, keratin amino acids, santalum album extract, phellodendron amurense bark extract, hordeum distichon extract, dimethiconol cysteine, ceramide np, sodium hyaluronate, dimethicone peg-8 meadowfoamate, sodium pca, zinc pca, magnesium pca, manganese pca, citrus limon fruit extract, fumaria officinalis flower leaf stem extract, helianthus annuus seed oil, squalane, fumaric acid, ethylhexyl methoxycinnamate, tetrahexyldecyl ascorbate, trimethylsiloxyamodimethicone, ascorbyl methylsilanol pectinate, butylene glycol, water eau aqua, benzotriazolyl dodecyl p-cresol, fragrance parfum, alpha-isomethyl ionone, benzyl salicylate, butylphenyl methylpropional, citronellol, coumarin, geraniol, limonene, linalool",
+      "description": "A styling serum formulated to add softness and silkiness to dry, rough hair and protect from heat damage.",
+      "id": "neem_plant_silk_serum",
+      "systems_excluded": [],
+      "status": "warning",
+      "extensions": {
+        "frizzbot": {
+          "simple_humectants_number": 7,
+          "film_forming_humectants_number": 2,
+          "emollients_number": 10,
+          "simple_humectants": [
+            "Ceramide",
+            "Sodium hyaluronate",
+            "Sodium PCA",
+            "PCA",
+            "PCA",
+            "PCA",
+            "Butylene glycol"
+          ],
+          "film_forming_humectants": [
+            "Keratin",
+            "Pectin"
+          ],
+          "emollients": [
+            "Cyclopentasiloxane",
+            "Dimethicone",
+            "Unknown Non-Water Soluble Silicone",
+            "Phenyl Trimethicone",
+            "Dimethicone",
+            "Dimethiconol",
+            "Unknown Water Soluble Silicones",
+            "Sunflower Oil",
+            "Squalane",
+            "Trimethylsiloxyamodimethicone"
+          ],
+          "score": -66
+        },
+        "porosity": {
+          "high": 100,
+          "low": 67
+        },
+        "sebderm": {
+          "hasTriggers": true,
+          "triggers": [
+            {
+              "id": "sunflower_oil",
+              "name": "Sunflower Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            }
+          ]
+        },
+        "autoTagger": {
+          "tags": [
+            "protein",
+            "glycerin-free"
+          ]
+        }
+      }
+    },
     "rice_pudding_leave-in_conditioner_and_moisturizer": {
       "name": "Rice Pudding Leave-In Conditioner and Moisturizer",
       "brand": "Ecoslay",
@@ -13336,7 +13831,8 @@ export const defaultProductDatabase: ProductDatabase = {
         }
       ],
       "product_categories": [
-        "pre-poo"
+        "pre-poo",
+        "treatments"
       ],
       "tags": [
         "samples",
@@ -13345,6 +13841,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "coily",
         "low_porosity",
         "bonding",
+        "premium",
         "protein"
       ],
       "cost": 3.75,
@@ -14696,90 +15193,6 @@ export const defaultProductDatabase: ProductDatabase = {
         }
       }
     },
-    "bond_building_shampoo": {
-      "name": "Bond Building Shampoo",
-      "brand": "Curl Talk",
-      "product_categories": [
-        "shampoos"
-      ],
-      "tags": [
-        "wavy",
-        "curly",
-        "coily",
-        "samples",
-        "budget",
-        "protein",
-        "glycerin-free"
-      ],
-      "ingredients_raw": "water aqua, sodium lauroyl sarcosinate, sodium cocoyl isethionate, cocamidopropyl hydroxysultaine, glycol distearate, peg-150 distearate, propanediol, hydroxypropylgluconamide, hydroxypropylammonium gluconate, aspergillus ferment, arginine, rice amino acids, persea gratissima avocado oil, mauritia flexuosa fruit oil, sclerocarya birrea seed oil, polyquaternium-10, hydroxypropyl guar hydroxypropyltrimonium chloride, tocopherol, tetrasodium glutamate diacetate, fragrance parfum, phenoxyethanol, ethylhexylglycerin, citric acid",
-      "description": "Gently cleanses while repairing bonds to reduce breakage, tame frizz, and enhance curl definition",
-      "buy_links": [
-        {
-          "url": "https://amzn.to/4jMHDes",
-          "retailer": "Amazon"
-        },
-        {
-          "url": "https://www.cvs.com/shop/not-your-mother-s-curl-talk-bond-repair-shampoo-8-oz-prodid-334816",
-          "retailer": "CVS"
-        }
-      ],
-      "id": "bond_building_shampoo",
-      "systems_excluded": [],
-      "status": "ok",
-      "extensions": {
-        "frizzbot": {
-          "simple_humectants_number": 2,
-          "film_forming_humectants_number": 3,
-          "emollients_number": 4,
-          "simple_humectants": [
-            "Propanediol",
-            "Ethylhexylglycerin"
-          ],
-          "film_forming_humectants": [
-            "Hydroxypropylammonium Gluconate",
-            "Arginine",
-            "Sodium Glutamate"
-          ],
-          "emollients": [
-            "Avocado Oil",
-            "Marula Oil",
-            "Unknown Polyquat",
-            "Guar Hydroxypropyltrimonium Chloride"
-          ],
-          "score": -75
-        },
-        "porosity": {
-          "high": 100,
-          "low": 100
-        },
-        "sebderm": {
-          "hasTriggers": true,
-          "triggers": [
-            {
-              "id": "arginine",
-              "name": "Arginine",
-              "reason": "Amino acids can be metabolized by Malassezia, potentially worsening symptoms"
-            },
-            {
-              "id": "avocado_oil",
-              "name": "Avocado Oil",
-              "reason": "Contains fatty acids that can feed Malassezia yeast"
-            },
-            {
-              "id": "marula_oil",
-              "name": "Marula Oil",
-              "reason": "Contains fatty acids that can feed Malassezia yeast"
-            }
-          ]
-        },
-        "autoTagger": {
-          "tags": [
-            "protein",
-            "glycerin-free"
-          ]
-        }
-      }
-    },
     "outta_my_hair_gentle_daily_shampoo": {
       "name": "Outta My Hair Gentle Daily Shampoo",
       "brand": "Hairitage",
@@ -15239,6 +15652,10 @@ export const defaultProductDatabase: ProductDatabase = {
             "UK",
             "EU"
           ]
+        },
+        {
+          "url": "https://amzn.to/4n9b23P",
+          "retailer": "Amazon"
         }
       ],
       "product_categories": [
@@ -15249,7 +15666,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "wavy",
         "curly",
         "coily",
-        "bonding",
+        "premium",
         "protein"
       ],
       "ingredients_raw": "water aqua eau, sodium lauroyl methyl isethionate, cocamidopropyl hydroxysultaine, potassium cocoyl glycinate, disodium cocoyl glutamate, sodium lauroyl sarcosinate, potassium cocoate, decyl glucoside, glycereth-26, bis-aminopropyl diglycol dimaleate, cocamidopropylamine oxide, disodium laureth sulfosuccinate, glycol distearate, sodium cocoyl glutamate, methyl gluceth-20, acrylates copolymer, peg-120 methyl glucose dioleate, amodimethicone, citric acid, sodium lauryl sulfoacetate, polyquaternium-10, ethylhexylglycerin, divinyldimethicone dimethicone copolymer, polyquaternium-11, trisodium ethylenediamine disuccinate, guar hydroxypropyltrimonium chloride, c11-15 pareth-7, laureth-9, glycerin, trideceth-12, c12-13 pareth-23, c12-13 pareth-3, hydrolyzed vegetable protein, pg-propyl silanetriol, panthenol, acetic acid, tetrasodium edta, pentasodium triphosphate, sodium hydroxide, disodium edta, helianthus annus sunflower seed oil, tocopherol, prunus armeniaca apricot kernel oil, pseudozyma epicola camellia sinensis seed oil ferment extract filtrate, pseudozyma epicola argania spinosa kernel oil ferment filtrate, quaternium-95, propanediol, helianthus annus sunflower seed extract, peg-8, euterpe oleracea fruit extract, punica granatum extract, rosemarinus officinalis rosemary leaf extract, musa sapientum banana fruit extract, origanum vulgare lear extract, morinda citrifolia fruit extract, articum lappa root extract, peg-8 smdi copolymer, sodium hyaluronate, palmitoyl myristyl serinate, sodium polyacrylate, pentaerythrityl tetra-di-t-butyl hydroxyhydrocinnamate, biotin, benzoic acid, phenoxyethanol, chlorphenesin, potassium sorbate, sodium benzoate, fragrance parfum, citral, hexyl cinnamal, limonene",

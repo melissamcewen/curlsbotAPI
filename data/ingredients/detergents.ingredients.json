@@ -78,6 +78,7 @@
     {
       "name": "Coco Glucoside",
       "id": "coco_glucoside",
+      "synonyms": ["coco-glucoside"],
       "categories": ["mild_surfactants"]
     },
     {

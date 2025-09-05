@@ -613,6 +613,9 @@ export const defaultDatabase: IngredientDatabase = {
     "coco_glucoside": {
       "name": "Coco Glucoside",
       "id": "coco_glucoside",
+      "synonyms": [
+        "coco-glucoside"
+      ],
       "categories": [
         "mild_surfactants"
       ],
@@ -1699,7 +1702,7 @@ export const defaultDatabase: IngredientDatabase = {
           "description": "Mineral oil is likely to coat the hair rather than soak in, based on its chemistry"
         }
       ],
-      "status": "warning",
+      "status": "caution",
       "group": "oils"
     },
     "olive_oil": {

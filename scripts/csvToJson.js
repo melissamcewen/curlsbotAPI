@@ -3,19 +3,51 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 import { normalizer } from '../src/utils/normalizer.js';
 import csv from 'csv-parser';
+import { defaultProductDatabase } from '../src/data/bundledProducts.js';
 
 // Get __dirname equivalent in ES modules
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
+// Function to check if a product already exists in bundledProducts
+function productExists(productName) {
+  const existingProducts = Object.values(defaultProductDatabase.products);
+  const normalizedNewName = productName.toLowerCase().trim();
+
+  const matchingProduct = existingProducts.find(product => {
+    const normalizedExistingName = product.name.toLowerCase().trim();
+
+    // Exact match
+    if (normalizedExistingName === normalizedNewName) {
+      return true;
+    }
+
+    // Check if existing product name is a substring of new product name
+    if (normalizedNewName.includes(normalizedExistingName)) {
+      return true;
+    }
+
+    // Check if new product name is a substring of existing product name
+    if (normalizedExistingName.includes(normalizedNewName)) {
+      return true;
+    }
+
+    return false;
+  });
+
+  return matchingProduct;
+}
+
 // Function to read CSV file and convert to JSON
 async function convertCsvToJson() {
   // Paths
-  const csvFilePath = path.join(__dirname, '../logs/product-list.csv');
-  const outputFilePath = path.join(__dirname, '../logs/products.json');
+  const csvFilePath = path.join(__dirname, '../logs/products2.csv');
+  const outputFilePath = path.join(__dirname, '../logs/products_new.json');
 
   // Array to store the products
   const products = [];
+  let skippedCount = 0;
+  let addedCount = 0;
 
   return new Promise((resolve, reject) => {
     // Create a read stream and pipe it through csv-parser
@@ -26,6 +58,22 @@ async function convertCsvToJson() {
       .pipe(csv())
       .on('data', (row) => {
         try {
+          const productName = row['Product Name'];
+
+          // Skip rows without a product name
+          if (!productName || productName.trim() === '') {
+            console.log(`Skipping row with no product name`);
+            return;
+          }
+
+          // Check if product already exists
+          const existingProduct = productExists(productName);
+          if (existingProduct) {
+            console.log(`Skipping existing product: "${productName}" (matches existing: "${existingProduct.name}")`);
+            skippedCount++;
+            return; // Skip this product
+          }
+
           // Get product categories
           const categories = [];
           if (row['Shampoos'] === 'TRUE') categories.push('Shampoos');
@@ -90,7 +138,7 @@ async function convertCsvToJson() {
 
           // Create the product object
           const product = {
-            name: row['Product Name'],
+            name: productName,
             brand: '', // Left blank as requested
             buy_links: buyLinks,
             product_categories: categories,
@@ -100,8 +148,11 @@ async function convertCsvToJson() {
           };
 
           products.push(product);
+          addedCount++;
+          console.log(`Added new product: ${productName}`);
         } catch (error) {
-          console.warn(`Warning: Error processing row for ${row['Product Name']}: ${error.message}`);
+          const productName = row['Product Name'] || 'Unknown';
+          console.warn(`Warning: Error processing row for ${productName}: ${error.message}`);
         }
       })
       .on('end', () => {
@@ -114,6 +165,10 @@ async function convertCsvToJson() {
           // Write the output file
           fs.writeFileSync(outputFilePath, JSON.stringify(outputJson, null, 2));
           console.log(`Successfully converted CSV to JSON. Output file: ${outputFilePath}`);
+          console.log(`\nSummary:`);
+          console.log(`- Products added: ${addedCount}`);
+          console.log(`- Products skipped (already exist): ${skippedCount}`);
+          console.log(`- Total products processed: ${addedCount + skippedCount}`);
           resolve();
         } catch (error) {
           reject(new Error(`Error writing JSON file: ${error.message}`));
