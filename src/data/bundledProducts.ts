@@ -350,7 +350,7 @@ export const defaultProductDatabase: ProductDatabase = {
       "cost": 2.8,
       "asin": "B0001Y74XG",
       "ingredients_raw": "water, ammonium laureth sulfate, sodium laureth sulfate, cocomidopropyl betaine, lauryl glucoside, butylene glycol, cocamide mea, polysorbate 20, sodium lauroamphoacetate, panthenol, saccharum officinarum sugar cane extract, citrus medica limonum lemon peel extract, citrus aurantium dulcis orange fruit extract, pyrus malus apple fruit extract, camellia oleifera leaf extract, cetrimonium chloride, polyquaternium-59, polyquaternium-10, citrus aurantium dulcis orange peel oil, citrus tangerina tangerine peel oil, disodium edta, methychloroisothiazolinone, methylisothiazolinone",
-      "description": "Astrong, sulfate-based cleanser designed to deep-clean the scalp and hair, removing product buildup, oils, and residues.",
+      "description": "A strong, sulfate-based cleanser designed to deep-clean the scalp and hair, removing product buildup, oils, and residues.",
       "id": "water_works_clarifying_shampoo",
       "systems_excluded": [],
       "status": "warning",
@@ -593,7 +593,7 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -92
         },
         "porosity": {
-          "high": 88,
+          "high": 92,
           "low": 34
         },
         "sebderm": {
@@ -9973,8 +9973,8 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -74
         },
         "porosity": {
-          "high": 91,
-          "low": 4
+          "high": 92,
+          "low": 5
         },
         "sebderm": {
           "hasTriggers": true,
@@ -14971,7 +14971,7 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -96
         },
         "porosity": {
-          "high": 53,
+          "high": 66,
           "low": 100
         },
         "sebderm": {
@@ -15365,7 +15365,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 100,
-          "low": 16
+          "low": 17
         },
         "sebderm": {
           "hasTriggers": true,
@@ -15443,7 +15443,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 100,
-          "low": 84
+          "low": 81
         },
         "sebderm": {
           "hasTriggers": false,
@@ -15494,7 +15494,7 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -96
         },
         "porosity": {
-          "high": 53,
+          "high": 66,
           "low": 100
         },
         "sebderm": {
@@ -15582,8 +15582,8 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -41
         },
         "porosity": {
-          "high": 81,
-          "low": 86
+          "high": 82,
+          "low": 85
         },
         "sebderm": {
           "hasTriggers": true,
