@@ -40,7 +40,7 @@
       "name": "Unknown Alcohol",
       "id": "unknown_alcohol",
       "synonyms": ["alcohol"],
-      "description": "Unknown alcohol, since we don't know what it is, we are going to classify it as drying alcohols just to be safe.",
+      "description": "Unknown alcohol, since we don't know what it is, we are going to classify it as a volatile (short-chain) alcohol just to be safe.",
       "categories": ["volatile_alcohols"]
     },
     {

@@ -5537,7 +5537,7 @@ export const defaultSettings: Record<string, Setting> = {
   "volatile_alcohol": {
     "id": "volatile_alcohol",
     "name": "Volatile Alcohols",
-    "description": "There is no evidence that short-chain alcohols in hair products are harmful, but some people choose to avoid them.",
+    "description": "There is no evidence that these short-chain alcohols in hair products are harmful, but some people choose to avoid them.",
     "categories": [
       "volatile_alcohols"
     ],
