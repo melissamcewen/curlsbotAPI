@@ -32,7 +32,7 @@ type PorosityScoring = {
 
 export function porosity(analysis: AnalysisResult): PorosityAnalysis {
   const definitions: PorosityCategories = {
-    alcohols: ['drying_alcohols', 'astringents'],
+    alcohols: ['volatile_alcohols', 'astringents'],
     anionic_detergents: ['sulfates', 'other_anionic_surfactants'],
     heavy_oils: ['heavy_oils'],
     medium_oils: ['medium_oils', 'other_oils'],
@@ -58,7 +58,7 @@ export function porosity(analysis: AnalysisResult): PorosityAnalysis {
     anionic_detergents: { high: 0, low: 20 },
     heavy_oils: { high: 2, low: -8 },
     medium_oils: { high: 1, low: -7.8 },
-    light_oils: { high: 0, low: -.5 },
+    light_oils: { high: 0, low: -0.5 },
     emollients: { high: 5, low: 0 },
     mild_surfactants: { high: 6, low: 0 },
     conditioning_agents: { high: 22, low: 2 },

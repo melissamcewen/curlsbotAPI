@@ -204,7 +204,7 @@ export const defaultDatabase: IngredientDatabase = {
         "sugarcane alcohol"
       ],
       "categories": [
-        "drying_alcohols"
+        "volatile_alcohols"
       ],
       "status": "caution",
       "group": "alcohols"
@@ -229,7 +229,7 @@ export const defaultDatabase: IngredientDatabase = {
         "2-propanol"
       ],
       "categories": [
-        "drying_alcohols"
+        "volatile_alcohols"
       ],
       "status": "caution",
       "group": "alcohols"
@@ -299,7 +299,7 @@ export const defaultDatabase: IngredientDatabase = {
         "phenyl ethyl alcohol"
       ],
       "categories": [
-        "drying_alcohols"
+        "volatile_alcohols"
       ],
       "references": [
         {
@@ -316,7 +316,7 @@ export const defaultDatabase: IngredientDatabase = {
       "name": "Propyl Alcohol",
       "id": "propyl_alcohol",
       "categories": [
-        "drying_alcohols"
+        "volatile_alcohols"
       ],
       "status": "caution",
       "group": "alcohols"
@@ -333,7 +333,7 @@ export const defaultDatabase: IngredientDatabase = {
         "alcohol"
       ],
       "categories": [
-        "drying_alcohols"
+        "volatile_alcohols"
       ],
       "description": "This is literally alcohol, like the kind in a bottle of vodka, except its been denatured, a process that makes it undrinkable.",
       "references": [
@@ -4903,7 +4903,7 @@ export const defaultDatabase: IngredientDatabase = {
       ],
       "description": "Unknown alcohol, since we don't know what it is, we are going to classify it as drying alcohols just to be safe.",
       "categories": [
-        "drying_alcohols"
+        "volatile_alcohols"
       ],
       "status": "caution",
       "group": "alcohols"
@@ -5081,8 +5081,8 @@ export const defaultDatabase: IngredientDatabase = {
     }
   },
   "categories": {
-    "drying_alcohols": {
-      "id": "drying_alcohols",
+    "volatile_alcohols": {
+      "id": "volatile_alcohols",
       "name": "Drying Alcohols",
       "group": "alcohols",
       "description": "Short-chain alcohols considered drying because they evaporate quickly and can strip natural oils from the hair and scalp"
@@ -5475,7 +5475,7 @@ export const defaultSystems: System[] = [
     "id": "curly_default",
     "description": "The Curly Default system is a hair care system that focuses on using products that are free of harsh chemicals and sulfates. It recommends using products that are free of drying alcohols, parabens, and other potentially harmful ingredients.",
     "settings": [
-      "drying_alcohol",
+      "volatile_alcohol",
       "caution_silicones",
       "no_waxes",
       "soap_free",
@@ -5491,7 +5491,7 @@ export const defaultSystems: System[] = [
     "description": "Just like the default system, but allows for some water soluble silicones and moderate surfactants.",
     "settings": [
       "sulfate_free",
-      "drying_alcohol",
+      "volatile_alcohol",
       "no_water_insoluble_silicones",
       "no_waxes",
       "no_mineral_oil",
@@ -5504,7 +5504,7 @@ export const defaultSystems: System[] = [
     "description": "Allows stronger surfactants and avoid heavy oils",
     "settings": [
       "sulfate_free",
-      "drying_alcohol",
+      "volatile_alcohol",
       "no_water_insoluble_silicones",
       "no_waxes",
       "no_mineral_oil",
@@ -5517,7 +5517,7 @@ export const defaultSettings: Record<string, Setting> = {
   "sulfate_free": {
     "id": "sulfate_free",
     "name": "Sulfates",
-    "description": "Sulfates are a common cleanser in hair care products. The Curly Girl Method recommends avoiding them but some people find them fine.",
+    "description": "Sulfates are a common cleanser in hair care products. There is no evidence that they are harmful in shampoo, but some people choose to avoid them.",
     "categories": [
       "sulfates"
     ],
@@ -5527,19 +5527,19 @@ export const defaultSettings: Record<string, Setting> = {
   "paraben_caution": {
     "id": "paraben_caution",
     "name": "Parabens",
-    "description": "Parabens are preservatives used to extend the shelf life of hair care products, but some people avoid them due to potential health concerns.",
+    "description": "Parabens are preservatives used to extend the shelf life of hair care products, but some people avoid them due to potential health concerns, which have since been debunked.",
     "categories": [
       "parabens"
     ],
     "defaultStatus": "caution",
     "guide": "/categories/parabens"
   },
-  "drying_alcohol": {
-    "id": "drying_alcohol",
-    "name": "Alcohols",
-    "description": "These alcohols have a reputation for being drying, but may be fine in some formulations, especially in low amounts and in products that evaporate quickly.",
+  "volatile_alcohol": {
+    "id": "volatile_alcohol",
+    "name": "Volatile Alcohols",
+    "description": "There is no evidence that short-chain alcohols in hair products are harmful, but some people choose to avoid them.",
     "categories": [
-      "drying_alcohols"
+      "volatile_alcohols"
     ],
     "defaultStatus": "caution",
     "guide": "/groups/alcohols"
@@ -5547,7 +5547,7 @@ export const defaultSettings: Record<string, Setting> = {
   "silicone_free": {
     "id": "silicone_free",
     "name": "Silicones",
-    "description": "Silicones are useful conditioning ingredients, but the Curly Girl Method recommends avoiding them.",
+    "description": "Silicones are useful conditioning ingredients and there is no evidence that they are harmful, and they have many benefits,but the Curly Girl Method recommends avoiding them.",
     "groups": [
       "silicones"
     ],
@@ -5556,7 +5556,7 @@ export const defaultSettings: Record<string, Setting> = {
   "mild_surfactants_only": {
     "id": "mild_surfactants_only",
     "name": "Stronger surfactants",
-    "description": "Avoid these if you prefer mild surfactants.",
+    "description": "There is no evidence that stronger surfactants are harmful, but some people choose to avoid them.",
     "groups": [
       "surfactants"
     ],
@@ -5593,7 +5593,7 @@ export const defaultSettings: Record<string, Setting> = {
   "no_water_insoluble_silicones": {
     "id": "no_water_insoluble_silicones",
     "name": "Water Insoluble Silicones",
-    "description": "These are silicones that are not water-soluble and can build up on the hair if you don't use a cleansing shampoo",
+    "description": "These are silicones that are not water-soluble and can build up on the hair if you don't use a cleansing shampoo (for example, using a cowash). Otherwise they there is no evidence that they are harmful and they have many benefits.",
     "categories": [
       "non_water_soluble_silicones"
     ],
@@ -5603,7 +5603,7 @@ export const defaultSettings: Record<string, Setting> = {
   "caution_silicones": {
     "id": "caution_silicones",
     "name": "Silicones",
-    "description": "Some find these water-soluble and evaporative silicones are fine but we mark all silicones as caution in case you want to avoid them.",
+    "description": "These are silicones that should rinse off easily or evaporate from the hair. There is no evidence that they are harmful and they have many benefits, however some people choose to avoid them.",
     "groups": [
       "silicones"
     ],
@@ -5613,7 +5613,7 @@ export const defaultSettings: Record<string, Setting> = {
   "no_waxes": {
     "id": "no_waxes",
     "name": "Non-water-soluble waxes",
-    "description": "These waxes can coat the hair shaft, providing temporary benefits like shine, smoothness, and heat protection. However, they can build up on the hair, leading to a heavy, greasy feel and potentially hindering moisture absorption.",
+    "description": "These waxes can coat the hair shaft, providing temporary benefits like shine, smoothness, and heat protection. However, they can build up on the hair if used in excess and without clarifying.",
     "categories": [
       "non_water_soluble_waxes"
     ],

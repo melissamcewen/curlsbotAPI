@@ -4,7 +4,7 @@
 
 The ingredient database has a hierarchical structure:
 
-- Groups contain Categories (e.g., the "alcohols" group contains "emollient_alcohols", "drying_alcohols", etc.)
+- Groups contain Categories (e.g., the "alcohols" group contains "emollient_alcohols", "volatile_alcohols", etc.)
 - Categories contain Ingredients
 - Ingredients have an array of categories they belong to
 

@@ -5,7 +5,7 @@
       "id": "curly_default",
       "description": "The Curly Default system is a hair care system that focuses on using products that are free of harsh chemicals and sulfates. It recommends using products that are free of drying alcohols, parabens, and other potentially harmful ingredients.",
       "settings": [
-        "drying_alcohol",
+        "volatile_alcohol",
         "caution_silicones",
         "no_waxes",
         "soap_free",
@@ -21,7 +21,7 @@
       "description": "Just like the default system, but allows for some water soluble silicones and moderate surfactants.",
       "settings": [
         "sulfate_free",
-        "drying_alcohol",
+        "volatile_alcohol",
         "no_water_insoluble_silicones",
         "no_waxes",
         "no_mineral_oil",
@@ -34,7 +34,7 @@
       "description": "Allows stronger surfactants and avoid heavy oils",
       "settings": [
         "sulfate_free",
-        "drying_alcohol",
+        "volatile_alcohol",
         "no_water_insoluble_silicones",
         "no_waxes",
         "no_mineral_oil",

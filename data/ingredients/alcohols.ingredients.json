@@ -3,58 +3,39 @@
     {
       "name": "Acetyl Alcohol",
       "id": "acetyl_alcohol",
-      "categories": [
-        "emollient_alcohols"
-      ]
+      "categories": ["emollient_alcohols"]
     },
     {
       "name": "Amino Methyl Propanol",
       "id": "amino_methyl_propanol",
-      "categories": [
-        "emollient_alcohols"
-      ]
+      "categories": ["emollient_alcohols"]
     },
     {
       "name": "Amino-2-Methyl-1-Propanol",
       "id": "amino_2_methyl_1_propanol",
-      "categories": [
-        "emollient_alcohols"
-      ]
+      "categories": ["emollient_alcohols"]
     },
     {
       "name": "Amylcinnamyl Alcohol",
       "id": "amylcinnamyl_alcohol",
-      "categories": [
-        "emollient_alcohols"
-      ],
-      "synonyms": [
-        "amyl cinnamyl alcohol"
-      ]
+      "categories": ["emollient_alcohols"],
+      "synonyms": ["amyl cinnamyl alcohol"]
     },
     {
       "name": "Arachidyl Alcohol",
       "id": "arachidyl_alcohol",
-      "categories": [
-        "emollient_alcohols"
-      ]
+      "categories": ["emollient_alcohols"]
     },
     {
       "name": "Behenyl Alcohol",
       "id": "behenyl_alcohol",
-      "synonyms": [
-        "docosanol",
-        "behenic alcohol"
-      ],
-      "categories": [
-        "emollient_alcohols"
-      ]
+      "synonyms": ["docosanol", "behenic alcohol"],
+      "categories": ["emollient_alcohols"]
     },
     {
       "name": "Benzyl Alcohol",
       "id": "benzyl_alcohol",
-      "categories": [
-        "emollient_alcohols"
-      ],
+      "categories": ["emollient_alcohols"],
       "references": [
         {
           "id": "33",
@@ -65,37 +46,27 @@
     {
       "name": "Brassica Alcohol",
       "id": "brassica_alcohol",
-      "categories": [
-        "emollient_alcohols"
-      ]
+      "categories": ["emollient_alcohols"]
     },
     {
       "name": "Butylene Alcohol",
       "id": "butylene_alcohol",
-      "categories": [
-        "emollient_alcohols"
-      ]
+      "categories": ["emollient_alcohols"]
     },
     {
       "name": "C14-22 Alcohol",
       "id": "c14_22_alcohol",
-      "categories": [
-        "emollient_alcohols"
-      ]
+      "categories": ["emollient_alcohols"]
     },
     {
       "name": "C20-C22 Alcohol",
       "id": "c20_c22_alcohol",
-      "categories": [
-        "emollient_alcohols"
-      ]
+      "categories": ["emollient_alcohols"]
     },
     {
       "name": "C30-50 Alcohols",
       "id": "c30_50_alcohols",
-      "categories": [
-        "emollient_alcohols"
-      ]
+      "categories": ["emollient_alcohols"]
     },
     {
       "name": "Cetearyl Alcohol",
@@ -106,9 +77,7 @@
         "c16-18 alcohols",
         "ceteryl alcohol"
       ],
-      "categories": [
-        "emollient_alcohols"
-      ]
+      "categories": ["emollient_alcohols"]
     },
     {
       "name": "Cetyl Alcohol",
@@ -121,26 +90,18 @@
         "palmitoryl alcohol",
         "c16 alcohol l"
       ],
-      "categories": [
-        "emollient_alcohols"
-      ]
+      "categories": ["emollient_alcohols"]
     },
     {
       "name": "Cetylated Lanolin Alcohol",
       "id": "cetylated_lanolin_alcohol",
-      "categories": [
-        "emollient_alcohols"
-      ]
+      "categories": ["emollient_alcohols"]
     },
     {
       "name": "Cinnamyl Alcohol",
       "id": "cinnamyl_alcohol",
-      "synonyms": [
-        "cinnamic alcohol"
-      ],
-      "categories": [
-        "emollient_alcohols"
-      ],
+      "synonyms": ["cinnamic alcohol"],
+      "categories": ["emollient_alcohols"],
       "description": "If you think the name sounds like cinnamon, you're right! This is a naturally occuring compound found in cinnamon, used mainly for its pleasant scent.",
       "references": [
         {
@@ -152,9 +113,7 @@
     {
       "name": "Coconut Alcohol",
       "id": "coconut_alcohol",
-      "categories": [
-        "emollient_alcohols"
-      ]
+      "categories": ["emollient_alcohols"]
     },
     {
       "name": "Ethyl Alcohol",
@@ -164,88 +123,53 @@
         "sugarcane-derived alcohol",
         "sugarcane alcohol"
       ],
-      "categories": [
-        "drying_alcohols"
-      ]
+      "categories": ["volatile_alcohols"]
     },
     {
       "name": "Isocetyl Alcohol",
       "id": "isocetyl_alcohol",
-      "synonyms": [
-        "isohexadecanol"
-      ],
-      "categories": [
-        "emollient_alcohols"
-      ]
+      "synonyms": ["isohexadecanol"],
+      "categories": ["emollient_alcohols"]
     },
     {
       "name": "Isopropyl alcohol",
       "id": "isopropyl_alcohol",
-      "synonyms": [
-        "isopropanol",
-        "2-propanol"
-      ],
-      "categories": [
-        "drying_alcohols"
-      ]
+      "synonyms": ["isopropanol", "2-propanol"],
+      "categories": ["volatile_alcohols"]
     },
     {
       "name": "Isostearyl Alcohol",
       "id": "isostearyl_alcohol",
-      "categories": [
-        "emollient_alcohols"
-      ]
+      "categories": ["emollient_alcohols"]
     },
     {
       "name": "Lanolin Alcohol",
       "id": "lanolin_alcohol",
-      "categories": [
-        "emollient_alcohols"
-      ]
+      "categories": ["emollient_alcohols"]
     },
     {
       "name": "Lauryl Alcohol",
       "id": "lauryl_alcohol",
-      "categories": [
-        "emollient_alcohols"
-      ],
-      "synonyms": [
-        "1-dodecanol",
-        "dodecanol",
-        "dodecyl alcohol"
-      ]
+      "categories": ["emollient_alcohols"],
+      "synonyms": ["1-dodecanol", "dodecanol", "dodecyl alcohol"]
     },
     {
       "name": "Myristyl Alcohol",
       "id": "myristyl_alcohol",
-      "synonyms": [
-        "1-tetradecanol",
-        "tetradecan-1-ol"
-      ],
-      "categories": [
-        "emollient_alcohols"
-      ]
+      "synonyms": ["1-tetradecanol", "tetradecan-1-ol"],
+      "categories": ["emollient_alcohols"]
     },
     {
       "name": "Oleyl Alcohol",
       "id": "oleyl_alcohol",
-      "synonyms": [
-        "oleic alcohol"
-      ],
-      "categories": [
-        "emollient_alcohols"
-      ]
+      "synonyms": ["oleic alcohol"],
+      "categories": ["emollient_alcohols"]
     },
     {
       "name": "Phenethyl Alcohol",
       "id": "phenethyl_alcohol",
-      "synonyms": [
-        "phenylethyl alcohol",
-        "phenyl ethyl alcohol"
-      ],
-      "categories": [
-        "drying_alcohols"
-      ],
+      "synonyms": ["phenylethyl alcohol", "phenyl ethyl alcohol"],
+      "categories": ["volatile_alcohols"],
       "references": [
         {
           "id": "35",
@@ -257,9 +181,7 @@
     {
       "name": "Propyl Alcohol",
       "id": "propyl_alcohol",
-      "categories": [
-        "drying_alcohols"
-      ]
+      "categories": ["volatile_alcohols"]
     },
     {
       "name": "Alcohol Denat",
@@ -272,9 +194,7 @@
         "sugarcane derived alcohol",
         "alcohol"
       ],
-      "categories": [
-        "drying_alcohols"
-      ],
+      "categories": ["volatile_alcohols"],
       "description": "This is literally alcohol, like the kind in a bottle of vodka, except its been denatured, a process that makes it undrinkable.",
       "references": [
         {
@@ -298,23 +218,17 @@
         "steoryl alcohol",
         "steareth alcohol"
       ],
-      "categories": [
-        "emollient_alcohols"
-      ]
+      "categories": ["emollient_alcohols"]
     },
     {
       "name": "Undecyl Alcohol",
       "id": "undecyl_alcohol",
-      "categories": [
-        "emollient_alcohols"
-      ]
+      "categories": ["emollient_alcohols"]
     },
     {
       "name": "Emulsifying Wax",
       "id": "emulsifying_wax",
-      "categories": [
-        "emollient_alcohols"
-      ],
+      "categories": ["emollient_alcohols"],
       "references": [
         {
           "id": "37",
@@ -326,87 +240,63 @@
     {
       "name": "Hydrogenated Dilinoleyl Alcohol",
       "id": "hydrogenated_dilinoleyl_alcohol",
-      "categories": [
-        "emollient_alcohols"
-      ]
+      "categories": ["emollient_alcohols"]
     },
     {
       "name": "Arachidyl Alcohol",
       "id": "arachidyl_alcohol",
-      "categories": [
-        "emollient_alcohols"
-      ]
+      "categories": ["emollient_alcohols"]
     },
     {
       "name": "Batyl Alcohol",
       "id": "batyl_alcohol",
-      "categories": [
-        "emollient_alcohols"
-      ]
+      "categories": ["emollient_alcohols"]
     },
     {
       "name": "Brassica Alcohol",
       "id": "brassica_alcohol",
-      "categories": [
-        "emollient_alcohols"
-      ]
+      "categories": ["emollient_alcohols"]
     },
     {
       "name": "C12-15 Alcohol",
       "id": "c12_15_alcohol",
-      "categories": [
-        "emollient_alcohols"
-      ]
+      "categories": ["emollient_alcohols"]
     },
     {
       "name": "C12-16 Alcohol",
       "id": "c12_16_alcohol",
-      "categories": [
-        "emollient_alcohols"
-      ]
+      "categories": ["emollient_alcohols"]
     },
     {
       "name": "Decyl Alcohol",
       "id": "decyl_alcohol",
-      "categories": [
-        "emollient_alcohols"
-      ]
+      "categories": ["emollient_alcohols"]
     },
     {
       "name": "Hydrogenated Rapeseed Alcohol",
       "id": "hydrogenated_rapeseed_alcohol",
-      "categories": [
-        "emollient_alcohols"
-      ]
+      "categories": ["emollient_alcohols"]
     },
     {
       "name": "Jojoba Alcohol",
       "id": "jojoba_alcohol",
-      "categories": [
-        "emollient_alcohols"
-      ]
+      "categories": ["emollient_alcohols"]
     },
     {
       "name": "Tridecyl Alcohol",
       "id": "tridecyl_alcohol",
-      "categories": [
-        "emollient_alcohols"
-      ]
+      "categories": ["emollient_alcohols"]
     },
     {
       "name": "Fatty Alcohol",
       "id": "fatty_alcohol",
-      "categories": [
-        "emollient_alcohols"
-      ],
+      "categories": ["emollient_alcohols"],
       "description": "This is probably part of an ingredient list that's just labeling another ingredient"
     },
     {
       "name": "C20-22 Alcohol",
       "id": "c20_22_alcohol",
-      "categories": [
-        "emollient_alcohols"
-      ]
+      "categories": ["emollient_alcohols"]
     }
   ]
 }

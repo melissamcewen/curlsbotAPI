@@ -41,7 +41,7 @@
       "id": "unknown_alcohol",
       "synonyms": ["alcohol"],
       "description": "Unknown alcohol, since we don't know what it is, we are going to classify it as drying alcohols just to be safe.",
-      "categories": ["drying_alcohols"]
+      "categories": ["volatile_alcohols"]
     },
     {
       "name": "Unknown Essential Oil",

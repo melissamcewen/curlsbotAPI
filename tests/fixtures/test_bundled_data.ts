@@ -45,7 +45,7 @@ export const testDatabase: IngredientDatabase = {
     sd_alcohol: {
       id: 'sd_alcohol',
       name: 'SD Alcohol',
-      categories: ['drying_alcohols'],
+      categories: ['volatile_alcohols'],
     },
     sodium_cocoyl_isethionate: {
       id: 'sodium_cocoyl_isethionate',
@@ -118,8 +118,8 @@ export const testDatabase: IngredientDatabase = {
       description: 'Moisturizing alcohols',
       group: 'alcohols',
     },
-    drying_alcohols: {
-      id: 'drying_alcohols',
+    volatile_alcohols: {
+      id: 'volatile_alcohols',
       name: 'Drying Alcohols',
       description: 'Drying alcohols',
       group: 'alcohols',

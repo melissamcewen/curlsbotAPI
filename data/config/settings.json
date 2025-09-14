@@ -3,52 +3,40 @@
     {
       "id": "sulfate_free",
       "name": "Sulfates",
-      "description": "Sulfates are a common cleanser in hair care products. The Curly Girl Method recommends avoiding them but some people find them fine.",
-      "categories": [
-        "sulfates"
-      ],
+      "description": "Sulfates are a common cleanser in hair care products. There is no evidence that they are harmful in shampoo, but some people choose to avoid them.",
+      "categories": ["sulfates"],
       "defaultStatus": "warning",
       "guide": "/categories/sulfates"
     },
     {
       "id": "paraben_caution",
       "name": "Parabens",
-      "description": "Parabens are preservatives used to extend the shelf life of hair care products, but some people avoid them due to potential health concerns.",
-      "categories": [
-        "parabens"
-      ],
+      "description": "Parabens are preservatives used to extend the shelf life of hair care products, but some people avoid them due to potential health concerns, which have since been debunked.",
+      "categories": ["parabens"],
       "defaultStatus": "caution",
       "guide": "/categories/parabens"
     },
     {
-      "id": "drying_alcohol",
-      "name": "Alcohols",
-      "description": "These alcohols have a reputation for being drying, but may be fine in some formulations, especially in low amounts and in products that evaporate quickly.",
-      "categories": [
-        "drying_alcohols"
-      ],
+      "id": "volatile_alcohol",
+      "name": "Volatile Alcohols",
+      "description": "There is no evidence that short-chain alcohols in hair products are harmful, but some people choose to avoid them.",
+      "categories": ["volatile_alcohols"],
       "defaultStatus": "caution",
       "guide": "/groups/alcohols"
     },
     {
       "id": "silicone_free",
       "name": "Silicones",
-      "description": "Silicones are useful conditioning ingredients, but the Curly Girl Method recommends avoiding them.",
-      "groups": [
-        "silicones"
-      ],
+      "description": "Silicones are useful conditioning ingredients and there is no evidence that they are harmful, and they have many benefits,but the Curly Girl Method recommends avoiding them.",
+      "groups": ["silicones"],
       "defaultStatus": "warning"
     },
     {
       "id": "mild_surfactants_only",
       "name": "Stronger surfactants",
-      "description": "Avoid these if you prefer mild surfactants.",
-      "groups": [
-        "surfactants"
-      ],
-      "allowedCategories": [
-        "mild_surfactants"
-      ],
+      "description": "There is no evidence that stronger surfactants are harmful, but some people choose to avoid them.",
+      "groups": ["surfactants"],
+      "allowedCategories": ["mild_surfactants"],
       "defaultStatus": "warning",
       "allowedStatus": "ok",
       "guide": "/groups/surfactants"
@@ -57,12 +45,8 @@
       "id": "mild_surfactants_caution_others",
       "name": "Non-mild surfactants",
       "description": "These surfactants are not as harsh as sulfates but can still be drying for some hair types depending on the formulation. CurlsBot is revisiting many of these so you should do your own research.",
-      "groups": [
-        "surfactants"
-      ],
-      "allowedCategories": [
-        "mild_surfactants"
-      ],
+      "groups": ["surfactants"],
+      "allowedCategories": ["mild_surfactants"],
       "defaultStatus": "caution",
       "allowedStatus": "ok",
       "guide": "/groups/surfactants"
@@ -71,38 +55,30 @@
       "id": "no_astringents",
       "name": "No Astringents",
       "description": "Astringents are substances that tighten pores and reduce oil production, which can be beneficial for people with oily scalps, but can be too drying for those with dry or normal hair.",
-      "categories": [
-        "astringents"
-      ],
+      "categories": ["astringents"],
       "defaultStatus": "warning"
     },
     {
       "id": "no_water_insoluble_silicones",
       "name": "Water Insoluble Silicones",
-      "description": "These are silicones that are not water-soluble and can build up on the hair if you don't use a cleansing shampoo",
-      "categories": [
-        "non_water_soluble_silicones"
-      ],
+      "description": "These are silicones that are not water-soluble and can build up on the hair if you don't use a cleansing shampoo (for example, using a cowash). Otherwise they there is no evidence that they are harmful and they have many benefits.",
+      "categories": ["non_water_soluble_silicones"],
       "defaultStatus": "warning",
       "guide": "/groups/silicones"
     },
     {
       "id": "caution_silicones",
       "name": "Silicones",
-      "description": "Some find these water-soluble and evaporative silicones are fine but we mark all silicones as caution in case you want to avoid them.",
-      "groups": [
-        "silicones"
-      ],
+      "description": "These are silicones that should rinse off easily or evaporate from the hair. There is no evidence that they are harmful and they have many benefits, however some people choose to avoid them.",
+      "groups": ["silicones"],
       "defaultStatus": "caution",
       "guide": "/groups/silicones"
     },
     {
       "id": "no_waxes",
       "name": "Non-water-soluble waxes",
-      "description": "These waxes can coat the hair shaft, providing temporary benefits like shine, smoothness, and heat protection. However, they can build up on the hair, leading to a heavy, greasy feel and potentially hindering moisture absorption.",
-      "categories": [
-        "non_water_soluble_waxes"
-      ],
+      "description": "These waxes can coat the hair shaft, providing temporary benefits like shine, smoothness, and heat protection. However, they can build up on the hair if used in excess and without clarifying.",
+      "categories": ["non_water_soluble_waxes"],
       "defaultStatus": "warning",
       "guide": "/groups/waxes"
     },
@@ -110,9 +86,7 @@
       "id": "soap_free",
       "name": "Soap",
       "description": "Soaps can be harsh on hair, stripping away natural oils and potentially leading to dryness, frizz, and damage, especially for those with color-treated or chemically processed hair. They can also build up on the hair when combined with hard water.",
-      "categories": [
-        "soaps"
-      ],
+      "categories": ["soaps"],
       "defaultStatus": "warning",
       "guide": "/categories/soap"
     },
@@ -120,9 +94,7 @@
       "id": "no_mineral_oil",
       "name": "Mineral Oil",
       "description": "The original Curly Girl Handbook mentions mineral oil in one chapter, but there is no scientific evidence to suggest it is harmful. We mark it as caution because some people consider it non-cgm.",
-      "ingredients": [
-        "mineral_oil"
-      ],
+      "ingredients": ["mineral_oil"],
       "defaultStatus": "caution",
       "guide": "/ingredients/mineral-oil"
     }
