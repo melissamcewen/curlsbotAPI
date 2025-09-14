@@ -5083,9 +5083,9 @@ export const defaultDatabase: IngredientDatabase = {
   "categories": {
     "volatile_alcohols": {
       "id": "volatile_alcohols",
-      "name": "Drying Alcohols",
+      "name": "Volatile Alcohols",
       "group": "alcohols",
-      "description": "Short-chain alcohols considered drying because they evaporate quickly and can strip natural oils from the hair and scalp"
+      "description": "Short-chain alcohols that evaporate quickly"
     },
     "parabens": {
       "id": "parabens",
@@ -5473,7 +5473,7 @@ export const defaultSystems: System[] = [
   {
     "name": "Curly Default",
     "id": "curly_default",
-    "description": "The Curly Default system is a hair care system that focuses on using products that are free of harsh chemicals and sulfates. It recommends using products that are free of drying alcohols, parabens, and other potentially harmful ingredients.",
+    "description": "The Curly Default system is a hair care system that focuses on using products that are free of harsh chemicals and sulfates. It recommends using products that are free of volatile alcohols, parabens, and other potentially harmful ingredients.",
     "settings": [
       "volatile_alcohol",
       "caution_silicones",

@@ -2844,7 +2844,7 @@ export const defaultProductDatabase: ProductDatabase = {
         }
       ],
       "ingredients_raw": "aqua water eau, stearyl alcohol, sodium lauroamphoacetate, hydroxypropyl starch phosphate, behentrimonium chloride, cetyl alcohol, cocamidopropyl hydroxysultaine, anastatica hierochuntica extract, oryza sativa rice bran oil, hydroxypropyl bis-hydroxyethyldimonium chloride, hexylene glycol, butylene glycol, ceteareth-20, caprylyl glycol, phenoxyethanol, citric acid, disodium edta, isopropyl alcohol, benzyl salicylate, fragrance parfum",
-      "description": "A gentle low pH cleanser. Has a drying alcohol (isopropyl alcohol) but low on the ingredients list and this is less of a concern in a wash-out product.",
+      "description": "A gentle low pH cleanser. Has a volatile alcohol (isopropyl alcohol) but low on the ingredients list and this is less of a concern in a wash-out product.",
       "id": "curl_shaper_double_duty_weightless_cleansing_conditioner",
       "systems_excluded": [],
       "status": "caution",

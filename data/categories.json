@@ -2,9 +2,9 @@
   "categories": [
     {
       "id": "volatile_alcohols",
-      "name": "Drying Alcohols",
+      "name": "Volatile Alcohols",
       "group": "alcohols",
-      "description": "Short-chain alcohols considered drying because they evaporate quickly and can strip natural oils from the hair and scalp"
+      "description": "Short-chain alcohols that evaporate quickly"
     },
     {
       "id": "parabens",
