@@ -2590,7 +2590,7 @@ export const defaultDatabase: IngredientDatabase = {
     "glycerin": {
       "name": "Glycerin",
       "id": "glycerin",
-      "description": "A powerful humectant that attracts moisture to the hair",
+      "description": "A powerful humectant",
       "categories": [
         "simple_humectants"
       ],
@@ -4901,7 +4901,7 @@ export const defaultDatabase: IngredientDatabase = {
       "synonyms": [
         "alcohol"
       ],
-      "description": "Unknown alcohol, since we don't know what it is, we are going to classify it as drying alcohols just to be safe.",
+      "description": "Unknown alcohol, since we don't know what it is, we are going to classify it as a volatile (short-chain) alcohol just to be safe.",
       "categories": [
         "volatile_alcohols"
       ],
@@ -5249,7 +5249,7 @@ export const defaultDatabase: IngredientDatabase = {
       "id": "film_forming_humectants",
       "name": "Film Forming Humectants",
       "group": "humectants",
-      "description": "These are large, complex molecules that may be better at retaining moisture in low humidity conditions"
+      "description": "These are large, complex molecules form gel-like films to help hold the hair in place"
     },
     "simple_humectants": {
       "id": "simple_humectants",
@@ -5314,7 +5314,7 @@ export const defaultDatabase: IngredientDatabase = {
       "id": "film_forming_agents",
       "name": "Film Forming Agents",
       "group": "others",
-      "description": "These ingredients form a thin invisible layer on the hair to hold style, prevent moisture loss, and protect from damage."
+      "description": "These ingredients form a thin invisible layer on the hair to hold style and protect from damage."
     },
     "essential_oils": {
       "id": "essential_oils",
@@ -5348,7 +5348,7 @@ export const defaultDatabase: IngredientDatabase = {
       "id": "amino_acids",
       "name": "Amino Acids",
       "group": "humectants",
-      "description": "Amino acids are used in haircare to repair and strengthen hair by rebuilding damaged protein structures and improving moisture retention."
+      "description": "Amino acids are used in haircare to repair and strengthen hair by rebuilding damaged protein structures and improving hair condition."
     }
   },
   "groups": {
@@ -5443,7 +5443,7 @@ export const defaultDatabase: IngredientDatabase = {
     "humectants": {
       "id": "humectants",
       "name": "Humectants",
-      "description": "Humectants are ingredients that attract moisture to the hair",
+      "description": "Humectants are ingredients that attract moisture",
       "inclusions": [],
       "notes": [
         {

@@ -3771,7 +3771,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "protein"
       ],
       "ingredients_raw": "water, glycerin, carboxymethylcellulose, aloe barbadensis leaf extract, pectin, hydroxypropyltrimonium honey, silk amino acids, hypnea musciformis extract seaweed, gelidiella acerosa extract seaweed, sargassum filipendula seaweed extract, sorbitol, rosmarinus officinalis rosemary leaf extract, salix alba willow bark extract, urtica dioica nettle extract, ethylhexylglycerin, phenoxyethanol, citrus senensis oil, citrus limon oil, citrus aurantifolia oil, citrus paradisi oil",
-      "description": "A lightweight custard that provides hold, enhances volume, and adds moisture with seaweed and honey",
+      "description": "A lightweight custard that provides hold, enhances volume, and conditions with seaweed and honey",
       "asin": "B005SIR12E",
       "cost": 2.3,
       "id": "curl_enhancing_custard",
@@ -6626,7 +6626,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "glycerin-free"
       ],
       "ingredients_raw": "water, caprylic capric triglyceride, dimethicone, cetearyl alcohol, bis-hydroxy methoxy amodimethicone, cetyl alcohol, propylene glycol, fragrance, trimethylpentanediol adipic acid glycerin crosspolymer, polyquaternium-37, behentrimonium chloride, hydroxypropyl methylcellulose, dipropylene glycol, simmondsia chinensis jojoba seed oil, butyrospermum parkii shea oil, methylchloroisothiazolinone, methylisothiazolinone",
-      "description": "A patented, high-slip formula that makes detangling easy, while smoothing cuticles and sealing in moisture",
+      "description": "A patented, high-slip formula that makes detangling easy, while smoothing cuticles",
       "id": "water_activated_conditioner",
       "systems_excluded": [],
       "status": "warning",
@@ -6707,7 +6707,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "protein-free"
       ],
       "ingredients_raw": "water aqua eau, cetearyl alcohol, olea europaea fruit oil, cetyl alcohol, glycerin, butylene glycol, butyrospermum parkii butter, sodium pca, stearalkonium chloride, ethyl macademiate, magnesium ascorbate, panthenol, citric acid, phenoxyethanol, polysorbate 20, isopropyl myristate, cetrimonium chloride, polyquaternium-10, potassium sorbate, polyquaternium-4, polyquaternium-7, limonene, benzyl salicylate, fragance parfum",
-      "description": "A deep treatment that delivers intense moisture to dry, brittle hair, transforming it into soft, shiny strands",
+      "description": "A deep treatment that delivers intense conditioning to dry, brittle hair, transforming it into soft, shiny strands",
       "id": "rehydr8_moisture_conditioner",
       "systems_excluded": [],
       "status": "ok",
@@ -6900,7 +6900,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "protein"
       ],
       "ingredients_raw": "water aqua eau, cetearyl alcohol, isoamyl laurate, behentrimonium chloride, glycerin, glyceryl stearate se, cocos nucifera coconut oil, honey mel miel, butyrospermum parkii shea butter extract, hydrolyzed soy protein, prunus amygdalus dulcis sweet almond fruit extract, sclerocarya birrea seed oil, glycine soja soybean oil, phenoxyethanol, polyquaternium-67, glyceryl laurate, sodium gluconate, citric acid, lecithin, isopropyl alcohol, limonene, coumarin, linalool, alpha-isomethyl ionone, fragrance parfum",
-      "description": "This conditoner delivers the moisture your curls crave and leaves your strands silky-soft and easy to detangle and style",
+      "description": "This conditoner leaves your strands silky-soft and easy to detangle and style",
       "id": "cream_daily_conditioner",
       "systems_excluded": [],
       "status": "caution",
@@ -7394,7 +7394,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "protein-free"
       ],
       "ingredients_raw": "water, aqua, eau, cetearyl alcohol, glycerin, behentrimonium chloride, glycine soja soybean oil, polyquaternium-7, stearyl alcohol, neopentyl glycol diheptanoate, isododecane, butyrospermum parkii shea butter, panthenol, ricinus communis castor seed oil, persea gratissima avocado oil, salvia hispanica chia seed, honey, juglans regia walnut shell powder, urtica dioica nettle extract, tocopheryl acetate, hydroxyethylcellulose, potassium sorbate, phenoxyethanol, ethylhexylglycerin, fragrance parfum, geraniol",
-      "description": "Delivers intense moisture, smoothing curls without weighing them down",
+      "description": "A rich mask that smoothes and softens curls without weighing them down",
       "id": "honey_chia_smoothing_mask",
       "systems_excluded": [],
       "status": "ok",
@@ -7481,7 +7481,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "glycerin-free"
       ],
       "ingredients_raw": "water, stearyl alcohol, cetyl alcohol, cetearyl alcohol, polyester-37, propanediol, behentrimonium chloride, persea gratissima avocado oil, cetrimonium bromide, phenoxyethanol, capryloyl glycerin sebacic acid copolymer, jojoba esters, hydrogenated ethylhexyl olivate, guar hydroxypropyltrimonium chloride, diheptyl succinate, isopropyl alcohol, sodium benzoate, fragrance, hydroxypropylammonium gluconate, hydroxypropylgluconamide, panthenol, carthamus tinctorius safflower seed oil, oryza sativa rice bran extract, tocopherol, cannabis sativa seed oil, rosa canina seed oil, ethylhexylglycerin, squalane, limnanthes alba meadowfoam seed oil, citric acid, alpha-isomethyl ionone, hydrogenated olive oil unsaponifiables, hexyl cinnamal, linalool, sodium pca, sodium lactate, arginine, aspartic acid, pca, glycine, alanine, ceramide np, aminomethyl propanol, serine, valine, threonine, isoleucine, proline, phenylalanine, histidine",
-      "description": "Boosts moisture without weighing hair down and improves wet detangling by up to 90% after just one use",
+      "description": "Boosts conditioning without weighing hair down and improves wet detangling by up to 90% after just one use",
       "id": "bonding_hydration_mask",
       "systems_excluded": [],
       "status": "caution",
@@ -8489,7 +8489,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "protein-free"
       ],
       "ingredients_raw": "water aqua, linum usitatissimum linseed extract, salvia hispanica chia seed extract, behentrimonium methosulfate, quaternium-87, cetearyl alcohol, cetyl alcohol, panthenol, mangifera indica mango seed butter, prunus amygdalus dulcis sweet almond oil, caprylhydroxamic acid, caprylyl glycol, glycerin, argania spinosa kernel oil, camellia sinensis leaf extract, simmondsia chinensis jojoba seed oil, peg ppg-8 3 diisostearate, astrocaryum vulgare kernel oil, tocopherol, olea europea olive fruit oil, euterpe oleracea acai fruit oil, mauritia flexuosa buriti fruit oil, fragrance, polyquaternium-73",
-      "description": "A lightweight, vegan hair butter that delivers deep moisture for easy curl revival!",
+      "description": "A lightweight, vegan hair butter that delivers deep ongoing conditioning and protection",
       "id": "curl_quenching_hair_butter",
       "systems_excluded": [],
       "status": "ok",
@@ -8675,7 +8675,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "glycerin-free"
       ],
       "ingredients_raw": "water aqua eau, polyacrylamide, c13-14 isoalkane, shea butter ethyl esters, polyquaternium-10, keratin amino acids, oryza sativa rice extract, acyl coenzyme a desaturase, lactobacillus tomato fruit ferment extract, leuconostoc radish root ferment filtrate, pg-hydroxyethylcellulose cocodimonium chloride, laureth-7, disodium edta, citric acid, ethylhexylglycerin, phenoxyethanol, fragrance parfum, linalool, limonene, hydroxycitronellal, citronellol",
-      "description": "Defines curls, seals in moisture, controls frizz, and adds shine for bouncy, polished curls",
+      "description": "Defines curls, controls frizz, and adds shine for bouncy, polished curls",
       "id": "curl_talk_curl_cream",
       "systems_excluded": [],
       "status": "ok",
@@ -9032,7 +9032,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "glycerin-free"
       ],
       "ingredients_raw": "behentrimonium methosulfate, cetearyl alcohol, theobroma cacao seed butter, argania spinosa kernel butter, ribes nigrum butter, guar hydroxypropyltrimonium chloride stearic acid, cetrimonium chloride, lactobacillus ferment, hydrolyzed rice protein, panthenol provitamin b5, stearic acid, brassica oleracea italica seed oil, citrus limon peel oil, clitoria ternatea flower extract, phenoxyethanol and caprylyl glycol, tanacetum annuum flower oil",
-      "description": "A lightweight leave-in bar that adds moisture, strengthens, thickens, and boosts volume, shine, and curl definition",
+      "description": "A lightweight leave-in bar that strengthens, thickens, and boosts volume, shine, and curl definition",
       "id": "leave-in_conditioner_",
       "systems_excluded": [],
       "status": "ok",
@@ -9531,7 +9531,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "glycerin-free"
       ],
       "ingredients_raw": "aqua water eau, dicetyldimonium chloride, propylene glycol, helianthus annuus extract, aloe barbadensis leaf extract, chamomilla recutita extract, phenoxyethanol, diazolidinyl urea, calendula officinalis flower extract, isoceteth-20, parfum, disodium edta, polyquaternium-7, panthenol, silk amino acids, potassium sorbate, benzophenone-4, sodium pca, lactic acid, limonene, linalool",
-      "description": "Loosens knots, adds moisture, and locks in color without buildup or dullness",
+      "description": "Loosens knots, conditions, and locks in color without buildup or dullness",
       "id": "slip_detangler",
       "systems_excluded": [],
       "status": "ok",
@@ -9711,7 +9711,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "glycerin-free"
       ],
       "ingredients_raw": "isododecane, isohexadecane, isoamyl laurate, coconut alkanes, ethylene propylene styrene copolymer, butylene ethylene styrene copolymer, coco-caprylate caprate, phospholipids, glycine soja soybean oil, glycolipids, glycine soja soybean sterols, persea gratissima avocado oil, mauritia flexuosa fruit oil, simmondsia chinensis jojoba seed oil, rosa canina fruit oil, helianthus annuus sunflower seed oil, pentaerythrityl tetra-di-t-butyl hydroxyhydrocinnamate, parfum fragrance, citronellol, geraniol, linalool",
-      "description": "A lightweight, hair oil that locks in moisture (without the grease), unlocks beachy waves, and uplifts your shine.",
+      "description": "A lightweight, hair oil that conditions without the grease, unlocks beachy waves, and uplifts your shine.",
       "id": "a_walk_in_the_sun_luxury_hair_oil",
       "systems_excluded": [],
       "status": "ok",
@@ -11137,7 +11137,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "protein-free"
       ],
       "ingredients_raw": "water aqua eau, cetearyl alcohol, glycerin, isoamyl laurate, sea silt, cetrimonium chloride, propanediol, prunus armeniaca apricot kernel oil, musa sapientum banana fruit extract, melia azadirachta leaf extract, bentonite, fragrance parfum, glyceryl stearate, 2-hexanediol, methyl diisopropyl propionamide, caprylhydroxamic acid, menthol, butylene glycol, citric acid, quartz, coumarin",
-      "description": "A post-shampoo scalp mask with Sea Silt to purify, Neem/Menthol to soothe, and Apricot Oil to restore moisture levels",
+      "description": "A post-shampoo scalp mask with Sea Silt to purify, Neem/Menthol to soothe, and Apricot Oil to soften and add shine",
       "id": "sahascalp_cooling_scalp_mud_mask",
       "systems_excluded": [],
       "status": "ok",
@@ -11882,7 +11882,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "protein"
       ],
       "ingredients_raw": "water aqua, behentrimonium methosulfate, cetearyl alcohol, cocos nucifera coconut oil, peg-40 ppg-8 methylaminopropyl hydroxypropyl dimethicone copolymer, glycerin, simmondsia chinensis jojoba seed oil, caryocar brasiliense pequi fruit oil, propylene glycol dicaprylate dicaprate, hydrolyzed rice protein, polyquaternium-37, dipropylene glycol, phenoxyethanol, c10-40 isoalkylamidopropylethyldimonium ethosulfate, ppg-26-buteth-26, quaternium-33, ceteareth-20, caprylyl glycol, peg-40 hydrogenated castor oil, ppg-1 trideceth-6, fragrance parfum, tocopherol, benzyl alcohol, potassium sorbate, sodium benzoate f714-1",
-      "description": "A lightweight curl primer that delivers deep moisture without buildup to leave hair feeling product-free",
+      "description": "A lightweight curl primer that delivers deep conditioning without buildup to leave hair feeling product-free",
       "id": "curl_wow_flo-etry_vital_natural_serum",
       "systems_excluded": [],
       "status": "caution",
@@ -12268,7 +12268,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "glycerin-free"
       ],
       "ingredients_raw": "distilled water, aloe vera juice, rosemary extract, persea gratissima avocado oil, caprylic capric triglyceride, glycine beet sugar extract, behentrimonium methosulfate, cetearyl alcohol, propanediol, phenoxyethanol, caprylyl glycol, sorbic acid, phthalate-free fragrance, diheptyl succinate, capryloyl glycerin sebacic acid copolymer, hydrolyzed silk protein, polyquaternium -10, panthenol pro-vitamin b5",
-      "description": "A refresher spray that instantly revives hairstyles needing extra moisture between wash days.",
+      "description": "A refresher spray that instantly revives hairstyles needing extra conditioning between wash days.",
       "id": "boost_hydrate_and_refresh_spray",
       "systems_excluded": [],
       "status": "ok",
@@ -15333,7 +15333,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "protein-free"
       ],
       "ingredients_raw": "aqua water eau, coco-glucoside, laureth-6 carboxylic acid, peg-120 methyl glucose dioleate, glycerin, panthenol, peg-7 glyceryl cocoate, polyquaternium-10, peg-75 shea butter glycerides, cocos nucifera coconut fruit extract, theobroma cacao cocoa seed butter, theobroma grandiflorum seed butter, helianthus annuus sunflower seed oil, tocopherol, betaine, parfum fragrance, hydroxypropyl guar hydroxypropyltrimonium chloride, peg-4, peg-6, castor oil hydrogenated ethoxylated, peg-7, peg-8, sodium hydroxide, disodium edta, potassium sorbate, sodium benzoate, methylchloroisothiazolinone, methylisothiazolinone, linalool, limonene, hexyl cinnamal",
-      "description": "A sulfate-free shampoo that removes buildup without stripping moisture, leaving curls soft, shiny, and defined",
+      "description": "A sulfate-free shampoo that removes buildup without stripping, leaving curls soft, shiny, and defined",
       "buy_links": [
         {
           "url": "https://amzn.to/3ERSp41",

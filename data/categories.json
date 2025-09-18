@@ -151,7 +151,7 @@
       "id": "film_forming_humectants",
       "name": "Film Forming Humectants",
       "group": "humectants",
-      "description": "These are large, complex molecules that may be better at retaining moisture in low humidity conditions"
+      "description": "These are large, complex molecules form gel-like films to help hold the hair in place"
     },
     {
       "id": "simple_humectants",
@@ -202,7 +202,7 @@
       "id": "film_forming_agents",
       "name": "Film Forming Agents",
       "group": "others",
-      "description": "These ingredients form a thin invisible layer on the hair to hold style, prevent moisture loss, and protect from damage."
+      "description": "These ingredients form a thin invisible layer on the hair to hold style and protect from damage."
     },
     {
       "id": "essential_oils",
@@ -234,7 +234,7 @@
       "id": "amino_acids",
       "name": "Amino Acids",
       "group": "humectants",
-      "description": "Amino acids are used in haircare to repair and strengthen hair by rebuilding damaged protein structures and improving moisture retention."
+      "description": "Amino acids are used in haircare to repair and strengthen hair by rebuilding damaged protein structures and improving hair condition."
     }
   ]
 }
