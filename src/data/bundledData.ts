@@ -4723,7 +4723,8 @@ export const defaultDatabase: IngredientDatabase = {
         "PG-propyl Silanetriol"
       ],
       "categories": [
-        "water_soluble_silicones"
+        "water_soluble_silicones",
+        "proteins"
       ],
       "references": [
         {

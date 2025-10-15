@@ -208,7 +208,7 @@
       "name": "Hydrolyzed Vegetable Protein PG-propyl Silanetriol",
       "id": "hydrolyzed_vegetable_protein_pg_propyl_silanetriol",
       "synonyms": ["PG-propyl Silanetriol"],
-      "categories": ["water_soluble_silicones"],
+      "categories": ["water_soluble_silicones", "proteins"],
       "references": [
         {
           "id": "15"
