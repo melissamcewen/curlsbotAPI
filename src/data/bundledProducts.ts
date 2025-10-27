@@ -2289,7 +2289,7 @@ export const defaultProductDatabase: ProductDatabase = {
       "extensions": {
         "frizzbot": {
           "simple_humectants_number": 7,
-          "film_forming_humectants_number": 1,
+          "film_forming_humectants_number": 2,
           "emollients_number": 11,
           "simple_humectants": [
             "Glycereth-26",
@@ -2301,7 +2301,8 @@ export const defaultProductDatabase: ProductDatabase = {
             "Sodium hyaluronate"
           ],
           "film_forming_humectants": [
-            "Unknown Protein"
+            "Unknown Protein",
+            "Hydrolyzed Vegetable Protein PG-propyl Silanetriol"
           ],
           "emollients": [
             "Acrylates Copolymer",
@@ -2316,7 +2317,7 @@ export const defaultProductDatabase: ProductDatabase = {
             "Argan Oil",
             "Copolymer"
           ],
-          "score": -40
+          "score": -44
         },
         "porosity": {
           "high": 100,
@@ -7232,7 +7233,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "curly",
         "coily",
         "high_porosity",
-        "protein-free",
+        "protein",
         "glycerin-free"
       ],
       "ingredients_raw": "water eau aqua, cetyl alcohol, cetearyl alcohol, simmondsia chinensis seed oil, panthenol, behentrimonium chloride, dimethicone, propylene glycol, hippophae rhamnoides sea buckthorn extract, argania spinosa argan kernel oil, cetrimonium chloride, isopropyl alcohol, fragrance parfum, hydrolyzed vegetable protein pg-propyl silanetriol keravis, ascorbic acid, citric acid, disodium edta, phenoxyethanol, potassium sorbate, butylphenyl methylpropional, limonene, hydroxycitronellal, hydroxyisohexyl 3-cyclohexene carboxaldehyde",
@@ -7243,13 +7244,15 @@ export const defaultProductDatabase: ProductDatabase = {
       "extensions": {
         "frizzbot": {
           "simple_humectants_number": 2,
-          "film_forming_humectants_number": 0,
+          "film_forming_humectants_number": 1,
           "emollients_number": 8,
           "simple_humectants": [
             "Panthenol",
             "Propylene Glycol"
           ],
-          "film_forming_humectants": [],
+          "film_forming_humectants": [
+            "Hydrolyzed Vegetable Protein PG-propyl Silanetriol"
+          ],
           "emollients": [
             "Cetyl Alcohol",
             "Cetearyl Alcohol",
@@ -7260,7 +7263,7 @@ export const defaultProductDatabase: ProductDatabase = {
             "Cetrimonium Chloride",
             "Hydrolyzed Vegetable Protein PG-propyl Silanetriol"
           ],
-          "score": -63
+          "score": -66
         },
         "porosity": {
           "high": 100,
@@ -7288,7 +7291,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein-free",
+            "protein",
             "glycerin-free"
           ]
         }
@@ -11330,82 +11333,12 @@ export const defaultProductDatabase: ProductDatabase = {
         }
       }
     },
-    "mousse_def_texture_foam": {
-      "name": "Mousse Def Texture Foam",
-      "brand": "The Doux",
-      "buy_links": [
-        {
-          "url": "https://amzn.to/3GFpCAg",
-          "retailer": "Amazon"
-        }
-      ],
-      "product_categories": [
-        "foams"
-      ],
-      "tags": [
-        "samples",
-        "wavy",
-        "curly",
-        "coily",
-        "low_porosity",
-        "protein",
-        "glycerin-free"
-      ],
-      "ingredients_raw": "water, polyquaternium-55, cocamidopropyl hydroxysultaine, aloe barbadensis leaf, pvp, tocopheryl acetate, citric acid, silk amino acids, polysorbate 20, ethylhexylglycerin, oleth-20, fragrance parfum, glycereth-2 cocoate, isostearamidopropyl morpholine lactate, phenoxyethanol, benzoic acid, disodium edta",
-      "description": "Light to medium-hold curl mousse that is great for  creating curl definition",
-      "id": "mousse_def_texture_foam",
-      "systems_excluded": [],
-      "status": "ok",
-      "extensions": {
-        "frizzbot": {
-          "simple_humectants_number": 1,
-          "film_forming_humectants_number": 1,
-          "emollients_number": 2,
-          "simple_humectants": [
-            "Ethylhexylglycerin"
-          ],
-          "film_forming_humectants": [
-            "Silk Amino Acids"
-          ],
-          "emollients": [
-            "Unknown Polyquat",
-            "Polyvinylpyrrolidone"
-          ],
-          "score": -75
-        },
-        "porosity": {
-          "high": 100,
-          "low": 100
-        },
-        "sebderm": {
-          "hasTriggers": true,
-          "triggers": [
-            {
-              "id": "silk_amino_acids",
-              "name": "Silk Amino Acids",
-              "reason": "Amino acids can be metabolized by Malassezia, potentially worsening symptoms"
-            },
-            {
-              "id": "polysorbate_20",
-              "name": "Polysorbate 20",
-              "reason": "polysorbates can feed Malassezia yeast"
-            }
-          ]
-        },
-        "autoTagger": {
-          "tags": [
-            "protein",
-            "glycerin-free"
-          ]
-        }
-      }
-    },
     "opp_one_pass_press_heat_protectant_spray": {
       "name": "OPP One Pass Press Heat Protectant Spray",
       "brand": "The Doux",
       "buy_links": [
         {
-          "url": "https://amzn.to/4lVkwAd",
+          "url": "https://amzn.to/47qbWmy",
           "retailer": "Amazon"
         }
       ],
@@ -12683,6 +12616,76 @@ export const defaultProductDatabase: ProductDatabase = {
         }
       }
     },
+    "mousse_def_texture_foam": {
+      "name": "Mousse Def Texture Foam",
+      "brand": "The Doux",
+      "buy_links": [
+        {
+          "url": "https://amzn.to/4o9rXEp",
+          "retailer": "Amazon"
+        }
+      ],
+      "product_categories": [
+        "foams"
+      ],
+      "tags": [
+        "samples",
+        "wavy",
+        "curly",
+        "coily",
+        "low_porosity",
+        "protein",
+        "glycerin-free"
+      ],
+      "ingredients_raw": "water, polyquaternium-55, cocamidopropyl hydroxysultaine, aloe barbadensis leaf, pvp, tocopheryl acetate, citric acid, silk amino acids, polysorbate 20, ethylhexylglycerin, oleth-20, fragrance parfum, glycereth-2 cocoate, isostearamidopropyl morpholine lactate, phenoxyethanol, benzoic acid, disodium edta",
+      "description": "A light to medium-hold mousse that is great for all wave and curl types",
+      "id": "mousse_def_texture_foam",
+      "systems_excluded": [],
+      "status": "ok",
+      "extensions": {
+        "frizzbot": {
+          "simple_humectants_number": 1,
+          "film_forming_humectants_number": 1,
+          "emollients_number": 2,
+          "simple_humectants": [
+            "Ethylhexylglycerin"
+          ],
+          "film_forming_humectants": [
+            "Silk Amino Acids"
+          ],
+          "emollients": [
+            "Unknown Polyquat",
+            "Polyvinylpyrrolidone"
+          ],
+          "score": -75
+        },
+        "porosity": {
+          "high": 100,
+          "low": 100
+        },
+        "sebderm": {
+          "hasTriggers": true,
+          "triggers": [
+            {
+              "id": "silk_amino_acids",
+              "name": "Silk Amino Acids",
+              "reason": "Amino acids can be metabolized by Malassezia, potentially worsening symptoms"
+            },
+            {
+              "id": "polysorbate_20",
+              "name": "Polysorbate 20",
+              "reason": "polysorbates can feed Malassezia yeast"
+            }
+          ]
+        },
+        "autoTagger": {
+          "tags": [
+            "protein",
+            "glycerin-free"
+          ]
+        }
+      }
+    },
     "rice_pudding_leave-in_conditioner_and_moisturizer": {
       "name": "Rice Pudding Leave-In Conditioner and Moisturizer",
       "brand": "Ecoslay",
@@ -13668,7 +13671,7 @@ export const defaultProductDatabase: ProductDatabase = {
           "retailer": "The Doux"
         },
         {
-          "url": "https://amzn.to/3GzpsKN",
+          "url": "https://amzn.to/4qr4Tm8",
           "retailer": "Amazon"
         }
       ],
@@ -15677,7 +15680,7 @@ export const defaultProductDatabase: ProductDatabase = {
       "extensions": {
         "frizzbot": {
           "simple_humectants_number": 7,
-          "film_forming_humectants_number": 1,
+          "film_forming_humectants_number": 2,
           "emollients_number": 11,
           "simple_humectants": [
             "Glycereth-26",
@@ -15689,7 +15692,8 @@ export const defaultProductDatabase: ProductDatabase = {
             "Sodium hyaluronate"
           ],
           "film_forming_humectants": [
-            "Unknown Protein"
+            "Unknown Protein",
+            "Hydrolyzed Vegetable Protein PG-propyl Silanetriol"
           ],
           "emollients": [
             "Acrylates Copolymer",
@@ -15704,7 +15708,7 @@ export const defaultProductDatabase: ProductDatabase = {
             "Argan Oil",
             "Copolymer"
           ],
-          "score": -40
+          "score": -44
         },
         "porosity": {
           "high": 100,

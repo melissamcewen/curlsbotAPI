@@ -1038,26 +1038,13 @@
       "ingredients_raw": "glucose, ascorbic acid, sodium gluconate, sodium cocoyl isethionate, disodium edta, citric acid, xanthan gum, betaine",
       "description": "Remove hard water buildup to restore shine and softness to hair with this chelating treatment"
     },
-    {
-      "name": "Mousse Def Texture Foam",
-      "brand": "The Doux",
-      "buy_links": [
-        {
-          "url": "https://amzn.to/3GFpCAg",
-          "retailer": "Amazon"
-        }
-      ],
-      "product_categories": ["foams"],
-      "tags": ["samples", "wavy", "curly", "coily", "low_porosity"],
-      "ingredients_raw": "water, polyquaternium-55, cocamidopropyl hydroxysultaine, aloe barbadensis leaf, pvp, tocopheryl acetate, citric acid, silk amino acids, polysorbate 20, ethylhexylglycerin, oleth-20, fragrance parfum, glycereth-2 cocoate, isostearamidopropyl morpholine lactate, phenoxyethanol, benzoic acid, disodium edta",
-      "description": "Light to medium-hold curl mousse that is great for  creating curl definition"
-    },
+
     {
       "name": "OPP One Pass Press Heat Protectant Spray",
       "brand": "The Doux",
       "buy_links": [
         {
-          "url": "https://amzn.to/4lVkwAd",
+          "url": "https://amzn.to/47qbWmy",
           "retailer": "Amazon"
         }
       ],
@@ -1299,6 +1286,20 @@
       "tags": ["samples", "wavy", "curly", "coily", "high_porosity", "premium", "heat_protectants"],
       "ingredients_raw": "cyclopentasiloxane, dimethicone, caprylyl methicone, diphenylsiloxy phenyl trimethicone, perfluorononyl dimethicone, melia azadirachta extract, keratin amino acids, santalum album extract, phellodendron amurense bark extract, hordeum distichon extract, dimethiconol cysteine, ceramide np, sodium hyaluronate, dimethicone peg-8 meadowfoamate, sodium pca, zinc pca, magnesium pca, manganese pca, citrus limon fruit extract, fumaria officinalis flower leaf stem extract, helianthus annuus seed oil, squalane, fumaric acid, ethylhexyl methoxycinnamate, tetrahexyldecyl ascorbate, trimethylsiloxyamodimethicone, ascorbyl methylsilanol pectinate, butylene glycol, water eau aqua, benzotriazolyl dodecyl p-cresol, fragrance parfum, alpha-isomethyl ionone, benzyl salicylate, butylphenyl methylpropional, citronellol, coumarin, geraniol, limonene, linalool",
       "description": "A styling serum formulated to add softness and silkiness to dry, rough hair and protect from heat damage."
+    },
+    {
+      "name": "Mousse Def Texture Foam",
+      "brand": "The Doux",
+      "buy_links": [
+        {
+          "url": "https://amzn.to/4o9rXEp",
+          "retailer": "Amazon"
+        }
+      ],
+      "product_categories": ["foams"],
+      "tags": ["samples", "wavy", "curly", "coily", "low_porosity"],
+      "ingredients_raw": "water, polyquaternium-55, cocamidopropyl hydroxysultaine, aloe barbadensis leaf, pvp, tocopheryl acetate, citric acid, silk amino acids, polysorbate 20, ethylhexylglycerin, oleth-20, fragrance parfum, glycereth-2 cocoate, isostearamidopropyl morpholine lactate, phenoxyethanol, benzoic acid, disodium edta",
+      "description": "A light to medium-hold mousse that is great for all wave and curl types"
     }
   ]
 }

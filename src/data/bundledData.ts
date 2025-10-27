@@ -4726,6 +4726,7 @@ export const defaultDatabase: IngredientDatabase = {
         "water_soluble_silicones",
         "proteins"
       ],
+      "description": "A protein silicone hybrid that should be flexible (AKA not cause protein overload type conditions) and water soluble.",
       "references": [
         {
           "url": "https://science-yhairblog.blogspot.com/2014/04/silicone-ingredient-solubility-list.html",
