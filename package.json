@@ -1,6 +1,6 @@
 {
   "name": "haircare-ingredients-analyzer",
-  "version": "1.9.3",
+  "version": "1.9.4",
   "description": "Library for analyzing haircare product ingredients",
   "main": "./dist/index.umd.js",
   "module": "./dist/index.es.js",

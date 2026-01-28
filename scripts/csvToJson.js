@@ -41,7 +41,7 @@ function productExists(productName) {
 // Function to read CSV file and convert to JSON
 async function convertCsvToJson() {
   // Paths
-  const csvFilePath = path.join(__dirname, '../logs/products2.csv');
+  const csvFilePath = path.join(__dirname, '../logs/new-products-jan.csv');
   const outputFilePath = path.join(__dirname, '../logs/products_new.json');
 
   // Array to store the products

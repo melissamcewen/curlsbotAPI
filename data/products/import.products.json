@@ -1300,6 +1300,289 @@
       "tags": ["samples", "wavy", "curly", "coily", "low_porosity"],
       "ingredients_raw": "water, polyquaternium-55, cocamidopropyl hydroxysultaine, aloe barbadensis leaf, pvp, tocopheryl acetate, citric acid, silk amino acids, polysorbate 20, ethylhexylglycerin, oleth-20, fragrance parfum, glycereth-2 cocoate, isostearamidopropyl morpholine lactate, phenoxyethanol, benzoic acid, disodium edta",
       "description": "A light to medium-hold mousse that is great for all wave and curl types"
+    },
+       {
+      "name": "Perfect Volume Thickening & Conditioning Hair Masque",
+      "brand": "NatureLab Tokyo",
+      "buy_links": [
+        {
+          "url": "https://amzn.to/4afQcfA",
+          "retailer": "Amazon"
+        },
+        {
+          "url": "https://www.ulta.com/p/perfect-volume-thickening-conditioning-hair-masque-pimprod2047423?",
+          "retailer": "Ulta"
+        }
+      ],
+      "product_categories": [
+        "deep_conditioners"
+      ],
+      "tags": [
+        "samples",
+        "wavy",
+        "curly",
+        "low_porosity"
+      ],
+      "ingredients_raw": "water, propanediol, panthenol, oryza sativa rice starch, glycerin, ammonium polyacryloyldimethyl taurate, polyquaternium-37, behentrimonium chloride, isopropyl alcohol, glyceryl stearate se, cetyl alcohol, oryza sativa rice bran extract, rosmarinus officinalis rosemary extract, helianthus, annuus sunflower extract, tocopherol, maltodextrin vp copolymer, sodium benzoate, potassium sorbate, fragrance, citric acid, ci 17200 red 33",
+      "description": "If most masks make your hair feel flat, try this one! It's light and contains volume-boosting ingredients."
+    },
+        {
+      "name": "Defining Custard",
+      "brand": "Rizos",
+      "buy_links": [
+        {
+          "url": "https://amzn.to/3ZHax7n",
+          "retailer": "Amazon"
+        },
+        {
+          "url": "https://www.ulta.com/p/curl-custard-pimprod2050198?sku=2636138",
+          "retailer": "Ulta"
+        }
+      ],
+      "product_categories": [
+        "custards",
+        "gels"
+      ],
+      "tags": [
+        "samples",
+        "wavy",
+        "curly",
+        "coily"
+      ],
+      "ingredients_raw": "water aqua eau, glycerin, hydroxyethylcellulose, polyquaternium-11, xanthan gum, ethyl hexylglycerin, aloe barbadensis leaf juice, mangifera indica mango seed butter, cocos nucifera coconut fruit extract, litchi chinensis lychee fruit extract, disodium phosphate, polysorbate 60, sodium phosphate, potassium sorbate, fragrance parfum, phenoxyethanol, sodium benzoate, citric acid, limonene, linalool, benzyl salicylate, citral, coumarin",
+      "description": "A lightweight but moisturizing custard that takes the place of both a cream and a gel."
+    },
+
+    {
+      "name": "Curl Mousse",
+      "brand": "Pattern Beauty",
+      "buy_links": [
+        {
+          "url": "https://amzn.to/4t4OvZT",
+          "retailer": "Amazon"
+        },
+        {
+          "url": "https://www.ulta.com/p/curl-mousse-pimprod2033613?sku=2599191",
+          "retailer": "Ulta"
+        }
+      ],
+      "product_categories": [
+        "foams"
+      ],
+      "tags": [
+        "samples",
+        "wavy",
+        "curly",
+        "coily",
+        "low_porosity"
+      ],
+      "ingredients_raw": "water aqua eau, polyquaternium-11, pvp, cocamidopropyl betaine, althaea officinalis root extract, glycerin, ricinus communis castor seed oil, argania spinosa kernel oil, caprylic capric triglyceride, biotin, polyglyceryl-4 caprate, polyglyceryl-6 caprylate, sodium chloride, c12-18 acid triglyceride, cocamidopropyl dimethylamine, sodium glycolate, sodium benzoate, benzyl alcohol, ethylhexylglycerin, fragrance parfum, benzyl benzoate, hexyl cinnamal, amyl cinnamal, hydroxycitronellal, linalool, citronellol, limonene, coumarin, geraniol",
+      "description": "The top mousse I tried in 2025 (tied with Miche). Great moisture, slip, and hold without  being heavy."
+    },
+        {
+      "name": "Styling Cream",
+      "brand": "Pattern Beauty",
+      "buy_links": [
+        {
+          "url": "https://amzn.to/49KrZxV",
+          "retailer": "Amazon"
+        },
+        {
+          "url": "https://www.ulta.com/p/styling-cream-pimprod2016912?sku=2565539",
+          "retailer": "Ulta"
+        }
+      ],
+      "product_categories": [
+        "creams"
+      ],
+      "tags": [
+        "samples",
+        "curly",
+        "coily",
+        "high_porosity"
+      ],
+      "ingredients_raw": "water aqua eau, butyrospermum parkii shea butter, cetearyl alcohol, glycerin, ceteareth-20, peg-40 hydrogenated castor oil, cocos nucifera coconut oil, peg-120 methyl glucose dioleate, theobroma cacao cocoa seed butter, potassium carbonate, rosmarinus officinalis rosemary leaf extract, helianthus annuus sunflower seed oil, caryodendron orinocense seed oil, cocos nucifera coconut fruit extract, prunus amygdalus dulcis sweet almond oil, peg-60 hydrogenated castor oil, aloe barbadensis leaf extract, hydrolyzed wheat protein, ethylhexylglycerin, caprylyl glycol, polysorbate 60, citric acid, phenoxyethanol, hydroxyethylcellulose, disodium edta, disodium phosphate, sodium phosphate, sodium benzoate, benzyl alcohol, phenethyl alcohol, potassium sorbate, sodium sulfite, fragrance parfum, benzyl benzoate, hexyl cinnamal, amyl cinnamal, hydroxycitronellal, linalool, citronellol, limonene, coumarin",
+      "description": "A thick, rich cream perfect for preventing dryness in coily and tightly textured hair."
+    },
+      {
+      "name": "Curl Gel",
+      "brand": "Pattern Beauty",
+      "buy_links": [
+        {
+          "url": "https://amzn.to/4qPPGuI",
+          "retailer": "Amazon"
+        },
+        {
+          "url": "https://www.ulta.com/p/curl-gel-pimprod2016693?sku=2565555",
+          "retailer": "Ulta"
+        }
+      ],
+      "product_categories": [
+        "gels"
+      ],
+      "tags": [
+        "samples",
+        "wavy",
+        "curly",
+        "coily"
+      ],
+      "ingredients_raw": "water aqua eau, glycerin, cetearyl alcohol, aloe barbadensis leaf extract, cocos nucifera coconut oil, behentrimonium methosulfate, wheat amino acids, benzyl alcohol, hydrolyzed silk, caryodendron orinocense seed oil, cocos nucifera coconut fruit extract, rosmarinus officinalis rosemary leaf extract, helianthus annuus sunflower seed oil, peg-40 hydrogenated castor oil, peg-60 hydrogenated castor oil, cetrimonium chloride, citric acid, hydroxyethylcellulose, guar hydroxypropyltrimonium chloride, ethylhexylglycerin, disodium edta, potassium sorbate, sodium benzoate, phenethyl alcohol, caprylyl glycol, polysorbate 60, phenoxyethanol, disodium phosphate, sodium phosphate, sodium sulfite, fragrance parfum, benzyl benzoate, hexyl cinnamal, amyl cinnamal, hydroxycitronellal, linalool, citronellol, limonene",
+      "description": "A creamy humectant-rich gel that can serve as both your gel and cream."
+    },
+        {
+      "name": "Curl Defining Solid Shampoo",
+      "brand": "Ethique",
+      "buy_links": [
+        {
+          "url": "https://amzn.to/3Z3iMuo",
+          "retailer": "Amazon"
+        },
+        {
+          "url": "https://www.ulta.com/p/curl-defining-solid-shampoo-bar-pimprod2049144?sku=2634793",
+          "retailer": "Ulta"
+        }
+      ],
+      "product_categories": [
+        "shampoos"
+      ],
+      "tags": [
+        "samples",
+        "wavy",
+        "curly",
+        "coily"
+      ],
+      "ingredients_raw": "sodium cocoyl isethionate, stearic acid, sodium cocoyl glycinate, coconut acid, theobroma cacao cocoa seed butter, butyrospermum parkii shea butter, betaine, behentrimonium methosulfate, brassica alcohol, sodium isethionate, aqua water, lactic acid, fragrance parfum, guar hydroxypropyltrimonium chloride, glycerine, cymbopogon flexuosus lemongrass oil, benzyl alcohol, sodium chloride, dehydroacetic acid, mica, hydroxypropylgluconamide, hydroxypropylammonium gluconate, tartaric acid, potassium benzoate, sodium benzoate, citral, geraniol, linalool, titanium dioxide ci 77891, chromium oxide greens ci 77288",
+      "description": "A curl-friendly hydrating bar option for your shower."
+    },
+      {
+      "name": "Curl Defining Solid Conditioner",
+      "brand": "Ethique",
+      "buy_links": [
+        {
+          "url": "https://amzn.to/3NUDnP7",
+          "retailer": "Amazon"
+        },
+        {
+          "url": "https://www.ulta.com/p/curl-defining-solid-conditioner-bar-pimprod2049143?sku=2634794",
+          "retailer": "Ulta"
+        }
+      ],
+      "product_categories": [
+        "conditioners"
+      ],
+      "tags": [
+        "samples",
+        "wavy",
+        "curly",
+        "coily",
+        "high_porosity"
+      ],
+      "ingredients_raw": "behentrimonium methosulfate, brassica alcohol, theobroma cacao cocoa seed butter, jojoba esters, butyrospermum parkii shea butter, glycerine, caprylic capric triglyceride, stearic acid, ricinus communis castor seed oil, guar hydroxypropyltrimonium chloride, fragrance parfum, sodium methyl cocoyl taurate, benzyl alcohol, cymbopogon flexuosus lemongrass oil, mica, aqua water, dehydroacetic acid, hydroxypropylgluconamide, hydroxypropylammonium gluconate, tartaric acid, potassium benzoate, sodium benzoate, citral, geraniol, linalool, titanium dioxide ci 77891, chromium oxide greens ci 77288",
+      "description": "A curl-friendly hydrating conditioner bar option for your shower, make sure to use this generously to build slip"
+    },
+        {
+      "name": "HoliRoots Hair Oil",
+      "brand": "Fable & Mane",
+      "buy_links": [
+        {
+          "url": "https://amzn.to/4qKCBTt",
+          "retailer": "Amazon"
+        },
+        {
+          "url": "https://fableandmane.com/products/holiroots-hair-oil",
+          "retailer": "Fable & Mane"
+        }
+      ],
+      "product_categories": [
+        "oils",
+        "pre-poo"
+      ],
+      "tags": [
+        "samples",
+        "wavy",
+        "curly",
+        "coily",
+        "low_porosity"
+      ],
+      "ingredients_raw": "caprylic capric triglyceride, carthamus tinctorius safflower seed oil, olea europaea olive fruit oil, withania somnifera root extract, simmondsia chinensis jojoba seed oil, ricinus communis castor seed oil, vitis vinifera grape seed oil, phyllanthus emblica fruit extract, sesamum indicum sesame seed oil, bacopa monnieri brahmi leaf extract, eclipta prostrata bhringraj extract, beta-sitosterol, aegle marmelos root extract, desmodium gangeticum root extract, gmelina arborea root extract, premna serratifolia root extract, solanum indicum root extract, solanum xanthocarpum root extract, stereospermum suaveolens root extract, oroxylum indicum root extract, tribulus terrestris root extract, uraria picta root extract, parfum fragrance, tocopherol, phenoxyethanol, squalene, glycyrrhiza glabra licorice root extract, benzyl salicylate, benzyl benzoate",
+      "description": "A lightweight oil that's perfect as a pre shampoo treatment to protect fragile ends from the washing process"
+    },
+     {
+      "name": "Strictly Curls Curl Envy Cream",
+      "brand": "Marc Anthony",
+      "buy_links": [
+        {
+          "url": "https://amzn.to/46jBXnA",
+          "retailer": "Amazon"
+        },
+        {
+          "url": "https://www.cvs.com/shop/marc-anthony-strictly-curls-curl-envy-cream-prodid-1013619",
+          "retailer": "CVS"
+        }
+      ],
+      "product_categories": [
+        "creams"
+      ],
+      "tags": [
+        "samples",
+        "curly",
+        "coily",
+        "high_porosity"
+      ],
+      "ingredients_raw": "water aqua eau, cetyl alcohol, behentrimonium chloride, paraffinum liquidum, dimethicone, petrolatum, cetearyl alcohol, stearyl alcohol, cyclopentasiloxane, glycerin, persea gratissima avocado oil, butyrospermum parkii shea butter, glycine soja soybean oil, panthenol vitamin - b5, tocopheryl acetate vitamine, citric acid, cellulose, hydroxyethylcellulose, cetrimonium chloride, sodium acetate, tetrasodium edta, isopropyl alcohol, dmdm hydantoin, fragrance parfum, yellow 5 ci 19140, linalool, citral, benzyl benzoate, hexyl cinnamal, limonene",
+      "description": "A rich cream perfect for softening thick strand (coarse) hair"
+    },
+    {
+      "name": "Curl Defining Mousse",
+      "brand": "Rizos",
+      "buy_links": [
+        {
+          "url": "https://amzn.to/45AMzOH",
+          "retailer": "Amazon"
+        },
+        {
+          "url": "https://www.ulta.com/p/curl-defining-mousse-pimprod2040757?sku=2610059",
+          "retailer": "Ulta"
+        }
+      ],
+      "product_categories": [
+        "foams"
+      ],
+      "tags": [
+        "samples",
+        "wavy",
+        "curly",
+        "coily",
+        "low_porosity"
+      ],
+      "ingredients_raw": "water aqua eau, glycerin, cocamidopropyl betaine, polysorbate 20, decyl glucoside, cocos nucifera coconut water, furcellaria lumbricalis red algae extract, cereus grandiflorus cactus flower extract, passiflora incarnata maracuj seed oil, aloe barbadensis aloe vera leaf powder, panthenol, salvia hispanica chia seed extract, linum usitatissimum linseed flaxseed seed extract, polyurethane-14, sodium laneth-40 maleate styrene sulfonate copolymer, amp-acrylates copolymer, aminomethyl propanol, leuconostoc radish root ferment filtrate, sodium chloride, tetrasodium glutamate diacetate, citric acid, caprylic acid, benzyl alcohol, xylitol, sorbic acid, fragrance parfum, potassium sorbate, ethylhexylglycerin, phenoxyethanol, benzyl benzoate, citral, coumarin, limonene, linalool, geraniol",
+      "description": "A lightweight mousse that has moderate-strong hold"
+    },
+     {
+      "name": "The Curl Friend Curl Shape & Stay Gel to Foam",
+      "brand": "Cake Beauty",
+      "buy_links": [
+        {
+          "url": "https://amzn.to/464RnMs",
+          "retailer": "Amazon"
+        },
+        {
+          "url": "https://www.walgreens.com/store/c/cake-the-curl-friend-curl-shape-%26-stay-gel-to-foam-lemon-meringue/ID=300452666-product",
+          "retailer": "Walgreens"
+        }
+      ],
+      "product_categories": [
+        "foams"
+      ],
+      "tags": [
+        "samples",
+        "wavy",
+        "curly",
+        "coily"
+      ],
+      "ingredients_raw": "aqua water eau, decyl glucoside, polysorbate 20, cocamidopropyl betaine, cocos nucifera coconut oil, butyrospermum parkii shea butter, linum usitatissimum linseed seed extract, salvia hispanica chia seed extract, vp dimethylaminoethylmethacrylate copolymer, xanthan gum, hydroxypropyl guar, caprylyl glycol, citric acid, ethylhexylglycerin, phenoxyethanol, fragrance parfum, citral, limonene",
+      "description": "A perfect combo of a gel, leave-in, and foam so you just need one product to style your curls. Wonderful lemon meringue scent."
     }
+
   ]
 }
