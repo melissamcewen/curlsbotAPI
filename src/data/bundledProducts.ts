@@ -13632,6 +13632,80 @@ export const defaultProductDatabase: ProductDatabase = {
         }
       }
     },
+    "beauty_batana_oil_&_biotin_miracle_x_bond_repair_leave-in_conditioner": {
+      "name": "Beauty Batana Oil & Biotin Miracle X Bond Repair Leave-In Conditioner",
+      "brand": "En Love",
+      "buy_links": [
+        {
+          "url": "https://amzn.to/46olEpw",
+          "retailer": "Amazon"
+        }
+      ],
+      "product_categories": [
+        "leave_ins"
+      ],
+      "tags": [
+        "samples",
+        "wavy",
+        "curly",
+        "coily",
+        "low_porosity",
+        "protein-free"
+      ],
+      "ingredients_raw": "aloe barbadensis leaf juice, water aqua, glycerin, ceteareth-20, cetyl alcohol, cetearyl alcohol, stearyl alcohol, hydroxypropylgluconamide and hydroxypropylammonium gluconate, cetrimonium chloride, elaeis oleifera kernel oil, biotin, rosmarinus officinalis rosemary flower oil, saccharomyces rice ferment filtrate, caffeine, amodimethicone, trideceth-12, phenoxyethanol, disodium edta, ethylhexylglycerin, fragrance, amyl salicylate, citrus aurantium peel oil, citronellol, geranyl acetate, hexyl cinnamal, hexamethylindanopyran, isoeugenyl acetate, limonene, linalool, linalyl acetate, alpha-isomethyl ionone",
+      "description": "This is an affordable light-weight leave-in made by a woman-owned indie brand",
+      "id": "beauty_batana_oil_&_biotin_miracle_x_bond_repair_leave-in_conditioner",
+      "systems_excluded": [],
+      "status": "warning",
+      "extensions": {
+        "frizzbot": {
+          "simple_humectants_number": 2,
+          "film_forming_humectants_number": 2,
+          "emollients_number": 6,
+          "simple_humectants": [
+            "Glycerin",
+            "Ethylhexylglycerin"
+          ],
+          "film_forming_humectants": [
+            "Aloe Barbadensis Leaf Extract",
+            "Hydroxypropylammonium Gluconate"
+          ],
+          "emollients": [
+            "Ceteareth-20",
+            "Cetyl Alcohol",
+            "Cetearyl Alcohol",
+            "Stearyl Alcohol",
+            "Cetrimonium Chloride",
+            "Amodimethicone"
+          ],
+          "score": -80
+        },
+        "porosity": {
+          "high": 100,
+          "low": 23
+        },
+        "sebderm": {
+          "hasTriggers": true,
+          "triggers": [
+            {
+              "id": "ceteareth_20",
+              "name": "Ceteareth-20",
+              "reason": "Can create a barrier that traps moisture and heat, promoting yeast growth"
+            },
+            {
+              "id": "cetearyl_alcohol",
+              "name": "Cetearyl Alcohol",
+              "reason": "This specific fatty alcohol can feed Malassezia yeast"
+            }
+          ]
+        },
+        "autoTagger": {
+          "tags": [
+            "protein-free"
+          ]
+        }
+      }
+    },
     "rice_pudding_leave-in_conditioner_and_moisturizer": {
       "name": "Rice Pudding Leave-In Conditioner and Moisturizer",
       "brand": "Ecoslay",

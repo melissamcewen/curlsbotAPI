@@ -68,11 +68,11 @@ async function convertCsvToJson() {
 
           // Check if product already exists
           const existingProduct = productExists(productName);
-          if (existingProduct) {
+         /* if (existingProduct) {
             console.log(`Skipping existing product: "${productName}" (matches existing: "${existingProduct.name}")`);
             skippedCount++;
             return; // Skip this product
-          }
+          }*/
 
           // Get product categories
           const categories = [];
