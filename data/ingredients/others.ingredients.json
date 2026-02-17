@@ -619,7 +619,15 @@
     {
       "name": "Ceramide",
       "id": "ceramide",
-      "categories": ["simple_humectants"]
+      "categories": ["other_emollients"],
+      "synonyms": ["ceramide 3"],
+      "references": [
+        {
+          "id": "72",
+          "notes": "Small study found specifically-engineered ceramide helped prevent hair breakage in chemically treated African-American hair"
+        }
+      ],
+      "description": "Naturally found in the hair cuticle, where they help maintain moisture and protect the hair from damage. There are different types of ceramides in cosmetics and the INCI doesn't usually specify which one is used."
     },
     {
       "name": "Dipropylene Glycol",

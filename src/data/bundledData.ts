@@ -3262,10 +3262,22 @@ export const defaultDatabase: IngredientDatabase = {
       "name": "Ceramide",
       "id": "ceramide",
       "categories": [
-        "simple_humectants"
+        "other_emollients"
       ],
+      "synonyms": [
+        "ceramide 3"
+      ],
+      "references": [
+        {
+          "url": "https://onlinelibrary.wiley.com/doi/10.1046/j.0412-5463.2001.00106.xf",
+          "title": "Ceramide binding to African–American hair fibre correlates with resistance to hair breakage",
+          "type": "science",
+          "description": "Small study found specifically-engineered ceramide helped prevent hair breakage in chemically treated African-American hair"
+        }
+      ],
+      "description": "Naturally found in the hair cuticle, where they help maintain moisture and protect the hair from damage. There are different types of ceramides in cosmetics and the INCI doesn't usually specify which one is used.",
       "status": "ok",
-      "group": "humectants"
+      "group": "others"
     },
     "dipropylene_glycol": {
       "name": "Dipropylene Glycol",
