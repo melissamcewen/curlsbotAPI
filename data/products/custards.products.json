@@ -123,6 +123,20 @@
           "retailer": "Amazon"
         }
       ]
+    },
+    {
+      "name": "Ceramide Jelly",
+      "brand": "Bounce Curl",
+      "product_categories": ["custards", "gels"],
+      "tags": ["featured"],
+      "ingredients_raw": "organic aloe barbadensis leaf juice, maltodextrin vp copolymer, glycerin, hydroxyethylcellulose, hydrolyzed jojoba esters, sodium hyaluronate, ceramide 3, jojoba esters, phospholipids, water, amaranthus caudatus seed extract, tilia tomentosa bud extract, laminaria japonica seaweed extract, cereus grandiflorus cactus extract, guar hydroxypropyltrimonium chloride, gluconolactone, sodium benzoate, fragrance, citric acid, carvone, pinene, geranyl acetate, limonene, linalool",
+      "buy_links": [
+        {
+          "url": "https://glnk.io/x26q/curlsbot277",
+          "retailer": "Bounce Curl"
+        }
+      ],
+      "description": "A lightweight gel packed with moisture retaining humectants, perfect for fine hair"
     }
   ]
 }

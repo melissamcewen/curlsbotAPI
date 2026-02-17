@@ -110,6 +110,20 @@
           "countries": ["EU", "UK", "US"]
         }
       ]
+    },
+    {
+      "name": "Thermal Guard Weightless Leave-In",
+      "brand": "Bounce Curl",
+      "product_categories": ["leave_ins"],
+      "tags": ["featured"],
+      "ingredients_raw": "organic aloe barbadensis leaf juice, propanediol, cetearyl alcohol, adansonia digitata baobab seed oil, water, sodium hyaluronate, glycerin, sorbitol, trehalose, galactoarabinan, xylitol, tilia tomentosa bud extract, palmitoyl tetrapeptide-8 amide, polyporus umbellatus mushroom extract, salvia hispanica seed extract, amaranthus caudatus seed extract, sodium citrate, sodium phosphate, dicaprylyl carbonate, fructose, pentylene glycol, 2-hexanediol, caprylyl glycol, malachite extract, cetrimonium chloride, sodium benzoate, gluconolactone, fragrance, benzyl salicylate, limonene, linalool, linalyl acetate, terpineol, tetramethyl acetyloctahydronaphthalenes, vanillin",
+      "buy_links": [
+        {
+          "url": "https://glnk.io/x26q/curlsbot88w",
+          "retailer": "Bounce Curl"
+        }
+      ],
+      "description": "A lightweight leave-in that protects your hair from heat and gives your hair a healthy shine"
     }
   ]
 }

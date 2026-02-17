@@ -3754,6 +3754,94 @@ export const defaultProductDatabase: ProductDatabase = {
         }
       }
     },
+    "hydra-lite_styling_cream": {
+      "name": "Hydra-Lite Styling Cream",
+      "brand": "Bounce Curl",
+      "product_categories": [
+        "creams"
+      ],
+      "tags": [
+        "featured",
+        "protein-free"
+      ],
+      "ingredients_raw": "water, cetearyl alcohol, pvp, adansonia digitata baobab seed oil, hydrolyzed jojoba esters, pullulan, inulin, amaranthus caudatus seed extract, tilia tomentosa bud extract, polyquaternium-37, rosmarinus officinalis rosemary leaf extract, salvia officinalis sage extract, urtica dioica nettle extract, linum usitatissimum linseed seed extract, salvia hispanica seed extract, astrocaryum murumuru seed butter, crambe abyssinica seed oil, helianthus annuus sunflower seed oil, persea gratissima avocado oil, ethyl linoleate, glycerin, ethyl oleate, diheptyl succinate, capryloyl glycerin sebacic acid copolymer, behentrimonium chloride, cetrimonium chloride, propanediol, gluconolactone, sodium benzoate, fragrance, carvone, pinene, geranyl acetate, limonene, linalool",
+      "buy_links": [
+        {
+          "url": "https://glnk.io/x26q/curlsbot1hq",
+          "retailer": "Bounce Curl"
+        }
+      ],
+      "description": "A lightweight styling cream with a soft hold perfect for fine curly hair",
+      "id": "hydra-lite_styling_cream",
+      "systems_excluded": [],
+      "status": "ok",
+      "extensions": {
+        "frizzbot": {
+          "simple_humectants_number": 2,
+          "film_forming_humectants_number": 1,
+          "emollients_number": 10,
+          "simple_humectants": [
+            "Glycerin",
+            "Propanediol"
+          ],
+          "film_forming_humectants": [
+            "Flaxseed Extract"
+          ],
+          "emollients": [
+            "Cetearyl Alcohol",
+            "Polyvinylpyrrolidone",
+            "Unknown Polyquat",
+            "Astrocaryum Murumuru Seed Butter",
+            "Sunflower Oil",
+            "Avocado Oil",
+            "Diheptyl Succinate",
+            "Capryloyl Glycerin Sebacic Acid Copolymer",
+            "Behentrimonium Chloride",
+            "Cetrimonium Chloride"
+          ],
+          "score": -74
+        },
+        "porosity": {
+          "high": 100,
+          "low": 0
+        },
+        "sebderm": {
+          "hasTriggers": true,
+          "triggers": [
+            {
+              "id": "cetearyl_alcohol",
+              "name": "Cetearyl Alcohol",
+              "reason": "This specific fatty alcohol can feed Malassezia yeast"
+            },
+            {
+              "id": "jojoba_esters",
+              "name": "Jojoba Esters",
+              "reason": "Esters can feed Malassezia yeast"
+            },
+            {
+              "id": "astrocaryum_murumuru_seed_butter",
+              "name": "Astrocaryum Murumuru Seed Butter",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            },
+            {
+              "id": "sunflower_oil",
+              "name": "Sunflower Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            },
+            {
+              "id": "avocado_oil",
+              "name": "Avocado Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            }
+          ]
+        },
+        "autoTagger": {
+          "tags": [
+            "protein-free"
+          ]
+        }
+      }
+    },
     "curl_enhancing_custard": {
       "name": "Curl Enhancing Custard",
       "brand": "MopTop",
@@ -4171,6 +4259,75 @@ export const defaultProductDatabase: ProductDatabase = {
           "tags": [
             "protein-free",
             "glycerin-free"
+          ]
+        }
+      }
+    },
+    "ceramide_jelly": {
+      "name": "Ceramide Jelly",
+      "brand": "Bounce Curl",
+      "product_categories": [
+        "custards",
+        "gels"
+      ],
+      "tags": [
+        "featured",
+        "protein-free"
+      ],
+      "ingredients_raw": "organic aloe barbadensis leaf juice, maltodextrin vp copolymer, glycerin, hydroxyethylcellulose, hydrolyzed jojoba esters, sodium hyaluronate, ceramide 3, jojoba esters, phospholipids, water, amaranthus caudatus seed extract, tilia tomentosa bud extract, laminaria japonica seaweed extract, cereus grandiflorus cactus extract, guar hydroxypropyltrimonium chloride, gluconolactone, sodium benzoate, fragrance, citric acid, carvone, pinene, geranyl acetate, limonene, linalool",
+      "buy_links": [
+        {
+          "url": "https://glnk.io/x26q/curlsbot277",
+          "retailer": "Bounce Curl"
+        }
+      ],
+      "description": "A lightweight gel packed with moisture retaining humectants, perfect for fine hair",
+      "id": "ceramide_jelly",
+      "systems_excluded": [],
+      "status": "ok",
+      "extensions": {
+        "frizzbot": {
+          "simple_humectants_number": 3,
+          "film_forming_humectants_number": 3,
+          "emollients_number": 2,
+          "simple_humectants": [
+            "Glycerin",
+            "Sodium hyaluronate",
+            "Ceramide"
+          ],
+          "film_forming_humectants": [
+            "Aloe Barbadensis Leaf Extract",
+            "Hydroxyethylcellulose",
+            "Seaweed Extract"
+          ],
+          "emollients": [
+            "Maltodextrin VP Copolymer",
+            "Guar Hydroxypropyltrimonium Chloride"
+          ],
+          "score": -76
+        },
+        "porosity": {
+          "high": 100,
+          "low": 89
+        },
+        "sebderm": {
+          "hasTriggers": true,
+          "triggers": [
+            {
+              "id": "jojoba_esters",
+              "name": "Jojoba Esters",
+              "reason": "Esters can feed Malassezia yeast"
+            },
+            {
+              "id": "jojoba_esters",
+              "name": "Jojoba Esters",
+              "reason": "Esters can feed Malassezia yeast"
+            }
+          ]
+        },
+        "autoTagger": {
+          "tags": [
+            "protein-free"
           ]
         }
       }
@@ -7910,83 +8067,6 @@ export const defaultProductDatabase: ProductDatabase = {
         "autoTagger": {
           "tags": [
             "protein"
-          ]
-        }
-      }
-    },
-    "tough_love_intense_bonding_treatment": {
-      "name": "Tough Love Intense Bonding Treatment",
-      "brand": "Not Your Mothers",
-      "buy_links": [
-        {
-          "url": "https://amzn.to/44SaauB",
-          "retailer": "Amazon"
-        }
-      ],
-      "product_categories": [
-        "deep_conditioners",
-        "treatments"
-      ],
-      "tags": [
-        "samples",
-        "wavy",
-        "curly",
-        "coily",
-        "high_porosity",
-        "drugstore",
-        "bonding",
-        "protein-free"
-      ],
-      "ingredients_raw": "water aqua eau, cetearyl alcohol, butylene glycol, bis-4-pca dimethicone, behentrimonium chloride, caprylic capric triglyceride, glycerin, cetrimonium chloride, ceteareth-20, disodium peg-12 dimethicone sulfosuccinate, acrylamidopropyltrimonium chloride acrylates copolymer, caesalpinia spinosa gum, isohexadecane, coceth-7, isopropyl alcohol, fragrance parfum, hexyl cinnamal, aminomethyl propanol, phenoxyethanol, ethylhexylglycerin, lactic acid",
-      "description": "Strengthens hair, reduces breakage by 56% after one use, and leaves it softer, smoother, and bouncier",
-      "id": "tough_love_intense_bonding_treatment",
-      "systems_excluded": [],
-      "status": "warning",
-      "extensions": {
-        "frizzbot": {
-          "simple_humectants_number": 4,
-          "film_forming_humectants_number": 0,
-          "emollients_number": 7,
-          "simple_humectants": [
-            "Butylene glycol",
-            "Glycerin",
-            "Ethylhexylglycerin",
-            "Lactic Acid"
-          ],
-          "film_forming_humectants": [],
-          "emollients": [
-            "Cetearyl Alcohol",
-            "Dimethicone",
-            "Behentrimonium Chloride",
-            "Cetrimonium Chloride",
-            "Ceteareth-20",
-            "PEG-12 Dimethicone",
-            "Acrylates Copolymer"
-          ],
-          "score": -50
-        },
-        "porosity": {
-          "high": 100,
-          "low": 81
-        },
-        "sebderm": {
-          "hasTriggers": true,
-          "triggers": [
-            {
-              "id": "cetearyl_alcohol",
-              "name": "Cetearyl Alcohol",
-              "reason": "This specific fatty alcohol can feed Malassezia yeast"
-            },
-            {
-              "id": "ceteareth_20",
-              "name": "Ceteareth-20",
-              "reason": "Can create a barrier that traps moisture and heat, promoting yeast growth"
-            }
-          ]
-        },
-        "autoTagger": {
-          "tags": [
-            "protein-free"
           ]
         }
       }
@@ -14179,6 +14259,72 @@ export const defaultProductDatabase: ProductDatabase = {
         "autoTagger": {
           "tags": [
             "protein-free"
+          ]
+        }
+      }
+    },
+    "thermal_guard_weightless_leave-in": {
+      "name": "Thermal Guard Weightless Leave-In",
+      "brand": "Bounce Curl",
+      "product_categories": [
+        "leave_ins"
+      ],
+      "tags": [
+        "featured",
+        "protein"
+      ],
+      "ingredients_raw": "organic aloe barbadensis leaf juice, propanediol, cetearyl alcohol, adansonia digitata baobab seed oil, water, sodium hyaluronate, glycerin, sorbitol, trehalose, galactoarabinan, xylitol, tilia tomentosa bud extract, palmitoyl tetrapeptide-8 amide, polyporus umbellatus mushroom extract, salvia hispanica seed extract, amaranthus caudatus seed extract, sodium citrate, sodium phosphate, dicaprylyl carbonate, fructose, pentylene glycol, 2-hexanediol, caprylyl glycol, malachite extract, cetrimonium chloride, sodium benzoate, gluconolactone, fragrance, benzyl salicylate, limonene, linalool, linalyl acetate, terpineol, tetramethyl acetyloctahydronaphthalenes, vanillin",
+      "buy_links": [
+        {
+          "url": "https://glnk.io/x26q/curlsbot88w",
+          "retailer": "Bounce Curl"
+        }
+      ],
+      "description": "A lightweight leave-in that protects your hair from heat and gives your hair a healthy shine",
+      "id": "thermal_guard_weightless_leave-in",
+      "systems_excluded": [],
+      "status": "ok",
+      "extensions": {
+        "frizzbot": {
+          "simple_humectants_number": 7,
+          "film_forming_humectants_number": 2,
+          "emollients_number": 2,
+          "simple_humectants": [
+            "Propanediol",
+            "Sodium hyaluronate",
+            "Glycerin",
+            "Sorbitol",
+            "Xylitol",
+            "Fructose",
+            "Caprylyl Glycol"
+          ],
+          "film_forming_humectants": [
+            "Aloe Barbadensis Leaf Extract",
+            "Peptide"
+          ],
+          "emollients": [
+            "Cetearyl Alcohol",
+            "Cetrimonium Chloride"
+          ],
+          "score": -51
+        },
+        "porosity": {
+          "high": 81,
+          "low": 42
+        },
+        "sebderm": {
+          "hasTriggers": true,
+          "triggers": [
+            {
+              "id": "cetearyl_alcohol",
+              "name": "Cetearyl Alcohol",
+              "reason": "This specific fatty alcohol can feed Malassezia yeast"
+            }
+          ]
+        },
+        "autoTagger": {
+          "tags": [
+            "protein"
           ]
         }
       }
