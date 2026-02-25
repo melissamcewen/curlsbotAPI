@@ -167,6 +167,20 @@
         }
       ],
       "description": "A lightweight styling cream with a soft hold perfect for fine curly hair"
+    },
+    {
+      "name": "Apple Aura Curl Serum for Fine Hair",
+      "brand": "Silver Stone Apothecary",
+      "buy_links": [
+        {
+          "url": "https://www.silverstoneapothecary.com/products/apple-aura-curl-serum?ref=curlsbot16",
+          "retailer": "Silver Stone Apothecary"
+        }
+      ],
+      "product_categories": ["creams"],
+      "tags": ["wavy", "curly", "indie"],
+      "ingredients_raw": "water, sodium hyaluronate, cetyl alcohol, orbignya oleifera babassu seed oil, aleurites moluccanus kukui seed oil, behentrimonium methosulfate derived from cazola plant, butylene glycol, capryliccapric triglyceride from coconuts phyllostachys bambusoide extract, lactobacillus tomato fruit ferment extract, oryza sativa rice extract, keratin amino acids, acyl coenzyme a desaturase, lactobacillus arundinaria gigantea ferment filtrate, hydrolyzed quinoa, dl-panthenol, parfum phthalate, paraben free, phenoxyethanol, caprylyl glycol",
+      "description": "The LIGHTEST curl cream I've ever tried. If every other one feels too heavy, this is the one for you."
     }
   ]
 }

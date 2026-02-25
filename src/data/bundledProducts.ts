@@ -3842,6 +3842,67 @@ export const defaultProductDatabase: ProductDatabase = {
         }
       }
     },
+    "apple_aura_curl_serum_for_fine_hair": {
+      "name": "Apple Aura Curl Serum for Fine Hair",
+      "brand": "Silver Stone Apothecary",
+      "buy_links": [
+        {
+          "url": "https://www.silverstoneapothecary.com/products/apple-aura-curl-serum?ref=curlsbot16",
+          "retailer": "Silver Stone Apothecary"
+        }
+      ],
+      "product_categories": [
+        "creams"
+      ],
+      "tags": [
+        "wavy",
+        "curly",
+        "indie",
+        "protein",
+        "glycerin-free"
+      ],
+      "ingredients_raw": "water, sodium hyaluronate, cetyl alcohol, orbignya oleifera babassu seed oil, aleurites moluccanus kukui seed oil, behentrimonium methosulfate derived from cazola plant, butylene glycol, capryliccapric triglyceride from coconuts phyllostachys bambusoide extract, lactobacillus tomato fruit ferment extract, oryza sativa rice extract, keratin amino acids, acyl coenzyme a desaturase, lactobacillus arundinaria gigantea ferment filtrate, hydrolyzed quinoa, dl-panthenol, parfum phthalate, paraben free, phenoxyethanol, caprylyl glycol",
+      "description": "The LIGHTEST curl cream I've ever tried. If every other one feels too heavy, this is the one for you.",
+      "id": "apple_aura_curl_serum_for_fine_hair",
+      "systems_excluded": [],
+      "status": "ok",
+      "extensions": {
+        "frizzbot": {
+          "simple_humectants_number": 4,
+          "film_forming_humectants_number": 2,
+          "emollients_number": 2,
+          "simple_humectants": [
+            "Sodium hyaluronate",
+            "Butylene glycol",
+            "Panthenol",
+            "Caprylyl Glycol"
+          ],
+          "film_forming_humectants": [
+            "Keratin",
+            "Hydrolyzed Quinoa"
+          ],
+          "emollients": [
+            "Cetyl Alcohol",
+            "Behentrimonium Methosulfate"
+          ],
+          "score": -35
+        },
+        "porosity": {
+          "high": 100,
+          "low": 0
+        },
+        "sebderm": {
+          "hasTriggers": false,
+          "triggers": []
+        },
+        "autoTagger": {
+          "tags": [
+            "protein",
+            "glycerin-free"
+          ]
+        }
+      }
+    },
     "curl_enhancing_custard": {
       "name": "Curl Enhancing Custard",
       "brand": "MopTop",
@@ -4287,13 +4348,12 @@ export const defaultProductDatabase: ProductDatabase = {
       "status": "ok",
       "extensions": {
         "frizzbot": {
-          "simple_humectants_number": 3,
+          "simple_humectants_number": 2,
           "film_forming_humectants_number": 3,
           "emollients_number": 2,
           "simple_humectants": [
             "Glycerin",
-            "Sodium hyaluronate",
-            "Ceramide"
+            "Sodium hyaluronate"
           ],
           "film_forming_humectants": [
             "Aloe Barbadensis Leaf Extract",
@@ -4304,7 +4364,7 @@ export const defaultProductDatabase: ProductDatabase = {
             "Maltodextrin VP Copolymer",
             "Guar Hydroxypropyltrimonium Chloride"
           ],
-          "score": -76
+          "score": -81
         },
         "porosity": {
           "high": 100,
@@ -6091,7 +6151,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "protein-free"
       ],
       "ingredients_raw": "water aqua eau, propylene glycol, acrylates copolymer, aminomethyl propanol, glycerin, peg-60 hydrogenated castor oil, carbomer, hydroxyethylcellulose, quaternium-22, tetrasodium edta, dmdm hydantoin, iodopropynyl butylcarbamate, fragrance parfum",
-      "description": "A color-safe styling gel that delivers strong hold, locks in moisture, and enhances shine for firmly defined, frizz-free curls",
+      "description": "A styling gel that delivers strong hold, locks in moisture, and enhances shine for firmly defined, frizz-free curls",
       "id": "all_about_curls_high_definition_gel",
       "systems_excluded": [],
       "status": "ok",
@@ -6130,6 +6190,65 @@ export const defaultProductDatabase: ProductDatabase = {
         "autoTagger": {
           "tags": [
             "protein-free"
+          ]
+        }
+      }
+    },
+    "mystic_aura_strong_hold_styling_gel": {
+      "name": "Mystic Aura Strong Hold Styling Gel",
+      "brand": "Silver Stone Apothecary",
+      "buy_links": [
+        {
+          "url": "https://www.silverstoneapothecary.com/collections/dry-fine-curls-waves/products/mystic-aura-strong-hold-styling-gel?ref=curlsbot15",
+          "retailer": "Silver Stone Apothecary"
+        }
+      ],
+      "product_categories": [
+        "gels"
+      ],
+      "tags": [
+        "wavy",
+        "curly",
+        "indie",
+        "protein-free",
+        "glycerin-free"
+      ],
+      "ingredients_raw": "water, sodium hyaluronate, hydrolyzed corn starch, propanedial, polyacrylate crosspolymer-6, amp-acrylates allyl methacrylate copolymer, althaea oficinalis marshmallow leaf root extract, peg-6 caprylic capric glycerides, caprylyl glycol, phenoxyethanol",
+      "description": "A lightweight strong-hold gel made by an indie brand in a plastic-free container",
+      "id": "mystic_aura_strong_hold_styling_gel",
+      "systems_excluded": [],
+      "status": "ok",
+      "extensions": {
+        "frizzbot": {
+          "simple_humectants_number": 2,
+          "film_forming_humectants_number": 2,
+          "emollients_number": 2,
+          "simple_humectants": [
+            "Sodium hyaluronate",
+            "Caprylyl Glycol"
+          ],
+          "film_forming_humectants": [
+            "Hydrolyzed Corn Starch",
+            "Marshmallow root Extract"
+          ],
+          "emollients": [
+            "Polyacrylate Crosspolymer-6",
+            "Copolymer"
+          ],
+          "score": -64
+        },
+        "porosity": {
+          "high": 100,
+          "low": 100
+        },
+        "sebderm": {
+          "hasTriggers": false,
+          "triggers": []
+        },
+        "autoTagger": {
+          "tags": [
+            "protein-free",
+            "glycerin-free"
           ]
         }
       }
@@ -7651,7 +7770,7 @@ export const defaultProductDatabase: ProductDatabase = {
       "status": "caution",
       "extensions": {
         "frizzbot": {
-          "simple_humectants_number": 7,
+          "simple_humectants_number": 6,
           "film_forming_humectants_number": 9,
           "emollients_number": 14,
           "simple_humectants": [
@@ -7660,8 +7779,7 @@ export const defaultProductDatabase: ProductDatabase = {
             "Ethylhexylglycerin",
             "Sodium PCA",
             "Sodium Lactate",
-            "PCA",
-            "Ceramide"
+            "PCA"
           ],
           "film_forming_humectants": [
             "Hydroxypropylammonium Gluconate",
@@ -7690,7 +7808,7 @@ export const defaultProductDatabase: ProductDatabase = {
             "Squalane",
             "Olive Oil"
           ],
-          "score": -70
+          "score": -71
         },
         "porosity": {
           "high": 100,
@@ -8098,12 +8216,11 @@ export const defaultProductDatabase: ProductDatabase = {
       "status": "caution",
       "extensions": {
         "frizzbot": {
-          "simple_humectants_number": 3,
+          "simple_humectants_number": 2,
           "film_forming_humectants_number": 4,
           "emollients_number": 9,
           "simple_humectants": [
             "Glycerin",
-            "Ceramide",
             "Caprylyl Glycol"
           ],
           "film_forming_humectants": [
@@ -8123,10 +8240,10 @@ export const defaultProductDatabase: ProductDatabase = {
             "Olive Oil",
             "Jojoba Oil"
           ],
-          "score": -70
+          "score": -72
         },
         "porosity": {
-          "high": 88,
+          "high": 91,
           "low": 0
         },
         "sebderm": {
@@ -12648,11 +12765,10 @@ export const defaultProductDatabase: ProductDatabase = {
       "status": "warning",
       "extensions": {
         "frizzbot": {
-          "simple_humectants_number": 7,
+          "simple_humectants_number": 6,
           "film_forming_humectants_number": 2,
           "emollients_number": 10,
           "simple_humectants": [
-            "Ceramide",
             "Sodium hyaluronate",
             "Sodium PCA",
             "PCA",
@@ -12676,7 +12792,7 @@ export const defaultProductDatabase: ProductDatabase = {
             "Squalane",
             "Trimethylsiloxyamodimethicone"
           ],
-          "score": -66
+          "score": -69
         },
         "porosity": {
           "high": 100,
@@ -13782,6 +13898,220 @@ export const defaultProductDatabase: ProductDatabase = {
         "autoTagger": {
           "tags": [
             "protein-free"
+          ]
+        }
+      }
+    },
+    "odele_leave-in_conditioner": {
+      "name": "Odele Leave-in Conditioner",
+      "brand": "Odele",
+      "buy_links": [
+        {
+          "url": "https://amzn.to/4s2F1wS",
+          "retailer": "Amazon"
+        },
+        {
+          "url": "https://odelebeauty.com/products/leave-in-conditioner",
+          "retailer": "Odele"
+        }
+      ],
+      "product_categories": [
+        "leave_ins"
+      ],
+      "tags": [
+        "samples",
+        "wavy",
+        "curly",
+        "coily",
+        "low_porosity",
+        "protein",
+        "glycerin-free"
+      ],
+      "ingredients_raw": "water, propanediol, cetearyl alcohol, amodimethicone, amaranthus caudatus seed extract, hydrolyzed rice protein, behentrimonium chloride, maltodextrin vp copolymer, pvp, cetrimonium chloride, ethylhexylglycerin, trideceth-12, alcohol, phenoxyethanol, fragranc",
+      "description": "This leave-in is a lot lighter than most cream leave-ins, making it a great choice for easily weighed down hair.",
+      "id": "odele_leave-in_conditioner",
+      "systems_excluded": [],
+      "status": "warning",
+      "extensions": {
+        "frizzbot": {
+          "simple_humectants_number": 2,
+          "film_forming_humectants_number": 1,
+          "emollients_number": 6,
+          "simple_humectants": [
+            "Propanediol",
+            "Ethylhexylglycerin"
+          ],
+          "film_forming_humectants": [
+            "Unknown Protein"
+          ],
+          "emollients": [
+            "Cetearyl Alcohol",
+            "Amodimethicone",
+            "Behentrimonium Chloride",
+            "Maltodextrin VP Copolymer",
+            "Polyvinylpyrrolidone",
+            "Cetrimonium Chloride"
+          ],
+          "score": -58
+        },
+        "porosity": {
+          "high": 100,
+          "low": 74
+        },
+        "sebderm": {
+          "hasTriggers": true,
+          "triggers": [
+            {
+              "id": "cetearyl_alcohol",
+              "name": "Cetearyl Alcohol",
+              "reason": "This specific fatty alcohol can feed Malassezia yeast"
+            }
+          ]
+        },
+        "autoTagger": {
+          "tags": [
+            "protein",
+            "glycerin-free"
+          ]
+        }
+      }
+    },
+    "odele_thickening_shampoo": {
+      "name": "Odele Thickening Shampoo",
+      "brand": "Odele",
+      "buy_links": [
+        {
+          "url": "https://amzn.to/4ryQunY",
+          "retailer": "Amazon"
+        },
+        {
+          "url": "https://odelebeauty.com/products/thickening-set",
+          "retailer": "Odele"
+        }
+      ],
+      "product_categories": [
+        "shampoos",
+        "clarifying_shampoos"
+      ],
+      "tags": [
+        "samples",
+        "wavy",
+        "curly",
+        "low_porosity",
+        "protein"
+      ],
+      "ingredients_raw": "water, sodium c14-16 olefin sulfonate, cocamidopropyl hydroxysultaine, dimethyl lauramide myristamide, fragrance, rosmarinus officinalis rosemary leaf extract, caffeine, pisum sativum pea peptide, biotin, aloe barbadensis leaf juice, zingiber officinale ginger root extract, mentha piperita peppermint leaf extract, glycerin, propanediol, polyquaternium-10, hydroxypropyl guar hydroxypropyltrimonium chloride, sodium methyl 2-sulfolaurate, disodium 2-sulfolaurate, sodium chloride, sodium benzoate, potassium sorbate, citric acid",
+      "description": "If you're looking for something that's strong but still has a nice slip, I think this is the one.",
+      "id": "odele_thickening_shampoo",
+      "systems_excluded": [],
+      "status": "ok",
+      "extensions": {
+        "frizzbot": {
+          "simple_humectants_number": 2,
+          "film_forming_humectants_number": 2,
+          "emollients_number": 2,
+          "simple_humectants": [
+            "Glycerin",
+            "Propanediol"
+          ],
+          "film_forming_humectants": [
+            "Peptide",
+            "Aloe Barbadensis Leaf Extract"
+          ],
+          "emollients": [
+            "Unknown Polyquat",
+            "Guar Hydroxypropyltrimonium Chloride"
+          ],
+          "score": -76
+        },
+        "porosity": {
+          "high": 100,
+          "low": 100
+        },
+        "sebderm": {
+          "hasTriggers": false,
+          "triggers": []
+        },
+        "autoTagger": {
+          "tags": [
+            "protein"
+          ]
+        }
+      }
+    },
+    "odele_thickening_conditioner": {
+      "name": "Odele Thickening Conditioner",
+      "brand": "Odele",
+      "buy_links": [
+        {
+          "url": "https://amzn.to/4ryQunY",
+          "retailer": "Amazon"
+        },
+        {
+          "url": "https://odelebeauty.com/products/thickening-set",
+          "retailer": "Odele"
+        }
+      ],
+      "product_categories": [
+        "conditioners"
+      ],
+      "tags": [
+        "samples",
+        "wavy",
+        "curly",
+        "low_porosity",
+        "protein"
+      ],
+      "ingredients_raw": "water, cetearyl alcohol, glyceryl stearate, isoamyl laurate, glycerin, behentrimonium chloride, fragrance, rosmarinus officinalis rosemary leaf extract, caffeine, pisum sativum pea peptide, biotin, cocos nucifera coconut oil, aloe barbadensis leaf juice, guar hydroxypropyltrimonium chloride, cetrimonium chloride, alcohol, tetrasodium glutamate diacetate, ethylhexylglycerin, phenoxyethanol, sodium hydroxide, citric acid",
+      "description": "An excellent light-weight and smoothing conditioner for easily-weighed down hair",
+      "id": "odele_thickening_conditioner",
+      "systems_excluded": [],
+      "status": "caution",
+      "extensions": {
+        "frizzbot": {
+          "simple_humectants_number": 2,
+          "film_forming_humectants_number": 3,
+          "emollients_number": 5,
+          "simple_humectants": [
+            "Glycerin",
+            "Ethylhexylglycerin"
+          ],
+          "film_forming_humectants": [
+            "Peptide",
+            "Aloe Barbadensis Leaf Extract",
+            "Sodium Glutamate"
+          ],
+          "emollients": [
+            "Cetearyl Alcohol",
+            "Behentrimonium Chloride",
+            "Coconut Oil",
+            "Guar Hydroxypropyltrimonium Chloride",
+            "Cetrimonium Chloride"
+          ],
+          "score": -72
+        },
+        "porosity": {
+          "high": 100,
+          "low": 74
+        },
+        "sebderm": {
+          "hasTriggers": true,
+          "triggers": [
+            {
+              "id": "cetearyl_alcohol",
+              "name": "Cetearyl Alcohol",
+              "reason": "This specific fatty alcohol can feed Malassezia yeast"
+            },
+            {
+              "id": "coconut_oil",
+              "name": "Coconut Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            }
+          ]
+        },
+        "autoTagger": {
+          "tags": [
+            "protein"
           ]
         }
       }

@@ -310,7 +310,21 @@
       "product_categories": ["gels"],
       "tags": ["samples", "wavy", "curly", "coily", "premium"],
       "ingredients_raw": "water aqua eau, propylene glycol, acrylates copolymer, aminomethyl propanol, glycerin, peg-60 hydrogenated castor oil, carbomer, hydroxyethylcellulose, quaternium-22, tetrasodium edta, dmdm hydantoin, iodopropynyl butylcarbamate, fragrance parfum",
-      "description": "A color-safe styling gel that delivers strong hold, locks in moisture, and enhances shine for firmly defined, frizz-free curls"
+      "description": "A styling gel that delivers strong hold, locks in moisture, and enhances shine for firmly defined, frizz-free curls"
+    },
+    {
+      "name": "Mystic Aura Strong Hold Styling Gel",
+      "brand": "Silver Stone Apothecary",
+      "buy_links": [
+        {
+          "url": "https://www.silverstoneapothecary.com/collections/dry-fine-curls-waves/products/mystic-aura-strong-hold-styling-gel?ref=curlsbot15",
+          "retailer": "Silver Stone Apothecary"
+        }
+      ],
+      "product_categories": ["gels"],
+      "tags": ["wavy", "curly", "indie"],
+      "ingredients_raw": "water, sodium hyaluronate, hydrolyzed corn starch, propanedial, polyacrylate crosspolymer-6, amp-acrylates allyl methacrylate copolymer, althaea oficinalis marshmallow leaf root extract, peg-6 caprylic capric glycerides, caprylyl glycol, phenoxyethanol",
+      "description": "A lightweight strong-hold gel made by an indie brand in a plastic-free container"
     }
   ]
 }
