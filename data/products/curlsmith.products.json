@@ -1,0 +1,373 @@
+{ "products": [
+  {
+    "name": "Wash & Scrub Detox Shampoo",
+    "brand": "Curlsmith",
+    "product_categories": ["clarifying_shampoos"],
+    "ingredients_raw": "water aqua, perlite, sodium methyl cocoyl taurate plant derived, cocamidopropyl betaine plant derived, decyl glucoside, lactobacillus ferment lysate, leuconostoc radish root ferment filtrate, hylocereus undatus dragon fruit fruit extract, paullinia cupana guarana seed extract, urtica dioica nettle leaf extract, zingiber officinale ginger root extract, malva sylvestris mallow flower extract, acetic acid vinegar, acrylates c10-30 alkyl acrylate crosspolymer, guar hydroxypropyltrimonium chloride, polyquaternium-10, glycerin, citric acid, potassium sorbate, sodium hydroxide, phenoxyethanol, sodium benzoate, linalool, limonene, fragrance parfum",
+    "tags": ["low_porosity", "normal_porosity", "featured"],
+    "buy_links": [
+      {
+        "url": "https://amzn.to/4iUapKl",
+        "retailer": "Amazon",
+        "countries": ["UK"]
+      },
+      {
+        "url": "https://go.skimresources.com?id=276362X1762442&xs=1&url=https%3A%2F%2Fuk.curlsmith.com%2Fproducts%2Fwash-scrub-detox-pro-biotic",
+        "retailer": "Curlsmith",
+        "countries": ["UK"]
+      }
+    ],
+    "asin": "B08636L8JY",
+    "cost": 2.6
+  },
+  {
+    "name": "Curl Reset Detox Shampoo",
+    "brand": "Curlsmith",
+    "product_categories": ["clarifying_shampoos"],
+    "ingredients_raw": "water aqua eau, sodium c14-16 olefin sulfonate, cellulose, cocamidopropyl hydroxysultaine, acrylates copolymer, sodium cocoyl isethionate, malva sylvestris mallow flower extract, zingiber officinale ginger root extract, urtica dioica nettle leaf extract, vinegar acetum vinaigre, glycerin, mentha piperita peppermint oil, polyquaternium-10, sodium gluconate, phytic acid, propanediol, helianthus annuus sunflower seed oil, tocopherol, sodium chloride, potassium sorbate, sodium hydroxide, phenoxyethanol, sodium benzoate, fragrance parfum, linalool, limonene, citrus aurantium peel oil",
+    "tags": ["low_porosity", "normal_porosity", "featured"],
+    "buy_links": [
+      {
+        "url": "https://amzn.to/44fMMqA",
+        "retailer": "Amazon"
+      },
+      {
+        "url": "https://www.ulta.com/p/curl-reset-detox-shampoo-pimprod2050695?sku=2636663",
+        "retailer": "Ulta"
+      },
+      {
+        "url": "https://curlsmith.com/products/curl-reset-detox-shampoo",
+        "retailer": "Curlsmith"
+      }
+    ],
+    "asin": "B08636L8JY",
+    "description": "This shampoo was recently reformulated to remove not just product buildup, but also mineral buildup from hard water.",
+    "cost": 2.6
+  },
+  {
+    "name": "Essential Moisture Conditioner",
+    "brand": "Curlsmith",
+    "product_categories": ["conditioners"],
+    "tags": ["normal_porosity", "high_porosity", "curly", "coily"],
+    "ingredients_raw": "water aqua, cetearyl alcohol, hydroxypropyl starch phosphate, betaine, cetyl palmitate, behentrimonium chloride, butyrospermum parkii shea butter, cocos nucifera coconut oil, persea gratissima avocado oil, helianthus annuus sunflower seed oil, aloe barbadensis leaf juice, selaginella lepidophylla resurrection flower extract, ocimum basilicum basil leaf extract, piper nigrum black pepper seed extract, rosmarinus officinalis rosemary leaf extract, salvia officinalis sage leaf extract, carapa guaianensis andiroba seed oil, glycerin, guar hydroxypropyltrimonium chloride, panthenol, glyceryl undecylenate, fragrance parfum, citric acid, sodium hydroxide, sodium gluconate, glyceryl caprylate, potassium sorbate, sodium benzoate, limonene, linalool, isopropyl alcohol",
+    "buy_links": [
+      {
+        "url": "https://amzn.to/3BDw34T",
+        "retailer": "Amazon",
+        "countries": ["UK"]
+      },
+      {
+        "url": "https://amzn.to/3Q3TZC5",
+        "retailer": "Amazon"
+      },
+      {
+        "url": "https://curlsmith.com/products/essential-moisture-conditioner",
+        "retailer": "Curlsmith"
+      },
+      {
+        "url": "https://uk.curlsmith.com/products/essential-moisture-conditioner?redirect=1",
+        "retailer": "Curlsmith",
+        "countries": ["UK"]
+      }
+    ],
+    "asin": "B0BPTBMJY4",
+    "cost": 1.6,
+    "description": "This has a small amount of isopropyl alcohol, which we mark as caution, but as it's last on the ingredients list and this is a product meant to be washed out, it's unlikely to be harmful for hair."
+  },
+  {
+    "name": "Weightless Air Dry Cream",
+    "brand": "Curlsmith",
+    "product_categories": ["creams"],
+    "tags": ["high_porosity", "normal_porosity", "curl_enhancer", "featured"],
+    "ingredients_raw": "water aqua, ricinus communis castor seed oil, dicaprylyl carbonate, cetearyl alcohol, orbignya speciosa babassu kernel oil, behentrimonium chloride, sodium hyaluronate, astrocaryum murumuru seed butter, simmondsia chinensis jojoba seed oil, butyrospermum parkii shea butter, hylocereus undatus dragon fruit fruit extract, paullinia cupana guarana seed extract, urtica dioica nettle leaf extract, zingiber officinale ginger root extract, polyquaternium-10, panthenol, guar hydroxypropyltrimonium chloride, tocopherol, disodium edta, ethylhexylglycerin, glycerin, citric acid, sodium hydroxide, potassium sorbate, sodium benzoate, phenoxyethanol, linalool, limonene, citronellol, fragrance parfum",
+    "buy_links": [
+      {
+        "url": "https://amzn.to/4iZV6zV",
+        "retailer": "Amazon",
+        "countries": ["UK"]
+      },
+      {
+        "url": "https://amzn.to/4gbWmgy",
+        "retailer": "Amazon"
+      }
+    ],
+    "asin": "B08N5CCKJ8",
+    "cost": 3.3
+  },
+  {
+    "name": "Curl Quenching Conditioning Wash",
+    "brand": "Curlsmith",
+    "product_categories": ["cowashes"],
+    "tags": ["samples", "curly", "coily", "high_porosity", "premium"],
+    "ingredients_raw": "water aqua, cetearyl alcohol, hydroxypropyl starch phosphate, cetyl palmitate, behentrimonium chloride, cocamidopropyl betaine, fragrance parfum, selaginella lepidophylla resurrection flower extract, carapa guaianensis andiroba seed oil, persea gratissima avocado oil, salvia officinalis sage leaf extract, ocimum basilicum basil leaf extract, piper nigrum black pepper seed extract, aloe barbadensis aloe vera leaf juice, rosmarinus officinalis rosemary leaf extract, helianthus annuus sunflower seed oil, butyrospermum parkii shea butter, cocos nucifera coconut oil, glycerin, guar hydroxypropyltrimonium chloride, panthenol, glyceryl caprylate, glyceryl undecylenate, potassium sorbate, sodium benzoate, sodium hydroxide, sodium chloride, citric acid, disodium edta, limonene, linalool",
+    "description": "A 2-in-1 shampoo and conditioner that gently cleanses buildup, soothes the scalp, promotes healthy hair growth, and boosts shine",
+    "buy_links": [
+      {
+        "url": "https://amzn.to/4fU0jXj",
+        "retailer": "Amazon",
+        "countries": ["UK"]
+      },
+      {
+        "url": "https://amzn.to/4h7ic6o",
+        "retailer": "Amazon"
+      },
+      {
+        "url": "https://www.lookfantastic.com/p/curlsmith-curl-quenching-conditioning-wash-355ml/12691568/",
+        "retailer": "Look Fantastic",
+        "countries": ["EU"]
+      }
+    ],
+    "asin": "B07D7CBBPC"
+  },
+  {
+    "name": "Curl Defining Styling Souffle",
+    "brand": "Curlsmith",
+    "ingredients_raw": "water aqua, glycerin, babassu oil polyglyceryl-4 esters, sorbitol, chondrus crispus irish moss powder, fragrance parfum, linum usitatissimum linseed seed extract, carapa guaianensis andiroba seed oil, rosmarinus officinalis rosemary leaf extract, salvia officinalis sage leaf extract, persea gratissima avocado oil, selaginella lepidophylla resurrection flower extract, aloe barbadensis aloe vera leaf juice, ocimum basilicum basil leaf extract, piper nigrum black pepper seed extract, butyrospermum parkii shea butter, helianthus annuus sunflower seed oil, glyceryl caprylate, glyceryl undecylenate, potassium sorbate, sodium benzoate, disodium edta, citric acid, limonene, linalool",
+    "product_categories": ["custards", "gels"],
+    "tags": ["low_porosity", "normal_porosity", "high_porosity", "featured"],
+    "buy_links": [
+      {
+        "url": "https://amzn.to/40auHbe",
+        "retailer": "Amazon",
+        "countries": ["UK"]
+      },
+      {
+        "url": "https://amzn.to/40lMISJ",
+        "retailer": "Amazon"
+      },
+      {
+        "url": "https://go.skimresources.com?id=276362X1762442&xs=1&url=https%3A%2F%2Fuk.curlsmith.com%2Fproducts%2Fcurl-souffle%3Fredirect%3D1",
+        "retailer": "Curlsmith",
+        "countries": ["UK"]
+      },
+      {
+        "url": "https://go.skimresources.com?id=276362X1762442&xs=1&url=https%3A%2F%2Fcurlsmith.com%2Fproducts%2Fcurl-souffle",
+        "retailer": "Curlsmith"
+      }
+    ],
+    "asin": "B07D7CKKL3",
+    "cost": 3.5
+  },
+  {
+    "name": "Double Cream Deep Quencher",
+    "brand": "Curlsmith",
+    "product_categories": ["deep_conditioners"],
+    "tags": ["high_porosity", "normal_porosity", "featured", "low_porosity"],
+    "ingredients_raw": "water aqua, cetearyl alcohol, behentrimonium chloride, propanediol, hydroxypropyl starch phosphate, cetyl palmitate, fragrance parfum, guar hydroxypropyltrimonium chloride, selaginella lepidophylla resurrection flower extract, carapa guaianensis andiroba seed oil, aloe barbadensis aloe vera leaf juice, ocimum basilicum basil leaf extract, piper nigrum black pepper seed extract, rosmarinus officinalis rosemary leaf extract, salvia officinalis sage leaf extract, helianthus annuus sunflower seed oil, prunus armeniaca apricot kernel oil, persea gratissima avocado oil, butyrospermum parkii shea butter, panthenol, ethylhexylglycerin, citric acid, disodium edta, sodium hydroxide, potassium sorbate, sodium benzoate, glycerin, phenoxyethanol, linalool, limonene",
+    "buy_links": [
+      {
+        "url": "https://amzn.to/4iVdf1y",
+        "retailer": "Amazon",
+        "countries": ["UK"]
+      },
+      {
+        "url": "https://amzn.to/3Edab0O",
+        "retailer": "Amazon"
+      },
+      {
+        "url": "https://go.skimresources.com?id=276362X1762442&xs=1&url=https%3A%2F%2Fcurlsmith.com%2Fproducts%2Fdouble-cream-deep-quencher",
+        "retailer": "Curlsmith"
+      },
+      {
+        "url": "https://go.skimresources.com?id=276362X1762442&xs=1&url=https%3A%2F%2Fuk.curlsmith.com%2Fproducts%2Fdouble-cream-deep-quencher",
+        "retailer": "Curlsmith",
+        "countries": ["UK"]
+      }
+    ],
+    "asin": "B08639DTVD"
+  },
+  {
+    "name": "Bouncy Strength Volume Foam",
+    "brand": "Curlsmith",
+    "product_categories": ["foams"],
+    "tags": ["normal_porosity", "volume", "low_porosity", "featured"],
+    "ingredients_raw": "water aqua, vp va copolymer, cocamidopropyl betaine, hydrolyzed rice protein, hydrolyzed hemp seed extract, ribes nigrum black currant fruit extract, lentinus edodes shiitake mushroom extract, psidium guajava guava fruit extract, brassica oleracea acephala kale leaf extract, cucurbita pepo pumpkin seed extract, opuntia tuna prickly pear fruit extract, glycerin, panthenol, potassium sorbate, ethylhexylglycerin, disodium edta, citric acid, sodium benzoate, peg-40 hydrogenated castor oil, phenoxyethanol, sodium hydroxide, linalool, limonene, geraniol, benzyl alcohol, fragrance parfum",
+    "buy_links": [
+      {
+        "url": "https://amzn.to/49W9HrK",
+        "retailer": "Amazon",
+        "countries": ["UK"]
+      },
+      {
+        "url": "https://go.skimresources.com?id=276362X1762442&xs=1&url=https%3A%2F%2Fcurlsmith.com%2Fproducts%2Fbouncy-strength-volume-foam",
+        "retailer": "Curlsmith"
+      },
+      {
+        "url": "https://go.skimresources.com?id=276362X1762442&xs=1&url=https%3A%2F%2Fuk.curlsmith.com%2Fproducts%2Fbouncy-strength-volume-foam",
+        "retailer": "Curlsmith",
+        "countries": ["UK"]
+      }
+    ],
+    "asin": "B08WPSW84H",
+    "description": "A lightweight foam helps build volume and provides humidity protection",
+    "cost": 2.6
+  },
+  {
+    "name": "Hydro Style Flexi-Jelly",
+    "brand": "Curlsmith",
+    "product_categories": ["gels"],
+    "tags": [
+      "normal_porosity",
+      "low_porosity",
+      "curl_enhancer",
+      "featured",
+      "high_porosity"
+    ],
+    "ingredients_raw": "water aqua, pvp, peg-40 hydrogenated castor oil, sodium hyaluronate, camellia sinensis green tea leaf extract, lavandula angustifolia lavender flower extract, thymus vulgaris thyme leaf extract, thuja occidentalis white cedar leaf extract, phyllanthus emblica amla fruit extract, panthenol, disodium edta, carbomer, caprylyl glycol, sodium benzoate, potassium sorbate, aminomethyl propanol, glycerin, phenoxyethanol, ethylhexylglycerin, linalool, limonene, citronellol, fragrance parfum",
+    "buy_links": [
+      {
+        "url": "https://amzn.to/3BHjZj1",
+        "retailer": "Amazon",
+        "countries": ["UK"]
+      },
+      {
+        "url": "https://curlsmith.com/products/hydro-style-flexi-jelly",
+        "retailer": "Curlsmith"
+      },
+      {
+        "url": "https://uk.curlsmith.com/products/hydro-style-flexi-jelly",
+        "retailer": "Curlsmith",
+        "countries": ["UK"]
+      }
+    ],
+    "asin": "B08N5BX78W"
+  },
+  {
+    "name": "Hydrate & Plump Leave-In Conditioner",
+    "brand": "Curlsmith",
+    "product_categories": ["leave_ins"],
+    "tags": ["normal_porosity", "high_porosity", "featured"],
+    "ingredients_raw": "water aqua eau, dicaprylyl carbonate, cetearyl alcohol, coco-caprylate caprate, ricinus communis castor seed oil, behentrimonium chloride, glycerin, panthenol, butyrospermum parkii shea butter, simmondsia chinensis jojoba seed oil, guar hydroxypropyltrimonium chloride, polyquaternium-10, olea europaea olive leaf extract, tilia tomentosa bud extract, arctium majus root extract, arnica montana flower extract, calendula officinalis flower extract, chamomilla recutita matricaria flower extract, citrus limon lemon peel extract, hedera helix ivy leaf extract, lamium album extract, nasturtium officinale extract, pinus sylvestris bud extract, rosmarinus officinalis rosemary leaf extract, salvia officinalis sage leaf extract, tropaeolum majus flower extract, isopropyl alcohol, pentylene glycol, tocopherol, maltodextrin, cyclodextrin, pvp, cyamopsis tetragonoloba guar gum, xanthan gum, maltodextrin vp copolymer, ethylhexylglycerin, fragrance parfum, citric acid, sodium gluconate, phytic acid, phenoxyethanol, potassium sorbate, sodium benzoate, hydroxycitronellal, citronellol",
+    "buy_links": [
+      {
+        "url": "https://amzn.to/4fEo0CJ",
+        "retailer": "Amazon",
+        "countries": ["UK"]
+      },
+      {
+        "url": "https://curlsmith.com/products/hydrate-plump-leave-in",
+        "retailer": "Curlsmith"
+      },
+      {
+        "url": "https://uk.curlsmith.com/products/hydrate-plump-leave-in",
+        "retailer": "Curlsmith",
+        "countries": ["UK"]
+      }
+    ],
+    "asin": "B0CZVVB2C9",
+    "description": "This has a small amount of isopropyl alcohol, which we mark as caution, but as it's towards the end of the ingredients list so it's unlikely to be harmful for hair.",
+    "cost": 1.9
+  },
+  {
+    "name": "Bonding Oil",
+    "brand": "Curlsmith",
+    "product_categories": ["oils"],
+    "tags": ["normal_porosity", "high_porosity", "featured", "bonding"],
+    "ingredients_raw": "hydrogenated ethylhexyl olivate, hydrogenated olive oil unsaponifiables, coco-caprylate caprate, shea butter ethyl esters, hydrogenated castor oil sebacic acid copolymer, prunus armeniaca apricot kernel oil, hippophae rhamnoides sea buckthorn fruit oil, lens esculenta lentil seed extract, hydrolyzed cicer chickpea seed extract, chenopodium quinoa seed extract, fragrance parfum, linalool, limonene, geraniol, benzyl alcohol, citronellol",
+    "buy_links": [
+      {
+        "url": "https://amzn.to/3DwDN9b",
+        "retailer": "Amazon",
+        "countries": ["UK"]
+      },
+      {
+        "url": "https://curlsmith.com/products/bonding-oil",
+        "retailer": "Curlsmith"
+      },
+      {
+        "url": "https://uk.curlsmith.com/products/bonding-oil",
+        "retailer": "Curlsmith",
+        "countries": ["UK"]
+      }
+    ],
+    "asin": "B09GC96P46",
+    "cost": 15
+  },
+  {
+    "name": "Essential Moisture Cleanser",
+    "brand": "Curlsmith",
+    "product_categories": ["shampoos"],
+    "tags": ["high_porosity", "normal_porosity", "featured"],
+    "ingredients_raw": "water aqua, cocamidopropyl betaine, sodium methyl cocoyl taurate, lauryl glucoside, sodium chloride, peg-120 methyl glucose trioleate, betaine, helianthus annuus sunflower seed oil, aloe barbadensis leaf juice, selaginella lepidophylla resurrection flower extract, ocimum basilicum basil leaf extract, piper nigrum black pepper seed extract, rosmarinus officinalis rosemary leaf extract, salvia officinalis sage leaf extract, carapa guaianensis andiroba seed oil, propanediol, glycerin, guar hydroxypropyltrimonium chloride, polyquaternium-10, citric acid, phenoxyethanol, sodium benzoate, potassium sorbate, fragrance parfum, limonene, linalool",
+    "buy_links": [
+      {
+        "url": "https://amzn.to/4gzkwmm",
+        "retailer": "Amazon",
+        "countries": ["UK"]
+      },
+      {
+        "url": "https://curlsmith.com/products/essential-moisture-cleanser",
+        "retailer": "Curlsmith"
+      },
+      {
+        "url": "https://uk.curlsmith.com/products/essential-moisture-cleanser",
+        "retailer": "Curlsmith",
+        "countries": ["UK"]
+      }
+    ],
+    "asin": "B0BPTC343Q"
+  },
+  {
+    "name": "Full Body Weightless Cleanser",
+    "brand": "Curlsmith",
+    "product_categories": ["shampoos"],
+    "tags": ["low_porosity", "normal_porosity", "featured"],
+    "ingredients_raw": "water aqua eau, glycerin, coco-glucoside, decyl glucoside, sodium methyl cocoyl taurate, xanthan gum, saccharide isomerate, guar hydroxypropyltrimonium chloride, polyquaternium-10, tilia tomentosa bud extract, olea europaea olive leaf extract, arctium majus root extract, arnica montana flower extract, calendula officinalis flower extract, chamomilla recutita matricaria flower extract, citrus limon lemon peel extract, hedera helix ivy leaf extract, lamium album extract, nasturtium officinale extract, pinus sylvestris bud extract, rosmarinus officinalis rosemary leaf extract, salvia officinalis sage leaf extract, tropaeolum majus flower extract, pentylene glycol, panthenol, tocopherol, cyclodextrin, sodium chloride, cyamopsis tetragonoloba guar gum, fragrance parfum, citric acid, sodium hydroxide, sodium gluconate, sodium citrate, phytic acid, sodium benzoate, potassium sorbate, hydroxycitronellal, citronellol",
+    "buy_links": [
+      {
+        "url": "https://amzn.to/3Pdq0qB",
+        "retailer": "Amazon",
+        "countries": ["UK"]
+      },
+      {
+        "url": "https://curlsmith.com/products/full-body-weightless-cleanser",
+        "retailer": "Curlsmith"
+      },
+      {
+        "url": "https://uk.curlsmith.com/products/full-body-weightless-cleanser",
+        "retailer": "Curlsmith",
+        "countries": ["UK"]
+      }
+    ],
+    "asin": "B0CZW7PPLQ"
+  },
+    {
+      "name": "Bond Curl Rehab Salve, Bond Building Strength Treatment for Weak, Damaged Hair",
+      "brand": "Curlsmith",
+      "buy_links": [
+        {
+          "url": "https://amzn.to/402sONw",
+          "retailer": "Amazon"
+        },
+        {
+          "url": "https://amzn.to/429CqI3",
+          "retailer": "Amazon",
+          "countries": ["UK"]
+        },
+        {
+          "url": "https://uk.curlsmith.com/products/bond-curl-rehab-salve",
+          "retailer": "Curlsmith",
+          "countries": ["UK"]
+        },
+        {
+          "url": "https://curlsmith.com/products/bond-curl-rehab-salve",
+          "retailer": "Curlsmith"
+        }
+      ],
+      "product_categories": ["pre-poo", "treatments"],
+      "tags": [
+        "samples",
+        "wavy",
+        "curly",
+        "coily",
+        "low_porosity",
+        "bonding",
+        "premium"
+      ],
+      "cost": 3.75,
+      "asin": "B08WPNSHCD",
+      "ingredients_raw": "water aqua, cetearyl alcohol, salvia hispanica chia seed extract, creatine, polyquaternium-10, stearamidopropyl dimethylamine, lentinus edodes shiitake extract, opuntia tuna prickly pear fruit extract, cucurbita pepo pumpkin seed extract, psidium guajava guava fruit extract, prunus amygdalus dulcis sweet almond oil, ribes nigrum black currant fruit extract, brassica oleracea acephala kale leaf extract, leuconostoc radish root ferment filtrate, polyquaternium-37, hydroxypropylgluconamide, hydroxypropylammonium gluconate, disodium edta, potassium sorbate, tartaric acid, citric acid, ethylhexylglycerin, glycerin, behentrimonium chloride, phenoxyethanol, sodium benzoate, benzyl alcohol, geraniol, fragrance parfum, linalool, limonene",
+      "description": "A protein-rich bond-building treatment that targets all 3 hair bonds to repair, strengthen, and reduce damage—formulated specifically for curls"
+    }
+]
+}

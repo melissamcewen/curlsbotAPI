@@ -1,0 +1,92 @@
+{
+  "products": [
+    {
+      "name": "Cream Conditioner",
+      "brand": "Curl Keeper",
+      "product_categories": ["conditioners"],
+      "tags": ["featured", "curly", "coily"],
+      "cost": 3,
+      "ingredients_raw": "water aqua eau, isopropyl myristate, cetearyl alcohol, simmondsia chinensis jojoba seed oil, cetrimonium chloride, ceteareth-33, panthenol, silk amino acids, wheat amino acids, parfum, sodium levulinate, potassium sorbate, lecithin, citric acid, sodium chloride, benzoic acid, benzyl alcohol, benzyl benzoate, phenoxyethanol, citral, citronellol, coumarin, eugenol, geraniol, limonene, linalool",
+      "buy_links": [
+        {
+          "url": "https://curlkeeper.com/r?id=6qjs4u",
+          "retailer": "Curl Keeper"
+        }
+      ],
+      "description": "A moderate-weight conditioner that is perfect for almost allcurly and coily hair"
+    },
+
+    {
+      "name": "Big Energy Conditioner",
+      "brand": "Curl Keeper",
+      "product_categories": ["conditioners"],
+      "tags": ["samples", "wavy", "curly", "low_porosity"],
+      "cost": 2.8,
+      "ingredients_raw": "water aqua eau, cetyl alcohol, cetearyl alcohol, behentrimonium chloride, glycerin, propanediol, stearamido-propyl dimethylamine, isopropyl myristate, cocos nucifera coconut water, aloe barbadensis leaf juice, chamomilla recutita matricaria flower extract, lavandula angustifolia lavender extract, cetyl esters, cetrimonium chloride, guar hydroxypropyltrimonium chloride, dicetyldimonium chloride, propylene glycol, caprylyl glycol, 1, 2-hexanediol, leuconostoc radish root ferment filtrate, fragrance parfum, potassiu, sorbate, panthenol, to-copheryl acetate, sodium benzoate, edta, citric acid, isopropyl alcohol, phenoxyethanol, ethylhexylglycerin, amyl cinnamal, limonene, isoeugenol, linalool",
+      "buy_links": [
+        {
+          "url": "https://curlkeeper.com/r?id=ms7prl",
+          "retailer": "Curl Keeper"
+        }
+      ],
+      "description": "An ultra-lightweight conditioner to keep hair big, bouncy, and full of life"
+    },
+    {
+      "name": "Rapid Hair Repair",
+      "brand": "Curl Keeper ",
+      "buy_links": [
+        {
+          "url": "https://curlkeeper.com/r?id=emtcju",
+          "retailer": "Curl Keeper"
+        }
+      ],
+      "product_categories": ["deep_conditioners"],
+      "tags": ["samples", "wavy", "curly", "coily", "low_porosity"],
+      "ingredients_raw": "water, soy lecithin, sodium chloride himalayan crystal salt, simmondsia chinensis jojoba, glycerin, polyquaternium-37, isoceteth-20, fragrance parfum, panthenol, hydrogenated polydecene, trideceth-6, psidium guajava fruit extract guava, ulmus fulva bark extract slippery elm, trigonella foenum graceum seed extract fenugreek, althaea officinalis root extract marshmallow root, honey extract, laminaria ochroleuca extract kelp, aloe barbadensis leaf juice, helianthus annuus sunflower extract, chamomilla recutita, extract chamomile, calendula officinalis extract marigold, silk amino acids, trehalose, urea, serine, pentylene glycol, algin, glyceryl polyacrylate, sodium hyaluronate, xanthan gum, hydroxypropyl guar, cetrimonium chloride, polyquaternium-7, dectyldimonium chloride, propylene glycol, oleth-20, cetearyl alcohol, ceteareth-33, sodium pca, sorbitol, benzyl alcohol, caprylyl glycol, pullulan, disodium phosphate, potassium phosphate, xylitol, potassium sorbate, sodium benzoate, benzoic acid, amyl cinnamal, limonene, isoeugenol, linalool",
+      "description": "Restores strength, shine, and pH balance to damaged or color-treated curls while adding volume"
+    },
+    {
+      "name": "Spray Gel",
+      "brand": "Curl Keeper",
+      "buy_links": [
+        {
+          "url": "https://curlkeeper.com/r?id=9a986t",
+          "retailer": "Curl Keeper"
+        }
+      ],
+      "product_categories": ["gels", "sprays"],
+      "tags": ["samples", "wavy", "curly", "coily", "low_porosity"],
+      "ingredients_raw": "water aqua eau, vp va copolymer, propylene glycol, glycerin, panthenol, oleth-20, carbomer, triethanolamine, polyquaternium-11, parfum, benzyl alcohol, caprylyl glycol, benzoic acid, amyl cinnamal, geraniol, linalool",
+      "description": "Spray gel that delivers the hold of a gel with added definition, volume, and shine—made with gentle, natural ingredients"
+    },
+    {
+      "name": "Curl Keeper Original Liquid Styler",
+      "brand": "Curl Keeper",
+      "product_categories": ["gels"],
+      "tags": ["samples", "wavy", "curly", "coily"],
+      "cost": 2.9,
+      "buy_links": [
+        {
+          "url": "https://curlkeeper.com/r?id=p0m4m5",
+          "retailer": "Curl Keeper"
+        }
+      ],
+      "ingredients_raw": "water aqua eau, vp va copolymer, propylene glycol, hydroxyethylcellulose, glycerin, oleth-20, polyquaternium-10, citric acid, dmdm hydantoin",
+      "description": "A water-based formula that reactivates with water for frizz control and curl refresh without buildup"
+    },
+    {
+      "name": "Big Energy Volumizing Shampoo",
+      "brand": "Curl Keeper",
+      "buy_links": [
+        {
+          "url": "https://curlkeeper.com/r?id=ttmupk",
+          "retailer": "Curl Keeper"
+        }
+      ],
+      "product_categories": ["shampoos"],
+      "tags": ["samples", "wavy", "curly", "low_porosity", "swavy"],
+      "ingredients_raw": "water eau, coco-glucoside, sodium chloride himalayan crystal salt, sodium c14-16 olefin sulfonate, disodium laureth sulfosuccinate, lauramide dea, panthenoil, polysorbate 80, silk amino acides, hydroxyproyl methylcellulose, citric acid, fragrance, dmdm hydantoin",
+      "description": "Cleanses and stimulates your scalp, giving you the perfect foundation for voluminous curls."
+    }
+  ]
+}

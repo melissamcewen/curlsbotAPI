@@ -1,0 +1,20 @@
+{ "products": [
+    {
+      "name": "Air Dry Cream",
+      "brand": "Kitsch",
+      "buy_links": [
+        {
+          "url": "https://amzn.to/4aAdw86",
+          "retailer": "Amazon"
+        },
+        {
+          "url": "https://www.mykitsch.com/products/kitsch-smoothing-air-dry-cream",
+          "retailer": "Kitsch"
+        }
+      ],
+      "product_categories": ["creams"],
+      "tags": ["featured", "wavy", "curly"],
+      "ingredients_raw": "aqua water eau, glycerin, glyceryl stearate se, euphorbia cerifera candelilla wax, cetearyl alcohol, cocos nucifera coconut oil, oryza sativa rice bran wax, ricinus communis castor seed oil, phenoxyethanol, pullulan, butyrospermum parkii shea butter, fragrance, cetrimonium chloride, guar hydroxypropyltrimonium chloride, behentrimonium methosulfate, ethylhexylglycerin, linalool, amyl cinnamal, vanillin, panthenol, squalane, terpineol, citric acid, geraniol, hydroxycitronellal, citronellol, benzaldehyde, limonene, hydrolyzed jojoba esters, linalyl acetate",
+      "description": "A lightweight air-dry cream with some hold"
+    }
+] }

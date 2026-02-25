@@ -270,20 +270,7 @@
       "ingredients_raw": "water, stearyl alcohol, cetyl alcohol, cetearyl alcohol, polyester-37, propanediol, behentrimonium chloride, persea gratissima avocado oil, cetrimonium bromide, phenoxyethanol, capryloyl glycerin sebacic acid copolymer, jojoba esters, hydrogenated ethylhexyl olivate, guar hydroxypropyltrimonium chloride, diheptyl succinate, isopropyl alcohol, sodium benzoate, fragrance, hydroxypropylammonium gluconate, hydroxypropylgluconamide, panthenol, carthamus tinctorius safflower seed oil, oryza sativa rice bran extract, tocopherol, cannabis sativa seed oil, rosa canina seed oil, ethylhexylglycerin, squalane, limnanthes alba meadowfoam seed oil, citric acid, alpha-isomethyl ionone, hydrogenated olive oil unsaponifiables, hexyl cinnamal, linalool, sodium pca, sodium lactate, arginine, aspartic acid, pca, glycine, alanine, ceramide np, aminomethyl propanol, serine, valine, threonine, isoleucine, proline, phenylalanine, histidine",
       "description": "Boosts conditioning without weighing hair down and improves wet detangling by up to 90% after just one use"
     },
-    {
-      "name": "Rapid Hair Repair",
-      "brand": "Curl Keeper ",
-      "buy_links": [
-        {
-          "url": "https://curlkeeper.com/r?id=emtcju",
-          "retailer": "Curl Keeper"
-        }
-      ],
-      "product_categories": ["deep_conditioners"],
-      "tags": ["samples", "wavy", "curly", "coily", "low_porosity"],
-      "ingredients_raw": "water, soy lecithin, sodium chloride himalayan crystal salt, simmondsia chinensis jojoba, glycerin, polyquaternium-37, isoceteth-20, fragrance parfum, panthenol, hydrogenated polydecene, trideceth-6, psidium guajava fruit extract guava, ulmus fulva bark extract slippery elm, trigonella foenum graceum seed extract fenugreek, althaea officinalis root extract marshmallow root, honey extract, laminaria ochroleuca extract kelp, aloe barbadensis leaf juice, helianthus annuus sunflower extract, chamomilla recutita, extract chamomile, calendula officinalis extract marigold, silk amino acids, trehalose, urea, serine, pentylene glycol, algin, glyceryl polyacrylate, sodium hyaluronate, xanthan gum, hydroxypropyl guar, cetrimonium chloride, polyquaternium-7, dectyldimonium chloride, propylene glycol, oleth-20, cetearyl alcohol, ceteareth-33, sodium pca, sorbitol, benzyl alcohol, caprylyl glycol, pullulan, disodium phosphate, potassium phosphate, xylitol, potassium sorbate, sodium benzoate, benzoic acid, amyl cinnamal, limonene, isoeugenol, linalool",
-      "description": "Restores strength, shine, and pH balance to damaged or color-treated curls while adding volume"
-    },
+
     {
       "name": "Strengthen Protein Moisturizing Conditioning Treatment",
       "brand": "Miche",
@@ -1561,6 +1548,207 @@
       "tags": ["samples", "wavy", "curly", "low_porosity"],
       "ingredients_raw": "water, cetearyl alcohol, glyceryl stearate, isoamyl laurate, glycerin, behentrimonium chloride, fragrance, rosmarinus officinalis rosemary leaf extract, caffeine, pisum sativum pea peptide, biotin, cocos nucifera coconut oil, aloe barbadensis leaf juice, guar hydroxypropyltrimonium chloride, cetrimonium chloride, alcohol, tetrasodium glutamate diacetate, ethylhexylglycerin, phenoxyethanol, sodium hydroxide, citric acid",
       "description": "An excellent light-weight and smoothing conditioner for easily-weighed down hair"
+    },
+    {
+      "name": "All About Curls High Definition Gel",
+      "brand": "Zotos",
+      "buy_links": [
+        {
+          "url": "https://amzn.to/44k4TvD",
+          "retailer": "Amazon"
+        }
+      ],
+      "product_categories": ["gels"],
+      "tags": ["samples", "wavy", "curly", "coily", "premium"],
+      "ingredients_raw": "water aqua eau, propylene glycol, acrylates copolymer, aminomethyl propanol, glycerin, peg-60 hydrogenated castor oil, carbomer, hydroxyethylcellulose, quaternium-22, tetrasodium edta, dmdm hydantoin, iodopropynyl butylcarbamate, fragrance parfum",
+      "description": "A styling gel that delivers strong hold, locks in moisture, and enhances shine for firmly defined, frizz-free curls"
+    },
+    {
+      "name": "Perfect Clean 2-in-1 Scalp Scrub & Shampoo",
+      "brand": "NatureLab Tokyo",
+      "buy_links": [
+        {
+          "url": "https://www.ulta.com/p/perfect-clean-2-in-1-scalp-scrub-clarifying-shampoo-pimprod2013672?sku=2564029",
+          "retailer": "Ulta"
+        },
+        {
+          "url": "https://amzn.to/4a64NL4",
+          "retailer": "Amazon"
+        }
+      ],
+      "product_categories": ["clarifying_shampoos", "treatments"],
+      "tags": ["samples", "wavy", "curly", "coily", "low_porosity"],
+      "ingredients_raw": "sucrose, glycerin, sodium c14-16 olefin sulfonate, cocamide mea, glycol distearate, aqua, eau, water, ricinus communis castor seed oil, saccharomyces rice ferment filtrate, salix alba willow bark extract, butyrospermum parkii shea butter, cocos nucifera coconut oil, melaleuca alternifolia tea tree leaf oil, vitis vinifera grape fruit extract, argania spinosa callus culture extract, malus domestica fruit cell culture extract, glutamic acid, sodium pca, hydrolyzed coix lacryma-jobi ma-yuen seed, platinum powder, trigonella foenum-graecum hydroxypropyltrimonium chloride, locust bean hydroxypropyltrimonium chloride, sodium hyaluronate, hydroxypropyltrimonium hyaluronate, prunus domestica seed extract, argania spinosa kernel oil, lupinus albus seed oil, mangifera indica mango seed oil, theobroma grandiflorum seed butter, adansonia digitata seed oil, carapa guaianensis seed oil, sclerocarya birrea seed oil, argan oil polyglyceryl-6 esters, sodium cocoyl glycinate, propanediol, cocamidopropyl betaine, butylene glycol, guar hydroxypropyltrimonium chloride, isomalt, xanthan gum, polysorbate 80, citric acid, sodium citrate, trisodium phosphate, sodium chloride, lecithin, bht, sodium gluconate, phenoxyethanol, sodium benzoate, fragrance",
+      "description": "A 2-in-1 scalp scrub and clarifying shampoo that gently removes buildup, really useful if you have both scalp and hair buildup"
+    },
+    {
+      "name": "Advanced Climate Control Heat & Humidity Gel",
+      "brand": "Ouidad",
+      "ingredients_raw": "water aqua eau, butylene glycol, polyquaternium-28, sericin, chamomilla recutita matricaria flower extract, actinidia chinensis kiwi fruit extract, cassia auriculata leaf extract, wheat amino acids, hydrolyzed wheat protein pvp crosspolymer, tocopheryl acetate, retinyl palmitate, panthenol, polyquaternium-7, guar hydroxypropyltrimonium chloride, behentrimonium chloride, cetrimonium chloride, peg-60 almond glycerides, glycerin, ppg-26-buteth-26, peg-40 hydrogenated castor oil, vp dmapa acrylates copolymer, hydroxyethylcellulose, potassium sorbate, disodium edta, hexylene glycol, caprylyl glycol, ethylhexylglycerin, phenoxyethanol, parfum fragrance, alpha-lsomethyl lonone, benzyl benzoate, benzyl salicylate, citronellol, hexyl cinnamal, hydroxycitronellal, limonene, linalool",
+      "product_categories": ["gels"],
+      "tags": ["samples", "wavy", "curly", "coily"],
+      "cost": 3,
+      "description": "Ouidad's best-selling gel that protects against frizz in even the most humid conditions",
+      "buy_links": [
+        {
+          "url": "https://click.linksynergy.com/link?id=9QcV0uNyab0&offerid=929395.3842993508&type=2&murl=https%3a%2f%2fwww.ouidad.com%2fproducts%2fadvanced-climate-control-heat-and-humidity-gel%3fvariant%3d42617150865666",
+          "retailer": "Ouidad"
+        }
+      ]
+    },
+    {
+      "name": "Outta My Hair Gentle Daily Shampoo",
+      "brand": "Hairitage",
+      "product_categories": ["shampoos"],
+      "tags": ["wavy", "curly", "samples", "bonding"],
+      "ingredients_raw": "water aqua eau, sodium c14-16 olefin sulfonate, cocamidopropyl betaine, fragrance parfum, cocamide mipa, glycol distearate, guar hydroxypropyltrimonium chloride, benzyl alcohol, panthenol, polyquaternium-44, polyquaternium-7, polysorbate 20, dehydroacetic acid, citric acid, sodium gluconate, simmondsia chinensis jojoba seed oil, aloe barbadensis leaf juice, tocopheryl acetate, decyl glucoside, glycerin, simmondsia chinensis jojoba seed extract",
+      "description": "This shampoo cleanses impurities and excess oils without stripping hair",
+      "buy_links": [
+        {
+          "url": "https://www.amazon.com/Hairitage-Gentle-Hydrating-Moisturizing-Shampoo/dp/B09CNY24G3",
+          "retailer": "Amazon"
+        }
+      ]
+    },
+    {
+      "name": "Cleansed Moisturizing Shampoo",
+      "brand": "Miche",
+      "product_categories": ["shampoos"],
+      "tags": ["wavy", "curly", "coily", "samples"],
+      "ingredients_raw": "water, salix alba white willow bark extract, hibiscus sabdariffa hibiscus flower extract, panax ginseng ginseng root extract, ilex raraguariensis yerba mate leaf extract, sodium c14-16 alpha olefin sulfonate, cocamidopropyl betaine, disodium cocoamphodipropionate, sodium cocoyl isethionates, glycol distearate, vegetable glycerin, guar hydroxypropyltrimonium chloride, citric acid, phenoxyethanol, caprylyl glycol, sorbic acid, phthalate-free fragrance",
+      "description": "A sulfate-free, pH-balanced shampoo that moisturizes, restores dry hair, and stimulates the scalp",
+      "buy_links": [
+        {
+          "url": "https://amzn.to/4k2Qn00",
+          "retailer": "Amazon"
+        }
+      ]
+    },
+    {
+      "name": "Curl Liberating Shampoo",
+      "brand": "Imbue",
+      "product_categories": ["shampoos"],
+      "tags": ["curly", "coily", "samples"],
+      "ingredients_raw": "aqua water eau, coco-glucoside, laureth-6 carboxylic acid, peg-120 methyl glucose dioleate, glycerin, panthenol, peg-7 glyceryl cocoate, polyquaternium-10, peg-75 shea butter glycerides, cocos nucifera coconut fruit extract, theobroma cacao cocoa seed butter, theobroma grandiflorum seed butter, helianthus annuus sunflower seed oil, tocopherol, betaine, parfum fragrance, hydroxypropyl guar hydroxypropyltrimonium chloride, peg-4, peg-6, castor oil hydrogenated ethoxylated, peg-7, peg-8, sodium hydroxide, disodium edta, potassium sorbate, sodium benzoate, methylchloroisothiazolinone, methylisothiazolinone, linalool, limonene, hexyl cinnamal",
+      "description": "A sulfate-free shampoo that removes buildup without stripping, leaving curls soft, shiny, and defined",
+      "buy_links": [
+        {
+          "url": "https://amzn.to/3ERSp41",
+          "retailer": "Amazon"
+        }
+      ]
+    },
+    {
+      "name": "Sunrise Rituals: Signature Shampoo",
+      "brand": "Voir",
+      "buy_links": [
+        {
+          "url": "https://amzn.to/3GQ7gfO",
+          "retailer": "Amazon"
+        }
+      ],
+      "product_categories": ["shampoos"],
+      "tags": ["samples", "wavy", "curly", "coily", "low_porosity"],
+      "ingredients_raw": "aqua water eau, sodium cocoyl isethionate, cocamidopropyl betaine, glycerin, sodium chloride, hydrolyzed hyaluronic acid, sodium hyaluronate, bixa orellana annatto seed extract, aloe barbadensis aloe vera leaf juice, betula alba birch sap juice, polyquaternium-7, panthenol, guar hydroxypropyltrimonium chloride, tocopherol, maltodextrin, coco-glucoside, glyceryl oleate, lactic acid, hydrogenated palm glycerides citrate, tetrasodium edta, cocamidopropyl dimethylamine, sodium hydroxide, citric acid, parfum fragrance, limonene, linalool, potassium sorbate, sodium benzoate, phenoxyethanol, benzyl alcohol, dehydroacetic acid",
+      "description": "A daily go-to shampoo infused with hyaluronic and lactic acids that gently cleanses while boosting smoothness and shine"
+    },
+    {
+      "name": "Scalp Revitalizing Solution Hair Thickening Shampoo",
+      "brand": "Dr. Groot",
+      "buy_links": [
+        {
+          "url": "https://lgbeauty.com/products/dr-groot-scalp-revitalizing-solution-hair-thickening-shampoo",
+          "retailer": "LG Beauty"
+        },
+        {
+          "url": "https://amzn.to/3GAgpJD",
+          "retailer": "Amazon"
+        }
+      ],
+      "product_categories": ["shampoos"],
+      "tags": ["samples", "wavy", "curly", "coily", "low_porosity", "bonding"],
+      "ingredients_raw": "water eau, disodium laureth sulfosuccinate, disodium lauryl sulfosuccinate, glycerin, cocamidopropyl betaine, parfum fragrance, acrylates c10-30 alkyl acrylate crosspolymer, sodium cocoyl isethionate, saccharomyces cerevisiae extract, yeast extract extrait de levure, beta-glucan, inulin, maltodextrin, bifida ferment lysate, lactobacillus ferment lysate, anthemis nobilis flower water, rosmarinus officinalis rosemary extract, biotin, caffeine, melissa officinalis flower leaf stem water, houttuynia cordata extract, panax ginseng root extract, paeonia suffruticosa branch flower leaf extract, paeonia suffruticosa root extract, artemisia annua extract, azadirachta indica leaf extract, camellia sinensis leaf extract, mentha arvensis leaf extract, centella asiatica leaf extract, hyaluronic acid, polygonum multiflorum root extract, panax ginseng leaf stem extract, arginine, benzyl alcohol, aspartic acid, polylysine, zingiber officinale ginger root extract, ganoderma lucidum mushroom extract, pca, serine, glycine, alanine, althaea officinalis root extract, calendula officinalis flower extract, chamaecyparis obtusa leaf extract, phellinus linteus extract, valine, dehydroacetic acid, isoleucine, proline, threonine, histidine, phenylalanine, sodium pca, alchemilla vulgaris extract, vinegar vinaigre, zea mays corn starch, dextrin, peg-crosspolymer, caprylyl glycol, di-c12-13 alkyl malate, polyquaternium-7, microcrystalline cellulose, cocamide mea, coco-glucoside, glyceryl oleate, menthol, panthenol, salicylic acid, coconut acid, niacinamide, ppg-3 caprylyl ether, mannitol, chromium hydroxide green ci 77289, sodium isethionate, tetrasodium edta, methylpropanediol, ethylhexylglycerin, chlorophyllin-copper complex, citric acid, potassium hydroxide, pentylene glycol, alcohol, butylene glycol, 2-hexanediol, sodium lactate, potassium sorbate, hexylene glycol, sodium chloride, sodium benzoate",
+      "description": "With probiotic beads, biotin, rosemary, and caffeine to support scalp health and promote stronger, healthier hair growth"
+    },
+    {
+      "name": "No. 4 Bond Maintenance Shampoo",
+      "brand": "Olaplex",
+      "buy_links": [
+        {
+          "url": "https://olaplex.com/products/olaplex-n-4-bond-maintenance-shampoo-us",
+          "retailer": "Olaplex"
+        },
+        {
+          "url": "https://www.lookfantastic.com/p/olaplex-no.4-fine-bond-maintenance-shampoo-250ml/16162873/",
+          "retailer": "Olaplex",
+          "countries": ["UK", "EU"]
+        },
+        {
+          "url": "https://amzn.to/4n9b23P",
+          "retailer": "Amazon"
+        }
+      ],
+      "product_categories": ["shampoos"],
+      "tags": ["samples", "wavy", "curly", "coily", "premium"],
+      "ingredients_raw": "water aqua eau, sodium lauroyl methyl isethionate, cocamidopropyl hydroxysultaine, potassium cocoyl glycinate, disodium cocoyl glutamate, sodium lauroyl sarcosinate, potassium cocoate, decyl glucoside, glycereth-26, bis-aminopropyl diglycol dimaleate, cocamidopropylamine oxide, disodium laureth sulfosuccinate, glycol distearate, sodium cocoyl glutamate, methyl gluceth-20, acrylates copolymer, peg-120 methyl glucose dioleate, amodimethicone, citric acid, sodium lauryl sulfoacetate, polyquaternium-10, ethylhexylglycerin, divinyldimethicone dimethicone copolymer, polyquaternium-11, trisodium ethylenediamine disuccinate, guar hydroxypropyltrimonium chloride, c11-15 pareth-7, laureth-9, glycerin, trideceth-12, c12-13 pareth-23, c12-13 pareth-3, hydrolyzed vegetable protein, pg-propyl silanetriol, panthenol, acetic acid, tetrasodium edta, pentasodium triphosphate, sodium hydroxide, disodium edta, helianthus annus sunflower seed oil, tocopherol, prunus armeniaca apricot kernel oil, pseudozyma epicola camellia sinensis seed oil ferment extract filtrate, pseudozyma epicola argania spinosa kernel oil ferment filtrate, quaternium-95, propanediol, helianthus annus sunflower seed extract, peg-8, euterpe oleracea fruit extract, punica granatum extract, rosemarinus officinalis rosemary leaf extract, musa sapientum banana fruit extract, origanum vulgare lear extract, morinda citrifolia fruit extract, articum lappa root extract, peg-8 smdi copolymer, sodium hyaluronate, palmitoyl myristyl serinate, sodium polyacrylate, pentaerythrityl tetra-di-t-butyl hydroxyhydrocinnamate, biotin, benzoic acid, phenoxyethanol, chlorphenesin, potassium sorbate, sodium benzoate, fragrance parfum, citral, hexyl cinnamal, limonene",
+      "description": "Uses Olaplex’s bonding technology to gently cleanse, strengthen, and add shine while repairing damage"
+    },
+    {
+      "name": "Scalp Balancing Sake Rinse",
+      "brand": "NatureLab Tokyo",
+      "buy_links": [
+        {
+          "url": "https://www.ulta.com/p/perfect-clean-scalp-rinse-pimprod2037622?sku=2603016",
+          "retailer": "Ulta"
+        },
+        {
+          "url": "https://amzn.to/3XLJs2d",
+          "retailer": "Amazon"
+        }
+      ],
+      "product_categories": ["treatments"],
+      "tags": ["samples", "wavy", "curly", "coily", "low_porosity"],
+      "ingredients_raw": "aqua, water, eau, peg-40 hydrogenated castor oil, alcohol denat, glycerin, propylene glycol, sorbitol, apple cider vinegar, menthol, saccharomyces rice ferment filtrate, hydrolyzed corn protein, hydrolyzed wheat protein, hydrolyzed soy protein, panax ginseng root extract, leuconostoc radish root ferment filtrate, shea butter ethyl esters, sodium hyaluronate, pentylene glycol, butylene glycol, xanthan gum, ethylhexylglycerin, disodium edta, sodium hydroxide, phenoxyethanol, t-butyl alcohol, parfum fragrance, linalool",
+      "description": "A nourishing Japanese sake rinse that restores your scalp’s natural balance while removing buildup and impurities for optimal scalp health"
+    },
+    {
+      "name": "Pamper My Curls All-in-One Moisture Mist",
+      "brand": "Inashi",
+      "buy_links": [
+        {
+          "url": "https://amzn.to/4iHnxRu",
+          "retailer": "Amazon"
+        }
+      ],
+      "product_categories": ["leave_ins", "sprays", "refreshers"],
+      "tags": ["samples", "wavy", "curly", "coily", "low_porosity"],
+      "ingredients_raw": "aqua water eau, aloe barbadensis aloe vera extract, glycerin, panthenol, cetrimonium chloride, behentrimonium methosulfate, cetearyl alcohol, cetyl alcohol, caprylyl glycol, phenoxyethanol, sorbic acid, citrus sinensis orange peel oil expressed, lavandula angustifolia lavender oil althaea officinalis marshmallow leaf root extract, hydrolyzed adansonia digitata baobab seed extract, hydrolyzed quinoa, chamomille recutita matricaria flower extract, urtica dioica nettle leaf extract, equisetum arvense horsetail leaf extract, angelica archangelica angelica root extract, linalool, limonene",
+      "description": "A lightweight, oil-free mist that moisturizes and refreshes curls without weighing them down"
+    },
+    {
+      "name": "Doux Drops",
+      "brand": "The Doux",
+      "buy_links": [
+        {
+          "url": "https://thedoux.com/products/doux-drops-bonding-polish-spray",
+          "retailer": "The Doux"
+        },
+        {
+          "url": "https://amzn.to/4qr4Tm8",
+          "retailer": "Amazon"
+        }
+      ],
+      "product_categories": ["oils"],
+      "tags": [
+        "samples",
+        "wavy",
+        "curly",
+        "coily",
+        "high_porosity",
+        "heat_protectant"
+      ],
+      "ingredients_raw": "dimethicone, c13-14 isoalkane formerly c13-14 isoparaffin, adansonia digitata seed oil, simmondsia chinensis jojoba seed oil, brassica campestris aleurites fordi oil copolymer, fragrance, isopropyl myristate, tocopheryl acetate, green 6 ci 61565",
+      "description": "A shine-boosting, bond-building serum that strengthens hair, smooths the cuticle, and protects against breakage"
     }
   ]
 }

@@ -327,7 +327,7 @@ function loadProductsFromDir(dirPath: string): any {
   }
 
   const products = allProducts.reduce((acc, product) => {
-    // Generate ID from name if name exists, otherwise use existing ID or warn
+    // Generate ID from brand + name when available to avoid collisions; otherwise name or id
     const productName = product.name || product.id;
     if (!productName) {
       console.warn(
@@ -337,7 +337,8 @@ function loadProductsFromDir(dirPath: string): any {
       return acc;
     }
 
-    const productId = generateIdFromName(productName);
+    const idSource = product.brand ? `${product.brand} ${productName}` : productName;
+    const productId = generateIdFromName(idSource);
 
     // Analyze ingredients if raw ingredients exist
     let status: 'ok' | 'caution' | 'warning' | 'error' | undefined = undefined;

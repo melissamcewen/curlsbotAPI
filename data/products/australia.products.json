@@ -1,0 +1,35 @@
+ { "products": [
+  {
+      "name": "Keep My Curl Moisture Conditioner",
+      "brand": "Eleven",
+      "product_categories": ["conditioners"],
+      "tags": ["high_porosity", "normal_porosity", "curly", "coily"],
+      "ingredients_raw": "water aqua eau, cetearyl alcohol, isopropyl myristate, behentrimonium chloride, cetyl alcohol, glyceryl stearate, cetrimonium chloride, glycerin, niacinamide, sodium hyaluronate, hydrolyzed sodium hyaluronate, sphingolipids, panthenol, tocopherol, butyrospermum parkii shea butter, cocos nucifera coconut oil, helianthus annuus sunflower seed oil, phospholipids, pantolactone, heptyl undecylenate, polyquaternium-10, trideceth-12, isopropyl alcohol, pentylene glycol, c13-16 isoalkane, amodimethicone, trideceth-9 pg-amodimethicone, benzophenone-4, sodium citrate, p-anisic acid, phenoxyethanol, ethylhexylglycerin, benzoic acid, dehydroacetic acid, sodium hydroxide, fragrance parfum, linalool",
+      "buy_links": [
+        {
+          "url": "https:https://elevenaustralia.com/products/keep-my-curl-moisture-conditioner",
+          "retailer": "Eleven Australia",
+          "countries": ["AU"]
+        }
+      ],
+      "cost": 3.4,
+      "description": "A rich conditioner for curlys and coils that crave moisture"
+    },
+    {
+      "name": "I Want Body Volume Conditioner",
+      "brand": "Eleven",
+      "product_categories": ["conditioners"],
+      "tags": ["normal_porosity", "wavy", "swavy"],
+      "buy_links": [
+        {
+          "url": "https://elevenaustralia.com/products/i-want-body-volume-conditioner",
+          "retailer": "Eleven Australia",
+          "countries": ["AU"]
+        }
+      ],
+      "ingredients_raw": "water aqua eau, cetearyl alcohol, isopropyl myristate, cetyl alcohol, behentrimonium chloride, cetrimonium chloride, c13-16 isoparaffin, glycerin, carica papaya papaya fruit extract, cucumis sativus cucumber extract, camellia sinensis leaf extract, persea gratissima avocado oil, hydrolyzed soy protein, hydrolyzed quinoa, sodium levulinate, heptyl undecylenate, vp dmapa acrylates copolymer, peg-20 stearate, trideceth-12, isopropyl alcohol, butylene glycol, trideceth-9 pg-amodimethicone, benzophenone-4, phenoxyethanol, ethylhexylglycerin, potassium sorbate, sodium benzoate, benzoic acid, dehydroacetic acid, benzalkonium chloride, citric acid, sodium hydroxide, fragrance parfum, geraniol, linalool, limonene, benzyl alcohol",
+      "cost": 2.3,
+      "description": "If you have swavy or wavy hair, you don't need a curl conditioner - go for a lightweight conditioner like this one instead"
+    }
+ ]
+}

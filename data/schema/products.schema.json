@@ -7,7 +7,7 @@
       "type": "array",
       "items": {
         "type": "object",
-        "required": ["name", "brand", "buy_links", "product_categories"],
+        "required": ["name", "brand", "buy_links", "product_categories", "description"],
         "properties": {
           "name": {
             "type": "string",
@@ -103,7 +103,7 @@
           "description": {
             "type": "string",
             "description": "Description of the product",
-            "maxLength": 120
+            "maxLength": 200
           },
           "asin": {
             "type": "string",

@@ -1,0 +1,68 @@
+{
+  "products": [
+    {
+      "name": "Detangling Conditioner",
+      "brand": "Tootilab",
+      "product_categories": ["conditioners"],
+      "tags": ["women-owned", "featured"],
+      "ingredients_raw": "water aqua, cetearyl alcohol, glycerin, behentrimonium chloride, propylene glycol, polyglyceryl-4 caprate, hydroxyethylcellulose, cetrimonium chloride, inulin, phenoxyethanol, fragrance parfum, polyquaternium-37, polyquaternium-11, saccharide isomerate, citric acid, sodium benzoate, cocos nucifera coconut seed butter, alpha-glucan oligosaccharide, laureth-2, ribes nigrum black currant seed oil, trisodium ethylenediamine disuccinate, niacinamide, panthenol, pentylene glycol, sodium citrate, ethylhexylglycerin, hexyl cinnamal",
+      "description": "A detangling conditioner with lots of slip.",
+      "buy_links": [
+        {
+          "url": "https://collabs.shop/qn2ik3",
+          "retailer": "Tootilab",
+          "countries": ["EU"]
+        },
+        {
+          "url": "https://collabs.shop/qn2ik3",
+          "retailer": "Tootilab"
+        }
+      ]
+    },
+    {
+      "name": "All Weather Styling Gel",
+      "brand": "Tootilab",
+      "product_categories": ["gels"],
+      "tags": ["samples", "wavy", "curly", "coily", "high_porosity"],
+      "ingredients_raw": "water aqua, hydrolyzed corn starch, glycerin, guar hydroxypropyltrimonium chloride, hydroxyethylcellulose, citric acid, phenoxyethanol, benzyl alcohol, fragrance parfum, fructose, hydroxyacetophenone, sodium hydroxide, trisodium ethylenediamine disuccinate, polyglyceryl-4 caprate, ethylhexylglycerin, pentylene glycol, salicylic acid, sodium citrate, sodium hyaluronate, polyporus umbellatus mushroom extract, pogostemon cablin oil, tetramethyl acetyloctahydronaphthalenes, hexyl cinnamal, limonene, linalyl acetate, juniperus virginiana oil, citrus aurantium peel oil, alpha-isomethyl ionone, linalool",
+      "description": "An all-purpose gel that will hold your curls/waves even in humid weather.",
+      "buy_links": [
+        {
+          "url": "https://collabs.shop/cebjoi",
+          "retailer": "Tootilab",
+          "countries": ["EU", "US", "UK"]
+        }
+      ]
+    },
+    {
+      "name": "Soft Leave-In Cream",
+      "brand": "Tootilab",
+      "product_categories": ["leave_ins"],
+      "tags": ["samples", "wavy", "curly", "coily", "high_porosity"],
+      "ingredients_raw": "water aqua, cocamidopropyl betaine, lauryl glucoside, glycerin, sodium methyl cocoyl taurate, aloe barbadensis leaf juice powder, caprylyl capryl glucoside, sodium lauroyl sarcosinate, sodium cocoamphoacetate, inulin, fragrance parfum, benzyl alcohol, polyquaternium-7, potassium sorbate, saccharide isomerate, argan oil glycereth-8 esters, guar hydroxypropyltrimonium chloride, citric acid, sodium chloride, alpha-glucan oligosaccharide, trisodium ethylenediamine disuccinate, tocopherol, helianthus annuus sunflower seed oil, sodium citrate, hexyl cinnamal",
+      "description": "A lightweight leave-in that prevents your hair from getting dry",
+      "buy_links": [
+        {
+          "url": "https://collabs.shop/szsngr",
+          "retailer": "Tootilab",
+          "countries": ["EU", "UK", "US"]
+        }
+      ]
+    },
+    {
+      "name": "Gentle Shampoo",
+      "brand": "Tootilab",
+      "product_categories": ["shampoos"],
+      "tags": ["featured", "women-owned", "low_ph"],
+      "ingredients_raw": "water aqua, cocamidopropyl betaine, lauryl glucoside, glycerin, sodium methyl cocoyl taurate, aloe barbadensis leaf juice powder, caprylyl capryl glucoside, sodium lauroyl sarcosinate, sodium cocoamphoacetate, inulin, fragrance parfum, benzyl alcohol, polyquaternium-7, potassium sorbate, saccharide isomerate, argan oil glycereth-8 esters, guar hydroxypropyltrimonium chloride, citric acid, sodium chloride, alpha-glucan oligosaccharide, trisodium ethylenediamine disuccinate, tocopherol, helianthus annuus sunflower seed oil, sodium citrate, hexyl cinnamal",
+      "description": "A gentle shampoo with lots of slip and a low pH (which helps prevent frizz).",
+      "buy_links": [
+        {
+          "url": "https://collabs.shop/ha9w1t",
+          "retailer": "Tootilab",
+          "countries": ["EU", "UK", "US"]
+        }
+      ]
+    }
+  ]
+}

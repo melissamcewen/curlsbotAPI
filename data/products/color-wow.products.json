@@ -1,0 +1,22 @@
+{
+  "products": [
+    {
+      "name": "Color Wow Dream Coat for Curls",
+      "brand": "Color Wow",
+      "buy_links": [
+        {
+          "url": "https://www.ulta.com/p/dream-coat-curly-hair-pimprod2044074?sku=2607940",
+          "retailer": "Ulta"
+        },
+        {
+          "url": "https://amzn.to/4aQqlKu",
+          "retailer": "Amazon"
+        }
+      ],
+      "product_categories": ["gels"],
+      "tags": ["curly", "premium", "featured"],
+      "ingredients_raw": "water aqua eau, vp va copolymer, propylene glycol, hydroxyethylcellulose, glycerin, oleth-20, polyquaternium-10, citric acid, dmdm hydantoin",
+      "description": "This is not even remotely the same as the non-curly version which is a serum. This is more a light-hold gel. I think this is a good option for easily weighed down hair like fine curls but it's not enough hold for wavy hair."
+    }
+  ]
+}
