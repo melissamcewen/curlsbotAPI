@@ -17,7 +17,8 @@
         "url": "http://ecoslay.sjv.io/6yGgNb",
         "retailer": "Ecoslay"
       }
-    ]
+    ],
+    "description": "A botanical based leave-in made by a woman-owned indie brand"
   },
   {
     "name": "Lemon Buttercream Styling Cream",
@@ -76,7 +77,8 @@
         "retailer": "Ecoslay"
       }
     ],
-    "asin": "B09D8PL1N5"
+    "asin": "B09D8PL1N5",
+    "description": "A botanical-based refillable styling foam from a woman-owned indie brand"
   },
   {
     "name": "Jello Shot Curl Defining Gel",
@@ -98,7 +100,8 @@
         "url": "https://ecoslay.sjv.io/55j7vj",
         "retailer": "Ecoslay"
       }
-    ]
+    ],
+    "description": "A gel based on natural film-formers that protect your hair from humidity and heat like okra"
   },
   {
     "name": "Orange Marmalade Flaxseed and Aloe Curl Definer",
@@ -115,30 +118,10 @@
       "woman_owned",
       "small_business"
     ],
-    "description": "CurlsBot note: This is the main styling product I use on my own hair- Melissa",
+    "description": "If you want the benefits of flax seed gel without having to make it yourself, this is the one for you",
     "buy_links": [
       {
         "url": "https://ecoslay.sjv.io/qzg2M5",
-        "retailer": "Ecoslay"
-      }
-    ]
-  },
-  {
-    "name": "Moonshine Hair and Body Oil",
-    "brand": "Ecoslay",
-    "product_categories": ["oils"],
-    "tags": [
-      "normal_porosity",
-      "high_porosity",
-      "featured",
-      "black_owned",
-      "woman_owned",
-      "small_business"
-    ],
-    "ingredients_raw": "jojoba oil, avocado oil, sweet almond oil, argan oil, castor oil, lemongrass essential oil, cinnamon essential oil, sweet orange essential oil, ginger essential oil, caprylhydroxamic gg",
-    "buy_links": [
-      {
-        "url": "https://ecoslay.sjv.io/vP2ZJd",
         "retailer": "Ecoslay"
       }
     ]
@@ -160,7 +143,8 @@
         "url": "https://ecoslay.sjv.io/kORodn",
         "retailer": "Ecoslay"
       }
-    ]
+    ],
+    "description": "A botanical moisture booster that gives your hair a fresh, revitalized feeling"
   }
 ]
 }

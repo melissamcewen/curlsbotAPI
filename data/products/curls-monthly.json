@@ -1273,7 +1273,7 @@
       "brand": "The Doux",
       "buy_links": [
         {
-          "url": "https://amzn.to/4o9rXEp",
+          "url": "https://www.amazon.com/dp/B079F4YNMS?ref=t_ac_spc_accepted_tile&linkCode=tr1&tag=trevresa-20&linkId=B079F4YNMS_1772414802085",
           "retailer": "Amazon"
         }
       ],
@@ -1639,20 +1639,6 @@
       ]
     },
     {
-      "name": "Sunrise Rituals: Signature Shampoo",
-      "brand": "Voir",
-      "buy_links": [
-        {
-          "url": "https://amzn.to/3GQ7gfO",
-          "retailer": "Amazon"
-        }
-      ],
-      "product_categories": ["shampoos"],
-      "tags": ["samples", "wavy", "curly", "coily", "low_porosity"],
-      "ingredients_raw": "aqua water eau, sodium cocoyl isethionate, cocamidopropyl betaine, glycerin, sodium chloride, hydrolyzed hyaluronic acid, sodium hyaluronate, bixa orellana annatto seed extract, aloe barbadensis aloe vera leaf juice, betula alba birch sap juice, polyquaternium-7, panthenol, guar hydroxypropyltrimonium chloride, tocopherol, maltodextrin, coco-glucoside, glyceryl oleate, lactic acid, hydrogenated palm glycerides citrate, tetrasodium edta, cocamidopropyl dimethylamine, sodium hydroxide, citric acid, parfum fragrance, limonene, linalool, potassium sorbate, sodium benzoate, phenoxyethanol, benzyl alcohol, dehydroacetic acid",
-      "description": "A daily go-to shampoo infused with hyaluronic and lactic acids that gently cleanses while boosting smoothness and shine"
-    },
-    {
       "name": "Scalp Revitalizing Solution Hair Thickening Shampoo",
       "brand": "Dr. Groot",
       "buy_links": [
@@ -1716,7 +1702,7 @@
       "brand": "Inashi",
       "buy_links": [
         {
-          "url": "https://amzn.to/4iHnxRu",
+          "url": "https://www.amazon.com/dp/B0CH9H8YFT?ref=t_ac_spc_accepted_tile&linkCode=tr1&tag=trevresa-20&linkId=B0CH9H8YFT_1772414851210",
           "retailer": "Amazon"
         }
       ],
@@ -1749,6 +1735,24 @@
       ],
       "ingredients_raw": "dimethicone, c13-14 isoalkane formerly c13-14 isoparaffin, adansonia digitata seed oil, simmondsia chinensis jojoba seed oil, brassica campestris aleurites fordi oil copolymer, fragrance, isopropyl myristate, tocopheryl acetate, green 6 ci 61565",
       "description": "A shine-boosting, bond-building serum that strengthens hair, smooths the cuticle, and protects against breakage"
+    },
+    {
+      "name": "Curl Passion Curl Perfectionist",
+      "brand": "Milk_Shake",
+      "buy_links": [
+        {
+          "url": "https://www.milkshakehair.com/products/milk_shake-lifestyling-curl-perfectionist",
+          "retailer": "Milk_Shake"
+        },
+        {
+          "url": "https://amzn.to/3Sh9FCN",
+          "retailer": "Amazon"
+        }
+      ],
+      "product_categories": ["creams"],
+      "tags": ["samples", "wavy", "curly", "coily", "low_porosity", "premium"],
+      "ingredients_raw": "aqua water, cyclopentasiloxane, glycerin, polysorbate 60, myristyl alcohol, stearyl alcohol, cetyl alcohol, pvp, hydroxypropyl starch phosphate, citrus limon lemon peel extract, vaccinium myrtillus fruit extract, pyrus malus apple fruit extract, helianthus annuus sunflower seed extract, lactis serum proteinum, hydrolyzed chestnut extract, hydrolyzed quinoa, ethylhexyl methoxycinnamate, polyquaternium-10, hydroxypropyl guar, polyquaternium-28, diethylamino hydroxybenzoyl hexyl benzoate, butylene glycol, benzyl benzoate, citric acid, lactic acid, amyl cinnamal, linalool, benzyl salicylate, coumarin, hexyl cinnamal, limonene, citronellol, geraniol, benzyl alcohol, parfum fragrance, phenoxyethanol, caprylyl glycol, potassium sorbate, sodium benzoate",
+      "description": "Tames frizz, enhances natural texture, provides light hold, and contains protein for added strength"
     }
   ]
 }
