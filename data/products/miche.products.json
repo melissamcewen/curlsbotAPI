@@ -1,0 +1,165 @@
+{ "products": [
+  {
+    "name": "SET Gel to Foam Styling Mousse",
+    "brand": "Miche",
+    "buy_links": [
+      {
+        "url": "https://amzn.to/3EQ3jYc",
+        "retailer": "Amazon"
+      },
+      {
+        "url": "https://www.michebeauty.com/collections/stylers/products/set-curl-defining-mousse?rfsn=8688386.3de231",
+        "retailer": "Miche"
+      }
+    ],
+    "product_categories": ["foams"],
+    "tags": ["samples", "wavy", "curly", "coily"],
+    "ingredients_raw": "distilled water, ginger, rosemary, lemongrass extract infusion, aloe vera leaf juice, polyquaternium-55, cocamidopropyl hydroxysultaine, polysorbate 20, isostearamidopropyl morpholine lactate, hydrolyzed silk protein, pvp, phenoxyethanol, ethylhexylglycerin, benzoic acid, dehydroacetic acid, phthalate-free fragrance",
+    "description": "My favorite mousse. Moderate hold with a balance of structure and moisture.- Melissa"
+  },
+  {
+    "name": "Tropical Oasis Anti-Humidity Firm Hold Hair Gel",
+    "brand": "Miche",
+    "buy_links": [
+      {
+        "url": "https://amzn.to/4nu6pCK",
+        "retailer": "Amazon"
+      },
+      {
+        "url": "https://www.michebeauty.com/products/tropical-oasis-firm-hold-hair-gel?rfsn=8688386.3de231",
+        "retailer": "Miche"
+      }
+    ],
+    "product_categories": ["gels"],
+    "tags": ["samples", "wavy", "curly", "coily"],
+    "ingredients_raw": "distilled water, fresh pineapple juice extract, aloe vera juice, glycerin, maltodextrin vp copolymer, gluconodeltalactone, sodium benzoate, hydoxyethycelluolose, hydrolyzed quinoa protein, phthalate-free fragrance",
+    "description": "A frizz-fighting lightweight gel perfect for protecting against humidity"
+  },
+  {
+    "name": "Sculpt Curl Defining Gel",
+    "brand": "Miche",
+    "buy_links": [
+      {
+        "url": "https://www.michebeauty.com/products/sculpt-curl-defining-gel?rfsn=8688386.3de231",
+        "retailer": "Miche"
+      },
+      {
+        "url": "https://amzn.to/4npiCbD",
+        "retailer": "Amazon"
+      }
+    ],
+    "product_categories": ["gels"],
+    "tags": ["samples", "wavy", "curly", "coily", "high_porosity"],
+    "ingredients_raw": "distilled water infused with organic aloe vera extract, chamomile extract, nettle leaf extract, slippery elm extract, bamboo extract, glycerin, glycine betaine beet sugar extract, hydroxyethylcellulose, xanthan gum, propanediol, phthalate-free fragrance, benzylalcohol, dehydroacetic acid, carbomer, jojoba seed oil simmondsia chinesis, aminomethyl propanol ph adjustor",
+    "description": "A strong-hold gel that provides hold, definition, and shine for curls and coils."
+  },
+  {
+    "name": "Bounce Styling Cream",
+    "brand": "Miche",
+    "buy_links": [
+      {
+        "url": "https://www.michebeauty.com/products/bounce-curl-defining-cream",
+        "retailer": "Miche"
+      },
+      {
+        "url": "https://amzn.to/44oyBOE",
+        "retailer": "Amazon"
+      }
+    ],
+    "product_categories": ["creams"],
+    "tags": ["samples", "curly", "coily", "high_porosity"],
+    "ingredients_raw": "distilled water, marshmallow root, slippery elm, flaxseed extract infusion, behentrimonium methosulfate, cetearyl alcohol, linum usitatissmum flax seed oil, mango butter mangifera indica, caprylic capric triglyceride, gluconolactone, sodium benzoate, cetyl esters, glyceryl stearate, sclerotium gum, phthalate-free fragrance, glycine betaine beet sugar extract",
+    "description": "A versatile styling cream that delivers bouncy, defined, shiny, and hydrated hairstyles in one step."
+  },
+  {
+    "name": "Boost Hydrate and Refresh Spray",
+    "brand": "Miche",
+    "buy_links": [
+      {
+        "url": "https://www.michebeauty.com/products/boost-hydrating-curl-refresher-leave-in-spray?rfsn=8688386.3de231",
+        "retailer": "Miche"
+      },
+      {
+        "url": "https://amzn.to/4lzo2iJ",
+        "retailer": "Amazon"
+      }
+    ],
+    "product_categories": ["refreshers"],
+    "tags": ["samples", "wavy", "curly", "coily", "low_porosity"],
+    "ingredients_raw": "distilled water, aloe vera juice, rosemary extract, persea gratissima avocado oil, caprylic capric triglyceride, glycine beet sugar extract, behentrimonium methosulfate, cetearyl alcohol, propanediol, phenoxyethanol, caprylyl glycol, sorbic acid, phthalate-free fragrance, diheptyl succinate, capryloyl glycerin sebacic acid copolymer, hydrolyzed silk protein, polyquaternium -10, panthenol pro-vitamin b5",
+    "description": "A refresher spray that instantly revives hairstyles needing extra conditioning between wash days."
+  },
+  {
+    "name": "Cleansed Moisturizing Shampoo",
+    "brand": "Miche",
+    "product_categories": ["shampoos"],
+    "tags": ["wavy", "curly", "coily", "samples"],
+    "ingredients_raw": "water, salix alba white willow bark extract, hibiscus sabdariffa hibiscus flower extract, panax ginseng ginseng root extract, ilex raraguariensis yerba mate leaf extract, sodium c14-16 alpha olefin sulfonate, cocamidopropyl betaine, disodium cocoamphodipropionate, sodium cocoyl isethionates, glycol distearate, vegetable glycerin, guar hydroxypropyltrimonium chloride, citric acid, phenoxyethanol, caprylyl glycol, sorbic acid, phthalate-free fragrance",
+    "description": "A sulfate-free, pH-balanced shampoo that moisturizes, restores dry hair, and stimulates the scalp",
+    "buy_links": [
+      {
+        "url": "https://amzn.to/4k2Qn00",
+        "retailer": "Amazon"
+      },
+      {
+        "url": "https://www.michebeauty.com/products/cleansed-sulfate-free-shampoo?rfsn=8688386.3de231",
+        "retailer": "Miche"
+      }
+    ]
+  },
+  {
+    "name": "Prime 3-Minute Moisture Conditioner",
+    "brand": "Miche",
+    "buy_links": [
+      {
+        "url": "https://amzn.to/4iFCweR",
+        "retailer": "Amazon"
+      },
+      {
+        "url": "https://www.michebeauty.com/collections/deep-conditioners/products/prime-smoothing-detangling-conditioner?rfsn=8688386.3de231",
+        "retailer": "Miche"
+      }
+    ],
+    "product_categories": ["conditioners"],
+    "tags": ["samples", "curly", "coily", "high_porosity"],
+    "ingredients_raw": "distilled water, slippery elm, rosemary extract infusion, aloe vera juice, behentrimonium methosulfate, cetearyl alcohol, persea gratissima avocado oil, prunus armeniaca apricot kernel oil, caprylic capric triglyceride, vegetable glycerin, propanediol, diheptyl succinate and capryloyl glycerin sebacic acid copolymer, phenoxyethanol, caprylyl glycol, sorbic acid, phthalate-free fragrance, panthenol pro-vitamin b5, caesalpinia spinosa gum",
+    "description": "A fast-acting conditioner that hydrates, detangles, and smooths, with pro-Vitamin B5 and nourishing botanicals"
+  },
+  {
+    "name": "Strengthen Protein Moisturizing Conditioning Treatment",
+    "brand": "Miche",
+    "buy_links": [
+      {
+        "url": "https://amzn.to/3GxRWV5",
+        "retailer": "Amazon"
+      },
+      {
+        "url": "https://www.michebeauty.com/collections/deep-conditioners/products/strengthen-protein-deep-conditioner?rfsn=8688386.3de231",
+        "retailer": "Miche"
+      }
+    ],
+    "product_categories": ["deep_conditioners"],
+    "tags": ["samples", "wavy", "curly", "coily", "low_porosity"],
+    "ingredients_raw": "distilled water, behentrimonium methosulfate, cetearyl alcohol, caprylic capric triglyceride, oryza sativa rice bran oil, olea europaea extra virgin olive fruit oil, mangifera indica mango seed butter, vegetable glycerin, propanediol, hydrolyzed adansonia digitata baobab seed protein, wheat amino acids, soy amino acids, arginine hcl, serine, threonine, hydrolyzed silk protein vegan, phenoxyethanol, caprylyl glycol, sorbic acid, phthalate-free fragrance, spinosa gum, panthenol vitamin b5",
+    "description": "Enriched with hydrolyzed Baobab protein to repair damage, strengthen strands, and boost elasticity"
+  },
+  {
+    "name": "DETOX Gentle Clarifying Shampoo",
+    "brand": "Miche",
+    "buy_links": [
+      {
+        "url": "https://www.michebeauty.com/products/detox-clarifying-detoxifying-shampoo?rfsn=8688386.3de231",
+        "retailer": "Miche"
+      },
+      {
+        "url": "https://amzn.to/47df0D4",
+        "retailer": "Amazon"
+      }
+    ],
+    "product_categories": ["clarifying_shampoos"],
+    "tags": ["samples", "wavy", "curly", "coily", "low_porosity"],
+    "ingredients_raw": "distilled water, ginger, rosemary, lemongrass, white willow bark, hibiscus flower, ginseng root, yerba mate leaf extract infusion, sodium c14-16 alpha olefin sulfonate, cocamidopropyl betaine, decyl glucoside, vegetable glycerin, apple cider vinegar, panthenol, phenoxyethanol, caprylyl glycol, sorbic acid, phthalate-free fragrance, polyquaternium-10, citric acid, peppermint mentha arvensis oil",
+    "description": "My fav type of clarifying shampoo: strong, but with slip for protecting your hair"
+  }
+]
+}

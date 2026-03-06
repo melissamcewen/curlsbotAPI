@@ -25,6 +25,8 @@ const FLAGGED_PRODUCTS_LOG = join(LOGS_DIR, 'flagged_products.json');
 const SEBDERM_SAFE_PRODUCTS_LOG = join(LOGS_DIR, 'sebderm_safe_products.json');
 const AUTO_TAGGED_PRODUCTS_LOG = join(LOGS_DIR, 'auto_tagged_products.json');
 const INVALID_LISTS_LOG = join(LOGS_DIR, 'invalid_ingredient_lists.json');
+const PRODUCTS_BY_CATEGORY_LOG = join(LOGS_DIR, 'products_by_category.json');
+const BUNDLE_SOURCES_LOG = join(LOGS_DIR, 'bundle_sources.json');
 
 // Load references data from references.references.json
 function loadReferences(): Record<string, Reference> {
@@ -306,14 +308,19 @@ function loadProductsFromDir(dirPath: string): any {
   // Load references data
   const referencesData = loadReferences();
 
-  for (const file of files) {
+  const sourceFiles: { file: string; productCount: number }[] = [];
+  console.log(`Building products from ${dirPath}:`);
+  for (const file of files.sort()) {
     const filePath = join(dirPath, file);
     try {
       const fileContent = readFileSync(filePath, 'utf-8');
       const data = JSON.parse(fileContent);
+      const count = Array.isArray(data.products) ? data.products.length : 0;
       if (Array.isArray(data.products)) {
         allProducts.push(...data.products);
       }
+      sourceFiles.push({ file, productCount: count });
+      console.log(`  ${file}: ${count} products`);
     } catch (error) {
       if (error instanceof SyntaxError) {
         console.error(`JSON parsing error in file ${file}:`);
@@ -427,6 +434,7 @@ function loadProductsFromDir(dirPath: string): any {
     return acc;
   }, {} as Record<string, any>);
 
+  console.log(`  Total: ${Object.keys(products).length} products (after deduplication by id)\n`);
   return {
     products,
     unknownIngredients,
@@ -434,6 +442,7 @@ function loadProductsFromDir(dirPath: string): any {
     sebdermSafeProducts,
     autoTaggedProducts,
     invalidLists,
+    sourceFiles,
   };
 }
 
@@ -460,7 +469,18 @@ function generateBundledData() {
     sebdermSafeProducts,
     autoTaggedProducts,
     invalidLists,
+    sourceFiles,
   } = loadProductsFromDir(join(DATA_DIR, 'products'));
+
+  // Write bundle sources log (files built from + product count per file)
+  const bundleSources = {
+    productsDir: join(DATA_DIR, 'products'),
+    files: sourceFiles,
+    totalFromFiles: sourceFiles.reduce((sum, f) => sum + f.productCount, 0),
+    totalAfterDedupe: Object.keys(products).length,
+  };
+  writeFileSync(BUNDLE_SOURCES_LOG, JSON.stringify(bundleSources, null, 2));
+  console.log(`Generated bundle sources log at ${BUNDLE_SOURCES_LOG}`);
   const categoriesData = loadJsonFile(join(DATA_DIR, 'categories.json'));
   const groupsData = loadJsonFile(join(DATA_DIR, 'groups.json'));
   const systemsData = loadJsonFile(join(CONFIG_DIR, 'systems.json'));
@@ -549,6 +569,42 @@ function generateBundledData() {
       `Generated invalid ingredient lists log at ${INVALID_LISTS_LOG}`,
     );
   }
+
+  // Count products per category, grouped by wavy/curly/coily tags
+  const HAIR_TYPE_TAGS = ['wavy', 'curly', 'coily'] as const;
+  type CategoryBreakdown = { total: number; wavy: number; curly: number; coily: number };
+  const categoryBreakdowns: Record<string, CategoryBreakdown> = {};
+  for (const product of Object.values(products)) {
+    const p = product as { product_categories?: string[]; tags?: string[] };
+    const categories = p.product_categories;
+    const tags = new Set((p.tags || []).map((t: string) => t.toLowerCase()));
+    if (!Array.isArray(categories)) continue;
+    for (const cat of categories) {
+      if (!categoryBreakdowns[cat]) {
+        categoryBreakdowns[cat] = { total: 0, wavy: 0, curly: 0, coily: 0 };
+      }
+      categoryBreakdowns[cat].total += 1;
+      for (const hair of HAIR_TYPE_TAGS) {
+        if (tags.has(hair)) categoryBreakdowns[cat][hair] += 1;
+      }
+    }
+  }
+  const productsByCategory = {
+    total_products: Object.keys(products).length,
+    by_category: Object.entries(categoryBreakdowns)
+      .sort(([, a], [, b]) => b.total - a.total)
+      .reduce((acc, [id, breakdown]) => {
+        acc[id] = breakdown;
+        return acc;
+      }, {} as Record<string, CategoryBreakdown>),
+  };
+  writeFileSync(
+    PRODUCTS_BY_CATEGORY_LOG,
+    JSON.stringify(productsByCategory, null, 2),
+  );
+  console.log(
+    `Generated products-by-category log at ${PRODUCTS_BY_CATEGORY_LOG}`,
+  );
 
   // Convert categories and groups to record format
   const categories = (categoriesData?.categories || []).reduce(

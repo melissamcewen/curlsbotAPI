@@ -4,7 +4,7 @@
       "name": "Gentle Clarifying Shampoo",
       "brand": "Bounce Curl",
       "product_categories": ["clarifying_shampoos"],
-      "tags": ["normal_porosity", "high_porosity", "featured"],
+      "tags": ["normal_porosity", "high_porosity", "featured", "wavy", "curly", "coily"],
       "ingredients_raw": "water, sodium lauroyl methyl isethionate, decyl glucoside, sodium cocoyl isethionate, disodium cocoamphodiacetate, propanediol, panthenol pro-vitamin b5, polyquaternium-10, hydroxypropyl methylcellulose, biotin, vanillin, hydrolyzed adansonia digitata baobab seed protein, nigella sativa virgin black cumin oil, stearamidopropyl dimethylamine, lactic acid, caprylhydroxamic acid, rosmarinus officinalis rosemary leaf extract, boswellia carterii oil, lactobacillus punica granatum fruit ferment extract, lactobacillus pumpkin ferment extract, argania spinosa kernel oil, cocos nucifera coconut oil, citrus aurantium bergamia bergamot fruit oil, anthemis nobilis flower oil, geranium maculatum oil, citrus paradisi grapefruit seed oil, lavandula angustifolia lavender oil, pogostemon cablin oil, citrus aurantium dulcis orange seed oil, citrus nobilis mandarin orange peel oil, caprylyl glycol",
       "buy_links": [
         {
@@ -24,7 +24,7 @@
       "name": "Super Smooth Cream Conditioner",
       "brand": "Bounce Curl",
       "product_categories": ["conditioners"],
-      "tags": ["featured"],
+      "tags": ["featured", "curly", "coily"],
       "cost": 2.8,
       "ingredients_raw": "organic aloe barbadensis leaf juice, behentrimonium methosulfate, cetearyl alcohol, hybrid safflower oil, glycerin, stearamidopropyl dimethylamine, propanediol, panthenol pro-vitamin b5, polyquternium-10, nigella sativa virgin black cumin oil, tocopheryl acetate vitamin e, citrus nobilis mandarin orange peel oil, vanillin, lactic acid, caprylhydroxamic acid, anthemis nobilis chamomile flower extract, althaea officinalis marshmallow root extract, geranium maculatum oil, camellia sinensis green tea leaf extract, rosmarinus officinalis rosemary leaf extract, brassica oleracea italica broccoli seed oil, urtica dioica nettle extract, salvia officinalis sage extract, pogostemon cablin oil, equisetum arvense horsetail extract, caryocar brasiliense pequi oil, citrus aurantium bergamia bergamot fruit oil, anthemis nobilis flower oil, citrus paradisi grapefruit seed oil, lavandula angustifolia lavender oil, citrus aurantium dulcis orange seed oil, cocos nucifera coconut oil, boswellia carterii oil, caprylyl glycol",
       "buy_links": [
@@ -39,33 +39,35 @@
       "name": "Avocado & Rose Oil Clump & Define Cream",
       "brand": "Bounce Curl",
       "product_categories": ["creams"],
-      "tags": ["featured"],
+      "tags": ["featured", "curly", "coily"],
       "ingredients_raw": "water, cetearyl alcohol, persea gratissima avocado oil, caprylic capric triglyceride, aloe barbadensis leaf juice, cetrimonium chloride, vp va copolymer, sorbitol, astrocaryum murumuru seed butter, argania spinosa kernel oil, butyrospermum parkii shea butter, rosa centifolia rose oil, crambe abyssinica seed oil, glycerin, hydroxyethylcellulose, nigella sativa virgin black cumin oil, trigonella foenum-graecum fenugreek seed extract, tocopheryl acetate vitamin e, adansonia digitata baobab seed oil, behentrimonium methosulfate, hydroxypropyl starch phosphate, phenoxyethanol, ethylhexylglycerin",
       "buy_links": [
         {
           "url": "https://glnk.io/x26q/curlsbot52q",
           "retailer": "Bounce Curl"
         }
-      ]
+      ],
+      "description": "A cream that helps build juicy well-defined curl clumps."
     },
     {
       "name": "Light Hold Creme Gel",
       "brand": "Bounce Curl",
       "product_categories": ["creams"],
-      "tags": ["featured"],
+      "tags": ["featured", "curly", "coily"],
       "ingredients_raw": "water, vp va copolymer, glycerin, hydrolyzed jojoba esters, jojoba esters, hydrolyzed quinoa protein, hydrolyzed oat protein, aloe barbadensis leaf extract, panax ginseng root extract, salvia officinalis sage extract, nigella sativa virgin black cumin oil, boswellia carter oil, aminomethyl propanol, carbomer, sodium phytate, caprylyl glycol, hexylene glycol, phenoxyethanol, citric acid",
       "buy_links": [
         {
           "url": "https://glnk.io/x26q/curlsbot86p",
           "retailer": "Bounce Curl"
         }
-      ]
+      ],
+      "description": "A gel/cream hybrid, ideal if you want to just use one product for styling."
     },
     {
       "name": "Hydra-Lite Styling Cream",
       "brand": "Bounce Curl",
       "product_categories": ["creams"],
-      "tags": ["featured"],
+      "tags": ["featured", "curly", "coily"],
       "ingredients_raw": "water, cetearyl alcohol, pvp, adansonia digitata baobab seed oil, hydrolyzed jojoba esters, pullulan, inulin, amaranthus caudatus seed extract, tilia tomentosa bud extract, polyquaternium-37, rosmarinus officinalis rosemary leaf extract, salvia officinalis sage extract, urtica dioica nettle extract, linum usitatissimum linseed seed extract, salvia hispanica seed extract, astrocaryum murumuru seed butter, crambe abyssinica seed oil, helianthus annuus sunflower seed oil, persea gratissima avocado oil, ethyl linoleate, glycerin, ethyl oleate, diheptyl succinate, capryloyl glycerin sebacic acid copolymer, behentrimonium chloride, cetrimonium chloride, propanediol, gluconolactone, sodium benzoate, fragrance, carvone, pinene, geranyl acetate, limonene, linalool",
       "buy_links": [
         {
@@ -79,20 +81,21 @@
       "name": "Moisture Balance Leave-In Conditioner",
       "brand": "Bounce Curl",
       "product_categories": ["leave_ins"],
-      "tags": ["normal_porosity", "high_porosity", "featured"],
+      "tags": ["normal_porosity", "high_porosity", "featured", "curly", "coily"],
       "ingredients_raw": "water, cetearyl alcohol, simmondsia chinesis jojoba seed oil, ethylhexyl palmitate, olea europe olive fruit oil, glyceryl stearate, astrocaryum murumuru seed butter, argania spinosa kernel oil argan oil, butyrospermum parkii shea butter, persea gratissima avocado oil, rosa centifolia rose oil, citrus aurantium amara neroli oil, tocopheryl acetate vitamin e, behentrimonium methosulfate, cetrimonium chloride, biotin, nigella sativa virgin black cumin oil, trigonella foenum-graecum fenugreek seed extract, phenoxyethanol, ethylhexylglycerin",
       "buy_links": [
         {
           "url": "https://glnk.io/x26q/curlsbot1qg",
           "retailer": "Bounce Curl"
         }
-      ]
+      ],
+      "description": "A balanced leave-in that fights frizz and protects against UV damage"
     },
     {
       "name": "Thermal Guard Weightless Leave-In",
       "brand": "Bounce Curl",
       "product_categories": ["leave_ins"],
-      "tags": ["featured"],
+      "tags": ["featured", "curly", "coily"],
       "ingredients_raw": "organic aloe barbadensis leaf juice, propanediol, cetearyl alcohol, adansonia digitata baobab seed oil, water, sodium hyaluronate, glycerin, sorbitol, trehalose, galactoarabinan, xylitol, tilia tomentosa bud extract, palmitoyl tetrapeptide-8 amide, polyporus umbellatus mushroom extract, salvia hispanica seed extract, amaranthus caudatus seed extract, sodium citrate, sodium phosphate, dicaprylyl carbonate, fructose, pentylene glycol, 2-hexanediol, caprylyl glycol, malachite extract, cetrimonium chloride, sodium benzoate, gluconolactone, fragrance, benzyl salicylate, limonene, linalool, linalyl acetate, terpineol, tetramethyl acetyloctahydronaphthalenes, vanillin",
       "buy_links": [
         {
@@ -106,20 +109,21 @@
       "name": "Light Oil",
       "brand": "Bounce Curl",
       "product_categories": ["oils"],
-      "tags": ["featured"],
+      "tags": ["featured", "curly", "coily"],
       "ingredients_raw": "organic helianthus annuus sunflower seed oil, tocopheryl acetate vitamin e, xerochrysum bracteatum flower, adansonia digitata seed oil, organic argania spinosa kernel oil, organic balanites roxburghii seed oil, organic borago officinalis seed oil, organic corylus avellana hazel seed oil, passiflora edulis passion flower seed oil, organic prunus amygdalus dulcis sweet almond oil, organic rosa canina fruit oil, organic simmondsia chinensis jojoba seed oil",
       "buy_links": [
         {
           "url": "https://glnk.io/x26q/curlsbot4cu",
           "retailer": "Bounce Curl"
         }
-      ]
+      ],
+      "description": "A blend of natural oils blended to be light and absorb well into hair, skin, or nails"
     },
     {
       "name": "Hair Spray",
       "brand": "Bounce Curl",
       "product_categories": ["sprays"],
-      "tags": ["high_porosity", "normal_porosity", "featured"],
+      "tags": ["high_porosity", "normal_porosity", "featured", "wavy", "curly", "coily"],
       "ingredients_raw": "water, octylacrylamide acrylates butylaminoethyl methacyrlate copolymer, heptyl glucoside, panthenol, aminomethyl propanol, aloe barbadensis leaf extract, panax ginseng root extract, salvia officinalis sage extract, nigella sativa virgin black cumin oil boswellia carterii oil, caprylhydroxamic acid, propanediol, caprylyl glycol, fragrance, citric acid",
       "description": "A lightweight spray that helps set your style in place and resist humidity",
       "buy_links": [
@@ -133,7 +137,7 @@
       "name": "Ceramide Jelly",
       "brand": "Bounce Curl",
       "product_categories": ["custards", "gels"],
-      "tags": ["featured"],
+      "tags": ["featured", "wavy", "curly", "coily"],
       "ingredients_raw": "organic aloe barbadensis leaf juice, maltodextrin vp copolymer, glycerin, hydroxyethylcellulose, hydrolyzed jojoba esters, sodium hyaluronate, ceramide 3, jojoba esters, phospholipids, water, amaranthus caudatus seed extract, tilia tomentosa bud extract, laminaria japonica seaweed extract, cereus grandiflorus cactus extract, guar hydroxypropyltrimonium chloride, gluconolactone, sodium benzoate, fragrance, citric acid, carvone, pinene, geranyl acetate, limonene, linalool",
       "buy_links": [
         {
@@ -147,7 +151,7 @@
       "name": "Pure Silk Moisturizing Shampoo",
       "brand": "Bounce Curl",
       "product_categories": ["shampoos"],
-      "tags": ["high_porosity", "normal_porosity", "featured"],
+      "tags": ["high_porosity", "normal_porosity", "featured", "wavy", "curly", "coily"],
       "ingredients_raw": "water, helianthus annuus sunflower seed oil, cocamidopropyl betaine, disodium laureth sulfosuccinate, diethylhexyl sodium sulfosuccinate, glycerin panthenol polyquaternium-10, biotin, hydrolyzed quinoa, hydrolyzed adansonia digitata baobab seed protein, gluconolactone sodium benzoate, sodium laurylglucosides hydroxypropylsulfonate, lycium barbarum fruit extract, coffea arabica coffee seed extract, euterpe oleracea fruit extract, morinda citrifolia extract, punica granatum fruit extract, camellia sinensis leaf extract, garcinia mangostana fruit extract, calendula officinalis flower extract, rosmarinus officinalis rosemary leaf extract, citrus aurantium bergamia bergamot fruit oil, vanillin, hybrid safflower oil, boswellia carterii oil, pelargonium graveolens geranium oil, citrus grandis grapefruit peel oil, lavandula angustifolia lavender oil, pogostemon cablin patchouli oil, citrus aurantium dulcis orange peel oil, cocos nucifera coconut oil, citrus nobilis mandarin orange peel oil, citric acid",
       "buy_links": [
         {

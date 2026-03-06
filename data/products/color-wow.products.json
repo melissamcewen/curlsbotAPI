@@ -11,12 +11,36 @@
         {
           "url": "https://amzn.to/4aQqlKu",
           "retailer": "Amazon"
+        },
+        {
+          "url": "https://www.sephora.com.au/products/color-wow-dream-coat-supernatural-spray-for-curly-hair/v/200ml",
+          "retailer": "Sephora",
+          "countries": ["AU"]
         }
       ],
       "product_categories": ["gels"],
       "tags": ["curly", "premium", "featured"],
       "ingredients_raw": "water aqua eau, vp va copolymer, propylene glycol, hydroxyethylcellulose, glycerin, oleth-20, polyquaternium-10, citric acid, dmdm hydantoin",
-      "description": "This is not even remotely the same as the non-curly version which is a serum. This is more a light-hold gel. I think this is a good option for easily weighed down hair like fine curls but it's not enough hold for wavy hair."
+      "description": "This is not the same as the non-curly version. This is more a light-hold gel. I think this is a good option for easily weighed down hair like fine curls but it's not enough hold for wavy hair."
+    },
+    {
+      "name": "Curl Wow Flo-etry Vital Natural Serum",
+      "brand": "Color Wow ",
+      "buy_links": [
+        {
+          "url": "https://amzn.to/3S8puMl",
+          "retailer": "Amazon"
+        },
+        {
+          "url": "https://www.sephora.com.au/products/color-wow-curl-wow-flo-etry-vital-natural-serum/v/295ml",
+          "retailer": "Sephora",
+          "countries": ["AU"]
+        }
+      ],
+      "product_categories": ["leave_ins"],
+      "tags": ["samples", "wavy", "curly", "coily", "low_porosity", "premium"],
+      "ingredients_raw": "water aqua, behentrimonium methosulfate, cetearyl alcohol, cocos nucifera coconut oil, peg-40 ppg-8 methylaminopropyl hydroxypropyl dimethicone copolymer, glycerin, simmondsia chinensis jojoba seed oil, caryocar brasiliense pequi fruit oil, propylene glycol dicaprylate dicaprate, hydrolyzed rice protein, polyquaternium-37, dipropylene glycol, phenoxyethanol, c10-40 isoalkylamidopropylethyldimonium ethosulfate, ppg-26-buteth-26, quaternium-33, ceteareth-20, caprylyl glycol, peg-40 hydrogenated castor oil, ppg-1 trideceth-6, fragrance parfum, tocopherol, benzyl alcohol, potassium sorbate, sodium benzoate f714-1",
+      "description": "A lightweight cream engineered so the moisturizing ingredients are more easily absorbed by the hair and don't sit on the surface looking greasy"
     }
   ]
 }

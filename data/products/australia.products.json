@@ -30,6 +30,22 @@
       "ingredients_raw": "water aqua eau, cetearyl alcohol, isopropyl myristate, cetyl alcohol, behentrimonium chloride, cetrimonium chloride, c13-16 isoparaffin, glycerin, carica papaya papaya fruit extract, cucumis sativus cucumber extract, camellia sinensis leaf extract, persea gratissima avocado oil, hydrolyzed soy protein, hydrolyzed quinoa, sodium levulinate, heptyl undecylenate, vp dmapa acrylates copolymer, peg-20 stearate, trideceth-12, isopropyl alcohol, butylene glycol, trideceth-9 pg-amodimethicone, benzophenone-4, phenoxyethanol, ethylhexylglycerin, potassium sorbate, sodium benzoate, benzoic acid, dehydroacetic acid, benzalkonium chloride, citric acid, sodium hydroxide, fragrance parfum, geraniol, linalool, limonene, benzyl alcohol",
       "cost": 2.3,
       "description": "If you have swavy or wavy hair, you don't need a curl conditioner - go for a lightweight conditioner like this one instead"
+    },
+    {
+      "name": "Curl Defining Gel",
+      "brand": "Virtue Labs",
+      "product_categories": ["gels"],
+      "tags": ["curly", "coily", "low_porosity", "premium"],
+      "ingredients_raw": "aqua, water, eau, propanediol, shea butter glycereth-8 esters, polyurethane-14, ethylhexylglycerin, keratin, panthenol, pelvetia canaliculata extract, helianthus annuus sunflower extract, helianthus annuus sunflower sprout extract, oryza sativa rice bran extract, oryza sativa rice extract, rosmarinus officinalis rosemary leaf extract, camellia sinensis leaf extract, linum usitatissimum linseed seed extract, hydrolyzed adansonia digitata seed extract, salvia hispanica seed extract, quercus petraea fruit extract, citrus paradisi grapefruit fruit extract, caesalpinia spinosa fruit extract, selaginella lepidophylla extract, oryza sativa rice seed protein, jojoba esters, brassica campestris aleurites fordi oil copolymer, madecassoside, galactoarabinan, trehalose, phytic acid, asiaticoside, xylitylglucoside, amp-acrylates copolymer, anhydroxylitol, maltitol, sodium phytate, sodium dilauramidoglutamide lysine, maltodextrin, tocopherol, glycerin, caprylyl glycol, aminomethyl propanol, sorbitan isostearate, tetrasodium glutamate diacetate, polysorbate 80, lactobacillus ferment, sodium phosphate, gluconolactone, calcium gluconate, heptyl undecylenate, amp-acrylates allyl methacrylate copolymer, acrylates c10-30 alkyl acrylate crosspolymer, hydroxyethyl acrylate sodium acryloyldimethyl taurate copolymer, polysorbate 20, xylitol, parfum fragrance, sodium benzoate, potassium sorbate, chlorphenesin, phenoxyethanol, citric acid, benzyl alcohol, potassium hydroxide, limonene, linalool, alpha-isomethyl ionone, citral, geraniol",
+      "buy_links": [
+        {
+          "url": "https://www.sephora.com.au/products/virtue-labs-curl-defining-gel/v/200ml",
+          "retailer": "Sephora",
+          "countries": ["AU"]
+        }
+      ],
+      "description": "A moderately-conditioning gel that provides hold, definition, and shine for curls and coils"
     }
- ]
+  ]
 }
+

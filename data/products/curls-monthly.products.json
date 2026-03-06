@@ -12,22 +12,9 @@
       "product_categories": ["treatments"],
       "tags": ["samples", "wavy", "curly", "coily", "low_porosity"],
       "ingredients_raw": "butylene glycol, dipropylene glycol, alcohol denat, myristyl alcohol, water, steartrimonium chloride, alcohol, fragrance, triethylhexanoin, cetrimonium chloride, cetyl ethylhexanoate, glycerin, panthenol, salicylic acid, niacinamide, methylpropanediol, maltodextrin, anthemis nobilis flower water, melissa officinalis flower leaf stem water, inulin, rosmarinus officinalis rosemary extract, peg-crosspolymer, biotin, caffeine, pentylene glycol, yeast extract, panax ginseng root extract, vinegar, 2-hexanediol, houttuynia cordata extract, sodium benzoate, paeonia suffruticosa branch flower leaf extract, paeonia suffruticosa root extract, artemisia annua extract, azadirachta indica leaf extract, camellia sinensis leaf extract, sodium pca, sodium lactate, mentha arvensis leaf extract, centella asiatica leaf extract, hyaluronic acid, polygonum multiflorum root extract, saccharomyces cerevisiae extract, panax ginseng leaf stem extract, arginine, caprylyl glycol, benzyl alcohol, aspartic acid, dextrin, polylysine, zingiber officinale ginger root extract, ganoderma lucidum mushroom extract, pca, beta-glucan, potassium sorbate, citric acid, glycine, alanine, althaea officinalis root extract, calendula officinalis flower extract, chamaecyparis obtusa leaf extract, ethylhexylglycerin, phellinus linteus extract, serine, valine, bifida ferment lysate, lactobacillus ferment lysate, dehydroacetic acid, isoleucine, proline, threonine, histidine, phenylalanine, alchemilla vulgaris extract, limonene, hexyl cinnamal, citral, geraniol, linalool, citronellol, benzyl",
-      "description": "A hair-thickening treatment that soothes the scalp, boosts growth, and delivers healthier-looking hair in just 5 seconds"
+      "description": "A hair-thickening treatment that soothes the scalp, boosts growth, and delivers healthier-looking hair"
     },
-    {
-      "name": "Clarifying Shampoo",
-      "brand": "Odele",
-      "buy_links": [
-        {
-          "url": "https://amzn.to/3RLg09y",
-          "retailer": "Amazon"
-        }
-      ],
-      "product_categories": ["clarifying_shampoos"],
-      "tags": ["samples", "wavy", "curly", "coily", "low_porosity"],
-      "ingredients_raw": "water, sodium lauroyl methyl isethionate, cocamidopropyl betaine, propanediol, acrylates crosspolymer-4, tetrasodium glutamate diacetate, polysorbate 20, glycerin, fragrance, aminomethyl propanol, aloe barbadensis leaf juice, amaranthus caudatus seed extract, hydrolyzed rice protein, hydrolyzed quinoa, polyquaternium-10, cetrimonium chloride, phenoxyethanol, ethylhexylglycerin, citric acid, sodium hydroxide",
-      "description": "Remove buildup from products, pollutants, and hard water with this salon-grade clarifying wash"
-    },
+
     {
       "name": "No Lather Cleanser",
       "brand": "Zoto's All About Curls",
@@ -84,24 +71,7 @@
       "ingredients_raw": "water aqua eau, cetearyl alcohol, carthamus tinctorus safflower seed oil, glycerin, stearalkonium chloride, fragrance parfum, cetyl alcohol, behentrimonium methosulfate, dimethicone althaea officinalis root extract, macadamia ternifolia seed oil stearamine oxide, polyquaternium-7, isohexadecane, acrylamidopropyltrimonium chloride acrylates copolymer, coceth-7, phenoxyethanol, benzyl alcohol, citric acid",
       "description": "A deep conditioner that delivers intense hydration, volume, and rejuvenation to dry, damaged strands"
     },
-    {
-      "name": "Prime 3-Minute Moisture Conditioner",
-      "brand": "Miche",
-      "buy_links": [
-        {
-          "url": "https://amzn.to/4iFCweR",
-          "retailer": "Amazon"
-        },
-        {
-          "url": "https://www.michebeauty.com/collections/deep-conditioners/products/prime-smoothing-detangling-conditioner?rfsn=8688386.3de231",
-          "retailer": "Miche"
-        }
-      ],
-      "product_categories": ["conditioners"],
-      "tags": ["samples", "curly", "coily", "high_porosity"],
-      "ingredients_raw": "distilled water, slippery elm, rosemary extract infusion, aloe vera juice, behentrimonium methosulfate, cetearyl alcohol, persea gratissima avocado oil, prunus armeniaca apricot kernel oil, caprylic capric triglyceride, vegetable glycerin, propanediol, diheptyl succinate and capryloyl glycerin sebacic acid copolymer, phenoxyethanol, caprylyl glycol, sorbic acid, phthalate-free fragrance, panthenol pro-vitamin b5, caesalpinia spinosa gum",
-      "description": "A fast-acting conditioner that hydrates, detangles, and smooths, with pro-Vitamin B5 and nourishing botanicals"
-    },
+
     {
       "name": "Curl Respecting Conditioner",
       "brand": "Imbue",
@@ -177,7 +147,7 @@
       "brand": "Malibu C",
       "buy_links": [
         {
-          "url": "https://amzn.to/4k0un5Q",
+          "url": "https://www.amazon.com/dp/B01DEJRKCO?ref=t_ac_spc_accepted_tile&linkCode=tr1&tag=trevresa-20&linkId=B01DEJRKCO_1772818102976",
           "retailer": "Amazon"
         }
       ],
@@ -196,7 +166,7 @@
         }
       ],
       "product_categories": ["conditioners"],
-      "tags": ["samples", "wavy", "curly", "coily", "low_porosity"],
+      "tags": ["samples", "wavy", "curly", "low_porosity"],
       "ingredients_raw": "aqua water eau, brassica alcohol, glycerin, brassicyl isoleucinate esylate, distearoylethyl dimonium chloride, capryloyl glycerin sebacic acid copolymer, diheptyl succinate, cetearyl alcohol, hydrolyzed hyaluronic acid, sodium hyaluronate, bixa orellana annatto seed extract, betula alba birch sap juice, polyquaternium-7, panthenol, cetrimonium chloride, arginine, lactic acid, parfum fragrance, limonene, linalool, sodium benzoate, potassium sorbate, phenoxyethanol, benzyl alcohol, dehydroacetic acid",
       "description": "Smooths frizz, restores shine, and deeply hydrates with moisturizing botanicals plus hyaluronic and lactic acids"
     },
@@ -226,7 +196,7 @@
       "product_categories": ["deep_conditioners"],
       "tags": ["samples", "wavy", "curly", "coily", "high_porosity"],
       "ingredients_raw": "water eau aqua, cetyl alcohol, cetearyl alcohol, simmondsia chinensis seed oil, panthenol, behentrimonium chloride, dimethicone, propylene glycol, hippophae rhamnoides sea buckthorn extract, argania spinosa argan kernel oil, cetrimonium chloride, isopropyl alcohol, fragrance parfum, hydrolyzed vegetable protein pg-propyl silanetriol keravis, ascorbic acid, citric acid, disodium edta, phenoxyethanol, potassium sorbate, butylphenyl methylpropional, limonene, hydroxycitronellal, hydroxyisohexyl 3-cyclohexene carboxaldehyde",
-      "description": "Delivers 48-hour smoothness while deeply conditioning and repairing hair to be 2X stronger and 3X more hydrated"
+      "description": "Delivers 48-hour smoothness while deeply conditioning and repairing hair"
     },
     {
       "name": "Collagen Mask",
@@ -271,24 +241,6 @@
       "description": "Boosts conditioning without weighing hair down and improves wet detangling by up to 90% after just one use"
     },
 
-    {
-      "name": "Strengthen Protein Moisturizing Conditioning Treatment",
-      "brand": "Miche",
-      "buy_links": [
-        {
-          "url": "https://amzn.to/3GxRWV5",
-          "retailer": "Amazon"
-        },
-        {
-          "url": "https://www.michebeauty.com/collections/deep-conditioners/products/strengthen-protein-deep-conditioner?rfsn=8688386.3de231",
-          "retailer": "Miche"
-        }
-      ],
-      "product_categories": ["deep_conditioners"],
-      "tags": ["samples", "wavy", "curly", "coily", "low_porosity"],
-      "ingredients_raw": "distilled water, behentrimonium methosulfate, cetearyl alcohol, caprylic capric triglyceride, oryza sativa rice bran oil, olea europaea extra virgin olive fruit oil, mangifera indica mango seed butter, vegetable glycerin, propanediol, hydrolyzed adansonia digitata baobab seed protein, wheat amino acids, soy amino acids, arginine hcl, serine, threonine, hydrolyzed silk protein vegan, phenoxyethanol, caprylyl glycol, sorbic acid, phthalate-free fragrance, spinosa gum, panthenol vitamin b5",
-      "description": "Enriched with hydrolyzed Baobab protein to repair damage, strengthen strands, and boost elasticity"
-    },
     {
       "name": "Bonding Pre-Shampoo Treatment",
       "brand": "bondbar",
@@ -494,7 +446,7 @@
       "description": "Strengthens, protects from heat/UV/frizz, detangles, softens, adds shine, smooths, nourishes, and cuts drying time"
     },
     {
-      "name": "Leave-in Conditioner ",
+      "name": "Leave-in Conditioner",
       "brand": "The Vida Bars",
       "buy_links": [
         {
@@ -728,6 +680,16 @@
         {
           "url": "https://amzn.to/463fbzz",
           "retailer": "Amazon"
+        },
+        {
+          "url": "https://www.hairhouse.com.au/products/olaplex-no-10-bond-shaper-curl-defining-gel-200ml",
+          "retailer": "Hair House",
+          "countries": ["AU"]
+        },
+        {
+          "url": "https://au.olaplex.com/products/olaplex-n-10-bond-shaper-curl-defining-gel-au",
+          "retailer": "Olaplex",
+          "countries": ["AU"]
         }
       ],
       "product_categories": ["gels"],
@@ -885,8 +847,8 @@
         }
       ],
       "product_categories": ["shampoos"],
-      "tags": ["samples", "wavy", "curly", "coily", "premium"],
-      "ingredients_raw": "aqua, herbal infusion of organic mangifera indica mango fruit extract, organic passiflora incarnate passion fruit extract, organic aloe barbadensis leaf extract, organic camellia sinensis green tea leaf extract, sodium cocoyl isethionate, coco betaine, sodium methyl cocoyl taurate, sodium cocoyl glutamate, disodium cocoyl glutamate, sodium chloride sea salt, vegetable glycerin, oenocarpus bataua rahua ungurahua oil, plukenetia volubilis sacha inchi seed oil, sucrose, hydrolyzed quinoa protein, mauritia flexuosa morete fruit oil, kaolinite rose clay, natural aroma, cymbopogon nardus citronella oil, lactic acid, hydroxyethylcellulose, glycine, coco caprylate, xanthan gum, l-argenine, potassium sorbate, guar hydroxypropyltrimonium chloride",
+      "tags": ["samples", "wavy", "curly", "coily", "premium", "spc"],
+      "ingredients_raw": "aqua, mangifera indica mango fruit extract, organic passiflora incarnate passion fruit extract, organic aloe barbadensis leaf extract, organic camellia sinensis green tea leaf extract, sodium cocoyl isethionate, coco betaine, sodium methyl cocoyl taurate, sodium cocoyl glutamate, disodium cocoyl glutamate, sodium chloride sea salt, vegetable glycerin, oenocarpus bataua rahua ungurahua oil, plukenetia volubilis sacha inchi seed oil, sucrose, hydrolyzed quinoa protein, mauritia flexuosa morete fruit oil, kaolinite rose clay, natural aroma, cymbopogon nardus citronella oil, lactic acid, hydroxyethylcellulose, glycine, coco caprylate, xanthan gum, l-argenine, potassium sorbate, guar hydroxypropyltrimonium chloride",
       "description": "Replenishes dry, thirsty hair with a medium cleanse and a touch of protein for added bounce"
     },
     {
@@ -916,12 +878,12 @@
           "retailer": "Rahua"
         },
         {
-          "url": "https://amzn.to/3UWrdWr",
+          "url": "https://www.amazon.com/dp/B09FFP9JJZ?ref=t_ac_spc_accepted_tile&linkCode=tr1&tag=trevresa-20&linkId=B09FFP9JJZ_1772817965019",
           "retailer": "Amazon"
         }
       ],
       "product_categories": ["deep_conditioners"],
-      "tags": ["samples", "wavy", "curly", "coily", "premium"],
+      "tags": ["samples", "wavy", "curly", "coily", "premium", "spc"],
       "ingredients_raw": "aqua, herbal infusion of organic mangifera indica mango fruit extract, organic passiflora incarnate passion fruit extract, organic helianthus annuus sunflower seed oil, behentrimonium methosulfate, cetearyl alcohol, vegetable glycerin, oenocarpus bataua rahua ungurahua oil, butyrospermum parkii shea butter, stearalkonium chloride, glycine, mauritia flexuosa morete fruit oil, kaolinite rose clay, plukenetia volubilis sacha inchi seed oil, hydrolyzed quinoa protein, organic rosemary extract, natural aroma, sucrose, potassium sorbate, guar hydroxypropyltrimonium chloride, cymbopogon nardus citronella oil",
       "description": "Amazonian oils and protein-bonding sugars that deliver deep hydration for revitalized, shiny, and smooth hair"
     },
@@ -1073,12 +1035,12 @@
       "brand": "Fable & Mane",
       "buy_links": [
         {
-          "url": "https://amzn.to/4iRkerb",
+          "url": "https://www.amazon.com/dp/B09CMXRZCF?ref=t_ac_spc_accepted_tile&linkCode=tr1&tag=trevresa-20&linkId=B09CMXRZCF_1772818016340",
           "retailer": "Amazon"
         }
       ],
       "product_categories": ["deep_conditioners"],
-      "tags": ["samples", "wavy", "curly", "coily", "high_porosity"],
+      "tags": ["samples", "wavy", "curly", "coily", "high_porosity", "spc"],
       "ingredients_raw": "aqua, water, eau, aloe barbadensis aloe vera leaf juice, behentrimonium chloride, glycerin, limnanthes alba meadowfoam seed oil, cetearyl alcohol, theobroma cacao cocoa seed butter, butyrospermum parkii shea butter, fragrance parfum, glyceryl stearate, cetyl alcohol, tocopherol, bacopa monnieri extract, eclipta prostrata extract, curcuma longa tumeric root extract, musa sapientum banana fruit extract, withania somnifera root extract, emblica officinalis fruit extract, acer saccharum sugar maple extract, hibiscus sabdariffa flower extract, bixa orellana seed extract, aegle marmelos root extract, desmodium gangeticum root extract, gmelina arborea root extract, oroxylum indicum root extract, premna serratifolia root extract, solanum indicum root extract, solanum xanthocarpum root extract, stereospermum suaveolens root extract, tribulus terrestris root extract, saccharum officinarum sugarcane extract, trigonella foenum-graecum seed extract, vaccinium myrtillus fruit extract, uraria picta root extract, linum usitatissimum linseed seed oil, sesamum indicum sesame seed oil, melia azadirachta neem seed oil, helianthus annuus sunflower seed oil, carthamus tinctorius safflower seed oil, brassica campestris rapeseed seed oil, orbignya speciosa kernel oil, astrocaryum murumuru seed butter, mangifera indica mango seed butter, cocos nucifera coconut fruit water, hydroxyethylcellulose, guar hydroxypropyltrimonium chloride, sodium stearoyl lactylate, polyquaternium-10, leuconostoc radish root ferment filtrate, tocopheryl acetate, citrus aurantium dulcis orange fruit extract, citrus limon lemon fruit extract, ethylhexylglycerin, citric acid, isopropyl alcohol, potassium sorbate, phenoxyethanol, glycine soja soybean oil, propylene glycol, potassium hydroxide, coumarin",
       "description": "A rich and moisturizing deep treatment / hair mask that is designed to restore hydration, add shine and smooth frizz"
     },
@@ -1087,118 +1049,14 @@
       "brand": "Fable & Mane",
       "buy_links": [
         {
-          "url": "https://amzn.to/42Way8S",
+          "url": "https://www.amazon.com/dp/B09Y68ZW3M?ref=t_ac_spc_accepted_tile&linkCode=tr1&tag=trevresa-20&linkId=B09Y68ZW3M_1772818142677",
           "retailer": "Amazon"
         }
       ],
       "product_categories": ["treatments"],
-      "tags": ["samples", "wavy", "curly", "coily", "low_porosity"],
+      "tags": ["samples", "wavy", "curly", "coily", "low_porosity", "spc"],
       "ingredients_raw": "sodium chloride, water aqua, glycerin, sodium cocoyl isethionate, sodium methyl cocoyl taurate, coconut acid, cocamidopropyl betaine, propanediol, glyceryl laurate, hydrolyzed quinoa, hydrolyzed rice protein, phyllanthus emblica fruit extract, melia azadirachta leaf extract, zingiber officinale ginger root extract, quillaja saponaria extract, coconut alkanes, coco-caprylate caprate, capryloyl caproyl methyl glucamide, lauroyl myristoyl methyl glucamide, panthenol, maltodextrin, fragrance parfum, phenoxyethanol, ethylhexylglycerin, potassium sorbate, sodium benzoate",
-      "description": "A protein-rich exfoliating shampoo to boost circulation, reduce buildup, and gently remove flakiness"
-    },
-    {
-      "name": "Curl Wow Flo-etry Vital Natural Serum",
-      "brand": "Color Wow ",
-      "buy_links": [
-        {
-          "url": "https://amzn.to/3S8puMl",
-          "retailer": "Amazon"
-        }
-      ],
-      "product_categories": ["leave_ins"],
-      "tags": ["samples", "wavy", "curly", "coily", "low_porosity", "premium"],
-      "ingredients_raw": "water aqua, behentrimonium methosulfate, cetearyl alcohol, cocos nucifera coconut oil, peg-40 ppg-8 methylaminopropyl hydroxypropyl dimethicone copolymer, glycerin, simmondsia chinensis jojoba seed oil, caryocar brasiliense pequi fruit oil, propylene glycol dicaprylate dicaprate, hydrolyzed rice protein, polyquaternium-37, dipropylene glycol, phenoxyethanol, c10-40 isoalkylamidopropylethyldimonium ethosulfate, ppg-26-buteth-26, quaternium-33, ceteareth-20, caprylyl glycol, peg-40 hydrogenated castor oil, ppg-1 trideceth-6, fragrance parfum, tocopherol, benzyl alcohol, potassium sorbate, sodium benzoate f714-1",
-      "description": "A lightweight curl primer that delivers deep conditioning without buildup to leave hair feeling product-free"
-    },
-    {
-      "name": "SET Gel to Foam Styling Mousse",
-      "brand": "Miche",
-      "buy_links": [
-        {
-          "url": "https://amzn.to/3EQ3jYc",
-          "retailer": "Amazon"
-        },
-        {
-          "url": "https://www.michebeauty.com/collections/stylers/products/set-curl-defining-mousse?rfsn=8688386.3de231",
-          "retailer": "Miche"
-        }
-      ],
-      "product_categories": ["foams"],
-      "tags": ["samples", "wavy", "curly", "coily"],
-      "ingredients_raw": "distilled water, ginger, rosemary, lemongrass extract infusion, aloe vera leaf juice, polyquaternium-55, cocamidopropyl hydroxysultaine, polysorbate 20, isostearamidopropyl morpholine lactate, hydrolyzed silk protein, pvp, phenoxyethanol, ethylhexylglycerin, benzoic acid, dehydroacetic acid, phthalate-free fragrance",
-      "description": "A gel-to-foam with medium hold that adds definition and volume while leaving curls soft, touchable, and healthy-looking"
-    },
-    {
-      "name": "Tropical Oasis Anti-Humidity Firm Hold Hair Gel",
-      "brand": "Miche",
-      "buy_links": [
-        {
-          "url": "https://amzn.to/4nu6pCK",
-          "retailer": "Amazon"
-        },
-        {
-          "url": "https://www.michebeauty.com/products/tropical-oasis-firm-hold-hair-gel?rfsn=8688386.3de231",
-          "retailer": "Miche"
-        }
-      ],
-      "product_categories": ["gels"],
-      "tags": ["samples", "wavy", "curly", "coily"],
-      "ingredients_raw": "distilled water, fresh pineapple juice extract, aloe vera juice, glycerin, maltodextrin vp copolymer, gluconodeltalactone, sodium benzoate, hydoxyethycelluolose, hydrolyzed quinoa protein, phthalate-free fragrance",
-      "description": "A frizz-fighting lightweight gel perfect for protecting against humidity"
-    },
-    {
-      "name": "Sculpt Curl Defining Gel",
-      "brand": "Miche",
-      "buy_links": [
-        {
-          "url": "https://www.michebeauty.com/products/sculpt-curl-defining-gel?rfsn=8688386.3de231",
-          "retailer": "Miche"
-        },
-        {
-          "url": "https://amzn.to/4npiCbD",
-          "retailer": "Amazon"
-        }
-      ],
-      "product_categories": ["gels"],
-      "tags": ["samples", "wavy", "curly", "coily", "high_porosity"],
-      "ingredients_raw": "distilled water infused with organic aloe vera extract, chamomile extract, nettle leaf extract, slippery elm extract, bamboo extract, glycerin, glycine betaine beet sugar extract, hydroxyethylcellulose, xanthan gum, propanediol, phthalate-free fragrance, benzylalcohol, dehydroacetic acid, carbomer, jojoba seed oil simmondsia chinesis, aminomethyl propanol ph adjustor",
-      "description": "A strong-hold gel that provides hold, definition, and shine for curls and coils."
-    },
-    {
-      "name": "Bounce Styling Cream",
-      "brand": "Miche",
-      "buy_links": [
-        {
-          "url": "https://www.michebeauty.com/products/bounce-curl-defining-cream",
-          "retailer": "Miche"
-        },
-        {
-          "url": "https://amzn.to/44oyBOE",
-          "retailer": "Amazon"
-        }
-      ],
-      "product_categories": ["creams"],
-      "tags": ["samples", "curly", "coily", "high_porosity"],
-      "ingredients_raw": "distilled water, marshmallow root, slippery elm, flaxseed extract infusion, behentrimonium methosulfate, cetearyl alcohol, linum usitatissmum flax seed oil, mango butter mangifera indica, caprylic capric triglyceride, gluconolactone, sodium benzoate, cetyl esters, glyceryl stearate, sclerotium gum, phthalate-free fragrance, glycine betaine beet sugar extract",
-      "description": "A versatile styling cream that delivers bouncy, defined, shiny, and hydrated hairstyles in one step."
-    },
-    {
-      "name": "Boost Hydrate and Refresh Spray",
-      "brand": "Miche",
-      "buy_links": [
-        {
-          "url": "https://www.michebeauty.com/products/boost-hydrating-curl-refresher-leave-in-spray?rfsn=8688386.3de231",
-          "retailer": "Miche"
-        },
-        {
-          "url": "https://amzn.to/4lzo2iJ",
-          "retailer": "Amazon"
-        }
-      ],
-      "product_categories": ["refreshers"],
-      "tags": ["samples", "wavy", "curly", "coily", "low_porosity"],
-      "ingredients_raw": "distilled water, aloe vera juice, rosemary extract, persea gratissima avocado oil, caprylic capric triglyceride, glycine beet sugar extract, behentrimonium methosulfate, cetearyl alcohol, propanediol, phenoxyethanol, caprylyl glycol, sorbic acid, phthalate-free fragrance, diheptyl succinate, capryloyl glycerin sebacic acid copolymer, hydrolyzed silk protein, polyquaternium -10, panthenol pro-vitamin b5",
-      "description": "A refresher spray that instantly revives hairstyles needing extra conditioning between wash days."
+      "description": "A protein-rich exfoliating scrub to boost circulation, reduce buildup, and gently remove flakiness"
     },
     {
       "name": "Olaplex No. 10 Bond Shaper Curl Defining Gel",
@@ -1495,60 +1353,7 @@
       "ingredients_raw": "aloe barbadensis leaf juice, water aqua, glycerin, ceteareth-20, cetyl alcohol, cetearyl alcohol, stearyl alcohol, hydroxypropylgluconamide and hydroxypropylammonium gluconate, cetrimonium chloride, elaeis oleifera kernel oil, biotin, rosmarinus officinalis rosemary flower oil, saccharomyces rice ferment filtrate, caffeine, amodimethicone, trideceth-12, phenoxyethanol, disodium edta, ethylhexylglycerin, fragrance, amyl salicylate, citrus aurantium peel oil, citronellol, geranyl acetate, hexyl cinnamal, hexamethylindanopyran, isoeugenyl acetate, limonene, linalool, linalyl acetate, alpha-isomethyl ionone",
       "description": "This is an affordable light-weight leave-in made by a woman-owned indie brand"
     },
-    {
-      "name": "Odele Leave-in Conditioner",
-      "brand": "Odele",
-      "buy_links": [
-        {
-          "url": "https://amzn.to/4s2F1wS",
-          "retailer": "Amazon"
-        },
-        {
-          "url": "https://odelebeauty.com/products/leave-in-conditioner",
-          "retailer": "Odele"
-        }
-      ],
-      "product_categories": ["leave_ins"],
-      "tags": ["samples", "wavy", "curly", "coily", "low_porosity"],
-      "ingredients_raw": "water, propanediol, cetearyl alcohol, amodimethicone, amaranthus caudatus seed extract, hydrolyzed rice protein, behentrimonium chloride, maltodextrin vp copolymer, pvp, cetrimonium chloride, ethylhexylglycerin, trideceth-12, alcohol, phenoxyethanol, fragranc",
-      "description": "This leave-in is a lot lighter than most cream leave-ins, making it a great choice for easily weighed down hair."
-    },
-    {
-      "name": "Odele Thickening Shampoo",
-      "brand": "Odele",
-      "buy_links": [
-        {
-          "url": "https://amzn.to/4ryQunY",
-          "retailer": "Amazon"
-        },
-        {
-          "url": "https://odelebeauty.com/products/thickening-set",
-          "retailer": "Odele"
-        }
-      ],
-      "product_categories": ["shampoos", "clarifying_shampoos"],
-      "tags": ["samples", "wavy", "curly", "low_porosity"],
-      "ingredients_raw": "water, sodium c14-16 olefin sulfonate, cocamidopropyl hydroxysultaine, dimethyl lauramide myristamide, fragrance, rosmarinus officinalis rosemary leaf extract, caffeine, pisum sativum pea peptide, biotin, aloe barbadensis leaf juice, zingiber officinale ginger root extract, mentha piperita peppermint leaf extract, glycerin, propanediol, polyquaternium-10, hydroxypropyl guar hydroxypropyltrimonium chloride, sodium methyl 2-sulfolaurate, disodium 2-sulfolaurate, sodium chloride, sodium benzoate, potassium sorbate, citric acid",
-      "description": "If you're looking for something that's strong but still has a nice slip, I think this is the one."
-    },
-    {
-      "name": "Odele Thickening Conditioner",
-      "brand": "Odele",
-      "buy_links": [
-        {
-          "url": "https://amzn.to/4ryQunY",
-          "retailer": "Amazon"
-        },
-        {
-          "url": "https://odelebeauty.com/products/thickening-set",
-          "retailer": "Odele"
-        }
-      ],
-      "product_categories": ["conditioners"],
-      "tags": ["samples", "wavy", "curly", "low_porosity"],
-      "ingredients_raw": "water, cetearyl alcohol, glyceryl stearate, isoamyl laurate, glycerin, behentrimonium chloride, fragrance, rosmarinus officinalis rosemary leaf extract, caffeine, pisum sativum pea peptide, biotin, cocos nucifera coconut oil, aloe barbadensis leaf juice, guar hydroxypropyltrimonium chloride, cetrimonium chloride, alcohol, tetrasodium glutamate diacetate, ethylhexylglycerin, phenoxyethanol, sodium hydroxide, citric acid",
-      "description": "An excellent light-weight and smoothing conditioner for easily-weighed down hair"
-    },
+
     {
       "name": "All About Curls High Definition Gel",
       "brand": "Zotos",
@@ -1610,20 +1415,7 @@
         }
       ]
     },
-    {
-      "name": "Cleansed Moisturizing Shampoo",
-      "brand": "Miche",
-      "product_categories": ["shampoos"],
-      "tags": ["wavy", "curly", "coily", "samples"],
-      "ingredients_raw": "water, salix alba white willow bark extract, hibiscus sabdariffa hibiscus flower extract, panax ginseng ginseng root extract, ilex raraguariensis yerba mate leaf extract, sodium c14-16 alpha olefin sulfonate, cocamidopropyl betaine, disodium cocoamphodipropionate, sodium cocoyl isethionates, glycol distearate, vegetable glycerin, guar hydroxypropyltrimonium chloride, citric acid, phenoxyethanol, caprylyl glycol, sorbic acid, phthalate-free fragrance",
-      "description": "A sulfate-free, pH-balanced shampoo that moisturizes, restores dry hair, and stimulates the scalp",
-      "buy_links": [
-        {
-          "url": "https://amzn.to/4k2Qn00",
-          "retailer": "Amazon"
-        }
-      ]
-    },
+
     {
       "name": "Curl Liberating Shampoo",
       "brand": "Imbue",
@@ -1670,12 +1462,12 @@
           "countries": ["UK", "EU"]
         },
         {
-          "url": "https://amzn.to/4n9b23P",
+          "url": "https://www.amazon.com/dp/B07D37PQGL?ref=t_ac_spc_accepted_tile&linkCode=tr1&tag=trevresa-20&linkId=B07D37PQGL_1772818210516",
           "retailer": "Amazon"
         }
       ],
       "product_categories": ["shampoos"],
-      "tags": ["samples", "wavy", "curly", "coily", "premium"],
+      "tags": ["samples", "wavy", "curly", "coily", "premium", "spc"],
       "ingredients_raw": "water aqua eau, sodium lauroyl methyl isethionate, cocamidopropyl hydroxysultaine, potassium cocoyl glycinate, disodium cocoyl glutamate, sodium lauroyl sarcosinate, potassium cocoate, decyl glucoside, glycereth-26, bis-aminopropyl diglycol dimaleate, cocamidopropylamine oxide, disodium laureth sulfosuccinate, glycol distearate, sodium cocoyl glutamate, methyl gluceth-20, acrylates copolymer, peg-120 methyl glucose dioleate, amodimethicone, citric acid, sodium lauryl sulfoacetate, polyquaternium-10, ethylhexylglycerin, divinyldimethicone dimethicone copolymer, polyquaternium-11, trisodium ethylenediamine disuccinate, guar hydroxypropyltrimonium chloride, c11-15 pareth-7, laureth-9, glycerin, trideceth-12, c12-13 pareth-23, c12-13 pareth-3, hydrolyzed vegetable protein, pg-propyl silanetriol, panthenol, acetic acid, tetrasodium edta, pentasodium triphosphate, sodium hydroxide, disodium edta, helianthus annus sunflower seed oil, tocopherol, prunus armeniaca apricot kernel oil, pseudozyma epicola camellia sinensis seed oil ferment extract filtrate, pseudozyma epicola argania spinosa kernel oil ferment filtrate, quaternium-95, propanediol, helianthus annus sunflower seed extract, peg-8, euterpe oleracea fruit extract, punica granatum extract, rosemarinus officinalis rosemary leaf extract, musa sapientum banana fruit extract, origanum vulgare lear extract, morinda citrifolia fruit extract, articum lappa root extract, peg-8 smdi copolymer, sodium hyaluronate, palmitoyl myristyl serinate, sodium polyacrylate, pentaerythrityl tetra-di-t-butyl hydroxyhydrocinnamate, biotin, benzoic acid, phenoxyethanol, chlorphenesin, potassium sorbate, sodium benzoate, fragrance parfum, citral, hexyl cinnamal, limonene",
       "description": "Uses Olaplex’s bonding technology to gently cleanse, strengthen, and add shine while repairing damage"
     },
@@ -1753,6 +1545,15 @@
       "tags": ["samples", "wavy", "curly", "coily", "low_porosity", "premium"],
       "ingredients_raw": "aqua water, cyclopentasiloxane, glycerin, polysorbate 60, myristyl alcohol, stearyl alcohol, cetyl alcohol, pvp, hydroxypropyl starch phosphate, citrus limon lemon peel extract, vaccinium myrtillus fruit extract, pyrus malus apple fruit extract, helianthus annuus sunflower seed extract, lactis serum proteinum, hydrolyzed chestnut extract, hydrolyzed quinoa, ethylhexyl methoxycinnamate, polyquaternium-10, hydroxypropyl guar, polyquaternium-28, diethylamino hydroxybenzoyl hexyl benzoate, butylene glycol, benzyl benzoate, citric acid, lactic acid, amyl cinnamal, linalool, benzyl salicylate, coumarin, hexyl cinnamal, limonene, citronellol, geraniol, benzyl alcohol, parfum fragrance, phenoxyethanol, caprylyl glycol, potassium sorbate, sodium benzoate",
       "description": "Tames frizz, enhances natural texture, provides light hold, and contains protein for added strength"
+    },
+    {
+      "name": "SahaScalp Amla Soothing Serum",
+      "brand": "Fable & Mane",
+      "buy_links": [],
+      "product_categories": ["pre-poo"],
+      "tags": ["samples", "wavy", "curly", "coily", "low_porosity"],
+      "ingredients_raw": "caprylic capric triglyceride, coconut alkanes, coco-caprylate caprate, c13-15 alkane, emblica officinalis amla fruit extract, psoralea corylifolia bakuchi seed extract, helianthus annuus sunflower seed oil, curcuma longa turmeric root extract, ocimum basilicum basil flower leaf extract, ocimum sanctum leaf extract tulsi, aloe barbadensis flower extract, trigonella foenum-graecum fenugreek seed extract, oryza sativa rice bran extract, brassica campestris rapeseed seed oil, nigella sativa black seed seed oil, propylene glycol dibenzoate, lavandula angustifolia lavender oil, helianthus annuus sunflower extract, salvia sclarea clary oil, sesamum indicum sesame seed oil, melia azadirachta neem extract, butylene glycol, rosmarinus officinalis rosemary leaf extract, tocopherol, water aqua, melia azadirachta neem leaf extract, melia azadirachta flower extract, corallina officinalis extract, moringa oleifera seed oil, coccinia indica fruit extract, solanum melongena eggplant fruit extract, simmondsia chinensis jojoba seed oil, parfum fragrance, linalool, geraniol, limonene",
+      "description": "This is a pre-poo scalp oil that will help oil-cleanse and sooth the scalp before shampooing"
     }
   ]
 }
