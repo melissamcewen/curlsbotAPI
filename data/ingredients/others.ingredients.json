@@ -467,6 +467,12 @@
       "categories": ["proteins"]
     },
     {
+      "name": "Rice Bran Extract",
+      "id": "rice_bran_extract",
+      "categories": ["proteins"],
+      "synonyms": ["oryza sativa rice bran extract"]
+    },
+    {
       "name": "Collagen",
       "id": "collagen",
       "categories": ["proteins"]

@@ -287,7 +287,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 8,
           "film_forming_humectants_number": 5,
-          "emollients_number": 6,
+          "emollients_number": 5,
           "simple_humectants": [
             "Propanediol",
             "Ethylhexylglycerin",
@@ -307,17 +307,16 @@ export const defaultProductDatabase: ProductDatabase = {
           ],
           "emollients": [
             "Butyrospermum Parkii Shea Butter",
-            "Rice bran oil",
             "Acrylates Copolymer",
             "Copolymer",
             "Copolymer",
             "Benzyl Alcohol"
           ],
-          "score": -46
+          "score": -43
         },
         "porosity": {
-          "high": 63,
-          "low": 58
+          "high": 66,
+          "low": 60
         },
         "sebderm": {
           "hasTriggers": true,
@@ -325,11 +324,6 @@ export const defaultProductDatabase: ProductDatabase = {
             {
               "id": "butyrospermum_parkii_shea_butter",
               "name": "Butyrospermum Parkii Shea Butter",
-              "reason": "Contains fatty acids that can feed Malassezia yeast"
-            },
-            {
-              "id": "rice_bran_oil",
-              "name": "Rice bran oil",
               "reason": "Contains fatty acids that can feed Malassezia yeast"
             },
             {
@@ -3333,7 +3327,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 6,
           "film_forming_humectants_number": 9,
-          "emollients_number": 14,
+          "emollients_number": 13,
           "simple_humectants": [
             "Propanediol",
             "Panthenol",
@@ -3363,7 +3357,6 @@ export const defaultProductDatabase: ProductDatabase = {
             "Guar Hydroxypropyltrimonium Chloride",
             "Diheptyl Succinate",
             "Safflower Oil",
-            "Rice bran oil",
             "Hemp seed oil",
             "Rosehip Oil",
             "Squalane",
@@ -3373,7 +3366,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 100,
-          "low": 46
+          "low": 47
         },
         "sebderm": {
           "hasTriggers": true,
@@ -3401,11 +3394,6 @@ export const defaultProductDatabase: ProductDatabase = {
             {
               "id": "safflower_oil",
               "name": "Safflower Oil",
-              "reason": "Contains fatty acids that can feed Malassezia yeast"
-            },
-            {
-              "id": "rice_bran_oil",
-              "name": "Rice bran oil",
               "reason": "Contains fatty acids that can feed Malassezia yeast"
             },
             {
@@ -7828,7 +7816,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 3,
           "film_forming_humectants_number": 0,
-          "emollients_number": 5,
+          "emollients_number": 4,
           "simple_humectants": [
             "Propanediol",
             "Panthenol",
@@ -7839,24 +7827,17 @@ export const defaultProductDatabase: ProductDatabase = {
             "Unknown Polyquat",
             "Behentrimonium Chloride",
             "Cetyl Alcohol",
-            "Rice bran oil",
             "Maltodextrin VP Copolymer"
           ],
-          "score": -6
+          "score": 0
         },
         "porosity": {
           "high": 100,
-          "low": 82
+          "low": 87
         },
         "sebderm": {
-          "hasTriggers": true,
-          "triggers": [
-            {
-              "id": "rice_bran_oil",
-              "name": "Rice bran oil",
-              "reason": "Contains fatty acids that can feed Malassezia yeast"
-            }
-          ]
+          "hasTriggers": false,
+          "triggers": []
         },
         "autoTagger": {
           "tags": [
@@ -9779,7 +9760,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "frizzbot": {
           "simple_humectants_number": 2,
           "film_forming_humectants_number": 0,
-          "emollients_number": 4,
+          "emollients_number": 3,
           "simple_humectants": [
             "Propylene Glycol",
             "Butylene glycol"
@@ -9787,14 +9768,13 @@ export const defaultProductDatabase: ProductDatabase = {
           "film_forming_humectants": [],
           "emollients": [
             "Sunflower Oil",
-            "Rice bran oil",
             "Sesame Seed Oil",
             "Jojoba Oil"
           ],
-          "score": -53
+          "score": -46
         },
         "porosity": {
-          "high": 49,
+          "high": 52,
           "low": 0
         },
         "sebderm": {
@@ -9803,11 +9783,6 @@ export const defaultProductDatabase: ProductDatabase = {
             {
               "id": "sunflower_oil",
               "name": "Sunflower Oil",
-              "reason": "Contains fatty acids that can feed Malassezia yeast"
-            },
-            {
-              "id": "rice_bran_oil",
-              "name": "Rice bran oil",
               "reason": "Contains fatty acids that can feed Malassezia yeast"
             },
             {
@@ -11368,8 +11343,8 @@ export const defaultProductDatabase: ProductDatabase = {
         }
       }
     },
-    "odele_odele_leave-in_conditioner": {
-      "name": "Odele Leave-in Conditioner",
+    "odele_leave-in_conditioner": {
+      "name": "Leave-in Conditioner",
       "brand": "Odele",
       "buy_links": [
         {
@@ -11395,7 +11370,7 @@ export const defaultProductDatabase: ProductDatabase = {
       ],
       "ingredients_raw": "water, propanediol, cetearyl alcohol, amodimethicone, amaranthus caudatus seed extract, hydrolyzed rice protein, behentrimonium chloride, maltodextrin vp copolymer, pvp, cetrimonium chloride, ethylhexylglycerin, trideceth-12, alcohol, phenoxyethanol, fragranc",
       "description": "This leave-in is a lot lighter than most cream leave-ins, making it a great choice for easily weighed down hair.",
-      "id": "odele_odele_leave-in_conditioner",
+      "id": "odele_leave-in_conditioner",
       "systems_excluded": [],
       "status": "warning",
       "extensions": {
@@ -11442,8 +11417,8 @@ export const defaultProductDatabase: ProductDatabase = {
         }
       }
     },
-    "odele_odele_thickening_shampoo": {
-      "name": "Odele Thickening Shampoo",
+    "odele_thickening_shampoo": {
+      "name": "Thickening Shampoo",
       "brand": "Odele",
       "buy_links": [
         {
@@ -11468,7 +11443,7 @@ export const defaultProductDatabase: ProductDatabase = {
       ],
       "ingredients_raw": "water, sodium c14-16 olefin sulfonate, cocamidopropyl hydroxysultaine, dimethyl lauramide myristamide, fragrance, rosmarinus officinalis rosemary leaf extract, caffeine, pisum sativum pea peptide, biotin, aloe barbadensis leaf juice, zingiber officinale ginger root extract, mentha piperita peppermint leaf extract, glycerin, propanediol, polyquaternium-10, hydroxypropyl guar hydroxypropyltrimonium chloride, sodium methyl 2-sulfolaurate, disodium 2-sulfolaurate, sodium chloride, sodium benzoate, potassium sorbate, citric acid",
       "description": "If you're looking for something that's strong but still has a nice slip, I think this is the one.",
-      "id": "odele_odele_thickening_shampoo",
+      "id": "odele_thickening_shampoo",
       "systems_excluded": [],
       "status": "ok",
       "extensions": {
@@ -11505,8 +11480,8 @@ export const defaultProductDatabase: ProductDatabase = {
         }
       }
     },
-    "odele_odele_thickening_conditioner": {
-      "name": "Odele Thickening Conditioner",
+    "odele_thickening_conditioner": {
+      "name": "Thickening Conditioner",
       "brand": "Odele",
       "buy_links": [
         {
@@ -11530,7 +11505,7 @@ export const defaultProductDatabase: ProductDatabase = {
       ],
       "ingredients_raw": "water, cetearyl alcohol, glyceryl stearate, isoamyl laurate, glycerin, behentrimonium chloride, fragrance, rosmarinus officinalis rosemary leaf extract, caffeine, pisum sativum pea peptide, biotin, cocos nucifera coconut oil, aloe barbadensis leaf juice, guar hydroxypropyltrimonium chloride, cetrimonium chloride, alcohol, tetrasodium glutamate diacetate, ethylhexylglycerin, phenoxyethanol, sodium hydroxide, citric acid",
       "description": "An excellent light-weight and smoothing conditioner for easily-weighed down hair",
-      "id": "odele_odele_thickening_conditioner",
+      "id": "odele_thickening_conditioner",
       "systems_excluded": [],
       "status": "caution",
       "extensions": {

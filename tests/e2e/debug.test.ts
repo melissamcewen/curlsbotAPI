@@ -16,11 +16,17 @@ import {
 /* THESE ARE PRODUCTION TESTS USE THE DATA IN src/data/bundledData.ts */
 
 const list = 'behentrimonium methosulfate';
-
+const list2 = 'oryza sativa rice bran extract';
 describe('Debugging ingredient matching', () => {
   const analyzer = new Analyzer({
     database: defaultDatabase,
     settings: defaultSettings,
+  });
+
+  it('should correctly identify oryza sativa rice bran extract', () => {
+    const result = analyzer.analyze(list2);
+    expect(result.ingredients[0].ingredient?.id).toBe('rice_bran_extract');
+
   });
 
   it('should correctly identify behentrimonium methosulfate', () => {

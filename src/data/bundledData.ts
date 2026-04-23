@@ -2985,6 +2985,18 @@ export const defaultDatabase: IngredientDatabase = {
       "status": "ok",
       "group": "humectants"
     },
+    "rice_bran_extract": {
+      "name": "Rice Bran Extract",
+      "id": "rice_bran_extract",
+      "categories": [
+        "film_forming_humectants"
+      ],
+      "synonyms": [
+        "oryza sativa rice bran extract"
+      ],
+      "status": "ok",
+      "group": "humectants"
+    },
     "collagen": {
       "name": "Collagen",
       "id": "collagen",
