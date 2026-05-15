@@ -847,7 +847,7 @@
         }
       ],
       "product_categories": ["shampoos"],
-      "tags": ["samples", "wavy", "curly", "coily", "premium", "spc"],
+      "tags": ["samples", "wavy", "curly", "coily", "premium", "spc", "premium"],
       "ingredients_raw": "aqua, mangifera indica mango fruit extract, organic passiflora incarnate passion fruit extract, organic aloe barbadensis leaf extract, organic camellia sinensis green tea leaf extract, sodium cocoyl isethionate, coco betaine, sodium methyl cocoyl taurate, sodium cocoyl glutamate, disodium cocoyl glutamate, sodium chloride sea salt, vegetable glycerin, oenocarpus bataua rahua ungurahua oil, plukenetia volubilis sacha inchi seed oil, sucrose, hydrolyzed quinoa protein, mauritia flexuosa morete fruit oil, kaolinite rose clay, natural aroma, cymbopogon nardus citronella oil, lactic acid, hydroxyethylcellulose, glycine, coco caprylate, xanthan gum, l-argenine, potassium sorbate, guar hydroxypropyltrimonium chloride",
       "description": "Replenishes dry, thirsty hair with a medium cleanse and a touch of protein for added bounce"
     },
@@ -1040,7 +1040,7 @@
         }
       ],
       "product_categories": ["deep_conditioners"],
-      "tags": ["samples", "wavy", "curly", "coily", "high_porosity", "spc"],
+      "tags": ["samples", "wavy", "curly", "coily", "high_porosity", "spc", "premium"],
       "ingredients_raw": "aqua, water, eau, aloe barbadensis aloe vera leaf juice, behentrimonium chloride, glycerin, limnanthes alba meadowfoam seed oil, cetearyl alcohol, theobroma cacao cocoa seed butter, butyrospermum parkii shea butter, fragrance parfum, glyceryl stearate, cetyl alcohol, tocopherol, bacopa monnieri extract, eclipta prostrata extract, curcuma longa tumeric root extract, musa sapientum banana fruit extract, withania somnifera root extract, emblica officinalis fruit extract, acer saccharum sugar maple extract, hibiscus sabdariffa flower extract, bixa orellana seed extract, aegle marmelos root extract, desmodium gangeticum root extract, gmelina arborea root extract, oroxylum indicum root extract, premna serratifolia root extract, solanum indicum root extract, solanum xanthocarpum root extract, stereospermum suaveolens root extract, tribulus terrestris root extract, saccharum officinarum sugarcane extract, trigonella foenum-graecum seed extract, vaccinium myrtillus fruit extract, uraria picta root extract, linum usitatissimum linseed seed oil, sesamum indicum sesame seed oil, melia azadirachta neem seed oil, helianthus annuus sunflower seed oil, carthamus tinctorius safflower seed oil, brassica campestris rapeseed seed oil, orbignya speciosa kernel oil, astrocaryum murumuru seed butter, mangifera indica mango seed butter, cocos nucifera coconut fruit water, hydroxyethylcellulose, guar hydroxypropyltrimonium chloride, sodium stearoyl lactylate, polyquaternium-10, leuconostoc radish root ferment filtrate, tocopheryl acetate, citrus aurantium dulcis orange fruit extract, citrus limon lemon fruit extract, ethylhexylglycerin, citric acid, isopropyl alcohol, potassium sorbate, phenoxyethanol, glycine soja soybean oil, propylene glycol, potassium hydroxide, coumarin",
       "description": "A rich and moisturizing deep treatment / hair mask that is designed to restore hydration, add shine and smooth frizz"
     },
@@ -1054,7 +1054,7 @@
         }
       ],
       "product_categories": ["treatments"],
-      "tags": ["samples", "wavy", "curly", "coily", "low_porosity", "spc"],
+      "tags": ["samples", "wavy", "curly", "coily", "low_porosity", "spc", "premium"],
       "ingredients_raw": "sodium chloride, water aqua, glycerin, sodium cocoyl isethionate, sodium methyl cocoyl taurate, coconut acid, cocamidopropyl betaine, propanediol, glyceryl laurate, hydrolyzed quinoa, hydrolyzed rice protein, phyllanthus emblica fruit extract, melia azadirachta leaf extract, zingiber officinale ginger root extract, quillaja saponaria extract, coconut alkanes, coco-caprylate caprate, capryloyl caproyl methyl glucamide, lauroyl myristoyl methyl glucamide, panthenol, maltodextrin, fragrance parfum, phenoxyethanol, ethylhexylglycerin, potassium sorbate, sodium benzoate",
       "description": "A protein-rich exfoliating scrub to boost circulation, reduce buildup, and gently remove flakiness"
     },
@@ -1136,7 +1136,7 @@
         }
       ],
       "product_categories": ["foams"],
-      "tags": ["samples", "wavy", "curly", "coily", "low_porosity"],
+      "tags": ["samples", "wavy", "curly", "coily", "low_porosity", "premium"],
       "ingredients_raw": "water, polyquaternium-55, cocamidopropyl hydroxysultaine, aloe barbadensis leaf, pvp, tocopheryl acetate, citric acid, silk amino acids, polysorbate 20, ethylhexylglycerin, oleth-20, fragrance parfum, glycereth-2 cocoate, isostearamidopropyl morpholine lactate, phenoxyethanol, benzoic acid, disodium edta",
       "description": "A light to medium-hold mousse that is great for all wave and curl types"
     },
@@ -1499,7 +1499,7 @@
         }
       ],
       "product_categories": ["leave_ins", "sprays", "refreshers"],
-      "tags": ["samples", "wavy", "curly", "coily", "low_porosity"],
+      "tags": ["samples", "wavy", "curly", "coily", "low_porosity", "premium"],
       "ingredients_raw": "aqua water eau, aloe barbadensis aloe vera extract, glycerin, panthenol, cetrimonium chloride, behentrimonium methosulfate, cetearyl alcohol, cetyl alcohol, caprylyl glycol, phenoxyethanol, sorbic acid, citrus sinensis orange peel oil expressed, lavandula angustifolia lavender oil althaea officinalis marshmallow leaf root extract, hydrolyzed adansonia digitata baobab seed extract, hydrolyzed quinoa, chamomille recutita matricaria flower extract, urtica dioica nettle leaf extract, equisetum arvense horsetail leaf extract, angelica archangelica angelica root extract, linalool, limonene",
       "description": "A lightweight, oil-free mist that moisturizes and refreshes curls without weighing them down"
     },

@@ -1,0 +1,33 @@
+{
+  "products": [
+    {
+      "name": "I Create Hold",
+      "brand": "Innersense",
+      "product_categories": ["gels"],
+      "tags": ["organic", "featured", "wavy", "curly", "coily", "premium", "samples"],
+      "ingredients_raw": "water, aloe barbadensis gel, hydroxyethylcellulose, maltodextrin copolymer, potassium hydroxide, gluconolactone, sodium benzoate, calcium gluconate, alkyl acrylate crosspolymer, citrus aurantium dulcis peel oil, caprylic capric triglyceride, potassium sorbate, sodium phytate, glycerin, chamomilla recutita matricaria flower extract, eucalyptus globulus leaf extract, ginkgo biloba leaf extract, aspalathus linearis leaf extract, honey extract, limonene",
+      "buy_links": [
+        {
+          "url": "https://www.amazon.com/dp/B002EOUQR2?ref=t_ac_spc_accepted_tile&linkCode=tr1&tag=trevresa-20&linkId=B002EOUQR2_1778860736294",
+          "retailer": "Amazon"
+        },
+        {
+          "url": "https://www.adorebeauty.com.au/p/innersense-organic-beauty/innersense-organic-beauty-i-create-hold-gel-300ml.html",
+          "retailer": "Adore Beauty",
+          "countries": ["AU"]
+        },
+        {
+          "url": "https://www.libertylondon.com/uk/i-create-hold-295ml-000853937.html",
+          "retailer": "Liberty London",
+          "countries": ["UK"]
+        },
+        {
+          "url": "https://www.cultbeauty.com/p/innersense-i-create-hold-styling-gel-295ml/15212948/",
+          "retailer": "Cult Beauty",
+          "countries": ["EU"]
+        }
+      ],
+      "description": "A flexible gel with medium/strong hold gel that in my experience doesn't make my hair feel producty - Melissa"
+    }
+
+  ]}

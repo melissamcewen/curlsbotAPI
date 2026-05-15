@@ -2989,7 +2989,7 @@ export const defaultDatabase: IngredientDatabase = {
       "name": "Rice Bran Extract",
       "id": "rice_bran_extract",
       "categories": [
-        "film_forming_humectants"
+        "proteins"
       ],
       "synonyms": [
         "oryza sativa rice bran extract"

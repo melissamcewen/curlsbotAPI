@@ -286,7 +286,7 @@ export const defaultProductDatabase: ProductDatabase = {
       "extensions": {
         "frizzbot": {
           "simple_humectants_number": 8,
-          "film_forming_humectants_number": 5,
+          "film_forming_humectants_number": 6,
           "emollients_number": 5,
           "simple_humectants": [
             "Propanediol",
@@ -300,6 +300,7 @@ export const defaultProductDatabase: ProductDatabase = {
           ],
           "film_forming_humectants": [
             "Keratin",
+            "Rice Bran Extract",
             "Flaxseed Extract",
             "Unknown Protein",
             "Lysine",
@@ -312,11 +313,11 @@ export const defaultProductDatabase: ProductDatabase = {
             "Copolymer",
             "Benzyl Alcohol"
           ],
-          "score": -43
+          "score": -51
         },
         "porosity": {
-          "high": 66,
-          "low": 60
+          "high": 65,
+          "low": 58
         },
         "sebderm": {
           "hasTriggers": true,
@@ -3326,7 +3327,7 @@ export const defaultProductDatabase: ProductDatabase = {
       "extensions": {
         "frizzbot": {
           "simple_humectants_number": 6,
-          "film_forming_humectants_number": 9,
+          "film_forming_humectants_number": 10,
           "emollients_number": 13,
           "simple_humectants": [
             "Propanediol",
@@ -3338,6 +3339,7 @@ export const defaultProductDatabase: ProductDatabase = {
           ],
           "film_forming_humectants": [
             "Hydroxypropylammonium Gluconate",
+            "Rice Bran Extract",
             "Arginine",
             "Aspartic Acid",
             "Glycine",
@@ -3362,11 +3364,11 @@ export const defaultProductDatabase: ProductDatabase = {
             "Squalane",
             "Olive Oil"
           ],
-          "score": -71
+          "score": -72
         },
         "porosity": {
           "high": 100,
-          "low": 47
+          "low": 46
         },
         "sebderm": {
           "hasTriggers": true,
@@ -7214,6 +7216,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "coily",
         "high_porosity",
         "spc",
+        "premium",
         "protein-free"
       ],
       "ingredients_raw": "aqua, water, eau, aloe barbadensis aloe vera leaf juice, behentrimonium chloride, glycerin, limnanthes alba meadowfoam seed oil, cetearyl alcohol, theobroma cacao cocoa seed butter, butyrospermum parkii shea butter, fragrance parfum, glyceryl stearate, cetyl alcohol, tocopherol, bacopa monnieri extract, eclipta prostrata extract, curcuma longa tumeric root extract, musa sapientum banana fruit extract, withania somnifera root extract, emblica officinalis fruit extract, acer saccharum sugar maple extract, hibiscus sabdariffa flower extract, bixa orellana seed extract, aegle marmelos root extract, desmodium gangeticum root extract, gmelina arborea root extract, oroxylum indicum root extract, premna serratifolia root extract, solanum indicum root extract, solanum xanthocarpum root extract, stereospermum suaveolens root extract, tribulus terrestris root extract, saccharum officinarum sugarcane extract, trigonella foenum-graecum seed extract, vaccinium myrtillus fruit extract, uraria picta root extract, linum usitatissimum linseed seed oil, sesamum indicum sesame seed oil, melia azadirachta neem seed oil, helianthus annuus sunflower seed oil, carthamus tinctorius safflower seed oil, brassica campestris rapeseed seed oil, orbignya speciosa kernel oil, astrocaryum murumuru seed butter, mangifera indica mango seed butter, cocos nucifera coconut fruit water, hydroxyethylcellulose, guar hydroxypropyltrimonium chloride, sodium stearoyl lactylate, polyquaternium-10, leuconostoc radish root ferment filtrate, tocopheryl acetate, citrus aurantium dulcis orange fruit extract, citrus limon lemon fruit extract, ethylhexylglycerin, citric acid, isopropyl alcohol, potassium sorbate, phenoxyethanol, glycine soja soybean oil, propylene glycol, potassium hydroxide, coumarin",
@@ -7320,6 +7323,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "coily",
         "low_porosity",
         "spc",
+        "premium",
         "protein"
       ],
       "ingredients_raw": "sodium chloride, water aqua, glycerin, sodium cocoyl isethionate, sodium methyl cocoyl taurate, coconut acid, cocamidopropyl betaine, propanediol, glyceryl laurate, hydrolyzed quinoa, hydrolyzed rice protein, phyllanthus emblica fruit extract, melia azadirachta leaf extract, zingiber officinale ginger root extract, quillaja saponaria extract, coconut alkanes, coco-caprylate caprate, capryloyl caproyl methyl glucamide, lauroyl myristoyl methyl glucamide, panthenol, maltodextrin, fragrance parfum, phenoxyethanol, ethylhexylglycerin, potassium sorbate, sodium benzoate",
@@ -7732,6 +7736,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "curly",
         "coily",
         "low_porosity",
+        "premium",
         "protein",
         "glycerin-free"
       ],
@@ -7805,7 +7810,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "wavy",
         "curly",
         "low_porosity",
-        "protein-free"
+        "protein"
       ],
       "ingredients_raw": "water, propanediol, panthenol, oryza sativa rice starch, glycerin, ammonium polyacryloyldimethyl taurate, polyquaternium-37, behentrimonium chloride, isopropyl alcohol, glyceryl stearate se, cetyl alcohol, oryza sativa rice bran extract, rosmarinus officinalis rosemary extract, helianthus, annuus sunflower extract, tocopherol, maltodextrin vp copolymer, sodium benzoate, potassium sorbate, fragrance, citric acid, ci 17200 red 33",
       "description": "If most masks make your hair feel flat, try this one! It's light and contains volume-boosting ingredients.",
@@ -7815,25 +7820,27 @@ export const defaultProductDatabase: ProductDatabase = {
       "extensions": {
         "frizzbot": {
           "simple_humectants_number": 3,
-          "film_forming_humectants_number": 0,
+          "film_forming_humectants_number": 1,
           "emollients_number": 4,
           "simple_humectants": [
             "Propanediol",
             "Panthenol",
             "Glycerin"
           ],
-          "film_forming_humectants": [],
+          "film_forming_humectants": [
+            "Rice Bran Extract"
+          ],
           "emollients": [
             "Unknown Polyquat",
             "Behentrimonium Chloride",
             "Cetyl Alcohol",
             "Maltodextrin VP Copolymer"
           ],
-          "score": 0
+          "score": -13
         },
         "porosity": {
           "high": 100,
-          "low": 87
+          "low": 83
         },
         "sebderm": {
           "hasTriggers": false,
@@ -7841,7 +7848,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein-free"
+            "protein"
           ]
         }
       }
@@ -9534,6 +9541,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "curly",
         "coily",
         "low_porosity",
+        "premium",
         "protein"
       ],
       "ingredients_raw": "aqua water eau, aloe barbadensis aloe vera extract, glycerin, panthenol, cetrimonium chloride, behentrimonium methosulfate, cetearyl alcohol, cetyl alcohol, caprylyl glycol, phenoxyethanol, sorbic acid, citrus sinensis orange peel oil expressed, lavandula angustifolia lavender oil althaea officinalis marshmallow leaf root extract, hydrolyzed adansonia digitata baobab seed extract, hydrolyzed quinoa, chamomille recutita matricaria flower extract, urtica dioica nettle leaf extract, equisetum arvense horsetail leaf extract, angelica archangelica angelica root extract, linalool, limonene",
@@ -9748,7 +9756,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "curly",
         "coily",
         "low_porosity",
-        "protein-free",
+        "protein",
         "glycerin-free"
       ],
       "ingredients_raw": "caprylic capric triglyceride, coconut alkanes, coco-caprylate caprate, c13-15 alkane, emblica officinalis amla fruit extract, psoralea corylifolia bakuchi seed extract, helianthus annuus sunflower seed oil, curcuma longa turmeric root extract, ocimum basilicum basil flower leaf extract, ocimum sanctum leaf extract tulsi, aloe barbadensis flower extract, trigonella foenum-graecum fenugreek seed extract, oryza sativa rice bran extract, brassica campestris rapeseed seed oil, nigella sativa black seed seed oil, propylene glycol dibenzoate, lavandula angustifolia lavender oil, helianthus annuus sunflower extract, salvia sclarea clary oil, sesamum indicum sesame seed oil, melia azadirachta neem extract, butylene glycol, rosmarinus officinalis rosemary leaf extract, tocopherol, water aqua, melia azadirachta neem leaf extract, melia azadirachta flower extract, corallina officinalis extract, moringa oleifera seed oil, coccinia indica fruit extract, solanum melongena eggplant fruit extract, simmondsia chinensis jojoba seed oil, parfum fragrance, linalool, geraniol, limonene",
@@ -9759,19 +9767,21 @@ export const defaultProductDatabase: ProductDatabase = {
       "extensions": {
         "frizzbot": {
           "simple_humectants_number": 2,
-          "film_forming_humectants_number": 0,
+          "film_forming_humectants_number": 1,
           "emollients_number": 3,
           "simple_humectants": [
             "Propylene Glycol",
             "Butylene glycol"
           ],
-          "film_forming_humectants": [],
+          "film_forming_humectants": [
+            "Rice Bran Extract"
+          ],
           "emollients": [
             "Sunflower Oil",
             "Sesame Seed Oil",
             "Jojoba Oil"
           ],
-          "score": -46
+          "score": -65
         },
         "porosity": {
           "high": 52,
@@ -9799,7 +9809,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein-free",
+            "protein",
             "glycerin-free"
           ]
         }
@@ -10476,6 +10486,86 @@ export const defaultProductDatabase: ProductDatabase = {
           "tags": [
             "protein",
             "glycerin-free"
+          ]
+        }
+      }
+    },
+    "innersense_i_create_hold": {
+      "name": "I Create Hold",
+      "brand": "Innersense",
+      "product_categories": [
+        "gels"
+      ],
+      "tags": [
+        "organic",
+        "featured",
+        "wavy",
+        "curly",
+        "coily",
+        "premium",
+        "samples",
+        "protein-free"
+      ],
+      "ingredients_raw": "water, aloe barbadensis gel, hydroxyethylcellulose, maltodextrin copolymer, potassium hydroxide, gluconolactone, sodium benzoate, calcium gluconate, alkyl acrylate crosspolymer, citrus aurantium dulcis peel oil, caprylic capric triglyceride, potassium sorbate, sodium phytate, glycerin, chamomilla recutita matricaria flower extract, eucalyptus globulus leaf extract, ginkgo biloba leaf extract, aspalathus linearis leaf extract, honey extract, limonene",
+      "buy_links": [
+        {
+          "url": "https://www.amazon.com/dp/B002EOUQR2?ref=t_ac_spc_accepted_tile&linkCode=tr1&tag=trevresa-20&linkId=B002EOUQR2_1778860736294",
+          "retailer": "Amazon"
+        },
+        {
+          "url": "https://www.adorebeauty.com.au/p/innersense-organic-beauty/innersense-organic-beauty-i-create-hold-gel-300ml.html",
+          "retailer": "Adore Beauty",
+          "countries": [
+            "AU"
+          ]
+        },
+        {
+          "url": "https://www.libertylondon.com/uk/i-create-hold-295ml-000853937.html",
+          "retailer": "Liberty London",
+          "countries": [
+            "UK"
+          ]
+        },
+        {
+          "url": "https://www.cultbeauty.com/p/innersense-i-create-hold-styling-gel-295ml/15212948/",
+          "retailer": "Cult Beauty",
+          "countries": [
+            "EU"
+          ]
+        }
+      ],
+      "description": "A flexible gel with medium/strong hold gel that in my experience doesn't make my hair feel producty - Melissa",
+      "id": "innersense_i_create_hold",
+      "systems_excluded": [],
+      "status": "ok",
+      "extensions": {
+        "frizzbot": {
+          "simple_humectants_number": 2,
+          "film_forming_humectants_number": 1,
+          "emollients_number": 1,
+          "simple_humectants": [
+            "Glycerin",
+            "Honey"
+          ],
+          "film_forming_humectants": [
+            "Hydroxyethylcellulose"
+          ],
+          "emollients": [
+            "Copolymer"
+          ],
+          "score": -81
+        },
+        "porosity": {
+          "high": 87,
+          "low": 100
+        },
+        "sebderm": {
+          "hasTriggers": false,
+          "triggers": []
+        },
+        "autoTagger": {
+          "tags": [
+            "protein-free"
           ]
         }
       }
