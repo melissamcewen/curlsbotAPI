@@ -1964,7 +1964,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 72,
-          "low": 80
+          "low": 81
         },
         "sebderm": {
           "hasTriggers": true,
@@ -2007,6 +2007,11 @@ export const defaultProductDatabase: ProductDatabase = {
             {
               "id": "histidine",
               "name": "Histidine",
+              "reason": "Amino acids can be metabolized by Malassezia, potentially worsening symptoms"
+            },
+            {
+              "id": "phenylalanine",
+              "name": "Phenylalanine",
               "reason": "Amino acids can be metabolized by Malassezia, potentially worsening symptoms"
             }
           ]
@@ -3368,7 +3373,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 100,
-          "low": 46
+          "low": 47
         },
         "sebderm": {
           "hasTriggers": true,
@@ -3441,6 +3446,11 @@ export const defaultProductDatabase: ProductDatabase = {
             {
               "id": "proline",
               "name": "Proline",
+              "reason": "Amino acids can be metabolized by Malassezia, potentially worsening symptoms"
+            },
+            {
+              "id": "phenylalanine",
+              "name": "Phenylalanine",
               "reason": "Amino acids can be metabolized by Malassezia, potentially worsening symptoms"
             },
             {
@@ -4041,7 +4051,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "curly",
         "coily",
         "high_porosity",
-        "protein-free"
+        "protein"
       ],
       "ingredients_raw": "water aqua, linum usitatissimum linseed extract, salvia hispanica chia seed extract, behentrimonium methosulfate, quaternium-87, cetearyl alcohol, cetyl alcohol, panthenol, mangifera indica mango seed butter, prunus amygdalus dulcis sweet almond oil, caprylhydroxamic acid, caprylyl glycol, glycerin, argania spinosa kernel oil, camellia sinensis leaf extract, simmondsia chinensis jojoba seed oil, peg ppg-8 3 diisostearate, astrocaryum vulgare kernel oil, tocopherol, olea europea olive fruit oil, euterpe oleracea acai fruit oil, mauritia flexuosa buriti fruit oil, fragrance, polyquaternium-73",
       "description": "A lightweight, vegan hair butter that delivers deep ongoing conditioning and protection",
@@ -4116,7 +4126,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein-free"
+            "protein"
           ]
         }
       }
@@ -7603,7 +7613,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 89,
-          "low": 15
+          "low": 16
         },
         "sebderm": {
           "hasTriggers": true,
@@ -7626,6 +7636,11 @@ export const defaultProductDatabase: ProductDatabase = {
             {
               "id": "alanine",
               "name": "Alanine",
+              "reason": "Amino acids can be metabolized by Malassezia, potentially worsening symptoms"
+            },
+            {
+              "id": "creatine",
+              "name": "Creatine",
               "reason": "Amino acids can be metabolized by Malassezia, potentially worsening symptoms"
             }
           ]
@@ -8623,7 +8638,7 @@ export const defaultProductDatabase: ProductDatabase = {
           "score": -59
         },
         "porosity": {
-          "high": 84,
+          "high": 79,
           "low": 100
         },
         "sebderm": {
@@ -8664,7 +8679,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "wavy",
         "curly",
         "coily",
-        "protein-free",
+        "protein",
         "glycerin-free"
       ],
       "ingredients_raw": "aqua water eau, decyl glucoside, polysorbate 20, cocamidopropyl betaine, cocos nucifera coconut oil, butyrospermum parkii shea butter, linum usitatissimum linseed seed extract, salvia hispanica chia seed extract, vp dimethylaminoethylmethacrylate copolymer, xanthan gum, hydroxypropyl guar, caprylyl glycol, citric acid, ethylhexylglycerin, phenoxyethanol, fragrance parfum, citral, limonene",
@@ -8696,7 +8711,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 100,
-          "low": 37
+          "low": 32
         },
         "sebderm": {
           "hasTriggers": true,
@@ -8720,7 +8735,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "autoTagger": {
           "tags": [
-            "protein-free",
+            "protein",
             "glycerin-free"
           ]
         }
@@ -9285,7 +9300,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 82,
-          "low": 85
+          "low": 88
         },
         "sebderm": {
           "hasTriggers": true,
@@ -9328,6 +9343,11 @@ export const defaultProductDatabase: ProductDatabase = {
             {
               "id": "histidine",
               "name": "Histidine",
+              "reason": "Amino acids can be metabolized by Malassezia, potentially worsening symptoms"
+            },
+            {
+              "id": "phenylalanine",
+              "name": "Phenylalanine",
               "reason": "Amino acids can be metabolized by Malassezia, potentially worsening symptoms"
             }
           ]
@@ -9994,7 +10014,7 @@ export const defaultProductDatabase: ProductDatabase = {
         },
         "porosity": {
           "high": 100,
-          "low": 81
+          "low": 83
         },
         "sebderm": {
           "hasTriggers": true,
@@ -10003,6 +10023,11 @@ export const defaultProductDatabase: ProductDatabase = {
               "id": "cetearyl_alcohol",
               "name": "Cetearyl Alcohol",
               "reason": "This specific fatty alcohol can feed Malassezia yeast"
+            },
+            {
+              "id": "creatine",
+              "name": "Creatine",
+              "reason": "Amino acids can be metabolized by Malassezia, potentially worsening symptoms"
             },
             {
               "id": "sweet_almond_oil",
@@ -11360,6 +11385,310 @@ export const defaultProductDatabase: ProductDatabase = {
           "tags": [
             "protein-free",
             "glycerin-free"
+          ]
+        }
+      }
+    },
+    "moptop_curly_hair_gel_custard": {
+      "name": "Curly Hair Gel Custard",
+      "brand": "Moptop",
+      "product_categories": [
+        "gels"
+      ],
+      "tags": [
+        "curly",
+        "coily",
+        "wavy",
+        "protein"
+      ],
+      "ingredients_raw": "water, glycerin, carboxymethylcellulose, aloe barbadensis leaf extract, pectin, hydroxypropyltrimonium honey, silk amino acids, hypnea musciformis extract seaweed, gelidiella acerosa extract seaweed, sargassum filipendula seaweed extract, sorbitol, rosmarinus officinalis rosemary leaf extract, salix alba willow bark extract, urtica dioica nettle extract, ethylhexylglycerin, phenoxyethanol, citrus senensis oil, citrus limon oil, citrus aurantifolia oil, citrus paradisi oil, fragrance",
+      "description": "A humectant-rich botanical gel with moderate hold that makes your hair feel soft and hydrated. A little goes a long way! - Melissa",
+      "buy_links": [
+        {
+          "url": "https://moptophair.com/products/curly-hair-custard?p=sTl3ANN0L",
+          "retailer": "Moptop"
+        },
+        {
+          "url": "https://amzn.to/3RkOyTa",
+          "retailer": "Amazon"
+        }
+      ],
+      "id": "moptop_curly_hair_gel_custard",
+      "systems_excluded": [],
+      "status": "ok",
+      "extensions": {
+        "frizzbot": {
+          "simple_humectants_number": 3,
+          "film_forming_humectants_number": 7,
+          "emollients_number": 0,
+          "simple_humectants": [
+            "Glycerin",
+            "Sorbitol",
+            "Ethylhexylglycerin"
+          ],
+          "film_forming_humectants": [
+            "Aloe Barbadensis Leaf Extract",
+            "Pectin",
+            "Hydroxypropyltrimonium Honey",
+            "Silk Amino Acids",
+            "Seaweed Extract",
+            "Seaweed Extract",
+            "Seaweed Extract"
+          ],
+          "emollients": [],
+          "score": -82
+        },
+        "porosity": {
+          "high": 94,
+          "low": 65
+        },
+        "sebderm": {
+          "hasTriggers": true,
+          "triggers": [
+            {
+              "id": "silk_amino_acids",
+              "name": "Silk Amino Acids",
+              "reason": "Amino acids can be metabolized by Malassezia, potentially worsening symptoms"
+            }
+          ]
+        },
+        "autoTagger": {
+          "tags": [
+            "protein"
+          ]
+        }
+      }
+    },
+    "moptop_anti-frizz_gel": {
+      "name": "Anti-Frizz Gel",
+      "brand": "Moptop",
+      "product_categories": [
+        "gels"
+      ],
+      "tags": [
+        "curly",
+        "coily",
+        "wavy",
+        "protein"
+      ],
+      "ingredients_raw": "aloe barbadensis leaf juice, cellulose gum, panthenol, glycerin, sorbitol, polyquaternium-4, inulin, hydroxyethylcellulose, polyquaternium-10, hydroxypropyltrimonium honey, silk amino acids, arnica montana flower extract, urtica dioica nettle extract, anthemis nobilis chamomile flower extract, spirulina maxima extract, hypnea musciformis extract, gellidiela acerosa extract, sargassum filipendula extract, cetrimonium chloride, phenoxyethanol, ethylhexylglycerin, tetrasodium edta, fragrance",
+      "description": "Top-ranked in my gel tests, this lightweight gel doesn't need a lot to hold your hair in place without a producty feel. - Melissa",
+      "buy_links": [
+        {
+          "url": "https://moptophair.com/collections/frontpage/products/moptop-salon-medium-hold-gel?p=sTl3ANN0L",
+          "retailer": "Moptop"
+        },
+        {
+          "url": "https://amzn.to/4nGOyc8",
+          "retailer": "Amazon"
+        }
+      ],
+      "id": "moptop_anti-frizz_gel",
+      "systems_excluded": [],
+      "status": "ok",
+      "extensions": {
+        "frizzbot": {
+          "simple_humectants_number": 4,
+          "film_forming_humectants_number": 4,
+          "emollients_number": 3,
+          "simple_humectants": [
+            "Panthenol",
+            "Glycerin",
+            "Sorbitol",
+            "Ethylhexylglycerin"
+          ],
+          "film_forming_humectants": [
+            "Aloe Barbadensis Leaf Extract",
+            "Hydroxyethylcellulose",
+            "Hydroxypropyltrimonium Honey",
+            "Silk Amino Acids"
+          ],
+          "emollients": [
+            "Unknown Polyquat",
+            "Unknown Polyquat",
+            "Cetrimonium Chloride"
+          ],
+          "score": -71
+        },
+        "porosity": {
+          "high": 100,
+          "low": 100
+        },
+        "sebderm": {
+          "hasTriggers": true,
+          "triggers": [
+            {
+              "id": "silk_amino_acids",
+              "name": "Silk Amino Acids",
+              "reason": "Amino acids can be metabolized by Malassezia, potentially worsening symptoms"
+            }
+          ]
+        },
+        "autoTagger": {
+          "tags": [
+            "protein"
+          ]
+        }
+      }
+    },
+    "moptop_curly_hair_cream": {
+      "name": "Curly Hair Cream",
+      "brand": "Moptop",
+      "product_categories": [
+        "creams"
+      ],
+      "tags": [
+        "curly",
+        "coily",
+        "wavy",
+        "protein-free"
+      ],
+      "ingredients_raw": "water aqua, cetearyl alcohol, glyceryl stearate, propanediol, aloe barbadensis leaf juice, hydrogenated vegetable oil, peg-100 stearate, isopropyl palmitate, pvp, glycerin, caprylic capric triglyceride, glycereth-26, butyrospermum parkii shea butter, vp va copolymer, pectin, hydroxypropyltrimonium honey, coconut alkanes, polyquaternium-55, sodium polyitaconate, triethyl citrate, zea mays corn starch, sodium polyacrylate starch, hypnea musciformis extract, gelidiella acerosa extract, sargassum filipendula extract, sodium lactate, coco-caprylate caprate, ceteareth-20, acrylates beheneth-25 methacrylate copolymer, polyacrylate crosspolymer-6, cellulose, disodium edta, fragrance, phenoxyethanol, benzyl alcohol, aminomethyl propanol",
+      "description": "I use this under gel when my hair feels dry and it makes it feel soft and hydrated. It's light enough for wavy or fine hair! - Melissa",
+      "buy_links": [
+        {
+          "url": "https://moptophair.com/collections/frontpage/products/curly-hair-cream?p=sTl3ANN0L",
+          "retailer": "Moptop"
+        },
+        {
+          "url": "https://amzn.to/4wG1rqZ",
+          "retailer": "Amazon"
+        }
+      ],
+      "id": "moptop_curly_hair_cream",
+      "systems_excluded": [],
+      "status": "ok",
+      "extensions": {
+        "frizzbot": {
+          "simple_humectants_number": 4,
+          "film_forming_humectants_number": 3,
+          "emollients_number": 9,
+          "simple_humectants": [
+            "Propanediol",
+            "Glycerin",
+            "Glycereth-26",
+            "Sodium Lactate"
+          ],
+          "film_forming_humectants": [
+            "Aloe Barbadensis Leaf Extract",
+            "Pectin",
+            "Hydroxypropyltrimonium Honey"
+          ],
+          "emollients": [
+            "Cetearyl Alcohol",
+            "Polyvinylpyrrolidone",
+            "Butyrospermum Parkii Shea Butter",
+            "VP VA copolymer",
+            "Unknown Polyquat",
+            "Ceteareth-20",
+            "Copolymer",
+            "Polyacrylate Crosspolymer-6",
+            "Benzyl Alcohol"
+          ],
+          "score": -65
+        },
+        "porosity": {
+          "high": 100,
+          "low": 49
+        },
+        "sebderm": {
+          "hasTriggers": true,
+          "triggers": [
+            {
+              "id": "cetearyl_alcohol",
+              "name": "Cetearyl Alcohol",
+              "reason": "This specific fatty alcohol can feed Malassezia yeast"
+            },
+            {
+              "id": "butyrospermum_parkii_shea_butter",
+              "name": "Butyrospermum Parkii Shea Butter",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            },
+            {
+              "id": "ceteareth_20",
+              "name": "Ceteareth-20",
+              "reason": "Can create a barrier that traps moisture and heat, promoting yeast growth"
+            }
+          ]
+        },
+        "autoTagger": {
+          "tags": [
+            "protein-free"
+          ]
+        }
+      }
+    },
+    "moptop_curl_enhancer_gel": {
+      "name": "Curl Enhancer Gel",
+      "brand": "Moptop",
+      "product_categories": [
+        "gels"
+      ],
+      "tags": [
+        "curly",
+        "coily",
+        "protein"
+      ],
+      "ingredients_raw": "water, aloe barbadensis leaf extract, polyacrylate-2 crosspolymer, maltodextrin vp copolymer, hydroxyethylcellulose, hydroxypropyltrimonium honey, laminaria saccharina algae extract, fucus vesiculosus bladderwrack extract, arnica montana flower extract, urtica dioica nettle extract, chamomilla recutita matricaria flower extract, silk amino acids, glycerin, sodium hydroxide, polyquaternium-10, ethylhexylglycerin, polysorbate-20, panthenol, phytic acid, phenoxyethanol, fragrance",
+      "description": "This gel has a very soft hold perfect for lightly defined voluminous curls/coils- Melissa",
+      "buy_links": [
+        {
+          "url": "https://moptophair.com/collections/frontpage/products/moptop-curl-enhancer-gel?p=sTl3ANN0L",
+          "retailer": "Moptop"
+        },
+        {
+          "url": "https://amzn.to/4dGzs1J",
+          "retailer": "Amazon"
+        }
+      ],
+      "id": "moptop_curl_enhancer_gel",
+      "systems_excluded": [],
+      "status": "ok",
+      "extensions": {
+        "frizzbot": {
+          "simple_humectants_number": 3,
+          "film_forming_humectants_number": 5,
+          "emollients_number": 2,
+          "simple_humectants": [
+            "Glycerin",
+            "Ethylhexylglycerin",
+            "Panthenol"
+          ],
+          "film_forming_humectants": [
+            "Aloe Barbadensis Leaf Extract",
+            "Hydroxyethylcellulose",
+            "Hydroxypropyltrimonium Honey",
+            "Algae Extract",
+            "Silk Amino Acids"
+          ],
+          "emollients": [
+            "Maltodextrin VP Copolymer",
+            "Unknown Polyquat"
+          ],
+          "score": -89
+        },
+        "porosity": {
+          "high": 100,
+          "low": 100
+        },
+        "sebderm": {
+          "hasTriggers": true,
+          "triggers": [
+            {
+              "id": "silk_amino_acids",
+              "name": "Silk Amino Acids",
+              "reason": "Amino acids can be metabolized by Malassezia, potentially worsening symptoms"
+            },
+            {
+              "id": "polysorbate",
+              "name": "Polysorbate",
+              "reason": "polysorbates can feed Malassezia yeast"
+            }
+          ]
+        },
+        "autoTagger": {
+          "tags": [
+            "protein"
           ]
         }
       }

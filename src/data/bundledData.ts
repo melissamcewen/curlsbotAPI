@@ -3136,7 +3136,7 @@ export const defaultDatabase: IngredientDatabase = {
       "name": "Phenylalanine",
       "id": "phenylalanine",
       "categories": [
-        "proteins"
+        "amino_acids"
       ],
       "status": "ok",
       "group": "humectants"
@@ -4336,9 +4336,9 @@ export const defaultDatabase: IngredientDatabase = {
         "chia seed extract"
       ],
       "categories": [
-        "film_forming_humectants"
+        "proteins"
       ],
-      "description": "Chia seed extract",
+      "description": "This can refer either to a gel made from chia seeds, or to chia seed proteins",
       "status": "ok",
       "group": "humectants"
     },
@@ -4346,7 +4346,7 @@ export const defaultDatabase: IngredientDatabase = {
       "name": "Creatine",
       "id": "creatine",
       "categories": [
-        "proteins"
+        "amino_acids"
       ],
       "status": "ok",
       "group": "humectants"

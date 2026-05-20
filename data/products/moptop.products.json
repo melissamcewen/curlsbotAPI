@@ -1,0 +1,74 @@
+  { "products": [
+    {
+      "name": "Curly Hair Gel Custard",
+      "brand": "Moptop",
+      "product_categories": ["gels"],
+      "tags": ["curly", "coily", "wavy"],
+      "ingredients_raw": "water, glycerin, carboxymethylcellulose, aloe barbadensis leaf extract, pectin, hydroxypropyltrimonium honey, silk amino acids, hypnea musciformis extract seaweed, gelidiella acerosa extract seaweed, sargassum filipendula seaweed extract, sorbitol, rosmarinus officinalis rosemary leaf extract, salix alba willow bark extract, urtica dioica nettle extract, ethylhexylglycerin, phenoxyethanol, citrus senensis oil, citrus limon oil, citrus aurantifolia oil, citrus paradisi oil, fragrance",
+      "description": "A humectant-rich botanical gel with moderate hold that makes your hair feel soft and hydrated. A little goes a long way! - Melissa",
+      "buy_links": [
+        {
+          "url": "https://moptophair.com/products/curly-hair-custard?p=sTl3ANN0L",
+          "retailer": "Moptop"
+        },
+        {
+          "url": "https://amzn.to/3RkOyTa",
+          "retailer": "Amazon"
+        }
+      ]
+    },
+    {
+      "name": "Anti-Frizz Gel",
+      "brand": "Moptop",
+      "product_categories": ["gels"],
+      "tags": ["curly", "coily", "wavy"],
+      "ingredients_raw": "aloe barbadensis leaf juice, cellulose gum, panthenol, glycerin, sorbitol, polyquaternium-4, inulin, hydroxyethylcellulose, polyquaternium-10, hydroxypropyltrimonium honey, silk amino acids, arnica montana flower extract, urtica dioica nettle extract, anthemis nobilis chamomile flower extract, spirulina maxima extract, hypnea musciformis extract, gellidiela acerosa extract, sargassum filipendula extract, cetrimonium chloride, phenoxyethanol, ethylhexylglycerin, tetrasodium edta, fragrance",
+      "description": "Top-ranked in my gel tests, this lightweight gel doesn't need a lot to hold your hair in place without a producty feel. - Melissa",
+      "buy_links": [
+        {
+          "url": "https://moptophair.com/collections/frontpage/products/moptop-salon-medium-hold-gel?p=sTl3ANN0L",
+          "retailer": "Moptop"
+        },
+        {
+          "url": "https://amzn.to/4nGOyc8",
+          "retailer": "Amazon"
+        }
+      ]
+    },
+    {
+      "name": "Curly Hair Cream",
+      "brand": "Moptop",
+      "product_categories": ["creams"],
+      "tags": ["curly", "coily", "wavy"],
+      "ingredients_raw": "water aqua, cetearyl alcohol, glyceryl stearate, propanediol, aloe barbadensis leaf juice, hydrogenated vegetable oil, peg-100 stearate, isopropyl palmitate, pvp, glycerin, caprylic capric triglyceride, glycereth-26, butyrospermum parkii shea butter, vp va copolymer, pectin, hydroxypropyltrimonium honey, coconut alkanes, polyquaternium-55, sodium polyitaconate, triethyl citrate, zea mays corn starch, sodium polyacrylate starch, hypnea musciformis extract, gelidiella acerosa extract, sargassum filipendula extract, sodium lactate, coco-caprylate caprate, ceteareth-20, acrylates beheneth-25 methacrylate copolymer, polyacrylate crosspolymer-6, cellulose, disodium edta, fragrance, phenoxyethanol, benzyl alcohol, aminomethyl propanol",
+      "description": "I use this under gel when my hair feels dry and it makes it feel soft and hydrated. It's light enough for wavy or fine hair! - Melissa",
+      "buy_links": [
+        {
+          "url": "https://moptophair.com/collections/frontpage/products/curly-hair-cream?p=sTl3ANN0L",
+          "retailer": "Moptop"
+        },
+        {
+          "url": "https://amzn.to/4wG1rqZ",
+          "retailer": "Amazon"
+        }
+      ]
+    },
+    {
+      "name": "Curl Enhancer Gel",
+      "brand": "Moptop",
+      "product_categories": ["gels"],
+      "tags": ["curly", "coily"],
+      "ingredients_raw": "water, aloe barbadensis leaf extract, polyacrylate-2 crosspolymer, maltodextrin vp copolymer, hydroxyethylcellulose, hydroxypropyltrimonium honey, laminaria saccharina algae extract, fucus vesiculosus bladderwrack extract, arnica montana flower extract, urtica dioica nettle extract, chamomilla recutita matricaria flower extract, silk amino acids, glycerin, sodium hydroxide, polyquaternium-10, ethylhexylglycerin, polysorbate-20, panthenol, phytic acid, phenoxyethanol, fragrance",
+      "description": "This gel has a very soft hold perfect for lightly defined voluminous curls/coils- Melissa",
+      "buy_links": [
+        {
+          "url": "https://moptophair.com/collections/frontpage/products/moptop-curl-enhancer-gel?p=sTl3ANN0L",
+          "retailer": "Moptop"
+        },
+        {
+          "url": "https://amzn.to/4dGzs1J",
+          "retailer": "Amazon"
+        }
+      ]
+    }
+  ] }
