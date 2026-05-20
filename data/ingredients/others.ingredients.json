@@ -551,7 +551,7 @@
     {
       "name": "Phenylalanine",
       "id": "phenylalanine",
-      "categories": ["proteins"]
+      "categories": ["amino_acids"]
     },
     {
       "name": "Potassium aspartate",
@@ -1222,13 +1222,13 @@
       "name": "Salvia hispanica chia seed extract",
       "id": "salvia_hispanica_chia_seed_extract",
       "synonyms": ["chia seed extract"],
-      "categories": ["film_forming_humectants"],
-      "description": "Chia seed extract"
+      "categories": ["proteins"],
+      "description": "This can refer either to a gel made from chia seeds, or to chia seed proteins"
     },
     {
       "name": "Creatine",
       "id": "creatine",
-      "categories": ["proteins"]
+      "categories": ["amino_acids"]
     },
     {
       "name": "Hydroxypropylammonium Gluconate",
