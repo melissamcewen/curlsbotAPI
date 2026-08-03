@@ -2040,6 +2040,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "curly",
         "coily",
         "high_porosity",
+        "premium",
         "protein"
       ],
       "ingredients_raw": "water aqua eau, cetearyl alcohol, decyl glucoside, hydroxypropyl starch phosphate, behentrimonium chloride, ceteareth-20, orchis mascula flower extract, butyrospermum parkii shea butter extract, cocos nucifera coconut oil, sclerocarya birrea seed oil, prunus amygdalus dulcis sweet almond fruit extract, hydrolyzed soy protein, glycine soja soybean oil, isopropyl alcohol, citric acid, tetrasodium edta, glycerin, lecithin, propylene glycol, magnesium chloride, magnesium nitrate, methylchloroisothiazolinone, methylisothiazolinone, dmdm hydantoin, limonene, coumarin, linalool, alpha-isomethyl ionone, fragrance parfum",
@@ -3235,6 +3236,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "curly",
         "coily",
         "high_porosity",
+        "premium",
         "protein-free"
       ],
       "ingredients_raw": "water, aqua, eau, cetearyl alcohol, glycerin, behentrimonium chloride, glycine soja soybean oil, polyquaternium-7, stearyl alcohol, neopentyl glycol diheptanoate, isododecane, butyrospermum parkii shea butter, panthenol, ricinus communis castor seed oil, persea gratissima avocado oil, salvia hispanica chia seed, honey, juglans regia walnut shell powder, urtica dioica nettle extract, tocopheryl acetate, hydroxyethylcellulose, potassium sorbate, phenoxyethanol, ethylhexylglycerin, fragrance parfum, geraniol",
@@ -4222,7 +4224,7 @@ export const defaultProductDatabase: ProductDatabase = {
       "brand": "Not Your Mothers",
       "buy_links": [
         {
-          "url": "https://amzn.to/4d6GHPU",
+          "url": "https://amzn.to/458QCRI",
           "retailer": "Amazon"
         }
       ],
@@ -4442,7 +4444,7 @@ export const defaultProductDatabase: ProductDatabase = {
       "brand": "Not Your Mothers",
       "buy_links": [
         {
-          "url": "https://amzn.to/4d0rEH7",
+          "url": "https://amzn.to/458QCRI",
           "retailer": "Amazon"
         }
       ],
@@ -4776,6 +4778,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "wavy",
         "curly",
         "coily",
+        "premium",
         "protein",
         "glycerin-free"
       ],
@@ -7948,7 +7951,7 @@ export const defaultProductDatabase: ProductDatabase = {
       "brand": "Pattern Beauty",
       "buy_links": [
         {
-          "url": "https://amzn.to/4t4OvZT",
+          "url": "https://www.amazon.com/dp/B0DKPGLGKK?ref=t_ac_spc_accepted_tile&linkCode=tr1&tag=trevresa-20&linkId=B0DKPGLGKK_1785779489403",
           "retailer": "Amazon"
         },
         {
@@ -7965,6 +7968,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "curly",
         "coily",
         "low_porosity",
+        "premium",
         "protein-free"
       ],
       "ingredients_raw": "water aqua eau, polyquaternium-11, pvp, cocamidopropyl betaine, althaea officinalis root extract, glycerin, ricinus communis castor seed oil, argania spinosa kernel oil, caprylic capric triglyceride, biotin, polyglyceryl-4 caprate, polyglyceryl-6 caprylate, sodium chloride, c12-18 acid triglyceride, cocamidopropyl dimethylamine, sodium glycolate, sodium benzoate, benzyl alcohol, ethylhexylglycerin, fragrance parfum, benzyl benzoate, hexyl cinnamal, amyl cinnamal, hydroxycitronellal, linalool, citronellol, limonene, coumarin, geraniol",
@@ -8248,7 +8252,7 @@ export const defaultProductDatabase: ProductDatabase = {
       "brand": "Ethique",
       "buy_links": [
         {
-          "url": "https://amzn.to/3Z3iMuo",
+          "url": "https://www.amazon.com/dp/B0DKPGLGKK?ref=t_ac_spc_accepted_tile&linkCode=tr1&tag=trevresa-20&linkId=B0DKPGLGKK_1785779489403",
           "retailer": "Amazon"
         },
         {
@@ -8264,6 +8268,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "wavy",
         "curly",
         "coily",
+        "premium",
         "protein-free",
         "glycerin-free"
       ],
@@ -8320,7 +8325,7 @@ export const defaultProductDatabase: ProductDatabase = {
       "brand": "Ethique",
       "buy_links": [
         {
-          "url": "https://amzn.to/3NUDnP7",
+          "url": "https://www.amazon.com/dp/B0DKPH32TN?ref=t_ac_spc_accepted_tile&linkCode=tr1&tag=trevresa-20&linkId=B0DKPH32TN_1785779377967",
           "retailer": "Amazon"
         },
         {
@@ -8337,6 +8342,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "curly",
         "coily",
         "high_porosity",
+        "premium",
         "protein-free",
         "glycerin-free"
       ],
@@ -8498,7 +8504,7 @@ export const defaultProductDatabase: ProductDatabase = {
       "brand": "Marc Anthony",
       "buy_links": [
         {
-          "url": "https://amzn.to/46jBXnA",
+          "url": "https://www.amazon.com/dp/B003BMM336?ref=t_ac_spc_accepted_tile&linkCode=tr1&tag=trevresa-20&linkId=B003BMM336_1785779404898",
           "retailer": "Amazon"
         },
         {
@@ -8514,6 +8520,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "curly",
         "coily",
         "high_porosity",
+        "premium",
         "protein-free"
       ],
       "ingredients_raw": "water aqua eau, cetyl alcohol, behentrimonium chloride, paraffinum liquidum, dimethicone, petrolatum, cetearyl alcohol, stearyl alcohol, cyclopentasiloxane, glycerin, persea gratissima avocado oil, butyrospermum parkii shea butter, glycine soja soybean oil, panthenol vitamin - b5, tocopheryl acetate vitamine, citric acid, cellulose, hydroxyethylcellulose, cetrimonium chloride, sodium acetate, tetrasodium edta, isopropyl alcohol, dmdm hydantoin, fragrance parfum, yellow 5 ci 19140, linalool, citral, benzyl benzoate, hexyl cinnamal, limonene",
@@ -9017,6 +9024,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "wavy",
         "curly",
         "coily",
+        "premium",
         "protein"
       ],
       "cost": 3,
@@ -9025,6 +9033,10 @@ export const defaultProductDatabase: ProductDatabase = {
         {
           "url": "https://click.linksynergy.com/link?id=9QcV0uNyab0&offerid=929395.3842993508&type=2&murl=https%3a%2f%2fwww.ouidad.com%2fproducts%2fadvanced-climate-control-heat-and-humidity-gel%3fvariant%3d42617150865666",
           "retailer": "Ouidad"
+        },
+        {
+          "url": "https://amzn.to/458QCRI",
+          "retailer": "Amazon"
         }
       ],
       "id": "ouidad_advanced_climate_control_heat_&_humidity_gel",
@@ -9635,6 +9647,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "coily",
         "high_porosity",
         "heat_protectant",
+        "premium",
         "protein-free",
         "glycerin-free"
       ],
@@ -9835,6 +9848,528 @@ export const defaultProductDatabase: ProductDatabase = {
         }
       }
     },
+    "rizos_6-in-1_styling_cream": {
+      "name": "6-in-1 Styling Cream",
+      "brand": "Rizos",
+      "buy_links": [
+        {
+          "url": "https://amzn.to/3TAnFM3",
+          "retailer": "Amazon"
+        }
+      ],
+      "product_categories": [
+        "creams"
+      ],
+      "tags": [
+        "samples",
+        "curly",
+        "coily",
+        "low_porosity",
+        "protein"
+      ],
+      "ingredients_raw": "water aqua eau, glycerin, cetearyl alcohol, pvp, stearyl alcohol, cetyl alcohol, mangifera indica mango seed butter, coconut alkanes, behentrimonium methosulfate, maltodextrin, polyurethane-14, carthamus tinctorius safflower seed oil, maltodextrin vp copolymer, amp-acrylates copolymer, panthenol pro-vitamin b5, hydroxypropyl guar hydroxypropyltrimonium chloride, betaine, coco caprylate caprate, helianthus annuus sunflower seed extract, tetrasodium glutamate diacetate, tocopherol, lactic acid aha, serine, alanine, glycine, hylocereus undatus fruit dragon fruit extract, litchi chinensis fruit lychee extract, prunus persica peach fruit extract, fragrance parfum, zea mays corn oil, phenoxyethanol, polyquaternium-113, hydrolyzed pea protein, hydrolyzed vegetable protein, glutamic acid, leuconostoc radish root ferment filtrate, c9-12 alkane, lysine hcl, threonine, arginine, beta-carotene, hydrolyzed hyaluronic acid, squalane, isobutyl acetate, camellia sinensis leaf extract, glucose, potassium sorbate, argania spinosa kernel oil, citrullus lanatus watermelon seed oil, proline, sodium benzoate, sodium hyaluronate, ascorbyl palmitate, coco caprylate caprate, malic acid, aminomethyl propanol, tocopheryl acetate, ethylhexylglycerin, sodium pca, citric acid, sodium lactate, isopentyldiol, rosa centifolia flower water, pca, sucrose, sodium chloride, sodium metabisulfite, sodium dehydroacetate",
+      "description": "This product isn't just any cream - it offers hold and heat protection. In my experience it's also not super heavy so it's a great option for those who want a lighter cream.",
+      "id": "rizos_6-in-1_styling_cream",
+      "systems_excluded": [],
+      "status": "ok",
+      "extensions": {
+        "frizzbot": {
+          "simple_humectants_number": 10,
+          "film_forming_humectants_number": 10,
+          "emollients_number": 14,
+          "simple_humectants": [
+            "Glycerin",
+            "Panthenol",
+            "Lactic Acid",
+            "Hyaluronic Acid",
+            "Glucose",
+            "Sodium hyaluronate",
+            "Ethylhexylglycerin",
+            "Sodium PCA",
+            "Sodium Lactate",
+            "PCA"
+          ],
+          "film_forming_humectants": [
+            "Sodium Glutamate",
+            "Serine",
+            "Alanine",
+            "Glycine",
+            "Unknown Protein",
+            "Unknown Protein",
+            "Glutamic Acid",
+            "Lysine",
+            "Arginine",
+            "Proline"
+          ],
+          "emollients": [
+            "Cetearyl Alcohol",
+            "Polyvinylpyrrolidone",
+            "Stearyl Alcohol",
+            "Cetyl Alcohol",
+            "Mangifera indica mango seed butter",
+            "Behentrimonium Methosulfate",
+            "Safflower Oil",
+            "Maltodextrin VP Copolymer",
+            "Acrylates Copolymer",
+            "Guar Hydroxypropyltrimonium Chloride",
+            "Corn Oil",
+            "Unknown Polyquat",
+            "Squalane",
+            "Argan Oil"
+          ],
+          "score": -64
+        },
+        "porosity": {
+          "high": 100,
+          "low": 50
+        },
+        "sebderm": {
+          "hasTriggers": true,
+          "triggers": [
+            {
+              "id": "cetearyl_alcohol",
+              "name": "Cetearyl Alcohol",
+              "reason": "This specific fatty alcohol can feed Malassezia yeast"
+            },
+            {
+              "id": "mangifera_indica_mango_seed_butter",
+              "name": "Mangifera indica mango seed butter",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            },
+            {
+              "id": "safflower_oil",
+              "name": "Safflower Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            },
+            {
+              "id": "serine",
+              "name": "Serine",
+              "reason": "Amino acids can be metabolized by Malassezia, potentially worsening symptoms"
+            },
+            {
+              "id": "alanine",
+              "name": "Alanine",
+              "reason": "Amino acids can be metabolized by Malassezia, potentially worsening symptoms"
+            },
+            {
+              "id": "glycine",
+              "name": "Glycine",
+              "reason": "Amino acids can be metabolized by Malassezia, potentially worsening symptoms"
+            },
+            {
+              "id": "corn_oil",
+              "name": "Corn Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            },
+            {
+              "id": "glutamic_acid",
+              "name": "Glutamic Acid",
+              "reason": "Amino acids can be metabolized by Malassezia, potentially worsening symptoms"
+            },
+            {
+              "id": "lysine",
+              "name": "Lysine",
+              "reason": "Amino acids can be metabolized by Malassezia, potentially worsening symptoms"
+            },
+            {
+              "id": "arginine",
+              "name": "Arginine",
+              "reason": "Amino acids can be metabolized by Malassezia, potentially worsening symptoms"
+            },
+            {
+              "id": "argan_oil",
+              "name": "Argan Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            },
+            {
+              "id": "proline",
+              "name": "Proline",
+              "reason": "Amino acids can be metabolized by Malassezia, potentially worsening symptoms"
+            }
+          ]
+        },
+        "autoTagger": {
+          "tags": [
+            "protein"
+          ]
+        }
+      }
+    },
+    "olaplex_olaplex_nº.5_curl_bond_shaper™_hydrating_curl_conditioner": {
+      "name": "OLAPLEX Nº.5 Curl Bond Shaper™ Hydrating Curl Conditioner",
+      "brand": "OLAPLEX",
+      "buy_links": [
+        {
+          "url": "https://amzn.to/3TvWPEQ",
+          "retailer": "Amazon"
+        }
+      ],
+      "product_categories": [
+        "conditioners"
+      ],
+      "tags": [
+        "samples",
+        "wavy",
+        "curly",
+        "coily",
+        "premium",
+        "protein"
+      ],
+      "ingredients_raw": "aqua, water, eau, cetearyl alcohol, glycerin, behentrimonium methosulfate, c13-15 alkane, brassicamidopropyl dimethylamine, hydrogenated ethylhexyl olivate, cetyl esters, hydrogenated rapeseed oil, polyquaternium-37, cetrimonium chloride, hydroxypropyl bis-hydroxyethyldimonium chloride, polyester-37, sh-oligopeptide-281 sp, carthamus tinctorius safflower oleosomes, panthenol, polyquaternium-10, quaternium-87, salvia hispanica seed extract, ilex paraguariensis leaf extract, crambe abyssinica seed oil, linum usitatissimum linseed seed extract, hydroxypropyltrimonium hyaluronate, helianthus annuus sunflower seed oil, persea gratissima avocado oil, carthamus tinctorius safflower seed oil, helianthus annuus sunflower seed wax, jojoba esters, tocopherol, pentylene glycol, hydrogenated olive oil unsaponifiables, acacia senegal gum, propanediol, ethyl linoleate, ethyl oleate, caprylic acid, xylitol, lactic acid, guar hydroxypropyltrimonium chloride, sorbitan oleate decylglucoside crosspolymer, hydroxypropylcellulose, ethylhexylglycerin, polyglycerin-3, styrene butadiene copolymer, propylene glycol, phenethyl alcohol, pentaerythrityl tetra-di-t-butyl hydroxyhydrocinnamate, parfum fragrance, phenoxyethanol, chlorphenesin, sodium chloride, citric acid, gluconolactone, sodium benzoate, benzyl alcohol, potassium sorbate, sodium hydroxide, citral, citrus aurantium peel oil, hexyl cinnamal, limonene, menthol",
+      "description": "This differs from Olaplex's regular conditioner by being richer for easier detangling and containing Olaplex's Curl Bond Shaper™ technology that targets the bonds that make your curls more defined - Melissa.",
+      "id": "olaplex_olaplex_nº.5_curl_bond_shaper™_hydrating_curl_conditioner",
+      "systems_excluded": [],
+      "status": "warning",
+      "extensions": {
+        "frizzbot": {
+          "simple_humectants_number": 8,
+          "film_forming_humectants_number": 2,
+          "emollients_number": 13,
+          "simple_humectants": [
+            "Glycerin",
+            "Panthenol",
+            "Propanediol",
+            "Xylitol",
+            "Lactic Acid",
+            "Ethylhexylglycerin",
+            "Glycerin",
+            "Propylene Glycol"
+          ],
+          "film_forming_humectants": [
+            "Peptide",
+            "Flaxseed Extract"
+          ],
+          "emollients": [
+            "Cetearyl Alcohol",
+            "Behentrimonium Methosulfate",
+            "Unknown Polyquat",
+            "Cetrimonium Chloride",
+            "Unknown Polyquat",
+            "Sunflower Oil",
+            "Avocado Oil",
+            "Safflower Oil",
+            "Unknown Wax",
+            "Olive Oil",
+            "Guar Hydroxypropyltrimonium Chloride",
+            "Copolymer",
+            "Benzyl Alcohol"
+          ],
+          "score": -57
+        },
+        "porosity": {
+          "high": 100,
+          "low": 9
+        },
+        "sebderm": {
+          "hasTriggers": true,
+          "triggers": [
+            {
+              "id": "cetearyl_alcohol",
+              "name": "Cetearyl Alcohol",
+              "reason": "This specific fatty alcohol can feed Malassezia yeast"
+            },
+            {
+              "id": "cetyl_esters",
+              "name": "Cetyl Esters",
+              "reason": "Esters can feed Malassezia yeast"
+            },
+            {
+              "id": "unknown_ester",
+              "name": "Unknown Ester",
+              "reason": "Esters can feed Malassezia yeast"
+            },
+            {
+              "id": "sunflower_oil",
+              "name": "Sunflower Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            },
+            {
+              "id": "avocado_oil",
+              "name": "Avocado Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            },
+            {
+              "id": "safflower_oil",
+              "name": "Safflower Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            },
+            {
+              "id": "unknown_wax",
+              "name": "Unknown Wax",
+              "reason": "Can create a barrier that traps moisture and heat, promoting yeast growth"
+            },
+            {
+              "id": "jojoba_esters",
+              "name": "Jojoba Esters",
+              "reason": "Esters can feed Malassezia yeast"
+            },
+            {
+              "id": "olive_oil",
+              "name": "Olive Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            }
+          ]
+        },
+        "autoTagger": {
+          "tags": [
+            "protein"
+          ]
+        }
+      }
+    },
+    "olaplex_olaplex_nº.4_curl_bond_shaper™_hydrating_curl_shampoo": {
+      "name": "OLAPLEX Nº.4 Curl Bond Shaper™ Hydrating Curl Shampoo",
+      "brand": "OLAPLEX",
+      "buy_links": [
+        {
+          "url": "https://amzn.to/4w2L9XG",
+          "retailer": "Amazon"
+        }
+      ],
+      "product_categories": [
+        "shampoos"
+      ],
+      "tags": [
+        "samples",
+        "wavy",
+        "curly",
+        "coily",
+        "low_porosity",
+        "premium",
+        "protein"
+      ],
+      "ingredients_raw": "aqua, water, eau, sodium cocoyl isethionate, cocamidopropyl betaine, sodium c14-16 olefin sulfonate, cocamidopropylamine oxide, decyl glucoside, acrylates copolymer, sh-oligopeptide-281 sp, carthamus tinctorius safflower oleosomes, panthenol, polyquaternium-11, polyquaternium-7, salvia hispanica seed extract, ilex paraguariensis leaf extract, crambe abyssinica seed oil, linum usitatissimum linseed seed extract, hydroxypropyltrimonium hyaluronate, helianthus annuus sunflower seed oil, persea gratissima avocado oil, helianthus annuus sunflower seed wax, menthyl lactate, jojoba esters, tocopherol, pentylene glycol, acacia senegal gum, menthol, glycerin, glycol distearate, polyester-37, propanediol, caprylyl glycol, ethyl linoleate, ethyl oleate, caprylic acid, xylitol, lactic acid, hydroxypropyl bis-hydroxyethyldimonium chloride, guar hydroxypropyltrimonium chloride, acrylamidopropyltrimonium chloride acrylamide copolymer, sorbitan oleate decylglucoside crosspolymer, hydroxypropylcellulose, ethylhexylglycerin, polyglycerin-3, propylene glycol, phenethyl alcohol, pentaerythrityl tetra-di-t-butyl hydroxyhydrocinnamate, gluconolactone, sodium metabisulfite, trisodium ethylenediamine disuccinate, parfum fragrance, phenoxyethanol, chlorphenesin, sodium chloride, citric acid, sodium benzoate, benzyl alcohol, potassium sorbate, sodium hydroxide, citral, citrus aurantium peel oil, hexyl cinnamal, limonene",
+      "description": "Different from Olaplex's regular shampoo by offering more slip/conditioning to prevent tangles, a gentler cleanse, and containing Olaplex's Curl Bond Shaper™ technology - Melissa.",
+      "id": "olaplex_olaplex_nº.4_curl_bond_shaper™_hydrating_curl_shampoo",
+      "systems_excluded": [],
+      "status": "warning",
+      "extensions": {
+        "frizzbot": {
+          "simple_humectants_number": 9,
+          "film_forming_humectants_number": 2,
+          "emollients_number": 9,
+          "simple_humectants": [
+            "Panthenol",
+            "Glycerin",
+            "Propanediol",
+            "Caprylyl Glycol",
+            "Xylitol",
+            "Lactic Acid",
+            "Ethylhexylglycerin",
+            "Glycerin",
+            "Propylene Glycol"
+          ],
+          "film_forming_humectants": [
+            "Peptide",
+            "Flaxseed Extract"
+          ],
+          "emollients": [
+            "Acrylates Copolymer",
+            "Unknown Polyquat",
+            "Unknown Polyquat",
+            "Sunflower Oil",
+            "Avocado Oil",
+            "Unknown Wax",
+            "Guar Hydroxypropyltrimonium Chloride",
+            "Copolymer",
+            "Benzyl Alcohol"
+          ],
+          "score": -59
+        },
+        "porosity": {
+          "high": 100,
+          "low": 58
+        },
+        "sebderm": {
+          "hasTriggers": true,
+          "triggers": [
+            {
+              "id": "sunflower_oil",
+              "name": "Sunflower Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            },
+            {
+              "id": "avocado_oil",
+              "name": "Avocado Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            },
+            {
+              "id": "unknown_wax",
+              "name": "Unknown Wax",
+              "reason": "Can create a barrier that traps moisture and heat, promoting yeast growth"
+            },
+            {
+              "id": "jojoba_esters",
+              "name": "Jojoba Esters",
+              "reason": "Esters can feed Malassezia yeast"
+            },
+            {
+              "id": "unknown_ester",
+              "name": "Unknown Ester",
+              "reason": "Esters can feed Malassezia yeast"
+            }
+          ]
+        },
+        "autoTagger": {
+          "tags": [
+            "protein"
+          ]
+        }
+      }
+    },
+    "rahua_rahua_classic_conditioner": {
+      "name": "Rahua Classic Conditioner",
+      "brand": "Rahua",
+      "buy_links": [
+        {
+          "url": "https://amzn.to/4gdjyxd",
+          "retailer": "Amazon"
+        }
+      ],
+      "product_categories": [
+        "conditioners"
+      ],
+      "tags": [
+        "samples",
+        "curly",
+        "coily",
+        "wavy",
+        "premium",
+        "protein"
+      ],
+      "ingredients_raw": "water aqua eau, aloe barbadensis leaf extract, oenocarpus bataua ungurahua fruit oil, behentrimonium methosulfate, cetearyl alcohol, glycerin, stearalkonium chloride, butyrospermum parkii shea butter, saccharum officinarum sugar cane extract, bursera graveolens palo santo wood oil, hydrolyzed quinoa, simmondsia chinensis jojoba seed oil, rosmarinus officinalis rosemary leaf extract, camellia sinensis green tea leaf extract, rubus idaeus raspberry leaf extract, helianthus annuus sunflower seed oil, capryloyl glycine, panthenol, potassium sorbate",
+      "description": "Do you like to leave some of your conditioner in your hair? This is formulated to be safe to leave in. I found it to be medium-weight, appropriate for dry-feeling waves and any curls/coils - Melissa",
+      "id": "rahua_rahua_classic_conditioner",
+      "systems_excluded": [],
+      "status": "ok",
+      "extensions": {
+        "frizzbot": {
+          "simple_humectants_number": 2,
+          "film_forming_humectants_number": 3,
+          "emollients_number": 5,
+          "simple_humectants": [
+            "Glycerin",
+            "Panthenol"
+          ],
+          "film_forming_humectants": [
+            "Aloe Barbadensis Leaf Extract",
+            "Hydrolyzed Quinoa",
+            "Glycine"
+          ],
+          "emollients": [
+            "Behentrimonium Methosulfate",
+            "Cetearyl Alcohol",
+            "Butyrospermum Parkii Shea Butter",
+            "Jojoba Oil",
+            "Sunflower Oil"
+          ],
+          "score": -81
+        },
+        "porosity": {
+          "high": 100,
+          "low": 0
+        },
+        "sebderm": {
+          "hasTriggers": true,
+          "triggers": [
+            {
+              "id": "cetearyl_alcohol",
+              "name": "Cetearyl Alcohol",
+              "reason": "This specific fatty alcohol can feed Malassezia yeast"
+            },
+            {
+              "id": "butyrospermum_parkii_shea_butter",
+              "name": "Butyrospermum Parkii Shea Butter",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            },
+            {
+              "id": "jojoba_oil",
+              "name": "Jojoba Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            },
+            {
+              "id": "sunflower_oil",
+              "name": "Sunflower Oil",
+              "reason": "Contains fatty acids that can feed Malassezia yeast"
+            },
+            {
+              "id": "glycine",
+              "name": "Glycine",
+              "reason": "Amino acids can be metabolized by Malassezia, potentially worsening symptoms"
+            }
+          ]
+        },
+        "autoTagger": {
+          "tags": [
+            "protein"
+          ]
+        }
+      }
+    },
+    "rahua_rahua_classic_shampoo": {
+      "name": "Rahua Classic Shampoo",
+      "brand": "Rahua",
+      "buy_links": [
+        {
+          "url": "https://amzn.to/4fMpNHR",
+          "retailer": "Amazon"
+        }
+      ],
+      "product_categories": [
+        "shampoos"
+      ],
+      "tags": [
+        "samples",
+        "wavy",
+        "curly",
+        "coily",
+        "low_porosity",
+        "premium",
+        "protein"
+      ],
+      "ingredients_raw": "water aqua eau, sodium c14-16 olefin sulfonate, cocamidopropyl betaine, sodium chloride sea salt, glycerin, saccharum officinarum sugar cane extract, oenocarpus bataua ungurahua fruit oil, bursera graveolens palo santo wood oil, aloe barbadensis leaf extract, camellia sinensis green tea leaf extract, rosmarinus officinalis rosemary leaf extract, rubus idaeus raspberry leaf extract, hydrolyzed quinoa, capryloyl glycine, caprylic acid, panthenol, citric acid, potassium sorbate",
+      "description": "A great medium-weight shampoo that provides a good cleanse without stripping the hair and enough slip to prevent tangles - Melissa",
+      "id": "rahua_rahua_classic_shampoo",
+      "systems_excluded": [],
+      "status": "ok",
+      "extensions": {
+        "frizzbot": {
+          "simple_humectants_number": 2,
+          "film_forming_humectants_number": 3,
+          "emollients_number": 0,
+          "simple_humectants": [
+            "Glycerin",
+            "Panthenol"
+          ],
+          "film_forming_humectants": [
+            "Aloe Barbadensis Leaf Extract",
+            "Hydrolyzed Quinoa",
+            "Glycine"
+          ],
+          "emollients": [],
+          "score": -65
+        },
+        "porosity": {
+          "high": 60,
+          "low": 100
+        },
+        "sebderm": {
+          "hasTriggers": true,
+          "triggers": [
+            {
+              "id": "glycine",
+              "name": "Glycine",
+              "reason": "Amino acids can be metabolized by Malassezia, potentially worsening symptoms"
+            }
+          ]
+        },
+        "autoTagger": {
+          "tags": [
+            "protein"
+          ]
+        }
+      }
+    },
     "curlsmith_curl_quenching_conditioning_wash": {
       "name": "Curl Quenching Conditioning Wash",
       "brand": "Curlsmith",
@@ -9977,7 +10512,6 @@ export const defaultProductDatabase: ProductDatabase = {
         "coily",
         "low_porosity",
         "bonding",
-        "premium",
         "protein"
       ],
       "cost": 3.75,
@@ -11627,6 +12161,7 @@ export const defaultProductDatabase: ProductDatabase = {
       "tags": [
         "curly",
         "coily",
+        "premium",
         "protein"
       ],
       "ingredients_raw": "water, aloe barbadensis leaf extract, polyacrylate-2 crosspolymer, maltodextrin vp copolymer, hydroxyethylcellulose, hydroxypropyltrimonium honey, laminaria saccharina algae extract, fucus vesiculosus bladderwrack extract, arnica montana flower extract, urtica dioica nettle extract, chamomilla recutita matricaria flower extract, silk amino acids, glycerin, sodium hydroxide, polyquaternium-10, ethylhexylglycerin, polysorbate-20, panthenol, phytic acid, phenoxyethanol, fragrance",
@@ -11784,6 +12319,7 @@ export const defaultProductDatabase: ProductDatabase = {
         "curly",
         "coily",
         "low_porosity",
+        "premium",
         "protein",
         "glycerin-free"
       ],

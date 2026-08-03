@@ -25,7 +25,7 @@
         }
       ],
       "product_categories": ["cowashes"],
-      "tags": ["samples", "curly", "coily", "high_porosity"],
+      "tags": ["samples", "curly", "coily", "high_porosity", "premium"],
       "ingredients_raw": "water aqua eau, cetearyl alcohol, decyl glucoside, hydroxypropyl starch phosphate, behentrimonium chloride, ceteareth-20, orchis mascula flower extract, butyrospermum parkii shea butter extract, cocos nucifera coconut oil, sclerocarya birrea seed oil, prunus amygdalus dulcis sweet almond fruit extract, hydrolyzed soy protein, glycine soja soybean oil, isopropyl alcohol, citric acid, tetrasodium edta, glycerin, lecithin, propylene glycol, magnesium chloride, magnesium nitrate, methylchloroisothiazolinone, methylisothiazolinone, dmdm hydantoin, limonene, coumarin, linalool, alpha-isomethyl ionone, fragrance parfum",
       "description": "A color-safe, no-lather cleanser that gently cleanses and hydrates all curl types for soft, strong, frizz-free curls"
     },
@@ -222,7 +222,7 @@
         }
       ],
       "product_categories": ["deep_conditioners"],
-      "tags": ["samples", "wavy", "curly", "coily", "high_porosity"],
+      "tags": ["samples", "wavy", "curly", "coily", "high_porosity", "premium"],
       "ingredients_raw": "water, aqua, eau, cetearyl alcohol, glycerin, behentrimonium chloride, glycine soja soybean oil, polyquaternium-7, stearyl alcohol, neopentyl glycol diheptanoate, isododecane, butyrospermum parkii shea butter, panthenol, ricinus communis castor seed oil, persea gratissima avocado oil, salvia hispanica chia seed, honey, juglans regia walnut shell powder, urtica dioica nettle extract, tocopheryl acetate, hydroxyethylcellulose, potassium sorbate, phenoxyethanol, ethylhexylglycerin, fragrance parfum, geraniol",
       "description": "A rich mask that smoothes and softens curls without weighing them down"
     },
@@ -362,7 +362,7 @@
       "brand": "Not Your Mothers",
       "buy_links": [
         {
-          "url": "https://amzn.to/4d6GHPU",
+          "url": "https://amzn.to/458QCRI",
           "retailer": "Amazon"
         }
       ],
@@ -411,7 +411,7 @@
       "brand": "Not Your Mothers",
       "buy_links": [
         {
-          "url": "https://amzn.to/4d0rEH7",
+          "url": "https://amzn.to/458QCRI",
           "retailer": "Amazon"
         }
       ],
@@ -483,7 +483,7 @@
         }
       ],
       "product_categories": ["gels"],
-      "tags": ["samples", "wavy", "curly", "coily"],
+      "tags": ["samples", "wavy", "curly", "coily", "premium"],
       "ingredients_raw": "water, aloe barbadensis aloe vera leaf juice, propylene glycol, lactobacillus tomato fruit ferment extract, oryza sativa rice extract, keratin amino acids, acyl coenzyme a desaturase, cetrimonium chloride, hydroxyethyl cellulose, cocos nucifera coconut water, vitis vinifera grape seed extract, polyquaternium-10, juniperus communis juniper berry fruit extract, polysorbate-20, salvia officinalis sage leaf extract, fragrance, phenoxyethanol, sorbic acid, caprylyl glycol",
       "description": "Lightweight styling serum that enhances curl definition and elasticity with flexible hold, while hydrating and smoothing"
     },
@@ -847,7 +847,15 @@
         }
       ],
       "product_categories": ["shampoos"],
-      "tags": ["samples", "wavy", "curly", "coily", "premium", "spc", "premium"],
+      "tags": [
+        "samples",
+        "wavy",
+        "curly",
+        "coily",
+        "premium",
+        "spc",
+        "premium"
+      ],
       "ingredients_raw": "aqua, mangifera indica mango fruit extract, organic passiflora incarnate passion fruit extract, organic aloe barbadensis leaf extract, organic camellia sinensis green tea leaf extract, sodium cocoyl isethionate, coco betaine, sodium methyl cocoyl taurate, sodium cocoyl glutamate, disodium cocoyl glutamate, sodium chloride sea salt, vegetable glycerin, oenocarpus bataua rahua ungurahua oil, plukenetia volubilis sacha inchi seed oil, sucrose, hydrolyzed quinoa protein, mauritia flexuosa morete fruit oil, kaolinite rose clay, natural aroma, cymbopogon nardus citronella oil, lactic acid, hydroxyethylcellulose, glycine, coco caprylate, xanthan gum, l-argenine, potassium sorbate, guar hydroxypropyltrimonium chloride",
       "description": "Replenishes dry, thirsty hair with a medium cleanse and a touch of protein for added bounce"
     },
@@ -1040,7 +1048,15 @@
         }
       ],
       "product_categories": ["deep_conditioners"],
-      "tags": ["samples", "wavy", "curly", "coily", "high_porosity", "spc", "premium"],
+      "tags": [
+        "samples",
+        "wavy",
+        "curly",
+        "coily",
+        "high_porosity",
+        "spc",
+        "premium"
+      ],
       "ingredients_raw": "aqua, water, eau, aloe barbadensis aloe vera leaf juice, behentrimonium chloride, glycerin, limnanthes alba meadowfoam seed oil, cetearyl alcohol, theobroma cacao cocoa seed butter, butyrospermum parkii shea butter, fragrance parfum, glyceryl stearate, cetyl alcohol, tocopherol, bacopa monnieri extract, eclipta prostrata extract, curcuma longa tumeric root extract, musa sapientum banana fruit extract, withania somnifera root extract, emblica officinalis fruit extract, acer saccharum sugar maple extract, hibiscus sabdariffa flower extract, bixa orellana seed extract, aegle marmelos root extract, desmodium gangeticum root extract, gmelina arborea root extract, oroxylum indicum root extract, premna serratifolia root extract, solanum indicum root extract, solanum xanthocarpum root extract, stereospermum suaveolens root extract, tribulus terrestris root extract, saccharum officinarum sugarcane extract, trigonella foenum-graecum seed extract, vaccinium myrtillus fruit extract, uraria picta root extract, linum usitatissimum linseed seed oil, sesamum indicum sesame seed oil, melia azadirachta neem seed oil, helianthus annuus sunflower seed oil, carthamus tinctorius safflower seed oil, brassica campestris rapeseed seed oil, orbignya speciosa kernel oil, astrocaryum murumuru seed butter, mangifera indica mango seed butter, cocos nucifera coconut fruit water, hydroxyethylcellulose, guar hydroxypropyltrimonium chloride, sodium stearoyl lactylate, polyquaternium-10, leuconostoc radish root ferment filtrate, tocopheryl acetate, citrus aurantium dulcis orange fruit extract, citrus limon lemon fruit extract, ethylhexylglycerin, citric acid, isopropyl alcohol, potassium sorbate, phenoxyethanol, glycine soja soybean oil, propylene glycol, potassium hydroxide, coumarin",
       "description": "A rich and moisturizing deep treatment / hair mask that is designed to restore hydration, add shine and smooth frizz"
     },
@@ -1054,7 +1070,15 @@
         }
       ],
       "product_categories": ["treatments"],
-      "tags": ["samples", "wavy", "curly", "coily", "low_porosity", "spc", "premium"],
+      "tags": [
+        "samples",
+        "wavy",
+        "curly",
+        "coily",
+        "low_porosity",
+        "spc",
+        "premium"
+      ],
       "ingredients_raw": "sodium chloride, water aqua, glycerin, sodium cocoyl isethionate, sodium methyl cocoyl taurate, coconut acid, cocamidopropyl betaine, propanediol, glyceryl laurate, hydrolyzed quinoa, hydrolyzed rice protein, phyllanthus emblica fruit extract, melia azadirachta leaf extract, zingiber officinale ginger root extract, quillaja saponaria extract, coconut alkanes, coco-caprylate caprate, capryloyl caproyl methyl glucamide, lauroyl myristoyl methyl glucamide, panthenol, maltodextrin, fragrance parfum, phenoxyethanol, ethylhexylglycerin, potassium sorbate, sodium benzoate",
       "description": "A protein-rich exfoliating scrub to boost circulation, reduce buildup, and gently remove flakiness"
     },
@@ -1182,7 +1206,7 @@
       "brand": "Pattern Beauty",
       "buy_links": [
         {
-          "url": "https://amzn.to/4t4OvZT",
+          "url": "https://www.amazon.com/dp/B0DKPGLGKK?ref=t_ac_spc_accepted_tile&linkCode=tr1&tag=trevresa-20&linkId=B0DKPGLGKK_1785779489403",
           "retailer": "Amazon"
         },
         {
@@ -1191,7 +1215,7 @@
         }
       ],
       "product_categories": ["foams"],
-      "tags": ["samples", "wavy", "curly", "coily", "low_porosity"],
+      "tags": ["samples", "wavy", "curly", "coily", "low_porosity", "premium"],
       "ingredients_raw": "water aqua eau, polyquaternium-11, pvp, cocamidopropyl betaine, althaea officinalis root extract, glycerin, ricinus communis castor seed oil, argania spinosa kernel oil, caprylic capric triglyceride, biotin, polyglyceryl-4 caprate, polyglyceryl-6 caprylate, sodium chloride, c12-18 acid triglyceride, cocamidopropyl dimethylamine, sodium glycolate, sodium benzoate, benzyl alcohol, ethylhexylglycerin, fragrance parfum, benzyl benzoate, hexyl cinnamal, amyl cinnamal, hydroxycitronellal, linalool, citronellol, limonene, coumarin, geraniol",
       "description": "The top mousse I tried in 2025 (tied with Miche). Great moisture, slip, and hold without  being heavy."
     },
@@ -1236,7 +1260,7 @@
       "brand": "Ethique",
       "buy_links": [
         {
-          "url": "https://amzn.to/3Z3iMuo",
+          "url": "https://www.amazon.com/dp/B0DKPGLGKK?ref=t_ac_spc_accepted_tile&linkCode=tr1&tag=trevresa-20&linkId=B0DKPGLGKK_1785779489403",
           "retailer": "Amazon"
         },
         {
@@ -1245,7 +1269,7 @@
         }
       ],
       "product_categories": ["shampoos"],
-      "tags": ["samples", "wavy", "curly", "coily"],
+      "tags": ["samples", "wavy", "curly", "coily", "premium"],
       "ingredients_raw": "sodium cocoyl isethionate, stearic acid, sodium cocoyl glycinate, coconut acid, theobroma cacao cocoa seed butter, butyrospermum parkii shea butter, betaine, behentrimonium methosulfate, brassica alcohol, sodium isethionate, aqua water, lactic acid, fragrance parfum, guar hydroxypropyltrimonium chloride, glycerine, cymbopogon flexuosus lemongrass oil, benzyl alcohol, sodium chloride, dehydroacetic acid, mica, hydroxypropylgluconamide, hydroxypropylammonium gluconate, tartaric acid, potassium benzoate, sodium benzoate, citral, geraniol, linalool, titanium dioxide ci 77891, chromium oxide greens ci 77288",
       "description": "A curl-friendly hydrating bar option for your shower."
     },
@@ -1254,7 +1278,7 @@
       "brand": "Ethique",
       "buy_links": [
         {
-          "url": "https://amzn.to/3NUDnP7",
+          "url": "https://www.amazon.com/dp/B0DKPH32TN?ref=t_ac_spc_accepted_tile&linkCode=tr1&tag=trevresa-20&linkId=B0DKPH32TN_1785779377967",
           "retailer": "Amazon"
         },
         {
@@ -1263,7 +1287,7 @@
         }
       ],
       "product_categories": ["conditioners"],
-      "tags": ["samples", "wavy", "curly", "coily", "high_porosity"],
+      "tags": ["samples", "wavy", "curly", "coily", "high_porosity", "premium"],
       "ingredients_raw": "behentrimonium methosulfate, brassica alcohol, theobroma cacao cocoa seed butter, jojoba esters, butyrospermum parkii shea butter, glycerine, caprylic capric triglyceride, stearic acid, ricinus communis castor seed oil, guar hydroxypropyltrimonium chloride, fragrance parfum, sodium methyl cocoyl taurate, benzyl alcohol, cymbopogon flexuosus lemongrass oil, mica, aqua water, dehydroacetic acid, hydroxypropylgluconamide, hydroxypropylammonium gluconate, tartaric acid, potassium benzoate, sodium benzoate, citral, geraniol, linalool, titanium dioxide ci 77891, chromium oxide greens ci 77288",
       "description": "A curl-friendly hydrating conditioner bar option for your shower, make sure to use this generously to build slip"
     },
@@ -1290,7 +1314,7 @@
       "brand": "Marc Anthony",
       "buy_links": [
         {
-          "url": "https://amzn.to/46jBXnA",
+          "url": "https://www.amazon.com/dp/B003BMM336?ref=t_ac_spc_accepted_tile&linkCode=tr1&tag=trevresa-20&linkId=B003BMM336_1785779404898",
           "retailer": "Amazon"
         },
         {
@@ -1299,7 +1323,7 @@
         }
       ],
       "product_categories": ["creams"],
-      "tags": ["samples", "curly", "coily", "high_porosity"],
+      "tags": ["samples", "curly", "coily", "high_porosity", "premium"],
       "ingredients_raw": "water aqua eau, cetyl alcohol, behentrimonium chloride, paraffinum liquidum, dimethicone, petrolatum, cetearyl alcohol, stearyl alcohol, cyclopentasiloxane, glycerin, persea gratissima avocado oil, butyrospermum parkii shea butter, glycine soja soybean oil, panthenol vitamin - b5, tocopheryl acetate vitamine, citric acid, cellulose, hydroxyethylcellulose, cetrimonium chloride, sodium acetate, tetrasodium edta, isopropyl alcohol, dmdm hydantoin, fragrance parfum, yellow 5 ci 19140, linalool, citral, benzyl benzoate, hexyl cinnamal, limonene",
       "description": "A rich cream perfect for softening thick strand (coarse) hair"
     },
@@ -1391,13 +1415,17 @@
       "brand": "Ouidad",
       "ingredients_raw": "water aqua eau, butylene glycol, polyquaternium-28, sericin, chamomilla recutita matricaria flower extract, actinidia chinensis kiwi fruit extract, cassia auriculata leaf extract, wheat amino acids, hydrolyzed wheat protein pvp crosspolymer, tocopheryl acetate, retinyl palmitate, panthenol, polyquaternium-7, guar hydroxypropyltrimonium chloride, behentrimonium chloride, cetrimonium chloride, peg-60 almond glycerides, glycerin, ppg-26-buteth-26, peg-40 hydrogenated castor oil, vp dmapa acrylates copolymer, hydroxyethylcellulose, potassium sorbate, disodium edta, hexylene glycol, caprylyl glycol, ethylhexylglycerin, phenoxyethanol, parfum fragrance, alpha-lsomethyl lonone, benzyl benzoate, benzyl salicylate, citronellol, hexyl cinnamal, hydroxycitronellal, limonene, linalool",
       "product_categories": ["gels"],
-      "tags": ["samples", "wavy", "curly", "coily"],
+      "tags": ["samples", "wavy", "curly", "coily", "premium"],
       "cost": 3,
       "description": "Ouidad's best-selling gel that protects against frizz in even the most humid conditions",
       "buy_links": [
         {
           "url": "https://click.linksynergy.com/link?id=9QcV0uNyab0&offerid=929395.3842993508&type=2&murl=https%3a%2f%2fwww.ouidad.com%2fproducts%2fadvanced-climate-control-heat-and-humidity-gel%3fvariant%3d42617150865666",
           "retailer": "Ouidad"
+        },
+        {
+          "url": "https://amzn.to/458QCRI",
+          "retailer": "Amazon"
         }
       ]
     },
@@ -1523,7 +1551,8 @@
         "curly",
         "coily",
         "high_porosity",
-        "heat_protectant"
+        "heat_protectant",
+        "premium"
       ],
       "ingredients_raw": "dimethicone, c13-14 isoalkane formerly c13-14 isoparaffin, adansonia digitata seed oil, simmondsia chinensis jojoba seed oil, brassica campestris aleurites fordi oil copolymer, fragrance, isopropyl myristate, tocopheryl acetate, green 6 ci 61565",
       "description": "A shine-boosting, bond-building serum that strengthens hair, smooths the cuticle, and protects against breakage"
@@ -1554,6 +1583,76 @@
       "tags": ["samples", "wavy", "curly", "coily", "low_porosity"],
       "ingredients_raw": "caprylic capric triglyceride, coconut alkanes, coco-caprylate caprate, c13-15 alkane, emblica officinalis amla fruit extract, psoralea corylifolia bakuchi seed extract, helianthus annuus sunflower seed oil, curcuma longa turmeric root extract, ocimum basilicum basil flower leaf extract, ocimum sanctum leaf extract tulsi, aloe barbadensis flower extract, trigonella foenum-graecum fenugreek seed extract, oryza sativa rice bran extract, brassica campestris rapeseed seed oil, nigella sativa black seed seed oil, propylene glycol dibenzoate, lavandula angustifolia lavender oil, helianthus annuus sunflower extract, salvia sclarea clary oil, sesamum indicum sesame seed oil, melia azadirachta neem extract, butylene glycol, rosmarinus officinalis rosemary leaf extract, tocopherol, water aqua, melia azadirachta neem leaf extract, melia azadirachta flower extract, corallina officinalis extract, moringa oleifera seed oil, coccinia indica fruit extract, solanum melongena eggplant fruit extract, simmondsia chinensis jojoba seed oil, parfum fragrance, linalool, geraniol, limonene",
       "description": "This is a pre-poo scalp oil that will help oil-cleanse and sooth the scalp before shampooing"
+    },
+    {
+      "name": "6-in-1 Styling Cream",
+      "brand": "Rizos",
+      "buy_links": [
+        {
+          "url": "https://amzn.to/3TAnFM3",
+          "retailer": "Amazon"
+        }
+      ],
+      "product_categories": ["creams"],
+      "tags": ["samples", "curly", "coily", "low_porosity"],
+      "ingredients_raw": "water aqua eau, glycerin, cetearyl alcohol, pvp, stearyl alcohol, cetyl alcohol, mangifera indica mango seed butter, coconut alkanes, behentrimonium methosulfate, maltodextrin, polyurethane-14, carthamus tinctorius safflower seed oil, maltodextrin vp copolymer, amp-acrylates copolymer, panthenol pro-vitamin b5, hydroxypropyl guar hydroxypropyltrimonium chloride, betaine, coco caprylate caprate, helianthus annuus sunflower seed extract, tetrasodium glutamate diacetate, tocopherol, lactic acid aha, serine, alanine, glycine, hylocereus undatus fruit dragon fruit extract, litchi chinensis fruit lychee extract, prunus persica peach fruit extract, fragrance parfum, zea mays corn oil, phenoxyethanol, polyquaternium-113, hydrolyzed pea protein, hydrolyzed vegetable protein, glutamic acid, leuconostoc radish root ferment filtrate, c9-12 alkane, lysine hcl, threonine, arginine, beta-carotene, hydrolyzed hyaluronic acid, squalane, isobutyl acetate, camellia sinensis leaf extract, glucose, potassium sorbate, argania spinosa kernel oil, citrullus lanatus watermelon seed oil, proline, sodium benzoate, sodium hyaluronate, ascorbyl palmitate, coco caprylate caprate, malic acid, aminomethyl propanol, tocopheryl acetate, ethylhexylglycerin, sodium pca, citric acid, sodium lactate, isopentyldiol, rosa centifolia flower water, pca, sucrose, sodium chloride, sodium metabisulfite, sodium dehydroacetate",
+      "description": "This product isn't just any cream - it offers hold and heat protection. In my experience it's also not super heavy so it's a great option for those who want a lighter cream."
+    },
+    {
+      "name": "OLAPLEX Nº.5 Curl Bond Shaper™ Hydrating Curl Conditioner",
+      "brand": "OLAPLEX",
+      "buy_links": [
+        {
+          "url": "https://amzn.to/3TvWPEQ",
+          "retailer": "Amazon"
+        }
+      ],
+      "product_categories": ["conditioners"],
+      "tags": ["samples", "wavy", "curly", "coily", "premium"],
+      "ingredients_raw": "aqua, water, eau, cetearyl alcohol, glycerin, behentrimonium methosulfate, c13-15 alkane, brassicamidopropyl dimethylamine, hydrogenated ethylhexyl olivate, cetyl esters, hydrogenated rapeseed oil, polyquaternium-37, cetrimonium chloride, hydroxypropyl bis-hydroxyethyldimonium chloride, polyester-37, sh-oligopeptide-281 sp, carthamus tinctorius safflower oleosomes, panthenol, polyquaternium-10, quaternium-87, salvia hispanica seed extract, ilex paraguariensis leaf extract, crambe abyssinica seed oil, linum usitatissimum linseed seed extract, hydroxypropyltrimonium hyaluronate, helianthus annuus sunflower seed oil, persea gratissima avocado oil, carthamus tinctorius safflower seed oil, helianthus annuus sunflower seed wax, jojoba esters, tocopherol, pentylene glycol, hydrogenated olive oil unsaponifiables, acacia senegal gum, propanediol, ethyl linoleate, ethyl oleate, caprylic acid, xylitol, lactic acid, guar hydroxypropyltrimonium chloride, sorbitan oleate decylglucoside crosspolymer, hydroxypropylcellulose, ethylhexylglycerin, polyglycerin-3, styrene butadiene copolymer, propylene glycol, phenethyl alcohol, pentaerythrityl tetra-di-t-butyl hydroxyhydrocinnamate, parfum fragrance, phenoxyethanol, chlorphenesin, sodium chloride, citric acid, gluconolactone, sodium benzoate, benzyl alcohol, potassium sorbate, sodium hydroxide, citral, citrus aurantium peel oil, hexyl cinnamal, limonene, menthol",
+      "description": "This differs from Olaplex's regular conditioner by being richer for easier detangling and containing Olaplex's Curl Bond Shaper™ technology that targets the bonds that make your curls more defined - Melissa."
+    },
+    {
+      "name": "OLAPLEX Nº.4 Curl Bond Shaper™ Hydrating Curl Shampoo",
+      "brand": "OLAPLEX",
+      "buy_links": [
+        {
+          "url": "https://amzn.to/4w2L9XG",
+          "retailer": "Amazon"
+        }
+      ],
+      "product_categories": ["shampoos"],
+      "tags": ["samples", "wavy", "curly", "coily", "low_porosity", "premium"],
+      "ingredients_raw": "aqua, water, eau, sodium cocoyl isethionate, cocamidopropyl betaine, sodium c14-16 olefin sulfonate, cocamidopropylamine oxide, decyl glucoside, acrylates copolymer, sh-oligopeptide-281 sp, carthamus tinctorius safflower oleosomes, panthenol, polyquaternium-11, polyquaternium-7, salvia hispanica seed extract, ilex paraguariensis leaf extract, crambe abyssinica seed oil, linum usitatissimum linseed seed extract, hydroxypropyltrimonium hyaluronate, helianthus annuus sunflower seed oil, persea gratissima avocado oil, helianthus annuus sunflower seed wax, menthyl lactate, jojoba esters, tocopherol, pentylene glycol, acacia senegal gum, menthol, glycerin, glycol distearate, polyester-37, propanediol, caprylyl glycol, ethyl linoleate, ethyl oleate, caprylic acid, xylitol, lactic acid, hydroxypropyl bis-hydroxyethyldimonium chloride, guar hydroxypropyltrimonium chloride, acrylamidopropyltrimonium chloride acrylamide copolymer, sorbitan oleate decylglucoside crosspolymer, hydroxypropylcellulose, ethylhexylglycerin, polyglycerin-3, propylene glycol, phenethyl alcohol, pentaerythrityl tetra-di-t-butyl hydroxyhydrocinnamate, gluconolactone, sodium metabisulfite, trisodium ethylenediamine disuccinate, parfum fragrance, phenoxyethanol, chlorphenesin, sodium chloride, citric acid, sodium benzoate, benzyl alcohol, potassium sorbate, sodium hydroxide, citral, citrus aurantium peel oil, hexyl cinnamal, limonene",
+      "description": "Different from Olaplex's regular shampoo by offering more slip/conditioning to prevent tangles, a gentler cleanse, and containing Olaplex's Curl Bond Shaper™ technology - Melissa."
+    },
+    {
+      "name": "Rahua Classic Conditioner",
+      "brand": "Rahua",
+      "buy_links": [
+        {
+          "url": "https://amzn.to/4gdjyxd",
+          "retailer": "Amazon"
+        }
+      ],
+      "product_categories": ["conditioners"],
+      "tags": ["samples", "curly", "coily", "wavy", "premium"],
+      "ingredients_raw": "water aqua eau, aloe barbadensis leaf extract, oenocarpus bataua ungurahua fruit oil, behentrimonium methosulfate, cetearyl alcohol, glycerin, stearalkonium chloride, butyrospermum parkii shea butter, saccharum officinarum sugar cane extract, bursera graveolens palo santo wood oil, hydrolyzed quinoa, simmondsia chinensis jojoba seed oil, rosmarinus officinalis rosemary leaf extract, camellia sinensis green tea leaf extract, rubus idaeus raspberry leaf extract, helianthus annuus sunflower seed oil, capryloyl glycine, panthenol, potassium sorbate",
+      "description": "Do you like to leave some of your conditioner in your hair? This is formulated to be safe to leave in. I found it to be medium-weight, appropriate for dry-feeling waves and any curls/coils - Melissa"
+    },
+    {
+      "name": "Rahua Classic Shampoo",
+      "brand": "Rahua",
+      "buy_links": [
+        {
+          "url": "https://amzn.to/4fMpNHR",
+          "retailer": "Amazon"
+        }
+      ],
+      "product_categories": ["shampoos"],
+      "tags": ["samples", "wavy", "curly", "coily", "low_porosity", "premium"],
+      "ingredients_raw": "water aqua eau, sodium c14-16 olefin sulfonate, cocamidopropyl betaine, sodium chloride sea salt, glycerin, saccharum officinarum sugar cane extract, oenocarpus bataua ungurahua fruit oil, bursera graveolens palo santo wood oil, aloe barbadensis leaf extract, camellia sinensis green tea leaf extract, rosmarinus officinalis rosemary leaf extract, rubus idaeus raspberry leaf extract, hydrolyzed quinoa, capryloyl glycine, caprylic acid, panthenol, citric acid, potassium sorbate",
+      "description": "A great medium-weight shampoo that provides a good cleanse without stripping the hair and enough slip to prevent tangles - Melissa"
     }
   ]
 }
