@@ -14,6 +14,18 @@ export function isValidIngredient(value: string): boolean {
 }
 
 /**
+ * Checks whether the text contains real list separators.
+ * Commas between digits (e.g. 1,2-Hexanediol) do not count.
+ */
+export function hasListSeparators(value: string): boolean {
+  return (
+    /(?<!\d),(?!\d)/.test(value) ||
+    /[|&]/.test(value) ||
+    /\sand\s/i.test(value)
+  );
+}
+
+/**
  * Checks if the input string is a valid ingredients list
  * @param value - The ingredient list string to validate
  * @returns `true` if list is valid, `false` if it contains URLs or is empty
@@ -31,6 +43,12 @@ export function isValidIngredientList(value: string): boolean {
   // Check for product names
   const productNames = /(shampoo|conditioner)/i; // Add more product names as needed
   if (productNames.test(value)) {
+    return false;
+  }
+
+  // Many words with no real list separators usually means a space-separated paste
+  const words = value.trim().split(/\s+/).filter(Boolean);
+  if (words.length > 8 && !hasListSeparators(value)) {
     return false;
   }
 

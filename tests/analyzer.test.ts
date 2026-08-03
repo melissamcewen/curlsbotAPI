@@ -79,6 +79,14 @@ describe('Analyzer', () => {
       expect(result.status).toBe('error');
       expect(result.ingredients).toHaveLength(0);
     });
+
+    it('should error out if ingredients list is not comma separated', () => {
+      const analyzer = new Analyzer({ database: testDatabase });
+      const result = analyzer.analyze('Water Alcohol Denat. Butylene Glycol Caffeine 1,2-Hexanediol Hydroxyacetophenone PEG-60 Hydrogenated Castor Oil Carbomer Tromethamine Menthol Trideceth-10 Betaine Disodium EDTA Glycerin Eucalyptus Globulus Leaf Oil Camellia Japonica Flower Extract Prunus Mume Flower Extract Prunus Persica (Peach) Flower Extract Althaea Rosea Flower Extract Viola Mandshurica Flower Extract Helianthus Annuus (Sunflower) Flower Extract Houttuynia Cordata Extract Cyananthus Atratus Extract Inula Britannica Flower Extract Lysimachia Foenum-graecum Extract' );
+
+      expect(result.status).toBe('error');
+      expect(result.ingredients).toHaveLength(0);
+    });
   });
 
   describe('Configuration', () => {

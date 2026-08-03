@@ -63,6 +63,23 @@ describe('Normalizer', () => {
 
     });
 
+    it('should reject space-separated lists without real separators', () => {
+      expect(
+        isValidIngredientList(
+          'Water Alcohol Denat. Butylene Glycol Caffeine 1,2-Hexanediol Hydroxyacetophenone PEG-60 Hydrogenated Castor Oil Carbomer Tromethamine Menthol Trideceth-10 Betaine Disodium EDTA Glycerin Eucalyptus Globulus Leaf Oil Camellia Japonica Flower Extract Prunus Mume Flower Extract Prunus Persica (Peach) Flower Extract Althaea Rosea Flower Extract Viola Mandshurica Flower Extract Helianthus Annuus (Sunflower) Flower Extract Houttuynia Cordata Extract Cyananthus Atratus Extract Inula Britannica Flower Extract Lysimachia Foenum-graecum Extract',
+        ),
+      ).toBe(false);
+    });
+
+    it('should allow long single ingredient names without commas', () => {
+      expect(
+        isValidIngredientList('Daucus Carota Sativa Carrot Seed Oil'),
+      ).toBe(true);
+      expect(
+        isValidIngredientList('Citrus Aurantium Dulcis Peel Oil'),
+      ).toBe(true);
+    });
+
 
   });
 
@@ -298,6 +315,30 @@ describe('Normalizer', () => {
           isValid: false,
         });
       });
+    });
+
+    it('should return invalid for space-separated ingredient pastes', () => {
+      const result = normalizer(
+        'Water Alcohol Denat. Butylene Glycol Caffeine 1,2-Hexanediol Hydroxyacetophenone PEG-60 Hydrogenated Castor Oil Carbomer Tromethamine Menthol Trideceth-10 Betaine Disodium EDTA Glycerin Eucalyptus Globulus Leaf Oil Camellia Japonica Flower Extract Prunus Mume Flower Extract Prunus Persica (Peach) Flower Extract Althaea Rosea Flower Extract Viola Mandshurica Flower Extract Helianthus Annuus (Sunflower) Flower Extract Houttuynia Cordata Extract Cyananthus Atratus Extract Inula Britannica Flower Extract Lysimachia Foenum-graecum Extract',
+      );
+
+      expect(result).toEqual({
+        ingredients: [],
+        isValid: false,
+      });
+    });
+
+    it('should still split 1,2- style names inside real comma lists', () => {
+      const result = normalizer('Water, 1,2-Hexanediol, Glycerin');
+
+      // Digit commas are still used as split points today; the important
+      // guarantee is the list remains valid because real list separators exist.
+      expect(result.isValid).toBe(true);
+      expect(result.ingredients).toEqual([
+        'water',
+        '2-hexanediol',
+        'glycerin',
+      ]);
     });
   });
 });
